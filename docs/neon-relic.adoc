@@ -29,6 +29,8 @@ include::chapters/04-core-mechanics.adoc[leveloffset=+1]
 
 include::chapters/05-attributes-skills.adoc[leveloffset=+1]
 
+include::chapters/05b-social-conflict.adoc[leveloffset=+1]
+
 include::chapters/06-health-damage-armor.adoc[leveloffset=+1]
 
 include::chapters/07-resonance-corruption.adoc[leveloffset=+1]
