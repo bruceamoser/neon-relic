@@ -12,11 +12,11 @@ The resulting framework is a fast, decisive, and player-centric engine designed 
 
 = Creating Your Agent
 
-Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these eleven steps in order.
+Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these twelve steps in order.
 
 [NOTE]
 ====
-*Design Note:* Steps 9 and 10 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
+*Design Note:* Steps 10 and 11 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
 ====
 
 ---
@@ -183,7 +183,22 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 
 ---
 
-== Step 9: Choose Your Dark Secret _(Placeholder)_
+== Step 9: Choose Your Anchor
+
+Every agent carries an *Anchor* — a tangible, physical object tied to a core humanizing memory from before the Covenant. It connects you to the ordinary world you are fighting to protect, and it is your most reliable tool for clearing Resonance and healing Corruption.
+
+Choose one of the following options:
+
+* *Roll d66* on the Memento Table in the Healing chapter and accept the result as written.
+* *Invent your own:* name a specific object and the memory attached to it. Run it by your GM.
+
+Record your Anchor's name and the memory it represents on your character sheet.
+
+> *Mechanic:* Once per session, dedicate a scene to your Anchor — a quiet moment where you handle the object and let the memory surface. Heal *1d4 Corruption* OR clear your entire current *Resonance* pool. Full rules in the Healing chapter.
+
+---
+
+== Step 10: Choose Your Dark Secret _(Placeholder)_
 
 Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. Dark Secrets create narrative hooks and can affect how NPCs and factions react to your character.
 
@@ -191,7 +206,7 @@ Every Covenant agent harbors a *Dark Secret* — something from their past that 
 
 ---
 
-== Step 10: Define Your Relationships
+== Step 11: Define Your Relationships
 
 Every agent enters play with three *Relationship Slots*. These define the personal stakes that make missions matter and connect the character to the world beyond the Covenant.
 
@@ -224,7 +239,7 @@ When a Relationship NPC is *killed, captured, corrupted, or otherwise removed fr
 
 ---
 
-== Step 11: Name and Biography
+== Step 12: Name and Biography
 
 Choose a name appropriate for the 1980s United States setting. Write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
 
@@ -251,6 +266,7 @@ After completing all steps, your sheet should record:
 | *Corruption* | Starts at 0
 | *Max Corruption Threshold* | 10 + Empathy
 | *Dark Secret* | One sentence placeholder
+| *Anchor* | Object name + memory (see Healing chapter)
 | *Relationships* | Covenant Contact + Personal Tie
 |===
 
@@ -314,12 +330,18 @@ Petra chooses *Shadow Walker* (1 Resonance): Become entirely imperceptible to mu
 
 Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
 
+=== Step 9: Anchor
+
+> *Anchor:* A cassette tape — Los Lobos, _By the Light of the Moon_, 1987. Her brother Marco made it for her birthday. She keeps it in the inside pocket of her field jacket and hasn't listened to it since the Tucson raid.
+
+=== Steps 10–11: Dark Secret and Relationships
+
 > *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
 
 > *Covenant Contact:* Senior Recovery Commander Darius Osei — her handler since induction.
 > *Personal Tie:* Her younger brother Marco, a cop in Phoenix who doesn't know she quit the DEA.
 > *Rival/Enemy:* Agent Harlan Voss — a Keep operative who questioned her competence during the Tucson debrief. She hasn't forgotten.
 
-=== Step 11: Biography
+=== Step 12: Biography
 
 _"Petra Vasquez, former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
