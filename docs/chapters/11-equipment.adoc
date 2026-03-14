@@ -326,3 +326,202 @@ When Reliability reaches 5 Wear, the vehicle stops. Roll d6:
 |===
 
 A breakdown during an active chase is resolved immediately: the broken-down vehicle is treated as *Contact* on the next round (the pursuer closes automatically).
+
+---
+
+[[crafting-and-repair]]
+== Crafting and Repair
+
+Gear breaks. In the 1980s, that means hunting down parts, improvising solutions,
+and relying on whoever in your cell knows which end of a soldering iron is hot.
+Stack Division agents are the backbone of field readiness — but any experienced
+agent can manage a field fix if the situation demands it.
+
+---
+
+=== Gear Degradation Recap
+
+Every piece of equipment with a **Gear Die** risks degradation when that die rolls
+a **1**. Gear degrades one step down the die chain (d12 → d10 → d8 → d6 → d4 →
+Broken). A **Broken** item cannot be used until repaired.
+
+> Stack Division Talent *Jury-Rig* can restore a broken item mid-scene at the cost
+> of 1 Resonance. Formal repair rules below handle everything else.
+
+---
+
+=== Repair Rules
+
+Repairing gear requires **time**, **parts**, and a **Craft** roll.
+
+[[repair-roll]]
+==== The Repair Roll
+
+[cols="1,3",frame=sides,grid=rows]
+|===
+| *Attribute* | Wits (WIT)
+| *Skill*     | Craft _(Stack signature skill)_
+| *Base Difficulty* | Varies by condition (see table below)
+| *Time Required* | Varies (see table below)
+| *Tools Required* | Basic toolkit (most repairs); specialized kit for electronics/artifacts
+|===
+
+[%header,cols="2,1,2,3"]
+|===
+| Condition | Gear Die | Repair Diff | Time Required
+
+| *Degraded* (d10–d4)        | Any step below max | 1 | Quick Repair: 15 minutes (1 scene)
+| *Broken* (non-electronic)  | —                  | 2 | Full Repair: 1 Shift (~4 hours)
+| *Broken* (electronic/mechanical) | —            | 3 | Full Repair: 1 Shift; requires Power Tools
+| *Combat-Damaged Vehicle*   | Reliability die    | 3 | Full Day; requires Auto Repair kit
+| *Artifact-Adjacent Damage* | —                  | 4 | Requires Occult Lab or Wayfinder consult
+|===
+
+**Success:** Each success restores the Gear Die one step (up to its maximum).
+A single Quick Repair roll can only ever restore to the step *above* Broken — a
+Broken item must be fully repaired before it can be used again.
+
+**Failure:** The repair attempt fails but does not make things worse.
+**Complication (Pushed roll only):** A pushed Repair roll that fails delivers a
+Complication roll on the <<gear-breakdown,Breakdown Table>>.
+
+[[repair-parts]]
+==== Parts Requirements
+
+Every repair requires at minimum a **Junk Die** (d6 Resource Die representing
+scavenged or on-hand parts). Roll the Junk Die after completing repairs:
+
+- **3+:** Parts hold; no step-down.
+- **1–2:** Parts ran short; step the Junk Die down one.
+- **Junk Die Exhausted:** No spare parts of that type remain. Acquire more (see
+  <<component-sourcing>>).
+
+[%header,cols="2,1,3"]
+|===
+| Parts Category | Resource Die | Used For
+
+| Junk / Scrap           | d6  | Field repairs, improvised items, basic mechanical fixes
+| Hardware Components    | d8  | Electronics, communications gear, vehicle parts
+| Medical Supplies       | d10 | See Resource Dice table in Consumables section
+| Specialized Parts      | d6  | High-tech, rare, or artifact-adjacent repairs only — not scavengeable
+| Covenant Cache Parts   | d12 | HQ-supplied; best quality; no acquisition roll needed
+|===
+
+---
+
+[[component-sourcing]]
+=== Component Sourcing
+
+Not everything is sitting in a Covenant armory. Field agents must scavenge,
+requisition, or improvise.
+
+==== Scavenging
+
+When in a setting that plausibly contains usable materials (hardware store,
+junkyard, abandoned building, mechanic's garage), an agent may spend a
+**Slow Action** or **Free Move** to scavenge. Roll **Investigate** (WIT), Diff 1.
+
+- **Success:** Find d6 uses worth of Junk/Scrap (or roll on Scavenge table below).
+- **Extra Successes (2+):** Upgrade the find to Hardware Components instead of Junk.
+
+[%header,cols="1,3"]
+|===
+| Scavenge Location | Typical Find (d6)
+
+| Hardware / Home Improvement Store | 1–3: Junk; 4–5: Hardware Components; 6: Power Tools (counts as Specialized Parts)
+| Auto Repair Shop / Junkyard       | 1–2: Junk; 3–5: Hardware Components; 6: Vehicle-rated Specialized Parts
+| Office Building / University      | 1–3: Junk; 4–5: Electronics (Hardware Components); 6: Lab-grade Specialized Parts
+| Abandoned Farmhouse / Rural Site  | 1–4: Junk; 5: Hardware Components; 6: Firearms Parts (Hardware Components)
+| Government / Military Facility    | 1: Junk; 2–4: Hardware Components; 5–6: Specialized Parts
+| Active Household                  | 1–5: Junk only; 6: Hardware Components (medical kit, power tools)
+|===
+
+==== HQ Requisition
+
+Any non-scavengeable part (Specialized Parts, Covenant Cache Parts) requires a
+Covenant requisition. Use the standard CL system (see <<requisitioning-gear>>).
+Specialized Parts have CL 3. Covenant Cache Parts are CL 4+ and require approval
+from the Keep.
+
+**Stack Advantage:** Stack Division agents treat Specialized Parts as CL 2 when
+requisitioning (their workshop connections reduce red tape).
+
+---
+
+[[improvised-items]]
+=== Improvised Items
+
+When time is short and a proper tool isn't available, agents can construct
+improvised weapons and tools from scavenged materials. Improvised items function
+at reduced effectiveness and carry a higher risk of failure.
+
+==== Crafting Improvised Items
+
+Roll **Craft** (WIT), using the difficulty from the table below. Requires at
+minimum a **Junk Die (d6)** as parts; step it down after crafting.
+
+Improvised items begin with a **d8 Gear Die** (never start at d10 or d12 —
+they're held together with duct tape and prayer).
+
+[%header,cols="2,1,1,4"]
+|===
+| Improvised Item     | Craft Diff | Time | Notes
+
+| *Club / Makeshift Bludgeon* | 1 | 1 minute | Damage 1, Slow. No Gear Die — it's a pipe.
+| *Shiv / Field Knife*        | 1 | 5 minutes | Damage 1, Fast. Gear d8. Breaks on 1–2.
+| *Molotov Cocktail*          | 1 | 10 minutes | Blast 1, Fire. No Gear Die — single use.
+| *Improvised First Aid Kit*  | 2 | 20 minutes | Functions as Basic First Aid (d8). Gear d8.
+| *Signal Jammer*             | 2 | 1 hour | Blocks comms in zone. Gear d8. Electronics.
+| *Tripwire / Alarm Trap*     | 2 | 30 minutes | Spend; triggers on intruder entry. Single use.
+| *Garrote Wire*              | 1 | 5 minutes | Grapple-linked attack. No Gear Die — simple tool.
+| *Lockpick Set (crude)*      | 3 | 1 hour | Sleight of Hand −1 die compared to proper picks.
+| *Improvised Bug Detector*   | 3 | 2 hours | Detect surveillance; −1 die vs. professional gear.
+| *Field Radio Booster*       | 3 | 2 hours | Extend comms range by 1 zone. Gear d8. Electronics.
+|===
+
+> Improvised items **cannot** be upgraded with proper parts after the fact —
+> once improvised, always improvised. The exception is Stack Division agents
+> with the *Prototyper* talent, who may treat any improvised item as fully
+> professional for one roll before it is destroyed.
+
+==== Improvised Item Failure
+
+When a Gear Die on an improvised item comes up **1**, it does not simply degrade —
+roll on the following table:
+
+[%header,cols="1,3"]
+|===
+| d6 | Improvised Item Failure
+
+| 1 | *Catastrophic Break.* Item is destroyed instantly. If a weapon, the wielder takes 1 damage.
+| 2 | *Jams or Jams Shut.* Item is unusable this scene. Can be cleared with a free action next round.
+| 3 | *Splinters / Shrapnel.* Item breaks; nearest ally in zone rolls AGI Diff 1 or takes 1 damage.
+| 4 | *Power Surge.* Electronic items: short circuit, sparks. Clear by spending a Slow Action.
+| 5 | *Reduced Function.* Item still usable but provides no bonus die (treat as no item).
+| 6 | *Quick Fix.* Roll was a near-miss — item is stable. Gear Die stays at current step.
+|===
+
+---
+
+=== Stack Division: Crafting Signature
+
+Stack agents aren't just better at repairs — they have a different relationship
+with gear entirely. Training in Covenant workshops, maintaining equipment under
+operational conditions, and sourcing parts through a network of trusted contacts
+gives Stack agents mechanical advantages no other Division matches.
+
+[%header,cols="2,4"]
+|===
+| Advantage | Effect
+
+| *Craft Bonus*         | Stack agents add **+1 die** to all Craft rolls (repair and improvised item creation).
+| *Faster Repairs*      | Quick Repairs take 5 minutes instead of 15. Full Repairs take 2 hours instead of a full Shift.
+| *Parts Economy*       | Stack agents never step down a Junk Die on a successful repair — only failed repairs consume parts.
+| *Known Contacts*      | Once per case, a Stack agent can source **Hardware Components (d8)** without a Covenant requisition (a contact comes through).
+| *Workshop Access*     | At HQ, Stack agents may use the <<facility-covenant-armorer,Covenant Armorer>> facility at no additional cost, even before it is fully built. They improvise the bench themselves.
+|===
+
+> **Cross-reference:** Stack Division full description, background options, and Talents
+> (including *Jury-Rig*, *Prototyper*, *Duct Tape & WD-40*) are in
+> `docs/chapters/09-divisions.adoc`.
+
