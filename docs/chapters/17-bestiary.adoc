@@ -138,8 +138,8 @@ Skills:
   Investigate 2 | Tech 2
 
 Special Abilities:
-  Suppressive Discipline — MJ-12 agents do not panic. Immune to the Shaken
-  condition from mundane violence. Supernatural Fear checks are still required
+  Suppressive Discipline — MJ-12 agents do not panic under mundane violence.
+  Supernatural Fear checks are still required
   but at −1 Fear Rating (training).
 
   Tactical Communication — If two or more MJ-12 agents are present, they act
@@ -344,7 +344,7 @@ not respond to violence.
 Memory Bleed — At the start of each scene inside the zone, each
 character witnesses an involuntary memory of the zone's traumatic origin
 (GM description). Characters must pass an Endure roll (Difficulty 1) or
-gain the Shaken Condition.
+take 1 Wits damage.
 
 Dissolution Trigger — The Mire cannot be destroyed by conventional
 means. It can be dispersed by:
@@ -392,10 +392,10 @@ loses all special abilities and functions as a Grunt.
 
 Recognition Response — If a player character knew the deceased in life and
 makes eye contact with the Hollow, they must pass a Psychoanalyze or
-Endure roll (Difficulty 2) or gain the Shaken Condition immediately.
+Endure roll (Difficulty 2) or take 1 Empathy damage immediately.
 
-Dead to Pain — The Hollow does not Bleed, cannot be Stunned, and ignores
-the Exhausted Condition. It will pursue until Broken or the artifact is
+Dead to Pain — The Hollow does not bleed (no ongoing Strength loss from
+wounds), cannot be staggered, and ignores fatigue. It will pursue until Broken or the artifact is
 removed.
 ----
 

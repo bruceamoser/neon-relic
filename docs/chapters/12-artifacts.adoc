@@ -70,7 +70,7 @@ Each artifact has a baseline Encumbrance value equal to its *Corruption cost tie
 Carrying an artifact that has been *activated at least once this Case File* imposes *+1 Enc.* above its base value for the remainder of the session. The artifact's metaphysical structure is disturbed — it pushes back.
 
 * This additional Enc. is invisible to standard detectors — only characters with the *Lore* skill or Wayfinder training can sense something is off.
-* If an active artifact's pressure pushes the carrier into the *Encumbered* Condition, they also gain *+1 Corruption* at the start of each scene while carrying it (the corruption leaks passively).
+* If an active artifact's pressure pushes the carrier into the *Encumbered* state, they also gain *+1 Corruption* at the start of each scene while carrying it (the corruption leaks passively).
 
 === Stacking Artifacts
 
@@ -79,7 +79,7 @@ Carrying more than one artifact simultaneously is permitted but discouraged:
 * *Two artifacts:* Both active pressure rules apply independently.
 * *Three or more artifacts:* The GM triggers a Corruption Cascade — all carried artifacts leak corruption into the carrier simultaneously. Each artifact applies its Corruption cost at the end of the scene, even if none were used.
 
-> *Lore check (Difficulty 2):* An agent who succeeds on a Lore roll after picking up an artifact can sense its tier and whether a previous carrier activated it. Failure means the agent is unaware of the added pressure until they notice the Encumbered Condition or start gaining unplanned Corruption.
+> *Lore check (Difficulty 2):* An agent who succeeds on a Lore roll after picking up an artifact can sense its tier and whether a previous carrier activated it. Failure means the agent is unaware of the added pressure until they notice they are Encumbered or start gaining unplanned Corruption.
 
 ---
 

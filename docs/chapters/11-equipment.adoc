@@ -42,7 +42,7 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 | *Brass Knuckles* | +1 | 1 | Engaged | Concealable. | 1
 | *Switchblade* | +1 | 2 | Engaged | Concealable; puncture criticals. | 1
-| *Stun Gun / Taser* | +2 | Stun | Engaged | Target gains the *Stunned* Condition (loses next Slow Action; see `docs/chapters/06-health-damage-armor.adoc`). | 2
+| *Stun Gun / Taser* | +2 | Stun | Engaged | Target loses their next Slow Action (stunned). | 2
 | *.38 Snub-nose Revolver* | +2 | 2 | Short | Reliable — ignore first 1 when pushing. | 2
 | *9mm Semi-Auto Pistol* | +2 | 2 | Short | High capacity; split successes to hit multiple targets. | 3
 | *Pump-Action Shotgun* | +3 | 3 | Short | +1 Damage at Engaged range. Loud and bulky. | 3
@@ -151,7 +151,7 @@ Wearing armor adds its CL to your total Enc. (Concealed Kevlar = +1; Tactical Ri
 
 === Encumbered
 
-If your total Enc. exceeds your carry capacity, you gain the *Encumbered* Condition (see `docs/chapters/06-health-damage-armor.adoc`):
+If your total Enc. exceeds your carry capacity, you are *Encumbered*:
 
 * −1 die on all Strength and Agility rolls.
 * Moving to a new zone costs a *Slow Action* instead of a Fast Action.
@@ -166,7 +166,7 @@ If your Enc. exceeds *Strength × 3*, you are *Overloaded*:
 * At the GM's discretion, you cannot take Fast Actions for movement.
 * You must drop excess gear before you can move.
 
-> *Overloaded is not a formal Condition* — it is a hard stop. You simply cannot move until weight is reduced.
+> *Overloaded* is a hard stop. You simply cannot move until weight is reduced.
 
 === Clearance Levels (CL) and Requisition
 
