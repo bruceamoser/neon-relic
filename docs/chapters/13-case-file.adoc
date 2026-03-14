@@ -158,7 +158,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 == Cross-References
 
 * GM guidance for building and calibrating Countdown clocks: `docs/chapters/18-gm-guidance.adoc`
-* Corruption gain mechanics: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption gain mechanics: `docs/chapters/07-corruption.adoc`
 * Wayfinder Division rituals: `docs/chapters/15-rival-factions.adoc` (and Issue #15)
 
 ---
@@ -185,7 +185,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 11 | Cassette tape               | Recordings of events before they happen; playback causes hemorrhaging
 | 12 | Pocket watch                | Stops time in a 5-meter radius for d6 rounds; user ages accelerated
 | 13 | Hospital chart              | Accurate medical diagnosis of anyone named in it; reading causes symptoms
-| 14 | Photograph                  | Shows what the subject fears most; viewing drives Fear roll
+| 14 | Photograph                  | Shows what the subject fears most; viewing drives Fear check
 | 15 | Book (journal/diary)        | Compels reader to continue until finished; knowledge is real and dangerous
 | 16 | Vinyl record                | Music causes compliance in listeners within earshot; player is compelled too
 | 21 | Military dog tags           | Reveals the moment of death of anyone who held the tags

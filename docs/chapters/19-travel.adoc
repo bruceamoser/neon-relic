@@ -43,7 +43,7 @@ Each leg, the driver (or lead navigator on foot) makes a skill roll:
 
 === Phase 3 — Arrival
 
-On arrival, any Conditions accumulated during travel are active. Any gear that was pushed during travel may be degraded. The team notes which scene they arrive in (Phase 4 or 5 of the Case File structure).
+On arrival, any damage or injuries sustained during travel remain in effect. Any gear that was pushed during travel may be degraded. The team notes which scene they arrive in (Phase 4 or 5 of the Case File structure).
 
 ---
 
@@ -129,7 +129,7 @@ If the team reaches the destination with a tail still on them:
 
 == Being Followed — Named Threat Complication
 
-If the tail is a Named Threat or a designated faction operative (introduced in the adventure), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
+If the tail is a Named Threat or a designated faction operative (introduced in the Case File), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
 
 If the Named Threat is allowed to arrive at the destination, they are briefed on the team's location. The GM may use this to introduce them as a threat in the Confrontation phase instead of an earlier scene.
 

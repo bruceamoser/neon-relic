@@ -39,7 +39,7 @@ Motivation: One sentence describing what this adversary wants in this scene.
 * *Attributes* are used exactly as PC attributes — as both dice pool maximums and health pools. When Strength reaches 0, the adversary is Broken.
 * *Skills not listed* default to 0.
 * *Armor Rating* functions identically to PC armor — Gear dice rolled against incoming damage.
-* *Fear Rating* applies to supernatural entities and rare humans. 0 = no Fear check triggered. See `docs/chapters/07-resonance-corruption.adoc`.
+* *Fear Rating* applies to supernatural entities and rare humans. 0 = no Fear check triggered. See `docs/chapters/07-corruption.adoc`.
 * *Broken State* defines what happens when the adversary's Strength hits 0.
 * *Damage types* in special abilities should specify their type and target: Physical (STR or AGI), Mental (WIT or EMP), or Corruption. See `docs/chapters/06-health-damage-armor.adoc`.
 
@@ -306,10 +306,10 @@ For quick reference when building encounters:
 
 == Cross-References
 
-* Fear ratings and check triggers: `docs/chapters/07-resonance-corruption.adoc`
+* Fear ratings and check triggers: `docs/chapters/07-corruption.adoc`
 * Faction affiliations and politics: `docs/chapters/15-rival-factions.adoc` _(Issue #14)_
 * Artifacts and what spawns Constructs: `docs/chapters/12-artifacts.adoc` _(Issue #9 origin)_
-* Corruption gain from supernatural sources: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption gain from supernatural sources: `docs/chapters/07-corruption.adoc`
 
 ---
 
@@ -509,7 +509,7 @@ profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 
 === Corruption Threshold and Behavior
 
-The Corruption thresholds from `docs/chapters/07-resonance-corruption.adoc` apply to NPCs as well as agents. For simplicity, the GM tracks NPC corruption with a three-stage shorthand:
+The Corruption thresholds from `docs/chapters/07-corruption.adoc` apply to NPCs as well as agents. For simplicity, the GM tracks NPC corruption with a three-stage shorthand:
 
 [%header,cols="^1,2,4"]
 |===

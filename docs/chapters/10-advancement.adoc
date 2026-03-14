@@ -101,7 +101,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
 
 == General Talents
 
-General Talents are specialized perks available to *any character*, providing mechanical exceptions or situational bonuses:
+General Talents are specialized abilities available to *any character*, providing mechanical exceptions or situational bonuses:
 
 [%header,cols="2,4"]
 |===
