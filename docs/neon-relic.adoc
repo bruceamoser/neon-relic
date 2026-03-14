@@ -23,6 +23,8 @@ include::chapters/02-verdant-covenant.adoc[leveloffset=+1]
 
 include::chapters/03-setting.adoc[leveloffset=+1]
 
+include::chapters/03b-combat.adoc[leveloffset=+1]
+
 include::chapters/04-core-mechanics.adoc[leveloffset=+1]
 
 include::chapters/05-attributes-skills.adoc[leveloffset=+1]
