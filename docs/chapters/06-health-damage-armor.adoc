@@ -21,6 +21,138 @@ If any Attribute is reduced to *0*, your character becomes *Broken*:
 * The character is immediately *incapacitated*.
 * They must roll on a *Critical Injury table*, which can result in lethal consequences or permanent maiming depending on the severity of the attack.
 
+---
+
+== Critical Injuries
+
+When a character is *Broken* (any Attribute reduced to 0), they immediately roll on the appropriate Critical Injury table. The table used depends on *what type of damage Broke them*:
+
+* *Physical (Strength = 0):* Roll on the Physical Critical Injury table.
+* *Exhaustion (Agility = 0):* Roll on the Physical Critical Injury table (the body has failed).
+* *Mental (Wits = 0):* Roll on the Mental & Emotional Critical Injury table.
+* *Emotional (Empathy = 0):* Roll on the Mental & Emotional Critical Injury table.
+
+=== How to Roll D66
+
+Roll two d6. The first die is the *tens digit*, the second is the *units digit*. A result of 3 on the first die and 4 on the second = *34*.
+
+=== Death Checks
+
+Some results are marked *†* (Death Check). When you roll one, roll a single d6:
+
+* On a *1–2:* Your character dies.
+* On a *3–6:* You survive — barely. The Critical Injury still applies.
+
+A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (WIT)* roll (Difficulty 2) to give a dying ally *+2 to their death check die* before it's rolled (effectively making death only on a 1).
+
+---
+
+=== Physical Critical Injury Table (D66)
+
+Roll when Broken by *Strength or Agility* damage.
+
+[%header,cols="^1,2,4,3"]
+|===
+| D66 | Injury | Mechanical Effect | Healing
+
+| 11 | *Wind Knocked Out* | No actions next turn; Strength returns to 1. | Recovers automatically end of scene.
+| 12 | *Bad Fall* | Agility reduced by 1 permanently. | Requires Keep medical facility (downtime).
+| 13 | *Bloody Nose* | −1 die on Investigate rolls until treated. | First Aid Kit (Difficulty 1) restores.
+| 14 | *Cracked Ribs* | −1 die on all Force rolls; any violent action costs 1 additional Strength. | Bed rest (1 downtime phase).
+| 15 | *Sprained Wrist* | Cannot use two-handed weapons. −1 die on all AGI rolls. | Splint + 1 downtime phase.
+| 16 | *Grazed* | Strength returns to 1. Scar remains (cosmetic). | No treatment needed.
+| 21 | *Concussion* | Wits reduced by 1 until treated. Disorientation: must succeed on Wits roll (Diff 1) to use Slow Actions. | Heal roll + 24 hours rest.
+| 22 | *Shoulder Dislocation* | Dominant arm useless. −2 dice on all STR rolls. | Heal check (Difficulty 2); 1 downtime phase.
+| 23 | *Torn Knee* | Movement costs double (2 Fast Actions per zone instead of 1). | Surgery (Keep facility) + 1 downtime phase.
+| 24 | *Ringing Ears* | −1 die on all WIT-based rolls for rest of session. | No treatment needed — fades by next session.
+| 25 | *Fractured Hand* | −2 dice on all AGI rolls. Cannot wield weapons requiring grip. | Splint + 2 downtime phases.
+| 26 | *Severe Bruising* | −1 Strength maximum until healed (cannot be healed above 3). | Heal roll (Difficulty 2) + 1 downtime phase.
+| 31 | *Deep Laceration* | Bleeds 1 Strength per round until treated (First Aid, Difficulty 1). | Bandaging stops bleed; full recovery = 1 downtime.
+| 32 | *Fractured Arm* | Non-dominant arm: useless. Dominant arm: −2 dice STR. | Cast + 2 downtime phases.
+| 33 | *Broken Nose (Insight)* | *+1 die on Intimidate rolls forever* (you look dangerous now). | No mechanical healing needed. Defect: cosmetic disfiguration.
+| 34 | *Shattered Kneecap* | Movement speed halved permanently (1 zone costs Slow Action). Surgery can restore. | Keep surgical facility + 2 downtime phases.
+| 35 | *Punctured Lung* | −2 dice on all STR and AGI rolls. Strenuous action triggers Endure roll (Difficulty 2) or collapse. | Heal roll (Difficulty 3) + 2 downtime phases.
+| 36 | *Blinding Strike* | One eye damaged: −1 die on all ranged attack and Investigate rolls permanently. Insight: *+1 die on Empathy rolls* (you understand fragility now). | Cannot be fully healed; monocle/patch is acquired (CL 1).
+| 41 | *Severed Tendon* | Permanently −1 Agility. | Keep surgical facility restores −1 penalty only.
+| 42 | *Trauma Shock* | Frozen for 1d6 rounds. No actions possible. Strength returns to 1 after unfreezing. | Recovers on its own; stimulants (Fast Action) end it immediately.
+| 43 | *Broken Vertebra* | Agility reduced by 2. Risk of paralysis: any further STR/AGI damage to 0 triggers death check without rolling. | Keep surgical facility (requires 2 downtime phases, Difficulty 3 Heal check).
+| 44 | *Organ Damage* | Strength maximum reduced by 2 permanently. | Keep surgical facility can restore 1 point.
+| 45 | *Severed Ear* | Permanent −1 die on Investigate rolls. Insight: *+1 die on Empathy rolls* (you listen more carefully now). | Cosmetic only; scar remains.
+| 46 | *Gutted* † | Bleeding: lose 1 Strength per round. Death check after 3 rounds if untreated. Heal (Difficulty 3) stops bleeding. | Emergency surgery (Keep facility) required; 2 downtime phases.
+| 51 | *Broken Jaw* | Cannot speak coherently. Cannot use Manipulate or Command skills until treated. | Surgical wire (Keep) + 1 downtime phase.
+| 52 | *Nerve Damage* | Permanently −1 Agility. Occasional muscle spasms: on any die roll of all 1s, drop what you're holding. | Cannot be healed.
+| 53 | *Severe Burns* | −2 dice on all STR/AGI actions. Unbandaged burns: lose 1 Strength per scene from infection. | Keep medical facility; 2 downtime phases.
+| 54 | *Spinal Injury* | Agility reduced to 1 until treated. No running (cannot move two zones). | Keep surgical facility (Difficulty 4); 3 downtime phases.
+| 55 | *Arm Blown Off* † | Dominant arm severed. Death check. Surviving: permanently one-armed. All two-handed weapons require improvised rig or aid. | Cannot regrow. Prosthetic possible (Issue #21, CL 5).
+| 56 | *Skull Fracture* † | Death check. Surviving: Wits permanently reduced by 1. Severe headaches: −1 die on Investigate for 1 month. | Keep facility; 1 downtime phase after death check survival.
+| 61 | *Chest Shot* † | Death check. Surviving: Strength maximum reduced by 1 permanently. | Emergency surgery (Keep facility required immediately).
+| 62 | *Leg Blown Off* † | Death check. Surviving: movement reduced to 1 zone per Slow Action, permanently. | Cannot regrow. Prosthetic possible (Issue #21, CL 5).
+| 63 | *Multiple Wounds* † | Death check. Surviving: roll twice more on this table (ignoring further †). | As per rolled injuries.
+| 64 | *Arterial Strike* † | Bleeding 2 Strength per round. Death check must be made within 2 rounds or automatic death. | Tourniquet (Fast Action, CL 1) buys 1 extra round; Heal (Difficulty 4) fully stabilizes.
+| 65 | *Head Shot* † | Death check. Surviving: permanently remove 1 from Wits AND Empathy. Insight: *+2 dice on Psychoanalyze forever* (near-death clarity). | Cannot be healed. Migraine condition (persistent).
+| 66 | *DOA* † | Automatic death check (no bonus). Surviving: character is clinically dead for 1d6 rounds before CPR-equivalent revives them. All Attributes return to 1. Permanent: Resonance +3, Empathy −1. | See Resonance/Corruption chapter.
+|===
+
+---
+
+=== Mental & Emotional Critical Injury Table (D66)
+
+Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Resonance — the occult has left its mark.
+
+> *All mental criticals:* Gain *+1 Resonance* upon rolling this table, in addition to any listed in the individual result.
+
+[%header,cols="^1,2,4,3"]
+|===
+| D66 | Condition | Mechanical Effect | Recovery
+
+| 11 | *Shaken* | −1 die on all WIT and EMP rolls until end of scene. Wits or Empathy returns to 1. | Rest or reassurance (Empathy roll, Difficulty 1).
+| 12 | *Distracted* | Cannot push rolls until the end of scene (mind can't sustain the effort). | ends automatically with scene change.
+| 13 | *Tremors* | Fine motor control impaired: −1 die on Sleight of Hand and Firearms this session. | No treatment needed — fades by next session.
+| 14 | *Dissociation* | Character acts on autopilot: GM narrates their next turn's actions. | Psychoanalyze check (Difficulty 1) by ally to snap them out early.
+| 15 | *Paranoid Flash* | Character immediately acts on the nearest perceived threat (GM chooses target — may be an ally). | Psychoanalyze (Difficulty 1) ends it; 1 Empathy cost to the treating ally.
+| 16 | *Acute Anxiety* | All Difficulty ratings increase by 1 for rest of scene. | Scene change ends it automatically.
+| 21 | *Night Terrors* | Between sessions: character does not benefit from sleep-based recovery. Agility Broken recovery is halved. | Psychoanalyze session (downtime, Difficulty 2) clears it.
+| 22 | *Intrusive Visions* | −1 die on Investigate whenever concentration is needed (GM's discretion). | Psychoanalyze session (downtime, Difficulty 2).
+| 23 | *Fugue State* | Miss one scene entirely (treated as absent). Character wanders or freezes; ally must spend a Slow Action per round to keep them moving. | Psychoanalyze (Difficulty 2) by an ally to restore presence.
+| 24 | *Emotional Numbing* | Empathy reduced by 1 until treated. Cannot Manipulate others — no connection is felt. | Downtime scene of roleplay connection + Psychoanalyze (Difficulty 2).
+| 25 | *Hypervigilance (Insight)* | *Permanently: +1 die on Investigate rolls* (always watching). Permanent: −1 die on Empathy-based social rolls (you don't trust anyone). | No recovery needed — rewired.
+| 26 | *Compulsion* | Character develops a specific compulsion (GM and player define together: counting objects, checking door locks, avoiding red cars). Each scene, must make Wits roll (Difficulty 1) or act on compulsion before other actions. | Psychoanalyze campaign (3 downtime phases, Difficulty 3) to suppress.
+| 31 | *Sensory Flashback* | Triggered by a GM-defined stimulus (a smell, a sound). When triggered: lose Fast Action that round as flashback fires. | Psychoanalyze campaign (2 downtime phases, Difficulty 2).
+| 32 | *Social Withdrawal* | −2 dice on all Empathy-based rolls. Character refuses social complexity. | Downtime social scene (roleplay) + Psychoanalyze (Difficulty 2).
+| 33 | *Survivor Guilt* | If any ally takes damage within the scene, character suffers 1 Empathy damage (involuntary). | Psychoanalyze (Difficulty 2) + meaningful roleplay scene.
+| 34 | *Paranoid Ideation* | Character believes a specific NPC or faction is surveilling them (GM chooses). Act on it: +1 die on Sneak actions. Suffer it: −1 die on Empathy rolls involving the believed threat. | Psychoanalyze campaign (2 downtime phases).
+| 35 | *Dissociative Identity Trigger* | +1 Resonance (additional). GM introduces an alternate behavioral state — twice per session, at dramatic moments, rolls a d6: 1–2 = alternate state this scene. | Psychoanalyze campaign (3 downtime phases, Difficulty 3).
+| 36 | *Rage Episodes* | When Empathy falls below 2, character must succeed on Wits roll (Difficulty 2) or attack nearest person (ally or foe). | Psychoanalyze campaign (2 downtime phases, Difficulty 3).
+| 41 | *Artifact Resonance (Insight)* | +2 Resonance (additional). Permanent: *+1 die on all artifact interaction rolls* (you opened a channel). Permanent: −1 Empathy. | Cannot be recovered — this is the artifact's mark.
+| 42 | *Phobia* | New phobia defined (GM and player): when triggered, automatic Fear check at Fear Rating 3. | Psychoanalyze campaign (3 downtime phases, Difficulty 3) reduces to Fear Rating 1.
+| 43 | *Waking Hallucinations* | Wits reduced by 1 permanently. Once per session, character perceives a supernatural intrusion that may or may not be real (GM only knows). | Keep's Empathy specialist can reduce severity; Wits loss is permanent.
+| 44 | *Emotional Bleed* | Permanently −1 Empathy. Character cannot form new meaningful bonds during campaign (no new Relationships — see Issue #17). | Cannot be healed. Existing Relationships remain.
+| 45 | *Fracture Point* | Corruption threshold reduced by 2 (permanently). Max Corruption = `8 + Empathy` instead of `10 + Empathy`. The exposure has cracked something fundamental. | Cannot be reversed.
+| 46 | *Catatonic Episode* † | Death check (mind, not body — failure = permanent catatonia, character retirement). Surviving: Wits and Empathy each reduced by 1. +2 Resonance immediately. | Intensive Psychoanalyze (Difficulty 4, Keep facility) over 2 downtime phases to stabilize.
+| 51 | *Obsessive Documentation* | Character must document everything (Insight: *+2 dice on Investigate* when reviewing notes from current mission). Compulsion: spends all available time writing; −1 die on social rolls (distracted). | Psychoanalyze campaign (3 downtime phases) to reduce compulsion; Insight remains.
+| 52 | *Broken Empathy* | Permanently −2 Empathy. All social skills lose 2 dice. | Cannot be healed — the connection is severed.
+| 53 | *Artifact Imprint* | +3 Resonance (additional). Character begins hearing the artifact that Broke them. GM may use this as a plot hook: the artifact calls them back. | Containment ritual (Issue #15) can suppress the call but not eliminate the imprint.
+| 54 | *Veil Burn* | +2 Resonance. Wits permanently −1. Insight: *+1 die on all artifact Resonance detection rolls* (you can feel them now). | Cannot be healed — the Veil has scorched your perception permanently.
+| 55 | *Shattered Will* † | Death check (mind). Surviving: Wits and Empathy max permanently reduced by 1 each. +2 Resonance. Cannot push rolls for remainder of campaign arc until psychological breakthrough (GM milestone). | Keep Psychoanalyze program (4 downtime phases, Difficulty 4).
+| 56 | *Cosmic Revelation* † | Death check (mind). Surviving: character learns something true and terrible about the Covenant's mission or the nature of artifacts. +3 Resonance, −2 Empathy permanently. Insight: *+2 dice on all Lore-type rolls forever* (Wayfinder skill equivalent). GM defines the revelation — it should reshape how the character sees the world. | Cannot be unlearned. Roleplay is mandatory.
+| 61 | *Memory Dissolution* | Permanently −1 Wits. Character loses one specific skill memory (GM chooses a skill at rank 1–2; it drops to 0). | Cannot recover lost skill without retraining (requires downtime advancement, Issue #2).
+| 62 | *Identity Crisis* | Character's Division Allegiance wavers. For 1 campaign arc, they cannot use their Division Talent. | Major roleplay scene with Covenant superior + Psychoanalyze (Difficulty 3).
+| 63 | *Veil Madness* | +4 Resonance immediately. Corruption check triggered. Roll on this table *again* (ignore result 63 on reroll). | As per second roll result.
+| 64 | *Prophetic Fugue* † | Death check (mind). Surviving: +3 Resonance. Character enters a trance broadcasting the Covenant's location to hostile artifact entities until a Wayfinder performs a Shielding ritual (Issue #15). | Ritual seals the broadcast; Resonance remains.
+| 65 | *Ego Death* † | Death check (mind). Surviving: character personality fundamentally alters. Player rewrites one core Relationship and one Drive. +3 Resonance. Insight: *+2 dice on all Empathy rolls* (dissolution breeds radical compassion — or fearlessness). | Cannot be undone. Roleplay the new self.
+| 66 | *Unraveling* † | Automatic mind death check (no bonus). Surviving: +4 Resonance, −1 to every Attribute permanently, character retires at end of current mission (they cannot continue as an operative). Final scene before retirement should be played. | Retirement is farewell — play it well.
+|===
+
+---
+
+=== Cross-References
+
+* *Resonance gain* from mental criticals triggers a Corruption Check (see `docs/chapters/07-resonance-corruption.adoc`).
+* *Healing in the field:* First Aid Kit, Heal skill, Psychoanalyze skill — see `docs/chapters/08-skills.adoc` _(Issue #7)_.
+* *Downtime recovery:* Between-mission phases and Keep medical access — see `docs/chapters/09-base-management.adoc` _(Issue #12)_.
+* *Death and dying procedure:* Full death check rules with autopsy and Covenant notification — see _(Issue #13)_.
+* *Artifact Imprint and Veil Burn:* Interaction with artifact containment rituals — see `docs/chapters/12-artifacts.adoc` _(Issue #9)_.
+
 == Armor Mechanics
 
 To survive lethal encounters, agents utilize armor (such as concealed Kevlar vests or tactical riot gear):
