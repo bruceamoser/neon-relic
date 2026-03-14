@@ -68,7 +68,7 @@ Distribute *14 points* across your four core attributes. Each attribute has a mi
 | *Empathy* | 2–5 | Charisma, social intuition, and resistance to psychological horror.
 |===
 
-> *Division Priority:* Your Division's Key Attributes are where your character naturally excels. It is strongly recommended to place your highest scores there. There is no hard rule preventing you from assigning points elsewhere, but a Recovery agent with Strength 2 will break quickly.
+> *Division Favorite Attribute:* Each Division has one *Favorite Attribute* — the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. *Wayfinder:* Wits | *Recovery:* Agility | *The Keep:* Empathy | *Stack:* Wits. Investing there is strongly recommended but not mechanically enforced.
 
 > *Attributes as Health:* Your attributes also serve as your health pools. Strength absorbs physical damage; Agility absorbs exhaustion; Wits absorbs mental horror; Empathy absorbs emotional trauma. A score of 0 in any attribute means your character is *Broken*.
 
@@ -98,7 +98,17 @@ Distribute *10 points* across the twelve core skills. No single skill may exceed
 
 > *Unranked skills:* A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice — there are no "untrained" restrictions.
 
-> *Division Key Skills:* Strongly invest at least 2 of your 10 points in each of your Division's Key Skills. These are the rolls you will make most often under pressure.
+> *Division Key Skill — Starting Cap Exception:* Each Division has one designated Key Skill that may start at rating *4* instead of the normal maximum of 3. This represents professional specialization before Covenant service. You may spend up to 4 of your starting points on that skill.
+
+[%header,cols="1,1"]
+|===
+| Division | Key Skill (Starting Cap: 4)
+
+| Wayfinder | Lore
+| Recovery | Firearms
+| The Keep | Command
+| Stack | Tech
+|===
 
 ---
 
