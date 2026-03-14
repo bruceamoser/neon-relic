@@ -10,7 +10,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 Character creation choice determining starting Attribute and Skill point pools. Three tiers: Young (14 attribute / 10 skill), Experienced (13 / 12), Senior (12 / 14). See `docs/chapters/01-introduction.adoc`.
 
 *Anchor*::
-A physical object linked to a humanizing memory. Once per session, a character may interact with their Anchor to heal 1d4 Corruption. See `docs/chapters/08-healing.adoc`.
+A physical object linked to a humanizing memory. Once per session, a character may interact with their Anchor to heal 1d4 Corruption. See xref:07-corruption.adoc#_anchors[Anchors].
 
 *Armor Rating*::
 The number of Gear dice rolled to absorb incoming damage. Each 6 rolled cancels one point of damage. See `docs/chapters/06-health-damage-armor.adoc`.
