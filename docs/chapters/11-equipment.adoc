@@ -58,3 +58,62 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 | *Concealed Kevlar Vest* | 3 | Wearer passes as civilian at distance. | 3
 | *Tactical Riot Armor* | 6 | Bulky; −2 penalty to Agility rolls. | 4
 |===
+
+---
+
+== Encumbrance
+
+Every agent can carry a limited amount of gear before it slows them down. Encumbrance (*Enc.*) is listed for each item in the equipment tables above.
+
+=== Encumbrance Scale
+
+[%header,cols="^1,3"]
+|===
+| Enc. | Examples
+
+| ½ | Small concealable items: a pocket recorder, lockpick kit, walkie-talkie.
+| 1 | Standard field gear: first aid kit, camera, crowbar, pistol.
+| 2 | Heavy or bulky gear: trauma surgical kit, thermal camera, shotgun.
+| 3+ | Oversized or special items: heavy weapons, large artifact containment cases.
+|===
+
+=== Carry Capacity
+
+An agent's carry capacity is *Strength × 2* Enc. points.
+
+Wearing armor adds its CL to your total Enc. (Concealed Kevlar = +1; Tactical Riot Armor = +2).
+
+=== Encumbered
+
+If your total Enc. exceeds your carry capacity, you gain the *Encumbered* Condition (see `docs/chapters/06-health-damage-armor.adoc`):
+
+* −1 die on all Strength and Agility rolls.
+* Moving to a new zone costs a *Slow Action* instead of a Fast Action.
+
+You remain Encumbered until your load drops back within capacity — drop gear, stash it in the car, or pass it to a teammate.
+
+=== Overloaded
+
+If your Enc. exceeds *Strength × 3*, you are *Overloaded*:
+
+* You *cannot move to a different zone* at all.
+* At the GM's discretion, you cannot take Fast Actions for movement.
+* You must drop excess gear before you can move.
+
+> *Overloaded is not a formal Condition* — it is a hard stop. You simply cannot move until weight is reduced.
+
+=== Clearance Levels (CL) and Requisition
+
+Every item lists a *Clearance Level (CL)* requirement. Agents requisition gear during the *Equipping Phase* between Case Files through their Division's Stack contact. Your character's current CL determines which items you can request:
+
+[%header,cols="^1,3"]
+|===
+| CL | Who Can Access
+
+| 1 | All agents — basic field supplies.
+| 2 | Agents with at least one completed Case File, or Division default.
+| 3 | Agents with field commendations or specific Division clearance.
+| 4 | Senior agents and Warden rank — restricted hardware and experimental tech.
+|===
+
+Clearance is a *narrative resource* — the GM may escalate or revoke access based on the agent's standing with the Covenant (see Division Standing rules).
