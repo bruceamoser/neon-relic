@@ -1,3 +1,99 @@
+---
+
+== Dark Secrets
+
+A *Dark Secret* is a fact about your character's past — something true, hidden, and consequential. It is not a personality flaw or a quirk. It is a specific event, relationship, or truth that *someone wants to remain buried* and that *would alter the mission or your standing within the Covenant if it surfaced*.
+
+Dark Secrets are the game's primary engine for personal drama. They force characters into situations where professional loyalty and personal history collide. They answer the question: *why would a capable person still be carrying something this dangerous?*
+
+=== What Makes a Secret
+
+A valid Dark Secret must satisfy three conditions:
+
+. *It is specific.* Not "a troubled past" — that's backstory. A Dark Secret names something. "I burned down an evidence room in 1981" is a secret. "I was in the Army" is not.
+. *It has a living consequence.* Someone knows. Something remains. The cover-up cost something real — money, a relationship, a crime left unsolved. If no one could ever find out and nothing is at stake, it is not a Dark Secret.
+. *It can be activated by events.* The GM should be able to look at your secret and say: "If the investigation goes in this direction, that secret becomes relevant." It must have hooks.
+
+> *Design note:* Dark Secrets are a contract between player and GM. You write the secret; the GM decides when it surfaces. Be honest. A secret you'd prefer never came up is exactly the right kind.
+
+=== Choosing a Dark Secret
+
+At character creation, choose one Dark Secret from your Division's example list, or write your own in collaboration with the GM. Custom secrets must follow the three conditions above.
+
+You may *activate* your Dark Secret voluntarily during a session to claim the XP for debriefing question #3. This means you play the complication forward — you act on the secret, bring it into the scene, or allow someone dangerous to learn something they shouldn't. This does not require GM approval; simply roleplay it into the scene.
+
+If the GM activates your secret — an NPC mentions the evidence, a faction connection surfaces, a call comes in from someone who shouldn't know your name — you also receive the XP even if you work to suppress it.
+
+=== Mechanical Consequences of Exposure
+
+When a Dark Secret is fully exposed (other Covenant members now know, or a hostile faction now holds the information):
+
+. *Immediate effect:* The GM creates a faction consequence. A rival organization gains leverage. A Covenant superior calls a formal review. An NPC contact stops returning calls.
+. *XP reward:* +2 bonus XP in the debriefing session when exposure occurs (on top of the standard XP question). Exposure is dramatic; it earns recognition.
+. *Character retirement option:* If the exposure triggers a chain of events that would logically end the character's Covenant membership, the player may choose to retire the character (playing their exit scene) or the GM may force retirement as a campaign consequence — discussed at the table in advance.
+. *New secret opportunity:* After a full exposure, the character may acquire a new Dark Secret in the next session's character work. The old one is no longer hidden; it is now history. History has different weight.
+
+---
+
+=== Wayfinder Dark Secrets
+
+[%header,cols="2,5"]
+|===
+| Secret | Details
+
+| *The Fabricated Report* | You submitted a field analysis that was false. You buried evidence linking a recovered artifact to a civilian casualty event. The truth is in a file somewhere. The file has a reference number. You know it.
+| *The Missing Informant* | You cultivated a civilian informant for three years — a librarian with a genuine gift for pattern recognition. When the case closed, they disappeared. You did not report them missing. You don't know what happened, but you fear you do.
+| *Unauthorized Correspondence* | You have been communicating with a researcher outside the Covenant — someone who reached out through channels that shouldn't exist. Their information has been accurate. You have told them more than authorized. You don't know who they work for.
+| *The Siphoned Archive* | You copied a restricted section of the Verdant Codex and hid the transcription in a dead drop you maintain. Your reason was professional — there were patterns in the restricted material that connected to an active case. Your superior has since died. Nobody else knows about the copy or the dead drop.
+| *The Wrong Conclusion* | Your analysis on the Alderman Acquisition (Case File #7 — or whatever year's equivalent the GM sets) directly caused the team to misidentify and release a contained artifact. What they released hurt three people. The official record says the release was accidental. You know it followed your recommendation.
+|===
+
+---
+
+=== Recovery Dark Secrets
+
+[%header,cols="2,5"]
+|===
+| Secret | Details
+
+| *The One You Left* | You extracted a target from a hostile situation and got the artifact out clean. But you left someone behind who could have survived with ten more minutes. You made a judgment call. They did not make it out. They had a name. You remember it.
+| *The Side Deal* | You negotiated a private arrangement with a civilian who held an artifact: they handed it over, you gave them something in return. Not money — something Covenant. A name. A suppressed report. A real asset. The covenant doesn't know the trade terms.
+| *The Competing Employer* | Early in your career — before the Covenant — you did contract work for a private intelligence firm. You never fully severed the relationship. They knew about you when you were recruited. You have not told anyone. At least one person at the firm knows you are Covenant now.
+| *The Planted Evidence* | On a recovery that was politically complicated, you placed evidence at a scene to close a civilian case that was getting too close to the truth. An innocent person was charged. The case was closed. You closed it deliberately.
+| *The Kept Artifact* | You found a secondary artifact on a site — smaller, overlooked. You logged the primary. The secondary is in a fireproof box in your apartment. You tell yourself you're studying it. That has been true for sixteen months. You have not told anyone.
+|===
+
+---
+
+=== Keep Dark Secrets
+
+[%header,cols="2,5"]
+|===
+| Secret | Details
+
+| *The Unauthorized Transfer* | You moved an artifact between vault cells without clearance — you believed its listed containment protocol was incorrect. You were probably right. But the transfer created a window during which something influenced three junior staff members. The behavioural anomalies are in the health records. You signed the transfer log as routine maintenance.
+| *The Suppressed Incident* | Fourteen months ago, containment in your section failed briefly. Nothing escaped. But a visitor was present — a civilian consultant who should never have been in that corridor. They survived. You suppressed the incident log entry. The consultant now returns your calls with a very specific kind of urgency.
+| *The Loyalty Debt* | You owe a significant personal debt to someone who is a member of The Compact — the rival faction. The debt predates your Covenant service. You have not acted on it, but you have also not reported the contact. The debt is the kind that has a due date.
+| *The Copyist* | You maintain a personal archive — transcribed containment protocols, artifact property notes, Warden's Bracer readings — for a project you tell yourself is academic. The project is not approved. The archive exists on paper, in your handwriting, in your home. You know what happens if it's found.
+| *The Broken Warden* | A trainee under your supervision suffered a containment exposure event eighteen months ago. The official report says they resigned for personal reasons. They are alive, institutionalized under a false name you arranged, and the Covenant does not know they exist. You visit them every few weeks. They are getting worse.
+|===
+
+---
+
+=== Stack Dark Secrets
+
+[%header,cols="2,5"]
+|===
+| Secret | Details
+
+| *The Off-Books Supply Chain* | You have a procurement network that the Covenant doesn't know about. It operates faster and quieter than official channels. You trust it because you built it. Two of your suppliers have connections you would struggle to explain cleanly.
+| *The Substitution* | When a mission-critical component was unavailable, you substituted something that looked right, worked in the moment, and was not what you logged it as. Nothing went wrong. But the mission notes, the equipment manifest, and the Covenant's records all describe gear that was not actually used.
+| *The Blackmail File* | You stumbled onto something about a senior Covenant official during a logistics audit. You photographed the document. You have not used it, have not shown it to anyone, have no plan to. But you kept the photograph. It is in a very safe place.
+| *The Freelance Job* | Before — or possibly overlapping with — your Covenant service, you completed contract work for private clients that was unambiguously not sanctioned. The work involved resources and knowledge that came from your Covenant position. You were careful. You do not think you were seen.
+| *The Faulty Log* | The inventory manifest for the last six months has an inconsistency — a recurring item that is always logged as consumed but which you know was not always needed. Someone above you in the logistics chain is running a parallel set of numbers. You have not reported it because you're not certain you are not also implicated.
+|===
+
+---
 = Advancement and General Talents
 
 Experience Points (XP) are awarded at the end of each Case File through a structured debriefing. The GM asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
