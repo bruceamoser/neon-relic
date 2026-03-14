@@ -23,6 +23,7 @@ Conducted at the player's Headquarters:
 
 . *Research* — Players use base facilities to research the entity or artifact.
 . *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
+. *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See `docs/chapters/11-equipment.adoc` for the Resource Die system and per-category die sizes.
 
 == Phase 4: The Journey
 

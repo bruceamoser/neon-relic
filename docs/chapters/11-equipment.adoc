@@ -61,6 +61,72 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 ---
 
+== Consumables and Resource Dice
+
+Consumable supplies — ammunition, medical gear, batteries, and rations — are tracked with *Resource Dice*. A Resource Die is a single die (d4, d6, d8, d10, or d12) that represents how much of a supply remains. Larger dice mean more supply. When supply runs low, the die steps down.
+
+=== How Resource Dice Work
+
+*When to roll:* After each scene in which a consumable is meaningfully used — not for every bullet fired, but for every fight involving firearms, every Heal action using a medical kit, every device run on battery power for an extended period.
+
+*The roll:* Roll the current Resource Die:
+
+* *Result 1–2:* Supply is diminishing. *Step the die down one size* (d12→d10→d8→d6→d4).
+* *Result 3+:* Supply is adequate. No change.
+
+*At d4, a result of 1–2:* The supply is *depleted*. Remove the resource from the character's gear. The activity is completed (if mid-scene), but no more uses remain.
+
+[%header,cols="^1,3"]
+|===
+| Die | Supply Level
+
+| d12 | Fully stocked — fresh from Stack.
+| d10 | Well supplied — no concerns yet.
+| d8 | Adequate — a couple of heavy uses left.
+| d6 | Running low — ration carefully.
+| d4 | Critical — final uses. Do not count on it.
+| Depleted | Gone. Cannot be used.
+|===
+
+=== Restocking
+
+Supplies can be restocked:
+
+* During the *Equipping Phase* (Phase 3 of each Case File): any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
+* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The GM determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
+* HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
+
+=== Supply Categories
+
+[%header,cols="2,^1,^1,3"]
+|===
+| Supply | Starting Die | CL | Notes
+
+| *Pistol Ammunition* (.38, 9mm) | d10 | 2 | Roll after any firefight. Full auto or suppressive fire: roll twice.
+| *Shotgun Shells* | d8 | 3 | Roll after any firefight. Pump-action: each shot is a meaningful use.
+| *Rifle Rounds* (M16, .308) | d8 | 4 | Roll after any firefight. Full auto or suppressive fire: roll twice.
+| *Basic First Aid Kit* | d10 | 1 | Roll after each Heal roll that consumes supplies (bandages, antiseptic, splints). Does not roll for passive access checks.
+| *Trauma Surgical Kit* | d8 | 3 | Roll after each surgical Heal action (treating Critical Injuries, field surgery). High consumption.
+| *Battery Pack (general electronics)* | d8 | 1 | Roll after each scene in which an electronic device (flashlight, radio, recording device) is used continuously for more than 30 minutes. Devices operated briefly do not trigger a roll.
+| *Specialized Battery (thermal camera, IR devices)* | d6 | 3 | These batteries are expensive, proprietary, and hard to replace in the field. Roll after each scene of active use.
+| *Field Rations* | d8 | 1 | Only tracked on *extended journeys* (overnight+) or during prolonged operations without a hot meal. Roll once per day in the field. Not required for standard Case Files.
+| *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. GM may waive this for simple artifact containment.
+|===
+
+> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see `docs/chapters/03b-combat.adoc`). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
+
+=== Scarcity in the 1980s Field
+
+In the 1980s, certain supplies are significantly harder to replace in the field:
+
+* *Specialized batteries* (lithium, proprietary formats for early specialist equipment) may not be available at the nearest grocery store — a Tech roll (Difficulty 2) to substitute or a Contact call to track one down.
+* *Trauma medical supplies* require pharmacy or hospital access — risky in circumstances where the team is operating off the books.
+* *Rifle ammunition* requires a gun shop or military supply — not every rural area has one, and a city purchase is traceable.
+
+The GM should use scarcity as an atmospheric element, not a mechanical trap. Resource depletion should create pressure and decision points, not dead ends.
+
+---
+
 == Encumbrance
 
 Every agent can carry a limited amount of gear before it slows them down. Encumbrance (*Enc.*) is listed for each item in the equipment tables above.
