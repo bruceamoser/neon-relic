@@ -41,6 +41,8 @@ The twelve core skills are mapped to these four attributes, tailored to support 
 | Psychoanalyze | Reading psychological states, detecting deception through behavior, stabilizing traumatized witnesses.
 |===
 
+> *Division Key Skill:* During character creation, each Division designates one Key Skill with a starting cap of *4* instead of the standard maximum of 3. See the Character Creation chapter for details.
+
 ---
 
 == Skill Stunts

@@ -15,7 +15,9 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
 [cols="1,2"]
 |===
 | *Key Attributes* | Wits, Empathy
+| *Favorite Attribute* | Wits
 | *Key Skills* | Investigate, Lore, Tech, Psychoanalyze
+| *Key Skill (Cap 4 at creation)* | Lore
 | *Starting Clearance Level* | 3
 |===
 
@@ -92,7 +94,9 @@ Unlike other Divisions, the Recovery Division has *no internal departments or sp
 [cols="1,2"]
 |===
 | *Key Attributes* | Strength, Agility
+| *Favorite Attribute* | Agility
 | *Key Skills* | Force, Brawl, Firearms, Sneak
+| *Key Skill (Cap 4 at creation)* | Firearms
 | *Starting Clearance Level* | 2
 |===
 
@@ -146,7 +150,9 @@ Members of the Keep are entrusted with the stewardship of the Covenant's most se
 [cols="1,2"]
 |===
 | *Key Attributes* | Empathy, Wits
+| *Favorite Attribute* | Empathy
 | *Key Skills* | Lore, Command, Endure, Heal
+| *Key Skill (Cap 4 at creation)* | Command
 | *Starting Clearance Level* | 3
 |===
 
@@ -219,7 +225,9 @@ Stack agents design, modify, and distribute the tools used by Covenant agents â€
 [cols="1,2"]
 |===
 | *Key Attributes* | Wits, Agility
+| *Favorite Attribute* | Wits
 | *Key Skills* | Tech, Sleight of Hand, Investigate, Craft _(specialized sub-skill for building/repairing gear)_
+| *Key Skill (Cap 4 at creation)* | Tech
 | *Starting Clearance Level* | 4
 |===
 
