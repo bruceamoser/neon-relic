@@ -39,6 +39,12 @@ Each issue in this repo represents a discrete piece of design work, a design dec
 
 Work issues in tier order. Within a tier, pick the issue that unblocks the most other work (e.g., Character Creation unblocks Dark Secrets and Relationships).
 
+> **⚠️ AGENT INSTRUCTION — NO STOPPING BETWEEN ISSUES**
+> Do **NOT** pause between issues to ask "ready to proceed?", "shall I continue?", or "want me to start the next issue?".
+> Do **NOT** wait for approval after merging a PR before starting the next issue.
+> The correct behavior is: merge → assign next issue → branch → work → merge → repeat, with no interruptions.
+> The only valid reason to stop is if you hit a genuine blocker that requires a design decision from Bruce or Stu that cannot be inferred. In that case, leave a comment on the issue and move to the next one — do not stop the loop.
+
 ---
 
 ## Branch Naming Conventions
