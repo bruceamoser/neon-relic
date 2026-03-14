@@ -42,7 +42,7 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 | *Brass Knuckles* | +1 | 1 | Engaged | Concealable. | 1
 | *Switchblade* | +1 | 2 | Engaged | Concealable; puncture criticals. | 1
-| *Stun Gun / Taser* | +2 | Stun | Engaged | Target loses next Fast Action. | 2
+| *Stun Gun / Taser* | +2 | Stun | Engaged | Target gains the *Stunned* Condition (loses next Slow Action; see `docs/chapters/06-health-damage-armor.adoc`). | 2
 | *.38 Snub-nose Revolver* | +2 | 2 | Short | Reliable — ignore first 1 when pushing. | 2
 | *9mm Semi-Auto Pistol* | +2 | 2 | Short | High capacity; split successes to hit multiple targets. | 3
 | *Pump-Action Shotgun* | +3 | 3 | Short | +1 Damage at Engaged range. Loud and bulky. | 3

@@ -160,3 +160,130 @@ To survive lethal encounters, agents utilize armor (such as concealed Kevlar ves
 . When you suffer physical damage, roll a number of *Gear Dice* equal to the item's *Armor Rating*.
 . Every *6* rolled absorbs *1 point* of incoming damage before it reduces your Strength.
 . *Degradation:* If you roll any *1s* on an armor save, the Armor Rating is permanently reduced by 1 until repaired by Stack during downtime.
+
+---
+
+== Conditions
+
+*Conditions* are persistent states that impose ongoing mechanical penalties until resolved. They exist alongside Attribute damage — a character can be at full Strength and still be Bleeding, Shaken, or Haunted.
+
+=== Conditions Format
+
+Each Condition has: a *name*, the *penalty* it imposes, how it is *applied*, and how it is *removed*.
+
+=== Stacking Rules
+
+* A character may have *multiple Conditions simultaneously* unless the Conditions are marked as mutually exclusive.
+* The *same Condition cannot stack* with itself — applying it again refreshes duration if applicable but does not double the penalty.
+* *Broken* (Attribute at 0) is not a Condition — it is a state. However, certain Conditions may trigger when a character reaches or recovers from Broken.
+
+---
+
+=== Physical Conditions
+
+[%header,cols="1,2,3,2"]
+|===
+| Condition | Penalty | Applied By | Removed By
+
+| *Bleeding*
+| Lose 1 Strength at the start of each round (before acting). Cannot be healed above current Strength while active — First Aid must treat the bleed first.
+| Deep Laceration (Critical Injury table, result 31), Gutted (†46), Arterial Strike (†64), or any attack that deals 3+ Damage in a single hit at the GM's discretion.
+| Successful Heal roll (Difficulty 1) or First Aid Kit applied (Slow Action). Intensive care stops Bleeding in 1 action.
+
+| *Stunned*
+| Lose your next Slow Action (skip your attack, first aid, etc.). Fast Actions are still available.
+| Taser / Stun Gun hit. Blunt weapons with 2+ Stunt Points spent on Knock Prone. Specific Critical Injury results.
+| Automatic — fades after 1 round. No action required.
+
+| *Blinded*
+| −2 dice on all rolls requiring sight (Investigate, Firearms, all ranged attacks, Sneak while moving). Moving into an unknown zone costs an extra Fast Action.
+| Flashbang analog (see Equipment), specific artifact effects, Tar Shard (Bestiary), GM-called environmental darkness without a light source.
+| Passed time (2 rounds for flashbang blindness) or treat with Heal (Difficulty 1 for chemical irritant). Artifact blindness may require specific ritual.
+
+| *Deafened*
+| −1 die on Investigate. Cannot hear verbal communication — Manipulate and Command spoken rolls are impossible. May miss reactive cues (ambush, incoming threat).
+| Gunfire in enclosed space (GM discretion after extended firefight), specific artifact resonance pulse, explosive detonation.
+| Automatic after scene ends, or rest (next scene at full function).
+
+| *Burning*
+| Lose 1 Strength and 1 Agility at the start of each round. All rolls lose 1 die (pain and panic).
+| Open fire, incendiary artifact effect, specific environmental hazard.
+| Spend Slow Action to extinguish (roll and drop, smother with coat, etc.) — Endure roll (Difficulty 1). Water or fire suppression ends it instantly.
+
+| *Exhausted*
+| −1 die on all Strength and Agility rolls. Cannot push Strength or Agility rolls.
+| Skipping a full night's sleep. Sustained physical exertion (GM discretion after multi-hour chases or labor). Being Broken from Agility damage and recovering without sleep.
+| Full rest (8 hours). Characters may not have more than one Exhausted Condition — a second application does not stack but refreshes.
+
+|===
+
+---
+
+=== Psychological Conditions
+
+[%header,cols="1,2,3,2"]
+|===
+| Condition | Penalty | Applied By | Removed By
+
+| *Shaken*
+| −1 die on all Wits and Empathy rolls. Cannot push Wits or Empathy rolls.
+| Failed Fear check. Specific Critical Injury table results (21, 24). Psychoanalyze failure on a contaminated NPC.
+| Anchor scene (roleplay connection with a Relationship NPC; see Issue #17). Rest (one full scene of safety). Successful Psychoanalyze roll by an ally (Difficulty = Fear Rating of the trigger; minimum Difficulty 1).
+
+| *Haunted*
+| Gain 1 Resonance at the start of each scene (before any rolls). Character hears, sees, or senses the source of the Haunting even when alone.
+| Specific supernatural encounters with unresolved resonance. Artifact Imprint (Critical Injury, result 53). Uncontained artifact proximity during sleep (GM discretion).
+| Containment Ritual performed by a Wayfinder (Issue #15). Recovery in a Covenant-sanctioned safe house for the full downtime phase. Specific Psychoanalyze campaign (3 downtime phases, Difficulty 3) suppresses but does not eliminate — ritual is required for full removal.
+
+| *Paranoid*
+| −1 die on Empathy rolls. Must succeed on a Wits roll (Difficulty 1) before trusting information from any new source (including allies) during high-stress scenes. If roll fails: the character acts as if the information is false or a trap.
+| Paranoid Ideation (Critical Injury, result 34). Prolonged Haunted Condition without relief. Specific artifact effects that compromise judgment.
+| Psychoanalyze campaign (2 downtime phases). Cannot be removed in the field — requires structured therapeutic time.
+
+| *Dissociated*
+| Character is present but cognitively disengaged. Takes no spontaneous actions — must be prompted by an ally (costs the ally their Free Action to direct, or Fast Action if a roll is required to break through). On their turn, the GM may narrate simple self-preservation.
+| Dissociation (Critical Injury, result 14). Fugue Panic result (d6 panic table, result 6). Extreme occult revelation without preparation.
+| Ally uses Psychoanalyze (Difficulty 1, Slow Action) to restore presence. Otherwise fades at end of scene.
+
+| *Compromised*
+| The character's Corruption threshold is treated as 2 lower than current for this scene only. Corruption checks during this scene are made at +1 die for the GM (more likely to accumulate).
+| Extended artifact contact without containment protocol. Veil Burn (Critical Injury, result 54). Resonance Tap (Shard Construct, Bestiary). Specific rival faction abilities.
+| Scene ends. The threshold reduction resets automatically. The underlying Corruption accumulation remains.
+
+|===
+
+---
+
+=== Conditions and Critical Injuries
+
+Some Critical Injury results directly apply Conditions:
+
+[%header,cols="1,2"]
+|===
+| Critical Injury | Condition Applied
+
+| 21 — Concussion | Shaken (until treated)
+| 24 — Ringing Ears | Deafened (duration: rest of session)
+| 31 — Deep Laceration | Bleeding (until treated)
+| 35 — Punctured Lung | Exhausted (persistent until treated)
+| 46 — Gutted † | Bleeding (severe variant: 2 Strength/round)
+| 53 — Artifact Imprint | Haunted
+| 54 — Veil Burn | Haunted (cannot be removed by ritual alone — see Veil Burn rules)
+| 64 — Arterial Strike † | Bleeding (severe: 2/round, death in 3 rounds)
+|===
+
+> *Condition versus Injury:* A Condition tracks an *active, ongoing state*. A Critical Injury is the *event that may have caused a Condition*. Healing the Condition does not retroactively heal the injury or remove permanent stat reductions.
+
+---
+
+=== Removing Conditions in the Field
+
+Most physical Conditions can be addressed in the field:
+
+* *First Aid Kit (CL 2):* Removes Bleeding. +1 die on Heal rolls to treat physical Conditions.
+* *Stimulant (CL 2):* Removes Exhausted for one scene. Reapplies with interest — Agility reduced by 1 for the following scene.
+* *Smelling Salts (CL 1):* Removes Stunned immediately. Also ends Dissociated if not caused by supernatural source.
+
+Psychological Conditions generally require time, specific relationships, or structured Psychoanalyze work. They cannot be suppressed by equipment alone.
+
+See `docs/chapters/09-base-management.adoc` _(Issue #12)_ for Covenant medical facility and downtime Condition treatment.
