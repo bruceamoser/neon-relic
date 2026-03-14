@@ -183,3 +183,146 @@ Every item lists a *Clearance Level (CL)* requirement. Agents requisition gear d
 |===
 
 Clearance is a *narrative resource* — the GM may escalate or revoke access based on the agent's standing with the Covenant (see Division Standing rules).
+
+---
+
+== Vehicle Rules
+
+Vehicles are field assets — tools to get there, get away, and occasionally get between a colleague and a bullet. They are not invulnerable, and the 1980s makes every breakdown feel earned.
+
+=== Vehicle Stat Block Format
+
+Each vehicle has five stats:
+
+* *Speed:* A relative rating — Slow, Medium, Fast, or Very Fast. Sets the Difficulty modifier on chase pursuit rolls (see Chase Rules below).
+* *Armor Rating (AR):* Damage reduction against attacks targeting the vehicle directly (ramming, gunfire). Characters inside an armored vehicle use the vehicle's AR in place of worn armor while they remain inside.
+* *Reliability:* Starting Wear track (Max 5). Each instance of vehicle damage or a pushed vehicle roll adds 1 Wear. At 3 Wear: −1 die on all vehicle rolls. At 5 Wear: the vehicle stops.
+* *Handling:* A bonus or penalty applied to all pursuit and evasion rolls (Wits or Agility depending on maneuver type). Represents how nimble the vehicle is.
+* *Capacity:* Number of occupants (passengers + driver) and approximate cargo Enc.
+
+=== 1980s Vehicle Roster
+
+[%header,cols="2,^1,^1,^1,^1,2"]
+|===
+| Vehicle | Speed | AR | Reliability | Handling | Capacity & Notes
+
+| *Ford Crown Victoria (Government Sedan)*
+| Medium | 1 | 5 | +0 | 4 passengers, 25 Enc.
+Inconspicuous government plate — blends at police scenes. Standard Covenant pool car.
+
+| *Chevrolet Caprice Classic (Full-Size Sedan)*
+| Medium | 1 | 5 | +0 | 4 passengers, 25 Enc.
+Common, forgettable. The correct answer to most field transport needs.
+
+| *Dodge Van / Econoline (Panel Van)*
+| Medium | 1 | 4 | −1 | 6 passengers, 50 Enc.
+Roomy but noticeable. Residential areas trigger 1 Investigate check from neighbors. Good for equipment transport.
+
+| *Ford F-150 (Pickup Truck)*
+| Medium | 0 | 5 | +0 | 2 cab + bed (40 Enc.).
+Rural credibility. Bed cargo visible. Excellent in unpaved terrain — no Difficulty penalty off-road.
+
+| *Ducati 900 SS Motorcycle (or equivalent)*
+| Fast | 0 | 3 | +2 | 1 rider, 10 Enc.
+Best pursuit vehicle in urban terrain. −2 dice in rain or snow. Rider is exposed — no AR benefit from the vehicle.
+
+| *Chevrolet Camaro Z28 (Muscle Car)*
+| Fast | 0 | 4 | +1 | 2 passengers, 10 Enc.
+Fast in a straight line. −1 die on tight-turn pursuit rolls. Loud and memorable — witnesses notice it.
+
+| *UH-1 Iroquois Helicopter ("Huey")*
+| Very Fast | 2 | 3 | −1 | 8 passengers, 30 Enc.
+Conspicuous, loud, and expensive. Requires a Contact or CL 4 requisition. Cannot land on most urban rooftops safely.
+
+| *Cessna 172 (Light Prop Plane)*
+| Very Fast | 0 | 4 | −1 | 3 passengers (cramped), 15 Enc.
+For long-distance intercontinental rapid response only. Requires a licensed pilot (NPC contact or PC with Tech 3+).
+
+| *Zodiac Inflatable Boat (Motorized)*
+| Medium | 0 | 4 | +0 | 4 passengers, 40 Enc.
+Coastal/river access. Cannot be followed by road vehicles. Night operations: −1 die on all navigation rolls without instruments.
+|===
+
+=== Vehicle Conflict — Actions and Chase Rules
+
+Vehicle conflict follows the same chase structure as foot chases (`docs/chapters/03b-combat.adoc`), with vehicle-specific modifications.
+
+==== Chase Structure
+
+A vehicle chase uses a *Contact Track* — a 5-step range:
+
+[%header,cols="^1,3"]
+|===
+| Position | State
+
+| 1 | *Rammed / Contact* — vehicles are adjacent; ramming and boarding are possible.
+| 2 | *Following* — pursuing vehicle is directly behind; gunfire from rear positions is possible.
+| 3 | *Closing* — pursuit is active; the gap is narrowing or holding.
+| 4 | *Widening* — the pursued vehicle has gained distance; gunfire at Long range only.
+| 5 | *Escaped* — the pursuer has lost visual contact. Chase ends.
+|===
+
+The *pursued vehicle* wins by moving to position 5.
+The *pursuing vehicle* wins by moving to or holding position 1–2.
+
+==== Chase Roll
+
+Each round of a chase, both drivers make a roll:
+
+* *Driving (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers.
+* *Evasion (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward.
+
+Both sides roll simultaneously. The side with more successes moves the Contact Track one position in their favor. Ties: no position change.
+
+*Speed modifiers:*
+
+* Each speed tier above the opponent's: +1 die on the chase roll.
+* Each speed tier below the opponent's: −1 die on the chase roll.
+* Handling bonus/penalty applies directly to the roll.
+
+*Pushing a chase roll:* +1 Resonance as normal. The vehicle also takes 1 Wear immediately (the driver is wringing everything out of it).
+
+==== Vehicle Maneuvers
+
+Declare before rolling. No cost unless noted.
+
+[%header,cols="1,2,3"]
+|===
+| Maneuver | Skill | Effect
+
+| *Ram* | Force (WIT) | Only available at Contact. Roll Force opposed by opponent's Driving. On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
+| *PIT Maneuver* | Driving (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
+| *Gunfire from Vehicle* | Firearms (standard roll) | Available at Following or closer. −1 die on all shooting rolls from a moving vehicle unless the shooter has the *Stable Platform* talent. A passenger shooting from a moving car is at −1 die; a driver shooting is at −2 dice.
+| *Off-Road Break* | AGI Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
+| *Blending In* | WIT (Sneak) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
+|===
+
+=== Vehicle Damage
+
+When a vehicle takes damage (from ramming, gunfire, or environmental hazard):
+
+. Roll damage as normal. Subtract the vehicle's AR.
+. Remaining damage is applied as *Wear* (not as Strength damage to occupants, unless the damage is extraordinary).
+. At 5 Wear: vehicle stops. Characters inside may take 1 Agility damage from the sudden stop (Endure Difficulty 1 to avoid).
+. *Structural damage:* At GM discretion, a catastrophic hit (4+ damage after AR) may cause a specific system failure: blown tire (−2 die Handling), cracked windscreen (blindness penalties for driver), fuel leak (vehicle stops at end of scene unless repaired).
+
+*Repairing Wear:*
+
+* Tech roll (Difficulty 2) + 30 minutes + access to tools: clear 1 Wear.
+* Full garage repairs (overnight, proper tools): restore to starting Reliability.
+* Field repairs without tools: Tech Difficulty 4, clears 1 Wear, cannot reduce below 3.
+
+=== Vehicle Breakdown
+
+When Reliability reaches 5 Wear, the vehicle stops. Roll d6:
+
+[%header,cols="^1,4"]
+|===
+| Roll | Breakdown Type
+
+| 1–2 | *Total Failure.* Engine seized. Not repairable in the field. Needs a tow and a full day of garage work (restore to 2 Wear, 4 hours minimum).
+| 3–4 | *Serious Fault.* Driveable at Slow speed only. Tech (Difficulty 3) to clear in field; otherwise full garage repair.
+| 5–6 | *Inconvenient Failure.* Battery, tire, or small component. Tech (Difficulty 1) to address in 15 minutes. 1 Wear remains after fix.
+|===
+
+A breakdown during an active chase is resolved immediately: the broken-down vehicle is treated as *Contact* on the next round (the pursuer closes automatically).
