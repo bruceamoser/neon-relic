@@ -102,11 +102,14 @@ Distribute *10 points* across the twelve core skills. No single skill may exceed
 
 ---
 
-== Step 5: Choose Your Division Talent
+== Step 5: Choose Your Starting Talents
 
-Select *one* talent from your Division's talent list (see `docs/chapters/09-divisions.adoc`). You may only choose from your own Division's list at creation.
+At creation, every agent selects *two* talents:
 
-Most Division Talents cost *1 Resonance* to activate. One talent per list is a *Healing* talent, usable freely but once per session.
+* *One Division Talent* chosen from your Division's talent list (see the Divisions chapter). You may only choose from your own Division's list at creation.
+* *One General Talent* chosen from the General Talents list (see the Advancement chapter). These are available to every agent regardless of Division.
+
+Most Division Talents cost *1 Resonance* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Resonance cost unless noted.
 
 > *Talent Advancement:* Additional talents can be purchased during play using experience points. See the Advancement chapter.
 
@@ -260,6 +263,7 @@ After completing all steps, your sheet should record:
 | *Attributes (STR / AGI / WIT / EMP)* | 14 points distributed, 2–5 each
 | *Skills (12)* | 10 points distributed, 0–3 each
 | *Division Talent* | One chosen from Division list
+| *General Talent* | One chosen from General Talents list (Advancement chapter)
 | *Division Item* | Automatic (or Stack bonus)
 | *Starting Gear* | Division kit ± optional items
 | *Resonance* | Starts at 0
@@ -310,9 +314,10 @@ The following example demonstrates a complete character build for a Recovery age
 
 _Remaining 6 skills are at 0._
 
-=== Step 5: Talent
+=== Step 5: Starting Talents
 
-Petra chooses *Shadow Walker* (1 Resonance): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
+* *Division Talent:* Petra chooses *Shadow Walker* (1 Resonance): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
+* *General Talent:* Petra takes *Flee the Scene* — gain +2 bonus dice to Agility when rolling explicitly to escape a conflict. A field operative who knows when to run lives longer than one who doesn't.
 
 === Step 6: Starting Statistics
 
