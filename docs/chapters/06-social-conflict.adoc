@@ -132,7 +132,7 @@ Social encounters with entities, artifacts, or cult members may cross into super
 * *Direct supernatural revelation during a Manipulate scene* (the NPC says something that cannot be explained naturally): Fear check, Fear Rating 1 or 2.
 * *Psychoanalyze roll on a contaminated NPC* (someone who has long-term artifact exposure): Roll Psychoanalyze as normal. On any failure, the agent picks up a psychic echo — immediate Fear check, Fear Rating 2. On success, the agent gets the information but gains +1 Corruption.
 
-See `docs/chapters/07-corruption.adoc` for full Fear check rules.
+See `docs/chapters/08-corruption-fear-healing.adoc` for full Fear check rules.
 
 ---
 
@@ -168,7 +168,7 @@ Another Manipulate roll at Difficulty 2 (they're now at 3). Marcus rolls: 6, 5, 
 
 == Cross-References
 
-* Skills in context: `docs/chapters/05-attributes-skills.adoc`
-* Fear checks during social scenes: `docs/chapters/07-corruption.adoc`
-* Using Manipulate stunts: `docs/chapters/05-attributes-skills.adoc` (Skill Stunts)
-* NPC Faction relationships: `docs/chapters/15-rival-factions.adoc`
+* Skills in context: `docs/chapters/04-attributes-skills.adoc`
+* Fear checks during social scenes: `docs/chapters/08-corruption-fear-healing.adoc`
+* Using Manipulate stunts: `docs/chapters/04-attributes-skills.adoc` (Skill Stunts)
+* NPC Faction relationships: `docs/chapters/17-rival-factions.adoc`
