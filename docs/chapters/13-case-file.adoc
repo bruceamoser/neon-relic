@@ -36,6 +36,8 @@ The team arrives at the macro-location (a sprawling abandoned shopping mall, a r
 
 The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the GM initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
 
+See *Countdown Mechanics* below for the full rules.
+
 == Phase 7: The Confrontation
 
 The climax. Players must synthesize gathered clues to:
@@ -53,3 +55,105 @@ Survivors return to base. During this phase:
 * Characters attempt to clear accumulated Resonance
 * Check if temporary psychological traumas become permanent conditions
 * Initiate new Headquarters upgrades
+
+---
+
+== Countdown Mechanics
+
+The Countdown is a *hidden tension clock* that tracks how far a threat has progressed during investigation. Players know the clock exists — the Covenant has briefed them that time is limited — but they do not know exactly how many steps remain.
+
+=== Clock Structure
+
+Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are GM-defined per case.
+
+[%header,cols="^1,1,3,3"]
+|===
+| Stage | State | What It Means | Typical Narrative Effect
+
+| 1 | *Dormant* | The threat is latent. The artifact is present but not yet destabilizing. | Investigation can proceed without urgency. NPCs may be anxious but not in immediate danger.
+| 2 | *Stirring* | The artifact is beginning to resonate. Minor anomalies are visible to those who know what to look for. | Environmental strangeness. One NPC has been affected. The rival faction has been alerted.
+| 3 | *Active* | The artifact is unstable. An entity manifests or the situation escalates visibly. | Direct danger begins. Civilian NPCs may be harmed. The rival faction is moving.
+| 4 | *Escalating* | The threat is pursuing the agents or actively threatening HQ assets. Containment window is closing. | Enemy reinforcements arrive. Key locations become inaccessible. Agents gain 1 Resonance (environmental saturation — this is not optional).
+| 5 | *Crisis* | No more investigation time. The threat forces confrontation now. | Forced confrontation scene. If the agents do not act, see *Clock Expiry* below.
+|===
+
+=== Advancing the Clock
+
+The GM advances the clock *one stage* when one of the following triggers occurs:
+
+[%header,cols="1,3"]
+|===
+| Trigger Type | Example
+
+| *Time-based* | A full in-game day passes (or a shorter GM-defined interval for fast-burning cases). Time passage is the default trigger that runs in the background of all investigation.
+| *Loud action* | The team makes significant noise — fires weapons in a public-ish area, confronts the rival faction directly, causes a scene that draws attention to their presence.
+| *Failed roll at a key site* | A Pushed failure on a critical investigation or containment roll has consequences beyond the immediate scene. The clock advances as a result.
+| *Missed window* | The GM had a grace window where the clock held (players were close to a resolution). The window passed.
+| *Artifact activation* | A PC or NPC directly interacts with the artifact in an uncontrolled way. This advances the clock by 2 if the activation was accidental.
+|===
+
+=== Slowing and Pausing the Clock
+
+The clock can be *slowed* (the next tick is delayed) or *held* (one stage does not advance despite trigger) by specific agent actions:
+
+[%header,cols="2,3"]
+|===
+| Action | Effect
+
+| *Successful Lore roll (Difficulty 3)* — agents identify the specific activation condition and prevent it from occurring | Clock held for one trigger cycle (one "free" trigger before it advances).
+| *Secure a secondary resonance source* — removing a contributing artifact, sealing a ritual circle, or disrupting the rival faction's preparations | Clock advance delayed by one full phase (in-game).
+| *Full containment of the artifact* | Clock stops advancing. The immediate threat is on hold until the artifact is removed from containment.
+|===
+
+=== Reversing the Clock
+
+The clock *cannot typically be reversed* — once a stage is reached, its effects persist. However:
+
+* A successful *Wayfinder Division ritual* can reduce Stage 4 back to Stage 3 (the escalating resonance field is pushed back).
+* Eliminating the rival faction's active presence at a location may reduce Stage 3 back to Stage 2 for that location only (the faction was accelerating the threat independently).
+
+These require significant resources, time, and usually a Lore roll at Difficulty 3 or 4. They are not guaranteed.
+
+=== Clock Expiry (Crisis Without Resolution)
+
+If the *Crisis* stage is reached without the agents in position for the confrontation, the case does not end — it gets worse:
+
+* One named NPC connected to the case is immediately killed, captured, or permanently Broken.
+* The artifact performs its *worst-case activation* (GM reveals what the artifact's threshold effect actually is — it happens now).
+* The rival faction secures a strategic advantage they did not have before.
+
+The agents can still succeed, but the cost has increased permanently. *Clock expiry is not a game over* — it is a consequence.
+
+=== Calibration Guide
+
+[%header,cols="1,2,3"]
+|===
+| Session Length | Recommended Stages | Advance Rate
+
+| *One-shot (3–4 hours)* | 3 stages | 1 advance per major scene (roughly every 45–60 minutes of play)
+| *Standard session (4–5 hours)* | 5 stages | 1 advance per 2 investigation sites visited, plus time-based advances
+| *Multi-session arc* | 5–6 stages | 1 advance per session, plus triggered advances
+|===
+
+Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style — investigators who want to solve everything cleanly need a slower clock; players who enjoy pressure need it fast.
+
+=== Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
+
+*Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. The Compact has a team on the way.
+
+[%header,cols="^1,1,2,3"]
+|===
+| Stage | State | Trigger | Effect
+
+| 1 | Dormant | Session open; clocks begins ticking | The journalist is alive and unaware. The Compact team is 2 hours out. The Mirror is in the penthouse.
+| 2 | Stirring | Team spends more than 1 hour investigating without reaching the penthouse, OR fires a weapon anywhere in the hotel | The Mirror activates. An Echoing Remnant manifests in the corridor between the team and the penthouse. The journalist has seen it and is hiding. The Compact team is now 30 minutes out.
+| 3 | Crisis | Team has not secured the Mirror and Remnant is still active when the Compact team arrives | The Compact team enters the building. The journalist's camera captures the Remnant — the team must now deal with both the Compact operatives AND the Remnant AND contain the journalist. The Mirror's resonance is saturating the top two floors. All agents in the top two floors gain 1 Resonance per scene.
+|===
+
+---
+
+== Cross-References
+
+* GM guidance for building and calibrating Countdown clocks: `docs/chapters/18-gm-guidance.adoc`
+* Resonance gain mechanics: `docs/chapters/07-resonance-corruption.adoc`
+* Wayfinder Division rituals: `docs/chapters/15-rival-factions.adoc` (and Issue #15)
