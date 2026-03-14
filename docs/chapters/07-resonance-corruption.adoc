@@ -70,7 +70,7 @@ The GM calls for a Fear check when a character directly confronts a source of ge
 | *Encountering a supernatural entity* | Seeing a bound entity, a possessed human, or a manifestation for the first time this scene
 | *Artifact activation failure* | An artifact the character is handling detonates, tears reality, or emits a vision that cannot be explained
 | *Witnessing violent supernatural death* | An ally or bystander is killed or consumed by occult means in front of the character
-| *Occult revelation* | Irrefutable proof of something the human mind cannot accommodate — a genuine miracle, a impossible geometry, a speaking dead
+| *Occult revelation* | Irrefutable proof of something the human mind cannot accommodate — a genuine miracle, an impossible geometry, a speaking dead
 | *Sustained entity presence* | For each *additional round* a character remains within Engaged range of an active, hostile entity (after the initial check)
 |===
 
@@ -78,16 +78,47 @@ The GM calls for a Fear check when a character directly confronts a source of ge
 
 === The Fear Check Procedure
 
-. *The GM states the entity's Fear Rating* (a number from 1 to 5) or notes that the event is a flat Fear 2 or Fear 3 trigger (see Fear Rating table below).
-. *The character rolls Wits dice* equal to their current *Wits attribute* (no skill modifier — Fear is instinctual, not trained).
-. *Count 1s:* For every die that shows a *1*, the character takes *1 point of Wits damage*. If *any* 1s were rolled, the character also gains *+1 Corruption* (only one, regardless of how many 1s appeared).
-. *Count the Fear Rating as a threshold:* If the total number of non-6 dice equals or exceeds the Fear Rating, the character is *Shaken* (see below) even if they took no Wits damage.
+. The GM calls for a Fear check when a character directly confronts supernatural horror.
+. Roll dice equal to your current *Wits* attribute (no skill modifier — Fear is instinctual, not trained).
+. *One or more 6s = success.* You hold it together.
+. *Any 1s rolled (one or more) = +1 Corruption.* Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
+. *No 6s = failure.* Gain +1 Corruption AND roll d6 on the *Panic Table*.
+
+Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying harder" against the absolute horror of the unnatural.
+
+==== Four Outcomes
+
+[%header,cols="1,1,3"]
+|===
+| Rolled 6s? | Rolled 1s? | Result
+
+| Yes | No | Clean pass. No consequence.
+| Yes | Yes | Pass, but +1 Corruption. The exposure marks you.
+| No | No | Fail. +1 Corruption + Panic Table.
+| No | Yes | Worst case. +1 Corruption (from 1s) + 1 Corruption (from failure) = *+2 Corruption* + Panic Table.
+|===
 
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 
-> *Why 1s?* In the YZE framework, 1s on Attribute dice represent self-harm — the cost of pushing your own limits. On a Fear check, 1s represent the moment the mind cracks trying to process the unprocessable.
+=== The Panic Table
+
+On a failed Fear check (no 6s), roll *d6*:
+
+[%header,cols="^1,2,4"]
+|===
+| Roll | Response | What Happens
+
+| *1* | *Fight* | Attack nearest creature (ally or foe) with bare hands this round. Cannot use weapons.
+| *2* | *Flight* | Run at full speed away from the source. Drop held items.
+| *3* | *Freeze* | Paralyzed. Cannot move, speak, or act. Allies can move you (Slow Action).
+| *4* | *Denial* | Treat the supernatural as mundane for rest of scene. Cannot acknowledge entity as real.
+| *5* | *Compulsion* | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2).
+| *6* | *Fugue* | GM takes character sheet. GM narrates character for rest of scene. Player regains control next scene.
+|===
 
 === Fear Ratings
+
+Fear Rating is a *narrative tool* for the GM — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The GM uses it to decide *when* to call for a check and how to frame the fiction.
 
 [%header,cols="1,1,4"]
 |===
@@ -101,78 +132,5 @@ The GM calls for a Fear check when a character directly confronts a source of ge
 |===
 
 Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (`docs/chapters/17-bestiary.adoc`).
-
-=== Shaken
-
-A character who rolls a Fear check and has *more non-6 results than successes* (i.e., the roll mostly failed) is *Shaken* for the remainder of the scene, even if they took no Wits damage.
-
-*Shaken effects:*
-
-* *−1 die* on all Wits and Empathy rolls for the rest of the scene.
-* Cannot voluntarily move toward the source of Fear (they can hold position or retreat).
-* Can be *snapped out of it* by an ally spending a slow action and succeeding on a Psychoanalyze roll (difficulty: Fear Rating of the trigger).
-
-Shaken is not a condition that persists between scenes — it represents immediate shock, not lasting damage. Lasting damage is Wits loss and Corruption gain.
-
-=== Corruption Generation from Fear
-
-Each Fear check that includes *any dice showing 1* generates *+1 Corruption* for the character. This is in addition to Wits damage from those same 1s, and in addition to any Corruption gained from pushing rolls in the same scene.
-
-> *Design Note:* This is the Corruption-Fear link that makes supernatural encounters mechanically distinct from physical combat. A fistfight reduces Strength. A Fear check reduces Wits *and* raises Corruption — which narrows the gap to the Corruption threshold. The more frightened you are, the closer to the edge you slide. This is the intended spiral.
-
-=== Pushing a Fear Check
-
-A character *may not push a Fear check.* Fear is involuntary. There is no "trying harder" against the absolute horror of the unnatural. The only mitigation available is mechanical resistance (see below).
-
-=== Resisting and Reducing Fear
-
-Several mechanics interact with Fear:
-
-[%header,cols="2,3"]
-|===
-| Mechanic | Effect on Fear
-
-| *Academic Grounding* (Wayfinder Talent) | After 1 hour of research on a specific entity type, reduce its effective Fear Rating by 1 (min 1) for the rest of the session for the Wayfinder only.
-| *The Confessor* (Keep Talent) | After using this talent to heal Corruption, the next Fear check this session is made with *+2 bonus dice*.
-| *Anchor (Memento)* | Using an Anchor during downtime heals Corruption directly — lowering your total before the next encounter.
-| *Empathy attribute* | Empathy sets the Max Corruption Threshold — a high-Empathy character can sustain more Corruption before the threshold is reached.
-| *Familiarity* | If a character has *previously survived a Fear check* against the same entity type without breaking, future checks against the same type are made with *+1 bonus die*. Familiarity is per entity type, not per individual entity.
-|===
-
-=== The Panic Table (Wits Broken)
-
-If a Fear check reduces a character's Wits to *0*, they are *Broken* — and the mind's last-resort survival responses take over. Roll *1d6* on the following table. The GM describes what the character does for the remainder of the current round. The player regains narrative control at the start of the next round, but the character is Shaken and cannot act on their first available action.
-
-[%header,cols="^1,2,4"]
-|===
-| Roll | Response | What Happens
-
-| *1* | *Fight* | The character attacks the nearest living creature — ally or enemy, whichever is closest — with their bare hands. They cannot use weapons or gear this round.
-| *2* | *Flight* | The character runs at full speed in the direction *away from the source of Fear* until they are out of sight of it or hit an obstacle. They drop whatever they are holding.
-| *3* | *Freeze* | The character is utterly paralyzed. They cannot move, speak, or take any action. They may be moved by allies (costs a slow action). Hostile entities may act against them freely.
-| *4* | *Denial* | The character's mind refuses to process the supernatural event. They treat it as mundane for the rest of the scene — narrating it in completely ordinary terms to other characters ("That's obviously just a guy in a costume. The blood is stage blood."). They cannot take any action that acknowledges the entity as real.
-| *5* | *Compulsion* | The character becomes locked in a repetitive behavior — counting ceiling tiles, repeating a phrase, sorting objects, reloading a weapon over and over. They can move (slowly) but cannot take any meaningful action until an ally snaps them out with a Psychoanalyze roll (Difficulty 2).
-| *6* | *Fugue* | The player hands the GM their character sheet. The GM narrates what the character does for the rest of the scene. This may include wandering, speaking to things that aren't there, or following the entity. The player regains control at the *start of the next scene*, not the next round.
-|===
-
-> *Recovering from Broken (Wits 0):* After the scene ends, the character's Wits return to 1 automatically — they are no longer Broken but they are severely shaken. Full Wits recovery follows normal healing rules. A character Broken by Fear also gains *+1 Corruption* immediately when the scene ends.
-
-=== Fear vs. Standard Wits Damage
-
-A direct psychic assault from an entity, an artifact feedback, or a targeted supernatural ability may also reduce Wits — but that is *not a Fear check*. The distinction matters:
-
-[%header,cols="2,2,2"]
-|===
-| | *Fear Check* | *Direct Wits Damage*
-
-| *Trigger* | Sensory confrontation with supernatural horror | Targeted attack or artifact effect
-| *Mechanism* | Roll Wits dice; 1s deal damage + Corruption | Damage is applied directly (no roll, or attacker rolls)
-| *Corruption generated?* | *Yes* — +1 if any 1s are rolled | *No* — unless the character chooses to push a resistance roll
-| *Shaken?* | Possibly (roll-dependent) | No (unless effect says so)
-| *Pushable?* | *No* | Yes (standard push rules)
-| *Panic table?* | Yes, if Wits reaches 0 | Yes, if Wits reaches 0 (same table)
-|===
-
-> The key difference is *Corruption generation*. A possessed agent using a mental attack is doing tactical damage. Standing in the presence of something that should not exist and having your mind try to process it is existentially corrosive in a way combat is not.
 
 

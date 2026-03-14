@@ -139,8 +139,8 @@ Skills:
 
 Special Abilities:
   Suppressive Discipline — MJ-12 agents do not panic under mundane violence.
-  Supernatural Fear checks are still required
-  but at −1 Fear Rating (training).
+  Supernatural Fear checks are still required, but they roll with *+1 bonus die*
+  (training).
 
   Tactical Communication — If two or more MJ-12 agents are present, they act
   simultaneously on the same Initiative card. One card covers the team.
