@@ -180,7 +180,7 @@ Roll when Broken by *Strength or Agility* damage.
 | 62 | *Leg Blown Off* † | Death check. Surviving: movement reduced to 1 zone per Slow Action, permanently. | Cannot regrow. Prosthetic possible (Issue #21, CL 5).
 | 63 | *Multiple Wounds* † | Death check. Surviving: roll twice more on this table (ignoring further †). | As per rolled injuries.
 | 64 | *Arterial Strike* † | Bleeding 2 Strength per round. Death check must be made within 2 rounds or automatic death. | Tourniquet (Fast Action, CL 1) buys 1 extra round; Heal (Difficulty 4) fully stabilizes.
-| 65 | *Head Shot* † | Death check. Surviving: permanently remove 1 from Wits AND Empathy. Insight: *+2 dice on Psychoanalyze forever* (near-death clarity). | Cannot be healed. Migraine condition (persistent).
+| 65 | *Head Shot* † | Death check. Surviving: permanently remove 1 from Wits AND Empathy. Insight: *+2 dice on Psychoanalyze forever* (near-death clarity). | Cannot be healed. Persistent migraines (permanent).
 | 66 | *DOA* † | Automatic death check (no bonus). Surviving: character is clinically dead for 1d6 rounds before CPR-equivalent revives them. All Attributes return to 1. Permanent: +3 Corruption, Empathy −1. | See Corruption chapter.
 |===
 
