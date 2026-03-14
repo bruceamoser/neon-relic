@@ -6,7 +6,7 @@
 
 ## Designers
 
-- **Bruce** — Lead designer and system architect
+- **Bruce** — Co-designer and system architect
 - **Stu** — Co-designer, worldbuilding and lore
 
 ## Concept
