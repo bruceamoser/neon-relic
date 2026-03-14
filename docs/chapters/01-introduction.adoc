@@ -1,377 +1,105 @@
 = Introduction
 
-The synthesis of 1980s cultural tropes, analog technology, and occult horror presents a highly fertile landscape for tabletop roleplaying game (TTRPG) design. The era is defined by extreme dichotomies: the rapid expansion of digital and analog communication networks against the lingering paranoia of the Cold War, and the rise of corporate excess against the resurgence of underground occultism and "Satanic Panic" cultural fears.
+*Project Neon Relic* is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called *The Verdant Covenant*, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world -- or the people who find them.
 
-By utilizing the *Year Zero Engine (YZE)*, a framework celebrated for its modularity and narrative-driven mechanics, Project Neon Relic constructs a game environment that mirrors the investigative, base-building structure of _Vaesen_ while injecting the high-stakes psychological tension found in the _Alien RPG_ and the moral ambiguity of the _Blade Runner RPG_.
+The game uses the *Year Zero Engine (YZE)* dice-pool variant -- the same framework behind _Vaesen_, _Mutant: Year Zero_, _Forbidden Lands_, and the _Alien RPG_. If you have played any of those, the core dice mechanics will feel familiar. What makes Neon Relic different is its *Corruption* system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
 
-The game casts players as agents of *The Verdant Covenant*, a secretive society operating within the neon-drenched, synthesizer-scored landscape of the late 1980s. The design mandates a complete thematic reskin of the YZE mechanics, including specialized class divisions, analog items, supernatural abilities, and faction-based settings. Furthermore, it integrates a uniquely engineered *Corruption* mechanic — a proprietary addition that conceptually bridges the volatile "Stress and Panic" system of _Alien_ with the resource-management aspects of "Willpower" in _Forbidden Lands_, and the humanity attrition of _Blade Runner_.
+== What This Game Is
 
-The resulting framework is a fast, decisive, and player-centric engine designed to deliver episodic, "monster-of-the-week" mysteries that are ultimately anchored by strategic headquarters management and a deep exploration of the "Artifact of Doom" narrative trope.
+* *Episodic investigation.* Each session follows a structured *Case File* -- a "monster-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
+* *Base management between missions.* The team maintains a *Headquarters* -- a Covenant facility they upgrade, staff, and defend over the course of a campaign.
+* *Psychological attrition.* The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
+* *Analog procedural thriller.* No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
+
+== What This Game Is Not
+
+* Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
+* Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
+* Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions, surviving trauma, and confronting your Dark Secret.
 
 ---
 
-= Creating Your Agent
+== The 1980s Setting
 
-Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these twelve steps in order.
+The world of Project Neon Relic is an amalgamation of neon-noir aesthetics and deep historical conspiracies. It is an alternative reality where the geopolitical tension of the Cold War is not merely fought with the threat of nuclear deterrence, but through the covert weaponization of ancient, mythological artifacts.
+
+=== The Analog Aesthetic
+
+The technological environment is characterized by analog limitations, forcing a distinct style of investigative gameplay. The absence of smartphones, GPS, and ubiquitous high-speed internet forces players into physical legwork and face-to-face interactions:
+
+* *Communication* relies on vulnerable payphones, easily intercepted HAM radios, and analog cassette answering machines.
+* *Information* is not Googled; it is painstakingly recovered from microfiche spools, physical library archives, and fragile floppy disks.
+* *Surveillance* uses bulky camcorders, grainy polaroid cameras, and temperamental infrared equipment.
+
+The juxtaposition of high-tech, neon-lit urban sprawl against the ancient, rotting, cosmic horror of the artifacts creates a stark, atmospheric dichotomy. Audio aesthetics play a major role -- underground clubs pulse with aggressive synthwave beats, while secretive government laboratories hum with the low, oppressive frequencies of massive server mainframes.
+
+The tactile, error-prone nature of 1980s technology maps flawlessly to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.
+
+---
+
+== The Verdant Covenant
+
+For as long as civilizations have risen and fallen, the world has produced objects of unusual power and importance -- relics of faith, symbols of kingdoms, forbidden texts, cursed idols, lost maps, sacred bones, and artifacts whose origins are long forgotten.
+
+Some inspire devotion. +
+Some bring prosperity. +
+Some bring ruin.
+
+Throughout history, wars have been fought over such objects. Empires have risen seeking them, and entire cultures have been erased because of them. To prevent the past from destroying the present, a quiet order was formed centuries ago.
+
+*The Verdant Covenant.*
+
+The Covenant is a secret society devoted to the *discovery, recovery, and protection of artifacts of magical, religious, occult, or cultural significance*. Its members believe that the greatest dangers in history have not been armies or kings -- but *objects that hold power beyond understanding*.
+
+The Covenant does not seek to own these relics for wealth or prestige. Its singular purpose is *stewardship*.
+
+* To *study* them.
+* To *preserve* them.
+* To *ensure they never fall into the wrong hands*.
+
+=== The Square of Harmony (The Rule of 441)
+
+The organization strictly maintains exactly *441 active members worldwide at all times* -- not a single operative more or less. This figure is derived from the *"Square of Harmony,"* a principle rooted in the sacred geometry of Reversible Multiplicative Symmetry. Covenant occultists recognize that `441 = 21^2`, symbolizing the gross material plane; while its exact numerical reversal, `144`, represents the enlightened, inverse stewardship of the anomalous.
+
+The Covenant believes this numerical balance acts as a metaphysical anchor, keeping the organization from becoming corrupted by the volatile artifacts it hoards. Because of this rigid cap, the initiation of a new member invariably means a previous member has died or fallen to permanent Catatonia -- ensuring the cycle of stewardship continues unbroken.
+
+=== Organizational Structure
+
+Within the Covenant there are *three Divisions*, each responsible for a different stage of the artifact lifecycle:
+
+[%header,cols="2,3,5"]
+|===
+| Division | Motto Segment | Purpose
+
+| *The Wayfinder Division*
+| _"What is found must be known."_
+| Scholars and researchers who uncover the existence and locations of lost artifacts.
+
+| *The Recovery Division*
+| _"What is known must be contained."_
+| Field agents who retrieve relics from ruins, vaults, corporations, and those who would misuse them.
+
+| *The Keep*
+| _"What is contained must be guarded."_
+| Wardens and archivists who guard the Covenant's vaults and ensure dangerous artifacts remain contained.
+|===
 
 [NOTE]
 ====
-*Design Note:* Steps 10 and 11 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
+*Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- operates with enough autonomy and unique expertise to function as its own playable division for game purposes. See xref:09-divisions.adoc#division-4-stack[Division 4: Stack] for details.
 ====
 
 ---
 
-== Step 1: Choose Your Division
+== How to Use This Book
 
-Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are four playable Divisions:
+This rulebook is organized into six parts:
 
-[%header,cols="1,2,1,2"]
-|===
-| Division | Role | CL | Key Attributes
+* *Part I: Introduction* -- You are here. The game's premise, setting, and the Verdant Covenant.
+* *Part II: Character Creation* -- Build your agent step by step.
+* *Part III: Core Mechanics* -- The dice, attributes, combat, social conflict, health, and the Corruption system.
+* *Part IV: The World of Neon Relic* -- Divisions, equipment, artifacts, headquarters, and advancement.
+* *Part V: The Director* -- GM-facing tools: Case Files, factions, bestiary, travel, and guidance.
+* *Part VI: Glossary* -- Quick reference for all game terms.
 
-| *Wayfinder* | Research and intelligence. You find what others don't know exists. | 3 | Wits, Empathy
-| *Recovery* | Field retrieval. You go in and bring the artifact out. | 2 | Strength, Agility
-| *The Keep* | Vault security and custody. You guard what has been won. | 3 | Empathy, Wits
-| *Stack* | Logistics and technical support. You make sure everyone else can do their job. | 4 | Wits, Agility
-|===
-
-> *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence.
-
-Read the full Division descriptions in `docs/chapters/09-divisions.adoc` before making your choice.
-
----
-
-== Step 2: Choose Your Department or Background
-
-Within your Division, you have a specific background:
-
-* **Wayfinder:** Choose a Department — *Research* or *Counterintelligence*. Within that, choose a role (Desk Analyst or Field Analyst).
-* **Recovery:** Choose an Operational Background — *Ex-Agency Operative*, *Heavy-Hitter*, or *Acquisition Specialist*.
-* **The Keep:** Choose a Department — *Catalogers*, *Wardens*, or *Internal Counterintelligence*.
-* **Stack:** Choose a specialty — *Quartermaster*, *Retro-Engineer*, or *Paratech Inventor*.
-
-Your background is primarily a narrative statement — it tells you and the GM where you came from. It does not grant mechanical bonuses at creation, but it should inform which skills you prioritize.
-
----
-
-== Step 3: Choose Your Age Group and Distribute Attribute Points
-
-Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, and skill point pool (used in Step 4).
-
-[%header,cols="1,1,1,1"]
-|===
-| Age Group | Age Range | Attribute Points | Skill Points
-
-| *Young* | 22–28 | 14 | 10
-| *Experienced* | 29–38 | 13 | 12
-| *Senior* | 39–52 | 12 | 14
-|===
-
-Younger characters are physically sharper (more attribute points); older characters are more skilled (more skill points). The trade-off is real and interesting — there is no "best" choice.
-
-Distribute your *Attribute Points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
-
-[%header,cols="1,1,4"]
-|===
-| Attribute | Range | Description
-
-| *Strength* | 2–5 | Physical power, endurance, and resistance to bodily harm.
-| *Agility* | 2–5 | Reflexes, coordination, fine motor control, and speed.
-| *Wits* | 2–5 | Perception, memory, deductive reasoning, and technical aptitude.
-| *Empathy* | 2–5 | Charisma, social intuition, and resistance to psychological horror.
-|===
-
-> *Division Favorite Attribute:* Each Division has one *Favorite Attribute* — the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. *Wayfinder:* Wits | *Recovery:* Agility | *The Keep:* Empathy | *Stack:* Wits. Investing there is strongly recommended but not mechanically enforced.
-
-> *Attributes as Health:* Your attributes also serve as your health pools. Strength absorbs physical damage; Agility absorbs exhaustion; Wits absorbs mental horror; Empathy absorbs emotional trauma. A score of 0 in any attribute means your character is *Broken*.
-
----
-
-== Step 4: Distribute Skill Points
-
-Distribute your *Skill Points* (determined by your Age Group in Step 3) across the twelve core skills. No single skill may exceed *3* at character creation.
-
-[%header,cols="2,1,2,4"]
-|===
-| Skill | Attr | Starting Max | Recommended Division Priority
-
-| Force | STR | 3 | Recovery
-| Brawl | STR | 3 | Recovery
-| Endure | STR | 3 | Keep
-| Sneak | AGI | 3 | Recovery
-| Sleight of Hand | AGI | 3 | Stack
-| Firearms | AGI | 3 | Recovery
-| Investigate | WIT | 3 | Wayfinder, Stack
-| Tech | WIT | 3 | Wayfinder, Stack
-| Lore | WIT | 3 | Wayfinder, Keep
-| Manipulate | EMP | 3 | Wayfinder
-| Command | EMP | 3 | Keep
-| Psychoanalyze | EMP | 3 | Wayfinder, Keep
-|===
-
-> *Unranked skills:* A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice — there are no "untrained" restrictions.
-
-> *Division Key Skill — Starting Cap Exception:* Each Division has one designated Key Skill that may start at rating *4* instead of the normal maximum of 3. This represents professional specialization before Covenant service. You may spend up to 4 of your starting points on that skill.
-
-[%header,cols="1,1"]
-|===
-| Division | Key Skill (Starting Cap: 4)
-
-| Wayfinder | Lore
-| Recovery | Firearms
-| The Keep | Command
-| Stack | Tech
-|===
-
----
-
-== Step 5: Choose Your Starting Talents
-
-At creation, every agent selects *two* talents:
-
-* *One Division Talent* chosen from your Division's talent list (see the Divisions chapter). You may only choose from your own Division's list at creation.
-* *One General Talent* chosen from the General Talents list (see the Advancement chapter). These are available to every agent regardless of Division.
-
-Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted.
-
-> *Talent Advancement:* Additional talents can be purchased during play using experience points. See the Advancement chapter.
-
----
-
-== Step 6: Record Your Starting Statistics
-
-Once attributes are set, note the following:
-
-[cols="2,3"]
-|===
-| Statistic | Starting Value
-
-| *Clearance Level (CL)* | Set by Division (see Step 1)
-| *Corruption* | *0* — you begin psychologically intact
-| *Max Corruption Threshold* | `10 + Empathy score`
-| *Broken Thresholds* | Any attribute reaching 0
-|===
-
-> *Maximum Corruption Threshold* is the number at which your character's mind permanently fractures, resulting in catatonia and character retirement. This is the most important number on your sheet — protect it.
-
----
-
-== Step 7: Claim Your Division Item
-
-Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
-
-[cols="1,2,4"]
-|===
-| Division | Item | Granted Abilities
-
-| Wayfinder | *Verdant Codex* | Secures memory, decodes language and symbols, maps artifact locations, preserves documents.
-| Recovery | *Verdant Satchel* | Suppresses artifact aura, seals cursed items, warns of instability, produces basic tools on demand.
-| Keep | *Warden's Bracer* | Suppresses artifact magic nearby, warns of containment failure, safe handling of cursed objects, absorbs 1 Corruption/session, +1 Armor Rating.
-| Stack | _(none)_ | Stack agents receive no Division Item, but gain +1 requisition die whenever acquiring _crafting materials_ during the Equipping Phase.
-|===
-
----
-
-== Step 8: Select Starting Gear
-
-Each agent begins with a Division-appropriate kit. Gear beyond this standard kit requires a *Clearance Level roll* during the mission's Equipping Phase.
-
-=== Wayfinder Starting Kit
-* Verdant Codex _(Division Item — automatic)_
-* Briefcase with research materials (notepad, pens, carbon paper)
-* 35mm camera with two rolls of film
-* Forged credentials (press pass, academic ID, or government contractor badge — player's choice)
-* Civilian clothing (appropriate for the investigation environment)
-* 1× small concealable weapon (pocket knife, derringer) _(optional, CL 3 item — already authorized)_
-
-=== Recovery Starting Kit
-* Verdant Satchel _(Division Item — automatic)_
-* Sidearm (.38 Special revolver or 9mm semi-automatic, 12 rounds)
-* Flashlight (D-cell)
-* Basic field kit: 10m rope, zip ties × 6, chalk × 2, crowbar
-* Field jacket with concealed holster
-* One additional item from the Equipment tables _(CL 2 or lower)_
-
-=== The Keep Starting Kit
-* Warden's Bracer _(Division Item — automatic)_
-* Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
-* Lore reference binder (photocopied Covenant texts on known artifact types)
-* Formal attire or tactical jacket _(player's choice based on role)_
-* 1× sidearm _(optional, CL 3 permitted — Wardens only)_
-
-=== Stack Starting Kit
-* Personal toolkit: flathead and Phillips screwdrivers × 3, soldering iron, wire cutters, electrical tape, multimeter
-* Signal jammer (prototype; 1 use before requiring repair; Gear Die d6)
-* Walkie-talkies × 2 (range: ~2km, 9V battery)
-* Duct tape (1 roll), WD-40
-* Practical coveralls or utility vest
-
----
-
-== Step 9: Choose Your Anchor
-
-Every agent carries an *Anchor* — a tangible, physical object tied to a core humanizing memory from before the Covenant. It connects you to the ordinary world you are fighting to protect, and it is your most reliable tool for healing Corruption.
-
-Choose one of the following options:
-
-* *Roll d66* on the Memento Table in the Healing chapter and accept the result as written.
-* *Invent your own:* name a specific object and the memory attached to it. Run it by your GM.
-
-Record your Anchor's name and the memory it represents on your character sheet.
-
-> *Mechanic:* Once per session, dedicate a scene to your Anchor — a quiet moment where you handle the object and let the memory surface. Heal *1d4 Corruption*. Full rules in the Healing chapter.
-
----
-
-== Step 10: Choose Your Dark Secret _(Placeholder)_
-
-Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. Dark Secrets create narrative hooks and can affect how NPCs and factions react to your character.
-
-> *This mechanic is not yet fully designed.* See Issue #2 for the full Dark Secrets system. For now, write a brief one-sentence backstory secret and move on.
-
----
-
-== Step 11: Define Your Relationships
-
-Every agent enters play with three *Relationship Slots*. These define the personal stakes that make missions matter and connect the character to the world beyond the Covenant.
-
-=== Relationship Slots
-
-Each slot defines a named NPC and your character's connection to them: who they are, why they matter, and what you would do to protect or reach them.
-
-[%header,cols="1,2,4"]
-|===
-| Slot | Type | What to Define
-
-| *Slot 1* | *Covenant Contact* | A superior, peer, or mentor within the organization. Someone who vouched for you, trained you, or relies on your results. Choose from: your Division handler, a fellow regional agent team lead, or the archivist who briefed you on your first Case File.
-| *Slot 2* | *Personal Tie* | A civilian outside the Covenant — someone who doesn't know what you do. A family member, a childhood friend, a former partner. They are completely unaware of the supernatural. They represent the life you're risking everything to protect.
-| *Slot 3* | *Rival or Enemy* | Someone who opposes you within your world — a faction contact who burned you, a former colleague who left the Covenant badly, or a Named Threat who already knows your face. This slot creates tension and recurring story hooks. The rival/enemy does not need to be an active threat right now — they are a *loaded element* for the GM to use.
-|===
-
-*Recording a Relationship:* Write the NPC's name, their connection to your character, and one thing your character believes about them (this belief may be wrong). The GM will use this to make the relationship meaningful in play.
-
-=== Relationship Loss and Consequence
-
-When a Relationship NPC is *killed, captured, corrupted, or otherwise removed from the story*:
-
-* *Covenant Contact lost:* Gain *+2 Corruption* (organizational shock) and lose Slot 1’s active bonus until a new Contact is established (requires a scene in downtime to rebuild the tie).
-* *Personal Tie harmed or threatened:* Gain *+1 Corruption* triggered by the emotional impact. If the tie is killed: gain *+3 Corruption* (no roll to avoid).
-* *Rival/Enemy eliminated:* The slot opens. The character may define a new one (a new rival may emerge naturally) or leave it empty (no mechanical penalty — the story just loses one of its loaded elements).
-
-*The Death of a Personal Tie:* This is one of the most psychologically catastrophic events in the game. Agents who lose their Personal Tie and survive the psychological impact are changed — the GM should reflect this. The slot does not refill easily.
-
-> *Design note (Anchors):* Personal Ties function mechanically as *Anchors* — a connection to the non-supernatural world that slows Corruption's advance. The term "Anchor" may appear in other chapter references (e.g., the Faraday Cage description, Psychoanalyze skill). Both terms refer to the same mechanic.
-
----
-
-== Step 12: Name and Biography
-
-Choose a name appropriate for the 1980s United States setting. Write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
-
-> *1980s Name Inspiration:* The era favors names like Karen, Debbie, Steve, Randall, Tracy, Rick, Tamara, Dale, Connie, Barry. Government agencies use surnames in the field.
-
----
-
-== Character Sheet Summary
-
-After completing all steps, your sheet should record:
-
-[cols="1,2"]
-|===
-| Field | Notes
-
-| *Name / Division / Department* | Identity and role
-| *Clearance Level* | Set by Division (see Step 1)
-| *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
-| *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
-| *Skills (12)* | Skill Points distributed per Age Group, 0–3 each
-| *Division Talent* | One chosen from Division list
-| *General Talent* | One chosen from General Talents list (Step 5)
-| *Division Item* | Automatic (or Stack bonus)
-| *Starting Gear* | Division kit ± optional items
-| *Corruption* | Starts at 0
-| *Max Corruption Threshold* | 10 + Empathy
-| *Dark Secret* | One sentence placeholder
-| *Anchor* | Object name + memory (see Healing chapter)
-| *Relationships* | Covenant Contact + Personal Tie
-|===
-
----
-
-== Worked Example: Creating Petra Vasquez
-
-The following example demonstrates a complete character build for a Recovery agent.
-
-=== Step 1–2: Division and Background
-
-*Petra Vasquez* is a *Recovery* agent with the *Ex-Agency Operative* background. She is a former DEA field agent who recovered an artifact during what she thought was a routine drug raid — and has been in the Covenant's employ ever since.
-
-=== Step 3: Age Group and Attributes
-
-Petra's six years in DEA field operations put her at age 34 — she selects *Experienced* (29–38), giving her *13 Attribute Points* and *12 Skill Points*.
-
-[cols="1,1,1"]
-|===
-| Attribute | Score | Reasoning
-
-| Strength | 4 | Ex-agency physical conditioning
-| Agility | 4 | Trained for fast entries; Recovery Key Attribute
-| Wits | 3 | Sharp but not an analyst
-| Empathy | 2 | Gets by on presence, not charm; lower threshold is a real risk
-|===
-
-_(13 points spent: 4 + 4 + 3 + 2 = 13)_
-
-> Max Corruption Threshold: `10 + 2 = 12`. Petra has a tighter margin than she'd like — but those attribute points went where they needed to go.
-
-=== Step 4: Skills (12 points)
-
-[cols="1,1,1"]
-|===
-| Skill | Rating | Reasoning
-
-| Sneak | 3 | Core recovery skill; DEA background
-| Firearms | 3 | Agency-trained; Recovery Key Skill
-| Force | 2 | Physical entries, breaking down doors
-| Brawl | 2 | Hand-to-hand when it comes to that
-| Investigate | 1 | Enough to read a crime scene
-| Endure | 1 | Agency conditioning
-|===
-
-_(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
-
-=== Step 5: Starting Talents
-
-* *Division Talent:* Petra chooses *Shadow Walker* (+1 Corruption): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
-* *General Talent:* Petra takes *Flee the Scene* — gain +2 bonus dice to Agility when rolling explicitly to escape a conflict. A field operative who knows when to run lives longer than one who doesn't.
-
-=== Step 6: Starting Statistics
-
-[cols="1,1"]
-|===
-| Statistic | Value
-
-| Clearance Level | 2
-| Corruption | 0
-| Max Corruption Threshold | 12
-|===
-
-=== Steps 7–8: Division Item and Gear
-
-Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
-
-=== Step 9: Anchor
-
-> *Anchor:* A cassette tape — Los Lobos, _By the Light of the Moon_, 1987. Her brother Marco made it for her birthday. She keeps it in the inside pocket of her field jacket and hasn't listened to it since the Tucson raid.
-
-=== Steps 10–11: Dark Secret and Relationships
-
-> *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
-
-> *Covenant Contact:* Senior Recovery Commander Darius Osei — her handler since induction.
-> *Personal Tie:* Her younger brother Marco, a cop in Phoenix who doesn't know she quit the DEA.
-> *Rival/Enemy:* Agent Harlan Voss — a Keep operative who questioned her competence during the Tucson debrief. She hasn't forgotten.
-
-=== Step 12: Biography
-
-_"Petra Vasquez, former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
+If you are a player, start with Character Creation and Core Mechanics. If you are the GM (the *Director*), read everything -- but especially the Director section and the Corruption chapter.
