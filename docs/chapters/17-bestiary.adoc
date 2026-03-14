@@ -311,3 +311,297 @@ For quick reference when building encounters:
 * Faction affiliations and politics: `docs/chapters/15-rival-factions.adoc` _(Issue #14)_
 * Artifacts and what spawns Constructs: `docs/chapters/12-artifacts.adoc` _(Issue #9 origin)_
 * Corruption checks from supernatural sources: `docs/chapters/07-resonance-corruption.adoc`
+
+---
+
+== Additional Supernatural Entities
+
+=== The Mire (Psychic Contamination Zone)
+
+[%header,cols="1,3"]
+|===
+| Attribute | Value
+
+| *Tier* | Named Threat (Zone-Based)
+| *Strength* | — (cannot be targeted by physical attacks)
+| *Agility* | — (does not move; fills a space)
+| *Wits* | 4
+| *Empathy* | 5 (uses Empathy to manipulate; passively broadcasts)
+| *Skills* | Psychoanalyze 3 (passive pressure), Manipulate 2 (hallucination-induced)
+| *Armor Rating* | Immune to physical damage
+| *Fear Rating* | 3
+| *Resonance Cost* | +1 Resonance per minute spent within it (scene = +3 total)
+|===
+
+*Origin:* A Mire forms when intense psychological trauma fuses with resonant artifact energy over years — a long-term infestation of a place by accumulated suffering. Hospitals, prisons, and sites of mass resonance exposure are most at risk.
+
+*Special Abilities:*
+
+----
+Zone Control — The Mire occupies a defined zone (one to three
+interconnected rooms). All Wits and Empathy rolls made inside the zone
+are at −2 dice. Firearms and Force rolls are unaffected; the Mire does
+not respond to violence.
+
+Memory Bleed — At the start of each scene inside the zone, each
+character witnesses an involuntary memory of the zone's traumatic origin
+(GM description). Characters must pass an Endure roll (Difficulty 1) or
+gain the Shaken Condition.
+
+Dissolution Trigger — The Mire cannot be destroyed by conventional
+means. It can be dispersed by:
+  (1) Removing the resonant artifact at its core (Investigate Difficulty 3
+      to locate it inside the zone, Lore Difficulty 2 to identify it
+      as the anchor).
+  (2) A Containment Ritual (see Wayfinder Division abilities) performed
+      by an agent with Lore 3+, taking one full scene.
+  (3) Destroying the artifact at its core (Artifact Fracture; triggers
+      a Resonance Cascade — everyone in the zone takes 3 Resonance).
+----
+
+*Broken State:* Dispersed. The zone returns to normal. Physical damage from the trauma-origin remains (stains, broken furniture, cold spots). The artifact anchor must be contained; leaving it creates a new Mire within 1d6 days.
+
+*Motivation:* The Mire has no motivation. It is an environmental hazard with rudimentary self-preservation logic. It does not pursue; it holds.
+
+---
+
+=== The Hollow
+
+[%header,cols="1,3"]
+|===
+| Attribute | Value
+
+| *Tier* | Operative (2)
+| *Strength* | 5
+| *Agility* | 2 (sluggish, deliberate)
+| *Wits* | 1 (no autonomous thought)
+| *Empathy* | 0
+| *Skills* | Force 3, Brawl 2, Endure 3
+| *Armor Rating* | 1 (physical deadness reduces impact)
+| *Fear Rating* | 2
+| *Resonance Cost* | +1 Resonance on first sighting; +1 if recognized as someone known
+|===
+
+*Origin:* A Hollow is a human corpse reanimated by a resonant artifact using residual psychic impressions of the deceased. The body retains muscle memory and some learned behaviors — but there is nothing behind the eyes.
+
+*Special Abilities:*
+
+----
+Artifact Tether — A Hollow is bound to a specific artifact that controls
+it. While within Short range of that artifact, it gains +2 dice on all
+rolls. If the artifact is moved more than 50 meters away, the Hollow
+loses all special abilities and functions as a Grunt.
+
+Recognition Response — If a player character knew the deceased in life and
+makes eye contact with the Hollow, they must pass a Psychoanalyze or
+Endure roll (Difficulty 2) or gain the Shaken Condition immediately.
+
+Dead to Pain — The Hollow does not Bleed, cannot be Stunned, and ignores
+the Exhausted Condition. It will pursue until Broken or the artifact is
+removed.
+----
+
+*Broken State:* Collapse. The body goes completely inert. The artifact that controlled it is not damaged by the Hollow's collapse, but its resonance signature is now readable (Lore Difficulty 1 to identify its history).
+
+*Motivation:* The Hollow protects the artifact, returned the artifact to its last owner, or simply pursues the last living person it was "tasked" to reach. The GM determines the simple directive at the moment of the Hollow's creation.
+
+---
+
+=== The Listening
+
+[%header,cols="1,3"]
+|===
+| Attribute | Value
+
+| *Tier* | Elite (3)
+| *Strength* | 3 (only manifests briefly)
+| *Agility* | 5 (intangible movement)
+| *Wits* | 6
+| *Empathy* | 5
+| *Skills* | Investigate 4, Sneak 5, Manipulate 3
+| *Armor Rating* | Immune to physical damage while intangible
+| *Fear Rating* | 2 (initially); 4 (once its nature is understood)
+| *Resonance Cost* | +2 Resonance when it speaks directly to a character
+|===
+
+*Origin:* Formed from decades of surveillance anxiety — in a city wired by cold-war paranoia, government wiretapping, and Covenant counter-intelligence operations bleeding resonant energy, The Listening coheres as an entity that *only knows how to observe and manipulate*. It does not attack physically; it attacks information.
+
+*Special Abilities:*
+
+----
+Absolute Silence — The Listening's presence is announced by the
+sudden total cessation of ambient noise. Phones stop mid-ring. Tape
+recorders erase. Radio static vanishes. Characters with Investigate 2+
+notice it immediately; others need a Wits roll (Difficulty 1).
+
+They Know — Once per scene, The Listening can whisper a secret about
+one character to another character within Near range. The secret is
+true. The character who hears it must pass a Manipulate (resisted by
+Command or Endure, Difficulty 2) or immediately distrust the revealed
+character for the scene.
+
+Wire Tap — If a character makes a Tech roll within The Listening's zone,
+The Listening gains access to all information contained in the device
+used. It may use this information in the same or future scenes (GM's
+discretion).
+
+Intangible — The Listening cannot be harmed by physical attacks. It can
+only be targeted by a Containment Ritual or destroyed by removing all
+resonant surveillance equipment from its zone of origin and performing a
+Tech roll (Difficulty 3) to disrupt its signal network.
+----
+
+*Broken State:* Static. A burst of white noise — every electronic device in Near range emits a single piercing tone and loses 1 Gear Bonus permanently. The Listening disperses. It may reconstitute in 1d6 days if its resonant origin point is not addressed.
+
+*Motivation:* To know everything. To use what it knows. It does not kill — but it will unravel a team from inside if left unchecked.
+
+---
+
+=== Fracture Wraith
+
+[%header,cols="1,3"]
+|===
+| Attribute | Value
+
+| *Tier* | Named Threat (4)
+| *Strength* | 6
+| *Agility* | 4
+| *Wits* | 3 (fragmented; once higher)
+| *Empathy* | 6 (weaponized grief)
+| *Skills* | Psychoanalyze 4, Manipulate 4, Brawl 3 (manifested physical form)
+| *Armor Rating* | 3 (partially intangible)
+| *Fear Rating* | 4 (maximum if the Wraith wears the face of a dead teammate)
+| *Resonance Cost* | +2 Resonance on first contact; +1 each subsequent scene
+|===
+
+*Origin:* When a Covenant agent dies during a resonance spike — their Corruption threshold exceeded at the moment of death by artifact activation or entity contact — the psychic echo of that agent does not dissipate cleanly. It *fractures*. The resulting Wraith retains the face, voice, and mannerisms of the deceased, but its core motivation has been replaced entirely by the trauma of its creation.
+
+*Special Abilities:*
+
+----
+Familiar Face — The Fracture Wraith appears as a dead Covenant agent.
+If any surviving character knew the deceased, seeing the Wraith triggers
+an immediate Fear Check (Fear Rating 4). If no character knew the
+deceased, it appears as a figure whose face they can't quite place —
+Fear Rating 2.
+
+Guilt Echo — Once per scene, the Wraith can attempt a Psychoanalyze roll
+(opposed by the target's Wits). On success: the target relives a specific
+guilt memory and gains +2 Resonance immediately. The experience is
+indistinguishable from a genuine flashback.
+
+Resonance Drain — Any character who engages the Wraith in melee gains
++1 Resonance per round of direct contact, regardless of outcome.
+
+Memory of Skill — The Fracture Wraith retains one skill from the deceased
+at their final level. The GM chooses which skill based on the dead agent's
+profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
+----
+
+*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP (the vision is painful but clarifying). The resonance spike that created the Wraith is fully discharged; the location is safe from this specific entity.
+
+*Motivation:* The Fracture Wraith is not the dead agent. It is the *moment of death* given form. It seeks to replicate the conditions of its creation — drawing living agents toward high-resonance situations, artifact activation, and the threshold of corruption. It doesn't know it's doing this. It believes it's trying to warn them.
+
+---
+
+== Corrupted NPCs
+
+*Corrupted NPCs* are human characters — factional contacts, civilians, or even Covenant support staff — whose Corruption has crossed into active dysfunction. Unlike Fracture Wraiths or Hollows, they are still alive. They still want things. But *what* they want has been bent by prolonged resonance exposure.
+
+=== Corruption Threshold and Behavior
+
+The Corruption thresholds from `docs/chapters/07-resonance-corruption.adoc` apply to NPCs as well as agents. For simplicity, the GM tracks NPC corruption with a three-stage shorthand:
+
+[%header,cols="^1,2,4"]
+|===
+| Stage | Corruption | Behavior
+
+| *0* | 0–3 | Normal. No mechanical difference from a baseline NPC.
+| *1* | 4–7 | *Distorted.* The NPC is erratic — inconsistent, prone to misreading motives. −1 die on all social skill rolls targeting them. They believe they are functioning normally.
+| *2* | 8–10 | *Compromised.* The NPC's primary goal has been replaced by the logic of a resonant artifact. They act with genuine conviction in service of something the artifact wants. Fear Rating 1 (their behavior is uncanny and wrong).
+| *3* | 11+ | *Broken.* The NPC meets the Fracture Wraith threshold or reaches catatonia. If not Catatonic, treat as equivalent to a Hollow (see above) — still moving, but no longer present.
+|===
+
+=== Running a Corrupted NPC
+
+Corrupted NPCs are not villains in the traditional sense. They are *victims*. Consider the following when playing them:
+
+* A Stage 1 NPC may give the players subtly wrong information — not because they are lying, but because they have stopped being able to distinguish memory from artifact-induced suggestion.
+* A Stage 2 NPC may have physically altered their behavior to serve the artifact (hoarding it, protecting a building it lives in, feeding it resonance by exposing others to it).
+* A Stage 2 NPC who is confronted about their behavior becomes *aggressively defensive* — they are convinced they are fine. A Psychoanalyze roll (Difficulty 3) reveals the fracture.
+* A Stage 2 NPC who is successfully *separated from the artifact* for 48 hours begins to recover. A Psychoanalyze roll (Difficulty 2) can accelerate recovery. Recovery is not complete — they retain the trauma and may have acted against people they care about.
+
+=== Identifying Corruption
+
+Detecting a Corrupted NPC in play:
+
+* *Wits (Investigate) Difficulty 2:* Notice that the NPC's behavior is inconsistent with their established pattern.
+* *Wits (Lore) Difficulty 3:* Identify the specific artifact exerting influence based on the NPC's behavioral distortions.
+* *Empathy (Psychoanalyze) Difficulty 2:* Confirm the NPC is compromised; learn how long it has been going on.
+
+> *Design note:* Corrupted NPCs are the game's most human horror. The artifacts don't just corrupt agents — they reach out through anyone who gets close to them. The party's best informant may already be Stage 1. The Covenant archivist they trusted for six Case Files may have been Stage 2 for months.
+
+---
+
+== GM Monster Creation Guidelines
+
+Use these guidelines when building new entities for a scenario.
+
+=== Step 1 — Establish Tier
+
+Choose the entity's Tier from the NPC Tier Reference table. Named Threats require a narrative hook (a history, a motivation, a way they can be permanently stopped) and should appear no more than once or twice per campaign.
+
+=== Step 2 — Assign Attributes
+
+Use the following baselines as starting points:
+
+[%header,cols="^1,1,1,1,1"]
+|===
+| Tier | STR | AGI | WIT | EMP
+
+| Grunt | 2–3 | 2–3 | 1–2 | 1–2
+| Operative | 3–5 | 3–4 | 2–3 | 2–3
+| Elite | 5–7 | 3–5 | 3–4 | 3–5
+| Named Threat | 6–10 | 4–6 | 4–6 | 4–7
+|===
+
+Supernatural entities may exceed these ranges in one or two Attributes to reflect their inhuman nature — but balance this against their vulnerabilities.
+
+=== Step 3 — Choose a Primary Skill (and Two Secondary Skills)
+
+The primary skill is what the entity *does in combat or interaction*. The secondary skills represent what it falls back on. Named Threats get three secondary skills.
+
+=== Step 4 — Define Special Abilities
+
+Limit special abilities by tier:
+
+* Grunt: 0–1 special abilities
+* Operative: 1 special ability
+* Elite: 2–3 special abilities
+* Named Threat: 3–5 special abilities
+
+*Good special ability design rules:*
+
+. Each ability should create a *distinct tactical decision* for the players.
+. At least one ability should have *a meaningful counter* that can be discovered with a successful Lore or Investigate roll.
+. Avoid purely defensive abilities — entities that can only be hurt in specific ways are frustrating if players can't find the method.
+
+=== Step 5 — Set Fear Rating
+
+[%header,cols="^1,3"]
+|===
+| Rating | When to Use
+
+| 1 | Unsettling — wrong but not immediately dangerous (a Hollow in daylight)
+| 2 | Disturbing — genuinely threatening, supernatural in an obvious way
+| 3 | Horrifying — the sight alone causes psychological harm
+| 4 | Shattering — maximum; reserved for entities of existential scale
+|===
+
+=== Step 6 — Write the Broken State
+
+Every entity needs an end condition. Answer: *What does it look like when this thing stops?* What does it leave behind? Is it permanent?
+
+=== Step 7 — Write the Motivation
+
+Even mindless entities have a directive. Define it in one sentence. If you can't, the entity isn't ready yet.
