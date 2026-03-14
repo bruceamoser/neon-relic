@@ -4,7 +4,7 @@
 
 == The Corruption Track
 
-Corruption starts at *0* and increases from there. There is no separate "Resonance pool," no volatile buffer, and no cascade check — Corruption is gained directly from its sources and healed by its methods.
+Corruption starts at *0* and increases from there. It is gained directly from its sources and reduced (slowly) by its methods — there is no buffer, no cascade, and no shortcut.
 
 *Maximum Corruption Threshold* = `10 + Empathy score`
 

@@ -207,4 +207,4 @@ Roll when you need an unexpected complication mid-case, when a scene is going to
 * Artifact properties and Tiers: `docs/chapters/12-artifacts.adoc`
 * Rival faction behavior and agendas: `docs/chapters/15-rival-factions.adoc`
 * Entity stat blocks and Fear ratings: `docs/chapters/17-bestiary.adoc`
-* Corruption consequences: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption consequences: `docs/chapters/07-corruption.adoc`
