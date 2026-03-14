@@ -1,0 +1,30 @@
+= Health, Damage, and Armor
+
+In the Year Zero Engine, characters do not possess a traditional, escalating pool of "Hit Points." Instead, your *four core Attributes directly serve as your health pools*.
+
+== Taking Damage
+
+[%header,cols="1,1,3"]
+|===
+| Damage Type | Target Attribute | Common Sources
+
+| Physical | *Strength* | Attacks, falls, hazardous environments, toxins
+| Exhaustion | *Agility* | Sleep deprivation, prolonged exertion
+| Mental | *Wits* | Supernatural terror, psychic assault
+| Emotional | *Empathy* | Psychological manipulation, witnessing horror
+|===
+
+== The Broken State
+
+If any Attribute is reduced to *0*, your character becomes *Broken*:
+
+* The character is immediately *incapacitated*.
+* They must roll on a *Critical Injury table*, which can result in lethal consequences or permanent maiming depending on the severity of the attack.
+
+== Armor Mechanics
+
+To survive lethal encounters, agents utilize armor (such as concealed Kevlar vests or tactical riot gear):
+
+. When you suffer physical damage, roll a number of *Gear Dice* equal to the item's *Armor Rating*.
+. Every *6* rolled absorbs *1 point* of incoming damage before it reduces your Strength.
+. *Degradation:* If you roll any *1s* on an armor save, the Armor Rating is permanently reduced by 1 until repaired by Stack during downtime.

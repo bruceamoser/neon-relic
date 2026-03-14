@@ -1,0 +1,49 @@
+= Advancement and General Talents
+
+Experience Points (XP) are awarded at the end of each Case File through a structured debriefing. The GM asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
+
+[%header,cols="^1,5"]
+|===
+| # | Debriefing Question
+
+| 1 | Did you participate in the session? _(Automatic +1 XP)_
+| 2 | Did you risk your life for a fellow Covenant member or an innocent civilian?
+| 3 | Did your Dark Secret complicate the mission, or did you heavily interact with your Anchor?
+| 4 | Did the team successfully secure or contain a Resonant Artifact?
+| 5 | Did you learn something new and significant about the supernatural threat or rival factions?
+|===
+
+== Spending XP
+
+[%header,cols="3,1,2"]
+|===
+| Upgrade | XP Cost | Limit
+
+| Increase a Skill by 1 | 5 XP | Maximum rating of 5
+| Purchase a new Talent | 6 XP | General Talent or additional Division Talent
+|===
+
+== General Talents
+
+General Talents are specialized perks available to *any character*, providing mechanical exceptions or situational bonuses:
+
+[%header,cols="2,4"]
+|===
+| Talent | Effect
+
+| *Street Medic* | Restore 2 physical Attribute points instead of 1 when successfully using Heal.
+| *Cathartic Release* _(Healing)_ | Once per session, dedicate a moment to breaking down, screaming, or venting. Heal 1 Corruption.
+| *Hair-Trigger* | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
+| *Paranormal Intuition* | When entering a room, roll Wits (Scout). On success, the GM must tell you if a supernatural entity has been here in the last 24 hours.
+| *Heavy Packer* | Carry items equal to twice your Strength without becoming encumbered.
+| *Skeptic's Shield* | Once per session, outright ignore a minor supernatural effect by rigidly refusing to acknowledge the impossible.
+| *Night Owl* | Ignore all penalties from sleep deprivation. Operate perfectly in the dark.
+| *Chain Smoker* _(Healing)_ | Consume a scarce resource (cigarette, specific 80s junk food) during stress. Clear 1 Resonance.
+| *Analog Junkie* | Gain +2 Gear dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche).
+| *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single critical roll.
+| *Desensitized* | Gain +1 bonus die to all Empathy rolls when dealing with horrific or gruesome crime scenes.
+| *Lucky Coin* | Once per session, ignore a 1 rolled on a Gear die, preventing item degradation.
+| *Iron Will* _(Healing)_ | Land the killing blow or banish a supernatural threat? The rush of victory heals 1 Corruption.
+| *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
+| *Flee the Scene* | Gain +2 bonus dice to Agility when rolling explicitly to escape a conflict.
+|===

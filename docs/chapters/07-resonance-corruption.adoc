@@ -1,0 +1,47 @@
+= Resonance and Corruption
+
+Project Neon Relic introduces the unified *Resonance and Corruption* system — the game's signature mechanic. This creates an "inverse hit points" loop where the pursuit of occult power is inherently self-destructive and psychologically corrosive.
+
+== The Nature of Resonance
+
+*Resonance* represents the volatile, metaphysical static accumulating within a character's nervous system. It is a necessary resource to fuel supernatural Talents and activate artifacts, but hoarding it accelerates a character's demise.
+
+Resonance points are acquired through:
+
+[%header,cols="2,1,4"]
+|===
+| Trigger | Resonance Gained | Description
+
+| *Pushing a Roll* | 1 | Exerting your absolute limits directly invites anomalous static.
+| *Occult Exposure* | 1–2 | Witnessing supernatural entities, reading forbidden tomes, or being targeted by anomalous phenomena.
+| *Activating Artifacts* | 1–3 | Utilizing the supernatural properties of a Resonant Artifact. Cost varies by artifact tier.
+|===
+
+== The Corruption Track (The Doom Clock)
+
+Instead of rolling on a randomized trauma table, *Corruption is tracked cumulatively*, functioning like inverse hit points that slowly build toward a catastrophic break.
+
+*Maximum Corruption Threshold* = `10 + Empathy score`
+
+When a character witnesses something truly mind-breaking or utilizes a cursed artifact, the GM calls for a *Corruption Check*. This is _not_ a dice roll — the character's lingering Resonance cascades into permanent psychological decay:
+
+[quote]
+____
+*New Corruption Level* = Current Corruption + Current Resonance
+____
+
+This creates a terrifying escalation. If a character pushes multiple rolls and hoards 4 Resonance points, their first Corruption Check jumps their score by 4. If they don't clear their Resonance, the next check jumps it by another 4. As Resonance grows, the speed at which the character hurtles toward their threshold *multiplies*.
+
+== Corruption Effects
+
+[%header,cols="1,2,4"]
+|===
+| Corruption | Stage | Mechanical & Narrative Consequence
+
+| *1–3* | Nosebleeds / Migraines | Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control.
+| *4–6* | Auditory Hallucinations | Distinct whispers from the void — voices of the dead or entities from beyond.
+| *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop.
+| *10–12* | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence.
+| *13–14* | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps.
+| *Exceeds Threshold* | *Catatonic Revelation* | The character's mind completely breaks upon perceiving the underlying, terrifying geometry of the universe. Permanent catatonic state. *Immediately removed from the campaign.*
+|===

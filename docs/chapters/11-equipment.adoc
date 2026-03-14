@@ -1,0 +1,60 @@
+= 1980s Equipment and Analog Gear
+
+Navigating the neon-lit streets and abandoned industrial sectors of the 1980s requires specialized equipment. Items provide a *Gear Bonus* (extra black d6 dice) to specific skill rolls. Pushing a roll can cause the item to break, temporarily reducing its bonus.
+
+To reflect the covert nature of the Covenant, characters do not use personal cash. Instead, they utilize their *Clearance Level (CL)* during the Equipping Phase to requisition supplies from Stack. Items are categorized by their required CL.
+
+== Investigative & Paranormal Tech
+
+[%header,cols="2,4,^1,^1"]
+|===
+| Item | Gear Bonus & Effect | Enc. | CL
+
+| *Heavy-Duty Maglite* | +1 to Investigate/Scout in the dark. Can act as blunt weapon (Damage 1). | ½ | 1
+| *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | ½ | 1
+| *Polaroid SX-70 Camera* | +2 to Lore when studying a crime scene. Produces instant evidence. | 1 | 2
+| *Air Ion Counter* | +1 to Investigate. Bulky spirit detector measuring static drops. | 1 | 2
+| *Acoustic Coupler Modem* | +1 to Tech. Interface with remote mainframes via payphone. | 1 | 2
+| *P-SB7 Spirit Box Prototype* | +2 to Lore when deciphering entity motives. Sweeps radio frequencies. | 1 | 3
+| *Thermal / Infrared Camera* | +2 to Scout. Heavy early-80s tech. Spot invisible entities via cold spots. | 2 | 4
+|===
+
+== Standard Tools & Survival Gear
+
+[%header,cols="2,4,^1,^1"]
+|===
+| Item | Gear Bonus & Effect | Enc. | CL
+
+| *Basic First Aid Kit* | +1 to Heal. Bandages, antiseptics, painkillers. | 1 | 1
+| *Lockpick Kit* | +2 to Sleight of Hand when bypassing mechanical locks. | ½ | 2
+| *Crowbar / Bolt Cutters* | +2 to Force when breaking through chains or sealed doors. | 1 | 2
+| *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | ½ | 2
+| *Trauma Surgical Kit* | +3 to Heal. Sutures, adrenaline, blood-clotting agents. | 2 | 3
+|===
+
+== 1980s Weaponry
+
+Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rating.
+
+[%header,cols="2,^1,^1,1,3,^1"]
+|===
+| Weapon | Gear Bonus | Damage | Range | Special Traits | CL
+
+| *Brass Knuckles* | +1 | 1 | Engaged | Concealable. | 1
+| *Switchblade* | +1 | 2 | Engaged | Concealable; puncture criticals. | 1
+| *Stun Gun / Taser* | +2 | Stun | Engaged | Target loses next Fast Action. | 2
+| *.38 Snub-nose Revolver* | +2 | 2 | Short | Reliable — ignore first 1 when pushing. | 2
+| *9mm Semi-Auto Pistol* | +2 | 2 | Short | High capacity; split successes to hit multiple targets. | 3
+| *Pump-Action Shotgun* | +3 | 3 | Short | +1 Damage at Engaged range. Loud and bulky. | 3
+| *M16 Assault Rifle* | +2 | 3 | Long | Full auto — can push twice, consumes extra ammo. | 4
+|===
+
+== Armor
+
+[%header,cols="2,^1,3,^1"]
+|===
+| Armor | Rating | Special | CL
+
+| *Concealed Kevlar Vest* | 3 | Wearer passes as civilian at distance. | 3
+| *Tactical Riot Armor* | 6 | Bulky; −2 penalty to Agility rolls. | 4
+|===

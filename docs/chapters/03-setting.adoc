@@ -1,0 +1,15 @@
+= The 1980s Occult Setting
+
+The world of Project Neon Relic is an amalgamation of neon-noir aesthetics and deep historical conspiracies. It is an alternative reality where the geopolitical tension of the Cold War is not merely fought with the threat of nuclear deterrence, but through the covert weaponization of ancient, mythological artifacts.
+
+== The Analog Aesthetic
+
+The technological environment is characterized by analog limitations, forcing a distinct style of investigative gameplay. The absence of smartphones, GPS, and ubiquitous high-speed internet forces players into physical legwork and face-to-face interactions:
+
+* *Communication* relies on vulnerable payphones, easily intercepted HAM radios, and analog cassette answering machines.
+* *Information* is not Googled; it is painstakingly recovered from microfiche spools, physical library archives, and fragile floppy disks.
+* *Surveillance* uses bulky camcorders, grainy polaroid cameras, and temperamental infrared equipment.
+
+The juxtaposition of high-tech, neon-lit urban sprawl against the ancient, rotting, cosmic horror of the artifacts creates a stark, atmospheric dichotomy. Audio aesthetics play a major role — underground clubs pulse with aggressive synthwave beats, while secretive government laboratories hum with the low, oppressive frequencies of massive server mainframes.
+
+The tactile, error-prone nature of 1980s technology maps flawlessly to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.

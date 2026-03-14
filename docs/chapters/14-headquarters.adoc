@@ -1,0 +1,61 @@
+= Headquarters Management
+
+In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Resonance, and an economic resource sink giving players ownership over the world.
+
+== The Covenant Safehouse
+
+At campaign onset, players acquire a default headquarters representing a localized branch of the Covenant. Thematically appropriate locations include:
+
+* An abandoned 1970s underground civil defense bunker
+* A defunct mall arcade operating as a front
+* A decommissioned subway maintenance station
+
+Initially, the space is entirely derelict. Access to deeper subterranean levels, sealed vaults, or secure storage rooms requires the expenditure of *Development Points (Dev Points)*, awarded collectively for completing mysteries and securing artifacts.
+
+== Facility Upgrades
+
+Players pool Dev Points to construct facilities providing tangible mechanical benefits:
+
+[%header,cols="2,3,3"]
+|===
+| Facility | Description | Mechanical Benefit
+
+| *The Microfiche Archive*
+| Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm.
+| Permanent +2 Gear bonus to Wits (Lore) rolls when researching prior to departure.
+
+| *The Faraday Cage*
+| Lead-lined room isolated from electromagnetic and supernatural frequencies.
+| One character can bleed off up to 4 Resonance without triggering a Corruption Check (requires a full day inside).
+
+| *The Black-Market Armory*
+| Reinforced vault with analog combination locks, stocked by underground contacts.
+| +1 CL to all characters during the Equipping Phase.
+
+| *The Occult Laboratory*
+| Sterile environment with chemical analysis tools, EMF meters, and containment vessels.
+| Safely identify unknown artifact triggers without risking accidental activation.
+|===
+
+== Personnel Recruitment
+
+Beyond infrastructure, players can recruit *contacts and personnel*:
+
+* A corrupt police dispatcher (information)
+* An underground surgeon (critical wound healing)
+* A black-market fence (acquiring restricted items between missions)
+
+These NPCs act as passive assets between sessions.
+
+== Defending the Headquarters
+
+To prevent the base from feeling too safe, the system incorporates *Threats to the Headquarters*. Expanding too rapidly, using loud explosives during missions, or drawing attention from rival factions gradually increases a hidden *GM Threat meter*. When this meter reaches a threshold, the safehouse is directly compromised.
+
+Threats are heavily influenced by the 1980s paranoid aesthetic:
+
+* A sudden raid by a Majestic-12 corporate strike team
+* Infiltration by a shape-shifting entity brought back on a recovered artifact
+* Local law enforcement responding aggressively to a noise complaint
+* A Network hacker broadcasting the HQ's location on pirate radio
+
+This mechanic ensures consequences follow players home, linking episodic mysteries into a cohesive, dangerous overarching narrative.

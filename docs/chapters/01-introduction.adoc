@@ -1,0 +1,9 @@
+= Introduction
+
+The synthesis of 1980s cultural tropes, analog technology, and occult horror presents a highly fertile landscape for tabletop roleplaying game (TTRPG) design. The era is defined by extreme dichotomies: the rapid expansion of digital and analog communication networks against the lingering paranoia of the Cold War, and the rise of corporate excess against the resurgence of underground occultism and "Satanic Panic" cultural fears.
+
+By utilizing the *Year Zero Engine (YZE)*, a framework celebrated for its modularity and narrative-driven mechanics, Project Neon Relic constructs a game environment that mirrors the investigative, base-building structure of _Vaesen_ while injecting the high-stakes psychological tension found in the _Alien RPG_ and the moral ambiguity of the _Blade Runner RPG_.
+
+The game casts players as agents of *The Verdant Covenant*, a secretive society operating within the neon-drenched, synthesizer-scored landscape of the late 1980s. The design mandates a complete thematic reskin of the YZE mechanics, including specialized class divisions, analog items, supernatural abilities, and faction-based settings. Furthermore, it integrates a uniquely engineered *"Resonance and Corruption"* mechanic — a proprietary addition that conceptually bridges the volatile "Stress and Panic" system of _Alien_ with the resource-management aspects of "Willpower" in _Forbidden Lands_, and the humanity attrition of _Blade Runner_.
+
+The resulting framework is a fast, decisive, and player-centric engine designed to deliver episodic, "monster-of-the-week" mysteries that are ultimately anchored by strategic headquarters management and a deep exploration of the "Artifact of Doom" narrative trope.
