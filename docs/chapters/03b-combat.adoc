@@ -2,7 +2,7 @@
 
 Combat in Neon Relic is fast, brutal, and consequential. Agents of the Covenant are capable individuals — but they are not soldiers. A prolonged firefight drains attributes that also serve as their sanity and stamina. Every round of violence is a resource you cannot easily recover before the next case.
 
-Combat rules are designed for *investigation-first play*: most situations should be solvable without combat, combat should resolve quickly when it happens, and the aftermath (injury, Resonance, gear degradation) should matter as much as the outcome.
+Combat rules are designed for *investigation-first play*: most situations should be solvable without combat, combat should resolve quickly when it happens, and the aftermath (injury, Corruption, gear degradation) should matter as much as the outcome.
 
 ---
 
@@ -51,7 +51,7 @@ A slow action represents a committed, focused effort requiring your full attenti
 | *Attack (melee or ranged)* | Roll to hit and deal damage. Core offensive action.
 | *First Aid* | Use Heal skill to restore Strength or treat a Critical Injury (requires a First Aid Kit).
 | *Reload* | Reload a firearm that has run dry. No roll required; consumes ammo.
-| *Use an Artifact* | Activate an artifact's properties. Generates Resonance per artifact tier.
+| *Use an Artifact* | Activate an artifact's properties. Generates Corruption per artifact tier.
 | *Activate Division Talent* | Use your Division Talent (if it requires sustained effort).
 | *Manipulate NPC* | Attempt to talk someone down, issue commands, or negotiate during combat.
 | *Help an Ally* | Add +1 die to an ally's next roll this round (must be present, skill >= 1).

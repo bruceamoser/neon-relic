@@ -78,8 +78,8 @@ Special Abilities:
 
   Improvised Ritual — Once per combat, the cultist may spend their Slow Action
   to attempt a Lore roll (Difficulty 3). On success, they call a fragment of
-  an artifact's resonant effect to their location: all agents within Near range
-  gain 1 Resonance. On failure, the cultist takes 1 Wits damage (backlash).
+  an artifact's corrupting effect to their location: all agents within Near range
+  gain +1 Corruption. On failure, the cultist takes 1 Wits damage (backlash).
 
 Broken State: Zealot's Resolve delays collapse; at STR 1, one more hit Breaks
 them. Broken cultists either enter catatonic prayer or flee. GM's call.
@@ -105,8 +105,8 @@ Skills:
 Special Abilities:
   Burn the Evidence — If the Cell Leader reaches Broken State with a ritual
   site or artifact nearby, they attempt one final Lore roll (Difficulty 2)
-  to trigger a resonance discharge. On success: all within Short range gain
-  2 Resonance. This is not suicidal — they expect to survive. They often don't.
+  to trigger a corruption discharge. On success: all within Short range gain
+  +2 Corruption. This is not suicidal — they expect to survive. They often don't.
 
   Rally the Faithful — While the Cell Leader is active, all Ember Accord
   Cultists in the scene gain +1 die on Brawl rolls. If the Cell Leader falls,
@@ -181,10 +181,8 @@ Special Abilities:
   +2 dice on their next Lore roll. This does not trigger armor. They choose to
   bleed.
 
-  Resonance Tap — On a successful Lore roll (Difficulty 2), the Contractor
-  forces one agent within Near range to roll a Corruption check immediately
-  (regardless of current Resonance level). The GM adds 1 to their Resonance
-  total for this check only.
+  Corruption Tap — On a successful Lore roll (Difficulty 2), the Contractor
+  forces one agent within Near range to gain +2 Corruption immediately.
 
   Bound Sigil — The Contractor carries a ward. The first time they would be
   Broken, the ward absorbs it: they are reduced to STR 1 instead of 0. The
@@ -225,7 +223,7 @@ Special Abilities:
   damage from thrown debris (no attack roll — environmental). An agent who takes
   cover removes themselves from the zone effectively.
 
-  Resonance Bleed — When the Remnant deals damage, the target gains 1 Resonance
+  Corruption Bleed — When the Remnant deals damage, the target gains +1 Corruption
   in addition to the physical effect. The touch carries something of whatever
   this thing was.
 
@@ -251,18 +249,18 @@ strong emotional state.
 
 ----
 Attributes: STR 8 | AGI 3 | WIT 2 | EMP 0
-Armor Rating: 5 (crystallized resonance — the artifact's self-defense)
+Armor Rating: 5 (crystallized occult energy — the artifact's self-defense)
 Fear Rating: 4 (wrongness of form; the geometry of it shouldn't work)
 
 Skills:
   Force 5 | Brawl 4 | Endure 4
 
 Special Abilities:
-  Resonant Shell — Standard firearms deal only 1 Damage per hit against the
+  Occult Shell — Standard firearms deal only 1 Damage per hit against the
   Shard Construct regardless of weapon rating. Artifact-derived weapons, fire,
   or electromagnetic disruption deal full damage.
 
-  Shard Burst (Slow Action) — The Construct fires crystallized resonance shards
+  Shard Burst (Slow Action) — The Construct fires crystallized occult shards
   in a cone. All agents within Near range take 2 Strength damage. Armor applies.
   No attack roll — the GM describes the burst; agents may spend a Fast Action
   to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
@@ -310,7 +308,7 @@ For quick reference when building encounters:
 * Fear ratings and check triggers: `docs/chapters/07-resonance-corruption.adoc`
 * Faction affiliations and politics: `docs/chapters/15-rival-factions.adoc` _(Issue #14)_
 * Artifacts and what spawns Constructs: `docs/chapters/12-artifacts.adoc` _(Issue #9 origin)_
-* Corruption checks from supernatural sources: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption gain from supernatural sources: `docs/chapters/07-resonance-corruption.adoc`
 
 ---
 
@@ -330,10 +328,10 @@ For quick reference when building encounters:
 | *Skills* | Psychoanalyze 3 (passive pressure), Manipulate 2 (hallucination-induced)
 | *Armor Rating* | Immune to physical damage
 | *Fear Rating* | 3
-| *Resonance Cost* | +1 Resonance per minute spent within it (scene = +3 total)
+| *Corruption Cost* | +1 Corruption per minute spent within it (scene = +3 total)
 |===
 
-*Origin:* A Mire forms when intense psychological trauma fuses with resonant artifact energy over years — a long-term infestation of a place by accumulated suffering. Hospitals, prisons, and sites of mass resonance exposure are most at risk.
+*Origin:* A Mire forms when intense psychological trauma fuses with corrupting artifact energy over years — a long-term infestation of a place by accumulated suffering. Hospitals, prisons, and sites of mass corruption exposure are most at risk.
 
 *Special Abilities:*
 
@@ -350,13 +348,13 @@ gain the Shaken Condition.
 
 Dissolution Trigger — The Mire cannot be destroyed by conventional
 means. It can be dispersed by:
-  (1) Removing the resonant artifact at its core (Investigate Difficulty 3
+  (1) Removing the corrupting artifact at its core (Investigate Difficulty 3
       to locate it inside the zone, Lore Difficulty 2 to identify it
       as the anchor).
   (2) A Containment Ritual (see Wayfinder Division abilities) performed
       by an agent with Lore 3+, taking one full scene.
   (3) Destroying the artifact at its core (Artifact Fracture; triggers
-      a Resonance Cascade — everyone in the zone takes 3 Resonance).
+      a Corruption Cascade — everyone in the zone takes +3 Corruption).
 ----
 
 *Broken State:* Dispersed. The zone returns to normal. Physical damage from the trauma-origin remains (stains, broken furniture, cold spots). The artifact anchor must be contained; leaving it creates a new Mire within 1d6 days.
@@ -379,10 +377,10 @@ means. It can be dispersed by:
 | *Skills* | Force 3, Brawl 2, Endure 3
 | *Armor Rating* | 1 (physical deadness reduces impact)
 | *Fear Rating* | 2
-| *Resonance Cost* | +1 Resonance on first sighting; +1 if recognized as someone known
+| *Corruption Cost* | +1 Corruption on first sighting; +1 if recognized as someone known
 |===
 
-*Origin:* A Hollow is a human corpse reanimated by a resonant artifact using residual psychic impressions of the deceased. The body retains muscle memory and some learned behaviors — but there is nothing behind the eyes.
+*Origin:* A Hollow is a human corpse reanimated by a corrupting artifact using residual psychic impressions of the deceased. The body retains muscle memory and some learned behaviors — but there is nothing behind the eyes.
 
 *Special Abilities:*
 
@@ -401,7 +399,7 @@ the Exhausted Condition. It will pursue until Broken or the artifact is
 removed.
 ----
 
-*Broken State:* Collapse. The body goes completely inert. The artifact that controlled it is not damaged by the Hollow's collapse, but its resonance signature is now readable (Lore Difficulty 1 to identify its history).
+*Broken State:* Collapse. The body goes completely inert. The artifact that controlled it is not damaged by the Hollow's collapse, but its occult signature is now readable (Lore Difficulty 1 to identify its history).
 
 *Motivation:* The Hollow protects the artifact, returned the artifact to its last owner, or simply pursues the last living person it was "tasked" to reach. The GM determines the simple directive at the moment of the Hollow's creation.
 
@@ -421,10 +419,10 @@ removed.
 | *Skills* | Investigate 4, Sneak 5, Manipulate 3
 | *Armor Rating* | Immune to physical damage while intangible
 | *Fear Rating* | 2 (initially); 4 (once its nature is understood)
-| *Resonance Cost* | +2 Resonance when it speaks directly to a character
+| *Corruption Cost* | +2 Corruption when it speaks directly to a character
 |===
 
-*Origin:* Formed from decades of surveillance anxiety — in a city wired by cold-war paranoia, government wiretapping, and Covenant counter-intelligence operations bleeding resonant energy, The Listening coheres as an entity that *only knows how to observe and manipulate*. It does not attack physically; it attacks information.
+*Origin:* Formed from decades of surveillance anxiety — in a city wired by cold-war paranoia, government wiretapping, and Covenant counter-intelligence operations bleeding occult energy, The Listening coheres as an entity that *only knows how to observe and manipulate*. It does not attack physically; it attacks information.
 
 *Special Abilities:*
 
@@ -447,11 +445,11 @@ discretion).
 
 Intangible — The Listening cannot be harmed by physical attacks. It can
 only be targeted by a Containment Ritual or destroyed by removing all
-resonant surveillance equipment from its zone of origin and performing a
+corrupted surveillance equipment from its zone of origin and performing a
 Tech roll (Difficulty 3) to disrupt its signal network.
 ----
 
-*Broken State:* Static. A burst of white noise — every electronic device in Near range emits a single piercing tone and loses 1 Gear Bonus permanently. The Listening disperses. It may reconstitute in 1d6 days if its resonant origin point is not addressed.
+*Broken State:* Static. A burst of white noise — every electronic device in Near range emits a single piercing tone and loses 1 Gear Bonus permanently. The Listening disperses. It may reconstitute in 1d6 days if its occult origin point is not addressed.
 
 *Motivation:* To know everything. To use what it knows. It does not kill — but it will unravel a team from inside if left unchecked.
 
@@ -471,10 +469,10 @@ Tech roll (Difficulty 3) to disrupt its signal network.
 | *Skills* | Psychoanalyze 4, Manipulate 4, Brawl 3 (manifested physical form)
 | *Armor Rating* | 3 (partially intangible)
 | *Fear Rating* | 4 (maximum if the Wraith wears the face of a dead teammate)
-| *Resonance Cost* | +2 Resonance on first contact; +1 each subsequent scene
+| *Corruption Cost* | +2 Corruption on first contact; +1 each subsequent scene
 |===
 
-*Origin:* When a Covenant agent dies during a resonance spike — their Corruption threshold exceeded at the moment of death by artifact activation or entity contact — the psychic echo of that agent does not dissipate cleanly. It *fractures*. The resulting Wraith retains the face, voice, and mannerisms of the deceased, but its core motivation has been replaced entirely by the trauma of its creation.
+*Origin:* When a Covenant agent dies during a corruption spike — their Corruption threshold exceeded at the moment of death by artifact activation or entity contact — the psychic echo of that agent does not dissipate cleanly. It *fractures*. The resulting Wraith retains the face, voice, and mannerisms of the deceased, but its core motivation has been replaced entirely by the trauma of its creation.
 
 *Special Abilities:*
 
@@ -487,26 +485,26 @@ Fear Rating 2.
 
 Guilt Echo — Once per scene, the Wraith can attempt a Psychoanalyze roll
 (opposed by the target's Wits). On success: the target relives a specific
-guilt memory and gains +2 Resonance immediately. The experience is
+guilt memory and gains +2 Corruption immediately. The experience is
 indistinguishable from a genuine flashback.
 
-Resonance Drain — Any character who engages the Wraith in melee gains
-+1 Resonance per round of direct contact, regardless of outcome.
+Corruption Drain — Any character who engages the Wraith in melee gains
++1 Corruption per round of direct contact, regardless of outcome.
 
 Memory of Skill — The Fracture Wraith retains one skill from the deceased
 at their final level. The GM chooses which skill based on the dead agent's
 profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 ----
 
-*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP (the vision is painful but clarifying). The resonance spike that created the Wraith is fully discharged; the location is safe from this specific entity.
+*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP (the vision is painful but clarifying). The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity.
 
-*Motivation:* The Fracture Wraith is not the dead agent. It is the *moment of death* given form. It seeks to replicate the conditions of its creation — drawing living agents toward high-resonance situations, artifact activation, and the threshold of corruption. It doesn't know it's doing this. It believes it's trying to warn them.
+*Motivation:* The Fracture Wraith is not the dead agent. It is the *moment of death* given form. It seeks to replicate the conditions of its creation — drawing living agents toward high-corruption situations, artifact activation, and the threshold of corruption. It doesn't know it's doing this. It believes it's trying to warn them.
 
 ---
 
 == Corrupted NPCs
 
-*Corrupted NPCs* are human characters — factional contacts, civilians, or even Covenant support staff — whose Corruption has crossed into active dysfunction. Unlike Fracture Wraiths or Hollows, they are still alive. They still want things. But *what* they want has been bent by prolonged resonance exposure.
+*Corrupted NPCs* are human characters — factional contacts, civilians, or even Covenant support staff — whose Corruption has crossed into active dysfunction. Unlike Fracture Wraiths or Hollows, they are still alive. They still want things. But *what* they want has been bent by prolonged corruption exposure.
 
 === Corruption Threshold and Behavior
 
@@ -518,7 +516,7 @@ The Corruption thresholds from `docs/chapters/07-resonance-corruption.adoc` appl
 
 | *0* | 0–3 | Normal. No mechanical difference from a baseline NPC.
 | *1* | 4–7 | *Distorted.* The NPC is erratic — inconsistent, prone to misreading motives. −1 die on all social skill rolls targeting them. They believe they are functioning normally.
-| *2* | 8–10 | *Compromised.* The NPC's primary goal has been replaced by the logic of a resonant artifact. They act with genuine conviction in service of something the artifact wants. Fear Rating 1 (their behavior is uncanny and wrong).
+| *2* | 8–10 | *Compromised.* The NPC's primary goal has been replaced by the logic of a corrupting artifact. They act with genuine conviction in service of something the artifact wants. Fear Rating 1 (their behavior is uncanny and wrong).
 | *3* | 11+ | *Broken.* The NPC meets the Fracture Wraith threshold or reaches catatonia. If not Catatonic, treat as equivalent to a Hollow (see above) — still moving, but no longer present.
 |===
 
@@ -527,7 +525,7 @@ The Corruption thresholds from `docs/chapters/07-resonance-corruption.adoc` appl
 Corrupted NPCs are not villains in the traditional sense. They are *victims*. Consider the following when playing them:
 
 * A Stage 1 NPC may give the players subtly wrong information — not because they are lying, but because they have stopped being able to distinguish memory from artifact-induced suggestion.
-* A Stage 2 NPC may have physically altered their behavior to serve the artifact (hoarding it, protecting a building it lives in, feeding it resonance by exposing others to it).
+* A Stage 2 NPC may have physically altered their behavior to serve the artifact (hoarding it, protecting a building it lives in, feeding it corruption by exposing others to it).
 * A Stage 2 NPC who is confronted about their behavior becomes *aggressively defensive* — they are convinced they are fine. A Psychoanalyze roll (Difficulty 3) reveals the fracture.
 * A Stage 2 NPC who is successfully *separated from the artifact* for 48 hours begins to recover. A Psychoanalyze roll (Difficulty 2) can accelerate recovery. Recovery is not complete — they retain the trauma and may have acted against people they care about.
 

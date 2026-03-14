@@ -28,13 +28,11 @@ The elegance of this system lies in its speed; it produces immediate, decisive r
 
 The primary driver of suspense and narrative tension is the *Push* mechanic. If an initial roll yields no sixes (a failure), or if the player desperately needs additional successes for stunts, they may choose to *push* the roll — picking up and re-rolling all dice that do not currently display a 6.
 
-However, pushing represents the character exerting maximum physical, mental, or material effort, and it comes with strict limitations and severe risks:
+However, pushing represents the character exerting maximum physical, mental, or material effort, and it comes with severe risks:
 
-* You immediately gain *1 Resonance point*.
-* You take a *−1 die penalty* on all future rolls utilizing that specific Attribute.
-* *You cannot push a roll if you already have a −1 penalty to the associated Attribute.* This prevents players from continuously "farming" resources on safe rolls.
+* You immediately gain *+1 Corruption*.
 
-> *Design note:* Resonance is the only push cost. There is no separate "Stress" track, no optional complication table. The Resonance system is designed to handle all forms of mental and supernatural pressure through a single unified resource — see `docs/chapters/07-resonance-corruption.adoc` (Design Decision: Resonance vs. Willpower) for the full rationale.
+> *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see `docs/chapters/07-resonance-corruption.adoc` for the full rules.
 
 The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 
@@ -55,13 +53,13 @@ When two characters are directly working against each other — a guard watching
 
 > **Design Decision:** In Neon Relic, ties are resolved *in favor of the active party* — the character initiating the action. +
 > +
-> **Rationale:** Neon Relic is an action-and-investigation game. Agents are protagonists taking risks. A tie should reward decisive action rather than passive defense. The threat of failure is already baked into the Resonance cost of pushing — we don't need the additional drag of defender-wins ties slowing down forward momentum. This differs from _Vaesen_ (defender wins) and aligns more closely with the feel of _Alien RPG_.
+> **Rationale:** Neon Relic is an action-and-investigation game. Agents are protagonists taking risks. A tie should reward decisive action rather than passive defense. The threat of failure is already baked into the Corruption cost of pushing — we don't need the additional drag of defender-wins ties slowing down forward momentum. This differs from _Vaesen_ (defender wins) and aligns more closely with the feel of _Alien RPG_.
 
-If both sides roll zero successes, the outcome is *no change* — the situation remains unresolved, and the GM should advance the fiction in a direction that applies pressure (the confrontation escalates, time runs out, a third party notices, etc.). The acting character does *not* gain Resonance from a zero-zero tie.
+If both sides roll zero successes, the outcome is *no change* — the situation remains unresolved, and the GM should advance the fiction in a direction that applies pressure (the confrontation escalates, time runs out, a third party notices, etc.). The acting character does *not* gain Corruption from a zero-zero tie.
 
 === Common Opposed Pairings
 
-The following pairings arise most frequently in play. Either side may push their roll as normal, gaining 1 Resonance.
+The following pairings arise most frequently in play. Either side may push their roll as normal, gaining +1 Corruption.
 
 [%header,cols="2,2,3"]
 |===
@@ -81,9 +79,7 @@ The following pairings arise most frequently in play. Either side may push their
 
 === Pushed Opposed Rolls
 
-Either or both sides may push their roll (gaining 1 Resonance each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, the active party wins as normal.
-
-*You may not push an opposed roll if you already have a −1 penalty to the relevant Attribute.*
+Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, the active party wins as normal.
 
 ---
 
@@ -106,11 +102,10 @@ An ally may help if **both** of the following are true:
 
 > **Maximum pool size:** With 2 helpers, a character's pool can be up to +2 dice above their normal maximum. This represents peak team coordination — beyond this, too many cooks.
 
-=== Helping and Resonance
+=== Helping and Corruption
 
 * If the active character *pushes* the roll, helpers are *not* penalized — they lent their dice to the initial roll, not the push.
-* If a helper's contributed die shows a *1 on the initial (pre-push) roll*, the active character still gains those dice for the push (1s on initial rolls only matter for gear degradation, not helpers).
-* Helpers do *not* gain Resonance when the active character pushes.
+* Helpers do *not* gain Corruption when the active character pushes.
 
 === Helping in Combat
 
@@ -143,9 +138,9 @@ If the group fails to meet the threshold:
 
 * The GM applies consequences to *all who failed*, not as individual failures but as a shared narrative setback.
 * Individual characters who succeeded are not penalized — they did their part.
-* Characters who failed *may push* as normal (gaining 1 Resonance each), independently.
+* Characters who failed *may push* as normal (gaining +1 Corruption each), independently.
 
-> **Group rolls and Resonance:** Each character manages their own Resonance on a group roll independently. A group roll gone wrong — four agents all pushing, all gaining 1 Resonance — creates the kind of compounding pressure that makes the Corruption system matter.
+> **Group rolls and Corruption:** Each character manages their own Corruption on a group roll independently. A group roll gone wrong — four agents all pushing, all gaining +1 Corruption — creates the kind of compounding pressure that makes the Corruption system matter.
 
 ---
 
@@ -166,7 +161,7 @@ If Petra had rolled 0 successes and the operative also rolled 0, the tail contin
 *Situation:* Wayfinder Agent Reyes is interrogating a frightened historian who knows where the artifact is. The historian desperately doesn't want to cooperate.
 
 * **Reyes rolls:** Manipulate (EMP 4 + Manipulate 2) = 6 dice. Rolls: 5, 4, 4, 3, 2, 1 → *0 successes*.
-* Reyes decides to *push* (gains 1 Resonance, now at 2). Re-rolls all 5 non-6 dice: 6, 6, 3, 2, 1 → *2 successes*.
+* Reyes decides to *push* (gains +1 Corruption, now at 1). Re-rolls all 5 non-6 dice: 6, 6, 3, 2, 1 → *2 successes*.
 * **Historian rolls:** Psychoanalyze (EMP 3 + Psychoanalyze 1) = 4 dice. Rolls: 6, 4, 3, 2 → *1 success*.
 * **Result:** Reyes wins (2 vs 1). The historian cracks. The extra success can be spent on a stunt — perhaps he volunteers more than just the location.
 
@@ -186,4 +181,4 @@ If Petra had rolled 0 successes and the operative also rolled 0, the tail contin
 * Osei (Sneak 0, EMP 3): 3 attribute dice → 6, 3, 1 → *1 success* ✓
 * Kowalski (Sneak 2, AGI 4): 6 dice → 6, 6, 3, 2, 1, 1 → *2 successes* ✓
 
-Reyes failed. Threshold not met. The GM rules the guard hears something from Reyes' direction and starts to turn. *Reyes pushes* (gains 1 Resonance): re-rolls 3 dice → 6, 4, 2 → *1 success*. The group just barely makes it — but Reyes is now at 1 Resonance and the tension meter has ticked up.
+Reyes failed. Threshold not met. The GM rules the guard hears something from Reyes' direction and starts to turn. *Reyes pushes* (gains +1 Corruption): re-rolls 3 dice → 6, 4, 2 → *1 success*. The group just barely makes it — but Reyes is now at 1 Corruption and the tension meter has ticked up.
