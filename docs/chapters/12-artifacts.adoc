@@ -80,3 +80,215 @@ Carrying more than one artifact simultaneously is permitted but discouraged:
 * *Three or more artifacts:* The GM rolls a Resonance Cascade — all carried artifacts leak resonance into the carrier simultaneously. Each artifact applies its Resonance cost at the end of the scene, even if none were used.
 
 > *Lore check (Difficulty 2):* An agent who succeeds on a Lore roll after picking up an artifact can sense its tier and whether a previous carrier activated it. Failure means the agent is unaware of the added pressure until they notice the Encumbered Condition or start gaining unplanned Resonance.
+
+---
+
+[[creating-artifacts]]
+== Creating Artifacts (GM Guidelines)
+
+Every Neon Relic campaign arc should have a unique artifact at its heart — a
+specific, dangerous object with a history, a hunger, and consequences that ripple
+through the case file. The catalog above provides examples, but GMs need a
+structured framework for designing originals.
+
+The rules below use a **Resonance Budget** system: the power of an artifact's
+effect is always proportional to the psychological and physical cost of using it.
+No free rides. No safe artifacts.
+
+---
+
+=== The Artifact Template
+
+Every artifact needs five defined components. Fill in each section before
+introducing the artifact to players.
+
+[%header,cols="1,3,4"]
+|===
+| Component | What It Defines | Design Prompt
+
+| *Origin*
+| Where did this come from? Why does it have power?
+| "A Civil War surgeon's bone saw used in a field hospital during a thunderstorm that struck the tent. Three hundred deaths witnessed through its blade."
+
+| *Form*
+| What does it look like? What mundane object is it?
+| Must appear entirely ordinary. No glowing runes. The horror is the mundane hiding the monstrous.
+
+| *Effect*
+| What does activating it do?
+| State the mechanical benefit clearly: what roll it replaces, what it grants, what threat it neutralizes.
+
+| *Resonance Cost & Tier*
+| How much Resonance does activation generate?
+| 1 Resonance = Tier 1. 2 Resonance = Tier 2. 3 Resonance = Tier 3. See budget guidelines below.
+
+| *Fracture Condition*
+| What happens when the Artifact Die rolls 1?
+| Should be thematically linked to the origin. A surgeon's tool might inflict wounds; a musical instrument might silence the user.
+|===
+
+> **Containment Profile** (optional sixth component): What physical or procedural
+> conditions keep this artifact dormant in transport? What inadvertently activates it?
+> See <<containment-profiles,Containment Profiles>> below.
+
+---
+
+[[resonance-budget]]
+=== Resonance Budget System
+
+An artifact's Resonance cost is not arbitrary — it flows directly from the power
+of the effect. Use this framework to set Resonance cost and choose the Artifact Die.
+
+[%header,cols="1,1,2,4"]
+|===
+| Tier | Resonance Cost | Artifact Die | Effect Power Level
+
+| *1 — Uncanny*
+| 1 Resonance
+| d8
+| Grants an automatic success on a single skill roll, or reveals information that would require a Diff 2 roll. No direct combat effect. Minor sensory or perceptual ability.
+
+| *2 — Threatening*
+| 2 Resonance
+| d10
+| Replaces a full skill roll with guaranteed success, or grants a significant combat advantage (extra dice, forced complication on enemy). Affects one target in zone.
+
+| *3 — Catastrophic*
+| 3 Resonance
+| d12
+| Transcends normal human action entirely — massive unblockable damage, reality alteration, mass psychic attack, temporal displacement of a scene. Cannot be replicated by any mundane skill roll.
+|===
+
+==== Effect Design Rules
+
+These rules prevent artifacts from becoming "I win" buttons:
+
+. **One effect only.** Artifacts do one thing. They do it perfectly. They do not do anything else.
+. **No healing.** Artifacts cannot restore Stress, Corruption, or physical Damage.
+   _(They can transfer damage — a Tier 2 artifact might push one agent's wounds to another — but cannot eliminate harm from the fiction.)_
+. **Always costs something.** Even on a "successful" fracture-free roll, the Resonance cost is paid. The artifact does not become safer with use.
+. **Fracture scales with Tier.** Tier 1 fractures are painful and personal. Tier 2 fractures affect the party or scene. Tier 3 fractures threaten the location or the case.
+
+---
+
+[[containment-profiles]]
+=== Containment Profiles
+
+Containment is half the job. Before introducing an artifact, define how it is
+kept inert during transport and what triggers it inadvertently.
+
+[%header,cols="2,3,3"]
+|===
+| Containment Type | How It Works | Example Trigger (Inadvertent Activation)
+
+| *Physical Isolation*
+| Wrapped in lead foil, stored in a Faraday cage, or sealed in salt-packed containers.
+| Unwrapped within 5 meters of a powered device.
+
+| *Ritual Quiescence*
+| A spoken phrase, symbol, or specific handling order keeps the artifact dormant.
+| Touched without the quiescence rite being performed within the last 24 hours.
+
+| *Environmental Suppression*
+| Requires specific temperature, darkness, or absence of electromagnetic fields.
+| Brought into a brightly lit space, or exposed to radio frequencies.
+
+| *Proximity Restriction*
+| Cannot be within a defined range of another artifact.
+| Two artifacts stored in the same vehicle for more than 1 hour.
+
+| *Temporal Lock*
+| Dormant only during specific hours, phases of the moon, or calendar dates.
+| Activation window opens during a case — may force a ticking-clock constraint.
+
+| *Cognitive Anchor*
+| Requires a holder with a specific psychological trait (fear, grief, obsession) to remain passive.
+| Carried by a Corrupted agent (any Corruption stage 2+) — activates involuntarily.
+|===
+
+> **Stack Division Note:** The <<facility-covenant-armorer,Covenant Armorer>> HQ
+> facility and the Keep's Resonance Dampening Vault provide structural support for
+> containment. Without them, field containment relies on improvised measures and
+> Wayfinder knowledge.
+
+---
+
+=== One-of-a-Kind vs. Replicable Artifacts
+
+Most artifacts are **unique** — imbued with power because of specific historical
+events, blood spilled, or metaphysical convergence that cannot be replicated. The
+GM should treat these as irreplaceable campaign assets.
+
+**Replicable artifacts** are the exception. They occur when:
+
+- A formula or ritual is rediscovered (Wayfinder research arc)
+- A factory or workshop was unknowingly producing cursed items at scale
+- A Fragment entity has seeded multiple objects simultaneously
+
+Replicable artifacts follow the same template but have the *Replicable* tag appended.
+They may appear in multiple instances throughout a campaign.
+
+---
+
+[[artifact-decay]]
+=== Artifact Decay (Optional Rule)
+
+As agents study, handle, and contain an artifact over multiple sessions, its
+metaphysical coherence may weaken. This is a feature, not a bug — it means
+containment is working.
+
+**Decay Track:** Each artifact has a hidden Decay score from 0–5. The GM advances
+it when:
+
+- The artifact is successfully studied by a Wayfinder (roll Lore, success = +1 Decay)
+- A containment ritual is performed correctly (+1 Decay per ritual)
+- The artifact fractures (Artifact Die = 1) and the PC survives (+1 Decay)
+
+[%header,cols="1,1,4"]
+|===
+| Decay Score | Artifact Die | Status
+
+| 0 | Full die (d8/d10/d12) | Active and fully dangerous
+| 1–2 | Step down one die | Effect weakened; Resonance cost reduced by 1 (min 1)
+| 3–4 | Step down two dice | Barely active; only works on activation rolls of 5–6
+| 5 | — | Inert. Artifact is neutralized and safe for permanent containment. Case closed.
+|===
+
+> Decay is the core loop of a well-run Neon Relic campaign. Each case should
+> advance decay on the primary artifact by at least 1. A multi-session arc is
+> complete when the artifact reaches Decay 5.
+
+---
+
+[[artifact-worked-example]]
+=== Worked Example: The Stethoscope of Dr. Morrow
+
+To illustrate the framework in practice:
+
+**Origin:** In 1943, Dr. Eli Morrow performed an experimental surgery in a
+research hospital outside Chicago. During the procedure, a resonance event —
+origin unknown — caused Morrow to hear the deaths of everyone in the building
+simultaneously. He died at the operating table. His stethoscope absorbed the
+event.
+
+**Form:** A 1940s-era Sprague Rappaport stethoscope, worn black tubing,
+chestpiece engraved with initials E.M. Appears old but functional.
+
+**Effect (Tier 2, d10):** When pressed to any living person's chest, the user
+hears not the target's heartbeat but their greatest fear — precise, immersive,
+and exploitable. Grants automatic success on any Empathy (Manipulate) or
+Investigate (interrogation) roll against that target for the rest of the scene.
+
+**Resonance Cost:** 2 Resonance.
+
+**Fracture Condition (on 1):** The user hears their *own* death — vivid,
+detailed, inevitable. They gain 2 Resonance immediately and cannot take Slow
+Actions until end of scene (paralyzed by the vision).
+
+**Containment Profile:** Physical Isolation — wrapped in surgical gauze treated
+with saline solution. Activates involuntarily if placed against skin without first
+spoken: *"Morrow rests."*
+
+**Artifact Decay:** Begins at 0. Each Wayfinder analysis session can push this
+toward inert at Decay 5.
+
