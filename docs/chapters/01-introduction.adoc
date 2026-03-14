@@ -7,3 +7,295 @@ By utilizing the *Year Zero Engine (YZE)*, a framework celebrated for its modula
 The game casts players as agents of *The Verdant Covenant*, a secretive society operating within the neon-drenched, synthesizer-scored landscape of the late 1980s. The design mandates a complete thematic reskin of the YZE mechanics, including specialized class divisions, analog items, supernatural abilities, and faction-based settings. Furthermore, it integrates a uniquely engineered *"Resonance and Corruption"* mechanic — a proprietary addition that conceptually bridges the volatile "Stress and Panic" system of _Alien_ with the resource-management aspects of "Willpower" in _Forbidden Lands_, and the humanity attrition of _Blade Runner_.
 
 The resulting framework is a fast, decisive, and player-centric engine designed to deliver episodic, "monster-of-the-week" mysteries that are ultimately anchored by strategic headquarters management and a deep exploration of the "Artifact of Doom" narrative trope.
+
+---
+
+= Creating Your Agent
+
+Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these eleven steps in order.
+
+[NOTE]
+====
+*Design Note:* Steps 9 and 10 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
+====
+
+---
+
+== Step 1: Choose Your Division
+
+Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are four playable Divisions:
+
+[%header,cols="1,2,1,2"]
+|===
+| Division | Role | CL | Key Attributes
+
+| *Wayfinder* | Research and intelligence. You find what others don't know exists. | 3 | Wits, Empathy
+| *Recovery* | Field retrieval. You go in and bring the artifact out. | 2 | Strength, Agility
+| *The Keep* | Vault security and custody. You guard what has been won. | 3 | Empathy, Wits
+| *Stack* | Logistics and technical support. You make sure everyone else can do their job. | 4 | Wits, Agility
+|===
+
+> *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence.
+
+Read the full Division descriptions in `docs/chapters/09-divisions.adoc` before making your choice.
+
+---
+
+== Step 2: Choose Your Department or Background
+
+Within your Division, you have a specific background:
+
+* **Wayfinder:** Choose a Department — *Research* or *Counterintelligence*. Within that, choose a role (Desk Analyst or Field Analyst).
+* **Recovery:** Choose an Operational Background — *Ex-Agency Operative*, *Heavy-Hitter*, or *Acquisition Specialist*.
+* **The Keep:** Choose a Department — *Catalogers*, *Wardens*, or *Internal Counterintelligence*.
+* **Stack:** Choose a specialty — *Quartermaster*, *Retro-Engineer*, or *Paratech Inventor*.
+
+Your background is primarily a narrative statement — it tells you and the GM where you came from. It does not grant mechanical bonuses at creation, but it should inform which skills you prioritize.
+
+---
+
+== Step 3: Distribute Attribute Points
+
+Distribute *14 points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
+
+[%header,cols="1,1,4"]
+|===
+| Attribute | Range | Description
+
+| *Strength* | 2–5 | Physical power, endurance, and resistance to bodily harm.
+| *Agility* | 2–5 | Reflexes, coordination, fine motor control, and speed.
+| *Wits* | 2–5 | Perception, memory, deductive reasoning, and technical aptitude.
+| *Empathy* | 2–5 | Charisma, social intuition, and resistance to psychological horror.
+|===
+
+> *Division Priority:* Your Division's Key Attributes are where your character naturally excels. It is strongly recommended to place your highest scores there. There is no hard rule preventing you from assigning points elsewhere, but a Recovery agent with Strength 2 will break quickly.
+
+> *Attributes as Health:* Your attributes also serve as your health pools. Strength absorbs physical damage; Agility absorbs exhaustion; Wits absorbs mental horror; Empathy absorbs emotional trauma. A score of 0 in any attribute means your character is *Broken*.
+
+---
+
+== Step 4: Distribute Skill Points
+
+Distribute *10 points* across the twelve core skills. No single skill may exceed *3* at character creation.
+
+[%header,cols="2,1,2,4"]
+|===
+| Skill | Attr | Starting Max | Recommended Division Priority
+
+| Force | STR | 3 | Recovery
+| Brawl | STR | 3 | Recovery
+| Endure | STR | 3 | Keep
+| Sneak | AGI | 3 | Recovery
+| Sleight of Hand | AGI | 3 | Stack
+| Firearms | AGI | 3 | Recovery
+| Investigate | WIT | 3 | Wayfinder, Stack
+| Tech | WIT | 3 | Wayfinder, Stack
+| Lore | WIT | 3 | Wayfinder, Keep
+| Manipulate | EMP | 3 | Wayfinder
+| Command | EMP | 3 | Keep
+| Psychoanalyze | EMP | 3 | Wayfinder, Keep
+|===
+
+> *Unranked skills:* A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice — there are no "untrained" restrictions.
+
+> *Division Key Skills:* Strongly invest at least 2 of your 10 points in each of your Division's Key Skills. These are the rolls you will make most often under pressure.
+
+---
+
+== Step 5: Choose Your Division Talent
+
+Select *one* talent from your Division's talent list (see `docs/chapters/09-divisions.adoc`). You may only choose from your own Division's list at creation.
+
+Most Division Talents cost *1 Resonance* to activate. One talent per list is a *Healing* talent, usable freely but once per session.
+
+> *Talent Advancement:* Additional talents can be purchased during play using experience points. See the Advancement chapter.
+
+---
+
+== Step 6: Record Your Starting Statistics
+
+Once attributes are set, note the following:
+
+[cols="2,3"]
+|===
+| Statistic | Starting Value
+
+| *Clearance Level (CL)* | Set by Division (see Step 1)
+| *Resonance* | *0* — you begin untouched by the occult
+| *Corruption* | *0* — you begin psychologically intact
+| *Max Corruption Threshold* | `10 + Empathy score`
+| *Broken Thresholds* | Any attribute reaching 0
+|===
+
+> *Maximum Corruption Threshold* is the number at which your character's mind permanently fractures, resulting in catatonia and character retirement. This is the most important number on your sheet — protect it.
+
+---
+
+== Step 7: Claim Your Division Item
+
+Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
+
+[cols="1,2,4"]
+|===
+| Division | Item | Granted Abilities
+
+| Wayfinder | *Verdant Codex* | Secures memory, decodes language and symbols, maps artifact locations, preserves documents.
+| Recovery | *Verdant Satchel* | Suppresses artifact aura, seals cursed items, warns of instability, produces basic tools on demand.
+| Keep | *Warden's Bracer* | Suppresses artifact magic nearby, warns of containment failure, safe handling of cursed objects, absorbs 1 Resonance/session, +1 Armor Rating.
+| Stack | _(none)_ | Stack agents receive no Division Item, but gain +1 requisition die whenever acquiring _crafting materials_ during the Equipping Phase.
+|===
+
+---
+
+== Step 8: Select Starting Gear
+
+Each agent begins with a Division-appropriate kit. Gear beyond this standard kit requires a *Clearance Level roll* during the mission's Equipping Phase.
+
+=== Wayfinder Starting Kit
+* Verdant Codex _(Division Item — automatic)_
+* Briefcase with research materials (notepad, pens, carbon paper)
+* 35mm camera with two rolls of film
+* Forged credentials (press pass, academic ID, or government contractor badge — player's choice)
+* Civilian clothing (appropriate for the investigation environment)
+* 1× small concealable weapon (pocket knife, derringer) _(optional, CL 3 item — already authorized)_
+
+=== Recovery Starting Kit
+* Verdant Satchel _(Division Item — automatic)_
+* Sidearm (.38 Special revolver or 9mm semi-automatic, 12 rounds)
+* Flashlight (D-cell)
+* Basic field kit: 10m rope, zip ties × 6, chalk × 2, crowbar
+* Field jacket with concealed holster
+* One additional item from the Equipment tables _(CL 2 or lower)_
+
+=== The Keep Starting Kit
+* Warden's Bracer _(Division Item — automatic)_
+* Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
+* Lore reference binder (photocopied Covenant texts on known artifact types)
+* Formal attire or tactical jacket _(player's choice based on role)_
+* 1× sidearm _(optional, CL 3 permitted — Wardens only)_
+
+=== Stack Starting Kit
+* Personal toolkit: flathead and Phillips screwdrivers × 3, soldering iron, wire cutters, electrical tape, multimeter
+* Signal jammer (prototype; 1 use before requiring repair; Gear Die d6)
+* Walkie-talkies × 2 (range: ~2km, 9V battery)
+* Duct tape (1 roll), WD-40
+* Practical coveralls or utility vest
+
+---
+
+== Step 9: Choose Your Dark Secret _(Placeholder)_
+
+Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. Dark Secrets create narrative hooks and can affect how NPCs and factions react to your character.
+
+> *This mechanic is not yet fully designed.* See Issue #2 for the full Dark Secrets system. For now, write a brief one-sentence backstory secret and move on.
+
+---
+
+== Step 10: Define Your Relationships _(Placeholder)_
+
+Agents are connected to the world around them — a Covenant superior who mentored them, a civilian they protect, a rival from a former life. These ties create stakes and can mechanically affect Corruption checks.
+
+> *This mechanic is not yet fully designed.* See Issue #17 for the full Relationships and Motivations system. For now, note one *Covenant Contact* (an NPC within the organization) and one *Personal Tie* (someone outside it).
+
+---
+
+== Step 11: Name and Biography
+
+Choose a name appropriate for the 1980s United States setting. Write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
+
+> *1980s Name Inspiration:* The era favors names like Karen, Debbie, Steve, Randall, Tracy, Rick, Tamara, Dale, Connie, Barry. Government agencies use surnames in the field.
+
+---
+
+== Character Sheet Summary
+
+After completing all steps, your sheet should record:
+
+[cols="1,2"]
+|===
+| Field | Notes
+
+| *Name / Division / Department* | Identity and role
+| *Clearance Level* | 2–4 depending on Division
+| *Attributes (STR / AGI / WIT / EMP)* | 14 points distributed, 2–5 each
+| *Skills (12)* | 10 points distributed, 0–3 each
+| *Division Talent* | One chosen from Division list
+| *Division Item* | Automatic (or Stack bonus)
+| *Starting Gear* | Division kit ± optional items
+| *Resonance* | Starts at 0
+| *Corruption* | Starts at 0
+| *Max Corruption Threshold* | 10 + Empathy
+| *Dark Secret* | One sentence placeholder
+| *Relationships* | Covenant Contact + Personal Tie
+|===
+
+---
+
+== Worked Example: Creating Petra Vasquez
+
+The following example demonstrates a complete character build for a Recovery agent.
+
+=== Step 1–2: Division and Background
+
+*Petra Vasquez* is a *Recovery* agent with the *Ex-Agency Operative* background. She is a former DEA field agent who recovered an artifact during what she thought was a routine drug raid — and has been in the Covenant's employ ever since.
+
+=== Step 3: Attributes (14 points)
+
+[cols="1,1,1"]
+|===
+| Attribute | Score | Reasoning
+
+| Strength | 4 | Ex-agency physical conditioning
+| Agility | 4 | Trained for fast entries; Recovery Key Attribute
+| Wits | 3 | Sharp but not an analyst
+| Empathy | 3 | People skills honed in field interrogation; protects her Corruption threshold
+|===
+
+> Max Corruption Threshold: `10 + 3 = 13`. Petra can sustain a fair amount of occult exposure before permanent breakdown — but she is no scholar.
+
+=== Step 4: Skills (10 points)
+
+[cols="1,1,1"]
+|===
+| Skill | Rating | Reasoning
+
+| Sneak | 3 | Core recovery skill; DEA background
+| Firearms | 3 | Agency-trained; Recovery Key Skill
+| Force | 2 | Physical entries, breaking down doors
+| Brawl | 1 | Hand-to-hand when it comes to that
+| Investigate | 1 | Enough to read a crime scene
+| Manipulate | 0 | She gets by on presence, not charm
+|===
+
+_Remaining 6 skills are at 0._
+
+=== Step 5: Talent
+
+Petra chooses *Shadow Walker* (1 Resonance): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
+
+=== Step 6: Starting Statistics
+
+[cols="1,1"]
+|===
+| Statistic | Value
+
+| Clearance Level | 2
+| Resonance | 0
+| Corruption | 0
+| Max Corruption Threshold | 13
+|===
+
+=== Step 7–8: Division Item and Gear
+
+Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
+
+=== Steps 9–10: Placeholders
+
+> *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
+
+> *Covenant Contact:* Senior Recovery Commander Darius Osei — her handler since induction.
+> *Personal Tie:* Her younger brother Marco, a cop in Phoenix who doesn't know she quit the DEA.
+
+=== Step 11: Biography
+
+_"Petra Vasquez, former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
