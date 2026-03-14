@@ -2,36 +2,16 @@
 
 == Dark Secrets
 
-A *Dark Secret* is a fact about your character's past — something true, hidden, and consequential. It is not a personality flaw or a quirk. It is a specific event, relationship, or truth that *someone wants to remain buried* and that *would alter the mission or your standing within the Covenant if it surfaced*.
+A *Dark Secret* is a specific fact from your character's past — something true, hidden, and consequential. It is not a personality flaw or a general backstory. It names something: an event, a decision, a relationship that *someone wants to remain buried*.
 
-Dark Secrets are the game's primary engine for personal drama. They force characters into situations where professional loyalty and personal history collide. They answer the question: *why would a capable person still be carrying something this dangerous?*
+Dark Secrets serve two purposes in the game:
 
-=== What Makes a Secret
+. *Roleplay device.* They give the GM a hook. When the investigation points toward your secret — when the evidence room comes up, when the contact's name surfaces — things get complicated. That's the point.
+. *XP question.* At the end of each session, the GM asks: *"Did your Dark Secret complicate the mission?"* If yes: +1 XP. That is the entirety of the mechanical system.
 
-A valid Dark Secret must satisfy three conditions:
+There are no rules for voluntary activation, mandatory exposure, or faction consequences. If your secret surfaces, play it. Whether it surfaced because you chose to bring it in or because the GM did, the XP question applies the same way. Everything else is fiction.
 
-. *It is specific.* Not "a troubled past" — that's backstory. A Dark Secret names something. "I burned down an evidence room in 1981" is a secret. "I was in the Army" is not.
-. *It has a living consequence.* Someone knows. Something remains. The cover-up cost something real — money, a relationship, a crime left unsolved. If no one could ever find out and nothing is at stake, it is not a Dark Secret.
-. *It can be activated by events.* The GM should be able to look at your secret and say: "If the investigation goes in this direction, that secret becomes relevant." It must have hooks.
-
-> *Design note:* Dark Secrets are a contract between player and GM. You write the secret; the GM decides when it surfaces. Be honest. A secret you'd prefer never came up is exactly the right kind.
-
-=== Choosing a Dark Secret
-
-At character creation, choose one Dark Secret from your Division's example list, or write your own in collaboration with the GM. Custom secrets must follow the three conditions above.
-
-You may *activate* your Dark Secret voluntarily during a session to claim the XP for debriefing question #3. This means you play the complication forward — you act on the secret, bring it into the scene, or allow someone dangerous to learn something they shouldn't. This does not require GM approval; simply roleplay it into the scene.
-
-If the GM activates your secret — an NPC mentions the evidence, a faction connection surfaces, a call comes in from someone who shouldn't know your name — you also receive the XP even if you work to suppress it.
-
-=== Mechanical Consequences of Exposure
-
-When a Dark Secret is fully exposed (other Covenant members now know, or a hostile faction now holds the information):
-
-. *Immediate effect:* The GM creates a faction consequence. A rival organization gains leverage. A Covenant superior calls a formal review. An NPC contact stops returning calls.
-. *XP reward:* +2 bonus XP in the debriefing session when exposure occurs (on top of the standard XP question). Exposure is dramatic; it earns recognition.
-. *Character retirement option:* If the exposure triggers a chain of events that would logically end the character's Covenant membership, the player may choose to retire the character (playing their exit scene) or the GM may force retirement as a campaign consequence — discussed at the table in advance.
-. *New secret opportunity:* After a full exposure, the character may acquire a new Dark Secret in the next session's character work. The old one is no longer hidden; it is now history. History has different weight.
+> *Choosing a secret:* Pick one from your Division's example list below, or write your own. The only requirement: it must be specific enough that the GM can look at it and ask "what happens if the investigation goes *here*?"
 
 ---
 
