@@ -12,11 +12,11 @@ The resulting framework is a fast, decisive, and player-centric engine designed 
 
 = Creating Your Agent
 
-Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these thirteen steps in order.
+Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these twelve steps in order.
 
 [NOTE]
 ====
-*Design Note:* Steps 11 and 12 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
+*Design Note:* Steps 10 and 11 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
 ====
 
 ---
@@ -54,9 +54,22 @@ Your background is primarily a narrative statement — it tells you and the GM w
 
 ---
 
-== Step 3: Distribute Attribute Points
+== Step 3: Choose Your Age Group and Distribute Attribute Points
 
-Distribute *14 points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
+Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, and skill point pool (used in Step 4).
+
+[%header,cols="1,1,1,1"]
+|===
+| Age Group | Age Range | Attribute Points | Skill Points
+
+| *Young* | 22–28 | 14 | 10
+| *Experienced* | 29–38 | 13 | 12
+| *Senior* | 39–52 | 12 | 14
+|===
+
+Younger characters are physically sharper (more attribute points); older characters are more skilled (more skill points). The trade-off is real and interesting — there is no "best" choice.
+
+Distribute your *Attribute Points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
 
 [%header,cols="1,1,4"]
 |===
@@ -76,7 +89,7 @@ Distribute *14 points* across your four core attributes. Each attribute has a mi
 
 == Step 4: Distribute Skill Points
 
-Distribute *10 points* across the twelve core skills. No single skill may exceed *3* at character creation.
+Distribute your *Skill Points* (determined by your Age Group in Step 3) across the twelve core skills. No single skill may exceed *3* at character creation.
 
 [%header,cols="2,1,2,4"]
 |===
@@ -143,28 +156,7 @@ Once attributes are set, note the following:
 
 ---
 
-== Step 7: Choose Your Experience Track
-
-Every agent brings a personal history into their first operation. Your *Experience Track* represents your seniority before this mission begins — it determines your age, any modification to your Clearance Level, and grants you one additional General Talent beyond the one selected in Step 5.
-
-[%header,cols="1,1,1,3,2"]
-|===
-| Track | Age | CL Modifier | Additional Benefit | Cost
-
-| *Rookie* | 22–28 | — | One additional General Talent | —
-| *Field Veteran* | 29–38 | +1 _(max 4)_ | One additional General Talent | —
-| *Senior Operative* | 39–52 | +1 _(max 4)_ | One additional General Talent | Begin play with *+1 Corruption*
-|===
-
-> *CL Cap:* No agent may begin play above Clearance Level *4*, regardless of Division or Experience Track.
-
-> *General Talent (Lifepath):* This talent is separate from the General Talent selected in Step 5. All agents begin play with *two General Talents* — one chosen in Step 5, one reflecting their operative history.
-
-If your Experience Track grants a CL bonus, update your Clearance Level now.
-
----
-
-== Step 8: Claim Your Division Item
+== Step 7: Claim Your Division Item
 
 Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
 
@@ -180,7 +172,7 @@ Every agent receives their Division's *signature item* at induction. This item r
 
 ---
 
-== Step 9: Select Starting Gear
+== Step 8: Select Starting Gear
 
 Each agent begins with a Division-appropriate kit. Gear beyond this standard kit requires a *Clearance Level roll* during the mission's Equipping Phase.
 
@@ -216,7 +208,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 
 ---
 
-== Step 10: Choose Your Anchor
+== Step 9: Choose Your Anchor
 
 Every agent carries an *Anchor* — a tangible, physical object tied to a core humanizing memory from before the Covenant. It connects you to the ordinary world you are fighting to protect, and it is your most reliable tool for healing Corruption.
 
@@ -231,7 +223,7 @@ Record your Anchor's name and the memory it represents on your character sheet.
 
 ---
 
-== Step 11: Choose Your Dark Secret _(Placeholder)_
+== Step 10: Choose Your Dark Secret _(Placeholder)_
 
 Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. Dark Secrets create narrative hooks and can affect how NPCs and factions react to your character.
 
@@ -239,7 +231,7 @@ Every Covenant agent harbors a *Dark Secret* — something from their past that 
 
 ---
 
-== Step 12: Define Your Relationships
+== Step 11: Define Your Relationships
 
 Every agent enters play with three *Relationship Slots*. These define the personal stakes that make missions matter and connect the character to the world beyond the Covenant.
 
@@ -272,7 +264,7 @@ When a Relationship NPC is *killed, captured, corrupted, or otherwise removed fr
 
 ---
 
-== Step 13: Name and Biography
+== Step 12: Name and Biography
 
 Choose a name appropriate for the 1980s United States setting. Write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
 
@@ -289,13 +281,12 @@ After completing all steps, your sheet should record:
 | Field | Notes
 
 | *Name / Division / Department* | Identity and role
-| *Clearance Level* | Division default + Experience Track modifier (max 4)
-| *Age* | Set by Experience Track (22–52)
-| *Attributes (STR / AGI / WIT / EMP)* | 14 points distributed, 2–5 each
-| *Skills (12)* | 10 points distributed, 0–3 each
+| *Clearance Level* | Set by Division (see Step 1)
+| *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
+| *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
+| *Skills (12)* | Skill Points distributed per Age Group, 0–3 each
 | *Division Talent* | One chosen from Division list
 | *General Talent* | One chosen from General Talents list (Step 5)
-| *General Talent (Lifepath)* | One chosen from General Talents list (Step 7)
 | *Division Item* | Automatic (or Stack bonus)
 | *Starting Gear* | Division kit ± optional items
 | *Corruption* | Starts at 0
@@ -315,7 +306,9 @@ The following example demonstrates a complete character build for a Recovery age
 
 *Petra Vasquez* is a *Recovery* agent with the *Ex-Agency Operative* background. She is a former DEA field agent who recovered an artifact during what she thought was a routine drug raid — and has been in the Covenant's employ ever since.
 
-=== Step 3: Attributes (14 points)
+=== Step 3: Age Group and Attributes
+
+Petra's six years in DEA field operations put her at age 34 — she selects *Experienced* (29–38), giving her *13 Attribute Points* and *12 Skill Points*.
 
 [cols="1,1,1"]
 |===
@@ -324,12 +317,14 @@ The following example demonstrates a complete character build for a Recovery age
 | Strength | 4 | Ex-agency physical conditioning
 | Agility | 4 | Trained for fast entries; Recovery Key Attribute
 | Wits | 3 | Sharp but not an analyst
-| Empathy | 3 | People skills honed in field interrogation; protects her Corruption threshold
+| Empathy | 2 | Gets by on presence, not charm; lower threshold is a real risk
 |===
 
-> Max Corruption Threshold: `10 + 3 = 13`. Petra can sustain a fair amount of occult exposure before permanent breakdown — but she is no scholar.
+_(13 points spent: 4 + 4 + 3 + 2 = 13)_
 
-=== Step 4: Skills (10 points)
+> Max Corruption Threshold: `10 + 2 = 12`. Petra has a tighter margin than she'd like — but those attribute points went where they needed to go.
+
+=== Step 4: Skills (12 points)
 
 [cols="1,1,1"]
 |===
@@ -338,12 +333,12 @@ The following example demonstrates a complete character build for a Recovery age
 | Sneak | 3 | Core recovery skill; DEA background
 | Firearms | 3 | Agency-trained; Recovery Key Skill
 | Force | 2 | Physical entries, breaking down doors
-| Brawl | 1 | Hand-to-hand when it comes to that
+| Brawl | 2 | Hand-to-hand when it comes to that
 | Investigate | 1 | Enough to read a crime scene
-| Manipulate | 0 | She gets by on presence, not charm
+| Endure | 1 | Agency conditioning
 |===
 
-_Remaining 6 skills are at 0._
+_(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
 
 === Step 5: Starting Talents
 
@@ -356,24 +351,20 @@ _Remaining 6 skills are at 0._
 |===
 | Statistic | Value
 
-| Clearance Level | 2 _(initial; updated in Step 7)_
+| Clearance Level | 2
 | Corruption | 0
-| Max Corruption Threshold | 13
+| Max Corruption Threshold | 12
 |===
 
-=== Step 7: Experience Track
+=== Steps 7–8: Division Item and Gear
 
-Petra's six years in DEA field operations make her a *Field Veteran* (age 34). Her CL increases from 2 to *3*. She selects *Paranormal Intuition* as her Lifepath General Talent — entering a room and knowing whether something supernatural has been there suits someone who learned too late to trust her instincts.
+Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
 
-=== Steps 8–9: Division Item and Gear
-
-Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 3 item she selects a police scanner.
-
-=== Step 10: Anchor
+=== Step 9: Anchor
 
 > *Anchor:* A cassette tape — Los Lobos, _By the Light of the Moon_, 1987. Her brother Marco made it for her birthday. She keeps it in the inside pocket of her field jacket and hasn't listened to it since the Tucson raid.
 
-=== Steps 11–12: Dark Secret and Relationships
+=== Steps 10–11: Dark Secret and Relationships
 
 > *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
 
@@ -381,6 +372,6 @@ Petra records the *Verdant Satchel* automatically. From the Recovery Kit she tak
 > *Personal Tie:* Her younger brother Marco, a cop in Phoenix who doesn't know she quit the DEA.
 > *Rival/Enemy:* Agent Harlan Voss — a Keep operative who questioned her competence during the Tucson debrief. She hasn't forgotten.
 
-=== Step 13: Biography
+=== Step 12: Biography
 
 _"Petra Vasquez, former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
