@@ -1,6 +1,6 @@
 = Healing: Anchors, Talents, and Rest
 
-Because Corruption and Resonance naturally build to lethal levels, characters must actively seek to heal their psychological wounds.
+Because Corruption naturally builds toward lethal levels, characters must actively seek to heal their psychological wounds.
 
 == Methods of Recovery
 
@@ -8,8 +8,8 @@ Because Corruption and Resonance naturally build to lethal levels, characters mu
 |===
 | Method | Effect | Requirements
 
-| *All-Day Rest* | Clears Resonance pool to 0. Heals 1 Corruption. | Full 24-hour cycle resting in a secure, non-anomalous location (e.g., Covenant HQ).
-| *Anchor (Memento)* | Heals 1d4 Corruption _or_ clears entire Resonance pool. | Once per session. Dedicate a scene to interacting with your Anchor.
+| *Full Rest (24 hours)* | Heals Corruption equal to *Empathy score*. | Full 24-hour cycle resting in a secure, non-anomalous location (e.g., Covenant HQ).
+| *Anchor (Memento)* | Heals *1d4 Corruption*. | Once per session. Dedicate a scene to interacting with your Anchor.
 | *Healing Talents* | Varies by Talent. | See Division Talents and General Talents marked with _(Healing)_.
 |===
 

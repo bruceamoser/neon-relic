@@ -280,7 +280,7 @@ Both sides roll simultaneously. The side with more successes moves the Contact T
 * Each speed tier below the opponent's: −1 die on the chase roll.
 * Handling bonus/penalty applies directly to the roll.
 
-*Pushing a chase roll:* +1 Resonance as normal. The vehicle also takes 1 Wear immediately (the driver is wringing everything out of it).
+*Pushing a chase roll:* +1 Corruption as normal. The vehicle also takes 1 Wear immediately (the driver is wringing everything out of it).
 
 ==== Vehicle Maneuvers
 
@@ -346,7 +346,7 @@ a **1**. Gear degrades one step down the die chain (d12 → d10 → d8 → d6 �
 Broken). A **Broken** item cannot be used until repaired.
 
 > Stack Division Talent *Jury-Rig* can restore a broken item mid-scene at the cost
-> of 1 Resonance. Formal repair rules below handle everything else.
+> of +1 Corruption. Formal repair rules below handle everything else.
 
 ---
 

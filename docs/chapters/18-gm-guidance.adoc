@@ -14,7 +14,7 @@ Before the mechanical tools, three design priorities that should inform every se
 
 . *The Covenant is not infallible.* Headquarters, the Verdant Codex, and the Division protocols exist in tension with the facts in the field. Let them be wrong sometimes. Let the players be right when the institution isn't.
 
-. *The artifacts are not neutral.* Every artifact has a trajectory — a direction it pulls the world. Make sure some of that pull lands on the agents. Resonance and Corruption are not just penalties; they are the story.
+. *The artifacts are not neutral.* Every artifact has a trajectory — a direction it pulls the world. Make sure some of that pull lands on the agents. Corruption is not just a penalty; it is the story.
 
 ---
 
@@ -105,7 +105,7 @@ Every case has at least one *Countdown Clock* — a track that advances as time 
 
 A Countdown Clock has:
 
-* *A name* (what it represents: "Compact Extraction Team Arrives," "Second Civilian Found Dead," "Artifact Resonance Threshold Reached")
+* *A name* (what it represents: "Compact Extraction Team Arrives," "Second Civilian Found Dead," "Artifact Corruption Threshold Reached")
 * *4–6 clock stages*, each with a defined event
 * *Trigger conditions* that advance the clock one step
 
@@ -141,7 +141,7 @@ Every significant NPC needs three things: a *secret*, a *goal*, and a *connectio
 
 | *Secret* | Something the NPC is hiding from the agents. Not necessarily sinister — a witness might be hiding that they trespassed, not that they're a cultist. The secret creates the reason they don't just tell the agents everything at the start.
 | *Goal* | What the NPC is actively trying to accomplish right now. Not a background motivation — a current action. They are doing something during this case.
-| *Artifact connection* | How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Resonance consequence (nightmares, strange certainty about things they can't know).
+| *Artifact connection* | How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Corruption consequence (nightmares, strange certainty about things they can't know).
 |===
 
 === The Motivated NPC Test
@@ -207,4 +207,4 @@ Roll when you need an unexpected complication mid-case, when a scene is going to
 * Artifact properties and Tiers: `docs/chapters/12-artifacts.adoc`
 * Rival faction behavior and agendas: `docs/chapters/15-rival-factions.adoc`
 * Entity stat blocks and Fear ratings: `docs/chapters/17-bestiary.adoc`
-* Resonance/Corruption consequences: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption consequences: `docs/chapters/07-resonance-corruption.adoc`

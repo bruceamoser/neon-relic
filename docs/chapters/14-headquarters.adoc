@@ -1,6 +1,6 @@
 = Headquarters Management
 
-In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Resonance, and an economic resource sink giving players ownership over the world.
+In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Corruption, and an economic resource sink giving players ownership over the world.
 
 == The Covenant Safehouse
 
@@ -89,7 +89,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 4
 | Secure Communications Room
 | Lead-lined room sealed against electromagnetic and supernatural interference. No phones work inside. No spirits answer. Silence like the inside of a safe.
-| One character per downtime can bleed off up to *4 Resonance* without triggering a Corruption Check. Requires a full day inside — the character is unavailable for other downtime activities that day.
+| One character per downtime can heal up to *4 Corruption*. Requires a full day inside — the character is unavailable for other downtime activities that day.
 |===
 
 === Tier 3 — Advanced Operations
@@ -112,11 +112,11 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | A former Special Forces armorer gone ghost — works out of the armory back room, asks no questions, and charges only in favors and whiskey.
 | Once per Case File, one item in the team's loadout can be permanently upgraded: *+1 Gear Bonus* to the item's listed value. The item also gains the *Reliable* trait (ignore the first 1 when pushing).
 
-| *Resonance Dampening Vault*
+| *Corruption Dampening Vault*
 | 6
 | Faraday Cage + Occult Laboratory
 | A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
-| Store up to *3 active artifacts* without passive resonance leaking to carriers. Artifacts in the vault do not add Enc. pressure (see `docs/chapters/12-artifacts.adoc`). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
+| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see `docs/chapters/12-artifacts.adoc`). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
 
 | *Safe House Network*
 | 6
@@ -177,11 +177,11 @@ The Threat Meter increases by 1 when:
 
 * The team uses explosives or automatic weapons fire in a populated area
 * A rival faction agent escapes alive with knowledge of the team's base location
-* The team fails to contain a resonance leak (active artifact left unsecured overnight)
+* The team fails to contain a corruption leak (active artifact left unsecured overnight)
 * A deceased agent's civilian identity is linked to the Covenant by law enforcement
 * The team's Countdown Clock expires (any severity) during a Case File
 
-The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no resonance incidents).
+The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no corruption incidents).
 
 === Compromise Event
 
@@ -275,7 +275,7 @@ Covenant knows. It always knows.
 | Trigger | Standing Loss | Notes
 
 | Confirmed civilian casualties                       | −2 per casualty | Witnesses who survive and go public count as −3 instead
-| Resonance event reported in media                   | −3 | Any press coverage of supernatural phenomena linked to a case
+| Supernatural event reported in media                   | −3 | Any press coverage of supernatural phenomena linked to a case
 | Artifact lost to rival faction or enemy             | −3 | Lost in the field, stolen post-recovery, or destroyed improperly
 | Agent compromised, turned, or gone rogue            | −4 | Applies whether the agent is caught or simply disappears
 | Case abandoned mid-operation                        | −2 | Cell withdrew without artifact containment or Covenant approval
@@ -326,14 +326,14 @@ Standing threshold is met.
 | *Occult Laboratory* (Tier 2)           | 4 DP | 5
 | *Faraday Cage* (Tier 2)               | 3 DP | 5
 | *Field Intel Network* (Tier 3)         | 5 DP | 10
-| *Resonance Dampening Vault* (Tier 3)   | 6 DP | 10
+| *Corruption Dampening Vault* (Tier 3)   | 6 DP | 10
 | *Safe House Network* (Tier 3)          | 4 DP | 15
 | *Covenant Armorer* (Tier 3)            | 5 DP | 10
 |===
 
 > **Design Note:** Standing gates exist because Tier 2 and 3 facilities represent
 > the Covenant extending significant trust to a cell. An unproven cell does not get
-> access to the Occult Laboratory or the Resonance Dampening Vault. They have to
+> access to the Occult Laboratory or the Corruption Dampening Vault. They have to
 > earn it.
 
 ---

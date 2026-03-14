@@ -164,16 +164,16 @@ Roll when Broken by *Strength or Agility* damage.
 | 63 | *Multiple Wounds* † | Death check. Surviving: roll twice more on this table (ignoring further †). | As per rolled injuries.
 | 64 | *Arterial Strike* † | Bleeding 2 Strength per round. Death check must be made within 2 rounds or automatic death. | Tourniquet (Fast Action, CL 1) buys 1 extra round; Heal (Difficulty 4) fully stabilizes.
 | 65 | *Head Shot* † | Death check. Surviving: permanently remove 1 from Wits AND Empathy. Insight: *+2 dice on Psychoanalyze forever* (near-death clarity). | Cannot be healed. Migraine condition (persistent).
-| 66 | *DOA* † | Automatic death check (no bonus). Surviving: character is clinically dead for 1d6 rounds before CPR-equivalent revives them. All Attributes return to 1. Permanent: Resonance +3, Empathy −1. | See Resonance/Corruption chapter.
+| 66 | *DOA* † | Automatic death check (no bonus). Surviving: character is clinically dead for 1d6 rounds before CPR-equivalent revives them. All Attributes return to 1. Permanent: +3 Corruption, Empathy −1. | See Corruption chapter.
 |===
 
 ---
 
 === Mental & Emotional Critical Injury Table (D66)
 
-Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Resonance — the occult has left its mark.
+Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corruption — the occult has left its mark.
 
-> *All mental criticals:* Gain *+1 Resonance* upon rolling this table, in addition to any listed in the individual result.
+> *All mental criticals:* Gain *+1 Corruption* upon rolling this table, in addition to any listed in the individual result.
 
 [%header,cols="^1,2,4,3"]
 |===
@@ -195,33 +195,33 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Reson
 | 32 | *Social Withdrawal* | −2 dice on all Empathy-based rolls. Character refuses social complexity. | Downtime social scene (roleplay) + Psychoanalyze (Difficulty 2).
 | 33 | *Survivor Guilt* | If any ally takes damage within the scene, character suffers 1 Empathy damage (involuntary). | Psychoanalyze (Difficulty 2) + meaningful roleplay scene.
 | 34 | *Paranoid Ideation* | Character believes a specific NPC or faction is surveilling them (GM chooses). Act on it: +1 die on Sneak actions. Suffer it: −1 die on Empathy rolls involving the believed threat. | Psychoanalyze campaign (2 downtime phases).
-| 35 | *Dissociative Identity Trigger* | +1 Resonance (additional). GM introduces an alternate behavioral state — twice per session, at dramatic moments, rolls a d6: 1–2 = alternate state this scene. | Psychoanalyze campaign (3 downtime phases, Difficulty 3).
+| 35 | *Dissociative Identity Trigger* | +1 Corruption (additional). GM introduces an alternate behavioral state — twice per session, at dramatic moments, rolls a d6: 1–2 = alternate state this scene. | Psychoanalyze campaign (3 downtime phases, Difficulty 3).
 | 36 | *Rage Episodes* | When Empathy falls below 2, character must succeed on Wits roll (Difficulty 2) or attack nearest person (ally or foe). | Psychoanalyze campaign (2 downtime phases, Difficulty 3).
-| 41 | *Artifact Resonance (Insight)* | +2 Resonance (additional). Permanent: *+1 die on all artifact interaction rolls* (you opened a channel). Permanent: −1 Empathy. | Cannot be recovered — this is the artifact's mark.
+| 41 | *Artifact Corruption (Insight)* | +2 Corruption (additional). Permanent: *+1 die on all artifact interaction rolls* (you opened a channel). Permanent: −1 Empathy. | Cannot be recovered — this is the artifact's mark.
 | 42 | *Phobia* | New phobia defined (GM and player): when triggered, automatic Fear check at Fear Rating 3. | Psychoanalyze campaign (3 downtime phases, Difficulty 3) reduces to Fear Rating 1.
 | 43 | *Waking Hallucinations* | Wits reduced by 1 permanently. Once per session, character perceives a supernatural intrusion that may or may not be real (GM only knows). | Keep's Empathy specialist can reduce severity; Wits loss is permanent.
 | 44 | *Emotional Bleed* | Permanently −1 Empathy. Character cannot form new meaningful bonds during campaign (no new Relationships — see Issue #17). | Cannot be healed. Existing Relationships remain.
 | 45 | *Fracture Point* | Corruption threshold reduced by 2 (permanently). Max Corruption = `8 + Empathy` instead of `10 + Empathy`. The exposure has cracked something fundamental. | Cannot be reversed.
-| 46 | *Catatonic Episode* † | Death check (mind, not body — failure = permanent catatonia, character retirement). Surviving: Wits and Empathy each reduced by 1. +2 Resonance immediately. | Intensive Psychoanalyze (Difficulty 4, Keep facility) over 2 downtime phases to stabilize.
+| 46 | *Catatonic Episode* † | Death check (mind, not body — failure = permanent catatonia, character retirement). Surviving: Wits and Empathy each reduced by 1. +2 Corruption immediately. | Intensive Psychoanalyze (Difficulty 4, Keep facility) over 2 downtime phases to stabilize.
 | 51 | *Obsessive Documentation* | Character must document everything (Insight: *+2 dice on Investigate* when reviewing notes from current mission). Compulsion: spends all available time writing; −1 die on social rolls (distracted). | Psychoanalyze campaign (3 downtime phases) to reduce compulsion; Insight remains.
 | 52 | *Broken Empathy* | Permanently −2 Empathy. All social skills lose 2 dice. | Cannot be healed — the connection is severed.
-| 53 | *Artifact Imprint* | +3 Resonance (additional). Character begins hearing the artifact that Broke them. GM may use this as a plot hook: the artifact calls them back. | Containment ritual (Issue #15) can suppress the call but not eliminate the imprint.
-| 54 | *Veil Burn* | +2 Resonance. Wits permanently −1. Insight: *+1 die on all artifact Resonance detection rolls* (you can feel them now). | Cannot be healed — the Veil has scorched your perception permanently.
-| 55 | *Shattered Will* † | Death check (mind). Surviving: Wits and Empathy max permanently reduced by 1 each. +2 Resonance. Cannot push rolls for remainder of campaign arc until psychological breakthrough (GM milestone). | Keep Psychoanalyze program (4 downtime phases, Difficulty 4).
-| 56 | *Cosmic Revelation* † | Death check (mind). Surviving: character learns something true and terrible about the Covenant's mission or the nature of artifacts. +3 Resonance, −2 Empathy permanently. Insight: *+2 dice on all Lore-type rolls forever* (Wayfinder skill equivalent). GM defines the revelation — it should reshape how the character sees the world. | Cannot be unlearned. Roleplay is mandatory.
+| 53 | *Artifact Imprint* | +3 Corruption (additional). Character begins hearing the artifact that Broke them. GM may use this as a plot hook: the artifact calls them back. | Containment ritual (Issue #15) can suppress the call but not eliminate the imprint.
+| 54 | *Veil Burn* | +2 Corruption. Wits permanently −1. Insight: *+1 die on all artifact detection rolls* (you can feel them now). | Cannot be healed — the Veil has scorched your perception permanently.
+| 55 | *Shattered Will* † | Death check (mind). Surviving: Wits and Empathy max permanently reduced by 1 each. +2 Corruption. Cannot push rolls for remainder of campaign arc until psychological breakthrough (GM milestone). | Keep Psychoanalyze program (4 downtime phases, Difficulty 4).
+| 56 | *Cosmic Revelation* † | Death check (mind). Surviving: character learns something true and terrible about the Covenant's mission or the nature of artifacts. +3 Corruption, −2 Empathy permanently. Insight: *+2 dice on all Lore-type rolls forever* (Wayfinder skill equivalent). GM defines the revelation — it should reshape how the character sees the world. | Cannot be unlearned. Roleplay is mandatory.
 | 61 | *Memory Dissolution* | Permanently −1 Wits. Character loses one specific skill memory (GM chooses a skill at rank 1–2; it drops to 0). | Cannot recover lost skill without retraining (requires downtime advancement, Issue #2).
 | 62 | *Identity Crisis* | Character's Division Allegiance wavers. For 1 campaign arc, they cannot use their Division Talent. | Major roleplay scene with Covenant superior + Psychoanalyze (Difficulty 3).
-| 63 | *Veil Madness* | +4 Resonance immediately. Corruption check triggered. Roll on this table *again* (ignore result 63 on reroll). | As per second roll result.
-| 64 | *Prophetic Fugue* † | Death check (mind). Surviving: +3 Resonance. Character enters a trance broadcasting the Covenant's location to hostile artifact entities until a Wayfinder performs a Shielding ritual (Issue #15). | Ritual seals the broadcast; Resonance remains.
-| 65 | *Ego Death* † | Death check (mind). Surviving: character personality fundamentally alters. Player rewrites one core Relationship and one Drive. +3 Resonance. Insight: *+2 dice on all Empathy rolls* (dissolution breeds radical compassion — or fearlessness). | Cannot be undone. Roleplay the new self.
-| 66 | *Unraveling* † | Automatic mind death check (no bonus). Surviving: +4 Resonance, −1 to every Attribute permanently, character retires at end of current mission (they cannot continue as an operative). Final scene before retirement should be played. | Retirement is farewell — play it well.
+| 63 | *Veil Madness* | +4 Corruption immediately. Roll on this table *again* (ignore result 63 on reroll). | As per second roll result.
+| 64 | *Prophetic Fugue* † | Death check (mind). Surviving: +3 Corruption. Character enters a trance broadcasting the Covenant's location to hostile artifact entities until a Wayfinder performs a Shielding ritual (Issue #15). | Ritual seals the broadcast; Corruption remains.
+| 65 | *Ego Death* † | Death check (mind). Surviving: character personality fundamentally alters. Player rewrites one core Relationship and one Drive. +3 Corruption. Insight: *+2 dice on all Empathy rolls* (dissolution breeds radical compassion — or fearlessness). | Cannot be undone. Roleplay the new self.
+| 66 | *Unraveling* † | Automatic mind death check (no bonus). Surviving: +4 Corruption, −1 to every Attribute permanently, character retires at end of current mission (they cannot continue as an operative). Final scene before retirement should be played. | Retirement is farewell — play it well.
 |===
 
 ---
 
 === Cross-References
 
-* *Resonance gain* from mental criticals triggers a Corruption Check (see `docs/chapters/07-resonance-corruption.adoc`).
+* *Corruption gain* from mental criticals is applied immediately (see `docs/chapters/07-resonance-corruption.adoc`).
 * *Healing in the field:* First Aid Kit, Heal skill, Psychoanalyze skill — see `docs/chapters/08-skills.adoc` _(Issue #7)_.
 * *Downtime recovery:* Between-mission phases and Keep medical access — see `docs/chapters/09-base-management.adoc` _(Issue #12)_.
 * *Death and dying procedure:* Full death check rules with autopsy and Covenant notification — see _(Issue #13)_.
@@ -276,7 +276,7 @@ Each Condition has: a *name*, the *penalty* it imposes, how it is *applied*, and
 
 | *Deafened*
 | −1 die on Investigate. Cannot hear verbal communication — Manipulate and Command spoken rolls are impossible. May miss reactive cues (ambush, incoming threat).
-| Gunfire in enclosed space (GM discretion after extended firefight), specific artifact resonance pulse, explosive detonation.
+| Gunfire in enclosed space (GM discretion after extended firefight), specific artifact corruption pulse, explosive detonation.
 | Automatic after scene ends, or rest (next scene at full function).
 
 | *Burning*
@@ -305,8 +305,8 @@ Each Condition has: a *name*, the *penalty* it imposes, how it is *applied*, and
 | Anchor scene (roleplay connection with a Relationship NPC; see Issue #17). Rest (one full scene of safety). Successful Psychoanalyze roll by an ally (Difficulty = Fear Rating of the trigger; minimum Difficulty 1).
 
 | *Haunted*
-| Gain 1 Resonance at the start of each scene (before any rolls). Character hears, sees, or senses the source of the Haunting even when alone.
-| Specific supernatural encounters with unresolved resonance. Artifact Imprint (Critical Injury, result 53). Uncontained artifact proximity during sleep (GM discretion).
+| Gain +1 Corruption at the start of each scene (before any rolls). Character hears, sees, or senses the source of the Haunting even when alone.
+| Specific supernatural encounters with unresolved occult energy. Artifact Imprint (Critical Injury, result 53). Uncontained artifact proximity during sleep (GM discretion).
 | Containment Ritual performed by a Wayfinder (Issue #15). Recovery in a Covenant-sanctioned safe house for the full downtime phase. Specific Psychoanalyze campaign (3 downtime phases, Difficulty 3) suppresses but does not eliminate — ritual is required for full removal.
 
 | *Paranoid*
@@ -320,8 +320,8 @@ Each Condition has: a *name*, the *penalty* it imposes, how it is *applied*, and
 | Ally uses Psychoanalyze (Difficulty 1, Slow Action) to restore presence. Otherwise fades at end of scene.
 
 | *Compromised*
-| The character's Corruption threshold is treated as 2 lower than current for this scene only. Corruption checks during this scene are made at +1 die for the GM (more likely to accumulate).
-| Extended artifact contact without containment protocol. Veil Burn (Critical Injury, result 54). Resonance Tap (Shard Construct, Bestiary). Specific rival faction abilities.
+| The character's Corruption threshold is treated as 2 lower than current for this scene only. All Corruption gained during this scene is increased by +1 (each source gives an additional +1 Corruption).
+| Extended artifact contact without containment protocol. Veil Burn (Critical Injury, result 54). Corruption Tap (Shard Construct, Bestiary). Specific rival faction abilities.
 | Scene ends. The threshold reduction resets automatically. The underlying Corruption accumulation remains.
 
 |===

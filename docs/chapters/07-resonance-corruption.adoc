@@ -1,36 +1,28 @@
-= Resonance and Corruption
+= Corruption
 
-Project Neon Relic introduces the unified *Resonance and Corruption* system — the game's signature mechanic. This creates an "inverse hit points" loop where the pursuit of occult power is inherently self-destructive and psychologically corrosive.
+*Corruption* is Neon Relic's signature mechanic — a single ascending number that tracks the cumulative psychic toll of occult exposure, supernatural exertion, and sheer human desperation. It functions as an "inverse hit points" system: every push, every artifact activation, every encounter with the unnatural ratchets the number higher, and there is no coming back from the top.
 
-== The Nature of Resonance
+== The Corruption Track
 
-*Resonance* represents the volatile, metaphysical static accumulating within a character's nervous system. It is a necessary resource to fuel supernatural Talents and activate artifacts, but hoarding it accelerates a character's demise.
-
-Resonance points are acquired through:
-
-[%header,cols="2,1,4"]
-|===
-| Trigger | Resonance Gained | Description
-
-| *Pushing a Roll* | 1 | Exerting your absolute limits directly invites anomalous static.
-| *Occult Exposure* | 1–2 | Witnessing supernatural entities, reading forbidden tomes, or being targeted by anomalous phenomena.
-| *Activating Artifacts* | 1–3 | Utilizing the supernatural properties of a Resonant Artifact. Cost varies by artifact tier.
-|===
-
-== The Corruption Track (The Doom Clock)
-
-Instead of rolling on a randomized trauma table, *Corruption is tracked cumulatively*, functioning like inverse hit points that slowly build toward a catastrophic break.
+Corruption starts at *0* and increases from there. There is no separate "Resonance pool," no volatile buffer, and no cascade check — Corruption is gained directly from its sources and healed by its methods.
 
 *Maximum Corruption Threshold* = `10 + Empathy score`
 
-When a character witnesses something truly mind-breaking or utilizes a cursed artifact, the GM calls for a *Corruption Check*. This is _not_ a dice roll — the character's lingering Resonance cascades into permanent psychological decay:
+When a character's Corruption *exceeds* their threshold, their mind permanently fractures. The character enters a catatonic state and is *immediately removed from the campaign*.
 
-[quote]
-____
-*New Corruption Level* = Current Corruption + Current Resonance
-____
+== Sources of Corruption
 
-This creates a terrifying escalation. If a character pushes multiple rolls and hoards 4 Resonance points, their first Corruption Check jumps their score by 4. If they don't clear their Resonance, the next check jumps it by another 4. As Resonance grows, the speed at which the character hurtles toward their threshold *multiplies*.
+[%header,cols="2,1,4"]
+|===
+| Trigger | Corruption Gained | Description
+
+| *Pushing a Roll* | +1 | Exerting your absolute limits invites psychic static.
+| *Activating a Division Talent* | +1 | Talents that tap the supernatural exact a cost.
+| *Occult Exposure* | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. GM sets severity.
+| *Artifact Activation* | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier.
+| *Fear Check (any 1s rolled)* | +1 | The mind cracks trying to process the unprocessable. See Fear rules below.
+| *Failed Fear Check* | +1 | On top of any 1s penalty. See Fear rules below.
+|===
 
 == Corruption Effects
 
@@ -46,13 +38,26 @@ This creates a terrifying escalation. If a character pushes multiple rolls and h
 | *Exceeds Threshold* | *Catatonic Revelation* | The character's mind completely breaks upon perceiving the underlying, terrifying geometry of the universe. Permanent catatonic state. *Immediately removed from the campaign.*
 |===
 
+== Healing Corruption
+
+[%header,cols="2,3,3"]
+|===
+| Method | Effect | Requirements
+
+| *Anchor Scene* | Heal *1d4 Corruption* | Once per session. Dedicate a scene to interacting with your Anchor.
+| *Full Rest (24 hours)* | Heal Corruption equal to *Empathy score* | Full 24-hour cycle resting in a secure, non-anomalous location (e.g., Covenant HQ).
+| *Healing Talents* | Varies by talent | See Division Talents and General Talents marked with _(Healing)_.
+|===
+
+> *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
+
 ---
 
 == Fear Mechanics
 
 The Corruption track governs the long arc of psychological decay. *Fear* governs the acute, in-the-moment terror of direct supernatural confrontation — the thing that happens to your body and your mind in the next thirty seconds when the entity looks at you.
 
-Fear and Corruption are linked: failed Fear checks generate Resonance, and Resonance amplifies Corruption checks. A single terrifying encounter can compress weeks of accumulated pressure into one scene.
+Fear and Corruption are directly linked: Fear checks that produce 1s on the dice generate Corruption, and failed Fear checks generate additional Corruption plus a panic response. A single terrifying encounter can spike Corruption in a way that takes days of rest to undo.
 
 === What Triggers a Fear Check
 
@@ -75,12 +80,12 @@ The GM calls for a Fear check when a character directly confronts a source of ge
 
 . *The GM states the entity's Fear Rating* (a number from 1 to 5) or notes that the event is a flat Fear 2 or Fear 3 trigger (see Fear Rating table below).
 . *The character rolls Wits dice* equal to their current *Wits attribute* (no skill modifier — Fear is instinctual, not trained).
-. *Count failures:* For every die that shows a *1*, the character takes *1 point of Wits damage* AND gains *1 Resonance point*.
+. *Count 1s:* For every die that shows a *1*, the character takes *1 point of Wits damage*. If *any* 1s were rolled, the character also gains *+1 Corruption* (only one, regardless of how many 1s appeared).
 . *Count the Fear Rating as a threshold:* If the total number of non-6 dice equals or exceeds the Fear Rating, the character is *Shaken* (see below) even if they took no Wits damage.
 
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 
-> *Why 1s specifically?* In the YZE framework, 1s on Attribute dice represent self-harm — the cost of pushing your own limits. On a Fear check, 1s represent the moment the mind cracks trying to process the unprocessable. This is cognitively consistent with the push mechanic.
+> *Why 1s?* In the YZE framework, 1s on Attribute dice represent self-harm — the cost of pushing your own limits. On a Fear check, 1s represent the moment the mind cracks trying to process the unprocessable.
 
 === Fear Ratings
 
@@ -107,13 +112,13 @@ A character who rolls a Fear check and has *more non-6 results than successes* (
 * Cannot voluntarily move toward the source of Fear (they can hold position or retreat).
 * Can be *snapped out of it* by an ally spending a slow action and succeeding on a Psychoanalyze roll (difficulty: Fear Rating of the trigger).
 
-Shaken is not a condition that persists between scenes — it represents immediate shock, not lasting damage. Lasting damage is Wits loss and Resonance gain.
+Shaken is not a condition that persists between scenes — it represents immediate shock, not lasting damage. Lasting damage is Wits loss and Corruption gain.
 
-=== Resonance Generation from Fear
+=== Corruption Generation from Fear
 
-Each point of Wits damage taken from a Fear check generates *1 Resonance point*. This is cumulative with any Resonance gained from pushing rolls in the same scene.
+Each Fear check that includes *any dice showing 1* generates *+1 Corruption* for the character. This is in addition to Wits damage from those same 1s, and in addition to any Corruption gained from pushing rolls in the same scene.
 
-> *Design Note:* This is the Resonance-Fear link that makes supernatural encounters mechanically distinct from physical combat. A fistfight reduces Strength. A Fear check reduces Wits *and* raises Resonance — which raises the Corruption check multiplier — which narrows your Corruption threshold. The more frightened you are, the closer to the edge you slide. This is the intended spiral.
+> *Design Note:* This is the Corruption-Fear link that makes supernatural encounters mechanically distinct from physical combat. A fistfight reduces Strength. A Fear check reduces Wits *and* raises Corruption — which narrows the gap to the Corruption threshold. The more frightened you are, the closer to the edge you slide. This is the intended spiral.
 
 === Pushing a Fear Check
 
@@ -128,9 +133,9 @@ Several mechanics interact with Fear:
 | Mechanic | Effect on Fear
 
 | *Academic Grounding* (Wayfinder Talent) | After 1 hour of research on a specific entity type, reduce its effective Fear Rating by 1 (min 1) for the rest of the session for the Wayfinder only.
-| *The Confessor* (Keep Talent) | After using this talent to clear Resonance, the next Fear check this session is made with *+2 bonus dice*.
-| *Anchor (Memento)* | Using an Anchor during downtime has no direct Fear resistance — but clearing Resonance before an encounter lowers the Corruption cascade from a failed check.
-| *Empathy attribute* | Empathy does not reduce Fear checks directly, but it sets the Max Corruption Threshold — a high-Empathy character can sustain more Resonance before the cascade becomes lethal.
+| *The Confessor* (Keep Talent) | After using this talent to heal Corruption, the next Fear check this session is made with *+2 bonus dice*.
+| *Anchor (Memento)* | Using an Anchor during downtime heals Corruption directly — lowering your total before the next encounter.
+| *Empathy attribute* | Empathy sets the Max Corruption Threshold — a high-Empathy character can sustain more Corruption before the threshold is reached.
 | *Familiarity* | If a character has *previously survived a Fear check* against the same entity type without breaking, future checks against the same type are made with *+1 bonus die*. Familiarity is per entity type, not per individual entity.
 |===
 
@@ -150,7 +155,7 @@ If a Fear check reduces a character's Wits to *0*, they are *Broken* — and the
 | *6* | *Fugue* | The player hands the GM their character sheet. The GM narrates what the character does for the rest of the scene. This may include wandering, speaking to things that aren't there, or following the entity. The player regains control at the *start of the next scene*, not the next round.
 |===
 
-> *Recovering from Broken (Wits 0):* After the scene ends, the character's Wits return to 1 automatically — they are no longer Broken but they are severely shaken. Full Wits recovery follows normal healing rules. A character Broken by Fear also triggers a *Corruption Check* immediately when the scene ends (not during — there's no moment for reflection mid-crisis).
+> *Recovering from Broken (Wits 0):* After the scene ends, the character's Wits return to 1 automatically — they are no longer Broken but they are severely shaken. Full Wits recovery follows normal healing rules. A character Broken by Fear also gains *+1 Corruption* immediately when the scene ends.
 
 === Fear vs. Standard Wits Damage
 
@@ -161,57 +166,13 @@ A direct psychic assault from an entity, an artifact feedback, or a targeted sup
 | | *Fear Check* | *Direct Wits Damage*
 
 | *Trigger* | Sensory confrontation with supernatural horror | Targeted attack or artifact effect
-| *Mechanism* | Roll Wits dice; 1s deal damage + Resonance | Damage is applied directly (no roll, or attacker rolls)
-| *Resonance generated?* | *Yes* — 1 per Wits damage | *No* — unless the character chooses to push a resistance roll
+| *Mechanism* | Roll Wits dice; 1s deal damage + Corruption | Damage is applied directly (no roll, or attacker rolls)
+| *Corruption generated?* | *Yes* — +1 if any 1s are rolled | *No* — unless the character chooses to push a resistance roll
 | *Shaken?* | Possibly (roll-dependent) | No (unless effect says so)
 | *Pushable?* | *No* | Yes (standard push rules)
 | *Panic table?* | Yes, if Wits reaches 0 | Yes, if Wits reaches 0 (same table)
 |===
 
-> The key difference is *Resonance generation*. A possessed agent using a mental attack is doing tactical damage. Standing in the presence of something that should not exist and having your mind try to process it is existentially corrosive in a way combat is not.
+> The key difference is *Corruption generation*. A possessed agent using a mental attack is doing tactical damage. Standing in the presence of something that should not exist and having your mind try to process it is existentially corrosive in a way combat is not.
 
----
 
-== Design Decision: Resonance vs. Willpower
-
-=== The Question
-
-Three structural options were evaluated for how to handle mental stress and supernatural pressure:
-
-*Option A — Resonance as a standalone volatile resource (current design)*
-
-Resonance is a separate track, not attached to any Attribute. It accumulates from pushing rolls, occult exposure, and artifact use, and cascades into Corruption on a Corruption Check.
-
-*Option B — Fold Resonance into a Willpower Attribute*
-
-Add a fifth Attribute (Willpower) that serves as both the mental stress pool and the Resonance equivalent. Resonance would be Willpower damage.
-
-*Option C — Two-layer system: Stress + Resonance*
-
-Mundane mental pressure (fear of death, loss) tracked as Stress; supernatural exposure tracked as Resonance. Corruption Check only triggers from Resonance.
-
-=== The Decision: Option A (with clarifications)
-
-*Resonance is kept as a standalone volatile resource.* It is the game's signature mechanic and unique selling point.
-
-The concerns about redundancy (Option B) and complexity (Option C) are resolved by clarifying what Resonance *already does*:
-
-. *Resonance is already the mental stress track.* It is generated by pushing rolls (exertion/desperation), fear checks (psychological trauma), and occult exposure (supernatural horror). It does not need a parallel Stress track because those three triggers cover the full range of in-fiction pressure.
-
-. *Resonance is not Willpower damage because it is not an Attribute.* It can exceed any natural cap. The volatility of Resonance — it can spike suddenly, it can be cleared, it compounds exponentially on Corruption Checks — is intentional. An Attribute damage model would flatten this dynamic.
-
-. *Decoupling from stats is thematically correct.* Resonance is not a measure of your character's resilience (that's Wits and Empathy). It is a measure of what the universe has left on them. Two characters with identical Wits can have wildly different Resonance levels based on the choices they made, the artifacts they used, and when they last had time to clear. That asymmetry is the design goal.
-
-=== Implications for Push Roll Consequences
-
-This decision has one implication that must be stated clearly in chapter 04 (Core Mechanics) and enforced at the table:
-
-*Pushing a roll always costs 1 Resonance.* There is no push consequence table, no gear-or-stress choice, no optional complication. The cost is Resonance. Always. This keeps the system elegant and keeps every push decision meaningful in the same currency.
-
-The exception: *gear degradation* on pushed gear rolls is a separate consequence (the item may break) but it does not replace the Resonance cost — it is additional.
-
-=== Why Not Option C?
-
-Option C (Stress + Resonance) was rejected because it would require GMs and players to constantly classify sources of pressure as 'mundane' or 'supernatural' — and in an occult investigation game, that boundary is almost never clean. The first time a player argues about whether watching their colleague die on a non-supernatural mission generates Stress or Resonance, the table loses 10 minutes to a rules discussion that should have been a scene.
-
-Resonance handles both. Its lack of supernatural specificity is a feature: *the universe does not care about intent*.

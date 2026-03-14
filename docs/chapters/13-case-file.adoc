@@ -53,7 +53,7 @@ Survivors return to base. During this phase:
 
 * All requisitioned gear is returned to Stack
 * Players undergo debriefing and answer XP questions
-* Characters attempt to clear accumulated Resonance
+* Characters attempt to heal accumulated Corruption
 * Check if temporary psychological traumas become permanent conditions
 * Initiate new Headquarters upgrades
 
@@ -76,7 +76,7 @@ Every Countdown has *5 stages*, named by their escalation level. Not every case 
 | 1 | *Dormant* | The threat is latent. The artifact is present but not yet destabilizing. | Investigation can proceed without urgency. NPCs may be anxious but not in immediate danger.
 | 2 | *Stirring* | The artifact is beginning to resonate. Minor anomalies are visible to those who know what to look for. | Environmental strangeness. One NPC has been affected. The rival faction has been alerted.
 | 3 | *Active* | The artifact is unstable. An entity manifests or the situation escalates visibly. | Direct danger begins. Civilian NPCs may be harmed. The rival faction is moving.
-| 4 | *Escalating* | The threat is pursuing the agents or actively threatening HQ assets. Containment window is closing. | Enemy reinforcements arrive. Key locations become inaccessible. Agents gain 1 Resonance (environmental saturation — this is not optional).
+| 4 | *Escalating* | The threat is pursuing the agents or actively threatening HQ assets. Containment window is closing. | Enemy reinforcements arrive. Key locations become inaccessible. Agents gain +1 Corruption (environmental saturation — this is not optional).
 | 5 | *Crisis* | No more investigation time. The threat forces confrontation now. | Forced confrontation scene. If the agents do not act, see *Clock Expiry* below.
 |===
 
@@ -104,7 +104,7 @@ The clock can be *slowed* (the next tick is delayed) or *held* (one stage does n
 | Action | Effect
 
 | *Successful Lore roll (Difficulty 3)* — agents identify the specific activation condition and prevent it from occurring | Clock held for one trigger cycle (one "free" trigger before it advances).
-| *Secure a secondary resonance source* — removing a contributing artifact, sealing a ritual circle, or disrupting the rival faction's preparations | Clock advance delayed by one full phase (in-game).
+| *Secure a secondary occult source* — removing a contributing artifact, sealing a ritual circle, or disrupting the rival faction's preparations | Clock advance delayed by one full phase (in-game).
 | *Full containment of the artifact* | Clock stops advancing. The immediate threat is on hold until the artifact is removed from containment.
 |===
 
@@ -112,7 +112,7 @@ The clock can be *slowed* (the next tick is delayed) or *held* (one stage does n
 
 The clock *cannot typically be reversed* — once a stage is reached, its effects persist. However:
 
-* A successful *Wayfinder Division ritual* can reduce Stage 4 back to Stage 3 (the escalating resonance field is pushed back).
+* A successful *Wayfinder Division ritual* can reduce Stage 4 back to Stage 3 (the escalating corruption is pushed back).
 * Eliminating the rival faction's active presence at a location may reduce Stage 3 back to Stage 2 for that location only (the faction was accelerating the threat independently).
 
 These require significant resources, time, and usually a Lore roll at Difficulty 3 or 4. They are not guaranteed.
@@ -150,7 +150,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 | 1 | Dormant | Session open; clocks begins ticking | The journalist is alive and unaware. The Compact team is 2 hours out. The Mirror is in the penthouse.
 | 2 | Stirring | Team spends more than 1 hour investigating without reaching the penthouse, OR fires a weapon anywhere in the hotel | The Mirror activates. An Echoing Remnant manifests in the corridor between the team and the penthouse. The journalist has seen it and is hiding. The Compact team is now 30 minutes out.
-| 3 | Crisis | Team has not secured the Mirror and Remnant is still active when the Compact team arrives | The Compact team enters the building. The journalist's camera captures the Remnant — the team must now deal with both the Compact operatives AND the Remnant AND contain the journalist. The Mirror's resonance is saturating the top two floors. All agents in the top two floors gain 1 Resonance per scene.
+| 3 | Crisis | Team has not secured the Mirror and Remnant is still active when the Compact team arrives | The Compact team enters the building. The journalist's camera captures the Remnant — the team must now deal with both the Compact operatives AND the Remnant AND contain the journalist. The Mirror's corruption field is saturating the top two floors. All agents in the top two floors gain +1 Corruption per scene.
 |===
 
 ---
@@ -158,7 +158,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 == Cross-References
 
 * GM guidance for building and calibrating Countdown clocks: `docs/chapters/18-gm-guidance.adoc`
-* Resonance gain mechanics: `docs/chapters/07-resonance-corruption.adoc`
+* Corruption gain mechanics: `docs/chapters/07-resonance-corruption.adoc`
 * Wayfinder Division rituals: `docs/chapters/15-rival-factions.adoc` (and Issue #15)
 
 ---
@@ -194,8 +194,8 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 24 | Compass                     | Points toward the nearest supernatural entity regardless of direction
 | 25 | Mirror (compact or full)    | Shows true form of all entities reflected; cannot be looked away from
 | 26 | Surgical instrument         | Wounds inflicted by it cannot be healed by normal medicine
-| 31 | Film reel                   | Footage shows crimes not yet committed; watching triggers Corruption Check
-| 32 | Blueprint or schematics     | Construction following these plans creates a resonant space; builders don't survive
+| 31 | Film reel                   | Footage shows crimes not yet committed; watching causes +1 Corruption
+| 32 | Blueprint or schematics     | Construction following these plans creates a corrupted space; builders don't survive
 | 33 | Coin (antique)              | Payment seals bargains metaphysically; collection agent is always a monster
 | 34 | Key (iron or bone)          | Opens any locked door; what waits behind is never what was expected
 | 35 | Hand tool (hammer, wrench)  | Objects struck retain kinetic energy indefinitely; environment becomes hostile
@@ -215,7 +215,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 61 | Wristwatch                  | Vibrates when the wearer is about to make a fatal mistake
 | 62 | Handcuffs or restraints     | Anyone bound cannot lie; binding marks disappear but effects persist
 | 63 | Tape recorder               | Previous owner's last words loop at danger peaks; cannot be erased
-| 64 | Newspaper (dated ahead)     | Next day's events described accurately; handling causes 1 Resonance per reading
+| 64 | Newspaper (dated ahead)     | Next day's events described accurately; handling causes +1 Corruption per reading
 | 65 | Wallet or purse             | Holds exactly what is needed in any situation; contents are never explained
 | 66 | Mundane item (GM choice)    | Appears entirely ordinary; effect is not discovered until a Fracture
 |===
@@ -230,11 +230,11 @@ How does the cell first become aware of the case?
 |===
 | d6 | Inciting Incident
 
-| 1 | *Missing Person Report* — A Covenant contact is digging into a disappearance that connects to a known resonance signature. They need field backup before the trail goes cold.
+| 1 | *Missing Person Report* — A Covenant contact is digging into a disappearance that connects to a known occult signature. They need field backup before the trail goes cold.
 | 2 | *Anonymous Tip* — An unsigned letter arrives at a cell dead drop, containing specific details only an insider could know. Who sent it — and why now?
 | 3 | *Police Report (Redacted)* — A Keep archivist intercepts a law-enforcement file referencing phenomena that match an active artifact. The police don't understand what they have. The cell does.
 | 4 | *Field Acquisition Gone Wrong* — A previous Recovery team retrieved an artifact but never checked in. Their last known position is on the map. Their radio is silent.
-| 5 | *Covenant Intelligence Briefing* — Wayfinder Division has been tracking a resonance spike for weeks. The spike has stabilized. Something has been activated and is being used.
+| 5 | *Covenant Intelligence Briefing* — Wayfinder Division has been tracking an occult energy spike for weeks. The spike has stabilized. Something has been activated and is being used.
 | 6 | *Civilian Exposure* — A non-Covenant civilian witnessed something they cannot explain. The Covenant's disinformation infrastructure is moving to contain the story — but the artifact is still out there.
 |===
 
@@ -267,10 +267,10 @@ What makes this case harder than it should be?
 | d6 | Complication
 
 | 1 | *Rival Faction Interest* — Another organization (intelligence agency, criminal syndicate, or rogue occultist network) has tracked the same artifact. They are already on-site or arriving within the hour.
-| 2 | *Civilian Entanglement* — Someone innocent — a family member, a local witness, a bystander — has handled the artifact and is already exhibiting resonance symptoms. The clock on their degradation has started.
+| 2 | *Civilian Entanglement* — Someone innocent — a family member, a local witness, a bystander — has handled the artifact and is already exhibiting corruption symptoms. The clock on their degradation has started.
 | 3 | *Media Attention* — A local journalist is following the same trail for completely mundane reasons. Their story goes to press in 48 hours whether the cell intervenes or not.
 | 4 | *Internal Complication* — One of the cell's Covenant contacts has gone quiet. A Wayfinder briefing contains an inconsistency. Something in the chain of command is compromised.
-| 5 | *Containment Failure* — A previous version of this artifact was thought neutralized. It wasn't. Two instances of the same resonance signature are active simultaneously.
+| 5 | *Containment Failure* — A previous version of this artifact was thought neutralized. It wasn't. Two instances of the same occult signature are active simultaneously.
 | 6 | *Escalating Entity* — The artifact has attracted or generated a supernatural entity that has been active in the area for days before the cell arrived. It is not the primary target — but it will interfere.
 |===
 
@@ -325,7 +325,7 @@ Use this procedure to run from nothing to a playable case in one pass:
 ==== Worked Example: "The Holbrook Frequency"
 
 > *Rolled:* d66 = 23 (Radio receiver — parallel timeline transmissions).
-> *Incident:* 5 (Covenant Intelligence Briefing — resonance spike, stabilized).
+> *Incident:* 5 (Covenant Intelligence Briefing — occult energy spike, stabilized).
 > *Location:* 2 (Research laboratory — university).
 > *Complication:* 3 (Media attention — journalist, 48-hour deadline).
 >

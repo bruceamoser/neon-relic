@@ -27,7 +27,7 @@ Divide the journey into *legs* — distinct segments separated by a stop, a haza
 * *Short journey* (same city or adjacent area): 1 leg. No encounter roll unless the GM sees an opportunity.
 * *Medium journey* (cross-state, 2–4 hours): 2 legs. Roll on the Road Event table once.
 * *Long journey* (overnight, 4–12 hours): 3–4 legs. Roll on the Road Event table for each leg.
-* *Extended journey* (multi-day cross-country): One leg per major stopping point. Roll for each leg. Each overnight rest (without a secure location) costs 1 Resonance (the exposure accumulates).
+* *Extended journey* (multi-day cross-country): One leg per major stopping point. Roll for each leg. Each overnight rest (without a secure location) costs +1 Corruption (the exposure accumulates).
 
 *Leg structure:*
 
@@ -39,7 +39,7 @@ Each leg, the driver (or lead navigator on foot) makes a skill roll:
 
 *On success:* The leg passes without incident, or the team gains one piece of useful information about the destination.
 *On failure:* Roll on the Road Event table (or the GM applies a prepared complication).
-*On push:* +1 Resonance as normal. The driver is rattled; the vehicle takes wear.
+*On push:* +1 Corruption as normal. The driver is rattled; the vehicle takes wear.
 
 === Phase 3 — Arrival
 
@@ -83,11 +83,11 @@ Roll *d12* when a Road Event is triggered.
 | 3 | *Police Checkpoint.* Roadblock ahead — routine or targeted. The team must choose: reroute (+1 leg to the journey), talk their way through (Manipulate Difficulty 2; failure = detained briefly), or bluff past (Sneak Difficulty 3).
 | 4 | *Road Accident.* A civilian incident is visible ahead — a crash, a stalled car, a figure in the road. Stopping may be medically necessary but adds time and a potential witness.
 | 5 | *Tail Detected.* A vehicle has been maintaining pace behind the team for the last leg (see Rules for Being Followed below).
-| 6 | *Resonance Event.* The drive passes through a zone of residual occult activity. Every character gains *+1 Resonance*. No check required — the exposure just happens. The area smells like copper coins and burnt static.
+| 6 | *Corruption Event.* The drive passes through a zone of residual occult activity. Every character gains *+1 Corruption*. No check required — the exposure just happens. The area smells like copper coins and burnt static.
 | 7 | *CB Radio Intercept.* The team picks up a fragment of conversation relevant to the Case File — a police dispatch, a rival faction contact check, a panicked civilian. Roll Investigate (Difficulty 2) to extract actionable intelligence.
 | 8 | *Trucker's Information.* A rest stop encounter with a long-haul trucker who has been on the road through the destination area. Neutral contact. Investigate (Difficulty 1) reveals one useful local detail (road closures, unusual activity, a landmark). Buy them coffee.
 | 9 | *Wrong Turn.* Navigation error. Add +1 leg to the journey. The new route passes through an area with different terrain (GM chooses: industrial, residential, rural, waterfront — add flavor).
-| 10 | *Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or resonance leak suspected. Lore (Difficulty 2) to assess. No immediate danger — but it should be noted.
+| 10 | *Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (Difficulty 2) to assess. No immediate danger — but it should be noted.
 | 11 | *Fuel Stop.* The team must stop for gas (or food, or rest). A 15-minute window of vulnerability — public space, potential surveillance. Sneak (Difficulty 1) to transit without being noted by anyone watching.
 | 12 | *Clean Run.* No event this leg. The team arrives at the next waypoint ahead of schedule. They may ask the GM one question about the destination that they would have known if they'd had more time to prepare.
 |===
@@ -115,7 +115,7 @@ Three options, each requiring one skill roll:
 . *Blend In:* AGI (Sneak) or WIT (Investigate, to find a crowd). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
 . *Double Back / Trap:* WIT (Investigate). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
 
-*On failure:* The tail remains. The team may try again next leg (no Resonance cost for failed attempts — frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
+*On failure:* The tail remains. The team may try again next leg (no Corruption cost for failed attempts — frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
 
 === The Tail Arrives
 

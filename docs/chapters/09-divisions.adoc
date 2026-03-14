@@ -2,7 +2,7 @@
 
 In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL).
 
-Within that Division, players select a *Department* background. During creation, they may select one of the 5 unique *Division Talents*. These Talents operate similarly to magic systems — they guarantee a supernatural or highly specialized effect but require the expenditure of Resonance to activate, feeding directly into the game's risk-reward loop.
+Within that Division, players select a *Department* background. During creation, they may select one of the 5 unique *Division Talents*. These Talents operate similarly to magic systems — they guarantee a supernatural or highly specialized effect but cost +1 Corruption to activate, feeding directly into the game’s risk-reward loop.
 
 == Division 1: The Wayfinder
 
@@ -67,11 +67,11 @@ Through the vigilance of the Department of Counterintelligence, the Covenant ens
 |===
 | Talent | Cost | Effect
 
-| *The Antiquarian's Eye* | 1 Resonance | Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.
-| *Ghost in the Machine* | 1 Resonance | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
-| *The Hunch* | 1 Resonance | Ask the GM one yes/no question about a crime scene or NPC's motive. The GM must answer truthfully.
+| *The Antiquarian's Eye* | +1 Corruption | Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.
+| *Ghost in the Machine* | +1 Corruption | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
+| *The Hunch* | +1 Corruption | Ask the GM one yes/no question about a crime scene or NPC's motive. The GM must answer truthfully.
 | *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
-| *Eldritch Empathy* | 1 Resonance | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
+| *Eldritch Empathy* | +1 Corruption | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
 |===
 
 == Division 2: The Recovery
@@ -130,9 +130,9 @@ Choose one background that defines your agent's prior experience:
 |===
 | Talent | Cost | Effect
 
-| *Conditioned Mind* | — | Once per session, entirely ignore the Resonance point generated from pushing a roll.
-| *Unstoppable Force* | 1 Resonance | Your next successful melee or unarmed attack inflicts +2 damage.
-| *Shadow Walker* | 1 Resonance | Become entirely imperceptible to mundane guards or cameras for a scene, provided you do not attack.
+| *Conditioned Mind* | — | Once per session, entirely ignore the Corruption point generated from pushing a roll.
+| *Unstoppable Force* | +1 Corruption | Your next successful melee or unarmed attack inflicts +2 damage.
+| *Shadow Walker* | +1 Corruption | Become entirely imperceptible to mundane guards or cameras for a scene, provided you do not attack.
 | *Adrenaline Junkie* | — | When you have a −1 penalty to Strength, gain +2 bonus dice to all Agility rolls.
 | *Gallows Humor* _(Healing)_ | — | Once per session, after surviving a combat encounter, crack a dark joke. You and all allies who hear you heal 1d4 Corruption.
 |===
@@ -163,7 +163,7 @@ All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenan
 * Suppresses artifact magic in close proximity
 * Warns the wearer if containment fails
 * Allows safe handling of cursed objects
-* Absorbs Resonance (soaks 1 Resonance per session)
+* Absorbs Corruption (soaks 1 Corruption per session)
 * Grants *+1 to Armor Rating*
 
 === Keep Departments
@@ -199,11 +199,11 @@ Working in coordination with the Wayfinder Division's Department of Counterintel
 |===
 | Talent | Cost | Effect
 
-| *Containment Protocol* | 1 Resonance | Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a Hard (−2) roll to cross it.
-| *Shield of the Covenant* | 1 Resonance | When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.
-| *The Inquisitor's Gaze* | 1 Resonance | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
+| *Containment Protocol* | +1 Corruption | Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a Hard (−2) roll to cross it.
+| *Shield of the Covenant* | +1 Corruption | When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.
+| *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
 | *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.
-| *The Confessor* _(Healing)_ | — | Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally clear your Resonance pools entirely.
+| *The Confessor* _(Healing)_ | — | Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.
 |===
 
 [[division-4-stack]]
@@ -248,9 +248,9 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 |===
 | Talent | Cost | Effect
 
-| *Requisition Expert* | 1 Resonance | During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.
-| *Jury-Rig* | 1 Resonance | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
-| *Prototyper* | 1 Resonance | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
+| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.
+| *Jury-Rig* | +1 Corruption | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
+| *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
 | *Duct Tape & WD-40* _(Healing)_ | — | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
-| *Experimental Shielding* | 1 Resonance | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
+| *Experimental Shielding* | +1 Corruption | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
 |===
