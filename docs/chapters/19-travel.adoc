@@ -53,7 +53,7 @@ On arrival, any Conditions accumulated during travel are active. Any gear that w
 |===
 | Vehicle | Speed | Capacity (Enc.) | Noise | Notes
 
-| *On Foot* | Slow | Personal carry only | Silent | Surveillance-proof but exhausting. Extended travel = risk of Exhausted Condition.
+| *On Foot* | Slow | Personal carry only | Silent | Surveillance-proof but exhausting. Extended travel = risk of Agility damage from fatigue.
 | *Bicycle* | Slow-Medium | +4 Enc. (rack) | Silent | Urban movement; can enter places cars can't. Cannot outrun a vehicle chase.
 | *Compact Car (e.g., Honda Civic)* | Medium | 20 Enc. | Low | Inconspicuous. +1 die on Sneak rolls to avoid surveillance.
 | *Full-Size Sedan (e.g., Crown Vic)* | Medium | 25 Enc. | Low | The standard Covenant field vehicle. Reliable. Boring. Perfect.

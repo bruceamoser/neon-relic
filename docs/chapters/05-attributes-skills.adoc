@@ -207,7 +207,7 @@ The following stunts may be purchased on *any* successful skill roll:
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Rally* | One Broken or Shaken ally in the scene immediately acts on their next turn as if they had recovered — they can take their full action once before the condition reasserts.
+| 1 | *Rally* | One Broken ally in the scene immediately acts on their next turn as if they had recovered — they can take their full action once before the impairment resumes.
 | 1 | *Coordinated Action* | Your directive enables two allies to act simultaneously on their initiative cards (they share the same slot this round only).
 | 2 | *Hold the Line* | All allies who can hear you gain +1 die on their next roll this round. The effect of strong leadership under pressure.
 |===
