@@ -1,0 +1,313 @@
+= Bestiary
+
+The world of Project Neon Relic contains two kinds of dangerous things: *people* who have made terrible choices, and *entities* that should not exist. Understanding the difference — and knowing when you are facing which — is a field skill every Covenant agent must develop.
+
+This chapter provides stat blocks for the most common adversaries: human factions who oppose the Covenant's work, and supernatural entities that artifacts attract, create, or summon.
+
+---
+
+== Stat Block Format
+
+All adversaries — human and supernatural — use the same core stat block, scaled by threat level.
+
+=== Standard Stat Block
+
+----
+NAME
+[Classification / Faction / Tier]
+
+Attributes: STR X | AGI X | WIT X | EMP X
+Armor Rating: X (type)
+Fear Rating: X (0 for humans unless marked)
+
+Skills:
+  Force X | Brawl X | Endure X
+  Sneak X | Sleight of Hand X | Firearms X
+  Investigate X | Tech X | Lore X
+  Manipulate X | Command X | Psychoanalyze X
+
+Special Abilities:
+  Name — Description.
+
+Broken State: [Flee / Surrender / Berserk / Dissipate / Death]
+
+Motivation: One sentence describing what this adversary wants in this scene.
+----
+
+=== Stat Block Notes
+
+* *Attributes* are used exactly as PC attributes — as both dice pool maximums and health pools. When Strength reaches 0, the adversary is Broken.
+* *Skills not listed* default to 0.
+* *Armor Rating* functions identically to PC armor — Gear dice rolled against incoming damage.
+* *Fear Rating* applies to supernatural entities and rare humans. 0 = no Fear check triggered. See `docs/chapters/07-resonance-corruption.adoc`.
+* *Broken State* defines what happens when the adversary's Strength hits 0.
+
+=== Simplified Humanoid Format
+
+Minor human adversaries (background cultists, security guards, common thugs) do not require full stat blocks. Use this shorthand:
+
+----
+TYPE (Threat Level: Low / Medium / High)
+STR X | AGI X | WIT X | EMP X | Armor X | Firearms X | Brawl X
+Broken State: [Flee/Surrender]
+Special: [One sentence if applicable, or "—"]
+----
+
+---
+
+== Human Adversaries
+
+=== Ember Accord Cultist
+
+[*Human / The Ember Accord / Threat: Low*]
+
+----
+Attributes: STR 3 | AGI 2 | WIT 2 | EMP 3
+Armor Rating: 0
+Fear Rating: 0
+
+Skills:
+  Force 1 | Brawl 2
+  Sneak 2
+  Lore 2
+  Manipulate 2
+
+Special Abilities:
+  Zealot's Resolve — The cultist does not surrender until their Strength is
+  reduced to 1. They believe their cause makes them untouchable.
+
+  Improvised Ritual — Once per combat, the cultist may spend their Slow Action
+  to attempt a Lore roll (Difficulty 3). On success, they call a fragment of
+  an artifact's resonant effect to their location: all agents within Near range
+  gain 1 Resonance. On failure, the cultist takes 1 Wits damage (backlash).
+
+Broken State: Zealot's Resolve delays collapse; at STR 1, one more hit Breaks
+them. Broken cultists either enter catatonic prayer or flee. GM's call.
+
+Motivation: Protect the artifact/ritual/site. They believe you are desecrating something holy.
+----
+
+=== Ember Accord Cell Leader
+
+[*Human / The Ember Accord / Threat: Medium*]
+
+----
+Attributes: STR 4 | AGI 3 | WIT 3 | EMP 4
+Armor Rating: 1 (concealed vest — improvised, not rated)
+Fear Rating: 0
+
+Skills:
+  Force 2 | Brawl 3 | Endure 2
+  Firearms 2
+  Lore 3
+  Manipulate 3 | Command 2
+
+Special Abilities:
+  Burn the Evidence — If the Cell Leader reaches Broken State with a ritual
+  site or artifact nearby, they attempt one final Lore roll (Difficulty 2)
+  to trigger a resonance discharge. On success: all within Short range gain
+  2 Resonance. This is not suicidal — they expect to survive. They often don't.
+
+  Rally the Faithful — While the Cell Leader is active, all Ember Accord
+  Cultists in the scene gain +1 die on Brawl rolls. If the Cell Leader falls,
+  they lose this bonus and their Broken State changes to immediate surrender
+  or flight.
+
+Broken State: Surrender. The Cell Leader is pragmatic enough to value their life
+over the immediate mission. They will lie during interrogation.
+
+Motivation: You have interfered with something the Accord spent years preparing.
+They want to delay, contain, or eliminate you before word reaches the Covenant.
+----
+
+---
+
+=== MJ-12 Strike Agent
+
+[*Human / MJ-12 / Threat: High*]
+
+----
+Attributes: STR 5 | AGI 4 | WIT 3 | EMP 2
+Armor Rating: 4 (Tactical Kevlar — military spec)
+Fear Rating: 0
+
+Skills:
+  Force 3 | Brawl 3 | Endure 3
+  Sneak 3
+  Firearms 4
+  Investigate 2 | Tech 2
+
+Special Abilities:
+  Suppressive Discipline — MJ-12 agents do not panic. Immune to the Shaken
+  condition from mundane violence. Supernatural Fear checks are still required
+  but at −1 Fear Rating (training).
+
+  Tactical Communication — If two or more MJ-12 agents are present, they act
+  simultaneously on the same Initiative card. One card covers the team.
+
+  Secure Extraction Protocol — If an MJ-12 team's mission fails (artifact lost,
+  agents dead or captured), surviving Strike Agents attempt organized withdrawal
+  and extraction. They do not chase; they regroup. The agents will know they
+  were seen. A debrief has already been filed.
+
+Broken State: Tactical withdrawal. MJ-12 never dies on-site unnecessarily.
+A Broken Strike Agent calls for backup on a secure frequency as they fall — a
+dead man's switch. Agents have 1d6 scenes before extraction arrives.
+
+Motivation: Retrieve the artifact for Project Paper Lantern. Neutralize Covenant
+operatives if exposed. No witnesses.
+----
+
+---
+
+=== Hellfire Consortium Blood Contractor
+
+[*Human / The Hellfire Consortium / Threat: High*]
+
+----
+Attributes: STR 3 | AGI 3 | WIT 4 | EMP 3
+Armor Rating: 2 (ritual garments — treated leather with artifact weaving)
+Fear Rating: 2 (the things they've done are visible in their eyes)
+
+Skills:
+  Brawl 2 | Endure 3
+  Sneak 2
+  Lore 4
+  Manipulate 3 | Command 2
+
+Special Abilities:
+  Blood Price — The Contractor may spend their own Strength (up to 2 per round)
+  to fuel their abilities. Each point of Strength voluntarily spent grants them
+  +2 dice on their next Lore roll. This does not trigger armor. They choose to
+  bleed.
+
+  Resonance Tap — On a successful Lore roll (Difficulty 2), the Contractor
+  forces one agent within Near range to roll a Corruption check immediately
+  (regardless of current Resonance level). The GM adds 1 to their Resonance
+  total for this check only.
+
+  Bound Sigil — The Contractor carries a ward. The first time they would be
+  Broken, the ward absorbs it: they are reduced to STR 1 instead of 0. The
+  ward then cracks — a physical object on their person is visibly destroyed.
+  This happens once.
+
+Broken State: Dissipation of the bound contract. The Contractor collapses and
+enters a catatonic state — their blood price comes due. They cannot be easily
+interrogated; the contract burns out their ability to speak clearly for hours.
+
+Motivation: Acquire the artifact. The Consortium has a buyer. The agents are an
+inconvenience that should have been avoided.
+----
+
+---
+
+== Supernatural Entities
+
+=== Echoing Remnant (Poltergeist)
+
+[*Supernatural / Entity / Threat: Low–Medium*]
+
+----
+Attributes: STR 4 | AGI 3 | WIT 1 | EMP 0
+Armor Rating: 2 (force of coherence — the entity's structural integrity)
+Fear Rating: 2 (objects move wrong; the air gets cold)
+
+Skills:
+  Force 3
+  Sneak 3
+
+Special Abilities:
+  Incorporeal Movement — The Remnant moves through solid objects and zone walls
+  without cost. Zone features (Cramped, Rough) do not apply to it.
+
+  Poltergeist (Passive) — At the start of each combat round, all loose objects
+  in the Remnant's current zone animate. One agent in the zone takes 1 Strength
+  damage from thrown debris (no attack roll — environmental). An agent who takes
+  cover removes themselves from the zone effectively.
+
+  Resonance Bleed — When the Remnant deals damage, the target gains 1 Resonance
+  in addition to the physical effect. The touch carries something of whatever
+  this thing was.
+
+Broken State: Dispersal. The Remnant's coherence fails; it fragments into an
+area of ambient cold and auditory static. It may reconstitute (GM decision)
+if the anchor object that binds it is not removed from the area.
+
+Anchor: Every Echoing Remnant is bound to a physical object. Destroying or
+removing the anchor prevents reconstitution. Finding the anchor requires an
+Investigate roll (Difficulty 2) or Lore roll (Difficulty 3) if the anchor
+is concealed within a larger collection.
+
+Motivation: None — Remnants do not have goals. They are a resonant impression
+left by violent death near an artifact. They act on the echo of their last
+strong emotional state.
+----
+
+---
+
+=== Shard Construct (Artifact Guardian)
+
+[*Supernatural / Artifact-Spawned / Threat: High*]
+
+----
+Attributes: STR 8 | AGI 3 | WIT 2 | EMP 0
+Armor Rating: 5 (crystallized resonance — the artifact's self-defense)
+Fear Rating: 4 (wrongness of form; the geometry of it shouldn't work)
+
+Skills:
+  Force 5 | Brawl 4 | Endure 4
+
+Special Abilities:
+  Resonant Shell — Standard firearms deal only 1 Damage per hit against the
+  Shard Construct regardless of weapon rating. Artifact-derived weapons, fire,
+  or electromagnetic disruption deal full damage.
+
+  Shard Burst (Slow Action) — The Construct fires crystallized resonance shards
+  in a cone. All agents within Near range take 2 Strength damage. Armor applies.
+  No attack roll — the GM describes the burst; agents may spend a Fast Action
+  to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
+
+  Anchored to Artifact — The Construct cannot move more than Long range from
+  the artifact it protects. If the artifact is moved, the Construct follows
+  (teleportation effect between scenes; not instant-travel within a scene).
+
+  Falling Construct — When the Shard Construct's Strength is reduced to 3 or
+  lower, it enters a berserker state: it no longer uses Shard Burst (too
+  degraded) but gains +2 dice on all Force and Brawl rolls. Its dissolution
+  becomes imminent and it acts with total abandon.
+
+Broken State: Dissolution. The Construct collapses into inert crystal fragments.
+The fragments are safe but fascinating to Lore scholars. The artifact it was
+protecting remains where it was. The Construct does not reconstitute — but
+similar constructs have been documented at the same artifact after 24-hour gaps.
+
+Motivation: The artifact. Nothing enters its protection radius. Nothing leaves
+with the artifact.
+----
+
+---
+
+== NPC Tier Reference
+
+For quick reference when building encounters:
+
+[%header,cols="^1,1,2,1"]
+|===
+| Tier | Label | Description | Typical Strength
+
+| 1 | *Grunt* | No special abilities; acts in mobs; simplified stat block | 2–3
+| 2 | *Operative* | One special ability; acts individually; mild tactics | 3–5
+| 3 | *Elite* | Two or more special abilities; acts strategically; has a plan | 5–7
+| 4 | *Named Threat* | Full stat block; unique abilities; plot significance | 6–10
+|===
+
+> Named Threats are specific individuals (a faction leader, a bound entity with a centuries-long history) and should be developed individually rather than drawn from this reference list. The stat blocks above represent archetypes, not named antagonists.
+
+---
+
+== Cross-References
+
+* Fear ratings and check triggers: `docs/chapters/07-resonance-corruption.adoc`
+* Faction affiliations and politics: `docs/chapters/15-rival-factions.adoc` _(Issue #14)_
+* Artifacts and what spawns Constructs: `docs/chapters/12-artifacts.adoc` _(Issue #9 origin)_
+* Corruption checks from supernatural sources: `docs/chapters/07-resonance-corruption.adoc`

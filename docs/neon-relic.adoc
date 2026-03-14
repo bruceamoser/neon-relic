@@ -52,3 +52,5 @@ include::chapters/14-headquarters.adoc[leveloffset=+1]
 include::chapters/15-rival-factions.adoc[leveloffset=+1]
 
 include::chapters/16-notable-members.adoc[leveloffset=+1]
+
+include::chapters/17-bestiary.adoc[leveloffset=+1]
