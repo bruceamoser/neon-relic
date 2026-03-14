@@ -56,6 +56,8 @@ Survivors return to base. During this phase:
 * Check if temporary psychological traumas become permanent conditions
 * Initiate new Headquarters upgrades
 
+During the Aftermath, the team earns *Development Points (DP)* based on their performance and spends them to build or expand the Headquarters upgrade tree (see `docs/chapters/14-headquarters.adoc` for the full upgrade tree, costs, and prerequisites). The Threat Meter is also updated — if the team was fully covert, it decreases by 1.
+
 ---
 
 == Countdown Mechanics

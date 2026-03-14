@@ -10,52 +10,201 @@ At campaign onset, players acquire a default headquarters representing a localiz
 * A defunct mall arcade operating as a front
 * A decommissioned subway maintenance station
 
-Initially, the space is entirely derelict. Access to deeper subterranean levels, sealed vaults, or secure storage rooms requires the expenditure of *Development Points (Dev Points)*, awarded collectively for completing mysteries and securing artifacts.
+Initially, the space is entirely derelict. Access to deeper subterranean levels, sealed vaults, or secure storage rooms requires the expenditure of *Development Points (Dev Points / DP)*, awarded collectively for completing Case Files and securing artifacts.
 
-== Facility Upgrades
+=== Earning Development Points
 
-Players pool Dev Points to construct facilities providing tangible mechanical benefits:
+The team earns DP collectively during *Phase 8: The Aftermath* of each Case File:
 
-[%header,cols="2,3,3"]
+[%header,cols="3,^1"]
 |===
-| Facility | Description | Mechanical Benefit
+| Trigger | DP Earned
+
+| Case File fully resolved (mystery closed) | 3
+| Artifact securely contained and logged with the Covenant | 1
+| Named Threat neutralized (not just driven off) | 1
+| Primary objective completed under Countdown escalation (clock reached Stage 3+) | 1
+| Agent rescued from rival faction custody | 1
+|===
+
+DP is spent immediately during downtime (Phase 8) or banked for future Case Files. There is no cap on banked DP.
+
+---
+
+== HQ Upgrade Tree
+
+Upgrades are organized into three tiers. Higher-tier upgrades require specific lower-tier facilities to be built first.
+
+=== Tier 1 — Base Infrastructure
+
+*Tier 1 upgrades have no prerequisites.* Any can be built from the start of the campaign.
+
+[%header,cols="2,^1,3,3"]
+|===
+| Facility | DP Cost | Narrative | Mechanical Benefit
+
+| *Secure Communications Room*
+| 2
+| Encrypted landline bank, reel-to-reel tape vault, scrambled HAM radio array. No one outside the Covenant can track calls to or from this room.
+| +1 die on Command rolls when coordinating with Covenant contacts between Case Files. One free contact call per downtime (no CL requirement).
+
+| *Basic Medical Bay*
+| 2
+| Field triage table, locked pharmaceutical cabinet, sterilized instruments. Not elegant, but it keeps people alive.
+| During downtime, each character recovers *2 additional Attribute points* (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal Difficulty 2; success removes the injury without Attribute loss).
+
+| *Safeguard Protocol*
+| 1
+| A reinforced back room, a false-wall escape hatch, and a single-use alarm linked to a trip-wire perimeter. Not a fortress — a head start.
+| If the HQ is attacked, the team gains *+1 die on the initiative roll* during the first round of any HQ defense scene. One random NPC contact (if any recruited) survives even if the HQ falls.
+|===
+
+=== Tier 2 — Operational Support
+
+*Tier 2 upgrades each require at least one Tier 1 facility to be built first.* Prerequisites listed per upgrade.
+
+[%header,cols="2,^1,2,3,2"]
+|===
+| Facility | DP Cost | Prerequisite | Narrative | Mechanical Benefit
 
 | *The Microfiche Archive*
-| Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm.
-| Permanent +2 Gear bonus to Wits (Lore) rolls when researching prior to departure.
-
-| *The Faraday Cage*
-| Lead-lined room isolated from electromagnetic and supernatural frequencies.
-| One character can bleed off up to 4 Resonance without triggering a Corruption Check (requires a full day inside).
-
-| *The Black-Market Armory*
-| Reinforced vault with analog combination locks, stocked by underground contacts.
-| +1 CL to all characters during the Equipping Phase.
+| 3
+| Secure Communications Room
+| Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm. A full-time archivist — never seen without reading glasses and cigarettes — maintains the stacks.
+| Permanent *+2 Gear bonus* to Wits (Lore) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
 
 | *The Occult Laboratory*
-| Sterile environment with chemical analysis tools, EMF meters, and containment vessels.
-| Safely identify unknown artifact triggers without risking accidental activation.
+| 3
+| Basic Medical Bay
+| Sterile environment with chemical analysis tools, EMF meters, and purpose-built containment vessels. Smells permanently of ozone and burnt copper.
+| Safely identify unknown artifact triggers without risking accidental activation. Lore roll to identify artifact tier is Difficulty 1 here (instead of 2). Failed identification rolls do not trigger the artifact.
+
+| *The Black-Market Armory*
+| 3
+| Safeguard Protocol
+| Reinforced vault with analog combination locks, stocked through underground contacts the Covenant officially denies knowing. The manifest is updated by hand.
+| *+1 CL* to all characters during the Equipping Phase of each Case File. High-capacity weapons no longer consume an extra DP to requisition repeatedly.
+
+| *The Faraday Cage*
+| 4
+| Secure Communications Room
+| Lead-lined room sealed against electromagnetic and supernatural interference. No phones work inside. No spirits answer. Silence like the inside of a safe.
+| One character per downtime can bleed off up to *4 Resonance* without triggering a Corruption Check. Requires a full day inside — the character is unavailable for other downtime activities that day.
 |===
+
+=== Tier 3 — Advanced Operations
+
+*Tier 3 upgrades require at least two Tier 2 facilities to be built.* Prerequisites listed per upgrade.
+
+[%header,cols="2,^1,2,3,2"]
+|===
+| Facility | DP Cost | Prerequisite | Narrative | Mechanical Benefit
+
+| *Field Intelligence Network*
+| 5
+| Microfiche Archive + Secure Communications Room
+| A distributed network of informants, dead drops, and off-the-books government contacts who feed intelligence to the Covenant. Managed by a rotation of cutout contacts to maintain deniability.
+| During Phase 2 (The Invitation), the team receives *one free additional clue* about the Case File's central threat before departure. +1 die on Investigation rolls to identify rival faction involvement.
+
+| *Covenant Armorer*
+| 5
+| Black-Market Armory
+| A former Special Forces armorer gone ghost — works out of the armory back room, asks no questions, and charges only in favors and whiskey.
+| Once per Case File, one item in the team's loadout can be permanently upgraded: *+1 Gear Bonus* to the item's listed value. The item also gains the *Reliable* trait (ignore the first 1 when pushing).
+
+| *Resonance Dampening Vault*
+| 6
+| Faraday Cage + Occult Laboratory
+| A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
+| Store up to *3 active artifacts* without passive resonance leaking to carriers. Artifacts in the vault do not add Enc. pressure (see `docs/chapters/12-artifacts.adoc`). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
+
+| *Safe House Network*
+| 6
+| Secure Communications Room + Safeguard Protocol
+| A constellation of bolt-holes, friendly business fronts, and sympathetic innkeepers spread across the region — pre-loaded with emergency cash, clean IDs, and a single burner phone.
+| The team always has a fallback safe house available in any new investigation city, no setup required. Removes all "no safe place to rest" environmental penalties while away from HQ. On failure during the HQ Compromise event, one safe house absorbs the breach instead of HQ itself (one-time use; must rebuild, 3 DP).
+|===
+
+---
 
 == Personnel Recruitment
 
-Beyond infrastructure, players can recruit *contacts and personnel*:
+Beyond infrastructure, the team can recruit individual *contacts and specialists* using Development Points. Personnel provide passive benefits between Case Files and can be called upon during active missions at the GM's discretion.
 
-* A corrupt police dispatcher (information)
-* An underground surgeon (critical wound healing)
-* A black-market fence (acquiring restricted items between missions)
+Personnel are not combatants. If the HQ is directly attacked, they flee or hide — they do not fight to defend the base.
 
-These NPCs act as passive assets between sessions.
+[%header,cols="2,^1,3,2"]
+|===
+| Personnel | DP Cost | Who They Are | Benefit
 
-== Defending the Headquarters
+| *Station Dispatcher (Police)*
+| 2
+| A civilian 911 dispatcher who owes the Covenant a significant debt. Passes case-relevant police radio traffic when it crosses their desk.
+| Once per Case File, request police incident records, scanner traffic intercepts, or a 10-minute window of police non-response in one location.
 
-To prevent the base from feeling too safe, the system incorporates *Threats to the Headquarters*. Expanding too rapidly, using loud explosives during missions, or drawing attention from rival factions gradually increases a hidden *GM Threat meter*. When this meter reaches a threshold, the safehouse is directly compromised.
+| *Underground Field Medic*
+| 2
+| A struck-off physician — too many questions asked, too many bullet wounds treated no-questions-asked. Brilliant in a crisis.
+| During downtime, one character may be treated for a non-fatal Critical Injury (removes the injury without Attribute loss if a Heal roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
 
-Threats are heavily influenced by the 1980s paranoid aesthetic:
+| *Black-Market Fence*
+| 3
+| A procurement specialist with connections to military surplus, private security disposals, and the occasional Consortium dropout.
+| Once per Case File, requisition one *CL 4 item* without burning the team's CL. The request takes 48 hours in-game. Item arrives at HQ; no trail.
 
-* A sudden raid by a Majestic-12 corporate strike team
-* Infiltration by a shape-shifting entity brought back on a recovered artifact
-* Local law enforcement responding aggressively to a noise complaint
-* A Network hacker broadcasting the HQ's location on pirate radio
+| *Covenant Scholar*
+| 3
+| A former academic — history, linguistics, or theology — recruited (or blackmailed) into the Covenant's extended network. Corresponds by mail only.
+| +1 die on pre-mission Lore rolls when the scholar is consulted (same city or via correspondence). Can translate dead languages overnight (remove the "ancient language" investigation obstacle without a roll).
 
-This mechanic ensures consequences follow players home, linking episodic mysteries into a cohesive, dangerous overarching narrative.
+| *Signals Technician*
+| 4
+| An ex-NSA field tech — burned, paranoid, and very good at making equipment do things it shouldn't.
+| Once per Case File, plant a real-time audio tap on a rival faction's communication line (Investigate Difficulty 2; success = one scene of intercepted intel). Also: +1 die on all Tech rolls within HQ.
+|===
+
+---
+
+== HQ Compromise and Attack
+
+The safehouse is not invulnerable. Rivals, government black-ops, and supernatural entities may target it directly.
+
+=== The Threat Meter
+
+The GM tracks a hidden *Threat Meter* ranging from 0 to 6. When it reaches 6, the safehouse is directly targeted.
+
+The Threat Meter increases by 1 when:
+
+* The team uses explosives or automatic weapons fire in a populated area
+* A rival faction agent escapes alive with knowledge of the team's base location
+* The team fails to contain a resonance leak (active artifact left unsecured overnight)
+* A deceased agent's civilian identity is linked to the Covenant by law enforcement
+* The team's Countdown Clock expires (any severity) during a Case File
+
+The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no resonance incidents).
+
+=== Compromise Event
+
+When the Threat Meter hits 6, the GM triggers a *Compromise Event* before the next Case File begins. Roll d6:
+
+[%header,cols="^1,4"]
+|===
+| Roll | Compromise Type
+
+| 1–2 | *Surveillance* — A rival team has a long lens on the safehouse. The HQ is not breached, but the Threat Meter resets to 4 (not 0). All Tier 2+ facilities are temporarily offline until the surveillance is identified and dealt with (a mini-investigation, 1 session).
+| 3–4 | *Break-In* — Evidence of entry, triggered sensors, one personnel contact goes missing. One randomly determined facility is trashed (unavailable until repaired at half DP cost). Threat Meter resets to 3.
+| 5 | *Direct Assault* — A hostile team hits the safehouse hard. Run a full HQ defense scene (see below). One facility destroyed on failure; none if the team holds. Threat Meter resets to 2.
+| 6 | *Burned* — The safehouse is fully compromised. The team must relocate (lose all Tier 1–2 facilities; Tier 3 facilities survive only if the Safe House Network is built). Threat Meter resets to 0. All banked DP intact; team starts rebuilding at new location.
+|===
+
+=== HQ Defense Scene
+
+If the compromise event results in a direct assault (rolls 5–6), run it as a structured conflict:
+
+* The GM establishes attacker strength (Grunt × team size or Elite × half team size from the Bestiary).
+* Safeguard Protocol gives +1 die on the team's first initiative roll.
+* Characters who are *Broken* during an HQ defense scene and not stabilized before the scene ends immediately suffer the Dying state (no stabilization window extension).
+* If the attackers are driven off or destroyed: Threat Meter resets to 2; HQ is undamaged.
+* If the team retreats: roll on the Compromise Event table again (once) to determine collateral damage.
+
+> *Optional — Named Threats:* If the Threat Meter has recently been driven up by a specific rival faction, the GM may assign a Named Threat as the assault leader. This escalates the scene but awards +2 DP if the Named Threat is captured or killed.
