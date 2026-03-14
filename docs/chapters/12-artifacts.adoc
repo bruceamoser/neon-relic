@@ -45,3 +45,38 @@ Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10, 
 | Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.
 | *1 Resonance.* Flash acts as beacon, alerting nearest supernatural entity to party's exact location.
 |===
+
+---
+
+== Artifact Carry Weight and Resonance Pressure
+
+Artifacts are not merely heavy objects — they exert *metaphysical pressure* on the agent carrying them. This interacts with the Encumbrance system in two ways:
+
+=== Physical Weight
+
+Each artifact has a baseline Encumbrance value equal to its *Resonance cost tier*:
+
+[%header,cols="^1,^1,3"]
+|===
+| Artifact Tier | Enc. | Notes
+
+| Low (1 Resonance) | 1 | Small objects: a coin, a cassette tape, an old photograph.
+| Medium (2 Resonance) | 2 | Larger objects: cameras, walkmen, instruments.
+| High (3 Resonance) | 3 | Bulky or imposing objects: weapons, mirrors, bound volumes.
+|===
+
+=== Active Artifact Pressure
+
+Carrying an artifact that has been *activated at least once this Case File* imposes *+1 Enc.* above its base value for the remainder of the session. The artifact's metaphysical structure is disturbed — it pushes back.
+
+* This additional Enc. is invisible to standard detectors — only characters with the *Lore* skill or Wayfinder training can sense something is off.
+* If an active artifact's pressure pushes the carrier into the *Encumbered* Condition, they also roll *+1 Resonance* at the start of each scene while carrying it (the resonance leaks passively).
+
+=== Stacking Artifacts
+
+Carrying more than one artifact simultaneously is permitted but discouraged:
+
+* *Two artifacts:* Both active pressure rules apply independently.
+* *Three or more artifacts:* The GM rolls a Resonance Cascade — all carried artifacts leak resonance into the carrier simultaneously. Each artifact applies its Resonance cost at the end of the scene, even if none were used.
+
+> *Lore check (Difficulty 2):* An agent who succeeds on a Lore roll after picking up an artifact can sense its tier and whether a previous carrier activated it. Failure means the agent is unaware of the added pressure until they notice the Encumbered Condition or start gaining unplanned Resonance.
