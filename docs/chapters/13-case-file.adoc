@@ -160,3 +160,186 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 * GM guidance for building and calibrating Countdown clocks: `docs/chapters/18-gm-guidance.adoc`
 * Resonance gain mechanics: `docs/chapters/07-resonance-corruption.adoc`
 * Wayfinder Division rituals: `docs/chapters/15-rival-factions.adoc` (and Issue #15)
+
+---
+
+[[case-file-generator]]
+== Case File Generator Tables
+
+The 8-phase Case File structure is the backbone of every Neon Relic session. The
+tables below give GMs a fast oracle system for building a functional case in
+under 15 minutes. Roll on each table in sequence or pick entries that fit your
+campaign arc.
+
+---
+
+[[d66-artifact-type]]
+=== d66 Artifact Type
+
+Roll two d6s: the first die is the tens digit, the second is the units digit.
+
+[%header,cols="1,2,4"]
+|===
+| d66 | Form | Nature
+
+| 11 | Cassette tape               | Recordings of events before they happen; playback causes hemorrhaging
+| 12 | Pocket watch                | Stops time in a 5-meter radius for d6 rounds; user ages accelerated
+| 13 | Hospital chart              | Accurate medical diagnosis of anyone named in it; reading causes symptoms
+| 14 | Photograph                  | Shows what the subject fears most; viewing drives Fear roll
+| 15 | Book (journal/diary)        | Compels reader to continue until finished; knowledge is real and dangerous
+| 16 | Vinyl record                | Music causes compliance in listeners within earshot; player is compelled too
+| 21 | Military dog tags           | Reveals the moment of death of anyone who held the tags
+| 22 | Children's toy              | Locates any child within a mile; toy speaks in the missing child's voice
+| 23 | Radio receiver              | Picks up transmissions from parallel timelines; maddening incoherence
+| 24 | Compass                     | Points toward the nearest supernatural entity regardless of direction
+| 25 | Mirror (compact or full)    | Shows true form of all entities reflected; cannot be looked away from
+| 26 | Surgical instrument         | Wounds inflicted by it cannot be healed by normal medicine
+| 31 | Film reel                   | Footage shows crimes not yet committed; watching triggers Corruption Check
+| 32 | Blueprint or schematics     | Construction following these plans creates a resonant space; builders don't survive
+| 33 | Coin (antique)              | Payment seals bargains metaphysically; collection agent is always a monster
+| 34 | Key (iron or bone)          | Opens any locked door; what waits behind is never what was expected
+| 35 | Hand tool (hammer, wrench)  | Objects struck retain kinetic energy indefinitely; environment becomes hostile
+| 36 | Lighter or matchbook        | Fire summoned is cold and black; burns only the guilty
+| 41 | Eyeglasses / goggles        | Sees through all deception, illusion, and disguise; wearer cannot close eyes
+| 42 | Gloves (leather or rubber)  | Touch transmits the last emotion felt by any object's previous owner
+| 43 | Briefcase / attaché         | Contents preserved in stasis; time inside does not pass
+| 44 | Telephone handset           | Connected to lines that shouldn't exist; callers are always threatening
+| 45 | Medication / pill bottle    | Suppresses supernatural perception entirely — including warning senses
+| 46 | Painting or portrait        | Subject watches through it; communicates, manipulates, hungers
+| 51 | Typewriter                  | Text typed on it becomes true; reality reconfigures to match
+| 52 | Map (hand-drawn)            | Accurate to a location that doesn't exist — yet
+| 53 | Clock (grandfather or wall) | Slows time in a building-sized area; those inside age normally
+| 54 | Syringe / vial of fluid     | Injection grants a specific ability; dependency forms within 24 hours
+| 55 | Musical instrument          | Performance compels specific emotional response; player loses control
+| 56 | Weapon (pistol, knife)      | Kills what cannot be killed; user marked for retaliation by its kind
+| 61 | Wristwatch                  | Vibrates when the wearer is about to make a fatal mistake
+| 62 | Handcuffs or restraints     | Anyone bound cannot lie; binding marks disappear but effects persist
+| 63 | Tape recorder               | Previous owner's last words loop at danger peaks; cannot be erased
+| 64 | Newspaper (dated ahead)     | Next day's events described accurately; handling causes 1 Resonance per reading
+| 65 | Wallet or purse             | Holds exactly what is needed in any situation; contents are never explained
+| 66 | Mundane item (GM choice)    | Appears entirely ordinary; effect is not discovered until a Fracture
+|===
+
+---
+
+=== d6 Inciting Incident
+
+How does the cell first become aware of the case?
+
+[%header,cols="1,4"]
+|===
+| d6 | Inciting Incident
+
+| 1 | *Missing Person Report* — A Covenant contact is digging into a disappearance that connects to a known resonance signature. They need field backup before the trail goes cold.
+| 2 | *Anonymous Tip* — An unsigned letter arrives at a cell dead drop, containing specific details only an insider could know. Who sent it — and why now?
+| 3 | *Police Report (Redacted)* — A Keep archivist intercepts a law-enforcement file referencing phenomena that match an active artifact. The police don't understand what they have. The cell does.
+| 4 | *Field Acquisition Gone Wrong* — A previous Recovery team retrieved an artifact but never checked in. Their last known position is on the map. Their radio is silent.
+| 5 | *Covenant Intelligence Briefing* — Wayfinder Division has been tracking a resonance spike for weeks. The spike has stabilized. Something has been activated and is being used.
+| 6 | *Civilian Exposure* — A non-Covenant civilian witnessed something they cannot explain. The Covenant's disinformation infrastructure is moving to contain the story — but the artifact is still out there.
+|===
+
+---
+
+=== d6 Location
+
+Where does the case take place?
+
+[%header,cols="1,4"]
+|===
+| d6 | Location
+
+| 1 | *Urban Apartment / Residential Block* — Dense housing, suspicious neighbors, minimal cover. The artifact has been in someone's home for years. They think they know what it is. They are wrong.
+| 2 | *Research Laboratory* — University or corporate facility. Security protocols, locked sample rooms, and at least one obstructive bureaucrat. Someone on staff is already compromised.
+| 3 | *Rural Property* — Isolated farmhouse, hunting cabin, or failed commune. No witnesses. No backup. Distance means a 45-minute response time if things go wrong.
+| 4 | *Government Facility* — Federal archive vault, military depot, or municipal records building. Covenant cannot officially exist here. Federal jurisdiction complicates everything.
+| 5 | *Industrial Site* — Active factory, rail yard, or chemical plant. Environmental hazards. Shift workers everywhere. The artifact is somewhere in the noise.
+| 6 | *Transient Space* — Bus station, motel strip, or truck stop. People flow through constantly. The artifact is being moved, and the window to intercept it is closing.
+|===
+
+---
+
+=== d6 Complication
+
+What makes this case harder than it should be?
+
+[%header,cols="1,4"]
+|===
+| d6 | Complication
+
+| 1 | *Rival Faction Interest* — Another organization (intelligence agency, criminal syndicate, or rogue occultist network) has tracked the same artifact. They are already on-site or arriving within the hour.
+| 2 | *Civilian Entanglement* — Someone innocent — a family member, a local witness, a bystander — has handled the artifact and is already exhibiting resonance symptoms. The clock on their degradation has started.
+| 3 | *Media Attention* — A local journalist is following the same trail for completely mundane reasons. Their story goes to press in 48 hours whether the cell intervenes or not.
+| 4 | *Internal Complication* — One of the cell's Covenant contacts has gone quiet. A Wayfinder briefing contains an inconsistency. Something in the chain of command is compromised.
+| 5 | *Containment Failure* — A previous version of this artifact was thought neutralized. It wasn't. Two instances of the same resonance signature are active simultaneously.
+| 6 | *Escalating Entity* — The artifact has attracted or generated a supernatural entity that has been active in the area for days before the cell arrived. It is not the primary target — but it will interfere.
+|===
+
+---
+
+=== d6 Named Threat (Optional)
+
+If the campaign calls for a recurring antagonist, determine their involvement:
+
+[%header,cols="1,4"]
+|===
+| d6 | Named Threat Angle
+
+| 1 | The Named Threat is three steps ahead — the artifact was already moved before the cell arrived.
+| 2 | An operative working for the Named Threat is on-site, posing as a civilian, law enforcement, or utility worker.
+| 3 | The Named Threat wants the artifact contained just as badly as the Covenant does — for entirely different reasons.
+| 4 | The Named Threat has already activated the artifact once. The Fracture condition has triggered. The threat is managing fallout.
+| 5 | The Named Threat is watching the cell specifically. They have a file on at least one agent.
+| 6 | The Named Threat is not involved — but they will learn about this case. Increase the Threat Meter by 1 after resolution.
+|===
+
+---
+
+[[quick-case-build]]
+=== Quick Case Build (15-Minute Prep Guide)
+
+Use this procedure to run from nothing to a playable case in one pass:
+
+. **Roll d66 on the Artifact Type table.** This is your MacGuffin. Name it, give it a
+   mundane appearance, and confirm its tier (Tier 1 if the effect description is minor;
+   Tier 3 if it bends reality).
+
+. **Roll d6 on Inciting Incident.** This determines how the session opens. Brief the
+   players in 2 sentences at the table. Do not explain the artifact yet.
+
+. **Roll d6 on Location.** This determines where 80% of the case takes place.
+   Sketch a rough map with 3–4 meaningful zones.
+
+. **Roll d6 on Complication.** Layer this into the location. It does not need to be
+   introduced immediately — complications should emerge from play.
+
+. **Name one NPC the players will meet in the first 15 minutes.** This person either
+   has information the cell needs, or is the first obvious lead. Give them a name and a
+   motivation (they want something that has nothing to do with the artifact).
+
+. **Define the clock.** What happens if the cell does not act within 1–2 sessions?
+   The artifact is moved, activated, or a civilian dies.
+
+. **Use the 8-phase structure.** The tables populate Phases 1 (Intelligence Brief)
+   and 2 (Research and Preparation). Everything else emerges from play.
+
+==== Worked Example: "The Holbrook Frequency"
+
+> *Rolled:* d66 = 23 (Radio receiver — parallel timeline transmissions).
+> *Incident:* 5 (Covenant Intelligence Briefing — resonance spike, stabilized).
+> *Location:* 2 (Research laboratory — university).
+> *Complication:* 3 (Media attention — journalist, 48-hour deadline).
+>
+> **Case Setup:** The physics department at Holbrook University in Columbus, Ohio
+> has been receiving anomalous radio transmissions for three weeks. A Covenant analyst
+> matched the frequency signature to a Tier 2 artifact: a surplus military radio receiver
+> modified with components sourced from a 1943 German ESP research program. A local
+> science reporter is writing a "mystery signal" human-interest piece for the Columbus
+> Dispatch — deadline Friday.
+>
+> **Clock:** The journalist's article runs Friday morning. If the artifact is not
+> secured by then, the story triggers federal interest and the Covenant loses access
+> to the university.
+>
+> **NPC:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
+> She wants grant funding, not interference. She will cooperate — for a price.
+
