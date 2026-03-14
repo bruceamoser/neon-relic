@@ -34,6 +34,8 @@ However, pushing represents the character exerting maximum physical, mental, or 
 * You take a *−1 die penalty* on all future rolls utilizing that specific Attribute.
 * *You cannot push a roll if you already have a −1 penalty to the associated Attribute.* This prevents players from continuously "farming" resources on safe rolls.
 
+> *Design note:* Resonance is the only push cost. There is no separate "Stress" track, no optional complication table. The Resonance system is designed to handle all forms of mental and supernatural pressure through a single unified resource — see `docs/chapters/07-resonance-corruption.adoc` (Design Decision: Resonance vs. Willpower) for the full rationale.
+
 The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 
 ---
