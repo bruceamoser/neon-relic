@@ -1,0 +1,55 @@
+= The Case File: Procedural Mystery Structure
+
+To maintain consistent narrative flow and emulate the pacing of a detective serial, Project Neon Relic adopts the episodic mystery structure native to _Vaesen_. This procedural structure paces investigations effectively, preventing analysis paralysis while ensuring easy GM session preparation.
+
+A standard game session — a *"Case File"* — follows eight phases:
+
+== Phase 1: The Prologue
+
+The session begins with brief, roleplayed vignettes detailing the characters' daily lives. This grounds the characters in 1980s reality, establishing their humanity and interpersonal drama before the horror begins.
+
+== Phase 2: The Invitation
+
+The characters receive the narrative hook. In the 80s setting, this could be:
+
+* A panicked, distorted call on an encrypted HAM radio
+* A cryptic VHS tape delivered via courier
+* A clandestine briefing from a shadow-broker in a neon-lit diner
+* A coded message on a BBS bulletin board
+
+== Phase 3: Preparation & Equipping (The Stack)
+
+Conducted at the player's Headquarters:
+
+. *Research* — Players use base facilities to research the entity or artifact.
+. *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
+
+== Phase 4: The Journey
+
+The GM describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage* — a floating +1 bonus die usable at any critical point during the mystery.
+
+== Phase 5: Arrival
+
+The team arrives at the macro-location (a sprawling abandoned shopping mall, a remote fog-shrouded logging town, etc.). The GM orients the players and introduces local NPCs holding peripheral clues.
+
+== Phase 6: Places (The Investigation)
+
+The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the GM initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
+
+== Phase 7: The Confrontation
+
+The climax. Players must synthesize gathered clues to:
+
+* Enact a banishment ritual
+* Utilize an opposing artifact to neutralize the threat
+* Engage in desperate, lethal combat with the anomaly or rival cultists
+
+== Phase 8: The Aftermath
+
+Survivors return to base. During this phase:
+
+* All requisitioned gear is returned to Stack
+* Players undergo debriefing and answer XP questions
+* Characters attempt to clear accumulated Resonance
+* Check if temporary psychological traumas become permanent conditions
+* Initiate new Headquarters upgrades

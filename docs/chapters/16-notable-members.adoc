@@ -1,0 +1,51 @@
+= Notable Historical Covenant Members
+
+Because of the rigid structure of 441 members, players are part of an unbroken lineage of historical stewards. The following represent legendary past members from the Covenant archives.
+
+== The Medieval & Renaissance Eras
+
+[%header,cols="3,1,1,5"]
+|===
+| Member | Dates | Division | Legacy
+
+| *Godfrey of Bouillon* | c. 1060–1100 | Recovery | Used the chaos of the First Crusade to seize and sequester dangerous Levantine relics.
+| *Hildegard of Bingen* | 1098–1179 | Keep | A visionary nun who created early containment wards disguised as complex musical compositions.
+| *Albertus Magnus* | c. 1200–1280 | Wayfinder | Dominican friar who mapped the alchemical resonance of European artifacts.
+| *Roger Bacon* | c. 1219–1292 | Keep | Designed the first lead-lined alchemical containment chambers, hidden within academic manuscripts.
+| *Marco Polo* | 1254–1324 | Recovery | Used his famous travels as a smokescreen to extract dangerous Silk Road artifacts.
+| *Nicolas Flamel* | 1330–1418 | Keep | Guarded a highly unstable, reality-warping artifact masked as the "philosopher's stone."
+| *Marsilio Ficino* | 1433–1499 | Wayfinder | Translated the _Corpus Hermeticum_ to decipher ancient artifact triggers for field agents.
+| *Heinrich Cornelius Agrippa* | 1486–1535 | Keep | Authored the _Three Books of Occult Philosophy_ as a coded manual for Covenant catalogers.
+| *Paracelsus* | 1493–1541 | Wayfinder | Pioneered treatments for the physical symptoms of early-stage Corruption Cascades.
+| *John Dee* | 1527–1608 | Wayfinder | Used Enochian magic and Elizabeth I's court to intercept Spanish occult weaponry.
+|===
+
+== The Enlightenment & Victorian Eras
+
+[%header,cols="3,1,1,5"]
+|===
+| Member | Dates | Division | Legacy
+
+| *Athanasius Kircher* | 1602–1680 | Keep | Categorized cursed Egyptian artifacts and built the first deep-subterranean vaults beneath Rome.
+| *Emanuel Swedenborg* | 1688–1772 | Wayfinder | Mapped the ethereal plane, developing techniques to bypass supernatural traps.
+| *Count of St. Germain* | 1712–1784 | Recovery | Used his alleged "immortality" as cover for a generational lineage of Recovery agents.
+| *Giovanni Battista Belzoni* | 1778–1823 | Recovery | Posed as an archaeologist to extract cursed Egyptian antiquities from collapsing tombs.
+| *Sir Richard Francis Burton* | 1821–1890 | Recovery | Master of disguise and linguistics who infiltrated forbidden cities to retrieve stolen relics.
+| *Heinrich Schliemann* | 1822–1890 | Recovery | Used the excavation of Troy as a front to extract weaponized mythological artifacts.
+| *Helena Petrovna Blavatsky* | 1831–1891 | Wayfinder | Normalized the esoteric through the Theosophical Society to enable covert investigations.
+| *William Wynn Westcott* | 1848–1925 | Keep | Co-founded the Golden Dawn, using lodges as safehouses for psychological ward development.
+| *Arthur Edward Waite* | 1857–1942 | Wayfinder | Encoded artifact locations and entity weaknesses into the Rider-Waite Tarot deck.
+| *William Butler Yeats* | 1865–1939 | Wayfinder | Used poetic resonance and automatic writing to locate dormant Celtic artifacts.
+|===
+
+== The 20th Century (Pre-1980s)
+
+[%header,cols="3,1,1,5"]
+|===
+| Member | Dates | Division | Legacy
+
+| *Howard Carter* | 1874–1939 | Recovery | Handled the catastrophic curse outbreak during the Tutankhamun extraction.
+| *Nicholas Roerich* | 1874–1947 | Recovery | Ran Himalayan expeditions to secure the Chintamani Stone before Axis occultists.
+| *Evelyn Underhill* | 1875–1941 | Keep | Developed meditation techniques that actively counteract Reality Distortion.
+| *Jack Parsons* | 1914–1952 | Wayfinder | Blended Thelema with aerospace technology to attempt destruction of volatile off-world artifacts.
+|===

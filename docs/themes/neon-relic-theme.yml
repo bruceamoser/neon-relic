@@ -1,0 +1,64 @@
+# Neon Relic — asciidoctor-pdf theme stub
+#
+# Usage:
+#   asciidoctor-pdf \
+#     -a pdf-themesdir=docs/themes \
+#     -a pdf-theme=neon-relic \
+#     docs/neon-relic.adoc
+#
+# Install:
+#   gem install asciidoctor asciidoctor-pdf
+
+extends: default
+
+base:
+  font-color: '#E0E0E0'
+  background-color: '#0D0D1A'
+
+page:
+  background-color: '#0D0D1A'
+  margin: [20mm, 18mm, 20mm, 18mm]
+  size: LETTER
+
+heading:
+  font-color: '#C678DD'
+  font-style: bold
+  line-height: 1.2
+
+title-page:
+  font-color: '#E0E0E0'
+  background-color: '#0D0D1A'
+  title:
+    font-size: 48
+    font-color: '#C678DD'
+    font-style: bold
+  subtitle:
+    font-color: '#ABB2BF'
+  authors:
+    font-color: '#ABB2BF'
+
+link:
+  font-color: '#61AFEF'
+
+table:
+  background-color: '#13131F'
+  header-background-color: '#1E1E2E'
+  header-font-color: '#C678DD'
+  border-color: '#444466'
+  cell-font-color: '#E0E0E0'
+  stripe-background-color: '#1A1A2E'
+
+code:
+  background-color: '#1E1E2E'
+  font-color: '#ABB2BF'
+
+admonition:
+  border-color: '#C678DD'
+  background-color: '#1A1A2E'
+  column-rule-color: '#C678DD'
+
+sidebar:
+  background-color: '#1A1A2E'
+  border-color: '#444466'
+  font-color: '#E0E0E0'
+  title-font-color: '#C678DD'

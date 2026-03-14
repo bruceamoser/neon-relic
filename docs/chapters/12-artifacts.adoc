@@ -1,0 +1,47 @@
+= Artifacts of Power and Doom
+
+In an occult thriller setting, artifacts are fundamentally dangerous — objects of immense, unknowable power that exact a heavy toll on the human mind and physical reality. Project Neon Relic leans heavily into the *"Artifact of Doom"* narrative trope, ensuring that utilizing magic is always a terrifying gamble.
+
+== The Mechanics of Resonant Artifacts
+
+Within the YZE system, mystical objects are classified as *Resonant Artifacts*. They often appear entirely mundane — a vintage Polaroid camera, a rusted World War I trench lighter, a tarnished silver coin — but are imbued with intense paranatural energy.
+
+To utilize an artifact, a character must trigger its specific *activation condition* (e.g., speaking a phrase in a dead language, feeding it a drop of blood, or playing a specific frequency). Artifacts function in two interdependent ways:
+
+. *Overwhelming Power* — The artifact allows an action far outside normal human capability: viewing past events, turning invisible, commanding the undead, or dealing massive unblockable damage to supernatural entities.
+
+. *The Psychological Toll* — Every activation immediately generates *1–3 Resonance* (by artifact tier), pushing the user closer to a Corruption Check.
+
+Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10, or d12). If the roll results in a *1*, the artifact's internal metaphysical structure fractures — it may break, go dormant, or trigger a horrific localized side-effect.
+
+== Catalog of 1980s Resonant Artifacts
+
+[%header,cols="2,2,3,3"]
+|===
+| Artifact | Mundane Appearance | Effect | Cost & Fracture (on 1)
+
+| *The Betamax of St. Jude*
+| Degraded Betamax tape in unmarked black sleeve.
+| Displays the immediate 10-minute future when played on a VCR. Auto-success on any opposed Wits or Agility roll in the current scene.
+| *2 Resonance.* VCR combusts; user temporarily blinded by visions of their own death.
+
+| *The Obsidian Walkman*
+| Heavy, modified Sony cassette player with stone-like casing.
+| Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues or bypass Investigation rolls.
+| *1 Resonance.* User deafened by psychic static; gains permanent phobia of silence.
+
+| *The Oppenheimer Lens*
+| Aviator sunglasses with fused desert-glass lenses.
+| See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions.
+| *1 Resonance.* Lenses shatter; shards cause 1 permanent Agility damage.
+
+| *The Judas Coin*
+| Heavy silver denarius, unnaturally warm.
+| Target overwhelmed by greed or guilt during social interaction. Auto-success on Empathy (Manipulate).
+| *2 Resonance.* Coin burns through user's flesh (1 physical damage); target becomes violently hostile.
+
+| *The Chronos Polaroid*
+| Polaroid SX-70 camera smelling of ozone.
+| Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.
+| *1 Resonance.* Flash acts as beacon, alerting nearest supernatural entity to party's exact location.
+|===

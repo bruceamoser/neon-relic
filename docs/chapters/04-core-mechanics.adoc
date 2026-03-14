@@ -1,0 +1,37 @@
+= Core Resolution Mechanics
+
+The foundation of Project Neon Relic relies on the classic *dice-pool variant* of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition — key themes in analog horror.
+
+== The Anatomy of the Dice Pool
+
+The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
+
+[%header,cols="2,1,3,1"]
+|===
+| Dice Type | Color | Source | Typical Range
+
+| *Attribute Dice* | White | Character's innate biological capability | 1–5
+| *Skill Dice* | Green | Character's trained proficiency | 0–5
+| *Gear Dice* | Black | Mechanical bonus from tools/weapons | 0–3
+|===
+
+To achieve a basic success, the player must roll at least one *6* across the entire dice pool. Multiple sixes are surplus successes that can be spent on *stunts* — extra narrative or mechanical benefits such as:
+
+* Completing an action significantly faster
+* Uncovering secondary hidden clues during an investigation
+* Assisting an ally with their next roll
+* Inflicting critical, debilitating injuries during combat
+
+The elegance of this system lies in its speed; it produces immediate, decisive results by entirely removing post-roll arithmetic or target-number calculations.
+
+== The Push Mechanic and Attrition
+
+The primary driver of suspense and narrative tension is the *Push* mechanic. If an initial roll yields no sixes (a failure), or if the player desperately needs additional successes for stunts, they may choose to *push* the roll — picking up and re-rolling all dice that do not currently display a 6.
+
+However, pushing represents the character exerting maximum physical, mental, or material effort, and it comes with strict limitations and severe risks:
+
+* You immediately gain *1 Resonance point*.
+* You take a *−1 die penalty* on all future rolls utilizing that specific Attribute.
+* *You cannot push a roll if you already have a −1 penalty to the associated Attribute.* This prevents players from continuously "farming" resources on safe rolls.
+
+The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.

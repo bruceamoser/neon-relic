@@ -1,0 +1,42 @@
+= Attributes and Skills
+
+Characters are defined by *four core attributes*, representing their fundamental physical and mental foundations. In Project Neon Relic, these traditional YZE attributes are updated to fit the modern, investigative tone of an occult thriller:
+
+[%header,cols="1,4"]
+|===
+| Attribute | Description
+
+| *Strength* | Physical power, raw endurance, and fortitude against physical trauma.
+| *Agility* | Gross and fine motor skills, physical reflexes, balance, and precision.
+| *Wits* | Sensory perception, formal education, memory recall, and deductive reasoning.
+| *Empathy* | Raw charisma, social intuition, ability to read human behavior, and emotional resilience against psychological horror.
+|===
+
+== The Twelve Core Skills
+
+The twelve core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
+
+[%header,cols="1,1,4"]
+|===
+| Attribute | Skill | Application in the 1980s Occult Setting
+
+.3+| *Strength*
+| Force | Breaking down sealed bunker doors, forcing open containment chambers.
+| Brawl | Hand-to-hand combat with cultists, wrestling cursed objects from hostile hands.
+| Endure | Resisting the physical toll of harsh environments, toxic substances, or sustained injury.
+
+.3+| *Agility*
+| Sneak | Infiltrating corporate research facilities, bypassing analog security systems.
+| Sleight of Hand | Picking locks, pocketing small artifacts, disarming mechanical traps.
+| Firearms | Utilizing period-accurate weaponry (.38 revolvers, pump-action shotguns).
+
+.3+| *Wits*
+| Investigate | Searching crime scenes for anomalous evidence, analyzing forensic data.
+| Tech | Operating 1980s mainframes, hacking BBS networks, repairing analog equipment.
+| Lore | Decoding ancient occult texts, identifying mythological creatures and artifact origins.
+
+.3+| *Empathy*
+| Manipulate | Bribing informants, deceiving rivals, leveraging secrets.
+| Command | Directing panicked civilians, coordinating team actions under fire.
+| Psychoanalyze | Interrogating suspects, calming allies suffering from supernatural trauma, reading intent.
+|===
