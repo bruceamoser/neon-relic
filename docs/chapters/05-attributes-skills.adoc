@@ -38,6 +38,9 @@ The twelve core skills are mapped to these four attributes, tailored to support 
 .3+| *Empathy*
 | Manipulate | Bribing informants, deceiving rivals, leveraging secrets.
 | Command | Directing panicked civilians, coordinating team actions under fire.
+| Psychoanalyze | Reading psychological states, detecting deception through behavior, stabilizing traumatized witnesses.
+|===
+
 ---
 
 == Skill Stunts
