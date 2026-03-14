@@ -23,6 +23,80 @@ If any Attribute is reduced to *0*, your character becomes *Broken*:
 
 ---
 
+== Death and Dying
+
+Being *Broken* is not the same as being dead. Death is a separate, subsequent event — probabilistic, not automatic — that occurs if a Broken character does not receive care in time.
+
+=== The Three States
+
+[%header,cols="1,2,4"]
+|===
+| State | Condition | What It Means
+
+| *Broken / Unconscious* | Any Attribute = 0. Critical Injury rolled. | Character is incapacitated. They can still be saved.
+| *Dying* | Broken with a Death Check Critical Injury (result marked †) — and the Death Check has not yet been resolved, or was survived but the underlying injury is active (Bleeding, Gutted). | The window for stabilization is closing. An untreated Dying character will die.
+| *Dead* | Death Check rolled and failed, OR a specific instant-death result triggered, OR Dying window expires without treatment. | The character is gone.
+|===
+
+=== The Death Check
+
+A *Death Check* is a single d6 roll. It is required whenever a Critical Injury is marked with *†*.
+
+* Roll one d6.
+* *1–2:* The character dies.
+* *3–6:* The character survives — the Critical Injury still applies and must be treated, but they cling to life.
+
+*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+2 instead of d6 (death only on 1, and only if the Heal roll succeeded). On failure: no change; Death Check proceeds normally.
+
+=== The Stabilization Window
+
+A Broken character who has rolled a Death-Check result (†) has a limited window in which an ally can stabilize them before death becomes inevitable:
+
+* *Within the same scene:* An ally may attempt to stabilize the Dying character (see First Aid below).
+* *End of scene without treatment:* The character must roll their Death Check unmodified. No ally assistance.
+* *Instant Death exceptions:* Critical Injury result *66 (DOA)* requires an immediate Death Check — there is no window. The Heal roll to influence it must be attempted within the same round (not the same scene).
+
+=== First Aid: Stabilizing a Dying Character
+
+To stabilize a Dying ally during the stabilization window:
+
+* *Skill:* Heal (WIT)
+* *Action:* Slow Action
+* *Requirements:* A First Aid Kit must be present. Without one, the roll is made at −2 dice.
+* *Difficulty:* 2 (normal), 3 (if Gutted or Arterial Strike), 4 (if DOA attempted mid-round)
+* *On success:* The Dying condition is resolved. The Critical Injury remains. The character is Broken/Unconscious but no longer dying. They need rest and proper medical care, but they will live.
+* *On failure:* Stabilization attempt failed. The character may try again if time permits (same scene). Each failed attempt reduces the character's current Strength by 1 (the effort causes further distress).
+
+=== Instant Death
+
+Two Critical Injury results bypass the Death Check entirely:
+
+* *Result 66 (DOA) with automatic failure:* This death check cannot succeed — there is no roll. If the Heal roll (Difficulty 4, same round) is not made in time, the character dies. There are no further attempts.
+* *Result 55 (Shattered Will), 46 (Catatonic Episode*) — mental death:* Mental Death Checks work the same way; success or failure has the same probability (d6, 1–2 = retirement). These represent permanent catatonia, not physical death — but the character is retired from play regardless.
+
+> *Design note:* Instant physical death (result 66) is rare and requires an enormous attack to reach the worst end of the D66 table. It represents an overwhelmingly lethal event. Most character deaths will come from failed Death Checks, not from this result.
+
+=== Character Death and Continuity
+
+When a character dies:
+
+. *Gear returns to Stack.* Division equipment, the Division Signature Item (Verdant Codex, Warden's Bracer, etc.), and all Covenant-issued gear are logged and returned at the end of the Case File.
+. *Covenant notification.* The character is officially listed as *Fallen in the Line of Duty*. The circumstances are filed — truthfully or not, at the surviving team's discretion.
+. *Dark Secrets.* A dead character's Dark Secrets may surface posthumously. If an NPC knew the secret, the GM may still play that complication forward with remaining PCs (the secret outlives the character).
+. *Character replacement.* A new character enters play at the start of the next Case File. They begin with the same XP total as the lowest-XP surviving member of the team (minimum starting values). They arrive as a new Covenant recruitment — briefed, equipped, and nervous.
+. *Legacy.* The deceased character's player chooses one lasting effect: a significant item the new character carries (with GM permission), an NPC connection inherited, or a reputation within the Covenant that precedes them.
+
+=== Corruption Death vs. Physical Death
+
+Physical death and Corruption-threshold death are distinct retirement paths:
+
+* *Physical death:* Any Attribute at 0 → Critical Injury → possible Death Check failure. The character dies with their body intact enough for others to note.
+* *Corruption death:* Corruption exceeds `10 + Empathy` → permanent catatonia. The character exists but is unreachable — institutionalized, catatonic, or simply lost. Technically still alive, but gone from play.
+
+> Corruption death is in many ways worse. Physical death is clean. Corruption death means your colleagues have to keep making decisions about someone they knew, who is now a stranger in a hospital bed.
+
+---
+
 == Critical Injuries
 
 When a character is *Broken* (any Attribute reduced to 0), they immediately roll on the appropriate Critical Injury table. The table used depends on *what type of damage Broke them*:
