@@ -1,0 +1,210 @@
+= GM Guidance
+
+Running Neon Relic well means understanding what kind of game it is trying to be: an *investigation horror* game where the real terror is not the monster in the vault, but the agents' growing awareness that the Covenant cannot fully protect them from what they're being asked to do.
+
+This chapter gives you the tools to prepare and run individual cases, develop mysteries that hold together under player pressure, and handle the unexpected. Use it as a working reference, not a rulebook.
+
+---
+
+== What Makes Neon Relic Work
+
+Before the mechanical tools, three design priorities that should inform every session you run:
+
+. *Clues are discoverable, not gateable.* Players should never feel stupid for missing something. Every site has multiple paths to the same revelation. The players will find it. Your job is to make the finding feel earned.
+
+. *The Covenant is not infallible.* Headquarters, the Verdant Codex, and the Division protocols exist in tension with the facts in the field. Let them be wrong sometimes. Let the players be right when the institution isn't.
+
+. *The artifacts are not neutral.* Every artifact has a trajectory — a direction it pulls the world. Make sure some of that pull lands on the agents. Resonance and Corruption are not just penalties; they are the story.
+
+---
+
+== Session Zero
+
+Before the first case, run a *Session Zero* — a short scene-setting conversation, not a game session. Cover:
+
+=== Tone and Content Agreement
+
+Ask the group:
+
+* *How much body horror is on the table?* (Explicit physical description of injury vs. suggested.)
+* *How much psychological horror?* (Creeping dread, invasive thoughts, direct mind-violation?)
+* *NPC deaths:* Are named characters who feel important safe, or is everyone at risk?
+* *1980s specificity:* How much do players want analog friction (payphones, limited travel, no GPS) to create problems?
+
+=== Safety Tools
+
+Recommend one or both:
+
+* *Lines and Veils* — Lines are content never happening, even off-screen. Veils happen but are not described in detail. Ask each player individually.
+* *X-Card* — Tapping a card (real or virtual) means the current scene cuts or rewrites, no questions asked.
+
+=== Finding the Hooks
+
+Ask each player: *Why is your character Covenant?* The answer should involve something personal — not ideology alone. The Covenant fills a need for them. Knowing what that need is tells you how to make the game hurt in the right ways.
+
+---
+
+== The Five-Element Mystery
+
+Every Case File (mission) is built on five elements. You don't need all five fully developed before play — you need the skeleton, then you let the players fill in the rest.
+
+[%header,cols="1,2,4"]
+|===
+| Element | Question | Design Note
+
+| *Location* | Where is this happening? | One specific place — a town, a building, a neighborhood. Not a region. One gas station in rural Wyoming. One hospital. One concert venue. The 1980s location should feel tactile and era-specific.
+| *Artifact* | What is the sourcebook item? | The thing that caused events to spiral. Every case has one artifact. Define its *Tier* (1–4), its *apparent property* (what it seems to do), and its *real effect* (what it actually does to the world around it).
+| *Threat* | What is the immediate danger? | The presenting problem: the entity, the cultist cell, the MJ-12 investigation, the cover-up. This is what the Covenant is responding to.
+| *Rival Faction* | Who else wants the artifact? | Even low-stakes cases should have a second party. The Compact, a private collector, a true believer. Rival factions create competing agendas and prevent simple extraction.
+| *Complication* | What makes it personal? | One element that connects to a PC's Dark Secret, Relationship, or Division. If the complication never lands, the case is professional. If it lands, it's personal. Build for personal.
+|===
+
+=== The Mystery Statement
+
+Write one sentence that describes the full case:
+
+_"A [Tier X artifact] has surfaced in [Location], attracting [Threat]. [Rival Faction] is already present. The complication: [personal element]."_
+
+Example: *"A Tier 2 artifact has surfaced in a shuttered Ohio psychiatric hospital, attracting Echoing Remnants that have begun killing the urban explorers who found the site. The Hellfire Consortium has purchased the property and has a crew inside. The complication: one of the explorers is the sister of Agent Castellano's disappeared informant."*
+
+If your mystery statement doesn't fit in one sentence, you have too much. Cut.
+
+---
+
+== Clue Web Design
+
+*The Iron Rule:* Every piece of critical information must be findable via *at least three different paths*. If information is available only through one NPC, one physical location, or one specific skill roll, the case will break the moment players miss it.
+
+=== How to Build a Clue Web
+
+. *Identify the critical revelations.* What must the players learn to understand the case? Typically 3–5 things: the artifact's true nature, the faction's plan, the event that started everything, and the solution (or route to containment).
+
+. *For each critical revelation, write three paths.* One path should reward Investigate/Lore (physical search, forensic analysis, document study). One path should reward social skills (witness, NPC confession, Manipulate). One path should come through action (confrontation reveals the fact in dialogue, or artifact activation reveals the truth).
+
+. *Allow forward movement from partial information.* Players who know *something is wrong in the basement* should be able to proceed even if they don't know *exactly what*. Structure facts so that each revelation suggests the next action, even if the players haven't pursued all paths.
+
+=== The Dead End Test
+
+Before play, look at each NPC and location and ask: *If this was skipped entirely, would the case still be solvable?* If the answer is "no," you have a single-point-of-failure. Fix it.
+
+=== When Players Go Wrong
+
+Players will occasionally pursue a lead that goes nowhere — or miss the lead that was obvious to you. When this happens:
+
+* *Yes, And:* Agree with what they're doing ("Yes, you search the kitchen") and add a connection ("And you find an Ember Accord symbol inside a cabinet — someone was here before you").
+* *No, But:* Deny what they hoped for, but give movement ("The file room is locked and you can't get in right now, but you notice someone has been watching this building from across the street").
+* *Never:* "Nothing happens. The search turns up nothing." This is the only forbidden outcome. Something always happens, even if it's the wrong thing.
+
+---
+
+== Countdown Clocks
+
+Every case has at least one *Countdown Clock* — a track that advances as time passes or key events occur, representing escalating stakes.
+
+=== Clock Structure
+
+A Countdown Clock has:
+
+* *A name* (what it represents: "Compact Extraction Team Arrives," "Second Civilian Found Dead," "Artifact Resonance Threshold Reached")
+* *4–6 clock stages*, each with a defined event
+* *Trigger conditions* that advance the clock one step
+
+=== Example Clock
+
+*Clock Name:* The Hospital Burns Down (the Consortium will destroy the evidence — and the Remnants — when they've extracted what they need)
+
+[%header,cols="^1,3,3"]
+|===
+| Stage | Event | Advance Trigger
+
+| 1 | Consortium team enters the hospital. | Session begins.
+| 2 | Consortium arcane specialist completes first survey. | 2 real-time hours of in-game activity without confrontation.
+| 3 | Consortium team locates the artifact. | Players fail to reach artifact site first, OR artifact site is found without contest.
+| 4 | Elimination order issued — the urban explorers are now a liability. | Players have direct contact with the Consortium.
+| 5 | Fire is set. Building begins to burn. Remnants are released from their anchor into the street. | Players do not confront the Consortium by end of Day 2.
+| 6 | Hospital collapses. Remnants disperse into the city. Consortium escapes with artifact. | Case failure.
+|===
+
+=== Multiple Clocks
+
+High-stakes cases may have two or three simultaneous clocks. Keep them on different timers so players can interrupt one without the others automatically resolving. Multiple clocks also mean that a "successful" case may still end with one clock completing — which is often the more interesting outcome.
+
+---
+
+== NPC Motivation Design
+
+Every significant NPC needs three things: a *secret*, a *goal*, and a *connection to the artifact*.
+
+[%header,cols="1,4"]
+|===
+| Component | Design Note
+
+| *Secret* | Something the NPC is hiding from the agents. Not necessarily sinister — a witness might be hiding that they trespassed, not that they're a cultist. The secret creates the reason they don't just tell the agents everything at the start.
+| *Goal* | What the NPC is actively trying to accomplish right now. Not a background motivation — a current action. They are doing something during this case.
+| *Artifact connection* | How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Resonance consequence (nightmares, strange certainty about things they can't know).
+|===
+
+=== The Motivated NPC Test
+
+Ask: *If the agents were not present, what would this NPC do?* If the answer is nothing — if the NPC only exists as a information dispenser — cut them or give them a clock. NSPCs with active agendas create situations. Situation creators make sessions run.
+
+---
+
+== Supernatural Entity Behavior
+
+Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates:
+
+[%header,cols="1,4"]
+|===
+| Entity Type | Behavior Pattern
+
+| *Echoing Remnant* | Acts on memory, not will. Repeats actions associated with its final emotional state. An Echoing Remnant from a violent event will reenact something about that event — not attack intelligently. Agents who understand the echo can sometimes avoid it entirely.
+| *Shard Construct* | Single-directive: protect the artifact. No curiosity, no self-preservation beyond mission, no social engagement. Cannot be persuaded or manipulated. Can be outmaneuvered (if you aren't between the Construct and the artifact, it doesn't care about you).
+| *Bound Entity* | Has a will, has a history, has something it wants. Bound Entities can be communicated with through Lore and Psychoanalyze (not Manipulate — they see through human social mechanics). They respond to truth, to acknowledgment of what happened to them. They can be bargained with.
+| *Manifest Presence* | A high-tier supernatural intrusion: an entity that has begun to impose its logic on local reality. Does not fight — it *redefines the situation*. Agents trying to act normally in its presence find that normality is no longer available. These entities are solved through removing their anchor (the artifact) or performing a Wayfinder containment ritual, not fought.
+|===
+
+---
+
+== Improvisation Guidelines
+
+When players go somewhere you didn't prepare:
+
+. *You don't need to have everything ready.* You need to know the five elements and the clue web. Everything else can be invented.
+. *Names first.* The moment you name an NPC, they become real. Have ten era-appropriate names ready (female and male, surname-friendly for 1980s Midwest America or wherever your game is set).
+. *Establish geography.* "You pull into the parking lot of a strip mall. One end is a closed sporting goods store. The other end is still lit — a late-night laundromat." Specificity creates presence.
+. *Every new location has one strange thing.* Not necessarily supernatural. One thing that's slightly off. This makes the world feel watched, even when nothing is watching.
+
+---
+
+== 1980s Investigation Complication Table (D12)
+
+Roll when you need an unexpected complication mid-case, when a scene is going too smoothly, or to generate pre-session texture.
+
+[%header,cols="^1,4"]
+|===
+| D12 | Complication
+
+| 1 | The key witness has already spoken to MJ-12. Their story has been changed. They are now afraid of the agents.
+| 2 | A news crew is covering a tangentially related story. They saw something they shouldn't have. They are currently in their van, developing film.
+| 3 | The physical evidence the team collected has a fingerprint trace that leads to a Covenant asset who should not be connected to this case.
+| 4 | The local police are investigating the same location. They are incompetent but present. Their cruiser is in the way.
+| 5 | A pay phone at a critical location rings as the team arrives. The call is from someone who knows the team's names.
+| 6 | It's raining. This matters: the evidence site is compromised, the getaway is slower, the team's electronics are at risk, visibility is the wrong kind of limited.
+| 7 | A civilian has bonded with the artifact without knowing what it is. They are treating it as a lucky object. It has begun affecting them. They are protective and confused by their protectiveness.
+| 8 | The rival faction's operative is not hostile — they are also following orders and they are also scared. They want to talk. Their faction doesn't know they made contact.
+| 9 | The building's owner is on-site for unrelated maintenance. They are nosy, unhelpful, and will remember the team's faces.
+| 10 | A secondary artifact — unrelated to this case — has been stored in the same facility. It has interacted with the primary artifact. Both are behaving unexpectedly.
+| 11 | The extraction vehicle has been reported stolen. The team's transportation is being tracked by a local detective who has no idea what he's looking for but is very thorough.
+| 12 | The case's solution requires a resource that Stack misclassified three months ago. The item exists; it is in the wrong vault. Getting it takes the rest of the session, minimum.
+|===
+
+---
+
+== Cross-References
+
+* Case File structure (8-phase structure, Countdown mechanics): `docs/chapters/13-case-file.adoc`
+* Artifact properties and Tiers: `docs/chapters/12-artifacts.adoc`
+* Rival faction behavior and agendas: `docs/chapters/15-rival-factions.adoc`
+* Entity stat blocks and Fear ratings: `docs/chapters/17-bestiary.adoc`
+* Resonance/Corruption consequences: `docs/chapters/07-resonance-corruption.adoc`
