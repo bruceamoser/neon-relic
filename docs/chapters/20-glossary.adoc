@@ -144,7 +144,7 @@ Extra successes (6s) beyond the first on an attack roll, spent on special combat
 == T
 
 *The Verdant Covenant*::
-The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep) plus Stack (Logistics). See `docs/chapters/02-verdant-covenant.adoc`.
+The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep) plus Stack (Logistics). See xref:01-introduction.adoc#_the_verdant_covenant[The Verdant Covenant].
 
 == V
 
