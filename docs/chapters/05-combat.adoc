@@ -320,7 +320,7 @@ When an NPC's Strength reaches 0, they are *Broken* (incapacitated). The GM choo
 When a PC's Strength reaches 0, they are *Broken*:
 
 * They collapse and are incapacitated.
-* They must roll on the *Critical Injury table* (see Issue #4 — `docs/chapters/06-health-damage-armor.adoc`).
+* They must roll on the *Critical Injury table* (see Issue #4 — `docs/chapters/07-health-damage-armor.adoc`).
 * They are out of the fight unless stabilized by an ally (Heal roll, costs a Slow Action, requires a First Aid Kit).
 * An unstabilized Broken PC *dies* at the end of the scene unless treated.
 

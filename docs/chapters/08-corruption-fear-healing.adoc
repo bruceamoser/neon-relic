@@ -165,6 +165,6 @@ Fear Rating is a *narrative tool* for the GM — it classifies how terrifying a 
 | *5* | Annihilating | A Class-5 entity. A tear in physical space. Direct contact with whatever the artifacts are *for*.
 |===
 
-Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (`docs/chapters/17-bestiary.adoc`).
+Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (`docs/chapters/19-bestiary.adoc`).
 
 

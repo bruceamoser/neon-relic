@@ -113,7 +113,7 @@ Supplies can be restocked:
 | *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. GM may waive this for simple artifact containment.
 |===
 
-> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see `docs/chapters/03b-combat.adoc`). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
+> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see `docs/chapters/05-combat.adoc`). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
 
 === Scarcity in the 1980s Field
 
@@ -245,7 +245,7 @@ Coastal/river access. Cannot be followed by road vehicles. Night operations: −
 
 === Vehicle Conflict — Actions and Chase Rules
 
-Vehicle conflict follows the same chase structure as foot chases (`docs/chapters/03b-combat.adoc`), with vehicle-specific modifications.
+Vehicle conflict follows the same chase structure as foot chases (`docs/chapters/05-combat.adoc`), with vehicle-specific modifications.
 
 ==== Chase Structure
 
