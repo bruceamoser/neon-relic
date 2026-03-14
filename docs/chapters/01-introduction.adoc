@@ -191,9 +191,9 @@ Every Covenant agent harbors a *Dark Secret* — something from their past that 
 
 ---
 
-== Step 10: Define Your Relationships and Drive
+== Step 10: Define Your Relationships
 
-Every agent enters play with three *Relationship Slots* and one *Drive*. These mechanics create personal stakes and grant mechanical benefits when those stakes are threatened or honored.
+Every agent enters play with three *Relationship Slots*. These define the personal stakes that make missions matter and connect the character to the world beyond the Covenant.
 
 === Relationship Slots
 
@@ -210,27 +210,6 @@ Each slot defines a named NPC and your character's connection to them: who they 
 
 *Recording a Relationship:* Write the NPC's name, their connection to your character, and one thing your character believes about them (this belief may be wrong). The GM will use this to make the relationship meaningful in play.
 
-=== Drive
-
-Your *Drive* is a single-sentence statement of what your character fundamentally wants, fears, or believes. It is your character's engine.
-
-*Examples:*
-* "I will prove the Covenant's work is worth the cost." (Wayfinder idealist)
-* "I will find out what happened to my brother." (Recovery agent w/ personal mystery)
-* "I will survive long enough to get out." (Keep warden who wants to walk away)
-* "I will fix what I broke." (Stack specialist living down a past failure)
-
-*Mechanical effect — Invoking Your Drive:*
-
-Once per scene, when you take an action *directly in service of your Drive* (attack to protect your Personal Tie, push through to uncover the truth your Drive demands, sacrifice personal safety for a Drive-motivated goal), you may:
-
-. Declare the Drive aloud or describe how the action serves it.
-. Gain *+2 dice* on a single roll related to that action.
-
-This is a one-use bonus per scene. It refreshes at the start of each new scene.
-
-> *Drive vs. Dark Secret:* Your Drive is what you want. Your Dark Secret is something you're hiding. They often intersect — the secret may explain the drive. Discuss both with your GM during Session Zero.
-
 === Relationship Loss and Consequence
 
 When a Relationship NPC is *killed, captured, corrupted, or otherwise removed from the story*:
@@ -239,7 +218,7 @@ When a Relationship NPC is *killed, captured, corrupted, or otherwise removed fr
 * *Personal Tie harmed or threatened:* Immediate *Corruption Check* (Difficulty 2) triggered by the emotional impact. If the tie is killed: automatic Corruption Check (no roll to avoid) with +1 Resonance added.
 * *Rival/Enemy eliminated:* The slot opens. The character may define a new one (a new rival may emerge naturally) or leave it empty (no mechanical penalty — the story just loses one of its loaded elements).
 
-*The Death of a Personal Tie:* This is one of the most psychologically catastrophic events in the game. Agents who lose their Personal Tie without the Corruption Check failing are changed — the GM should reflect this. Their Drive may need to be revised. The slot does not refill easily.
+*The Death of a Personal Tie:* This is one of the most psychologically catastrophic events in the game. Agents who lose their Personal Tie without the Corruption Check failing are changed — the GM should reflect this. The slot does not refill easily.
 
 > *Design note (Anchors):* Personal Ties function mechanically as *Anchors* — a connection to the non-supernatural world that slows Corruption's advance. The term "Anchor" may appear in other chapter references (e.g., the Faraday Cage description, Psychoanalyze skill). Both terms refer to the same mechanic.
 
@@ -335,12 +314,11 @@ Petra chooses *Shadow Walker* (1 Resonance): Become entirely imperceptible to mu
 
 Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
 
-=== Steps 9–10: Placeholders
-
 > *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
 
 > *Covenant Contact:* Senior Recovery Commander Darius Osei — her handler since induction.
 > *Personal Tie:* Her younger brother Marco, a cop in Phoenix who doesn't know she quit the DEA.
+> *Rival/Enemy:* Agent Harlan Voss — a Keep operative who questioned her competence during the Tucson debrief. She hasn't forgotten.
 
 === Step 11: Biography
 
