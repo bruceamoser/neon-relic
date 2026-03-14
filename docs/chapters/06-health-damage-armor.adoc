@@ -2,17 +2,34 @@
 
 In the Year Zero Engine, characters do not possess a traditional, escalating pool of "Hit Points." Instead, your *four core Attributes directly serve as your health pools*.
 
-== Taking Damage
+== Damage Types
 
-[%header,cols="1,1,3"]
-|===
-| Damage Type | Target Attribute | Common Sources
+Every source of damage specifies its type and target attribute. The attack defines the damage, not the defender.
 
-| Physical | *Strength* | Attacks, falls, hazardous environments, toxins
-| Exhaustion | *Agility* | Sleep deprivation, prolonged exertion
-| Mental | *Wits* | Supernatural terror, psychic assault
-| Emotional | *Empathy* | Psychological manipulation, witnessing horror
+[%header,cols="2,2,4"]
 |===
+| Damage Type | Target | Sources
+
+| *Physical* | *Strength* (violence, toxins, falls) or *Agility* (exhaustion, prolonged exertion) | Weapons, environmental hazards, physical traps, mundane combat
+| *Mental* | *Wits* (terror, confusion, psychic assault) or *Empathy* (grief, guilt, emotional manipulation) | Failed Fear checks (Wits only), supernatural abilities, psychological attacks, social betrayal
+| *Corruption* | *Corruption track* directly | Pushing rolls, activating Division Talents, occult exposure, artifact activation/feedback, specific creature attacks
+|===
+
+=== Damage Type Rules
+
+. *The source specifies the damage type and target attribute.* The defender does not choose.
+. *Combination attacks* are possible: a supernatural creature might deal Physical (STR) + Corruption damage in the same attack. Both are applied.
+. *Weapon stat blocks* list: Damage value, Damage Type, Target Attribute. Example: _Knife — Damage 2, Physical (STR)_.
+. *Creature stat blocks* list damage per attack. Example: _Shadow Tendril — Damage 2, Mental (WIT) + 1 Corruption_.
+. *Broken state* triggers when any attribute reaches 0, as before. Physical Broken (STR/AGI = 0) → Physical Critical Injury table. Mental Broken (WIT/EMP = 0) → Mental Critical Injury table.
+
+=== What Determines STR vs AGI / WIT vs EMP
+
+* *Physical attacks* default to *STR* unless the source is specifically about exhaustion, fatigue, or overexertion (then AGI).
+* *Mental attacks* default to *WIT* unless the source is specifically emotional, social, or empathic (then EMP).
+* The GM does not adjudicate this per-attack. The weapon, creature, or event definition states the target.
+
+---
 
 == The Broken State
 

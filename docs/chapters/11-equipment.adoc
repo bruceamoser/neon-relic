@@ -34,19 +34,19 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 
 == 1980s Weaponry
 
-Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rating.
+Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rating. All mundane weapons deal *Physical (STR)* damage unless noted otherwise.
 
-[%header,cols="2,^1,^1,1,3,^1"]
+[%header,cols="2,^1,^1,1,1,3,^1"]
 |===
-| Weapon | Gear Bonus | Damage | Range | Special Traits | CL
+| Weapon | Gear Bonus | Damage | Type | Range | Special Traits | CL
 
-| *Brass Knuckles* | +1 | 1 | Engaged | Concealable. | 1
-| *Switchblade* | +1 | 2 | Engaged | Concealable; puncture criticals. | 1
-| *Stun Gun / Taser* | +2 | Stun | Engaged | Target loses their next Slow Action (stunned). | 2
-| *.38 Snub-nose Revolver* | +2 | 2 | Short | Reliable — ignore first 1 when pushing. | 2
-| *9mm Semi-Auto Pistol* | +2 | 2 | Short | High capacity; split successes to hit multiple targets. | 3
-| *Pump-Action Shotgun* | +3 | 3 | Short | +1 Damage at Engaged range. Loud and bulky. | 3
-| *M16 Assault Rifle* | +2 | 3 | Long | Full auto — can push twice, consumes extra ammo. | 4
+| *Brass Knuckles* | +1 | 1 | Physical (STR) | Engaged | Concealable. | 1
+| *Switchblade* | +1 | 2 | Physical (STR) | Engaged | Concealable; puncture criticals. | 1
+| *Stun Gun / Taser* | +2 | Stun | Physical (STR) | Engaged | Target loses their next Slow Action (stunned). | 2
+| *.38 Snub-nose Revolver* | +2 | 2 | Physical (STR) | Short | Reliable — ignore first 1 when pushing. | 2
+| *9mm Semi-Auto Pistol* | +2 | 2 | Physical (STR) | Short | High capacity; split successes to hit multiple targets. | 3
+| *Pump-Action Shotgun* | +3 | 3 | Physical (STR) | Short | +1 Damage at Engaged range. Loud and bulky. | 3
+| *M16 Assault Rifle* | +2 | 3 | Physical (STR) | Long | Full auto — can push twice, consumes extra ammo. | 4
 |===
 
 == Armor
