@@ -99,7 +99,7 @@ This rulebook is organized into six parts:
 * *Part II: Character Creation* -- Build your agent step by step.
 * *Part III: Core Mechanics* -- The dice, attributes, combat, social conflict, health, and the Corruption system.
 * *Part IV: The World of Neon Relic* -- Divisions, equipment, artifacts, headquarters, and advancement.
-* *Part V: The Director* -- GM-facing tools: Case Files, factions, bestiary, travel, and guidance.
+* *Part V: The Director* -- DA-facing tools: Case Files, factions, bestiary, travel, and guidance.
 * *Part VI: Glossary* -- Quick reference for all game terms.
 
-If you are a player, start with Character Creation and Core Mechanics. If you are the GM (the *Director*), read everything -- but especially the Director section and the Corruption chapter.
+If you are a player, start with Character Creation and Core Mechanics. If you are the DA (the *Director*), read everything -- but especially the Director section and the Corruption chapter.

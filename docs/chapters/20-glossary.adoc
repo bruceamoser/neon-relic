@@ -57,6 +57,9 @@ A single d6 roll required when a Critical Injury is marked †. On 1–2: the ch
 *Department*::
 Specialization within a Division (Wayfinder, Keep, Stack). Determines the character's field expertise and Department Skill. Recovery uses Backgrounds instead. See `docs/chapters/09-divisions.adoc`.
 
+*Director of Agents (DA)*::
+The table's facilitator role (formerly "GM" in generic systems). The DA presents scenes, adjudicates uncertainty, advances clocks, and portrays the world and opposition. See xref:14-gm-guidance.adoc[Director of Agents Guidance].
+
 *Difficulty*::
 The number of successes (6s) required to pass a skill roll. Standard range: 1 (routine) to 5+ (extreme). See `docs/chapters/03-core-resolution.adoc`.
 
@@ -81,7 +84,7 @@ One of three action types in combat. Represents a quick or secondary effort: mov
 A Wits roll triggered by supernatural horror. Each 6 = success. Each 1 = +1 Corruption. No successes = failure (+1 Corruption + Panic Table roll). See `docs/chapters/08-corruption-fear-healing.adoc`.
 
 *Fear Rating*::
-Narrative classification (0–5) of how terrifying a creature or event is. Used by the GM to determine when to call for a Fear check. 0 = no check triggered. See `docs/chapters/08-corruption-fear-healing.adoc`.
+Narrative classification (0–5) of how terrifying a creature or event is. Used by the DA to determine when to call for a Fear check. 0 = no check triggered. See `docs/chapters/08-corruption-fear-healing.adoc`.
 
 *Free Action*::
 An action in combat that requires negligible effort: speaking a short sentence, dropping an item, or glancing at surroundings. Unlimited per turn. See `docs/chapters/05-combat.adoc`.

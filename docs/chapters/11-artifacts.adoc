@@ -14,6 +14,65 @@ To utilize an artifact, a character must trigger its specific *activation condit
 
 Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10, or d12). If the roll results in a *1*, the artifact's internal metaphysical structure fractures — it may break, go dormant, or trigger a horrific localized side-effect.
 
+== Containment-First Play Principle
+
+In Neon Relic, artifact activation is not the default objective. Many missions are won by *preventing activation*, isolating carriers, or moving an item into secure containment under pressure.
+
+When framing a case, define at least one non-activation success path:
+
+* *Deny use:* Keep all actors from meeting activation conditions.
+* *Quarantine:* Isolate artifact and witnesses until corruption spread stops.
+* *Transfer:* Secure chain-of-custody handoff to Keep facilities without field activation.
+
+Unknown effects are valid outcomes. If no one can safely predict activation consequences, the DA should treat non-use as a successful and often preferable strategic decision.
+
+=== Activation Risk Tags
+
+Assign one risk tag to every artifact entry:
+
+[%header,cols="1,4"]
+|===
+| Risk Tag | Meaning
+
+| *Stable*
+| Activation behavior is mostly understood. Fracture remains dangerous, but blast radius is usually local.
+
+| *Volatile*
+| Activation is partly understood. Misuse, stress, or repeated use escalates side effects quickly.
+
+| *Catastrophic*
+| Activation can alter the entire scene or case trajectory, including bystanders and infrastructure.
+
+| *Unknown*
+| The Covenant does not yet understand the activation envelope. Treat field activation as last resort.
+|===
+
+=== Corruption Emission (Aura, Pulse, Burst)
+
+Some high-threat artifacts emit corruption into the environment even when not directly activated by an agent.
+
+[%header,cols="1,1,2,3"]
+|===
+| Emission Type | Baseline Radius | Typical Corruption Effect | Use Case
+
+| *Aura*
+| Engaged / same zone
+| +1 Corruption at scene start for exposed targets
+| Persistent proximity hazard during transport or containment failure
+
+| *Pulse*
+| Near (adjacent zones)
+| +1 Corruption when triggered event occurs
+| Triggered by alarms, loud noise, blood contact, or ritual disruption
+
+| *Burst*
+| Short to Long (1–4 zones)
+| +2 Corruption (or +1 on successful Endure/Wits mitigation roll, DA choice)
+| Catastrophic failure mode; major escalation beat
+|===
+
+Emission is optional per artifact and should be tied to tier and narrative stakes. Avoid unavoidable no-win loops: telegraph emissions clearly and offer at least one mitigation strategy (distance, shielding, ritual suppression, or rapid transfer).
+
 == Catalog of 1980s Occult Artifacts
 
 [%header,cols="2,2,3,3"]
@@ -77,14 +136,14 @@ Carrying an artifact that has been *activated at least once this Case File* impo
 Carrying more than one artifact simultaneously is permitted but discouraged:
 
 * *Two artifacts:* Both active pressure rules apply independently.
-* *Three or more artifacts:* The GM triggers a Corruption Cascade — all carried artifacts leak corruption into the carrier simultaneously. Each artifact applies its Corruption cost at the end of the scene, even if none were used.
+* *Three or more artifacts:* The DA triggers a Corruption Cascade — all carried artifacts leak corruption into the carrier simultaneously. Each artifact applies its Corruption cost at the end of the scene, even if none were used.
 
 > *Lore check (Difficulty 2):* An agent who succeeds on a Lore roll after picking up an artifact can sense its tier and whether a previous carrier activated it. Failure means the agent is unaware of the added pressure until they notice they are Encumbered or start gaining unplanned Corruption.
 
 ---
 
 [[creating-artifacts]]
-== Creating Artifacts (GM Guidelines)
+== Creating Artifacts (DA Guidelines)
 
 Every Neon Relic campaign arc should have a unique artifact at its heart — a
 specific, dangerous object with a history, a hunger, and consequences that ripple
@@ -217,7 +276,7 @@ kept inert during transport and what triggers it inadvertently.
 
 Most artifacts are **unique** — imbued with power because of specific historical
 events, blood spilled, or metaphysical convergence that cannot be replicated. The
-GM should treat these as irreplaceable campaign assets.
+DA should treat these as irreplaceable campaign assets.
 
 **Replicable artifacts** are the exception. They occur when:
 
@@ -237,7 +296,7 @@ As agents study, handle, and contain an artifact over multiple sessions, its
 metaphysical coherence may weaken. This is a feature, not a bug — it means
 containment is working.
 
-**Decay Track:** Each artifact has a hidden Decay score from 0–5. The GM advances
+**Decay Track:** Each artifact has a hidden Decay score from 0–5. The DA advances
 it when:
 
 - The artifact is successfully studied by a Wayfinder (roll Lore, success = +1 Decay)

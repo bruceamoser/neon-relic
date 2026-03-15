@@ -23,6 +23,7 @@ This document defines the standard process for picking up, working on, and closi
 5. [Quick Reference — gh CLI Cheat Sheet](#quick-reference--gh-cli-cheat-sheet)
 6. [Issue Commenting Guidelines](#issue-commenting-guidelines)
 7. [Design Decision Issues](#design-decision-issues)
+8. [Release Process (vX.Y.Z)](#release-process-vxyz)
 
 ---
 
@@ -410,3 +411,76 @@ Some issues (e.g., `#18 — Willpower / Activation Resource`) are **decision iss
 ---
 
 *This SOP is for the Neon Relic design project. Both Bruce and Stu should follow it to maintain a clean, legible design history.*
+
+---
+
+## Release Process (vX.Y.Z)
+
+Use this process when publishing an official repo release with the generated documentation artifact.
+
+### 1. Prepare Main
+
+```sh
+git checkout main
+git pull origin main
+git status
+```
+
+Ensure the working tree is clean before release packaging.
+
+### 2. Build/Verify Output Artifact
+
+The release asset should be a zip containing the generated output file(s) from `docs/output/`.
+
+Minimum expected artifact for current workflow:
+- `docs/output/neon-relic.pdf`
+
+### 3. Create Release Zip
+
+PowerShell example:
+
+```powershell
+$version = "1.0.0"
+$zipPath = "docs/output/neon-relic-$version.zip"
+if (Test-Path $zipPath) { Remove-Item $zipPath }
+Compress-Archive -Path docs/output/neon-relic.pdf -DestinationPath $zipPath
+```
+
+### 4. Commit Release Metadata/Docs Changes
+
+```sh
+git add .
+git commit -m "docs: add release process and prepare vX.Y.Z artifacts"
+git push origin main
+```
+
+### 5. Update GitHub Repository Description (Optional but Recommended)
+
+```sh
+gh repo edit bruceamoser/neon-relic --description "Neon Relic: Year Zero Engine occult investigation RPG set in an alternate 1980s."
+```
+
+### 6. Create GitHub Release
+
+```sh
+gh release create vX.Y.Z docs/output/neon-relic-X.Y.Z.zip \
+  --repo bruceamoser/neon-relic \
+  --title "X.Y.Z" \
+  --notes "Release X.Y.Z: updated core rules and generated book artifact."
+```
+
+Notes:
+- Use semantic version tags (`v1.0.0`, `v1.0.1`, etc.).
+- Keep release title numeric (`1.0.0`) and tag prefixed (`v1.0.0`).
+- Attach only generated artifacts intended for consumers.
+
+### 7. Validate Published Release
+
+```sh
+gh release view vX.Y.Z --repo bruceamoser/neon-relic
+```
+
+Confirm:
+- tag exists
+- release is published
+- zip asset is attached and downloadable

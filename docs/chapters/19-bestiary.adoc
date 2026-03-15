@@ -83,7 +83,7 @@ Special Abilities:
   gain +1 Corruption. On failure, the cultist takes 1 Wits damage (backlash).
 
 Broken State: Zealot's Resolve delays collapse; at STR 1, one more hit Breaks
-them. Broken cultists either enter catatonic prayer or flee. GM's call.
+them. Broken cultists either enter catatonic prayer or flee. DA's call.
 
 Motivation: Protect the artifact/ritual/site. They believe you are desecrating something holy.
 ----
@@ -229,7 +229,7 @@ Special Abilities:
   this thing was.
 
 Broken State: Dispersal. The Remnant's coherence fails; it fragments into an
-area of ambient cold and auditory static. It may reconstitute (GM decision)
+area of ambient cold and auditory static. It may reconstitute (DA decision)
 if the anchor object that binds it is not removed from the area.
 
 Anchor: Every Echoing Remnant is bound to a physical object. Destroying or
@@ -263,7 +263,7 @@ Special Abilities:
 
   Shard Burst (Slow Action) — The Construct fires crystallized occult shards
   in a cone. All agents within Near range take 2 Strength damage. Armor applies.
-  No attack roll — the GM describes the burst; agents may spend a Fast Action
+  No attack roll — the DA describes the burst; agents may spend a Fast Action
   to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
 
   Anchored to Artifact — The Construct cannot move more than Long range from
@@ -344,7 +344,7 @@ not respond to violence.
 
 Memory Bleed — At the start of each scene inside the zone, each
 character witnesses an involuntary memory of the zone's traumatic origin
-(GM description). Characters must pass an Endure roll (Difficulty 1) or
+(DA description). Characters must pass an Endure roll (Difficulty 1) or
 take 1 Wits damage.
 
 Dissolution Trigger — The Mire cannot be destroyed by conventional
@@ -402,7 +402,7 @@ removed.
 
 *Broken State:* Collapse. The body goes completely inert. The artifact that controlled it is not damaged by the Hollow's collapse, but its occult signature is now readable (Lore Difficulty 1 to identify its history).
 
-*Motivation:* The Hollow protects the artifact, returned the artifact to its last owner, or simply pursues the last living person it was "tasked" to reach. The GM determines the simple directive at the moment of the Hollow's creation.
+*Motivation:* The Hollow protects the artifact, returned the artifact to its last owner, or simply pursues the last living person it was "tasked" to reach. The DA determines the simple directive at the moment of the Hollow's creation.
 
 ---
 
@@ -441,7 +441,7 @@ character for the scene.
 
 Wire Tap — If a character makes a Tech roll within The Listening's zone,
 The Listening gains access to all information contained in the device
-used. It may use this information in the same or future scenes (GM's
+used. It may use this information in the same or future scenes (DA's
 discretion).
 
 Intangible — The Listening cannot be harmed by physical attacks. It can
@@ -493,7 +493,7 @@ Corruption Drain — Any character who engages the Wraith in melee gains
 +1 Corruption per round of direct contact, regardless of outcome.
 
 Memory of Skill — The Fracture Wraith retains one skill from the deceased
-at their final level. The GM chooses which skill based on the dead agent's
+at their final level. The DA chooses which skill based on the dead agent's
 profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 ----
 
@@ -509,7 +509,7 @@ profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 
 === Corruption Threshold and Behavior
 
-The Corruption thresholds from `docs/chapters/08-corruption-fear-healing.adoc` apply to NPCs as well as agents. For simplicity, the GM tracks NPC corruption with a three-stage shorthand:
+The Corruption thresholds from `docs/chapters/08-corruption-fear-healing.adoc` apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
 
 [%header,cols="^1,2,4"]
 |===
@@ -542,7 +542,7 @@ Detecting a Corrupted NPC in play:
 
 ---
 
-== GM Monster Creation Guidelines
+== DA Monster Creation Guidelines
 
 Use these guidelines when building new entities for a scenario.
 

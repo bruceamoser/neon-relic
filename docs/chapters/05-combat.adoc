@@ -8,7 +8,7 @@ Combat rules are designed for *investigation-first play*: most situations should
 
 == Initiative
 
-At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept — GM preference). Higher card value acts first. Ties are resolved simultaneously.
+At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept — DA preference). Higher card value acts first. Ties are resolved simultaneously.
 
 === Initiative Card Draw
 
@@ -19,12 +19,9 @@ At the start of any hostile confrontation, each participant draws an *Initiative
 
 > *Why cards?* The card draw creates genuine unpredictability without arithmetic. It also creates a sense of narrative suspense — drawing a 10 is a small victory; drawing an Ace before a firefight is quietly dreadful. In an investigation game where combat is exceptional, this ceremony matters.
 
-=== Initiative Modifiers
+=== Initiative Procedure Note
 
-* *High Ground / Cover:* +2 to card value (draw, add 2; max 10).
-* *Prone or Recovering:* −2 to card value.
-* *Surprised:* Surprised characters draw *two cards* and keep the lower; they also cannot take a Fast Action on their first turn.
-* *Ambush:* The ambushing side acts a full round before the ambushed side draws any cards. See Surprise below.
+Initiative uses card draw only. Do not add initiative modifiers for posture, terrain, or gear. Those factors still matter through cover, surprise, action economy, and range penalties.
 
 === Surprise and Ambush
 
@@ -89,7 +86,7 @@ Free actions can be taken at any point during your turn, in any number.
 
 == Zones and Range
 
-Combat space is divided into *abstract zones* rather than measured distances. A zone is any coherent area of space — a room, a corridor, an alley, a rooftop section. The GM defines zones when establishing a scene.
+Combat space is divided into *abstract zones* rather than measured distances. A zone is any coherent area of space — a room, a corridor, an alley, a rooftop section. The DA defines zones when establishing a scene.
 
 === Zone Size and Movement
 
@@ -106,9 +103,47 @@ Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both
 | *Distant* | 5+ zones. Sniper range. Only applies to designated long-range weapons; everything else is out of range.
 |===
 
+=== Zone-to-Grid Conversion (Optional)
+
+Zones remain the canonical movement/range system. For VTT or tactical play, use this translation layer.
+
+[%header,cols="1,2,2,3"]
+|===
+| Zone Range | Squares (5 ft grid) | Meters (approx.) | Notes
+
+| *Engaged*
+| 0–1 square
+| 0–2 m
+| Same zone, arm's reach.
+
+| *Near*
+| 1–4 squares
+| 2–10 m
+| Same or adjacent zone.
+
+| *Short*
+| 5–12 squares
+| 10–30 m
+| Typical pistol/shotgun practical range.
+
+| *Long*
+| 13–24 squares
+| 30–60 m
+| Typical rifle lane.
+
+| *Distant*
+| 25+ squares
+| 60 m+
+| Specialized long-range fire only.
+|===
+
+*Movement translation:* 1 Fast Action to move one zone is usually 4 squares (about 20 feet / 6 meters) in open terrain. In cramped or rough terrain, treat one zone as 2 squares.
+
+*Verticality:* Moving one significant elevation change (one story, catwalk, roof transition) usually costs one zone even if square distance is short.
+
 === Zone Features
 
-Every zone has optional *terrain features* the GM can invoke:
+Every zone has optional *terrain features* the DA can invoke:
 
 [%header,cols="2,4"]
 |===
@@ -205,7 +240,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 * After *pushing a Firearms roll* (you burned through rounds trying to compensate).
 * After a *full auto burst* (M16 or equivalent — roll twice).
-* At the GM's discretion when dramatically appropriate (long firefight, ambush, running chase).
+* At the DA's discretion when dramatically appropriate (long firefight, ambush, running chase).
 
 *Rolling the ammo die:*
 
@@ -244,7 +279,7 @@ Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spe
 
 | 1 | *Knock Prone* | Target is knocked to the ground. They must spend a Fast Action to stand.
 | 1 | *Disarm* | Target drops their held weapon at Engaged range (without a full Disarm maneuver roll).
-| 1 | *Target Limb* | Attack hits a specific limb. GM applies a situational penalty (hobbled, one-armed, etc.) until treated.
+| 1 | *Target Limb* | Attack hits a specific limb. DA applies a situational penalty (hobbled, one-armed, etc.) until treated.
 | 1 | *Push Back* | Target is forced one zone away.
 | 1 | *Scare* | Target must immediately make a *Fear check* (Fear Rating 1) even if no supernatural trigger is present. The violence itself breaks them.
 | 2 | *Double Damage* | Deal the weapon's Damage value twice instead of once.
@@ -290,7 +325,7 @@ When 3 or more combatants on the NPC side share a common purpose and act togethe
 * A mob draws *one Initiative card* and acts as a single entity.
 * A mob has a shared Strength pool equal to *3 × mob size* (3 per member, max 15).
 * A mob attacks as one unit: roll dice pool equal to the *highest individual's pool* + bonus dice equal to mob members beyond the first (max +3).
-* *Splitting a mob:* Area effects (full auto, explosive, fire) or AoE-capable stunts can split a mob, with the GM distributing Strength loss across members.
+* *Splitting a mob:* Area effects (full auto, explosive, fire) or AoE-capable stunts can split a mob, with the DA distributing Strength loss across members.
 
 > Mobs represent low-tier hostiles (cultist grunt, security guard, Compact foot soldier). Named or significant NPCs always act individually.
 
@@ -298,9 +333,15 @@ When 3 or more combatants on the NPC side share a common purpose and act togethe
 
 == Ending Combat
 
-=== Surrender
+=== Surrender and DA Adjudication
 
-An NPC surrenders when their Strength is reduced to 2 or when a *Manipulate (EMP)* roll is made against them while they are below half Strength (Difficulty 1). A surrendered NPC drops their weapon and complies with instructions.
+There is no mandatory surrender mini-system. Surrender is a *Director of Agents* adjudication call based on morale, stakes, and faction doctrine.
+
+Use these guidance triggers:
+
+* *Likely surrender:* Isolated hostiles, badly wounded opponents, mercenary or self-preserving factions.
+* *Unlikely surrender:* Fanatics, entities, or actors with existential stakes in the artifact outcome.
+* *False surrender risk:* Trained operatives, cornered faction elites, or anyone buying time for extraction.
 
 Player characters may *always* choose to surrender — it is never forced mechanically.
 
@@ -315,13 +356,13 @@ After disengaging, they may move up to two zones in the same turn (spending thei
 
 === Broken in Combat
 
-When an NPC's Strength reaches 0, they are *Broken* (incapacitated). The GM chooses: dead, dying, or surrendering based on context and the nature of the attack.
+When any NPC attribute reaches 0, they are *Broken* (incapacitated). The DA chooses: dead, dying, unconscious, or surrendering based on context, damage type, and narrative stakes.
 
-When a PC's Strength reaches 0, they are *Broken*:
+When any PC attribute reaches 0, they are *Broken*:
 
 * They collapse and are incapacitated.
-* They must roll on the *Critical Injury table* (see Issue #4 — `docs/chapters/07-health-damage-armor.adoc`).
+* They must roll on the appropriate *Critical Injury table* (see xref:07-health-damage-armor.adoc#_critical_injuries[Critical Injuries]).
 * They are out of the fight unless stabilized by an ally (Heal roll, costs a Slow Action, requires a First Aid Kit).
 * An unstabilized Broken PC *dies* at the end of the scene unless treated.
 
-> *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. GMs should give players narrative opportunities to take prisoners rather than mandating lethality.
+> *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. DAs should give players narrative opportunities to take prisoners rather than mandating lethality.

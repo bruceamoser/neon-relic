@@ -117,7 +117,7 @@ include::chapters/12-headquarters.adoc[leveloffset=+1]
 include::chapters/13-advancement.adoc[leveloffset=+1]
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  PART V — THE DIRECTOR
+//  PART V — THE DIRECTOR OF AGENTS
 // ─────────────────────────────────────────────────────────────────────────────
 
 <<<
@@ -129,10 +129,10 @@ image::svg/divider-rule.svg[align=center,width=100%]
 image::svg/stamp-classified.svg[align=right,width=140]
 
 [discrete]
-= PART V — THE DIRECTOR
+= PART V — THE DIRECTOR OF AGENTS
 
 _Classification: Top Secret — Director Eyes Only_ +
-_Distribution: Game Director Materials — Do Not Distribute to Players_
+_Distribution: Director of Agents Materials — Do Not Distribute to Players_
 ****
 
 include::chapters/14-gm-guidance.adoc[leveloffset=+1]

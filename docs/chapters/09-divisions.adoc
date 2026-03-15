@@ -69,7 +69,7 @@ Through the vigilance of the Department of Counterintelligence, the Covenant ens
 
 | *The Antiquarian's Eye* | +1 Corruption | Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.
 | *Ghost in the Machine* | +1 Corruption | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
-| *The Hunch* | +1 Corruption | Ask the GM one yes/no question about a crime scene or NPC's motive. The GM must answer truthfully.
+| *The Hunch* | +1 Corruption | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
 | *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
 | *Eldritch Empathy* | +1 Corruption | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
 |===

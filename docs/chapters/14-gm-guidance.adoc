@@ -1,4 +1,4 @@
-= GM Guidance
+= Director of Agents Guidance
 
 Running Neon Relic well means understanding what kind of game it is trying to be: an *investigation horror* game where the real terror is not the monster in the vault, but the agents' growing awareness that the Covenant cannot fully protect them from what they're being asked to do.
 
@@ -171,7 +171,7 @@ Supernatural entities in Neon Relic do not think the way humans do. Avoid playin
 When players go somewhere you didn't prepare:
 
 . *You don't need to have everything ready.* You need to know the five elements and the clue web. Everything else can be invented.
-. *Names first.* The moment you name an NPC, they become real. Have ten era-appropriate names ready (female and male, surname-friendly for 1980s Midwest America or wherever your game is set).
+. *Names first.* The moment you name an NPC, they become real. Have ten era-appropriate names ready (female and male, surname-friendly for your campaign region in the 1980s).
 . *Establish geography.* "You pull into the parking lot of a strip mall. One end is a closed sporting goods store. The other end is still lit — a late-night laundromat." Specificity creates presence.
 . *Every new location has one strange thing.* Not necessarily supernatural. One thing that's slightly off. This makes the world feel watched, even when nothing is watching.
 

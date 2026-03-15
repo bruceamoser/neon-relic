@@ -93,7 +93,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 Supplies can be restocked:
 
 * During the *Equipping Phase* (Phase 3 of each Case File): any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
-* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The GM determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
+* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
 * HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 
 === Supply Categories
@@ -110,7 +110,7 @@ Supplies can be restocked:
 | *Battery Pack (general electronics)* | d8 | 1 | Roll after each scene in which an electronic device (flashlight, radio, recording device) is used continuously for more than 30 minutes. Devices operated briefly do not trigger a roll.
 | *Specialized Battery (thermal camera, IR devices)* | d6 | 3 | These batteries are expensive, proprietary, and hard to replace in the field. Roll after each scene of active use.
 | *Field Rations* | d8 | 1 | Only tracked on *extended journeys* (overnight+) or during prolonged operations without a hot meal. Roll once per day in the field. Not required for standard Case Files.
-| *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. GM may waive this for simple artifact containment.
+| *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. DA may waive this for simple artifact containment.
 |===
 
 > *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see `docs/chapters/05-combat.adoc`). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
@@ -123,7 +123,7 @@ In the 1980s, certain supplies are significantly harder to replace in the field:
 * *Trauma medical supplies* require pharmacy or hospital access — risky in circumstances where the team is operating off the books.
 * *Rifle ammunition* requires a gun shop or military supply — not every rural area has one, and a city purchase is traceable.
 
-The GM should use scarcity as an atmospheric element, not a mechanical trap. Resource depletion should create pressure and decision points, not dead ends.
+The DA should use scarcity as an atmospheric element, not a mechanical trap. Resource depletion should create pressure and decision points, not dead ends.
 
 ---
 
@@ -163,7 +163,7 @@ You remain Encumbered until your load drops back within capacity — drop gear, 
 If your Enc. exceeds *Strength × 3*, you are *Overloaded*:
 
 * You *cannot move to a different zone* at all.
-* At the GM's discretion, you cannot take Fast Actions for movement.
+* At the DA's discretion, you cannot take Fast Actions for movement.
 * You must drop excess gear before you can move.
 
 > *Overloaded* is a hard stop. You simply cannot move until weight is reduced.
@@ -182,7 +182,7 @@ Every item lists a *Clearance Level (CL)* requirement. Agents requisition gear d
 | 4 | Senior agents and Warden rank — restricted hardware and experimental tech.
 |===
 
-Clearance is a *narrative resource* — the GM may escalate or revoke access based on the agent's standing with the Covenant (see Division Standing rules).
+Clearance is a *narrative resource* — the DA may escalate or revoke access based on the agent's standing with the Covenant (see Division Standing rules).
 
 ---
 
@@ -304,7 +304,7 @@ When a vehicle takes damage (from ramming, gunfire, or environmental hazard):
 . Roll damage as normal. Subtract the vehicle's AR.
 . Remaining damage is applied as *Wear* (not as Strength damage to occupants, unless the damage is extraordinary).
 . At 5 Wear: vehicle stops. Characters inside may take 1 Agility damage from the sudden stop (Endure Difficulty 1 to avoid).
-. *Structural damage:* At GM discretion, a catastrophic hit (4+ damage after AR) may cause a specific system failure: blown tire (−2 die Handling), cracked windscreen (blindness penalties for driver), fuel leak (vehicle stops at end of scene unless repaired).
+. *Structural damage:* At DA discretion, a catastrophic hit (4+ damage after AR) may cause a specific system failure: blown tire (−2 die Handling), cracked windscreen (blindness penalties for driver), fuel leak (vehicle stops at end of scene unless repaired).
 
 *Repairing Wear:*
 

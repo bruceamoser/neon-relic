@@ -23,7 +23,7 @@ Every NPC who is not immediately cooperative has a *Disposition* — a state des
 
 === Starting Disposition
 
-The GM sets starting Disposition based on the NPC's relationship to the agents and the situation. Suggested defaults:
+The DA sets starting Disposition based on the NPC's relationship to the agents and the situation. Suggested defaults:
 
 * *Covenant superior with a legitimate inquiry:* 4 (Cautious)
 * *Cooperative civilian eye-witness:* 4 (Cautious) — usually wants to help but scared
@@ -49,9 +49,9 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 === Actions that Shift Disposition Down (−1)
 
 * A failed Manipulate roll (the NPC sees through the attempt)
-* The NPC catches an agent in a lie (GM's judgment, or a failed opposed Investigate roll from the NPC)
+* The NPC catches an agent in a lie (DA's judgment, or a failed opposed Investigate roll from the NPC)
 * An agent makes a physical threat or veiled threat while the NPC's Disposition is 3+
-* A successful Psychoanalyze roll by the GM on behalf of the NPC (they read the agents — see NPC Social Defense below)
+* A successful Psychoanalyze roll by the DA on behalf of the NPC (they read the agents — see NPC Social Defense below)
 * An agent reveals information that endangers the NPC or confirms they are a target
 
 === Disposition Thresholds
@@ -80,7 +80,7 @@ Used to assert authority, direct behavior under pressure, or coordinate. Command
 
 * *Command does not work at Disposition 2 or lower.* An NPC who is already hostile cannot be commanded — you have no authority in their frame.
 * *On success:* NPC complies fully for the immediate scene. No Disposition shift.
-* *On failure:* NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the GM's discretion.
+* *On failure:* NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the DA's discretion.
 
 === Psychoanalyze (Empathy)
 
@@ -88,7 +88,7 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 
 *Reading:* You are trying to understand the NPC's underlying state — what they need, what they fear, what they're not saying.
 
-* On success: GM must reveal one true thing about this NPC's psychological state, motivation, or deception. Disposition is not directly shifted, but the information can be used to inform subsequent Manipulate rolls (advantage: +1 die on the next Manipulate against this NPC if the revealed information is used).
+* On success: DA must reveal one true thing about this NPC's psychological state, motivation, or deception. Disposition is not directly shifted, but the information can be used to inform subsequent Manipulate rolls (advantage: +1 die on the next Manipulate against this NPC if the revealed information is used).
 
 *Stabilizing:* You are treating an NPC's fear, trauma, or distress to make them more communicative.
 
@@ -99,18 +99,18 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 
 == NPC Social Defense
 
-NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The GM may call for:
+NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The DA may call for:
 
-* *Opposed Psychoanalyze roll:* GM rolls on behalf of the NPC. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
-* *Lie detection:* The GM may roll NPC Wits (no skill) against an agent's Manipulate roll. On NPC success, the deception is detected and Disposition shifts −1 immediately.
+* *Opposed Psychoanalyze roll:* DA rolls on behalf of the NPC. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
+* *Lie detection:* The DA may roll NPC Wits (no skill) against an agent's Manipulate roll. On NPC success, the deception is detected and Disposition shifts −1 immediately.
 
-These are at GM discretion, not every NPC has this capability. Social defense is for NPCs with relevant training: intelligence operatives, therapists, con artists, experienced detectives.
+These are at DA discretion, not every NPC has this capability. Social defense is for NPCs with relevant training: intelligence operatives, therapists, con artists, experienced detectives.
 
 ---
 
 == Consequences of Failed Social Scenes
 
-When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the GM applies one or more consequences:
+When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the DA applies one or more consequences:
 
 [%header,cols="2,4"]
 |===
@@ -142,11 +142,11 @@ See `docs/chapters/08-corruption-fear-healing.adoc` for full Fear check rules.
 
 *Starting Disposition:* 2 (Hostile). He's in zip ties. He's praying under his breath. He won't look at the agents directly.
 
-*Round 1:* Agent Petra Vasquez attempts Psychoanalyze (Read) — she wants to understand what Elias actually believes before making any demands. The GM sets Difficulty 2 (his Disposition).
+*Round 1:* Agent Petra Vasquez attempts Psychoanalyze (Read) — she wants to understand what Elias actually believes before making any demands. The DA sets Difficulty 2 (his Disposition).
 
 Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 4, 3, 2, 1 — one success.
 
-*GM reveals:* Elias genuinely believes the artifact protected his sister during a cancer diagnosis two years ago. He is not performing faith. He is terrified that if it leaves his possession, she will relapse. He is not lying about any of this.
+*DA reveals:* Elias genuinely believes the artifact protected his sister during a cancer diagnosis two years ago. He is not performing faith. He is terrified that if it leaves his possession, she will relapse. He is not lying about any of this.
 
 *Round 2:* Using that information, Agent Marcus Osei attempts Manipulate. He doesn't argue about the artifact being dangerous — he asks about the sister. Where is she? Is she still safe? The agents can make sure she stays that way.
 

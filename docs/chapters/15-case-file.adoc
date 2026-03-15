@@ -1,6 +1,6 @@
 = The Case File: Procedural Mystery Structure
 
-To maintain consistent narrative flow and emulate the pacing of a detective serial, Project Neon Relic adopts the episodic mystery structure native to _Vaesen_. This procedural structure paces investigations effectively, preventing analysis paralysis while ensuring easy GM session preparation.
+To maintain consistent narrative flow and emulate the pacing of a detective serial, Project Neon Relic adopts the episodic mystery structure native to _Vaesen_. This procedural structure paces investigations effectively, preventing analysis paralysis while ensuring easy DA session preparation.
 
 A standard game session — a *"Case File"* — follows eight phases:
 
@@ -27,15 +27,15 @@ Conducted at the player's Headquarters:
 
 == Phase 4: The Journey
 
-The GM describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage* — a floating +1 bonus die usable at any critical point during the mystery.
+The DA describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage* — a floating +1 bonus die usable at any critical point during the mystery.
 
 == Phase 5: Arrival
 
-The team arrives at the macro-location (a sprawling abandoned shopping mall, a remote fog-shrouded logging town, etc.). The GM orients the players and introduces local NPCs holding peripheral clues.
+The team arrives at the macro-location (a sprawling abandoned shopping mall, a remote fog-shrouded logging town, etc.). The DA orients the players and introduces local NPCs holding peripheral clues.
 
 == Phase 6: Places (The Investigation)
 
-The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the GM initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
+The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the DA initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
 
 See *Countdown Mechanics* below for the full rules.
 
@@ -67,7 +67,7 @@ The Countdown is a *hidden tension clock* that tracks how far a threat has progr
 
 === Clock Structure
 
-Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are GM-defined per case.
+Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are DA-defined per case.
 
 [%header,cols="^1,1,3,3"]
 |===
@@ -82,16 +82,16 @@ Every Countdown has *5 stages*, named by their escalation level. Not every case 
 
 === Advancing the Clock
 
-The GM advances the clock *one stage* when one of the following triggers occurs:
+The DA advances the clock *one stage* when one of the following triggers occurs:
 
 [%header,cols="1,3"]
 |===
 | Trigger Type | Example
 
-| *Time-based* | A full in-game day passes (or a shorter GM-defined interval for fast-burning cases). Time passage is the default trigger that runs in the background of all investigation.
+| *Time-based* | A full in-game day passes (or a shorter DA-defined interval for fast-burning cases). Time passage is the default trigger that runs in the background of all investigation.
 | *Loud action* | The team makes significant noise — fires weapons in a public-ish area, confronts the rival faction directly, causes a scene that draws attention to their presence.
 | *Failed roll at a key site* | A Pushed failure on a critical investigation or containment roll has consequences beyond the immediate scene. The clock advances as a result.
-| *Missed window* | The GM had a grace window where the clock held (players were close to a resolution). The window passed.
+| *Missed window* | The DA had a grace window where the clock held (players were close to a resolution). The window passed.
 | *Artifact activation* | A PC or NPC directly interacts with the artifact in an uncontrolled way. This advances the clock by 2 if the activation was accidental.
 |===
 
@@ -122,7 +122,7 @@ These require significant resources, time, and usually a Lore roll at Difficulty
 If the *Crisis* stage is reached without the agents in position for the confrontation, the case does not end — it gets worse:
 
 * One named NPC connected to the case is immediately killed, captured, or permanently Broken.
-* The artifact performs its *worst-case activation* (GM reveals what the artifact's threshold effect actually is — it happens now).
+* The artifact performs its *worst-case activation* (DA reveals what the artifact's threshold effect actually is — it happens now).
 * The rival faction secures a strategic advantage they did not have before.
 
 The agents can still succeed, but the cost has increased permanently. *Clock expiry is not a game over* — it is a consequence.
@@ -157,7 +157,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 == Cross-References
 
-* GM guidance for building and calibrating Countdown clocks: `docs/chapters/14-gm-guidance.adoc`
+* DA guidance for building and calibrating Countdown clocks: `docs/chapters/14-DA-guidance.adoc`
 * Corruption gain mechanics: `docs/chapters/08-corruption-fear-healing.adoc`
 * Wayfinder Division rituals: `docs/chapters/17-rival-factions.adoc` (and Issue #15)
 
@@ -217,7 +217,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 63 | Tape recorder               | Previous owner's last words loop at danger peaks; cannot be erased
 | 64 | Newspaper (dated ahead)     | Next day's events described accurately; handling causes +1 Corruption per reading
 | 65 | Wallet or purse             | Holds exactly what is needed in any situation; contents are never explained
-| 66 | Mundane item (GM choice)    | Appears entirely ordinary; effect is not discovered until a Fracture
+| 66 | Mundane item (DA choice)    | Appears entirely ordinary; effect is not discovered until a Fracture
 |===
 
 ---

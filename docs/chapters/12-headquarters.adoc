@@ -129,7 +129,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 == Personnel Recruitment
 
-Beyond infrastructure, the team can recruit individual *contacts and specialists* using Development Points. Personnel provide passive benefits between Case Files and can be called upon during active missions at the GM's discretion.
+Beyond infrastructure, the team can recruit individual *contacts and specialists* using Development Points. Personnel provide passive benefits between Case Files and can be called upon during active missions at the DA's discretion.
 
 Personnel are not combatants. If the HQ is directly attacked, they flee or hide — they do not fight to defend the base.
 
@@ -171,7 +171,7 @@ The safehouse is not invulnerable. Rivals, government black-ops, and supernatura
 
 === The Threat Meter
 
-The GM tracks a hidden *Threat Meter* ranging from 0 to 6. When it reaches 6, the safehouse is directly targeted.
+The DA tracks a hidden *Threat Meter* ranging from 0 to 6. When it reaches 6, the safehouse is directly targeted.
 
 The Threat Meter increases by 1 when:
 
@@ -185,7 +185,7 @@ The Threat Meter decreases by 1 at the end of any Case File in which the team wa
 
 === Compromise Event
 
-When the Threat Meter hits 6, the GM triggers a *Compromise Event* before the next Case File begins. Roll d6:
+When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the next Case File begins. Roll d6:
 
 [%header,cols="^1,4"]
 |===
@@ -201,13 +201,13 @@ When the Threat Meter hits 6, the GM triggers a *Compromise Event* before the ne
 
 If the compromise event results in a direct assault (rolls 5–6), run it as a structured conflict:
 
-* The GM establishes attacker strength (Grunt × team size or Elite × half team size from the Bestiary).
+* The DA establishes attacker strength (Grunt × team size or Elite × half team size from the Bestiary).
 * Safeguard Protocol gives +1 die on the team's first initiative roll.
 * Characters who are *Broken* during an HQ defense scene and not stabilized before the scene ends immediately suffer the Dying state (no stabilization window extension).
 * If the attackers are driven off or destroyed: Threat Meter resets to 2; HQ is undamaged.
 * If the team retreats: roll on the Compromise Event table again (once) to determine collateral damage.
 
-> *Optional — Named Threats:* If the Threat Meter has recently been driven up by a specific rival faction, the GM may assign a Named Threat as the assault leader. This escalates the scene but awards +2 DP if the Named Threat is captured or killed.
+> *Optional — Named Threats:* If the Threat Meter has recently been driven up by a specific rival faction, the DA may assign a Named Threat as the assault leader. This escalates the scene but awards +2 DP if the Named Threat is captured or killed.
 
 ---
 
@@ -340,7 +340,7 @@ Standing threshold is met.
 
 === Rival Cells (Optional Rule)
 
-At campaign start, the GM may establish a rival Covenant cell operating in the
+At campaign start, the DA may establish a rival Covenant cell operating in the
 same region. Rival cells compete for case priority, Covenant resources, and Standing.
 
 Roll on this table during the first session:

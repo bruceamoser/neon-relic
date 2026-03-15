@@ -68,11 +68,11 @@ The following stunts may be purchased on *any* successful skill roll:
 | Cost | Stunt | Effect
 
 | 1 | *Faster* | Accomplish the action in half the expected time. No narrative explanation needed — you just find the short path.
-| 1 | *Quieter* | Accomplish the action without leaving a detectable trace. The GM cannot use evidence of this action as a future complication.
+| 1 | *Quieter* | Accomplish the action without leaving a detectable trace. The DA cannot use evidence of this action as a future complication.
 | 1 | *Precise* | Your result is exactly as intended — no collateral effects, no ambiguity, no partial outcomes.
 | 1 | *Aid* | Your success automatically assists an ally's next related roll this scene. They gain +1 die on it.
 | 2 | *Extended Effect* | The outcome of your action lasts an additional scene or at least one hour longer than it otherwise would.
-| 2 | *Additional Target* | Your action's results apply to one additional target in the same zone (the GM determines relevance).
+| 2 | *Additional Target* | Your action's results apply to one additional target in the same zone (the DA determines relevance).
 |===
 
 ---
@@ -134,7 +134,7 @@ The following stunts may be purchased on *any* successful skill roll:
 | Cost | Stunt | Effect
 
 | 1 | *Undetected* | The target of your pick-pocket, lift, or plant does not notice the action even after the immediate scene ends. They will assume the item was misplaced, not taken.
-| 1 | *Speed Lock* | You open a lock in seconds. No time resource is consumed; the GM cannot use the time you spent as a complication.
+| 1 | *Speed Lock* | You open a lock in seconds. No time resource is consumed; the DA cannot use the time you spent as a complication.
 | 2 | *Perfect Plant* | You plant an item on a target in a way that will implicate them credibly. Subsequent investigation will find the planted item and treat it as the target's possession.
 |===
 
@@ -144,7 +144,7 @@ The following stunts may be purchased on *any* successful skill roll:
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Aimed Shot* | The shot hits exactly the intended location (specific limb, lock, cable, tire). GM treats the result as precision even at range.
+| 1 | *Aimed Shot* | The shot hits exactly the intended location (specific limb, lock, cable, tire). DA treats the result as precision even at range.
 | 1 | *Suppression* | Target is pinned behind cover until start of your next turn. They cannot move zones or fire back without losing their cover bonus.
 | 2 | *Warning Shot* | You visibly miss by design, close enough to be terrifying. Target immediately makes a Wits roll (Difficulty 2) or drops to ground and stays there for 1 round. No ammo die roll required.
 |===
@@ -159,9 +159,9 @@ The following stunts may be purchased on *any* successful skill roll:
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Pattern Lock* | You not only find the evidence — you identify why it matters. The GM must tell you one piece of context about the object's history or origin.
+| 1 | *Pattern Lock* | You not only find the evidence — you identify why it matters. The DA must tell you one piece of context about the object's history or origin.
 | 1 | *Clock It* | You determine precisely when an event occurred (within the hour, or narrowed to a 30-minute window). Time is often as revealing as the event.
-| 2 | *Hidden Compartment* | You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. GM must reveal one hidden element they had established but not yet disclosed.
+| 2 | *Hidden Compartment* | You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established but not yet disclosed.
 |===
 
 ==== Tech
@@ -181,9 +181,9 @@ The following stunts may be purchased on *any* successful skill roll:
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Deep Context* | Your knowledge is not just what this thing is — you know what it was used for. GM provides one historical or ritual context detail beyond what would normally be available.
+| 1 | *Deep Context* | Your knowledge is not just what this thing is — you know what it was used for. DA provides one historical or ritual context detail beyond what would normally be available.
 | 1 | *Weakness Identified* | Your lore grants you tactical information: an entity type's vulnerability, an artifact's known failure condition, a ritual's interruption point. +1 die on the next relevant roll.
-| 2 | *Primary Source* | You recall a specific source — a text, a case file, a person — that would contain detailed operational information about this entity or artifact. The GM must confirm the source exists and tell you how to find it.
+| 2 | *Primary Source* | You recall a specific source — a text, a case file, a person — that would contain detailed operational information about this entity or artifact. The DA must confirm the source exists and tell you how to find it.
 |===
 
 ---
@@ -197,7 +197,7 @@ The following stunts may be purchased on *any* successful skill roll:
 | Cost | Stunt | Effect
 
 | 1 | *Bought Silence* | The target doesn't just comply — they will not mention this conversation to anyone for at least 24 hours. Your leverage persists.
-| 1 | *Read the Room* | Beyond this individual, you gauge how the wider group or faction feels about the situation. The GM tells you one faction-level attitude or intention.
+| 1 | *Read the Room* | Beyond this individual, you gauge how the wider group or faction feels about the situation. The DA tells you one faction-level attitude or intention.
 | 2 | *Turned Asset* | On an already-successful Manipulate, the target now actively wants to help you beyond the scope of your request. They will volunteer additional information or assistance once this session.
 |===
 
@@ -218,7 +218,7 @@ The following stunts may be purchased on *any* successful skill roll:
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Pressure Point* | You've identified something this person fears or desperately needs. The GM must reveal one personal vulnerability, driving motivation, or exploitable need.
+| 1 | *Pressure Point* | You've identified something this person fears or desperately needs. The DA must reveal one personal vulnerability, driving motivation, or exploitable need.
 | 1 | *Decompress* | The person you're treating recovers 1 additional Wits or Empathy point beyond the normal healing (max to their normal maximum).
 | 2 | *Full Read* | You have comprehensively understood this person's psychological state. For the rest of the scene, you may treat all Psychoanalyze rolls against them as Difficulty 0 — you know them now.
 |===

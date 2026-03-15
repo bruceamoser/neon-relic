@@ -18,7 +18,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 | *Pushing a Roll* | +1 | Exerting your absolute limits invites psychic static.
 | *Activating a Division Talent* | +1 | Talents that tap the supernatural exact a cost.
-| *Occult Exposure* | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. GM sets severity.
+| *Occult Exposure* | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. DA sets severity.
 | *Artifact Activation* | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier.
 | *Fear Check (any 1s rolled)* | +1 | The mind cracks trying to process the unprocessable. See Fear rules below.
 | *Failed Fear Check* | +1 | On top of any 1s penalty. See Fear rules below.
@@ -95,7 +95,7 @@ Fear and Corruption are directly linked: Fear checks that produce 1s on the dice
 
 === What Triggers a Fear Check
 
-The GM calls for a Fear check when a character directly confronts a source of genuine supernatural horror. Not everything unusual triggers one — strange sounds, unusual smells, or reading an old text do not. A Fear check requires *direct sensory confrontation* with something that violates the natural order.
+The DA calls for a Fear check when a character directly confronts a source of genuine supernatural horror. Not everything unusual triggers one — strange sounds, unusual smells, or reading an old text do not. A Fear check requires *direct sensory confrontation* with something that violates the natural order.
 
 [%header,cols="2,4"]
 |===
@@ -112,7 +112,7 @@ The GM calls for a Fear check when a character directly confronts a source of ge
 
 === The Fear Check Procedure
 
-. The GM calls for a Fear check when a character directly confronts supernatural horror.
+. The DA calls for a Fear check when a character directly confronts supernatural horror.
 . Roll dice equal to your current *Wits* attribute (no skill modifier — Fear is instinctual, not trained).
 . *One or more 6s = success.* You hold it together.
 . *Any 1s rolled (one or more) = +1 Corruption.* Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
@@ -147,12 +147,12 @@ On a failed Fear check (no 6s), roll *d6*:
 | *3* | *Freeze* | Paralyzed. Cannot move, speak, or act. Allies can move you (Slow Action).
 | *4* | *Denial* | Treat the supernatural as mundane for rest of scene. Cannot acknowledge entity as real.
 | *5* | *Compulsion* | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2).
-| *6* | *Fugue* | GM takes character sheet. GM narrates character for rest of scene. Player regains control next scene.
+| *6* | *Fugue* | DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene.
 |===
 
 === Fear Ratings
 
-Fear Rating is a *narrative tool* for the GM — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The GM uses it to decide *when* to call for a check and how to frame the fiction.
+Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The DA uses it to decide *when* to call for a check and how to frame the fiction.
 
 [%header,cols="1,1,4"]
 |===

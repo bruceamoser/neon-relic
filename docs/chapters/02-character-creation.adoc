@@ -33,7 +33,7 @@ Within your Division, you have a specific background:
 * **The Keep:** Choose a Department — *Catalogers*, *Wardens*, or *Internal Counterintelligence*.
 * **Stack:** Choose a specialty — *Quartermaster*, *Retro-Engineer*, or *Paratech Inventor*.
 
-Your background is primarily a narrative statement — it tells you and the GM where you came from. It does not grant mechanical bonuses at creation, but it should inform which skills you prioritize.
+Your background is primarily a narrative statement — it tells you and the DA where you came from. It does not grant mechanical bonuses at creation, but it should inform which skills you prioritize.
 
 ---
 
@@ -198,7 +198,7 @@ Every agent carries an *Anchor* — a tangible, physical object tied to a core h
 Choose one of the following options:
 
 * *Roll d66* on the Memento Table in the Healing chapter and accept the result as written.
-* *Invent your own:* name a specific object and the memory attached to it. Run it by your GM.
+* *Invent your own:* name a specific object and the memory attached to it. Run it by your DA.
 
 Record your Anchor's name and the memory it represents on your character sheet.
 
@@ -208,17 +208,19 @@ Record your Anchor's name and the memory it represents on your character sheet.
 
 == Step 10: Choose Your Dark Secret
 
-Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the GM can use it as a story hook when the investigation points in the right direction.
+Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the DA can use it as a story hook when the investigation points in the right direction.
 
-Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in `docs/chapters/13-advancement.adoc`.
+Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in xref:13-advancement.adoc#_dark_secrets[Dark Secrets].
 
 ---
 
-== Step 11: Name and Biography
+== Step 11: Name, Country of Origin, and Biography
 
-Choose a name appropriate for the 1980s United States setting. Write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
+Choose a name appropriate for your campaign's 1980s setting. Record your *Country of Origin*. Then write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
 
-> *1980s Name Inspiration:* The era favors names like Karen, Debbie, Steve, Randall, Tracy, Rick, Tamara, Dale, Connie, Barry. Government agencies use surnames in the field.
+> *Country of Origin Guidance:* This is primarily narrative. Use it to inform your accent, contacts, cultural references, and how local authorities read you in the field. Do not apply mandatory mechanical modifiers.
+
+> *1980s Name Inspiration:* The era favors names like Karen, Debbie, Steve, Randall, Tracy, Rick, Tamara, Dale, Connie, Barry. Use names and surnames that fit your country of origin and assignment history.
 
 ---
 
@@ -230,7 +232,7 @@ After completing all steps, your sheet should record:
 |===
 | Field | Notes
 
-| *Name / Division / Department* | Identity and role
+| *Name / Country of Origin / Division / Department* | Identity and role
 | *Clearance Level* | Division base CL + Age Group modifier (minimum 1)
 | *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
 | *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
