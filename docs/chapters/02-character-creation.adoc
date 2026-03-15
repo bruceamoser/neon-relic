@@ -18,7 +18,7 @@ Your *Division* is your character class. It defines your role within the Covenan
 | *Stack* | Logistics and technical support. You make sure everyone else can do their job. | 4 | Wits, Agility
 |===
 
-> *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence.
+> *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence. Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1).
 
 Read the full Division descriptions in `docs/chapters/09-divisions.adoc` before making your choice.
 
@@ -39,18 +39,18 @@ Your background is primarily a narrative statement — it tells you and the GM w
 
 == Step 3: Choose Your Age Group and Distribute Attribute Points
 
-Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, and skill point pool (used in Step 4).
+Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, skill point pool (used in Step 4), and *Clearance Level modifier* — the longer you've served the Covenant, the higher your authorization.
 
-[%header,cols="1,1,1,1"]
+[%header,cols="1,1,1,1,1"]
 |===
-| Age Group | Age Range | Attribute Points | Skill Points
+| Age Group | Age Range | Attribute Points | Skill Points | CL Modifier
 
-| *Young* | 22–28 | 14 | 10
-| *Experienced* | 29–38 | 13 | 12
-| *Senior* | 39–52 | 12 | 14
+| *Young* | 22–28 | 14 | 10 | −1
+| *Experienced* | 29–38 | 13 | 12 | +0
+| *Senior* | 39–52 | 12 | 14 | +1
 |===
 
-Younger characters are physically sharper (more attribute points); older characters are more skilled (more skill points). The trade-off is real and interesting — there is no "best" choice.
+Younger characters are physically sharper (more attribute points); older characters are more skilled and better connected (more skill points and higher clearance). The trade-off is real and interesting — there is no "best" choice.
 
 Distribute your *Attribute Points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
 
@@ -129,7 +129,7 @@ Once attributes are set, note the following:
 |===
 | Statistic | Starting Value
 
-| *Clearance Level (CL)* | Set by Division (see Step 1)
+| *Clearance Level (CL)* | Division base CL + Age Group modifier (minimum 1)
 | *Corruption* | *0* — you begin psychologically intact
 | *Max Corruption Threshold* | `10 + Empathy score`
 | *Broken Thresholds* | Any attribute reaching 0
@@ -264,7 +264,7 @@ After completing all steps, your sheet should record:
 | Field | Notes
 
 | *Name / Division / Department* | Identity and role
-| *Clearance Level* | Set by Division (see Step 1)
+| *Clearance Level* | Division base CL + Age Group modifier (minimum 1)
 | *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
 | *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
 | *Skills (12)* | Skill Points distributed per Age Group, 0–3 each

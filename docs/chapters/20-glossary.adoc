@@ -32,7 +32,7 @@ State when any Attribute reaches 0. The character is incapacitated and rolls on 
 A structured mystery/investigation for the team to complete. The standard episodic play format, divided into phases: Briefing, Travel, Investigation, Confrontation, and Resolution. See `docs/chapters/15-case-file.adoc`.
 
 *Clearance Level (CL)*::
-Seniority and authorization rank within the Covenant, ranging from 1 (probationary) to 4 (senior operative). Determines gear access and organizational authority. See `docs/chapters/02-character-creation.adoc`.
+Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See `docs/chapters/02-character-creation.adoc`.
 
 *Corruption*::
 Cumulative psychological and occult damage track. Gained from pushing rolls, Division Talent activation, Fear, artifact use, and supernatural exposure. *Maximum Corruption Threshold* = 10 + Empathy score; exceeding it causes permanent catatonia and character retirement. See `docs/chapters/08-corruption-fear-healing.adoc`.
