@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON RELIC — Agent Dossier</title>
+<style>
+  /* ── RESET ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── PAGE ── */
+  @page {
+    size: letter portrait;
+    margin: 0.4in;
+  }
+  @media print {
+    body { margin: 0; padding: 0; }
+    .page { box-shadow: none; margin: 0; page-break-after: always; }
+  }
+
+  /* ── DOT-MATRIX FONT STACK ── */
+  @font-face {
+    font-family: 'DotMatrix';
+    src: local('Dot Matrix'), local('DotMatrix'), local('Courier New'), local('Courier');
+  }
+  :root {
+    --ink: #1a1a18;
+    --ink-faded: #4a4a42;
+    --ink-light: #8a8a7e;
+    --paper: #e8e4d8;
+    --paper-aged: #d9d4c4;
+    --green-stamp: #2d5a27;
+    --red-stamp: #8b1a1a;
+    --rule: #999;
+    --rule-light: #bbb;
+    --field-bg: rgba(255,255,255,0.25);
+    --font-main: 'Courier New', 'Courier', 'DotMatrix', monospace;
+    --font-label: 'Courier New', 'Courier', monospace;
+  }
+
+  body {
+    background: #666;
+    font-family: var(--font-main);
+    font-size: 9pt;
+    line-height: 1.3;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0.25in auto;
+    padding: 0.35in 0.4in 0.3in;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+  }
+
+  /* ── PAPER TEXTURE / AGING ── */
+  .page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 11px,
+        rgba(0,0,0,0.015) 11px,
+        rgba(0,0,0,0.015) 12px
+      ),
+      radial-gradient(ellipse at 20% 80%, rgba(139,119,80,0.08), transparent 60%),
+      radial-gradient(ellipse at 85% 15%, rgba(139,119,80,0.06), transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page > * { position: relative; z-index: 1; }
+
+  /* ── HEADER BLOCK ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+  .header-left {
+    flex: 1;
+  }
+  .header-title {
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .header-subtitle {
+    font-size: 8pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-top: 1px;
+  }
+  .header-right {
+    text-align: right;
+    font-size: 7pt;
+    color: var(--ink-faded);
+    line-height: 1.5;
+  }
+  .classification {
+    display: inline-block;
+    border: 2px solid var(--red-stamp);
+    color: var(--red-stamp);
+    font-size: 9pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 2px 10px;
+    transform: rotate(-2deg);
+    margin-bottom: 3px;
+  }
+
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-size: 8pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+    margin: 8px 0 5px;
+  }
+  .section-title.green {
+    color: var(--green-stamp);
+    border-color: var(--green-stamp);
+  }
+
+  /* ── FIELD ROWS ── */
+  .field-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .field-label {
+    font-size: 6.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faded);
+    margin-bottom: 1px;
+  }
+  .field-value {
+    border-bottom: 1px solid var(--rule);
+    min-height: 16px;
+    padding: 1px 3px;
+    background: var(--field-bg);
+    font-size: 9pt;
+  }
+  .field-value.tall {
+    min-height: 28px;
+  }
+
+  /* ── GRID LAYOUTS ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+  }
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 12px;
+  }
+
+  /* ── ATTRIBUTES BLOCK ── */
+  .attr-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin: 4px 0;
+  }
+  .attr-box {
+    border: 1.5px solid var(--ink);
+    text-align: center;
+    padding: 3px 2px 6px;
+    background: var(--field-bg);
+  }
+  .attr-name {
+    font-size: 7pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule-light);
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+  }
+  .attr-score {
+    font-size: 18pt;
+    font-weight: bold;
+    min-height: 24px;
+    line-height: 1;
+  }
+  .attr-range {
+    font-size: 6pt;
+    color: var(--ink-light);
+    margin-top: 1px;
+  }
+  .attr-dmg-label {
+    font-size: 5.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-faded);
+    margin-top: 4px;
+  }
+  .attr-dmg-track {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 2px;
+  }
+  .attr-dmg-track .pip {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--ink);
+    background: transparent;
+  }
+
+  /* ── SKILLS TABLE ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+  }
+  .skill-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+  }
+  .skill-table th {
+    text-align: left;
+    font-size: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faded);
+    border-bottom: 1px solid var(--ink);
+    padding: 1px 2px 2px;
+  }
+  .skill-table th:nth-child(2) {
+    text-align: center;
+    width: 40px;
+  }
+  .skill-table td {
+    padding: 2px;
+    border-bottom: 1px dotted var(--rule-light);
+    font-size: 8pt;
+  }
+  .skill-table td:nth-child(2) {
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 40px;
+  }
+  .skill-attr-tag {
+    font-size: 5.5pt;
+    color: var(--ink-light);
+    margin-left: 3px;
+  }
+
+  /* ── CORRUPTION TRACK ── */
+  .corruption-track {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px 0;
+  }
+  .corruption-pip {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid var(--ink);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: var(--ink-light);
+    background: var(--field-bg);
+  }
+  .corruption-pip.threshold {
+    border-color: var(--red-stamp);
+    border-width: 2px;
+  }
+  .corruption-label {
+    font-size: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-faded);
+  }
+
+  /* ── GEAR TABLE ── */
+  .gear-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.5pt;
+  }
+  .gear-table th {
+    text-align: left;
+    font-size: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faded);
+    border-bottom: 1px solid var(--ink);
+    padding: 1px 2px 2px;
+  }
+  .gear-table td {
+    padding: 2px 2px;
+    border-bottom: 1px dotted var(--rule-light);
+    min-height: 14px;
+  }
+  .gear-table td:nth-child(2),
+  .gear-table td:nth-child(3) {
+    text-align: center;
+    width: 40px;
+  }
+
+  /* ── TALENTS ── */
+  .talent-block {
+    border: 1px solid var(--rule);
+    padding: 4px 6px;
+    margin-bottom: 4px;
+    background: var(--field-bg);
+    min-height: 36px;
+  }
+  .talent-type {
+    font-size: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faded);
+    margin-bottom: 1px;
+  }
+  .talent-name {
+    font-size: 8.5pt;
+    font-weight: bold;
+    border-bottom: 1px solid var(--rule-light);
+    min-height: 14px;
+    margin-bottom: 2px;
+  }
+  .talent-desc {
+    font-size: 7pt;
+    color: var(--ink-faded);
+    min-height: 14px;
+  }
+
+  /* ── NOTES AREA ── */
+  .notes-lines {
+    width: 100%;
+    min-height: 48px;
+  }
+  .notes-line {
+    border-bottom: 1px dotted var(--rule-light);
+    height: 14px;
+  }
+
+  /* ── ANCHOR BOX ── */
+  .anchor-box {
+    border: 1.5px solid var(--green-stamp);
+    padding: 4px 6px;
+    background: rgba(45,90,39,0.04);
+    margin: 4px 0;
+  }
+  .anchor-box .field-label {
+    color: var(--green-stamp);
+  }
+
+  /* ── DARK SECRET BOX ── */
+  .secret-box {
+    border: 1.5px solid var(--red-stamp);
+    padding: 4px 6px;
+    background: rgba(139,26,26,0.03);
+    margin: 4px 0;
+  }
+  .secret-box .field-label {
+    color: var(--red-stamp);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    position: absolute;
+    bottom: 0.25in;
+    left: 0.4in;
+    right: 0.4in;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5.5pt;
+    color: var(--ink-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--rule-light);
+    padding-top: 3px;
+  }
+
+  /* ── DOT-MATRIX GRIT OVERLAY ── */
+  .page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* ── PERFORATION STRIP (top) ── */
+  .perf-strip {
+    width: 100%;
+    height: 8px;
+    border-bottom: 2px dashed var(--rule-light);
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .perf-strip::before {
+    content: '○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    font-size: 4pt;
+    color: var(--rule-light);
+    letter-spacing: 2.5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* ── WATERMARK ── */
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-size: 72pt;
+    font-weight: bold;
+    letter-spacing: 20px;
+    color: rgba(45,90,39,0.04);
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">COVENANT</div>
+
+  <!-- PERFORATION STRIP -->
+  <div class="perf-strip"></div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Neon Relic</div>
+      <div class="header-subtitle">Agent Dossier &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">CLASSIFIED</div>
+      <div>Form VC-7 &bull; Rev. 1987</div>
+      <div>Unauthorized Disclosure Subject to Sanctions</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: IDENTITY -->
+  <div class="section-title">Section I &mdash; Agent Identity</div>
+  <div class="field-row">
+    <div class="field" style="flex:2">
+      <div class="field-label">Agent Name (Surname, First)</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:1">
+      <div class="field-label">Division</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:1">
+      <div class="field-label">Department / Background</div>
+      <div class="field-value"></div>
+    </div>
+  </div>
+  <div class="field-row">
+    <div class="field" style="flex:0.6">
+      <div class="field-label">Age Group</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:0.4">
+      <div class="field-label">Age</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:0.5">
+      <div class="field-label">Clearance Level</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:2">
+      <div class="field-label">Biography</div>
+      <div class="field-value tall"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: ATTRIBUTES -->
+  <div class="section-title">Section II &mdash; Attributes</div>
+  <div class="attr-grid">
+    <div class="attr-box">
+      <div class="attr-name">Strength</div>
+      <div class="attr-score"></div>
+      <div class="attr-range">2 &ndash; 5</div>
+      <div class="attr-dmg-label">Physical Damage</div>
+      <div class="attr-dmg-track">
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+      </div>
+    </div>
+    <div class="attr-box">
+      <div class="attr-name">Agility</div>
+      <div class="attr-score"></div>
+      <div class="attr-range">2 &ndash; 5</div>
+      <div class="attr-dmg-label">Exhaustion</div>
+      <div class="attr-dmg-track">
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+      </div>
+    </div>
+    <div class="attr-box">
+      <div class="attr-name">Wits</div>
+      <div class="attr-score"></div>
+      <div class="attr-range">2 &ndash; 5</div>
+      <div class="attr-dmg-label">Mental Horror</div>
+      <div class="attr-dmg-track">
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+      </div>
+    </div>
+    <div class="attr-box">
+      <div class="attr-name">Empathy</div>
+      <div class="attr-score"></div>
+      <div class="attr-range">2 &ndash; 5</div>
+      <div class="attr-dmg-label">Emotional Trauma</div>
+      <div class="attr-dmg-track">
+        <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: SKILLS -->
+  <div class="section-title">Section III &mdash; Skills</div>
+  <div class="skills-grid">
+    <table class="skill-table">
+      <tr><th>Skill</th><th>Rating</th></tr>
+      <tr><td>Force <span class="skill-attr-tag">STR</span></td><td></td></tr>
+      <tr><td>Brawl <span class="skill-attr-tag">STR</span></td><td></td></tr>
+      <tr><td>Endure <span class="skill-attr-tag">STR</span></td><td></td></tr>
+      <tr><td>Sneak <span class="skill-attr-tag">AGI</span></td><td></td></tr>
+      <tr><td>Sleight of Hand <span class="skill-attr-tag">AGI</span></td><td></td></tr>
+      <tr><td>Firearms <span class="skill-attr-tag">AGI</span></td><td></td></tr>
+    </table>
+    <table class="skill-table">
+      <tr><th>Skill</th><th>Rating</th></tr>
+      <tr><td>Investigate <span class="skill-attr-tag">WIT</span></td><td></td></tr>
+      <tr><td>Tech <span class="skill-attr-tag">WIT</span></td><td></td></tr>
+      <tr><td>Lore <span class="skill-attr-tag">WIT</span></td><td></td></tr>
+      <tr><td>Manipulate <span class="skill-attr-tag">EMP</span></td><td></td></tr>
+      <tr><td>Command <span class="skill-attr-tag">EMP</span></td><td></td></tr>
+      <tr><td>Psychoanalyze <span class="skill-attr-tag">EMP</span></td><td></td></tr>
+    </table>
+  </div>
+
+  <!-- SECTION 4: CORRUPTION -->
+  <div class="section-title" style="color: var(--red-stamp); border-color: var(--red-stamp);">Section IV &mdash; Corruption</div>
+  <div style="display: flex; gap: 16px; align-items: flex-start; margin: 4px 0;">
+    <div style="flex: 1;">
+      <div class="corruption-label" style="margin-bottom: 3px;">Corruption Track (mark left to right)</div>
+      <div class="corruption-track" style="flex-wrap: wrap;">
+        <span class="corruption-pip">1</span>
+        <span class="corruption-pip">2</span>
+        <span class="corruption-pip">3</span>
+        <span class="corruption-pip">4</span>
+        <span class="corruption-pip">5</span>
+        <span class="corruption-pip">6</span>
+        <span class="corruption-pip">7</span>
+        <span class="corruption-pip">8</span>
+        <span class="corruption-pip">9</span>
+        <span class="corruption-pip">10</span>
+        <span class="corruption-pip">11</span>
+        <span class="corruption-pip">12</span>
+        <span class="corruption-pip">13</span>
+        <span class="corruption-pip">14</span>
+        <span class="corruption-pip">15</span>
+        <span class="corruption-pip">16</span>
+        <span class="corruption-pip">17</span>
+      </div>
+    </div>
+    <div style="text-align: center; min-width: 100px;">
+      <div class="corruption-label">Max Threshold</div>
+      <div style="font-size: 7pt; color: var(--ink-faded); margin-top: 1px;">10 + Empathy =</div>
+      <div style="font-size: 18pt; font-weight: bold; border: 2px solid var(--red-stamp); width: 40px; height: 30px; margin: 3px auto 0; display: flex; align-items: center; justify-content: center;"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: TALENTS -->
+  <div class="section-title green">Section V &mdash; Talents &amp; Abilities</div>
+  <div class="two-col">
+    <div class="talent-block">
+      <div class="talent-type">Division Talent</div>
+      <div class="talent-name"></div>
+      <div class="talent-desc"></div>
+    </div>
+    <div class="talent-block">
+      <div class="talent-type">General Talent</div>
+      <div class="talent-name"></div>
+      <div class="talent-desc"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: ANCHOR & DARK SECRET -->
+  <div class="section-title" style="color: var(--red-stamp); border-color: var(--red-stamp);">Section VI &mdash; Psychological Profile</div>
+  <div class="two-col">
+    <div class="anchor-box">
+      <div class="field-label">Anchor (object + memory)</div>
+      <div class="field-value tall"></div>
+    </div>
+    <div class="secret-box">
+      <div class="field-label">Dark Secret</div>
+      <div class="field-value tall"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: DIVISION ITEM & EQUIPMENT -->
+  <div class="section-title green">Section VII &mdash; Equipment &amp; Requisitions</div>
+  <div class="field-row" style="margin-bottom: 5px;">
+    <div class="field" style="flex: 1;">
+      <div class="field-label">Division Signature Item</div>
+      <div class="field-value"></div>
+    </div>
+  </div>
+  <table class="gear-table">
+    <tr>
+      <th style="width: auto;">Item</th>
+      <th style="width: 45px;">Bonus</th>
+      <th style="width: 45px;">Weight</th>
+    </tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+
+  <!-- SECTION 8: CRITICAL INJURIES & CONDITIONS -->
+  <div class="section-title" style="color: var(--red-stamp); border-color: var(--red-stamp);">Section VIII &mdash; Critical Injuries</div>
+  <div class="notes-lines">
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- SECTION 9: NOTES -->
+  <div class="section-title">Section IX &mdash; Field Notes</div>
+  <div class="notes-lines">
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>VC-7 &bull; The Verdant Covenant &bull; Internal Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Page 1 of 1</span>
+  </div>
+</div>
+
+</body>
+</html>
