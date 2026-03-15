@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 36" width="300" height="36">
+  <rect x="0" y="0" width="300" height="36" rx="3" ry="3"
+        fill="#7a1212" opacity="0.88"/>
+  <text x="150" y="25"
+        font-family="'Courier New', Courier, monospace"
+        font-size="14" font-weight="bold" fill="#f0e8d0"
+        text-anchor="middle" letter-spacing="6">CLASSIFIED</text>
+</svg>

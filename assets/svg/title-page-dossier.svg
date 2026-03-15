@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 580" width="540" height="580">
+  <!-- Aged paper background -->
+  <rect width="540" height="580" fill="#e0d8c0"/>
+
+  <!-- Subtle grain lines -->
+  <line x1="0" y1="80" x2="540" y2="80" stroke="#c8c0a4" stroke-width="0.5"/>
+  <line x1="0" y1="160" x2="540" y2="160" stroke="#c8c0a4" stroke-width="0.5"/>
+  <line x1="0" y1="240" x2="540" y2="240" stroke="#c8c0a4" stroke-width="0.5"/>
+  <line x1="0" y1="320" x2="540" y2="320" stroke="#c8c0a4" stroke-width="0.5"/>
+  <line x1="0" y1="400" x2="540" y2="400" stroke="#c8c0a4" stroke-width="0.5"/>
+  <line x1="0" y1="480" x2="540" y2="480" stroke="#c8c0a4" stroke-width="0.5"/>
+
+  <!-- Heavy border double-rule -->
+  <rect x="18" y="18" width="504" height="544" rx="0"
+        fill="none" stroke="#3a4a2a" stroke-width="4"/>
+  <rect x="26" y="26" width="488" height="528" rx="0"
+        fill="none" stroke="#3a4a2a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Header band -->
+  <rect x="18" y="18" width="504" height="52" fill="#3a4a2a" opacity="0.12"/>
+  <line x1="18" y1="70" x2="522" y2="70" stroke="#3a4a2a" stroke-width="2"/>
+
+  <!-- Classification stripe top -->
+  <rect x="18" y="18" width="504" height="16" fill="#7a1212" opacity="0.9"/>
+  <text x="270" y="31"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9" font-weight="bold" fill="#f0e8d0"
+        text-anchor="middle" letter-spacing="8">TOP SECRET — VERDANT COVENANT — EYES ONLY</text>
+
+  <!-- Header text block -->
+  <text x="270" y="62"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9" fill="#3a4a2a" text-anchor="middle"
+        letter-spacing="3" opacity="0.7">THE VERDANT COVENANT  ·  INTERNAL USE ONLY  ·  FORM VC-1  ·  REV. 1987</text>
+
+  <!-- Main title -->
+  <text x="270" y="165"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="56" font-weight="bold" fill="#1a2a12"
+        text-anchor="middle" letter-spacing="6">NEON RELIC</text>
+
+  <!-- Rule under title -->
+  <line x1="80" y1="180" x2="460" y2="180" stroke="#3a4a2a" stroke-width="2.5"/>
+  <line x1="100" y1="185" x2="440" y2="185" stroke="#3a4a2a" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="270" y="215"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#3a4a2a" text-anchor="middle"
+        letter-spacing="4">CORE OPERATIONS MANUAL</text>
+  <text x="270" y="235"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#5a6a48" text-anchor="middle"
+        letter-spacing="3">The Verdant Covenant — Field Agent Edition</text>
+
+  <!-- Decorative centre motif: file stamp circle -->
+  <circle cx="270" cy="320" r="68" fill="none" stroke="#3a4a2a" stroke-width="2" opacity="0.25"/>
+  <circle cx="270" cy="320" r="62" fill="none" stroke="#3a4a2a" stroke-width="0.8" opacity="0.2"/>
+  <!-- VC monogram -->
+  <text x="248" y="308"
+        font-family="Georgia, serif" font-size="42" font-weight="bold"
+        fill="#3a4a2a" opacity="0.18">VC</text>
+
+  <!-- TOP SECRET stamp (rotated) -->
+  <g transform="translate(350, 395) rotate(-22)">
+    <rect x="-78" y="-22" width="156" height="44" rx="4"
+          fill="none" stroke="#7a1212" stroke-width="5" opacity="0.65"/>
+    <rect x="-74" y="-18" width="148" height="36" rx="2"
+          fill="none" stroke="#7a1212" stroke-width="1.5" opacity="0.4"/>
+    <text x="0" y="12"
+          font-family="'Courier New', Courier, monospace"
+          font-size="22" font-weight="bold" fill="#7a1212"
+          text-anchor="middle" opacity="0.65" letter-spacing="4">TOP SECRET</text>
+  </g>
+
+  <!-- Document control block -->
+  <rect x="52" y="445" width="200" height="80" fill="none" stroke="#3a4a2a" stroke-width="1" opacity="0.4"/>
+  <text x="152" y="462"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" fill="#3a4a2a" text-anchor="middle"
+        opacity="0.5" letter-spacing="2">DOCUMENT CONTROL</text>
+  <line x1="52" y1="466" x2="252" y2="466" stroke="#3a4a2a" stroke-width="0.5" opacity="0.4"/>
+  <text x="62" y="479"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" fill="#3a4a2a" opacity="0.5">CLASSIFICATION:  TOP SECRET</text>
+  <text x="62" y="492"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" fill="#3a4a2a" opacity="0.5">COPY NO.:        ___________</text>
+  <text x="62" y="505"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" fill="#3a4a2a" opacity="0.5">DATE ISSUED:     ___________</text>
+  <text x="62" y="518"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" fill="#3a4a2a" opacity="0.5">RECIPIENT SIG:   ___________</text>
+
+  <!-- Authors line -->
+  <text x="270" y="498"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9" fill="#5a6a48" text-anchor="middle"
+        letter-spacing="2" opacity="0.8">Prepared by: B. Amoser &amp; S. Codesigner</text>
+
+  <!-- Classification stripe bottom -->
+  <rect x="18" y="554" width="504" height="8" fill="#7a1212" opacity="0.9"/>
+  <text x="270" y="561"
+        font-family="'Courier New', Courier, monospace"
+        font-size="6" font-weight="bold" fill="#f0e8d0"
+        text-anchor="middle" letter-spacing="6">TOP SECRET — VERDANT COVENANT — EYES ONLY</text>
+</svg>

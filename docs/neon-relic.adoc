@@ -17,13 +17,65 @@ _"What is found must be known. What is known must be contained. What is containe
 
 — _The Oath of the Verdant Covenant_
 
-// Part I: Introduction
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART I — INTRODUCTION
+// ─────────────────────────────────────────────────────────────────────────────
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART I — INTRODUCTION
+
+_Classification: Unrestricted (Covenant Personnel Only)_ +
+_Distribution: All Divisions_
+****
+
 include::chapters/01-introduction.adoc[leveloffset=+1]
 
-// Part II: Character Creation
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART II — CHARACTER CREATION
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART II — CHARACTER CREATION
+
+_Classification: Unrestricted (Covenant Personnel Only)_ +
+_Distribution: Incoming Agent Onboarding_
+****
+
 include::chapters/02-character-creation.adoc[leveloffset=+1]
 
-// Part III: Core Mechanics
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART III — CORE MECHANICS
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART III — CORE MECHANICS
+
+_Classification: Unrestricted (Covenant Personnel Only)_ +
+_Distribution: All Field Agents_
+****
+
 include::chapters/03-core-resolution.adoc[leveloffset=+1]
 
 include::chapters/04-attributes-skills.adoc[leveloffset=+1]
@@ -36,7 +88,25 @@ include::chapters/07-health-damage-armor.adoc[leveloffset=+1]
 
 include::chapters/08-corruption-fear-healing.adoc[leveloffset=+1]
 
-// Part IV: The World of Neon Relic
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART IV — THE WORLD OF NEON RELIC
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART IV — THE WORLD OF NEON RELIC
+
+_Classification: Secret — Clearance Level 2+ Required_ +
+_Distribution: Restricted — Need-to-Know Basis_
+****
+
 include::chapters/09-divisions.adoc[leveloffset=+1]
 
 include::chapters/10-equipment.adoc[leveloffset=+1]
@@ -47,7 +117,25 @@ include::chapters/12-headquarters.adoc[leveloffset=+1]
 
 include::chapters/13-advancement.adoc[leveloffset=+1]
 
-// Part V: The Director
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART V — THE DIRECTOR
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART V — THE DIRECTOR
+
+_Classification: Top Secret — Director Eyes Only_ +
+_Distribution: Game Director Materials — Do Not Distribute to Players_
+****
+
 include::chapters/14-gm-guidance.adoc[leveloffset=+1]
 
 include::chapters/15-case-file.adoc[leveloffset=+1]
@@ -60,5 +148,23 @@ include::chapters/18-notable-members.adoc[leveloffset=+1]
 
 include::chapters/19-bestiary.adoc[leveloffset=+1]
 
-// Part VI: Glossary
+// ─────────────────────────────────────────────────────────────────────────────
+//  PART VI — GLOSSARY
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+image::svg/divider-rule.svg[align=center,width=100%]
+
+[sidebar]
+****
+image::svg/stamp-classified.svg[align=right,width=140]
+
+[discrete]
+= PART VI — GLOSSARY
+
+_Classification: Unrestricted (Covenant Personnel Only)_ +
+_Distribution: All Personnel_
+****
+
 include::chapters/20-glossary.adoc[leveloffset=+1]

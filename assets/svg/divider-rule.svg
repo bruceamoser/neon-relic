@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 28" width="540" height="28">
+  <!-- Left rule -->
+  <line x1="0" y1="14" x2="190" y2="14" stroke="#4a5a38" stroke-width="1.5" opacity="0.7"/>
+  <!-- Center diamond cluster -->
+  <polygon points="256,7 263,14 256,21 249,14" fill="#4a5a38" opacity="0.8"/>
+  <polygon points="271,7 278,14 271,21 264,14" fill="#4a5a38" opacity="0.5"/>
+  <polygon points="241,7 248,14 241,21 234,14" fill="#4a5a38" opacity="0.5"/>
+  <!-- Right rule -->
+  <line x1="286" y1="14" x2="540" y2="14" stroke="#4a5a38" stroke-width="1.5" opacity="0.7"/>
+</svg>
