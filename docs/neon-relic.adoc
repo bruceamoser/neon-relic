@@ -3,7 +3,6 @@ Bruce; Stu
 :doctype: book
 :toc: left
 :toclevels: 1
-:front-cover-image: image:../assets/neon-relic-cover.png[Front Cover,fit=fill]
 :sectnums:
 :sectnumlevels: 2
 :icons: font
