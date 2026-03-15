@@ -17,44 +17,48 @@ _"What is found must be known. What is known must be contained. What is containe
 
 — _The Oath of the Verdant Covenant_
 
+// Part I: Introduction
 include::chapters/01-introduction.adoc[leveloffset=+1]
 
-include::chapters/02-verdant-covenant.adoc[leveloffset=+1]
+// Part II: Character Creation
+include::chapters/02-character-creation.adoc[leveloffset=+1]
 
-include::chapters/03-setting.adoc[leveloffset=+1]
+// Part III: Core Mechanics
+include::chapters/03-core-resolution.adoc[leveloffset=+1]
 
-include::chapters/03b-combat.adoc[leveloffset=+1]
+include::chapters/04-attributes-skills.adoc[leveloffset=+1]
 
-include::chapters/04-core-mechanics.adoc[leveloffset=+1]
+include::chapters/05-combat.adoc[leveloffset=+1]
 
-include::chapters/05-attributes-skills.adoc[leveloffset=+1]
+include::chapters/06-social-conflict.adoc[leveloffset=+1]
 
-include::chapters/05b-social-conflict.adoc[leveloffset=+1]
+include::chapters/07-health-damage-armor.adoc[leveloffset=+1]
 
-include::chapters/06-health-damage-armor.adoc[leveloffset=+1]
+include::chapters/08-corruption-fear-healing.adoc[leveloffset=+1]
 
-include::chapters/07-resonance-corruption.adoc[leveloffset=+1]
-
-include::chapters/08-healing.adoc[leveloffset=+1]
-
+// Part IV: The World of Neon Relic
 include::chapters/09-divisions.adoc[leveloffset=+1]
 
-include::chapters/10-advancement.adoc[leveloffset=+1]
+include::chapters/10-equipment.adoc[leveloffset=+1]
 
-include::chapters/11-equipment.adoc[leveloffset=+1]
+include::chapters/11-artifacts.adoc[leveloffset=+1]
 
-include::chapters/12-artifacts.adoc[leveloffset=+1]
+include::chapters/12-headquarters.adoc[leveloffset=+1]
 
-include::chapters/13-case-file.adoc[leveloffset=+1]
+include::chapters/13-advancement.adoc[leveloffset=+1]
 
-include::chapters/14-headquarters.adoc[leveloffset=+1]
+// Part V: The Director
+include::chapters/14-gm-guidance.adoc[leveloffset=+1]
 
-include::chapters/15-rival-factions.adoc[leveloffset=+1]
+include::chapters/15-case-file.adoc[leveloffset=+1]
 
-include::chapters/16-notable-members.adoc[leveloffset=+1]
+include::chapters/16-travel.adoc[leveloffset=+1]
 
-include::chapters/17-bestiary.adoc[leveloffset=+1]
+include::chapters/17-rival-factions.adoc[leveloffset=+1]
 
-include::chapters/18-gm-guidance.adoc[leveloffset=+1]
+include::chapters/18-notable-members.adoc[leveloffset=+1]
 
-include::chapters/19-travel.adoc[leveloffset=+1]
+include::chapters/19-bestiary.adoc[leveloffset=+1]
+
+// Part VI: Glossary
+include::chapters/20-glossary.adoc[leveloffset=+1]

@@ -6,7 +6,7 @@ The game uses the *Year Zero Engine (YZE)* dice-pool variant -- the same framewo
 
 == What This Game Is
 
-* *Episodic investigation.* Each session follows a structured *Case File* -- a "monster-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
+* *Episodic investigation.* Each session follows a structured *Case File* -- a "artifact-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
 * *Base management between missions.* The team maintains a *Headquarters* -- a Covenant facility they upgrade, staff, and defend over the course of a campaign.
 * *Psychological attrition.* The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
 * *Analog procedural thriller.* No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
