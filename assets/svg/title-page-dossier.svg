@@ -97,7 +97,7 @@
   <text x="270" y="498"
         font-family="'Courier New', Courier, monospace"
         font-size="9" fill="#5a6a48" text-anchor="middle"
-        letter-spacing="2" opacity="0.8">Prepared by: B. Amoser &amp; S. Codesigner</text>
+        letter-spacing="2" opacity="0.8">Prepared by: Agent Bruce &amp; Agent Stu</text>
 
   <!-- Classification stripe bottom -->
   <rect x="18" y="554" width="504" height="8" fill="#7a1212" opacity="0.9"/>
