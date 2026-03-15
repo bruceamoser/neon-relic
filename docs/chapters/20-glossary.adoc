@@ -127,8 +127,7 @@ A skill used to treat mental and emotional Critical Injuries. Recovery difficult
 
 == R
 
-*Relationship*::
-An NPC bond defined during character creation. Three slots: a trusted contact, a dependent, and a rival/enemy. Used as roleplay anchors and GM hooks. See `docs/chapters/02-character-creation.adoc`.
+
 
 == S
 
