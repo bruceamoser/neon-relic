@@ -2,11 +2,6 @@
 
 Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these twelve steps in order.
 
-[NOTE]
-====
-*Design Note:* Steps 10 and 11 (Dark Secrets and Relationships) are cross-referenced but not yet fully developed. See Issue #2 and Issue #17 for those mechanics. For now, note a placeholder and continue.
-====
-
 ---
 
 == Step 1: Choose Your Division
@@ -211,11 +206,11 @@ Record your Anchor's name and the memory it represents on your character sheet.
 
 ---
 
-== Step 10: Choose Your Dark Secret _(Placeholder)_
+== Step 10: Choose Your Dark Secret
 
-Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. Dark Secrets create narrative hooks and can affect how NPCs and factions react to your character.
+Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the GM can use it as a story hook when the investigation points in the right direction.
 
-> *This mechanic is not yet fully designed.* See Issue #2 for the full Dark Secrets system. For now, write a brief one-sentence backstory secret and move on.
+Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in `docs/chapters/13-advancement.adoc`.
 
 ---
 
@@ -279,7 +274,7 @@ After completing all steps, your sheet should record:
 | *Starting Gear* | Division kit ± optional items
 | *Corruption* | Starts at 0
 | *Max Corruption Threshold* | 10 + Empathy
-| *Dark Secret* | One sentence placeholder
+| *Dark Secret* | Chosen from Division list or custom (see Advancement chapter)
 | *Anchor* | Object name + memory (see Healing chapter)
 | *Relationships* | Covenant Contact + Personal Tie
 |===
