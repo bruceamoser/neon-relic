@@ -36,8 +36,8 @@ title-page:
     font-size: 1
     font-color: '#e8e0c8'
   revision:
-    font-size: 1
-    font-color: '#e8e0c8'
+    font-size: 9
+    font-color: '#4a5a38'
 
 # ── RUNNING HEADER / FOOTER ──────────────────────────────────────────────────────
 header:
