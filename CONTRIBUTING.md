@@ -473,6 +473,36 @@ Notes:
 - Use semantic version tags (`v1.0.0`, `v1.0.1`, etc.).
 - Keep release title numeric (`1.0.0`) and tag prefixed (`v1.0.0`).
 - Attach only generated artifacts intended for consumers.
+- Do **not** pass literal `\n` escape sequences in release notes. Use an actual multiline body.
+
+### 6a. Release Notes Template
+
+PowerShell example using a multiline variable:
+
+```powershell
+$notes = @"
+Neon Relic X.Y.Z
+
+- Summary item one
+- Summary item two
+- Summary item three
+"@
+
+gh release create vX.Y.Z docs/output/neon-relic-X.Y.Z.zip `
+  --repo bruceamoser/neon-relic `
+  --title "X.Y.Z" `
+  --notes $notes
+```
+
+Suggested release note structure:
+
+```text
+Neon Relic X.Y.Z
+
+- Rules changes
+- Documentation/process changes
+- Release artifact notes
+```
 
 ### 7. Validate Published Release
 

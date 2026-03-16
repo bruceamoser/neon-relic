@@ -22,18 +22,26 @@ Neon Relic combines:
 
 **Phase: Core Rules Design** — The game is currently in the rules-writing and worldbuilding phase. No Foundry VTT module work has begun yet.
 
+## Latest Release
+
+- Latest release page: [v1.0.0](https://github.com/bruceamoser/neon-relic/releases/latest)
+- Download the packaged rulebook artifact: [neon-relic-1.0.0.zip](https://github.com/bruceamoser/neon-relic/releases/latest)
+
 ## Repository Structure
 
 ```
 neon-relic/
+├── .github/                        ← GitHub repo metadata and templates
+├── assets/                         ← Art assets, HTML previews, SVG dividers, logos
 ├── docs/
-│   ├── neon-relic-core-rules.md    ← The core rulebook (primary document)
-│   ├── Vaesen.md                   ← YZE reference: Vaesen
-│   ├── MutantYearZero-Corebook-20220605.md  ← YZE reference: MYZ
-│   ├── Forbidden_Lands_*.md        ← YZE reference: Forbidden Lands
-│   └── ...
-├── assets/                         ← Art assets, logos, etc.
-├── stu-comments.md                 ← Stu's design notes and lore contributions
+│   ├── chapters/                   ← Canonical chapter source files (AsciiDoc)
+│   ├── output/                     ← Generated build artifacts (PDF, release assets)
+│   ├── references/                 ← YZE reference material from published games
+│   ├── themes/                     ← Asciidoctor PDF theme files
+│   ├── neon-relic.adoc             ← Master book file for the compiled rulebook
+│   └── neon-relic-core-rules.md    ← Markdown core rules reference document
+├── tools/                          ← Process and gap-analysis support docs
+├── CONTRIBUTING.md                 ← Issue, release, and workflow SOP
 └── README.md
 ```
 
@@ -41,9 +49,11 @@ neon-relic/
 
 | File | Purpose |
 |---|---|
-| `docs/neon-relic-core-rules.md` | **The core rulebook.** All game mechanics, lore, classes, equipment, and setting. This is the single source of truth. |
-| `stu-comments.md` | Stu's design notes, lore expansions, and worldbuilding contributions. Content from this file gets incorporated into the core rules during design sessions. |
-| `docs/*.md` (reference files) | Year Zero Engine reference material from existing YZE games. Used for mechanical consistency and inspiration. |
+| `docs/chapters/*.adoc` | **Canonical chapter source files** for the current compiled rulebook. |
+| `docs/neon-relic.adoc` | Master AsciiDoc book that assembles the full release-ready rulebook. |
+| `docs/neon-relic-core-rules.md` | Markdown reference version of the rules text and design material. |
+| `docs/output/neon-relic.pdf` | Generated PDF artifact used for release packaging. |
+| `docs/references/*.md` | Year Zero Engine reference material from existing YZE games. Used for mechanical consistency and inspiration. |
 
 ## Year Zero Engine References
 
@@ -60,7 +70,7 @@ This project draws inspiration and mechanical precedent from these existing YZE 
 
 - [ ] Complete core rules document
 - [ ] Playtesting and balance iteration
-- [ ] GM guide and adventure module templates
+- [ ] Director of Agents guide and adventure module templates
 - [ ] Foundry VTT system module implementation
 
 ## License
