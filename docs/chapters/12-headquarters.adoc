@@ -116,7 +116,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 6
 | Faraday Cage + Occult Laboratory
 | A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
-| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see `docs/chapters/11-artifacts.adoc`). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
+| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see xref:11-artifacts.adoc[Artifacts]). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
 
 | *Safe House Network*
 | 6

@@ -238,11 +238,11 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 === Cross-References
 
-* *Corruption gain* from mental criticals is applied immediately (see `docs/chapters/08-corruption-fear-healing.adoc`).
+* *Corruption gain* from mental criticals is applied immediately (see xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing]).
 * *Healing in the field:* First Aid Kit, Heal skill, Psychoanalyze skill — see xref:08-corruption-fear-healing.adoc#_healing_corruption[Healing Corruption].
-* *Downtime recovery:* Between-mission phases and Keep medical access — see `docs/chapters/12-headquarters.adoc`.
+* *Downtime recovery:* Between-mission phases and Keep medical access — see xref:12-headquarters.adoc[Headquarters].
 * *Death and dying procedure:* Full death check rules with autopsy and Covenant notification — see _(Issue #13)_.
-* *Artifact Imprint and Veil Burn:* Interaction with artifact containment rituals — see `docs/chapters/11-artifacts.adoc` _(Issue #9)_.
+* *Artifact Imprint and Veil Burn:* Interaction with artifact containment rituals — see xref:11-artifacts.adoc[Artifacts] _(Issue #9)_.
 
 == Armor Mechanics
 

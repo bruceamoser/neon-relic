@@ -428,6 +428,28 @@ git status
 
 Ensure the working tree is clean before release packaging.
 
+### 1a. Validate AsciiDoc Cross-References
+
+Before building, verify that no chapter file contains raw file-path references that render as broken links in the PDF. Run from the repo root — the command should return **no output**:
+
+```powershell
+Select-String -Path docs/chapters/*.adoc -Pattern '`docs/chapters/'
+```
+
+If any lines are returned, convert each match from:
+
+```adoc
+`docs/chapters/XX-name.adoc`
+```
+
+to the proper AsciiDoc cross-reference format:
+
+```adoc
+xref:XX-name.adoc[Chapter Title]
+```
+
+Fix all hits before proceeding with the build.
+
 ### 2. Build/Verify Output Artifact
 
 The release asset should be a zip containing the generated output file(s) from `docs/output/`.

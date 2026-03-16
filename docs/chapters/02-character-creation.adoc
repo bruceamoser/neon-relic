@@ -20,7 +20,7 @@ Your *Division* is your character class. It defines your role within the Covenan
 
 > *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence. Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1).
 
-Read the full Division descriptions in `docs/chapters/09-divisions.adoc` before making your choice.
+Read the full Division descriptions in xref:09-divisions.adoc[Divisions] before making your choice.
 
 ---
 
