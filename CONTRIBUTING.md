@@ -529,6 +529,22 @@ Notes:
 - Attach only generated artifacts intended for consumers.
 - Do **not** pass literal `\n` escape sequences in release notes. Use an actual multiline body.
 
+> **⚠️ IMPORTANT — `#name` sets the GitHub display label, NOT the asset filename.** The asset's actual download URL is derived from the local filename, not the `#name` label. To ensure `/releases/latest/download/neon-relic.pdf` always works, the upload step **must copy the versioned file to `neon-relic.pdf`** before uploading. The correct full Step 5 sequence is:
+>
+> ```powershell
+> # Step 5a — Copy versioned file to stable upload name
+> Copy-Item "docs/output/neon-relic-$version.pdf" "docs/output/neon-relic.pdf"
+>
+> # Step 5b — Create the release, uploading as neon-relic.pdf
+> gh release create v$version "docs/output/neon-relic.pdf" `
+>   --repo bruceamoser/neon-relic `
+>   --title $version `
+>   --notes $notes `
+>   --latest
+> ```
+>
+> The local `neon-relic-X.Y.Z.pdf` is kept as the build artifact. The copied `neon-relic.pdf` is the release upload — it is gitignored and can be discarded after upload.
+
 Suggested release note structure:
 
 ```text
