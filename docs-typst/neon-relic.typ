@@ -5,10 +5,10 @@
 // library, and all 20 chapter files.
 //
 // Build: ./build.ps1
-// Or:    typst compile docs-typst/neon-relic.typ docs-typst/output/neon-relic.pdf
+// Or:    typst compile docs-typst/neon-relic.typ docs-typst/output/neon-relic.pdf --root .
 // ============================================================
 
-// Theme & components (defined in INFRA-2 and INFRA-3)
+// Theme & components
 #import "lib/theme.typ": *
 #import "lib/components.typ": *
 
@@ -19,13 +19,8 @@
   keywords: ("TTRPG", "Year Zero Engine", "occult", "1980s"),
 )
 
-// ── Page setup (placeholder — full config in INFRA-2) ───────
-#set page(
-  paper: "us-letter",
-  margin: (top: 22mm, bottom: 24mm, inside: 24mm, outside: 20mm),
-)
-
-#set text(font: "Courier New", size: 10pt)
+// ── Apply brand theme ────────────────────────────────────────
+#show: apply-theme
 
 // ── Chapters ────────────────────────────────────────────────
 // Uncomment each chapter as it is converted (Phase 2 work).
@@ -52,12 +47,19 @@
 // #include "chapters/20-glossary.typ"
 
 // ── Placeholder page (remove when first chapter is included) ─
-#align(center + horizon)[
-  #text(size: 24pt, weight: "bold")[NEON RELIC] \
-  #text(size: 14pt)[Core Rules — Typst Conversion In Progress] \
-  \
-  #text(size: 10pt, style: "italic")[
-    Phase 1 infrastructure complete. \
-    Enable chapter includes above as each is converted.
+#place(
+  top + center,
+  dy: 40%,
+  block[
+    #align(center)[
+      #text(size: 24pt, weight: "bold", fill: clr-olive-deep)[NEON RELIC] \
+      #v(4mm)
+      #text(size: 14pt, fill: clr-olive)[Core Rules — Typst Conversion In Progress] \
+      #v(8mm)
+      #text(size: 10pt, style: "italic", fill: clr-near-black)[
+        Phase 1 infrastructure complete. \
+        Enable chapter includes above as each chapter is converted.
+      ]
+    ]
   ]
-]
+)
