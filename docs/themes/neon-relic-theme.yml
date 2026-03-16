@@ -4,7 +4,7 @@
 
 extends: default
 
-# ── GLOBAL BASE ─────────────────────────────────────────────────────────────
+# ── GLOBAL BASE ─────────────────────────────────────────────────────────────────────────────
 base:
   font-color: '#1e2010'
   background-color: '#f0ead6'
@@ -12,13 +12,13 @@ base:
   font-size: 10
   line-height: 1.45
 
-# ── PAGE ─────────────────────────────────────────────────────────────────────
+# ── PAGE ─────────────────────────────────────────────────────────────────────────────────
 page:
   background-color: '#f0ead6'
   margin: [22mm, 20mm, 24mm, 20mm]
   size: LETTER
 
-# ── TITLE PAGE (custom SVG, so keep this minimal) ───────────────────────────
+# ── TITLE PAGE (custom SVG, so keep this minimal) ──────────────────────────────────────
 title-page:
   background-color: '#e8e0c8'
   background-image: image:../../assets/svg/title-page-dossier.svg[fit=fill]
@@ -37,7 +37,7 @@ title-page:
     font-size: 1
     font-color: '#e8e0c8'
 
-# ── RUNNING HEADER / FOOTER ──────────────────────────────────────────────────
+# ── RUNNING HEADER / FOOTER ──────────────────────────────────────────────────────
 header:
   height: 14mm
   border-width: 0
@@ -107,7 +107,7 @@ footer:
       font-size: 7
       font-color: '#7a7a5a'
 
-# ── HEADINGS ──────────────────────────────────────────────────────────────────
+# ── HEADINGS ─────────────────────────────────────────────────────────────────────────────────
 heading:
   font-color: '#1e2c0e'
   font-family: Courier
@@ -121,7 +121,7 @@ heading-h1:
   font-color: '#1a2a0e'
   border-color: '#4a5a38'
   border-width: 0 0 2 0
-  padding: [2mm, 0, 2mm, 0]
+  padding: [2mm, 0, 2mm, 4mm]
   text-transform: uppercase
 
 heading-h2:
@@ -142,16 +142,16 @@ heading-h4:
   font-color: '#4a5a38'
   font-style: italic
 
-# ── PROSE ─────────────────────────────────────────────────────────────────────
+# ── PROSE ─────────────────────────────────────────────────────────────────────────────────────
 prose:
   margin-top: 0
   margin-bottom: 3mm
 
-# ── LINKS ────────────────────────────────────────────────────────────────────
+# ── LINKS ────────────────────────────────────────────────────────────────────────────────────
 link:
   font-color: '#2a4a8a'
 
-# ── TABLES ───────────────────────────────────────────────────────────────────
+# ── TABLES ───────────────────────────────────────────────────────────────────────────────────
 table:
   font-size: 9
   background-color: '#f8f4e4'
@@ -165,7 +165,7 @@ table:
   stripe-background-color: '#e8e4d0'
   header-border-bottom-width: 2
 
-# ── CODE ─────────────────────────────────────────────────────────────────────
+# ── CODE ─────────────────────────────────────────────────────────────────────────────────────
 code:
   font-family: Courier
   font-size: 9
@@ -175,7 +175,7 @@ code:
   border-width: 1
   padding: [2mm, 3mm, 2mm, 3mm]
 
-# ── QUOTES / ADMONITIONS ──────────────────────────────────────────────────────
+# ── QUOTES / ADMONITIONS ─────────────────────────────────────────────────────────
 quote:
   border-left-width: 3
   border-left-color: '#4a5a38'
@@ -198,10 +198,10 @@ admonition:
   font-color: '#1e2010'
   label-text-align: center
 
-# ── CAUTION / WARNING (use red) ───────────────────────────────────────────────
+# ── CAUTION / WARNING (use red) ─────────────────────────────────────────────────────────
 # (asciidoctor-pdf note types: NOTE, TIP, IMPORTANT, WARNING, CAUTION)
 
-# ── SIDEBAR ──────────────────────────────────────────────────────────────────
+# ── SIDEBAR ────────────────────────────────────────────────────────────────────────────────
 sidebar:
   background-color: '#ddd8c0'
   border-width: 1
@@ -211,12 +211,12 @@ sidebar:
   title-font-style: bold
   padding: [3mm, 4mm, 3mm, 4mm]
 
-# ── LIST ─────────────────────────────────────────────────────────────────────
+# ── LIST ─────────────────────────────────────────────────────────────────────────────────────
 list:
   marker-font-color: '#4a5a38'
   item-spacing: 2mm
 
-# ── TOC ──────────────────────────────────────────────────────────────────────
+# ── TOC ─────────────────────────────────────────────────────────────────────────────────────
 toc:
   font-color: '#1e2010'
   font-family: Courier
