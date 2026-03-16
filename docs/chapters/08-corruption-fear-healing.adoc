@@ -50,11 +50,12 @@ Because Corruption naturally builds toward lethal levels, characters must active
 | Method | Effect | Requirements
 
 | *Anchor Scene* | Heal *1d4 Corruption* | Once per session. Dedicate a scene to interacting with your Anchor.
+| *Safe Scene Recovery* | Heal *1 Corruption* | Once per session. Dedicate a quiet downtime or decompression scene to personal reflection or rest. Cannot be the same scene used for an Anchor activation.
 | *Full Rest (24 hours)* | Heal Corruption equal to *Empathy score* | Full 24-hour cycle resting in a secure, non-anomalous location (e.g., Covenant HQ).
 | *Healing Talents* | Varies by talent | See Division Talents and General Talents marked with _(Healing)_.
 |===
 
-> *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
+> *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices. Maximum per-session active recovery: up to 1d4 (Anchor) + 1 (Safe Scene) = up to 5 Corruption. Even at maximum, a single bad session can overwhelm a session's recovery.
 
 === Anchors
 
@@ -167,5 +168,3 @@ Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a 
 |===
 
 Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]).
-
-
