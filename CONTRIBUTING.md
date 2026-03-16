@@ -450,12 +450,29 @@ xref:XX-name.adoc[Chapter Title]
 
 Fix all hits before proceeding with the build.
 
-### 2. Build/Verify Output Artifact
+### 2. Build PDF Output
 
-The release asset should be a zip containing the generated output file(s) from `docs/output/`.
+Generate the PDF from the master AsciiDoc document. Run from the repo root:
 
-Minimum expected artifact for current workflow:
-- `docs/output/neon-relic.pdf`
+```powershell
+# Ensure output directory exists
+New-Item -ItemType Directory -Force -Path docs/output | Out-Null
+
+# Build PDF from master document
+asciidoctor-pdf docs/neon-relic.adoc -D docs/output -o neon-relic.pdf
+```
+
+This produces `docs/output/neon-relic.pdf`. The `docs/output/` directory is gitignored — the PDF is generated fresh each release and attached as a release artifact.
+
+Verify the build succeeded:
+
+```powershell
+Test-Path docs/output/neon-relic.pdf
+```
+
+Expected output: `True`
+
+> **Note:** Cross-references between chapters (`xref:XX-name.adoc[Title]`) produce working internal hyperlinks in the PDF because all chapters are included via `include::` directives in `docs/neon-relic.adoc`. Compiling individual chapter files will NOT produce working links.
 
 ### 3. Create Release Zip
 
