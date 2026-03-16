@@ -141,6 +141,8 @@ Zones remain the canonical movement/range system. For VTT or tactical play, use 
 
 *Verticality:* Moving one significant elevation change (one story, catwalk, roof transition) usually costs one zone even if square distance is short.
 
+*Large or open zones:* Some zones (car parks, fields, warehouse floors, concert halls) are physically large. The DA sets zone extent before combat begins. A large zone may span 20–50 squares; players and the DA should confirm expected grid width before the first round. Open-zone features do not reduce zone count — only the Fast Action cost applies.
+
 === Zone Features
 
 Every zone has optional *terrain features* the DA can invoke:
