@@ -37,7 +37,7 @@
 #include "chapters/10-equipment.typ"
 #include "chapters/11-artifacts.typ"
 #include "chapters/12-headquarters.typ"
-// #include "chapters/13-advancement.typ"
+#include "chapters/13-advancement.typ"
 // #include "chapters/14-gm-guidance.typ"
 // #include "chapters/15-case-file.typ"
 // #include "chapters/16-travel.typ"
