@@ -24,8 +24,8 @@ Neon Relic combines:
 
 ## Latest Release
 
-- Latest release page: [v1.0.0](https://github.com/bruceamoser/neon-relic/releases/latest)
-- Download the packaged rulebook artifact: [neon-relic-1.0.0.zip](https://github.com/bruceamoser/neon-relic/releases/latest)
+- [Latest release](https://github.com/bruceamoser/neon-relic/releases/latest)
+- [Download neon-relic.pdf](https://github.com/bruceamoser/neon-relic/releases/latest/download/neon-relic.pdf)
 
 ## Repository Structure
 
