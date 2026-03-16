@@ -29,15 +29,15 @@
 #let clr-link          = rgb("#2a4a8a")  // hyperlinks
 
 // ── Typography ──────────────────────────────────────────────
-// Body: Courier New 10pt (monospaced thriller aesthetic)
-// Headings: Courier New bold (same family, weight differentiates)
+// Body: Special Elite 10pt (typewriter aesthetic — OFL, from Google Fonts)
+// Headings: Special Elite (same family, weight differentiates)
 // All sizes in pt.
 
-#let font-body    = "Courier New"
-#let font-heading = "Courier New"
+#let font-body    = ("Special Elite", "Courier New")
+#let font-heading = ("Special Elite", "Courier New")
 
 #let size-body        = 10pt
-#let size-h1          = 20pt
+#let size-h1          = 15pt
 #let size-h2          = 14pt
 #let size-h3          = 11pt
 #let size-h4          = 10pt

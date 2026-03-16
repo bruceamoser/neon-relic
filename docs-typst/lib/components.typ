@@ -54,7 +54,26 @@
       )
     ]
   )
-  v(16mm)  // reserve space for the single-line header block
+  // Image placeholder — replace with actual artwork when ready
+  place(
+    scope: "parent",
+    top + left,
+    float: true,
+    block(
+      width: 100%,
+      height: 55mm,
+      fill: clr-manila-mid,
+      stroke: (paint: clr-olive-mid, thickness: 1pt, dash: "dashed"),
+    )[
+      #align(center + horizon)[
+        #set text(font: font-heading, size: 9pt, fill: clr-olive-mid)
+        [IMAGE PLACEHOLDER — CHAPTER #num]\
+        #v(1mm)
+        #text(size: 8pt)[full width × 55 mm]
+      ]
+    ]
+  )
+  v(6mm)  // reserve space below header + placeholder
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -65,7 +84,7 @@
 // Usage: #part-header("I", "The Verdant Covenant")
 // ─────────────────────────────────────────────────────────────
 #let part-header(roman, title) = {
-  pagebreak(to: "odd")
+  pagebreak()
   page(
     background: rect(width: 100%, height: 100%, fill: clr-manila-dark),
     columns: 1,  // override to single column for this page
@@ -78,17 +97,17 @@
 
       // Part number
       #text(font: font-heading, size: 13pt, fill: clr-olive-light, tracking: 3pt)[PART #roman]
-      #v(4mm)
+      #v(6mm)
 
       // Part title
       #text(font: font-heading, size: 28pt, weight: "bold", fill: clr-olive-deep)[
         #upper(title)
       ]
 
-      #v(16mm)
-      #line(length: 60%, stroke: 1pt + clr-olive)
-      #v(6mm)
-      #text(font: font-body, size: 8pt, fill: clr-tan-text, style: "italic")[
+      #v(10mm)
+      #line(length: 60%, stroke: 2pt + clr-deep-red)
+      #v(8mm)
+      #text(font: font-body, size: 8pt, fill: clr-deep-red, weight: "bold",  tracking: 1pt)[
         TOP SECRET — VERDANT COVENANT — EYES ONLY
       ]
     ]
@@ -102,14 +121,14 @@
 //
 // Usage: #callout-block("NOTE")[Content...]
 // ─────────────────────────────────────────────────────────────
-#let callout-block(label, body, danger: false) = {
+#let callout-block(label, body, danger: false, full-width: false) = {
   let (fill-clr, label-clr, border-clr) = if danger or label == "WARNING" or label == "CAUTION" {
     (clr-manila-light, clr-deep-red, clr-deep-red)
   } else {
     (clr-manila-light, clr-olive-deep, clr-olive)
   }
 
-  block(
+  let inner = block(
     width: 100%,
     fill: fill-clr,
     stroke: (left: 3pt + border-clr, rest: 0.5pt + border-clr),
@@ -121,6 +140,12 @@
     #text(weight: "bold", fill: label-clr, size: size-sidebar)[#label] \
     #body
   ]
+
+  if full-width {
+    place(scope: "parent", top + left, float: true, block(above: 5mm)[#inner])
+  } else {
+    inner
+  }
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -324,19 +349,31 @@
 //   [Cell 1],     [Cell 2],     [Cell 3],
 // )
 // ─────────────────────────────────────────────────────────────
-#let nr-table(columns: auto, ..cells) = {
-  set text(size: size-table)
-  show table.cell.where(y: 0): it => {
-    set text(fill: clr-manila, weight: "bold")
-    set table.cell(fill: clr-olive-dark, inset: (x: 3mm, y: 4mm))
-    it
-  }
-  table(
-    columns: columns,
-    fill: (_, y) => if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
-    stroke: 1pt + clr-olive-mid,
-    inset: (x: 3mm, y: 2mm),
-    ..cells,
+#let nr-table(columns: auto, caption: none, ..cells) = {
+  let tbl-content = block(width: 100%, breakable: false)[
+    #if caption != none [
+      #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#caption]
+      #v(1mm)
+    ]
+    #set text(size: size-table)
+    #show table.cell.where(y: 0): it => {
+      set text(fill: clr-manila, weight: "bold")
+      set table.cell(inset: (x: 3mm, y: 4mm))
+      it
+    }
+    #table(
+      columns: columns,
+      fill: (_, y) => if y == 0 { clr-olive-dark } else if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
+      stroke: 1pt + clr-olive-mid,
+      inset: (x: 3mm, y: 2mm),
+      ..cells,
+    )
+  ]
+  place(
+    scope: "parent",
+    top + left,
+    float: true,
+    block(above: 5mm)[#tbl-content]
   )
 }
 
@@ -353,15 +390,9 @@
 //   [Cell], ...,
 // )
 // ─────────────────────────────────────────────────────────────
-#let nr-table-wide(columns: auto, ..cells) = {
-  place(
-    scope: "parent",
-    top + left,
-    float: true,
-    block(width: 100%)[
-      #nr-table(columns: columns, ..cells)
-    ]
-  )
+// nr-table-wide is now an alias for nr-table (all tables float full-width by default)
+#let nr-table-wide(columns: auto, caption: none, ..cells) = {
+  nr-table(columns: columns, caption: caption, ..cells)
 }
 
 // ─────────────────────────────────────────────────────────────
