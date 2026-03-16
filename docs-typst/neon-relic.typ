@@ -26,7 +26,7 @@
 // Uncomment each chapter as it is converted (Phase 2 work).
 
 #include "chapters/01-introduction.typ"
-// #include "chapters/02-character-creation.typ"
+#include "chapters/02-character-creation.typ"
 // #include "chapters/03-core-resolution.typ"
 // #include "chapters/04-attributes-skills.typ"
 // #include "chapters/05-combat.typ"
