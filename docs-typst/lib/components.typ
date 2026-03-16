@@ -97,17 +97,17 @@
 //
 // Usage: #callout-block("NOTE")[Content...]
 // ─────────────────────────────────────────────────────────────
-#let callout-block(label, body) = {
-  let (fill-clr, label-clr, border-clr) = if label == "WARNING" or label == "CAUTION" {
-    (clr-manila-mid, clr-deep-red, clr-deep-red)
+#let callout-block(label, body, danger: false) = {
+  let (fill-clr, label-clr, border-clr) = if danger or label == "WARNING" or label == "CAUTION" {
+    (clr-manila-light, clr-deep-red, clr-deep-red)
   } else {
-    (clr-manila-mid, clr-olive-deep, clr-olive)
+    (clr-manila-light, clr-olive-deep, clr-olive)
   }
 
   block(
     width: 100%,
     fill: fill-clr,
-    stroke: (left: 3pt + border-clr, rest: 1pt + border-clr),
+    stroke: (left: 3pt + border-clr, rest: 0.5pt + border-clr),
     inset: (left: 4mm, right: 3mm, top: 3mm, bottom: 3mm),
     above: 4mm,
     below: 4mm,
@@ -126,17 +126,19 @@
 // Usage: #design-note[Content...]
 // ─────────────────────────────────────────────────────────────
 #let design-note(body) = {
-  block(
-    width: 100%,
-    fill: clr-manila-mid,
-    stroke: (left: 3pt + clr-olive-mid),
-    inset: (left: 4mm, right: 3mm, top: 2mm, bottom: 2mm),
-    above: 4mm,
-    below: 4mm,
-  )[
-    #set text(font: font-body, size: size-sidebar, fill: clr-near-black, style: "italic")
-    #text(weight: "bold", fill: clr-olive, style: "normal")[DESIGN NOTE] \
-    #body
+  pad(left: 4mm)[
+    #block(
+      width: 100%,
+      fill: clr-manila-mid,
+      stroke: (left: 3pt + clr-olive-mid),
+      inset: (left: 4mm, right: 3mm, top: 2mm, bottom: 2mm),
+      above: 4mm,
+      below: 4mm,
+    )[
+      #set text(font: font-body, size: size-sidebar, fill: clr-near-black, style: "italic")
+      #text(weight: "bold", fill: clr-olive, style: "normal")[DESIGN NOTE] \
+      #body
+    ]
   ]
 }
 
@@ -210,6 +212,56 @@
     #set text(font: font-body, size: size-sidebar, fill: clr-near-black)
     #set par(leading: 1.3em)
     #body
+  ]
+}
+
+// ─────────────────────────────────────────────────────────────
+// STRUCTURED STAT BLOCK
+// Adversary stat block with olive name/classification header.
+// Body: use Typst markup (*bold*, \ for forced line breaks,
+// blank lines for paragraph breaks between abilities).
+//
+// Usage: #nr-stat-block("Adversary Name", "Faction / Threat: Level")[
+//   *Attributes:* STR X | AGI X | WIT X | EMP X \
+//   *Armor Rating:* X | *Fear Rating:* X
+//
+//   *Skills:* Skill A X | Skill B X
+//
+//   *Special Abilities:* \
+//   *Ability Name* — Description.
+//
+//   *Broken State:* Description.
+//   *Motivation:* Description.
+// ]
+// ─────────────────────────────────────────────────────────────
+#let nr-stat-block(name, classification, body) = {
+  block(
+    width: 100%,
+    fill: clr-manila-mid,
+    stroke: (top: 2pt + clr-olive, bottom: 2pt + clr-olive, rest: 1pt + clr-olive-mid),
+    inset: 0pt,
+    above: 4mm,
+    below: 4mm,
+  )[
+    // Olive name/classification header bar
+    #block(
+      width: 100%,
+      fill: clr-olive-dark,
+      inset: (x: 4mm, y: 2mm),
+    )[
+      #grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        text(font: font-heading, weight: "bold", fill: clr-manila, size: 10pt)[#upper(name)],
+        text(font: font-body, size: size-sidebar, fill: clr-manila-light, style: "italic")[#classification],
+      )
+    ]
+    // Body content
+    #block(inset: (x: 4mm, top: 3mm, bottom: 3mm))[
+      #set text(font: font-body, size: size-sidebar, fill: clr-near-black)
+      #set par(leading: 1.3em)
+      #body
+    ]
   ]
 }
 

@@ -68,34 +68,21 @@ Special: [One sentence if applicable, or "—"]
 
 == Ember Accord Cultist
 
-*Human / The Ember Accord / Threat: Low*
+#nr-stat-block("Ember Accord Cultist", "Human / The Ember Accord / Threat: Low")[
+  *Attributes:* STR 3 | AGI 2 | WIT 2 | EMP 3 \
+  *Armor Rating:* 0 | *Fear Rating:* 0
 
-```
-Attributes: STR 3 | AGI 2 | WIT 2 | EMP 3
-Armor Rating: 0
-Fear Rating: 0
+  *Skills:* Force 1 | Brawl 2 | Sneak 2 | Lore 2 | Manipulate 2
 
-Skills:
-  Force 1 | Brawl 2
-  Sneak 2
-  Lore 2
-  Manipulate 2
+  *Special Abilities:* \
+  *Zealot's Resolve* — The cultist does not surrender until their Strength is reduced to 1. They believe their cause makes them untouchable.
 
-Special Abilities:
-  Zealot's Resolve — The cultist does not surrender until their Strength is
-  reduced to 1. They believe their cause makes them untouchable.
+  *Improvised Ritual* — Once per combat, the cultist may spend their Slow Action to attempt a Lore roll (Difficulty 3). On success, they call a fragment of an artifact's corrupting effect to their location: all agents within Near range gain +1 Corruption. On failure, the cultist takes 1 Wits damage (backlash).
 
-  Improvised Ritual — Once per combat, the cultist may spend their Slow Action
-  to attempt a Lore roll (Difficulty 3). On success, they call a fragment of
-  an artifact's corrupting effect to their location: all agents within Near range
-  gain +1 Corruption. On failure, the cultist takes 1 Wits damage (backlash).
+  *Broken State:* Zealot's Resolve delays collapse; at STR 1, one more hit Breaks them. Broken cultists either enter catatonic prayer or flee. DA's call.
 
-Broken State: Zealot's Resolve delays collapse; at STR 1, one more hit Breaks
-them. Broken cultists either enter catatonic prayer or flee. DA's call.
-
-Motivation: Protect the artifact/ritual/site. They believe you are desecrating
-something holy.
-```
+  *Motivation:* Protect the artifact/ritual/site. They believe you are desecrating something holy.
+]
 
 == Ember Accord Cell Leader
 
@@ -213,85 +200,49 @@ inconvenience that should have been avoided.
 
 == Echoing Remnant (Poltergeist)
 
-*Supernatural / Entity / Threat: Low–Medium*
+#nr-stat-block("Echoing Remnant", "Supernatural / Entity / Threat: Low–Medium")[
+  *Attributes:* STR 4 | AGI 3 | WIT 1 | EMP 0 \
+  *Armor Rating:* 2 (force of coherence) | *Fear Rating:* 2 (objects move wrong; the air gets cold)
 
-```
-Attributes: STR 4 | AGI 3 | WIT 1 | EMP 0
-Armor Rating: 2 (force of coherence — the entity's structural integrity)
-Fear Rating: 2 (objects move wrong; the air gets cold)
+  *Skills:* Force 3 | Sneak 3
 
-Skills:
-  Force 3
-  Sneak 3
+  *Special Abilities:* \
+  *Incorporeal Movement* — The Remnant moves through solid objects and zone walls without cost. Zone features (Cramped, Rough) do not apply to it.
 
-Special Abilities:
-  Incorporeal Movement — The Remnant moves through solid objects and zone walls
-  without cost. Zone features (Cramped, Rough) do not apply to it.
+  *Poltergeist (Passive)* — At the start of each combat round, all loose objects in the Remnant's current zone animate. One agent in the zone takes 1 Strength damage from thrown debris (no attack roll — environmental). An agent who takes cover removes themselves from the zone effectively.
 
-  Poltergeist (Passive) — At the start of each combat round, all loose objects
-  in the Remnant's current zone animate. One agent in the zone takes 1 Strength
-  damage from thrown debris (no attack roll — environmental). An agent who takes
-  cover removes themselves from the zone effectively.
+  *Corruption Bleed* — When the Remnant deals damage, the target gains +1 Corruption in addition to the physical effect. The touch carries something of whatever this thing was.
 
-  Corruption Bleed — When the Remnant deals damage, the target gains +1 Corruption
-  in addition to the physical effect. The touch carries something of whatever
-  this thing was.
+  *Broken State:* Dispersal. The Remnant's coherence fails; it fragments into an area of ambient cold and auditory static. It may reconstitute (DA decision) if the anchor object that binds it is not removed from the area.
 
-Broken State: Dispersal. The Remnant's coherence fails; it fragments into an
-area of ambient cold and auditory static. It may reconstitute (DA decision)
-if the anchor object that binds it is not removed from the area.
+  *Anchor:* Every Echoing Remnant is bound to a physical object. Destroying or removing the anchor prevents reconstitution. Finding the anchor requires an Investigate roll (Difficulty 2) or Lore roll (Difficulty 3) if the anchor is concealed within a larger collection.
 
-Anchor: Every Echoing Remnant is bound to a physical object. Destroying or
-removing the anchor prevents reconstitution. Finding the anchor requires an
-Investigate roll (Difficulty 2) or Lore roll (Difficulty 3) if the anchor
-is concealed within a larger collection.
-
-Motivation: None — Remnants do not have goals. They are a resonant impression
-left by violent death near an artifact. They act on the echo of their last
-strong emotional state.
-```
+  *Motivation:* None — Remnants do not have goals. They are a resonant impression left by violent death near an artifact. They act on the echo of their last strong emotional state.
+]
 
 #section-rule()
 
 == Shard Construct (Artifact Guardian)
 
-*Supernatural / Artifact-Spawned / Threat: High*
+#nr-stat-block("Shard Construct", "Supernatural / Artifact-Spawned / Threat: High")[
+  *Attributes:* STR 8 | AGI 3 | WIT 2 | EMP 0 \
+  *Armor Rating:* 5 (crystallized occult energy) | *Fear Rating:* 4 (wrongness of form; geometry shouldn't work)
 
-```
-Attributes: STR 8 | AGI 3 | WIT 2 | EMP 0
-Armor Rating: 5 (crystallized occult energy — the artifact's self-defense)
-Fear Rating: 4 (wrongness of form; the geometry of it shouldn't work)
+  *Skills:* Force 5 | Brawl 4 | Endure 4
 
-Skills:
-  Force 5 | Brawl 4 | Endure 4
+  *Special Abilities:* \
+  *Occult Shell* — Standard firearms deal only 1 Damage per hit against the Shard Construct regardless of weapon rating. Artifact-derived weapons, fire, or electromagnetic disruption deal full damage.
 
-Special Abilities:
-  Occult Shell — Standard firearms deal only 1 Damage per hit against the
-  Shard Construct regardless of weapon rating. Artifact-derived weapons, fire,
-  or electromagnetic disruption deal full damage.
+  *Shard Burst (Slow Action)* — The Construct fires crystallized occult shards in a cone. All agents within Near range take 2 Strength damage. Armor applies. No attack roll — the DA describes the burst; agents may spend a Fast Action to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
 
-  Shard Burst (Slow Action) — The Construct fires crystallized occult shards
-  in a cone. All agents within Near range take 2 Strength damage. Armor applies.
-  No attack roll — the DA describes the burst; agents may spend a Fast Action
-  to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
+  *Anchored to Artifact* — The Construct cannot move more than Long range from the artifact it protects. If the artifact is moved, the Construct follows (teleportation effect between scenes; not instant-travel within a scene).
 
-  Anchored to Artifact — The Construct cannot move more than Long range from
-  the artifact it protects. If the artifact is moved, the Construct follows
-  (teleportation effect between scenes; not instant-travel within a scene).
+  *Falling Construct* — When the Shard Construct's Strength is reduced to 3 or lower, it enters a berserker state: it no longer uses Shard Burst (too degraded) but gains +2 dice on all Force and Brawl rolls. Its dissolution becomes imminent and it acts with total abandon.
 
-  Falling Construct — When the Shard Construct's Strength is reduced to 3 or
-  lower, it enters a berserker state: it no longer uses Shard Burst (too
-  degraded) but gains +2 dice on all Force and Brawl rolls. Its dissolution
-  becomes imminent and it acts with total abandon.
+  *Broken State:* Dissolution. The Construct collapses into inert crystal fragments. The fragments are safe but fascinating to Lore scholars. The artifact it was protecting remains where it was. The Construct does not reconstitute — but similar constructs have been documented at the same artifact after 24-hour gaps.
 
-Broken State: Dissolution. The Construct collapses into inert crystal fragments.
-The fragments are safe but fascinating to Lore scholars. The artifact it was
-protecting remains where it was. The Construct does not reconstitute — but
-similar constructs have been documented at the same artifact after 24-hour gaps.
-
-Motivation: The artifact. Nothing enters its protection radius. Nothing leaves
-with the artifact.
-```
+  *Motivation:* The artifact. Nothing enters its protection radius. Nothing leaves with the artifact.
+]
 
 #section-rule()
 
