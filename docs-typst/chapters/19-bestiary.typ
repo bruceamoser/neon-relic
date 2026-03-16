@@ -86,113 +86,65 @@ Special: [One sentence if applicable, or "—"]
 
 == Ember Accord Cell Leader
 
-*Human / The Ember Accord / Threat: Medium*
+#nr-stat-block("Ember Accord Cell Leader", "Human / The Ember Accord / Threat: Medium")[
+  *Attributes:* STR 4 | AGI 3 | WIT 3 | EMP 4 \
+  *Armor Rating:* 1 (concealed vest — improvised, not rated) | *Fear Rating:* 0
 
-```
-Attributes: STR 4 | AGI 3 | WIT 3 | EMP 4
-Armor Rating: 1 (concealed vest — improvised, not rated)
-Fear Rating: 0
+  *Skills:* Force 2 | Brawl 3 | Endure 2 | Firearms 2 | Lore 3 | Manipulate 3 | Command 2
 
-Skills:
-  Force 2 | Brawl 3 | Endure 2
-  Firearms 2
-  Lore 3
-  Manipulate 3 | Command 2
+  *Special Abilities:* \
+  *Burn the Evidence* — If the Cell Leader reaches Broken State with a ritual site or artifact nearby, they attempt one final Lore roll (Difficulty 2) to trigger a corruption discharge. On success: all within Short range gain +2 Corruption. This is not suicidal — they expect to survive. They often don't.
 
-Special Abilities:
-  Burn the Evidence — If the Cell Leader reaches Broken State with a ritual
-  site or artifact nearby, they attempt one final Lore roll (Difficulty 2)
-  to trigger a corruption discharge. On success: all within Short range gain
-  +2 Corruption. This is not suicidal — they expect to survive. They often don't.
+  *Rally the Faithful* — While the Cell Leader is active, all Ember Accord Cultists in the scene gain +1 die on Brawl rolls. If the Cell Leader falls, they lose this bonus and their Broken State changes to immediate surrender or flight.
 
-  Rally the Faithful — While the Cell Leader is active, all Ember Accord
-  Cultists in the scene gain +1 die on Brawl rolls. If the Cell Leader falls,
-  they lose this bonus and their Broken State changes to immediate surrender
-  or flight.
+  *Broken State:* Surrender. The Cell Leader is pragmatic enough to value their life over the immediate mission. They will lie during interrogation.
 
-Broken State: Surrender. The Cell Leader is pragmatic enough to value their life
-over the immediate mission. They will lie during interrogation.
-
-Motivation: You have interfered with something the Accord spent years preparing.
-They want to delay, contain, or eliminate you before word reaches the Covenant.
-```
+  *Motivation:* You have interfered with something the Accord spent years preparing. They want to delay, contain, or eliminate you before word reaches the Covenant.
+]
 
 #section-rule()
 
 == MJ-12 Strike Agent
 
-*Human / MJ-12 / Threat: High*
+#nr-stat-block("MJ-12 Strike Agent", "Human / MJ-12 / Threat: High")[
+  *Attributes:* STR 5 | AGI 4 | WIT 3 | EMP 2 \
+  *Armor Rating:* 4 (Tactical Kevlar — military spec) | *Fear Rating:* 0
 
-```
-Attributes: STR 5 | AGI 4 | WIT 3 | EMP 2
-Armor Rating: 4 (Tactical Kevlar — military spec)
-Fear Rating: 0
+  *Skills:* Force 3 | Brawl 3 | Endure 3 | Sneak 3 | Firearms 4 | Investigate 2 | Tech 2
 
-Skills:
-  Force 3 | Brawl 3 | Endure 3
-  Sneak 3
-  Firearms 4
-  Investigate 2 | Tech 2
+  *Special Abilities:* \
+  *Suppressive Discipline* — MJ-12 agents do not panic under mundane violence. Supernatural Fear checks are still required, but they roll with +1 bonus die (training).
 
-Special Abilities:
-  Suppressive Discipline — MJ-12 agents do not panic under mundane violence.
-  Supernatural Fear checks are still required, but they roll with +1 bonus die
-  (training).
+  *Tactical Communication* — If two or more MJ-12 agents are present, they act simultaneously on the same Initiative card. One card covers the team.
 
-  Tactical Communication — If two or more MJ-12 agents are present, they act
-  simultaneously on the same Initiative card. One card covers the team.
+  *Secure Extraction Protocol* — If an MJ-12 team's mission fails (artifact lost, agents dead or captured), surviving Strike Agents attempt organized withdrawal and extraction. They do not chase; they regroup. The agents will know they were seen. A debrief has already been filed.
 
-  Secure Extraction Protocol — If an MJ-12 team's mission fails (artifact lost,
-  agents dead or captured), surviving Strike Agents attempt organized withdrawal
-  and extraction. They do not chase; they regroup. The agents will know they
-  were seen. A debrief has already been filed.
+  *Broken State:* Tactical withdrawal. MJ-12 never dies on-site unnecessarily. A Broken Strike Agent calls for backup on a secure frequency as they fall — a dead man's switch. Agents have 1d6 scenes before extraction arrives.
 
-Broken State: Tactical withdrawal. MJ-12 never dies on-site unnecessarily.
-A Broken Strike Agent calls for backup on a secure frequency as they fall — a
-dead man's switch. Agents have 1d6 scenes before extraction arrives.
-
-Motivation: Retrieve the artifact for Project Paper Lantern. Neutralize Covenant
-operatives if exposed. No witnesses.
-```
+  *Motivation:* Retrieve the artifact for Project Paper Lantern. Neutralize Covenant operatives if exposed. No witnesses.
+]
 
 #section-rule()
 
 == Hellfire Consortium Blood Contractor
 
-*Human / The Hellfire Consortium / Threat: High*
+#nr-stat-block("Hellfire Consortium Blood Contractor", "Human / The Hellfire Consortium / Threat: High")[
+  *Attributes:* STR 3 | AGI 3 | WIT 4 | EMP 3 \
+  *Armor Rating:* 2 (ritual garments — treated leather with artifact weaving) | *Fear Rating:* 2 (the things they've done are visible in their eyes)
 
-```
-Attributes: STR 3 | AGI 3 | WIT 4 | EMP 3
-Armor Rating: 2 (ritual garments — treated leather with artifact weaving)
-Fear Rating: 2 (the things they've done are visible in their eyes)
+  *Skills:* Brawl 2 | Endure 3 | Sneak 2 | Lore 4 | Manipulate 3 | Command 2
 
-Skills:
-  Brawl 2 | Endure 3
-  Sneak 2
-  Lore 4
-  Manipulate 3 | Command 2
+  *Special Abilities:* \
+  *Blood Price* — The Contractor may spend their own Strength (up to 2 per round) to fuel their abilities. Each point of Strength voluntarily spent grants them +2 dice on their next Lore roll. This does not trigger armor. They choose to bleed.
 
-Special Abilities:
-  Blood Price — The Contractor may spend their own Strength (up to 2 per round)
-  to fuel their abilities. Each point of Strength voluntarily spent grants them
-  +2 dice on their next Lore roll. This does not trigger armor. They choose to
-  bleed.
+  *Corruption Tap* — On a successful Lore roll (Difficulty 2), the Contractor forces one agent within Near range to gain +2 Corruption immediately.
 
-  Corruption Tap — On a successful Lore roll (Difficulty 2), the Contractor
-  forces one agent within Near range to gain +2 Corruption immediately.
+  *Bound Sigil* — The Contractor carries a ward. The first time they would be Broken, the ward absorbs it: they are reduced to STR 1 instead of 0. The ward then cracks — a physical object on their person is visibly destroyed. This happens once.
 
-  Bound Sigil — The Contractor carries a ward. The first time they would be
-  Broken, the ward absorbs it: they are reduced to STR 1 instead of 0. The
-  ward then cracks — a physical object on their person is visibly destroyed.
-  This happens once.
+  *Broken State:* Dissipation of the bound contract. The Contractor collapses and enters a catatonic state — their blood price comes due. They cannot be easily interrogated; the contract burns out their ability to speak clearly for hours.
 
-Broken State: Dissipation of the bound contract. The Contractor collapses and
-enters a catatonic state — their blood price comes due. They cannot be easily
-interrogated; the contract burns out their ability to speak clearly for hours.
-
-Motivation: Acquire the artifact. The Consortium has a buyer. The agents are an
-inconvenience that should have been avoided.
-```
+  *Motivation:* Acquire the artifact. The Consortium has a buyer. The agents are an inconvenience that should have been avoided.
+]
 
 #section-rule()
 
@@ -296,27 +248,11 @@ For quick reference when building encounters:
 
 *Special Abilities:*
 
-```
-Zone Control — The Mire occupies a defined zone (one to three
-interconnected rooms). All Wits and Empathy rolls made inside the zone
-are at -2 dice. Firearms and Force rolls are unaffected; the Mire does
-not respond to violence.
+*Zone Control* — The Mire occupies a defined zone (one to three interconnected rooms). All Wits and Empathy rolls made inside the zone are at -2 dice. Firearms and Force rolls are unaffected; the Mire does not respond to violence.
 
-Memory Bleed — At the start of each scene inside the zone, each
-character witnesses an involuntary memory of the zone's traumatic origin
-(DA description). Characters must pass an Endure roll (Difficulty 1) or
-take 1 Wits damage.
+*Memory Bleed* — At the start of each scene inside the zone, each character witnesses an involuntary memory of the zone's traumatic origin (DA description). Characters must pass an Endure roll (Difficulty 1) or take 1 Wits damage.
 
-Dissolution Trigger — The Mire cannot be destroyed by conventional
-means. It can be dispersed by:
-  (1) Removing the corrupting artifact at its core (Investigate Difficulty 3
-      to locate it inside the zone, Lore Difficulty 2 to identify it
-      as the anchor).
-  (2) A Containment Ritual (see Wayfinder Division abilities) performed
-      by an agent with Lore 3+, taking one full scene.
-  (3) Destroying the artifact at its core (Artifact Fracture; triggers
-      a Corruption Cascade — everyone in the zone takes +3 Corruption).
-```
+*Dissolution Trigger* — The Mire cannot be destroyed by conventional means. It can be dispersed by: (1) Removing the corrupting artifact at its core (Investigate Difficulty 3 to locate it inside the zone, Lore Difficulty 2 to identify it as the anchor). (2) A Containment Ritual (see Wayfinder Division abilities) performed by an agent with Lore 3+, taking one full scene. (3) Destroying the artifact at its core (Artifact Fracture; triggers a Corruption Cascade — everyone in the zone takes +3 Corruption).
 
 *Broken State:* Dispersed. The zone returns to normal. Physical damage from the trauma-origin remains (stains, broken furniture, cold spots). The artifact anchor must be contained; leaving it creates a new Mire within 1d6 days.
 
@@ -344,20 +280,11 @@ means. It can be dispersed by:
 
 *Special Abilities:*
 
-```
-Artifact Tether — A Hollow is bound to a specific artifact that controls
-it. While within Short range of that artifact, it gains +2 dice on all
-rolls. If the artifact is moved more than 50 meters away, the Hollow
-loses all special abilities and functions as a Grunt.
+*Artifact Tether* — A Hollow is bound to a specific artifact that controls it. While within Short range of that artifact, it gains +2 dice on all rolls. If the artifact is moved more than 50 meters away, the Hollow loses all special abilities and functions as a Grunt.
 
-Recognition Response — If a player character knew the deceased in life and
-makes eye contact with the Hollow, they must pass a Psychoanalyze or
-Endure roll (Difficulty 2) or take 1 Empathy damage immediately.
+*Recognition Response* — If a player character knew the deceased in life and makes eye contact with the Hollow, they must pass a Psychoanalyze or Endure roll (Difficulty 2) or take 1 Empathy damage immediately.
 
-Dead to Pain — The Hollow does not bleed (no ongoing Strength loss from
-wounds), cannot be staggered, and ignores fatigue. It will pursue until
-Broken or the artifact is removed.
-```
+*Dead to Pain* — The Hollow does not bleed (no ongoing Strength loss from wounds), cannot be staggered, and ignores fatigue. It will pursue until Broken or the artifact is removed.
 
 *Broken State:* Collapse. The body goes completely inert. The artifact that controlled it is not damaged by the Hollow's collapse, but its occult signature is now readable (Lore Difficulty 1 to identify its history).
 
@@ -385,28 +312,13 @@ Broken or the artifact is removed.
 
 *Special Abilities:*
 
-```
-Absolute Silence — The Listening's presence is announced by the
-sudden total cessation of ambient noise. Phones stop mid-ring. Tape
-recorders erase. Radio static vanishes. Characters with Investigate 2+
-notice it immediately; others need a Wits roll (Difficulty 1).
+*Absolute Silence* — The Listening's presence is announced by the sudden total cessation of ambient noise. Phones stop mid-ring. Tape recorders erase. Radio static vanishes. Characters with Investigate 2+ notice it immediately; others need a Wits roll (Difficulty 1).
 
-They Know — Once per scene, The Listening can whisper a secret about
-one character to another character within Near range. The secret is
-true. The character who hears it must pass a Manipulate (resisted by
-Command or Endure, Difficulty 2) or immediately distrust the revealed
-character for the scene.
+*They Know* — Once per scene, The Listening can whisper a secret about one character to another character within Near range. The secret is true. The character who hears it must pass a Manipulate (resisted by Command or Endure, Difficulty 2) or immediately distrust the revealed character for the scene.
 
-Wire Tap — If a character makes a Tech roll within The Listening's zone,
-The Listening gains access to all information contained in the device
-used. It may use this information in the same or future scenes (DA's
-discretion).
+*Wire Tap* — If a character makes a Tech roll within The Listening's zone, The Listening gains access to all information contained in the device used. It may use this information in the same or future scenes (DA's discretion).
 
-Intangible — The Listening cannot be harmed by physical attacks. It can
-only be targeted by a Containment Ritual or destroyed by removing all
-corrupted surveillance equipment from its zone of origin and performing a
-Tech roll (Difficulty 3) to disrupt its signal network.
-```
+*Intangible* — The Listening cannot be harmed by physical attacks. It can only be targeted by a Containment Ritual or destroyed by removing all corrupted surveillance equipment from its zone of origin and performing a Tech roll (Difficulty 3) to disrupt its signal network.
 
 *Broken State:* Static. A burst of white noise — every electronic device in Near range emits a single piercing tone and loses 1 Gear Bonus permanently. The Listening disperses. It may reconstitute in 1d6 days if its occult origin point is not addressed.
 
@@ -434,25 +346,13 @@ Tech roll (Difficulty 3) to disrupt its signal network.
 
 *Special Abilities:*
 
-```
-Familiar Face — The Fracture Wraith appears as a dead Covenant agent.
-If any surviving character knew the deceased, seeing the Wraith triggers
-an immediate Fear Check (Fear Rating 4). If no character knew the
-deceased, it appears as a figure whose face they can't quite place —
-Fear Rating 2.
+*Familiar Face* — The Fracture Wraith appears as a dead Covenant agent. If any surviving character knew the deceased, seeing the Wraith triggers an immediate Fear Check (Fear Rating 4). If no character knew the deceased, it appears as a figure whose face they can't quite place — Fear Rating 2.
 
-Guilt Echo — Once per scene, the Wraith can attempt a Psychoanalyze roll
-(opposed by the target's Wits). On success: the target relives a specific
-guilt memory and gains +2 Corruption immediately. The experience is
-indistinguishable from a genuine flashback.
+*Guilt Echo* — Once per scene, the Wraith can attempt a Psychoanalyze roll (opposed by the target's Wits). On success: the target relives a specific guilt memory and gains +2 Corruption immediately. The experience is indistinguishable from a genuine flashback.
 
-Corruption Drain — Any character who engages the Wraith in melee gains
-+1 Corruption per round of direct contact, regardless of outcome.
+*Corruption Drain* — Any character who engages the Wraith in melee gains +1 Corruption per round of direct contact, regardless of outcome.
 
-Memory of Skill — The Fracture Wraith retains one skill from the deceased
-at their final level. The DA chooses which skill based on the dead agent's
-profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
-```
+*Memory of Skill* — The Fracture Wraith retains one skill from the deceased at their final level. The DA chooses which skill based on the dead agent's profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 
 *Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP (the vision is painful but clarifying). The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity.
 
