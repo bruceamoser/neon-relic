@@ -1,3 +1,4 @@
+[#chapter-character-creation]
 = Creating Your Agent
 
 Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these eleven steps in order.
@@ -20,7 +21,7 @@ Your *Division* is your character class. It defines your role within the Covenan
 
 > *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence. Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1).
 
-Read the full Division descriptions in xref:09-divisions.adoc[Divisions] before making your choice.
+Read the full Division descriptions in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] before making your choice.
 
 ---
 
@@ -210,7 +211,7 @@ Record your Anchor's name and the memory it represents on your character sheet.
 
 Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the DA can use it as a story hook when the investigation points in the right direction.
 
-Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in xref:13-advancement.adoc#_dark_secrets[Dark Secrets].
+Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in xref:chapters/13-advancement.adoc#_dark_secrets[Dark Secrets].
 
 ---
 

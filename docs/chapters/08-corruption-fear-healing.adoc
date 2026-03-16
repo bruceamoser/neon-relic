@@ -1,3 +1,4 @@
+[#chapter-corruption]
 = Corruption, Fear, and Healing
 
 *Corruption* is Neon Relic's signature mechanic — a single ascending number that tracks the cumulative psychic toll of occult exposure, supernatural exertion, and sheer human desperation. It functions as an "inverse hit points" system: every push, every artifact activation, every encounter with the unnatural ratchets the number higher, and there is no coming back from the top.
@@ -165,6 +166,6 @@ Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a 
 | *5* | Annihilating | A Class-5 entity. A tear in physical space. Direct contact with whatever the artifacts are *for*.
 |===
 
-Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (xref:19-bestiary.adoc[Bestiary]).
+Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]).
 
 

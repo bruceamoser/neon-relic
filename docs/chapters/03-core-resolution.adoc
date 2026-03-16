@@ -1,3 +1,4 @@
+[#chapter-core-resolution]
 = Core Resolution Mechanics
 
 The foundation of Project Neon Relic relies on the classic *dice-pool variant* of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition — key themes in analog horror.
@@ -32,7 +33,7 @@ However, pushing represents the character exerting maximum physical, mental, or 
 
 * You immediately gain *+1 Corruption*.
 
-> *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing] for the full rules.
+> *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for the full rules.
 
 The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 

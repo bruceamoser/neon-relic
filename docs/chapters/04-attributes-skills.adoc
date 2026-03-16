@@ -1,3 +1,4 @@
+[#chapter-attributes-skills]
 = Attributes and Skills
 
 Characters are defined by *four core attributes*, representing their fundamental physical and mental foundations. In Project Neon Relic, these traditional YZE attributes are updated to fit the modern, investigative tone of an occult thriller:
@@ -57,7 +58,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 * You may split stunt points across multiple effects if both are available on the same skill.
 * On a *pushed roll*, stunt points still apply from the new result.
 
-> *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter (xref:05-combat.adoc[Combat]). The stunt economy is the same.
+> *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter (xref:chapters/05-combat.adoc#chapter-combat[Combat]). The stunt economy is the same.
 
 === Generic Stunts (Any Skill)
 

@@ -1,5 +1,6 @@
 ---
 
+[#chapter-advancement]
 == Dark Secrets
 
 A *Dark Secret* is a specific fact from your character's past — something true, hidden, and consequential. It is not a personality flaw or a general backstory. It names something: an event, a decision, a relationship that *someone wants to remain buried*.

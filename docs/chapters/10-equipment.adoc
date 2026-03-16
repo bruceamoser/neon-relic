@@ -1,3 +1,4 @@
+[#chapter-equipment]
 = 1980s Equipment and Analog Gear
 
 Navigating the neon-lit streets and abandoned industrial sectors of the 1980s requires specialized equipment. Items provide a *Gear Bonus* (extra black d6 dice) to specific skill rolls. Pushing a roll can cause the item to break, temporarily reducing its bonus.
@@ -113,7 +114,7 @@ Supplies can be restocked:
 | *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. DA may waive this for simple artifact containment.
 |===
 
-> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see xref:05-combat.adoc[Combat]). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
+> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see xref:chapters/05-combat.adoc#chapter-combat[Combat]). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
 
 === Scarcity in the 1980s Field
 
@@ -245,7 +246,7 @@ Coastal/river access. Cannot be followed by road vehicles. Night operations: −
 
 === Vehicle Conflict — Actions and Chase Rules
 
-Vehicle conflict follows the same chase structure as foot chases (xref:05-combat.adoc[Combat]), with vehicle-specific modifications.
+Vehicle conflict follows the same chase structure as foot chases (xref:chapters/05-combat.adoc#chapter-combat[Combat]), with vehicle-specific modifications.
 
 ==== Chase Structure
 
@@ -523,5 +524,5 @@ gives Stack agents mechanical advantages no other Division matches.
 
 > **Cross-reference:** Stack Division full description, background options, and Talents
 > (including *Jury-Rig*, *Prototyper*, *Duct Tape & WD-40*) are in
-> xref:09-divisions.adoc[Divisions].
+> xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 

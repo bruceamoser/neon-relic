@@ -1,3 +1,4 @@
+[#chapter-headquarters]
 = Headquarters Management
 
 In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Corruption, and an economic resource sink giving players ownership over the world.
@@ -116,7 +117,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 6
 | Faraday Cage + Occult Laboratory
 | A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
-| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see xref:11-artifacts.adoc[Artifacts]). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
+| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
 
 | *Safe House Network*
 | 6

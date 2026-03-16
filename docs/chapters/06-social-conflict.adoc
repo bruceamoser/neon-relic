@@ -1,3 +1,4 @@
+[#chapter-social-conflict]
 = Social Conflict
 
 Investigation games are social games. Most of what agents do in Neon Relic is talk to people: witnesses who saw something and won't say it, cult members who believe what they're doing is righteous, informants who want to help but are terrified, supervisors who need to believe the cover story. The skill of the agent is reading people and moving them.
@@ -132,7 +133,7 @@ Social encounters with entities, artifacts, or cult members may cross into super
 * *Direct supernatural revelation during a Manipulate scene* (the NPC says something that cannot be explained naturally): Fear check, Fear Rating 1 or 2.
 * *Psychoanalyze roll on a contaminated NPC* (someone who has long-term artifact exposure): Roll Psychoanalyze as normal. On any failure, the agent picks up a psychic echo — immediate Fear check, Fear Rating 2. On success, the agent gets the information but gains +1 Corruption.
 
-See xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing] for full Fear check rules.
+See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for full Fear check rules.
 
 ---
 
@@ -168,7 +169,7 @@ Another Manipulate roll at Difficulty 2 (they're now at 3). Marcus rolls: 6, 5, 
 
 == Cross-References
 
-* Skills in context: xref:04-attributes-skills.adoc[Attributes & Skills]
-* Fear checks during social scenes: xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing]
-* Using Manipulate stunts: xref:04-attributes-skills.adoc[Attributes & Skills] (Skill Stunts)
-* NPC Faction relationships: xref:17-rival-factions.adoc[Rival Factions]
+* Skills in context: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
+* Fear checks during social scenes: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
+* Using Manipulate stunts: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills] (Skill Stunts)
+* NPC Faction relationships: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]

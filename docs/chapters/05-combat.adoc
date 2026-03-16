@@ -1,3 +1,4 @@
+[#chapter-combat]
 = Combat
 
 Combat in Neon Relic is fast, brutal, and consequential. Agents of the Covenant are capable individuals — but they are not soldiers. A prolonged firefight drains attributes that also serve as their sanity and stamina. Every round of violence is a resource you cannot easily recover before the next case.
@@ -363,7 +364,7 @@ When any NPC attribute reaches 0, they are *Broken* (incapacitated). The DA choo
 When any PC attribute reaches 0, they are *Broken*:
 
 * They collapse and are incapacitated.
-* They must roll on the appropriate *Critical Injury table* (see xref:07-health-damage-armor.adoc#_critical_injuries[Critical Injuries]).
+* They must roll on the appropriate *Critical Injury table* (see xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Critical Injuries]).
 * They are out of the fight unless stabilized by an ally (Heal roll, costs a Slow Action, requires a First Aid Kit).
 * An unstabilized Broken PC *dies* at the end of the scene unless treated.
 

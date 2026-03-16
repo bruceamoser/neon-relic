@@ -1,3 +1,4 @@
+[#chapter-gm-guidance]
 = Director of Agents Guidance
 
 Running Neon Relic well means understanding what kind of game it is trying to be: an *investigation horror* game where the real terror is not the monster in the vault, but the agents' growing awareness that the Covenant cannot fully protect them from what they're being asked to do.
@@ -258,8 +259,8 @@ Containment cases benefit from clocks with *loss conditions linked to exposure*,
 
 == Cross-References
 
-* Case File structure (8-phase structure, Countdown mechanics): xref:15-case-file.adoc[Case Files]
-* Artifact properties and Tiers: xref:11-artifacts.adoc[Artifacts]
-* Rival faction behavior and agendas: xref:17-rival-factions.adoc[Rival Factions]
-* Entity stat blocks and Fear ratings: xref:19-bestiary.adoc[Bestiary]
-* Corruption consequences: xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing]
+* Case File structure (8-phase structure, Countdown mechanics): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
+* Artifact properties and Tiers: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
+* Rival faction behavior and agendas: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
+* Entity stat blocks and Fear ratings: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
+* Corruption consequences: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]

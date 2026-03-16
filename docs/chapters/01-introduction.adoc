@@ -1,3 +1,4 @@
+[#chapter-introduction]
 = Introduction
 
 *Project Neon Relic* is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called *The Verdant Covenant*, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world -- or the people who find them.
@@ -86,7 +87,7 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 
 [NOTE]
 ====
-*Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- operates with enough autonomy and unique expertise to function as its own playable division for game purposes. See xref:09-divisions.adoc#division-4-stack[Division 4: Stack] for details.
+*Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- operates with enough autonomy and unique expertise to function as its own playable division for game purposes. See xref:chapters/09-divisions.adoc#division-4-stack[Division 4: Stack] for details.
 ====
 
 ---
