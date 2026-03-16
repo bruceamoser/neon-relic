@@ -17,6 +17,8 @@ page:
   background-color: '#f0ead6'
   margin: [22mm, 20mm, 24mm, 20mm]
   size: LETTER
+  columns: 2
+  column-gap: 5mm
 
 # ── TITLE PAGE (custom SVG, so keep this minimal) ──────────────────────────────────────
 title-page:
