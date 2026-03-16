@@ -37,10 +37,6 @@
     #v(10mm)
     #line(length: 50%, stroke: 1pt + clr-olive)
     #v(10mm)
-    #text(font: font-body, size: 11pt, fill: clr-tan-text, style: "italic")[
-      Designed by Bruce Amoser and Stu
-    ]
-    #v(4mm)
     #text(font: font-body, size: 9pt, fill: clr-tan-text)[
       A tabletop roleplaying game powered by the Year Zero Engine
     ]

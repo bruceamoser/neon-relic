@@ -328,14 +328,14 @@
   set text(size: size-table)
   show table.cell.where(y: 0): it => {
     set text(fill: clr-manila, weight: "bold")
-    set table.cell(fill: clr-olive-dark)
+    set table.cell(fill: clr-olive-dark, inset: (x: 3mm, y: 4mm))
     it
   }
   table(
     columns: columns,
     fill: (_, y) => if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
     stroke: 1pt + clr-olive-mid,
-    inset: (x: 2mm, y: 2mm),
+    inset: (x: 3mm, y: 2mm),
     ..cells,
   )
 }
