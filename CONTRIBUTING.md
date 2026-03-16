@@ -565,3 +565,80 @@ Confirm:
 - tag exists
 - release is published
 - PDF asset is attached and downloadable
+
+---
+
+## Typst Build System
+
+The canonical publishable format for Neon Relic is a Typst document (`.typ`). The AsciiDoc source files in `docs/chapters/` are the **design source**; the Typst documents in `docs-typst/` are the **publication source**.
+
+### Prerequisites
+
+1. **Install Typst** (v0.14.0 or later):
+   ```powershell
+   winget install Typst.Typst
+   ```
+   Or download from [typst.app](https://typst.app/).
+
+2. **Verify installation**:
+   ```powershell
+   typst --version
+   ```
+
+### Quick Build
+
+From the repo root:
+
+```powershell
+./build.ps1
+```
+
+Or directly (bypassing the script):
+
+```powershell
+typst compile docs-typst/neon-relic.typ docs-typst/output/neon-relic.pdf --root .
+```
+
+Output: `docs-typst/output/neon-relic.pdf`
+
+### Live Preview (Watch Mode)
+
+```powershell
+./build.ps1 --watch
+```
+
+Typst recompiles on every file save. Open `docs-typst/output/neon-relic.pdf` in a PDF viewer that supports live reload (e.g., Sumatra PDF on Windows, Evince on Linux, or the VS Code PDF extension).
+
+### Custom Fonts
+
+The default font is Courier New (system font). To use an alternative (e.g., Courier Prime):
+
+1. Drop `.ttf` or `.otf` files into `docs-typst/fonts/`.
+2. `build.ps1` automatically adds `--font-path docs-typst/fonts` when font files are present.
+3. Update the font constants in `docs-typst/lib/theme.typ`:
+   ```typst
+   #let font-body    = "Courier Prime"
+   #let font-heading = "Courier Prime"
+   ```
+
+> **Note:** `docs-typst/fonts/` is tracked in git via `.gitkeep`. Font files may be committed if their license permits redistribution — check before committing any font.
+
+### Typst File Structure
+
+| File/Directory | Purpose |
+|---|---|
+| `docs-typst/neon-relic.typ` | Root document — imports theme, components, all chapters |
+| `docs-typst/lib/theme.typ` | Brand colours, typography, page layout, heading styles |
+| `docs-typst/lib/components.typ` | Reusable components: stat blocks, callouts, tables, dividers |
+| `docs-typst/chapters/XX-*.typ` | Chapter content (one file per chapter) |
+| `docs-typst/output/neon-relic.pdf` | Generated PDF (gitignored) |
+| `docs-typst/fonts/` | Custom font files (`.gitkeep` tracked; font files optional) |
+| `assets/svg/` | SVG artwork: title page background, section dividers, stamps |
+
+### Clean Build
+
+```powershell
+./build.ps1 --clean
+```
+
+Deletes all files in `docs-typst/output/` without removing the directory itself.

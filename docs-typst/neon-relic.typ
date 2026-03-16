@@ -17,6 +17,7 @@
   title: "Neon Relic — Core Rules",
   author: ("Bruce Amoser", "Stu"),
   keywords: ("TTRPG", "Year Zero Engine", "occult", "1980s"),
+  date: auto,
 )
 
 // ── Apply brand theme ────────────────────────────────────────

@@ -36,19 +36,29 @@ if (-not (Get-Command typst -ErrorAction SilentlyContinue)) {
   Write-Error "Typst CLI not found. Install with: winget install Typst.Typst"
   exit 1
 }
+# Show version for diagnostics
+$typstVersion = & typst --version
+Write-Host "Using $typstVersion"
 
+# Font path: use docs-typst/fonts/ when it contains font files
+$FontsDir = Join-Path $Root "docs-typst\fonts"
+$FontFlag = if ((Test-Path $FontsDir) -and (Get-ChildItem $FontsDir -File -ErrorAction SilentlyContinue)) {
+  @("--font-path", $FontsDir)
+} else {
+  @()
+}
 # ── Compile or watch ────────────────────────────────────────
 if ($Watch) {
   Write-Host "Starting Typst watch mode..."
   Write-Host "  Source : $Source"
   Write-Host "  Output : $OutFile"
   Write-Host "  Press Ctrl+C to stop."
-  typst watch $Source $OutFile --root $Root
+  typst watch $Source $OutFile --root $Root @FontFlag
 } else {
   Write-Host "Compiling Neon Relic PDF..."
   Write-Host "  Source : $Source"
   Write-Host "  Output : $OutFile"
-  typst compile $Source $OutFile --root $Root
+  typst compile $Source $OutFile --root $Root @FontFlag
   if ($LASTEXITCODE -eq 0) {
     Write-Host "Build succeeded: $OutFile"
   } else {
