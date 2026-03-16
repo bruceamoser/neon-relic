@@ -43,5 +43,5 @@
 #include "chapters/16-travel.typ"
 #include "chapters/17-rival-factions.typ"
 #include "chapters/18-notable-members.typ"
-// #include "chapters/19-bestiary.typ"
+#include "chapters/19-bestiary.typ"
 // #include "chapters/20-glossary.typ"
