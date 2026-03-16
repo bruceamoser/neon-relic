@@ -210,6 +210,7 @@ sidebar:
   border-width: 1
   border-color: '#4a5a38'
   font-color: '#1e2010'
+  font-size: 8.5
   title-font-color: '#1a2a0e'
   title-font-style: bold
   padding: [3mm, 4mm, 3mm, 4mm]
