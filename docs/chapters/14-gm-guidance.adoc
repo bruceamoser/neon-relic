@@ -52,7 +52,7 @@ Every Case File (mission) is built on five elements. You don't need all five ful
 |===
 | Element | Question | Design Note
 
-| *Location* | Where is this happening? | One specific place — a town, a building, a neighborhood. Not a region. One gas station in rural Wyoming. One hospital. One concert venue. The 1980s location should feel tactile and era-specific.
+| *Location* | Where is this happening? | One specific place — a town, a building, a neighborhood. Not a region. One petrol station on a rural motorway. One hospital. One concert venue. The 1980s setting should feel tactile and era-specific — wherever your campaign is based, the location must have a physical reality your players can picture.
 | *Artifact* | What is the sourcebook item? | The thing that caused events to spiral. Every case has one artifact. Define its *Tier* (1–4), its *apparent property* (what it seems to do), and its *real effect* (what it actually does to the world around it).
 | *Threat* | What is the immediate danger? | The presenting problem: the entity, the cultist cell, the MJ-12 investigation, the cover-up. This is what the Covenant is responding to.
 | *Rival Faction* | Who else wants the artifact? | Even low-stakes cases should have a second party. The Compact, a private collector, a true believer. Rival factions create competing agendas and prevent simple extraction.
@@ -65,7 +65,7 @@ Write one sentence that describes the full case:
 
 _"A [Tier X artifact] has surfaced in [Location], attracting [Threat]. [Rival Faction] is already present. The complication: [personal element]."_
 
-Example: *"A Tier 2 artifact has surfaced in a shuttered Ohio psychiatric hospital, attracting Echoing Remnants that have begun killing the urban explorers who found the site. The Hellfire Consortium has purchased the property and has a crew inside. The complication: one of the explorers is the sister of Agent Castellano's disappeared informant."*
+Example: *"A Tier 2 artifact has surfaced in a shuttered psychiatric hospital outside Palermo, attracting Echoing Remnants that have begun killing the urban explorers who found the site. The Hellfire Consortium has purchased the property and has a crew inside. The complication: one of the explorers is the sister of Agent Castellano's disappeared informant."*
 
 If your mystery statement doesn't fit in one sentence, you have too much. Cut.
 

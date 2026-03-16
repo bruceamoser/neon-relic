@@ -329,12 +329,12 @@ Use this procedure to run from nothing to a playable case in one pass:
 > *Location:* 2 (Research laboratory — university).
 > *Complication:* 3 (Media attention — journalist, 48-hour deadline).
 >
-> **Case Setup:** The physics department at Holbrook University in Columbus, Ohio
+> **Case Setup:** The physics department at Holbrook University in Aberdeen, Scotland
 > has been receiving anomalous radio transmissions for three weeks. A Covenant analyst
 > matched the frequency signature to a Tier 2 artifact: a surplus military radio receiver
 > modified with components sourced from a 1943 German ESP research program. A local
-> science reporter is writing a "mystery signal" human-interest piece for the Columbus
-> Dispatch — deadline Friday.
+> science reporter is writing a "mystery signal" human-interest piece for the Aberdeen
+> Herald — deadline Friday.
 >
 > **Clock:** The journalist's article runs Friday morning. If the artifact is not
 > secured by then, the story triggers federal interest and the Covenant loses access
