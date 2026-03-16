@@ -18,7 +18,7 @@ Social conflict in Neon Relic uses the *Disposition model* — a lightweight sys
 
 Every NPC who is not immediately cooperative has a *Disposition* — a state describing their current openness to engagement. Disposition exists on a 5-point track:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Score*], [*State*], [*Behaviour*],
   [5], [*Open*], [The NPC wants to help. They volunteer information. No roll needed for basic cooperation.],

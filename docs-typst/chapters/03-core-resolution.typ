@@ -14,7 +14,7 @@ The foundation of Project Neon Relic relies on the classic *dice-pool variant* o
 
 The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 3fr, 1fr),
   [*Dice Type*], [*Color*], [*Source*], [*Typical Range*],
   [*Attribute Dice*], [White], [Character's innate biological capability], [1–5],
@@ -77,7 +77,7 @@ If both sides roll zero successes, the outcome is *no change* — the situation 
 
 The following pairings arise most frequently in play. Either side may push their roll as normal, gaining +1 Corruption.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 2fr, 3fr),
   [*Active Roll*], [*Opposing Roll*], [*Situation*],
   [Sneak (AGI)], [Investigate (WIT)], [Agent moves silently past a watchful guard or suspicious bystander],

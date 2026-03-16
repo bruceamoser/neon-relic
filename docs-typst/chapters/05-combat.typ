@@ -118,7 +118,7 @@ Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both
 
 Zones remain the canonical movement/range system. For VTT or tactical play, use this translation layer.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 2fr, 3fr),
   [*Zone Range*], [*Squares (5 ft grid)*], [*Meters (approx.)*], [*Notes*],
   [*Engaged*], [0–1 square], [0–2 m], [Same zone, arm's reach.],
@@ -173,7 +173,7 @@ For unarmed grapples, shoves, and disarms, see Special Melee Maneuvers below.
 
 All maneuvers require a successful melee attack roll. If the attack misses (no 6s), the maneuver fails entirely.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 2fr, 4fr),
   [*Maneuver*], [*Skill*], [*Effect*],
   [*Grapple*], [Brawl (STR) opposed by Force or Brawl (target's choice)], [Target is grappled: they cannot move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll).],
@@ -192,7 +192,7 @@ Roll *Firearms (AGI)* + Weapon Gear Bonus. On a hit, deal flat Damage to the tar
 
 === Range Penalties
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
   [*Weapon Type*], [*Engaged*], [*Near*], [*Short*], [*Long*], [*Distant*],
   [*Pistol (.38, 9mm)*], [−1 die], [—], [—], [−1 die], [Out of range],
@@ -218,7 +218,7 @@ A character *in cover* benefits from partial physical shielding.
 
 Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 2fr),
   [*Ammo State*], [*Die*], [*Notes*],
   [*Full magazine*], [d8], [Fresh load; most pistols and rifles.],
@@ -264,7 +264,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Knock Prone*], [Target is knocked to the ground. They must spend a Fast Action to stand.],

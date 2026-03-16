@@ -77,7 +77,7 @@ The Countdown is a *hidden tension clock* that tracks how far a threat has progr
 
 Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are DA-defined per case.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 3fr, 3fr),
   [Stage], [State], [What It Means], [Typical Narrative Effect],
   [1], [*Dormant*], [The threat is latent. The artifact is present but not yet destabilizing.], [Investigation can proceed without urgency. NPCs may be anxious but not in immediate danger.],
@@ -134,7 +134,7 @@ The agents can still succeed, but the cost has increased permanently. *Clock exp
 
 === Calibration Guide
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 3fr),
   [Session Length], [Recommended Stages], [Advance Rate],
   [*One-shot (3–4 hours)*], [3 stages], [1 advance per major scene (roughly every 45–60 minutes of play)],
@@ -148,7 +148,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 *Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. The Compact has a team on the way.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 2fr, 3fr),
   [Stage], [State], [Trigger], [Effect],
   [1], [Dormant], [Session open; clock begins ticking], [The journalist is alive and unaware. The Compact team is 2 hours out. The Mirror is in the penthouse.],
@@ -176,7 +176,7 @@ The 8-phase Case File structure is the backbone of every Neon Relic session. The
 
 Roll two d6s: the first die is the tens digit, the second is the units digit.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [d66], [Form], [Nature],
   [11], [Cassette tape], [Recordings of events before they happen; playback causes hemorrhaging],

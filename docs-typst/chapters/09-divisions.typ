@@ -71,7 +71,7 @@ The Department of Counterintelligence protects the Covenant from external threat
 
 === Wayfinder Talents (Choose 1 at Creation)
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*The Antiquarian's Eye*], [+1 Corruption], [Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.],
@@ -133,7 +133,7 @@ Choose one background that defines your agent's prior experience:
 
 === Recovery Talents (Choose 1 at Creation)
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*Conditioned Mind*], [—], [Once per session, entirely ignore the Corruption point generated from pushing a roll.],
@@ -202,7 +202,7 @@ Working in coordination with the Wayfinder Division's Department of Counterintel
 
 === Keep Talents (Choose 1 at Creation)
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*Containment Protocol*], [+1 Corruption], [Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a Hard (−2) roll to cross it.],
@@ -249,7 +249,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 
 === Stack Talents (Choose 1 at Creation)
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*Requisition Expert*], [+1 Corruption], [During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.],

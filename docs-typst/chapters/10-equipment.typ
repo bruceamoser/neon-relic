@@ -20,7 +20,7 @@ and a catastrophic breach. Treat it accordingly.
 
 == Investigative & Paranormal Tech
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 4fr, 1fr, 1fr),
   [*Item*], [*Effect*], [*Enc*], [*CL*],
 
@@ -55,7 +55,7 @@ and a catastrophic breach. Treat it accordingly.
 
 == Standard Tools & Survival
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 4fr, 1fr, 1fr),
   [*Item*], [*Effect*], [*Enc*], [*CL*],
 
@@ -82,7 +82,7 @@ and a catastrophic breach. Treat it accordingly.
 
 == 1980s Weaponry
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 3fr, 1fr),
   [*Weapon*], [*Gear Bonus*], [*Damage*], [*Type*], [*Range*], [*Special*], [*CL*],
 
@@ -124,7 +124,7 @@ and a catastrophic breach. Treat it accordingly.
 
 == Armor
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 3fr, 1fr),
   [*Armor*], [*AR*], [*Notes*], [*CL*],
 
@@ -171,7 +171,7 @@ per case with a successful Heal roll (Diff 1).
 
 === Supply Categories
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 3fr),
   [*Supply*], [*Die*], [*CL*], [*Roll Trigger*],
 
@@ -268,7 +268,7 @@ Every vehicle has five stats:
 
 === 1980s Vehicle Roster
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 2fr),
   [*Vehicle*], [*Speed*], [*AR*], [*Rel*], [*Hand*], [*Capacity / Notes*],
 
@@ -336,7 +336,7 @@ and inflicts 1 Wear on the vehicle from reckless driving.
 
 ==== Vehicle Maneuvers
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 3fr),
   [*Maneuver*], [*Requirement*], [*Effect*],
 
@@ -413,7 +413,7 @@ Repairing gear requires *time*, *parts*, and a *Craft* roll.
   [*Tools Required*],  [Basic toolkit (most repairs); specialized kit for electronics/artifacts],
 )
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 2fr),
   [*Condition*], [*Gear Die*], [*Repair Diff*], [*Time Required*],
 
@@ -456,7 +456,7 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
 - *1–2:* Parts ran short; step the Junk Die down one.
 - *Junk Die Exhausted:* No spare parts of that type remain. Acquire more (see Component Sourcing below).
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 3fr),
   [*Parts Category*], [*Resource Die*], [*Used For*],
 
@@ -541,7 +541,7 @@ minimum a *Junk Die (d6)* as parts; step it down after crafting.
 Improvised items begin with a *d8 Gear Die* (never start at d10 or d12 —
 they're held together with duct tape and prayer).
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 4fr),
   [*Improvised Item*], [*Craft Diff*], [*Time*], [*Notes*],
 

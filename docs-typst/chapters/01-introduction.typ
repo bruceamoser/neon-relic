@@ -75,7 +75,7 @@ The Covenant believes this numerical balance acts as a metaphysical anchor, keep
 
 Within the Covenant there are *three Divisions*, each responsible for a different stage of the artifact lifecycle:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 3fr, 5fr),
   [*Division*], [*Motto Segment*], [*Purpose*],
   [*The Wayfinder Division*], [_"What is found must be known."_], [Scholars and researchers who uncover the existence and locations of lost artifacts.],

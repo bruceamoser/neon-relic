@@ -46,7 +46,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 1 upgrades have no prerequisites.* Any can be built from the start of the campaign.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 3fr, 3fr),
   [*Facility*], [*DP Cost*], [*Narrative*], [*Mechanical Benefit*],
   [*Secure Communications Room*], [2], [Encrypted landline bank, reel-to-reel tape vault, scrambled HAM radio array. No one outside the Covenant can track calls to or from this room.], [+1 die on Command rolls when coordinating with Covenant contacts between Case Files. One free contact call per downtime (no CL requirement).],
@@ -58,7 +58,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 2 upgrades each require at least one Tier 1 facility to be built first.* Prerequisites listed per upgrade.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 2fr, 3fr, 2fr),
   [*Facility*], [*DP Cost*], [*Prerequisite*], [*Narrative*], [*Mechanical Benefit*],
   [*The Microfiche Archive*], [3], [Secure Communications Room], [Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm. A full-time archivist — never seen without reading glasses and cigarettes — maintains the stacks.], [Permanent *+2 Gear bonus* to Wits (Lore) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).],
@@ -71,7 +71,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 3 upgrades require at least two Tier 2 facilities to be built.* Prerequisites listed per upgrade.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 2fr, 3fr, 2fr),
   [*Facility*], [*DP Cost*], [*Prerequisite*], [*Narrative*], [*Mechanical Benefit*],
   [*Field Intelligence Network*], [5], [Microfiche Archive + Secure Communications Room], [A distributed network of informants, dead drops, and off-the-books government contacts who feed intelligence to the Covenant. Managed by a rotation of cutout contacts to maintain deniability.], [During Phase 2 (The Invitation), the team receives *one free additional clue* about the Case File's central threat before departure. +1 die on Investigation rolls to identify rival faction involvement.],
@@ -88,7 +88,7 @@ Beyond infrastructure, the team can recruit individual *contacts and specialists
 
 Personnel are not combatants. If the HQ is directly attacked, they flee or hide — they do not fight to defend the base.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 3fr, 2fr),
   [*Personnel*], [*DP Cost*], [*Who They Are*], [*Benefit*],
   [*Station Dispatcher (Police)*], [2], [A civilian 911 dispatcher who owes the Covenant a significant debt. Passes case-relevant police radio traffic when it crosses their desk.], [Once per Case File, request police incident records, scanner traffic intercepts, or a 10-minute window of police non-response in one location.],
@@ -155,7 +155,7 @@ Standing is tracked as a single score from *0 to 20*, shared by the entire cell.
 
 === Standing Ranks
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 4fr),
   [*Score*], [*Rank*], [*What It Means*],
   [0–4], [*Unknown*], [The cell is new or unproven. Covenant resources are minimal; access is limited to Tier 1 upgrades and standard CL 1–2 requisitions.],
@@ -171,7 +171,7 @@ Standing is tracked as a single score from *0 to 20*, shared by the entire cell.
 
 Standing increases at the end of a case when specific outcomes are achieved. All gains are cumulative — multiple criteria can apply in a single case.
 
-#nr-table(
+#nr-table-wide(
   columns: (3fr, 1fr, 3fr),
   [*Trigger*], [*Standing Gain*], [*Notes*],
   [Successful containment of primary artifact], [+2], [Artifact recovered and secure in transport or HQ],
@@ -192,7 +192,7 @@ Standing increases at the end of a case when specific outcomes are achieved. All
 
 Standing losses are immediate and cannot be avoided by narrative justification. The Covenant knows. It always knows.
 
-#nr-table(
+#nr-table-wide(
   columns: (3fr, 1fr, 3fr),
   [*Trigger*], [*Standing Loss*], [*Notes*],
   [Confirmed civilian casualties], [−2 per casualty], [Witnesses who survive and go public count as −3 instead],
@@ -212,7 +212,7 @@ Standing losses are immediate and cannot be avoided by narrative justification. 
 
 Standing unlocks access to resources, upgrades, and Covenant infrastructure that cannot be purchased with Development Points alone.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Reward*], [*Min. Standing*], [*Effect*],
   [*Tier 2 HQ Upgrades Unlocked*], [5], [Cell may begin purchasing Tier 2 facilities (see HQ Upgrade Tree). DP cost unchanged.],
@@ -232,7 +232,7 @@ Standing unlocks access to resources, upgrades, and Covenant infrastructure that
 
 Some HQ facilities already require specific prerequisites (DP investment and prior facilities). *Standing gates* apply on top of those prerequisites for the most sensitive upgrades. These upgrades cannot be built regardless of DP until the Standing threshold is met.
 
-#nr-table(
+#nr-table-wide(
   columns: (3fr, 1fr, 1fr),
   [*Facility*], [*DP Cost*], [*Min. Standing*],
   [*Microfiche Archive* (Tier 2)], [3 DP], [5],

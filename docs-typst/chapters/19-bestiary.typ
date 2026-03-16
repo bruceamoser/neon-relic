@@ -202,7 +202,7 @@ Special: [One sentence if applicable, or "—"]
 
 For quick reference when building encounters:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 2fr, 1fr),
   [Tier], [Label], [Description], [Typical Strength],
   [1], [*Grunt*], [No special abilities; acts in mobs; simplified stat block], [2–3],
@@ -368,7 +368,7 @@ For quick reference when building encounters:
 
 The Corruption thresholds from the Corruption, Fear & Healing chapter apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [Stage], [Corruption], [Behavior],
   [*0*], [0–3], [Normal. No mechanical difference from a baseline NPC.],
@@ -412,7 +412,7 @@ Choose the entity's Tier from the NPC Tier Reference table. Named Threats requir
 
 Use the following baselines as starting points:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 1fr, 1fr, 1fr),
   [Tier], [STR], [AGI], [WIT], [EMP],
   [Grunt], [2–3], [2–3], [1–2], [1–2],

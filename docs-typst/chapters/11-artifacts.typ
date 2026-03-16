@@ -81,7 +81,7 @@ Assign one risk tag to every artifact entry:
 Some high-threat artifacts emit corruption into the environment even when not
 directly activated by an agent.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 2fr, 3fr),
   [*Emission Type*], [*Baseline Radius*], [*Corruption Effect*], [*Use Case*],
 
@@ -108,7 +108,7 @@ transfer).
 
 == Catalog of 1980s Occult Artifacts
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 2fr, 3fr, 3fr, 2fr),
   [*Artifact*], [*Mundane Appearance*], [*Effect*], [*Cost & Fracture (on 1)*], [*Emission*],
 
@@ -154,7 +154,7 @@ the agent carrying them. This interacts with the Encumbrance system in two ways.
 
 Each artifact has a baseline Encumbrance value equal to its Corruption cost tier:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 3fr),
   [*Artifact Tier*], [*Enc.*], [*Notes*],
 
@@ -207,7 +207,7 @@ No free rides. No safe artifacts.
 Every artifact needs five defined components. Fill in each section before
 introducing the artifact to players.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 3fr, 4fr),
   [*Component*], [*What It Defines*], [*Design Prompt*],
 
@@ -241,7 +241,7 @@ See Containment Profiles below.])
 An artifact's Corruption cost is not arbitrary — it flows directly from the power
 of the effect. Use this framework to set Corruption cost and choose the Artifact Die.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 2fr, 4fr),
   [*Tier*], [*Corruption Cost*], [*Artifact Die*], [*Effect Power Level*],
 
@@ -272,7 +272,7 @@ These rules prevent artifacts from becoming automatic wins:
 Containment is half the job. Before introducing an artifact, define how it is
 kept inert during transport and what triggers it inadvertently.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 3fr, 3fr),
   [*Containment Type*], [*How It Works*], [*Example Trigger (Inadvertent Activation)*],
 
@@ -333,7 +333,7 @@ it when:
 - A containment ritual is performed correctly (+1 Decay per ritual)
 - The artifact fractures (Artifact Die = 1) and the PC survives (+1 Decay)
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 4fr),
   [*Decay Score*], [*Artifact Die*], [*Status*],
 

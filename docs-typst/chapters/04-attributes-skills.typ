@@ -23,7 +23,7 @@ Characters are defined by *four core attributes*, representing their fundamental
 
 The twelve core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 4fr),
   [*Attribute*], [*Skill*], [*Application in the 1980s Occult Setting*],
   [*Strength*], [Force], [Breaking down sealed bunker doors, forcing open containment chambers.],
@@ -66,7 +66,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 
 The following stunts may be purchased on *any* successful skill roll:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Faster*], [Accomplish the action in half the expected time. No narrative explanation needed — you just find the short path.],
@@ -83,7 +83,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Force
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Controlled Break*], [You force open the door/lock/container without damaging the contents or triggering adjacent mechanisms. Finesse in violence.],
@@ -93,7 +93,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Brawl
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Stay Down*], [Target cannot stand up until the start of your next turn (they must spend a Slow Action to rise but simply cannot).],
@@ -103,7 +103,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Endure
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Grind Through*], [You complete the physical task despite having failed an earlier linked roll this scene (you were already exhausted but push through anyway).],
@@ -117,7 +117,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Sneak
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Shadow Step*], [You can take one additional move action as part of the same turn/scene phase without breaking your stealth. You haven't just crept in — you've repositioned perfectly.],
@@ -127,7 +127,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Sleight of Hand
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Undetected*], [The target of your pick-pocket, lift, or plant does not notice the action even after the immediate scene ends. They will assume the item was misplaced, not taken.],
@@ -137,7 +137,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Firearms
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Aimed Shot*], [The shot hits exactly the intended location (specific limb, lock, cable, tire). DA treats the result as precision even at range.],
@@ -151,7 +151,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Investigate
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Pattern Lock*], [You not only find the evidence — you identify why it matters. The DA must tell you one piece of context about the object's history or origin.],
@@ -161,7 +161,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Tech
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Trace*], [Successfully accessing a system also identifies who else accessed it recently — one account or one physical terminal is revealed.],
@@ -171,7 +171,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Lore
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Deep Context*], [Your knowledge is not just what this thing is — you know what it was used for. DA provides one historical or ritual context detail beyond what would normally be available.],
@@ -185,7 +185,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Manipulate
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Bought Silence*], [The target doesn't just comply — they will not mention this conversation to anyone for at least 24 hours. Your leverage persists.],
@@ -195,7 +195,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Command
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Rally*], [One Broken ally in the scene immediately acts on their next turn as if they had recovered — they can take their full action once before the impairment resumes.],
@@ -205,7 +205,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 ==== Psychoanalyze
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Pressure Point*], [You've identified something this person fears or desperately needs. The DA must reveal one personal vulnerability, driving motivation, or exploitable need.],
@@ -219,7 +219,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 General Talents are cross-Division abilities available to any agent regardless of Division affiliation. They are acquired through advancement (cost: 1 Advancement Point each) and represent learned tradecraft, personal discipline, and survivor instincts.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 2fr, 1fr, 4fr),
   [*Talent*], [*Type*], [*Prerequisites*], [*Tag*], [*Effect*],
   [*Hair Trigger*], [Once per combat], [AGI 3+], [_(Initiative)_], [After initiative cards are revealed but before the first action, discard your card and draw a new one, keeping the new result.],

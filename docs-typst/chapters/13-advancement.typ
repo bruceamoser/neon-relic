@@ -95,7 +95,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
 
 === Spending XP
 
-#nr-table(
+#nr-table-wide(
   columns: (3fr, 1fr, 2fr),
   [*Upgrade*], [*XP Cost*], [*Limit*],
   [Increase a Skill by 1], [5 XP], [Maximum rating of 5],
@@ -111,7 +111,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 *The DA runs the debrief questions:*
 
-#nr-table(
+#nr-table-wide(
   columns: (3fr, 1fr, 2fr),
   [*Debriefing Question*], [*Answer*], [*Result*],
   [Did you participate in the session?], [Yes], [+1 XP],

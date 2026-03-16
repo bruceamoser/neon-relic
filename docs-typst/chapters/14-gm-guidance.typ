@@ -56,7 +56,7 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 Every Case File (mission) is built on five elements. You don't need all five fully developed before play — you need the skeleton, then you let the players fill in the rest.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Element*], [*Question*], [*Design Note*],
   [*Location*], [Where is this happening?], [One specific place — a town, a building, a neighborhood. Not a region. One petrol station on a rural motorway. One hospital. One concert venue. The 1980s setting should feel tactile and era-specific — wherever your campaign is based, the location must have a physical reality your players can picture.],
@@ -120,7 +120,7 @@ A Countdown Clock has:
 
 *Clock Name:* The Hospital Burns Down (the Consortium will destroy the evidence — and the Remnants — when they've extracted what they need)
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 3fr, 3fr),
   [*Stage*], [*Event*], [*Advance Trigger*],
   [1], [Consortium team enters the hospital.], [Session begins.],

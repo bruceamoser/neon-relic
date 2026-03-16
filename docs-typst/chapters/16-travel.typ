@@ -57,7 +57,7 @@ On arrival, any damage or injuries sustained during travel remain in effect. Any
 
 == Vehicle Types and Travel Speeds
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 1fr, 2fr, 3fr),
   [Vehicle], [Speed], [Capacity (Enc.)], [Noise], [Notes],
   [*On Foot*], [Slow], [Personal carry only], [Silent], [Surveillance-proof but exhausting. Extended travel = risk of Agility damage from fatigue.],

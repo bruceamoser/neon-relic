@@ -20,7 +20,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 === Sources of Corruption
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 4fr),
   [*Trigger*], [*Corruption Gained*], [*Description*],
   [*Pushing a Roll*], [+1], [Exerting your absolute limits invites psychic static.],
@@ -33,7 +33,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 === Corruption Effects
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Corruption*], [*Stage*], [*Mechanical & Narrative Consequence*],
   [*1–3*], [Nosebleeds / Migraines], [Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control.],
@@ -52,7 +52,7 @@ Because Corruption naturally builds toward lethal levels, characters must active
 
 === Methods of Recovery
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 3fr, 3fr),
   [*Method*], [*Effect*], [*Requirements*],
   [*Anchor Scene*], [Heal *1d4 Corruption*], [Once per session. Dedicate a scene to interacting with your Anchor.],
@@ -71,7 +71,7 @@ Every character begins with an *Anchor* — a tangible, physical object linked t
 
 === Random 1980s Memento / Anchor Table (Roll D66)
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr, 1fr, 4fr),
   [*Roll*], [*Memento*], [*Roll*], [*Memento*],
   [11], [A severely chewed, red Bic pen belonging to a missing sibling.], [41], [A blood-stained matchbook from a notorious neon-lit nightclub.],
@@ -132,7 +132,7 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 
 ==== Four Outcomes
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 3fr),
   [*Rolled 6s?*], [*Rolled 1s?*], [*Result*],
   [Yes], [No], [Clean pass. No consequence.],
@@ -149,7 +149,7 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 
 On a failed Fear check (no 6s), roll *d6*:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Roll*], [*Response*], [*What Happens*],
   [*1*], [*Fight*], [Attack nearest creature (ally or foe) with bare hands this round. Cannot use weapons.],
@@ -164,7 +164,7 @@ On a failed Fear check (no 6s), roll *d6*:
 
 Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The DA uses it to decide *when* to call for a check and how to frame the fiction.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 4fr),
   [*Rating*], [*Threat Level*], [*Examples*],
   [*1*], [Unsettling], [A shadow that moves wrong. A sound that shouldn't exist. A photograph with an extra figure.],

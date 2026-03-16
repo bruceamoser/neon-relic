@@ -16,7 +16,7 @@ Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — 
 
 Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are four playable Divisions:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 1fr, 2fr),
   [*Division*], [*Role*], [*CL*], [*Key Attributes*],
   [*Wayfinder*], [Research and intelligence. You find what others don't know exists.], [3], [Wits, Empathy],
@@ -50,7 +50,7 @@ Your background is primarily a narrative statement — it tells you and the DA w
 
 Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, skill point pool (used in Step 4), and *Clearance Level modifier* — the longer you've served the Covenant, the higher your authorization.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 1fr, 1fr, 1fr),
   [*Age Group*], [*Age Range*], [*Attribute Points*], [*Skill Points*], [*CL Modifier*],
   [*Young*], [22–28], [14], [10], [−1],
@@ -62,7 +62,7 @@ Younger characters are physically sharper (more attribute points); older charact
 
 Distribute your *Attribute Points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 4fr),
   [*Attribute*], [*Range*], [*Description*],
   [*Strength*], [2–5], [Physical power, endurance, and resistance to bodily harm.],
@@ -85,7 +85,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 
 Distribute your *Skill Points* (determined by your Age Group in Step 3) across the twelve core skills. No single skill may exceed *3* at character creation.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 1fr, 2fr, 4fr),
   [*Skill*], [*Attr*], [*Starting Max*], [*Recommended Division Priority*],
   [Force], [STR], [3], [Recovery],
@@ -159,7 +159,7 @@ Once attributes are set, note the following:
 
 Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*Division*], [*Item*], [*Granted Abilities*],
   [Wayfinder], [*Verdant Codex*], [Secures memory, decodes language and symbols, maps artifact locations, preserves documents.],
@@ -285,7 +285,7 @@ The following example demonstrates a complete character build for a Recovery age
 
 Petra's six years in DEA field operations put her at age 34 — she selects *Experienced* (29–38), giving her *13 Attribute Points* and *12 Skill Points*.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 1fr),
   [*Attribute*], [*Score*], [*Reasoning*],
   [Strength], [4], [Ex-agency physical conditioning],
@@ -302,7 +302,7 @@ _(13 points spent: 4 + 4 + 3 + 2 = 13)_
 
 === Step 4: Skills (12 points)
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 1fr, 1fr),
   [*Skill*], [*Rating*], [*Reasoning*],
   [Sneak], [3], [Core recovery skill; DEA background],

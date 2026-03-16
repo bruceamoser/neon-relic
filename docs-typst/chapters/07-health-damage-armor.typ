@@ -14,7 +14,7 @@ In the Year Zero Engine, characters do not possess a traditional, escalating poo
 
 Every source of damage specifies its type and target attribute. The attack defines the damage, not the defender.
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 2fr, 4fr),
   [*Damage Type*], [*Target*], [*Sources*],
   [*Physical*], [*Strength* (violence, toxins, falls) or *Agility* (exhaustion, prolonged exertion)], [Weapons, environmental hazards, physical traps, mundane combat.],
@@ -53,7 +53,7 @@ Being *Broken* is not the same as being dead. Death is a separate, subsequent ev
 
 === The Three States
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr),
   [*State*], [*Status*], [*What It Means*],
   [*Broken / Unconscious*], [Any Attribute = 0. Critical Injury rolled.], [Character is incapacitated. They can still be saved.],
@@ -152,7 +152,7 @@ A character with *Medical Training* (Keep talent) may spend a Slow Action making
 
 Roll when Broken by *Strength or Agility* damage.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr, 3fr),
   [*D66*], [*Injury*], [*Mechanical Effect*], [*Healing*],
   [11], [*Wind Knocked Out*], [No actions next turn; Strength returns to 1.], [Recovers automatically end of scene.],
@@ -203,7 +203,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
   *All mental criticals:* Gain *+1 Corruption* upon rolling this table, in addition to any listed in the individual result.
 ])
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 2fr, 4fr, 3fr),
   [*D66*], [*Injury*], [*Mechanical Effect*], [*Recovery*],
   [11], [*Shaken*], [−1 die on all WIT and EMP rolls until end of scene. Wits or Empathy returns to 1.], [Rest or reassurance (Empathy roll, Difficulty 1).],
