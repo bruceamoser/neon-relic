@@ -67,14 +67,8 @@
     margin: (top: 60mm, bottom: 40mm, left: 30mm, right: 30mm),
   )[
     #align(center)[
-      // CLASSIFIED stamp
-      #block(
-        stroke: 3pt + clr-deep-red,
-        inset: (x: 8mm, y: 4mm),
-      )[
-        #text(font: font-heading, size: 28pt, weight: "bold", fill: clr-deep-red,
-              tracking: 6pt)[CLASSIFIED]
-      ]
+      // CLASSIFIED stamp SVG
+      #image("../../assets/svg/stamp-classified.svg", width: 80mm)
       #v(12mm)
 
       // Part number
@@ -332,5 +326,18 @@
 #let section-rule() = {
   v(3mm)
   line(length: 100%, stroke: 1pt + clr-olive-mid)
+  v(3mm)
+}
+
+// ─────────────────────────────────────────────────────────────
+// DIVIDER RULE
+// Decorative SVG horizontal divider between major sections.
+// Renders at full column width inline in the text flow.
+//
+// Usage: #divider()
+// ─────────────────────────────────────────────────────────────
+#let divider() = {
+  v(3mm)
+  image("../../assets/svg/divider-rule.svg", width: 100%)
   v(3mm)
 }

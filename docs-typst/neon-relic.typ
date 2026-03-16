@@ -22,6 +22,35 @@
 // ── Apply brand theme ────────────────────────────────────────
 #show: apply-theme
 
+// ── Title Page ──────────────────────────────────────────────
+#page(
+  background: image("../assets/svg/title-page-dossier.svg", width: 100%, height: 100%),
+  columns: 1,
+  margin: (top: 50mm, bottom: 40mm, left: 30mm, right: 30mm),
+)[
+  #align(center)[
+    #v(1fr)
+    #text(font: font-heading, size: 52pt, weight: "bold", fill: clr-olive-deep)[
+      NEON RELIC
+    ]
+    #v(4mm)
+    #text(font: font-heading, size: 14pt, fill: clr-olive-light, tracking: 3pt)[
+      CORE RULES
+    ]
+    #v(10mm)
+    #line(length: 50%, stroke: 1pt + clr-olive)
+    #v(10mm)
+    #text(font: font-body, size: 11pt, fill: clr-tan-text, style: "italic")[
+      Designed by Bruce Amoser and Stu
+    ]
+    #v(4mm)
+    #text(font: font-body, size: 9pt, fill: clr-tan-text)[
+      A tabletop roleplaying game powered by the Year Zero Engine
+    ]
+    #v(1fr)
+  ]
+]
+
 // ── Chapters ────────────────────────────────────────────────
 // Uncomment each chapter as it is converted (Phase 2 work).
 
