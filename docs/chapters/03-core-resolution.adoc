@@ -52,9 +52,14 @@ When two characters are directly working against each other — a guard watching
 
 === Tie-Breaking
 
-> **Design Decision:** In Neon Relic, ties are resolved *in favor of the active party* — the character initiating the action. +
+> **Design Decision:** In Neon Relic, ties are resolved *in favor of the player character*. If a PC is involved in an opposed roll, a tie is a player win — regardless of who initiated the action. +
 > +
-> **Rationale:** Neon Relic is an action-and-investigation game. Agents are protagonists taking risks. A tie should reward decisive action rather than passive defense. The threat of failure is already baked into the Corruption cost of pushing — we don't need the additional drag of defender-wins ties slowing down forward momentum. This differs from _Vaesen_ (defender wins) and aligns more closely with the feel of _Alien RPG_.
+> **Rationale:** The active-party rule punishes players whenever a hostile NPC takes the initiative. Corruption costs and the asymmetric difficulty of the Corruption track already provide consistent pressure. Giving NPCs tie wins would compound that pressure without interesting dramatic benefit. This aligns with _Alien RPG_ and the general YZE design principle of player-favorable resolution. +
+> +
+> **Edge cases:** +
+> * _PC vs. NPC:_ The PC wins, regardless of who initiated. +
+> * _NPC vs. NPC:_ Equal nonzero successes = no change; both zero = no change (see below). +
+> * _PC vs. PC:_ The DA rules in context; no mechanical default applies.
 
 If both sides roll zero successes, the outcome is *no change* — the situation remains unresolved, and the DA should advance the fiction in a direction that applies pressure (the confrontation escalates, time runs out, a third party notices, etc.). The acting character does *not* gain Corruption from a zero-zero tie.
 
@@ -80,7 +85,7 @@ The following pairings arise most frequently in play. Either side may push their
 
 === Pushed Opposed Rolls
 
-Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, the active party wins as normal.
+Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, apply the standard tie-breaking rule: the PC wins if a PC is involved.
 
 ---
 
