@@ -25,7 +25,7 @@
 // ── Chapters ────────────────────────────────────────────────
 // Uncomment each chapter as it is converted (Phase 2 work).
 
-// #include "chapters/01-introduction.typ"
+#include "chapters/01-introduction.typ"
 // #include "chapters/02-character-creation.typ"
 // #include "chapters/03-core-resolution.typ"
 // #include "chapters/04-attributes-skills.typ"
@@ -45,21 +45,3 @@
 // #include "chapters/18-notable-members.typ"
 // #include "chapters/19-bestiary.typ"
 // #include "chapters/20-glossary.typ"
-
-// ── Placeholder page (remove when first chapter is included) ─
-#place(
-  top + center,
-  dy: 40%,
-  block[
-    #align(center)[
-      #text(size: 24pt, weight: "bold", fill: clr-olive-deep)[NEON RELIC] \
-      #v(4mm)
-      #text(size: 14pt, fill: clr-olive)[Core Rules — Typst Conversion In Progress] \
-      #v(8mm)
-      #text(size: 10pt, style: "italic", fill: clr-near-black)[
-        Phase 1 infrastructure complete. \
-        Enable chapter includes above as each chapter is converted.
-      ]
-    ]
-  ]
-)
