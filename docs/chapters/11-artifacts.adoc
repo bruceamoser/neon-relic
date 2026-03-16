@@ -75,34 +75,39 @@ Emission is optional per artifact and should be tied to tier and narrative stake
 
 == Catalog of 1980s Occult Artifacts
 
-[%header,cols="2,2,3,3"]
+[%header,cols="2,2,3,3,2"]
 |===
-| Artifact | Mundane Appearance | Effect | Cost & Fracture (on 1)
+| Artifact | Mundane Appearance | Effect | Cost & Fracture (on 1) | Emission
 
 | *The Betamax of St. Jude*
 | Degraded Betamax tape in unmarked black sleeve.
 | Displays the immediate 10-minute future when played on a VCR. Auto-success on any opposed Wits or Agility roll in the current scene.
 | *2 Corruption.* VCR combusts; user temporarily blinded by visions of their own death.
+| *Pulse* — when any VCR in the same building powers on, future-vision fragments leak to all agents in the same zone. +1 Corruption.
 
 | *The Obsidian Walkman*
 | Heavy, modified Sony cassette player with stone-like casing.
 | Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues or bypass Investigation rolls.
 | *1 Corruption.* User deafened by psychic static; gains permanent phobia of silence.
+| *Aura* — the dead broadcast continuously while the Walkman is carried. +1 Corruption at scene start for the carrier and all agents sharing the zone.
 
 | *The Oppenheimer Lens*
 | Aviator sunglasses with fused desert-glass lenses.
 | See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions.
 | *1 Corruption.* Lenses shatter; shards cause 1 permanent Agility damage.
+| —
 
 | *The Judas Coin*
 | Heavy silver denarius, unnaturally warm.
 | Target overwhelmed by greed or guilt during social interaction. Auto-success on Empathy (Manipulate).
 | *2 Corruption.* Coin burns through user's flesh (1 physical damage); target becomes violently hostile.
+| *Pulse* — when any monetary transaction occurs in the same zone (payment, barter, till), the Coin pulses guilt to the nearest agent. +1 Corruption.
 
 | *The Chronos Polaroid*
 | Polaroid SX-70 camera smelling of ozone.
 | Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.
 | *1 Corruption.* Flash acts as beacon, alerting nearest supernatural entity to party's exact location.
+| —
 |===
 
 ---
