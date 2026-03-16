@@ -474,18 +474,7 @@ Expected output: `True`
 
 > **Note:** Cross-references between chapters (`xref:XX-name.adoc[Title]`) produce working internal hyperlinks in the PDF because all chapters are included via `include::` directives in `docs/neon-relic.adoc`. Compiling individual chapter files will NOT produce working links.
 
-### 3. Create Release Zip
-
-PowerShell example:
-
-```powershell
-$version = "1.0.0"
-$zipPath = "docs/output/neon-relic-$version.zip"
-if (Test-Path $zipPath) { Remove-Item $zipPath }
-Compress-Archive -Path docs/output/neon-relic.pdf -DestinationPath $zipPath
-```
-
-### 4. Commit Release Metadata/Docs Changes
+### 3. Commit Release Metadata/Docs Changes
 
 ```sh
 git add .
@@ -493,19 +482,32 @@ git commit -m "docs: add release process and prepare vX.Y.Z artifacts"
 git push origin main
 ```
 
-### 5. Update GitHub Repository Description (Optional but Recommended)
+### 4. Update GitHub Repository Description (Optional but Recommended)
 
 ```sh
 gh repo edit bruceamoser/neon-relic --description "Neon Relic: Year Zero Engine occult investigation RPG set in an alternate 1980s."
 ```
 
-### 6. Create GitHub Release
+### 5. Create GitHub Release
 
-```sh
-gh release create vX.Y.Z docs/output/neon-relic-X.Y.Z.zip \
-  --repo bruceamoser/neon-relic \
-  --title "X.Y.Z" \
-  --notes "Release X.Y.Z: updated core rules and generated book artifact."
+Attach the PDF directly — no zip needed. GitHub releases support raw file uploads.
+
+PowerShell example using a multiline notes variable:
+
+```powershell
+$version = "X.Y.Z"
+$notes = @"
+Neon Relic $version
+
+- Summary item one
+- Summary item two
+- Summary item three
+"@
+
+gh release create v$version docs/output/neon-relic.pdf `
+  --repo bruceamoser/neon-relic `
+  --title $version `
+  --notes $notes
 ```
 
 Notes:
@@ -513,25 +515,6 @@ Notes:
 - Keep release title numeric (`1.0.0`) and tag prefixed (`v1.0.0`).
 - Attach only generated artifacts intended for consumers.
 - Do **not** pass literal `\n` escape sequences in release notes. Use an actual multiline body.
-
-### 6a. Release Notes Template
-
-PowerShell example using a multiline variable:
-
-```powershell
-$notes = @"
-Neon Relic X.Y.Z
-
-- Summary item one
-- Summary item two
-- Summary item three
-"@
-
-gh release create vX.Y.Z docs/output/neon-relic-X.Y.Z.zip `
-  --repo bruceamoser/neon-relic `
-  --title "X.Y.Z" `
-  --notes $notes
-```
 
 Suggested release note structure:
 
@@ -543,7 +526,7 @@ Neon Relic X.Y.Z
 - Release artifact notes
 ```
 
-### 7. Validate Published Release
+### 6. Validate Published Release
 
 ```sh
 gh release view vX.Y.Z --repo bruceamoser/neon-relic
@@ -552,4 +535,4 @@ gh release view vX.Y.Z --repo bruceamoser/neon-relic
 Confirm:
 - tag exists
 - release is published
-- zip asset is attached and downloadable
+- PDF asset is attached and downloadable
