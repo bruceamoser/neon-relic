@@ -28,7 +28,7 @@
 #include "chapters/01-introduction.typ"
 #include "chapters/02-character-creation.typ"
 #include "chapters/03-core-resolution.typ"
-// #include "chapters/04-attributes-skills.typ"
+#include "chapters/04-attributes-skills.typ"
 // #include "chapters/05-combat.typ"
 // #include "chapters/06-social-conflict.typ"
 // #include "chapters/07-health-damage-armor.typ"
