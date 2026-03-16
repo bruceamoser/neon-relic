@@ -32,7 +32,7 @@
 #include "chapters/05-combat.typ"
 #include "chapters/06-social-conflict.typ"
 #include "chapters/07-health-damage-armor.typ"
-// #include "chapters/08-corruption-fear-healing.typ"
+#include "chapters/08-corruption-fear-healing.typ"
 // #include "chapters/09-divisions.typ"
 // #include "chapters/10-equipment.typ"
 // #include "chapters/11-artifacts.typ"
