@@ -12,11 +12,11 @@ To maintain consistent narrative flow and emulate the pacing of a detective seri
 
 A standard game session — a *"Case File"* — follows eight phases:
 
-= Phase 1: The Prologue
+== Phase 1: The Prologue
 
 The session begins with brief, roleplayed vignettes detailing the characters' daily lives. This grounds the characters in 1980s reality, establishing their humanity and interpersonal drama before the horror begins.
 
-= Phase 2: The Invitation
+== Phase 2: The Invitation
 
 The characters receive the narrative hook. In the 80s setting, this could be:
 
@@ -25,7 +25,7 @@ The characters receive the narrative hook. In the 80s setting, this could be:
 - A clandestine briefing from a shadow-broker in a neon-lit diner
 - A coded message on a BBS bulletin board
 
-= Phase 3: Preparation & Equipping (The Stack)
+== Phase 3: Preparation & Equipping (The Stack)
 
 Conducted at the player's Headquarters:
 
@@ -33,21 +33,21 @@ Conducted at the player's Headquarters:
 + *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
 + *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See the Equipment chapter for the Resource Die system and per-category die sizes.
 
-= Phase 4: The Journey
+== Phase 4: The Journey
 
 The DA describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage* — a floating +1 bonus die usable at any critical point during the mystery.
 
-= Phase 5: Arrival
+== Phase 5: Arrival
 
 The team arrives at the macro-location (a sprawling abandoned shopping mall, a remote fog-shrouded logging town, etc.). The DA orients the players and introduces local NPCs holding peripheral clues.
 
-= Phase 6: Places (The Investigation)
+== Phase 6: Places (The Investigation)
 
 The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the DA initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
 
 See *Countdown Mechanics* below for the full rules.
 
-= Phase 7: The Confrontation
+== Phase 7: The Confrontation
 
 The climax. Players must synthesize gathered clues to:
 
@@ -55,7 +55,7 @@ The climax. Players must synthesize gathered clues to:
 - Utilize an opposing artifact to neutralize the threat
 - Engage in desperate, lethal combat with the anomaly or rival cultists
 
-= Phase 8: The Aftermath
+== Phase 8: The Aftermath
 
 Survivors return to base. During this phase:
 
@@ -69,11 +69,11 @@ During the Aftermath, the team earns *Development Points (DP)* based on their pe
 
 #section-rule()
 
-= Countdown Mechanics
+== Countdown Mechanics
 
 The Countdown is a *hidden tension clock* that tracks how far a threat has progressed during investigation. Players know the clock exists — the Covenant has briefed them that time is limited — but they do not know exactly how many steps remain.
 
-== Clock Structure
+=== Clock Structure
 
 Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are DA-defined per case.
 
@@ -87,7 +87,7 @@ Every Countdown has *5 stages*, named by their escalation level. Not every case 
   [5], [*Crisis*], [No more investigation time. The threat forces confrontation now.], [Forced confrontation scene. If the agents do not act, see *Clock Expiry* below.],
 )
 
-== Advancing the Clock
+=== Advancing the Clock
 
 The DA advances the clock *one stage* when one of the following triggers occurs:
 
@@ -101,7 +101,7 @@ The DA advances the clock *one stage* when one of the following triggers occurs:
   [*Artifact activation*], [A PC or NPC directly interacts with the artifact in an uncontrolled way. This advances the clock by 2 if the activation was accidental.],
 )
 
-== Slowing and Pausing the Clock
+=== Slowing and Pausing the Clock
 
 The clock can be *slowed* (the next tick is delayed) or *held* (one stage does not advance despite trigger) by specific agent actions:
 
@@ -113,7 +113,7 @@ The clock can be *slowed* (the next tick is delayed) or *held* (one stage does n
   [*Full containment of the artifact*], [Clock stops advancing. The immediate threat is on hold until the artifact is removed from containment.],
 )
 
-== Reversing the Clock
+=== Reversing the Clock
 
 The clock *cannot typically be reversed* — once a stage is reached, its effects persist. However:
 
@@ -122,7 +122,7 @@ The clock *cannot typically be reversed* — once a stage is reached, its effect
 
 These require significant resources, time, and usually a Lore roll at Difficulty 3 or 4. They are not guaranteed.
 
-== Clock Expiry (Crisis Without Resolution)
+=== Clock Expiry (Crisis Without Resolution)
 
 If the *Crisis* stage is reached without the agents in position for the confrontation, the case does not end — it gets worse:
 
@@ -132,7 +132,7 @@ If the *Crisis* stage is reached without the agents in position for the confront
 
 The agents can still succeed, but the cost has increased permanently. *Clock expiry is not a game over* — it is a consequence.
 
-== Calibration Guide
+=== Calibration Guide
 
 #nr-table(
   columns: (1fr, 2fr, 3fr),
@@ -144,7 +144,7 @@ The agents can still succeed, but the cost has increased permanently. *Clock exp
 
 Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style — investigators who want to solve everything cleanly need a slower clock; players who enjoy pressure need it fast.
 
-== Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
+=== Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
 
 *Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. The Compact has a team on the way.
 
@@ -158,7 +158,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 #section-rule()
 
-= Cross-References
+== Cross-References
 
 - DA guidance for building and calibrating Countdown clocks: see the Director of Agents Guidance chapter.
 - Corruption gain mechanics: see the Corruption, Fear & Healing chapter.
@@ -166,13 +166,13 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 #section-rule()
 
-= Case File Generator Tables
+== Case File Generator Tables
 
 The 8-phase Case File structure is the backbone of every Neon Relic session. The tables below give GMs a fast oracle system for building a functional case in under 15 minutes. Roll on each table in sequence or pick entries that fit your campaign arc.
 
 #section-rule()
 
-== d66 Artifact Type
+=== d66 Artifact Type
 
 Roll two d6s: the first die is the tens digit, the second is the units digit.
 
@@ -219,7 +219,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 
 #section-rule()
 
-== d6 Inciting Incident
+=== d6 Inciting Incident
 
 How does the cell first become aware of the case?
 
@@ -236,7 +236,7 @@ How does the cell first become aware of the case?
 
 #section-rule()
 
-== d6 Location
+=== d6 Location
 
 Where does the case take place?
 
@@ -253,7 +253,7 @@ Where does the case take place?
 
 #section-rule()
 
-== d6 Complication
+=== d6 Complication
 
 What makes this case harder than it should be?
 
@@ -270,7 +270,7 @@ What makes this case harder than it should be?
 
 #section-rule()
 
-== d6 Named Threat (Optional)
+=== d6 Named Threat (Optional)
 
 If the campaign calls for a recurring antagonist, determine their involvement:
 
@@ -287,7 +287,7 @@ If the campaign calls for a recurring antagonist, determine their involvement:
 
 #section-rule()
 
-== Quick Case Build (15-Minute Prep Guide)
+=== Quick Case Build (15-Minute Prep Guide)
 
 Use this procedure to run from nothing to a playable case in one pass:
 
@@ -299,7 +299,7 @@ Use this procedure to run from nothing to a playable case in one pass:
 + *Define the clock.* What happens if the cell does not act within 1–2 sessions? The artifact is moved, activated, or a civilian dies.
 + *Use the 8-phase structure.* The tables populate Phases 1 (Intelligence Brief) and 2 (Research and Preparation). Everything else emerges from play.
 
-=== Worked Example: "The Holbrook Frequency"
+==== Worked Example: "The Holbrook Frequency"
 
 #design-note([
   *Rolled:* d66 = 23 (Radio receiver — parallel timeline transmissions). \

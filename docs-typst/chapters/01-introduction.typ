@@ -12,14 +12,14 @@
 
 The game uses the *Year Zero Engine (YZE)* dice-pool variant --- the same framework behind _Vaesen_, _Mutant: Year Zero_, _Forbidden Lands_, and the _Alien RPG_. If you have played any of those, the core dice mechanics will feel familiar. What makes Neon Relic different is its *Corruption* system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
 
-= What This Game Is
+== What This Game Is
 
 - *Episodic investigation.* Each session follows a structured *Case File* --- an "artifact-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
 - *Base management between missions.* The team maintains a *Headquarters* --- a Covenant facility they upgrade, staff, and defend over the course of a campaign.
 - *Psychological attrition.* The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
 - *Analog procedural thriller.* No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
 
-= What This Game Is Not
+== What This Game Is Not
 
 - Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
 - Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
@@ -27,11 +27,11 @@ The game uses the *Year Zero Engine (YZE)* dice-pool variant --- the same framew
 
 #section-rule()
 
-= The 1980s Setting
+== The 1980s Setting
 
 The world of Project Neon Relic is an amalgamation of neon-noir aesthetics and deep historical conspiracies. It is an alternative reality where the geopolitical tension of the Cold War is not merely fought with the threat of nuclear deterrence, but through the covert weaponization of ancient, mythological artifacts.
 
-== The Analog Aesthetic
+=== The Analog Aesthetic
 
 The technological environment is characterized by analog limitations, forcing a distinct style of investigative gameplay. The absence of smartphones, GPS, and ubiquitous high-speed internet forces players into physical legwork and face-to-face interactions:
 
@@ -45,7 +45,7 @@ The tactile, error-prone nature of 1980s technology maps flawlessly to the engin
 
 #section-rule()
 
-= The Verdant Covenant
+== The Verdant Covenant
 
 For as long as civilizations have risen and fallen, the world has produced objects of unusual power and importance --- relics of faith, symbols of kingdoms, forbidden texts, cursed idols, lost maps, sacred bones, and artifacts whose origins are long forgotten.
 
@@ -65,13 +65,13 @@ The Covenant does not seek to own these relics for wealth or prestige. Its singu
 - To *preserve* them.
 - To *ensure they never fall into the wrong hands*.
 
-== The Square of Harmony (The Rule of 441)
+=== The Square of Harmony (The Rule of 441)
 
 The organization strictly maintains exactly *441 active members worldwide at all times* --- not a single operative more or less. This figure is derived from the *"Square of Harmony,"* a principle rooted in the sacred geometry of Reversible Multiplicative Symmetry. Covenant occultists recognize that `441 = 21²`, symbolizing the gross material plane; while its exact numerical reversal, `144`, represents the enlightened, inverse stewardship of the anomalous.
 
 The Covenant believes this numerical balance acts as a metaphysical anchor, keeping the organization from becoming corrupted by the volatile artifacts it hoards. Because of this rigid cap, the initiation of a new member invariably means a previous member has died or fallen to permanent Catatonia --- ensuring the cycle of stewardship continues unbroken.
 
-== Organizational Structure
+=== Organizational Structure
 
 Within the Covenant there are *three Divisions*, each responsible for a different stage of the artifact lifecycle:
 
@@ -89,7 +89,7 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 
 #section-rule()
 
-= How to Use This Book
+== How to Use This Book
 
 This rulebook is organized into six parts:
 

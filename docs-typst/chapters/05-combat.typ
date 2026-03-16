@@ -14,11 +14,11 @@ Combat rules are designed for *investigation-first play*: most situations should
 
 #section-rule()
 
-= Initiative
+== Initiative
 
 At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept — DA preference). Higher card value acts first. Ties are resolved simultaneously.
 
-== Initiative Card Draw
+=== Initiative Card Draw
 
 - Each participant — PC or NPC — draws one card from a shuffled deck.
 - Participants act in *descending card order* (10 acts before 9, etc.).
@@ -29,7 +29,7 @@ At the start of any hostile confrontation, each participant draws an *Initiative
   *Why cards?* The card draw creates genuine unpredictability without arithmetic. It also creates a sense of narrative suspense — drawing a 10 is a small victory; drawing an Ace before a firefight is quietly dreadful. In an investigation game where combat is exceptional, this ceremony matters.
 ])
 
-== Initiative Procedure Note
+=== Initiative Procedure Note
 
 Initiative uses card draw only. Do not add initiative modifiers for posture, terrain, or gear. Those factors still matter through cover, surprise, action economy, and range penalties.
 
@@ -37,7 +37,7 @@ Initiative uses card draw only. Do not add initiative modifiers for posture, ter
   *Initiative Talents:* Some General Talents interact with initiative card draws. See Attributes & Skills → General Talents.
 ])
 
-== Surprise and Ambush
+=== Surprise and Ambush
 
 A *surprise* occurs when one side is unaware of the other at the moment combat begins.
 
@@ -47,11 +47,11 @@ A *surprise* occurs when one side is unaware of the other at the moment combat b
 
 #section-rule()
 
-= Action Economy
+== Action Economy
 
 Each character's turn consists of *one Slow Action* and *one Fast Action*, plus any number of *Free Actions*.
 
-== Slow Actions
+=== Slow Actions
 
 A slow action represents a committed, focused effort requiring your full attention.
 
@@ -69,7 +69,7 @@ A slow action represents a committed, focused effort requiring your full attenti
   [*Treat Broken Ally*], [Stabilize a Broken ally so they do not die (requires Heal roll).],
 )
 
-== Fast Actions
+=== Fast Actions
 
 A fast action is a quick, reactive, or secondary effort.
 
@@ -85,7 +85,7 @@ A fast action is a quick, reactive, or secondary effort.
   [*Use a quick item*], [Apply a stim, crack a light stick, or use a single-use item.],
 )
 
-== Free Actions
+=== Free Actions
 
 Free actions can be taken at any point during your turn, in any number.
 
@@ -96,11 +96,11 @@ Free actions can be taken at any point during your turn, in any number.
 
 #section-rule()
 
-= Zones and Range
+== Zones and Range
 
 Combat space is divided into *abstract zones* rather than measured distances. A zone is any coherent area of space — a room, a corridor, an alley, a rooftop section. The DA defines zones when establishing a scene.
 
-== Zone Size and Movement
+=== Zone Size and Movement
 
 Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both your Fast Action and your Slow Action for the round — you forgo your attack.
 
@@ -114,7 +114,7 @@ Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both
   [*Distant*], [5+ zones. Sniper range. Only applies to designated long-range weapons; everything else is out of range.],
 )
 
-== Zone-to-Grid Conversion (Optional)
+=== Zone-to-Grid Conversion (Optional)
 
 Zones remain the canonical movement/range system. For VTT or tactical play, use this translation layer.
 
@@ -134,7 +134,7 @@ Zones remain the canonical movement/range system. For VTT or tactical play, use 
 
 *Large or open zones:* Some zones (car parks, fields, warehouse floors, concert halls) are physically large. The DA sets zone extent before combat begins. A large zone may span 20–50 squares; players and the DA should confirm expected grid width before the first round. Open-zone features do not reduce zone count — only the Fast Action cost applies.
 
-== Zone Features
+=== Zone Features
 
 Every zone has optional *terrain features* the DA can invoke:
 
@@ -150,9 +150,9 @@ Every zone has optional *terrain features* the DA can invoke:
 
 #section-rule()
 
-= Melee Combat
+== Melee Combat
 
-== Basic Melee Attack
+=== Basic Melee Attack
 
 Declare your target (must be at Engaged range). Roll your dice pool:
 
@@ -163,13 +163,13 @@ On a hit (at least one 6), deal the weapon's flat *Damage* value directly to the
 
 Extra successes (additional 6s) are *Stunt Points* — see Combat Stunts below.
 
-== Unarmed Combat
+=== Unarmed Combat
 
 Unarmed attacks use the *Brawl* skill. Bare hands deal *1 Damage* on a hit.
 
 For unarmed grapples, shoves, and disarms, see Special Melee Maneuvers below.
 
-== Special Melee Maneuvers
+=== Special Melee Maneuvers
 
 All maneuvers require a successful melee attack roll. If the attack misses (no 6s), the maneuver fails entirely.
 
@@ -184,13 +184,13 @@ All maneuvers require a successful melee attack roll. If the attack misses (no 6
 
 #section-rule()
 
-= Ranged Combat
+== Ranged Combat
 
-== Basic Ranged Attack
+=== Basic Ranged Attack
 
 Roll *Firearms (AGI)* + Weapon Gear Bonus. On a hit, deal flat Damage to the target's Strength (armor applies).
 
-== Range Penalties
+=== Range Penalties
 
 #nr-table(
   columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
@@ -205,7 +205,7 @@ Roll *Firearms (AGI)* + Weapon Gear Bonus. On a hit, deal flat Damage to the tar
   *Engaged penalty for pistols:* At arm's length, controlling a pistol one-handed while someone is grappling you is harder than a clean stance shot. The −1 die reflects that.
 ])
 
-== Cover
+=== Cover
 
 A character *in cover* benefits from partial physical shielding.
 
@@ -214,7 +214,7 @@ A character *in cover* benefits from partial physical shielding.
 - Taking cover requires a Fast Action (move into cover within the current zone).
 - A character who fires from cover *loses the cover bonus* for any attacks made against them *that round* — you have to expose yourself to shoot.
 
-== Ammunition
+=== Ammunition
 
 Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die:
 
@@ -240,9 +240,9 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 #section-rule()
 
-= Reactive Actions
+== Reactive Actions
 
-== Dodge
+=== Dodge
 
 - *Type:* Fast Action (reactive — used on someone else's turn, not yours)
 - *When:* After a melee or ranged attack is declared against you, before the attacker rolls.
@@ -250,7 +250,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 - *Cost:* You lose your Fast Action on your *next* turn.
 - *Limitation:* You cannot dodge if you have no Fast Action remaining this round (already spent), if you are prone, if you are Grappled, or if the attack was from ambush (surprise round).
 
-== Parry
+=== Parry
 
 - *Type:* Slow Action (reactive — used on someone else's turn)
 - *When:* After a melee attack is declared against you, before the attacker rolls. Requires a held melee weapon.
@@ -260,7 +260,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 #section-rule()
 
-= Combat Stunts
+== Combat Stunts
 
 Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
 
@@ -280,18 +280,18 @@ Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spe
 
 #section-rule()
 
-= Chase and Pursuit
+== Chase and Pursuit
 
 When one side is fleeing and the other is pursuing, use the following chase rules.
 
-== Chase Structure
+=== Chase Structure
 
 A chase is divided into *chase rounds*. Each round, both the fleeing and pursuing party roll their relevant attribute + skill:
 
 - *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
 - *By vehicle:* Agility + Tech (operating the vehicle)
 
-== Chase Outcome per Round
+=== Chase Outcome per Round
 
 Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing). Track relative distance on a simple 5-step track:
 
@@ -301,7 +301,7 @@ Compare successes. The side with more successes *gains distance* (fleeing) or *c
   Start at Contact. Fleeing party wins a round → move one step toward Escaped. Pursuing party wins → move one step toward Contact.
 ])
 
-== Escape and Recapture
+=== Escape and Recapture
 
 - The fleeing party *escapes* when they reach the Escaped position.
 - During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
@@ -310,11 +310,11 @@ Compare successes. The side with more successes *gains distance* (fleeing) or *c
 
 #section-rule()
 
-= Group Combat (Multiple NPCs)
+== Group Combat (Multiple NPCs)
 
 When 3 or more combatants on the NPC side share a common purpose and act together, they may be treated as a *mob*.
 
-== Mob Rules
+=== Mob Rules
 
 - A mob draws *one Initiative card* and acts as a single entity.
 - A mob has a shared Strength pool equal to *3 × mob size* (3 per member, max 15).
@@ -327,9 +327,9 @@ When 3 or more combatants on the NPC side share a common purpose and act togethe
 
 #section-rule()
 
-= Ending Combat
+== Ending Combat
 
-== Surrender and DA Adjudication
+=== Surrender and DA Adjudication
 
 There is no mandatory surrender mini-system. Surrender is a *Director of Agents* adjudication call based on morale, stakes, and faction doctrine.
 

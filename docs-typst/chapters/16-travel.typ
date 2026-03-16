@@ -14,11 +14,11 @@ Getting there is part of the story.
 
 #section-rule()
 
-= Journey Phases
+== Journey Phases
 
 Every significant journey follows three phases:
 
-== Phase 1 — Planning
+=== Phase 1 — Planning
 
 Before departure, the team answers three questions:
 
@@ -28,7 +28,7 @@ Before departure, the team answers three questions:
 
 The DA notes the *base travel time* and the *Threat Level* of the journey. If the team has the Field Intelligence Network HQ upgrade, they begin with one free piece of route intelligence.
 
-== Phase 2 — The Journey
+=== Phase 2 — The Journey
 
 Divide the journey into *legs* — distinct segments separated by a stop, a hazard, or a change of environment:
 
@@ -49,13 +49,13 @@ Each leg, the driver (or lead navigator on foot) makes a skill roll:
 *On failure:* Roll on the Road Event table (or the DA applies a prepared complication). \
 *On push:* +1 Corruption as normal. The driver is rattled; the vehicle takes wear.
 
-== Phase 3 — Arrival
+=== Phase 3 — Arrival
 
 On arrival, any damage or injuries sustained during travel remain in effect. Any gear that was pushed during travel may be degraded. The team notes which scene they arrive in (Phase 4 or 5 of the Case File structure).
 
 #section-rule()
 
-= Vehicle Types and Travel Speeds
+== Vehicle Types and Travel Speeds
 
 #nr-table(
   columns: (2fr, 1fr, 1fr, 2fr, 3fr),
@@ -77,7 +77,7 @@ A Tech roll (Difficulty 2, with proper tools) can clear 1 Wear per scene of work
 
 #section-rule()
 
-= Road Event Table
+== Road Event Table
 
 Roll *d12* when a Road Event is triggered.
 
@@ -100,9 +100,9 @@ Roll *d12* when a Road Event is triggered.
 
 #section-rule()
 
-= Rules for Being Followed
+== Rules for Being Followed
 
-== Noticing a Tail
+=== Noticing a Tail
 
 A tail can appear at any point during a journey — or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll \#5 on the Road Event table.
 
@@ -112,7 +112,7 @@ To notice a tail:
 - *Wits (Investigate) Difficulty 1* — if the team is specifically looking for surveillance.
 - The tail makes no roll — the DA decides if they are being careful. A professional tail (MJ-12, experienced Consortium operative) imposes +1 Difficulty to the detection roll.
 
-== Losing a Tail
+=== Losing a Tail
 
 Once a tail is confirmed, the driver can attempt to lose it. This is a *Chase sequence* (abbreviated):
 
@@ -124,7 +124,7 @@ Three options, each requiring one skill roll:
 
 *On failure:* The tail remains. The team may try again next leg (no Corruption cost for failed attempts — frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
 
-== The Tail Arrives
+=== The Tail Arrives
 
 If the team reaches the destination with a tail still on them:
 
@@ -134,7 +134,7 @@ If the team reaches the destination with a tail still on them:
 
 #section-rule()
 
-= Being Followed — Named Threat Complication
+== Being Followed — Named Threat Complication
 
 If the tail is a Named Threat or a designated faction operative (introduced in the Case File), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
 
@@ -142,7 +142,7 @@ If the Named Threat is allowed to arrive at the destination, they are briefed on
 
 #section-rule()
 
-= Atmospheric Travel Notes
+== Atmospheric Travel Notes
 
 The 1980s travel experience has no shortcuts and no digital assists. Consider:
 

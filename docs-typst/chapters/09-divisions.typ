@@ -14,13 +14,13 @@ Within that Division, players select a *Department* background. During creation,
 
 #section-rule()
 
-= Division 1: The Wayfinder
+== Division 1: The Wayfinder
 
 _"What is found must be known."_
 
 The Wayfinder Division serves as the primary investigative arm of the Covenant. Wayfinders are scholars, hackers, and researchers whose directive is uncovering the existence and historical locations of lost artifacts before rival factions do. They work to assemble and preserve knowledge from historical records, archaeological reports, religious texts, folklore, academic publications, government archives, museum collections, and contemporary news reporting.
 
-== Wayfinder Key Stats
+=== Wayfinder Key Stats
 
 #nr-table(
   columns: (1fr, 2fr),
@@ -31,7 +31,7 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
   [*Starting Clearance Level*], [3],
 )
 
-== The Verdant Codex (Division Item)
+=== The Verdant Codex (Division Item)
 
 All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recording discoveries. The Codex provides the following benefits:
 
@@ -43,7 +43,7 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 - Faintly glows near ancient magic
 - Contains a living map lining that slowly reveals artifact locations
 
-== Wayfinder Departments
+=== Wayfinder Departments
 
 *Department of Research*
 
@@ -69,7 +69,7 @@ The Department of Counterintelligence protects the Covenant from external threat
   Through the vigilance of the Department of Counterintelligence, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
 ])
 
-== Wayfinder Talents (Choose 1 at Creation)
+=== Wayfinder Talents (Choose 1 at Creation)
 
 #nr-table(
   columns: (2fr, 1fr, 4fr),
@@ -83,7 +83,7 @@ The Department of Counterintelligence protects the Covenant from external threat
 
 #section-rule()
 
-= Division 2: The Recovery
+== Division 2: The Recovery
 
 _"What is known must be contained."_
 
@@ -97,7 +97,7 @@ Recovery agents are trained to operate in a wide variety of environments. Some r
   Unlike other Divisions, the Recovery Division has *no internal departments or specializations*. Every member shares the same purpose and authority. Instead, agents are distinguished by their *operational background*.
 ])
 
-== Recovery Key Stats
+=== Recovery Key Stats
 
 #nr-table(
   columns: (1fr, 2fr),
@@ -108,7 +108,7 @@ Recovery agents are trained to operate in a wide variety of environments. Some r
   [*Starting Clearance Level*], [2],
 )
 
-== The Verdant Satchel (Division Item)
+=== The Verdant Satchel (Division Item)
 
 All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag designed to safely transport relics. The Satchel provides the following benefits:
 
@@ -119,7 +119,7 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 - Produces useful tools on demand (rope, chalk, spikes, vials, etc.)
 - Enchantment of Warding obscures any magical object placed inside from detection
 
-== Recovery Backgrounds
+=== Recovery Backgrounds
 
 Choose one background that defines your agent's prior experience:
 
@@ -131,7 +131,7 @@ Choose one background that defines your agent's prior experience:
   [*Acquisition Specialist (Thief)*], [Expert in bypassing security, stealing valuable objects, and getting in and out unseen.],
 )
 
-== Recovery Talents (Choose 1 at Creation)
+=== Recovery Talents (Choose 1 at Creation)
 
 #nr-table(
   columns: (2fr, 1fr, 4fr),
@@ -145,7 +145,7 @@ Choose one background that defines your agent's prior experience:
 
 #section-rule()
 
-= Division 3: The Keep
+== Division 3: The Keep
 
 _"What is contained must be guarded."_
 
@@ -153,7 +153,7 @@ The Keep serves as the custodial authority of the Verdant Covenant. Once artifac
 
 Members of the Keep are entrusted with the stewardship of the Covenant's most sensitive holdings. Their work ensures that artifacts â€” whether magical, religious, occult, or culturally significant â€” are properly cataloged, secured, and prevented from causing harm.
 
-== Keep Key Stats
+=== Keep Key Stats
 
 #nr-table(
   columns: (1fr, 2fr),
@@ -164,7 +164,7 @@ Members of the Keep are entrusted with the stewardship of the Covenant's most se
   [*Starting Clearance Level*], [3],
 )
 
-== The Warden's Bracer (Division Item)
+=== The Warden's Bracer (Division Item)
 
 All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenant's vaults. The Bracer symbolizes that the Keeper is bound to guard what others must never wield. It provides the following benefits:
 
@@ -174,7 +174,7 @@ All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenan
 - Absorbs Corruption (soaks 1 Corruption per session)
 - Grants *+1 to Armor Rating*
 
-== Keep Departments
+=== Keep Departments
 
 *The Department of Catalogers*
 
@@ -200,7 +200,7 @@ The Wardens serve as the defensive arm of the Keep. They are responsible for the
 
 Working in coordination with the Wayfinder Division's Department of Counterintelligence, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
 
-== Keep Talents (Choose 1 at Creation)
+=== Keep Talents (Choose 1 at Creation)
 
 #nr-table(
   columns: (2fr, 1fr, 4fr),
@@ -214,7 +214,7 @@ Working in coordination with the Wayfinder Division's Department of Counterintel
 
 #section-rule()
 
-= Division 4: Stack (Logistics)
+== Division 4: Stack (Logistics)
 
 _"Queue up, agents."_
 
@@ -226,7 +226,7 @@ The Department of Logistics sits organizationally within the Keep, but its uniqu
 
 Stack agents design, modify, and distribute the tools used by Covenant agents â€” from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
 
-== Stack Key Stats
+=== Stack Key Stats
 
 #nr-table(
   columns: (1fr, 2fr),
@@ -237,7 +237,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents â€
   [*Starting Clearance Level*], [4],
 )
 
-== Stack Departments
+=== Stack Departments
 
 #nr-table(
   columns: (2fr, 4fr),
@@ -247,7 +247,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents â€
   [*The Paratech Inventor*], [Designs entirely new experimental devices that blend analog technology with paranatural principles.],
 )
 
-== Stack Talents (Choose 1 at Creation)
+=== Stack Talents (Choose 1 at Creation)
 
 #nr-table(
   columns: (2fr, 1fr, 4fr),

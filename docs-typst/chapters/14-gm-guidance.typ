@@ -14,7 +14,7 @@ This chapter gives you the tools to prepare and run individual cases, develop my
 
 #section-rule()
 
-= What Makes Neon Relic Work
+== What Makes Neon Relic Work
 
 Before the mechanical tools, three design priorities that should inform every session you run:
 
@@ -26,11 +26,11 @@ Before the mechanical tools, three design priorities that should inform every se
 
 #section-rule()
 
-= Session Zero
+== Session Zero
 
 Before the first case, run a *Session Zero* — a short scene-setting conversation, not a game session. Cover:
 
-== Tone and Content Agreement
+=== Tone and Content Agreement
 
 Ask the group:
 
@@ -39,20 +39,20 @@ Ask the group:
 - *NPC deaths:* Are named characters who feel important safe, or is everyone at risk?
 - *1980s specificity:* How much do players want analog friction (payphones, limited travel, no GPS) to create problems?
 
-== Safety Tools
+=== Safety Tools
 
 Recommend one or both:
 
 - *Lines and Veils* — Lines are content never happening, even off-screen. Veils happen but are not described in detail. Ask each player individually.
 - *X-Card* — Tapping a card (real or virtual) means the current scene cuts or rewrites, no questions asked.
 
-== Finding the Hooks
+=== Finding the Hooks
 
 Ask each player: *Why is your character Covenant?* The answer should involve something personal — not ideology alone. The Covenant fills a need for them. Knowing what that need is tells you how to make the game hurt in the right ways.
 
 #section-rule()
 
-= The Five-Element Mystery
+== The Five-Element Mystery
 
 Every Case File (mission) is built on five elements. You don't need all five fully developed before play — you need the skeleton, then you let the players fill in the rest.
 
@@ -66,7 +66,7 @@ Every Case File (mission) is built on five elements. You don't need all five ful
   [*Complication*], [What makes it personal?], [One element that connects to a PC's Dark Secret or Division. If the complication never lands, the case is professional. If it lands, it's personal. Build for personal.],
 )
 
-== The Mystery Statement
+=== The Mystery Statement
 
 Write one sentence that describes the full case:
 
@@ -78,11 +78,11 @@ If your mystery statement doesn't fit in one sentence, you have too much. Cut.
 
 #section-rule()
 
-= Clue Web Design
+== Clue Web Design
 
 *The Iron Rule:* Every piece of critical information must be findable via *at least three different paths*. If information is available only through one NPC, one physical location, or one specific skill roll, the case will break the moment players miss it.
 
-== How to Build a Clue Web
+=== How to Build a Clue Web
 
 + *Identify the critical revelations.* What must the players learn to understand the case? Typically 3–5 things: the artifact's true nature, the faction's plan, the event that started everything, and the solution (or route to containment).
 
@@ -90,11 +90,11 @@ If your mystery statement doesn't fit in one sentence, you have too much. Cut.
 
 + *Allow forward movement from partial information.* Players who know _something is wrong in the basement_ should be able to proceed even if they don't know _exactly what_. Structure facts so that each revelation suggests the next action, even if the players haven't pursued all paths.
 
-== The Dead End Test
+=== The Dead End Test
 
 Before play, look at each NPC and location and ask: *If this was skipped entirely, would the case still be solvable?* If the answer is "no," you have a single-point-of-failure. Fix it.
 
-== When Players Go Wrong
+=== When Players Go Wrong
 
 Players will occasionally pursue a lead that goes nowhere — or miss the lead that was obvious to you. When this happens:
 
@@ -104,11 +104,11 @@ Players will occasionally pursue a lead that goes nowhere — or miss the lead t
 
 #section-rule()
 
-= Countdown Clocks
+== Countdown Clocks
 
 Every case has at least one *Countdown Clock* — a track that advances as time passes or key events occur, representing escalating stakes.
 
-== Clock Structure
+=== Clock Structure
 
 A Countdown Clock has:
 
@@ -116,7 +116,7 @@ A Countdown Clock has:
 - *4–6 clock stages*, each with a defined event
 - *Trigger conditions* that advance the clock one step
 
-== Example Clock
+=== Example Clock
 
 *Clock Name:* The Hospital Burns Down (the Consortium will destroy the evidence — and the Remnants — when they've extracted what they need)
 
@@ -131,13 +131,13 @@ A Countdown Clock has:
   [6], [Hospital collapses. Remnants disperse into the city. Consortium escapes with artifact.], [Case failure.],
 )
 
-== Multiple Clocks
+=== Multiple Clocks
 
 High-stakes cases may have two or three simultaneous clocks. Keep them on different timers so players can interrupt one without the others automatically resolving. Multiple clocks also mean that a "successful" case may still end with one clock completing — which is often the more interesting outcome.
 
 #section-rule()
 
-= NPC Motivation Design
+== NPC Motivation Design
 
 Every significant NPC needs three things: a *secret*, a *goal*, and a *connection to the artifact*.
 
@@ -149,13 +149,13 @@ Every significant NPC needs three things: a *secret*, a *goal*, and a *connectio
   [*Artifact connection*], [How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Corruption consequence (nightmares, strange certainty about things they can't know).],
 )
 
-== The Motivated NPC Test
+=== The Motivated NPC Test
 
 Ask: *If the agents were not present, what would this NPC do?* If the answer is nothing — if the NPC only exists as an information dispenser — cut them or give them a clock. NPCs with active agendas create situations. Situation creators make sessions run.
 
 #section-rule()
 
-= Supernatural Entity Behavior
+== Supernatural Entity Behavior
 
 Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates:
 
@@ -170,7 +170,7 @@ Supernatural entities in Neon Relic do not think the way humans do. Avoid playin
 
 #section-rule()
 
-= Improvisation Guidelines
+== Improvisation Guidelines
 
 When players go somewhere you didn't prepare:
 
@@ -181,7 +181,7 @@ When players go somewhere you didn't prepare:
 
 #section-rule()
 
-= 1980s Investigation Complication Table (D12)
+== 1980s Investigation Complication Table (D12)
 
 Roll when you need an unexpected complication mid-case, when a scene is going too smoothly, or to generate pre-session texture.
 
@@ -204,11 +204,11 @@ Roll when you need an unexpected complication mid-case, when a scene is going to
 
 #section-rule()
 
-= Running Containment Missions
+== Running Containment Missions
 
 Not every case ends with an artifact activation. Many of the Covenant's most important operations are *containment runs* — missions where success means the artifact was never used, never heard, never seen by an unauthorized party. These cases require different framing than activation-centric play.
 
-== Defining Non-Activation Objectives
+=== Defining Non-Activation Objectives
 
 Before the session begins, define a concrete containment goal separate from any activation contingency:
 
@@ -221,7 +221,7 @@ Before the session begins, define a concrete containment goal separate from any 
   [*Deny use by rival faction*], [A rival faction intends to activate the artifact at a specific time and place. The agents must prevent the conditions for activation — not necessarily seize the artifact themselves.],
 )
 
-== Pressure Without Activation
+=== Pressure Without Activation
 
 Containment missions still have escalating pressure. Use these tools to maintain tension without triggering the artifact:
 
@@ -231,7 +231,7 @@ Containment missions still have escalating pressure. Use these tools to maintain
 
 - *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race with a clock, not a firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
 
-== Measuring Success in Containment Cases
+=== Measuring Success in Containment Cases
 
 A containment case is resolved when all three of the following are true:
 
@@ -241,7 +241,7 @@ A containment case is resolved when all three of the following are true:
 
 Partial success is valid. An artifact that was activated once but then contained is a case with a scar — the Decay track advances, but so does the cost.
 
-== DA Tools: Containment Clocks
+=== DA Tools: Containment Clocks
 
 Containment cases benefit from clocks with *loss conditions linked to exposure*, not elapsed time:
 
@@ -251,7 +251,7 @@ Containment cases benefit from clocks with *loss conditions linked to exposure*,
 
 #section-rule()
 
-= Cross-References
+== Cross-References
 
 - Case File structure (8-phase structure, Countdown mechanics): see the Case Files chapter.
 - Artifact properties and Tiers: see the Artifacts chapter.

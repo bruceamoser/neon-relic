@@ -18,7 +18,7 @@ Gear is not just equipment. In the analog 1980s, a piece of kit represents
 skill, preparation, and sometimes the only line between a successful containment
 and a catastrophic breach. Treat it accordingly.
 
-= Investigative & Paranormal Tech
+== Investigative & Paranormal Tech
 
 #nr-table(
   columns: (2fr, 4fr, 1fr, 1fr),
@@ -53,7 +53,7 @@ and a catastrophic breach. Treat it accordingly.
   [2], [4],
 )
 
-= Standard Tools & Survival
+== Standard Tools & Survival
 
 #nr-table(
   columns: (2fr, 4fr, 1fr, 1fr),
@@ -80,7 +80,7 @@ and a catastrophic breach. Treat it accordingly.
   [2], [3],
 )
 
-= 1980s Weaponry
+== 1980s Weaponry
 
 #nr-table(
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 3fr, 1fr),
@@ -122,7 +122,7 @@ and a catastrophic breach. Treat it accordingly.
   [4],
 )
 
-= Armor
+== Armor
 
 #nr-table(
   columns: (2fr, 1fr, 3fr, 1fr),
@@ -141,7 +141,7 @@ and a catastrophic breach. Treat it accordingly.
 
 #section-rule()
 
-= Consumables and Resource Dice
+== Consumables and Resource Dice
 
 Not everything in the field is permanent. Ammunition runs out. Batteries die at
 the worst possible moment. Medical supplies get used. The Covenant tracks these
@@ -169,7 +169,7 @@ captured enemy cache, a cooperative civilian contact, or a Covenant dead-drop
 (GM discretion). A Covenant HQ medic can restore medical supplies to d10 once
 per case with a successful Heal roll (Diff 1).
 
-== Supply Categories
+=== Supply Categories
 
 #nr-table(
   columns: (2fr, 1fr, 1fr, 3fr),
@@ -217,7 +217,7 @@ the Combat chapter. Resource Dice apply between combats and across scenes._
 
 #section-rule()
 
-= Encumbrance
+== Encumbrance
 
 Agents are not pack mules. Every item carried has an *Encumbrance (Enc)* value.
 Armor adds its CL value to carried Enc. Exceeding your carry capacity slows you
@@ -252,7 +252,7 @@ AGI rolls. Dangerous in any tactical situation.
 
 #section-rule()
 
-= Vehicle Rules
+== Vehicle Rules
 
 Vehicles are assets, not characters. They are requisitioned like any other gear
 (at CL 3–4 for military or rare models) and can be damaged, repaired, or
@@ -266,7 +266,7 @@ Every vehicle has five stats:
 - *Handling:* Bonus (+) or penalty (−) dice to Driving rolls in maneuvering situations.
 - *Capacity:* Maximum passengers and cargo Enc.
 
-== 1980s Vehicle Roster
+=== 1980s Vehicle Roster
 
 #nr-table(
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 2fr),
@@ -309,7 +309,7 @@ Every vehicle has five stats:
   [4 pass / 40 Enc cargo. Water only — cannot be used in road pursuits. Silent approach.],
 )
 
-== Vehicle Conflict and Chase Rules
+=== Vehicle Conflict and Chase Rules
 
 When agents pursue or flee in vehicles, the scene is resolved using a
 *Contact Track* — an abstract measure of relative position between two parties.
@@ -334,7 +334,7 @@ winner's favor.
 *Pushing:* A driver may push their Chase Roll, but doing so adds +1 Corruption
 and inflicts 1 Wear on the vehicle from reckless driving.
 
-=== Vehicle Maneuvers
+==== Vehicle Maneuvers
 
 #nr-table(
   columns: (1fr, 2fr, 3fr),
@@ -361,7 +361,7 @@ and inflicts 1 Wear on the vehicle from reckless driving.
   [Driver rolls Infiltration (AGI) vs. target Scout. Success: quarry loses the trail entirely (Contact 5, chase ends). Failure: Contact track steps 1 closer.],
 )
 
-=== Vehicle Damage and Repair
+==== Vehicle Damage and Repair
 
 When a vehicle takes damage (from collision, gunfire, or crash), add *Wear*
 equal to the damage dealt (after AR reduction). Vehicle effects:
@@ -383,7 +383,7 @@ Requires a basic toolkit. An overnight garage repair fully restores Reliability.
 
 #section-rule()
 
-= Crafting and Repair
+== Crafting and Repair
 
 Not every problem can be solved with a requisition form. Gear breaks. Fields
 are hostile. Sometimes the nearest Covenant armory is 300 miles away and the
@@ -400,7 +400,7 @@ at it.
 agents' *Jury-Rig* talent can restore an item to one step above Broken in a
 single scene — at the cost of +1 Corruption. Formal repair rules follow.
 
-== Repair Rules
+=== Repair Rules
 
 Repairing gear requires *time*, *parts*, and a *Craft* roll.
 
@@ -447,7 +447,7 @@ Broken item must be fully repaired before it can be used again.
 *Complication (Pushed roll only):* A pushed Repair roll that fails delivers a
 Complication roll on the Breakdown Table.
 
-== Parts Requirements
+=== Parts Requirements
 
 Every repair requires at minimum a *Junk Die* (d6 Resource Die representing
 scavenged or on-hand parts). Roll the Junk Die after completing repairs:
@@ -481,12 +481,12 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
   [HQ-supplied; best quality; no acquisition roll needed],
 )
 
-= Component Sourcing
+== Component Sourcing
 
 Not everything is sitting in a Covenant armory. Field agents must scavenge,
 requisition, or improvise.
 
-== Scavenging
+=== Scavenging
 
 When in a setting that plausibly contains usable materials (hardware store,
 junkyard, abandoned building, mechanic's garage), an agent may spend a *Slow
@@ -518,7 +518,7 @@ Action* or *Free Move* to scavenge. Roll *Investigate (WIT)*, Diff 1.
   [1–5: Junk only; 6: Hardware Components (medical kit, power tools)],
 )
 
-== HQ Requisition
+=== HQ Requisition
 
 Any non-scavengeable part (Specialized Parts, Covenant Cache Parts) requires a
 Covenant requisition. Use the standard CL system. Specialized Parts have CL 3.
@@ -527,13 +527,13 @@ Covenant Cache Parts are CL 4+ and require approval from the Keep.
 *Stack Advantage:* Stack Division agents treat Specialized Parts as CL 2 when
 requisitioning — their workshop connections reduce red tape.
 
-= Improvised Items
+== Improvised Items
 
 When time is short and a proper tool isn't available, agents can construct
 improvised weapons and tools from scavenged materials. Improvised items function
 at reduced effectiveness and carry a higher risk of failure.
 
-== Crafting Improvised Items
+=== Crafting Improvised Items
 
 Roll *Craft (WIT)*, using the difficulty from the table below. Requires at
 minimum a *Junk Die (d6)* as parts; step it down after crafting.
@@ -591,7 +591,7 @@ once improvised, always improvised. The exception is Stack Division agents
 with the *Prototyper* talent, who may treat any improvised item as fully
 professional for one roll before it is destroyed.])
 
-== Improvised Item Failure
+=== Improvised Item Failure
 
 When a Gear Die on an improvised item comes up *1*, it does not simply degrade —
 roll on the following table:
@@ -608,7 +608,7 @@ roll on the following table:
   [6], [*Quick Fix.* Roll was a near-miss — item is stable. Gear Die stays at current step.],
 )
 
-= Stack Division: Crafting Signature
+== Stack Division: Crafting Signature
 
 Stack agents aren't just better at repairs — they have a different relationship
 with gear entirely. Training in Covenant workshops, maintaining equipment under

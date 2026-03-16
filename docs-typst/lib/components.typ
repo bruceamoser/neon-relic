@@ -31,6 +31,8 @@
 #let chapter-header(num, title) = {
   // Each chapter begins on a new page (weak = no blank page if already at top)
   pagebreak(weak: true)
+  // Register chapter name in outline at level 1 (visually suppressed by theme)
+  [#heading(level: 1, numbering: none, outlined: true)[Chapter #num — #title]]
   // Place header spanning both columns at the top of the current page
   place(
     scope: "parent",
@@ -40,16 +42,19 @@
       width: 100%,
       fill: clr-manila-dark,
       stroke: (bottom: 2pt + clr-olive),
-      inset: (x: 8mm, top: 6mm, bottom: 4mm),
+      inset: (x: 8mm, top: 4mm, bottom: 4mm),
     )[
-      #set text(font: font-heading, fill: clr-olive-light, size: 9pt)
-      CHAPTER #num
-      #v(1mm)
-      #set text(font: font-heading, fill: clr-olive-deep, size: 22pt, weight: "bold")
-      #upper(title)
+      #grid(
+        columns: (auto, auto, 1fr),
+        column-gutter: 3mm,
+        align: (left + horizon, left + horizon, left + horizon),
+        text(font: font-heading, fill: clr-olive-light, size: 9pt)[CHAPTER #num],
+        text(font: font-heading, fill: clr-olive-mid, size: 9pt)[—],
+        text(font: font-heading, fill: clr-olive-deep, size: 14pt, weight: "bold")[#upper(title)],
+      )
     ]
   )
-  v(28mm)  // reserve space for the placed header block
+  v(16mm)  // reserve space for the single-line header block
 }
 
 // ─────────────────────────────────────────────────────────────

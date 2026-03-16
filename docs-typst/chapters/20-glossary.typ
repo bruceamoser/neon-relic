@@ -12,7 +12,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 #section-rule()
 
-= A
+== A
 
 *Age Group* \
 Character creation choice determining starting Attribute and Skill point pools. Three tiers: Young (14 attribute / 10 skill), Experienced (13 / 12), Senior (12 / 14). See the Character Creation chapter.
@@ -26,7 +26,7 @@ The number of Gear dice rolled to absorb incoming damage. Each 6 rolled cancels 
 *Attribute Dice* \
 White dice in the pool, equal to the relevant Attribute score (Strength, Agility, Wits, or Empathy). See the Core Resolution chapter.
 
-= B
+== B
 
 *Background* \
 Recovery Division's equivalent of Departments. Defines the agent's pre-Covenant expertise and grants narrative hooks. See the Divisions chapter.
@@ -34,7 +34,7 @@ Recovery Division's equivalent of Departments. Defines the agent's pre-Covenant 
 *Broken* \
 State when any Attribute reaches 0. The character is incapacitated and rolls on the appropriate Critical Injury table (Physical or Mental). See the Health, Damage & Armor chapter.
 
-= C
+== C
 
 *Case File* \
 A structured mystery/investigation for the team to complete. The standard episodic play format, divided into phases: Briefing, Travel, Investigation, Confrontation, and Resolution. See the Case Files chapter.
@@ -48,7 +48,7 @@ Cumulative psychological and occult damage track. Gained from pushing rolls, Div
 *Critical Injury* \
 A specific wound or trauma rolled on a D66 table when a character becomes Broken. Physical criticals use the Physical table (STR/AGI = 0); mental criticals use the Mental & Emotional table (WIT/EMP = 0). Some entries are marked † (Death Check). See the Health, Damage & Armor chapter.
 
-= D
+== D
 
 *D66* \
 A roll of two six-sided dice read as a two-digit number (first die = tens, second = units). Used for Critical Injury tables. Range: 11–66.
@@ -83,7 +83,7 @@ A class-specific ability unique to one Division. Costs +1 Corruption to activate
 *Dying* \
 State when a Broken character has an active Death Check Critical Injury (result marked †) that has not yet been resolved. An untreated Dying character will die. See the Health, Damage & Armor chapter.
 
-= F
+== F
 
 *Fast Action* \
 One of three action types in combat. Represents a quick or secondary effort: moving one zone, drawing a weapon, taking cover, or using a small item. See the Combat chapter.
@@ -97,7 +97,7 @@ Narrative classification (0–5) of how terrifying a creature or event is. Used 
 *Free Action* \
 An action in combat that requires negligible effort: speaking a short sentence, dropping an item, or glancing at surroundings. Unlimited per turn. See the Combat chapter.
 
-= G
+== G
 
 *Gear Dice* \
 Black dice in the pool contributed by equipment. Each 1 rolled on a Gear die causes the item to degrade one step. See the Core Resolution chapter.
@@ -105,27 +105,27 @@ Black dice in the pool contributed by equipment. Each 1 rolled on a Gear die cau
 *General Talent* \
 A talent available to any character regardless of Division, providing a mechanical exception or situational bonus. See the Advancement chapter.
 
-= H
+== H
 
 *Headquarters (HQ)* \
 The Covenant facility serving as the team's base of operations between Case Files. Provides medical care, equipment requisition, research facilities, and downtime activities. See the Headquarters chapter.
 
-= I
+== I
 
 *Insight* \
 A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma — heightened perception, empathy, or expertise. Cannot be removed. See the Health, Damage & Armor chapter.
 
-= M
+== M
 
 *Maximum Corruption Threshold* \
 The point at which a character's mind permanently fractures: 10 + Empathy score. Exceeding this value retires the character. See the Corruption, Fear & Healing chapter.
 
-= N
+== N
 
 *Named Threat* \
 A significant antagonist in a Case File — a faction operative, corrupted NPC, or supernatural entity important enough to have a name, motivations, and stat block. See the Case Files chapter.
 
-= P
+== P
 
 *Panic Table* \
 A d6 table rolled on Fear check failure. Determines the character's involuntary response: Fight (1), Flight (2), Freeze (3), Denial (4), Compulsion (5), or Fugue (6). See the Corruption, Fear & Healing chapter.
@@ -136,7 +136,7 @@ Re-roll all non-6 dice after a failed roll. Costs +1 Corruption. Each roll may o
 *Psychoanalyze* \
 A skill used to treat mental and emotional Critical Injuries. Recovery difficulty and duration vary by injury severity. See the Health, Damage & Armor chapter.
 
-= S
+== S
 
 *Skill Dice* \
 Green dice in the pool, equal to the relevant Skill rating (0–5). See the Core Resolution chapter.
@@ -147,12 +147,12 @@ One of three action types in combat. Represents a committed effort: attacking, u
 *Stunt Points* \
 Extra successes (6s) beyond the first on an attack roll, spent on special combat effects such as increased damage, disarming, or knockback. See the Combat chapter.
 
-= T
+== T
 
 *The Verdant Covenant* \
 The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep) plus Stack (Logistics). See the Introduction chapter.
 
-= V
+== V
 
 *Verdant Codex* \
 Wayfinder Division Item. An enchanted field journal that secures memory, decodes language, maps artifact locations, and preserves documents. See the Divisions chapter.
@@ -160,12 +160,12 @@ Wayfinder Division Item. An enchanted field journal that secures memory, decodes
 *Verdant Satchel* \
 Recovery Division Item. A specially enchanted field bag that suppresses artifact aura, seals cursed items, warns of instability, and produces basic tools on demand. See the Divisions chapter.
 
-= W
+== W
 
 *Warden's Bracer* \
 Keep Division Item. Suppresses artifact magic, warns of containment failure, enables safe handling of cursed objects, absorbs 1 Corruption per session, and grants +1 Armor Rating. See the Divisions chapter.
 
-= Z
+== Z
 
 *Zone* \
 An abstract area of space used for combat positioning — a room, corridor, alley, or rooftop section. Moving one zone costs a Fast Action; moving two zones (running) costs both the Fast and Slow Action for the round. See the Combat chapter.

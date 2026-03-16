@@ -13,7 +13,7 @@ immense, unknowable power that exact a heavy toll on the human mind and physical
 reality. Project Neon Relic leans heavily into the *Artifact of Doom* narrative
 trope, ensuring that utilizing magic is always a terrifying gamble.
 
-= The Mechanics of Occult Artifacts
+== The Mechanics of Occult Artifacts
 
 Within the YZE system, mystical objects are classified as *Occult Artifacts*.
 They often appear entirely mundane — a vintage Polaroid camera, a rusted World
@@ -38,7 +38,7 @@ or d12). If the roll results in a *1*, the artifact's internal metaphysical
 structure fractures — it may break, go dormant, or trigger a horrific localized
 side-effect.
 
-= Containment-First Play Principle
+== Containment-First Play Principle
 
 In Neon Relic, artifact activation is not the default objective. Many missions
 are won by *preventing activation*, isolating carriers, or moving an item into
@@ -55,7 +55,7 @@ Unknown effects are valid outcomes. If no one can safely predict activation
 consequences, the DA should treat non-use as a successful and often preferable
 strategic decision.
 
-== Activation Risk Tags
+=== Activation Risk Tags
 
 Assign one risk tag to every artifact entry:
 
@@ -76,7 +76,7 @@ Assign one risk tag to every artifact entry:
   [The Covenant does not yet understand the activation envelope. Treat field activation as last resort.],
 )
 
-== Corruption Emission: Aura, Pulse, Burst
+=== Corruption Emission: Aura, Pulse, Burst
 
 Some high-threat artifacts emit corruption into the environment even when not
 directly activated by an agent.
@@ -106,7 +106,7 @@ stakes. Avoid unavoidable no-win loops: telegraph emissions clearly and offer at
 least one mitigation strategy (distance, shielding, ritual suppression, or rapid
 transfer).
 
-= Catalog of 1980s Occult Artifacts
+== Catalog of 1980s Occult Artifacts
 
 #nr-table(
   columns: (2fr, 2fr, 3fr, 3fr, 2fr),
@@ -145,12 +145,12 @@ transfer).
 
 #section-rule()
 
-= Artifact Carry Weight and Corruption Pressure
+== Artifact Carry Weight and Corruption Pressure
 
 Artifacts are not merely heavy objects — they exert *metaphysical pressure* on
 the agent carrying them. This interacts with the Encumbrance system in two ways.
 
-== Physical Weight
+=== Physical Weight
 
 Each artifact has a baseline Encumbrance value equal to its Corruption cost tier:
 
@@ -163,7 +163,7 @@ Each artifact has a baseline Encumbrance value equal to its Corruption cost tier
   [High (3 Corruption)],  [3], [Bulky or imposing objects: weapons, mirrors, bound volumes.],
 )
 
-== Active Artifact Pressure
+=== Active Artifact Pressure
 
 Carrying an artifact that has been *activated at least once this Case File*
 imposes *+1 Enc* above its base value for the remainder of the session. The
@@ -175,7 +175,7 @@ artifact's metaphysical structure is disturbed — it pushes back.
   state, they also gain *+1 Corruption* at the start of each scene while
   carrying it (the corruption leaks passively).
 
-== Stacking Artifacts
+=== Stacking Artifacts
 
 Carrying more than one artifact simultaneously is permitted but discouraged:
 
@@ -191,7 +191,7 @@ are Encumbered or start gaining unplanned Corruption.])
 
 #section-rule()
 
-= Creating Artifacts (DA Guidelines)
+== Creating Artifacts (DA Guidelines)
 
 Every Neon Relic campaign arc should have a unique artifact at its heart — a
 specific, dangerous object with a history, a hunger, and consequences that ripple
@@ -202,7 +202,7 @@ The rules below use a *Corruption Budget* system: the power of an artifact's
 effect is always proportional to the psychological and physical cost of using it.
 No free rides. No safe artifacts.
 
-== The Artifact Template
+=== The Artifact Template
 
 Every artifact needs five defined components. Fill in each section before
 introducing the artifact to players.
@@ -236,7 +236,7 @@ introducing the artifact to players.
 conditions keep this artifact dormant in transport? What inadvertently activates it?
 See Containment Profiles below.])
 
-== Corruption Budget System
+=== Corruption Budget System
 
 An artifact's Corruption cost is not arbitrary — it flows directly from the power
 of the effect. Use this framework to set Corruption cost and choose the Artifact Die.
@@ -258,7 +258,7 @@ of the effect. Use this framework to set Corruption cost and choose the Artifact
   [Transcends normal human action entirely — massive unblockable damage, reality alteration, mass psychic attack, temporal displacement of a scene. Cannot be replicated by any mundane skill roll.],
 )
 
-=== Effect Design Rules
+==== Effect Design Rules
 
 These rules prevent artifacts from becoming automatic wins:
 
@@ -267,7 +267,7 @@ These rules prevent artifacts from becoming automatic wins:
 + *Always costs something.* Even on a "successful" fracture-free roll, the Corruption cost is paid. The artifact does not become safer with use.
 + *Fracture scales with Tier.* Tier 1 fractures are painful and personal. Tier 2 fractures affect the party or scene. Tier 3 fractures threaten the location or the case.
 
-== Containment Profiles
+=== Containment Profiles
 
 Containment is half the job. Before introducing an artifact, define how it is
 kept inert during transport and what triggers it inadvertently.
@@ -305,7 +305,7 @@ kept inert during transport and what triggers it inadvertently.
 Corruption Dampening Vault provide structural support for containment. Without
 them, field containment relies on improvised measures and Wayfinder knowledge.])
 
-== One-of-a-Kind vs. Replicable Artifacts
+=== One-of-a-Kind vs. Replicable Artifacts
 
 Most artifacts are *unique* — imbued with power because of specific historical
 events, blood spilled, or metaphysical convergence that cannot be replicated. The
@@ -320,7 +320,7 @@ DA should treat these as irreplaceable campaign assets.
 Replicable artifacts follow the same template but have the *Replicable* tag
 appended. They may appear in multiple instances throughout a campaign.
 
-== Artifact Decay (Optional Rule)
+=== Artifact Decay (Optional Rule)
 
 As agents study, handle, and contain an artifact over multiple sessions, its
 metaphysical coherence may weaken. This is a feature, not a bug — it means
@@ -347,7 +347,7 @@ it when:
 advance decay on the primary artifact by at least 1. A multi-session arc is
 complete when the artifact reaches Decay 5.])
 
-== Worked Example: The Stethoscope of Dr. Morrow
+=== Worked Example: The Stethoscope of Dr. Morrow
 
 To illustrate the framework in practice:
 
@@ -380,14 +380,14 @@ toward inert at Decay 5.
 
 #section-rule()
 
-= Containment-Oriented Worked Examples
+== Containment-Oriented Worked Examples
 
 The following three artifacts illustrate missions where *preventing activation
 is the primary objective*. Each entry includes a Containment Profile, Emission
 data, and DA Guidance for running the case as a retrieval and containment
 operation rather than an activation event.
 
-== The Broadcast Reel
+=== The Broadcast Reel
 
 *Risk Tag:* Volatile |
 *Tier:* 2 (d10) |
@@ -438,7 +438,7 @@ what they believe is a lost documentary. The agents must intercept the reel
 before it is threaded. Run a clock: _The Screening Begins_ (6-stage, advances
 by the hour). The threat is a countdown, not a fight.])
 
-== The Custody Manifest
+=== The Custody Manifest
 
 *Risk Tag:* Unknown |
 *Tier:* 1 (d8) |
@@ -492,7 +492,7 @@ and manage the civilian's compulsion before the Shard Construct closes in. Key
 tension: any agent who attempts to document their findings by writing in the
 margin activates a second compulsion chain.])
 
-== The Quarantine Bell
+=== The Quarantine Bell
 
 *Risk Tag:* Catastrophic |
 *Tier:* 3 (d12) |

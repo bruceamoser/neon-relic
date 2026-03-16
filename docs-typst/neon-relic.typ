@@ -31,10 +31,6 @@
 )[
   #align(center)[
     #v(1fr)
-    #text(font: font-heading, size: 52pt, weight: "bold", fill: clr-olive-deep)[
-      NEON RELIC
-    ]
-    #v(4mm)
     #text(font: font-heading, size: 14pt, fill: clr-olive-light, tracking: 3pt)[
       CORE RULES
     ]

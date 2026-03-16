@@ -19,7 +19,7 @@ Characters are defined by *four core attributes*, representing their fundamental
   [*Empathy*], [Raw charisma, social intuition, ability to read human behavior, and emotional resilience against psychological horror.],
 )
 
-= The Twelve Core Skills
+== The Twelve Core Skills
 
 The twelve core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
 
@@ -46,11 +46,11 @@ The twelve core skills are mapped to these four attributes, tailored to support 
 
 #section-rule()
 
-= Skill Stunts
+== Skill Stunts
 
 When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *Stunt Point*. You may spend Stunt Points to achieve effects beyond simple success.
 
-== Stunt Economy
+=== Stunt Economy
 
 - *1 extra 6 = 1 Stunt Point.*
 - You must succeed first (at least one 6 to meet the Difficulty), then extras are stunt points.
@@ -62,7 +62,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
   *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter. The stunt economy is the same.
 ])
 
-== Generic Stunts (Any Skill)
+=== Generic Stunts (Any Skill)
 
 The following stunts may be purchased on *any* successful skill roll:
 
@@ -79,9 +79,9 @@ The following stunts may be purchased on *any* successful skill roll:
 
 #section-rule()
 
-== Strength Skills
+=== Strength Skills
 
-=== Force
+==== Force
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -91,7 +91,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Clear the Room*], [A shove, flip, or sweep clears all loose objects from the zone simultaneously (useful for destroying a cultist's ritual setup, or just making a scene).],
 )
 
-=== Brawl
+==== Brawl
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -101,7 +101,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Neck Crank*], [Target is Grappled (see Combat chapter) without requiring a separate maneuver roll. Counts as two stunts with one action.],
 )
 
-=== Endure
+==== Endure
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -113,9 +113,9 @@ The following stunts may be purchased on *any* successful skill roll:
 
 #section-rule()
 
-== Agility Skills
+=== Agility Skills
 
-=== Sneak
+==== Sneak
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -125,7 +125,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Ghost Pass*], [Your passage leaves zero physical trace (no footprints, disturbed dust, or thermal record). Cannot be tracked from this location.],
 )
 
-=== Sleight of Hand
+==== Sleight of Hand
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -135,7 +135,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Perfect Plant*], [You plant an item on a target in a way that will implicate them credibly. Subsequent investigation will find the planted item and treat it as the target's possession.],
 )
 
-=== Firearms
+==== Firearms
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -147,9 +147,9 @@ The following stunts may be purchased on *any* successful skill roll:
 
 #section-rule()
 
-== Wits Skills
+=== Wits Skills
 
-=== Investigate
+==== Investigate
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -159,7 +159,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Hidden Compartment*], [You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established but not yet disclosed.],
 )
 
-=== Tech
+==== Tech
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -169,7 +169,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Ghost Session*], [Your access to a system leaves no log entry. No one can prove you were there.],
 )
 
-=== Lore
+==== Lore
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -181,9 +181,9 @@ The following stunts may be purchased on *any* successful skill roll:
 
 #section-rule()
 
-== Empathy Skills
+=== Empathy Skills
 
-=== Manipulate
+==== Manipulate
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -193,7 +193,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Turned Asset*], [On an already-successful Manipulate, the target now actively wants to help you beyond the scope of your request. They will volunteer additional information or assistance once this session.],
 )
 
-=== Command
+==== Command
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -203,7 +203,7 @@ The following stunts may be purchased on *any* successful skill roll:
   [2], [*Hold the Line*], [All allies who can hear you gain +1 die on their next roll this round. The effect of strong leadership under pressure.],
 )
 
-=== Psychoanalyze
+==== Psychoanalyze
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -215,7 +215,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 #section-rule()
 
-= General Talents
+== General Talents
 
 General Talents are cross-Division abilities available to any agent regardless of Division affiliation. They are acquired through advancement (cost: 1 Advancement Point each) and represent learned tradecraft, personal discipline, and survivor instincts.
 

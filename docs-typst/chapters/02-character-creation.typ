@@ -12,7 +12,7 @@ Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — 
 
 #section-rule()
 
-= Step 1: Choose Your Division
+== Step 1: Choose Your Division
 
 Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are four playable Divisions:
 
@@ -33,7 +33,7 @@ Read the full Division descriptions in the Divisions chapter before making your 
 
 #section-rule()
 
-= Step 2: Choose Your Department or Background
+== Step 2: Choose Your Department or Background
 
 Within your Division, you have a specific background:
 
@@ -46,7 +46,7 @@ Your background is primarily a narrative statement — it tells you and the DA w
 
 #section-rule()
 
-= Step 3: Choose Your Age Group and Distribute Attribute Points
+== Step 3: Choose Your Age Group and Distribute Attribute Points
 
 Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, skill point pool (used in Step 4), and *Clearance Level modifier* — the longer you've served the Covenant, the higher your authorization.
 
@@ -81,7 +81,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 
 #section-rule()
 
-= Step 4: Distribute Skill Points
+== Step 4: Distribute Skill Points
 
 Distribute your *Skill Points* (determined by your Age Group in Step 3) across the twelve core skills. No single skill may exceed *3* at character creation.
 
@@ -121,7 +121,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 #section-rule()
 
-= Step 5: Choose Your Starting Talents
+== Step 5: Choose Your Starting Talents
 
 At creation, every agent selects *two* talents:
 
@@ -136,7 +136,7 @@ Most Division Talents cost *+1 Corruption* to activate. One talent per list is a
 
 #section-rule()
 
-= Step 6: Record Your Starting Statistics
+== Step 6: Record Your Starting Statistics
 
 Once attributes are set, note the following:
 
@@ -155,7 +155,7 @@ Once attributes are set, note the following:
 
 #section-rule()
 
-= Step 7: Claim Your Division Item
+== Step 7: Claim Your Division Item
 
 Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
 
@@ -170,11 +170,11 @@ Every agent receives their Division's *signature item* at induction. This item r
 
 #section-rule()
 
-= Step 8: Select Starting Gear
+== Step 8: Select Starting Gear
 
 Each agent begins with a Division-appropriate kit. Gear beyond this standard kit requires a *Clearance Level roll* during the mission's Equipping Phase.
 
-== Wayfinder Starting Kit
+=== Wayfinder Starting Kit
 
 - Verdant Codex _(Division Item — automatic)_
 - Briefcase with research materials (notepad, pens, carbon paper)
@@ -183,7 +183,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 - Civilian clothing (appropriate for the investigation environment)
 - 1× small concealable weapon (pocket knife, derringer) _(optional, CL 3 item — already authorized)_
 
-== Recovery Starting Kit
+=== Recovery Starting Kit
 
 - Verdant Satchel _(Division Item — automatic)_
 - Sidearm (.38 Special revolver or 9mm semi-automatic, 12 rounds)
@@ -192,7 +192,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 - Field jacket with concealed holster
 - One additional item from the Equipment tables _(CL 2 or lower)_
 
-== The Keep Starting Kit
+=== The Keep Starting Kit
 
 - Warden's Bracer _(Division Item — automatic)_
 - Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
@@ -200,7 +200,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 - Formal attire or tactical jacket _(player's choice based on role)_
 - 1× sidearm _(optional, CL 3 permitted — Wardens only)_
 
-== Stack Starting Kit
+=== Stack Starting Kit
 
 - Personal toolkit: flathead and Phillips screwdrivers × 3, soldering iron, wire cutters, electrical tape, multimeter
 - Signal jammer (prototype; 1 use before requiring repair; Gear Die d6)
@@ -210,7 +210,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 
 #section-rule()
 
-= Step 9: Choose Your Anchor
+== Step 9: Choose Your Anchor
 
 Every agent carries an *Anchor* — a tangible, physical object tied to a core humanizing memory from before the Covenant. It connects you to the ordinary world you are fighting to protect, and it is your most reliable tool for healing Corruption.
 
@@ -227,7 +227,7 @@ Record your Anchor's name and the memory it represents on your character sheet.
 
 #section-rule()
 
-= Step 10: Choose Your Dark Secret
+== Step 10: Choose Your Dark Secret
 
 Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the DA can use it as a story hook when the investigation points in the right direction.
 
@@ -235,7 +235,7 @@ Choose one from your Division's example list in the Advancement chapter, or writ
 
 #section-rule()
 
-= Step 11: Name, Country of Origin, and Biography
+== Step 11: Name, Country of Origin, and Biography
 
 Choose a name appropriate for your campaign's 1980s setting. Record your *Country of Origin*. Then write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
 
@@ -249,7 +249,7 @@ Choose a name appropriate for your campaign's 1980s setting. Record your *Countr
 
 #section-rule()
 
-= Character Sheet Summary
+== Character Sheet Summary
 
 After completing all steps, your sheet should record:
 
@@ -273,15 +273,15 @@ After completing all steps, your sheet should record:
 
 #section-rule()
 
-= Worked Example: Creating Petra Vasquez
+== Worked Example: Creating Petra Vasquez
 
 The following example demonstrates a complete character build for a Recovery agent.
 
-== Step 1–2: Division and Background
+=== Step 1–2: Division and Background
 
 *Petra Vasquez* is a *Recovery* agent with the *Ex-Agency Operative* background. She is a former DEA field agent who recovered an artifact during what she thought was a routine drug raid — and has been in the Covenant's employ ever since.
 
-== Step 3: Age Group and Attributes
+=== Step 3: Age Group and Attributes
 
 Petra's six years in DEA field operations put her at age 34 — she selects *Experienced* (29–38), giving her *13 Attribute Points* and *12 Skill Points*.
 
@@ -300,7 +300,7 @@ _(13 points spent: 4 + 4 + 3 + 2 = 13)_
   Max Corruption Threshold: `10 + 2 = 12`. Petra has a tighter margin than she'd like — but those attribute points went where they needed to go.
 ])
 
-== Step 4: Skills (12 points)
+=== Step 4: Skills (12 points)
 
 #nr-table(
   columns: (1fr, 1fr, 1fr),
@@ -315,12 +315,12 @@ _(13 points spent: 4 + 4 + 3 + 2 = 13)_
 
 _(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
 
-== Step 5: Starting Talents
+=== Step 5: Starting Talents
 
 - *Division Talent:* Petra chooses *Shadow Walker* (+1 Corruption): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
 - *General Talent:* Petra takes *Flee the Scene* — gain +2 bonus dice to Agility when rolling explicitly to escape a conflict. A field operative who knows when to run lives longer than one who doesn't.
 
-== Step 6: Starting Statistics
+=== Step 6: Starting Statistics
 
 #nr-table(
   columns: (1fr, 1fr),
@@ -330,23 +330,23 @@ _(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
   [Max Corruption Threshold], [12],
 )
 
-== Steps 7–8: Division Item and Gear
+=== Steps 7–8: Division Item and Gear
 
 Petra records the *Verdant Satchel* automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
 
-== Step 9: Anchor
+=== Step 9: Anchor
 
 #example-box([
   *Anchor:* A cassette tape — Los Lobos, _By the Light of the Moon_, 1987. Her brother Marco made it for her birthday. She keeps it in the inside pocket of her field jacket and hasn't listened to it since the Tucson raid.
 ])
 
-== Step 10: Dark Secret
+=== Step 10: Dark Secret
 
 #example-box([
   *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
 ])
 
-== Step 11: Name, Country of Origin, and Biography
+=== Step 11: Name, Country of Origin, and Biography
 
 - *Name:* Petra Vasquez
 - *Country of Origin:* United States (California)

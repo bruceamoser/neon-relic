@@ -10,7 +10,7 @@
 
 In the Year Zero Engine, characters do not possess a traditional, escalating pool of "Hit Points." Instead, your *four core Attributes directly serve as your health pools*.
 
-= Damage Types
+== Damage Types
 
 Every source of damage specifies its type and target attribute. The attack defines the damage, not the defender.
 
@@ -22,7 +22,7 @@ Every source of damage specifies its type and target attribute. The attack defin
   [*Corruption*], [*Corruption track* directly], [Pushing rolls, activating Division Talents, occult exposure, artifact activation/feedback, specific creature attacks.],
 )
 
-== Damage Type Rules
+=== Damage Type Rules
 
 + *The source specifies the damage type and target attribute.* The defender does not choose.
 + *Combination attacks* are possible: a supernatural creature might deal Physical (STR) + Corruption damage in the same attack. Both are applied.
@@ -30,7 +30,7 @@ Every source of damage specifies its type and target attribute. The attack defin
 + *Creature stat blocks* list damage per attack. Example: _Shadow Tendril — Damage 2, Mental (WIT) + 1 Corruption_.
 + *Broken state* triggers when any attribute reaches 0. Physical Broken (STR/AGI = 0) → Physical Critical Injury table. Mental Broken (WIT/EMP = 0) → Mental Critical Injury table.
 
-== What Determines STR vs AGI / WIT vs EMP
+=== What Determines STR vs AGI / WIT vs EMP
 
 - *Physical attacks* default to *STR* unless the source is specifically about exhaustion, fatigue, or overexertion (then AGI).
 - *Mental attacks* default to *WIT* unless the source is specifically emotional, social, or empathic (then EMP).
@@ -38,7 +38,7 @@ Every source of damage specifies its type and target attribute. The attack defin
 
 #section-rule()
 
-= The Broken State
+== The Broken State
 
 If any Attribute is reduced to *0*, your character becomes *Broken*:
 
@@ -47,11 +47,11 @@ If any Attribute is reduced to *0*, your character becomes *Broken*:
 
 #section-rule()
 
-= Death and Dying
+== Death and Dying
 
 Being *Broken* is not the same as being dead. Death is a separate, subsequent event — probabilistic, not automatic — that occurs if a Broken character does not receive care in time.
 
-== The Three States
+=== The Three States
 
 #nr-table(
   columns: (1fr, 2fr, 4fr),
@@ -61,7 +61,7 @@ Being *Broken* is not the same as being dead. Death is a separate, subsequent ev
   [*Dead*], [Death Check rolled and failed, OR a specific instant-death result triggered, OR Dying window expires without treatment.], [The character is gone.],
 )
 
-== The Death Check
+=== The Death Check
 
 A *Death Check* is a single d6 roll. It is required whenever a Critical Injury is marked with *†*.
 
@@ -71,7 +71,7 @@ A *Death Check* is a single d6 roll. It is required whenever a Critical Injury i
 
 *Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+2 instead of d6 (death only on 1, and only if the Heal roll succeeded). On failure: no change; Death Check proceeds normally.
 
-== The Stabilization Window
+=== The Stabilization Window
 
 A Broken character who has rolled a Death-Check result (†) has a limited window in which an ally can stabilize them before death becomes inevitable:
 
@@ -79,7 +79,7 @@ A Broken character who has rolled a Death-Check result (†) has a limited windo
 - *End of scene without treatment:* The character must roll their Death Check unmodified. No ally assistance.
 - *Instant Death exceptions:* Critical Injury result 66 (DOA) requires an immediate Death Check — there is no window. The Heal roll to influence it must be attempted within the same round (not the same scene).
 
-== First Aid: Stabilizing a Dying Character
+=== First Aid: Stabilizing a Dying Character
 
 To stabilize a Dying ally during the stabilization window:
 
@@ -90,7 +90,7 @@ To stabilize a Dying ally during the stabilization window:
 - *On success:* The Dying state is resolved. The Critical Injury remains. The character is Broken/Unconscious but no longer dying. They need rest and proper medical care, but they will live.
 - *On failure:* Stabilization attempt failed. The character may try again if time permits (same scene). Each failed attempt reduces the character's current Strength by 1 (the effort causes further distress).
 
-== Instant Death
+=== Instant Death
 
 Two Critical Injury results bypass the Death Check entirely:
 
@@ -101,7 +101,7 @@ Two Critical Injury results bypass the Death Check entirely:
   *Instant physical death (result 66)* is rare and requires an enormous attack to reach the worst end of the D66 table. It represents an overwhelmingly lethal event. Most character deaths will come from failed Death Checks, not from this result.
 ])
 
-== Character Death and Continuity
+=== Character Death and Continuity
 
 When a character dies:
 
@@ -111,7 +111,7 @@ When a character dies:
 + *Character replacement.* A new character enters play at the start of the next Case File. They begin with the same XP total as the lowest-XP surviving member of the team (minimum starting values). They arrive as a new Covenant recruitment — briefed, equipped, and nervous.
 + *Legacy.* The deceased character's player chooses one lasting effect: a significant item the new character carries (with DA permission), an NPC connection inherited, or a reputation within the Covenant that precedes them.
 
-== Corruption Death vs. Physical Death
+=== Corruption Death vs. Physical Death
 
 Physical death and Corruption-threshold death are distinct retirement paths:
 
@@ -124,7 +124,7 @@ Physical death and Corruption-threshold death are distinct retirement paths:
 
 #section-rule()
 
-= Critical Injuries
+== Critical Injuries
 
 When a character is *Broken* (any Attribute reduced to 0), they immediately roll on the appropriate Critical Injury table. The table used depends on *what type of damage Broke them*:
 
@@ -133,11 +133,11 @@ When a character is *Broken* (any Attribute reduced to 0), they immediately roll
 - *Mental (Wits = 0):* Roll on the Mental & Emotional Critical Injury table.
 - *Emotional (Empathy = 0):* Roll on the Mental & Emotional Critical Injury table.
 
-== How to Roll D66
+=== How to Roll D66
 
 Roll two d6. The first die is the *tens digit*, the second is the *units digit*. A result of 3 on the first die and 4 on the second = *34*.
 
-== Death Checks
+=== Death Checks
 
 Some results are marked *†* (Death Check). When you roll one, roll a single d6:
 
@@ -148,7 +148,7 @@ A character with *Medical Training* (Keep talent) may spend a Slow Action making
 
 #section-rule()
 
-== Physical Critical Injury Table (D66)
+=== Physical Critical Injury Table (D66)
 
 Roll when Broken by *Strength or Agility* damage.
 
@@ -195,7 +195,7 @@ Roll when Broken by *Strength or Agility* damage.
 
 #section-rule()
 
-== Mental & Emotional Critical Injury Table (D66)
+=== Mental & Emotional Critical Injury Table (D66)
 
 Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corruption — the occult has left its mark.
 
@@ -246,7 +246,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 #section-rule()
 
-= Armor Mechanics
+== Armor Mechanics
 
 To survive lethal encounters, agents utilize armor (such as concealed Kevlar vests or tactical riot gear):
 

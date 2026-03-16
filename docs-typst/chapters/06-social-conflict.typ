@@ -14,7 +14,7 @@ Social conflict in Neon Relic uses the *Disposition model* — a lightweight sys
 
 #section-rule()
 
-= NPC Disposition
+== NPC Disposition
 
 Every NPC who is not immediately cooperative has a *Disposition* — a state describing their current openness to engagement. Disposition exists on a 5-point track:
 
@@ -28,7 +28,7 @@ Every NPC who is not immediately cooperative has a *Disposition* — a state des
   [1], [*Closed*], [The NPC will not engage. They may call for help, alert others, or physically leave. Social rolls are Difficulty 4.],
 )
 
-== Starting Disposition
+=== Starting Disposition
 
 The DA sets starting Disposition based on the NPC's relationship to the agents and the situation. Suggested defaults:
 
@@ -41,11 +41,11 @@ The DA sets starting Disposition based on the NPC's relationship to the agents a
 
 #section-rule()
 
-= Shifting Disposition
+== Shifting Disposition
 
 Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes.
 
-== Actions that Shift Disposition Up (+1)
+=== Actions that Shift Disposition Up (+1)
 
 - A successful Psychoanalyze roll (treating or reading the NPC)
 - A successful Manipulate roll that makes the NPC feel their interests are served
@@ -53,7 +53,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 - The NPC is shown physical evidence that confirms what they suspected
 - An agent successfully makes a roll to perform a service for the NPC before asking anything
 
-== Actions that Shift Disposition Down (−1)
+=== Actions that Shift Disposition Down (−1)
 
 - A failed Manipulate roll (the NPC sees through the attempt)
 - The NPC catches an agent in a lie (DA's judgment, or a failed opposed Investigate roll from the NPC)
@@ -61,7 +61,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 - A successful Psychoanalyze roll by the DA on behalf of the NPC (they read the agents — see NPC Social Defense below)
 - An agent reveals information that endangers the NPC or confirms they are a target
 
-== Disposition Thresholds
+=== Disposition Thresholds
 
 - *Disposition 3 or higher:* The NPC will answer direct questions truthfully (though not necessarily fully). No roll required for general cooperation.
 - *Disposition 2:* The NPC requires a successful social roll to answer even basic questions. They will lie by default.
@@ -69,11 +69,11 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 
 #section-rule()
 
-= Social Rolls in Practice
+== Social Rolls in Practice
 
 Social rolls use the normal dice pool (Attribute + Skill), difficulty set by current Disposition. You are always rolling against the NPC's *current state*, not their willpower or an abstract resistance.
 
-== Manipulate (Empathy)
+=== Manipulate (Empathy)
 
 Used to deceive, persuade, bribe, leverage, or appeal to self-interest. Manipulate specifically targets the NPC's *wants and fears* — it works through the gap between what they want the world to be and what it is.
 
@@ -81,7 +81,7 @@ Used to deceive, persuade, bribe, leverage, or appeal to self-interest. Manipula
 - *On failure:* Request denied. Disposition shifts −1. The NPC has clocked the attempt.
 - *On a pushed failure:* As above, but Disposition shifts −2. The NPC is now certain they are being worked, and they know by whom.
 
-== Command (Empathy)
+=== Command (Empathy)
 
 Used to assert authority, direct behavior under pressure, or coordinate. Command does not persuade — it *compels through confidence and force of presence*. It works when the NPC is uncertain what to do, when the agents represent a legitimate authority, or when the situation is dangerous enough that someone taking charge feels like relief.
 
@@ -89,7 +89,7 @@ Used to assert authority, direct behavior under pressure, or coordinate. Command
 - *On success:* NPC complies fully for the immediate scene. No Disposition shift.
 - *On failure:* NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the DA's discretion.
 
-== Psychoanalyze (Empathy)
+=== Psychoanalyze (Empathy)
 
 Used to read, understand, or heal. In social conflict, Psychoanalyze has two modes:
 
@@ -104,7 +104,7 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 
 #section-rule()
 
-= NPC Social Defense
+== NPC Social Defense
 
 NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The DA may call for:
 
@@ -115,7 +115,7 @@ These are at DA discretion, not every NPC has this capability. Social defense is
 
 #section-rule()
 
-= Consequences of Failed Social Scenes
+== Consequences of Failed Social Scenes
 
 When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the DA applies one or more consequences:
 
@@ -131,7 +131,7 @@ When a social scene ends badly (Disposition reaches 1, or the agents leave havin
 
 #section-rule()
 
-= Social Pressure and Fear
+== Social Pressure and Fear
 
 Social encounters with entities, artifacts, or cult members may cross into supernatural territory. When the content of a conversation triggers a Fear check:
 
@@ -142,7 +142,7 @@ See the Corruption, Fear & Healing chapter for full Fear check rules.
 
 #section-rule()
 
-= Worked Example: Interrogating a Cultist
+== Worked Example: Interrogating a Cultist
 
 #example-box([
   *Setup:* The agents have detained Brother Elias — a mid-level member of The Ember Accord cult — in the back of a van. He believes the artifact they recovered is a holy relic and resents being treated as a criminal.

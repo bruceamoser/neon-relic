@@ -10,7 +10,7 @@
 
 The foundation of Project Neon Relic relies on the classic *dice-pool variant* of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition — key themes in analog horror.
 
-= The Anatomy of the Dice Pool
+== The Anatomy of the Dice Pool
 
 The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements:
 
@@ -31,7 +31,7 @@ To achieve a basic success, the player must roll at least one *6* across the ent
 
 The elegance of this system lies in its speed; it produces immediate, decisive results by entirely removing post-roll arithmetic or target-number calculations.
 
-= The Push Mechanic and Attrition
+== The Push Mechanic and Attrition
 
 The primary driver of suspense and narrative tension is the *Push* mechanic. If an initial roll yields no sixes (a failure), or if the player desperately needs additional successes for stunts, they may choose to *push* the roll — picking up and re-rolling all dice that do not currently display a 6.
 
@@ -47,18 +47,18 @@ The analog nature of 1980s technology perfectly complements this mechanical attr
 
 #section-rule()
 
-= Opposed Rolls
+== Opposed Rolls
 
 When two characters are directly working against each other — a guard watching for intruders while an agent tries to slip past, a witness resisting an interrogation, two agents in a grapple — a *standard roll is not sufficient*. Both sides have active stakes in the outcome. Use an *Opposed Roll*.
 
-== Procedure
+=== Procedure
 
 + Both characters construct their dice pools normally (Attribute + Skill + Gear).
 + Both roll simultaneously.
 + Count the number of *6s* each side rolled — these are their *successes*.
 + The side with more successes wins.
 
-== Tie-Breaking
+=== Tie-Breaking
 
 #design-note([
   *Design Decision:* In Neon Relic, ties are resolved *in favor of the player character*. If a PC is involved in an opposed roll, a tie is a player win — regardless of who initiated the action.
@@ -73,7 +73,7 @@ When two characters are directly working against each other — a guard watching
 
 If both sides roll zero successes, the outcome is *no change* — the situation remains unresolved, and the DA should advance the fiction in a direction that applies pressure (the confrontation escalates, time runs out, a third party notices, etc.). The acting character does *not* gain Corruption from a zero-zero tie.
 
-== Common Opposed Pairings
+=== Common Opposed Pairings
 
 The following pairings arise most frequently in play. Either side may push their roll as normal, gaining +1 Corruption.
 
@@ -94,24 +94,24 @@ The following pairings arise most frequently in play. Either side may push their
   *Mismatched skills are allowed.* If a situation calls for it, the DA may permit any logical pairing. The table above is guidance, not a hard constraint.
 ])
 
-== Pushed Opposed Rolls
+=== Pushed Opposed Rolls
 
 Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, apply the standard tie-breaking rule: the PC wins if a PC is involved.
 
 #section-rule()
 
-= Helping
+== Helping
 
 Agents operating as a team can be more effective than any individual. When one agent attempts a roll and an ally is present and capable, that ally may *help*.
 
-== Who May Help
+=== Who May Help
 
 An ally may help if *both* of the following are true:
 
 - They are present in the scene (Engaged or Close range — same room, same vehicle, actively coordinating).
 - They have a *rating of at least 1* in the relevant skill, *or* they can provide a plausible narrative justification for how their own skill set contributes (DA approval).
 
-== The Helping Bonus
+=== The Helping Bonus
 
 - Each helper adds *+1 die* to the active character's dice pool.
 - A maximum of *2 helpers* may assist on any single roll.
@@ -121,22 +121,22 @@ An ally may help if *both* of the following are true:
   *Maximum pool size:* With 2 helpers, a character's pool can be up to +2 dice above their normal maximum. This represents peak team coordination — beyond this, too many cooks.
 ])
 
-== Helping and Corruption
+=== Helping and Corruption
 
 - If the active character *pushes* the roll, helpers are *not* penalized — they lent their dice to the initial roll, not the push.
 - Helpers do *not* gain Corruption when the active character pushes.
 
-== Helping in Combat
+=== Helping in Combat
 
 Helping during combat requires a *slow action* from the helper. A helper who assists a slow action during a combat round cannot take any other slow action that round.
 
 #section-rule()
 
-= Group Rolls
+== Group Rolls
 
 Some situations call for the *entire team to attempt the same action simultaneously* — crossing a dark chasm, navigating a treacherous building undetected before the guards change, deciphering a large number of documents before the contact leaves.
 
-== Procedure
+=== Procedure
 
 + Each character rolls their individual dice pool for the relevant skill.
 + Count how many characters *succeed* (rolled at least one 6).
@@ -150,7 +150,7 @@ Some situations call for the *entire team to attempt the same action simultaneou
   [*At least one succeeds*], [The team needs one person to pull it off; others can assist if needed],
 )
 
-== Group Roll Failure
+=== Group Roll Failure
 
 If the group fails to meet the threshold:
 
@@ -164,9 +164,9 @@ If the group fails to meet the threshold:
 
 #section-rule()
 
-= Worked Examples
+== Worked Examples
 
-== Opposed Roll: The Tail Job
+=== Opposed Roll: The Tail Job
 
 #example-box([
   *Situation:* Agent Petra Vasquez (Recovery) is tailing a suspected Compact operative through a crowded airport. The operative gets a feeling he's being watched and starts scanning the crowd.
@@ -178,7 +178,7 @@ If the group fails to meet the threshold:
   If Petra had rolled 0 successes and the operative also rolled 0, the tail continues but something shifts — maybe Petra loses him in the crowd, or the operative ducks into a bathroom and the DA advances the clock.
 ])
 
-== Opposed Roll with Push: The Interrogation
+=== Opposed Roll with Push: The Interrogation
 
 #example-box([
   *Situation:* Wayfinder Agent Reyes is interrogating a frightened historian who knows where the artifact is. The historian desperately doesn't want to cooperate.
@@ -189,7 +189,7 @@ If the group fails to meet the threshold:
   - *Result:* Reyes wins (2 vs 1). The historian cracks. The extra success can be spent on a stunt — perhaps he volunteers more than just the location.
 ])
 
-== Helping: Cracking a Locked File Cabinet
+=== Helping: Cracking a Locked File Cabinet
 
 #example-box([
   *Situation:* Stack agent Kowalski is picking a government-grade lock. Sleight of Hand 2 (AGI 3 + skill 2 = 5 dice). Keep agent Osei has Sleight of Hand 1 and offers to hold the flashlight steady and narrate the tumblers. DA approves.
@@ -198,7 +198,7 @@ If the group fails to meet the threshold:
   - Result: 6, 6, 5, 3, 2, 1 → 2 successes. The lock opens, and the extra success means it opens fast — no time lost.
 ])
 
-== Group Roll: The Silent Entry
+=== Group Roll: The Silent Entry
 
 #example-box([
   *Situation:* Four agents must all enter a research facility quietly before a guard completes his patrol. DA sets threshold: *all succeed* (failure means the guard hears movement).

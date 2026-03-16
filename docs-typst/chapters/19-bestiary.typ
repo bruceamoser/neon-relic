@@ -14,11 +14,11 @@ This chapter provides stat blocks for the most common adversaries: human faction
 
 #section-rule()
 
-= Stat Block Format
+== Stat Block Format
 
 All adversaries — human and supernatural — use the same core stat block, scaled by threat level.
 
-== Standard Stat Block
+=== Standard Stat Block
 
 ```
 NAME
@@ -42,7 +42,7 @@ Broken State: [Flee / Surrender / Berserk / Dissipate / Death]
 Motivation: One sentence describing what this adversary wants in this scene.
 ```
 
-== Stat Block Notes
+=== Stat Block Notes
 
 - *Attributes* are used exactly as PC attributes — as both dice pool maximums and health pools. When Strength reaches 0, the adversary is Broken.
 - *Skills not listed* default to 0.
@@ -51,7 +51,7 @@ Motivation: One sentence describing what this adversary wants in this scene.
 - *Broken State* defines what happens when the adversary's Strength hits 0.
 - *Damage types* in special abilities should specify their type and target: Physical (STR or AGI), Mental (WIT or EMP), or Corruption. See the Health, Damage & Armor chapter.
 
-== Simplified Humanoid Format
+=== Simplified Humanoid Format
 
 Minor human adversaries (background cultists, security guards, common thugs) do not require full stat blocks. Use this shorthand:
 
@@ -64,9 +64,9 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-= Human Adversaries
+== Human Adversaries
 
-== Ember Accord Cultist
+=== Ember Accord Cultist
 
 #nr-stat-block("Ember Accord Cultist", "Human / The Ember Accord / Threat: Low")[
   *Attributes:* STR 3 | AGI 2 | WIT 2 | EMP 3 \
@@ -84,7 +84,7 @@ Special: [One sentence if applicable, or "—"]
   *Motivation:* Protect the artifact/ritual/site. They believe you are desecrating something holy.
 ]
 
-== Ember Accord Cell Leader
+=== Ember Accord Cell Leader
 
 #nr-stat-block("Ember Accord Cell Leader", "Human / The Ember Accord / Threat: Medium")[
   *Attributes:* STR 4 | AGI 3 | WIT 3 | EMP 4 \
@@ -104,7 +104,7 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-== MJ-12 Strike Agent
+=== MJ-12 Strike Agent
 
 #nr-stat-block("MJ-12 Strike Agent", "Human / MJ-12 / Threat: High")[
   *Attributes:* STR 5 | AGI 4 | WIT 3 | EMP 2 \
@@ -126,7 +126,7 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-== Hellfire Consortium Blood Contractor
+=== Hellfire Consortium Blood Contractor
 
 #nr-stat-block("Hellfire Consortium Blood Contractor", "Human / The Hellfire Consortium / Threat: High")[
   *Attributes:* STR 3 | AGI 3 | WIT 4 | EMP 3 \
@@ -148,9 +148,9 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-= Supernatural Entities
+== Supernatural Entities
 
-== Echoing Remnant (Poltergeist)
+=== Echoing Remnant (Poltergeist)
 
 #nr-stat-block("Echoing Remnant", "Supernatural / Entity / Threat: Low–Medium")[
   *Attributes:* STR 4 | AGI 3 | WIT 1 | EMP 0 \
@@ -174,7 +174,7 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-== Shard Construct (Artifact Guardian)
+=== Shard Construct (Artifact Guardian)
 
 #nr-stat-block("Shard Construct", "Supernatural / Artifact-Spawned / Threat: High")[
   *Attributes:* STR 8 | AGI 3 | WIT 2 | EMP 0 \
@@ -198,7 +198,7 @@ Special: [One sentence if applicable, or "—"]
 
 #section-rule()
 
-= NPC Tier Reference
+== NPC Tier Reference
 
 For quick reference when building encounters:
 
@@ -217,7 +217,7 @@ For quick reference when building encounters:
 
 #section-rule()
 
-= Cross-References
+== Cross-References
 
 - Fear ratings and check triggers: see the Corruption, Fear & Healing chapter.
 - Faction affiliations and politics: see the Rival Factions chapter.
@@ -226,9 +226,9 @@ For quick reference when building encounters:
 
 #section-rule()
 
-= Additional Supernatural Entities
+== Additional Supernatural Entities
 
-== The Mire (Psychic Contamination Zone)
+=== The Mire (Psychic Contamination Zone)
 
 #nr-table(
   columns: (1fr, 3fr),
@@ -260,7 +260,7 @@ For quick reference when building encounters:
 
 #section-rule()
 
-== The Hollow
+=== The Hollow
 
 #nr-table(
   columns: (1fr, 3fr),
@@ -292,7 +292,7 @@ For quick reference when building encounters:
 
 #section-rule()
 
-== The Listening
+=== The Listening
 
 #nr-table(
   columns: (1fr, 3fr),
@@ -326,7 +326,7 @@ For quick reference when building encounters:
 
 #section-rule()
 
-== Fracture Wraith
+=== Fracture Wraith
 
 #nr-table(
   columns: (1fr, 3fr),
@@ -360,11 +360,11 @@ For quick reference when building encounters:
 
 #section-rule()
 
-= Corrupted NPCs
+== Corrupted NPCs
 
 *Corrupted NPCs* are human characters — factional contacts, civilians, or even Covenant support staff — whose Corruption has crossed into active dysfunction. Unlike Fracture Wraiths or Hollows, they are still alive. They still want things. But *what* they want has been bent by prolonged corruption exposure.
 
-== Corruption Threshold and Behavior
+=== Corruption Threshold and Behavior
 
 The Corruption thresholds from the Corruption, Fear & Healing chapter apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
 
@@ -377,7 +377,7 @@ The Corruption thresholds from the Corruption, Fear & Healing chapter apply to N
   [*3*], [11+], [*Broken.* The NPC meets the Fracture Wraith threshold or reaches catatonia. If not Catatonic, treat as equivalent to a Hollow — still moving, but no longer present.],
 )
 
-== Running a Corrupted NPC
+=== Running a Corrupted NPC
 
 Corrupted NPCs are not villains in the traditional sense. They are *victims*. Consider the following when playing them:
 
@@ -386,7 +386,7 @@ Corrupted NPCs are not villains in the traditional sense. They are *victims*. Co
 - A Stage 2 NPC who is confronted about their behavior becomes *aggressively defensive* — they are convinced they are fine. A Psychoanalyze roll (Difficulty 3) reveals the fracture.
 - A Stage 2 NPC who is successfully *separated from the artifact* for 48 hours begins to recover. A Psychoanalyze roll (Difficulty 2) can accelerate recovery. Recovery is not complete — they retain the trauma and may have acted against people they care about.
 
-== Identifying Corruption
+=== Identifying Corruption
 
 Detecting a Corrupted NPC in play:
 
@@ -400,15 +400,15 @@ Detecting a Corrupted NPC in play:
 
 #section-rule()
 
-= DA Monster Creation Guidelines
+== DA Monster Creation Guidelines
 
 Use these guidelines when building new entities for a scenario.
 
-== Step 1 — Establish Tier
+=== Step 1 — Establish Tier
 
 Choose the entity's Tier from the NPC Tier Reference table. Named Threats require a narrative hook (a history, a motivation, a way they can be permanently stopped) and should appear no more than once or twice per campaign.
 
-== Step 2 — Assign Attributes
+=== Step 2 — Assign Attributes
 
 Use the following baselines as starting points:
 
@@ -423,11 +423,11 @@ Use the following baselines as starting points:
 
 Supernatural entities may exceed these ranges in one or two Attributes to reflect their inhuman nature — but balance this against their vulnerabilities.
 
-== Step 3 — Choose a Primary Skill (and Two Secondary Skills)
+=== Step 3 — Choose a Primary Skill (and Two Secondary Skills)
 
 The primary skill is what the entity *does in combat or interaction*. The secondary skills represent what it falls back on. Named Threats get three secondary skills.
 
-== Step 4 — Define Special Abilities
+=== Step 4 — Define Special Abilities
 
 Limit special abilities by tier:
 
@@ -442,7 +442,7 @@ Limit special abilities by tier:
 + At least one ability should have *a meaningful counter* that can be discovered with a successful Lore or Investigate roll.
 + Avoid purely defensive abilities — entities that can only be hurt in specific ways are frustrating if players can't find the method.
 
-== Step 5 — Set Fear Rating
+=== Step 5 — Set Fear Rating
 
 #nr-table(
   columns: (1fr, 3fr),
@@ -453,10 +453,10 @@ Limit special abilities by tier:
   [4], [Shattering — maximum; reserved for entities of existential scale],
 )
 
-== Step 6 — Write the Broken State
+=== Step 6 — Write the Broken State
 
 Every entity needs an end condition. Answer: *What does it look like when this thing stops?* What does it leave behind? Is it permanent?
 
-== Step 7 — Write the Motivation
+=== Step 7 — Write the Motivation
 
 Even mindless entities have a directive. Define it in one sentence. If you can't, the entity isn't ready yet.

@@ -10,7 +10,7 @@
 
 In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Corruption, and an economic resource sink giving players ownership over the world.
 
-= The Covenant Safehouse
+== The Covenant Safehouse
 
 At campaign onset, players acquire a default headquarters representing a localized branch of the Covenant. Thematically appropriate locations include:
 
@@ -20,7 +20,7 @@ At campaign onset, players acquire a default headquarters representing a localiz
 
 Initially, the space is entirely derelict. Access to deeper subterranean levels, sealed vaults, or secure storage rooms requires the expenditure of *Development Points (Dev Points / DP)*, awarded collectively for completing Case Files and securing artifacts.
 
-== Earning Development Points
+=== Earning Development Points
 
 The team earns DP collectively during *Phase 8: The Aftermath* of each Case File:
 
@@ -38,11 +38,11 @@ DP is spent immediately during downtime (Phase 8) or banked for future Case File
 
 #section-rule()
 
-= HQ Upgrade Tree
+== HQ Upgrade Tree
 
 Upgrades are organized into three tiers. Higher-tier upgrades require specific lower-tier facilities to be built first.
 
-== Tier 1 — Base Infrastructure
+=== Tier 1 — Base Infrastructure
 
 *Tier 1 upgrades have no prerequisites.* Any can be built from the start of the campaign.
 
@@ -54,7 +54,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
   [*Safeguard Protocol*], [1], [A reinforced back room, a false-wall escape hatch, and a single-use alarm linked to a trip-wire perimeter. Not a fortress — a head start.], [If the HQ is attacked, the team gains *+1 die on the initiative roll* during the first round of any HQ defense scene. One random NPC contact (if any recruited) survives even if the HQ falls.],
 )
 
-== Tier 2 — Operational Support
+=== Tier 2 — Operational Support
 
 *Tier 2 upgrades each require at least one Tier 1 facility to be built first.* Prerequisites listed per upgrade.
 
@@ -67,7 +67,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
   [*The Faraday Cage*], [4], [Secure Communications Room], [Lead-lined room sealed against electromagnetic and supernatural interference. No phones work inside. No spirits answer. Silence like the inside of a safe.], [One character per downtime can heal up to *4 Corruption*. Requires a full day inside — the character is unavailable for other downtime activities that day.],
 )
 
-== Tier 3 — Advanced Operations
+=== Tier 3 — Advanced Operations
 
 *Tier 3 upgrades require at least two Tier 2 facilities to be built.* Prerequisites listed per upgrade.
 
@@ -82,7 +82,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 #section-rule()
 
-= Personnel Recruitment
+== Personnel Recruitment
 
 Beyond infrastructure, the team can recruit individual *contacts and specialists* using Development Points. Personnel provide passive benefits between Case Files and can be called upon during active missions at the DA's discretion.
 
@@ -100,11 +100,11 @@ Personnel are not combatants. If the HQ is directly attacked, they flee or hide 
 
 #section-rule()
 
-= HQ Compromise and Attack
+== HQ Compromise and Attack
 
 The safehouse is not invulnerable. Rivals, government black-ops, and supernatural entities may target it directly.
 
-== The Threat Meter
+=== The Threat Meter
 
 The DA tracks a hidden *Threat Meter* ranging from 0 to 6. When it reaches 6, the safehouse is directly targeted.
 
@@ -118,7 +118,7 @@ The Threat Meter increases by 1 when:
 
 The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no corruption incidents).
 
-== Compromise Event
+=== Compromise Event
 
 When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the next Case File begins. Roll d6:
 
@@ -131,7 +131,7 @@ When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the ne
   [6], [*Burned* — The safehouse is fully compromised. The team must relocate (lose all Tier 1–2 facilities; Tier 3 facilities survive only if the Safe House Network is built). Threat Meter resets to 0. All banked DP intact; team starts rebuilding at new location.],
 )
 
-== HQ Defense Scene
+=== HQ Defense Scene
 
 If the compromise event results in a direct assault (rolls 5–6), run it as a structured conflict:
 
@@ -145,7 +145,7 @@ If the compromise event results in a direct assault (rolls 5–6), run it as a s
 
 #section-rule()
 
-= Covenant Standing (Reputation System)
+== Covenant Standing (Reputation System)
 
 *Covenant Standing* is a per-cell meta-progression score that measures how the Verdant Covenant perceives your cell's effectiveness, discretion, and reliability. It is not glamour — it does not mean fame. A cell with high Standing is one that has been trusted with increasingly sensitive operations because they _do not leave messes_.
 
@@ -153,7 +153,7 @@ Standing is tracked as a single score from *0 to 20*, shared by the entire cell.
 
 #section-rule()
 
-== Standing Ranks
+=== Standing Ranks
 
 #nr-table(
   columns: (1fr, 1fr, 4fr),
@@ -167,7 +167,7 @@ Standing is tracked as a single score from *0 to 20*, shared by the entire cell.
 
 #section-rule()
 
-== Gaining Standing
+=== Gaining Standing
 
 Standing increases at the end of a case when specific outcomes are achieved. All gains are cumulative — multiple criteria can apply in a single case.
 
@@ -188,7 +188,7 @@ Standing increases at the end of a case when specific outcomes are achieved. All
 
 #section-rule()
 
-== Losing Standing
+=== Losing Standing
 
 Standing losses are immediate and cannot be avoided by narrative justification. The Covenant knows. It always knows.
 
@@ -208,7 +208,7 @@ Standing losses are immediate and cannot be avoided by narrative justification. 
 
 #section-rule()
 
-== Standing Rewards
+=== Standing Rewards
 
 Standing unlocks access to resources, upgrades, and Covenant infrastructure that cannot be purchased with Development Points alone.
 
@@ -228,7 +228,7 @@ Standing unlocks access to resources, upgrades, and Covenant infrastructure that
 
 #section-rule()
 
-== Standing and HQ Upgrade Gates
+=== Standing and HQ Upgrade Gates
 
 Some HQ facilities already require specific prerequisites (DP investment and prior facilities). *Standing gates* apply on top of those prerequisites for the most sensitive upgrades. These upgrades cannot be built regardless of DP until the Standing threshold is met.
 
@@ -248,7 +248,7 @@ Some HQ facilities already require specific prerequisites (DP investment and pri
 
 #section-rule()
 
-== Rival Cells (Optional Rule)
+=== Rival Cells (Optional Rule)
 
 At campaign start, the DA may establish a rival Covenant cell operating in the same region. Rival cells compete for case priority, Covenant resources, and Standing.
 

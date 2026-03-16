@@ -10,7 +10,7 @@
 
 Because of the rigid structure of 441 members, players are part of an unbroken lineage of historical stewards. The following represent legendary past members from the Covenant archives.
 
-= The Medieval & Renaissance Eras
+== The Medieval & Renaissance Eras
 
 #nr-table(
   columns: (3fr, 1fr, 1fr, 5fr),
@@ -27,7 +27,7 @@ Because of the rigid structure of 441 members, players are part of an unbroken l
   [*John Dee*], [1527–1608], [Wayfinder], [Used Enochian magic and Elizabeth I's court to intercept Spanish occult weaponry.],
 )
 
-= The Enlightenment & Victorian Eras
+== The Enlightenment & Victorian Eras
 
 #nr-table(
   columns: (3fr, 1fr, 1fr, 5fr),
@@ -44,7 +44,7 @@ Because of the rigid structure of 441 members, players are part of an unbroken l
   [*William Butler Yeats*], [1865–1939], [Wayfinder], [Used poetic resonance and automatic writing to locate dormant Celtic artifacts.],
 )
 
-= The 20th Century (Pre-1980s)
+== The 20th Century (Pre-1980s)
 
 #nr-table(
   columns: (3fr, 1fr, 1fr, 5fr),

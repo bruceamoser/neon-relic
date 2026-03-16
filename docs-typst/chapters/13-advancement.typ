@@ -8,7 +8,7 @@
 
 #chapter-header("13", "Advancement")
 
-= Dark Secrets
+== Dark Secrets
 
 A *Dark Secret* is a specific fact from your character's past — something true, hidden, and consequential. It is not a personality flaw or a general backstory. It names something: an event, a decision, a relationship that *someone wants to remain buried*.
 
@@ -23,7 +23,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 #section-rule()
 
-== Wayfinder Dark Secrets
+=== Wayfinder Dark Secrets
 
 #nr-table(
   columns: (2fr, 5fr),
@@ -37,7 +37,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 #section-rule()
 
-== Recovery Dark Secrets
+=== Recovery Dark Secrets
 
 #nr-table(
   columns: (2fr, 5fr),
@@ -51,7 +51,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 #section-rule()
 
-== Keep Dark Secrets
+=== Keep Dark Secrets
 
 #nr-table(
   columns: (2fr, 5fr),
@@ -65,7 +65,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 #section-rule()
 
-== Stack Dark Secrets
+=== Stack Dark Secrets
 
 #nr-table(
   columns: (2fr, 5fr),
@@ -79,7 +79,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 #section-rule()
 
-= Advancement and General Talents
+== Advancement and General Talents
 
 Experience Points (XP) are awarded at the end of each Case File through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
@@ -93,7 +93,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
   [5], [Did you learn something new and significant about the supernatural threat or rival factions?],
 )
 
-== Spending XP
+=== Spending XP
 
 #nr-table(
   columns: (3fr, 1fr, 2fr),
@@ -105,7 +105,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
 
 Clearance increases represent institutional trust and access expansion, not just personal capability. DAs should require a fiction trigger (mission performance, formal commendation, reassignment, or political sponsorship) before the increase is finalized.
 
-== Worked Example: Session Debrief and CL Increase
+=== Worked Example: Session Debrief and CL Increase
 
 The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Keep Warden currently at Clearance Level 2 with 8 XP carried over from the previous Case File.
 
@@ -130,7 +130,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 #design-note([*DA note:* CL increases are not automatic once the 3 XP threshold is met. A fiction trigger must exist — a commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.])
 
-== General Talents
+=== General Talents
 
 General Talents are specialized abilities available to *any character*, providing mechanical exceptions or situational bonuses:
 

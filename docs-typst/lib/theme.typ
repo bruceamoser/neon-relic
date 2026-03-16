@@ -76,7 +76,7 @@
   block(
     width: 100%,
     above: 6mm,
-    below: 2mm,
+    below: 5mm,
     stroke: (bottom: 2pt + clr-olive),
     inset: (x: 0pt, top: 2mm, bottom: 2mm),
     breakable: false,
@@ -91,7 +91,7 @@
   block(
     width: 100%,
     above: 6mm,
-    below: 2mm,
+    below: 4mm,
     stroke: (bottom: 1pt + clr-olive-mid),
     inset: (x: 0pt, top: 1mm, bottom: 1mm),
     breakable: false,
@@ -103,7 +103,7 @@
 }
 
 #let h3-style(body) = {
-  block(above: 6mm, below: 2mm, breakable: false)[
+  block(above: 6mm, below: 3mm, breakable: false)[
     #text(font: font-heading, size: size-h3, weight: "bold", style: "italic", fill: clr-olive-dark)[#body]
   ]
 }
@@ -165,15 +165,20 @@
   set block(above: 0pt, below: 3mm)
   set list(marker: ([•], [–], [·]), indent: 4mm, spacing: 2mm)
   set enum(indent: 4mm, spacing: 2mm)
+  show list: it => block(above: 4mm, it)
+  show enum: it => block(above: 4mm, it)
 
   // Links
   show link: it => text(fill: clr-link)[#it]
 
-  // Heading styles (applied here so chapters just use = / == / ===)
-  show heading.where(level: 1): it => h1-style(it.body)
-  show heading.where(level: 2): it => h2-style(it.body)
-  show heading.where(level: 3): it => h3-style(it.body)
-  show heading.where(level: 4): it => h4-style(it.body)
+  // Heading styles
+  // Level 1 = chapter titles (emitted by chapter-header; TOC-registered, visually invisible)
+  show heading.where(level: 1): it => []
+  // Section headings bumped one level: == is now visual H1, === H2, etc.
+  show heading.where(level: 2): it => h1-style(it.body)
+  show heading.where(level: 3): it => h2-style(it.body)
+  show heading.where(level: 4): it => h3-style(it.body)
+  show heading.where(level: 5): it => h4-style(it.body)
 
   doc
 }
