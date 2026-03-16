@@ -220,7 +220,7 @@ Choose a name appropriate for your campaign's 1980s setting. Record your *Countr
 
 > *Country of Origin Guidance:* This is primarily narrative. Use it to inform your accent, contacts, cultural references, and how local authorities read you in the field. Do not apply mandatory mechanical modifiers.
 
-> *1980s Name Inspiration:* The era favors names like Karen, Debbie, Steve, Randall, Tracy, Rick, Tamara, Dale, Connie, Barry. Use names and surnames that fit your country of origin and assignment history.
+> *1980s Name Inspiration:* Choose names authentic to your character's country of origin and cultural background. British Isles: Margaret, Colin, Siobhan, Alistair. France: Isabelle, François, Nathalie, Michel. Germany: Ursula, Dieter, Heike, Jürgen. Japan: Kenji, Noriko, Takeshi, Yuki. Use surnames that fit your cultural heritage and the era — the 1980s had specific naming fashions in every country.
 
 ---
 
@@ -319,6 +319,9 @@ Petra records the *Verdant Satchel* automatically. From the Recovery Kit she tak
 
 > *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
 
-=== Step 11: Biography
+=== Step 11: Name, Country of Origin, and Biography
 
-_"Petra Vasquez, former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
+* *Name:* Petra Vasquez
+* *Country of Origin:* United States (California)
+
+> _"Former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
