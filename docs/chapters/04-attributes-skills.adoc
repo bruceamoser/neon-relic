@@ -223,3 +223,20 @@ The following stunts may be purchased on *any* successful skill roll:
 | 1 | *Decompress* | The person you're treating recovers 1 additional Wits or Empathy point beyond the normal healing (max to their normal maximum).
 | 2 | *Full Read* | You have comprehensively understood this person's psychological state. For the rest of the scene, you may treat all Psychoanalyze rolls against them as Difficulty 0 — you know them now.
 |===
+
+---
+
+== General Talents
+
+General Talents are cross-Division abilities available to any agent regardless of Division affiliation. They are acquired through advancement (cost: 1 Advancement Point each) and represent learned tradecraft, personal discipline, and survivor instincts.
+
+[%header,cols="2,1,2,1,4"]
+|===
+| Talent | Type | Prerequisites | Tag | Effect
+
+| *Hair Trigger* | Once per combat | AGI 3+ | _(Initiative)_ | After initiative cards are revealed but before the first action, discard your card and draw a new one, keeping the new result.
+
+| *Tactical Override* | Fast Action | EMP 3+, Command 2+ | _(Initiative)_ | Once per round, swap one ally's initiative card with the next hostile participant directly above them in the order. If no hostile is directly above the chosen ally, this talent has no valid target this round.
+|===
+
+> *Edge case — Tactical Override:* "Directly above" means the next hostile in turn order, not spatial proximity. Cannot swap with another PC — the participant directly above must be hostile.
