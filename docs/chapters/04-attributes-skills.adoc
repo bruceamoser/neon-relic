@@ -57,7 +57,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 * You may split stunt points across multiple effects if both are available on the same skill.
 * On a *pushed roll*, stunt points still apply from the new result.
 
-> *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter (`docs/chapters/05-combat.adoc`). The stunt economy is the same.
+> *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter (xref:05-combat.adoc[Combat]). The stunt economy is the same.
 
 === Generic Stunts (Any Skill)
 

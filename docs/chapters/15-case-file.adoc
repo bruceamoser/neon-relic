@@ -23,7 +23,7 @@ Conducted at the player's Headquarters:
 
 . *Research* — Players use base facilities to research the entity or artifact.
 . *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
-. *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See `docs/chapters/10-equipment.adoc` for the Resource Die system and per-category die sizes.
+. *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See xref:10-equipment.adoc[Equipment] for the Resource Die system and per-category die sizes.
 
 == Phase 4: The Journey
 
@@ -57,7 +57,7 @@ Survivors return to base. During this phase:
 * Check if Critical Injury effects require ongoing treatment
 * Initiate new Headquarters upgrades
 
-During the Aftermath, the team earns *Development Points (DP)* based on their performance and spends them to build or expand the Headquarters upgrade tree (see `docs/chapters/12-headquarters.adoc` for the full upgrade tree, costs, and prerequisites). The Threat Meter is also updated — if the team was fully covert, it decreases by 1.
+During the Aftermath, the team earns *Development Points (DP)* based on their performance and spends them to build or expand the Headquarters upgrade tree (see xref:12-headquarters.adoc[Headquarters] for the full upgrade tree, costs, and prerequisites). The Threat Meter is also updated — if the team was fully covert, it decreases by 1.
 
 ---
 
@@ -157,9 +157,9 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 == Cross-References
 
-* DA guidance for building and calibrating Countdown clocks: `docs/chapters/14-DA-guidance.adoc`
-* Corruption gain mechanics: `docs/chapters/08-corruption-fear-healing.adoc`
-* Wayfinder Division rituals: `docs/chapters/17-rival-factions.adoc` (and Issue #15)
+* DA guidance for building and calibrating Countdown clocks: xref:14-gm-guidance.adoc[Director of Agents Guidance]
+* Corruption gain mechanics: xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing]
+* Wayfinder Division rituals: xref:17-rival-factions.adoc[Rival Factions] (and Issue #15)
 
 ---
 

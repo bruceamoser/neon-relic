@@ -258,8 +258,8 @@ Containment cases benefit from clocks with *loss conditions linked to exposure*,
 
 == Cross-References
 
-* Case File structure (8-phase structure, Countdown mechanics): `docs/chapters/15-case-file.adoc`
-* Artifact properties and Tiers: `docs/chapters/11-artifacts.adoc`
-* Rival faction behavior and agendas: `docs/chapters/17-rival-factions.adoc`
-* Entity stat blocks and Fear ratings: `docs/chapters/19-bestiary.adoc`
-* Corruption consequences: `docs/chapters/08-corruption-fear-healing.adoc`
+* Case File structure (8-phase structure, Countdown mechanics): xref:15-case-file.adoc[Case Files]
+* Artifact properties and Tiers: xref:11-artifacts.adoc[Artifacts]
+* Rival faction behavior and agendas: xref:17-rival-factions.adoc[Rival Factions]
+* Entity stat blocks and Fear ratings: xref:19-bestiary.adoc[Bestiary]
+* Corruption consequences: xref:08-corruption-fear-healing.adoc[Corruption, Fear & Healing]
