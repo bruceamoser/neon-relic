@@ -8,18 +8,25 @@
 // Components defined here:
 //   chapter-header(num, title)
 //   part-header(num, title)
-//   callout-block(label, body)
+//   callout-block(label, body, danger: false, full-width: false)
 //   design-note(body)
 //   sidebar-box(title, body)
 //   example-box(body)
 //   stat-block(content)
 //   artifact-card(name, classification, body)
-//   nr-table(columns, ..rows)
+//   nr-table(columns, caption, ..rows)       — inline column-width table
+//   nr-table-wide(columns, caption, ..rows)  — full-page-width floating table
 //   column-break()
 //   section-rule()
 // ============================================================
 
 #import "theme.typ": *
+
+// ── Table numbering infrastructure (POLISH-26) ────────────────
+// _nr-chapter tracks the current chapter number string (e.g. "03")
+// _nr-tbl-seq is reset to 0 each chapter and incremented per table
+#let _nr-chapter = state("_nr-chapter", "00")
+#let _nr-tbl-seq = counter("_nr-tbl-seq")
 
 // ─────────────────────────────────────────────────────────────
 // CHAPTER HEADER
@@ -31,6 +38,10 @@
 #let chapter-header(num, title) = {
   // Each chapter begins on a new page (weak = no blank page if already at top)
   pagebreak(weak: true)
+  // Update chapter number for Table X.Y auto-labelling (POLISH-26)
+  _nr-chapter.update(num)
+  // Reset table sequence counter for this chapter (POLISH-26)
+  _nr-tbl-seq.update(0)
   // Register chapter name in outline at level 1 (visually suppressed by theme)
   [#heading(level: 1, numbering: none, outlined: true)[Chapter #num — #title]]
   // Place header spanning both columns at the top of the current page
@@ -69,7 +80,7 @@
         #set text(font: font-heading, size: 9pt, fill: clr-olive-mid)
         [IMAGE PLACEHOLDER — CHAPTER #num]\
         #v(1mm)
-        #text(size: 8pt)[full width × 55 mm]
+        #text(size: 8pt)[~172 mm × 55 mm  |  ~2028 × 650 px @ 300 dpi]
       ]
     ]
   )
@@ -350,11 +361,20 @@
 // )
 // ─────────────────────────────────────────────────────────────
 #let nr-table(columns: auto, caption: none, ..cells) = {
-  let tbl-content = block(width: 100%, breakable: false)[
-    #if caption != none [
-      #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#caption]
-      #v(1mm)
-    ]
+  // Increment table counter for this chapter (POLISH-26)
+  _nr-tbl-seq.step()
+  // Build caption: always prefixed with Table X.Y (POLISH-26)
+  let auto-label = context {
+    let ch = _nr-chapter.get()
+    let n  = _nr-tbl-seq.display("1")
+    "Table " + ch + "." + n
+  }
+  let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
+  // Inline rendering — no float (POLISH-20/21/22): block stays in column flow,
+  // breakable:false prevents the table from splitting across pages.
+  block(width: 100%, breakable: false, above: 8mm, below: 4mm)[
+    #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
+    #v(1mm)
     #set text(size: size-table)
     #show table.cell.where(y: 0): it => {
       set text(fill: clr-manila, weight: "bold")
@@ -369,20 +389,13 @@
       ..cells,
     )
   ]
-  place(
-    scope: "parent",
-    top + left,
-    float: true,
-    block(above: 5mm)[#tbl-content]
-  )
 }
 
 // ─────────────────────────────────────────────────────────────
 // WIDE TABLE HELPER
-// Like nr-table() but floated to span both columns.
-// Use for very wide tables (many columns, or wide content).
-// The table floats to the top of the current page in the
-// parent (full-page-width) scope.
+// Like nr-table() but floated full-page-width (spans both columns).
+// Use for tables with many columns or wide content that looks
+// cramped in the single column width (POLISH-24).
 //
 // Usage: #nr-table-wide(
 //   columns: (1fr, 1fr, 2fr, 1fr, 1fr),
@@ -390,9 +403,40 @@
 //   [Cell], ...,
 // )
 // ─────────────────────────────────────────────────────────────
-// nr-table-wide is now an alias for nr-table (all tables float full-width by default)
 #let nr-table-wide(columns: auto, caption: none, ..cells) = {
-  nr-table(columns: columns, caption: caption, ..cells)
+  // Increment table counter — wide tables share the same sequence (POLISH-26)
+  _nr-tbl-seq.step()
+  let auto-label = context {
+    let ch = _nr-chapter.get()
+    let n  = _nr-tbl-seq.display("1")
+    "Table " + ch + "." + n
+  }
+  let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
+  // Inner block with breakable:false (POLISH-21)
+  let tbl-content = block(width: 100%, breakable: false)[
+    #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
+    #v(1mm)
+    #set text(size: size-table)
+    #show table.cell.where(y: 0): it => {
+      set text(fill: clr-manila, weight: "bold")
+      set table.cell(inset: (x: 3mm, y: 4mm))
+      it
+    }
+    #table(
+      columns: columns,
+      fill: (_, y) => if y == 0 { clr-olive-dark } else if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
+      stroke: 1pt + clr-olive-mid,
+      inset: (x: 3mm, y: 2mm),
+      ..cells,
+    )
+  ]
+  // Float to parent (full-page) scope so it spans both columns (POLISH-24)
+  place(
+    scope: "parent",
+    top + left,
+    float: true,
+    block(above: 8mm, below: 4mm, breakable: false)[#tbl-content]
+  )
 }
 
 // ─────────────────────────────────────────────────────────────
