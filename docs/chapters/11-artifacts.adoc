@@ -351,3 +351,94 @@ spoken: *"Morrow rests."*
 **Artifact Decay:** Begins at 0. Each Wayfinder analysis session can push this
 toward inert at Decay 5.
 
+---
+
+[[containment-oriented-examples]]
+=== Containment-Oriented Worked Examples
+
+The following three artifacts illustrate missions where *preventing activation is the primary objective*. Each entry includes a **Containment Profile**, **Emission** data, and **DA Guidance** for running the case as a retrieval and containment operation rather than an activation event.
+
+---
+
+[[broadcast-reel]]
+==== The Broadcast Reel
+
+*Risk Tag:* Volatile +
+*Tier:* 2 (d10) +
+*Emission:* Pulse
+
+**Origin:** In 1968, a documentary film crew recorded what they believed was a mass hysteria event at a rural commune. The footage shows nothing unusual — fields, a barn, people standing in a field doing nothing. The editor who assembled the final cut died by suicide three days after completing it. The reel was seized by a government agency in 1970 and has been in federal transit limbo since, never screened, never destroyed.
+
+**Form:** A 16mm film reel in a yellow plastic canister, labeled in faded typewriter: _ARCHIVE ONLY — DO NOT SCREEN._ The film appears partially exposed but not degraded. Held to light, it casts no visible image.
+
+**Containment Objective:** The reel must never be loaded into a projector. Even partial threading — feeding the leader without running the film — has caused documented psychological disturbance in handling personnel. The case is won when the reel is in a light-sealed transport container and transferred to a Keep vault under Physical Isolation protocols.
+
+**Effect (if activated):** Everyone within the projected room experiences twelve minutes of vivid, immersive reconstruction of their worst memory. Each target gains +2 Corruption. For 24 hours following exposure, targets cannot make Push rolls — something in them has gone quiet.
+
+**Corruption Cost:** 2. All occupants of the projected space are affected simultaneously; the activating agent has no special protection against bystander exposure.
+
+**Fracture Condition (on 1):** The projector fuses and cannot be switched off by normal means. The film loops. Any occupant who entered the room cannot perceive the exit until someone outside physically cuts power to the building circuit.
+
+**Containment Profile:** Physical Isolation. Transport in the original yellow canister inside an opaque black nylon bag, stored in a hard-sided case. Never collocate with projection equipment. +
+*Inadvertent activation:* Canister opened in a darkened room while a film projector is running within 5 meters.
+
+**Emission (Pulse):** When any film projector within 20 meters of the reel is powered on, all agents in the same zone gain +1 Corruption from proximity — whether or not the reel is removed from its case.
+
+**DA Guidance:** Frame this mission around urgency, not combat. A rival faction or a civilian enthusiast has acquired projection equipment and intends to screen what they believe is a lost documentary. The agents must intercept the reel before it is threaded. Run a clock: *The Screening Begins* (6-stage, advances by the hour). The threat is a countdown, not a fight.
+
+---
+
+[[custody-manifest]]
+==== The Custody Manifest
+
+*Risk Tag:* Unknown +
+*Tier:* 1 (d8) +
+*Emission:* Aura
+
+**Origin:** A chain-of-custody manifest from a classified government logistics program believed to have operated between 1959 and 1963. The form is never fully filled out: the "Current Custodian" entry rearranges overnight, updating itself to match whoever last handled the document. No origin facility has been matched. The manifest predates any known program that would have generated it.
+
+**Form:** A worn, letter-size form on government stock, partially printed and partially handwritten in black ink. The ink in the "Current Custodian" field always appears fresh. A small federal seal in the top corner cannot be matched to any known agency.
+
+**Containment Objective:** The manifest cannot be signed. Any written mark on the document — even an accidental pen scratch — triggers compulsion. The case is complete when the manifest is sealed in a glassine archival sleeve and logged in Wayfinder records under a chain-of-custody notation maintained externally, never on the document itself.
+
+**Effect (if activated):** Whoever signs or writes on the manifest becomes compelled to deliver whatever they are currently holding to an address that appears on the form. The address changes with each activation. On a Push roll, the compelled agent may resist for one scene — the compulsion returns at the start of the next with a new address.
+
+**Corruption Cost:** 1. Paid immediately at the moment of signing.
+
+**Fracture Condition (on 1):** The delivery address resolves to a location within five kilometres of the signing agent. A Shard Construct manifests at that location within the hour, tasked with enforcing delivery — of the signing agent themselves.
+
+**Containment Profile:** Ritual Quiescence. Handle only with latex gloves. Store face-down with an external handwritten cover note (not typed — the manifest cannot affect marks that do not touch its surface): _DO NOT SIGN. DO NOT WRITE ON OR NEAR THIS DOCUMENT._ +
+*Inadvertent activation:* An agent fills out an unrelated form placed on top of the manifest, pressing through the page.
+
+**Emission (Aura):** The agent currently listed as "Custodian" gains +1 Corruption at the start of each scene in which they do not actively move toward the listed delivery address. This is passive — the agent need not have read the manifest for the effect to apply.
+
+**DA Guidance:** This artifact is built for a procedural containment case. The players discover the manifest in the possession of an unwitting civilian who signed something without knowing what it was. The civilian is already being drawn toward a destination they cannot explain. The agents must contain the manifest and manage the civilian's compulsion before the Shard Construct closes in. Key tension: any agent who attempts to document their findings by writing in the margin activates a second compulsion chain.
+
+---
+
+[[quarantine-bell]]
+==== The Quarantine Bell
+
+*Risk Tag:* Catastrophic +
+*Tier:* 3 (d12) +
+*Emission:* Burst
+
+**Origin:** A field quarantine bell used during a 17th-century plague response. Recovered from a site outside Lyon by a French government archaeological survey in 1978; the survey team experienced three fatalities and a collective psychological breakdown before the site was sealed. The bell was transferred to a private collector and has been in circulation since 1979.
+
+**Form:** A cast-iron hand bell, approximately 15cm tall. No maker's mark. The clapper is absent, yet the bell emits a clear, resonant tone when disturbed — even when padded, even when cradled motionless in a moving vehicle.
+
+**Containment Objective:** The bell must not ring. Any sound from it — intentional, accidental, or caused by ambient vibration — counts as activation. The case succeeds when the bell is in triple-layer containment and transferred without incident to a Keep Corruption Dampening Vault.
+
+**Effect (if activated):** All living targets in the same zone who hear the bell test Endure (Difficulty 2) or lose proprioception — they cannot feel pain, hunger, or fear. Affected targets gain +4 dice on Strength and Agility rolls but cannot make Empathy rolls or use Division tactical skills. They act on instinct only. Duration: until end of scene.
+
+**Corruption Cost:** 3 for the activating agent. All targets who hear the bell — whether or not they resist the Endure test — gain +1 Corruption.
+
+**Fracture Condition (on 1):** The bell cannot be silenced. It emits a continuous tone audible across 4 zones for the remainder of the scene. All targets within 4 zones gain +1 Corruption per round until the bell is physically isolated.
+
+**Containment Profile:** Physical Isolation — triple redundancy required. _Layer 1:_ dense foam-padded hard case interior. _Layer 2:_ lead-lined outer container. _Layer 3:_ ritually sealed outer bag (requires a Wayfinder to succeed on a Lore roll, Difficulty 1). Do not transport over rough terrain without all three layers in place. +
+*Inadvertent activation:* Dropped, struck by another object, or brought within 2 metres of a heavy vibration source (vehicle engine at idle, generator, subwoofer).
+
+**Emission (Burst):** When the bell rings — including accidentally — all targets within 1–2 zones gain +1 Corruption before any activation roll is made.
+
+**DA Guidance:** The Quarantine Bell is ideal for a ticking-clock transport mission. The agents must move it from a recovery site to a Keep facility — across a city, under possible surveillance, in 1980s vehicles on 1980s roads. Every speed bump, every near-collision, every moment a rival faction closes in is a potential ringing event. Frame this as a logistical thriller, not a combat encounter. The threat is the object itself, not the people pursuing it.
+

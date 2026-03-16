@@ -201,6 +201,61 @@ Roll when you need an unexpected complication mid-case, when a scene is going to
 
 ---
 
+== Running Containment Missions
+
+Not every case ends with an artifact activation. Many of the Covenant's most important operations are *containment runs* — missions where success means the artifact was never used, never heard, never seen by an unauthorized party. These cases require different framing than activation-centric play.
+
+=== Defining Non-Activation Objectives
+
+Before the session begins, define a concrete containment goal separate from any activation contingency:
+
+[%header,cols="2,4"]
+|===
+| Containment Objective | Example Mission Frame
+
+| *Physical isolation*
+| The artifact is in a civilian's vehicle. Recover it before the civilian reaches their destination. Do not let them open the compartment.
+
+| *Quarantine and witness management*
+| Three people have already been exposed. Contain them, suppress their account of what they saw, and move the artifact before the rival faction arrives.
+
+| *Chain-of-custody transfer*
+| The artifact must travel from a recovery site to a Keep vault. Every handoff is a risk. The agents must complete the transfer with fewer than three custody breaks.
+
+| *Deny use by rival faction*
+| A rival faction intends to activate the artifact at a specific time and place. The agents must prevent the conditions for activation — not necessarily seize the artifact themselves.
+|===
+
+=== Pressure Without Activation
+
+Containment missions still have escalating pressure. Use these tools to maintain tension without triggering the artifact:
+
+* *The emission is already active.* Even before the agents reach the artifact, nearby NPCs may show early Corruption symptoms — confusion, obsessive focus on mundane tasks, sudden certainty about things they cannot know. This makes extraction urgent without requiring activation.
+
+* *The containment profile creates constraints.* If the artifact cannot be exposed to light, the agents must plan their extraction around darkness, covered transport, and power failures. Constraints are interesting problems, not punishment.
+
+* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race with a clock, not a firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
+
+=== Measuring Success in Containment Cases
+
+A containment case is resolved when all three of the following are true:
+
+. *The artifact is inert* — in transit, sealed under its Containment Profile, without activation during the case.
+. *Exposure is controlled* — no uncontained witness has unsuppressed knowledge of the artifact's effects.
+. *Handoff is complete* — the artifact is logged with the Keep under a valid chain of custody.
+
+Partial success is valid. An artifact that was activated once but then contained is a case with a scar — the Decay track advances, but so does the cost.
+
+=== DA Tools: Containment Clocks
+
+Containment cases benefit from clocks with *loss conditions linked to exposure*, not elapsed time:
+
+* *The Seal Breaks* — 6-stage: someone discovers the artifact's true nature. Advances when an agent fails a Conceal roll, when an NPC asks the wrong question, or when a rival faction broadcasts the artifact's location.
+* *The Protocol Fails* — 4-stage: the containment profile is violated. Advances on each inadvertent activation event (a projector powers on nearby, the bell is jostled, the manifest is touched without gloves). At stage 4, the artifact activates without a roll.
+* *The Handoff Window Closes* — A Keep transport is available for a limited time. If the agents do not complete the transfer before the clock expires, the Keep withdraws the vehicle and the artifact must be stored in the field overnight.
+
+---
+
 == Cross-References
 
 * Case File structure (8-phase structure, Countdown mechanics): `docs/chapters/15-case-file.adoc`
