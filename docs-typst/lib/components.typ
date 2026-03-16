@@ -29,9 +29,13 @@
 // Usage: #chapter-header("01", "Introduction")
 // ─────────────────────────────────────────────────────────────
 #let chapter-header(num, title) = {
-  // Break out of 2-column to span full page for the chapter title
+  // Each chapter begins on a new page (weak = no blank page if already at top)
+  pagebreak(weak: true)
+  // Place header spanning both columns at the top of the current page
   place(
+    scope: "parent",
     top + left,
+    float: true,
     block(
       width: 100%,
       fill: clr-manila-dark,
@@ -45,7 +49,7 @@
       #upper(title)
     ]
   )
-  v(28mm)  // space for the header block above
+  v(28mm)  // reserve space for the placed header block
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -282,6 +286,30 @@
     stroke: 1pt + clr-olive-mid,
     inset: (x: 2mm, y: 2mm),
     ..cells,
+  )
+}
+
+// ─────────────────────────────────────────────────────────────
+// WIDE TABLE HELPER
+// Like nr-table() but floated to span both columns.
+// Use for very wide tables (many columns, or wide content).
+// The table floats to the top of the current page in the
+// parent (full-page-width) scope.
+//
+// Usage: #nr-table-wide(
+//   columns: (1fr, 1fr, 2fr, 1fr, 1fr),
+//   [*H1*], [*H2*], ...,
+//   [Cell], ...,
+// )
+// ─────────────────────────────────────────────────────────────
+#let nr-table-wide(columns: auto, ..cells) = {
+  place(
+    scope: "parent",
+    top + left,
+    float: true,
+    block(width: 100%)[
+      #nr-table(columns: columns, ..cells)
+    ]
   )
 }
 

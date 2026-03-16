@@ -62,7 +62,7 @@
 #let page-size    = "us-letter"
 #let page-margin  = (top: 22mm, bottom: 24mm, inside: 24mm, outside: 20mm)
 #let col-count    = 2
-#let col-gap      = 5mm
+#let col-gap      = 7mm
 
 // ── Header/Footer Content ────────────────────────────────────
 #let header-classification = "TOP SECRET — VERDANT COVENANT — EYES ONLY"
@@ -73,37 +73,45 @@
 // Headings: uppercase, olive family, Courier bold.
 
 #let h1-style(body) = {
-  set text(font: font-heading, size: size-h1, weight: "bold", fill: clr-olive-deep)
-  set par(leading: 1.2em)
   block(
     width: 100%,
     above: 6mm,
     below: 2mm,
     stroke: (bottom: 2pt + clr-olive),
     inset: (x: 0pt, top: 2mm, bottom: 2mm),
-  )[#upper(body)]
+    breakable: false,
+  )[
+    #text(
+      font: font-heading, size: size-h1, weight: "bold", fill: clr-olive-deep
+    )[#upper(body)]
+  ]
 }
 
 #let h2-style(body) = {
-  set text(font: font-heading, size: size-h2, weight: "bold", fill: clr-olive-darker)
   block(
     width: 100%,
     above: 6mm,
     below: 2mm,
     stroke: (bottom: 1pt + clr-olive-mid),
     inset: (x: 0pt, top: 1mm, bottom: 1mm),
-    align: center,
-  )[#upper(body)]
+    breakable: false,
+  )[
+    #align(center)[
+      #text(font: font-heading, size: size-h2, weight: "bold", fill: clr-olive-darker)[#upper(body)]
+    ]
+  ]
 }
 
 #let h3-style(body) = {
-  set text(font: font-heading, size: size-h3, weight: "bold", style: "italic", fill: clr-olive-dark)
-  block(above: 6mm, below: 2mm)[#body]
+  block(above: 6mm, below: 2mm, breakable: false)[
+    #text(font: font-heading, size: size-h3, weight: "bold", style: "italic", fill: clr-olive-dark)[#body]
+  ]
 }
 
 #let h4-style(body) = {
-  set text(font: font-heading, size: size-h4, style: "italic", fill: clr-olive)
-  block(above: 4mm, below: 2mm)[#body]
+  block(above: 4mm, below: 2mm, breakable: false)[
+    #text(font: font-heading, size: size-h4, style: "italic", fill: clr-olive)[#body]
+  ]
 }
 
 // ── apply-theme: call at top of neon-relic.typ ───────────────
@@ -160,6 +168,12 @@
 
   // Links
   show link: it => text(fill: clr-link)[#it]
+
+  // Heading styles (applied here so chapters just use = / == / ===)
+  show heading.where(level: 1): it => h1-style(it.body)
+  show heading.where(level: 2): it => h2-style(it.body)
+  show heading.where(level: 3): it => h3-style(it.body)
+  show heading.where(level: 4): it => h4-style(it.body)
 
   doc
 }
