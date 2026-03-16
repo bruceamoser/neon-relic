@@ -52,7 +52,7 @@ neon-relic/
 | `docs/chapters/*.adoc` | **Canonical chapter source files** for the current compiled rulebook. |
 | `docs/neon-relic.adoc` | Master AsciiDoc book that assembles the full release-ready rulebook. |
 | `docs/neon-relic-core-rules.md` | Markdown reference version of the rules text and design material. |
-| `docs/output/neon-relic.pdf` | Generated PDF artifact used for release packaging. |
+| `docs/output/neon-relic-X.Y.Z.pdf` | Generated PDF artifact (versioned). Gitignored — uploaded to each GitHub release as `neon-relic.pdf` to keep the download URL stable. |
 | `docs/references/*.md` | Year Zero Engine reference material from existing YZE games. Used for mechanical consistency and inspiration. |
 
 ## Year Zero Engine References

@@ -450,6 +450,16 @@ xref:XX-name.adoc[Chapter Title]
 
 Fix all hits before proceeding with the build.
 
+### 1b. Set Release Version
+
+Set the `$version` variable in PowerShell — it flows through the build and release commands. Set it **once** here and copy-paste each subsequent step without modifications:
+
+```powershell
+$version = "X.Y.Z"  # ← Replace with the actual version (no "v" prefix, e.g. "1.2.0")
+```
+
+> **Note:** The `v` prefix is added automatically in the git tag and `gh release create` command.
+
 ### 2. Build PDF Output
 
 Generate the PDF from the master AsciiDoc document. Run from the repo root:
@@ -458,16 +468,16 @@ Generate the PDF from the master AsciiDoc document. Run from the repo root:
 # Ensure output directory exists
 New-Item -ItemType Directory -Force -Path docs/output | Out-Null
 
-# Build PDF from master document
-asciidoctor-pdf docs/neon-relic.adoc -D docs/output -o neon-relic.pdf
+# Build PDF — versioned filename, version number injected into title page
+asciidoctor-pdf docs/neon-relic.adoc -D docs/output -o "neon-relic-$version.pdf" -a revnumber=$version
 ```
 
-This produces `docs/output/neon-relic.pdf`. The `docs/output/` directory is gitignored — the PDF is generated fresh each release and attached as a release artifact.
+This produces `docs/output/neon-relic-$version.pdf`. The `docs/output/` directory is gitignored — the PDF is generated fresh each release and attached as a release artifact.
 
 Verify the build succeeded:
 
 ```powershell
-Test-Path docs/output/neon-relic.pdf
+Test-Path "docs/output/neon-relic-$version.pdf"
 ```
 
 Expected output: `True`
@@ -504,15 +514,18 @@ Neon Relic $version
 - Summary item three
 "@
 
-gh release create v$version docs/output/neon-relic.pdf `
+gh release create v$version "docs/output/neon-relic-$version.pdf#neon-relic.pdf" `
   --repo bruceamoser/neon-relic `
   --title $version `
-  --notes $notes
+  --notes $notes `
+  --latest
 ```
 
 Notes:
 - Use semantic version tags (`v1.0.0`, `v1.0.1`, etc.).
 - Keep release title numeric (`1.0.0`) and tag prefixed (`v1.0.0`).
+- The `#neon-relic.pdf` suffix renames the asset on GitHub. The local file is versioned (`neon-relic-X.Y.Z.pdf`), but GitHub stores it as `neon-relic.pdf` — this keeps the README download URL (`/releases/latest/download/neon-relic.pdf`) permanently valid without updating it each release.
+- The `--latest` flag explicitly marks this release as the latest on GitHub.
 - Attach only generated artifacts intended for consumers.
 - Do **not** pass literal `\n` escape sequences in release notes. Use an actual multiline body.
 
