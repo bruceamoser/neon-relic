@@ -208,7 +208,7 @@ Working in coordination with the Wayfinder Division's Department of Counterintel
 |===
 
 [[division-4-stack]]
-== Division 4: Stack (Logistics)
+=== Stack (Logistics)
 
 _"Queue up, agents."_
 
@@ -221,7 +221,7 @@ The Department of Logistics sits organizationally within the Keep, but its uniqu
 
 Stack agents design, modify, and distribute the tools used by Covenant agents â€” from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
 
-=== Stack Key Stats
+==== Stack Key Stats
 
 [cols="1,2"]
 |===
@@ -232,18 +232,18 @@ Stack agents design, modify, and distribute the tools used by Covenant agents â€
 | *Starting Clearance Level* | 4
 |===
 
-=== Stack Departments
+==== Stack Specialties
 
 [%header,cols="2,4"]
 |===
-| Department | Description
+| Specialty | Description
 
 | *The Quartermaster* | Manages the Covenant's equipment stores. Expert in acquisition, logistics, and knowing exactly what's available.
 | *The Retro-Engineer* | Specializes in modifying and repairing existing technology. Can coax impossible performance from aging hardware.
 | *The Paratech Inventor* | Designs entirely new experimental devices that blend analog technology with paranatural principles.
 |===
 
-=== Stack Talents (Choose 1 at Creation)
+==== Stack Talents (Choose 1 at Creation)
 
 [%header,cols="2,1,4"]
 |===
