@@ -111,12 +111,13 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 == Step 5: Choose Your Starting Talents
 
-At creation, every agent selects *two* talents:
+At creation, every agent selects *three* talents:
 
-* *One Division Talent* chosen from your Division's talent list (see the Divisions chapter). You may only choose from your own Division's list at creation.
-* *One General Talent* chosen from the General Talents list (see the Advancement chapter). These are available to every agent regardless of Division.
+* *One Division Talent* chosen from your Division's talent list (see the Advancement chapter). You may only choose from your own Division's list at creation. — *OR* — *One General Talent* chosen from the General Talents list (see the Advancement chapter). General Talents are available to every agent regardless of Division.
+* *One Wing, Paradigm, or Department Talent* chosen from your Wing, Paradigm, or Department's talent list (see the Advancement chapter). You may only choose from your own Wing, Paradigm, or Department list at creation.
+* *One Background Talent* chosen from the Background Talents list (see the Advancement chapter). Background Talents are available to every agent regardless of Division.
 
-Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted.
+Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive — no activation cost.
 
 > *Talent Advancement:* Additional talents can be purchased during play using experience points. See the Advancement chapter.
 
@@ -238,8 +239,9 @@ After completing all steps, your sheet should record:
 | *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
 | *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
 | *Skills (12)* | Skill Points distributed per Age Group, 0–3 each
-| *Division Talent* | One chosen from Division list
-| *General Talent* | One chosen from General Talents list (Step 5)
+| *Division Talent or General Talent* | One chosen from Division list or General Talents list (Advancement chapter)
+| *Wing, Paradigm, or Department Talent* | One chosen from sub-group talent list within Division (Advancement chapter)
+| *Background Talent* | One chosen from Background Talents list (Advancement chapter)
 | *Division Item* | Automatic (or Stack bonus)
 | *Starting Gear* | Division kit ± optional items
 | *Corruption* | Starts at 0
@@ -295,7 +297,8 @@ _(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
 === Step 5: Starting Talents
 
 * *Division Talent:* Petra chooses *Shadow Walker* (+1 Corruption): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
-* *General Talent:* Petra takes *Flee the Scene* — gain +2 bonus dice to Agility when rolling explicitly to escape a conflict. A field operative who knows when to run lives longer than one who doesn't.
+* *Paradigm Talent:* As an Ex-Agency Operative, Petra selects *Conditioned Mind* — once per session, entirely ignore the Corruption point generated from pushing a roll. Petra has learned to compartmentalize fear; her years undercover demanded nothing less.
+* *Background Talent:* Petra takes *Police Officer* (+1 Firearms). Her DEA field certification included extensive weapons qualifications, and that muscle memory doesn't go away.
 
 === Step 6: Starting Statistics
 
