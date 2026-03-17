@@ -61,11 +61,11 @@ Because Corruption naturally builds toward lethal levels, characters must active
 
 Every character begins with an *Anchor* — a tangible, physical object linked to a core humanizing memory (e.g., a cassette tape recording of a lost spouse's voice). In a moment of quiet downtime, a character can dedicate a scene to interacting with their Anchor. This grounded roleplay provides powerful mechanical healing.
 
-=== Random 1980s Memento / Anchor Table (Roll d66)
+=== Random 1980s Anchor Table (Roll d66)
 
 [%header,cols="^1,4,^1,4"]
 |===
-| Roll | Memento | Roll | Memento
+| Roll | Anchor | Roll | Anchor
 
 | 11 | A severely chewed, red Bic pen belonging to a missing sibling. | 41 | A blood-stained matchbook from a notorious neon-lit nightclub.
 | 12 | A Polaroid photograph of a figure that no one else remembers. | 42 | A high school varsity jacket smelling faintly of cheap cologne and ozone.

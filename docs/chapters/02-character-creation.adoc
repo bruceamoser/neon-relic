@@ -199,7 +199,7 @@ Every agent carries an *Anchor* — a tangible, physical object tied to a core h
 
 Choose one of the following options:
 
-* *Roll d66* on the Memento Table in the Healing chapter and accept the result as written.
+* *Roll d66* on the Anchor Table in the Healing chapter and accept the result as written.
 * *Invent your own:* name a specific object and the memory attached to it. Run it by your DA.
 
 Record your Anchor's name and the memory it represents on your character sheet.
