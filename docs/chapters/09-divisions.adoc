@@ -34,11 +34,11 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 * Faintly glows near ancient magic
 * Contains a living map lining that slowly reveals artifact locations
 
-=== Wayfinder Departments
+=== Wayfinder Wings
 
-*Department of Research*
+*Research Wing*
 
-The Department of Research is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
+The Research Wing is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
 
 * *Research Desk Analyst* — Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Desk Analysts maintain artifact catalogues, cross-reference historical reports, and identify patterns indicating the presence of significant artifacts.
 
@@ -46,12 +46,12 @@ The Department of Research is responsible for the discovery, documentation, and 
 
 [NOTE]
 ====
-_Research personnel do not retrieve artifacts._ Once an artifact's existence and location have been confirmed, the Department prepares a formal assessment and forwards the case to the Recovery Division.
+_Research personnel do not retrieve artifacts._ Once an artifact's existence and location have been confirmed, the Wing prepares a formal assessment and forwards the case to the Recovery Division.
 ====
 
-*Department of Counterintelligence*
+*Counterintelligence Wing*
 
-The Department of Counterintelligence protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Department maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
+The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
 
 * *Counterintelligence Desk Analyst* — Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses.
 
@@ -59,7 +59,7 @@ The Department of Counterintelligence protects the Covenant from external threat
 
 [NOTE]
 ====
-Through the vigilance of the Department of Counterintelligence, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
+Through the vigilance of the Counterintelligence Wing, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
 ====
 
 === Wayfinder Talents (Choose 1 at Creation)
@@ -192,7 +192,7 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 
 *Internal Counterintelligence*
 
-Working in coordination with the Wayfinder Division's Department of Counterintelligence, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
+Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
 
 === Keep Talents (Choose 1 at Creation)
 
