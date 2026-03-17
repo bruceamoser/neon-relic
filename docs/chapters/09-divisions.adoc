@@ -97,7 +97,7 @@ Recovery agents are trained to operate in a wide variety of environments. Some r
 
 [NOTE]
 ====
-Unlike other Divisions, the Recovery Division has *no internal departments or specializations*. Every member shares the same purpose and authority. Instead, agents are distinguished by their *operational background*.
+Unlike other Divisions, the Recovery Division has *no internal departments*. Every member shares the same purpose and authority. Instead, agents are distinguished by their *operational paradigm* and the *specialty* within it.
 ====
 
 === Recovery Key Stats
@@ -126,13 +126,43 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 
 Choose one paradigm that defines your agent's prior experience:
 
+*Ex-Agency Operative*
+
+Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
+
 [%header,cols="2,4"]
 |===
-| Paradigm | Description
+| Specialty | Description
 
-| *Ex-Agency Operative* | Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
-| *Heavy-Hitter (Brawler)* | Brute-force specialist. Comfortable in direct violent confrontation above all else.
-| *Acquisition Specialist (Thief)* | Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
+| *Handler* | Runs covert assets and informants. Expert in managing human intelligence networks, dead drops, and clandestine communications. Coordinates with Wayfinder Counterintelligence when operations overlap.
+| *Breacher* | Specializes in hostile entry and extraction under fire. Trained in demolitions, close-quarters combat, and rapid building clearance. First through the door when negotiations fail.
+| *Ghost* | Operates deep undercover for extended periods. Maintains false identities, embeds within hostile organizations, and reports intelligence without breaking cover.
+|===
+
+*Heavy-Hitter (Brawler)*
+
+Brute-force specialist. Comfortable in direct violent confrontation above all else.
+
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *Enforcer* | The Covenant's blunt instrument for hostile recovery operations. Specializes in intimidation, physical domination, and overwhelming force when artifacts are held by armed or dangerous opposition.
+| *Close Protection* | Bodyguard and security specialist. Shields Recovery teams and high-value Covenant personnel during dangerous field operations. Trained to absorb punishment and keep others alive.
+| *Wrecker* | Expert in destruction and demolition. Removes structural obstacles, breaches fortified positions, and disables vehicles or equipment. When the path forward is blocked, the Wrecker opens it.
+|===
+
+*Acquisition Specialist (Thief)*
+
+Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
+
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *Infiltrator* | Defeats physical and electronic security systems. Expert in lock-picking, alarm bypass, safe-cracking, and navigating laser grids, pressure plates, and motion detectors.
+| *Grifter* | Operates through social engineering and deception. Assumes false identities, manipulates targets through conversation, and acquires access through charm, forgery, or confidence games.
+| *Wheelman* | Specialist driver, pilot, and escape planner. Handles pursuit, evasion, and extraction logistics. Ensures the team reaches the target and leaves cleanly with the artifact.
 |===
 
 === Recovery Talents (Choose 1 at Creation)
@@ -231,6 +261,53 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 | *Vetting Officer* | Conducts background assessments and ongoing clearance monitoring for Covenant recruits and active personnel. Identifies vulnerabilities and security risks before they can be exploited by rival factions.
 |===
 
+[[division-4-stack]]
+*Stack (Logistics)*
+
+_"Queue up, agents."_
+
+The Department of Logistics — informally known as *"Stack"* — is a department of the Keep composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear. Though organizationally part of the Keep, Stack's unique expertise and operational independence make it a distinct playable class during character creation.
+
+[NOTE]
+====
+*Origin of the name:* During the global espionage boom of the 1970s, younger Recovery agents began jokingly referring to Logistics as the "Q Department," a nod to the famous James Bond armorer. Given the notoriously long requisition lines outside the Logistics offices, the nickname evolved into "Queue." Over time, Covenant humor shortened it further, and the department became known as *Stack* — a name that has endured ever since.
+====
+
+Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
+
+*Stack Key Stats*
+
+[cols="1,2"]
+|===
+| *Key Attributes* | Wits, Agility
+| *Favorite Attribute* | Wits
+| *Key Skills* | Tech, Sleight of Hand, Investigate, Craft _(specialized sub-skill for building/repairing gear)_
+| *Key Skill (Cap 4 at creation)* | Tech
+| *Starting Clearance Level* | 4
+|===
+
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *The Quartermaster* | Manages the Covenant's equipment stores. Expert in acquisition, logistics, and knowing exactly what's available.
+| *The Retro-Engineer* | Specializes in modifying and repairing existing technology. Can coax impossible performance from aging hardware.
+| *The Paratech Inventor* | Designs entirely new experimental devices that blend analog technology with paranatural principles.
+|===
+
+*Stack Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.
+| *Jury-Rig* | +1 Corruption | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
+| *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
+| *Duct Tape & WD-40* _(Healing)_ | — | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
+| *Experimental Shielding* | +1 Corruption | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
+|===
+
 === Keep Talents (Choose 1 at Creation)
 
 [%header,cols="2,1,4"]
@@ -242,53 +319,4 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 | *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
 | *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.
 | *The Confessor* _(Healing)_ | — | Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.
-|===
-
-[[division-4-stack]]
-=== Stack (Logistics)
-
-_"Queue up, agents."_
-
-The Department of Logistics sits organizationally within the Keep, but its unique expertise and operational independence justify its treatment as a separate playable Division. Informally known as *"Stack,"* the department is composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear.
-
-[NOTE]
-====
-*Origin of the name:* During the global espionage boom of the 1970s, younger Recovery agents began jokingly referring to Logistics as the "Q Department," a nod to the famous James Bond armorer. Given the notoriously long requisition lines outside the Logistics offices, the nickname evolved into "Queue." Over time, Covenant humor shortened it further, and the department became known as *Stack* — a name that has endured ever since.
-====
-
-Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
-
-==== Stack Key Stats
-
-[cols="1,2"]
-|===
-| *Key Attributes* | Wits, Agility
-| *Favorite Attribute* | Wits
-| *Key Skills* | Tech, Sleight of Hand, Investigate, Craft _(specialized sub-skill for building/repairing gear)_
-| *Key Skill (Cap 4 at creation)* | Tech
-| *Starting Clearance Level* | 4
-|===
-
-==== Stack Specialties
-
-[%header,cols="2,4"]
-|===
-| Specialty | Description
-
-| *The Quartermaster* | Manages the Covenant's equipment stores. Expert in acquisition, logistics, and knowing exactly what's available.
-| *The Retro-Engineer* | Specializes in modifying and repairing existing technology. Can coax impossible performance from aging hardware.
-| *The Paratech Inventor* | Designs entirely new experimental devices that blend analog technology with paranatural principles.
-|===
-
-==== Stack Talents (Choose 1 at Creation)
-
-[%header,cols="2,1,4"]
-|===
-| Talent | Cost | Effect
-
-| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.
-| *Jury-Rig* | +1 Corruption | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
-| *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
-| *Duct Tape & WD-40* _(Healing)_ | — | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
-| *Experimental Shielding* | +1 Corruption | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
 |===
