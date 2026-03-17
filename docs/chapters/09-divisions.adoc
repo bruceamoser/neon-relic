@@ -1,5 +1,5 @@
 [#chapter-divisions]
-= Covenant Divisions and Departments
+= Covenant Divisions
 
 In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL).
 
