@@ -1,0 +1,104 @@
+// ============================================================
+// CH-01: Introduction
+// Source: docs/chapters/01-introduction.adoc
+// ============================================================
+
+#import "../lib/theme.typ": *
+#import "../lib/components.typ": *
+
+#chapter-header("01", "Introduction")
+
+*Project Neon Relic* is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called *The Verdant Covenant*, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world  -  or the people who find them.
+
+The game uses the *Year Zero Engine (YZE)* dice-pool variant  -  the same framework behind _Vaesen_, _Mutant: Year Zero_, _Forbidden Lands_, and the _Alien RPG_. If you have played any of those, the core dice mechanics will feel familiar. What makes Neon Relic different is its *Corruption* system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
+
+== What This Game Is
+
+- *Episodic investigation.* Each session follows a structured *Case File*  -  an "artifact-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
+- *Base management between missions.* The team maintains a *Headquarters*  -  a Covenant facility they upgrade, staff, and defend over the course of a campaign.
+- *Psychological attrition.* The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
+- *Analog procedural thriller.* No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
+
+== What This Game Is Not
+
+- Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
+- Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
+- Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions, surviving trauma, and confronting your Dark Secret.
+
+#section-rule()
+
+== The 1980s Setting
+
+The world of Project Neon Relic is an amalgamation of neon-noir aesthetics and deep historical conspiracies. It is an alternative reality where the geopolitical tension of the Cold War is not merely fought with the threat of nuclear deterrence, but through the covert weaponization of ancient, mythological artifacts.
+
+=== The Analog Aesthetic
+
+The technological environment is characterized by analog limitations, forcing a distinct style of investigative gameplay. The absence of smartphones, GPS, and ubiquitous high-speed internet forces players into physical legwork and face-to-face interactions:
+
+- *Communication* relies on vulnerable payphones, easily intercepted HAM radios, and analog cassette answering machines.
+- *Information* is not Googled; it is painstakingly recovered from microfiche spools, physical library archives, and fragile floppy disks.
+- *Surveillance* uses bulky camcorders, grainy polaroid cameras, and temperamental infrared equipment.
+
+The juxtaposition of high-tech, neon-lit urban sprawl against the ancient, rotting, cosmic horror of the artifacts creates a stark, atmospheric dichotomy. Audio aesthetics play a major role  -  underground clubs pulse with aggressive synthwave beats, while secretive government laboratories hum with the low, oppressive frequencies of massive server mainframes.
+
+The tactile, error-prone nature of 1980s technology maps flawlessly to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.
+
+#section-rule()
+
+== The Verdant Covenant
+
+For as long as civilizations have risen and fallen, the world has produced objects of unusual power and importance  -  relics of faith, symbols of kingdoms, forbidden texts, cursed idols, lost maps, sacred bones, and artifacts whose origins are long forgotten.
+
+Some inspire devotion. \
+Some bring prosperity. \
+Some bring ruin.
+
+Throughout history, wars have been fought over such objects. Empires have risen seeking them, and entire cultures have been erased because of them. To prevent the past from destroying the present, a quiet order was formed centuries ago.
+
+*The Verdant Covenant.*
+
+The Covenant is a secret society devoted to the *discovery, recovery, and protection of artifacts of magical, religious, occult, or cultural significance*. Its members believe that the greatest dangers in history have not been armies or kings  -  but *objects that hold power beyond understanding*.
+
+The Covenant does not seek to own these relics for wealth or prestige. Its singular purpose is *stewardship*.
+
+- To *study* them.
+- To *preserve* them.
+- To *ensure they never fall into the wrong hands*.
+
+=== The Square of Harmony (The Rule of 441)
+
+The organization strictly maintains exactly *441 active members worldwide at all times*  -  not a single operative more or less. This figure is derived from the *"Square of Harmony,"* a principle rooted in the sacred geometry of Reversible Multiplicative Symmetry. Covenant occultists recognize that `441 = 21²`, symbolizing the gross material plane; while its exact numerical reversal, `144`, represents the enlightened, inverse stewardship of the anomalous.
+
+The Covenant believes this numerical balance acts as a metaphysical anchor, keeping the organization from becoming corrupted by the volatile artifacts it hoards. Because of this rigid cap, the initiation of a new member invariably means a previous member has died or fallen to permanent Catatonia  -  ensuring the cycle of stewardship continues unbroken.
+
+=== Organizational Structure
+
+Within the Covenant there are *three Divisions*, each responsible for a different stage of the artifact lifecycle:
+
+#nr-table-wide(
+  caption: "The Three Divisions of the Verdant Covenant",
+  columns: (2fr, 3fr, 5fr),
+  [*Division*], [*Motto Segment*], [*Purpose*],
+  [*The Wayfinder Division*], [_"What is found must be known."_], [Scholars and researchers who uncover the existence and locations of lost artifacts.],
+  [*The Recovery Division*], [_"What is known must be contained."_], [Field agents who retrieve relics from ruins, vaults, corporations, and those who would misuse them.],
+  [*The Keep*], [_"What is contained must be guarded."_], [Wardens and archivists who guard the Covenant's vaults and ensure dangerous artifacts remain contained.],
+)
+
+#callout-block("NOTE", [
+  *Note on Stack:* The Keep's Department of Logistics  -  informally known as *"Stack"*  -  operates with enough autonomy and unique expertise to function as its own playable division for game purposes. See the Divisions chapter for details.
+])
+
+#section-rule()
+
+== How to Use This Book
+
+This rulebook is organized into six parts:
+
+- *Part I: Introduction*  -  You are here. The game's premise, setting, and the Verdant Covenant.
+- *Part II: Character Creation*  -  Build your agent step by step.
+- *Part III: Core Mechanics*  -  The dice, attributes, combat, social conflict, health, and the Corruption system.
+- *Part IV: The World of Neon Relic*  -  Divisions, equipment, artifacts, headquarters, and advancement.
+- *Part V: The Director*  -  DA-facing tools: Case Files, factions, bestiary, travel, and guidance.
+- *Part VI: Glossary*  -  Quick reference for all game terms.
+
+If you are a player, start with Character Creation and Core Mechanics. If you are the DA (the *Director*), read everything  -  but especially the Director section and the Corruption chapter.

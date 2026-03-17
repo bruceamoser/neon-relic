@@ -1,0 +1,349 @@
+// ============================================================
+// CH-05: Combat
+// Source: docs/chapters/05-combat.adoc
+// ============================================================
+
+#import "../lib/theme.typ": *
+#import "../lib/components.typ": *
+
+#chapter-header("05", "Combat")
+
+Combat in Neon Relic is fast, brutal, and consequential. Agents of the Covenant are capable individuals  -  but they are not soldiers. A prolonged firefight drains attributes that also serve as their sanity and stamina. Every round of violence is a resource you cannot easily recover before the next case.
+
+Combat rules are designed for *investigation-first play*: most situations should be solvable without combat, combat should resolve quickly when it happens, and the aftermath (injury, Corruption, gear degradation) should matter as much as the outcome.
+
+#section-rule()
+
+== Initiative
+
+At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept  -  DA preference). Higher card value acts first. Ties are resolved simultaneously.
+
+=== Initiative Card Draw
+
+- Each participant  -  PC or NPC  -  draws one card from a shuffled deck.
+- Participants act in *descending card order* (10 acts before 9, etc.).
+- *Aces are low* (value 1)  -  drawing an Ace means you act last.
+- Cards are discarded after the round. Reshuffle and redraw at the start of each new round.
+
+#design-note([
+  *Why cards?* The card draw creates genuine unpredictability without arithmetic. It also creates a sense of narrative suspense  -  drawing a 10 is a small victory; drawing an Ace before a firefight is quietly dreadful. In an investigation game where combat is exceptional, this ceremony matters.
+])
+
+=== Initiative Procedure Note
+
+Initiative uses card draw only. Do not add initiative modifiers for posture, terrain, or gear. Those factors still matter through cover, surprise, action economy, and range penalties.
+
+#callout-block("NOTE", [
+  *Initiative Talents:* Some General Talents interact with initiative card draws. See Attributes & Skills → General Talents.
+])
+
+=== Surprise and Ambush
+
+A *surprise* occurs when one side is unaware of the other at the moment combat begins.
+
+- To attempt an ambush, the attacking side must succeed on a *Sneak (AGI)* roll opposed by the target's *Investigate (WIT)*. Use group roll rules if multiple ambushers are involved.
+- If the ambush succeeds: the ambushing side takes a *free full round of actions* before initiative cards are drawn for anyone.
+- If the ambush fails: draw initiative normally; no advantage granted.
+
+#section-rule()
+
+== Action Economy
+
+Each character's turn consists of *one Slow Action* and *one Fast Action*, plus any number of *Free Actions*.
+
+=== Slow Actions
+
+A slow action represents a committed, focused effort requiring your full attention.
+
+#nr-table(
+  caption: "Slow Actions",
+  columns: (2fr, 4fr),
+  [*Slow Action*], [*Description*],
+  [*Attack (melee or ranged)*], [Roll to hit and deal damage. Core offensive action.],
+  [*First Aid*], [Use Heal skill to restore Strength or treat a Critical Injury (requires a First Aid Kit).],
+  [*Reload*], [Reload a firearm that has run dry. No roll required; consumes ammo.],
+  [*Use an Artifact*], [Activate an artifact's properties. Generates Corruption per artifact tier.],
+  [*Activate Division Talent*], [Use your Division Talent (if it requires sustained effort).],
+  [*Manipulate NPC*], [Attempt to talk someone down, issue commands, or negotiate during combat.],
+  [*Help an Ally*], [Add +1 die to an ally's next roll this round (must be present, skill >= 1).],
+  [*Barricade / Fortify*], [Use Force to move heavy objects for cover or block a doorway.],
+  [*Treat Broken Ally*], [Stabilize a Broken ally so they do not die (requires Heal roll).],
+)
+
+=== Fast Actions
+
+A fast action is a quick, reactive, or secondary effort.
+
+#nr-table(
+  caption: "Fast Actions",
+  columns: (2fr, 4fr),
+  [*Fast Action*], [*Description*],
+  [*Move one zone*], [Move from your current zone to an adjacent zone.],
+  [*Draw or holster a weapon*], [Ready a weapon you are carrying. Holstering allows you to pick up something else.],
+  [*Take cover*], [Move into cover within your current zone (+2 Armor Rating bonus, see Cover rules).],
+  [*Stand up*], [Rise from prone or from a knocked-down state.],
+  [*Grab / pick up an item*], [Retrieve a dropped item or item at Engaged range.],
+  [*Dodge*], [Reactive. See Reactive Actions below.],
+  [*Use a quick item*], [Apply a stim, crack a light stick, or use a single-use item.],
+)
+
+=== Free Actions
+
+Free actions can be taken at any point during your turn, in any number.
+
+- Speak briefly (one sentence or a shout)
+- Drop a held item
+- Look around / assess the situation (no roll)
+- Toggle a device that is already in hand (safety off, flashlight switch)
+
+#section-rule()
+
+== Zones and Range
+
+Combat space is divided into *abstract zones* rather than measured distances. A zone is any coherent area of space  -  a room, a corridor, an alley, a rooftop section. The DA defines zones when establishing a scene.
+
+=== Zone Size and Movement
+
+Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both your Fast Action and your Slow Action for the round  -  you forgo your attack.
+
+#nr-table(
+  caption: "Movement Costs",
+  columns: (1fr, 3fr),
+  [*Range Category*], [*Definition*],
+  [*Engaged*], [Same zone; within arm's reach. Required for melee. Most melee weapons can only be used at Engaged range.],
+  [*Near*], [Same or immediately adjacent zone. Close pistol range; thrown weapons; point-blank shotgun.],
+  [*Short*], [1–2 zones. Standard pistol and shotgun range; melee not possible.],
+  [*Long*], [3–4 zones. Rifle range; pistols at −1 die penalty.],
+  [*Distant*], [5+ zones. Sniper range. Only applies to designated long-range weapons; everything else is out of range.],
+)
+
+=== Zone-to-Grid Conversion (Optional)
+
+Zones remain the canonical movement/range system. For VTT or tactical play, use this translation layer.
+
+#nr-table-wide(
+  caption: "Zone-to-Grid Translation",
+  columns: (1fr, 2fr, 2fr, 3fr),
+  [*Zone Range*], [*Squares (5 ft grid)*], [*Meters (approx.)*], [*Notes*],
+  [*Engaged*], [0–1 square], [0–2 m], [Same zone, arm's reach.],
+  [*Near*], [1–4 squares], [2–10 m], [Same or adjacent zone.],
+  [*Short*], [5–12 squares], [10–30 m], [Typical pistol/shotgun practical range.],
+  [*Long*], [13–24 squares], [30–60 m], [Typical rifle lane.],
+  [*Distant*], [25+ squares], [60 m+], [Specialized long-range fire only.],
+)
+
+*Movement translation:* 1 Fast Action to move one zone is usually 4 squares (about 20 feet / 6 meters) in open terrain. In cramped or rough terrain, treat one zone as 2 squares.
+
+*Verticality:* Moving one significant elevation change (one story, catwalk, roof transition) usually costs one zone even if square distance is short.
+
+*Large or open zones:* Some zones (car parks, fields, warehouse floors, concert halls) are physically large. The DA sets zone extent before combat begins. A large zone may span 20–50 squares; players and the DA should confirm expected grid width before the first round. Open-zone features do not reduce zone count  -  only the Fast Action cost applies.
+
+=== Zone Features
+
+Every zone has optional *terrain features* the DA can invoke:
+
+#nr-table-wide(
+  caption: "Zone Terrain Features",
+  columns: (2fr, 4fr),
+  [*Feature*], [*Mechanical Effect*],
+  [*Cramped* (closets, crawlspaces, car interiors)], [Long-armed weapons (rifles, shotguns) suffer −2 dice. All movement into/out of zone takes a Slow Action.],
+  [*Rough* (rubble, debris, slick floor)], [Moving into this zone requires a Fast Action _and_ an Agility roll (Difficulty 1). On failure, character is prone.],
+  [*Dark*], [All Investigate, Firearms, and ranged attack rolls lose half their dice (round down) unless the character has a light source. Sneak rolls gain +2 dice.],
+  [*Open* (parking lots, fields)], [No cover available in this zone. All ranged attacks against targets here gain +1 die.],
+  [*Elevated*], [Characters here gain +2 to their Initiative card value; ranged attacks against them suffer −1 die.],
+)
+
+#section-rule()
+
+== Melee Combat
+
+=== Basic Melee Attack
+
+Declare your target (must be at Engaged range). Roll your dice pool:
+
+- *Heavy melee* (knife, crowbar, brawl against an armored target): *Force (STR)* + Weapon Gear Bonus
+- *Fast melee* (unarmed strikes, quick knife work): *Brawl (STR)* + Weapon Gear Bonus
+
+On a hit (at least one 6), deal the weapon's flat *Damage* value directly to the target's Strength. Armor intercepts first.
+
+Extra successes (additional 6s) are *Stunt Points*  -  see Combat Stunts below.
+
+=== Unarmed Combat
+
+Unarmed attacks use the *Brawl* skill. Bare hands deal *1 Damage* on a hit.
+
+For unarmed grapples, shoves, and disarms, see Special Melee Maneuvers below.
+
+=== Special Melee Maneuvers
+
+All maneuvers require a successful melee attack roll. If the attack misses (no 6s), the maneuver fails entirely.
+
+#nr-table-wide(
+  caption: "Melee Maneuvers",
+  columns: (2fr, 2fr, 4fr),
+  [*Maneuver*], [*Skill*], [*Effect*],
+  [*Grapple*], [Brawl (STR) opposed by Force or Brawl (target's choice)], [Target is grappled: they cannot move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll).],
+  [*Shove*], [Force (STR) opposed by Endure (STR)], [Target is pushed back one zone and is knocked prone. If target is already at a zone edge (stairs, window, rooftop), this may be lethal.],
+  [*Disarm*], [Sleight of Hand (AGI) opposed by Force or Brawl], [Target drops their held weapon. It lands at Engaged range on the floor.],
+  [*Feint*], [Brawl (STR) opposed by Wits], [No damage this turn. On success: target cannot Dodge your next attack this round. You gain +2 dice on your next melee roll against them.],
+)
+
+#section-rule()
+
+== Ranged Combat
+
+=== Basic Ranged Attack
+
+Roll *Firearms (AGI)* + Weapon Gear Bonus. On a hit, deal flat Damage to the target's Strength (armor applies).
+
+=== Range Penalties
+
+#nr-table-wide(
+  caption: "Range Penalties",
+  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  [*Weapon Type*], [*Engaged*], [*Near*], [*Short*], [*Long*], [*Distant*],
+  [*Pistol (.38, 9mm)*], [−1 die], [ - ], [ - ], [−1 die], [Out of range],
+  [*Shotgun*], [+1 Damage], [ - ], [ - ], [−2 dice], [Out of range],
+  [*Assault Rifle*], [−2 dice], [−1 die], [ - ], [ - ], [−1 die],
+  [*Thrown weapon*], [ - ], [ - ], [Out of range], [Out of range], [Out of range],
+)
+
+#callout-block("NOTE", [
+  *Engaged penalty for pistols:* At arm's length, controlling a pistol one-handed while someone is grappling you is harder than a clean stance shot. The −1 die reflects that.
+])
+
+=== Cover
+
+A character *in cover* benefits from partial physical shielding.
+
+- *Soft cover* (car door, wooden desk, drywall): +2 Armor Rating against ranged attacks only.
+- *Hard cover* (concrete pillar, stone wall, engine block): +4 Armor Rating against ranged attacks only.
+- Taking cover requires a Fast Action (move into cover within the current zone).
+- A character who fires from cover *loses the cover bonus* for any attacks made against them *that round*  -  you have to expose yourself to shoot.
+
+=== Ammunition
+
+Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die:
+
+#nr-table-wide(
+  caption: "Ammo Resource Dice",
+  columns: (2fr, 1fr, 2fr),
+  [*Ammo State*], [*Die*], [*Notes*],
+  [*Full magazine*], [d8], [Fresh load; most pistols and rifles.],
+  [*Half loaded*], [d6], [Partially used.],
+  [*Low / scrounged*], [d4], [Found ammo, emergency reload.],
+  [*Drum / extended mag*], [d10], [Special acquisition (CL 4).],
+)
+
+*When do you roll the ammo die?*
+
+- After *pushing a Firearms roll* (you burned through rounds trying to compensate).
+- After a *full auto burst* (M16 or equivalent  -  roll twice).
+- At the DA's discretion when dramatically appropriate (long firefight, ambush, running chase).
+
+*Rolling the ammo die:*
+
+- Roll the current die. On a *1 or 2*, step the die down one size (d8→d6→d4→empty).
+- On *empty* (die was d4 and rolled 1–2): weapon is dry. Reload costs a Slow Action.
+
+#section-rule()
+
+== Reactive Actions
+
+=== Dodge
+
+- *Type:* Fast Action (reactive  -  used on someone else's turn, not yours)
+- *When:* After a melee or ranged attack is declared against you, before the attacker rolls.
+- *Effect:* Add your *Agility* dice to your "defense pool." The attacker must beat both their own roll and your dodge roll (compare successes; attacker needs more than you).
+- *Cost:* You lose your Fast Action on your *next* turn.
+- *Limitation:* You cannot dodge if you have no Fast Action remaining this round (already spent), if you are prone, if you are Grappled, or if the attack was from ambush (surprise round).
+
+=== Parry
+
+- *Type:* Slow Action (reactive  -  used on someone else's turn)
+- *When:* After a melee attack is declared against you, before the attacker rolls. Requires a held melee weapon.
+- *Effect:* Roll *Brawl or Force* (your choice). If you match or exceed the attacker's successes, you take no damage. If you beat the attacker's successes, they lose their Slow Action next round (their weapon arm is numbed or they are off-balance).
+- *Cost:* You lose your Slow Action on your *next* turn.
+- *Limitation:* Cannot parry ranged attacks, unarmed shoves, or any attack from a weapon with Damage 4+.
+
+#section-rule()
+
+== Combat Stunts
+
+Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
+
+#nr-table-wide(
+  caption: "Combat Stunt Table",
+  columns: (1fr, 2fr, 4fr),
+  [*Cost*], [*Stunt*], [*Effect*],
+  [1], [*Knock Prone*], [Target is knocked to the ground. They must spend a Fast Action to stand.],
+  [1], [*Disarm*], [Target drops their held weapon at Engaged range (without a full Disarm maneuver roll).],
+  [1], [*Target Limb*], [Attack hits a specific limb. DA applies a situational penalty (hobbled, one-armed, etc.) until treated.],
+  [1], [*Push Back*], [Target is forced one zone away.],
+  [1], [*Scare*], [Target must immediately make a *Fear check* (Fear Rating 1) even if no supernatural trigger is present. The violence itself breaks them.],
+  [2], [*Double Damage*], [Deal the weapon's Damage value twice instead of once.],
+  [2], [*Suppressive Fire*], [Target is pinned  -  they cannot move zones until the start of your next turn unless they succeed on a Wits roll (Difficulty 2).],
+  [2], [*Destroy Cover*], [Target's cover is destroyed or invalidated after this attack.],
+  [3], [*Critical Hit*], [Attack triggers a roll on the Critical Injury table, regardless of whether the target is Broken.],
+)
+
+#section-rule()
+
+== Chase and Pursuit
+
+When one side is fleeing and the other is pursuing, use the following chase rules.
+
+=== Chase Structure
+
+A chase is divided into *chase rounds*. Each round, both the fleeing and pursuing party roll their relevant attribute + skill:
+
+- *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
+- *By vehicle:* Agility + Tech (operating the vehicle)
+
+=== Chase Outcome per Round
+
+Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing). Track relative distance on a simple 5-step track:
+
+#callout-block("NOTE", [
+  *Contact → Near → Far → Very Far → Escaped*
+
+  Start at Contact. Fleeing party wins a round → move one step toward Escaped. Pursuing party wins → move one step toward Contact.
+])
+
+=== Escape and Recapture
+
+- The fleeing party *escapes* when they reach the Escaped position.
+- During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
+- If the pursuing party reaches Contact: normal combat resumes.
+- *Hiding:* If the fleeing party is at Far or Very Far and succeeds on a Sneak roll (Difficulty 2), they may break the chase entirely without reaching Escaped  -  they simply vanish into the environment.
+
+#section-rule()
+
+== Group Combat (Multiple NPCs)
+
+When 3 or more combatants on the NPC side share a common purpose and act together, they may be treated as a *mob*.
+
+=== Mob Rules
+
+- A mob draws *one Initiative card* and acts as a single entity.
+- A mob has a shared Strength pool equal to *3 × mob size* (3 per member, max 15).
+- A mob attacks as one unit: roll dice pool equal to the *highest individual's pool* + bonus dice equal to mob members beyond the first (max +3).
+- *Splitting a mob:* Area effects (full auto, explosive, fire) or AoE-capable stunts can split a mob, with the DA distributing Strength loss across members.
+
+#callout-block("NOTE", [
+  Mobs represent low-tier hostiles (cultist grunt, security guard, Compact foot soldier). Named or significant NPCs always act individually.
+])
+
+#section-rule()
+
+== Ending Combat
+
+=== Surrender and DA Adjudication
+
+There is no mandatory surrender mini-system. Surrender is a *Director of Agents* adjudication call based on morale, stakes, and faction doctrine.
+
+Use these guidance triggers:
+
+- *Likely surrender:* Isolated hostiles, badly wounded opponents, mercenary or self-preserving factions.
+- *Unlikely surrender:* Fanatics, entities, or actors with existential stakes in the artifact outcome.
+- *False surrender risk:* Trained operatives, cornered faction elites, or anyone buying time for extraction.
