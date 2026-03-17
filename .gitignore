@@ -2,6 +2,3 @@ tools/
 .venv/
 .github/
 .playwright-mcp/
-docs/output/
-docs-typst/output/*.svg
-docs-typst/output/pages/

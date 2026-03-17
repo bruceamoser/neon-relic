@@ -10,6 +10,7 @@ Bruce; Stu
 :pdf-theme: neon-relic
 :pdf-themesdir: {docdir}/themes
 :imagesdir: {docdir}/../assets
+:table-stripes: even
 
 [.lead]
 _"What is found must be known. What is known must be contained. What is contained must be guarded."_
@@ -33,6 +34,8 @@ _Classification: Unrestricted (Covenant Personnel Only)_ +
 _Distribution: All Divisions_
 ****
 
+image::vegas-vic.png[Vegas Vic — The Pioneer Club,align=center,pdfwidth=60%]
+
 include::chapters/01-introduction.adoc[leveloffset=+1]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -54,6 +57,8 @@ _Classification: Unrestricted (Covenant Personnel Only)_ +
 _Distribution: Incoming Agent Onboarding_
 ****
 
+image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
+
 include::chapters/02-character-creation.adoc[leveloffset=+1]
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -74,6 +79,8 @@ image::svg/stamp-classified.svg[align=right,width=140]
 _Classification: Unrestricted (Covenant Personnel Only)_ +
 _Distribution: All Field Agents_
 ****
+
+image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
 include::chapters/03-core-resolution.adoc[leveloffset=+1]
 
@@ -106,6 +113,8 @@ _Classification: Secret — Clearance Level 2+ Required_ +
 _Distribution: Restricted — Need-to-Know Basis_
 ****
 
+image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
+
 include::chapters/09-divisions.adoc[leveloffset=+1]
 
 include::chapters/10-equipment.adoc[leveloffset=+1]
@@ -134,6 +143,8 @@ image::svg/stamp-classified.svg[align=right,width=140]
 _Classification: Top Secret — Director Eyes Only_ +
 _Distribution: Director of Agents Materials — Do Not Distribute to Players_
 ****
+
+image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
 include::chapters/14-gm-guidance.adoc[leveloffset=+1]
 
@@ -165,5 +176,7 @@ image::svg/stamp-classified.svg[align=right,width=140]
 _Classification: Unrestricted (Covenant Personnel Only)_ +
 _Distribution: All Personnel_
 ****
+
+image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
 include::chapters/20-glossary.adoc[leveloffset=+1]

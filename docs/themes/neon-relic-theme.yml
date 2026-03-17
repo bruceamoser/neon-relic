@@ -17,8 +17,6 @@ page:
   background-color: '#f0ead6'
   margin: [22mm, 20mm, 24mm, 20mm]
   size: LETTER
-  columns: 2
-  column-gap: 5mm
 
 # ── TITLE PAGE (custom SVG, so keep this minimal) ──────────────────────────────────────
 title-page:
@@ -165,7 +163,7 @@ table:
   border-width: 1
   cell-padding: [2mm, 2mm, 2mm, 2mm]
   cell-font-color: '#1e2010'
-  stripe-background-color: '#e8e4d0'
+  body-stripe-background-color: '#e8e4d0'
   header-border-bottom-width: 2
 
 # ── CODE ─────────────────────────────────────────────────────────────────────────────────────

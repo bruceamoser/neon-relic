@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176mm" height="120mm" viewBox="0 0 176 120">
+  <rect x="1" y="1" width="174" height="118" fill="none" stroke="#4a5a38" stroke-width="1" stroke-dasharray="6,4"/>
+  <line x1="1" y1="1" x2="175" y2="119" stroke="#4a5a38" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
+  <line x1="175" y1="1" x2="1" y2="119" stroke="#4a5a38" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="88" y="55" text-anchor="middle" font-family="Courier, monospace" font-size="10" fill="#4a5a38" opacity="0.7">IMAGE PLACEHOLDER</text>
+  <text x="88" y="72" text-anchor="middle" font-family="Courier, monospace" font-size="8" fill="#4a5a38" opacity="0.5">176 mm × 120 mm</text>
+</svg>
