@@ -389,6 +389,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 | *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
 | *Duct Tape & WD-40* _(Healing)_ | — | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
 | *Experimental Shielding* | +1 Corruption | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
+| *Redundant Safeties* | — | Passive. Your Maximum Corruption Threshold increases by 2 (to 12 + Empathy). Years of handling unstable prototypes have hardened your psyche.
 |===
 
 === Keep Talents (Choose 1 at Creation)
