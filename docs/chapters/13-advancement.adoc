@@ -61,7 +61,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 ---
 
-=== Stack Dark Secrets
+=== Stack Dark Secrets (Keep — Logistics Department)
 
 [%header,cols="2,5"]
 |===
@@ -97,7 +97,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
 | Upgrade | XP Cost | Limit
 
 | Increase a Skill by 1 | 5 XP | Maximum rating of 5
-| Purchase a new Talent | 6 XP | General Talent or additional Division Talent
+| Purchase a new Talent | 6 XP | General, Division, or Wing/Paradigm/Department Talent
 | Increase Clearance Level (CL) by 1 | 3 XP | Once per Case File; DA approval required for fiction fit
 |===
 

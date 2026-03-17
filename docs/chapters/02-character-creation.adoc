@@ -7,7 +7,7 @@ Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — 
 
 == Step 1: Choose Your Division
 
-Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are four playable Divisions:
+Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are three Divisions:
 
 [%header,cols="1,2,1,2"]
 |===
@@ -15,8 +15,7 @@ Your *Division* is your character class. It defines your role within the Covenan
 
 | *Wayfinder* | Research and intelligence. You find what others don't know exists. | 3 | Wits, Empathy
 | *Recovery* | Field retrieval. You go in and bring the artifact out. | 2 | Strength, Agility
-| *The Keep* | Vault security and custody. You guard what has been won. | 3 | Empathy, Wits
-| *Stack* | Logistics and technical support. You make sure everyone else can do their job. | 4 | Wits, Agility
+| *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy, Wits
 |===
 
 > *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence. Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1).
@@ -29,12 +28,11 @@ Read the full Division descriptions in xref:chapters/09-divisions.adoc#chapter-d
 
 Within your Division, you have a specific background:
 
-* **Wayfinder:** Choose a Department — *Research* or *Counterintelligence*. Within that, choose a role (Desk Analyst or Field Analyst).
-* **Recovery:** Choose an Operational Background — *Ex-Agency Operative*, *Heavy-Hitter*, or *Acquisition Specialist*.
-* **The Keep:** Choose a Department — *Catalogers*, *Wardens*, or *Internal Counterintelligence*.
-* **Stack:** Choose a specialty — *Quartermaster*, *Retro-Engineer*, or *Paratech Inventor*.
+* **Wayfinder:** Choose a Wing — *Research* or *Counterintelligence*. Within that, choose a specialty.
+* **Recovery:** Choose an Operational Paradigm — *Ex-Agency Operative*, *Heavy-Hitter*, or *Acquisition Specialist*. Within that, choose a specialty.
+* **The Keep:** Choose a Department — *Catalogers*, *Wardens*, *Internal Counterintelligence*, or *Stack (Logistics)*. Within that, choose a specialty.
 
-Your background is primarily a narrative statement — it tells you and the DA where you came from. It does not grant mechanical bonuses at creation, but it should inform which skills you prioritize.
+Your Wing, Paradigm, or Department determines which sub-unit Talent list you select from during Step 5.
 
 ---
 
@@ -65,7 +63,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 | *Empathy* | 2–5 | Charisma, social intuition, and resistance to psychological horror.
 |===
 
-> *Division Favorite Attribute:* Each Division has one *Favorite Attribute* — the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. *Wayfinder:* Wits | *Recovery:* Agility | *The Keep:* Empathy | *Stack:* Wits. Investing there is strongly recommended but not mechanically enforced.
+> *Division Favorite Attribute:* Each Division has one *Favorite Attribute* — the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. *Wayfinder:* Wits | *Recovery:* Agility | *The Keep:* Empathy. Investing there is strongly recommended but not mechanically enforced.
 
 > *Attributes as Health:* Your attributes also serve as your health pools. Strength absorbs physical damage; Agility absorbs exhaustion; Wits absorbs mental horror; Empathy absorbs emotional trauma. A score of 0 in any attribute means your character is *Broken*.
 
@@ -83,10 +81,10 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Brawl | STR | 3 | Recovery
 | Endure | STR | 3 | Keep
 | Sneak | AGI | 3 | Recovery
-| Sleight of Hand | AGI | 3 | Stack
+| Sleight of Hand | AGI | 3 | Keep (Stack)
 | Firearms | AGI | 3 | Recovery
-| Investigate | WIT | 3 | Wayfinder, Stack
-| Tech | WIT | 3 | Wayfinder, Stack
+| Investigate | WIT | 3 | Wayfinder, Keep (Stack)
+| Tech | WIT | 3 | Wayfinder, Keep (Stack)
 | Lore | WIT | 3 | Wayfinder, Keep
 | Manipulate | EMP | 3 | Wayfinder
 | Command | EMP | 3 | Keep
@@ -104,7 +102,6 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Wayfinder | Lore
 | Recovery | Firearms
 | The Keep | Command
-| Stack | Tech
 |===
 
 ---
@@ -152,7 +149,6 @@ Every agent receives their Division's *signature item* at induction. This item r
 | Wayfinder | *Verdant Codex* | Secures memory, decodes language and symbols, maps artifact locations, preserves documents.
 | Recovery | *Verdant Satchel* | Suppresses artifact aura, seals cursed items, warns of instability, produces basic tools on demand.
 | Keep | *Warden's Bracer* | Suppresses artifact magic nearby, warns of containment failure, safe handling of cursed objects, absorbs 1 Corruption/session, +1 Armor Rating.
-| Stack | _(none)_ | Stack agents receive no Division Item, but gain +1 requisition die whenever acquiring _crafting materials_ during the Equipping Phase.
 |===
 
 ---
@@ -184,12 +180,15 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 * Formal attire or tactical jacket _(player's choice based on role)_
 * 1× sidearm _(optional, CL 3 permitted — Wardens only)_
 
-=== Stack Starting Kit
+*Stack Department Variant:* Keep agents who choose the Stack department replace the Containment kit and Lore reference binder with the following:
+
 * Personal toolkit: flathead and Phillips screwdrivers × 3, soldering iron, wire cutters, electrical tape, multimeter
 * Signal jammer (prototype; 1 use before requiring repair; Gear Die d6)
 * Walkie-talkies × 2 (range: ~2km, 9V battery)
 * Duct tape (1 roll), WD-40
 * Practical coveralls or utility vest
+
+> *Stack Requisition Bonus:* Stack agents gain +1 requisition die whenever acquiring _crafting materials_ during the Equipping Phase.
 
 ---
 
@@ -242,8 +241,8 @@ After completing all steps, your sheet should record:
 | *Division Talent or General Talent* | One chosen from Division list or General Talents list (Advancement chapter)
 | *Wing, Paradigm, or Department Talent* | One chosen from sub-group talent list within Division (Advancement chapter)
 | *Background Talent* | One chosen from Background Talents list (Advancement chapter)
-| *Division Item* | Automatic (or Stack bonus)
-| *Starting Gear* | Division kit ± optional items
+| *Division Item* | Automatic per Division
+| *Starting Gear* | Division kit (department variant if applicable) ± optional items
 | *Corruption* | Starts at 0
 | *Max Corruption Threshold* | 10 + Empathy
 | *Dark Secret* | Chosen from Division list or custom (see Advancement chapter)
@@ -297,7 +296,7 @@ _(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
 === Step 5: Starting Talents
 
 * *Division Talent:* Petra chooses *Shadow Walker* (+1 Corruption): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
-* *Paradigm Talent:* As an Ex-Agency Operative, Petra selects *Conditioned Mind* — once per session, entirely ignore the Corruption point generated from pushing a roll. Petra has learned to compartmentalize fear; her years undercover demanded nothing less.
+* *Paradigm Talent:* As an Ex-Agency Operative, Petra selects *Spycraft Discipline* _(Healing)_ — once per session, after successfully completing a covert objective without being detected, heal 1 Corruption. Years of deep-cover fieldwork taught Petra that clean work is its own reward.
 * *Background Talent:* Petra takes *Police Officer* (+1 Firearms). Her DEA field certification included extensive weapons qualifications, and that muscle memory doesn't go away.
 
 === Step 6: Starting Statistics

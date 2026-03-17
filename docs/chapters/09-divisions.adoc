@@ -3,7 +3,13 @@
 
 In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL).
 
-Within that Division, players select a *Department* background. During creation, they may select one of the 5 unique *Division Talents*. These Talents operate similarly to magic systems — they guarantee a supernatural or highly specialized effect but cost +1 Corruption to activate, feeding directly into the game’s risk-reward loop.
+Within that Division, players select a *Department* background. At character creation, agents choose *three* starting talents:
+
+* *One Division Talent* — chosen from the Division's talent list — *or One General Talent* from the General Talents list.
+* *One Wing, Paradigm, or Department Talent* — chosen from the talent list of the specific Wing, Paradigm, or Department the agent belongs to.
+* *One Background Talent* — chosen from the Background Talents list.
+
+Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding directly into the game's risk-reward loop. Each talent list includes one *Healing* talent usable freely once per session.
 
 == Division 1: The Wayfinder
 
@@ -54,6 +60,17 @@ The Research Wing is responsible for the discovery, documentation, and verificat
 _Research personnel do not retrieve artifacts._ Once an artifact's existence and location have been confirmed, the Wing prepares a formal assessment and forwards the case to the Recovery Division.
 ====
 
+*Research Wing Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Pattern Recognition* | +1 Corruption | When examining a document, site, or artifact for the first time, instantly identify one hidden connection to a previously catalogued case — the DA must reveal the link.
+| *Deep Archive Access* | +1 Corruption | Spend an action consulting restricted Covenant records. Gain +3 bonus dice on your next Lore or Investigate roll this scene.
+| *Methodical Review* _(Healing)_ | — | Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll.
+|===
+
 *Counterintelligence Wing*
 
 The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
@@ -71,6 +88,17 @@ The Counterintelligence Wing protects the Covenant from external threats and pre
 ====
 Through the vigilance of the Counterintelligence Wing, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
 ====
+
+*Counterintelligence Wing Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Burned Asset* | +1 Corruption | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make a Hard (−2) Empathy roll to see through it.
+| *Signal Intercept* | +1 Corruption | Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel.
+| *Compartmentalized Mind* _(Healing)_ | — | Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption.
+|===
 
 === Wayfinder Talents (Choose 1 at Creation)
 
@@ -139,6 +167,17 @@ Former intelligence or special forces. Trained in infiltration, extraction, and 
 | *Ghost* | Operates deep undercover for extended periods. Maintains false identities, embeds within hostile organizations, and reports intelligence without breaking cover.
 |===
 
+*Ex-Agency Operative Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Dead Drop Protocol* | +1 Corruption | Establish an instant covert information exchange with any NPC contact. Gain one critical piece of intelligence from the DA without a roll.
+| *Exfiltration Specialist* | +1 Corruption | When retreating or extracting under fire, you and all allies within Short range gain +2 bonus dice to their next Agility roll this round.
+| *Spycraft Discipline* _(Healing)_ | — | Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption.
+|===
+
 *Heavy-Hitter (Brawler)*
 
 Brute-force specialist. Comfortable in direct violent confrontation above all else.
@@ -152,6 +191,17 @@ Brute-force specialist. Comfortable in direct violent confrontation above all el
 | *Wrecker* | Expert in destruction and demolition. Removes structural obstacles, breaches fortified positions, and disables vehicles or equipment. When the path forward is blocked, the Wrecker opens it.
 |===
 
+*Heavy-Hitter Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Wrecking Ball* | +1 Corruption | When attacking an inanimate object or structure (door, wall, barricade, vehicle), automatically succeed on the Force roll and inflict maximum damage.
+| *Stand Your Ground* | +1 Corruption | Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating.
+| *Blunt Trauma Recovery* _(Healing)_ | — | Once per session, after winning a physical confrontation through brute force, heal 1 Corruption.
+|===
+
 *Acquisition Specialist (Thief)*
 
 Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
@@ -163,6 +213,17 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 | *Infiltrator* | Defeats physical and electronic security systems. Expert in lock-picking, alarm bypass, safe-cracking, and navigating laser grids, pressure plates, and motion detectors.
 | *Grifter* | Operates through social engineering and deception. Assumes false identities, manipulates targets through conversation, and acquires access through charm, forgery, or confidence games.
 | *Wheelman* | Specialist driver, pilot, and escape planner. Handles pursuit, evasion, and extraction logistics. Ensures the team reaches the target and leaves cleanly with the artifact.
+|===
+
+*Acquisition Specialist Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Ghost Entry* | +1 Corruption | Bypass a single locked door, security system, or physical barrier without a roll. Leave no trace of entry.
+| *The Long Con* | +1 Corruption | After at least one scene spent building rapport with an NPC, automatically succeed on a Manipulate roll to extract one specific piece of information or gain one specific favor.
+| *Clean Getaway* _(Healing)_ | — | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption.
 |===
 
 === Recovery Talents (Choose 1 at Creation)
@@ -224,6 +285,17 @@ The Department also designs containment chambers tailored to each artifact's cha
 | *Containment Architect* | Designs and maintains the specialized vaults, sealed chambers, and environmental stabilization systems that keep artifacts secure. Conducts periodic inspections and redesigns containment when artifact behavior changes or escalates.
 |===
 
+*Cataloger Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Hazard Classification* | +1 Corruption | Upon first contact with an unknown artifact, instantly determine its danger rating (Inert / Active / Volatile / Catastrophic) and one primary containment requirement — no roll needed.
+| *Registry Cross-Reference* | +1 Corruption | Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item. The DA must reveal one actionable link.
+| *Archival Calm* _(Healing)_ | — | Spend a Shift updating the artifact registry with new findings. Heal 1 Corruption and grant one ally who contributed field data +1 bonus die on their next Lore roll.
+|===
+
 *The Wardens*
 
 The Wardens serve as the defensive arm of the Keep. They are responsible for the physical protection of Covenant facilities, personnel, and artifact vaults. Primary duties include:
@@ -248,6 +320,17 @@ The Wardens serve as the defensive arm of the Keep. They are responsible for the
 Through the actions of the Wardens, the Verdant Covenant ensures that what is contained remains guarded, and that those who would misuse the relics of the past are prevented from doing so.
 ====
 
+*Warden Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Lockdown* | +1 Corruption | Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without making a Hard (−2) Force roll.
+| *Threat Assessment* | +1 Corruption | When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it.
+| *Sentinel's Vigil* _(Healing)_ | — | Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption.
+|===
+
 *Internal Counterintelligence*
 
 Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
@@ -261,12 +344,23 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 | *Vetting Officer* | Conducts background assessments and ongoing clearance monitoring for Covenant recruits and active personnel. Identifies vulnerabilities and security risks before they can be exploited by rival factions.
 |===
 
+*Internal CI Talents (Choose 1 at Creation)*
+
+[%header,cols="2,1,4"]
+|===
+| Talent | Cost | Effect
+
+| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail.
+| *Loyalty Test* | +1 Corruption | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence.
+| *Debriefing Protocol* _(Healing)_ | — | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
+|===
+
 [[division-4-stack]]
 *Stack (Logistics)*
 
 _"Queue up, agents."_
 
-The Department of Logistics — informally known as *"Stack"* — is a department of the Keep composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear. Though organizationally part of the Keep, Stack's unique expertise and operational independence make it a distinct playable class during character creation.
+The Department of Logistics — informally known as *"Stack"* — is a department of the Keep composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear.
 
 [NOTE]
 ====
@@ -274,17 +368,6 @@ The Department of Logistics — informally known as *"Stack"* — is a departmen
 ====
 
 Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
-
-*Stack Key Stats*
-
-[cols="1,2"]
-|===
-| *Key Attributes* | Wits, Agility
-| *Favorite Attribute* | Wits
-| *Key Skills* | Tech, Sleight of Hand, Investigate, Craft _(specialized sub-skill for building/repairing gear)_
-| *Key Skill (Cap 4 at creation)* | Tech
-| *Starting Clearance Level* | 4
-|===
 
 [%header,cols="2,4"]
 |===
