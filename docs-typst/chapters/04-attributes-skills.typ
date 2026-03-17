@@ -11,6 +11,7 @@
 Characters are defined by *four core attributes*, representing their fundamental physical and mental foundations. In Project Neon Relic, these traditional YZE attributes are updated to fit the modern, investigative tone of an occult thriller:
 
 #nr-table(
+  caption: "Core Attributes",
   columns: (1fr, 4fr),
   [*Attribute*], [*Description*],
   [*Strength*], [Physical power, raw endurance, and fortitude against physical trauma.],
@@ -24,6 +25,7 @@ Characters are defined by *four core attributes*, representing their fundamental
 The twelve core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
 
 #nr-table-wide(
+  caption: "Skills by Attribute",
   columns: (1fr, 1fr, 4fr),
   [*Attribute*], [*Skill*], [*Application in the 1980s Occult Setting*],
   [*Strength*], [Force], [Breaking down sealed bunker doors, forcing open containment chambers.],
@@ -54,12 +56,12 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 
 - *1 extra 6 = 1 Stunt Point.*
 - You must succeed first (at least one 6 to meet the Difficulty), then extras are stunt points.
-- Stunt Points must be spent immediately — they do not carry between rolls.
+- Stunt Points must be spent immediately  -  they do not carry between rolls.
 - You may split stunt points across multiple effects if both are available on the same skill.
 - On a *pushed roll*, stunt points still apply from the new result.
 
 #callout-block("NOTE", [
-  *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter. The stunt economy is the same.
+  *Cross-reference:* Combat stunts  -  spending stunt points during an attack roll  -  are defined in the Combat chapter. The stunt economy is the same.
 ])
 
 === Generic Stunts (Any Skill)
@@ -67,11 +69,12 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 The following stunts may be purchased on *any* successful skill roll:
 
 #nr-table-wide(
+  caption: "General Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Faster*], [Accomplish the action in half the expected time. No narrative explanation needed — you just find the short path.],
+  [1], [*Faster*], [Accomplish the action in half the expected time. No narrative explanation needed  -  you just find the short path.],
   [1], [*Quieter*], [Accomplish the action without leaving a detectable trace. The DA cannot use evidence of this action as a future complication.],
-  [1], [*Precise*], [Your result is exactly as intended — no collateral effects, no ambiguity, no partial outcomes.],
+  [1], [*Precise*], [Your result is exactly as intended  -  no collateral effects, no ambiguity, no partial outcomes.],
   [1], [*Aid*], [Your success automatically assists an ally's next related roll this scene. They gain +1 die on it.],
   [2], [*Extended Effect*], [The outcome of your action lasts an additional scene or at least one hour longer than it otherwise would.],
   [2], [*Additional Target*], [Your action's results apply to one additional target in the same zone (the DA determines relevance).],
@@ -84,6 +87,7 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Force
 
 #nr-table-wide(
+  caption: "Force Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Controlled Break*], [You force open the door/lock/container without damaging the contents or triggering adjacent mechanisms. Finesse in violence.],
@@ -94,6 +98,7 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Brawl
 
 #nr-table-wide(
+  caption: "Brawl Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Stay Down*], [Target cannot stand up until the start of your next turn (they must spend a Slow Action to rise but simply cannot).],
@@ -104,6 +109,7 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Endure
 
 #nr-table-wide(
+  caption: "Endure Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Grind Through*], [You complete the physical task despite having failed an earlier linked roll this scene (you were already exhausted but push through anyway).],
@@ -118,9 +124,10 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Sneak
 
 #nr-table-wide(
+  caption: "Sneak Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Shadow Step*], [You can take one additional move action as part of the same turn/scene phase without breaking your stealth. You haven't just crept in — you've repositioned perfectly.],
+  [1], [*Shadow Step*], [You can take one additional move action as part of the same turn/scene phase without breaking your stealth. You haven't just crept in  -  you've repositioned perfectly.],
   [1], [*Identify Exit*], [As you infiltrate, you map the fastest withdrawal route. You have +2 dice on any Sneak roll to leave this location later this scene.],
   [2], [*Ghost Pass*], [Your passage leaves zero physical trace (no footprints, disturbed dust, or thermal record). Cannot be tracked from this location.],
 )
@@ -128,6 +135,7 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Sleight of Hand
 
 #nr-table-wide(
+  caption: "Sleight of Hand Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Undetected*], [The target of your pick-pocket, lift, or plant does not notice the action even after the immediate scene ends. They will assume the item was misplaced, not taken.],
@@ -138,6 +146,7 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Firearms
 
 #nr-table-wide(
+  caption: "Firearms Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Aimed Shot*], [The shot hits exactly the intended location (specific limb, lock, cable, tire). DA treats the result as precision even at range.],
@@ -152,19 +161,21 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Investigate
 
 #nr-table-wide(
+  caption: "Investigate Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Pattern Lock*], [You not only find the evidence — you identify why it matters. The DA must tell you one piece of context about the object's history or origin.],
+  [1], [*Pattern Lock*], [You not only find the evidence  -  you identify why it matters. The DA must tell you one piece of context about the object's history or origin.],
   [1], [*Clock It*], [You determine precisely when an event occurred (within the hour, or narrowed to a 30-minute window). Time is often as revealing as the event.],
-  [2], [*Hidden Compartment*], [You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established but not yet disclosed.],
+  [2], [*Hidden Compartment*], [You find something the scene intended to conceal  -  a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established but not yet disclosed.],
 )
 
 ==== Tech
 
 #nr-table-wide(
+  caption: "Tech Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Trace*], [Successfully accessing a system also identifies who else accessed it recently — one account or one physical terminal is revealed.],
+  [1], [*Trace*], [Successfully accessing a system also identifies who else accessed it recently  -  one account or one physical terminal is revealed.],
   [1], [*Improvised Repair*], [The item you're repairing also gets a temporary improvement: a degraded weapon gets +1 Gear die this session; a damaged radio broadcasts on a sealed channel.],
   [2], [*Ghost Session*], [Your access to a system leaves no log entry. No one can prove you were there.],
 )
@@ -172,11 +183,12 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Lore
 
 #nr-table-wide(
+  caption: "Lore Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Deep Context*], [Your knowledge is not just what this thing is — you know what it was used for. DA provides one historical or ritual context detail beyond what would normally be available.],
+  [1], [*Deep Context*], [Your knowledge is not just what this thing is  -  you know what it was used for. DA provides one historical or ritual context detail beyond what would normally be available.],
   [1], [*Weakness Identified*], [Your lore grants you tactical information: an entity type's vulnerability, an artifact's known failure condition, a ritual's interruption point. +1 die on the next relevant roll.],
-  [2], [*Primary Source*], [You recall a specific source — a text, a case file, a person — that would contain detailed operational information about this entity or artifact. The DA must confirm the source exists and tell you how to find it.],
+  [2], [*Primary Source*], [You recall a specific source  -  a text, a case file, a person  -  that would contain detailed operational information about this entity or artifact. The DA must confirm the source exists and tell you how to find it.],
 )
 
 #section-rule()
@@ -186,9 +198,10 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Manipulate
 
 #nr-table-wide(
+  caption: "Manipulate Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Bought Silence*], [The target doesn't just comply — they will not mention this conversation to anyone for at least 24 hours. Your leverage persists.],
+  [1], [*Bought Silence*], [The target doesn't just comply  -  they will not mention this conversation to anyone for at least 24 hours. Your leverage persists.],
   [1], [*Read the Room*], [Beyond this individual, you gauge how the wider group or faction feels about the situation. The DA tells you one faction-level attitude or intention.],
   [2], [*Turned Asset*], [On an already-successful Manipulate, the target now actively wants to help you beyond the scope of your request. They will volunteer additional information or assistance once this session.],
 )
@@ -196,9 +209,10 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Command
 
 #nr-table-wide(
+  caption: "Command Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
-  [1], [*Rally*], [One Broken ally in the scene immediately acts on their next turn as if they had recovered — they can take their full action once before the impairment resumes.],
+  [1], [*Rally*], [One Broken ally in the scene immediately acts on their next turn as if they had recovered  -  they can take their full action once before the impairment resumes.],
   [1], [*Coordinated Action*], [Your directive enables two allies to act simultaneously on their initiative cards (they share the same slot this round only).],
   [2], [*Hold the Line*], [All allies who can hear you gain +1 die on their next roll this round. The effect of strong leadership under pressure.],
 )
@@ -206,11 +220,12 @@ The following stunts may be purchased on *any* successful skill roll:
 ==== Psychoanalyze
 
 #nr-table-wide(
+  caption: "Psychoanalyze Stunts",
   columns: (1fr, 2fr, 4fr),
   [*Cost*], [*Stunt*], [*Effect*],
   [1], [*Pressure Point*], [You've identified something this person fears or desperately needs. The DA must reveal one personal vulnerability, driving motivation, or exploitable need.],
   [1], [*Decompress*], [The person you're treating recovers 1 additional Wits or Empathy point beyond the normal healing (max to their normal maximum).],
-  [2], [*Full Read*], [You have comprehensively understood this person's psychological state. For the rest of the scene, you may treat all Psychoanalyze rolls against them as Difficulty 0 — you know them now.],
+  [2], [*Full Read*], [You have comprehensively understood this person's psychological state. For the rest of the scene, you may treat all Psychoanalyze rolls against them as Difficulty 0  -  you know them now.],
 )
 
 #section-rule()
@@ -220,6 +235,7 @@ The following stunts may be purchased on *any* successful skill roll:
 General Talents are cross-Division abilities available to any agent regardless of Division affiliation. They are acquired through advancement (cost: 1 Advancement Point each) and represent learned tradecraft, personal discipline, and survivor instincts.
 
 #nr-table-wide(
+  caption: "General Talents",
   columns: (2fr, 1fr, 2fr, 1fr, 4fr),
   [*Talent*], [*Type*], [*Prerequisites*], [*Tag*], [*Effect*],
   [*Hair Trigger*], [Once per combat], [AGI 3+], [_(Initiative)_], [After initiative cards are revealed but before the first action, discard your card and draw a new one, keeping the new result.],
@@ -227,5 +243,5 @@ General Talents are cross-Division abilities available to any agent regardless o
 )
 
 #callout-block("NOTE", [
-  *Edge case — Tactical Override:* "Directly above" means the next hostile in turn order, not spatial proximity. Cannot swap with another PC — the participant directly above must be hostile.
+  *Edge case  -  Tactical Override:* "Directly above" means the next hostile in turn order, not spatial proximity. Cannot swap with another PC  -  the participant directly above must be hostile.
 ])

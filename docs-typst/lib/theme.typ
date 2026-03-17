@@ -1,5 +1,5 @@
 // ============================================================
-// NEON RELIC — Brand Theme & Design System (INFRA-2)
+// NEON RELIC  -  Brand Theme & Design System (INFRA-2)
 // ============================================================
 // Government dossier / classified file aesthetic.
 // Palette: aged manila paper, olive/forest green ink, red stamps.
@@ -29,7 +29,7 @@
 #let clr-link          = rgb("#2a4a8a")  // hyperlinks
 
 // ── Typography ──────────────────────────────────────────────
-// Body: Special Elite 10pt (typewriter aesthetic — OFL, from Google Fonts)
+// Body: Special Elite 10pt (typewriter aesthetic  -  OFL, from Google Fonts)
 // Headings: Special Elite (same family, weight differentiates)
 // All sizes in pt.
 
@@ -37,8 +37,8 @@
 #let font-heading = ("Special Elite", "Courier New")
 
 #let size-body        = 10pt
-#let size-h1          = 15pt
-#let size-h2          = 14pt
+#let size-h1          = 12pt
+#let size-h2          = 11pt
 #let size-h3          = 11pt
 #let size-h4          = 10pt
 #let size-sidebar     = 8pt      // fixed from AsciiDoc v1.1.1 (was too large)
@@ -61,11 +61,11 @@
 
 #let page-size    = "us-letter"
 #let page-margin  = (top: 22mm, bottom: 24mm, inside: 24mm, outside: 20mm)
-#let col-count    = 2
+#let col-count    = 1
 #let col-gap      = 7mm
 
 // ── Header/Footer Content ────────────────────────────────────
-#let header-classification = "TOP SECRET — VERDANT COVENANT — EYES ONLY"
+#let header-classification = "TOP SECRET  -  VERDANT COVENANT  -  EYES ONLY"
 #let footer-form-ref       = "FORM VC-1 · REV. 1987 · INTERNAL USE ONLY"
 #let footer-copy-block     = "COPY NO. ___   PAGE "  // page num appended at render time
 
@@ -125,7 +125,7 @@
     background: rect(width: 100%, height: 100%, fill: clr-manila),
     columns: col-count,
 
-    // Header (recto/verso via state — simplified to centered classification)
+    // Header (recto/verso via state  -  simplified to centered classification)
     header: {
       set text(font: font-body, size: size-header-sub, fill: clr-olive-light)
       box(width: 100%,
@@ -133,9 +133,10 @@
           columns: (1fr, auto, 1fr),
           align(left)[#context counter(page).display()],
           align(center, text(size: 7pt, weight: "bold", fill: clr-deep-red)[#header-classification]),
-          align(right)[],  // chapter title via headings — filled in ch template
+          align(right)[],  // chapter title via headings  -  filled in ch template
         )
       )
+      v(1.5mm)
       line(length: 100%, stroke: 0.5pt + clr-olive)
     },
 
@@ -159,14 +160,14 @@
     fill: clr-near-black,
     lang: "en",
   )
-  set par(leading: leading-body, justify: true)
+  set par(leading: leading-body, justify: true, spacing: 1.5em)
 
   // Block spacing
   set block(above: 0pt, below: 3mm)
-  set list(marker: ([•], [–], [·]), indent: 4mm, spacing: 2mm)
-  set enum(indent: 4mm, spacing: 2mm)
-  show list: it => block(above: 4mm, it)
-  show enum: it => block(above: 4mm, it)
+  set list(marker: ([•], [–], [·]), indent: 0mm, spacing: 4mm)
+  set enum(indent: 0mm, spacing: 4mm)
+  show list: it => block(above: 6mm, it)
+  show enum: it => block(above: 6mm, it)
 
   // Links
   show link: it => text(fill: clr-link)[#it]

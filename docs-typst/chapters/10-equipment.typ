@@ -9,7 +9,7 @@
 #chapter-header("10", "1980s Equipment and Analog Gear")
 
 Covenant agents do not carry personal cash or maintain private arsenals. All
-operational gear — from a pocket flashlight to a helicopter — is requisitioned
+operational gear  -  from a pocket flashlight to a helicopter  -  is requisitioned
 through the Covenant's Clearance Level (CL) system. Everything has a cost in
 organizational trust and bureaucratic weight. Agents who treat gear as
 expendable will find themselves facing an empty armory.
@@ -21,6 +21,7 @@ and a catastrophic breach. Treat it accordingly.
 == Investigative & Paranormal Tech
 
 #nr-table-wide(
+  caption: "Investigative and Paranormal Tech",
   columns: (2fr, 4fr, 1fr, 1fr),
   [*Item*], [*Effect*], [*Enc*], [*CL*],
 
@@ -29,23 +30,23 @@ and a catastrophic breach. Treat it accordingly.
   [½], [1],
 
   [Micro-Cassette Recorder],
-  [+1 die to Psychoanalyze rolls made while reviewing recordings. Can capture EVPs (Electronic Voice Phenomena) — roll Lore upon playback; a success reveals a clue the agent missed in person.],
+  [+1 die to Psychoanalyze rolls made while reviewing recordings. Can capture EVPs (Electronic Voice Phenomena)  -  roll Lore upon playback; a success reveals a clue the agent missed in person.],
   [½], [1],
 
   [Polaroid SX-70 Camera],
-  [+2 dice to Lore rolls made to analyze crime scenes or paranormal evidence from physical prints. Each photo is a permanent record — GMs may use these as clue anchors.],
+  [+2 dice to Lore rolls made to analyze crime scenes or paranormal evidence from physical prints. Each photo is a permanent record  -  GMs may use these as clue anchors.],
   [1], [2],
 
   [Air Ion Counter],
-  [+1 die to Investigate rolls in locations with suspected supernatural activity. Functions as a rudimentary spirit detector — a spiking reading (GM call) indicates residual entity presence.],
+  [+1 die to Investigate rolls in locations with suspected supernatural activity. Functions as a rudimentary spirit detector  -  a spiking reading (GM call) indicates residual entity presence.],
   [1], [2],
 
   [Acoustic Coupler Modem],
-  [+1 die to Tech rolls to access remote databases or mainframe systems via payphone. Requires a compatible phone line and 10–30 minutes per query. Fragile — Gear Die d8.],
+  [+1 die to Tech rolls to access remote databases or mainframe systems via payphone. Requires a compatible phone line and 10–30 minutes per query. Fragile  -  Gear Die d8.],
   [1], [2],
 
   [P-SB7 Spirit Box Prototype],
-  [+2 dice to Lore rolls made to discern entity motivations or communicate with anchored spirits. Creates significant paranormal noise — anything within earshot knows you are here.],
+  [+2 dice to Lore rolls made to discern entity motivations or communicate with anchored spirits. Creates significant paranormal noise  -  anything within earshot knows you are here.],
   [1], [3],
 
   [Thermal/IR Camera],
@@ -56,11 +57,12 @@ and a catastrophic breach. Treat it accordingly.
 == Standard Tools & Survival
 
 #nr-table-wide(
+  caption: "Standard Tools and Survival Gear",
   columns: (2fr, 4fr, 1fr, 1fr),
   [*Item*], [*Effect*], [*Enc*], [*CL*],
 
   [Basic First Aid Kit],
-  [+1 die to Heal rolls. Contains bandages, antiseptic, and basic wound supplies. Consumable — uses a d10 Resource Die (see Consumables).],
+  [+1 die to Heal rolls. Contains bandages, antiseptic, and basic wound supplies. Consumable  -  uses a d10 Resource Die (see Consumables).],
   [1], [1],
 
   [Lockpick Kit],
@@ -72,17 +74,18 @@ and a catastrophic breach. Treat it accordingly.
   [1], [2],
 
   [Long-Range Walkie-Talkies (pair)],
-  [Enables reliable two-way voice communication across up to 3 zones or several city blocks. Encrypted channel — not police-band interceptable without specialized gear. Requires general battery (d8).],
+  [Enables reliable two-way voice communication across up to 3 zones or several city blocks. Encrypted channel  -  not police-band interceptable without specialized gear. Requires general battery (d8).],
   [½], [2],
 
   [Trauma Surgical Kit],
-  [+3 dice to Heal rolls for serious wounds requiring surgical intervention. Requires a stable environment — cannot be used in active combat zones. Consumable (d8 Resource Die).],
+  [+3 dice to Heal rolls for serious wounds requiring surgical intervention. Requires a stable environment  -  cannot be used in active combat zones. Consumable (d8 Resource Die).],
   [2], [3],
 )
 
 == 1980s Weaponry
 
 #nr-table-wide(
+  caption: "1980s Weaponry",
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 3fr, 1fr),
   [*Weapon*], [*Gear Bonus*], [*Damage*], [*Type*], [*Range*], [*Special*], [*CL*],
 
@@ -103,7 +106,7 @@ and a catastrophic breach. Treat it accordingly.
 
   [.38 Snub-nose Revolver],
   [+2], [2], [Physical (AGI)], [Short],
-  [Reliable — when pushing this weapon's attack roll, ignore the first die showing 1.],
+  [Reliable  -  when pushing this weapon's attack roll, ignore the first die showing 1.],
   [2],
 
   [9mm Semi-Automatic Pistol],
@@ -113,29 +116,30 @@ and a catastrophic breach. Treat it accordingly.
 
   [Pump-Action Shotgun],
   [+3], [3], [Physical (AGI)], [Short],
-  [+1 Damage when used at Engaged range. Loud — triggers an automatic Noise alert. Bulky (counts as 2 Enc).],
+  [+1 Damage when used at Engaged range. Loud  -  triggers an automatic Noise alert. Bulky (counts as 2 Enc).],
   [3],
 
   [M16 Assault Rifle],
   [+2], [3], [Physical (AGI)], [Long],
-  [Full-auto capable — may push the attack roll twice (consuming extra ammo: roll Rifle Rounds die twice on full-auto). Illegal for civilian possession.],
+  [Full-auto capable  -  may push the attack roll twice (consuming extra ammo: roll Rifle Rounds die twice on full-auto). Illegal for civilian possession.],
   [4],
 )
 
 == Armor
 
 #nr-table-wide(
+  caption: "Armor",
   columns: (2fr, 1fr, 3fr, 1fr),
   [*Armor*], [*AR*], [*Notes*], [*CL*],
 
   [Concealed Kevlar Vest],
   [3],
-  [Worn under civilian clothing — passes casual inspection. Does not impose movement penalties. Standard Covenant field issue.],
+  [Worn under civilian clothing  -  passes casual inspection. Does not impose movement penalties. Standard Covenant field issue.],
   [3],
 
   [Tactical Riot Armor],
   [6],
-  [Bulky. Imposes −2 dice to all AGI-based rolls while worn. Conspicuous — impossible to conceal, triggers immediate attention in civilian environments.],
+  [Bulky. Imposes −2 dice to all AGI-based rolls while worn. Conspicuous  -  impossible to conceal, triggers immediate attention in civilian environments.],
   [4],
 )
 
@@ -145,22 +149,23 @@ and a catastrophic breach. Treat it accordingly.
 
 Not everything in the field is permanent. Ammunition runs out. Batteries die at
 the worst possible moment. Medical supplies get used. The Covenant tracks these
-consumables using *Resource Dice* — a mechanic borrowed from real-world
+consumables using *Resource Dice*  -  a mechanic borrowed from real-world
 survival logistics.
 
 After each scene in which a consumable was meaningfully used, roll its Resource
 Die. On a *1 or 2*, the die steps down one size. When a d4 Resource Die rolls *1
-or 2*, the supply is *Depleted* — gone. Cross it off.
+or 2*, the supply is *Depleted*  -  gone. Cross it off.
 
 #nr-table(
+  caption: "Resource Die Step-Down Rules",
   columns: (1fr, 3fr),
   [*Die*], [*Supply Status*],
-  [d12], [Abundant — freshly restocked, no concerns],
-  [d10], [Well-supplied — minor use, still comfortable],
-  [d8],  [Adequate — noticeable use, starting to watch it],
-  [d6],  [Running Low — rationing recommended],
-  [d4],  [Critical — one bad scene from empty],
-  [—],   [*Depleted* — supply exhausted],
+  [d12], [Abundant  -  freshly restocked, no concerns],
+  [d10], [Well-supplied  -  minor use, still comfortable],
+  [d8],  [Adequate  -  noticeable use, starting to watch it],
+  [d6],  [Running Low  -  rationing recommended],
+  [d4],  [Critical  -  one bad scene from empty],
+  [ - ],   [*Depleted*  -  supply exhausted],
 )
 
 *Restocking:* Resource Dice are restored during the *Equipping Phase* between
@@ -172,6 +177,7 @@ per case with a successful Heal roll (Diff 1).
 === Supply Categories
 
 #nr-table-wide(
+  caption: "Supply Categories",
   columns: (2fr, 1fr, 1fr, 3fr),
   [*Supply*], [*Die*], [*CL*], [*Roll Trigger*],
 
@@ -208,8 +214,8 @@ per case with a successful Heal roll (Diff 1).
   [Roll once per day on extended journeys only. Not tracked on standard operations.],
 
   [Artifact Components],
-  [d6], [—],
-  [Roll after each artifact interaction that required preparation or containment materials. Cannot be requisitioned — must be scavenged or salvaged.],
+  [d6], [ - ],
+  [Roll after each artifact interaction that required preparation or containment materials. Cannot be requisitioned  -  must be scavenged or salvaged.],
 )
 
 _Note: In-combat ammunition tracking is governed by the weapon's attack rules in
@@ -224,6 +230,7 @@ Armor adds its CL value to carried Enc. Exceeding your carry capacity slows you
 down and impairs your ability to act.
 
 #nr-table(
+  caption: "Encumbrance Values",
   columns: (1fr, 3fr),
   [*Enc Value*], [*Item Examples*],
   [½],  [Pocket items, folded documents, small tools, knives],
@@ -242,6 +249,7 @@ Slow Action instead of a Free Move.
 AGI rolls. Dangerous in any tactical situation.
 
 #nr-table(
+  caption: "Overloaded Penalties",
   columns: (1fr, 3fr),
   [*CL*], [*Requisition Scope*],
   [1], [Standard field gear, widely available, no paperwork],
@@ -269,12 +277,13 @@ Every vehicle has five stats:
 === 1980s Vehicle Roster
 
 #nr-table-wide(
+  caption: "1980s Vehicle Roster",
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 2fr),
   [*Vehicle*], [*Speed*], [*AR*], [*Rel*], [*Hand*], [*Capacity / Notes*],
 
   [Ford Crown Victoria (Police Interceptor)],
   [Medium], [1], [5], [+0],
-  [4 pass / 25 Enc. Government plate — police deference in most jurisdictions.],
+  [4 pass / 25 Enc. Government plate  -  police deference in most jurisdictions.],
 
   [Chevy Caprice Classic (Civilian Sedan)],
   [Medium], [1], [5], [+0],
@@ -290,11 +299,11 @@ Every vehicle has five stats:
 
   [Ducati 900 SS (Motorcycle)],
   [Fast], [0], [3], [+2],
-  [1 rider / 10 Enc. −2 Handling in rain or snow. Rider is exposed — no AR protection.],
+  [1 rider / 10 Enc. −2 Handling in rain or snow. Rider is exposed  -  no AR protection.],
 
   [Chevy Camaro Z28],
   [Fast], [0], [4], [+1],
-  [2 pass / 10 Enc. −1 die on tight urban turns. Engine is loud — cannot tail quietly.],
+  [2 pass / 10 Enc. −1 die on tight urban turns. Engine is loud  -  cannot tail quietly.],
 
   [UH-1 Huey Helicopter],
   [Very Fast], [2], [3], [−1],
@@ -306,22 +315,23 @@ Every vehicle has five stats:
 
   [Zodiac Inflatable Boat],
   [Medium], [0], [4], [+0],
-  [4 pass / 40 Enc cargo. Water only — cannot be used in road pursuits. Silent approach.],
+  [4 pass / 40 Enc cargo. Water only  -  cannot be used in road pursuits. Silent approach.],
 )
 
 === Vehicle Conflict and Chase Rules
 
 When agents pursue or flee in vehicles, the scene is resolved using a
-*Contact Track* — an abstract measure of relative position between two parties.
+*Contact Track*  -  an abstract measure of relative position between two parties.
 
 #nr-table(
+  caption: "Vehicle Contact Track",
   columns: (1fr, 3fr),
   [*Position*], [*Status*],
-  [1 — Rammed],   [Vehicles in direct contact. Ramming and boarding possible.],
-  [2 — Close],    [Tight pursuit. Handgun fire is possible. Difficult to shake.],
-  [3 — Medium],   [Standard pursuit range. All weapons usable. Default start.],
-  [4 — Distant],  [Long pursuit range. Only rifles and thrown signals effective.],
-  [5 — Escaped],  [Pursuit broken. Quarry has successfully evaded.],
+  [1  -  Rammed],   [Vehicles in direct contact. Ramming and boarding possible.],
+  [2  -  Close],    [Tight pursuit. Handgun fire is possible. Difficult to shake.],
+  [3  -  Medium],   [Standard pursuit range. All weapons usable. Default start.],
+  [4  -  Distant],  [Long pursuit range. Only rifles and thrown signals effective.],
+  [5  -  Escaped],  [Pursuit broken. Quarry has successfully evaded.],
 )
 
 *Chase Roll:* Driver rolls *Driving (WIT)* against the quarry rolling *Evasion
@@ -337,6 +347,7 @@ and inflicts 1 Wear on the vehicle from reckless driving.
 ==== Vehicle Maneuvers
 
 #nr-table-wide(
+  caption: "Vehicle Maneuvers",
   columns: (1fr, 2fr, 3fr),
   [*Maneuver*], [*Requirement*], [*Effect*],
 
@@ -368,17 +379,18 @@ equal to the damage dealt (after AR reduction). Vehicle effects:
 
 - *3 Wear:* −1 die to all Driving rolls.
 - *4+ Wear:* Roll on the Breakdown Table immediately.
-- *5 Wear:* Vehicle stops functioning — engine out, tires shredded, or similar.
+- *5 Wear:* Vehicle stops functioning  -  engine out, tires shredded, or similar.
 
 *Field Repair:* A Tech roll (WIT), Diff 2, 30 minutes of work, reduces 1 Wear.
 Requires a basic toolkit. An overnight garage repair fully restores Reliability.
 
 #nr-table(
+  caption: "Field Repair Rules",
   columns: (1fr, 4fr),
   [*d6*], [*Breakdown Result*],
   [1–2], [*Total Failure.* Engine seizes or wheels lock. Vehicle is immobile. Requires shop repair (full day + parts).],
   [3–4], [*Serious Fault.* Critical system compromised (brakes, steering, electrics). −2 dice to all Driving rolls until repaired.],
-  [5–6], [*Inconvenient.* Minor issue — flat tire, cracked windshield, leaking fluid. −1 die to Driving. Repairable with 15 minutes and a Junk Die.],
+  [5–6], [*Inconvenient.* Minor issue  -  flat tire, cracked windshield, leaking fluid. −1 die to Driving. Repairable with 15 minutes and a Junk Die.],
 )
 
 #section-rule()
@@ -389,7 +401,7 @@ Not every problem can be solved with a requisition form. Gear breaks. Fields
 are hostile. Sometimes the nearest Covenant armory is 300 miles away and the
 entity is *right here*.
 
-Stack Division agents are the Covenant's premier field engineers — the people
+Stack Division agents are the Covenant's premier field engineers  -  the people
 who keep equipment running, improvise solutions from junk, and occasionally
 build something brilliant from components that have no business working together.
 But any trained agent can attempt basic repairs. Stack agents are simply *better*
@@ -398,13 +410,14 @@ at it.
 *Gear Degradation recap:* Gear Dice follow the track d12 → d10 → d8 → d6 → d4
 → Broken when rolling a 1. A Broken item cannot be used until repaired. Stack
 agents' *Jury-Rig* talent can restore an item to one step above Broken in a
-single scene — at the cost of +1 Corruption. Formal repair rules follow.
+single scene  -  at the cost of +1 Corruption. Formal repair rules follow.
 
 === Repair Rules
 
 Repairing gear requires *time*, *parts*, and a *Craft* roll.
 
 #nr-table(
+  caption: "Repair Costs and Time",
   columns: (1fr, 3fr),
   [*Attribute*], [Wits (WIT)],
   [*Skill*],     [Craft _(Stack signature skill)_],
@@ -414,6 +427,7 @@ Repairing gear requires *time*, *parts*, and a *Craft* roll.
 )
 
 #nr-table-wide(
+  caption: "Repair Time and Requirements",
   columns: (2fr, 1fr, 1fr, 2fr),
   [*Condition*], [*Gear Die*], [*Repair Diff*], [*Time Required*],
 
@@ -422,11 +436,11 @@ Repairing gear requires *time*, *parts*, and a *Craft* roll.
   [Quick Repair: 15 minutes (1 scene)],
 
   [Broken (non-electronic)],
-  [—], [2],
+  [ - ], [2],
   [Full Repair: 1 Shift (~4 hours)],
 
   [Broken (electronic / mechanical)],
-  [—], [3],
+  [ - ], [3],
   [Full Repair: 1 Shift; requires Power Tools],
 
   [Combat-Damaged Vehicle],
@@ -434,12 +448,12 @@ Repairing gear requires *time*, *parts*, and a *Craft* roll.
   [Full Day; requires Auto Repair kit],
 
   [Artifact-Adjacent Damage],
-  [—], [4],
+  [ - ], [4],
   [Requires Occult Lab or Wayfinder consult],
 )
 
 *Success:* Each success restores the Gear Die one step (up to its maximum). A
-single Quick Repair roll can only ever restore to the step *above* Broken — a
+single Quick Repair roll can only ever restore to the step *above* Broken  -  a
 Broken item must be fully repaired before it can be used again.
 
 *Failure:* The repair attempt fails but does not make things worse.
@@ -457,6 +471,7 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
 - *Junk Die Exhausted:* No spare parts of that type remain. Acquire more (see Component Sourcing below).
 
 #nr-table-wide(
+  caption: "Junk Die Results",
   columns: (2fr, 1fr, 3fr),
   [*Parts Category*], [*Resource Die*], [*Used For*],
 
@@ -474,7 +489,7 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
 
   [Specialized Parts],
   [d6],
-  [High-tech, rare, or artifact-adjacent repairs only — not scavengeable],
+  [High-tech, rare, or artifact-adjacent repairs only  -  not scavengeable],
 
   [Covenant Cache Parts],
   [d12],
@@ -496,6 +511,7 @@ Action* or *Free Move* to scavenge. Roll *Investigate (WIT)*, Diff 1.
 - *Extra Successes (2+):* Upgrade the find to Hardware Components instead of Junk.
 
 #nr-table(
+  caption: "Scavenge Finds",
   columns: (1fr, 3fr),
   [*Scavenge Location*], [*Typical Find (d6)*],
 
@@ -525,7 +541,7 @@ Covenant requisition. Use the standard CL system. Specialized Parts have CL 3.
 Covenant Cache Parts are CL 4+ and require approval from the Keep.
 
 *Stack Advantage:* Stack Division agents treat Specialized Parts as CL 2 when
-requisitioning — their workshop connections reduce red tape.
+requisitioning  -  their workshop connections reduce red tape.
 
 == Improvised Items
 
@@ -538,16 +554,17 @@ at reduced effectiveness and carry a higher risk of failure.
 Roll *Craft (WIT)*, using the difficulty from the table below. Requires at
 minimum a *Junk Die (d6)* as parts; step it down after crafting.
 
-Improvised items begin with a *d8 Gear Die* (never start at d10 or d12 —
+Improvised items begin with a *d8 Gear Die* (never start at d10 or d12  - 
 they're held together with duct tape and prayer).
 
 #nr-table-wide(
+  caption: "Improvised Item Starting Dice",
   columns: (2fr, 1fr, 1fr, 4fr),
   [*Improvised Item*], [*Craft Diff*], [*Time*], [*Notes*],
 
   [Club / Makeshift Bludgeon],
   [1], [1 minute],
-  [Damage 1, Slow. No Gear Die — it's a pipe.],
+  [Damage 1, Slow. No Gear Die  -  it's a pipe.],
 
   [Shiv / Field Knife],
   [1], [5 minutes],
@@ -555,7 +572,7 @@ they're held together with duct tape and prayer).
 
   [Molotov Cocktail],
   [1], [10 minutes],
-  [Blast 1, Fire. No Gear Die — single use.],
+  [Blast 1, Fire. No Gear Die  -  single use.],
 
   [Improvised First Aid Kit],
   [2], [20 minutes],
@@ -571,7 +588,7 @@ they're held together with duct tape and prayer).
 
   [Garrote Wire],
   [1], [5 minutes],
-  [Grapple-linked attack. No Gear Die — simple tool.],
+  [Grapple-linked attack. No Gear Die  -  simple tool.],
 
   [Lockpick Set (crude)],
   [3], [1 hour],
@@ -586,17 +603,18 @@ they're held together with duct tape and prayer).
   [Extend comms range by 1 zone. Gear d8. Electronics.],
 )
 
-#callout-block("NOTE", [Improvised items *cannot* be upgraded with proper parts after the fact —
+#callout-block("NOTE", [Improvised items *cannot* be upgraded with proper parts after the fact  - 
 once improvised, always improvised. The exception is Stack Division agents
 with the *Prototyper* talent, who may treat any improvised item as fully
 professional for one roll before it is destroyed.])
 
 === Improvised Item Failure
 
-When a Gear Die on an improvised item comes up *1*, it does not simply degrade —
+When a Gear Die on an improvised item comes up *1*, it does not simply degrade  - 
 roll on the following table:
 
 #nr-table(
+  caption: "Improvised Item Failure Table",
   columns: (1fr, 4fr),
   [*d6*], [*Improvised Item Failure*],
 
@@ -605,17 +623,18 @@ roll on the following table:
   [3], [*Splinters / Shrapnel.* Item breaks; nearest ally in zone rolls AGI Diff 1 or takes 1 damage.],
   [4], [*Power Surge.* Electronic items: short circuit and sparks. Clear by spending a Slow Action.],
   [5], [*Reduced Function.* Item still usable but provides no bonus die (treat as no item).],
-  [6], [*Quick Fix.* Roll was a near-miss — item is stable. Gear Die stays at current step.],
+  [6], [*Quick Fix.* Roll was a near-miss  -  item is stable. Gear Die stays at current step.],
 )
 
 == Stack Division: Crafting Signature
 
-Stack agents aren't just better at repairs — they have a different relationship
+Stack agents aren't just better at repairs  -  they have a different relationship
 with gear entirely. Training in Covenant workshops, maintaining equipment under
 operational conditions, and sourcing parts through a network of trusted contacts
 gives Stack agents mechanical advantages no other Division matches.
 
 #nr-table(
+  caption: "Gear Maintenance Training",
   columns: (2fr, 4fr),
   [*Advantage*], [*Effect*],
 
@@ -626,10 +645,10 @@ gives Stack agents mechanical advantages no other Division matches.
   [Quick Repairs take 5 minutes instead of 15. Full Repairs take 2 hours instead of a full Shift.],
 
   [Parts Economy],
-  [Stack agents never step down a Junk Die on a successful repair — only failed repairs consume parts.],
+  [Stack agents never step down a Junk Die on a successful repair  -  only failed repairs consume parts.],
 
   [Known Contacts],
-  [Once per case, a Stack agent can source *Hardware Components (d8)* without a Covenant requisition — a contact comes through.],
+  [Once per case, a Stack agent can source *Hardware Components (d8)* without a Covenant requisition  -  a contact comes through.],
 
   [Workshop Access],
   [At HQ, Stack agents may use the Covenant Armorer facility at no additional cost, even before it is fully built. They improvise the bench themselves.],

@@ -1,5 +1,5 @@
 // ============================================================
-// NEON RELIC — Core Rules (Typst Master Document)
+// NEON RELIC  -  Core Rules (Typst Master Document)
 // ============================================================
 // This is the root entry point. It imports the theme, component
 // library, and all 20 chapter files.
@@ -14,7 +14,7 @@
 
 // ── Document metadata ───────────────────────────────────────
 #set document(
-  title: "Neon Relic — Core Rules",
+  title: "Neon Relic  -  Core Rules",
   author: ("Bruce Amoser", "Stu"),
   keywords: ("TTRPG", "Year Zero Engine", "occult", "1980s"),
   date: auto,
@@ -60,7 +60,7 @@
 ]
 
 // ── Parts & Chapters ────────────────────────────────────────
-#part-header("I", "Introduction")
+#part-header("I", "Introduction", img: "../../assets/vegas-vic.png")
 #include "chapters/01-introduction.typ"
 
 #part-header("II", "Character Creation")

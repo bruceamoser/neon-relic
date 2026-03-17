@@ -1,5 +1,5 @@
 // ============================================================
-// NEON RELIC — Component Library (INFRA-3)
+// NEON RELIC  -  Component Library (INFRA-3)
 // ============================================================
 // Reusable layout components for chapter conversion.
 // Import alongside theme.typ:
@@ -14,8 +14,8 @@
 //   example-box(body)
 //   stat-block(content)
 //   artifact-card(name, classification, body)
-//   nr-table(columns, caption, ..rows)       — inline column-width table
-//   nr-table-wide(columns, caption, ..rows)  — full-page-width floating table
+//   nr-table(columns, caption, ..rows)        -  inline column-width table
+//   nr-table-wide(columns, caption, ..rows)   -  full-page-width floating table
 //   column-break()
 //   section-rule()
 // ============================================================
@@ -43,7 +43,7 @@
   // Reset table sequence counter for this chapter (POLISH-26)
   _nr-tbl-seq.update(0)
   // Register chapter name in outline at level 1 (visually suppressed by theme)
-  [#heading(level: 1, numbering: none, outlined: true)[Chapter #num — #title]]
+  [#heading(level: 1, numbering: none, outlined: true)[Chapter #num  -  #title]]
   // Place header spanning both columns at the top of the current page
   place(
     scope: "parent",
@@ -60,31 +60,12 @@
         column-gutter: 3mm,
         align: (left + horizon, left + horizon, left + horizon),
         text(font: font-heading, fill: clr-olive-light, size: 9pt)[CHAPTER #num],
-        text(font: font-heading, fill: clr-olive-mid, size: 9pt)[—],
+        text(font: font-heading, fill: clr-olive-mid, size: 9pt)[ - ],
         text(font: font-heading, fill: clr-olive-deep, size: 14pt, weight: "bold")[#upper(title)],
       )
     ]
   )
-  // Image placeholder — replace with actual artwork when ready
-  place(
-    scope: "parent",
-    top + left,
-    float: true,
-    block(
-      width: 100%,
-      height: 55mm,
-      fill: clr-manila-mid,
-      stroke: (paint: clr-olive-mid, thickness: 1pt, dash: "dashed"),
-    )[
-      #align(center + horizon)[
-        #set text(font: font-heading, size: 9pt, fill: clr-olive-mid)
-        [IMAGE PLACEHOLDER — CHAPTER #num]\
-        #v(1mm)
-        #text(size: 8pt)[~172 mm × 55 mm  |  ~2028 × 650 px @ 300 dpi]
-      ]
-    ]
-  )
-  v(6mm)  // reserve space below header + placeholder
+  v(4mm)
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -94,7 +75,7 @@
 //
 // Usage: #part-header("I", "The Verdant Covenant")
 // ─────────────────────────────────────────────────────────────
-#let part-header(roman, title) = {
+#let part-header(roman, title, img: none) = {
   pagebreak()
   page(
     background: rect(width: 100%, height: 100%, fill: clr-manila-dark),
@@ -119,8 +100,29 @@
       #line(length: 60%, stroke: 2pt + clr-deep-red)
       #v(8mm)
       #text(font: font-body, size: 8pt, fill: clr-deep-red, weight: "bold",  tracking: 1pt)[
-        TOP SECRET — VERDANT COVENANT — EYES ONLY
+        TOP SECRET  -  VERDANT COVENANT  -  EYES ONLY
       ]
+
+      #v(8mm)
+
+      #if img != none {
+        image(img, height: 80mm)
+      } else {
+        // Image placeholder  -  replace with actual artwork when ready
+        block(
+          width: 80%,
+          height: 60mm,
+          fill: clr-manila-mid,
+          stroke: (paint: clr-olive-mid, thickness: 1pt, dash: "dashed"),
+        )[
+          #align(center + horizon)[
+            #set text(font: font-heading, size: 9pt, fill: clr-olive-mid)
+            [IMAGE PLACEHOLDER  -  PART #roman]\
+            #v(1mm)
+            #text(size: 8pt)[~130 mm × 60 mm  |  ~1535 × 709 px @ 300 dpi]
+          ]
+        ]
+      }
     ]
   ]
 }
@@ -161,7 +163,7 @@
 
 // ─────────────────────────────────────────────────────────────
 // DESIGN NOTE
-// Internal authorial callout — marks a design rationale.
+// Internal authorial callout  -  marks a design rationale.
 // Styled differently from gameplay NOTE blocks.
 //
 // Usage: #design-note[Content...]
@@ -185,7 +187,7 @@
 
 // ─────────────────────────────────────────────────────────────
 // SIDEBAR BOX
-// Equivalent to AsciiDoc [sidebar] blocks — supplementary
+// Equivalent to AsciiDoc [sidebar] blocks  -  supplementary
 // content in a shaded box with optional title.
 //
 // Usage: #sidebar-box("Optional Title")[Content...]
@@ -212,7 +214,7 @@
 
 // ─────────────────────────────────────────────────────────────
 // EXAMPLE BOX
-// Italicised play example block — indented and slightly shaded.
+// Italicised play example block  -  indented and slightly shaded.
 //
 // Usage: #example-box[Dialogue / example text...]
 // ─────────────────────────────────────────────────────────────
@@ -233,7 +235,7 @@
 // ─────────────────────────────────────────────────────────────
 // STAT BLOCK
 // Pre-formatted adversary stat block. Preserves monospace
-// alignment — pass content as a raw block or formatted text.
+// alignment  -  pass content as a raw block or formatted text.
 //
 // Usage: #stat-block[
 //   NAME\n
@@ -269,7 +271,7 @@
 //   *Skills:* Skill A X | Skill B X
 //
 //   *Special Abilities:* \
-//   *Ability Name* — Description.
+//   *Ability Name*  -  Description.
 //
 //   *Broken State:* Description.
 //   *Motivation:* Description.
@@ -310,10 +312,10 @@
 // ARTIFACT CARD
 // Structured entry block for an artifact description.
 // name: artifact name (string)
-// classification: e.g. "Class III — Hazardous" (string)
+// classification: e.g. "Class III  -  Hazardous" (string)
 // body: artifact description + mechanics content
 //
-// Usage: #artifact-card("The Broadcast Reel", "Class III — Hazardous")[
+// Usage: #artifact-card("The Broadcast Reel", "Class III  -  Hazardous")[
 //   *Appearance:* ...
 //   *Effect:* ...
 // ]
@@ -369,13 +371,14 @@
     let n  = _nr-tbl-seq.display("1")
     "Table " + ch + "." + n
   }
-  let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
-  // Inline rendering — no float (POLISH-20/21/22): block stays in column flow.
+  let full-caption = if caption != none { [#auto-label  -  #caption] } else { auto-label }
+  // Inline rendering  -  no float (POLISH-20/21/22): block stays in column flow.
   // breakable:true allows tall tables to split across columns/pages.
   block(width: 100%, breakable: true, above: 8mm, below: 4mm)[
     #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
     #v(1mm)
     #set text(size: size-table)
+    #set par(justify: false)
     #show table.cell.where(y: 0): it => {
       set text(fill: clr-manila, weight: "bold")
       set table.cell(inset: (x: 3mm, y: 4mm))
@@ -407,14 +410,14 @@
 #let _nr-wide-height-threshold = 400pt
 
 #let nr-table-wide(columns: auto, caption: none, ..cells) = {
-  // Increment table counter — wide tables share the same sequence (POLISH-26)
+  // Increment table counter  -  wide tables share the same sequence (POLISH-26)
   _nr-tbl-seq.step()
   let auto-label = context {
     let ch = _nr-chapter.get()
     let n  = _nr-tbl-seq.display("1")
     "Table " + ch + "." + n
   }
-  let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
+  let full-caption = if caption != none { [#auto-label  -  #caption] } else { auto-label }
   // Build table content block
   let make-tbl = block.with(width: 100%, breakable: true, above: 8mm, below: 4mm)
   let tbl-body = {
@@ -422,6 +425,7 @@
     v(1mm)
     {
       set text(size: size-table)
+      set par(justify: false)
       show table.cell.where(y: 0): it => {
         set text(fill: clr-manila, weight: "bold")
         set table.cell(inset: (x: 3mm, y: 4mm))
@@ -436,32 +440,14 @@
       )
     }
   }
-  // Measure actual rendered height at full text-width to decide strategy
-  context {
-    let tw = page-margin  // from theme.typ
-    let pw = if type(tw) == dictionary {
-      612pt - tw.at("inside", default: 68pt) - tw.at("outside", default: 56.7pt)
-    } else { 487.3pt }
-    let m = measure(block(width: pw)[#tbl-body])
-    if m.height > _nr-wide-height-threshold {
-      // Tall table → dedicated single-column page (breakable across pages)
-      page(columns: 1)[#make-tbl()[#tbl-body]]
-    } else {
-      // Short table → float at top of page within 2-column layout
-      place(
-        scope: "parent",
-        top + left,
-        float: true,
-        make-tbl()[#tbl-body]
-      )
-    }
-  }
+  // Single-column layout: render inline, no float needed
+  make-tbl()[#tbl-body]
 }
 
 // ─────────────────────────────────────────────────────────────
 // COLUMN BREAK
 // Forces a column break in the 2-column layout.
-// Use sparingly — Typst handles most breaks automatically.
+// Use sparingly  -  Typst handles most breaks automatically.
 //
 // Usage: #column-break()
 // ─────────────────────────────────────────────────────────────
@@ -470,7 +456,7 @@
 // ─────────────────────────────────────────────────────────────
 // SECTION RULE
 // Horizontal olive rule for major section dividers.
-// Equivalent to AsciiDoc "---" dividers.
+// Equivalent to AsciiDoc " - " dividers.
 //
 // Usage: #section-rule()
 // ─────────────────────────────────────────────────────────────

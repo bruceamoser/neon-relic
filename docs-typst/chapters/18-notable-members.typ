@@ -13,6 +13,7 @@ Because of the rigid structure of 441 members, players are part of an unbroken l
 == The Medieval & Renaissance Eras
 
 #nr-table-wide(
+  caption: "Legendary Past Members (Origins and Early History)",
   columns: (3fr, 1fr, 1fr, 5fr),
   [Member], [Dates], [Division], [Legacy],
   [*Godfrey of Bouillon*], [c. 1060–1100], [Recovery], [Used the chaos of the First Crusade to seize and sequester dangerous Levantine relics.],
@@ -30,6 +31,7 @@ Because of the rigid structure of 441 members, players are part of an unbroken l
 == The Enlightenment & Victorian Eras
 
 #nr-table-wide(
+  caption: "Notable Members: The Enlightenment and Victorian Eras",
   columns: (3fr, 1fr, 1fr, 5fr),
   [Member], [Dates], [Division], [Legacy],
   [*Athanasius Kircher*], [1602–1680], [Keep], [Categorized cursed Egyptian artifacts and built the first deep-subterranean vaults beneath Rome.],
@@ -47,6 +49,7 @@ Because of the rigid structure of 441 members, players are part of an unbroken l
 == The 20th Century (Pre-1980s)
 
 #nr-table-wide(
+  caption: "Notable Members: The 20th Century (Pre-1980s)",
   columns: (3fr, 1fr, 1fr, 5fr),
   [Member], [Dates], [Division], [Legacy],
   [*Howard Carter*], [1874–1939], [Recovery], [Handled the catastrophic curse outbreak during the Tutankhamun extraction.],

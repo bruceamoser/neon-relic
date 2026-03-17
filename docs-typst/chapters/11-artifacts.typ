@@ -8,7 +8,7 @@
 
 #chapter-header("11", "Artifacts of Power and Doom")
 
-In an occult thriller setting, artifacts are fundamentally dangerous — objects of
+In an occult thriller setting, artifacts are fundamentally dangerous  -  objects of
 immense, unknowable power that exact a heavy toll on the human mind and physical
 reality. Project Neon Relic leans heavily into the *Artifact of Doom* narrative
 trope, ensuring that utilizing magic is always a terrifying gamble.
@@ -16,8 +16,8 @@ trope, ensuring that utilizing magic is always a terrifying gamble.
 == The Mechanics of Occult Artifacts
 
 Within the YZE system, mystical objects are classified as *Occult Artifacts*.
-They often appear entirely mundane — a vintage Polaroid camera, a rusted World
-War I trench lighter, a tarnished silver coin — but are imbued with intense
+They often appear entirely mundane  -  a vintage Polaroid camera, a rusted World
+War I trench lighter, a tarnished silver coin  -  but are imbued with intense
 paranatural energy.
 
 To utilize an artifact, a character must trigger its specific *activation
@@ -25,17 +25,17 @@ condition* (e.g., speaking a phrase in a dead language, feeding it a drop of
 blood, or playing a specific frequency). Artifacts function in two
 interdependent ways:
 
-+ *Overwhelming Power* — The artifact allows an action far outside normal human
++ *Overwhelming Power*  -  The artifact allows an action far outside normal human
   capability: viewing past events, turning invisible, commanding the undead, or
   dealing massive unblockable damage to supernatural entities.
 
-+ *The Psychological Toll* — Every activation immediately generates *+1 to +3
++ *The Psychological Toll*  -  Every activation immediately generates *+1 to +3
   Corruption* (by artifact tier), pushing the user closer to the Corruption
   threshold.
 
 Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10,
 or d12). If the roll results in a *1*, the artifact's internal metaphysical
-structure fractures — it may break, go dormant, or trigger a horrific localized
+structure fractures  -  it may break, go dormant, or trigger a horrific localized
 side-effect.
 
 == Containment-First Play Principle
@@ -60,6 +60,7 @@ strategic decision.
 Assign one risk tag to every artifact entry:
 
 #nr-table(
+  caption: "Activation Risk Tags",
   columns: (1fr, 4fr),
   [*Risk Tag*], [*Meaning*],
 
@@ -82,6 +83,7 @@ Some high-threat artifacts emit corruption into the environment even when not
 directly activated by an agent.
 
 #nr-table-wide(
+  caption: "Passive Corruption Emissions",
   columns: (1fr, 1fr, 2fr, 3fr),
   [*Emission Type*], [*Baseline Radius*], [*Corruption Effect*], [*Use Case*],
 
@@ -109,6 +111,7 @@ transfer).
 == Catalog of 1980s Occult Artifacts
 
 #nr-table-wide(
+  caption: "Artifact Catalog",
   columns: (2fr, 2fr, 3fr, 3fr, 2fr),
   [*Artifact*], [*Mundane Appearance*], [*Effect*], [*Cost & Fracture (on 1)*], [*Emission*],
 
@@ -116,38 +119,38 @@ transfer).
   [Degraded Betamax tape in unmarked black sleeve.],
   [Displays the immediate 10-minute future when played on a VCR. Auto-success on any opposed Wits or Agility roll in the current scene.],
   [*2 Corruption.* VCR combusts; user temporarily blinded by visions of their own death.],
-  [*Pulse* — when any VCR in the same building powers on, future-vision fragments leak to all agents in the same zone. +1 Corruption.],
+  [*Pulse*  -  when any VCR in the same building powers on, future-vision fragments leak to all agents in the same zone. +1 Corruption.],
 
   [The Obsidian Walkman],
   [Heavy, modified Sony cassette player with stone-like casing.],
   [Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues or bypass Investigation rolls.],
   [*1 Corruption.* User deafened by psychic static; gains permanent phobia of silence.],
-  [*Aura* — the dead broadcast continuously while the Walkman is carried. +1 Corruption at scene start for the carrier and all agents sharing the zone.],
+  [*Aura*  -  the dead broadcast continuously while the Walkman is carried. +1 Corruption at scene start for the carrier and all agents sharing the zone.],
 
   [The Oppenheimer Lens],
   [Aviator sunglasses with fused desert-glass lenses.],
   [See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions.],
   [*1 Corruption.* Lenses shatter; shards cause 1 permanent Agility damage.],
-  [—],
+  [ - ],
 
   [The Judas Coin],
   [Heavy silver denarius, unnaturally warm.],
   [Target overwhelmed by greed or guilt during social interaction. Auto-success on Empathy (Manipulate).],
   [*2 Corruption.* Coin burns through user's flesh (1 physical damage); target becomes violently hostile.],
-  [*Pulse* — when any monetary transaction occurs in the same zone, the Coin pulses guilt to the nearest agent. +1 Corruption.],
+  [*Pulse*  -  when any monetary transaction occurs in the same zone, the Coin pulses guilt to the nearest agent. +1 Corruption.],
 
   [The Chronos Polaroid],
   [Polaroid SX-70 camera smelling of ozone.],
   [Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.],
   [*1 Corruption.* Flash acts as beacon, alerting nearest supernatural entity to the party's exact location.],
-  [—],
+  [ - ],
 )
 
 #section-rule()
 
 == Artifact Carry Weight and Corruption Pressure
 
-Artifacts are not merely heavy objects — they exert *metaphysical pressure* on
+Artifacts are not merely heavy objects  -  they exert *metaphysical pressure* on
 the agent carrying them. This interacts with the Encumbrance system in two ways.
 
 === Physical Weight
@@ -155,6 +158,7 @@ the agent carrying them. This interacts with the Encumbrance system in two ways.
 Each artifact has a baseline Encumbrance value equal to its Corruption cost tier:
 
 #nr-table-wide(
+  caption: "Artifact Encumbrance by Tier",
   columns: (1fr, 1fr, 3fr),
   [*Artifact Tier*], [*Enc.*], [*Notes*],
 
@@ -167,9 +171,9 @@ Each artifact has a baseline Encumbrance value equal to its Corruption cost tier
 
 Carrying an artifact that has been *activated at least once this Case File*
 imposes *+1 Enc* above its base value for the remainder of the session. The
-artifact's metaphysical structure is disturbed — it pushes back.
+artifact's metaphysical structure is disturbed  -  it pushes back.
 
-- This additional Enc is invisible to standard detectors — only characters with
+- This additional Enc is invisible to standard detectors  -  only characters with
   the *Lore* skill or Wayfinder training can sense something is off.
 - If an active artifact's pressure pushes the carrier into the *Encumbered*
   state, they also gain *+1 Corruption* at the start of each scene while
@@ -180,7 +184,7 @@ artifact's metaphysical structure is disturbed — it pushes back.
 Carrying more than one artifact simultaneously is permitted but discouraged:
 
 - *Two artifacts:* Both active pressure rules apply independently.
-- *Three or more artifacts:* The DA triggers a Corruption Cascade — all carried
+- *Three or more artifacts:* The DA triggers a Corruption Cascade  -  all carried
   artifacts leak corruption into the carrier simultaneously. Each artifact applies
   its Corruption cost at the end of the scene, even if none were used.
 
@@ -193,7 +197,7 @@ are Encumbered or start gaining unplanned Corruption.])
 
 == Creating Artifacts (DA Guidelines)
 
-Every Neon Relic campaign arc should have a unique artifact at its heart — a
+Every Neon Relic campaign arc should have a unique artifact at its heart  -  a
 specific, dangerous object with a history, a hunger, and consequences that ripple
 through the case file. The catalog above provides examples, but GMs need a
 structured framework for designing originals.
@@ -208,6 +212,7 @@ Every artifact needs five defined components. Fill in each section before
 introducing the artifact to players.
 
 #nr-table-wide(
+  caption: "Artifact Design Template",
   columns: (1fr, 3fr, 4fr),
   [*Component*], [*What It Defines*], [*Design Prompt*],
 
@@ -238,24 +243,25 @@ See Containment Profiles below.])
 
 === Corruption Budget System
 
-An artifact's Corruption cost is not arbitrary — it flows directly from the power
+An artifact's Corruption cost is not arbitrary  -  it flows directly from the power
 of the effect. Use this framework to set Corruption cost and choose the Artifact Die.
 
 #nr-table-wide(
+  caption: "Corruption Cost Framework",
   columns: (1fr, 1fr, 2fr, 4fr),
   [*Tier*], [*Corruption Cost*], [*Artifact Die*], [*Effect Power Level*],
 
-  [1 — Uncanny],
+  [1  -  Uncanny],
   [1 Corruption], [d8],
   [Grants an automatic success on a single skill roll, or reveals information that would require a Diff 2 roll. No direct combat effect. Minor sensory or perceptual ability.],
 
-  [2 — Threatening],
+  [2  -  Threatening],
   [2 Corruption], [d10],
   [Replaces a full skill roll with guaranteed success, or grants a significant combat advantage (extra dice, forced complication on enemy). Affects one target in zone.],
 
-  [3 — Catastrophic],
+  [3  -  Catastrophic],
   [3 Corruption], [d12],
-  [Transcends normal human action entirely — massive unblockable damage, reality alteration, mass psychic attack, temporal displacement of a scene. Cannot be replicated by any mundane skill roll.],
+  [Transcends normal human action entirely  -  massive unblockable damage, reality alteration, mass psychic attack, temporal displacement of a scene. Cannot be replicated by any mundane skill roll.],
 )
 
 ==== Effect Design Rules
@@ -263,7 +269,7 @@ of the effect. Use this framework to set Corruption cost and choose the Artifact
 These rules prevent artifacts from becoming automatic wins:
 
 + *One effect only.* Artifacts do one thing. They do it perfectly. They do not do anything else.
-+ *No healing.* Artifacts cannot restore Stress, Corruption, or physical Damage. (They can transfer damage — a Tier 2 artifact might push one agent's wounds to another — but cannot eliminate harm from the fiction.)
++ *No healing.* Artifacts cannot restore Stress, Corruption, or physical Damage. (They can transfer damage  -  a Tier 2 artifact might push one agent's wounds to another  -  but cannot eliminate harm from the fiction.)
 + *Always costs something.* Even on a "successful" fracture-free roll, the Corruption cost is paid. The artifact does not become safer with use.
 + *Fracture scales with Tier.* Tier 1 fractures are painful and personal. Tier 2 fractures affect the party or scene. Tier 3 fractures threaten the location or the case.
 
@@ -273,6 +279,7 @@ Containment is half the job. Before introducing an artifact, define how it is
 kept inert during transport and what triggers it inadvertently.
 
 #nr-table-wide(
+  caption: "Containment Protocols",
   columns: (2fr, 3fr, 3fr),
   [*Containment Type*], [*How It Works*], [*Example Trigger (Inadvertent Activation)*],
 
@@ -294,11 +301,11 @@ kept inert during transport and what triggers it inadvertently.
 
   [Temporal Lock],
   [Dormant only during specific hours, phases of the moon, or calendar dates.],
-  [Activation window opens during a case — may force a ticking-clock constraint.],
+  [Activation window opens during a case  -  may force a ticking-clock constraint.],
 
   [Cognitive Anchor],
   [Requires a holder with a specific psychological trait (fear, grief, obsession) to remain passive.],
-  [Carried by a Corrupted agent (any Corruption stage 2+) — activates involuntarily.],
+  [Carried by a Corrupted agent (any Corruption stage 2+)  -  activates involuntarily.],
 )
 
 #callout-block("NOTE", [*Stack Division Note:* The Covenant Armorer HQ facility and the Keep's
@@ -307,7 +314,7 @@ them, field containment relies on improvised measures and Wayfinder knowledge.])
 
 === One-of-a-Kind vs. Replicable Artifacts
 
-Most artifacts are *unique* — imbued with power because of specific historical
+Most artifacts are *unique*  -  imbued with power because of specific historical
 events, blood spilled, or metaphysical convergence that cannot be replicated. The
 DA should treat these as irreplaceable campaign assets.
 
@@ -323,7 +330,7 @@ appended. They may appear in multiple instances throughout a campaign.
 === Artifact Decay (Optional Rule)
 
 As agents study, handle, and contain an artifact over multiple sessions, its
-metaphysical coherence may weaken. This is a feature, not a bug — it means
+metaphysical coherence may weaken. This is a feature, not a bug  -  it means
 containment is working.
 
 *Decay Track:* Each artifact has a hidden Decay score from 0–5. The DA advances
@@ -334,13 +341,14 @@ it when:
 - The artifact fractures (Artifact Die = 1) and the PC survives (+1 Decay)
 
 #nr-table-wide(
+  caption: "Artifact Decay Track",
   columns: (1fr, 1fr, 4fr),
   [*Decay Score*], [*Artifact Die*], [*Status*],
 
   [0],   [Full die (d8/d10/d12)], [Active and fully dangerous],
   [1–2], [Step down one die],     [Effect weakened; Corruption cost reduced by 1 (min 1)],
   [3–4], [Step down two dice],    [Barely active; only works on activation rolls of 5–6],
-  [5],   [—],                     [Inert. Artifact is neutralized and safe for permanent containment. Case closed.],
+  [5],   [ - ],                     [Inert. Artifact is neutralized and safe for permanent containment. Case closed.],
 )
 
 #design-note([Decay is the core loop of a well-run Neon Relic campaign. Each case should
@@ -352,8 +360,8 @@ complete when the artifact reaches Decay 5.])
 To illustrate the framework in practice:
 
 *Origin:* In 1943, Dr. Eli Morrow performed an experimental surgery in a research
-hospital outside Chicago. During the procedure, a corruption event — origin
-unknown — caused Morrow to hear the deaths of everyone in the building
+hospital outside Chicago. During the procedure, a corruption event  -  origin
+unknown  -  caused Morrow to hear the deaths of everyone in the building
 simultaneously. He died at the operating table. His stethoscope absorbed the
 event.
 
@@ -361,17 +369,17 @@ event.
 engraved with initials E.M. Appears old but functional.
 
 *Effect (Tier 2, d10):* When pressed to any living person's chest, the user
-hears not the target's heartbeat but their greatest fear — precise, immersive,
+hears not the target's heartbeat but their greatest fear  -  precise, immersive,
 and exploitable. Grants automatic success on any Empathy (Manipulate) or
 Investigate (interrogation) roll against that target for the rest of the scene.
 
 *Corruption Cost:* 2 Corruption.
 
-*Fracture Condition (on 1):* The user hears their *own* death — vivid, detailed,
+*Fracture Condition (on 1):* The user hears their *own* death  -  vivid, detailed,
 inevitable. They gain +2 Corruption immediately and cannot take Slow Actions
 until end of scene (paralyzed by the vision).
 
-*Containment Profile:* Physical Isolation — wrapped in surgical gauze treated
+*Containment Profile:* Physical Isolation  -  wrapped in surgical gauze treated
 with saline solution. Activates involuntarily if placed against skin without
 first spoken: _"Morrow rests."_
 
@@ -394,18 +402,18 @@ operation rather than an activation event.
 *Emission:* Pulse
 
 *Origin:* In 1968, a documentary film crew recorded what they believed was a
-mass hysteria event at a rural commune. The footage shows nothing unusual —
+mass hysteria event at a rural commune. The footage shows nothing unusual  - 
 fields, a barn, people standing in a field doing nothing. The editor who
 assembled the final cut died by suicide three days after completing it. The reel
 was seized by a government agency in 1970 and has been in federal transit limbo
 since, never screened, never destroyed.
 
 *Form:* A 16mm film reel in a yellow plastic canister, labeled in faded
-typewriter: _ARCHIVE ONLY — DO NOT SCREEN._ The film appears partially exposed
+typewriter: _ARCHIVE ONLY  -  DO NOT SCREEN._ The film appears partially exposed
 but not degraded. Held to light, it casts no visible image.
 
 *Containment Objective:* The reel must never be loaded into a projector. Even
-partial threading — feeding the leader without running the film — has caused
+partial threading  -  feeding the leader without running the film  -  has caused
 documented psychological disturbance in handling personnel. The case is won when
 the reel is in a light-sealed transport container and transferred to a Keep vault
 under Physical Isolation protocols.
@@ -413,7 +421,7 @@ under Physical Isolation protocols.
 *Effect (if activated):* Everyone within the projected room experiences twelve
 minutes of vivid, immersive reconstruction of their worst memory. Each target
 gains +2 Corruption. For 24 hours following exposure, targets cannot make Push
-rolls — something in them has gone quiet.
+rolls  -  something in them has gone quiet.
 
 *Corruption Cost:* 2. All occupants of the projected space are affected
 simultaneously; the activating agent has no special protection against bystander
@@ -429,7 +437,7 @@ collocate with projection equipment. Inadvertent activation: canister opened in
 a darkened room while a film projector is running within 5 metres.
 
 *Emission (Pulse):* When any film projector within 20 metres of the reel is
-powered on, all agents in the same zone gain +1 Corruption from proximity —
+powered on, all agents in the same zone gain +1 Corruption from proximity  - 
 whether or not the reel is removed from its case.
 
 #design-note([*DA Guidance:* Frame this mission around urgency, not combat. A rival faction or
@@ -456,7 +464,7 @@ always appears fresh. A small federal seal in the top corner cannot be matched t
 any known agency.
 
 *Containment Objective:* The manifest cannot be signed. Any written mark on the
-document — even an accidental pen scratch — triggers compulsion. The case is
+document  -  even an accidental pen scratch  -  triggers compulsion. The case is
 complete when the manifest is sealed in a glassine archival sleeve and logged in
 Wayfinder records under a chain-of-custody notation maintained externally, never
 on the document itself.
@@ -464,14 +472,14 @@ on the document itself.
 *Effect (if activated):* Whoever signs or writes on the manifest becomes
 compelled to deliver whatever they are currently holding to an address that
 appears on the form. The address changes with each activation. On a Push roll,
-the compelled agent may resist for one scene — the compulsion returns at the
+the compelled agent may resist for one scene  -  the compulsion returns at the
 start of the next with a new address.
 
 *Corruption Cost:* 1. Paid immediately at the moment of signing.
 
 *Fracture Condition (on 1):* The delivery address resolves to a location within
 five kilometres of the signing agent. A Shard Construct manifests at that
-location within the hour, tasked with enforcing delivery — of the signing agent
+location within the hour, tasked with enforcing delivery  -  of the signing agent
 themselves.
 
 *Containment Profile:* Ritual Quiescence. Handle only with latex gloves. Store
@@ -481,7 +489,7 @@ an unrelated form placed on top of the manifest, pressing through the page.
 
 *Emission (Aura):* The agent currently listed as "Custodian" gains +1 Corruption
 at the start of each scene in which they do not actively move toward the listed
-delivery address. This is passive — the agent need not have read the manifest for
+delivery address. This is passive  -  the agent need not have read the manifest for
 the effect to apply.
 
 #design-note([*DA Guidance:* This artifact is built for a procedural containment case. The
@@ -505,28 +513,28 @@ psychological breakdown before the site was sealed. The bell was transferred to 
 private collector and has been in circulation since 1979.
 
 *Form:* A cast-iron hand bell, approximately 15cm tall. No maker's mark. The
-clapper is absent, yet the bell emits a clear, resonant tone when disturbed —
+clapper is absent, yet the bell emits a clear, resonant tone when disturbed  - 
 even when padded, even when cradled motionless in a moving vehicle.
 
-*Containment Objective:* The bell must not ring. Any sound from it —
-intentional, accidental, or caused by ambient vibration — counts as activation.
+*Containment Objective:* The bell must not ring. Any sound from it  - 
+intentional, accidental, or caused by ambient vibration  -  counts as activation.
 The case succeeds when the bell is in triple-layer containment and transferred
 without incident to a Keep Corruption Dampening Vault.
 
 *Effect (if activated):* All living targets in the same zone who hear the bell
-test Endure (Difficulty 2) or lose proprioception — they cannot feel pain,
+test Endure (Difficulty 2) or lose proprioception  -  they cannot feel pain,
 hunger, or fear. Affected targets gain +4 dice on Strength and Agility rolls but
 cannot make Empathy rolls or use Division tactical skills. They act on instinct
 only. Duration: until end of scene.
 
-*Corruption Cost:* 3 for the activating agent. All targets who hear the bell —
-whether or not they resist the Endure test — gain +1 Corruption.
+*Corruption Cost:* 3 for the activating agent. All targets who hear the bell  - 
+whether or not they resist the Endure test  -  gain +1 Corruption.
 
 *Fracture Condition (on 1):* The bell cannot be silenced. It emits a continuous
 tone audible across 4 zones for the remainder of the scene. All targets within 4
 zones gain +1 Corruption per round until the bell is physically isolated.
 
-*Containment Profile:* Physical Isolation — triple redundancy required. Layer 1:
+*Containment Profile:* Physical Isolation  -  triple redundancy required. Layer 1:
 dense foam-padded hard case interior. Layer 2: lead-lined outer container. Layer
 3: ritually sealed outer bag (requires a Wayfinder to succeed on a Lore roll,
 Difficulty 1). Do not transport over rough terrain without all three layers in
@@ -534,11 +542,11 @@ place. Inadvertent activation: dropped, struck by another object, or brought
 within 2 metres of a heavy vibration source (vehicle engine at idle, generator,
 subwoofer).
 
-*Emission (Burst):* When the bell rings — including accidentally — all targets
+*Emission (Burst):* When the bell rings  -  including accidentally  -  all targets
 within 1–2 zones gain +1 Corruption before any activation roll is made.
 
 #design-note([*DA Guidance:* The Quarantine Bell is ideal for a ticking-clock transport
-mission. The agents must move it from a recovery site to a Keep facility —
+mission. The agents must move it from a recovery site to a Keep facility  - 
 across a city, under possible surveillance, in 1980s vehicles on 1980s roads.
 Every speed bump, every near-collision, every moment a rival faction closes in
 is a potential ringing event. Frame this as a logistical thriller, not a combat

@@ -10,7 +10,7 @@
 
 To maintain consistent narrative flow and emulate the pacing of a detective serial, Neon Relic adopts the episodic mystery structure native to _Vaesen_. This procedural structure paces investigations effectively, preventing analysis paralysis while ensuring easy DA session preparation.
 
-A standard game session — a *"Case File"* — follows eight phases:
+A standard game session  -  a *"Case File"*  -  follows eight phases:
 
 == Phase 1: The Prologue
 
@@ -29,13 +29,13 @@ The characters receive the narrative hook. In the 80s setting, this could be:
 
 Conducted at the player's Headquarters:
 
-+ *Research* — Players use base facilities to research the entity or artifact.
-+ *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
-+ *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See the Equipment chapter for the Resource Die system and per-category die sizes.
++ *Research*  -  Players use base facilities to research the entity or artifact.
++ *Equipping*  -  Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
++ *Supply Acquisition*  -  All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See the Equipment chapter for the Resource Die system and per-category die sizes.
 
 == Phase 4: The Journey
 
-The DA describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage* — a floating +1 bonus die usable at any critical point during the mystery.
+The DA describes travel to the location. Players can roleplay interactions and roll a survival or navigation skill to gain an *Advantage*  -  a floating +1 bonus die usable at any critical point during the mystery.
 
 == Phase 5: Arrival
 
@@ -43,7 +43,7 @@ The team arrives at the macro-location (a sprawling abandoned shopping mall, a r
 
 == Phase 6: Places (The Investigation)
 
-The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the DA initiates a *Countdown* — a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
+The core gameplay loop. Players investigate a node-based network of micro-locations (typically three distinct sites). During this phase, the DA initiates a *Countdown*  -  a hidden clock that escalates the supernatural threat as time passes, forcing decisive action.
 
 See *Countdown Mechanics* below for the full rules.
 
@@ -65,25 +65,26 @@ Survivors return to base. During this phase:
 - Check if Critical Injury effects require ongoing treatment
 - Initiate new Headquarters upgrades
 
-During the Aftermath, the team earns *Development Points (DP)* based on their performance and spends them to build or expand the Headquarters upgrade tree (see the Headquarters chapter for the full upgrade tree, costs, and prerequisites). The Threat Meter is also updated — if the team was fully covert, it decreases by 1.
+During the Aftermath, the team earns *Development Points (DP)* based on their performance and spends them to build or expand the Headquarters upgrade tree (see the Headquarters chapter for the full upgrade tree, costs, and prerequisites). The Threat Meter is also updated  -  if the team was fully covert, it decreases by 1.
 
 #section-rule()
 
 == Countdown Mechanics
 
-The Countdown is a *hidden tension clock* that tracks how far a threat has progressed during investigation. Players know the clock exists — the Covenant has briefed them that time is limited — but they do not know exactly how many steps remain.
+The Countdown is a *hidden tension clock* that tracks how far a threat has progressed during investigation. Players know the clock exists  -  the Covenant has briefed them that time is limited  -  but they do not know exactly how many steps remain.
 
 === Clock Structure
 
-Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5 — a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are DA-defined per case.
+Every Countdown has *5 stages*, named by their escalation level. Not every case uses all 5  -  a one-session case might compress to 3 stages; a multi-session arc might stretch to 6. The stage names are standard; the specific events at each stage are DA-defined per case.
 
 #nr-table-wide(
+  caption: "Countdown Clock Stages",
   columns: (1fr, 1fr, 3fr, 3fr),
   [Stage], [State], [What It Means], [Typical Narrative Effect],
   [1], [*Dormant*], [The threat is latent. The artifact is present but not yet destabilizing.], [Investigation can proceed without urgency. NPCs may be anxious but not in immediate danger.],
   [2], [*Stirring*], [The artifact is beginning to resonate. Minor anomalies are visible to those who know what to look for.], [Environmental strangeness. One NPC has been affected. The rival faction has been alerted.],
   [3], [*Active*], [The artifact is unstable. An entity manifests or the situation escalates visibly.], [Direct danger begins. Civilian NPCs may be harmed. The rival faction is moving.],
-  [4], [*Escalating*], [The threat is pursuing the agents or actively threatening HQ assets. Containment window is closing.], [Enemy reinforcements arrive. Key locations become inaccessible. Agents gain +1 Corruption (environmental saturation — this is not optional).],
+  [4], [*Escalating*], [The threat is pursuing the agents or actively threatening HQ assets. Containment window is closing.], [Enemy reinforcements arrive. Key locations become inaccessible. Agents gain +1 Corruption (environmental saturation  -  this is not optional).],
   [5], [*Crisis*], [No more investigation time. The threat forces confrontation now.], [Forced confrontation scene. If the agents do not act, see *Clock Expiry* below.],
 )
 
@@ -92,10 +93,11 @@ Every Countdown has *5 stages*, named by their escalation level. Not every case 
 The DA advances the clock *one stage* when one of the following triggers occurs:
 
 #nr-table(
+  caption: "Clock Advancement Triggers",
   columns: (1fr, 3fr),
   [Trigger Type], [Example],
   [*Time-based*], [A full in-game day passes (or a shorter DA-defined interval for fast-burning cases). Time passage is the default trigger that runs in the background of all investigation.],
-  [*Loud action*], [The team makes significant noise — fires weapons in a public-ish area, confronts the rival faction directly, causes a scene that draws attention to their presence.],
+  [*Loud action*], [The team makes significant noise  -  fires weapons in a public-ish area, confronts the rival faction directly, causes a scene that draws attention to their presence.],
   [*Failed roll at a key site*], [A Pushed failure on a critical investigation or containment roll has consequences beyond the immediate scene. The clock advances as a result.],
   [*Missed window*], [The DA had a grace window where the clock held (players were close to a resolution). The window passed.],
   [*Artifact activation*], [A PC or NPC directly interacts with the artifact in an uncontrolled way. This advances the clock by 2 if the activation was accidental.],
@@ -106,16 +108,17 @@ The DA advances the clock *one stage* when one of the following triggers occurs:
 The clock can be *slowed* (the next tick is delayed) or *held* (one stage does not advance despite trigger) by specific agent actions:
 
 #nr-table(
+  caption: "Slowing and Pausing the Clock",
   columns: (2fr, 3fr),
   [Action], [Effect],
-  [*Successful Lore roll (Difficulty 3)* — agents identify the specific activation condition and prevent it from occurring], [Clock held for one trigger cycle (one "free" trigger before it advances).],
-  [*Secure a secondary occult source* — removing a contributing artifact, sealing a ritual circle, or disrupting the rival faction's preparations], [Clock advance delayed by one full phase (in-game).],
+  [*Successful Lore roll (Difficulty 3)*  -  agents identify the specific activation condition and prevent it from occurring], [Clock held for one trigger cycle (one "free" trigger before it advances).],
+  [*Secure a secondary occult source*  -  removing a contributing artifact, sealing a ritual circle, or disrupting the rival faction's preparations], [Clock advance delayed by one full phase (in-game).],
   [*Full containment of the artifact*], [Clock stops advancing. The immediate threat is on hold until the artifact is removed from containment.],
 )
 
 === Reversing the Clock
 
-The clock *cannot typically be reversed* — once a stage is reached, its effects persist. However:
+The clock *cannot typically be reversed*  -  once a stage is reached, its effects persist. However:
 
 - A successful *Wayfinder Division ritual* can reduce Stage 4 back to Stage 3 (the escalating corruption is pushed back).
 - Eliminating the rival faction's active presence at a location may reduce Stage 3 back to Stage 2 for that location only (the faction was accelerating the threat independently).
@@ -124,17 +127,18 @@ These require significant resources, time, and usually a Lore roll at Difficulty
 
 === Clock Expiry (Crisis Without Resolution)
 
-If the *Crisis* stage is reached without the agents in position for the confrontation, the case does not end — it gets worse:
+If the *Crisis* stage is reached without the agents in position for the confrontation, the case does not end  -  it gets worse:
 
 - One named NPC connected to the case is immediately killed, captured, or permanently Broken.
-- The artifact performs its *worst-case activation* (DA reveals what the artifact's threshold effect actually is — it happens now).
+- The artifact performs its *worst-case activation* (DA reveals what the artifact's threshold effect actually is  -  it happens now).
 - The rival faction secures a strategic advantage they did not have before.
 
-The agents can still succeed, but the cost has increased permanently. *Clock expiry is not a game over* — it is a consequence.
+The agents can still succeed, but the cost has increased permanently. *Clock expiry is not a game over*  -  it is a consequence.
 
 === Calibration Guide
 
 #nr-table-wide(
+  caption: "Clock Calibration Guide",
   columns: (1fr, 2fr, 3fr),
   [Session Length], [Recommended Stages], [Advance Rate],
   [*One-shot (3–4 hours)*], [3 stages], [1 advance per major scene (roughly every 45–60 minutes of play)],
@@ -142,18 +146,19 @@ The agents can still succeed, but the cost has increased permanently. *Clock exp
   [*Multi-session arc*], [5–6 stages], [1 advance per session, plus triggered advances],
 )
 
-Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style — investigators who want to solve everything cleanly need a slower clock; players who enjoy pressure need it fast.
+Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style  -  investigators who want to solve everything cleanly need a slower clock; players who enjoy pressure need it fast.
 
 === Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
 
 *Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. The Compact has a team on the way.
 
 #nr-table-wide(
+  caption: "Sample Clock: The Meridian Hotel",
   columns: (1fr, 1fr, 2fr, 3fr),
   [Stage], [State], [Trigger], [Effect],
   [1], [Dormant], [Session open; clock begins ticking], [The journalist is alive and unaware. The Compact team is 2 hours out. The Mirror is in the penthouse.],
   [2], [Stirring], [Team spends more than 1 hour investigating without reaching the penthouse, OR fires a weapon anywhere in the hotel], [The Mirror activates. An Echoing Remnant manifests in the corridor between the team and the penthouse. The journalist has seen it and is hiding. The Compact team is now 30 minutes out.],
-  [3], [Crisis], [Team has not secured the Mirror and Remnant is still active when the Compact team arrives], [The Compact team enters the building. The journalist's camera captures the Remnant — the team must now deal with both the Compact operatives AND the Remnant AND contain the journalist. The Mirror's corruption field is saturating the top two floors. All agents in the top two floors gain +1 Corruption per scene.],
+  [3], [Crisis], [Team has not secured the Mirror and Remnant is still active when the Compact team arrives], [The Compact team enters the building. The journalist's camera captures the Remnant  -  the team must now deal with both the Compact operatives AND the Remnant AND contain the journalist. The Mirror's corruption field is saturating the top two floors. All agents in the top two floors gain +1 Corruption per scene.],
 )
 
 #section-rule()
@@ -177,6 +182,7 @@ The 8-phase Case File structure is the backbone of every Neon Relic session. The
 Roll two d6s: the first die is the tens digit, the second is the units digit.
 
 #nr-table-wide(
+  caption: "D66 Artifact Type Table",
   columns: (1fr, 2fr, 4fr),
   [d66], [Form], [Nature],
   [11], [Cassette tape], [Recordings of events before they happen; playback causes hemorrhaging],
@@ -201,10 +207,10 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
   [42], [Gloves (leather or rubber)], [Touch transmits the last emotion felt by any object's previous owner],
   [43], [Briefcase / attaché], [Contents preserved in stasis; time inside does not pass],
   [44], [Telephone handset], [Connected to lines that shouldn't exist; callers are always threatening],
-  [45], [Medication / pill bottle], [Suppresses supernatural perception entirely — including warning senses],
+  [45], [Medication / pill bottle], [Suppresses supernatural perception entirely  -  including warning senses],
   [46], [Painting or portrait], [Subject watches through it; communicates, manipulates, hungers],
   [51], [Typewriter], [Text typed on it becomes true; reality reconfigures to match],
-  [52], [Map (hand-drawn)], [Accurate to a location that doesn't exist — yet],
+  [52], [Map (hand-drawn)], [Accurate to a location that doesn't exist  -  yet],
   [53], [Clock (grandfather or wall)], [Slows time in a building-sized area; those inside age normally],
   [54], [Syringe / vial of fluid], [Injection grants a specific ability; dependency forms within 24 hours],
   [55], [Musical instrument], [Performance compels specific emotional response; player loses control],
@@ -224,14 +230,15 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 How does the cell first become aware of the case?
 
 #nr-table-wide(
+  caption: "D6 Inciting Incident Table",
   columns: (1fr, 4fr),
   [d6], [Inciting Incident],
-  [1], [*Missing Person Report* — A Covenant contact is digging into a disappearance that connects to a known occult signature. They need field backup before the trail goes cold.],
-  [2], [*Anonymous Tip* — An unsigned letter arrives at a cell dead drop, containing specific details only an insider could know. Who sent it — and why now?],
-  [3], [*Police Report (Redacted)* — A Keep archivist intercepts a law-enforcement file referencing phenomena that match an active artifact. The police don't understand what they have. The cell does.],
-  [4], [*Field Acquisition Gone Wrong* — A previous Recovery team retrieved an artifact but never checked in. Their last known position is on the map. Their radio is silent.],
-  [5], [*Covenant Intelligence Briefing* — Wayfinder Division has been tracking an occult energy spike for weeks. The spike has stabilized. Something has been activated and is being used.],
-  [6], [*Civilian Exposure* — A non-Covenant civilian witnessed something they cannot explain. The Covenant's disinformation infrastructure is moving to contain the story — but the artifact is still out there.],
+  [1], [*Missing Person Report*  -  A Covenant contact is digging into a disappearance that connects to a known occult signature. They need field backup before the trail goes cold.],
+  [2], [*Anonymous Tip*  -  An unsigned letter arrives at a cell dead drop, containing specific details only an insider could know. Who sent it  -  and why now?],
+  [3], [*Police Report (Redacted)*  -  A Keep archivist intercepts a law-enforcement file referencing phenomena that match an active artifact. The police don't understand what they have. The cell does.],
+  [4], [*Field Acquisition Gone Wrong*  -  A previous Recovery team retrieved an artifact but never checked in. Their last known position is on the map. Their radio is silent.],
+  [5], [*Covenant Intelligence Briefing*  -  Wayfinder Division has been tracking an occult energy spike for weeks. The spike has stabilized. Something has been activated and is being used.],
+  [6], [*Civilian Exposure*  -  A non-Covenant civilian witnessed something they cannot explain. The Covenant's disinformation infrastructure is moving to contain the story  -  but the artifact is still out there.],
 )
 
 #section-rule()
@@ -241,14 +248,15 @@ How does the cell first become aware of the case?
 Where does the case take place?
 
 #nr-table-wide(
+  caption: "D6 Location Table",
   columns: (1fr, 4fr),
   [d6], [Location],
-  [1], [*Urban Apartment / Residential Block* — Dense housing, suspicious neighbors, minimal cover. The artifact has been in someone's home for years. They think they know what it is. They are wrong.],
-  [2], [*Research Laboratory* — University or corporate facility. Security protocols, locked sample rooms, and at least one obstructive bureaucrat. Someone on staff is already compromised.],
-  [3], [*Rural Property* — Isolated farmhouse, hunting cabin, or failed commune. No witnesses. No backup. Distance means a 45-minute response time if things go wrong.],
-  [4], [*Government Facility* — Federal archive vault, military depot, or municipal records building. Covenant cannot officially exist here. Federal jurisdiction complicates everything.],
-  [5], [*Industrial Site* — Active factory, rail yard, or chemical plant. Environmental hazards. Shift workers everywhere. The artifact is somewhere in the noise.],
-  [6], [*Transient Space* — Bus station, motel strip, or truck stop. People flow through constantly. The artifact is being moved, and the window to intercept it is closing.],
+  [1], [*Urban Apartment / Residential Block*  -  Dense housing, suspicious neighbors, minimal cover. The artifact has been in someone's home for years. They think they know what it is. They are wrong.],
+  [2], [*Research Laboratory*  -  University or corporate facility. Security protocols, locked sample rooms, and at least one obstructive bureaucrat. Someone on staff is already compromised.],
+  [3], [*Rural Property*  -  Isolated farmhouse, hunting cabin, or failed commune. No witnesses. No backup. Distance means a 45-minute response time if things go wrong.],
+  [4], [*Government Facility*  -  Federal archive vault, military depot, or municipal records building. Covenant cannot officially exist here. Federal jurisdiction complicates everything.],
+  [5], [*Industrial Site*  -  Active factory, rail yard, or chemical plant. Environmental hazards. Shift workers everywhere. The artifact is somewhere in the noise.],
+  [6], [*Transient Space*  -  Bus station, motel strip, or truck stop. People flow through constantly. The artifact is being moved, and the window to intercept it is closing.],
 )
 
 #section-rule()
@@ -258,14 +266,15 @@ Where does the case take place?
 What makes this case harder than it should be?
 
 #nr-table-wide(
+  caption: "D6 Complication Table",
   columns: (1fr, 4fr),
   [d6], [Complication],
-  [1], [*Rival Faction Interest* — Another organization (intelligence agency, criminal syndicate, or rogue occultist network) has tracked the same artifact. They are already on-site or arriving within the hour.],
-  [2], [*Civilian Entanglement* — Someone innocent — a family member, a local witness, a bystander — has handled the artifact and is already exhibiting corruption symptoms. The clock on their degradation has started.],
-  [3], [*Media Attention* — A local journalist is following the same trail for completely mundane reasons. Their story goes to press in 48 hours whether the cell intervenes or not.],
-  [4], [*Internal Complication* — One of the cell's Covenant contacts has gone quiet. A Wayfinder briefing contains an inconsistency. Something in the chain of command is compromised.],
-  [5], [*Containment Failure* — A previous version of this artifact was thought neutralized. It wasn't. Two instances of the same occult signature are active simultaneously.],
-  [6], [*Escalating Entity* — The artifact has attracted or generated a supernatural entity that has been active in the area for days before the cell arrived. It is not the primary target — but it will interfere.],
+  [1], [*Rival Faction Interest*  -  Another organization (intelligence agency, criminal syndicate, or rogue occultist network) has tracked the same artifact. They are already on-site or arriving within the hour.],
+  [2], [*Civilian Entanglement*  -  Someone innocent  -  a family member, a local witness, a bystander  -  has handled the artifact and is already exhibiting corruption symptoms. The clock on their degradation has started.],
+  [3], [*Media Attention*  -  A local journalist is following the same trail for completely mundane reasons. Their story goes to press in 48 hours whether the cell intervenes or not.],
+  [4], [*Internal Complication*  -  One of the cell's Covenant contacts has gone quiet. A Wayfinder briefing contains an inconsistency. Something in the chain of command is compromised.],
+  [5], [*Containment Failure*  -  A previous version of this artifact was thought neutralized. It wasn't. Two instances of the same occult signature are active simultaneously.],
+  [6], [*Escalating Entity*  -  The artifact has attracted or generated a supernatural entity that has been active in the area for days before the cell arrived. It is not the primary target  -  but it will interfere.],
 )
 
 #section-rule()
@@ -275,14 +284,15 @@ What makes this case harder than it should be?
 If the campaign calls for a recurring antagonist, determine their involvement:
 
 #nr-table-wide(
+  caption: "D6 Named Threat Table",
   columns: (1fr, 4fr),
   [d6], [Named Threat Angle],
-  [1], [The Named Threat is three steps ahead — the artifact was already moved before the cell arrived.],
+  [1], [The Named Threat is three steps ahead  -  the artifact was already moved before the cell arrived.],
   [2], [An operative working for the Named Threat is on-site, posing as a civilian, law enforcement, or utility worker.],
-  [3], [The Named Threat wants the artifact contained just as badly as the Covenant does — for entirely different reasons.],
+  [3], [The Named Threat wants the artifact contained just as badly as the Covenant does  -  for entirely different reasons.],
   [4], [The Named Threat has already activated the artifact once. The Fracture condition has triggered. The threat is managing fallout.],
   [5], [The Named Threat is watching the cell specifically. They have a file on at least one agent.],
-  [6], [The Named Threat is not involved — but they will learn about this case. Increase the Threat Meter by 1 after resolution.],
+  [6], [The Named Threat is not involved  -  but they will learn about this case. Increase the Threat Meter by 1 after resolution.],
 )
 
 #section-rule()
@@ -294,7 +304,7 @@ Use this procedure to run from nothing to a playable case in one pass:
 + *Roll d66 on the Artifact Type table.* This is your MacGuffin. Name it, give it a mundane appearance, and confirm its tier (Tier 1 if the effect description is minor; Tier 3 if it bends reality).
 + *Roll d6 on Inciting Incident.* This determines how the session opens. Brief the players in 2 sentences at the table. Do not explain the artifact yet.
 + *Roll d6 on Location.* This determines where 80% of the case takes place. Sketch a rough map with 3–4 meaningful zones.
-+ *Roll d6 on Complication.* Layer this into the location. It does not need to be introduced immediately — complications should emerge from play.
++ *Roll d6 on Complication.* Layer this into the location. It does not need to be introduced immediately  -  complications should emerge from play.
 + *Name one NPC the players will meet in the first 15 minutes.* This person either has information the cell needs, or is the first obvious lead. Give them a name and a motivation (they want something that has nothing to do with the artifact).
 + *Define the clock.* What happens if the cell does not act within 1–2 sessions? The artifact is moved, activated, or a civilian dies.
 + *Use the 8-phase structure.* The tables populate Phases 1 (Intelligence Brief) and 2 (Research and Preparation). Everything else emerges from play.
@@ -302,14 +312,14 @@ Use this procedure to run from nothing to a playable case in one pass:
 ==== Worked Example: "The Holbrook Frequency"
 
 #design-note([
-  *Rolled:* d66 = 23 (Radio receiver — parallel timeline transmissions). \
-  *Incident:* 5 (Covenant Intelligence Briefing — occult energy spike, stabilized). \
-  *Location:* 2 (Research laboratory — university). \
-  *Complication:* 3 (Media attention — journalist, 48-hour deadline).
+  *Rolled:* d66 = 23 (Radio receiver  -  parallel timeline transmissions). \
+  *Incident:* 5 (Covenant Intelligence Briefing  -  occult energy spike, stabilized). \
+  *Location:* 2 (Research laboratory  -  university). \
+  *Complication:* 3 (Media attention  -  journalist, 48-hour deadline).
 
-  *Case Setup:* The physics department at Holbrook University in Aberdeen, Scotland has been receiving anomalous radio transmissions for three weeks. A Covenant analyst matched the frequency signature to a Tier 2 artifact: a surplus military radio receiver modified with components sourced from a 1943 German ESP research program. A local science reporter is writing a "mystery signal" human-interest piece for the Aberdeen Herald — deadline Friday.
+  *Case Setup:* The physics department at Holbrook University in Aberdeen, Scotland has been receiving anomalous radio transmissions for three weeks. A Covenant analyst matched the frequency signature to a Tier 2 artifact: a surplus military radio receiver modified with components sourced from a 1943 German ESP research program. A local science reporter is writing a "mystery signal" human-interest piece for the Aberdeen Herald  -  deadline Friday.
 
   *Clock:* The journalist's article runs Friday morning. If the artifact is not secured by then, the story triggers federal interest and the Covenant loses access to the university.
 
-  *NPC:* Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous. She wants grant funding, not interference. She will cooperate — for a price.
+  *NPC:* Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous. She wants grant funding, not interference. She will cooperate  -  for a price.
 ])

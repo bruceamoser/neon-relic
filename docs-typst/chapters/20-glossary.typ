@@ -57,7 +57,7 @@ A roll of two six-sided dice read as a two-digit number (first die = tens, secon
 One of three categories: *Physical* (targets STR or AGI), *Mental* (targets WIT or EMP), or *Corruption* (added directly to the Corruption track). See the Health, Damage & Armor chapter.
 
 *Dark Secret* \
-A specific hidden fact from the character's past — an event, decision, or relationship someone wants buried. Serves as a roleplay device and XP hook ("Did your Dark Secret complicate the mission?" = +1 XP). See the Advancement chapter.
+A specific hidden fact from the character's past  -  an event, decision, or relationship someone wants buried. Serves as a roleplay device and XP hook ("Did your Dark Secret complicate the mission?" = +1 XP). See the Advancement chapter.
 
 *Death Check* \
 A single d6 roll required when a Critical Injury is marked †. On 1–2: the character dies (or is permanently retired for mental death). On 3–6: survival, but the Critical Injury still applies. See the Health, Damage & Armor chapter.
@@ -113,7 +113,7 @@ The Covenant facility serving as the team's base of operations between Case File
 == I
 
 *Insight* \
-A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma — heightened perception, empathy, or expertise. Cannot be removed. See the Health, Damage & Armor chapter.
+A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma  -  heightened perception, empathy, or expertise. Cannot be removed. See the Health, Damage & Armor chapter.
 
 == M
 
@@ -123,7 +123,7 @@ The point at which a character's mind permanently fractures: 10 + Empathy score.
 == N
 
 *Named Threat* \
-A significant antagonist in a Case File — a faction operative, corrupted NPC, or supernatural entity important enough to have a name, motivations, and stat block. See the Case Files chapter.
+A significant antagonist in a Case File  -  a faction operative, corrupted NPC, or supernatural entity important enough to have a name, motivations, and stat block. See the Case Files chapter.
 
 == P
 
@@ -168,4 +168,4 @@ Keep Division Item. Suppresses artifact magic, warns of containment failure, ena
 == Z
 
 *Zone* \
-An abstract area of space used for combat positioning — a room, corridor, alley, or rooftop section. Moving one zone costs a Fast Action; moving two zones (running) costs both the Fast and Slow Action for the round. See the Combat chapter.
+An abstract area of space used for combat positioning  -  a room, corridor, alley, or rooftop section. Moving one zone costs a Fast Action; moving two zones (running) costs both the Fast and Slow Action for the round. See the Combat chapter.

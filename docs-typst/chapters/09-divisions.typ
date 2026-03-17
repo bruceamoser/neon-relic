@@ -10,7 +10,7 @@
 
 In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL).
 
-Within that Division, players select a *Department* background. During creation, they may select one of the 5 unique *Division Talents*. These Talents operate similarly to magic systems — they guarantee a supernatural or highly specialized effect but cost +1 Corruption to activate, feeding directly into the game's risk-reward loop.
+Within that Division, players select a *Department* background. During creation, they may select one of the 5 unique *Division Talents*. These Talents operate similarly to magic systems  -  they guarantee a supernatural or highly specialized effect but cost +1 Corruption to activate, feeding directly into the game's risk-reward loop.
 
 #section-rule()
 
@@ -23,6 +23,7 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
 === Wayfinder Key Stats
 
 #nr-table(
+  caption: "Wayfinder Key Stats",
   columns: (1fr, 2fr),
   [*Key Attributes*], [Wits, Empathy],
   [*Favorite Attribute*], [Wits],
@@ -49,9 +50,9 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 
 The Department of Research is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
 
-- *Research Desk Analyst* — Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Desk Analysts maintain artifact catalogues, cross-reference historical reports, and identify patterns indicating the presence of significant artifacts.
+- *Research Desk Analyst*  -  Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Desk Analysts maintain artifact catalogues, cross-reference historical reports, and identify patterns indicating the presence of significant artifacts.
 
-- *Research Field Analyst* — Conducts investigative work outside Covenant facilities. Visits archaeological sites, examines ruins, conducts interviews with scholars or local witnesses, and verifies Desk Analyst intelligence. Gathers firsthand observations, photographic documentation, and environmental intelligence.
+- *Research Field Analyst*  -  Conducts investigative work outside Covenant facilities. Visits archaeological sites, examines ruins, conducts interviews with scholars or local witnesses, and verifies Desk Analyst intelligence. Gathers firsthand observations, photographic documentation, and environmental intelligence.
 
 #callout-block("NOTE", [
   _Research personnel do not retrieve artifacts._ Once an artifact's existence and location have been confirmed, the Department prepares a formal assessment and forwards the case to the Recovery Division.
@@ -61,9 +62,9 @@ The Department of Research is responsible for the discovery, documentation, and 
 
 The Department of Counterintelligence protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Department maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
 
-- *Counterintelligence Desk Analyst* — Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses.
+- *Counterintelligence Desk Analyst*  -  Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses.
 
-- *Counterintelligence Field Analyst* — Operates outside Covenant facilities to investigate threats directly. Duties include surveillance of suspicious organizations, infiltration of groups seeking artifacts, observation of illicit antiquities markets, and disruption of activities that could expose the Covenant. Field Analysts may be authorized to engage hostiles, albeit infrequently.
+- *Counterintelligence Field Analyst*  -  Operates outside Covenant facilities to investigate threats directly. Duties include surveillance of suspicious organizations, infiltration of groups seeking artifacts, observation of illicit antiquities markets, and disruption of activities that could expose the Covenant. Field Analysts may be authorized to engage hostiles, albeit infrequently.
 
 #callout-block("NOTE", [
   Through the vigilance of the Department of Counterintelligence, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
@@ -72,12 +73,13 @@ The Department of Counterintelligence protects the Covenant from external threat
 === Wayfinder Talents (Choose 1 at Creation)
 
 #nr-table-wide(
+  caption: "Wayfinder Talents",
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*The Antiquarian's Eye*], [+1 Corruption], [Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.],
   [*Ghost in the Machine*], [+1 Corruption], [Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.],
   [*The Hunch*], [+1 Corruption], [Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.],
-  [*Academic Grounding* _(Healing)_], [—], [Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.],
+  [*Academic Grounding* _(Healing)_], [ - ], [Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.],
   [*Eldritch Empathy*], [+1 Corruption], [Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.],
 )
 
@@ -100,6 +102,7 @@ Recovery agents are trained to operate in a wide variety of environments. Some r
 === Recovery Key Stats
 
 #nr-table(
+  caption: "Recovery Key Stats",
   columns: (1fr, 2fr),
   [*Key Attributes*], [Strength, Agility],
   [*Favorite Attribute*], [Agility],
@@ -124,6 +127,7 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 Choose one background that defines your agent's prior experience:
 
 #nr-table(
+  caption: "Recovery Backgrounds",
   columns: (2fr, 4fr),
   [*Background*], [*Description*],
   [*Ex-Agency Operative*], [Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.],
@@ -134,13 +138,14 @@ Choose one background that defines your agent's prior experience:
 === Recovery Talents (Choose 1 at Creation)
 
 #nr-table-wide(
+  caption: "Recovery Talents",
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
-  [*Conditioned Mind*], [—], [Once per session, entirely ignore the Corruption point generated from pushing a roll.],
+  [*Conditioned Mind*], [ - ], [Once per session, entirely ignore the Corruption point generated from pushing a roll.],
   [*Unstoppable Force*], [+1 Corruption], [Your next successful melee or unarmed attack inflicts +2 damage.],
   [*Shadow Walker*], [+1 Corruption], [Become entirely imperceptible to mundane guards or cameras for a scene, provided you do not attack.],
-  [*Adrenaline Junkie*], [—], [When you have a −1 penalty to Strength, gain +2 bonus dice to all Agility rolls.],
-  [*Gallows Humor* _(Healing)_], [—], [Once per session, after surviving a combat encounter, crack a dark joke. You and all allies who hear you heal 1d4 Corruption.],
+  [*Adrenaline Junkie*], [ - ], [When you have a −1 penalty to Strength, gain +2 bonus dice to all Agility rolls.],
+  [*Gallows Humor* _(Healing)_], [ - ], [Once per session, after surviving a combat encounter, crack a dark joke. You and all allies who hear you heal 1d4 Corruption.],
 )
 
 #section-rule()
@@ -151,11 +156,12 @@ _"What is contained must be guarded."_
 
 The Keep serves as the custodial authority of the Verdant Covenant. Once artifacts have been recovered and delivered to Covenant custody, responsibility for their handling, documentation, containment, and protection is transferred to the Keep.
 
-Members of the Keep are entrusted with the stewardship of the Covenant's most sensitive holdings. Their work ensures that artifacts — whether magical, religious, occult, or culturally significant — are properly cataloged, secured, and prevented from causing harm.
+Members of the Keep are entrusted with the stewardship of the Covenant's most sensitive holdings. Their work ensures that artifacts  -  whether magical, religious, occult, or culturally significant  -  are properly cataloged, secured, and prevented from causing harm.
 
 === Keep Key Stats
 
 #nr-table(
+  caption: "Keep Key Stats",
   columns: (1fr, 2fr),
   [*Key Attributes*], [Empathy, Wits],
   [*Favorite Attribute*], [Empathy],
@@ -178,7 +184,7 @@ All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenan
 
 *The Department of Catalogers*
 
-The Catalogers are responsible for the documentation, classification, and containment planning of all artifacts. Every item recovered by the Recovery Division is delivered first to the Catalogers for formal intake. They maintain the Covenant's master artifact registry — detailing origin, cultural context, physical properties, historical significance, and known risks for each artifact in custody.
+The Catalogers are responsible for the documentation, classification, and containment planning of all artifacts. Every item recovered by the Recovery Division is delivered first to the Catalogers for formal intake. They maintain the Covenant's master artifact registry  -  detailing origin, cultural context, physical properties, historical significance, and known risks for each artifact in custody.
 
 The Department also designs containment chambers tailored to each artifact's characteristics: sealed vaults, protective casings, environmental stabilization systems, isolation chambers, or other specialized safeguards. Catalogers conduct periodic inspections to verify that artifacts remain secure and containment measures remain effective.
 
@@ -203,13 +209,14 @@ Working in coordination with the Wayfinder Division's Department of Counterintel
 === Keep Talents (Choose 1 at Creation)
 
 #nr-table-wide(
+  caption: "Keep Talents",
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*Containment Protocol*], [+1 Corruption], [Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a Hard (−2) roll to cross it.],
   [*Shield of the Covenant*], [+1 Corruption], [When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.],
   [*The Inquisitor's Gaze*], [+1 Corruption], [While conversing with someone, instantly know their current Corruption score and whether they are possessed.],
-  [*Sanctuary Master*], [—], [When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.],
-  [*The Confessor* _(Healing)_], [—], [Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.],
+  [*Sanctuary Master*], [ - ], [When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.],
+  [*The Confessor* _(Healing)_], [ - ], [Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.],
 )
 
 #section-rule()
@@ -221,14 +228,15 @@ _"Queue up, agents."_
 The Department of Logistics sits organizationally within the Keep, but its unique expertise and operational independence justify its treatment as a separate playable Division. Informally known as *"Stack,"* the department is composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear.
 
 #callout-block("NOTE", [
-  *Origin of the name:* During the global espionage boom of the 1970s, younger Recovery agents began jokingly referring to Logistics as the "Q Department," a nod to the famous James Bond armorer. Given the notoriously long requisition lines outside the Logistics offices, the nickname evolved into "Queue." Over time, Covenant humor shortened it further, and the department became known as *Stack* — a name that has endured ever since.
+  *Origin of the name:* During the global espionage boom of the 1970s, younger Recovery agents began jokingly referring to Logistics as the "Q Department," a nod to the famous James Bond armorer. Given the notoriously long requisition lines outside the Logistics offices, the nickname evolved into "Queue." Over time, Covenant humor shortened it further, and the department became known as *Stack*  -  a name that has endured ever since.
 ])
 
-Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
+Stack agents design, modify, and distribute the tools used by Covenant agents  -  from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
 
 === Stack Key Stats
 
 #nr-table(
+  caption: "Stack Key Stats",
   columns: (1fr, 2fr),
   [*Key Attributes*], [Wits, Agility],
   [*Favorite Attribute*], [Wits],
@@ -240,6 +248,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 === Stack Departments
 
 #nr-table(
+  caption: "Stack Departments",
   columns: (2fr, 4fr),
   [*Department*], [*Description*],
   [*The Quartermaster*], [Manages the Covenant's equipment stores. Expert in acquisition, logistics, and knowing exactly what's available.],
@@ -250,11 +259,12 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 === Stack Talents (Choose 1 at Creation)
 
 #nr-table-wide(
+  caption: "Stack Talents",
   columns: (2fr, 1fr, 4fr),
   [*Talent*], [*Cost*], [*Effect*],
   [*Requisition Expert*], [+1 Corruption], [During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.],
   [*Jury-Rig*], [+1 Corruption], [Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.],
   [*Prototyper*], [+1 Corruption], [Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.],
-  [*Duct Tape & WD-40* _(Healing)_], [—], [Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.],
+  [*Duct Tape & WD-40* _(Healing)_], [ - ], [Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.],
   [*Experimental Shielding*], [+1 Corruption], [Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.],
 )

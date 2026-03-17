@@ -24,4 +24,4 @@ Extremist occultists and ideological zealots who survived the mid-20th century. 
 
 == The Network
 
-A decentralized collective of early hackers, phreakers, and pirate radio broadcasters. Anarchistic in nature, they seek to expose the truth of the occult to the public — often inadvertently unleashing horrors they don't understand in the name of "information freedom."
+A decentralized collective of early hackers, phreakers, and pirate radio broadcasters. Anarchistic in nature, they seek to expose the truth of the occult to the public  -  often inadvertently unleashing horrors they don't understand in the name of "information freedom."

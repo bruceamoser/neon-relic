@@ -8,7 +8,7 @@
 
 #chapter-header("16", "Travel and Journey Rules")
 
-The Covenant sends agents across the 1980s American landscape — through ice storms and state highway rest stops, across cities that don't know they're being watched, into small towns that are. There are no cell phones, no GPS, no real-time coordination beyond a crackling CB radio or a roadside payphone.
+The Covenant sends agents across the 1980s American landscape  -  through ice storms and state highway rest stops, across cities that don't know they're being watched, into small towns that are. There are no cell phones, no GPS, no real-time coordination beyond a crackling CB radio or a roadside payphone.
 
 Getting there is part of the story.
 
@@ -18,7 +18,7 @@ Getting there is part of the story.
 
 Every significant journey follows three phases:
 
-=== Phase 1 — Planning
+=== Phase 1  -  Planning
 
 Before departure, the team answers three questions:
 
@@ -28,9 +28,9 @@ Before departure, the team answers three questions:
 
 The DA notes the *base travel time* and the *Threat Level* of the journey. If the team has the Field Intelligence Network HQ upgrade, they begin with one free piece of route intelligence.
 
-=== Phase 2 — The Journey
+=== Phase 2  -  The Journey
 
-Divide the journey into *legs* — distinct segments separated by a stop, a hazard, or a change of environment:
+Divide the journey into *legs*  -  distinct segments separated by a stop, a hazard, or a change of environment:
 
 - *Short journey* (same city or adjacent area): 1 leg. No encounter roll unless the DA sees an opportunity.
 - *Medium journey* (cross-state, 2–4 hours): 2 legs. Roll on the Road Event table once.
@@ -49,7 +49,7 @@ Each leg, the driver (or lead navigator on foot) makes a skill roll:
 *On failure:* Roll on the Road Event table (or the DA applies a prepared complication). \
 *On push:* +1 Corruption as normal. The driver is rattled; the vehicle takes wear.
 
-=== Phase 3 — Arrival
+=== Phase 3  -  Arrival
 
 On arrival, any damage or injuries sustained during travel remain in effect. Any gear that was pushed during travel may be degraded. The team notes which scene they arrive in (Phase 4 or 5 of the Case File structure).
 
@@ -58,6 +58,7 @@ On arrival, any damage or injuries sustained during travel remain in effect. Any
 == Vehicle Types and Travel Speeds
 
 #nr-table-wide(
+  caption: "Vehicle Types and Travel Speeds",
   columns: (2fr, 1fr, 1fr, 2fr, 3fr),
   [Vehicle], [Speed], [Capacity (Enc.)], [Noise], [Notes],
   [*On Foot*], [Slow], [Personal carry only], [Silent], [Surveillance-proof but exhausting. Extended travel = risk of Agility damage from fatigue.],
@@ -82,19 +83,20 @@ A Tech roll (Difficulty 2, with proper tools) can clear 1 Wear per scene of work
 Roll *d12* when a Road Event is triggered.
 
 #nr-table-wide(
+  caption: "Road Event Table (D12)",
   columns: (1fr, 4fr),
   [Roll], [Event],
   [1], [*Weather Turn.* A fast-developing storm (rain, fog, snowdrift). All vehicle rolls at −1 die until the team stops and waits it out (minimum 30 minutes in-game) or pushes through. If they push, weather worsens.],
   [2], [*Breakdown.* Vehicle takes 1 Wear immediately. Tech roll (Difficulty 2) to address roadside or continue at −1 die on all vehicle rolls.],
-  [3], [*Police Checkpoint.* Roadblock ahead — routine or targeted. The team must choose: reroute (+1 leg to the journey), talk their way through (Manipulate Difficulty 2; failure = detained briefly), or bluff past (Sneak Difficulty 3).],
-  [4], [*Road Accident.* A civilian incident is visible ahead — a crash, a stalled car, a figure in the road. Stopping may be medically necessary but adds time and a potential witness.],
+  [3], [*Police Checkpoint.* Roadblock ahead  -  routine or targeted. The team must choose: reroute (+1 leg to the journey), talk their way through (Manipulate Difficulty 2; failure = detained briefly), or bluff past (Sneak Difficulty 3).],
+  [4], [*Road Accident.* A civilian incident is visible ahead  -  a crash, a stalled car, a figure in the road. Stopping may be medically necessary but adds time and a potential witness.],
   [5], [*Tail Detected.* A vehicle has been maintaining pace behind the team for the last leg (see Rules for Being Followed below).],
-  [6], [*Corruption Event.* The drive passes through a zone of residual occult activity. Every character gains *+1 Corruption*. No check required — the exposure just happens. The area smells like copper coins and burnt static.],
-  [7], [*CB Radio Intercept.* The team picks up a fragment of conversation relevant to the Case File — a police dispatch, a rival faction contact check, a panicked civilian. Roll Investigate (Difficulty 2) to extract actionable intelligence.],
+  [6], [*Corruption Event.* The drive passes through a zone of residual occult activity. Every character gains *+1 Corruption*. No check required  -  the exposure just happens. The area smells like copper coins and burnt static.],
+  [7], [*CB Radio Intercept.* The team picks up a fragment of conversation relevant to the Case File  -  a police dispatch, a rival faction contact check, a panicked civilian. Roll Investigate (Difficulty 2) to extract actionable intelligence.],
   [8], [*Trucker's Information.* A rest stop encounter with a long-haul trucker who has been on the road through the destination area. Neutral contact. Investigate (Difficulty 1) reveals one useful local detail (road closures, unusual activity, a landmark). Buy them coffee.],
-  [9], [*Wrong Turn.* Navigation error. Add +1 leg to the journey. The new route passes through an area with different terrain (DA chooses: industrial, residential, rural, waterfront — add flavor).],
-  [10], [*Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (Difficulty 2) to assess. No immediate danger — but it should be noted.],
-  [11], [*Fuel Stop.* The team must stop for gas (or food, or rest). A 15-minute window of vulnerability — public space, potential surveillance. Sneak (Difficulty 1) to transit without being noted by anyone watching.],
+  [9], [*Wrong Turn.* Navigation error. Add +1 leg to the journey. The new route passes through an area with different terrain (DA chooses: industrial, residential, rural, waterfront  -  add flavor).],
+  [10], [*Mechanical Oddity.* Something in the vehicle is behaving strangely  -  electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (Difficulty 2) to assess. No immediate danger  -  but it should be noted.],
+  [11], [*Fuel Stop.* The team must stop for gas (or food, or rest). A 15-minute window of vulnerability  -  public space, potential surveillance. Sneak (Difficulty 1) to transit without being noted by anyone watching.],
   [12], [*Clean Run.* No event this leg. The team arrives at the next waypoint ahead of schedule. They may ask the DA one question about the destination that they would have known if they'd had more time to prepare.],
 )
 
@@ -104,13 +106,13 @@ Roll *d12* when a Road Event is triggered.
 
 === Noticing a Tail
 
-A tail can appear at any point during a journey — or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll \#5 on the Road Event table.
+A tail can appear at any point during a journey  -  or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll \#5 on the Road Event table.
 
 To notice a tail:
 
-- *Wits (Investigate) Difficulty 2* — passive awareness during normal travel.
-- *Wits (Investigate) Difficulty 1* — if the team is specifically looking for surveillance.
-- The tail makes no roll — the DA decides if they are being careful. A professional tail (MJ-12, experienced Consortium operative) imposes +1 Difficulty to the detection roll.
+- *Wits (Investigate) Difficulty 2*  -  passive awareness during normal travel.
+- *Wits (Investigate) Difficulty 1*  -  if the team is specifically looking for surveillance.
+- The tail makes no roll  -  the DA decides if they are being careful. A professional tail (MJ-12, experienced Consortium operative) imposes +1 Difficulty to the detection roll.
 
 === Losing a Tail
 
@@ -122,7 +124,7 @@ Three options, each requiring one skill roll:
 + *Blend In:* AGI (Sneak) or WIT (Investigate, to find a crowd). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
 + *Double Back / Trap:* WIT (Investigate). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
 
-*On failure:* The tail remains. The team may try again next leg (no Corruption cost for failed attempts — frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
+*On failure:* The tail remains. The team may try again next leg (no Corruption cost for failed attempts  -  frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
 
 === The Tail Arrives
 
@@ -134,7 +136,7 @@ If the team reaches the destination with a tail still on them:
 
 #section-rule()
 
-== Being Followed — Named Threat Complication
+== Being Followed  -  Named Threat Complication
 
 If the tail is a Named Threat or a designated faction operative (introduced in the Case File), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
 
@@ -146,7 +148,7 @@ If the Named Threat is allowed to arrive at the destination, they are briefed on
 
 The 1980s travel experience has no shortcuts and no digital assists. Consider:
 
-- *Road maps:* Required for unfamiliar routes. Without a map, add +1 Difficulty to all navigation rolls. Maps can be obtained at gas stations or found in the glovebox of a vehicle — rarely accurate for back roads.
-- *Payphones:* The only way to communicate in the field. Payphones require correct change (loose quarters are standard Covenant field kit). Calls can be traced within approximately 10 minutes — keep it short.
+- *Road maps:* Required for unfamiliar routes. Without a map, add +1 Difficulty to all navigation rolls. Maps can be obtained at gas stations or found in the glovebox of a vehicle  -  rarely accurate for back roads.
+- *Payphones:* The only way to communicate in the field. Payphones require correct change (loose quarters are standard Covenant field kit). Calls can be traced within approximately 10 minutes  -  keep it short.
 - *Weather:* Before cellular radar, weather in remote areas can surprise a team. The DA may introduce weather as a narrative beat at any point without a Road Event trigger.
-- *Rest stops:* The I-system rest stops are the 1980s version of networking hubs — truckers, salespeople, and anyone moving across America overnight. A character with Manipulate 2+ can gather rumors at a rest stop with a single Difficulty 1 roll.
+- *Rest stops:* The I-system rest stops are the 1980s version of networking hubs  -  truckers, salespeople, and anyone moving across America overnight. A character with Manipulate 2+ can gather rumors at a rest stop with a single Difficulty 1 roll.

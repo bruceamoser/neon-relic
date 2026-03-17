@@ -8,11 +8,11 @@
 
 #chapter-header("08", "Corruption, Fear, and Healing")
 
-*Corruption* is Neon Relic's signature mechanic — a single ascending number that tracks the cumulative psychic toll of occult exposure, supernatural exertion, and sheer human desperation. It functions as an "inverse hit points" system: every push, every artifact activation, every encounter with the unnatural ratchets the number higher, and there is no coming back from the top.
+*Corruption* is Neon Relic's signature mechanic  -  a single ascending number that tracks the cumulative psychic toll of occult exposure, supernatural exertion, and sheer human desperation. It functions as an "inverse hit points" system: every push, every artifact activation, every encounter with the unnatural ratchets the number higher, and there is no coming back from the top.
 
 == The Corruption Track
 
-Corruption starts at *0* and increases from there. It is gained directly from its sources and reduced (slowly) by its methods — there is no buffer, no cascade, and no shortcut.
+Corruption starts at *0* and increases from there. It is gained directly from its sources and reduced (slowly) by its methods  -  there is no buffer, no cascade, and no shortcut.
 
 *Maximum Corruption Threshold* = `10 + Empathy score`
 
@@ -21,6 +21,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 === Sources of Corruption
 
 #nr-table-wide(
+  caption: "Sources of Corruption",
   columns: (2fr, 1fr, 4fr),
   [*Trigger*], [*Corruption Gained*], [*Description*],
   [*Pushing a Roll*], [+1], [Exerting your absolute limits invites psychic static.],
@@ -34,10 +35,11 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 === Corruption Effects
 
 #nr-table-wide(
+  caption: "Corruption Effects",
   columns: (1fr, 2fr, 4fr),
   [*Corruption*], [*Stage*], [*Mechanical & Narrative Consequence*],
   [*1–3*], [Nosebleeds / Migraines], [Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control.],
-  [*4–6*], [Auditory Hallucinations], [Distinct whispers from the void — voices of the dead or entities from beyond.],
+  [*4–6*], [Auditory Hallucinations], [Distinct whispers from the void  -  voices of the dead or entities from beyond.],
   [*7–9*], [Eldritch Tremors], [Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop.],
   [*10–12*], [Reality Distortion], [The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence.],
   [*13–14*], [Fugue States], [A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps.],
@@ -53,6 +55,7 @@ Because Corruption naturally builds toward lethal levels, characters must active
 === Methods of Recovery
 
 #nr-table-wide(
+  caption: "Methods of Corruption Recovery",
   columns: (2fr, 3fr, 3fr),
   [*Method*], [*Effect*], [*Requirements*],
   [*Anchor Scene*], [Heal *1d4 Corruption*], [Once per session. Dedicate a scene to interacting with your Anchor.],
@@ -62,16 +65,17 @@ Because Corruption naturally builds toward lethal levels, characters must active
 )
 
 #design-note([
-  Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices. Maximum per-session active recovery: up to 1d4 (Anchor) + 1 (Safe Scene) = up to 5 Corruption. Even at maximum, a single bad session can overwhelm a session's recovery.
+  Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest  -  but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices. Maximum per-session active recovery: up to 1d4 (Anchor) + 1 (Safe Scene) = up to 5 Corruption. Even at maximum, a single bad session can overwhelm a session's recovery.
 ])
 
 === Anchors
 
-Every character begins with an *Anchor* — a tangible, physical object linked to a core humanizing memory (e.g., a cassette tape recording of a lost spouse's voice). In a moment of quiet downtime, a character can dedicate a scene to interacting with their Anchor. This grounded roleplay provides powerful mechanical healing.
+Every character begins with an *Anchor*  -  a tangible, physical object linked to a core humanizing memory (e.g., a cassette tape recording of a lost spouse's voice). In a moment of quiet downtime, a character can dedicate a scene to interacting with their Anchor. This grounded roleplay provides powerful mechanical healing.
 
 === Random 1980s Memento / Anchor Table (Roll D66)
 
 #nr-table-wide(
+  caption: "Random Memento / Anchor Table (D66)",
   columns: (1fr, 4fr, 1fr, 4fr),
   [*Roll*], [*Memento*], [*Roll*], [*Memento*],
   [11], [A severely chewed, red Bic pen belonging to a missing sibling.], [41], [A blood-stained matchbook from a notorious neon-lit nightclub.],
@@ -98,41 +102,43 @@ Every character begins with an *Anchor* — a tangible, physical object linked t
 
 == Fear Mechanics
 
-The Corruption track governs the long arc of psychological decay. *Fear* governs the acute, in-the-moment terror of direct supernatural confrontation — the thing that happens to your body and your mind in the next thirty seconds when the entity looks at you.
+The Corruption track governs the long arc of psychological decay. *Fear* governs the acute, in-the-moment terror of direct supernatural confrontation  -  the thing that happens to your body and your mind in the next thirty seconds when the entity looks at you.
 
 Fear and Corruption are directly linked: Fear checks that produce 1s on the dice generate Corruption, and failed Fear checks generate additional Corruption plus a panic response. A single terrifying encounter can spike Corruption in a way that takes days of rest to undo.
 
 === What Triggers a Fear Check
 
-The DA calls for a Fear check when a character directly confronts a source of genuine supernatural horror. Not everything unusual triggers one — strange sounds, unusual smells, or reading an old text do not. A Fear check requires *direct sensory confrontation* with something that violates the natural order.
+The DA calls for a Fear check when a character directly confronts a source of genuine supernatural horror. Not everything unusual triggers one  -  strange sounds, unusual smells, or reading an old text do not. A Fear check requires *direct sensory confrontation* with something that violates the natural order.
 
 #nr-table(
+  caption: "Fear Check Triggers",
   columns: (2fr, 4fr),
   [*Trigger*], [*Examples*],
   [*Encountering a supernatural entity*], [Seeing a bound entity, a possessed human, or a manifestation for the first time this scene.],
   [*Artifact activation failure*], [An artifact the character is handling detonates, tears reality, or emits a vision that cannot be explained.],
   [*Witnessing violent supernatural death*], [An ally or bystander is killed or consumed by occult means in front of the character.],
-  [*Occult revelation*], [Irrefutable proof of something the human mind cannot accommodate — a genuine miracle, an impossible geometry, a speaking dead.],
+  [*Occult revelation*], [Irrefutable proof of something the human mind cannot accommodate  -  a genuine miracle, an impossible geometry, a speaking dead.],
   [*Sustained entity presence*], [For each *additional round* a character remains within Engaged range of an active, hostile entity (after the initial check).],
 )
 
 #callout-block("NOTE", [
-  *One check per trigger:* If the same entity is already known to the character from a prior session and has been observed before, no new Fear check is required merely for seeing it again — only for new escalations (it doing something new, getting closer, attacking).
+  *One check per trigger:* If the same entity is already known to the character from a prior session and has been observed before, no new Fear check is required merely for seeing it again  -  only for new escalations (it doing something new, getting closer, attacking).
 ])
 
 === The Fear Check Procedure
 
 + The DA calls for a Fear check when a character directly confronts supernatural horror.
-+ Roll dice equal to your current *Wits* attribute (no skill modifier — Fear is instinctual, not trained).
++ Roll dice equal to your current *Wits* attribute (no skill modifier  -  Fear is instinctual, not trained).
 + *One or more 6s = success.* You hold it together.
 + *Any 1s rolled (one or more) = +1 Corruption.* Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
 + *No 6s = failure.* Gain +1 Corruption AND roll d6 on the *Panic Table*.
 
-Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying harder" against the absolute horror of the unnatural.
+Fear checks *cannot be pushed*. Fear is involuntary  -  there is no "trying harder" against the absolute horror of the unnatural.
 
 ==== Four Outcomes
 
 #nr-table-wide(
+  caption: "Fear Check Outcomes",
   columns: (1fr, 1fr, 3fr),
   [*Rolled 6s?*], [*Rolled 1s?*], [*Result*],
   [Yes], [No], [Clean pass. No consequence.],
@@ -142,7 +148,7 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 )
 
 #design-note([
-  *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to _explain_ what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
+  *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to _explain_ what the eyes are seeing  -  and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 ])
 
 === The Panic Table
@@ -150,6 +156,7 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 On a failed Fear check (no 6s), roll *d6*:
 
 #nr-table-wide(
+  caption: "Failed Fear Check Results (D6)",
   columns: (1fr, 2fr, 4fr),
   [*Roll*], [*Response*], [*What Happens*],
   [*1*], [*Fight*], [Attack nearest creature (ally or foe) with bare hands this round. Cannot use weapons.],
@@ -162,9 +169,10 @@ On a failed Fear check (no 6s), roll *d6*:
 
 === Fear Ratings
 
-Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The DA uses it to decide *when* to call for a check and how to frame the fiction.
+Fear Rating is a *narrative tool* for the DA  -  it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The DA uses it to decide *when* to call for a check and how to frame the fiction.
 
 #nr-table-wide(
+  caption: "Fear Rating Scale",
   columns: (1fr, 1fr, 4fr),
   [*Rating*], [*Threat Level*], [*Examples*],
   [*1*], [Unsettling], [A shadow that moves wrong. A sound that shouldn't exist. A photograph with an extra figure.],
