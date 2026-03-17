@@ -40,9 +40,14 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 
 The Research Wing is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
 
-* *Research Desk Analyst* — Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Desk Analysts maintain artifact catalogues, cross-reference historical reports, and identify patterns indicating the presence of significant artifacts.
+[%header,cols="2,4"]
+|===
+| Specialty | Description
 
-* *Research Field Analyst* — Conducts investigative work outside Covenant facilities. Visits archaeological sites, examines ruins, conducts interviews with scholars or local witnesses, and verifies Desk Analyst intelligence. Gathers firsthand observations, photographic documentation, and environmental intelligence.
+| *Research Desk Analyst* | Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Maintains artifact catalogues, cross-references historical reports, and identifies patterns indicating the presence of significant artifacts.
+| *Research Field Analyst* | Conducts investigative work outside Covenant facilities. Visits archaeological sites, examines ruins, interviews scholars or local witnesses, and verifies Desk Analyst intelligence. Gathers firsthand observations, photographic documentation, and environmental readings.
+| *Research Liaison* | Embeds with academic institutions, museums, and partner agencies to cultivate intelligence relationships through official channels. Maintains scholarly cover identities, attends conferences, and routes actionable field intelligence back to the Desk.
+|===
 
 [NOTE]
 ====
@@ -53,9 +58,14 @@ _Research personnel do not retrieve artifacts._ Once an artifact's existence and
 
 The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
 
-* *Counterintelligence Desk Analyst* — Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses.
+[%header,cols="2,4"]
+|===
+| Specialty | Description
 
-* *Counterintelligence Field Analyst* — Operates outside Covenant facilities to investigate threats directly. Duties include surveillance of suspicious organizations, infiltration of groups seeking artifacts, observation of illicit antiquities markets, and disruption of activities that could expose the Covenant. Field Analysts may be authorized to engage hostiles, albeit infrequently.
+| *Counterintelligence Desk Analyst* | Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses.
+| *Counterintelligence Field Analyst* | Operates outside Covenant facilities to investigate threats directly. Conducts surveillance of suspicious organizations, infiltrates groups seeking artifacts, observes illicit antiquities markets, and disrupts activities that could expose the Covenant. May be authorized to engage hostiles when necessary.
+| *Counterintelligence Technical Analyst* | Specializes in signals intelligence, electronic surveillance, and cryptographic analysis of intercepted communications. Operates wire-taps, intercepts radio traffic, and deciphers coded correspondence from rival factions and hostile actors.
+|===
 
 [NOTE]
 ====
@@ -175,6 +185,15 @@ The Catalogers are responsible for the documentation, classification, and contai
 
 The Department also designs containment chambers tailored to each artifact's characteristics: sealed vaults, protective casings, environmental stabilization systems, isolation chambers, or other specialized safeguards. Catalogers conduct periodic inspections to verify that artifacts remain secure and containment measures remain effective.
 
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *Intake Officer* | First point of contact for newly recovered artifacts. Assesses risk level, initiates containment protocol, performs initial hazard classification, and opens the formal Registry entry.
+| *Archivist* | Maintains the Covenant's master artifact registry. Expert in historical context, cultural origin, and known hazard documentation. Coordinates with Wayfinder records to verify provenance and cross-reference research findings.
+| *Containment Architect* | Designs and maintains the specialized vaults, sealed chambers, and environmental stabilization systems that keep artifacts secure. Conducts periodic inspections and redesigns containment when artifact behavior changes or escalates.
+|===
+
 *The Wardens*
 
 The Wardens serve as the defensive arm of the Keep. They are responsible for the physical protection of Covenant facilities, personnel, and artifact vaults. Primary duties include:
@@ -185,6 +204,15 @@ The Wardens serve as the defensive arm of the Keep. They are responsible for the
 * Coordinating with Counterintelligence on infiltration threats
 * Conducting field operations to disrupt hostile activities or recover stolen property when credible threats emerge
 
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *Vault Guardian* | Stationed within Covenant facilities. Responsible for physical security of vaults and sensitive areas. First responders to containment failures, breaches, or unauthorized access events.
+| *Escort Warden* | Accompanies artifact transports and personnel through restricted or external environments. Provides mobile security during inter-facility transfers and high-clearance field movements.
+| *Field Warden* | Deploys externally when hostile threats escalate beyond passive monitoring. Conducts disruption operations against rival factions and recovers property stolen from Covenant custody.
+|===
+
 [NOTE]
 ====
 Through the actions of the Wardens, the Verdant Covenant ensures that what is contained remains guarded, and that those who would misuse the relics of the past are prevented from doing so.
@@ -193,6 +221,15 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 *Internal Counterintelligence*
 
 Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
+
+[%header,cols="2,4"]
+|===
+| Specialty | Description
+
+| *Counter-Exposure Analyst* | Monitors internal communications and personnel behavior for signs of information leaks, unauthorized disclosure, or ideological compromise. Conducts silent internal audits and compiles findings for Warden action.
+| *Infiltration Investigator* | Investigates active external threats against Covenant facilities, personnel, or networks. Tracks hostile actors, builds operational cases against suspected infiltrators, and coordinates takedowns with the Wardens.
+| *Vetting Officer* | Conducts background assessments and ongoing clearance monitoring for Covenant recruits and active personnel. Identifies vulnerabilities and security risks before they can be exploited by rival factions.
+|===
 
 === Keep Talents (Choose 1 at Creation)
 
