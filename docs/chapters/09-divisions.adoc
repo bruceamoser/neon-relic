@@ -112,13 +112,13 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 * Produces useful tools on demand (rope, chalk, spikes, vials, etc.)
 * Enchantment of Warding obscures any magical object placed inside from detection
 
-=== Recovery Backgrounds
+=== Recovery Paradigms
 
-Choose one background that defines your agent's prior experience:
+Choose one paradigm that defines your agent's prior experience:
 
 [%header,cols="2,4"]
 |===
-| Background | Description
+| Paradigm | Description
 
 | *Ex-Agency Operative* | Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
 | *Heavy-Hitter (Brawler)* | Brute-force specialist. Comfortable in direct violent confrontation above all else.
