@@ -167,3 +167,82 @@ General Talents are specialized abilities available to *any character*, providin
 | *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
 | *Flee the Scene* | Gain +2 bonus dice to Agility when rolling explicitly to escape a conflict.
 |===
+
+---
+
+== Background Talents
+
+Everyone was someone else before joining The Covenant. Your background offers a unique perspective on how you interact with the world around you. You may select a background from the list, or work with your Director to create something unprecedented.
+
+Each Background Talent grants *+1 to a specific skill* and reflects the habits and expertise carried over from your agent's civilian life. Background Talents have no Corruption cost and no activation requirement — the bonus is always active.
+
+[%header,cols="2,1,4"]
+|===
+| Background | Skill Bonus | Description
+
+| *Accountant* | +1 Investigate | You spent years tracking numbers, discrepancies, and hidden financial patterns. Few irregularities escape your trained eye.
+| *Actor* | +1 Manipulate | You are comfortable becoming someone else entirely, adopting personas and convincing others of your performance.
+| *Amateur Astronomer* | +1 Investigate | Long nights studying the skies have sharpened your patience and your ability to notice subtle anomalies.
+| *Amateur Radio Operator* | +1 Tech | You built and maintained your own radio equipment, speaking across the airwaves with strangers around the world.
+| *Archaeologist* | +1 Lore | You studied the remnants of ancient civilizations and learned to interpret artifacts buried by time.
+| *Artist* | +1 Investigate | Your eye for composition, pattern, and subtle detail allows you to notice things others overlook.
+| *Athlete* | +1 Endure | Rigorous training and competition have hardened your body and stamina.
+| *Bartender* | +1 Psychoanalyze | You've listened to countless confessions and learned to read people when they think no one is watching.
+| *Birdwatcher* | +1 Investigate | You possess extraordinary patience and observational skill developed from quietly studying wildlife.
+| *Board Game Enthusiast* | +1 Command | Strategic thinking and anticipating opponents' moves comes naturally to you.
+| *Bodyguard* | +1 Brawl | Protecting others from physical harm is your profession, and you know how to handle yourself in close quarters.
+| *Bookseller* | +1 Lore | Years surrounded by literature and obscure texts have broadened your knowledge.
+| *Chess Grandmaster* | +1 Command | You think several moves ahead and naturally direct others toward strategic goals.
+| *Collector* | +1 Lore | You have spent years hunting, cataloging, and preserving rare and unusual items.
+| *Construction Worker* | +1 Force | Heavy labor has made you strong and capable of breaking through physical barriers.
+| *Cook* | +1 Endure | Long hours in demanding kitchen environments have built your stamina and resilience.
+| *Courier* | +1 Sneak | Moving unnoticed and navigating complex urban spaces is second nature to you.
+| *Detective* | +1 Investigate | Solving mysteries and reconstructing events from fragments of evidence is your specialty.
+| *Doctor* | +1 Psychoanalyze | Treating patients has given you a keen understanding of human behavior and distress.
+| *Electrician* | +1 Tech | You know how to wire, repair, and safely manipulate electrical systems.
+| *Engineer* | +1 Tech | Your technical education allows you to understand machines, structures, and mechanical systems.
+| *Factory Worker* | +1 Endure | Years of repetitive, demanding labor have toughened your body.
+| *Farmer* | +1 Endure | You are accustomed to harsh weather, long days, and physically demanding work.
+| *Firefighter* | +1 Force | You are trained to break through barriers and force entry during emergencies.
+| *Fisher* | +1 Endure | Working long hours on the water has given you patience and resilience.
+| *Food Service Professional* | +1 Manipulate | You have mastered the art of dealing with difficult people while maintaining composure.
+| *Gambler* | +1 Sleight of Hand | You know how to move cards, chips, and small objects without drawing attention.
+| *Gardener* | +1 Lore | Your knowledge of plants, natural cycles, and organic growth runs deep.
+| *Hiker* | +1 Endure | You are accustomed to long treks through rough terrain and difficult conditions.
+| *Historian* | +1 Lore | You have studied the past and understand how ancient events shape the present.
+| *Journalist* | +1 Investigate | Asking questions and digging for the truth is part of your nature.
+| *Librarian* | +1 Lore | You have spent years cataloging and studying vast collections of knowledge.
+| *Locksmith* | +1 Sleight of Hand | Locks, tumblers, and mechanical security devices are familiar tools of your trade.
+| *Lockpicking Hobbyist* | +1 Sleight of Hand | What began as a pastime has made you remarkably skilled with delicate mechanisms.
+| *Mechanic* | +1 Tech | Engines, machines, and broken equipment rarely intimidate you.
+| *Metal Detectorist* | +1 Investigate | You've spent countless hours searching for hidden objects beneath the earth.
+| *Military Veteran* | +1 Firearms | You received formal training in weapons and battlefield discipline.
+| *Model Builder* | +1 Tech | Constructing detailed models has taught you patience and mechanical understanding.
+| *Musician* | +1 Manipulate | You know how to influence the emotions of a room through performance and presence.
+| *Nurse* | +1 Psychoanalyze | You are accustomed to comforting the injured and calming frightened people.
+| *Office Clerk* | +1 Investigate | Handling paperwork and records has trained you to recognize patterns and inconsistencies.
+| *Park Ranger* | +1 Sneak | You are skilled at moving quietly through wilderness environments.
+| *Pharmacist* | +1 Lore | You understand medicines, chemicals, and their effects on the human body.
+| *Photographer* | +1 Investigate | You instinctively notice visual details others miss.
+| *Pilot* | +1 Tech | Operating complex vehicles and navigation equipment is part of your training.
+| *Police Officer* | +1 Firearms | You are trained in the proper use of service weapons.
+| *Priest* | +1 Manipulate | Your words carry moral authority and influence over others.
+| *Private Investigator* | +1 Investigate | Tracking people and uncovering hidden truths is your livelihood.
+| *Professor* | +1 Lore | Your academic background grants you extensive theoretical knowledge.
+| *Sailor* | +1 Endure | Life at sea has taught you to withstand difficult conditions.
+| *Salesperson* | +1 Manipulate | Convincing people to trust and believe you is part of your profession.
+| *Scientist* | +1 Investigate | You rely on observation, experimentation, and analysis.
+| *Security Guard* | +1 Command | You are trained to maintain order and direct people during incidents.
+| *Shopkeeper* | +1 Manipulate | Negotiating with customers and suppliers has sharpened your social instincts.
+| *Sports Fan* | +1 Command | Years of studying team strategy and leadership dynamics influence how you guide others.
+| *Student* | +1 Lore | Your academic studies have given you a foundation of knowledge.
+| *Survivalist* | +1 Endure | You train to endure extreme environments and catastrophic scenarios.
+| *Taxi Driver* | +1 Sneak | You know how to navigate cities and move through them without drawing attention.
+| *Teacher* | +1 Command | You are skilled at directing groups and keeping people focused.
+| *Technician* | +1 Tech | You repair and maintain specialized equipment.
+| *Translator* | +1 Manipulate | Understanding language nuances allows you to influence conversations and negotiations.
+| *Urban Explorer* | +1 Sneak | You specialize in quietly entering and navigating abandoned structures.
+| *Watch Enthusiast* | +1 Sleight of Hand | You possess remarkable dexterity working with tiny mechanical components.
+| *Woodworker* | +1 Force | Years of manual craftsmanship have strengthened your hands and arms.
+| *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
+|===
