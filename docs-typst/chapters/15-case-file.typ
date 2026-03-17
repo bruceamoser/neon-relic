@@ -223,7 +223,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 
 How does the cell first become aware of the case?
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [d6], [Inciting Incident],
   [1], [*Missing Person Report* — A Covenant contact is digging into a disappearance that connects to a known occult signature. They need field backup before the trail goes cold.],
@@ -240,7 +240,7 @@ How does the cell first become aware of the case?
 
 Where does the case take place?
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [d6], [Location],
   [1], [*Urban Apartment / Residential Block* — Dense housing, suspicious neighbors, minimal cover. The artifact has been in someone's home for years. They think they know what it is. They are wrong.],
@@ -257,7 +257,7 @@ Where does the case take place?
 
 What makes this case harder than it should be?
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [d6], [Complication],
   [1], [*Rival Faction Interest* — Another organization (intelligence agency, criminal syndicate, or rogue occultist network) has tracked the same artifact. They are already on-site or arriving within the hour.],
@@ -274,7 +274,7 @@ What makes this case harder than it should be?
 
 If the campaign calls for a recurring antagonist, determine their involvement:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [d6], [Named Threat Angle],
   [1], [The Named Threat is three steps ahead — the artifact was already moved before the cell arrived.],

@@ -122,7 +122,7 @@ The Threat Meter decreases by 1 at the end of any Case File in which the team wa
 
 When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the next Case File begins. Roll d6:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [*Roll*], [*Compromise Type*],
   [1–2], [*Surveillance* — A rival team has a long lens on the safehouse. The HQ is not breached, but the Threat Meter resets to 4 (not 0). All Tier 2+ facilities are temporarily offline until the surveillance is identified and dealt with (a mini-investigation, 1 session).],

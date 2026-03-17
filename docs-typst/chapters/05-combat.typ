@@ -138,7 +138,7 @@ Zones remain the canonical movement/range system. For VTT or tactical play, use 
 
 Every zone has optional *terrain features* the DA can invoke:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 4fr),
   [*Feature*], [*Mechanical Effect*],
   [*Cramped* (closets, crawlspaces, car interiors)], [Long-armed weapons (rifles, shotguns) suffer −2 dice. All movement into/out of zone takes a Slow Action.],

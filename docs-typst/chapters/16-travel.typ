@@ -81,7 +81,7 @@ A Tech roll (Difficulty 2, with proper tools) can clear 1 Wear per scene of work
 
 Roll *d12* when a Road Event is triggered.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [Roll], [Event],
   [1], [*Weather Turn.* A fast-developing storm (rain, fog, snowdrift). All vehicle rolls at −1 die until the team stops and waits it out (minimum 30 minutes in-game) or pushes through. If they push, weather worsens.],

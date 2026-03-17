@@ -370,9 +370,9 @@
     "Table " + ch + "." + n
   }
   let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
-  // Inline rendering — no float (POLISH-20/21/22): block stays in column flow,
-  // breakable:false prevents the table from splitting across pages.
-  block(width: 100%, breakable: false, above: 8mm, below: 4mm)[
+  // Inline rendering — no float (POLISH-20/21/22): block stays in column flow.
+  // breakable:true allows tall tables to split across columns/pages.
+  block(width: 100%, breakable: true, above: 8mm, below: 4mm)[
     #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
     #v(1mm)
     #set text(size: size-table)
@@ -393,9 +393,10 @@
 
 // ─────────────────────────────────────────────────────────────
 // WIDE TABLE HELPER
-// Like nr-table() but floated full-page-width (spans both columns).
-// Use for tables with many columns or wide content that looks
-// cramped in the single column width (POLISH-24).
+// Like nr-table() but spanning full page width (both columns).
+// Short tables float at the top of a page; tall tables (>400pt)
+// render on a dedicated single-column page so they can break
+// across pages (Typst floats cannot break).
 //
 // Usage: #nr-table-wide(
 //   columns: (1fr, 1fr, 2fr, 1fr, 1fr),
@@ -403,6 +404,8 @@
 //   [Cell], ...,
 // )
 // ─────────────────────────────────────────────────────────────
+#let _nr-wide-height-threshold = 400pt
+
 #let nr-table-wide(columns: auto, caption: none, ..cells) = {
   // Increment table counter — wide tables share the same sequence (POLISH-26)
   _nr-tbl-seq.step()
@@ -412,31 +415,47 @@
     "Table " + ch + "." + n
   }
   let full-caption = if caption != none { [#auto-label — #caption] } else { auto-label }
-  // Inner block with breakable:false (POLISH-21)
-  let tbl-content = block(width: 100%, breakable: false)[
-    #text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
-    #v(1mm)
-    #set text(size: size-table)
-    #show table.cell.where(y: 0): it => {
-      set text(fill: clr-manila, weight: "bold")
-      set table.cell(inset: (x: 3mm, y: 4mm))
-      it
+  // Build table content block
+  let make-tbl = block.with(width: 100%, breakable: true, above: 8mm, below: 4mm)
+  let tbl-body = {
+    text(font: font-heading, size: size-sidebar, fill: clr-olive-dark, style: "italic")[#full-caption]
+    v(1mm)
+    {
+      set text(size: size-table)
+      show table.cell.where(y: 0): it => {
+        set text(fill: clr-manila, weight: "bold")
+        set table.cell(inset: (x: 3mm, y: 4mm))
+        it
+      }
+      table(
+        columns: columns,
+        fill: (_, y) => if y == 0 { clr-olive-dark } else if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
+        stroke: 1pt + clr-olive-mid,
+        inset: (x: 3mm, y: 2mm),
+        ..cells,
+      )
     }
-    #table(
-      columns: columns,
-      fill: (_, y) => if y == 0 { clr-olive-dark } else if calc.odd(y) { clr-manila-stripe } else { clr-manila-light },
-      stroke: 1pt + clr-olive-mid,
-      inset: (x: 3mm, y: 2mm),
-      ..cells,
-    )
-  ]
-  // Float to parent (full-page) scope so it spans both columns (POLISH-24)
-  place(
-    scope: "parent",
-    top + left,
-    float: true,
-    block(above: 8mm, below: 4mm, breakable: false)[#tbl-content]
-  )
+  }
+  // Measure actual rendered height at full text-width to decide strategy
+  context {
+    let tw = page-margin  // from theme.typ
+    let pw = if type(tw) == dictionary {
+      612pt - tw.at("inside", default: 68pt) - tw.at("outside", default: 56.7pt)
+    } else { 487.3pt }
+    let m = measure(block(width: pw)[#tbl-body])
+    if m.height > _nr-wide-height-threshold {
+      // Tall table → dedicated single-column page (breakable across pages)
+      page(columns: 1)[#make-tbl()[#tbl-body]]
+    } else {
+      // Short table → float at top of page within 2-column layout
+      place(
+        scope: "parent",
+        top + left,
+        float: true,
+        make-tbl()[#tbl-body]
+      )
+    }
+  }
 }
 
 // ─────────────────────────────────────────────────────────────

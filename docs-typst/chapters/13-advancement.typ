@@ -25,7 +25,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Wayfinder Dark Secrets
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 5fr),
   [*Secret*], [*Details*],
   [*The Fabricated Report*], [You submitted a field analysis that was false. You buried evidence linking a recovered artifact to a civilian casualty event. The truth is in a file somewhere. The file has a reference number. You know it.],
@@ -39,7 +39,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Recovery Dark Secrets
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 5fr),
   [*Secret*], [*Details*],
   [*The One You Left*], [You extracted a target from a hostile situation and got the artifact out clean. But you left someone behind who could have survived with ten more minutes. You made a judgment call. They did not make it out. They had a name. You remember it.],
@@ -53,7 +53,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Keep Dark Secrets
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 5fr),
   [*Secret*], [*Details*],
   [*The Unauthorized Transfer*], [You moved an artifact between vault cells without clearance — you believed its listed containment protocol was incorrect. You were probably right. But the transfer created a window during which something influenced three junior staff members. The behavioural anomalies are in the health records. You signed the transfer log as routine maintenance.],
@@ -67,7 +67,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Stack Dark Secrets
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 5fr),
   [*Secret*], [*Details*],
   [*The Off-Books Supply Chain*], [You have a procurement network that the Covenant doesn't know about. It operates faster and quieter than official channels. You trust it because you built it. Two of your suppliers have connections you would struggle to explain cleanly.],
@@ -134,7 +134,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 General Talents are specialized abilities available to *any character*, providing mechanical exceptions or situational bonuses:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 4fr),
   [*Talent*], [*Effect*],
   [*Street Medic*], [Restore 2 physical Attribute points instead of 1 when successfully using Heal.],

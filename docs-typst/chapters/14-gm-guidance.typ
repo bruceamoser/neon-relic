@@ -141,7 +141,7 @@ High-stakes cases may have two or three simultaneous clocks. Keep them on differ
 
 Every significant NPC needs three things: a *secret*, a *goal*, and a *connection to the artifact*.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [*Component*], [*Design Note*],
   [*Secret*], [Something the NPC is hiding from the agents. Not necessarily sinister — a witness might be hiding that they trespassed, not that they're a cultist. The secret creates the reason they don't just tell the agents everything at the start.],
@@ -159,7 +159,7 @@ Ask: *If the agents were not present, what would this NPC do?* If the answer is 
 
 Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates:
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [*Entity Type*], [*Behavior Pattern*],
   [*Echoing Remnant*], [Acts on memory, not will. Repeats actions associated with its final emotional state. An Echoing Remnant from a violent event will reenact something about that event — not attack intelligently. Agents who understand the echo can sometimes avoid it entirely.],
@@ -185,7 +185,7 @@ When players go somewhere you didn't prepare:
 
 Roll when you need an unexpected complication mid-case, when a scene is going too smoothly, or to generate pre-session texture.
 
-#nr-table(
+#nr-table-wide(
   columns: (1fr, 4fr),
   [*D12*], [*Complication*],
   [1], [The key witness has already spoken to MJ-12. Their story has been changed. They are now afraid of the agents.],
@@ -212,7 +212,7 @@ Not every case ends with an artifact activation. Many of the Covenant's most imp
 
 Before the session begins, define a concrete containment goal separate from any activation contingency:
 
-#nr-table(
+#nr-table-wide(
   columns: (2fr, 4fr),
   [*Containment Objective*], [*Example Mission Frame*],
   [*Physical isolation*], [The artifact is in a civilian's vehicle. Recover it before the civilian reaches their destination. Do not let them open the compartment.],
