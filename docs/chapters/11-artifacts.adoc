@@ -276,6 +276,128 @@ kept inert during transport and what triggers it inadvertently.
 > containment. Without them, field containment relies on improvised measures and
 > Wayfinder knowledge.
 
+[[containment-rituals]]
+=== Containment Rituals
+
+Containment rituals are not spellcasting talents. They are risky *Lore-led procedures* used to suppress an artifact, shield a target from occult bleed, or disperse a manifestation long enough to regain custody. Wayfinders most often lead them, but any agent with Lore may attempt one.
+
+* *Who can lead:* Any agent with *Lore 1+* may attempt a *Quiescence* or *Shielding* ritual. *Banishment* rituals, or any ritual aimed at a *Tier 3+* artifact or a fully manifest entity, require *Lore 3+* or active Wayfinder support.
+* *What rituals do not do:* A ritual rarely solves the whole case by itself. If the anchor, artifact, or ritual site remains uncontrolled, the threat can return when the pressure rises again.
+* *Pushing:* Ritual rolls may be pushed as normal. If the ritual targets an artifact or entity that is already active, manifest, or broadcasting, the ritual leader gains *+1 Corruption* when the roll resolves, even on success.
+
+==== Minimum Inputs
+
+[%header,cols="2,4"]
+|===
+| Input | Requirement
+
+| *Boundary*
+| Chalk, salt, copper wire, black cloth, lead foil, or whatever the artifact's Containment Profile specifically requires.
+
+| *Target or Anchor*
+| The artifact, contaminated carrier, ritual site, or identified occult origin point must be present, physically reachable, or precisely fixed in the scene.
+
+| *Key*
+| A true name, activation condition, containment phrase, symbol pattern, or other specific clue learned through play. Rituals are procedures, not guesses.
+
+| *Working Window*
+| *Quiescence:* 10 minutes. *Shielding* or *Banishment:* one full scene. Combat, vehicle movement, or panicked crowds count as hostile conditions, not valid quiet setup.
+|===
+
+If the team lacks proper boundary materials or the correct key, add *+1 Difficulty* for each missing element. A *Verdant Codex* or a Keep containment kit counts as proper ritual material support in the field.
+
+==== Ritual Types
+
+[%header,cols="2,1,2,4"]
+|===
+| Ritual Type | Base Diff | Default Time | On Success
+
+| *Quiescence*
+| 2
+| 10 minutes
+| Suppress an artifact's activation or emission for one scene or one transport leg. If the artifact uses a *Ritual Quiescence* Containment Profile, the rite is considered renewed for the next 24 hours.
+
+| *Shielding*
+| 2
+| One full scene
+| Seal a person, object, or small zone against passive broadcast, imprint, or occult bleed until the end of the current case phase or until the boundary is broken.
+
+| *Banishment / Dispersal*
+| 3
+| One full scene
+| Disperse a manifestation, collapse an active ritual site, or force an entity back to its anchor. If the anchor is immediately contained or removed, the effect holds; if not, the threat may return on the next clock advance or major disturbance.
+|===
+
+Apply these modifiers unless an artifact or bestiary entry gives a fixed ritual Difficulty:
+
+* *+1* if the target is Tier 3, actively emitting, or spreading across multiple people.
+* *+2* if the target is Tier 4, catastrophic, or imposing itself across multiple zones.
+* *+1* if the ritual is performed while moving, under attack, or amid public panic.
+* *−1* if the team has the exact containment profile, true name, or recovered ritual notes.
+* *−1* if the rite is performed in a properly prepared HQ vault, Occult Lab, or equivalent secured site.
+
+Each *successful containment ritual* advances the artifact's *Decay* by *+1*, if the target has a Decay track.
+
+==== Support Actions
+
+Before the final ritual roll, allies may either help normally or perform one of the following support actions. Each successful support action may only benefit the ritual once:
+
+[%header,cols="2,2,4"]
+|===
+| Support Action | Skill | Effect
+
+| *Identify the Key*
+| Investigate or Lore
+| Remove one missing-key penalty by confirming the true name, activation condition, or anchor logic.
+
+| *Build the Boundary*
+| Tech or Sleight of Hand
+| Gain *+1 die* on the ritual roll or ignore one improvised-material penalty.
+
+| *Hold the Line*
+| Command, Firearms, Force, or Sneak
+| The next interruption, hostile push, or panic effect does *not* automatically break the ritual setup.
+
+| *Stabilize the Subject*
+| Heal or Psychoanalyze
+| A contaminated carrier, witness, or panicked ally can remain inside the boundary. On failure, they flee, lash out, or collapse — the ritual cannot begin until the situation is controlled.
+|===
+
+In practice, this usually means *Wayfinder leads, Recovery secures the target, Keep controls the perimeter, and Stack improvises shielding or material support*.
+
+==== Failure and Backlash
+
+On failure, the ritual does not take hold. The DA chooses or rolls one backlash from the table below. On a *pushed failure*, apply *two different* backlash results.
+
+[%header,cols="1,4"]
+|===
+| d6 | Backlash
+
+| 1
+| *Corruption Surge.* The leader and everyone inside the boundary gain *+1 Corruption*.
+
+| 2
+| *Boundary Rupture.* Materials burn out, spill, or crack. The next ritual attempt in this scene is *+1 Difficulty* until the boundary is rebuilt.
+
+| 3
+| *Clock Advance / Activation Spike.* Advance the nearest case clock by 1, or trigger the target's emission immediately if no clock is running.
+
+| 4
+| *Psychic Recoil.* The ritual leader takes *1 Wits or Empathy damage* (DA chooses to fit the fiction).
+
+| 5
+| *Anchor Shift.* The target relocates, hides, or changes the visible trigger. The team must re-establish the key before trying again.
+
+| 6
+| *Hostile Backlash.* The entity lashes out, a bystander becomes contaminated, or electronics in Near range lose *1 Gear Bonus* permanently.
+|===
+
+==== Starter Rituals
+
+* *Field Quiescence Rite:* Re-wrap, re-phrase, or re-seal an artifact before transport. This is the default answer to a *Ritual Quiescence* Containment Profile and the usual way to renew a temporary seal after mishandling.
+* *Lead-and-Salt Shield:* Used on contaminated carriers, artifact-imprinted survivors, and occult broadcasts. This is the default rite for suppressing *Artifact Imprint* and similar lingering calls.
+* *Anchor Dispersal Circuit:* Used against manifestations such as *The Mire* or *The Listening*. It does not destroy them permanently unless the anchor is simultaneously removed, isolated, or neutralized.
+
 ---
 
 === One-of-a-Kind vs. Replicable Artifacts

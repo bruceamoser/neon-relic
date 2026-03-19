@@ -113,7 +113,7 @@ The clock can be *slowed* (the next tick is delayed) or *held* (one stage does n
 
 The clock *cannot typically be reversed* — once a stage is reached, its effects persist. However:
 
-* A successful *Wayfinder Division ritual* can reduce Stage 4 back to Stage 3 (the escalating corruption is pushed back).
+* A successful *containment ritual* can reduce Stage 4 back to Stage 3 (the escalating corruption is pushed back).
 * Eliminating the rival faction's active presence at a location may reduce Stage 3 back to Stage 2 for that location only (the faction was accelerating the threat independently).
 
 These require significant resources, time, and usually a Lore roll at Difficulty 3 or 4. They are not guaranteed.
@@ -160,7 +160,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 * DA guidance for building and calibrating Countdown clocks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
 * Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Wayfinder Division rituals: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions] (and Issue #15)
+* Containment rituals: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals]
 
 ---
 

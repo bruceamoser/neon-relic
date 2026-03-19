@@ -353,7 +353,7 @@ means. It can be dispersed by:
   (1) Removing the corrupting artifact at its core (Investigate Difficulty 3
       to locate it inside the zone, Lore Difficulty 2 to identify it
       as the anchor).
-  (2) A Containment Ritual (see Wayfinder Division abilities) performed
+  (2) A Containment Ritual (see xref:chapters/11-artifacts.adoc#containment-rituals[Containment Rituals]) performed
       by an agent with Lore 3+, taking one full scene.
   (3) Destroying the artifact at its core (Artifact Fracture; triggers
       a Corruption Cascade — everyone in the zone takes +3 Corruption).
@@ -446,7 +446,7 @@ used. It may use this information in the same or future scenes (DA's
 discretion).
 
 Intangible — The Listening cannot be harmed by physical attacks. It can
-only be targeted by a Containment Ritual or destroyed by removing all
+only be targeted by a Containment Ritual (see xref:chapters/11-artifacts.adoc#containment-rituals[Containment Rituals]) or destroyed by removing all
 corrupted surveillance equipment from its zone of origin and performing a
 Tech roll (Difficulty 3) to disrupt its signal network.
 ----
