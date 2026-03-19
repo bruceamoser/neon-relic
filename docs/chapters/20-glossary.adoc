@@ -76,6 +76,11 @@ A class-specific ability unique to one Division. Costs +1 Corruption to activate
 *Dying*::
 State when a Broken character has an active Death Check Critical Injury (result marked †) that has not yet been resolved. An untreated Dying character will die. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
+== E
+
+*Experience Points (XP)*::
+The game's only advancement currency. XP are awarded at the end of each Case File through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+
 == F
 
 *Fast Action*::
@@ -96,7 +101,7 @@ An action in combat that requires negligible effort: speaking a short sentence, 
 Black dice in the pool contributed by equipment. Each 1 rolled on a Gear die causes the item to degrade one step. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 
 *General Talent*::
-A talent available to any character regardless of Division, providing a mechanical exception or situational bonus. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
+A talent available to any character regardless of Division, providing a mechanical exception or situational bonus. General Talents are chosen at character creation in place of a Division Talent or purchased later for 6 XP. The canonical list lives in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 == H
 

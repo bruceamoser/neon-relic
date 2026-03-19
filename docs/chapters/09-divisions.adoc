@@ -5,9 +5,9 @@ In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Beca
 
 Within that Division, players select a *Department* background. At character creation, agents choose *three* starting talents:
 
-* *One Division Talent* — chosen from the Division's talent list — *or One General Talent* from the General Talents list.
-* *One Wing, Paradigm, or Department Talent* — chosen from the talent list of the specific Wing, Paradigm, or Department the agent belongs to.
-* *One Background Talent* — chosen from the Background Talents list.
+* *One Division Talent* — chosen from the Division's talent list in this chapter — *or one General Talent* from xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+* *One Wing, Paradigm, or Department Talent* — chosen from the talent list of the specific Wing, Paradigm, or Department the agent belongs to in this chapter.
+* *One Background Talent* — chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding directly into the game's risk-reward loop. Each talent list includes one *Healing* talent usable freely once per session.
 

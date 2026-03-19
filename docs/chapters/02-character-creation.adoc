@@ -111,13 +111,13 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 At creation, every agent selects *three* talents:
 
-* *One Division Talent* chosen from your Division's talent list (see the Advancement chapter). You may only choose from your own Division's list at creation. — *OR* — *One General Talent* chosen from the General Talents list (see the Advancement chapter). General Talents are available to every agent regardless of Division.
-* *One Wing, Paradigm, or Department Talent* chosen from your Wing, Paradigm, or Department's talent list (see the Advancement chapter). You may only choose from your own Wing, Paradigm, or Department list at creation.
-* *One Background Talent* chosen from the Background Talents list (see the Advancement chapter). Background Talents are available to every agent regardless of Division.
+* *One Division Talent* chosen from your Division's talent list in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]. You may only choose from your own Division's list at creation. — *OR* — *One General Talent* chosen from the General Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]. General Talents are available to every agent regardless of Division.
+* *One Wing, Paradigm, or Department Talent* chosen from your Wing, Paradigm, or Department's talent list in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]. You may only choose from your own Wing, Paradigm, or Department list at creation.
+* *One Background Talent* chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]. Background Talents are available to every agent regardless of Division.
 
 Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive — no activation cost.
 
-> *Talent Advancement:* Additional talents can be purchased during play using experience points. See the Advancement chapter.
+> *Talent Advancement:* Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 ---
 
@@ -239,9 +239,9 @@ After completing all steps, your sheet should record:
 | *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
 | *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
 | *Skills (13)* | Skill Points distributed per Age Group, 0–3 each
-| *Division Talent or General Talent* | One chosen from Division list or General Talents list (Advancement chapter)
-| *Wing, Paradigm, or Department Talent* | One chosen from sub-group talent list within Division (Advancement chapter)
-| *Background Talent* | One chosen from Background Talents list (Advancement chapter)
+| *Division Talent or General Talent* | One chosen from Divisions chapter or the General Talents list in Advancement
+| *Wing, Paradigm, or Department Talent* | One chosen from the sub-group talent list in Divisions
+| *Background Talent* | One chosen from the Background Talents list in Advancement
 | *Division Item* | Automatic per Division
 | *Starting Gear* | Division kit (department variant if applicable) ± optional items
 | *Corruption* | Starts at 0
