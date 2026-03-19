@@ -3,18 +3,26 @@
 
 The Covenant must constantly navigate the political and lethal threats posed by powerful rivals who view artifacts as weapons or commodities:
 
-== Majestic-12 (US Government)
+== The Vantablack Compact
+
+A discreet transnational conspiracy of fixers, collectors, intelligence cutouts, and black-market brokers who treat artifacts as leverage. The Compact prefers acquisition, quiet coercion, and deniable theft over open war. They are the Covenant's most flexible rival: the faction most likely to arrive first, buy access, bribe a witness, or disappear an object before anyone realizes a case has begun.
+
+Their campaign role is *covert competition*. Use the Compact when you want the agents pressured by professionals who can mirror Covenant tradecraft without matching Covenant ethics.
+
+== The Ember Accord
+
+A true-believer occult movement built around revelation, purification, and sacrificial faith. The Accord does not merely want artifacts as tools; its cells believe artifacts disclose sacred truths that must be activated, witnessed, and shared through ordeal. Individual cells can look like cult congregations, spiritual recovery groups, apocalyptic communes, or esoteric service networks.
+
+Their campaign role is *fanatical escalation*. Use the Ember Accord when the problem is not only possession of the artifact but an ideology that demands activation regardless of cost.
+
+== Majestic-12 (MJ-12)
 
 A heavily militarized branch of the American Department of Defense responsible for handling anomalous threats. Operating out of classified black sites, M-12 seeks to reverse-engineer artifacts into Cold War weaponry. They possess vast resources but view human life as expendable collateral.
+
+Their campaign role is *state power and containment-through-force*. Use MJ-12 when the threat is surveillance, black-bag extraction, official deniability, and overwhelming tactical response.
 
 == The Hellfire Consortium
 
 An elite, global network of corporate executives, politicians, and billionaires who utilize blood magic and ancient rituals for financial gain and political manipulation. They treat the occult as a tool for extreme capitalism, reflecting the "greed is good" ethos of the 1980s.
 
-== The Thule Remnants
-
-Extremist occultists and ideological zealots who survived the mid-20th century. Operating in absolute secrecy, they seek specific, world-ending "Artifacts of Doom" to rewrite historical outcomes and establish a new world order.
-
-== The Network
-
-A decentralized collective of early hackers, phreakers, and pirate radio broadcasters. Anarchistic in nature, they seek to expose the truth of the occult to the public — often inadvertently unleashing horrors they don't understand in the name of "information freedom."
+Their campaign role is *elite corruption and patronage*. Use the Consortium when the artifact is moving through luxury channels, shell companies, private estates, or buyers who think occult catastrophe is an acceptable line item.

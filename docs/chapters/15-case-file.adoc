@@ -143,7 +143,7 @@ Faster clocks create urgency but reduce investigation time. Slower clocks allow 
 
 === Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
 
-*Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. The Compact has a team on the way.
+*Premise:* A Tier 1 artifact (the "Meridian Mirror") has surfaced in the penthouse of a decommissioned hotel scheduled for demolition. A journalist is already inside, investigating a cold-case disappearance. *The Vantablack Compact* has a team on the way.
 
 [%header,cols="^1,1,2,3"]
 |===

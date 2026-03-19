@@ -124,9 +124,9 @@ They want to delay, contain, or eliminate you before word reaches the Covenant.
 
 ---
 
-=== MJ-12 Strike Agent
+=== Majestic-12 (MJ-12) Strike Agent
 
-[*Human / MJ-12 / Threat: High*]
+[*Human / Majestic-12 (MJ-12) / Threat: High*]
 
 ----
 Attributes: STR 5 | AGI 4 | WIT 3 | EMP 2

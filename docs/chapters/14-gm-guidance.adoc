@@ -66,7 +66,7 @@ Every Case File (mission) is built on five elements. You don't need all five ful
 | *Location* | Where is this happening? | One specific place — a town, a building, a neighborhood. Not a region. One petrol station on a rural motorway. One hospital. One concert venue. The 1980s setting should feel tactile and era-specific — wherever your campaign is based, the location must have a physical reality your players can picture.
 | *Artifact* | What is the sourcebook item? | The thing that caused events to spiral. Every case has one artifact. Define its *Tier* (1–4), its *apparent property* (what it seems to do), and its *real effect* (what it actually does to the world around it).
 | *Threat* | What is the immediate danger? | The presenting problem: the entity, the cultist cell, the MJ-12 investigation, the cover-up. This is what the Covenant is responding to.
-| *Rival Faction* | Who else wants the artifact? | Even low-stakes cases should have a second party. The Compact, a private collector, a true believer. Rival factions create competing agendas and prevent simple extraction.
+| *Rival Faction* | Who else wants the artifact? | Even low-stakes cases should have a second party. The Vantablack Compact, MJ-12, the Hellfire Consortium, or a true-believer group such as the Ember Accord. Rival factions create competing agendas and prevent simple extraction.
 | *Complication* | What makes it personal? | One element that connects to a PC's Dark Secret or Division. If the complication never lands, the case is professional. If it lands, it's personal. Build for personal.
 |===
 
