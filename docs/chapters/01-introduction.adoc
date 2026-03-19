@@ -5,18 +5,22 @@
 
 The game uses the *Year Zero Engine (YZE)* dice-pool variant -- the same framework behind _Vaesen_, _Mutant: Year Zero_, _Forbidden Lands_, and the _Alien RPG_. If you have played any of those, the core dice mechanics will feel familiar. What makes Neon Relic different is its *Corruption* system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
 
+Neon Relic's default protagonists are *competent but vulnerable containment specialists*. They are trained, resourced, and trusted enough to enter dangerous situations on the Covenant's behalf, but they are never powerful enough to dominate those situations safely. The intended fantasy is *solve and survive under pressure* -- not superheroic paranormal mastery.
+
 == What This Game Is
 
 * *Episodic investigation.* Each session follows a structured *Case File* -- a "artifact-of-the-week" mystery driven by artifact recovery, faction interference, and occult threats.
 * *Base management between missions.* The team maintains a *Headquarters* -- a Covenant facility they upgrade, staff, and defend over the course of a campaign.
 * *Psychological attrition.* The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
 * *Analog procedural thriller.* No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
+* *Professional tradecraft under cost.* Agents have real tools, protocols, and institutional support, but those tools create access, leverage, and temporary control -- not effortless victories.
 
 == What This Game Is Not
 
 * Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
 * Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
 * Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions, surviving trauma, and confronting your Dark Secret.
+* Not a game where Division gear or Talents replace investigation. The Covenant equips you to enter the problem, not to bypass it.
 
 ---
 

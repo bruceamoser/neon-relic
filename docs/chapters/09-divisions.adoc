@@ -1,7 +1,7 @@
 [#chapter-divisions]
 = Covenant Divisions
 
-In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL).
+In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a *Division* (their core class) which dictates their starting attributes, skills, and Clearance Level (CL). A Division marks *expertise and responsibility*, not a higher power tier than the danger facing the cell.
 
 Within that Division, players select a *Department* background. At character creation, agents choose *three* starting talents:
 
@@ -10,6 +10,8 @@ Within that Division, players select a *Department* background. At character cre
 * *One Background Talent* — chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding directly into the game's risk-reward loop. Each talent list includes one *Healing* talent usable freely once per session.
+
+Unless a Talent explicitly says otherwise, read these abilities as *scene-shaping leverage*, not complete scene resolution. They should reveal a lead, buy time, create access, or improve odds under pressure rather than trivialize artifacts, rivals, or core investigation procedures.
 
 == Division 1: The Wayfinder
 
@@ -38,7 +40,7 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 * Automatically preserves documents placed within its pages
 * Stores large scrolls without damage
 * Faintly glows near ancient magic
-* Contains a living map lining that slowly reveals artifact locations
+* Contains a living map lining that slowly reveals *suspected* artifact correlations and previously researched sites
 
 === Wayfinder Wings
 
@@ -66,8 +68,8 @@ _Research personnel do not retrieve artifacts._ Once an artifact's existence and
 |===
 | Talent | Cost | Effect
 
-| *Pattern Recognition* | +1 Corruption | When examining a document, site, or artifact for the first time, instantly identify one hidden connection to a previously catalogued case — the DA must reveal the link.
-| *Deep Archive Access* | +1 Corruption | Spend an action consulting restricted Covenant records. Gain +3 bonus dice on your next Lore or Investigate roll this scene.
+| *Pattern Recognition* | +1 Corruption | When examining a document, site, or artifact for the first time, identify one plausible connection to a previously catalogued case — the DA must reveal a useful lead, not the entire answer.
+| *Deep Archive Access* | +1 Corruption | Spend an action consulting restricted Covenant records. Gain +2 bonus dice on your next Lore or Investigate roll this scene.
 | *Methodical Review* _(Healing)_ | — | Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll.
 |===
 
@@ -106,7 +108,7 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 |===
 | Talent | Cost | Effect
 
-| *The Antiquarian's Eye* | +1 Corruption | Instantly identify an artifact's primary activation trigger and base effect without a Lore roll.
+| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's likely activation trigger or its likely base effect without a Lore roll.
 | *Ghost in the Machine* | +1 Corruption | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
 | *The Hunch* | +1 Corruption | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
 | *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
@@ -147,7 +149,7 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 * Warns when nearby artifacts become unstable
 * Allows temporary sealing of cursed items
 * Contains a small dimensional containment compartment
-* Produces useful tools on demand (rope, chalk, spikes, vials, etc.)
+* Keeps a small selection of ordinary field tools immediately accessible (rope, chalk, spikes, vials, etc.)
 * Enchantment of Warding obscures any magical object placed inside from detection
 
 === Recovery Paradigms
@@ -173,8 +175,8 @@ Former intelligence or special forces. Trained in infiltration, extraction, and 
 |===
 | Talent | Cost | Effect
 
-| *Dead Drop Protocol* | +1 Corruption | Establish an instant covert information exchange with any NPC contact. Gain one critical piece of intelligence from the DA without a roll.
-| *Exfiltration Specialist* | +1 Corruption | When retreating or extracting under fire, you and all allies within Short range gain +2 bonus dice to their next Agility roll this round.
+| *Dead Drop Protocol* | +1 Corruption | Establish an instant covert information exchange with any NPC contact. Gain one actionable piece of intelligence from the DA without a roll.
+| *Exfiltration Specialist* | +1 Corruption | When retreating or extracting under fire, you and all allies within Short range gain +1 bonus die to their next Agility roll this round.
 | *Spycraft Discipline* _(Healing)_ | — | Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption.
 |===
 
@@ -197,7 +199,7 @@ Brute-force specialist. Comfortable in direct violent confrontation above all el
 |===
 | Talent | Cost | Effect
 
-| *Wrecking Ball* | +1 Corruption | When attacking an inanimate object or structure (door, wall, barricade, vehicle), automatically succeed on the Force roll and inflict maximum damage.
+| *Wrecking Ball* | +1 Corruption | When attacking an inanimate object or structure (door, wall, barricade, vehicle), gain +3 bonus dice to the Force roll and inflict +2 damage on a success.
 | *Stand Your Ground* | +1 Corruption | Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating.
 | *Blunt Trauma Recovery* _(Healing)_ | — | Once per session, after winning a physical confrontation through brute force, heal 1 Corruption.
 |===
@@ -221,8 +223,8 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 |===
 | Talent | Cost | Effect
 
-| *Ghost Entry* | +1 Corruption | Bypass a single locked door, security system, or physical barrier without a roll. Leave no trace of entry.
-| *The Long Con* | +1 Corruption | After at least one scene spent building rapport with an NPC, automatically succeed on a Manipulate roll to extract one specific piece of information or gain one specific favor.
+| *Ghost Entry* | +1 Corruption | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, gain +3 bonus dice instead. Leave no trace of entry.
+| *The Long Con* | +1 Corruption | After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor.
 | *Clean Getaway* _(Healing)_ | — | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption.
 |===
 
@@ -262,7 +264,7 @@ Members of the Keep are entrusted with the stewardship of the Covenant's most se
 
 All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenant's vaults. The Bracer symbolizes that the Keeper is bound to guard what others must never wield. It provides the following benefits:
 
-* Suppresses artifact magic in close proximity
+* Dampens artifact emissions in close proximity long enough for controlled handling
 * Warns the wearer if containment fails
 * Allows safe handling of cursed objects
 * Absorbs Corruption (soaks 1 Corruption per session)
