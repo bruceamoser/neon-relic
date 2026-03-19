@@ -32,6 +32,7 @@ DP is spent immediately during downtime (Phase 8) or banked for future Case File
 
 ---
 
+[[hq-upgrade-tree]]
 == HQ Upgrade Tree
 
 Upgrades are organized into three tiers. Higher-tier upgrades require specific lower-tier facilities to be built first.
@@ -323,13 +324,13 @@ Standing threshold is met.
 |===
 | Facility | DP Cost | Min. Standing
 
-| *Microfiche Archive* (Tier 2)          | 3 DP | 5
-| *Occult Laboratory* (Tier 2)           | 4 DP | 5
-| *Faraday Cage* (Tier 2)               | 3 DP | 5
-| *Field Intel Network* (Tier 3)         | 5 DP | 10
+| *Microfiche Archive* (Tier 2)           | 3 DP | 5
+| *Occult Laboratory* (Tier 2)            | 3 DP | 5
+| *Faraday Cage* (Tier 2)                 | 4 DP | 5
+| *Field Intelligence Network* (Tier 3)   | 5 DP | 10
 | *Corruption Dampening Vault* (Tier 3)   | 6 DP | 10
-| *Safe House Network* (Tier 3)          | 4 DP | 15
-| *Covenant Armorer* (Tier 3)            | 5 DP | 10
+| *Safe House Network* (Tier 3)           | 6 DP | 15
+| *Covenant Armorer* (Tier 3)             | 5 DP | 10
 |===
 
 > **Design Note:** Standing gates exist because Tier 2 and 3 facilities represent

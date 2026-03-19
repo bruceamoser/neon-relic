@@ -308,8 +308,8 @@ For quick reference when building encounters:
 == Cross-References
 
 * Fear ratings and check triggers: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Faction affiliations and politics: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions] _(Issue #14)_
-* Artifacts and what spawns Constructs: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts] _(Issue #9 origin)_
+* Faction affiliations and politics: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
+* Artifacts and what spawns Constructs: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
 * Corruption gain from supernatural sources: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
 
 ---

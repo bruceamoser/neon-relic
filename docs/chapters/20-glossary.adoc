@@ -30,7 +30,7 @@ State when any Attribute reaches 0. The character is incapacitated and rolls on 
 == C
 
 *Case File*::
-A structured mystery/investigation for the team to complete. The standard episodic play format, divided into phases: Briefing, Travel, Investigation, Confrontation, and Resolution. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+A structured mystery/investigation for the team to complete. The standard episodic play format, divided into eight phases: Prologue, Invitation, Preparation & Equipping, Journey, Arrival, Places, Confrontation, and Aftermath. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 *Clearance Level (CL)*::
 Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
@@ -111,6 +111,9 @@ A talent available to any character regardless of Division, providing a mechanic
 *Headquarters (HQ)*::
 The Covenant facility serving as the team's base of operations between Case Files. Provides medical care, equipment requisition, research facilities, and downtime activities. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 
+*Development Points (DP)*::
+The shared resource the cell earns during Aftermath and spends on Headquarters facilities, personnel, and infrastructure upgrades. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
+
 == I
 
 *Insight*::
@@ -160,15 +163,15 @@ The ancient secret society the player characters serve. Discovers, recovers, and
 == V
 
 *Verdant Codex*::
-Wayfinder Division Item. An enchanted field journal that secures memory, decodes language, maps artifact locations, and preserves documents. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+Wayfinder Division Item. An enchanted field journal that secures memory, assists with language and symbol work, highlights likely historical correlations, and preserves documents. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
 *Verdant Satchel*::
-Recovery Division Item. A specially enchanted field bag that suppresses artifact aura, seals cursed items, warns of instability, and produces basic tools on demand. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+Recovery Division Item. A specially enchanted field bag that masks minor artifact signatures, stabilizes transport, warns of instability, and keeps basic field tools ready. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
 == W
 
 *Warden's Bracer*::
-Keep Division Item. Suppresses artifact magic, warns of containment failure, enables safe handling of cursed objects, absorbs 1 Corruption per session, and grants +1 Armor Rating. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+Keep Division Item. Dampens nearby emissions during handling, warns of containment failure, enables safer handling of cursed objects, absorbs 1 Corruption per session, and grants +1 Armor Rating. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
 == Z
 
