@@ -17,9 +17,9 @@ Every NPC who is not immediately cooperative has a *Disposition* — a state des
 
 | 5 | *Open* | The NPC wants to help. They volunteer information. No roll needed for basic cooperation.
 | 4 | *Cautious* | The NPC is willing to talk but holds back. They answer simple questions but hedge on anything sensitive.
-| 3 | *Guarded* | The NPC is resistant. They answer only what they must. Social rolls are Difficulty 2.
+| 3 | *Guarded* | The NPC is resistant. They answer direct, low-risk questions, but social rolls on sensitive subjects are Difficulty 2.
 | 2 | *Hostile* | The NPC is actively uncooperative. They may lie, deflect, or attempt to end the scene. Social rolls are Difficulty 3.
-| 1 | *Closed* | The NPC will not engage. They may call for help, alert others, or physically leave. Social rolls are Difficulty 4.
+| 1 | *Closed* | The NPC will not engage. They may call for help, alert others, or physically leave. Raise them to 2 before social rolls are possible.
 |===
 
 === Starting Disposition
@@ -41,7 +41,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 
 === Actions that Shift Disposition Up (+1)
 
-* A successful Psychoanalyze roll (treating or reading the NPC)
+* A successful Psychoanalyze roll used to calm, stabilize, or reassure the NPC
 * A successful Manipulate roll that makes the NPC feel their interests are served
 * The agent voluntarily reveals information that helps the NPC (demonstrates good faith)
 * The NPC is shown physical evidence that confirms what they suspected
@@ -57,7 +57,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 
 === Disposition Thresholds
 
-* *Disposition 3 or higher:* The NPC will answer direct questions truthfully (though not necessarily fully). No roll required for general cooperation.
+* *Disposition 3 or higher:* The NPC will answer direct, low-risk questions truthfully (though not necessarily fully). No roll required for general cooperation. Sensitive asks, incriminating admissions, or requests against self-interest still call for a roll.
 * *Disposition 2:* The NPC requires a successful social roll to answer even basic questions. They will lie by default.
 * *Disposition 1:* The NPC is done with the scene. They must be brought back to 2 before any social rolls are possible. Physical containment is required for continued interrogation.
 
@@ -65,7 +65,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 
 == Social Rolls in Practice
 
-Social rolls use the normal dice pool (Attribute + Skill), difficulty set by current Disposition. You are always rolling against the NPC's *current state*, not their willpower or an abstract resistance.
+Social rolls use the normal dice pool (Attribute + Skill). When a roll is required to gain cooperation or extract something sensitive, the baseline Difficulty is set by current Disposition unless a skill entry says otherwise. You are always rolling against the NPC's *current state*, not their willpower or an abstract resistance.
 
 === Manipulate (Empathy)
 
@@ -89,6 +89,7 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 
 *Reading:* You are trying to understand the NPC's underlying state — what they need, what they fear, what they're not saying.
 
+* Difficulty: Set by the DA based on how defended or emotionally opaque the NPC is, usually 1–3. Current Disposition is a guide, not a hard rule.
 * On success: DA must reveal one true thing about this NPC's psychological state, motivation, or deception. Disposition is not directly shifted, but the information can be used to inform subsequent Manipulate rolls (advantage: +1 die on the next Manipulate against this NPC if the revealed information is used).
 
 *Stabilizing:* You are treating an NPC's fear, trauma, or distress to make them more communicative.
@@ -143,7 +144,7 @@ See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption,
 
 *Starting Disposition:* 2 (Hostile). He's in zip ties. He's praying under his breath. He won't look at the agents directly.
 
-*Round 1:* Agent Petra Vasquez attempts Psychoanalyze (Read) — she wants to understand what Elias actually believes before making any demands. The DA sets Difficulty 2 (his Disposition).
+*Round 1:* Agent Petra Vasquez attempts Psychoanalyze (Read) — she wants to understand what Elias actually believes before making any demands. The DA sets Difficulty 2: Elias is hostile, but reading him is easier than persuading him or getting him to volunteer anything.
 
 Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 4, 3, 2, 1 — one success.
 
@@ -151,15 +152,15 @@ Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 4, 3, 2, 1 — one s
 
 *Round 2:* Using that information, Agent Marcus Osei attempts Manipulate. He doesn't argue about the artifact being dangerous — he asks about the sister. Where is she? Is she still safe? The agents can make sure she stays that way.
 
-Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 2. Rolls: 6, 6, 5, 3, 2, 1, 1 — two successes (one extra = 1 Stunt Point).
+Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 3. Rolls: 6, 6, 6, 6, 2, 1, 1 — four successes (one extra = 1 Stunt Point).
 
 *Success:* Elias answers the question about the sister (she's in Providence, she's fine). Disposition shifts to 3. 
 
 *Stunt Point spent:* Bought Silence — Elias will not tell the Accord that the agents know about his sister.
 
-*Round 3:* Disposition is now 3 (Guarded). Direct questions are possible. The agents ask who gave Elias the artifact to begin with.
+*Round 3:* Disposition is now 3 (Guarded). Direct questions are possible, but naming a supplier would still put Elias at risk. The DA calls for another Manipulate roll.
 
-Another Manipulate roll at Difficulty 2 (they're now at 3). Marcus rolls: 6, 5, 4, 4, 2, 2, 1 — one success.
+Another Manipulate roll at Difficulty 2 (Disposition 3, sensitive ask). Marcus rolls: 6, 6, 5, 4, 2, 2, 1 — two successes.
 
 *Elias gives the name*: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
 

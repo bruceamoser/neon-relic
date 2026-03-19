@@ -114,6 +114,8 @@ The DA calls for a Fear check when a character directly confronts a source of ge
 
 === The Fear Check Procedure
 
+Fear checks are a *special binary roll*. They do *not* use the standard Difficulty system from xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+
 . The DA calls for a Fear check when a character directly confronts supernatural horror.
 . Roll dice equal to your current *Wits* attribute (no skill modifier — Fear is instinctual, not trained).
 . *One or more 6s = success.* You hold it together.

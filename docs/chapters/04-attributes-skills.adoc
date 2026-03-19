@@ -54,7 +54,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 === Stunt Economy
 
 * *1 extra 6 = 1 Stunt Point.*
-* You must succeed first (at least one 6 to meet the Difficulty), then extras are stunt points.
+* You must succeed first (roll successes equal to or greater than the Difficulty), then extras are stunt points.
 * Stunt Points must be spent immediately — they do not carry between rolls.
 * You may split stunt points across multiple effects if both are available on the same skill.
 * On a *pushed roll*, stunt points still apply from the new result.
@@ -222,7 +222,7 @@ The following stunts may be purchased on *any* successful skill roll:
 
 | 1 | *Pressure Point* | You've identified something this person fears or desperately needs. The DA must reveal one personal vulnerability, driving motivation, or exploitable need.
 | 1 | *Decompress* | The person you're treating recovers 1 additional Wits or Empathy point beyond the normal healing (max to their normal maximum).
-| 2 | *Full Read* | You have comprehensively understood this person's psychological state. For the rest of the scene, you may treat all Psychoanalyze rolls against them as Difficulty 0 — you know them now.
+| 2 | *Full Read* | You have comprehensively understood this person's psychological state. For the rest of the scene, all Psychoanalyze rolls against them gain +2 bonus dice and are treated as Difficulty 1 — you know them now.
 |===
 
 ---
