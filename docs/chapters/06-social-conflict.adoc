@@ -61,11 +61,28 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 * *Disposition 2:* The NPC requires a successful social roll to answer even basic questions. They will lie by default.
 * *Disposition 1:* The NPC is done with the scene. They must be brought back to 2 before any social rolls are possible. Physical containment is required for continued interrogation.
 
+=== What Counts as a Roll-Free Question?
+
+At *Disposition 3 or higher*, use the following rule of thumb:
+
+* *Direct, low-risk question:* No roll. The NPC answers truthfully, though briefly or with omissions. Example: "Where were you when it happened?"
+* *Sensitive disclosure:* Roll required. The answer would expose fear, shame, a relationship, or knowledge the NPC would rather keep contained. Example: "Who else was there with you?"
+* *Against self-interest:* Roll required. The answer would endanger the NPC, implicate them, expose an ally, or materially help the agents at the NPC's expense. Example: "Give me the supplier's name."
+
+The point of raising Disposition is to move the scene from *access* problems to *leverage* problems. Once an NPC is talking, stop rolling for every ordinary question.
+
 ---
 
 == Social Rolls in Practice
 
 Social rolls use the normal dice pool (Attribute + Skill). When a roll is required to gain cooperation or extract something sensitive, the baseline Difficulty is set by current Disposition unless a skill entry says otherwise. You are always rolling against the NPC's *current state*, not their willpower or an abstract resistance.
+
+Use these defaults when a roll is actually required:
+
+* *Disposition 4 or 5:* Difficulty 1 for sensitive asks.
+* *Disposition 3:* Difficulty 2 for sensitive asks.
+* *Disposition 2:* Difficulty 3 for almost any ask.
+* *Disposition 1:* No social roll possible until the NPC is brought back into the scene.
 
 === Manipulate (Empathy)
 
@@ -79,7 +96,8 @@ Used to deceive, persuade, bribe, leverage, or appeal to self-interest. Manipula
 
 Used to assert authority, direct behavior under pressure, or coordinate. Command does not persuade — it *compels through confidence and force of presence*. It works when the NPC is uncertain what to do, when the agents represent a legitimate authority, or when the situation is dangerous enough that someone taking charge feels like relief.
 
-* *Command does not work at Disposition 2 or lower.* An NPC who is already hostile cannot be commanded — you have no authority in their frame.
+* *Command normally does not create cooperation at Disposition 2.* At *Disposition 2*, it only works for immediate emergency direction when the agents clearly have situational authority: "Get down," "Move away from the door," "Stay behind me." It does not extract information or create trust.
+* *Command does not work at Disposition 1.* An NPC who is fully closed will not accept authority from the agents at all.
 * *On success:* NPC complies fully for the immediate scene. No Disposition shift.
 * *On failure:* NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the DA's discretion.
 
@@ -103,8 +121,10 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 
 NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The DA may call for:
 
-* *Opposed Psychoanalyze roll:* DA rolls on behalf of the NPC. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
+* *Opposed Psychoanalyze roll:* DA rolls on behalf of the NPC. Use this when the NPC is actively reading the agents rather than merely resisting. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
 * *Lie detection:* The DA may roll NPC Wits (no skill) against an agent's Manipulate roll. On NPC success, the deception is detected and Disposition shifts −1 immediately.
+
+If the DA calls for active social defense during a Manipulate attempt, treat it as a *combined test*: the agent must meet the Disposition-based Difficulty *and* beat the NPC's opposing roll.
 
 These are at DA discretion, not every NPC has this capability. Social defense is for NPCs with relevant training: intelligence operatives, therapists, con artists, experienced detectives.
 
@@ -150,21 +170,21 @@ Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 4, 3, 2, 1 — one s
 
 *DA reveals:* Elias genuinely believes the artifact protected his sister during a cancer diagnosis two years ago. He is not performing faith. He is terrified that if it leaves his possession, she will relapse. He is not lying about any of this.
 
-*Round 2:* Using that information, Agent Marcus Osei attempts Manipulate. He doesn't argue about the artifact being dangerous — he asks about the sister. Where is she? Is she still safe? The agents can make sure she stays that way.
+*Round 2:* Using that information, Petra shifts from reading to *Psychoanalyze (Stabilizing)*. She stops pressing Elias about doctrine and instead speaks to the real fear: his sister is sick, he thinks the artifact kept her alive, and now he is trapped in a van with strangers who want to take it away.
 
-Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 3. Rolls: 6, 6, 6, 6, 2, 1, 1 — four successes (one extra = 1 Stunt Point).
+Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. The DA sets Difficulty 2: Elias is distressed and hostile, but Petra is addressing the real wound. Rolls: 6, 6, 4, 2, 1 — two successes.
 
-*Success:* Elias answers the question about the sister (she's in Providence, she's fine). Disposition shifts to 3. 
+*Success:* Elias calms enough to talk. Disposition shifts from 2 to 4. He stops reciting under his breath and finally meets Petra's eyes.
 
-*Stunt Point spent:* Bought Silence — Elias will not tell the Accord that the agents know about his sister.
+*Round 3:* Elias is now at Disposition 4 (Cautious). Marcus asks a *direct, low-risk question*: "Where is your sister right now?" No roll is required. Elias answers truthfully: Providence. She's alive. She's with an aunt.
 
-*Round 3:* Disposition is now 3 (Guarded). Direct questions are possible, but naming a supplier would still put Elias at risk. The DA calls for another Manipulate roll.
+*Round 4:* Marcus now pushes for something *against Elias's interests*: the name of the fence who moved the relic. That would expose Elias to retaliation, so the DA calls for a Manipulate roll.
 
-Another Manipulate roll at Difficulty 2 (Disposition 3, sensitive ask). Marcus rolls: 6, 6, 5, 4, 2, 2, 1 — two successes.
+Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 1 (Disposition 4, sensitive ask). Rolls: 6, 6, 5, 4, 2, 2, 1 — two successes.
 
-*Elias gives the name*: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
+*Success:* Elias gives the name: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
 
-*Outcome:* The scene ends having extracted the key information. Disposition is still 3 — Elias is not exactly cooperative, but he's no longer hostile. The agents have a lead and a lever (the sister) if they need him again.
+*Outcome:* The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target.
 
 ---
 
