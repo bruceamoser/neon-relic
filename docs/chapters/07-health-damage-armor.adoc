@@ -223,14 +223,14 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 | 46 | *Catatonic Episode* † | Death check (mind, not body — failure = permanent catatonia, character retirement). Surviving: Wits and Empathy each reduced by 1. +2 Corruption immediately. | Intensive Psychoanalyze (Difficulty 4, Keep facility) over 2 downtime phases to stabilize.
 | 51 | *Obsessive Documentation* | Character must document everything (Insight: *+2 dice on Investigate* when reviewing notes from current mission). Compulsion: spends all available time writing; −1 die on social rolls (distracted). | Psychoanalyze campaign (3 downtime phases) to reduce compulsion; Insight remains.
 | 52 | *Broken Empathy* | Permanently −2 Empathy. All social skills lose 2 dice. | Cannot be healed — the connection is severed.
-| 53 | *Artifact Imprint* | +3 Corruption (additional). Character begins hearing the artifact that Broke them. DA may use this as a plot hook: the artifact calls them back. | Containment ritual (Issue #15) can suppress the call but not eliminate the imprint.
+| 53 | *Artifact Imprint* | +3 Corruption (additional). Character begins hearing the artifact that Broke them. DA may use this as a plot hook: the artifact calls them back. | Shielding ritual (see xref:chapters/11-artifacts.adoc#containment-rituals[Containment Rituals]) can suppress the call but not eliminate the imprint.
 | 54 | *Veil Burn* | +2 Corruption. Wits permanently −1. Insight: *+1 die on all artifact detection rolls* (you can feel them now). | Cannot be healed — the Veil has scorched your perception permanently.
 | 55 | *Shattered Will* † | Death check (mind). Surviving: Wits and Empathy max permanently reduced by 1 each. +2 Corruption. Cannot push rolls for remainder of campaign arc until psychological breakthrough (DA milestone). | Keep Psychoanalyze program (4 downtime phases, Difficulty 4).
 | 56 | *Cosmic Revelation* † | Death check (mind). Surviving: character learns something true and terrible about the Covenant's mission or the nature of artifacts. +3 Corruption, −2 Empathy permanently. Insight: *+2 dice on all Lore-type rolls forever* (Wayfinder skill equivalent). DA defines the revelation — it should reshape how the character sees the world. | Cannot be unlearned. Roleplay is mandatory.
 | 61 | *Memory Dissolution* | Permanently −1 Wits. Character loses one specific skill memory (DA chooses a skill at rank 1–2; it drops to 0). | Cannot recover lost skill without retraining (requires downtime advancement, Issue #2).
 | 62 | *Identity Crisis* | Character's Division Allegiance wavers. For 1 campaign arc, they cannot use their Division Talent. | Major roleplay scene with Covenant superior + Psychoanalyze (Difficulty 3).
 | 63 | *Veil Madness* | +4 Corruption immediately. Roll on this table *again* (ignore result 63 on reroll). | As per second roll result.
-| 64 | *Prophetic Fugue* † | Death check (mind). Surviving: +3 Corruption. Character enters a trance broadcasting the Covenant's location to hostile artifact entities until a Wayfinder performs a Shielding ritual (Issue #15). | Ritual seals the broadcast; Corruption remains.
+| 64 | *Prophetic Fugue* † | Death check (mind). Surviving: +3 Corruption. Character enters a trance broadcasting the Covenant's location to hostile artifact entities until a Shielding ritual is performed. | Ritual seals the broadcast; Corruption remains.
 | 65 | *Ego Death* † | Death check (mind). Surviving: character personality fundamentally alters. Player rewrites one Drive and one aspect of their biography. +3 Corruption. Insight: *+2 dice on all Empathy rolls* (dissolution breeds radical compassion — or fearlessness). | Cannot be undone. Roleplay the new self.
 | 66 | *Unraveling* † | Automatic mind death check (no bonus). Surviving: +4 Corruption, −1 to every Attribute permanently, character retires at end of current mission (they cannot continue as an operative). Final scene before retirement should be played. | Retirement is farewell — play it well.
 |===
@@ -243,7 +243,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 * *Healing in the field:* First Aid Kit, Heal skill, Psychoanalyze skill — see xref:chapters/08-corruption-fear-healing.adoc#_healing_corruption[Healing Corruption].
 * *Downtime recovery:* Between-mission phases and Keep medical access — see xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 * *Death and dying procedure:* Full death check rules with autopsy and Covenant notification — see _(Issue #13)_.
-* *Artifact Imprint and Veil Burn:* Interaction with artifact containment rituals — see xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts] _(Issue #9)_.
+* *Artifact Imprint and Veil Burn:* Interaction with artifact containment rituals — see xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals].
 
 == Armor Mechanics
 

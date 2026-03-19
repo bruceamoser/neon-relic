@@ -162,7 +162,7 @@ Supernatural entities in Neon Relic do not think the way humans do. Avoid playin
 | *Echoing Remnant* | Acts on memory, not will. Repeats actions associated with its final emotional state. An Echoing Remnant from a violent event will reenact something about that event — not attack intelligently. Agents who understand the echo can sometimes avoid it entirely.
 | *Shard Construct* | Single-directive: protect the artifact. No curiosity, no self-preservation beyond mission, no social engagement. Cannot be persuaded or manipulated. Can be outmaneuvered (if you aren't between the Construct and the artifact, it doesn't care about you).
 | *Bound Entity* | Has a will, has a history, has something it wants. Bound Entities can be communicated with through Lore and Psychoanalyze (not Manipulate — they see through human social mechanics). They respond to truth, to acknowledgment of what happened to them. They can be bargained with.
-| *Manifest Presence* | A high-tier supernatural intrusion: an entity that has begun to impose its logic on local reality. Does not fight — it *redefines the situation*. Agents trying to act normally in its presence find that normality is no longer available. These entities are solved through removing their anchor (the artifact) or performing a Wayfinder containment ritual, not fought.
+| *Manifest Presence* | A high-tier supernatural intrusion: an entity that has begun to impose its logic on local reality. Does not fight — it *redefines the situation*. Agents trying to act normally in its presence find that normality is no longer available. These entities are solved through removing their anchor (the artifact) or performing a containment ritual, not fought.
 |===
 
 ---
@@ -236,6 +236,16 @@ Containment missions still have escalating pressure. Use these tools to maintain
 * *The containment profile creates constraints.* If the artifact cannot be exposed to light, the agents must plan their extraction around darkness, covered transport, and power failures. Constraints are interesting problems, not punishment.
 
 * *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race with a clock, not a firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
+
+If ritual containment is a possible solution, seed *three discoverable facts* into the clue web before play begins:
+
+* *What forms the boundary* (salt, copper wire, lead foil, blackout cloth, a drawn sigil, etc.)
+* *What the key is* (true name, activation condition, phrase, symbol, or anchor logic)
+* *What must be physically contained afterward* (the anchor object, the carrier, the room, the recording equipment, the ritual site)
+
+Ritual scenes work best when the team *earns the procedure through investigation* and then executes it under pressure.
+
+Use xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals] for the actual field procedure.
 
 === Measuring Success in Containment Cases
 
