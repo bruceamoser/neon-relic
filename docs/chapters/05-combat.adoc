@@ -24,8 +24,6 @@ At the start of any hostile confrontation, each participant draws an *Initiative
 
 Initiative uses card draw only. Do not add initiative modifiers for posture, terrain, or gear. Those factors still matter through cover, surprise, action economy, and range penalties.
 
-> *Initiative Talents:* Some General Talents interact with initiative card draws. See xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills → General Talents].
-
 === Surprise and Ambush
 
 A *surprise* occurs when one side is unaware of the other at the moment combat begins.

@@ -1,6 +1,6 @@
----
-
 [#chapter-advancement]
+= Advancement, Talents, and Dark Secrets
+
 == Dark Secrets
 
 A *Dark Secret* is a specific fact from your character's past — something true, hidden, and consequential. It is not a personality flaw or a general backstory. It names something: an event, a decision, a relationship that *someone wants to remain buried*.
@@ -75,9 +75,9 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 |===
 
 ---
-= Advancement and General Talents
+== Advancement
 
-Experience Points (XP) are awarded at the end of each Case File through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
+Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each Case File through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
 [%header,cols="^1,5"]
 |===
@@ -90,7 +90,7 @@ Experience Points (XP) are awarded at the end of each Case File through a struct
 | 5 | Did you learn something new and significant about the supernatural threat or rival factions?
 |===
 
-== Spending XP
+=== Spending XP
 
 [%header,cols="3,1,2"]
 |===
@@ -145,7 +145,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 == General Talents
 
-General Talents are specialized abilities available to *any character*, providing mechanical exceptions or situational bonuses:
+This is the *canonical General Talents list* used at character creation and during XP advancement. General Talents use the same concise format as the rest of the manuscript's talent lists: talent name plus effect text, with tags only when mechanically relevant.
 
 [%header,cols="2,4"]
 |===
