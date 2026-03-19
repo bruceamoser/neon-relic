@@ -71,7 +71,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 
 == Step 4: Distribute Skill Points
 
-Distribute your *Skill Points* (determined by your Age Group in Step 3) across the twelve core skills. No single skill may exceed *3* at character creation.
+Distribute your *Skill Points* (determined by your Age Group in Step 3) across the thirteen core skills. No single skill may exceed *3* at character creation.
 
 [%header,cols="2,1,2,4"]
 |===
@@ -86,6 +86,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Investigate | WIT | 3 | Wayfinder, Keep (Stack)
 | Tech | WIT | 3 | Wayfinder, Keep (Stack)
 | Lore | WIT | 3 | Wayfinder, Keep
+| Heal | WIT | 3 | Keep
 | Manipulate | EMP | 3 | Wayfinder
 | Command | EMP | 3 | Keep
 | Psychoanalyze | EMP | 3 | Wayfinder, Keep
@@ -237,7 +238,7 @@ After completing all steps, your sheet should record:
 | *Clearance Level* | Division base CL + Age Group modifier (minimum 1)
 | *Age Group / Age* | Chosen in Step 3 (Young / Experienced / Senior)
 | *Attributes (STR / AGI / WIT / EMP)* | Attribute Points distributed per Age Group, 2–5 each
-| *Skills (12)* | Skill Points distributed per Age Group, 0–3 each
+| *Skills (13)* | Skill Points distributed per Age Group, 0–3 each
 | *Division Talent or General Talent* | One chosen from Division list or General Talents list (Advancement chapter)
 | *Wing, Paradigm, or Department Talent* | One chosen from sub-group talent list within Division (Advancement chapter)
 | *Background Talent* | One chosen from Background Talents list (Advancement chapter)
@@ -291,7 +292,7 @@ _(13 points spent: 4 + 4 + 3 + 2 = 13)_
 | Endure | 1 | Agency conditioning
 |===
 
-_(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 6 skills at 0.)_
+_(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 7 skills at 0.)_
 
 === Step 5: Starting Talents
 

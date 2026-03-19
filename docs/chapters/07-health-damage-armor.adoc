@@ -161,7 +161,7 @@ Roll when Broken by *Strength or Agility* damage.
 | 26 | *Severe Bruising* | −1 Strength maximum until healed (cannot be healed above 3). | Heal roll (Difficulty 2) + 1 downtime phase.
 | 31 | *Deep Laceration* | Bleeds 1 Strength per round until treated (First Aid, Difficulty 1). | Bandaging stops bleed; full recovery = 1 downtime.
 | 32 | *Fractured Arm* | Non-dominant arm: useless. Dominant arm: −2 dice STR. | Cast + 2 downtime phases.
-| 33 | *Broken Nose (Insight)* | *+1 die on Intimidate rolls forever* (you look dangerous now). | No mechanical healing needed. Defect: cosmetic disfiguration.
+| 33 | *Broken Nose (Insight)* | *+1 die on Command rolls made through threat or intimidation forever* (you look dangerous now). | No mechanical healing needed. Defect: cosmetic disfiguration.
 | 34 | *Shattered Kneecap* | Movement speed halved permanently (1 zone costs Slow Action). Surgery can restore. | Keep surgical facility + 2 downtime phases.
 | 35 | *Punctured Lung* | −2 dice on all STR and AGI rolls. Strenuous action triggers Endure roll (Difficulty 2) or collapse. | Heal roll (Difficulty 3) + 2 downtime phases.
 | 36 | *Blinding Strike* | One eye damaged: −1 die on all ranged attack and Investigate rolls permanently. Insight: *+1 die on Empathy rolls* (you understand fragility now). | Cannot be fully healed; monocle/patch is acquired (CL 1).

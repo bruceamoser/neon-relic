@@ -11,13 +11,13 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 |===
 | Item | Gear Bonus & Effect | Enc. | CL
 
-| *Heavy-Duty Maglite* | +1 to Investigate/Scout in the dark. Can act as blunt weapon (Damage 1). | ½ | 1
+| *Heavy-Duty Maglite* | +1 to Investigate in the dark. Can act as blunt weapon (Damage 1). | ½ | 1
 | *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | ½ | 1
 | *Polaroid SX-70 Camera* | +2 to Lore when studying a crime scene. Produces instant evidence. | 1 | 2
 | *Air Ion Counter* | +1 to Investigate. Bulky spirit detector measuring static drops. | 1 | 2
 | *Acoustic Coupler Modem* | +1 to Tech. Interface with remote mainframes via payphone. | 1 | 2
 | *P-SB7 Spirit Box Prototype* | +2 to Lore when deciphering entity motives. Sweeps radio frequencies. | 1 | 3
-| *Thermal / Infrared Camera* | +2 to Scout. Heavy early-80s tech. Spot invisible entities via cold spots. | 2 | 4
+| *Thermal / Infrared Camera* | +2 to Investigate when tracking heat signatures, cold spots, or invisible entities. Heavy early-80s tech. | 2 | 4
 |===
 
 == Standard Tools & Survival Gear
@@ -270,7 +270,7 @@ The *pursuing vehicle* wins by moving to or holding position 1–2.
 
 Each round of a chase, both drivers make a roll:
 
-* *Driving (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers.
+* *Tech (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers with vehicles under pressure.
 * *Evasion (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward.
 
 Both sides roll simultaneously. The side with more successes moves the Contact Track one position in their favor. Ties: no position change.
@@ -291,8 +291,8 @@ Declare before rolling. No cost unless noted.
 |===
 | Maneuver | Skill | Effect
 
-| *Ram* | Force (WIT) | Only available at Contact. Roll Force opposed by opponent's Driving. On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
-| *PIT Maneuver* | Driving (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
+| *Ram* | Force (WIT) | Only available at Contact. Roll Force opposed by opponent's Tech. On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
+| *PIT Maneuver* | Tech (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
 | *Gunfire from Vehicle* | Firearms (standard roll) | Available at Following or closer. −1 die on all shooting rolls from a moving vehicle unless the shooter has the *Stable Platform* talent. A passenger shooting from a moving car is at −1 die; a driver shooting is at −2 dice.
 | *Off-Road Break* | AGI Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
 | *Blending In* | WIT (Sneak) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
@@ -353,7 +353,7 @@ Broken). A **Broken** item cannot be used until repaired.
 
 === Repair Rules
 
-Repairing gear requires **time**, **parts**, and a **Craft** roll.
+Repairing gear requires **time**, **parts**, and a **Tech** roll.
 
 [[repair-roll]]
 ==== The Repair Roll
@@ -361,7 +361,7 @@ Repairing gear requires **time**, **parts**, and a **Craft** roll.
 [cols="1,3",frame=sides,grid=rows]
 |===
 | *Attribute* | Wits (WIT)
-| *Skill*     | Craft _(Stack signature skill)_
+| *Skill*     | Tech _(Stack signature skill)_
 | *Base Difficulty* | Varies by condition (see table below)
 | *Time Required* | Varies (see table below)
 | *Tools Required* | Basic toolkit (most repairs); specialized kit for electronics/artifacts
@@ -458,7 +458,7 @@ at reduced effectiveness and carry a higher risk of failure.
 
 ==== Crafting Improvised Items
 
-Roll **Craft** (WIT), using the difficulty from the table below. Requires at
+Roll **Tech** (WIT), using the difficulty from the table below. Requires at
 minimum a **Junk Die (d6)** as parts; step it down after crafting.
 
 Improvised items begin with a **d8 Gear Die** (never start at d10 or d12 —
@@ -466,7 +466,7 @@ they're held together with duct tape and prayer).
 
 [%header,cols="2,1,1,4"]
 |===
-| Improvised Item     | Craft Diff | Time | Notes
+| Improvised Item     | Tech Diff | Time | Notes
 
 | *Club / Makeshift Bludgeon* | 1 | 1 minute | Damage 1, Slow. No Gear Die — it's a pipe.
 | *Shiv / Field Knife*        | 1 | 5 minutes | Damage 1, Fast. Gear d8. Breaks on 1–2.
@@ -515,7 +515,7 @@ gives Stack agents mechanical advantages no other Division matches.
 |===
 | Advantage | Effect
 
-| *Craft Bonus*         | Stack agents add **+1 die** to all Craft rolls (repair and improvised item creation).
+| *Tech Bonus*          | Stack agents add **+1 die** to all Tech rolls made for repair and improvised item creation.
 | *Faster Repairs*      | Quick Repairs take 5 minutes instead of 15. Full Repairs take 2 hours instead of a full Shift.
 | *Parts Economy*       | Stack agents never step down a Junk Die on a successful repair — only failed repairs consume parts.
 | *Known Contacts*      | Once per case, a Stack agent can source **Hardware Components (d8)** without a Covenant requisition (a contact comes through).
