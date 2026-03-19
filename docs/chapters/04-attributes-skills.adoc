@@ -13,9 +13,9 @@ Characters are defined by *four core attributes*, representing their fundamental
 | *Empathy* | Raw charisma, social intuition, ability to read human behavior, and emotional resilience against psychological horror.
 |===
 
-== The Twelve Core Skills
+== The Thirteen Core Skills
 
-The twelve core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
+The thirteen core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
 
 [%header,cols="1,1,4"]
 |===
@@ -31,10 +31,11 @@ The twelve core skills are mapped to these four attributes, tailored to support 
 | Sleight of Hand | Picking locks, pocketing small artifacts, disarming mechanical traps.
 | Firearms | Utilizing period-accurate weaponry (.38 revolvers, pump-action shotguns).
 
-.3+| *Wits*
+.4+| *Wits*
 | Investigate | Searching crime scenes for anomalous evidence, analyzing forensic data.
 | Tech | Operating 1980s mainframes, hacking BBS networks, repairing analog equipment.
 | Lore | Decoding ancient occult texts, identifying mythological creatures and artifact origins.
+| Heal | Field medicine, triage, emergency stabilization, and treating physical injuries in the field or at base.
 
 .3+| *Empathy*
 | Manipulate | Bribing informants, deceiving rivals, leveraging secrets.

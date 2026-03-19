@@ -154,7 +154,7 @@ General Talents are specialized abilities available to *any character*, providin
 | *Street Medic* | Restore 2 physical Attribute points instead of 1 when successfully using Heal.
 | *Cathartic Release* _(Healing)_ | Once per session, dedicate a moment to breaking down, screaming, or venting. Heal 1 Corruption.
 | *Hair-Trigger* | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
-| *Paranormal Intuition* | When entering a room, roll Wits (Scout). On success, the DA must tell you if a supernatural entity has been here in the last 24 hours.
+| *Paranormal Intuition* | When entering a room, roll Wits (Investigate). On success, the DA must tell you if a supernatural entity has been here in the last 24 hours.
 | *Heavy Packer* | Carry items equal to twice your Strength without becoming encumbered.
 | *Skeptic's Shield* | Once per session, outright ignore a minor supernatural effect by rigidly refusing to acknowledge the impossible.
 | *Night Owl* | Ignore all penalties from sleep deprivation. Operate perfectly in the dark.
