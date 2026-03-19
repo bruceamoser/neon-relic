@@ -31,7 +31,7 @@ The DA sets starting Disposition based on the NPC's relationship to the agents a
 * *Rogue cultist in custody:* 2 (Hostile)
 * *Paid informant:* 3 (Guarded) if money is involved, 4 if a relationship has been built
 * *Hostile faction member:* 1 or 2 (Closed / Hostile) by default
-* *Mid-level Compact operative:* 2 (Hostile)
+* *Mid-level Vantablack Compact operative:* 2 (Hostile)
 
 ---
 
@@ -139,7 +139,7 @@ When a social scene ends badly (Disposition reaches 1, or the agents leave havin
 | Consequence Type | Example
 
 | *Closed source* | The NPC will not speak to the agents again this mission. The information they held may be inaccessible.
-| *Alert raised* | The NPC warns someone — their employer, their family, The Compact. Agents' activities are now known to a new party.
+| *Alert raised* | The NPC warns someone — their employer, their family, or *the Vantablack Compact*. Agents' activities are now known to a new party.
 | *Physical escalation* | The scene tips into violence. The NPC or their contacts move against the agents.
 | *Faction response* | A rival faction learns that the Covenant is investigating. Their own response begins accelerating.
 | *Trust erosion* | A Covenant contact or superior is told about the agents' approach. Standing within the Covenant takes a hit for the current case.
