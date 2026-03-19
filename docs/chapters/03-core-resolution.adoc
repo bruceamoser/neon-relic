@@ -16,7 +16,32 @@ The core philosophy of the Year Zero Engine is that *rolling dice should only oc
 | *Gear Dice* | Black | Mechanical bonus from tools/weapons | 0–3
 |===
 
-To achieve a basic success, the player must roll at least one *6* across the entire dice pool. Multiple sixes are surplus successes that can be spent on *stunts* — extra narrative or mechanical benefits such as:
+== Success, Difficulty, and Extra Successes
+
+Every standard skill roll has a *Difficulty*. If a rule does not list one, the default Difficulty is *1*.
+
+Each *6* rolled counts as *one success*.
+
+* *Standard roll:* You succeed if your total successes meet or exceed the Difficulty.
+* *Opposed roll:* Both sides roll, then compare total successes; the higher total wins.
+* *Special binary roll:* A few subsystems, especially *Fear checks*, define their own pass/fail rule instead of using Difficulty.
+
+Successes beyond what was needed are *extra successes*. If the roll supports stunts, each extra success becomes *1 Stunt Point*.
+
+[%header,cols="1,4"]
+|===
+| Difficulty | Use
+
+| *1* | Standard risky task. This is the default when no other Difficulty is listed.
+| *2* | Hard task, active resistance, or strong time pressure.
+| *3* | Severe pressure, expert resistance, or dangerous complexity.
+| *4* | Extreme task requiring unusual competence, leverage, or luck.
+| *5+* | Near-impossible task. Use only when failure pressure is central to the scene.
+|===
+
+> *Total successes vs. extra successes:* Unless a rule says otherwise, only successes beyond the required threshold become stunt points. If a subsystem explicitly says "each success" does something, count the total successes rolled after determining whether the roll passed.
+
+Extra successes can be spent on *stunts* — extra narrative or mechanical benefits such as:
 
 * Completing an action significantly faster
 * Uncovering secondary hidden clues during an investigation
@@ -27,7 +52,7 @@ The elegance of this system lies in its speed; it produces immediate, decisive r
 
 == The Push Mechanic and Attrition
 
-The primary driver of suspense and narrative tension is the *Push* mechanic. If an initial roll yields no sixes (a failure), or if the player desperately needs additional successes for stunts, they may choose to *push* the roll — picking up and re-rolling all dice that do not currently display a 6.
+The primary driver of suspense and narrative tension is the *Push* mechanic. If an initial roll does not meet its Difficulty, or if the player desperately needs additional successes for stunts, they may choose to *push* the roll — picking up and re-rolling all dice that do not currently display a 6.
 
 However, pushing represents the character exerting maximum physical, mental, or material effort, and it comes with severe risks:
 
@@ -49,6 +74,8 @@ When two characters are directly working against each other — a guard watching
 . Both roll simultaneously.
 . Count the number of *6s* each side rolled — these are their *successes*.
 . The side with more successes wins.
+
+If the winning roll supports stunts, each success beyond the opposing total is an extra success. Opposed rolls normally do *not* use a listed Difficulty. If a rule combines both, the acting character must first meet the listed Difficulty and then beat the opposing total.
 
 === Tie-Breaking
 
@@ -126,7 +153,7 @@ Some situations call for the *entire team to attempt the same action simultaneou
 === Procedure
 
 . Each character rolls their individual dice pool for the relevant skill.
-. Count how many characters *succeed* (rolled at least one 6).
+. Count how many characters *succeed* (met the roll's Difficulty, usually 1).
 . Compare against the *Group Success Threshold* set by the DA:
 
 [%header,cols="1,3"]
@@ -151,6 +178,14 @@ If the group fails to meet the threshold:
 ---
 
 == Worked Examples
+
+=== Standard Roll: Searching the Burned Office
+
+*Situation:* Agent Reyes is searching a ransacked office before the local police return. The DA sets *Investigate Difficulty 2*.
+
+* **Reyes rolls:** Investigate (WIT 4 + Investigate 2) = 6 dice. Rolls: 6, 6, 5, 4, 2, 1 → *2 successes*.
+* **Result:** Reyes succeeds. He finds the hidden ledger, but has no extra successes to spend.
+* If Reyes had rolled *3 successes* instead, the third success would become *1 Stunt Point* — enough to find the ledger faster or uncover a second clue.
 
 === Opposed Roll: The Tail Job
 
@@ -184,7 +219,7 @@ If Petra had rolled 0 successes and the operative also rolled 0, the tail contin
 
 * Petra (Sneak 3, AGI 4): 7 dice → 6, 4, 3, 2, 1, 1, 1 → *1 success* ✓
 * Reyes (Sneak 1, AGI 2): 3 dice → 5, 4, 2 → *0 successes* ✗
-* Osei (Sneak 0, EMP 3): 3 attribute dice → 6, 3, 1 → *1 success* ✓
+* Osei (Sneak 0, AGI 3): 3 attribute dice → 6, 3, 1 → *1 success* ✓
 * Kowalski (Sneak 2, AGI 4): 6 dice → 6, 6, 3, 2, 1, 1 → *2 successes* ✓
 
 Reyes failed. Threshold not met. The DA rules the guard hears something from Reyes' direction and starts to turn. *Reyes pushes* (gains +1 Corruption): re-rolls 3 dice → 6, 4, 2 → *1 success*. The group just barely makes it — but Reyes is now at 1 Corruption and the tension meter has ticked up.

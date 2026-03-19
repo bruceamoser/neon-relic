@@ -172,9 +172,9 @@ Declare your target (must be at Engaged range). Roll your dice pool:
 * *Heavy melee* (knife, crowbar, brawl against an armored target): *Force (STR)* + Weapon Gear Bonus
 * *Fast melee* (unarmed strikes, quick knife work): *Brawl (STR)* + Weapon Gear Bonus
 
-On a hit (at least one 6), deal the weapon's flat *Damage* value directly to the target's Strength. Armor intercepts first.
+On a hit (meeting the attack's Difficulty, usually 1), deal the weapon's flat *Damage* value directly to the target's Strength. Armor intercepts first.
 
-Extra successes (additional 6s) are *Stunt Points* — see Combat Stunts below.
+Successes beyond the attack's Difficulty are *Stunt Points* — see Combat Stunts below.
 
 === Unarmed Combat
 
@@ -276,7 +276,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 == Combat Stunts
 
-Extra successes (6s beyond the first on any attack roll) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
+Extra successes (6s beyond the attack's required Difficulty, usually 1) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
 
 [%header,cols="^1,2,4"]
 |===

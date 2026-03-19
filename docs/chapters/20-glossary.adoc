@@ -62,7 +62,7 @@ Specialization within a Division (Wayfinder, Keep, Stack). Determines the charac
 The table's facilitator role. The DA presents scenes, adjudicates uncertainty, advances clocks, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
 
 *Difficulty*::
-The number of successes (6s) required to pass a skill roll. Standard range: 1 (routine) to 5+ (extreme). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+The number of successes (6s) required to pass a standard skill roll. Default Difficulty is 1 if a rule does not state otherwise. Opposed rolls compare totals instead of using a fixed Difficulty, and a few special rolls such as Fear checks use their own binary rules. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 
 *Division*::
 Character class within the Verdant Covenant. Four playable Divisions: Wayfinder (research/intelligence), Recovery (field retrieval), The Keep (vault security), and Stack (logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
@@ -82,7 +82,7 @@ State when a Broken character has an active Death Check Critical Injury (result 
 One of three action types in combat. Represents a quick or secondary effort: moving one zone, drawing a weapon, taking cover, or using a small item. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 
 *Fear Check*::
-A Wits roll triggered by supernatural horror. Each 6 = success. Each 1 = +1 Corruption. No successes = failure (+1 Corruption + Panic Table roll). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+A special binary Wits roll triggered by supernatural horror. One or more 6s = success. Any 1s = +1 Corruption. No 6s = failure (+1 Corruption + Panic Table roll). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 
 *Fear Rating*::
 Narrative classification (0–5) of how terrifying a creature or event is. Used by the DA to determine when to call for a Fear check. 0 = no check triggered. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
@@ -124,7 +124,7 @@ A significant antagonist in a Case File — a faction operative, corrupted NPC, 
 A d6 table rolled on Fear check failure. Determines the character's involuntary response: Fight (1), Flight (2), Freeze (3), Denial (4), Compulsion (5), or Fugue (6). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 
 *Push*::
-Re-roll all non-6 dice after a failed roll. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+Re-roll all non-6 dice after a roll fails to meet its Difficulty, or after a success when you want more successes. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 
 *Psychoanalyze*::
 A skill used to treat mental and emotional Critical Injuries. Recovery difficulty and duration vary by injury severity. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
@@ -142,7 +142,7 @@ Green dice in the pool, equal to the relevant Skill rating (0–5). See xref:cha
 One of three action types in combat. Represents a committed effort: attacking, using a skill, administering first aid, or reloading a weapon. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 
 *Stunt Points*::
-Extra successes (6s) beyond the first on an attack roll, spent on special combat effects such as increased damage, disarming, or knockback. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
+Extra successes (6s) beyond the required Difficulty on a roll that allows stunt spending. In combat, they can be spent on special effects such as increased damage, disarming, or knockback. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 
 == T
 
