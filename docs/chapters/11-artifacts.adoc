@@ -19,6 +19,8 @@ Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10, 
 
 In Neon Relic, artifact activation is not the default objective. Many missions are won by *preventing activation*, isolating carriers, or moving an item into secure containment under pressure.
 
+Artifact use should feel like *emergency leverage*, not a class feature the group relies on every session. If the cell chooses activation, that should signal desperation, a calculated sacrifice, or a failure to preserve a cleaner containment path.
+
 When framing a case, define at least one non-activation success path:
 
 * *Deny use:* Keep all actors from meeting activation conditions.

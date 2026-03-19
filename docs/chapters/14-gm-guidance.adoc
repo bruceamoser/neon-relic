@@ -17,6 +17,16 @@ Before the mechanical tools, three design priorities that should inform every se
 
 . *The artifacts are not neutral.* Every artifact has a trajectory — a direction it pulls the world. Make sure some of that pull lands on the agents. Corruption is not just a penalty; it is the story.
 
+=== Default Protagonist Power Level
+
+Run Neon Relic as a game about *competent but vulnerable specialists*.
+
+* Agents are trained enough to make plans, read a scene, and act decisively.
+* They are *not* safe enough to treat Talents, Division items, or artifact use as guaranteed solutions.
+* When a player ability fires, it should usually create access, buy time, reveal a lead, or reduce fallout -- not erase the need for investigation, containment, or hard choices.
+
+If a scene starts to feel like paranormal special forces effortlessly clearing the problem, add the costs back in: exposure, rival interference, frightened civilians, incomplete information, or Corruption pressure.
+
 ---
 
 == Session Zero
@@ -81,6 +91,8 @@ If your mystery statement doesn't fit in one sentence, you have too much. Cut.
 . *Identify the critical revelations.* What must the players learn to understand the case? Typically 3–5 things: the artifact's true nature, the faction's plan, the event that started everything, and the solution (or route to containment).
 
 . *For each critical revelation, write three paths.* One path should reward Investigate/Lore (physical search, forensic analysis, document study). One path should reward social skills (witness, NPC confession, Manipulate). One path should come through action (confrontation reveals the fact in dialogue, or artifact activation reveals the truth).
+
+. *Let abilities open paths, not replace the web.* If a Talent or Division item applies, use it to reveal a lead, bypass a narrow obstacle, or reduce risk on one path. Avoid letting it collapse the entire mystery into a single button press.
 
 . *Allow forward movement from partial information.* Players who know *something is wrong in the basement* should be able to proceed even if they don't know *exactly what*. Structure facts so that each revelation suggests the next action, even if the players haven't pursued all paths.
 

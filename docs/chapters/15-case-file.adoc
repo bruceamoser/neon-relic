@@ -23,7 +23,7 @@ The characters receive the narrative hook. In the 80s setting, this could be:
 Conducted at the player's Headquarters:
 
 . *Research* — Players use base facilities to research the entity or artifact.
-. *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason.
+. *Equipping* — Players visit Stack to acquire gear. Roll a pool of dice equal to your *Clearance Level (CL)*. Every *6* allows you to requisition one item equal to or lower than your CL rating. Standard items (CL 1) are given freely within reason. Default to containment tools, transport gear, and investigative support before escalation gear.
 . *Supply Acquisition* — All consumable supplies (ammunition, medical kits, batteries, rations) reset to their *starting die size* at no cost during this phase. See xref:chapters/10-equipment.adoc#chapter-equipment[Equipment] for the Resource Die system and per-category die sizes.
 
 == Phase 4: The Journey
@@ -45,8 +45,8 @@ See *Countdown Mechanics* below for the full rules.
 The climax. Players must synthesize gathered clues to:
 
 * Enact a banishment ritual
-* Utilize an opposing artifact to neutralize the threat
-* Engage in desperate, lethal combat with the anomaly or rival cultists
+* Attempt a desperate artifact use or countermeasure, knowing it will leave scars
+* Engage in desperate, lethal combat with the anomaly or rival cultists when containment has already started to fail
 
 == Phase 8: The Aftermath
 
@@ -139,7 +139,7 @@ The agents can still succeed, but the cost has increased permanently. *Clock exp
 | *Multi-session arc* | 5–6 stages | 1 advance per session, plus triggered advances
 |===
 
-Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style — investigators who want to solve everything cleanly need a slower clock; players who enjoy pressure need it fast.
+Faster clocks create urgency but reduce investigation time. Slower clocks allow thorough exploration but may reduce tension. Adjust based on player style — but keep enough pressure that the cell feels like trained professionals trying to stay ahead of a bad situation, not operators leisurely clearing a map.
 
 === Sample Clock: The Meridian Hotel (One-Shot: 3 Stages)
 

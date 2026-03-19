@@ -1,13 +1,13 @@
 [#chapter-character-creation]
 = Creating Your Agent
 
-Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. Character creation follows these eleven steps in order.
+Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. You are building a trained containment operative, not an occult superhero. Character creation follows these eleven steps in order.
 
 ---
 
 == Step 1: Choose Your Division
 
-Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. There are three Divisions:
+Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. Your Division tells the group what kind of pressure you are trained to handle -- not that you can solve scenes cleanly on your own. There are three Divisions:
 
 [%header,cols="1,2,1,2"]
 |===
@@ -117,6 +117,8 @@ At creation, every agent selects *three* talents:
 
 Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive — no activation cost.
 
+Talents and Division items are meant to create *leverage*: a clue path, a brief edge, a safer handling window, a cleaner extraction. They should not change the game's default expectation that agents must still investigate, improvise, and pay a price for certainty.
+
 > *Talent Advancement:* Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 ---
@@ -147,9 +149,9 @@ Every agent receives their Division's *signature item* at induction. This item r
 |===
 | Division | Item | Granted Abilities
 
-| Wayfinder | *Verdant Codex* | Secures memory, decodes language and symbols, maps artifact locations, preserves documents.
-| Recovery | *Verdant Satchel* | Suppresses artifact aura, seals cursed items, warns of instability, produces basic tools on demand.
-| Keep | *Warden's Bracer* | Suppresses artifact magic nearby, warns of containment failure, safe handling of cursed objects, absorbs 1 Corruption/session, +1 Armor Rating.
+| Wayfinder | *Verdant Codex* | Secures memory, assists with language and symbol work, highlights likely historical correlations, preserves documents.
+| Recovery | *Verdant Satchel* | Masks minor artifact signatures, stabilizes transport, warns of instability, keeps basic field tools ready.
+| Keep | *Warden's Bracer* | Dampens nearby emissions during handling, warns of containment failure, makes cursed objects safer to manage, absorbs 1 Corruption/session, +1 Armor Rating.
 |===
 
 ---
