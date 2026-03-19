@@ -63,6 +63,8 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Stack Dark Secrets (Keep — Logistics Department)
 
+Use this list only if the character belongs to *The Keep* and selected *Stack (Logistics)* as their department during character creation.
+
 [%header,cols="2,5"]
 |===
 | Secret | Details
