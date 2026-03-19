@@ -357,12 +357,14 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 | *Debriefing Protocol* _(Healing)_ | — | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
 |===
 
-[[division-4-stack]]
-*Stack (Logistics)*
+[[stack-logistics]]
+*Stack (Logistics Department)*
 
 _"Queue up, agents."_
 
 The Department of Logistics — informally known as *"Stack"* — is a department of the Keep composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear.
+
+Stack is *not* a separate playable Division. Agents choose *The Keep* at character creation, then select Stack as their department if they want the Covenant's logistics, engineering, and requisition-focused play style.
 
 [NOTE]
 ====

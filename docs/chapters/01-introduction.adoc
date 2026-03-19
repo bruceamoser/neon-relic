@@ -91,7 +91,7 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 
 [NOTE]
 ====
-*Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- operates with enough autonomy and unique expertise to function as its own playable division for game purposes. See xref:chapters/09-divisions.adoc#division-4-stack[Division 4: Stack] for details.
+*Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- has a strong field identity, but it is still part of *The Keep*, not a fourth playable Division. See xref:chapters/09-divisions.adoc#stack-logistics[Stack (Logistics)] for details.
 ====
 
 ---

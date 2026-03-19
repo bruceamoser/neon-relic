@@ -56,7 +56,7 @@ A specific hidden fact from the character's past — an event, decision, or rela
 A single d6 roll required when a Critical Injury is marked †. On 1–2: the character dies (or is permanently retired for mental death). On 3–6: survival, but the Critical Injury still applies. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
 *Department*::
-Specialization within a Division (Wayfinder, Keep, Stack). Determines the character's field expertise and Department Skill. Recovery uses Backgrounds instead. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+Specialization within a Division. Wayfinder agents choose Wings, Keep agents choose Departments, and Recovery agents choose Operational Paradigms instead. Stack is a *Keep department*, not a separate Division. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
 *Director of Agents (DA)*::
 The table's facilitator role. The DA presents scenes, adjudicates uncertainty, advances clocks, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
@@ -65,7 +65,7 @@ The table's facilitator role. The DA presents scenes, adjudicates uncertainty, a
 The number of successes (6s) required to pass a standard skill roll. Default Difficulty is 1 if a rule does not state otherwise. Opposed rolls compare totals instead of using a fixed Difficulty, and a few special rolls such as Fear checks use their own binary rules. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 
 *Division*::
-Character class within the Verdant Covenant. Four playable Divisions: Wayfinder (research/intelligence), Recovery (field retrieval), The Keep (vault security), and Stack (logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+Character class within the Verdant Covenant. The three playable Divisions are Wayfinder (research/intelligence), Recovery (field retrieval), and The Keep (vault security, custody, and logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
 *Division Item*::
 A signature supernatural object issued to every member of a Division. Wayfinder: Verdant Codex. Recovery: Verdant Satchel. Keep: Warden's Bracer. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
@@ -152,7 +152,7 @@ Extra successes (6s) beyond the required Difficulty on a roll that allows stunt 
 == T
 
 *The Verdant Covenant*::
-The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep) plus Stack (Logistics). See xref:chapters/01-introduction.adoc#_the_verdant_covenant[The Verdant Covenant].
+The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep). Stack (Logistics) is a department within The Keep. See xref:chapters/01-introduction.adoc#_the_verdant_covenant[The Verdant Covenant].
 
 == V
 
