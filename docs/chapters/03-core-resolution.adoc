@@ -199,12 +199,12 @@ If Petra had rolled 0 successes and the operative also rolled 0, the tail contin
 
 === Opposed Roll with Push: The Interrogation
 
-*Situation:* Wayfinder Agent Reyes is interrogating a frightened historian who knows where the artifact is. The historian desperately doesn't want to cooperate.
+*Situation:* Wayfinder Agent Reyes is trying to lie to a frightened historian who knows where the artifact is. The historian is already Guarded, so the DA sets *Manipulate Difficulty 2* and also calls for an opposed Psychoanalyze roll because the historian is actively trying to spot the lie.
 
 * **Reyes rolls:** Manipulate (EMP 4 + Manipulate 2) = 6 dice. Rolls: 5, 4, 4, 3, 2, 1 → *0 successes*.
 * Reyes decides to *push* (gains +1 Corruption, now at 1). Re-rolls all 5 non-6 dice: 6, 6, 3, 2, 1 → *2 successes*.
 * **Historian rolls:** Psychoanalyze (EMP 3 + Psychoanalyze 1) = 4 dice. Rolls: 6, 4, 3, 2 → *1 success*.
-* **Result:** Reyes wins (2 vs 1). The historian cracks. The extra success can be spent on a stunt — perhaps he volunteers more than just the location.
+* **Result:** Reyes meets the Difficulty and wins the opposed roll (2 vs 1). The lie holds, and the historian cracks. There are no extra successes left for stunts because one success was needed to beat the historian and the other was needed to meet Difficulty 2.
 
 === Helping: Cracking a Locked File Cabinet
 

@@ -38,9 +38,9 @@ The thirteen core skills are mapped to these four attributes, tailored to suppor
 | Heal | Field medicine, triage, emergency stabilization, and treating physical injuries in the field or at base.
 
 .3+| *Empathy*
-| Manipulate | Bribing informants, deceiving rivals, leveraging secrets.
-| Command | Directing panicked civilians, coordinating team actions under fire.
-| Psychoanalyze | Reading psychological states, detecting deception through behavior, stabilizing traumatized witnesses.
+| Manipulate | Bribing informants, deceiving rivals, leveraging secrets, or extracting sensitive disclosures.
+| Command | Directing panicked civilians, asserting emergency authority, and coordinating team actions under fire.
+| Psychoanalyze | Reading psychological states, detecting deception through behavior, and stabilizing traumatized witnesses so they can talk.
 |===
 
 > *Division Key Skill:* During character creation, each Division designates one Key Skill with a starting cap of *4* instead of the standard maximum of 3. See the Character Creation chapter for details.

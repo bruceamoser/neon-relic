@@ -58,6 +58,9 @@ A single d6 roll required when a Critical Injury is marked †. On 1–2: the ch
 *Department*::
 Specialization within a Division. Wayfinder agents choose Wings, Keep agents choose Departments, and Recovery agents choose Operational Paradigms instead. Stack is a *Keep department*, not a separate Division. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 
+*Disposition*::
+An NPC's current openness to engagement in Social Conflict, tracked from 1 (Closed) to 5 (Open). At Disposition 3 or higher, direct low-risk questions are answered without a roll; social rolls are reserved for sensitive disclosures or requests against self-interest. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
+
 *Director of Agents (DA)*::
 The table's facilitator role. The DA presents scenes, adjudicates uncertainty, advances clocks, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
 
@@ -132,7 +135,7 @@ A d6 table rolled on Fear check failure. Determines the character's involuntary 
 Re-roll all non-6 dice after a roll fails to meet its Difficulty, or after a success when you want more successes. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 
 *Psychoanalyze*::
-A skill used to treat mental and emotional Critical Injuries. Recovery difficulty and duration vary by injury severity. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
+A skill used to read psychological states, detect deception, stabilize distressed people during social scenes, and treat mental and emotional Critical Injuries. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict] and xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
 == R
 
