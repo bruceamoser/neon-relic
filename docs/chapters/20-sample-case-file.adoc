@@ -491,27 +491,259 @@ No packet returns in fewer than 2 shifts. Deep archive, foreign, or politically 
 
 ---
 
-== Research Handouts
+== Packet Handouts and Player-Facing Documents
 
-The following companion files provide in-world research material from conflicting perspectives:
+The following handouts are written for direct use as packet returns, case props, interview excerpts, or player-facing inserts. Present them selectively rather than all at once. A good default is to let each document arrive through a different institutional channel so the case feels like a network of corroborating sources rather than one lore dump.
 
-* `docs/case-files/spear-that-went-dark/handouts/01-covenant-archive-summary.md`
-* `docs/case-files/spear-that-went-dark/handouts/02-church-custody-memo.md`
-* `docs/case-files/spear-that-went-dark/handouts/03-academic-museum-abstract.md`
-* `docs/case-files/spear-that-went-dark/handouts/04-black-market-intelligence-brief.md`
-* `docs/case-files/spear-that-went-dark/handouts/05-tabloid-clipping.md`
-* `docs/case-files/spear-that-went-dark/handouts/06-recovered-thief-notes.md`
+=== Handout 1: Covenant Archive Summary
 
-Use them as packet returns, scene props, or player-facing reveals.
+Use this as the cleanest internal brief available to the team after a Wayfinder or Keep packet request. It should make the agents more cautious, not more confident.
 
-== Play Aids and Prompt Packs
+[quote]
+____
+*Covenant Archive Summary*
 
-Associated play aids and prompt packs live under:
+*Subject:* Potential Longinus-class relic in black-custody circulation, Buenos Aires channel, postwar transfer lineage compromised.
 
-* `docs/case-files/spear-that-went-dark/play-aids/`
-* `docs/case-files/spear-that-went-dark/prompts/`
+*Archive Classification:* Keep / Catalogers / Restricted Custodial Sequence Material
 
-These include shift trackers, case-board trackers, NPC dossier sheets, and prompt packs for witnesses, surveillance stills, documents, maps, exteriors, interiors, vehicles, license plates, and relic evidence photography.
+*Working Assessment:* The object locally described as the Spear should not be treated as a devotional relic alone. Prior Covenant notes classify this family of objects as mandate relics: items that bind wound trauma to political legitimacy. Their danger lies less in simple curse behavior and more in their ability to convert belief, blood, and command into one self-reinforcing loop.
+
+*Known Historical Pattern:*
+
+* relic surfaces near periods of political fracture or succession anxiety
+* carriers quickly develop conviction that history requires violent completion
+* witnesses rationalize surrounding violence as justified, fated, or sacred
+* custody breaks are more dangerous than long-term sealed storage
+
+*Handling Notes:*
+
+* do not permit public language of destiny, triumph, empire, holy rule, or chosen bloodline around the object
+* isolate any current carrier from followers, cameras, and symbolic staging
+* establish substitute custody protocol before transport
+* expect ideological contagion before visible paranormal effects
+
+*Archive Warning:* This item class does not merely corrupt. It authorizes. Field teams that approach it as contraband rather than claim-object have historically lost control of the human terrain first.
+____
+
+=== Handout 2: Church Custody Memorandum
+
+Use this through Church contact access, black-chamber archives, or a partial packet routed through a sympathetic custodian. It should deepen the sense that prior containment existed for reasons no one wants to admit publicly.
+
+[quote]
+____
+*Church Custody Memorandum*
+
+*For Restricted Circulation:* Custodial review regarding the lance relic currently associated with the Buenos Aires family vault.
+
+The family in question should not be described as owners. They were temporary lay custodians under an arrangement established after wartime displacement and never publicly regularized. The arrangement was tolerated because open acknowledgment would have created political, doctrinal, and diplomatic consequences no authority wished to inherit.
+
+The object has always presented three linked dangers:
+
+* scandal of authenticity
+* political misuse
+* devotional catastrophe
+
+Past custodians reported that direct handling without procedural silence produced immediate changes in rhetoric among nearby witnesses. Speech patterns shifted first. Men spoke as if command had returned to them. Existing grievances became providential.
+
+The older black-chamber recommendation was clear:
+
+* no crowds
+* no acclamation
+* no blood near the object
+* no use of triumphal or imperial titles in the containment zone
+* no transfer without liturgical sequence and material shielding
+
+If the sequence has been broken, reclamation by force alone is contraindicated. A broken chain of custody may inflame the object rather than secure it.
+____
+
+=== Handout 3: Museum and Academic Abstract
+
+Use this through museum, university, archive, or public-record research. It is valuable because it sounds mundane while quietly confirming that the relic is dangerous even if treated as mere political myth.
+
+[quote]
+____
+*Museum and Academic Abstract*
+
+*Title:* Imperial Relic Traditions and the Political Afterlife of the Holy Lance
+
+*Abstract:* This paper surveys the long political history of lance relic traditions associated with the Passion cycle, with particular attention to the recurring claim that possession of a specific spearhead confers or symbolizes legitimate rule. While modern scholarship treats many of these traditions as layered medieval constructions, the social effect of the belief has been persistent and measurable.
+
+Across late antique, medieval, and modern contexts, the lance functions less as a devotional object than as a sovereignty token. It appears in coronation narratives, military propaganda, saintly myth, and authoritarian pageantry. The relic's cultural power lies in its instability: it can be framed as sacred witness, military inheritance, or proof that violence has been sanctified.
+
+*Research Note:* Any surviving object linked to this tradition would be culturally volatile even if entirely mundane. In a charged political environment, claims surrounding it could inspire cult devotion, nationalist appropriation, apocalyptic interpretation, or prestige-market competition.
+
+*Curatorial Conclusion:* The artifact's meaning would likely shift depending on who controls the narrative around it. That instability may be more dangerous than authenticity itself.
+____
+
+=== Handout 4: Black-Market Intelligence Brief
+
+Use this as Counterintelligence output, stolen broker notes, or a packet request routed through illicit antiquities channels. It should clarify the buyer ecology without making the market feel orderly.
+
+[quote]
+____
+*Black-Market Intelligence Brief*
+
+*Distribution:* Counterintelligence / Recovery / Need-to-Know
+
+*Subject:* Buyer interest cluster surrounding lance-class Christian war relic in Southern Cone transit channels.
+
+*Executive Summary:* The object is attractive to at least three buyer types:
+
+* prestige collectors seeking rarity and deniability
+* militant networks seeking symbolic legitimacy and propaganda value
+* intelligence intermediaries interested in coercive, ritual, or psychological applications
+
+*Why the Market Cares:* The relic is valuable even before authenticity is settled. Competing myths increase value. The most committed buyers do not require museum-grade proof. They require a plausible chain, symbolic usability, and enough fear around the object to make rivals hesitate.
+
+*Current Market Behavior:*
+
+* the Compact is spending aggressively to contain embarrassment and recover control of the sale narrative
+* secondary brokers are asking for proof-of-custody, not scholarly verification
+* at least one foreign network is willing to accept the object if staged as a movement relic rather than a devotional artifact
+
+*Operational Warning:* If photographs circulate showing the relic in a charged ritual, military, or nationalist context, the sale window will narrow and intensify. After that point, recovery becomes less about interception and more about interrupting a myth in motion.
+____
+
+=== Handout 5: Tabloid Clipping
+
+Use this as a player-facing reveal when the case begins spilling into public language. It works best after the team already knows enough to recognize that the paper is accidentally describing a real relic-pressure pattern.
+
+[quote]
+____
+*Tabloid Clipping*
+
+*Headline:* BLACKOUT TRAIL AND BLEEDING WITNESSES AFTER RECOLETA ROBBERY
+
+Residents near the suspected escape corridor from last week's high-value estate robbery reported rolling blackouts, nosebleeds, and what one shop owner called religious panic among late-night pedestrians. Hospital staff declined to comment on rumors that multiple patients arrived with unrelated injuries but described the same wound in the side when questioned separately.
+
+Police insist there is no connection between the robbery and the medical incidents. Nonetheless, witnesses continue to report vehicles stalling, radios failing, and street arguments turning strangely theatrical, with participants invoking saints, destiny, and war.
+
+One unnamed resident told our reporter: "It felt like everyone suddenly thought they were on the edge of something important. Not scared. Chosen."
+____
+
+=== Handout 6: Recovered Thief Notes
+
+Use this as found evidence, a recovered notebook page, a dead-drop copy, or text lifted from a safehouse wall. It should feel like one of the clearest windows into the moment the heist stopped being a sale and became a claimant crisis.
+
+[literal]
+....
+*Recovered Thief Notes*
+
+Not a sale. Not after the box opened.
+
+L. said hold it like cargo. Wrong. Wrong the second Raul touched the cloth and started talking like somebody was listening from the old wars.
+
+No one would shut up after that. Everybody had a reason why it had to be theirs, why we were the ones who got through, why the route changed, why the buyer would understand.
+
+Buyer man would not touch it. Kept asking for proof. Kept asking if it was stable. Raul laughed at him and said stable is for governments and dead men.
+
+Lights went. Cars died. Marta said put it back. Hector hit her. Said history had picked us. Said there are moments where command returns.
+
+We split after the clinic stop. I don't know who has it now. I know whoever does is hearing the same thing: you were not chosen to carry it. You were chosen to prove you could.
+....
+
+---
+
+== External Play Aids
+
+Printable support aids still live outside the book under `docs/case-files/spear-that-went-dark/play-aids/`.
+
+These include:
+
+* shift timeline handout
+* case-board tracker
+* NPC dossier sheets
+
+They remain external because they function best as table copies rather than embedded rulebook pages.
+
+---
+
+== Handout Image Placeholders
+
+The following pages are reserved for future image plates once final handout and case art is generated and placed under `assets/png/`. Leave these placeholders in the book until final PNG assets exist, then replace each placeholder block with the corresponding `image::png/...[]` call.
+
+=== Planned Plate A: Archive Packet and Church Memo
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-archive-and-church-memo.png`
+
+Suggested contents:
+
+* Covenant archive packet cover or summary page
+* Church custody memorandum page
+* period paper stock, stamps, and marginal notes
+****
+
+<<<
+
+=== Planned Plate B: Academic Abstract and Black-Market Brief
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-academic-and-market-brief.png`
+
+Suggested contents:
+
+* museum or academic abstract page
+* black-market intelligence brief page
+* mixed institutional and clandestine paperwork texture
+****
+
+<<<
+
+=== Planned Plate C: Tabloid Clipping
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-tabloid-clipping.png`
+
+Suggested contents:
+
+* sensational late-1980s tabloid clipping
+* headline, paper wear, halftone printing, and clipping marks
+****
+
+<<<
+
+=== Planned Plate D: Recovered Thief Notes
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-recovered-thief-notes.png`
+
+Suggested contents:
+
+* handwritten or frantic notebook-page artifact
+* signs of field damage, rushed edits, and physical wear
+****
+
+<<<
+
+=== Planned Plate E: Witness, Route, and Relic Visuals
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-case-visual-plate.png`
+
+Suggested contents:
+
+* witness or surveillance stills
+* vehicle or route inserts
+* relic evidence photography
+* visual montage plate for final printed packet support
+****
 
 ---
 
