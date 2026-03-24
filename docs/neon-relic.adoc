@@ -181,4 +181,4 @@ _Distribution: All Personnel_
 
 image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
-include::chapters/20-glossary.adoc[leveloffset=+1]
+include::chapters/21-glossary.adoc[leveloffset=+1]
