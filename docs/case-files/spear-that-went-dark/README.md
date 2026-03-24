@@ -4,11 +4,15 @@ This directory contains image-generation prompt files for the sample case *The S
 
 ## Structure
 
-- `handouts/` — one self-contained image-generation prompt per handout
+- `handouts/` — one self-contained image-generation prompt per image
 
-## Handouts
+## How to Use
 
 Each file contains exactly one complete prompt that can be copied directly into an image generator. No assembly required — paste the prompt block and generate.
+
+When final images are produced, place them in `assets/png/` using the output filenames listed below. Those filenames align with the placeholder pages at the end of the sample case chapter.
+
+## Clue Handouts
 
 | File | Output filename |
 | --- | --- |
@@ -20,4 +24,33 @@ Each file contains exactly one complete prompt that can be copied directly into 
 | `handout-6-recovered-thief-notes.md` | `spear-handout-6-recovered-thief-notes.png` |
 | `handout-7-case-evidence-montage.md` | `spear-handout-7-case-evidence-montage.png` |
 
-When final images are produced, place them in `assets/png/` using the output filenames above. Those filenames align with the placeholder pages at the end of the sample case chapter.
+## NPC Portraits
+
+| File | Output filename |
+| --- | --- |
+| `npc-1-lucia-ferreyra.md` | `spear-npc-1-lucia-ferreyra.png` |
+| `npc-2-detective-mateo-suarez.md` | `spear-npc-2-detective-mateo-suarez.png` |
+| `npc-3-father-esteban-vale.md` | `spear-npc-3-father-esteban-vale.png` |
+| `npc-4-sister-ines-barral.md` | `spear-npc-4-sister-ines-barral.png` |
+| `npc-5-ramiro-acosta.md` | `spear-npc-5-ramiro-acosta.png` |
+| `npc-6-sabine-voss.md` | `spear-npc-6-sabine-voss.png` |
+| `npc-7-ivan-lujan.md` | `spear-npc-7-ivan-lujan.png` |
+| `npc-8-brother-tomas-arce.md` | `spear-npc-8-brother-tomas-arce.png` |
+
+## Locations
+
+| File | Output filename |
+| --- | --- |
+| `location-1-estate-aftermath.md` | `spear-location-1-estate-aftermath.png` |
+| `location-2-police-station.md` | `spear-location-2-police-station.png` |
+| `location-3-church-archive.md` | `spear-location-3-church-archive.png` |
+| `location-4-currency-exchange.md` | `spear-location-4-currency-exchange.png` |
+| `location-5-illicit-clinic.md` | `spear-location-5-illicit-clinic.png` |
+| `location-6-port-export-route.md` | `spear-location-6-port-export-route.png` |
+| `location-7-hidden-shrine.md` | `spear-location-7-hidden-shrine.png` |
+
+## Relic
+
+| File | Output filename |
+| --- | --- |
+| `relic-spear-of-destiny.md` | `spear-relic-spear-of-destiny.png` |
