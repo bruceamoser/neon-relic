@@ -55,92 +55,199 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 ---
 
-== The Five-Element Mystery
+== Case Board Authoring
 
-Every Case File (mission) is built on five elements. You don't need all five fully developed before play — you need the skeleton, then you let the players fill in the rest.
+The new Case File structure is built as a *case board*: scenes, contacts, fronts, a relic timeline, and delayed returns moving on a shared shift timeline.
 
-[%header,cols="1,2,4"]
-|===
-| Element | Question | Design Note
+If you can explain your case only as a linear plot, it is not ready. If you can explain it as a network of opportunities and pressures, it is.
 
-| *Location* | Where is this happening? | One specific place — a town, a building, a neighborhood. Not a region. One petrol station on a rural motorway. One hospital. One concert venue. The 1980s setting should feel tactile and era-specific — wherever your campaign is based, the location must have a physical reality your players can picture.
-| *Artifact* | What is the sourcebook item? | The thing that caused events to spiral. Every case has one artifact. Define its *Tier* (1–4), its *apparent property* (what it seems to do), and its *real effect* (what it actually does to the world around it).
-| *Threat* | What is the immediate danger? | The presenting problem: the entity, the cultist cell, the MJ-12 investigation, the cover-up. This is what the Covenant is responding to.
-| *Rival Faction* | Who else wants the artifact? | Even low-stakes cases should have a second party. The Vantablack Compact, MJ-12, the Hellfire Consortium, or a true-believer group such as the Ember Accord. Rival factions create competing agendas and prevent simple extraction.
-| *Complication* | What makes it personal? | One element that connects to a PC's Dark Secret or Division. If the complication never lands, the case is professional. If it lands, it's personal. Build for personal.
-|===
+=== The Core Authoring Questions
 
-=== The Mystery Statement
+Before writing scenes, answer these questions:
 
-Write one sentence that describes the full case:
+. *What is the artifact doing if no one contains it?* That becomes the *Relic Timeline*.
+. *Who else is reacting to the situation?* Those become *Fronts*.
+. *What does the team need to learn to resolve the case safely?* Those are the *Containment Truths*.
+. *Where can the agents go or who can they approach to learn those truths?* Those become *Scenes* and *Contacts*.
 
-_"A [Tier X artifact] has surfaced in [Location], attracting [Threat]. [Rival Faction] is already present. The complication: [personal element]."_
+=== Mystery Statement
 
-Example: *"A Tier 2 artifact has surfaced in a shuttered psychiatric hospital outside Palermo, attracting Echoing Remnants that have begun killing the urban explorers who found the site. The Hellfire Consortium has purchased the property and has a crew inside. The complication: one of the explorers is the sister of Agent Castellano's disappeared informant."*
+Write one sentence that captures the board:
 
-If your mystery statement doesn't fit in one sentence, you have too much. Cut.
+_"A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [front 1] and [front 2] are moving on the same problem. The agents need [three Containment Truths] before they can recover it safely."_
+
+If this statement requires a paragraph, your case is too diffuse.
 
 ---
 
-== Clue Web Design
+== Authoring Fronts
 
-*The Iron Rule:* Every piece of critical information must be findable via *at least three different paths*. If information is available only through one NPC, one physical location, or one specific skill roll, the case will break the moment players miss it.
+*Front* means *external reactive pressure*. A front is not the artifact itself.
 
-=== How to Build a Clue Web
+Good fronts include:
 
-. *Identify the critical revelations.* What must the players learn to understand the case? Typically 3–5 things: the artifact's true nature, the faction's plan, the event that started everything, and the solution (or route to containment).
+* police consolidating a bad story into an active investigation
+* a Compact recovery team replacing disposable cutouts
+* Church custodians trying to seize the relic quietly
+* media exposure turning secrecy into triage
+* a buyer window, border route, or export corridor closing
 
-. *For each critical revelation, write three paths.* One path should reward Investigate/Lore (physical search, forensic analysis, document study). One path should reward social skills (witness, NPC confession, Manipulate). One path should come through action (confrontation reveals the fact in dialogue, or artifact activation reveals the truth).
+Every front needs four things:
 
-. *Let abilities open paths, not replace the web.* If a Talent or Division item applies, use it to reveal a lead, bypass a narrow obstacle, or reduce risk on one path. Avoid letting it collapse the entire mystery into a single button press.
+[%header,cols="1,4"]
+|===
+| Part | Function
 
-. *Allow forward movement from partial information.* Players who know *something is wrong in the basement* should be able to proceed even if they don't know *exactly what*. Structure facts so that each revelation suggests the next action, even if the players haven't pursued all paths.
+| *Name*
+| What the pressure is.
+
+| *Progression*
+| 3–5 milestones that describe how the pressure worsens.
+
+| *Triggers*
+| What advances it: time, noise, publicity, violence, packet interception, missed opportunity, or rival confidence.
+
+| *Player-Facing Signs*
+| What the agents can notice before or as it worsens.
+|===
+
+=== Front Design Rule
+
+If a front cannot produce visible signs before it becomes a problem, it will feel arbitrary. Give players ways to notice tightening pressure without announcing the DA's numbers.
+
+---
+
+== Authoring the Relic Timeline
+
+*Relic Timeline* means *what the anomaly does if it remains uncontained*. This is distinct from rival behavior.
+
+The relic timeline should answer:
+
+* What does exposure look like early?
+* What becomes worse after repeated movement, blood, speech, weather, witnesses, or failed handling?
+* What is the threshold event if the case goes long or loud?
+
+=== Relic Timeline Rule
+
+Do not write the relic timeline as generic "things get spooky." Each milestone should push toward the artifact's core logic.
+
+If the artifact is about command, its signs should produce obedience, claimant behavior, or legitimacy crises. If it is about repetition, its signs should create loops, reenactments, or false returns.
+
+---
+
+== Authoring Scene Networks
+
+Scenes are *playable opportunities*, not fixed steps.
+
+Each scene should exist because it can do at least one of the following:
+
+* reveal a Containment Truth
+* identify or deepen a Contact
+* narrow the location of the artifact
+* expose a front's move or route
+* create a recovery, trap, or confrontation opportunity
+
+=== Scene Availability
+
+Every scene should declare why it is available:
+
+* *Open* -- available at case start
+* *Clue-locked* -- opens after a specific reveal
+* *Contact-locked* -- opens after an introduction, favor, or referral
+* *Time-locked* -- opens only during a certain shift, day, or event window
+* *Packet-locked* -- opens only after a Covenant Request Packet returns
+
+=== Scene Data Schema
+
+Use the schema in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]: availability, purpose, Key Activity, time cost, risked fronts, may reveal, and may unlock.
+
+The *Key Activity* belongs to the scene, not the players. It states what the scene is immediately about. The players decide how they attack it.
+
+---
+
+== Solvability Constraints
+
+The case board must survive misses, bad order, and lateral thinking.
+
+Use the following hard rules:
+
+. Every *Containment Truth* must be reachable through *at least three paths*.
+. No single scene may be required to finish the case.
+. Every failed or partial scene must still generate movement.
+. At least one actionable option should be visible at the start of each shift.
 
 === The Dead End Test
 
-Before play, look at each NPC and location and ask: *If this was skipped entirely, would the case still be solvable?* If the answer is "no," you have a single-point-of-failure. Fix it.
+Before play, ask of every scene and contact: *If the players never touch this, can the case still be solved?* If the answer is no, redesign it.
 
 === When Players Go Wrong
 
-Players will occasionally pursue a lead that goes nowhere — or miss the lead that was obvious to you. When this happens:
+Players will pursue the wrong address, trust the wrong priest, or ignore the scene you thought was obvious. When that happens:
 
-* *Yes, And:* Agree with what they're doing ("Yes, you search the kitchen") and add a connection ("And you find an Ember Accord symbol inside a cabinet — someone was here before you").
-* *No, But:* Deny what they hoped for, but give movement ("The file room is locked and you can't get in right now, but you notice someone has been watching this building from across the street").
-* *Never:* "Nothing happens. The search turns up nothing." This is the only forbidden outcome. Something always happens, even if it's the wrong thing.
+* *Yes, And:* reward the angle and connect it to the board.
+* *No, But:* deny the immediate goal while exposing a new sign, route, or pressure.
+* *Never:* say that nothing happens.
 
 ---
 
-== Countdown Clocks
+== Delayed Payoffs and Packet Returns
 
-Every case has at least one *Countdown Clock* — a track that advances as time passes or key events occur, representing escalating stakes.
+The new case engine works because not every answer is available in the same shift.
 
-=== Clock Structure
+Use delayed returns for:
 
-A Countdown Clock has:
+* packet requests
+* lab or archive pulls
+* stakeouts
+* customs or police record checks
+* ecclesiastical approval chains
+* smuggler callbacks
 
-* *A name* (what it represents: "Compact Extraction Team Arrives," "Second Civilian Found Dead," "Artifact Corruption Threshold Reached")
-* *4–6 clock stages*, each with a defined event
-* *Trigger conditions* that advance the clock one step
+For every delayed result, write down:
 
-=== Example Clock
+. what the return contains
+. the earliest shift it can arrive
+. what can delay, spoil, or distort it
 
-*Clock Name:* The Hospital Burns Down (the Consortium will destroy the evidence — and the Remnants — when they've extracted what they need)
+Packet returns should sharpen a decision, not replace field work.
 
-[%header,cols="^1,3,3"]
-|===
-| Stage | Event | Advance Trigger
+---
 
-| 1 | Consortium team enters the hospital. | Session begins.
-| 2 | Consortium arcane specialist completes first survey. | 2 real-time hours of in-game activity without confrontation.
-| 3 | Consortium team locates the artifact. | Players fail to reach artifact site first, OR artifact site is found without contest.
-| 4 | Elimination order issued — the urban explorers are now a liability. | Players have direct contact with the Consortium.
-| 5 | Fire is set. Building begins to burn. Remnants are released from their anchor into the street. | Players do not confront the Consortium by end of Day 2.
-| 6 | Hospital collapses. Remnants disperse into the city. Consortium escapes with artifact. | Case failure.
-|===
+== Keeping the Board Manageable
 
-=== Multiple Clocks
+The case board can be crunchy without feeling board-gamey if you control visibility.
 
-High-stakes cases may have two or three simultaneous clocks. Keep them on different timers so players can interrupt one without the others automatically resolving. Multiple clocks also mean that a "successful" case may still end with one clock completing — which is often the more interesting outcome.
+Show players only:
+
+* the scenes they can currently act on
+* the signs of the fronts currently touching them
+* the known timing windows
+* the delayed returns they are waiting on
+
+Hold back:
+
+* inactive scene nodes
+* exact front values
+* dormant fronts that have not manifested
+* threshold events that no one has inferred yet
+
+In practice, 2–4 active scene options at a time is enough.
+
+---
+
+== Player-Facing Signs vs. DA Tracking
+
+The DA may track fronts and relic timeline numerically. The players should usually receive only fiction:
+
+* more patrols
+* sealed wards
+* wrong numbers at the payphone
+* reused phrases in witnesses' testimony
+* failing cameras
+* buyers arriving too early
+* clergy suddenly appearing at the same hospital
+
+This keeps the structure operational rather than abstract.
 
 ---
 
@@ -159,7 +266,7 @@ Every significant NPC needs three things: a *secret*, a *goal*, and a *connectio
 
 === The Motivated NPC Test
 
-Ask: *If the agents were not present, what would this NPC do?* If the answer is nothing — if the NPC only exists as a information dispenser — cut them or give them a clock. NSPCs with active agendas create situations. Situation creators make sessions run.
+Ask: *If the agents were not present, what would this NPC do?* If the answer is nothing — if the NPC only exists as a information dispenser — cut them or give them an active agenda. NPCs with active agendas create situations. Situation creators make sessions run.
 
 ---
 
@@ -247,9 +354,9 @@ Containment missions still have escalating pressure. Use these tools to maintain
 
 * *The containment profile creates constraints.* If the artifact cannot be exposed to light, the agents must plan their extraction around darkness, covered transport, and power failures. Constraints are interesting problems, not punishment.
 
-* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race with a clock, not a firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
+* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against fronts and the relic timeline, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
 
-If ritual containment is a possible solution, seed *three discoverable facts* into the clue web before play begins:
+If ritual containment is a possible solution, seed *three discoverable facts* into the scene network before play begins:
 
 * *What forms the boundary* (salt, copper wire, lead foil, blackout cloth, a drawn sigil, etc.)
 * *What the key is* (true name, activation condition, phrase, symbol, or anchor logic)
@@ -269,19 +376,19 @@ A containment case is resolved when all three of the following are true:
 
 Partial success is valid. An artifact that was activated once but then contained is a case with a scar — the Decay track advances, but so does the cost.
 
-=== DA Tools: Containment Clocks
+=== DA Tools: Containment Pressure
 
-Containment cases benefit from clocks with *loss conditions linked to exposure*, not elapsed time:
+Containment cases benefit from pressure tracks with *loss conditions linked to exposure*, not arbitrary pacing:
 
-* *The Seal Breaks* — 6-stage: someone discovers the artifact's true nature. Advances when an agent fails a Conceal roll, when an NPC asks the wrong question, or when a rival faction broadcasts the artifact's location.
-* *The Protocol Fails* — 4-stage: the containment profile is violated. Advances on each inadvertent activation event (a projector powers on nearby, the bell is jostled, the manifest is touched without gloves). At stage 4, the artifact activates without a roll.
-* *The Handoff Window Closes* — A Keep transport is available for a limited time. If the agents do not complete the transfer before the clock expires, the Keep withdraws the vehicle and the artifact must be stored in the field overnight.
+* *The Seal Breaks* — a front based on witness knowledge, curiosity, and publicity.
+* *The Protocol Fails* — a relic-timeline track based on handling violations.
+* *The Handoff Window Closes* — a time-locked transport or custody window that vanishes after a set shift.
 
 ---
 
 == Cross-References
 
-* Case File structure (8-phase structure, Countdown mechanics): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
+* Case File structure (shifts, scenes, fronts, relic timeline, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
 * Artifact properties and Tiers: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
 * Rival faction behavior and agendas: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
 * Entity stat blocks and Fear ratings: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]

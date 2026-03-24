@@ -1,50 +1,79 @@
 [#chapter-travel]
 = Travel and Journey Rules
 
-The Covenant sends agents across the 1980s American landscape — through ice storms and state highway rest stops, across cities that don't know they're being watched, into small towns that are. There are no cell phones, no GPS, no real-time coordination beyond a crackling CB radio or a roadside payphone.
+The Covenant operates in an era of paper maps, wrong turns, dead payphones, and long stretches of road where no one can help quickly. Travel is not a detached mini-game. It is a *shift type* inside the case engine.
 
-Getting there is part of the story.
+Getting there changes what else can happen.
 
 ---
 
-== Journey Phases
+== Travel as a Shift Type
 
-Every significant journey follows three phases:
+When the team commits a shift to movement, route watching, or repositioning, it is spending a *travel shift*.
 
-=== Phase 1 — Planning
+Travel shifts are used for:
 
-Before departure, the team answers three questions:
+* city-to-city movement
+* district repositioning when timing matters
+* covert arrival and departure
+* stakeout relocation
+* convoy or custody transfer
+* long-haul overland movement
 
-. *Destination:* Where are you going? How far? What do you know about it?
-. *Route:* How are you getting there? Direct? Circuitous to avoid surveillance?
-. *Load:* What are you bringing? Review Encumbrance. Vehicle capacity applies.
+The important question is not merely distance. It is *what pressure matures while the team is in transit*.
 
-The DA notes the *base travel time* and the *Threat Level* of the journey (see Journey Threat below). If the team has the Field Intelligence Network HQ upgrade, they begin with one free piece of route intelligence.
+=== Travel Time by Shifts
 
-===  Phase 2 — The Journey
+Use the following default scale unless the case specifies otherwise:
 
-Divide the journey into *legs* — distinct segments separated by a stop, a hazard, or a change of environment:
+[%header,cols="1,4"]
+|===
+| Distance | Typical Cost
 
-* *Short journey* (same city or adjacent area): 1 leg. No encounter roll unless the DA sees an opportunity.
-* *Medium journey* (cross-state, 2–4 hours): 2 legs. Roll on the Road Event table once.
-* *Long journey* (overnight, 4–12 hours): 3–4 legs. Roll on the Road Event table for each leg.
-* *Extended journey* (multi-day cross-country): One leg per major stopping point. Roll for each leg. Each overnight rest (without a secure location) costs +1 Corruption (the exposure accumulates).
+| *Local reposition* | Part of an existing shift unless the route is under pressure, watched, or time-locked.
+| *Cross-city movement* | 1 shift.
+| *Regional drive* | 1-2 shifts depending on weather, roads, and surveillance pressure.
+| *Overnight road movement* | 2-3 shifts, usually including fatigue or exposure risk.
+| *Cross-country or international transit* | Multiple shifts plus route, customs, paperwork, and contact dependencies.
+|===
 
-*Leg structure:*
+---
 
-Each leg, the driver (or lead navigator on foot) makes a skill roll:
+== Travel Procedure
 
-* *Car or motorcycle:* WIT (Investigate) to read the route, Difficulty 1 (clear conditions), 2 (night/weather), or 3 (active pursuit or unknown territory).
-* *Foot or urban transit:* AGI (Sneak) to move without drawing attention, Difficulty 1 normally, 2 in hostile areas.
-* *Charter flight or helicopter:* WIT (Tech) to coordinate with the pilot or operate the comms, Difficulty 2.
+When a travel shift matters, resolve it in four steps:
 
-*On success:* The leg passes without incident, or the team gains one piece of useful information about the destination.
-*On failure:* Roll on the Road Event table (or the DA applies a prepared complication).
-*On push:* +1 Corruption as normal. The driver is rattled; the vehicle takes wear.
+. *Choose the route.* Direct, covert, public, scenic, back road, truck route, air, maritime, or rail.
+. *Identify the pressure.* Which front or relic-timeline window might worsen while the team is moving?
+. *Roll only if the route is contested.* Unknown roads, weather, active pursuit, border crossings, and covert movement justify rolls.
+. *Resolve arrival as fiction, not as a blank cut.* The destination should already feel altered by time, risk, or being followed.
 
-=== Phase 3 — Arrival
+=== Travel Windows
 
-On arrival, any damage or injuries sustained during travel remain in effect. Any gear that was pushed during travel may be degraded. The team notes which scene they arrive in (Phase 4 or 5 of the Case File structure).
+Travel becomes interesting when routes are not interchangeable.
+
+Use route choices to create tradeoffs:
+
+* *Fast route* -- cheaper in shifts, worse for secrecy
+* *Quiet route* -- slower, but better against surveillance or checkpoints
+* *Institutional route* -- requires paperwork, tickets, or a Contact, but carries a cover story
+* *Illegal route* -- fast under the right conditions, catastrophic if exposed
+
+---
+
+== Stakeouts, Transit, and Long-Haul Movement
+
+*Stakeouts* usually consume a full shift unless the target is already under observation.
+
+*Transit tails* and *route watches* are surveillance shifts that may turn into travel shifts if the team follows someone.
+
+*Long-haul movement* should usually produce at least one of the following:
+
+* route intelligence
+* fatigue or wear
+* a tail problem
+* missed opportunity elsewhere
+* a visible sign that a front worsened while the team was gone
 
 ---
 
@@ -71,9 +100,25 @@ A Tech roll (Difficulty 2, +First Aid Kit bonus applies if using proper tools) c
 
 ---
 
+== Resolving a Travel Shift
+
+Only roll when the route is actually contested.
+
+* *Car or motorcycle:* WIT (Investigate) to read the route, Difficulty 1 in clear conditions, 2 at night or in weather, 3 under pursuit or in unfamiliar territory.
+* *Foot or urban transit:* AGI (Sneak) to move without drawing attention, Difficulty 1 normally, 2 in hostile areas.
+* *Charter flight or helicopter:* WIT (Tech) to coordinate with the pilot or operate comms, Difficulty 2.
+
+*On success:* The shift resolves cleanly, or the team gains one useful fact about the destination or route.
+
+*On failure:* Roll on the Road Event table or apply a prepared travel complication.
+
+*On push:* +1 Corruption as normal. Travel under occult pressure or fatigue is still pressure.
+
+---
+
 == Road Event Table
 
-Roll *d12* when a Road Event is triggered.
+Roll *d12* when a travel shift becomes complicated.
 
 [%header,cols="^1,4"]
 |===
@@ -89,8 +134,8 @@ Roll *d12* when a Road Event is triggered.
 | 8 | *Trucker's Information.* A rest stop encounter with a long-haul trucker who has been on the road through the destination area. Neutral contact. Investigate (Difficulty 1) reveals one useful local detail (road closures, unusual activity, a landmark). Buy them coffee.
 | 9 | *Wrong Turn.* Navigation error. Add +1 leg to the journey. The new route passes through an area with different terrain (DA chooses: industrial, residential, rural, waterfront — add flavor).
 | 10 | *Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (Difficulty 2) to assess. No immediate danger — but it should be noted.
-| 11 | *Fuel Stop.* The team must stop for gas (or food, or rest). A 15-minute window of vulnerability — public space, potential surveillance. Sneak (Difficulty 1) to transit without being noted by anyone watching.
-| 12 | *Clean Run.* No event this leg. The team arrives at the next waypoint ahead of schedule. They may ask the DA one question about the destination that they would have known if they'd had more time to prepare.
+| 11 | *Fuel Stop.* The team must stop for gas (or food, or rest). A short public window of vulnerability opens. Sneak (Difficulty 1) to transit without being noted by anyone watching.
+| 12 | *Clean Run.* No event this shift. The team arrives ahead of schedule. They may ask the DA one question about the destination that they would have known if they'd had more time to prepare.
 |===
 
 ---
@@ -99,7 +144,7 @@ Roll *d12* when a Road Event is triggered.
 
 === Noticing a Tail
 
-A tail can appear at any point during a journey — or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll #5 on the Road Event table.
+A tail can appear at any point during a travel shift — or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll #5 on the Road Event table.
 
 To notice a tail:
 * *Wits (Investigate) Difficulty 2* — passive awareness during normal travel.
@@ -116,15 +161,15 @@ Three options, each requiring one skill roll:
 . *Blend In:* AGI (Sneak) or WIT (Investigate, to find a crowd). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
 . *Double Back / Trap:* WIT (Investigate). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
 
-*On failure:* The tail remains. The team may try again next leg (no Corruption cost for failed attempts — frustration is not supernatural). If the tail stays through an entire journey, they arrive at the destination knowing where the team is going.
+*On failure:* The tail remains. The team may try again next shift if the route continues. If the tail stays through arrival, the followers learn where the team is going.
 
 === The Tail Arrives
 
 If the team reaches the destination with a tail still on them:
 
-* The DA places an additional hostile element in Phase 5 (Arrival) or Phase 7 (Confrontation).
+* The DA places an additional hostile element in the arrival scene or a later crisis node.
 * The team does not know exactly what they brought with them until it surfaces.
-* One rival faction action clock (if active) accelerates by one step.
+* One relevant rival front worsens immediately.
 
 ---
 
@@ -132,7 +177,7 @@ If the team reaches the destination with a tail still on them:
 
 If the tail is a Named Threat or a designated faction operative (introduced in the Case File), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
 
-If the Named Threat is allowed to arrive at the destination, they are briefed on the team's location. The DA may use this to introduce them as a threat in the Confrontation phase instead of an earlier scene.
+If the Named Threat is allowed to arrive at the destination, they are briefed on the team's location. The DA may use this to introduce them as a threat in the arrival scene, a later node, or the crisis branch.
 
 ---
 
@@ -141,6 +186,21 @@ If the Named Threat is allowed to arrive at the destination, they are briefed on
 The 1980s travel experience has no shortcuts and no digital assists. Consider:
 
 * *Road maps:* Required for unfamiliar routes. Without a map, add +1 Difficulty to all navigation rolls. Maps can be obtained at gas stations or found in the glovebox of a vehicle — rarely accurate for back roads.
-* *Payphones:* The only way to communicate in the field. Payphones require correct change (loose quarters are standard Covenant field kit). Calls can be traced within approximately 10 minutes — keep it short.
+* *Payphones:* The reliable way to communicate in the field. Payphones require correct change (loose quarters are standard Covenant field kit). Calls can be traced within approximately 10 minutes — keep it short.
 * *Weather:* Before cellular radar, weather in remote areas can surprise a team. The DA may introduce weather as a narrative beat at any point without a Road Event trigger.
 * *Rest stops:* The I-system rest stops are the 1980s version of networking hubs — truckers, salespeople, and anyone moving across America overnight. A character with Manipulate 2+ can gather rumors at a rest stop with a single Difficulty 1 roll.
+
+---
+
+== Travel and Pressure
+
+Travel should interact with the case board.
+
+Use travel shifts to:
+
+* worsen a front when the team cannot be in two places at once
+* expose relic-timeline signs in transit
+* force a route choice between speed and secrecy
+* convert a stakeout into a moving problem
+
+If travel never costs time, never risks exposure, and never changes the board, skip it entirely.

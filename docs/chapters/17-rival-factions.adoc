@@ -1,28 +1,120 @@
+
 [#chapter-rival-factions]
 = Rival Factions
 
-The Covenant must constantly navigate the political and lethal threats posed by powerful rivals who view artifacts as weapons or commodities:
+The Covenant rarely works a case alone. Rival factions pressure the board by buying access, intimidating witnesses, moving routes, changing official posture, and converting uncertainty into leverage.
+
+Run rivals as *fronts first* and combatants second.
+
+---
+
+== Using Factions as Fronts
+
+Each rival faction front should answer four questions:
+
+[%header,cols="1,4"]
+|===
+| Question | What to Decide
+
+| *What do they want right now?* | Recovery, activation, proof, export, destruction, or denial.
+| *How do they apply pressure before violence?* | Bribes, surveillance, hospital influence, forged paperwork, clergy pressure, police contact, buyers, cover stories, or disappearing people.
+| *What signs do the agents notice first?* | Wrong numbers, sealed records, tailed vehicles, vanished witnesses, competing inquiries, or sudden access problems.
+| *What does crisis look like?* | Seizure attempt, forced transfer, public activation, raid, extraction, or massacre.
+|===
+
+If the first thing a faction does is shoot, you skipped the interesting part.
+
+---
 
 == The Vantablack Compact
 
-A discreet transnational conspiracy of fixers, collectors, intelligence cutouts, and black-market brokers who treat artifacts as leverage. The Compact prefers acquisition, quiet coercion, and deniable theft over open war. They are the Covenant's most flexible rival: the faction most likely to arrive first, buy access, bribe a witness, or disappear an object before anyone realizes a case has begun.
+A discreet transnational conspiracy of fixers, collectors, intelligence cutouts, and black-market brokers who treat artifacts as leverage. The Compact prefers acquisition, quiet coercion, and deniable theft over open war.
 
-Their campaign role is *covert competition*. Use the Compact when you want the agents pressured by professionals who can mirror Covenant tradecraft without matching Covenant ethics.
+Their campaign role is *covert competition*.
+
+[%header,cols="1,4"]
+|===
+| Compact Front Behavior | Notes
+
+| *Early signs* | Money appears before personnel. Witnesses change stories, shell companies surface, safehouses are cleaned out, and cutouts stop answering phones.
+| *Pressure pattern* | Bribe, buy, divert, and isolate. The Compact wants access routes and proof of custody before it wants a firefight.
+| *Escalation* | Disposable intermediaries are replaced by disciplined field professionals. Abductions, route closures, and quiet snatch attempts begin.
+| *Crisis move* | Final snatch, export handoff, or disappearance of the carrier and all supporting evidence.
+|===
+
+Use the Compact when you want professionals who can mirror Covenant tradecraft without matching Covenant ethics.
+
+---
 
 == The Ember Accord
 
-A true-believer occult movement built around revelation, purification, and sacrificial faith. The Accord does not merely want artifacts as tools; its cells believe artifacts disclose sacred truths that must be activated, witnessed, and shared through ordeal. Individual cells can look like cult congregations, spiritual recovery groups, apocalyptic communes, or esoteric service networks.
+A true-believer occult movement built around revelation, purification, and sacrificial faith. The Accord believes artifacts disclose sacred truths that must be activated, witnessed, and survived.
 
-Their campaign role is *fanatical escalation*. Use the Ember Accord when the problem is not only possession of the artifact but an ideology that demands activation regardless of cost.
+Their campaign role is *fanatical escalation*.
+
+[%header,cols="1,4"]
+|===
+| Accord Front Behavior | Notes
+
+| *Early signs* | Repeated language, devotional flyers, symbols appearing in mundane spaces, worried families, and witnesses speaking of ordeal as revelation.
+| *Pressure pattern* | Gather believers, create witnesses, provoke activation, reinterpret suffering as proof.
+| *Escalation* | Cells stop hiding and start arranging audiences, vigils, or rites that make secrecy impossible.
+| *Crisis move* | Public activation event or sacrificial rite designed to spread the artifact's logic.
+|===
+
+Use the Ember Accord when the problem is not only possession of the artifact but an ideology that demands activation regardless of cost.
+
+---
 
 == Majestic-12 (MJ-12)
 
-A heavily militarized branch of the American Department of Defense responsible for handling anomalous threats. Operating out of classified black sites, M-12 seeks to reverse-engineer artifacts into Cold War weaponry. They possess vast resources but view human life as expendable collateral.
+A heavily militarized branch of the American Department of Defense responsible for handling anomalous threats. MJ-12 seeks to reverse-engineer artifacts into Cold War weaponry and treats human cost as a logistics problem.
 
-Their campaign role is *state power and containment-through-force*. Use MJ-12 when the threat is surveillance, black-bag extraction, official deniability, and overwhelming tactical response.
+Their campaign role is *state power and containment-through-force*.
+
+[%header,cols="1,4"]
+|===
+| MJ-12 Front Behavior | Notes
+
+| *Early signs* | Federal credentials where they should not be, restricted files pulled overnight, surveillance vans, sealed streets, and officials suddenly unavailable.
+| *Pressure pattern* | Observe, classify, isolate, and then remove. MJ-12 turns open civic space into controlled terrain.
+| *Escalation* | Black-bag detention, evidence seizure, roadblocks, and classified transport.
+| *Crisis move* | Overwhelming tactical response or forced site lockdown with the artifact still active inside.
+|===
+
+Use MJ-12 when the threat is surveillance, black-bag extraction, official deniability, and overwhelming tactical response.
+
+---
 
 == The Hellfire Consortium
 
-An elite, global network of corporate executives, politicians, and billionaires who utilize blood magic and ancient rituals for financial gain and political manipulation. They treat the occult as a tool for extreme capitalism, reflecting the "greed is good" ethos of the 1980s.
+An elite, global network of corporate executives, politicians, and billionaires who utilize blood magic and ancient rituals for financial gain and political manipulation. They treat the occult as a tool for extreme capitalism.
 
-Their campaign role is *elite corruption and patronage*. Use the Consortium when the artifact is moving through luxury channels, shell companies, private estates, or buyers who think occult catastrophe is an acceptable line item.
+Their campaign role is *elite corruption and patronage*.
+
+[%header,cols="1,4"]
+|===
+| Consortium Front Behavior | Notes
+
+| *Early signs* | Lawyers, private security, shell purchases, hospitality staff under orders, luxury transport, and polite denials backed by money.
+| *Pressure pattern* | Buy the venue, buy the witness, buy the clinic, buy the route, buy the cleanup.
+| *Escalation* | Private estates become operational sites, staff become accomplices, and ritual specialists arrive under business cover.
+| *Crisis move* | Controlled activation for profit, leverage, or bargaining power in a sealed private environment.
+|===
+
+Use the Consortium when the artifact is moving through luxury channels, shell companies, private estates, or buyers who think occult catastrophe is an acceptable line item.
+
+---
+
+== Player-Facing Signs of Rival Pressure
+
+Before a faction front worsens, show at least one sign:
+
+* a witness suddenly has counsel
+* a hospital says the file is gone
+* the wrong priest arrives first
+* a dockmaster becomes unhelpful for no obvious reason
+* a car appears twice in one day
+* the team's cover story stops being enough
+
+The faction front should feel like a tightening web, not a surprise teleport.

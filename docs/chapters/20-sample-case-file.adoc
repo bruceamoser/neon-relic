@@ -1,0 +1,524 @@
+[#chapter-sample-case-file]
+= Sample Case File: The Spear That Went Dark
+
+This chapter presents a full sample case built for the revised Neon Relic case structure: a reactive case board, multiple fronts, scene nodes with dependencies, delayed information returns, and a relic whose containment problem matters as much as its location.
+
+Use it as both a playable operation and a model for authoring future cases.
+
+---
+
+== Case Summary
+
+[%header,cols="2,4"]
+|===
+| Case ID | VC-AR-87-041
+| Region | Buenos Aires, Argentina
+| Format | 1-3 sessions
+| Primary Rival | The Vantablack Compact
+| Secondary Pressure | Local law enforcement, Church custodians, foreign buyers
+| Shift Cadence | 4 shifts per day
+| Packet Response Floor | 2 shifts
+| Core Problem | A stolen relic has destabilized a black-market handoff and is pulling multiple factions toward one contaminated chain-of-custody crisis.
+|===
+
+== Working Premise
+
+The *Spear of Destiny* -- or a relic credibly believed to be that spearhead and its restored shaft assembly -- was held in a private vault beneath a fortified estate in Buenos Aires under discreet aristocratic custody. Three nights ago, the estate was hit by a professional theft crew funded through Vantablack Compact cutouts. The operation succeeded just long enough to become dangerous.
+
+The theft team breached the estate, exposed the relic to a broken custody sequence, and failed to complete the scheduled handoff. Since then, the Spear has gone still somewhere in the city while hospitals, thieves, clergy, police, and black-market intermediaries all react to different pieces of the same event.
+
+The agents arrive after the clean version of the crime is already over. What remains is a contaminated intelligence market circling an artifact that behaves like:
+
+* a Christian wound relic
+* an imperial mandate object
+* a Cold War occult weapon
+
+No faction understands all three at once.
+
+== Agent Objectives
+
+The team must:
+
+. Locate the Spear before the Compact or foreign buyers recover its chain.
+. Determine what interrupted the handoff.
+. Learn the Spear's containment truths before direct recovery.
+. Prevent export.
+. Re-establish custody without triggering an urban threshold event.
+
+---
+
+== The Spear of Destiny
+
+[%header,cols="2,4"]
+|===
+| Tier | 4
+| Category | Relic / Instrument / War Crown Surrogate
+| Risk Tag | Catastrophic
+| Surface Read | A Christian relic of incalculable symbolic weight
+| Operational Read | A sovereignty amplifier and metaphysical conflict engine
+| Cold Archive Read | A postwar occult asset repeatedly hidden rather than destroyed
+| Corruption Cost | +3 Corruption on activation
+| Artifact Die | d12
+| Emission | Pulse becoming Burst as the relic timeline advances
+|===
+
+=== What the Spear Does
+
+The Spear does not merely wound. It *authorizes*.
+
+Exposure produces escalating conviction that bloodshed, legitimacy, and command have fused into one sacred right. Carriers and witnesses may begin to believe:
+
+* they were chosen to bear history
+* command belongs to whoever can endure the wound-object longest
+* violence is righteous if framed as restoration
+* old crusades, empires, and states were interrupted rather than ended
+
+=== Activation Condition
+
+The Spear activates when blood exposure, public claim-language, and contested authority converge around it. A single trigger may not be enough. A carrier invoking mandate, sacrifice, divine sanction, victory, kingship, empire, or national rebirth around fresh blood or a public audience is usually sufficient.
+
+=== Mechanical Effect
+
+When fully activated, the Spear can do one of the following, depending on scene framing:
+
+* force immediate ideological submission or ecstatic obedience in a zone
+* reveal and intensify the nearest claimant dynamic in a crowd
+* transform a confrontation into a legitimacy crisis, making all bystanders choose a side
+* inflict catastrophic Corruption on anyone trying to deny its symbolic authority while in direct proximity
+
+The Spear should not be framed as a weapon with a simple attack profile. It changes the meaning of a scene before it changes bodies.
+
+=== Fracture
+
+On an Artifact Die roll of `1`, one of the following occurs:
+
+* a public miracle / atrocity manifests and immediately advances the relic timeline
+* the current bearer suffers wound bloom, conviction collapse, or ecstatic command-delusion
+* nearby witnesses begin treating random violence as sacred proof
+* electronics fail in a widening radius and the scene becomes impossible to contain quietly
+
+=== Containment Profile
+
+The Spear can be moved safely only if all of the following are true:
+
+* it is wrapped in lead-lined cloth over consecrated ash and salt
+* the current bearer is isolated from followers, witnesses, and cameras
+* no one addresses it as relic, lance, spear, destiny, empire, victory, or instrument of God during handling
+* transfer occurs in silence under low light
+* a Keep-led suppression rite is completed before vehicle transport
+* active claimant language is shut down in the containment zone
+
+If these conditions are broken, transport is still possible -- but the DA should advance the relic timeline, worsen one related front, or both.
+
+---
+
+== Case Board
+
+=== Relic Timeline
+
+==== Lance Threshold Build (14)
+
+This is what the Spear itself is doing if no one re-establishes custody.
+
+Milestones:
+
+* `11`: local hospitals and street reports begin showing recognizable cruciform-wound patterns
+* `8`: handlers suffer reopened wounds, religious certainty, and dream-imprint episodes
+* `5`: radios, surveillance gear, and vehicles fail near the Spear; witnesses report that "someone chosen is coming"
+* `2`: the Spear begins selecting a claimant
+* `0`: threshold event -- public miracle/atrocity, mass-casualty zone, or violent claimant manifestation
+
+Linked effects:
+
+* At `8`, Local Police Inquiry worsens by 1.
+* At `5`, Media Exposure activates if still dormant.
+* At `2`, Foreign Buyer Window worsens by 2 if active.
+
+=== Active Fronts
+
+==== Vantablack Compact Recovery Operation (9)
+
+Milestones:
+
+* `7`: bribery channels activate across police, hospital, and customs routes
+* `4`: field professionals replace cutouts; disappearances and abductions begin
+* `1`: the Compact has a likely district, safehouse, or export corridor
+* `0`: the Compact secures the Spear or launches its final snatch
+
+Linked effects:
+
+* At `7`, Local Police Inquiry worsens by 1.
+* At `4`, Heist Crew Fracture worsens by 1.
+* At `0`, Foreign Buyer Window activates if still dormant.
+
+==== Heist Crew Fracture (6)
+
+Milestones:
+
+* `5`: one thief disappears with money and papers
+* `3`: a wounded thief surfaces through a clinic, fence, confessional chain, or lover
+* `1`: the surviving crew attempts desperate relocation
+* `0`: the original crew collapses; the Spear is abandoned, hidden, or already transferred again
+
+Linked effects:
+
+* At `3`, Local Police Inquiry worsens by 2 and Compact Recovery worsens by 1.
+* At `1`, Lance Threshold Build worsens by 1.
+
+==== Local Police Inquiry (10)
+
+Milestones:
+
+* `8`: robbery detectives begin consolidating witness contradictions and unexplained injuries
+* `6`: a protected witness is released, moved, or mishandled
+* `3`: checkpoints, raids, and formal pressure begin closing the city
+* `0`: police intervention lands directly on the live artifact scene
+
+Linked effects:
+
+* At `6`, Compact Recovery worsens by 2 and Church Custody Cell worsens by 1.
+* At `3`, Media Exposure activates if still dormant.
+* At `0`, Lance Threshold Build worsens by 1.
+
+==== Church Custody Cell (12)
+
+Milestones:
+
+* `9`: quiet observers begin monitoring hospitals, morgues, and aristocratic channels
+* `6`: Church observers identify Compact routes and begin tailing them
+* `3`: a retrieval cleric / black-chamber custodian arrives with custody demands and incomplete ritual knowledge
+* `0`: the Church attempts unilateral seizure
+
+Linked effects:
+
+* At `6`, Compact Recovery worsens by 1.
+* At `3`, Local Police Inquiry worsens by 1 if Church influence is used to divert attention.
+
+=== Dormant Fronts
+
+==== Foreign Buyer Window (8)
+
+Activates when the Compact regains custody, proof of custody reaches buyers, or a viable export corridor is secured.
+
+Milestones:
+
+* `5`: advance funds move and courier infrastructure appears
+* `2`: diplomatic pouch, private flight, or maritime handoff is imminent
+* `0`: the Spear leaves Argentine control
+
+==== Media Exposure (6)
+
+Activates when public effects, police noise, hospital leaks, or visible violence make secrecy impossible.
+
+Milestones:
+
+* `3`: tabloids and radio link the heist to blackouts, wounds, and "holy signs"
+* `0`: the public story locks in and long-term secrecy is lost
+
+---
+
+== Critical Revelations
+
+These truths must remain reachable through multiple paths.
+
+=== Trigger
+
+The Spear becomes more active when:
+
+* moved repeatedly between custodians
+* exposed to fresh blood
+* carried by someone making claims of destiny, divine mandate, kingship, national rebirth, or holy violence
+
+=== Appetite
+
+It feeds on:
+
+* wound trauma
+* ideological certainty
+* righteous violence
+* proximity to a self-declared chosen bearer
+* speech that turns command into sacred obligation
+
+=== Tether
+
+The current tether is not a single person. It is a broken chain of custody. The estate vault's containment lineage descended through wartime seizure, clandestine relocation, and postwar black custody. The theft crew broke the ritual sequence that kept the Spear dormant.
+
+=== Quiescence
+
+The Spear can be moved only under a substitute custody sequence: shielding, silence, no claimant language, and a Keep-led suppression rite.
+
+=== Fracture Logic
+
+If agents attempt brute-force recovery without quiescence, the Spear does not merely resist. It turns the retrieval into a public contest of legitimacy.
+
+---
+
+== Key NPCs and Rival Actors
+
+[%header,cols="2,2,4"]
+|===
+| Name | Alignment | Role in the case
+
+| *Lucia Ferreyra*
+| Estate custodian line
+| The last living family retainer who understands that the vault was a custody chamber, not a safe. Frightened, proud, and hiding the family liturgical sequence.
+
+| *Detective Mateo Suárez*
+| Buenos Aires police
+| Robbery detective who knows the case is wrong but does not know how wrong. Can become a quiet source if handled cleanly.
+
+| *Father Esteban Vale*
+| Church Custody Cell
+| A black-chamber intermediary trying to reclaim the relic without forcing a public Church scandal.
+
+| *Sister Inés Barral*
+| Church Custody Cell
+| Archivist and ritual conservator with partial access to the older containment record. More truthful than her superiors.
+
+| *Ramiro "Rami" Acosta*
+| Heist crew
+| Surviving thief suffering wound bloom and command-delusion. One of the best paths to the failed handoff.
+
+| *Sabine Voss*
+| Vantablack Compact
+| Regional handler who financed the theft and intends to recover the Spear before the buyers lose confidence.
+
+| *Iván Luján*
+| Compact cutout / nationalist fixer
+| A local intermediary who has started interpreting tactical instinct as revelation. Strong bearer candidate.
+
+| *Brother Tomás Arce*
+| False ecclesiastical broker
+| Moves between clergy, smugglers, and collectors. May sell information to multiple sides.
+|===
+
+=== Bearer Candidates
+
+The current bearer should feel tragic before formidable. Suitable choices include:
+
+* a surviving thief who interprets survival as divine favor
+* a nationalist fixer who reads activation as mandate
+* an estate retainer who believes restoration is preferable to sale
+* a Compact intermediary who mistakes tactical intuition for revelation
+
+---
+
+== Scene Nodes
+
+Scenes are not ordered. Each node lists what makes it available, what it is trying to do immediately, and what it can unlock.
+
+=== The Estate Aftermath
+
+*Availability:* Open at case start.
+
+*Purpose:* Reconstruct the breach, the false target, and the broken custody line.
+
+*Key Activity:* Rebuild the theft sequence and identify what changed when the cradle was opened.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Local Police Inquiry, Church Custody Cell.
+
+*May reveal:*
+
+* breach method
+* false target inside the vault
+* proof the heist was funded
+* evidence the vault was suppressive, not merely secure
+
+*May unlock:*
+
+* Currency Exchange / Compact Money Trail
+* Church Archive / Quiet Custodian Interview
+* Police Station / Detective Contact
+
+=== Police Station / Detective Contact
+
+*Availability:* Open after the estate is known to the team or any police-connected clue is obtained.
+
+*Purpose:* Access witness contradictions, thief transport, plate fragments, and protected leads.
+
+*Key Activity:* Extract usable investigative movement from a robbery file turning into a public-order problem.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Local Police Inquiry, Compact Recovery.
+
+*May reveal:*
+
+* witness list
+* wounded thief route
+* hospital referrals
+* sketch fragments and contradictory statements
+
+*May unlock:*
+
+* Wounded Thief Safehouse / Illicit Clinic
+* Detective Suárez as a quiet source
+* Media-risk scenes if pressure is mishandled
+
+=== Church Archive / Quiet Custodian Interview
+
+*Availability:* Open after the estate aftermath or any Church-linked clue.
+
+*Purpose:* Confirm the estate's custodial lineage and expose pieces of Trigger and Quiescence.
+
+*Key Activity:* Gain partial access to a restricted custodial record without triggering a custody seizure.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Church Custody Cell, Lance Threshold Build.
+
+*May reveal:*
+
+* the estate family were custodians, not owners
+* the Spear was moved under compromised postwar authority
+* part of the substitute custody sequence
+
+*May unlock:*
+
+* Father Esteban Vale
+* Sister Inés Barral
+* Hidden Shrine / Temporary Custody Site if linked through old family chapels or black chambers
+
+=== Currency Exchange / Compact Money Trail
+
+*Availability:* Open after estate evidence, police data, or a packet return on financial cutouts.
+
+*Purpose:* Identify the Compact handler and failed handoff route.
+
+*Key Activity:* Trace money and courier infrastructure through quiet logistics channels.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Compact Recovery, Local Police Inquiry.
+
+*May reveal:*
+
+* who financed the theft
+* where the handoff collapsed
+* what proof buyers demanded
+
+*May unlock:*
+
+* Port / Air Cargo Broker / Export Route
+* Sabine Voss
+* Iván Luján
+
+=== Wounded Thief Safehouse / Illicit Clinic
+
+*Availability:* Open after police, street, or church leads surface a surviving thief.
+
+*Purpose:* Learn where the crew broke apart and who took proximity control after the failed sale.
+
+*Key Activity:* Stabilize or interrogate a thief before fear, injury, or rivals silence him.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Heist Crew Fracture, Compact Recovery.
+
+*May reveal:*
+
+* first visible supernatural effects
+* who began speaking like a chosen ruler
+* one site connected to the final custody break
+
+*May unlock:*
+
+* Hidden Shrine / Temporary Custody Site
+* recovered thief notes
+* police or Church cross-links depending on how the scene goes
+
+=== Port / Air Cargo Broker / Export Route
+
+*Availability:* Open once buyer proof, Compact movement, or route intelligence exists.
+
+*Purpose:* Identify how the Spear could leave the city.
+
+*Key Activity:* Lock down the likely exit corridor before the buyer window matures.
+
+*Time Cost:* 1 shift.
+
+*Risked Fronts:* Foreign Buyer Window if active, otherwise Compact Recovery; Local Police Inquiry as secondary.
+
+*May reveal:*
+
+* maritime, private air, or diplomatic export route
+* whether buyers want symbolism, proof of force, or both
+
+*May unlock:*
+
+* airport, dock, or diplomatic seizure climax branch
+* late-case transfer ambush
+
+=== Hidden Shrine / Temporary Custody Site
+
+*Availability:* Usually unlocked by at least two prior clues. The DA should not make this a single-path node.
+
+*Purpose:* Locate the bearer, isolate the custody site, and attempt controlled containment.
+
+*Key Activity:* Break the legitimacy feedback loop before the scene becomes public revelation.
+
+*Time Cost:* Live scene / 1 shift minimum.
+
+*Risked Fronts:* Lance Threshold Build and whichever rival front is currently closest to crisis.
+
+*May reveal:*
+
+* who currently holds proximity control
+* what the bearer thinks the Spear is telling them
+* which part of Quiescence is still missing
+
+*May unlock:*
+
+* direct retrieval
+* custody conflict with Church or Compact
+* transport sequence under pressure
+
+---
+
+== Covenant Request Packet Opportunities
+
+The team may send one packet per shift. For this case, common packets include:
+
+* photo identification of thieves, police witnesses, or clergy
+* summary of known Spear legends in Covenant archives
+* cross-case comparison of postwar custody transfers
+* theological summary of Longinus, imperial relic traditions, and claimant language
+* customs and freight screening pulls connected to Compact cutouts
+
+No packet returns in fewer than 2 shifts. Deep archive, foreign, or politically sensitive requests may take 3 or more.
+
+---
+
+== Research Handouts
+
+The following companion files provide in-world research material from conflicting perspectives:
+
+* `docs/case-files/spear-that-went-dark/handouts/01-covenant-archive-summary.md`
+* `docs/case-files/spear-that-went-dark/handouts/02-church-custody-memo.md`
+* `docs/case-files/spear-that-went-dark/handouts/03-academic-museum-abstract.md`
+* `docs/case-files/spear-that-went-dark/handouts/04-black-market-intelligence-brief.md`
+* `docs/case-files/spear-that-went-dark/handouts/05-tabloid-clipping.md`
+* `docs/case-files/spear-that-went-dark/handouts/06-recovered-thief-notes.md`
+
+Use them as packet returns, scene props, or player-facing reveals.
+
+== Play Aids and Prompt Packs
+
+Associated play aids and prompt packs live under:
+
+* `docs/case-files/spear-that-went-dark/play-aids/`
+* `docs/case-files/spear-that-went-dark/prompts/`
+
+These include shift trackers, case-board trackers, NPC dossier sheets, and prompt packs for witnesses, surveillance stills, documents, maps, exteriors, interiors, vehicles, license plates, and relic evidence photography.
+
+---
+
+== DA Quick Summary
+
+*What happened?* The Compact funded the theft. The crew breached the estate. The Spear destabilized the transfer. The handoff failed. The relic is now hidden, active, and pulling multiple factions toward one contaminated custody crisis.
+
+*What do the agents need?* Where the crew broke apart, who now has proximity control, what the old containment procedure was, and how to move the relic without completing its escalation.
+
+*What makes the case work?* The object is simultaneously sacred relic, imperial mandate, and weaponizable asset. Each faction understands only one slice of that truth, and the agents must assemble all three before the city becomes the ritual site.

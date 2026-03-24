@@ -15,7 +15,7 @@ Initially, the space is entirely derelict. Access to deeper subterranean levels,
 
 === Earning Development Points
 
-The team earns DP collectively during *Phase 8: The Aftermath* of each Case File:
+The team earns DP collectively during *the Aftermath* of each Case File:
 
 [%header,cols="3,^1"]
 |===
@@ -24,11 +24,11 @@ The team earns DP collectively during *Phase 8: The Aftermath* of each Case File
 | Case File fully resolved (mystery closed) | 3
 | Artifact securely contained and logged with the Covenant | 1
 | Named Threat neutralized (not just driven off) | 1
-| Primary objective completed under Countdown escalation (clock reached Stage 3+) | 1
+| Primary objective completed under active case pressure (a front or relic timeline was already in a dangerous state) | 1
 | Agent rescued from rival faction custody | 1
 |===
 
-DP is spent immediately during downtime (Phase 8) or banked for future Case Files. There is no cap on banked DP.
+DP is spent immediately during downtime or banked for future Case Files. There is no cap on banked DP.
 
 ---
 
@@ -106,7 +106,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 5
 | Microfiche Archive + Secure Communications Room
 | A distributed network of informants, dead drops, and off-the-books government contacts who feed intelligence to the Covenant. Managed by a rotation of cutout contacts to maintain deniability.
-| During Phase 2 (The Invitation), the team receives *one free additional clue* about the Case File's central threat before departure. +1 die on Investigation rolls to identify rival faction involvement.
+| Before the team departs on a Case File, it receives *one free additional clue* about the central threat. +1 die on Investigation rolls to identify rival faction involvement.
 
 | *Covenant Armorer*
 | 5
@@ -181,7 +181,7 @@ The Threat Meter increases by 1 when:
 * A rival faction agent escapes alive with knowledge of the team's base location
 * The team fails to contain a corruption leak (active artifact left unsecured overnight)
 * A deceased agent's civilian identity is linked to the Covenant by law enforcement
-* The team's Countdown Clock expires (any severity) during a Case File
+* The team's case pressure reaches crisis and breaks containment during a Case File
 
 The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no corruption incidents).
 
@@ -305,7 +305,7 @@ cannot be purchased with Development Points alone.
 | *Keep Reinforcements*               | 10 | Once per arc, request a second Covenant cell for 1 session of operational support. They arrive equipped; they do not share Standing.
 | *Tier 3 HQ Upgrades Unlocked*       | 10 | Cell may begin purchasing Tier 3 facilities. DP cost unchanged.
 | *CL 4 Requisition Access*           | 10 | High-tier equipment (specialized surveillance, artifact containment casings, prototype weapons) available via formal request.
-| *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore and Investigate rolls during Phase 2 (Research).
+| *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore and Investigate rolls during pre-departure research.
 | *Covenant Asset Call-In*            | 15 | Once per campaign arc, the Covenant deploys a named asset — insider at a government agency, black-market arms contact, demolitions specialist — to assist directly.
 | *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their Keeper (xp replacement PC) begins play with 3 Standing already gained toward the cell total.
 | *Unrestricted HQ Upgrade*           | 20 | Once per arc, build any single HQ upgrade for 0 DP. The Covenant funds it directly.

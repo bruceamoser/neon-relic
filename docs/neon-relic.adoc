@@ -158,6 +158,8 @@ include::chapters/18-notable-members.adoc[leveloffset=+1]
 
 include::chapters/19-bestiary.adoc[leveloffset=+1]
 
+include::chapters/20-sample-case-file.adoc[leveloffset=+1]
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  PART VI — GLOSSARY
 // ─────────────────────────────────────────────────────────────────────────────
