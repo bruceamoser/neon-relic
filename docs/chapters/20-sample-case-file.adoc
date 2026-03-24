@@ -647,7 +647,7 @@ We split after the clinic stop. I don't know who has it now. I know whoever does
 
 == Play Aids and Reference Sheets
 
-The following materials are the working play-aid appendix for this case. They are included here so the chapter contains the full case packet, but standalone copies also remain under `docs/case-files/spear-that-went-dark/play-aids/` for printing and table use.
+The following materials are the working play-aid appendix for this case. They are included here so the chapter contains the full case packet directly, without relying on separate support-file copies.
 
 === Handout 7: Case Board Tracker
 
@@ -919,88 +919,109 @@ End-of-shift checklist:
 
 == Handout Image Placeholders
 
-The following pages are reserved for future image plates once final handout and case art is generated and placed under `assets/png/`. Leave these placeholders in the book until final PNG assets exist, then replace each placeholder block with the corresponding `image::png/...[]` call.
+The following pages are reserved for future image plates once final handout art is generated and placed under `assets/png/`. Each placeholder corresponds to one prompt file under `docs/case-files/spear-that-went-dark/handouts/`. Leave these placeholders until the PNGs exist, then replace each block with the corresponding `image::png/...[]` call.
 
-=== Planned Plate A: Archive Packet and Church Memo
+=== Handout 1: Covenant Archive Summary
 
 [sidebar]
 ****
 *Image Placeholder*
 
-Future asset path: `assets/png/spear-handout-archive-and-church-memo.png`
+Future asset path: `assets/png/spear-handout-1-covenant-archive-summary.png`
 
-Suggested contents:
+Prompt file: `handout-1-covenant-archive-summary.md`
 
-* Covenant archive packet cover or summary page
-* Church custody memorandum page
-* period paper stock, stamps, and marginal notes
+A restricted Verdant Covenant internal archive summary on green-bar or dossier paper, typed headings, stamped classification marks, blue-ink marginal annotations, 1987 analog paperwork realism.
 ****
 
 <<<
 
-=== Planned Plate B: Academic Abstract and Black-Market Brief
+=== Handout 2: Church Custody Memorandum
 
 [sidebar]
 ****
 *Image Placeholder*
 
-Future asset path: `assets/png/spear-handout-academic-and-market-brief.png`
+Future asset path: `assets/png/spear-handout-2-church-custody-memo.png`
 
-Suggested contents:
+Prompt file: `handout-2-church-custody-memo.md`
 
-* museum or academic abstract page
-* black-market intelligence brief page
-* mixed institutional and clandestine paperwork texture
+A Catholic Church internal custody memorandum on aging cream letterhead, ecclesiastical seal, typewritten body text, blue-ink marginal notes, restrained archival wear.
 ****
 
 <<<
 
-=== Planned Plate C: Tabloid Clipping
+=== Handout 3: Academic / Museum Abstract
 
 [sidebar]
 ****
 *Image Placeholder*
 
-Future asset path: `assets/png/spear-handout-tabloid-clipping.png`
+Future asset path: `assets/png/spear-handout-3-academic-museum-abstract.png`
 
-Suggested contents:
+Prompt file: `handout-3-academic-museum-abstract.md`
 
-* sensational late-1980s tabloid clipping
-* headline, paper wear, halftone printing, and clipping marks
+A typed 1987 scholarly abstract on university or curatorial paper, title block, dense abstract paragraphs, early word-processor output, understated professional formatting.
 ****
 
 <<<
 
-=== Planned Plate D: Recovered Thief Notes
+=== Handout 4: Black-Market Intelligence Brief
 
 [sidebar]
 ****
 *Image Placeholder*
 
-Future asset path: `assets/png/spear-handout-recovered-thief-notes.png`
+Future asset path: `assets/png/spear-handout-4-black-market-intelligence-brief.png`
 
-Suggested contents:
+Prompt file: `handout-4-black-market-intelligence-brief.md`
 
-* handwritten or frantic notebook-page artifact
-* signs of field damage, rushed edits, and physical wear
+A covert black-market intelligence memo on rough copy stock, distribution line, operational sections, tradecraft annotations, typewriter output with duplicator wear.
 ****
 
 <<<
 
-=== Planned Plate E: Witness, Route, and Relic Visuals
+=== Handout 5: Tabloid Clipping
 
 [sidebar]
 ****
 *Image Placeholder*
 
-Future asset path: `assets/png/spear-handout-case-visual-plate.png`
+Future asset path: `assets/png/spear-handout-5-tabloid-clipping.png`
 
-Suggested contents:
+Prompt file: `handout-5-tabloid-clipping.md`
 
-* witness or surveillance stills
-* vehicle or route inserts
-* relic evidence photography
-* visual montage plate for final printed packet support
+A sensational late-1980s Buenos Aires tabloid clipping, bold headline, dense text columns, halftone photo box, cheap newsprint texture, scissor-cut edges.
+****
+
+<<<
+
+=== Handout 6: Recovered Thief Notes
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-6-recovered-thief-notes.png`
+
+Prompt file: `handout-6-recovered-thief-notes.md`
+
+Frantic handwritten field notes on wrinkled notebook paper, ballpoint pen, crossed-out phrases, fold creases, edge wear, panicked criminal writing under stress.
+****
+
+<<<
+
+=== Handout 7: Case Evidence Montage
+
+[sidebar]
+****
+*Image Placeholder*
+
+Future asset path: `assets/png/spear-handout-7-case-evidence-montage.png`
+
+Prompt file: `handout-7-case-evidence-montage.md`
+
+An organized case-support page with analog surveillance stills, a hand-marked city map, a relic evidence photo, a period vehicle, and forensic reference material — curated investigative support, not a conspiracy board.
 ****
 
 ---
