@@ -1092,110 +1092,54 @@ Early-fifties ecclesiastical broker: rumpled clerical shirt, worn sport coat, ba
 
 <<<
 
-== Location Image Placeholders
+== Location Images
 
 === Location 1: The Estate Aftermath
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-1-estate-aftermath.png`
-
-Prompt file: `location-1-estate-aftermath.md`
-
-Breached private vault beneath a Buenos Aires mansion: empty reliquary stand, defeated lock, scattered containment wrapping, harsh work-lamp lighting. Late-1980s analog photography.
-****
+.Breached private vault beneath a Buenos Aires mansion — empty reliquary stand, defeated lock, scattered containment wrapping, harsh work-lamp lighting.
+image::png/spear-location-1-estate-aftermath.png[Location 1 — The Estate Aftermath,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 2: Police Station
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-2-police-station.png`
-
-Prompt file: `location-2-police-station.md`
-
-Buenos Aires police precinct robbery bullpen: metal desks, typewriters, corkboard with pinned photos and string, fluorescent lighting, scuffed linoleum. Late-1980s analog photography.
-****
+.Buenos Aires police precinct robbery bullpen — metal desks, typewriters, corkboard with pinned photos and string, fluorescent lighting.
+image::png/spear-location-2-police-station.png[Location 2 — Police Station,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 3: Church Archive
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-3-church-archive.png`
-
-Prompt file: `location-3-church-archive.md`
-
-Catholic church basement archive: vaulted ceiling, wooden shelving with bound ledgers, banker's lamp, crucifix, dust motes in lamplight. Late-1980s analog photography.
-****
+.Catholic church basement archive — vaulted ceiling, wooden shelving with bound ledgers, banker's lamp, crucifix, dust motes in lamplight.
+image::png/spear-location-3-church-archive.png[Location 3 — Church Archive,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 4: Currency Exchange
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-4-currency-exchange.png`
-
-Prompt file: `location-4-currency-exchange.md`
-
-Illicit Buenos Aires currency exchange office: plexiglass partition, adding machine, barred window, hand-lettered rate signs, mixed fluorescent and daylight. Late-1980s analog photography.
-****
+.Illicit Buenos Aires currency exchange office — plexiglass partition, adding machine, barred window, hand-lettered rate signs.
+image::png/spear-location-4-currency-exchange.png[Location 4 — Currency Exchange,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 5: Illicit Clinic
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-5-illicit-clinic.png`
-
-Prompt file: `location-5-illicit-clinic.md`
-
-Back-alley unlicensed clinic: bare concrete walls, stained operating table, improvised IV stand, harsh overhead bulb, cracked tile floor. Late-1980s analog photography.
-****
+.Back-alley unlicensed clinic — bare concrete walls, stained operating table, improvised IV stand, harsh overhead bulb, cracked tile floor.
+image::png/spear-location-5-illicit-clinic.png[Location 5 — Illicit Clinic,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 6: Port / Export Route
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-6-port-export-route.png`
-
-Prompt file: `location-6-port-export-route.md`
-
-Buenos Aires port cargo staging area at night: shipping containers, open cargo truck, sodium-vapor lighting, wet pavement, Rio de la Plata beyond the wharf. Late-1980s analog photography.
-****
+.Buenos Aires port cargo staging area at night — shipping containers, sodium-vapor lighting, wet pavement, Rio de la Plata beyond the wharf.
+image::png/spear-location-6-port-export-route.png[Location 6 — Port / Export Route,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 7: Hidden Shrine
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-location-7-hidden-shrine.png`
-
-Prompt file: `location-7-hidden-shrine.md`
-
-Improvised shrine in a disused chapel crypt: crude altar with candle stubs, sleeping bag, pinned newspaper clippings, cleared space for a relic. Candlelight and flashlight mix. Late-1980s analog photography.
-****
+.Improvised shrine in a disused chapel crypt — crude altar with candle stubs, sleeping bag, pinned newspaper clippings, candlelight and flashlight mix.
+image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align=center,pdfwidth=100%]
 
 <<<
 
