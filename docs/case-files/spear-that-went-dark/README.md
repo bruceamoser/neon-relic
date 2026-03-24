@@ -1,40 +1,23 @@
-# The Spear That Went Dark Support Package
+# The Spear That Went Dark — Support Package
 
-This directory contains support material for the sample case file `The Spear That Went Dark`.
+This directory contains image-generation prompt files for the sample case *The Spear That Went Dark*. All substantive handout text and play-aid content now lives in the book chapter `docs/chapters/20-sample-case-file.adoc`.
 
 ## Structure
 
-- `handouts/` — image generation specifications for future handout and case-image plates
-- `play-aids/` — trackers, dossier sheets, and timeline aids
-
-The substantive research handout text now lives in the book chapter `docs/chapters/20-sample-case-file.adoc`. The external support folder is reserved for printable play aids and image-generation support.
+- `handouts/` — one self-contained image-generation prompt per handout
 
 ## Handouts
 
-These files are all explicitly image-generation documents and are intended to drive final PNG assets that will eventually be placed in `assets/png/` and linked into the sample case chapter:
+Each file contains exactly one complete prompt that can be copied directly into an image generator. No assembly required — paste the prompt block and generate.
 
-- `01-image-generation-archive-and-church-memo.md`
-- `02-image-generation-academic-and-market-brief.md`
-- `03-image-generation-tabloid-clipping.md`
-- `04-image-generation-recovered-thief-notes.md`
-- `05-image-generation-case-visual-plate.md`
+| File | Output filename |
+| --- | --- |
+| `handout-1-covenant-archive-summary.md` | `spear-handout-1-covenant-archive-summary.png` |
+| `handout-2-church-custody-memo.md` | `spear-handout-2-church-custody-memo.png` |
+| `handout-3-academic-museum-abstract.md` | `spear-handout-3-academic-museum-abstract.png` |
+| `handout-4-black-market-intelligence-brief.md` | `spear-handout-4-black-market-intelligence-brief.png` |
+| `handout-5-tabloid-clipping.md` | `spear-handout-5-tabloid-clipping.png` |
+| `handout-6-recovered-thief-notes.md` | `spear-handout-6-recovered-thief-notes.png` |
+| `handout-7-case-evidence-montage.md` | `spear-handout-7-case-evidence-montage.png` |
 
-## Play Aids
-
-These files remain external on purpose. They are not primary rulebook prose; they are printable or copyable table tools for the Director of Agents.
-
-- `shift-timeline-handout.md`
-- `case-board-tracker.md`
-- `npc-dossiers.md`
-
-Use them as working-session materials:
-
-- `shift-timeline-handout.md` for shift-by-shift case tracking
-- `case-board-tracker.md` for front pressure, relic escalation, and scene availability
-- `npc-dossiers.md` for quick reference on faces, secrets, and likely leverage points
-
-All support material is written for late-1980s analog texture. Avoid modern devices, contemporary graphic design, or post-1990 visual cues when generating assets.
-
-When final images are produced, place the PNGs in `assets/png/` using the filenames called out inside each image-generation file. Those filenames align with the placeholder pages at the end of the sample case chapter.
-
-The old `prompts/` layer has been collapsed into `handouts/` so the external support package is easier to reason about: image-generation specs live in one place, and printable play aids live in another.
+When final images are produced, place them in `assets/png/` using the output filenames above. Those filenames align with the placeholder pages at the end of the sample case chapter.
