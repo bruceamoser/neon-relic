@@ -925,49 +925,42 @@ Each of the following pages contains a full-page handout image generated from th
 
 === Handout 1: Covenant Archive Summary
 
-.A restricted Verdant Covenant internal archive summary — typed headings, classification stamps, and blue-ink marginal notes on green-bar dossier paper.
 image::png/spear-handout-1-covenant-archive-summary.png[Handout 1 — Covenant Archive Summary,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 2: Church Custody Memorandum
 
-.A Catholic Church internal custody memorandum — ecclesiastical seal, typewritten body text, and blue-ink annotations on aging cream letterhead.
 image::png/spear-handout-2-church-custody-memo.png[Handout 2 — Church Custody Memorandum,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 3: Academic / Museum Abstract
 
-.A typed 1987 scholarly abstract — title block, dense academic paragraphs, and early word-processor output on university curatorial paper.
 image::png/spear-handout-3-academic-museum-abstract.png[Handout 3 — Academic / Museum Abstract,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 4: Black-Market Intelligence Brief
 
-.A covert black-market intelligence memo — operational sections, tradecraft annotations, and typewriter output with duplicator wear on rough copy stock.
 image::png/spear-handout-4-black-market-intelligence-brief.png[Handout 4 — Black-Market Intelligence Brief,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 5: Tabloid Clipping
 
-.A sensational late-1980s Buenos Aires tabloid clipping — bold headline, dense text columns, halftone photo box, and cheap newsprint with scissor-cut edges.
 image::png/spear-handout-5-tabloid-clipping.png[Handout 5 — Tabloid Clipping,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 6: Recovered Thief Notes
 
-.Frantic handwritten field notes — ballpoint pen on wrinkled notebook paper, crossed-out phrases, fold creases, and panicked writing under stress.
 image::png/spear-handout-6-recovered-thief-notes.png[Handout 6 — Recovered Thief Notes,align=center,pdfwidth=100%]
 
 <<<
 
 === Handout 7: Case Evidence Montage
 
-.An organized case-support montage — analog surveillance stills, a hand-marked city map, a relic evidence photo, and forensic reference material.
 image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence Montage,align=center,pdfwidth=100%]
 
 <<<
@@ -978,56 +971,48 @@ image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence
 
 === NPC 1: Lucia Ferreyra
 
-.Late-sixties Argentine estate retainer — dignified, weathered, guarded. Conservative dark clothing, severe pulled-back hair, dim estate interior.
 image::png/spear-npc-1-lucia-ferreyra.png[NPC 1 — Lucia Ferreyra,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 2: Detective Mateo Suárez
 
-.Early-forties Buenos Aires robbery detective — rumpled shirt, loosened tie, shoulder holster, manila folder. Fluorescent-lit precinct.
 image::png/spear-npc-2-detective-mateo-suarez.png[NPC 2 — Detective Mateo Suárez,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 3: Father Esteban Vale
 
-.Mid-fifties Church black-chamber intermediary — clerical collar, dark overcoat, sharp intelligent eyes, carefully neutral expression. Dim sacristy.
 image::png/spear-npc-3-father-esteban-vale.png[NPC 3 — Father Esteban Vale,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 4: Sister Inés Barral
 
-.Late-forties Church archivist — modest modern habit, reading glasses, steady hands, archival ledger. Basement record room with metal shelving.
 image::png/spear-npc-4-sister-ines-barral.png[NPC 4 — Sister Inés Barral,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 5: Ramiro "Rami" Acosta
 
-.Early-thirties surviving thief — gaunt, feverish, terrified, bandaged. Harsh overhead light, back-alley clinic cot.
 image::png/spear-npc-5-ramiro-acosta.png[NPC 5 — Ramiro Acosta,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 6: Sabine Voss
 
-.Mid-forties Compact regional handler — tailored blazer, understated gold jewelry, controlled elegant composure. Upscale hotel suite.
 image::png/spear-npc-6-sabine-voss.png[NPC 6 — Sabine Voss,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 7: Iván Luján
 
-.Late-thirties nationalist fixer and bearer candidate — leather jacket, intense gaze, confident posture. Buenos Aires backstreet at dusk.
 image::png/spear-npc-7-ivan-lujan.png[NPC 7 — Iván Luján,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 8: Brother Tomás Arce
 
-.Early-fifties ecclesiastical broker — rumpled clerical shirt, worn sport coat, battered satchel, friendly evasive smile. Buenos Aires café.
 image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,align=center,pdfwidth=100%]
 
 <<<
@@ -1038,49 +1023,42 @@ image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,alig
 
 === Location 1: The Estate Aftermath
 
-.Breached private vault beneath a Buenos Aires mansion — empty reliquary stand, defeated lock, scattered containment wrapping, harsh work-lamp lighting.
 image::png/spear-location-1-estate-aftermath.png[Location 1 — The Estate Aftermath,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 2: Police Station
 
-.Buenos Aires police precinct robbery bullpen — metal desks, typewriters, corkboard with pinned photos and string, fluorescent lighting.
 image::png/spear-location-2-police-station.png[Location 2 — Police Station,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 3: Church Archive
 
-.Catholic church basement archive — vaulted ceiling, wooden shelving with bound ledgers, banker's lamp, crucifix, dust motes in lamplight.
 image::png/spear-location-3-church-archive.png[Location 3 — Church Archive,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 4: Currency Exchange
 
-.Illicit Buenos Aires currency exchange office — plexiglass partition, adding machine, barred window, hand-lettered rate signs.
 image::png/spear-location-4-currency-exchange.png[Location 4 — Currency Exchange,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 5: Illicit Clinic
 
-.Back-alley unlicensed clinic — bare concrete walls, stained operating table, improvised IV stand, harsh overhead bulb, cracked tile floor.
 image::png/spear-location-5-illicit-clinic.png[Location 5 — Illicit Clinic,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 6: Port / Export Route
 
-.Buenos Aires port cargo staging area at night — shipping containers, sodium-vapor lighting, wet pavement, Rio de la Plata beyond the wharf.
 image::png/spear-location-6-port-export-route.png[Location 6 — Port / Export Route,align=center,pdfwidth=100%]
 
 <<<
 
 === Location 7: Hidden Shrine
 
-.Improvised shrine in a disused chapel crypt — crude altar with candle stubs, sleeping bag, pinned newspaper clippings, candlelight and flashlight mix.
 image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align=center,pdfwidth=100%]
 
 <<<
@@ -1091,7 +1069,6 @@ image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align
 
 === The Spear of Destiny
 
-.Forensic cataloging photograph of the Spear — ancient iron spearhead on restored wooden shaft, gold-wire binding, lead-lined containment case, evidence-photo lighting. Late-1980s analog photography.
 image::png/spear-relic-spear-of-destiny.png[Relic — The Spear of Destiny,align=center,pdfwidth=100%]
 
 ---
