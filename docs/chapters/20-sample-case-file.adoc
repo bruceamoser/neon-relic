@@ -970,125 +970,61 @@ image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence
 
 <<<
 
-== NPC Portrait Image Placeholders
+== NPC Portraits
 
 === NPC 1: Lucia Ferreyra
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-1-lucia-ferreyra.png`
-
-Prompt file: `npc-1-lucia-ferreyra.md`
-
-Late-sixties Argentine estate retainer: dignified, weathered, guarded. Conservative dark clothing, severe pulled-back hair, dim estate interior background. Late-1980s analog portrait.
-****
+.Late-sixties Argentine estate retainer — dignified, weathered, guarded. Conservative dark clothing, severe pulled-back hair, dim estate interior.
+image::png/spear-npc-1-lucia-ferreyra.png[NPC 1 — Lucia Ferreyra,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 2: Detective Mateo Suárez
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-2-detective-mateo-suarez.png`
-
-Prompt file: `npc-2-detective-mateo-suarez.md`
-
-Early-forties Buenos Aires robbery detective: rumpled shirt, loosened tie, shoulder holster, manila folder. Fluorescent-lit precinct background. Late-1980s analog portrait.
-****
+.Early-forties Buenos Aires robbery detective — rumpled shirt, loosened tie, shoulder holster, manila folder. Fluorescent-lit precinct.
+image::png/spear-npc-2-detective-mateo-suarez.png[NPC 2 — Detective Mateo Suárez,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 3: Father Esteban Vale
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-3-father-esteban-vale.png`
-
-Prompt file: `npc-3-father-esteban-vale.md`
-
-Mid-fifties Church black-chamber intermediary: clerical collar, dark overcoat, sharp intelligent eyes, carefully neutral expression. Dim sacristy background. Late-1980s analog portrait.
-****
+.Mid-fifties Church black-chamber intermediary — clerical collar, dark overcoat, sharp intelligent eyes, carefully neutral expression. Dim sacristy.
+image::png/spear-npc-3-father-esteban-vale.png[NPC 3 — Father Esteban Vale,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 4: Sister Inés Barral
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-4-sister-ines-barral.png`
-
-Prompt file: `npc-4-sister-ines-barral.md`
-
-Late-forties Church archivist: modest modern habit, reading glasses, steady hands, archival ledger. Basement record room with metal shelving. Late-1980s analog portrait.
-****
+.Late-forties Church archivist — modest modern habit, reading glasses, steady hands, archival ledger. Basement record room with metal shelving.
+image::png/spear-npc-4-sister-ines-barral.png[NPC 4 — Sister Inés Barral,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 5: Ramiro "Rami" Acosta
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-5-ramiro-acosta.png`
-
-Prompt file: `npc-5-ramiro-acosta.md`
-
-Early-thirties surviving thief: gaunt, feverish, terrified, bandaged. Harsh overhead light, back-alley clinic cot. Late-1980s analog portrait.
-****
+.Early-thirties surviving thief — gaunt, feverish, terrified, bandaged. Harsh overhead light, back-alley clinic cot.
+image::png/spear-npc-5-ramiro-acosta.png[NPC 5 — Ramiro Acosta,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 6: Sabine Voss
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-6-sabine-voss.png`
-
-Prompt file: `npc-6-sabine-voss.md`
-
-Mid-forties Compact regional handler: tailored blazer, understated gold jewelry, controlled elegant composure. Upscale hotel suite background. Late-1980s analog portrait.
-****
+.Mid-forties Compact regional handler — tailored blazer, understated gold jewelry, controlled elegant composure. Upscale hotel suite.
+image::png/spear-npc-6-sabine-voss.png[NPC 6 — Sabine Voss,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 7: Iván Luján
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-7-ivan-lujan.png`
-
-Prompt file: `npc-7-ivan-lujan.md`
-
-Late-thirties nationalist fixer and bearer candidate: leather jacket, intense gaze, confident posture. Buenos Aires backstreet at dusk. Late-1980s analog portrait.
-****
+.Late-thirties nationalist fixer and bearer candidate — leather jacket, intense gaze, confident posture. Buenos Aires backstreet at dusk.
+image::png/spear-npc-7-ivan-lujan.png[NPC 7 — Iván Luján,align=center,pdfwidth=100%]
 
 <<<
 
 === NPC 8: Brother Tomás Arce
 
-[sidebar]
-****
-*Image Placeholder*
-
-Future asset path: `assets/png/spear-npc-8-brother-tomas-arce.png`
-
-Prompt file: `npc-8-brother-tomas-arce.md`
-
-Early-fifties ecclesiastical broker: rumpled clerical shirt, worn sport coat, battered satchel, friendly evasive smile. Buenos Aires café background. Late-1980s analog portrait.
-****
+.Early-fifties ecclesiastical broker — rumpled clerical shirt, worn sport coat, battered satchel, friendly evasive smile. Buenos Aires café.
+image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,align=center,pdfwidth=100%]
 
 <<<
 
