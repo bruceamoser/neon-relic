@@ -921,6 +921,8 @@ End-of-shift checklist:
 
 Each of the following pages contains a full-page handout image generated from the prompt files under `docs/case-files/spear-that-went-dark/handouts/`. Print or display these during play as physical clue documents for the players.
 
+<<<
+
 === Handout 1: Covenant Archive Summary
 
 .A restricted Verdant Covenant internal archive summary — typed headings, classification stamps, and blue-ink marginal notes on green-bar dossier paper.
@@ -971,6 +973,8 @@ image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence
 <<<
 
 == NPC Portraits
+
+<<<
 
 === NPC 1: Lucia Ferreyra
 
@@ -1030,6 +1034,8 @@ image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,alig
 
 == Location Images
 
+<<<
+
 === Location 1: The Estate Aftermath
 
 .Breached private vault beneath a Buenos Aires mansion — empty reliquary stand, defeated lock, scattered containment wrapping, harsh work-lamp lighting.
@@ -1080,6 +1086,8 @@ image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align
 <<<
 
 == Relic
+
+<<<
 
 === The Spear of Destiny
 
