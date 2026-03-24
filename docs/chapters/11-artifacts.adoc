@@ -514,7 +514,7 @@ The following three artifacts illustrate missions where *preventing activation i
 
 **Emission (Pulse):** When any film projector within 20 meters of the reel is powered on, all agents in the same zone gain +1 Corruption from proximity — whether or not the reel is removed from its case.
 
-**DA Guidance:** Frame this mission around urgency, not combat. A rival faction or a civilian enthusiast has acquired projection equipment and intends to screen what they believe is a lost documentary. The agents must intercept the reel before it is threaded. Run a clock: *The Screening Begins* (6-stage, advances by the hour). The threat is a countdown, not a fight.
+**DA Guidance:** Frame this mission around urgency, not combat. A rival faction or a civilian enthusiast has acquired projection equipment and intends to screen what they believe is a lost documentary. The agents must intercept the reel before it is threaded. Treat *The Screening Begins* as a time-locked front that worsens by the hour. The threat is escalating exposure, not a fight.
 
 ---
 

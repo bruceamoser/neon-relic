@@ -30,13 +30,22 @@ State when any Attribute reaches 0. The character is incapacitated and rolls on 
 == C
 
 *Case File*::
-A structured mystery/investigation for the team to complete. The standard episodic play format, divided into eight phases: Prologue, Invitation, Preparation & Equipping, Journey, Arrival, Places, Confrontation, and Aftermath. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+A structured operation built from shifts, scenes, contacts, fronts, a relic timeline, and Containment Truths. Case Files are playable in flexible order rather than through a fixed phase script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 *Clearance Level (CL)*::
 Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 
 *Corruption*::
 Cumulative psychological and occult damage track. Gained from pushing rolls, Division Talent activation, Fear, artifact use, and supernatural exposure. *Maximum Corruption Threshold* = 10 + Empathy score; exceeding it causes permanent catatonia and character retirement. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+
+*Contact*::
+A person or institution that grants access, information, leverage, cover, or packet routing during a Case File. Contacts often unlock scenes or routes rather than solving the case directly. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+
+*Containment Truth*::
+Information necessary for safe resolution of a case, such as a relic's trigger, appetite, tether, shielding method, quiescence condition, or transfer sequence. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+
+*Covenant Request Packet*::
+A field request sent to the Covenant for delayed support such as archive pulls, identity checks, freight screening, or comparative case data. Only one packet may be sent per shift, and responses take at least 2 shifts. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 *Critical Injury*::
 A specific wound or trauma rolled on a D66 table when a character becomes Broken. Physical criticals use the Physical table (STR/AGI = 0); mental criticals use the Mental & Emotional table (WIT/EMP = 0). Some entries are marked † (Death Check). See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
@@ -62,7 +71,7 @@ Specialization within a Division. Wayfinder agents choose Wings, Keep agents cho
 An NPC's current openness to engagement in Social Conflict, tracked from 1 (Closed) to 5 (Open). At Disposition 3 or higher, direct low-risk questions are answered without a roll; social rolls are reserved for sensitive disclosures or requests against self-interest. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
 
 *Director of Agents (DA)*::
-The table's facilitator role. The DA presents scenes, adjudicates uncertainty, advances clocks, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
+The table's facilitator role. The DA presents scenes, adjudicates uncertainty, tracks fronts and relic timelines, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
 
 *Difficulty*::
 The number of successes (6s) required to pass a standard skill roll. Default Difficulty is 1 if a rule does not state otherwise. Opposed rolls compare totals instead of using a fixed Difficulty, and a few special rolls such as Fear checks use their own binary rules. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
@@ -85,6 +94,9 @@ State when a Broken character has an active Death Check Critical Injury (result 
 The game's only advancement currency. XP are awarded at the end of each Case File through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 == F
+
+*Front*::
+External reactive pressure during a Case File, such as rival recovery operations, police inquiry, media exposure, or Church seizure attempts. A front is not the artifact itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 *Fast Action*::
 One of three action types in combat. Represents a quick or secondary effort: moving one zone, drawing a weapon, taking cover, or using a small item. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
@@ -119,6 +131,11 @@ The shared resource the cell earns during Aftermath and spends on Headquarters f
 *Insight*::
 A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma — heightened perception, empathy, or expertise. Cannot be removed. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
+== K
+
+*Key Activity*::
+Scene metadata set by the DA that states what a scene is immediately trying to accomplish. Players decide how they approach it; they do not choose the Key Activity itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+
 == M
 
 *Maximum Corruption Threshold*::
@@ -142,9 +159,18 @@ A skill used to read psychological states, detect deception, stabilize distresse
 
 == R
 
+*Relic Timeline*::
+The progression of what an anomaly does if it remains active, mishandled, or unresolved. Distinct from fronts, which represent external reactive pressure. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+
 
 
 == S
+
+*Scene*::
+A playable opportunity in a Case File. Scenes are node-based and may be open, clue-locked, contact-locked, time-locked, or packet-locked. They are not mandatory sequence steps. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+
+*Shift*::
+The core unit of operational time in a Case File. Each day contains 4 shifts of 6 hours each: Morning, Day, Evening, and Night. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 *Skill Dice*::
 Green dice in the pool, equal to the relevant Skill rating (0–5). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
