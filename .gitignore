@@ -1,4 +1,6 @@
 tools/
 .venv/
-.github/
+.github/copilot-instructions.md
 .playwright-mcp/
+starter-kit/
+starter-kit.zip
