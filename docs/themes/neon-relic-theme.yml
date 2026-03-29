@@ -49,29 +49,17 @@ header:
       font-family: Courier
       font-size: 8
       font-color: '#6a7a58'
-    center:
-      content: 'TOP SECRET — VERDANT COVENANT — EYES ONLY'
+    right:
+      content: "TOP SECRET — VERDANT COVENANT — EYES ONLY\n{chapter-title}"
       font-family: Courier
       font-size: 7
-      font-style: bold
-      font-color: '#7a1212'
-    right:
-      content: '{chapter-title}'
-      font-family: Courier
-      font-size: 8
       font-color: '#6a7a58'
   verso:
     left:
-      content: '{chapter-title}'
-      font-family: Courier
-      font-size: 8
-      font-color: '#6a7a58'
-    center:
-      content: 'TOP SECRET — VERDANT COVENANT — EYES ONLY'
+      content: "TOP SECRET — VERDANT COVENANT — EYES ONLY\n{chapter-title}"
       font-family: Courier
       font-size: 7
-      font-style: bold
-      font-color: '#7a1212'
+      font-color: '#6a7a58'
     right:
       content: '{page-number}'
       font-family: Courier
