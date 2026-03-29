@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON RELIC — Nikolai &ldquo;Kolya&rdquo; Petrov (Recovery)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face {
+    font-family: 'SpecialElite';
+    src: url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
+         local('Special Elite');
+    font-weight: normal; font-style: normal;
+  }
+  @font-face {
+    font-family: 'CourierPrime';
+    src: url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'),
+         local('Courier New');
+    font-weight: normal; font-style: normal;
+  }
+  @page { size: letter portrait; margin: 0; }
+  @media print {
+    body { margin: 0; padding: 0; background: none; }
+    .page { box-shadow: none; margin: 0; }
+    .page-break { page-break-after: always; }
+  }
+  :root {
+    --ink: #1a1a18; --ink-faded: #4a4a42; --ink-light: #8a8a7e;
+    --paper: #e8e4d8; --green-stamp: #2d5a27; --red-stamp: #8b1a1a;
+    --rule: #999; --rule-light: #ccc; --field-bg: rgba(255,255,255,0.3);
+    --font-main: 'SpecialElite', 'Courier New', monospace;
+    --font-fill: 'CourierPrime', 'Courier New', monospace;
+  }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); }
+  .page-break { page-break-after:always; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(45,90,39,0.033); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--ink); border-bottom:2px solid var(--ink); padding:6px 0 7px; margin-bottom:10px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:26pt; letter-spacing:10px; text-transform:uppercase; color:var(--ink); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7.5pt; letter-spacing:4px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--red-stamp); color:var(--red-stamp); font-family:var(--font-main); font-size:11pt; letter-spacing:5px; padding:2px 12px; transform:rotate(-2deg); margin-bottom:4px; }
+  .section-title { font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:2px; margin:9px 0 5px; }
+  .section-title.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+  .section-title.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .id-block-row1 { display:grid; grid-template-columns:2.6fr 1fr 1fr; gap:0; border:1.5px solid var(--ink); margin-bottom:0; }
+  .id-block-row2 { display:grid; grid-template-columns:1fr 0.65fr 0.75fr 1.6fr; gap:0; border:1.5px solid var(--ink); border-top:1px solid var(--rule); margin-bottom:7px; }
+  .id-cell { padding:3px 6px 5px; border-right:1px solid var(--rule); }
+  .id-cell:last-child { border-right:none; }
+  .id-label { display:block; font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:3px; }
+  .id-value { display:block; font-family:var(--font-fill); font-size:9pt; min-height:14px; border-bottom:1px dotted var(--rule); }
+  .attr-skill-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; margin:4px 0 6px; }
+  .attr-skill-col { display:flex; flex-direction:column; }
+  .attr-box { border:1.5px solid var(--ink); border-bottom:none; text-align:center; padding:4px 3px 5px; background:var(--field-bg); }
+  .attr-name { font-family:var(--font-main); font-size:7pt; font-weight:bold; text-transform:uppercase; letter-spacing:2px; color:var(--ink); background:rgba(0,0,0,0.06); margin:-4px -3px 4px; padding:3px 0 2px; border-bottom:1px solid rgba(0,0,0,0.12); }
+  .attr-score { font-family:var(--font-fill); font-size:22pt; font-weight:bold; min-height:26px; line-height:1; }
+  .attr-range { font-size:5.5pt; color:var(--ink-light); margin-top:1px; letter-spacing:1px; }
+  .attr-dmg-label { font-size:5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); margin-top:5px; }
+  .attr-dmg-track { display:flex; justify-content:center; gap:3px; margin-top:3px; }
+  .attr-dmg-track .pip { width:9px; height:9px; border:1px solid var(--ink); background:transparent; }
+  .skill-area { border:1.5px solid var(--ink); border-top:1px solid var(--rule-light); background:rgba(255,255,255,0.12); flex:1; }
+  .skill-area-header { background:rgba(0,0,0,0.055); text-align:center; font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:2px; color:var(--ink-faded); padding:2px 0; border-bottom:1px solid var(--rule-light); }
+  .skill-row { display:flex; align-items:center; justify-content:space-between; padding:3px 5px 3px 6px; border-bottom:1px dotted var(--rule-light); font-family:var(--font-main); font-size:7.5pt; }
+  .skill-row:last-child { border-bottom:none; }
+  .skill-name { flex:1; }
+  .skill-box { width:22px; height:17px; border:1px solid var(--rule); background:var(--field-bg); flex-shrink:0; font-family:var(--font-fill); font-size:10pt; font-weight:bold; text-align:center; line-height:17px; }
+  .corruption-track { display:flex; align-items:center; gap:3px; flex-wrap:nowrap; }
+  .cpip { width:21px; height:21px; border:1.5px solid var(--ink); display:inline-flex; align-items:center; justify-content:center; font-family:var(--font-main); font-size:6.5pt; color:var(--ink-faded); background:var(--field-bg); flex-shrink:0; }
+  .cpip.danger { border-color:var(--red-stamp); border-width:2px; color:var(--red-stamp); }
+  .corr-label { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); }
+  .corr-stage-ref { font-family:var(--font-main); font-size:6pt; color:var(--ink-faded); line-height:1.7; min-width:155px; }
+  .corr-stage-ref b { color:var(--ink); font-weight:normal; font-style:normal; }
+  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .talent-block { border:1.5px solid var(--rule); padding:4px 6px 5px; background:var(--field-bg); min-height:54px; }
+  .talent-type { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:3px; border-bottom:1px dotted var(--rule-light); padding-bottom:2px; }
+  .talent-name { font-family:var(--font-fill); font-size:8.5pt; font-weight:bold; min-height:13px; margin-bottom:3px; border-bottom:1px solid var(--rule-light); }
+  .talent-desc { font-family:var(--font-main); font-size:6.5pt; color:var(--ink-faded); min-height:18px; line-height:1.4; }
+  .gear-table { width:100%; border-collapse:collapse; font-size:7.5pt; }
+  .gear-table th { text-align:left; font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); border-bottom:1.5px solid var(--ink); padding:2px 4px 3px; background:rgba(0,0,0,0.04); }
+  .gear-table td { padding:2px 4px; border-bottom:1px dotted var(--rule-light); min-height:15px; font-family:var(--font-fill); }
+  .gear-table td.center, .gear-table th.center { text-align:center; width:52px; }
+  .field-row { display:flex; gap:10px; margin-bottom:5px; }
+  .field { flex:1; display:flex; flex-direction:column; }
+  .field-label { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:2px; }
+  .field-value { border-bottom:1.5px solid var(--rule); min-height:16px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:9pt; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:58px; }
+  .field-value.xl { border:1px solid var(--rule); min-height:72px; }
+  .anchor-box { border:1.5px solid var(--green-stamp); padding:5px 7px; background:rgba(45,90,39,0.04); margin:4px 0; }
+  .anchor-box .field-label { color:var(--green-stamp); font-size:6pt; }
+  .secret-box { border:1.5px solid var(--red-stamp); padding:5px 7px; background:rgba(139,26,26,0.03); margin:4px 0; }
+  .secret-box .field-label { color:var(--red-stamp); font-size:6pt; }
+  .notes-lines { width:100%; }
+  .notes-line { border-bottom:1px solid var(--rule-light); height:17px; }
+  .footer { position:absolute; bottom:0.2in; left:0.42in; right:0.42in; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5.5pt; color:var(--ink-light); letter-spacing:1px; text-transform:uppercase; border-top:1px solid var(--rule-light); padding-top:3px; }
+  .p2-header { display:flex; justify-content:space-between; align-items:baseline; border-top:2px solid var(--ink); border-bottom:1.5px solid var(--ink); padding:5px 0 6px; margin-bottom:10px; }
+  .p2-title { font-family:var(--font-main); font-size:16pt; letter-spacing:7px; text-transform:uppercase; color:var(--ink); }
+  .p2-subtitle { font-family:var(--font-main); font-size:6.5pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:3px; }
+  .p2-right { text-align:right; font-family:var(--font-main); font-size:6pt; color:var(--ink-faded); line-height:1.7; }
+  .p2-agent-ref { display:flex; align-items:baseline; gap:5px; margin-top:4px; font-size:6.5pt; }
+  .p2-agent-line { border-bottom:1px solid var(--rule); display:inline-block; min-width:140px; height:14px; font-family:var(--font-fill); font-size:9pt; }
+</style>
+</head>
+<body>
+
+<div class="page page-break">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Neon Relic</div>
+      <div class="header-subtitle">Agent Dossier &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">CLASSIFIED</div><br>
+      <div>Form VC-7 &bull; Rev. 1987</div>
+      <div>Unauthorized Disclosure Subject to Sanctions</div>
+    </div>
+  </div>
+
+  <!-- SECTION I: AGENT IDENTITY -->
+  <div class="section-title">Section I &mdash; Agent Identity</div>
+  <div class="id-block-row1">
+    <div class="id-cell">
+      <span class="id-label">Agent Name (Surname, First)</span>
+      <span class="id-value">Petrov, Nikolai &ldquo;Kolya&rdquo;</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Division</span>
+      <span class="id-value">Recovery</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Wing / Paradigm / Dept.</span>
+      <span class="id-value">Heavy-Hitter</span>
+    </div>
+  </div>
+  <div class="id-block-row2">
+    <div class="id-cell">
+      <span class="id-label">Age Group</span>
+      <span class="id-value">Experienced</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Age</span>
+      <span class="id-value">35</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Clearance Level</span>
+      <span class="id-value">2</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Country of Origin</span>
+      <span class="id-value">Soviet Union</span>
+    </div>
+  </div>
+
+  <!-- SECTION II: PSYCHOLOGICAL PROFILE -->
+  <div class="section-title red">Section II &mdash; Psychological Profile</div>
+  <div class="two-col">
+    <div class="anchor-box">
+      <div class="field-label">Anchor &mdash; Object &amp; Memory</div>
+      <div class="field-value tall">A faded photograph &mdash; his mother standing in front of the family dacha near Kaluga. She smiled like the world was still simple. He keeps it in a waterproof sleeve inside his jacket.</div>
+    </div>
+    <div class="secret-box">
+      <div class="field-label">Dark Secret</div>
+      <div class="field-value tall">The One You Left &mdash; During an extraction in East Berlin, he left behind his handler, Alexei, who could have survived with ten more minutes. The Covenant calls it operational necessity. Kolya calls it something else.</div>
+    </div>
+  </div>
+
+  <!-- SECTION III: ATTRIBUTES & SKILLS -->
+  <div class="section-title">Section III &mdash; Attributes &amp; Skills</div>
+  <div class="attr-skill-grid">
+    <!-- STRENGTH -->
+    <div class="attr-skill-col">
+      <div class="attr-box">
+        <div class="attr-name">Strength</div>
+        <div class="attr-score">5</div>
+        <div class="attr-range">2 &ndash; 5</div>
+        <div class="attr-dmg-label">Physical Damage</div>
+        <div class="attr-dmg-track">
+          <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+        </div>
+      </div>
+      <div class="skill-area">
+        <div class="skill-area-header">Skills</div>
+        <div class="skill-row"><span class="skill-name">Force</span><div class="skill-box">3</div></div>
+        <div class="skill-row"><span class="skill-name">Brawl</span><div class="skill-box">3</div></div>
+        <div class="skill-row"><span class="skill-name">Endure</span><div class="skill-box">2</div></div>
+      </div>
+    </div>
+    <!-- AGILITY -->
+    <div class="attr-skill-col">
+      <div class="attr-box">
+        <div class="attr-name">Agility</div>
+        <div class="attr-score">3</div>
+        <div class="attr-range">2 &ndash; 5</div>
+        <div class="attr-dmg-label">Exhaustion</div>
+        <div class="attr-dmg-track">
+          <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+        </div>
+      </div>
+      <div class="skill-area">
+        <div class="skill-area-header">Skills</div>
+        <div class="skill-row"><span class="skill-name">Sneak</span><div class="skill-box">1</div></div>
+        <div class="skill-row"><span class="skill-name">Sleight of Hand</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Firearms</span><div class="skill-box">2</div></div>
+      </div>
+    </div>
+    <!-- WITS -->
+    <div class="attr-skill-col">
+      <div class="attr-box">
+        <div class="attr-name">Wits</div>
+        <div class="attr-score">2</div>
+        <div class="attr-range">2 &ndash; 5</div>
+        <div class="attr-dmg-label">Mental Horror</div>
+        <div class="attr-dmg-track">
+          <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+        </div>
+      </div>
+      <div class="skill-area">
+        <div class="skill-area-header">Skills</div>
+        <div class="skill-row"><span class="skill-name">Investigate</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Tech</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Lore</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Heal</span><div class="skill-box"></div></div>
+      </div>
+    </div>
+    <!-- EMPATHY -->
+    <div class="attr-skill-col">
+      <div class="attr-box">
+        <div class="attr-name">Empathy</div>
+        <div class="attr-score">3</div>
+        <div class="attr-range">2 &ndash; 5</div>
+        <div class="attr-dmg-label">Emotional Trauma</div>
+        <div class="attr-dmg-track">
+          <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
+        </div>
+      </div>
+      <div class="skill-area">
+        <div class="skill-area-header">Skills</div>
+        <div class="skill-row"><span class="skill-name">Manipulate</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Command</span><div class="skill-box">1</div></div>
+        <div class="skill-row"><span class="skill-name">Psychoanalyze</span><div class="skill-box"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION IV: CORRUPTION -->
+  <div class="section-title red">Section IV &mdash; Corruption</div>
+  <div style="display:flex; gap:14px; align-items:flex-start; margin:4px 0 2px;">
+    <div style="flex:1;">
+      <div class="corr-label" style="margin-bottom:4px;">Current Corruption &mdash; mark left to right</div>
+      <div class="corruption-track">
+        <span class="cpip">1</span><span class="cpip">2</span><span class="cpip">3</span>
+        <span class="cpip">4</span><span class="cpip">5</span><span class="cpip">6</span>
+        <span class="cpip">7</span><span class="cpip">8</span><span class="cpip">9</span>
+        <span class="cpip">10</span><span class="cpip">11</span><span class="cpip">12</span>
+        <span class="cpip danger">13</span><span class="cpip danger">14</span><span class="cpip danger">15</span>
+      </div>
+    </div>
+    <div style="text-align:center; min-width:90px;">
+      <div class="corr-label">Max Threshold</div>
+      <div style="font-size:5.5pt; color:var(--ink-faded); margin-top:1px;">10 + Empathy =</div>
+      <div style="font-family:var(--font-fill); font-size:22pt; font-weight:bold;
+                  border:2px solid var(--red-stamp); width:46px; height:34px;
+                  margin:3px auto 0; display:flex; align-items:center; justify-content:center;">13</div>
+    </div>
+    <div style="text-align:center; min-width:70px;">
+      <div class="corr-label">Armor Rating</div>
+      <div style="font-size:5.5pt; color:var(--ink-faded); margin-top:1px;">&nbsp;</div>
+      <div style="font-family:var(--font-fill); font-size:22pt; font-weight:bold;
+                  border:2px solid var(--rule); width:46px; height:34px;
+                  margin:3px auto 0; display:flex; align-items:center; justify-content:center;
+                  background:var(--field-bg);">0</div>
+    </div>
+    <div class="corr-stage-ref">
+      <div><b>1&ndash;3</b>&nbsp; Nosebleeds / Migraines</div>
+      <div><b>4&ndash;6</b>&nbsp; Auditory Hallucinations</div>
+      <div><b>7&ndash;9</b>&nbsp; Eldritch Tremors</div>
+      <div><b>10&ndash;12</b> Reality Distortion</div>
+      <div><b>13&ndash;14</b> Fugue States</div>
+      <div style="color:var(--red-stamp);"><b style="color:var(--red-stamp);">&gt; Max</b>&nbsp; Catatonic Revelation</div>
+    </div>
+  </div>
+
+  <!-- SECTION V: TALENTS -->
+  <div class="section-title green">Section V &mdash; Talents &amp; Abilities</div>
+  <div class="three-col">
+    <div class="talent-block">
+      <div class="talent-type">Division Talent (no cost)</div>
+      <div class="talent-name">Conditioned Mind</div>
+      <div class="talent-desc">Once per session, entirely ignore the Corruption point generated from pushing a roll.</div>
+    </div>
+    <div class="talent-block">
+      <div class="talent-type">Heavy-Hitter Talent (+1 Corruption)</div>
+      <div class="talent-name">Stand Your Ground</div>
+      <div class="talent-desc">Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating.</div>
+    </div>
+    <div class="talent-block">
+      <div class="talent-type">Background Talent &mdash; Military Veteran</div>
+      <div class="talent-name">+1 Firearms (passive)</div>
+      <div class="talent-desc">Formal military training in weapons and battlefield discipline. Background bonus is always active.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>VC-7 &bull; The Verdant Covenant &bull; Internal Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Page 1 of 2</span>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="p2-header">
+    <div>
+      <div class="p2-title">Neon Relic</div>
+      <div class="p2-subtitle">Agent Dossier &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="p2-right">
+      <div>Form VC-7 &bull; Rev. 1987 &bull; Continuation Sheet</div>
+      <div style="color:var(--red-stamp); letter-spacing:1px; font-size:5.5pt;">TOP SECRET &mdash; EYES ONLY</div>
+      <div class="p2-agent-ref">
+        <span>Agent:</span>
+        <span class="p2-agent-line">Petrov, Nikolai</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title green">Section V &mdash; Equipment &amp; Requisitions</div>
+  <div class="field-row" style="margin-bottom:5px;">
+    <div class="field">
+      <div class="field-label">Division Signature Item</div>
+      <div class="field-value">Verdant Satchel</div>
+    </div>
+  </div>
+  <table class="gear-table">
+    <tr>
+      <th>Item / Description</th>
+      <th class="center">Gear Bonus</th>
+      <th class="center">Enc.</th>
+    </tr>
+    <tr><td>.38 Special revolver (12 rounds)</td><td class="center">+2</td><td class="center">1</td></tr>
+    <tr><td>D-cell flashlight</td><td class="center">+1</td><td class="center">1</td></tr>
+    <tr><td>Field kit: 10m rope, zip ties &times;6, chalk &times;2, crowbar</td><td class="center"></td><td class="center">2</td></tr>
+    <tr><td>Field jacket with concealed holster</td><td class="center"></td><td class="center">1</td></tr>
+    <tr><td>Stun baton (additional CL 2 item)</td><td class="center">+1</td><td class="center">1</td></tr>
+    <tr><td>&nbsp;</td><td class="center"></td><td class="center"></td></tr>
+    <tr><td>&nbsp;</td><td class="center"></td><td class="center"></td></tr>
+    <tr><td>&nbsp;</td><td class="center"></td><td class="center"></td></tr>
+    <tr><td>&nbsp;</td><td class="center"></td><td class="center"></td></tr>
+    <tr><td>&nbsp;</td><td class="center"></td><td class="center"></td></tr>
+  </table>
+
+  <div style="display:flex; gap:14px; align-items:flex-start; margin:6px 0 7px;">
+    <div style="flex:1;">
+      <div class="corr-label" style="margin-bottom:4px;">Resource Dice &mdash; record current die size (d4 / d6 / d8 / d10 / d12)</div>
+      <div style="display:flex; gap:10px;">
+        <div style="text-align:center;">
+          <div class="corr-label" style="margin-bottom:2px;">Ammo</div>
+          <div style="border:1.5px solid var(--rule); width:46px; height:22px; background:var(--field-bg); font-family:var(--font-fill); font-size:9pt; text-align:center; line-height:22px;">d8</div>
+        </div>
+        <div style="text-align:center;">
+          <div class="corr-label" style="margin-bottom:2px;">Medical</div>
+          <div style="border:1.5px solid var(--rule); width:46px; height:22px; background:var(--field-bg);"></div>
+        </div>
+        <div style="text-align:center;">
+          <div class="corr-label" style="margin-bottom:2px;">Battery</div>
+          <div style="border:1.5px solid var(--rule); width:46px; height:22px; background:var(--field-bg);"></div>
+        </div>
+        <div style="text-align:center;">
+          <div class="corr-label" style="margin-bottom:2px;">_______</div>
+          <div style="border:1.5px solid var(--rule); width:46px; height:22px; background:var(--field-bg);"></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <div class="corr-label" style="margin-bottom:2px;">Armor Rating</div>
+      <div style="font-family:var(--font-fill); font-size:22pt; font-weight:bold;
+                  border:2px solid var(--rule); width:48px; height:36px;
+                  display:flex; align-items:center; justify-content:center;
+                  background:var(--field-bg); margin:0 auto;">0</div>
+    </div>
+  </div>
+
+  <div class="section-title red">Section VI &mdash; Critical Injuries &amp; Conditions</div>
+  <div class="notes-lines">
+    <div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div>
+  </div>
+
+  <div class="section-title">Section VII &mdash; Agent Biography</div>
+  <div class="field-row">
+    <div class="field">
+      <div class="field-label">Before the Covenant &mdash; Who were you?</div>
+      <div class="field-value xl">Former Spetsnaz sergeant, seconded to GRU special operations before defecting through Vienna in 1984. The artifact he found in an Afghan cave system killed three of his men and walked out of the mountain with him. The Covenant intercepted him at the Austrian border. He has not spoken Russian since.</div>
+    </div>
+  </div>
+
+  <div class="section-title">Section VIII &mdash; Field Notes</div>
+  <div class="notes-lines">
+    <div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div><div class="notes-line"></div>
+  </div>
+
+  <div class="footer">
+    <span>VC-7 &bull; The Verdant Covenant &bull; Internal Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Page 2 of 2</span>
+  </div>
+</div>
+
+</body>
+</html>
