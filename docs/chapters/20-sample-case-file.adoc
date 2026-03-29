@@ -58,7 +58,7 @@ The team must:
 | Operational Read | A sovereignty amplifier and metaphysical conflict engine
 | Cold Archive Read | A postwar occult asset repeatedly hidden rather than destroyed
 | Corruption Cost | +3 Corruption on activation
-| Artifact Die | d12
+| Artifact Die | d20
 | Emission | Pulse becoming Burst as the relic timeline advances
 |===
 

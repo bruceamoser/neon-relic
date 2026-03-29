@@ -13,7 +13,66 @@ To utilize an artifact, a character must trigger its specific *activation condit
 
 . *The Psychological Toll* — Every activation immediately generates *+1 to +3 Corruption* (by artifact tier), pushing the user closer to the Corruption threshold.
 
-Furthermore, when invoked, the player rolls a specific *Artifact Die* (d8, d10, or d12). If the roll results in a *1*, the artifact's internal metaphysical structure fractures — it may break, go dormant, or trigger a horrific localized side-effect.
+Every artifact also carries an *Artifact Die* — a usage die that degrades with each activation. See <<using-an-artifact>> for the full activation procedure and die-level guidelines.
+
+---
+
+[[using-an-artifact]]
+== Using an Artifact
+
+=== The Artifact Die
+
+Unlike *Forbidden Lands* and other YZE titles where artifact dice add bonus successes to a skill pool, the Neon Relic **Artifact Die** is a **usage die**. It works like other usage dice in the system (Resource Dice, Gear Dice): each time the artifact is activated, the player rolls the Artifact Die. On a result of **1**, the die **steps down** one level on the chain:
+
+**d20 → d12 → d10 → d8 → d6 → d4 → Fractured**
+
+When the die steps down past d4, the artifact **fractures** — its metaphysical structure fails catastrophically and the Fracture Condition triggers immediately.
+
+The Artifact Die does not generate successes or add to skill pools. It is purely a measure of how many activations the artifact can sustain before it breaks.
+
+> **Why this matters:** A d20 artifact can absorb many activations before fracture becomes likely. A d4 artifact is one bad roll from destruction. The die level is part of what makes powerful artifacts powerful — and what makes expendable Keep-issue items feel dangerous and disposable.
+
+=== Activation Procedure
+
+When an agent activates an artifact, resolve the following steps in order:
+
+. **Meet the activation condition.** Each artifact has a specific trigger — a spoken phrase, a physical action, a blood offering, a frequency. If the condition is not met, the artifact does not respond.
+. **Pay the Corruption cost.** The activating agent immediately gains Corruption equal to the artifact's tier (+1/+2/+3). This cost is paid whether the die fractures or not. It is never reduced, waived, or transferred.
+. **The effect resolves.** The artifact's stated mechanical effect takes place. Most effects grant automatic successes, bypass skill rolls, or impose conditions on targets. There is no additional roll to determine whether the effect works — the Corruption cost _is_ the price of certainty.
+. **Roll the Artifact Die.** The player rolls the artifact's current Artifact Die.
+** *On a 1:* The die steps down one level (d20 → d12 → d10 → d8 → d6 → d4). If the die was already a **d4**, the artifact **fractures** and the Fracture Condition triggers immediately.
+** *On any other result:* The artifact remains at its current die level. No additional effect.
+
+> **The effect always fires.** Even when the Artifact Die rolls a 1 and the artifact fractures, the stated effect still takes place — but the Fracture Condition triggers simultaneously. The agent gets what they wanted _and_ pays the catastrophic price.
+
+=== Artifact Die Levels
+
+An artifact's starting die is not mechanically locked to its Corruption tier. It reflects the artifact's **metaphysical resilience** — the depth of its origin event, its age, how many times it has been activated without containment, and how well-preserved its internal structure remains.
+
+[%header,cols="^1,4"]
+|===
+| Starting Die | Typical Artifact
+
+| *d20*
+| Ancient relics with deep historical or mythological roots. Artifacts connected to major events in human history — wars, plagues, empires. Extremely rare; the Covenant may encounter one per campaign.
+
+| *d12*
+| Powerful artifacts with centuries of history. Objects connected to significant but localized events — a 17th-century plague bell, a Civil War relic, a medieval reliquary.
+
+| *d10*
+| Established artifacts with documented activation history. Mid-century objects that have been used, studied, or contained multiple times.
+
+| *d8*
+| Standard field-grade artifacts. Most catalog entries and case-file relics fall here. Dangerous but not inexhaustible.
+
+| *d6*
+| Lower-tier artifacts, recently formed objects, or items weakened by prior activation. Common among Keep-issue field tools and objects recovered in degraded condition.
+
+| *d4*
+| Nearly spent artifacts — one activation from fracture. Objects the Covenant issues as disposable emergency tools, or relics that have been pushed to their limit through repeated use.
+|===
+
+---
 
 == Containment-First Play Principle
 
@@ -78,35 +137,40 @@ Emission is optional per artifact and should be tied to tier and narrative stake
 
 == Catalog of 1980s Occult Artifacts
 
-[%header,cols="2,2,3,3,2"]
+[%header,cols="2,^1,2,3,3,2"]
 |===
-| Artifact | Mundane Appearance | Effect | Cost & Fracture (on 1) | Emission
+| Artifact | Die | Mundane Appearance | Effect | Cost & Fracture | Emission
 
 | *The Betamax of St. Jude*
+| d8
 | Degraded Betamax tape in unmarked black sleeve.
 | Displays the immediate 10-minute future when played on a VCR. Auto-success on any opposed Wits or Agility roll in the current scene.
 | *2 Corruption.* VCR combusts; user temporarily blinded by visions of their own death.
 | *Pulse* — when any VCR in the same building powers on, future-vision fragments leak to all agents in the same zone. +1 Corruption.
 
 | *The Obsidian Walkman*
+| d6
 | Heavy, modified Sony cassette player with stone-like casing.
 | Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues or bypass Investigation rolls.
 | *1 Corruption.* User deafened by psychic static; gains permanent phobia of silence.
 | *Aura* — the dead broadcast continuously while the Walkman is carried. +1 Corruption at scene start for the carrier and all agents sharing the zone.
 
 | *The Oppenheimer Lens*
+| d8
 | Aviator sunglasses with fused desert-glass lenses.
 | See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions.
 | *1 Corruption.* Lenses shatter; shards cause 1 permanent Agility damage.
 | —
 
 | *The Judas Coin*
+| d12
 | Heavy silver denarius, unnaturally warm.
 | Target overwhelmed by greed or guilt during social interaction. Auto-success on Empathy (Manipulate).
 | *2 Corruption.* Coin burns through user's flesh (1 physical damage); target becomes violently hostile.
 | *Pulse* — when any monetary transaction occurs in the same zone (payment, barter, till), the Coin pulses guilt to the nearest agent. +1 Corruption.
 
 | *The Chronos Polaroid*
+| d6
 | Polaroid SX-70 camera smelling of ozone.
 | Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.
 | *1 Corruption.* Flash acts as beacon, alerting nearest supernatural entity to party's exact location.
@@ -189,8 +253,12 @@ introducing the artifact to players.
 | How much Corruption does activation generate?
 | 1 Corruption = Tier 1. 2 Corruption = Tier 2. 3 Corruption = Tier 3. See budget guidelines below.
 
+| *Artifact Die*
+| What is the artifact's starting usage die?
+| d4 (disposable) through d20 (legendary). Based on the artifact's age, origin depth, and metaphysical resilience. See <<using-an-artifact,Artifact Die Levels>>.
+
 | *Fracture Condition*
-| What happens when the Artifact Die rolls 1?
+| What happens when the Artifact Die steps down past d4?
 | Should be thematically linked to the origin. A surgeon's tool might inflict wounds; a musical instrument might silence the user.
 |===
 
@@ -204,25 +272,24 @@ introducing the artifact to players.
 === Corruption Budget System
 
 An artifact's Corruption cost is not arbitrary — it flows directly from the power
-of the effect. Use this framework to set Corruption cost and choose the Artifact Die.
+of the effect. Use this framework to set the Corruption cost for a new artifact.
+The Artifact Die is assigned separately based on history and resilience — see
+<<using-an-artifact,Artifact Die Levels>>.
 
-[%header,cols="1,1,2,4"]
+[%header,cols="1,1,4"]
 |===
-| Tier | Corruption Cost | Artifact Die | Effect Power Level
+| Tier | Corruption Cost | Effect Power Level
 
 | *1 — Uncanny*
 | 1 Corruption
-| d8
 | Grants an automatic success on a single skill roll, or reveals information that would require a Diff 2 roll. No direct combat effect. Minor sensory or perceptual ability.
 
 | *2 — Threatening*
 | 2 Corruption
-| d10
 | Replaces a full skill roll with guaranteed success, or grants a significant combat advantage (extra dice, forced complication on enemy). Affects one target in zone.
 
 | *3 — Catastrophic*
 | 3 Corruption
-| d12
 | Transcends normal human action entirely — massive unblockable damage, reality alteration, mass psychic attack, temporal displacement of a scene. Cannot be replicated by any mundane skill roll.
 |===
 
@@ -431,15 +498,15 @@ it when:
 
 - The artifact is successfully studied by a Wayfinder (roll Lore, success = +1 Decay)
 - A containment ritual is performed correctly (+1 Decay per ritual)
-- The artifact fractures (Artifact Die = 1) and the PC survives (+1 Decay)
+- The Artifact Die steps down due to activation (+1 Decay per step-down)
 
 [%header,cols="1,1,4"]
 |===
 | Decay Score | Artifact Die | Status
 
-| 0 | Full die (d8/d10/d12) | Active and fully dangerous
-| 1–2 | Step down one die | Effect weakened; Corruption cost reduced by 1 (min 1)
-| 3–4 | Step down two dice | Barely active; only works on activation rolls of 5–6
+| 0 | Starting die | Active and fully dangerous
+| 1–2 | Step down one die from current | Effect weakened; Corruption cost reduced by 1 (min 1)
+| 3–4 | Step down two dice from current | Barely active; only works on activation rolls of 5–6
 | 5 | — | Inert. Artifact is neutralized and safe for permanent containment. Case closed.
 |===
 
@@ -463,7 +530,9 @@ event.
 **Form:** A 1940s-era Sprague Rappaport stethoscope, worn black tubing,
 chestpiece engraved with initials E.M. Appears old but functional.
 
-**Effect (Tier 2, d10):** When pressed to any living person's chest, the user
+**Artifact Die:** d10
+
+**Effect (Tier 2):** When pressed to any living person's chest, the user
 hears not the target's heartbeat but their greatest fear — precise, immersive,
 and exploitable. Grants automatic success on any Empathy (Manipulate) or
 Investigate (interrogation) roll against that target for the rest of the scene.
@@ -494,7 +563,8 @@ The following three artifacts illustrate missions where *preventing activation i
 ==== The Broadcast Reel
 
 *Risk Tag:* Volatile +
-*Tier:* 2 (d10) +
+*Tier:* 2 +
+*Artifact Die:* d10 +
 *Emission:* Pulse
 
 **Origin:** In 1968, a documentary film crew recorded what they believed was a mass hysteria event at a rural commune. The footage shows nothing unusual — fields, a barn, people standing in a field doing nothing. The editor who assembled the final cut died by suicide three days after completing it. The reel was seized by a government agency in 1970 and has been in federal transit limbo since, never screened, never destroyed.
@@ -507,7 +577,7 @@ The following three artifacts illustrate missions where *preventing activation i
 
 **Corruption Cost:** 2. All occupants of the projected space are affected simultaneously; the activating agent has no special protection against bystander exposure.
 
-**Fracture Condition (on 1):** The projector fuses and cannot be switched off by normal means. The film loops. Any occupant who entered the room cannot perceive the exit until someone outside physically cuts power to the building circuit.
+**Fracture Condition:** The projector fuses and cannot be switched off by normal means. The film loops. Any occupant who entered the room cannot perceive the exit until someone outside physically cuts power to the building circuit.
 
 **Containment Profile:** Physical Isolation. Transport in the original yellow canister inside an opaque black nylon bag, stored in a hard-sided case. Never collocate with projection equipment. +
 *Inadvertent activation:* Canister opened in a darkened room while a film projector is running within 5 meters.
@@ -522,7 +592,8 @@ The following three artifacts illustrate missions where *preventing activation i
 ==== The Custody Manifest
 
 *Risk Tag:* Unknown +
-*Tier:* 1 (d8) +
+*Tier:* 1 +
+*Artifact Die:* d8 +
 *Emission:* Aura
 
 **Origin:** A chain-of-custody manifest from a classified government logistics program believed to have operated between 1959 and 1963. The form is never fully filled out: the "Current Custodian" entry rearranges overnight, updating itself to match whoever last handled the document. No origin facility has been matched. The manifest predates any known program that would have generated it.
@@ -535,7 +606,7 @@ The following three artifacts illustrate missions where *preventing activation i
 
 **Corruption Cost:** 1. Paid immediately at the moment of signing.
 
-**Fracture Condition (on 1):** The delivery address resolves to a location within five kilometres of the signing agent. A Shard Construct manifests at that location within the hour, tasked with enforcing delivery — of the signing agent themselves.
+**Fracture Condition:** The delivery address resolves to a location within five kilometres of the signing agent. A Shard Construct manifests at that location within the hour, tasked with enforcing delivery — of the signing agent themselves.
 
 **Containment Profile:** Ritual Quiescence. Handle only with latex gloves. Store face-down with an external handwritten cover note (not typed — the manifest cannot affect marks that do not touch its surface): _DO NOT SIGN. DO NOT WRITE ON OR NEAR THIS DOCUMENT._ +
 *Inadvertent activation:* An agent fills out an unrelated form placed on top of the manifest, pressing through the page.
@@ -550,7 +621,8 @@ The following three artifacts illustrate missions where *preventing activation i
 ==== The Quarantine Bell
 
 *Risk Tag:* Catastrophic +
-*Tier:* 3 (d12) +
+*Tier:* 3 +
+*Artifact Die:* d12 +
 *Emission:* Burst
 
 **Origin:** A field quarantine bell used during a 17th-century plague response. Recovered from a site outside Lyon by a French government archaeological survey in 1978; the survey team experienced three fatalities and a collective psychological breakdown before the site was sealed. The bell was transferred to a private collector and has been in circulation since 1979.
@@ -563,7 +635,7 @@ The following three artifacts illustrate missions where *preventing activation i
 
 **Corruption Cost:** 3 for the activating agent. All targets who hear the bell — whether or not they resist the Endure test — gain +1 Corruption.
 
-**Fracture Condition (on 1):** The bell cannot be silenced. It emits a continuous tone audible across 4 zones for the remainder of the scene. All targets within 4 zones gain +1 Corruption per round until the bell is physically isolated.
+**Fracture Condition:** The bell cannot be silenced. It emits a continuous tone audible across 4 zones for the remainder of the scene. All targets within 4 zones gain +1 Corruption per round until the bell is physically isolated.
 
 **Containment Profile:** Physical Isolation — triple redundancy required. _Layer 1:_ dense foam-padded hard case interior. _Layer 2:_ lead-lined outer container. _Layer 3:_ ritually sealed outer bag (requires a Wayfinder to succeed on a Lore roll, Difficulty 1). Do not transport over rough terrain without all three layers in place. +
 *Inadvertent activation:* Dropped, struck by another object, or brought within 2 metres of a heavy vibration source (vehicle engine at idle, generator, subwoofer).
