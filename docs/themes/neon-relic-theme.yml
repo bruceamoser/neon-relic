@@ -203,15 +203,6 @@ sidebar:
   title-font-style: bold
   padding: [3mm, 4mm, 3mm, 4mm]
 
-# ── DESCRIPTION LIST (glossary entries) ─────────────────────────────────────────────────────
-description-list:
-  term-font-family: Courier
-  term-font-style: bold
-  term-font-size: 8
-  term-font-color: '#1e2010'
-  description-indent: 6mm
-  description-font-size: 6
-
 # ── LIST ─────────────────────────────────────────────────────────────────────────────────────
 list:
   marker-font-color: '#4a5a38'
