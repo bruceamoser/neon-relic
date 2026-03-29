@@ -1,0 +1,261 @@
+= Building a Case File
+:doctype: article
+:toc: left
+:toclevels: 2
+:icons: font
+:pdf-theme: neon-relic
+:pdf-themesdir: {docdir}/themes
+
+[.lead]
+_A practical step-by-step guide for Directors of Agents._
+
+---
+
+== Before You Begin
+
+A Case File is a reactive operations board, not a scripted adventure. You are building a network of opportunities and pressures that the agents will navigate on their own terms. If your case can only be explained as a linear plot, it is not ready.
+
+This guide walks you through building a complete Case File from scratch. For the full rules and mechanical detail, see the _Case File_ chapter and _DA Guidance_ chapter of the core rulebook.
+
+*What you will need:*
+
+* A blank Case File Form (Form VC-12)
+* The core rulebook for reference
+* About 15–30 minutes of prep time
+
+---
+
+== Step 1: Choose the Artifact
+
+Everything starts with the artifact. Before you think about location, NPCs, or plot, decide what the object is and what it does.
+
+.Decide these first:
+. *Mundane appearance* — What does it look like if you didn't know what it was?
+. *Tier* — How dangerous is it? (Tier 1–4)
+. *Risk Tag* — Stable, Volatile, Catastrophic, or Unknown?
+. *Activation condition* — What triggers its power?
+. *Core effect* — What does it actually do when activated?
+. *Fracture consequence* — What goes wrong on an Artifact Die roll of 1?
+. *Corruption cost* — How much Corruption does activation inflict? (+1 to +3 by tier)
+
+If you are stuck, roll on the *d66 Artifact Type* table in the Case File chapter.
+
+.TIP
+****
+The artifact's logic should flavor everything else. If the artifact is about command, NPCs should argue about authority. If it is about memory, witnesses should repeat themselves without knowing it. Let the artifact define the mood.
+****
+
+---
+
+== Step 2: Write the Mystery Statement
+
+Summarize the entire case in one sentence using this template:
+
+[quote]
+____
+A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [Front 1] and [Front 2] are moving on the same problem. The agents need [Containment Truths] before they can recover it safely.
+____
+
+Write this on the Case File Form under *Mystery Statement*. If it takes more than one sentence, the case is too diffuse — simplify.
+
+---
+
+== Step 3: Define Containment Truths
+
+Containment Truths are the facts the agents need to learn before they can safely resolve the case. Write three:
+
+. *Trigger* — What makes the artifact more active or dangerous?
+. *Appetite* — What does the artifact feed on, amplify, or attract?
+. *Quiescence* — What conditions make it safe to handle, transport, or contain?
+
+These truths become the real objectives of the investigation. The agents are not just finding the artifact — they are learning how to survive it.
+
+.HARD RULE
+****
+Every Containment Truth must be reachable through *at least three different paths*. If only one scene can reveal a truth, your case has a single point of failure. Redesign it.
+****
+
+---
+
+== Step 4: Build the Relic Timeline
+
+The Relic Timeline is what the artifact itself does if no one intervenes. This is separate from what rival factions are doing.
+
+. *Set a starting threshold value* (typically 6–14, higher for slower-building cases).
+. *Write 4–5 milestones* at descending values — each one describes an escalation.
+. *Milestone 0* is the threshold event — the worst-case outcome if the case runs too long.
+
+Make each milestone specific to the artifact's logic. Don't write generic "things get spooky." If the artifact is about wounds, milestones should involve unexplained injuries appearing. If it is about sound, milestones should involve interference, phantom broadcasts, or compulsive listening.
+
+.Example milestones (for a command-type relic):
+* `10`: handlers report unusual certainty and conviction
+* `7`: witnesses start using the same phrases without coordination
+* `4`: electronics fail near the object; radios broadcast static
+* `2`: the artifact begins selecting a bearer
+* `0`: public manifestation — mass obedience event or violent claimant emergence
+
+---
+
+== Step 5: Create Your Fronts
+
+Fronts are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation.
+
+For each front:
+
+. *Name it* — Compact Recovery, Police Inquiry, Media Exposure, Church Custody, etc.
+. *Set a starting value* (typically 6–12).
+. *Write 3–5 milestones* at descending values.
+. *List triggers* — what advances this front (time, noise, publicity, violence, missed opportunities).
+. *Write linked effects* — when this front hits certain milestones, does it worsen another front or the relic timeline?
+. *Note player-facing signs* — what can the agents notice before or as it worsens?
+
+.Aim for:
+* 2–3 *Active Fronts* (already in motion when the case starts)
+* 0–2 *Dormant Fronts* (activated by specific events during play)
+
+.IMPORTANT
+****
+If a front cannot produce visible signs before it becomes a problem, it will feel arbitrary to the players. Always give them something to notice.
+****
+
+---
+
+== Step 6: Design Scene Nodes
+
+Scenes are playable opportunities, not mandatory steps. Each one is a node on the case board that the agents can reach if its conditions are met.
+
+For each scene, fill in:
+
+[horizontal]
+Availability:: Why is this scene accessible? (Open, Clue-locked, Contact-locked, Time-locked, Packet-locked)
+Purpose:: Why does this scene exist in the case?
+Key Activity:: The operational problem at the heart of the scene (this belongs to the scene, not the players).
+Time Cost:: Usually 1 shift.
+Risked Fronts:: Which fronts or relic timeline tracks worsen if things go badly?
+May Reveal:: Truths, identities, routes, or motives discoverable here.
+May Unlock:: New scenes, contacts, packet angles, or crisis branches.
+
+.Build 5–8 scene nodes for a standard case:
+
+* 2–3 should be *Open* at case start
+* The rest should unlock through investigation, contacts, or packet returns
+* The final confrontation / containment scene should require at least 2 prior unlocks
+
+.THE DEAD END TEST
+****
+For every scene, ask: _If the players never touch this, can the case still be solved?_ If no, redesign it. No single scene may be required.
+****
+
+---
+
+== Step 7: Create Key NPCs
+
+Every significant NPC needs three things:
+
+[horizontal]
+Secret:: Something they are hiding from the agents (not necessarily sinister).
+Goal:: What they are actively trying to accomplish *right now* during this case.
+Artifact Connection:: How they encountered the artifact and what effect proximity has had on them.
+
+.Build 4–8 NPCs for a standard case:
+
+* At least 1 potential ally / quiet source
+* At least 1 rival faction operative
+* At least 1 civilian or institutional figure caught in the middle
+* At least 1 viable bearer candidate if the artifact selects carriers
+
+.TIP
+****
+Ask: _If the agents were not present, what would this NPC do?_ If the answer is nothing, the NPC is an information dispenser. Cut them or give them an active agenda.
+****
+
+---
+
+== Step 8: Set Up the Shift Timeline
+
+The shift timeline is the operational calendar. Prepare a tracker showing:
+
+* *10 days* (default), *4 shifts per day*: Morning, Day, Evening, Night
+* Mark any *known windows* — handoff deadlines, event nights, transport schedules
+* Leave space for *packet send/return markers*
+* Note any *time-locked scenes* or *front triggers* tied to specific shifts
+
+This handout is for coordination — share it with the table. Do *not* put your hidden front values on it.
+
+---
+
+== Step 9: Prepare Packet Guidance
+
+The agents can send one Covenant Request Packet per shift. Before play, prepare:
+
+* 3–5 *likely packet requests* based on the case's available leads
+* The *minimum response time* (default is 2 shifts; sensitive requests take 3+)
+* What each response *contains* — a truth, a contact, a scene unlock, or a theory confirmation
+* Whether any packet can be *intercepted, delayed, or partially wrong*
+
+Packets should sharpen the next decision, not solve the case.
+
+---
+
+== Step 10: Write the Case Summary
+
+Fill in the Case Summary block at the top of the Case File Form:
+
+[horizontal]
+Case ID:: Use the Covenant format: `VC-[Region Code]-[Year]-[Number]` (e.g., `VC-AR-87-041`)
+Region:: City and country
+Format:: Expected session count (1–3 sessions typical)
+Primary Rival:: The main opposing faction
+Secondary Pressure:: Other forces complicating the situation
+Shift Cadence:: Default is 4 shifts per day
+Packet Response Floor:: Default is 2 shifts
+Core Problem:: One sentence describing the operational situation
+
+---
+
+== Quick Reference: The Solvability Checklist
+
+Before you run the case, verify:
+
+[%interactive]
+* [ ] Every Containment Truth is reachable by at least 3 different paths.
+* [ ] No single scene is required for forward motion.
+* [ ] Every scene reveals a truth, unlocks a contact, narrows a route, or worsens the situation informatively.
+* [ ] At least one actionable option is visible at the start of each shift.
+* [ ] A failed scene produces movement, not dead air.
+* [ ] The Mystery Statement fits in one sentence.
+* [ ] Each front has player-facing signs before it becomes a crisis.
+* [ ] Each NPC has a secret, a goal, and an artifact connection.
+
+---
+
+== Quick Reference: Session Flow
+
+Each shift at the table follows this procedure:
+
+. *Review visible pressure signs.* State what changed since the last shift.
+. *Choose the team's primary undertaking.* Scene action, travel, surveillance, research, preparation, or recovery.
+. *Optionally send one Covenant Request Packet.*
+. *Resolve the undertaking.* Play the scene or handle the shift action.
+. *Advance consequences.* Worsen any fronts or relic timeline triggered by time, noise, or mishandling.
+. *Mark delayed returns.* Note when packet responses or stakeout results will arrive.
+
+When a shift becomes an active scene, resolve it as a bundle:
+
+. State the objective.
+. You state the Key Activity.
+. Each player declares a unique contribution (Immediate, Shield, Position, or Delayed).
+. Roll what matters.
+. Disclose results in bands: Clean Progress, Progress With Cost, Partial Progress, Setback With Signal, or Breach.
+
+---
+
+== Cross-References
+
+[horizontal]
+Full case file rules:: _Chapter 15: The Case File_
+DA guidance and authoring tools:: _Chapter 14: Director of Agents Guidance_
+Artifact tiers and containment profiles:: _Chapter 11: Artifacts of Power and Doom_
+Rival faction behavior:: _Chapter 17: Rival Factions_
+Corruption mechanics:: _Chapter 8: Corruption, Fear & Healing_
+Case generator tables:: _Chapter 15: Case File Generator Tables_
