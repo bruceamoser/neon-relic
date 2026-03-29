@@ -27,7 +27,7 @@ font:
 base:
   font-color: '#1e2010'
   background-color: '#f0ead6'
-  font-family: CutiveMono
+  font-family: SpecialElite
   font-size: 10
   line-height: 1.45
 
@@ -65,23 +65,23 @@ header:
   recto:
     left:
       content: '{page-number}'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 8
       font-color: '#6a7a58'
     right:
       content: "TOP SECRET — VERDANT COVENANT — EYES ONLY\n{chapter-title}"
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#6a7a58'
   verso:
     left:
       content: "TOP SECRET — VERDANT COVENANT — EYES ONLY\n{chapter-title}"
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#6a7a58'
     right:
       content: '{page-number}'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 8
       font-color: '#6a7a58'
   line-metrics-scale-factor: 1
@@ -94,23 +94,23 @@ footer:
   recto:
     left:
       content: 'FORM VC-1 · REV. 1987 · INTERNAL USE ONLY'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#7a7a5a'
     right:
       content: 'COPY NO. ___   PAGE {page-number} OF {page-count}'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#7a7a5a'
   verso:
     left:
       content: 'COPY NO. ___   PAGE {page-number} OF {page-count}'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#7a7a5a'
     right:
       content: 'FORM VC-1 · REV. 1987 · INTERNAL USE ONLY'
-      font-family: CourierPrime
+      font-family: SpecialElite
       font-size: 7
       font-color: '#7a7a5a'
 
@@ -197,7 +197,7 @@ quote:
 
 admonition:
   label:
-    font-family: CourierPrime
+    font-family: SpecialElite
     font-style: bold
     font-size: 9
     font-color: '#1a2a0e'
@@ -233,7 +233,7 @@ list:
 # ── TOC ─────────────────────────────────────────────────────────────────────────────────────
 toc:
   font-color: '#1e2010'
-  font-family: CourierPrime
+  font-family: SpecialElite
   font-size: 10
   line-height: 1.6
   hanging-indent: 4mm
