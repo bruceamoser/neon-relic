@@ -29,29 +29,33 @@ jobs:
 
       - name: Build self-contained HTML files
         run: |
-          # Base64-encode fonts
-          SE_B64=$(base64 -w0 docs/themes/SpecialElite-Regular.ttf)
-          CP_B64=$(base64 -w0 docs/themes/CourierPrime-Regular.ttf)
-          SE_URI="data:font/truetype;base64,${SE_B64}"
-          CP_URI="data:font/truetype;base64,${CP_B64}"
+          python3 - <<'PYEOF'
+          import base64, re, pathlib, shutil
 
-          inline_fonts() {
-            local src="$1" dest="$2"
-            sed \
-              -e "s|url(['\"]\\?[^'\"]*SpecialElite-Regular\\.ttf['\"]\\?)|url('${SE_URI}')|g" \
-              -e "s|url(['\"]\\?[^'\"]*CourierPrime-Regular\\.ttf['\"]\\?)|url('${CP_URI}')|g" \
-              "$src" > "$dest"
-          }
+          def load_font_uri(path):
+              data = pathlib.Path(path).read_bytes()
+              b64 = base64.b64encode(data).decode('ascii')
+              return f"data:font/truetype;base64,{b64}"
 
-          # Character sheet and case file form
-          inline_fonts assets/character-sheet.html starter-kit/agent-dossier-blank.html
-          inline_fonts assets/case-file-form.html  starter-kit/case-file-form-blank.html
+          se_uri = load_font_uri("docs/themes/SpecialElite-Regular.ttf")
+          cp_uri = load_font_uri("docs/themes/CourierPrime-Regular.ttf")
 
-          # Prebuilt character dossiers
-          for f in assets/prebuilt/*.html; do
-            name=$(basename "$f")
-            inline_fonts "$f" "starter-kit/${name}"
-          done
+          def inline_fonts(src, dest):
+              html = pathlib.Path(src).read_text(encoding='utf-8')
+              html = re.sub(r"url\(['\"]?[^'\"]*SpecialElite-Regular\.ttf['\"]?\)",
+                            f"url('{se_uri}')", html)
+              html = re.sub(r"url\(['\"]?[^'\"]*CourierPrime-Regular\.ttf['\"]?\)",
+                            f"url('{cp_uri}')", html)
+              pathlib.Path(dest).write_text(html, encoding='utf-8')
+
+          inline_fonts("assets/character-sheet.html", "starter-kit/agent-dossier-blank.html")
+          inline_fonts("assets/case-file-form.html",  "starter-kit/case-file-form-blank.html")
+
+          for p in sorted(pathlib.Path("assets/prebuilt").glob("*.html")):
+              inline_fonts(str(p), f"starter-kit/{p.name}")
+
+          print("Font inlining complete.")
+          PYEOF
 
       - name: Package starter-kit.zip
         run: cd starter-kit && zip -r ../starter-kit.zip .
