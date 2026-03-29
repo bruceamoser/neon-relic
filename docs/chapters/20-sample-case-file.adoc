@@ -1,4 +1,4 @@
-[#chapter-sample-case-file]
+﻿[#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
 This chapter presents a full sample case built for the revised Neon Relic case structure: a reactive case board, multiple fronts, scene nodes with dependencies, delayed information returns, and a relic whose containment problem matters as much as its location.
@@ -925,43 +925,43 @@ Each of the following pages contains a full-page handout image generated from th
 
 === Handout 1: Covenant Archive Summary
 
-image::png/spear-handout-1-covenant-archive-summary.png[Handout 1 — Covenant Archive Summary,align=center,pdfwidth=100%]
+image::png/spear-handout-1-covenant-archive-summary.png[Handout 1 — Covenant Archive Summary,align=center,pdfwidth=90%]
 
 <<<
 
 === Handout 2: Church Custody Memorandum
 
-image::png/spear-handout-2-church-custody-memo.png[Handout 2 — Church Custody Memorandum,align=center,pdfwidth=100%]
+image::png/spear-handout-2-church-custody-memo.png[Handout 2 — Church Custody Memorandum,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Handout 3: Academic / Museum Abstract
 
-image::png/spear-handout-3-academic-museum-abstract.png[Handout 3 — Academic / Museum Abstract,align=center,pdfwidth=100%]
+image::png/spear-handout-3-academic-museum-abstract.png[Handout 3 — Academic / Museum Abstract,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Handout 4: Black-Market Intelligence Brief
 
-image::png/spear-handout-4-black-market-intelligence-brief.png[Handout 4 — Black-Market Intelligence Brief,align=center,pdfwidth=100%]
+image::png/spear-handout-4-black-market-intelligence-brief.png[Handout 4 — Black-Market Intelligence Brief,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Handout 5: Tabloid Clipping
 
-image::png/spear-handout-5-tabloid-clipping.png[Handout 5 — Tabloid Clipping,align=center,pdfwidth=100%]
+image::png/spear-handout-5-tabloid-clipping.png[Handout 5 — Tabloid Clipping,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Handout 6: Recovered Thief Notes
 
-image::png/spear-handout-6-recovered-thief-notes.png[Handout 6 — Recovered Thief Notes,align=center,pdfwidth=100%]
+image::png/spear-handout-6-recovered-thief-notes.png[Handout 6 — Recovered Thief Notes,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Handout 7: Case Evidence Montage
 
-image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence Montage,align=center,pdfwidth=100%]
+image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence Montage,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
@@ -971,49 +971,49 @@ image::png/spear-handout-7-case-evidence-montage.png[Handout 7 — Case Evidence
 
 === NPC 1: Lucia Ferreyra
 
-image::png/spear-npc-1-lucia-ferreyra.png[NPC 1 — Lucia Ferreyra,align=center,pdfwidth=100%]
+image::png/spear-npc-1-lucia-ferreyra.png[NPC 1 — Lucia Ferreyra,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 2: Detective Mateo Suárez
 
-image::png/spear-npc-2-detective-mateo-suarez.png[NPC 2 — Detective Mateo Suárez,align=center,pdfwidth=100%]
+image::png/spear-npc-2-detective-mateo-suarez.png[NPC 2 — Detective Mateo Suárez,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 3: Father Esteban Vale
 
-image::png/spear-npc-3-father-esteban-vale.png[NPC 3 — Father Esteban Vale,align=center,pdfwidth=100%]
+image::png/spear-npc-3-father-esteban-vale.png[NPC 3 — Father Esteban Vale,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 4: Sister Inés Barral
 
-image::png/spear-npc-4-sister-ines-barral.png[NPC 4 — Sister Inés Barral,align=center,pdfwidth=100%]
+image::png/spear-npc-4-sister-ines-barral.png[NPC 4 — Sister Inés Barral,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 5: Ramiro "Rami" Acosta
 
-image::png/spear-npc-5-ramiro-acosta.png[NPC 5 — Ramiro Acosta,align=center,pdfwidth=100%]
+image::png/spear-npc-5-ramiro-acosta.png[NPC 5 — Ramiro Acosta,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 6: Sabine Voss
 
-image::png/spear-npc-6-sabine-voss.png[NPC 6 — Sabine Voss,align=center,pdfwidth=100%]
+image::png/spear-npc-6-sabine-voss.png[NPC 6 — Sabine Voss,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 7: Iván Luján
 
-image::png/spear-npc-7-ivan-lujan.png[NPC 7 — Iván Luján,align=center,pdfwidth=100%]
+image::png/spear-npc-7-ivan-lujan.png[NPC 7 — Iván Luján,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === NPC 8: Brother Tomás Arce
 
-image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,align=center,pdfwidth=100%]
+image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
@@ -1023,43 +1023,43 @@ image::png/spear-npc-8-brother-tomas-arce.png[NPC 8 — Brother Tomás Arce,alig
 
 === Location 1: The Estate Aftermath
 
-image::png/spear-location-1-estate-aftermath.png[Location 1 — The Estate Aftermath,align=center,pdfwidth=100%]
+image::png/spear-location-1-estate-aftermath.png[Location 1 — The Estate Aftermath,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 2: Police Station
 
-image::png/spear-location-2-police-station.png[Location 2 — Police Station,align=center,pdfwidth=100%]
+image::png/spear-location-2-police-station.png[Location 2 — Police Station,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 3: Church Archive
 
-image::png/spear-location-3-church-archive.png[Location 3 — Church Archive,align=center,pdfwidth=100%]
+image::png/spear-location-3-church-archive.png[Location 3 — Church Archive,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 4: Currency Exchange
 
-image::png/spear-location-4-currency-exchange.png[Location 4 — Currency Exchange,align=center,pdfwidth=100%]
+image::png/spear-location-4-currency-exchange.png[Location 4 — Currency Exchange,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 5: Illicit Clinic
 
-image::png/spear-location-5-illicit-clinic.png[Location 5 — Illicit Clinic,align=center,pdfwidth=100%]
+image::png/spear-location-5-illicit-clinic.png[Location 5 — Illicit Clinic,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 6: Port / Export Route
 
-image::png/spear-location-6-port-export-route.png[Location 6 — Port / Export Route,align=center,pdfwidth=100%]
+image::png/spear-location-6-port-export-route.png[Location 6 — Port / Export Route,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
 === Location 7: Hidden Shrine
 
-image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align=center,pdfwidth=100%]
+image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align=center,pdfwidth=90%,pdfheight=80%]
 
 <<<
 
@@ -1069,7 +1069,7 @@ image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align
 
 === The Spear of Destiny
 
-image::png/spear-relic-spear-of-destiny.png[Relic — The Spear of Destiny,align=center,pdfwidth=100%]
+image::png/spear-relic-spear-of-destiny.png[Relic — The Spear of Destiny,align=center,pdfwidth=90%,pdfheight=80%]
 
 ---
 
