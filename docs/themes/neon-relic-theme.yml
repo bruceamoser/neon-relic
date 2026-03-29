@@ -210,7 +210,7 @@ description-list:
   term-font-size: 8
   term-font-color: '#1e2010'
   description-indent: 6mm
-  description-font-size: 8
+  description-font-size: 6
 
 # ── LIST ─────────────────────────────────────────────────────────────────────────────────────
 list:

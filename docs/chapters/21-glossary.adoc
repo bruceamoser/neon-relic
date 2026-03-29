@@ -1,5 +1,6 @@
 [#chapter-glossary]
 = Glossary of Game Terms
+:sectnums!:
 
 Quick reference for all game-specific terms used in the Neon Relic core rules. Entries are alphabetical. Cross-references point to the chapter where the full rules appear.
 
