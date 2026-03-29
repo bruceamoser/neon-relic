@@ -25,7 +25,21 @@ Neon Relic combines:
 ## Latest Release
 
 - [Latest release](https://github.com/bruceamoser/neon-relic/releases/latest)
-- [Download neon-relic.pdf](https://github.com/bruceamoser/neon-relic/releases/latest/download/neon-relic.pdf)
+- [Download starter-kit.zip](https://github.com/bruceamoser/neon-relic/releases/latest/download/starter-kit.zip)
+
+### Starter Kit (v2.0.0+)
+
+Beginning with v2.0.0, each release ships a **Neon Relic Starter Kit** — a single zip containing everything players and Directors of Agents need to run a session:
+
+| File | Contents |
+|---|---|
+| `neon-relic-core-rules.pdf` | The compiled rulebook |
+| `case-file-instructions.pdf` | Step-by-step guide for Directors of Agents |
+| `agent-dossier-blank.html` | Fillable Agent Dossier (Form VC-7) — open in any browser |
+| `case-file-form-blank.html` | Fillable Case File Form (Form VC-12) — open in any browser |
+| `character-*.html` | Five prebuilt character dossiers (one per division) |
+
+The HTML forms are fully self-contained with embedded fonts — no internet connection or external files required. They can be filled out in the browser and printed to PDF via Ctrl+P.
 
 ## Repository Structure
 
