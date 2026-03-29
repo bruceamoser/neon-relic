@@ -490,7 +490,7 @@
       <div class="field-value"></div>
     </div>
     <div class="field" style="flex:1">
-      <div class="field-label">Department / Background</div>
+      <div class="field-label">Wing / Paradigm / Dept.</div>
       <div class="field-value"></div>
     </div>
   </div>
@@ -505,6 +505,10 @@
     </div>
     <div class="field" style="flex:0.5">
       <div class="field-label">Clearance Level</div>
+      <div class="field-value"></div>
+    </div>
+    <div class="field" style="flex:1">
+      <div class="field-label">Country of Origin</div>
       <div class="field-value"></div>
     </div>
     <div class="field" style="flex:2">
@@ -571,6 +575,7 @@
       <tr><td>Investigate <span class="skill-attr-tag">WIT</span></td><td></td></tr>
       <tr><td>Tech <span class="skill-attr-tag">WIT</span></td><td></td></tr>
       <tr><td>Lore <span class="skill-attr-tag">WIT</span></td><td></td></tr>
+      <tr><td>Heal <span class="skill-attr-tag">WIT</span></td><td></td></tr>
       <tr><td>Manipulate <span class="skill-attr-tag">EMP</span></td><td></td></tr>
       <tr><td>Command <span class="skill-attr-tag">EMP</span></td><td></td></tr>
       <tr><td>Psychoanalyze <span class="skill-attr-tag">EMP</span></td><td></td></tr>
@@ -611,14 +616,19 @@
 
   <!-- SECTION 5: TALENTS -->
   <div class="section-title green">Section V &mdash; Talents &amp; Abilities</div>
-  <div class="two-col">
+  <div class="three-col">
     <div class="talent-block">
-      <div class="talent-type">Division Talent</div>
+      <div class="talent-type">Division Talent &mdash; or &mdash; General Talent</div>
       <div class="talent-name"></div>
       <div class="talent-desc"></div>
     </div>
     <div class="talent-block">
-      <div class="talent-type">General Talent</div>
+      <div class="talent-type">Wing / Paradigm / Dept. Talent</div>
+      <div class="talent-name"></div>
+      <div class="talent-desc"></div>
+    </div>
+    <div class="talent-block">
+      <div class="talent-type">Background Talent</div>
       <div class="talent-name"></div>
       <div class="talent-desc"></div>
     </div>
@@ -649,7 +659,7 @@
     <tr>
       <th style="width: auto;">Item</th>
       <th style="width: 45px;">Bonus</th>
-      <th style="width: 45px;">Weight</th>
+      <th style="width: 45px;">Enc.</th>
     </tr>
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
@@ -660,6 +670,35 @@
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
   </table>
+
+  <!-- RESOURCE DICE & ARMOR -->
+  <div style="display: flex; gap: 16px; align-items: flex-start; margin-top: 5px; margin-bottom: 4px;">
+    <div style="flex: 1;">
+      <div class="field-label" style="margin-bottom: 3px;">Resource Dice &mdash; record die size (d4 / d6 / d8 / d10 / d12)</div>
+      <div style="display: flex; gap: 8px;">
+        <div style="text-align: center;">
+          <div class="field-label">Ammo</div>
+          <div style="border: 1.5px solid var(--rule); width: 38px; height: 18px; background: var(--field-bg);"></div>
+        </div>
+        <div style="text-align: center;">
+          <div class="field-label">Medical</div>
+          <div style="border: 1.5px solid var(--rule); width: 38px; height: 18px; background: var(--field-bg);"></div>
+        </div>
+        <div style="text-align: center;">
+          <div class="field-label">Battery</div>
+          <div style="border: 1.5px solid var(--rule); width: 38px; height: 18px; background: var(--field-bg);"></div>
+        </div>
+        <div style="text-align: center;">
+          <div class="field-label">____</div>
+          <div style="border: 1.5px solid var(--rule); width: 38px; height: 18px; background: var(--field-bg);"></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; min-width: 80px;">
+      <div class="field-label">Armor Rating</div>
+      <div style="font-size: 16pt; font-weight: bold; border: 1.5px solid var(--rule); width: 40px; height: 26px; margin: 2px auto 0; background: var(--field-bg); display: flex; align-items: center; justify-content: center;"></div>
+    </div>
+  </div>
 
   <!-- SECTION 8: CRITICAL INJURIES & CONDITIONS -->
   <div class="section-title" style="color: var(--red-stamp); border-color: var(--red-stamp);">Section VIII &mdash; Critical Injuries</div>
