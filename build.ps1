@@ -1,16 +1,18 @@
 <#
 .SYNOPSIS
-    Builds the Neon Relic starter kit — generates all PDFs and packages them into starter-kit.zip.
+    Builds the Neon Relic starter kit — generates PDFs and self-contained HTML files,
+    then packages everything into starter-kit.zip.
 
 .DESCRIPTION
-    Generates PDFs for:
-      - Core rulebook (via asciidoctor-pdf)
-      - Case file instructions (via asciidoctor-pdf)
-      - Character sheet (via Chrome headless)
-      - Case file form (via Chrome headless)
-      - 5 prebuilt character dossiers (via Chrome headless)
+    Generates:
+      - Core rulebook PDF (via asciidoctor-pdf)
+      - Case file instructions PDF (via asciidoctor-pdf)
+      - Self-contained HTML files with embedded fonts for:
+        - Character sheet (agent dossier)
+        - Case file form
+        - 5 prebuilt character dossiers
 
-    All PDFs land in starter-kit/ and are zipped into starter-kit.zip.
+    All output lands in starter-kit/ and is zipped into starter-kit.zip.
 
 .PARAMETER SkipRulebook
     Skip the rulebook PDF build (it's the slowest step).
@@ -29,15 +31,6 @@ $StarterKit = Join-Path $RepoRoot 'starter-kit'
 $ZipFile = Join-Path $RepoRoot 'starter-kit.zip'
 
 # ── Locate tools ──────────────────────────────────────────────────────────────
-
-$Chrome = (Get-Command chrome -ErrorAction SilentlyContinue).Source
-if (-not $Chrome) {
-    $Chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-}
-if (-not (Test-Path $Chrome)) {
-    Write-Error "Chrome not found. Install Google Chrome or ensure it is on PATH."
-    exit 1
-}
 
 $AsciidoctorPdf = (Get-Command asciidoctor-pdf -ErrorAction SilentlyContinue).Source
 if (-not $AsciidoctorPdf) {
@@ -58,29 +51,29 @@ if (Test-Path $ZipFile) {
 
 Write-Host "`n=== Neon Relic Starter Kit Build ===" -ForegroundColor Cyan
 
-# ── Helper: HTML to PDF via Chrome headless ───────────────────────────────────
+# ── Pre-encode fonts as base64 data URIs ──────────────────────────────────────
 
-function Convert-HtmlToPdf {
+$ThemesDir = Join-Path $RepoRoot 'docs\themes'
+$FontMap = @{}
+
+$specialElite = Join-Path $ThemesDir 'SpecialElite-Regular.ttf'
+$courierPrime = Join-Path $ThemesDir 'CourierPrime-Regular.ttf'
+
+$FontMap['SpecialElite'] = "data:font/truetype;base64,$([Convert]::ToBase64String([IO.File]::ReadAllBytes($specialElite)))"
+$FontMap['CourierPrime'] = "data:font/truetype;base64,$([Convert]::ToBase64String([IO.File]::ReadAllBytes($courierPrime)))"
+
+# ── Helper: make HTML self-contained by inlining fonts ────────────────────────
+
+function Export-SelfContainedHtml {
     param(
-        [string]$HtmlPath,
-        [string]$PdfPath
+        [string]$SourcePath,
+        [string]$DestPath
     )
-    $uri = "file:///$($HtmlPath -replace '\\','/')"
-    $chromeArgs = @(
-        '--headless'
-        '--disable-gpu'
-        '--no-pdf-header-footer'
-        "--print-to-pdf=$PdfPath"
-        $uri
-    )
-    $prev = $ErrorActionPreference
-    $ErrorActionPreference = 'SilentlyContinue'
-    & $Chrome @chromeArgs 2>&1 | Out-Null
-    $ErrorActionPreference = $prev
-    if (-not (Test-Path $PdfPath)) {
-        Write-Error "Failed to generate: $PdfPath"
-        exit 1
-    }
+    $html = Get-Content -Path $SourcePath -Raw -Encoding UTF8
+    # Replace all relative font URL references with data URIs
+    $html = $html -replace "url\(['""]?[^'""]*?SpecialElite-Regular\.ttf['""]?\)", "url('$($FontMap['SpecialElite'])')"
+    $html = $html -replace "url\(['""]?[^'""]*?CourierPrime-Regular\.ttf['""]?\)", "url('$($FontMap['CourierPrime'])')"
+    [IO.File]::WriteAllText($DestPath, $html, [Text.UTF8Encoding]::new($false))
 }
 
 # ── 1. Core Rulebook ─────────────────────────────────────────────────────────
@@ -114,13 +107,13 @@ Write-Host " done" -ForegroundColor Green
 # ── 3. Character Sheet & Case File Form ──────────────────────────────────────
 
 Write-Host "  [3/4] Character sheet & case file form..." -NoNewline
-Convert-HtmlToPdf `
-    -HtmlPath (Join-Path $RepoRoot 'assets\character-sheet.html') `
-    -PdfPath  (Join-Path $StarterKit 'agent-dossier-blank.pdf')
+Export-SelfContainedHtml `
+    -SourcePath (Join-Path $RepoRoot 'assets\character-sheet.html') `
+    -DestPath   (Join-Path $StarterKit 'agent-dossier-blank.html')
 
-Convert-HtmlToPdf `
-    -HtmlPath (Join-Path $RepoRoot 'assets\case-file-form.html') `
-    -PdfPath  (Join-Path $StarterKit 'case-file-form-blank.pdf')
+Export-SelfContainedHtml `
+    -SourcePath (Join-Path $RepoRoot 'assets\case-file-form.html') `
+    -DestPath   (Join-Path $StarterKit 'case-file-form-blank.html')
 Write-Host " done" -ForegroundColor Green
 
 # ── 4. Prebuilt Characters ───────────────────────────────────────────────────
@@ -129,10 +122,9 @@ Write-Host "  [4/4] Prebuilt character dossiers..." -NoNewline
 $prebuiltDir = Join-Path $RepoRoot 'assets\prebuilt'
 $prebuiltFiles = Get-ChildItem -Path $prebuiltDir -Filter '*.html'
 foreach ($file in $prebuiltFiles) {
-    $pdfName = $file.BaseName + '.pdf'
-    Convert-HtmlToPdf `
-        -HtmlPath $file.FullName `
-        -PdfPath  (Join-Path $StarterKit $pdfName)
+    Export-SelfContainedHtml `
+        -SourcePath $file.FullName `
+        -DestPath   (Join-Path $StarterKit $file.Name)
 }
 Write-Host " done" -ForegroundColor Green
 
@@ -145,7 +137,7 @@ Write-Host " done" -ForegroundColor Green
 # ── Summary ───────────────────────────────────────────────────────────────────
 
 Write-Host "`n=== Build Complete ===" -ForegroundColor Cyan
-$pdfs = Get-ChildItem -Path $StarterKit -Filter '*.pdf'
-Write-Host "  $($pdfs.Count) PDFs in starter-kit/"
+$files = Get-ChildItem -Path $StarterKit
+Write-Host "  $($files.Count) files in starter-kit/"
 Write-Host "  $('{0:N1} MB' -f ((Get-Item $ZipFile).Length / 1MB)) starter-kit.zip"
 Write-Host ""

@@ -27,25 +27,30 @@ jobs:
       - name: Build case file instructions PDF
         run: asciidoctor-pdf docs/case-file-instructions.adoc -o starter-kit/case-file-instructions.pdf
 
-      - name: Build HTML PDFs via Chrome headless
+      - name: Build self-contained HTML files
         run: |
-          CHROME=$(which google-chrome || which chromium-browser)
+          # Base64-encode fonts
+          SE_B64=$(base64 -w0 docs/themes/SpecialElite-Regular.ttf)
+          CP_B64=$(base64 -w0 docs/themes/CourierPrime-Regular.ttf)
+          SE_URI="data:font/truetype;base64,${SE_B64}"
+          CP_URI="data:font/truetype;base64,${CP_B64}"
 
-          html_to_pdf() {
-            local html_file="$1"
-            local pdf_file="$2"
-            "$CHROME" --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
-              --print-to-pdf="$pdf_file" "file://$(realpath "$html_file")"
+          inline_fonts() {
+            local src="$1" dest="$2"
+            sed \
+              -e "s|url(['\"]\\?[^'\"]*SpecialElite-Regular\\.ttf['\"]\\?)|url('${SE_URI}')|g" \
+              -e "s|url(['\"]\\?[^'\"]*CourierPrime-Regular\\.ttf['\"]\\?)|url('${CP_URI}')|g" \
+              "$src" > "$dest"
           }
 
           # Character sheet and case file form
-          html_to_pdf assets/character-sheet.html starter-kit/agent-dossier-blank.pdf
-          html_to_pdf assets/case-file-form.html  starter-kit/case-file-form-blank.pdf
+          inline_fonts assets/character-sheet.html starter-kit/agent-dossier-blank.html
+          inline_fonts assets/case-file-form.html  starter-kit/case-file-form-blank.html
 
           # Prebuilt character dossiers
           for f in assets/prebuilt/*.html; do
-            name=$(basename "$f" .html)
-            html_to_pdf "$f" "starter-kit/${name}.pdf"
+            name=$(basename "$f")
+            inline_fonts "$f" "starter-kit/${name}"
           done
 
       - name: Package starter-kit.zip
