@@ -12,6 +12,11 @@ font:
       bold: CourierPrime-Bold.ttf
       italic: CourierPrime-Italic.ttf
       bold_italic: CourierPrime-BoldItalic.ttf
+    CutiveMono:
+      normal: CutiveMono-Regular.ttf
+      bold: CutiveMono-Regular.ttf
+      italic: CutiveMono-Regular.ttf
+      bold_italic: CutiveMono-Regular.ttf
     SpecialElite:
       normal: SpecialElite-Regular.ttf
       bold: SpecialElite-Regular.ttf
@@ -22,7 +27,7 @@ font:
 base:
   font-color: '#1e2010'
   background-color: '#f0ead6'
-  font-family: CourierPrime
+  font-family: CutiveMono
   font-size: 10
   line-height: 1.45
 
