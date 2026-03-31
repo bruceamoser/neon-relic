@@ -112,108 +112,62 @@ If these conditions are broken, transport is still possible -- but the DA should
 
 ---
 
-== Case Board
+== Operations Board
 
-=== Relic Timeline
+The Operations Board for this case uses 14 columns (14 → 1, days until catastrophe). Six organization rows track external pressure. Relic milestones are keyed to the phases row.
 
-==== Lance Threshold Build (14)
+=== Phases Row — Relic Milestones (Lance Threshold Build)
 
-This is what the Spear itself is doing if no one re-establishes custody.
+This is what the Spear itself does if no one re-establishes custody. Milestones trigger when the DA fills the shift quadrant that crosses the phase number.
 
-Milestones:
+* *Phase 44:* Local hospitals and street reports begin showing recognizable cruciform-wound patterns.
+* *Phase 32:* Handlers suffer reopened wounds, religious certainty, and dream-imprint episodes. Advance O3 (Local Police Inquiry) by 1 square.
+* *Phase 20:* Radios, surveillance gear, and vehicles fail near the Spear; witnesses report that "someone chosen is coming." O6 (Media Exposure) activates if still dormant.
+* *Phase 8:* The Spear begins selecting a claimant. Advance O5 (Foreign Buyer Window) by 2 squares if active.
+* *Phase 1:* Catastrophe — public miracle/atrocity, mass-casualty zone, or violent claimant manifestation.
 
-* `11`: local hospitals and street reports begin showing recognizable cruciform-wound patterns
-* `8`: handlers suffer reopened wounds, religious certainty, and dream-imprint episodes
-* `5`: radios, surveillance gear, and vehicles fail near the Spear; witnesses report that "someone chosen is coming"
-* `2`: the Spear begins selecting a claimant
-* `0`: threshold event -- public miracle/atrocity, mass-casualty zone, or violent claimant manifestation
+=== Organization Rows
 
-Linked effects:
+==== O1: Vantablack Compact Recovery Operation — Active (starting value 9)
 
-* At `8`, Local Police Inquiry worsens by 1.
-* At `5`, Media Exposure activates if still dormant.
-* At `2`, Foreign Buyer Window worsens by 2 if active.
+* *O1M1 (column 7):* Bribery channels activate across police, hospital, and customs routes. Advance O3 (Local Police Inquiry) by 1 square.
+* *O1M2 (column 4):* Field professionals replace cutouts; disappearances and abductions begin. Advance O2 (Heist Crew Fracture) by 1 square.
+* *O1M3 (column 1):* The Compact has a likely district, safehouse, or export corridor.
+* *O1M4 (column 0):* The Compact secures the Spear or launches its final snatch. O5 (Foreign Buyer Window) activates if still dormant.
 
-=== Active Organizations
+==== O2: Heist Crew Fracture — Active (starting value 6)
 
-==== Vantablack Compact Recovery Operation (9)
+* *O2M1 (column 5):* One thief disappears with money and papers.
+* *O2M2 (column 3):* A wounded thief surfaces through a clinic, fence, confessional chain, or lover. Advance O3 (Local Police Inquiry) by 2 squares and O1 (Compact Recovery) by 1 square.
+* *O2M3 (column 1):* The surviving crew attempts desperate relocation. Advance Lance Threshold Build — fill 1 extra shift quadrant on the phases row.
 
-Milestones:
+==== O3: Local Police Inquiry — Active (starting value 10)
 
-* `7`: bribery channels activate across police, hospital, and customs routes
-* `4`: field professionals replace cutouts; disappearances and abductions begin
-* `1`: the Compact has a likely district, safehouse, or export corridor
-* `0`: the Compact secures the Spear or launches its final snatch
+* *O3M1 (column 8):* Robbery detectives begin consolidating witness contradictions and unexplained injuries.
+* *O3M2 (column 6):* A protected witness is released, moved, or mishandled. Advance O1 (Compact Recovery) by 2 squares and O4 (Church Custody Cell) by 1 square.
+* *O3M3 (column 3):* Checkpoints, raids, and formal pressure begin closing the city. O6 (Media Exposure) activates if still dormant.
+* *O3M4 (column 0):* Police intervention lands directly on the live artifact scene. Advance Lance Threshold Build — fill 1 extra shift quadrant on the phases row.
 
-Linked effects:
+==== O4: Church Custody Cell — Active (starting value 12)
 
-* At `7`, Local Police Inquiry worsens by 1.
-* At `4`, Heist Crew Fracture worsens by 1.
-* At `0`, Foreign Buyer Window activates if still dormant.
+* *O4M1 (column 9):* Quiet observers begin monitoring hospitals, morgues, and aristocratic channels.
+* *O4M2 (column 6):* Church observers identify Compact routes and begin tailing them. Advance O1 (Compact Recovery) by 1 square.
+* *O4M3 (column 3):* A retrieval cleric / black-chamber custodian arrives with custody demands and incomplete ritual knowledge. Advance O3 (Local Police Inquiry) by 1 square if Church influence is used to divert attention.
 
-==== Heist Crew Fracture (6)
-
-Milestones:
-
-* `5`: one thief disappears with money and papers
-* `3`: a wounded thief surfaces through a clinic, fence, confessional chain, or lover
-* `1`: the surviving crew attempts desperate relocation
-* `0`: the original crew collapses; the Spear is abandoned, hidden, or already transferred again
-
-Linked effects:
-
-* At `3`, Local Police Inquiry worsens by 2 and Compact Recovery worsens by 1.
-* At `1`, Lance Threshold Build worsens by 1.
-
-==== Local Police Inquiry (10)
-
-Milestones:
-
-* `8`: robbery detectives begin consolidating witness contradictions and unexplained injuries
-* `6`: a protected witness is released, moved, or mishandled
-* `3`: checkpoints, raids, and formal pressure begin closing the city
-* `0`: police intervention lands directly on the live artifact scene
-
-Linked effects:
-
-* At `6`, Compact Recovery worsens by 2 and Church Custody Cell worsens by 1.
-* At `3`, Media Exposure activates if still dormant.
-* At `0`, Lance Threshold Build worsens by 1.
-
-==== Church Custody Cell (12)
-
-Milestones:
-
-* `9`: quiet observers begin monitoring hospitals, morgues, and aristocratic channels
-* `6`: Church observers identify Compact routes and begin tailing them
-* `3`: a retrieval cleric / black-chamber custodian arrives with custody demands and incomplete ritual knowledge
-* `0`: the Church attempts unilateral seizure
-
-Linked effects:
-
-* At `6`, Compact Recovery worsens by 1.
-* At `3`, Local Police Inquiry worsens by 1 if Church influence is used to divert attention.
-
-=== Dormant Organizations
-
-==== Foreign Buyer Window (8)
+==== O5: Foreign Buyer Window — Dormant (starting value 8)
 
 Activates when the Compact regains custody, proof of custody reaches buyers, or a viable export corridor is secured.
 
-Milestones:
+* *O5M1 (column 5):* Advance funds move and courier infrastructure appears.
+* *O5M2 (column 2):* Diplomatic pouch, private flight, or maritime handoff is imminent.
+* *O5M3 (column 0):* The Spear leaves Argentine control.
 
-* `5`: advance funds move and courier infrastructure appears
-* `2`: diplomatic pouch, private flight, or maritime handoff is imminent
-* `0`: the Spear leaves Argentine control
-
-==== Media Exposure (6)
+==== O6: Media Exposure — Dormant (starting value 6)
 
 Activates when public effects, police noise, hospital leaks, or visible violence make secrecy impossible.
 
-Milestones:
-
-* `3`: tabloids and radio link the heist to blackouts, wounds, and "holy signs"
-* `0`: the public story locks in and long-term secrecy is lost
+* *O6M1 (column 3):* Tabloids and radio link the heist to blackouts, wounds, and "holy signs."
+* *O6M2 (column 0):* The public story locks in and long-term secrecy is lost.
 
 ---
 
