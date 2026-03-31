@@ -204,11 +204,53 @@ Use the following resolution bands instead of binary success/failure whenever a 
 
 ---
 
-== Organizations and Relic Timeline
+== Organization Rows on the Operations Board
 
-Every case should distinguish between what *other people* are doing and what the *artifact* is doing.
+Organizations are tracked as countdown rows on the Operations Board. Each organization row is an independent pressure track that shares the same 14-column grid as the phases row.
 
-=== Organizations
+=== Row Structure
+
+Each organization row has:
+
+* *Name* — the faction or pressure source (Police, Compact, Church, Media, etc.)
+* *Active checkbox* — checked when the organization is in play, unchecked for dormant organizations
+* *14 countdown squares* — matching the board's 14 columns
+
+At case start, the DA fills squares from column 14 inward to the organization's starting value. An organization starting at 6 has columns 14–7 already filled — only 6 squares remain before catastrophe. The dead space visually communicates how close the threat is.
+
+=== Escalation
+
+When an organization escalates, the DA crosses out the next empty square moving toward column 1. When a milestone square is reached, its event triggers.
+
+=== O#M# Shorthand
+
+Milestone squares are labeled with *O#M#* shorthand:
+
+* *O1M1* = Organization 1, Milestone 1
+* *O2M3* = Organization 2, Milestone 3
+
+Milestone descriptions live in the organization's reference text, not on the grid itself.
+
+=== Cross-Links
+
+Organizations affect each other through milestone text, not arrows or grid notation. A milestone description contains its own consequences:
+
+____
+O2M3: A wounded thief surfaces at the clinic. Color in 2 Police squares and 1 Compact square.
+____
+
+The DA reads the milestone description and executes.
+
+=== Dormant Organizations
+
+Some organizations are pre-printed on the board but start inactive:
+
+* The *Active* checkbox is unchecked at case start.
+* The row is inert until the DA marks it active (triggered by agent action, a milestone cross-link, or a relic milestone on the phases row).
+* Once active, the organization escalates normally.
+* The board layout stays stable — no adding rows mid-session.
+
+=== What Organizations Represent
 
 An *organization* is external reactive pressure. Examples:
 
@@ -218,19 +260,7 @@ An *organization* is external reactive pressure. Examples:
 * customs or port scrutiny closing routes
 * media exposure transforming secrecy into damage control
 
-Organizations respond to agent action, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities.
-
-=== Relic Timeline
-
-The *relic timeline* tracks the anomaly's own escalation if it remains active or mishandled.
-
-Examples:
-
-* more vivid wound patterns around carriers
-* electrical interference widening around the object
-* dream-imprints spreading to witnesses
-* the relic beginning to select or reinforce a claimant
-* the environment taking on the artifact's logic
+Organizations respond to agent action, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities. Recommend a maximum of ~8 organization rows per case.
 
 === What Players See
 
