@@ -4,13 +4,13 @@
 
 The Covenant rarely works a case alone. Rival factions pressure the board by buying access, intimidating witnesses, moving routes, changing official posture, and converting uncertainty into leverage.
 
-Run rivals as *fronts first* and combatants second.
+Run rivals as *organizations first* and combatants second.
 
 ---
 
-== Using Factions as Fronts
+== Using Factions as Organizations
 
-Each rival faction front should answer four questions:
+Each rival faction organization should answer four questions:
 
 [%header,cols="1,4"]
 |===
@@ -34,7 +34,7 @@ Their campaign role is *covert competition*.
 
 [%header,cols="1,4"]
 |===
-| Compact Front Behavior | Notes
+| Compact Organization Behavior | Notes
 
 | *Early signs* | Money appears before personnel. Witnesses change stories, shell companies surface, safehouses are cleaned out, and cutouts stop answering phones.
 | *Pressure pattern* | Bribe, buy, divert, and isolate. The Compact wants access routes and proof of custody before it wants a firefight.
@@ -54,7 +54,7 @@ Their campaign role is *fanatical escalation*.
 
 [%header,cols="1,4"]
 |===
-| Accord Front Behavior | Notes
+| Accord Organization Behavior | Notes
 
 | *Early signs* | Repeated language, devotional flyers, symbols appearing in mundane spaces, worried families, and witnesses speaking of ordeal as revelation.
 | *Pressure pattern* | Gather believers, create witnesses, provoke activation, reinterpret suffering as proof.
@@ -74,7 +74,7 @@ Their campaign role is *state power and containment-through-force*.
 
 [%header,cols="1,4"]
 |===
-| MJ-12 Front Behavior | Notes
+| MJ-12 Organization Behavior | Notes
 
 | *Early signs* | Federal credentials where they should not be, restricted files pulled overnight, surveillance vans, sealed streets, and officials suddenly unavailable.
 | *Pressure pattern* | Observe, classify, isolate, and then remove. MJ-12 turns open civic space into controlled terrain.
@@ -94,7 +94,7 @@ Their campaign role is *elite corruption and patronage*.
 
 [%header,cols="1,4"]
 |===
-| Consortium Front Behavior | Notes
+| Consortium Organization Behavior | Notes
 
 | *Early signs* | Lawyers, private security, shell purchases, hospitality staff under orders, luxury transport, and polite denials backed by money.
 | *Pressure pattern* | Buy the venue, buy the witness, buy the clinic, buy the route, buy the cleanup.
@@ -108,7 +108,7 @@ Use the Consortium when the artifact is moving through luxury channels, shell co
 
 == Player-Facing Signs of Rival Pressure
 
-Before a faction front worsens, show at least one sign:
+Before a faction organization worsens, show at least one sign:
 
 * a witness suddenly has counsel
 * a hospital says the file is gone
@@ -117,4 +117,4 @@ Before a faction front worsens, show at least one sign:
 * a car appears twice in one day
 * the team's cover story stops being enough
 
-The faction front should feel like a tightening web, not a surprise teleport.
+The faction organization should feel like a tightening web, not a surprise teleport.
