@@ -359,6 +359,42 @@ A "scene" emerges when players go to a location and the DA assembles the relevan
 
 Entity state changes are tied to *organization milestones on the Operations Board*, not independent phase numbers. NPCs gain knowledge, locations change access, and information becomes available — all triggered when the DA crosses out a milestone square on the board. This keeps the Operations Board as the single source of truth for "what changed."
 
+=== Locations
+
+A Location is the DA's primary reference during play — one page or form per location. When players say where they're going, the DA pulls the location form and assembles the relevant NPC and Information cards alongside it.
+
+[%header,cols="1,4"]
+|===
+| Field | Description
+
+| *Name*
+| Location name.
+
+| *Description*
+| What the agents see when they arrive.
+
+| *Availability*
+| Access condition using one of the following keywords: *open* (available from case start), *clue-locked* (requires specific information), *contact-locked* (requires an NPC introduction or referral), *time-locked* (opens at a specific phase), or *packet-locked* (unlocked when a packet returns).
+
+| *NPCs Present*
+| Which NPCs can be found here. May change at milestones (e.g., "After O4M2: Suárez pulled off case").
+
+| *Information Available*
+| Information IDs (I#) discoverable at this location.
+
+| *Organizations Present*
+| Which organizations have interest or operational presence here (O# shorthand).
+
+| *Positive Result*
+| What the agents gain from a successful engagement — Information IDs, NPC access, new locations opened.
+
+| *Negative Result*
+| What happens if the scene goes badly — organization advances on the Operations Board, tails established, locations closed.
+
+| *Milestone Changes*
+| How this location changes when specific organization milestones are reached (e.g., "When O4M2: Suárez pulled off case. When O4M3: station locked down.").
+|===
+
 ---
 
 == Operations Board as Table Handout
