@@ -2,6 +2,16 @@
 
 This directory contains image-generation prompt files for the sample case *The Spear That Went Dark*. All substantive handout text and play-aid content now lives in the book chapter `docs/chapters/20-sample-case-file.adoc`.
 
+These prompts produce images for the case's **document package** — the set of physical or printable materials a DA assembles before play. The full package structure is defined in Chapter 15 (Case File rules) and includes:
+
+- **Case Brief** — one-page operational summary (text-only, no image prompt needed)
+- **Operations Board** — phases row and organization countdown grid (tracker in the chapter)
+- **Locations** (L1–L7) — one-page reference per location
+- **NPC Cards** (8 NPCs) — playing-card-sized references
+- **Information Cards** (I1–I22) — playing-card-sized clue references (text-only, no image prompt needed)
+- **Relic Sheet** — artifact reference with containment profile
+- **Clue Handouts** (7 handouts) — player-facing props and packet returns
+
 ## Structure
 
 - `handouts/` — one self-contained image-generation prompt per image
