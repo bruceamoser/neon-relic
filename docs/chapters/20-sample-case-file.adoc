@@ -802,15 +802,15 @@ We split after the clinic stop. I don't know who has it now. I know whoever does
 
 The following materials are the working play-aid appendix for this case. They are included here so the chapter contains the full case packet directly, without relying on separate support-file copies.
 
-=== Handout 7: Case Board Tracker
+=== Handout 7: Operations Board Tracker
 
-Use this tracker behind the screen or as a shared operational worksheet. Update it at the end of each shift, especially after packet returns, public incidents, or any scene that worsens an organization.
+Use this tracker behind the screen or as a shared operational worksheet. It mirrors the Operations Board structure: a phases row for relic milestones, organization countdown rows, and a location availability grid. Update it at the end of each shift, especially after packet returns, public incidents, or any action that worsens an organization.
 
 Quick use:
 
 * write current values in pencil or erasable marker
 * note visible signs separately from hidden DA-side thresholds
-* mark scene availability the moment a clue, contact, or time window opens it
+* mark location availability the moment a clue, contact, or time window opens it
 * do not reveal dormant organizations to players until they have fiction on the table
 
 ==== Phases Row — Relic Milestones Tracker
@@ -873,12 +873,13 @@ Quick use:
 | Public effects / loud police action / leak
 |===
 
-==== Scene Availability Tracker
+==== Location Availability Tracker
 
 |===
-| Scene | Open | Clue Lock | Contact Lock | Time Lock | Notes
+| Location | ID | Open | Clue-Locked | Contact-Locked | Time-Locked | Notes
 
 | Estate Aftermath
+| L1
 | Yes
 |
 |
@@ -886,6 +887,7 @@ Quick use:
 |
 
 | Police Station
+| L2
 | Conditional
 | Estate or police clue
 |
@@ -893,6 +895,7 @@ Quick use:
 |
 
 | Church Archive
+| L3
 | Conditional
 | Church clue
 | Church contact
@@ -900,6 +903,7 @@ Quick use:
 |
 
 | Currency Exchange
+| L4
 | Conditional
 | Funding clue
 |
@@ -907,6 +911,7 @@ Quick use:
 |
 
 | Illicit Clinic
+| L5
 | Conditional
 | Witness or thief clue
 |
@@ -914,6 +919,7 @@ Quick use:
 |
 
 | Export Route
+| L6
 | Conditional
 | Buyer / route clue
 | Broker access
@@ -921,8 +927,9 @@ Quick use:
 |
 
 | Hidden Shrine
+| L7
 | No
-| 2+ location truths
+| 2+ location clues
 |
 |
 |
