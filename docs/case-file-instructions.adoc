@@ -19,7 +19,7 @@ This guide walks you through building a complete Case File from scratch. For the
 
 *What you will need:*
 
-* A blank Case File Form (Form VC-12)
+* Blank templates for the case file package (see <<case-file-package>> in Chapter 15): Case File brief, Case Brief, Operations Board, Organization Reference, Relic Sheet, Location Pages, NPC Cards, and Information Cards
 * The core rulebook for reference
 * About 15–30 minutes of prep time
 
@@ -56,7 +56,7 @@ ____
 A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [Organization 1] and [Organization 2] are moving on the same problem. The agents need [Containment Truths] before they can recover it safely.
 ____
 
-Write this on the Case File Form under *Mystery Statement*. If it takes more than one sentence, the case is too diffuse — simplify.
+Write this on the Case Brief under *Mystery Statement*. If it takes more than one sentence, the case is too diffuse — simplify.
 
 ---
 
@@ -241,19 +241,18 @@ Packets should sharpen the next decision, not solve the case.
 
 ---
 
-== Step 10: Write the Case Summary
+== Step 10: Assemble the Case File Package
 
-Fill in the Case Summary block at the top of the Case File Form:
+Gather your work from the previous steps into the complete case file package (see <<case-file-package>> in Chapter 15):
 
-[horizontal]
-Case ID:: Use the Covenant format: `VC-[Region Code]-[Year]-[Number]` (e.g., `VC-AR-87-041`)
-Region:: City and country
-Format:: Expected session count (1–3 sessions typical)
-Primary Rival:: The main opposing faction
-Secondary Pressure:: Other forces complicating the situation
-Shift Cadence:: Default is 4 shifts per day
-Packet Response Floor:: Default is 2 shifts
-Core Problem:: One sentence describing the operational situation
+. *Case File* (player brief) — Write the in-world mission brief containing only what the Covenant would share: relic surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. Include the Case ID (`VC-[Region Code]-[Year]-[Number]`), region, format (session count), shift cadence, and core problem statement.
+. *Case Brief* (DA only) — Write your mystery statement and DA notes: what is actually going on, who is really involved, and how the case resolves.
+. *Operations Board* — Completed in Steps 4–5.
+. *Organization Reference* — List all organizations with their O#M# milestone descriptions and cross-link instructions.
+. *Relic Sheet* — Full artifact profile from Step 1: tier, category, activation condition, mechanical effects, fracture table, containment profile, and containment truth checklist.
+. *Location Pages* — One per Location from Step 6a.
+. *NPC Cards* — One per NPC from Steps 6b and 7.
+. *Information Cards* — One per information entry from Step 6c, double-sided (player-facing front, DA reference back).
 
 ---
 
