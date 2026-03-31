@@ -117,21 +117,31 @@ If an organization cannot produce visible signs before it becomes a problem, it 
 
 ---
 
-== Authoring the Relic Timeline
+== Authoring Relic Milestones
 
-*Relic Timeline* means *what the anomaly does if it remains uncontained*. This is distinct from rival behavior.
+Relic milestones define *what the anomaly does if it remains uncontained*. This is distinct from rival behavior. Relic milestones are keyed to specific phase numbers on the Operations Board's phases row — when the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
 
-The relic timeline should answer:
+When authoring relic milestones, answer:
 
 * What does exposure look like early?
 * What becomes worse after repeated movement, blood, speech, weather, witnesses, or failed handling?
 * What is the threshold event if the case goes long or loud?
 
-=== Relic Timeline Rule
+=== Relic Milestone Rule
 
-Do not write the relic timeline as generic "things get spooky." Each milestone should push toward the artifact's core logic.
+Do not write relic milestones as generic "things get spooky." Each milestone should push toward the artifact's core logic.
 
-If the artifact is about command, its signs should produce obedience, claimant behavior, or legitimacy crises. If it is about repetition, its signs should create loops, reenactments, or false returns.
+If the artifact is about command, its milestones should produce obedience, claimant behavior, or legitimacy crises. If it is about repetition, its milestones should create loops, reenactments, or false returns.
+
+Write each milestone keyed to a phase number and include any cross-link consequences:
+
+____
+Phase 40: Dream-bleed begins affecting witnesses within 100 meters.
+
+Phase 28: The relic begins selecting a claimant. Advance O1 (Police) by 1 square — unexplained behavior reports increase.
+
+Phase 8: Environmental logic around the artifact inverts. Temperature, sound, and gravity become unreliable within 50 meters.
+____
 
 ---
 
