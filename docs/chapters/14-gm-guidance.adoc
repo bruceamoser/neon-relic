@@ -267,7 +267,7 @@ In practice, 2–4 active scene options at a time is enough.
 
 == Player-Facing Signs vs. DA Tracking
 
-The DA may track organizations and relic timeline numerically. The players should usually receive only fiction:
+The DA tracks organization rows and relic milestones on the Operations Board numerically. The players should usually receive only fiction:
 
 * more patrols
 * sealed wards
@@ -277,7 +277,7 @@ The DA may track organizations and relic timeline numerically. The players shoul
 * buyers arriving too early
 * clergy suddenly appearing at the same hospital
 
-This keeps the structure operational rather than abstract.
+The Operations Board is an operational tool, not a scoreboard. Players see the phases row counting down and know which organizations are active, but the milestone descriptions and cross-link consequences stay behind the screen. This keeps the structure operational rather than abstract.
 
 ---
 
