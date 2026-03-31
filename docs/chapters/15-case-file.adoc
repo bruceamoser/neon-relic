@@ -48,15 +48,27 @@ Every Case File is authored as a case board built from the following parts:
 
 ---
 
-== The Shift Timeline
+== The Operations Board
 
-Time in a Case File is measured in *shifts*, not freeform investigative drift.
+The *Operations Board* is the single tracking surface for a Case File. It replaces separate shift timelines, relic timelines, and organization milestone lists with one unified countdown grid.
 
-* One day = 4 shifts of 6 hours.
-* A standard timeline handout should show at least 10 days of 4 shifts each.
-* Not every shift becomes a full scene at the table. Some shifts are resolved quickly as travel, packet handling, quiet research, or recovery.
+=== Layout
 
-The shift structure exists to answer three questions cleanly:
+* *14 columns*, numbered *14 → 1*, counting down left to right.
+* Column 14 = case start. Column 1 = catastrophe.
+* Frame the countdown as *"Days until catastrophe"* — column 1 has concrete narrative weight: relic activation, sale, city exposure, dimensional breach, or whatever the case's worst outcome is.
+
+=== The Phases Row
+
+The first row of the board is the *phases row*. It serves as both the shift clock and the relic escalation track.
+
+* Each day-column is quartered with an X, creating 4 quadrants: *Morning*, *Day*, *Evening*, *Night*.
+* As shifts pass, the DA fills in quadrants left to right. Each filled quadrant is one spent shift.
+* *Relic milestones* are keyed to specific phase numbers on this row. When the DA fills a quadrant that crosses a relic milestone, the artifact event triggers immediately.
+* At Phase 1, catastrophe occurs — the relic's worst-case outcome fires.
+* Relic milestone descriptions live in the Case Brief, keyed to phase numbers (e.g., "Phase 40: Dream-bleed begins affecting witnesses within 100 meters").
+
+The phases row answers three questions cleanly:
 
 . What did the team commit this time to?
 . What did that cost in exposure, delay, or Corruption?
@@ -70,6 +82,8 @@ Use these unless the case benefits from a different cadence:
 * *Day* -- public movement, bureaucracy, traffic, witnesses, routine business
 * *Evening* -- social access, handoffs, covert movement, fatigue, changing police posture
 * *Night* -- stakeouts, theft, clandestine rites, transport, and the highest supernatural volatility
+
+Not every shift becomes a full scene at the table. Some shifts are resolved quickly as travel, packet handling, quiet research, or recovery.
 
 ---
 
@@ -336,18 +350,16 @@ Every authored scene should list the following fields:
 
 ---
 
-== Timeline Handout Guidance
+== Operations Board as Table Handout
 
-Every substantial case should have a simple shift tracker visible to the table.
+The Operations Board itself serves as the table handout. Print or display the board so players can see:
 
-The handout should show:
+* the phases row counting down from column 14
+* which shifts have been spent
+* which organizations are active and how close they are to their next milestone
+* packet send / return markers noted in the margin or on a separate index card
 
-* 10 days by default
-* 4 shifts per day
-* packet send / return markers
-* obvious route windows, handoff deadlines, or event nights if already known
-
-The handout is for coordination, not for exposing the DA's hidden values.
+The board is for coordination and pressure visibility. The DA's milestone descriptions, relic milestone triggers, and cross-link consequences stay behind the screen.
 
 ---
 
