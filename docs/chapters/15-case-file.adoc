@@ -98,7 +98,7 @@ Resolve each shift in the following order:
 
 . *Resolve the undertaking.* Play the scene, handle the travel shift, roll for access, or process the support action.
 
-. *Advance consequences.* Worsen any organizations or the relic timeline triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling.
+. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling. Fill in the next shift quadrant on the phases row and check for relic milestones crossed this shift.
 
 . *Mark delayed returns.* Note when packet responses, stakeout results, lab work, or institutional callbacks will come back. No deep result should appear immediately unless the case author explicitly established it beforehand.
 
@@ -198,7 +198,7 @@ Use the following resolution bands instead of binary success/failure whenever a 
 | The team fails to achieve the main objective, but the case still moves. A new sign, clue, packet angle, or hostile move becomes visible.
 
 | *Breach*
-| The scene goes loud, public, or occultly unstable. An organization or relic timeline worsens immediately, and the next shift starts under pressure.
+| The scene goes loud, public, or occultly unstable. An organization row advances immediately, a relic milestone may trigger on the phases row, and the next shift starts under pressure.
 |===
 
 ---
@@ -368,7 +368,7 @@ Every authored scene should list the following fields:
 | Usually 1 shift. Live crises may consume the shift and spill forward.
 
 | *Risked Organizations*
-| Which organizations or relic timeline tracks are most likely to worsen if things go poorly or loudly.
+| Which organization rows on the Operations Board are most likely to advance if things go poorly or loudly. Note if a relic milestone on the phases row could also trigger.
 
 | *May Reveal*
 | Truths, signs, identities, routes, handling rules, or motives discoverable here.
@@ -394,7 +394,7 @@ The board is for coordination and pressure visibility. The DA's milestone descri
 
 == Cross-References
 
-* DA guidance for authoring organizations, relic timelines, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
+* DA guidance for authoring the Operations Board, organizations, relic milestones, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
 * Travel as a shift type: xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules]
 * Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
 * Containment rituals and handling profiles: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts -> Containment Rituals]
