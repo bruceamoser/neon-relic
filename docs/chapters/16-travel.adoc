@@ -44,7 +44,7 @@ Use the following default scale unless the case specifies otherwise:
 When a travel shift matters, resolve it in four steps:
 
 . *Choose the route.* Direct, covert, public, scenic, back road, truck route, air, maritime, or rail.
-. *Identify the pressure.* Which front or relic-timeline window might worsen while the team is moving?
+. *Identify the pressure.* Which organization or relic-timeline window might worsen while the team is moving?
 . *Roll only if the route is contested.* Unknown roads, weather, active pursuit, border crossings, and covert movement justify rolls.
 . *Resolve arrival as fiction, not as a blank cut.* The destination should already feel altered by time, risk, or being followed.
 
@@ -73,7 +73,7 @@ Use route choices to create tradeoffs:
 * fatigue or wear
 * a tail problem
 * missed opportunity elsewhere
-* a visible sign that a front worsened while the team was gone
+* a visible sign that an organization worsened while the team was gone
 
 ---
 
@@ -169,7 +169,7 @@ If the team reaches the destination with a tail still on them:
 
 * The DA places an additional hostile element in the arrival scene or a later crisis node.
 * The team does not know exactly what they brought with them until it surfaces.
-* One relevant rival front worsens immediately.
+* One relevant rival organization worsens immediately.
 
 ---
 
@@ -198,7 +198,7 @@ Travel should interact with the case board.
 
 Use travel shifts to:
 
-* worsen a front when the team cannot be in two places at once
+* worsen an organization when the team cannot be in two places at once
 * expose relic-timeline signs in transit
 * force a route choice between speed and secrecy
 * convert a stakeout into a moving problem
