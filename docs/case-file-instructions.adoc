@@ -123,30 +123,71 @@ If an organization cannot produce visible signs before it becomes a problem, it 
 
 ---
 
-== Step 6: Design Scene Nodes
+== Step 6: Author Case Entities
 
-Scenes are playable opportunities, not mandatory steps. Each one is a node on the case board that the agents can reach if its conditions are met.
+Case entities are independent building blocks, not sequential steps. Author Locations, NPC Cards, and Information Cards separately, then cross-link them.
 
-For each scene, fill in:
+=== 6a: Write Locations
+
+For each location, fill in:
 
 [horizontal]
-Availability:: Why is this scene accessible? (Open, Clue-locked, Contact-locked, Time-locked, Packet-locked)
-Purpose:: Why does this scene exist in the case?
-Key Activity:: The operational problem at the heart of the scene (this belongs to the scene, not the players).
-Time Cost:: Usually 1 shift.
-Risked Organizations:: Which organization rows on the Operations Board are most likely to advance if things go badly? Could a relic milestone on the phases row also trigger?
-May Reveal:: Truths, identities, routes, or motives discoverable here.
-May Unlock:: New scenes, contacts, packet angles, or crisis branches.
+Name:: Location name.
+Description:: What the agents see when they arrive.
+Availability:: Access condition — *Open*, *Clue-locked*, *Contact-locked*, *Time-locked*, or *Packet-locked*.
+NPCs Present:: Which NPCs can be found here (may change at milestones).
+Information Available:: Information IDs (I#) discoverable at this location.
+Organizations Present:: Which organizations have interest or presence here (O# shorthand).
+Positive Result:: What agents gain from a successful engagement — Information IDs, NPC access, new locations.
+Negative Result:: What happens if the scene goes badly — organization advances, tails, closures.
+Milestone Changes:: How this location changes at specific milestones (e.g., "When O4M2: Suárez pulled off case").
 
-.Build 5–8 scene nodes for a standard case:
+.Build 5–8 Locations for a standard case:
 
 * 2–3 should be *Open* at case start
-* The rest should unlock through investigation, contacts, or packet returns
-* The final confrontation / containment scene should require at least 2 prior unlocks
+* The rest should unlock through investigation, NPC introductions, or packet returns
+* The final confrontation / containment location should require at least 2 prior unlocks
+
+=== 6b: Write NPC Cards
+
+For each significant NPC, create a playing-card-sized reference card:
+
+[horizontal]
+Name:: NPC name.
+Organization:: Affiliated organization (O#), faction, or independent.
+Secret:: Something they are hiding from the agents.
+Goal:: What they are actively trying to accomplish during this case.
+Artifact Connection:: How they encountered the artifact and what effect proximity has had.
+Starting Knowledge:: Information IDs (I#) they know at case start.
+Gained Knowledge:: Information learned at milestones (e.g., "At O2M2: knows handler name — I7").
+Locations:: Where they can be found.
+Positive Result:: What they share if approached well — Information IDs, introductions, access.
+Negative Result:: What happens if encounter goes badly — organization advance, tail, spooked witness.
+
+=== 6c: Write Information Cards
+
+For each discoverable fact, create a playing-card-sized reference card:
+
+[horizontal]
+ID:: Shorthand identifier (I1, I2, etc.).
+Content:: What the agents learn.
+Found At:: Location IDs where this can be discovered.
+Known By:: NPC IDs who possess this knowledge.
+HQ Fallback:: Available from HQ at Phase X (prevents dead ends — costs shifts).
+Type:: *Containment Truth* (essential) or *supporting intel* (useful but not required).
+
+=== 6d: Cross-Link and Verify
+
+After authoring all three entity types, verify the cross-links:
+
+* Every *Found At* reference points to a real Location. Every *Known By* reference points to a real NPC Card.
+* Every Containment Truth has at least *two field sources* (Locations + NPCs) plus an *HQ Fallback*.
+* Every NPC's *Locations* field matches a real Location's *NPCs Present* field.
+* Every Location's *Information Available* matches Information Cards' *Found At* entries.
 
 .THE DEAD END TEST
 ****
-For every scene, ask: _If the players never touch this, can the case still be solved?_ If no, redesign it. No single scene may be required.
+For every Containment Truth, ask: _If the agents never visit one source, can they still learn this fact?_ If no, add another source or an earlier HQ Fallback phase.
 ****
 
 ---
