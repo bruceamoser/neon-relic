@@ -333,17 +333,17 @@ Delayed returns are one of the main ways Neon Relic feels procedural instead of 
 
 == Solvability Rules
 
-The case board must remain solvable even when the agents approach it in the "wrong" order.
+The case must remain solvable even when the agents approach it in the "wrong" order.
 
 Use these rules when authoring and running a case:
 
-. Every *Containment Truth* must be reachable by *at least three different paths*.
-. No single scene may be mandatory for forward motion.
-. Every scene should either reveal a truth, unlock a contact, narrow the route, or worsen the situation in an informative way.
-. At least one actionable option should remain visible at the start of each shift.
+. Every *Containment Truth* must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>>).
+. No single Location may be mandatory for forward motion.
+. Every Location should either reveal information, unlock an NPC or route, or worsen the situation in an informative way.
+. At least one accessible Location should remain visible at the start of each shift.
 . A failed scene should produce movement, not dead air.
 
-If a missed roll or skipped node would make the case unsolvable, the case board is not ready.
+If a missed roll or skipped Location would make the case unsolvable, the entity web is not ready.
 
 ---
 
