@@ -6,10 +6,9 @@ A Neon Relic *Case File* is a reactive operations board, not a scripted sequence
 
 The hidden engine is no longer the older phase-and-countdown model. The engine is:
 
-* a *shift timeline* that measures the cost of time
+* an *Operations Board* with a phases row counting down days until catastrophe and organization countdown rows tracking external pressure
 * a set of *scene nodes* that can be approached in flexible order
-* one or more *organizations* representing external reactive pressure
-* a *relic timeline* representing what the anomaly does if left uncontained
+* *relic milestones* keyed to the phases row, representing what the anomaly does if left uncontained
 * delayed *Covenant Request Packet* returns that make research and institutional support matter without being instant
 
 Players should experience narrative signs, mounting pressure, and operational tradeoffs. The DA may track numbers behind the screen, but the table sees symptoms, delays, rumors, closures, surveillance, compromised witnesses, and rising Corruption pressure.
@@ -24,20 +23,20 @@ Every Case File is authored as a case board built from the following parts:
 |===
 | Element | Function
 
-| *Shift Timeline*
-| The operational calendar. A standard day has 4 shifts of 6 hours each: *Morning*, *Day*, *Evening*, and *Night*.
+| *Operations Board*
+| The single tracking surface for the case. 14 columns count down from 14 → 1 (days until catastrophe). Contains a phases row and organization countdown rows.
+
+| *Phases Row*
+| The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. As shifts pass, quadrants are filled. Relic milestones are keyed to specific phase numbers on this row — when the DA fills a quadrant that crosses a milestone, the artifact event triggers.
+
+| *Organization Row*
+| A countdown row on the Operations Board tracking external reactive pressure. Each row has a name, Active checkbox, and 14 countdown squares. Milestone squares use O#M# shorthand. Rival factions, police, media, custodians, smugglers, and institutional counter-moves all belong here.
 
 | *Scene*
 | A playable opportunity. A scene is not a mandatory step in a fixed sequence. It is a node the agents can reach if its availability conditions are met.
 
 | *Contact*
 | A person or institution that grants access, information, leverage, cover, or packet routing. Contacts are often what unlock scenes rather than scenes in themselves.
-
-| *Organization*
-| External reactive pressure. Rival factions, police, media, frightened custodians, smugglers, and institutional counter-moves all belong here.
-
-| *Relic Timeline*
-| What the anomaly itself does if it remains active, mishandled, or unresolved. This is not the same thing as what the rivals are doing.
 
 | *Containment Truth*
 | Information required for a safe resolution: trigger, appetite, tether, quiescence condition, ritual sequence, shielding method, or custody requirement.
