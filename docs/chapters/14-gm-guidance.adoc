@@ -165,33 +165,42 @@ ____
 
 ---
 
-== Authoring Scene Networks
+== Authoring Case Entities
 
-Scenes are *playable opportunities*, not fixed steps.
+Case entities are *independent building blocks*, not sequential steps. Author Locations, NPC Cards, and Information Cards separately, then cross-link them.
 
-Each scene should exist because it can do at least one of the following:
+=== Start with Locations
 
-* reveal a Containment Truth
-* identify or deepen a Contact
-* narrow the location of the artifact
-* expose an organization's move or route
-* create a recovery, trap, or confrontation opportunity
+Each location exists because it serves at least one purpose:
 
-=== Scene Availability
+* reveals a Containment Truth (Information Card)
+* exposes an organization's move or route
+* creates a recovery, confrontation, or containment opportunity
+* introduces or advances an NPC relationship
 
-Every scene should declare why it is available:
+Declare each location's availability using the keyword taxonomy: *open*, *clue-locked*, *contact-locked*, *time-locked*, or *packet-locked*. Availability controls pacing — too many open locations dilutes urgency; too many locked locations blocks early play.
 
-* *Open* -- available at case start
-* *Clue-locked* -- opens after a specific reveal
-* *Contact-locked* -- opens after an introduction, favor, or referral
-* *Time-locked* -- opens only during a certain shift, day, or event window
-* *Packet-locked* -- opens only after a Covenant Request Packet returns
+=== Build NPC Cards Around Knowledge
 
-=== Scene Data Schema
+Every NPC should carry knowledge that the agents need. The NPC Card's *starting knowledge* and *gained knowledge* fields tell the DA exactly what an NPC can share and when. Gained knowledge is milestone-driven — an NPC learns something new when the DA crosses out a milestone square on the Operations Board.
 
-Use the schema in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]: availability, purpose, Key Activity, time cost, risked organizations, may reveal, and may unlock.
+Write each NPC's *secret*, *goal*, and *artifact connection* before deciding where they appear. These three fields generate the NPC's behavior during play. The DA does not need to improvise motivation — it is on the card.
 
-The *Key Activity* belongs to the scene, not the players. It states what the scene is immediately about. The players decide how they attack it.
+=== Cross-Link with Information Cards
+
+Information Cards are the connective tissue. Each card's *Found At* and *Known By* fields create the web between Locations and NPCs. The DA does not author a scene graph — the cross-links emerge from the entity fields.
+
+Every Containment Truth must appear in at least two field sources (any combination of *Found At* locations and *Known By* NPCs) plus an HQ fallback. Supporting intel may have fewer sources.
+
+=== Author Milestone-Driven State Changes
+
+Entity state changes are keyed to organization milestones on the Operations Board. When the DA crosses out a milestone square, they check:
+
+* *Location changes:* An NPC is pulled from a location, access is restricted, a new area opens.
+* *NPC changes:* An NPC gains new knowledge, switches allegiance, goes to ground.
+* *Information changes:* A fact becomes available from a new source, or a source is compromised.
+
+Write milestone triggers using the O#M# shorthand directly on the entity cards (e.g., "When O4M2: Suárez pulled off case"). This keeps the Operations Board as the single trigger for all state changes.
 
 ---
 
@@ -245,23 +254,23 @@ Packet returns should sharpen a decision, not replace field work.
 
 == Keeping the Board Manageable
 
-The case board can be crunchy without feeling board-gamey if you control visibility.
+The Operations Board can be crunchy without feeling board-gamey if you control visibility.
 
 Show players only:
 
-* the scenes they can currently act on
+* the locations they can currently access
 * the signs of the organizations currently touching them
 * the known timing windows
 * the delayed returns they are waiting on
 
 Hold back:
 
-* inactive scene nodes
+* locked locations they have not discovered
 * exact organization values
 * dormant organizations that have not manifested
 * threshold events that no one has inferred yet
 
-In practice, 2–4 active scene options at a time is enough.
+In practice, 2–4 accessible locations at a time is enough.
 
 ---
 
@@ -386,7 +395,7 @@ Containment missions still have escalating pressure. Use these tools to maintain
 
 * *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against organizations and the relic timeline, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
 
-If ritual containment is a possible solution, seed *three discoverable facts* into the scene network before play begins:
+If ritual containment is a possible solution, seed *three discoverable facts* across Locations, NPC Cards, and Information Cards before play begins:
 
 * *What forms the boundary* (salt, copper wire, lead foil, blackout cloth, a drawn sigil, etc.)
 * *What the key is* (true name, activation condition, phrase, symbol, or anchor logic)
