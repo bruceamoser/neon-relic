@@ -395,6 +395,45 @@ A Location is the DA's primary reference during play — one page or form per lo
 | How this location changes when specific organization milestones are reached (e.g., "When O4M2: Suárez pulled off case. When O4M3: station locked down.").
 |===
 
+=== NPC Cards
+
+An NPC Card is a playing-card-sized reference that the DA pulls alongside a location form. Each NPC exists independently — they may appear at multiple locations and carry their own knowledge state.
+
+[%header,cols="1,4"]
+|===
+| Field | Description
+
+| *Name*
+| NPC name.
+
+| *Organization*
+| Affiliated organization (O# shorthand), faction, or independent.
+
+| *Secret*
+| What they are hiding.
+
+| *Goal*
+| What they are actively trying to accomplish during this case.
+
+| *Artifact Connection*
+| How they encountered the artifact and what effect proximity has had on them.
+
+| *Starting Knowledge*
+| Information IDs (I#) they know at case start.
+
+| *Gained Knowledge*
+| Information they learn at specific organization milestones (e.g., "At O2M2: knows Compact handler name").
+
+| *Locations*
+| Where they can be found (L# shorthand or location name).
+
+| *Positive Result*
+| What they share if approached well — Information IDs, introductions, access granted.
+
+| *Negative Result*
+| What happens if the encounter goes badly — organization advance on the Operations Board, tail placed, witness spooked.
+|===
+
 ---
 
 == Operations Board as Table Handout
