@@ -206,18 +206,18 @@ Write milestone triggers using the O#M# shorthand directly on the entity cards (
 
 == Solvability Constraints
 
-The case board must survive misses, bad order, and lateral thinking.
+The case must remain solvable even when the agents approach it in the wrong order.
 
 Use the following hard rules:
 
-. Every *Containment Truth* must be reachable through *at least three paths*.
-. No single scene may be required to finish the case.
-. Every failed or partial scene must still generate movement.
-. At least one actionable option should be visible at the start of each shift.
+. Every *Containment Truth* must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>>).
+. No single Location may be mandatory for forward motion.
+. Every failed or partial scene must still generate movement — a failed roll at a Location should produce information, pressure, or a new route, not silence.
+. At least one accessible Location should remain visible at the start of each shift.
 
 === The Dead End Test
 
-Before play, ask of every scene and contact: *If the players never touch this, can the case still be solved?* If the answer is no, redesign it.
+Before play, ask of every Location and NPC Card: *If the agents never visit this Location or speak to this NPC, can the case still be solved?* If the answer is no, add another field source or ensure the HQ fallback covers it.
 
 === When Players Go Wrong
 
