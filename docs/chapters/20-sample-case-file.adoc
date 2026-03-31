@@ -426,6 +426,210 @@ Milestone Changes:: When Phase 8: the Spear begins selecting a claimant — the 
 
 ---
 
+== Information Cards
+
+Each Information Card is a playing-card-sized double-sided reference. The player-facing front states the content; the DA-facing back lists sources, NPCs, and HQ fallback timing. Cards marked *Containment Truth* are essential for safe resolution.
+
+=== I1: Breach Method
+
+[horizontal]
+Content:: The estate vault was breached using shaped charges matched to the vault's specific construction — not a random burglary technique. The crew had insider architectural plans.
+Found At:: L1 (Estate Aftermath).
+Known By:: Lucia Ferreyra (inferred from damage), Detective Suárez (forensics report, I8 cross-ref).
+HQ Fallback:: Phase 4.
+Type:: Supporting intel.
+
+=== I2: False Target
+
+[horizontal]
+Content:: The thieves bypassed significant conventional valuables — silver, paintings, documents — and went directly to the subterranean vault. They knew exactly what they were after.
+Found At:: L1 (Estate Aftermath).
+Known By:: Lucia Ferreyra.
+HQ Fallback:: Phase 4.
+Type:: Supporting intel.
+
+=== I3: Funded Heist Proof
+
+[horizontal]
+Content:: The operation was professionally financed through Compact cutouts. Wire transfers, equipment procurement, and crew payments all trace back to Vantablack financial infrastructure.
+Found At:: L1 (Estate Aftermath — documentary evidence), L4 (Currency Exchange — financial records).
+Known By:: Sabine Voss (I12 cross-ref).
+HQ Fallback:: Phase 5.
+Type:: Supporting intel.
+
+=== I4: Vault Was Suppressive
+
+[horizontal]
+Content:: The estate vault was not merely a safe. It was a custody chamber — a ritual containment site maintained through a liturgical sequence passed down through the custodian family. Breaking the vault broke the containment.
+Found At:: L1 (Estate Aftermath).
+Known By:: Lucia Ferreyra.
+HQ Fallback:: Phase 6.
+Type:: *Containment Truth* — establishes that the Spear was under active suppression and the theft created the current crisis.
+
+=== I5: Witness List
+
+[horizontal]
+Content:: Police have compiled a list of witnesses from the estate neighborhood who reported unusual activity the night of the theft — vehicles, shouting, and at least one person carried out on a stretcher.
+Found At:: L2 (Police Station).
+Known By:: Detective Suárez.
+HQ Fallback:: Phase 4.
+Type:: Supporting intel.
+
+=== I6: Wounded Thief Route
+
+[horizontal]
+Content:: One member of the heist crew was injured during the breach and fled separately. A blood trail and taxi records suggest a route toward La Boca district.
+Found At:: L2 (Police Station).
+Known By:: Detective Suárez.
+HQ Fallback:: Phase 5.
+Type:: Supporting intel.
+
+=== I7: Hospital Referrals
+
+[horizontal]
+Content:: Hospital intake records show no matching admissions — suggesting the wounded thief sought unlicensed medical care. Street contacts may know where.
+Found At:: L2 (Police Station).
+Known By:: Detective Suárez (gained at O3M2).
+HQ Fallback:: Phase 5.
+Type:: Supporting intel.
+
+=== I8: Sketch Fragments
+
+[horizontal]
+Content:: Witness descriptions and partial security footage produce fragmentary sketches of at least two crew members who did not match any known criminal profile — suggesting outside recruitment.
+Found At:: L2 (Police Station).
+Known By:: Detective Suárez.
+HQ Fallback:: Phase 5.
+Type:: Supporting intel.
+
+=== I9: Custodians Not Owners
+
+[horizontal]
+Content:: The Ferreyra family were never the owners of the Spear. They were temporary lay custodians under a postwar arrangement with ecclesiastical authorities — an arrangement never publicly regularized.
+Found At:: L1 (Estate Aftermath), L3 (Church Archive).
+Known By:: Lucia Ferreyra, Father Esteban Vale, Sister Inés Barral.
+HQ Fallback:: Phase 5.
+Type:: *Containment Truth* — establishes the real custody lineage and why the Church has a claim.
+
+=== I10: Postwar Custody Compromise
+
+[horizontal]
+Content:: After wartime displacement, the relic was placed with the Ferreyra family under a quiet compromise. The Church maintained a monitoring role but never officially acknowledged the arrangement to avoid diplomatic, doctrinal, and political complications.
+Found At:: L3 (Church Archive).
+Known By:: Father Esteban Vale, Sister Inés Barral, Brother Tomás Arce (partial).
+HQ Fallback:: Phase 6.
+Type:: Supporting intel.
+
+=== I11: Partial Substitute Custody Sequence
+
+[horizontal]
+Content:: The older containment record describes a substitute custody protocol: a specific sequence of shielding, silence, and liturgical actions required to move the Spear without triggering activation. The record is incomplete — key steps are missing or deliberately redacted.
+Found At:: L3 (Church Archive).
+Known By:: Lucia Ferreyra (family oral tradition), Sister Inés Barral (archival text).
+HQ Fallback:: Phase 7.
+Type:: *Containment Truth* — partial Quiescence protocol. Agents need this plus I22 for a complete containment plan.
+
+=== I12: Who Financed the Theft
+
+[horizontal]
+Content:: The heist was funded by Sabine Voss through Vantablack Compact financial channels routed through the Cambio Cerrito currency exchange. Wire records, courier payments, and equipment procurement invoices all converge.
+Found At:: L4 (Currency Exchange).
+Known By:: Sabine Voss.
+HQ Fallback:: Phase 6.
+Type:: Supporting intel.
+
+=== I13: Handoff Collapse Location
+
+[horizontal]
+Content:: The scheduled buyer handoff was meant to occur at a freight staging area but collapsed when the courier and the relic failed to arrive on time. The relic went sideways into someone else's hands.
+Found At:: L4 (Currency Exchange).
+Known By:: Sabine Voss, Iván Luján.
+HQ Fallback:: Phase 6.
+Type:: Supporting intel.
+
+=== I14: Buyer Demands
+
+[horizontal]
+Content:: The foreign buyer's requirements reveal whether they want the Spear as a proof-of-force weapon or as a symbolic legitimacy token. This distinction determines the urgency and the nature of the export threat.
+Found At:: L4 (Currency Exchange).
+Known By:: Sabine Voss (gained at O1M2), Brother Tomás Arce (partial).
+HQ Fallback:: Phase 7.
+Type:: Supporting intel.
+
+=== I15: First Visible Supernatural Effects
+
+[horizontal]
+Content:: The surviving thief exhibits wound bloom — injuries that reopen despite treatment, bleeding in patterns that echo the Spear's own wound history. This is the first direct evidence that the relic is active and affecting people in proximity.
+Found At:: L5 (Illicit Clinic).
+Known By:: Ramiro "Rami" Acosta (experiencing it).
+HQ Fallback:: Phase 6.
+Type:: *Containment Truth* — confirms the Spear's activation and the danger of proximity without containment.
+
+=== I16: Chosen Ruler Speech
+
+[horizontal]
+Content:: During and after the heist, one member of the crew began speaking in command-language: references to mandate, destiny, divine selection, and righteous authority. The speech pattern is consistent with claimant-language described in Covenant relic archives.
+Found At:: L5 (Illicit Clinic).
+Known By:: Ramiro "Rami" Acosta (witnessed it), Iván Luján (producing it — unknowingly).
+HQ Fallback:: Phase 7.
+Type:: *Containment Truth* — identifies claimant-language as a symptom and the mechanism by which the Spear selects a bearer.
+
+=== I17: Final Custody Break Site
+
+[horizontal]
+Content:: The thief knows the location where the last transfer attempt occurred — the site connected to the final break in the custody chain. This location is directly connected to where the Spear currently rests.
+Found At:: L5 (Illicit Clinic).
+Known By:: Ramiro "Rami" Acosta.
+HQ Fallback:: Phase 7.
+Type:: Supporting intel.
+
+=== I18: Export Route
+
+[horizontal]
+Content:: The Compact has established an export corridor — maritime, air charter, or diplomatic pouch — to move the Spear out of Argentina. The route, timing, and staging logistics are known to courier contacts.
+Found At:: L6 (Port/Export Route).
+Known By:: Brother Tomás Arce (gained at O5M1).
+HQ Fallback:: Phase 7.
+Type:: Supporting intel.
+
+=== I19: Buyer Motivation
+
+[horizontal]
+Content:: The foreign buyer's motivation — whether the Spear is wanted as a weapon of force, a token of political legitimacy, or a devotional relic — shapes the endgame. Symbolism buyers are patient; proof-of-force buyers are not.
+Found At:: L6 (Port/Export Route).
+Known By:: —
+HQ Fallback:: Phase 8.
+Type:: Supporting intel.
+
+=== I20: Proximity Control Holder
+
+[horizontal]
+Content:: The person currently holding proximity control over the Spear — the bearer — can be identified at the shrine. Their identity confirms which bearer candidate has claimed the relic.
+Found At:: L7 (Hidden Shrine).
+Known By:: —
+HQ Fallback:: —
+Type:: *Containment Truth* — resolving the case requires knowing who holds the Spear and why they believe they should.
+
+=== I21: Bearer Beliefs
+
+[horizontal]
+Content:: The bearer's self-justification — what they believe the Spear is telling them, what mandate they claim, and what violence they consider righteous — reveals the Spear's current activation vector.
+Found At:: L7 (Hidden Shrine).
+Known By:: —
+HQ Fallback:: —
+Type:: Supporting intel.
+
+=== I22: Missing Quiescence Piece
+
+[horizontal]
+Content:: The final element of the Quiescence protocol — the missing step from I11's incomplete custody sequence. This may be a specific liturgical phrase, a physical shielding component, or a suppression rite that only a Keep team can perform.
+Found At:: L7 (Hidden Shrine — environmental evidence or bearer interaction).
+Known By:: —
+HQ Fallback:: Phase 8.
+Type:: *Containment Truth* — combined with I11, this completes the substitute custody protocol needed for safe recovery.
+
+---
+
 == Covenant Request Packet Opportunities
 
 The team may send one packet per shift. For this case, common packets include:
