@@ -53,7 +53,7 @@ Summarize the entire case in one sentence using this template:
 
 [quote]
 ____
-A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [Front 1] and [Front 2] are moving on the same problem. The agents need [Containment Truths] before they can recover it safely.
+A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [Organization 1] and [Organization 2] are moving on the same problem. The agents need [Containment Truths] before they can recover it safely.
 ____
 
 Write this on the Case File Form under *Mystery Statement*. If it takes more than one sentence, the case is too diffuse — simplify.
@@ -96,26 +96,26 @@ Make each milestone specific to the artifact's logic. Don't write generic "thing
 
 ---
 
-== Step 5: Create Your Fronts
+== Step 5: Create Your Organizations
 
-Fronts are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation.
+Organizations are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation.
 
-For each front:
+For each organization:
 
 . *Name it* — Compact Recovery, Police Inquiry, Media Exposure, Church Custody, etc.
 . *Set a starting value* (typically 6–12).
 . *Write 3–5 milestones* at descending values.
-. *List triggers* — what advances this front (time, noise, publicity, violence, missed opportunities).
-. *Write linked effects* — when this front hits certain milestones, does it worsen another front or the relic timeline?
+. *List triggers* — what advances this organization (time, noise, publicity, violence, missed opportunities).
+. *Write linked effects* — when this organization hits certain milestones, does it worsen another organization or the relic timeline?
 . *Note player-facing signs* — what can the agents notice before or as it worsens?
 
 .Aim for:
-* 2–3 *Active Fronts* (already in motion when the case starts)
-* 0–2 *Dormant Fronts* (activated by specific events during play)
+* 2–3 *Active Organizations* (already in motion when the case starts)
+* 0–2 *Dormant Organizations* (activated by specific events during play)
 
 .IMPORTANT
 ****
-If a front cannot produce visible signs before it becomes a problem, it will feel arbitrary to the players. Always give them something to notice.
+If an organization cannot produce visible signs before it becomes a problem, it will feel arbitrary to the players. Always give them something to notice.
 ****
 
 ---
@@ -131,7 +131,7 @@ Availability:: Why is this scene accessible? (Open, Clue-locked, Contact-locked,
 Purpose:: Why does this scene exist in the case?
 Key Activity:: The operational problem at the heart of the scene (this belongs to the scene, not the players).
 Time Cost:: Usually 1 shift.
-Risked Fronts:: Which fronts or relic timeline tracks worsen if things go badly?
+Risked Organizations:: Which organizations or relic timeline tracks worsen if things go badly?
 May Reveal:: Truths, identities, routes, or motives discoverable here.
 May Unlock:: New scenes, contacts, packet angles, or crisis branches.
 
@@ -178,9 +178,9 @@ The shift timeline is the operational calendar. Prepare a tracker showing:
 * *10 days* (default), *4 shifts per day*: Morning, Day, Evening, Night
 * Mark any *known windows* — handoff deadlines, event nights, transport schedules
 * Leave space for *packet send/return markers*
-* Note any *time-locked scenes* or *front triggers* tied to specific shifts
+* Note any *time-locked scenes* or *organization triggers* tied to specific shifts
 
-This handout is for coordination — share it with the table. Do *not* put your hidden front values on it.
+This handout is for coordination — share it with the table. Do *not* put your hidden organization values on it.
 
 ---
 
@@ -224,7 +224,7 @@ Before you run the case, verify:
 * [ ] At least one actionable option is visible at the start of each shift.
 * [ ] A failed scene produces movement, not dead air.
 * [ ] The Mystery Statement fits in one sentence.
-* [ ] Each front has player-facing signs before it becomes a crisis.
+* [ ] Each organization has player-facing signs before it becomes a crisis.
 * [ ] Each NPC has a secret, a goal, and an artifact connection.
 
 ---
@@ -237,7 +237,7 @@ Each shift at the table follows this procedure:
 . *Choose the team's primary undertaking.* Scene action, travel, surveillance, research, preparation, or recovery.
 . *Optionally send one Covenant Request Packet.*
 . *Resolve the undertaking.* Play the scene or handle the shift action.
-. *Advance consequences.* Worsen any fronts or relic timeline triggered by time, noise, or mishandling.
+. *Advance consequences.* Worsen any organizations or relic timeline triggered by time, noise, or mishandling.
 . *Mark delayed returns.* Note when packet responses or stakeout results will arrive.
 
 When a shift becomes an active scene, resolve it as a bundle:
