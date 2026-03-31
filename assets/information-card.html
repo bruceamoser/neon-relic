@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON RELIC — Information Cards</title>
+<style>
+  /* ── RESET ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── FONTS ── */
+  @font-face {
+    font-family: 'SpecialElite';
+    src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
+         local('Special Elite');
+    font-weight: normal; font-style: normal;
+  }
+  @font-face {
+    font-family: 'CourierPrime';
+    src: url('../docs/themes/CourierPrime-Regular.ttf') format('truetype'),
+         local('Courier New');
+    font-weight: normal; font-style: normal;
+  }
+
+  /* ── PAGE ── */
+  @page { size: letter portrait; margin: 0; }
+  @media print {
+    body { margin: 0; padding: 0; background: none; }
+    .page { box-shadow: none; margin: 0; }
+    .page-break { page-break-after: always; }
+  }
+
+  :root {
+    --ink:          #1a1a18;
+    --ink-faded:    #4a4a42;
+    --ink-light:    #8a8a7e;
+    --paper:        #e8e4d8;
+    --green-stamp:  #2d5a27;
+    --red-stamp:    #8b1a1a;
+    --rule:         #999;
+    --rule-light:   #ccc;
+    --field-bg:     rgba(255,255,255,0.3);
+    --font-main:    'SpecialElite', 'Courier New', monospace;
+    --font-fill:    'CourierPrime', 'Courier New', monospace;
+  }
+
+  body {
+    background: #555;
+    font-family: var(--font-main);
+    font-size: 8pt;
+    line-height: 1.25;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0.3in auto;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.55);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0;
+  }
+  .page-break { page-break-after: always; }
+
+  /* ── PAPER TEXTURE ── */
+  .page::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 11px,
+        rgba(0,0,0,0.012) 11px, rgba(0,0,0,0.012) 12px),
+      radial-gradient(ellipse at 15% 78%, rgba(139,119,80,0.07), transparent 55%),
+      radial-gradient(ellipse at 88% 18%, rgba(139,119,80,0.05), transparent 50%);
+    pointer-events: none; z-index: 0;
+  }
+  .page::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none; z-index: 2;
+  }
+  .page > * { position: relative; z-index: 1; }
+
+  /* ── CARD ── */
+  .card {
+    border: 1px dashed #bbb;
+    padding: 0.18in 0.22in;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ── FRONT CARD (Player-Facing) ── */
+  .card-front .card-id {
+    font-family: var(--font-main);
+    font-size: 10pt; font-weight: bold; letter-spacing: 2px;
+    color: var(--green-stamp);
+    border: 1.5px solid var(--green-stamp);
+    padding: 1px 8px;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .card-front .card-id.truth {
+    color: var(--red-stamp);
+    border-color: var(--red-stamp);
+  }
+  .card-front .card-type-label {
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--red-stamp);
+    margin-bottom: 3px;
+  }
+  .card-front .card-header-row {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 3px; margin-bottom: 5px;
+  }
+  .card-front .card-label {
+    font-family: var(--font-main);
+    font-size: 5pt; letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+  }
+  .card-front .content-area {
+    flex: 1;
+    border: 1px solid var(--rule);
+    background: var(--field-bg);
+    padding: 4px 5px;
+    font-family: var(--font-fill); font-size: 7.5pt;
+    line-height: 1.35;
+  }
+  .card-front .card-footer {
+    margin-top: auto;
+    padding-top: 3px;
+    font-family: var(--font-main);
+    font-size: 4pt; letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    text-align: center;
+  }
+
+  /* ── BACK CARD (DA-Facing) ── */
+  .card-back {
+    background: rgba(45,90,39,0.03);
+  }
+  .card-back .back-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 3px; margin-bottom: 5px;
+  }
+  .card-back .back-title {
+    font-family: var(--font-main);
+    font-size: 6.5pt; letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .card-back .back-stamp {
+    font-family: var(--font-main);
+    font-size: 5pt; letter-spacing: 2px;
+    color: var(--red-stamp);
+  }
+  .card-back .back-id {
+    font-family: var(--font-main);
+    font-size: 9pt; font-weight: bold;
+    color: var(--green-stamp);
+    border: 1.5px solid var(--green-stamp);
+    padding: 0px 6px;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .card-back .back-id.truth {
+    color: var(--red-stamp);
+    border-color: var(--red-stamp);
+  }
+
+  .field-label {
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--ink-faded); margin-bottom: 1px;
+  }
+  .field-value {
+    border-bottom: 1px solid var(--rule);
+    min-height: 13px; padding: 1px 3px;
+    background: var(--field-bg);
+    font-family: var(--font-fill); font-size: 7pt;
+    margin-bottom: 4px;
+  }
+  .field-value.med {
+    border: 1px solid var(--rule);
+    min-height: 20px;
+  }
+
+  .type-row {
+    display: flex; gap: 10px; align-items: center;
+    margin-bottom: 4px;
+  }
+  .checkbox {
+    width: 8px; height: 8px;
+    border: 1px solid var(--ink);
+    display: inline-block;
+  }
+  .type-option {
+    font-family: var(--font-main);
+    font-size: 5.5pt; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--ink-faded);
+    display: flex; align-items: center; gap: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     PAGE 1 — FRONT SIDES (Player-Facing)
+     Print this page, then flip and print page 2
+     on the back to create double-sided cards.
+     ══════════════════════════════════════════════════ -->
+<div class="page page-break">
+
+  <!-- Card 1 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 2 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 3 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 4 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 5 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 6 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 7 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Card 8 Front -->
+  <div class="card card-front">
+    <div class="card-header-row">
+      <div class="card-id"></div>
+      <div class="card-label">Information Card</div>
+    </div>
+    <div class="card-type-label"></div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     PAGE 2 — BACK SIDES (DA-Facing)
+     Mirror layout: print on reverse of page 1.
+     Cards are mirrored left-to-right so they align
+     when the page is flipped on the long edge.
+     ══════════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- Card 2 Back (mirrors Card 2 position — right col, row 1) -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 1 Back (mirrors Card 1 position — left col, row 1) -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 4 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 3 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 6 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 5 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 8 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Card 7 Back -->
+  <div class="card card-back">
+    <div class="back-header">
+      <div class="back-title">DA Reference</div>
+      <div class="back-stamp">DA Eyes Only</div>
+    </div>
+    <div class="back-id"></div>
+    <div class="type-row">
+      <span class="type-option"><span class="checkbox"></span> Containment Truth</span>
+      <span class="type-option"><span class="checkbox"></span> Supporting Intel</span>
+    </div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Phase)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+</div>
+
+</body>
+</html>
