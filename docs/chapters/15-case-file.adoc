@@ -541,7 +541,7 @@ For a single-session case with 5–6 Locations and 6–8 NPCs, the typical packa
 
 == Cross-References
 
-* DA guidance for authoring the Operations Board, organizations, relic milestones, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
+* DA guidance for authoring the Operations Board, Organizations, relic milestones, and entity authoring: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
 * Travel as a shift type: xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules]
 * Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
 * Containment rituals and handling profiles: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts -> Containment Rituals]
