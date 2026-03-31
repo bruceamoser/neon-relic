@@ -57,18 +57,18 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 == Case Board Authoring
 
-The new Case File structure is built as a *case board*: scenes, contacts, organizations, a relic timeline, and delayed returns moving on a shared shift timeline.
+The new Case File structure is built as a *case board*: Locations, NPC Cards, Information Cards, organizations, relic milestones, and delayed returns tracked on the Operations Board.
 
 If you can explain your case only as a linear plot, it is not ready. If you can explain it as a network of opportunities and pressures, it is.
 
 === The Core Authoring Questions
 
-Before writing scenes, answer these questions:
+Before writing entities, answer these questions:
 
-. *What is the artifact doing if no one contains it?* That becomes the *Relic Timeline*.
-. *Who else is reacting to the situation?* Those become *Organizations*.
-. *What does the team need to learn to resolve the case safely?* Those are the *Containment Truths*.
-. *Where can the agents go or who can they approach to learn those truths?* Those become *Scenes* and *Contacts*.
+. *What is the artifact doing if no one contains it?* That becomes the *relic milestones* on the phases row.
+. *Who else is reacting to the situation?* Those become *Organizations* on the Operations Board.
+. *What does the team need to learn to resolve the case safely?* Those are the *Containment Truths* (Information Cards).
+. *Where can the agents go or who can they approach to learn those truths?* Those become *Locations* and *NPC Cards*.
 
 === Mystery Statement
 
