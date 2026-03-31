@@ -434,6 +434,33 @@ An NPC Card is a playing-card-sized reference that the DA pulls alongside a loca
 | What happens if the encounter goes badly — organization advance on the Operations Board, tail placed, witness spooked.
 |===
 
+=== Information Cards
+
+An Information Card is a playing-card-sized reference identified by an I# code. Each card represents a single discoverable fact — a witness statement, a forensic result, a document, or a rumor. Information cards are designed as double-sided: the player-facing front states the content; the DA-facing back lists sources and consequences.
+
+[%header,cols="1,4"]
+|===
+| Field | Description
+
+| *ID*
+| Shorthand identifier (I1, I2, I3, etc.).
+
+| *Content*
+| What the agents learn — the fact, clue, or intelligence.
+
+| *Found At*
+| Location IDs (L#) where this information can be discovered.
+
+| *Known By*
+| NPC IDs who possess this knowledge.
+
+| *HQ Fallback*
+| Available from HQ at Phase X (see <<hq-safety-valve>>). If blank, the information is only available in the field.
+
+| *Type*
+| *Containment Truth* (essential for solving the case) or *supporting intel* (useful but not required).
+|===
+
 ---
 
 == Operations Board as Table Handout
