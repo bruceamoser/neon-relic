@@ -57,7 +57,7 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 == Case Board Authoring
 
-The new Case File structure is built as a *case board*: scenes, contacts, fronts, a relic timeline, and delayed returns moving on a shared shift timeline.
+The new Case File structure is built as a *case board*: scenes, contacts, organizations, a relic timeline, and delayed returns moving on a shared shift timeline.
 
 If you can explain your case only as a linear plot, it is not ready. If you can explain it as a network of opportunities and pressures, it is.
 
@@ -66,7 +66,7 @@ If you can explain your case only as a linear plot, it is not ready. If you can 
 Before writing scenes, answer these questions:
 
 . *What is the artifact doing if no one contains it?* That becomes the *Relic Timeline*.
-. *Who else is reacting to the situation?* Those become *Fronts*.
+. *Who else is reacting to the situation?* Those become *Organizations*.
 . *What does the team need to learn to resolve the case safely?* Those are the *Containment Truths*.
 . *Where can the agents go or who can they approach to learn those truths?* Those become *Scenes* and *Contacts*.
 
@@ -74,17 +74,17 @@ Before writing scenes, answer these questions:
 
 Write one sentence that captures the board:
 
-_"A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [front 1] and [front 2] are moving on the same problem. The agents need [three Containment Truths] before they can recover it safely."_
+_"A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [organization 1] and [organization 2] are moving on the same problem. The agents need [three Containment Truths] before they can recover it safely."_
 
 If this statement requires a paragraph, your case is too diffuse.
 
 ---
 
-== Authoring Fronts
+== Authoring Organizations
 
-*Front* means *external reactive pressure*. A front is not the artifact itself.
+*Organization* means *external reactive pressure*. An organization is not the artifact itself.
 
-Good fronts include:
+Good organizations include:
 
 * police consolidating a bad story into an active investigation
 * a Compact recovery team replacing disposable cutouts
@@ -92,7 +92,7 @@ Good fronts include:
 * media exposure turning secrecy into triage
 * a buyer window, border route, or export corridor closing
 
-Every front needs four things:
+Every organization needs four things:
 
 [%header,cols="1,4"]
 |===
@@ -111,9 +111,9 @@ Every front needs four things:
 | What the agents can notice before or as it worsens.
 |===
 
-=== Front Design Rule
+=== Organization Design Rule
 
-If a front cannot produce visible signs before it becomes a problem, it will feel arbitrary. Give players ways to notice tightening pressure without announcing the DA's numbers.
+If an organization cannot produce visible signs before it becomes a problem, it will feel arbitrary. Give players ways to notice tightening pressure without announcing the DA's numbers.
 
 ---
 
@@ -144,7 +144,7 @@ Each scene should exist because it can do at least one of the following:
 * reveal a Containment Truth
 * identify or deepen a Contact
 * narrow the location of the artifact
-* expose a front's move or route
+* expose an organization's move or route
 * create a recovery, trap, or confrontation opportunity
 
 === Scene Availability
@@ -159,7 +159,7 @@ Every scene should declare why it is available:
 
 === Scene Data Schema
 
-Use the schema in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]: availability, purpose, Key Activity, time cost, risked fronts, may reveal, and may unlock.
+Use the schema in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]: availability, purpose, Key Activity, time cost, risked organizations, may reveal, and may unlock.
 
 The *Key Activity* belongs to the scene, not the players. It states what the scene is immediately about. The players decide how they attack it.
 
@@ -220,15 +220,15 @@ The case board can be crunchy without feeling board-gamey if you control visibil
 Show players only:
 
 * the scenes they can currently act on
-* the signs of the fronts currently touching them
+* the signs of the organizations currently touching them
 * the known timing windows
 * the delayed returns they are waiting on
 
 Hold back:
 
 * inactive scene nodes
-* exact front values
-* dormant fronts that have not manifested
+* exact organization values
+* dormant organizations that have not manifested
 * threshold events that no one has inferred yet
 
 In practice, 2–4 active scene options at a time is enough.
@@ -237,7 +237,7 @@ In practice, 2–4 active scene options at a time is enough.
 
 == Player-Facing Signs vs. DA Tracking
 
-The DA may track fronts and relic timeline numerically. The players should usually receive only fiction:
+The DA may track organizations and relic timeline numerically. The players should usually receive only fiction:
 
 * more patrols
 * sealed wards
@@ -354,7 +354,7 @@ Containment missions still have escalating pressure. Use these tools to maintain
 
 * *The containment profile creates constraints.* If the artifact cannot be exposed to light, the agents must plan their extraction around darkness, covered transport, and power failures. Constraints are interesting problems, not punishment.
 
-* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against fronts and the relic timeline, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
+* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against organizations and the relic timeline, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
 
 If ritual containment is a possible solution, seed *three discoverable facts* into the scene network before play begins:
 
@@ -380,7 +380,7 @@ Partial success is valid. An artifact that was activated once but then contained
 
 Containment cases benefit from pressure tracks with *loss conditions linked to exposure*, not arbitrary pacing:
 
-* *The Seal Breaks* — a front based on witness knowledge, curiosity, and publicity.
+* *The Seal Breaks* — an organization based on witness knowledge, curiosity, and publicity.
 * *The Protocol Fails* — a relic-timeline track based on handling violations.
 * *The Handoff Window Closes* — a time-locked transport or custody window that vanishes after a set shift.
 
@@ -388,7 +388,7 @@ Containment cases benefit from pressure tracks with *loss conditions linked to e
 
 == Cross-References
 
-* Case File structure (shifts, scenes, fronts, relic timeline, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
+* Case File structure (shifts, scenes, organizations, relic timeline, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
 * Artifact properties and Tiers: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
 * Rival faction behavior and agendas: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
 * Entity stat blocks and Fear ratings: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
