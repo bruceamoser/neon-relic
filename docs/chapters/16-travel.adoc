@@ -44,7 +44,7 @@ Use the following default scale unless the case specifies otherwise:
 When a travel shift matters, resolve it in four steps:
 
 . *Choose the route.* Direct, covert, public, scenic, back road, truck route, air, maritime, or rail.
-. *Identify the pressure.* Which organization or relic-timeline window might worsen while the team is moving?
+. *Identify the pressure.* Which organization row or relic milestone on the Operations Board might advance while the team is moving?
 . *Roll only if the route is contested.* Unknown roads, weather, active pursuit, border crossings, and covert movement justify rolls.
 . *Resolve arrival as fiction, not as a blank cut.* The destination should already feel altered by time, risk, or being followed.
 
@@ -73,7 +73,7 @@ Use route choices to create tradeoffs:
 * fatigue or wear
 * a tail problem
 * missed opportunity elsewhere
-* a visible sign that an organization worsened while the team was gone
+* a visible sign that an organization advanced on the Operations Board while the team was gone
 
 ---
 
@@ -167,9 +167,9 @@ Three options, each requiring one skill roll:
 
 If the team reaches the destination with a tail still on them:
 
-* The DA places an additional hostile element in the arrival scene or a later crisis node.
+* The DA places an additional hostile element in the arrival scene or a later crisis location.
 * The team does not know exactly what they brought with them until it surfaces.
-* One relevant rival organization worsens immediately.
+* One relevant rival organization advances immediately on the Operations Board.
 
 ---
 
@@ -177,7 +177,7 @@ If the team reaches the destination with a tail still on them:
 
 If the tail is a Named Threat or a designated faction operative (introduced in the Case File), losing them requires a *Contested Roll*: the team's skill roll is opposed by the tail's relevant skill (Sneak or Investigate, Difficulty set by that NPC's Wits).
 
-If the Named Threat is allowed to arrive at the destination, they are briefed on the team's location. The DA may use this to introduce them as a threat in the arrival scene, a later node, or the crisis branch.
+If the Named Threat is allowed to arrive at the destination, they are briefed on the team's location. The DA may use this to introduce them as a threat in the arrival scene, a later location, or the crisis branch.
 
 ---
 
@@ -198,8 +198,8 @@ Travel should interact with the case board.
 
 Use travel shifts to:
 
-* worsen an organization when the team cannot be in two places at once
-* expose relic-timeline signs in transit
+* advance an organization row on the Operations Board when the team cannot be in two places at once
+* expose relic milestone signs in transit
 * force a route choice between speed and secrecy
 * convert a stakeout into a moving problem
 
