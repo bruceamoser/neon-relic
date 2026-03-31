@@ -717,13 +717,13 @@ Use this procedure to go from nothing to a playable case in one pass. The output
 > science reporter is writing a "mystery signal" human-interest piece for the Aberdeen
 > Herald — deadline Friday.
 >
-> **Relic Timeline:** The transmissions become clearer every night shift and begin
-> imprinting alternate-life memories on listeners. If the receiver is activated in the
+> **Operations Board — Relic Milestones:** The transmissions become clearer every night shift and begin
+> imprinting alternate-life memories on listeners. Phase milestones on the Operations Board track this escalation. If the receiver is activated in the
 > lab on Friday morning, half the department hears the same impossible broadcast.
 >
-> **Organization:** The journalist's article runs Friday morning. If the artifact is not secured
+> **Organization Row:** The journalist's article runs Friday morning. If the artifact is not secured
 > by then, the story triggers federal interest and the Covenant loses access to the university.
 >
-> **NPC:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
+> **NPC Card:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
 > She wants grant funding, not interference. She will cooperate — for a price.
 
