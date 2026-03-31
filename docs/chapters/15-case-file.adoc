@@ -461,6 +461,15 @@ An Information Card is a playing-card-sized reference identified by an I# code. 
 | *Containment Truth* (essential for solving the case) or *supporting intel* (useful but not required).
 |===
 
+[[hq-safety-valve]]
+=== HQ Safety Valve
+
+Every Information Card can include an *HQ Fallback* phase number: "Available from HQ at Phase X." If agents miss a fact in the field — a failed roll, a skipped location, a spooked witness — they can request it from Covenant HQ. The cost is time: the request consumes one or more shifts while HQ processes records, contacts assets, or runs analysis.
+
+This mechanism structurally prevents dead ends. The DA never needs to improvise a rescue path or hand-wave missed clues. If the information exists and HQ can plausibly obtain it, the agents can always get it — they just lose shifts. The Operations Board keeps counting down while they wait.
+
+> *Design note:* The HQ Fallback replaces the hard "3 paths per truth" authoring rule. DAs should ensure every Containment Truth has at least two field sources (any combination of Locations and NPCs) plus an HQ fallback. Supporting intel may have fewer sources or no HQ fallback at all.
+
 ---
 
 == Operations Board as Table Handout
