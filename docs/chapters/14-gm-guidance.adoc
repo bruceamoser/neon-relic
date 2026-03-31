@@ -397,7 +397,7 @@ Containment missions still have escalating pressure. Use these tools to maintain
 
 * *The containment profile creates constraints.* If the artifact cannot be exposed to light, the agents must plan their extraction around darkness, covered transport, and power failures. Constraints are interesting problems, not punishment.
 
-* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against organizations and the relic timeline, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
+* *Rivalry without combat.* A rival faction wants the artifact activated; the agents want it contained. This is a race against the Operations Board countdown, not a default firefight. Rival agents may intercept, deceive, or manufacture the activation conditions even as players try to prevent them.
 
 If ritual containment is a possible solution, seed *three discoverable facts* across Locations, NPC Cards, and Information Cards before play begins:
 
@@ -424,14 +424,14 @@ Partial success is valid. An artifact that was activated once but then contained
 Containment cases benefit from pressure tracks with *loss conditions linked to exposure*, not arbitrary pacing:
 
 * *The Seal Breaks* — an organization based on witness knowledge, curiosity, and publicity.
-* *The Protocol Fails* — a relic-timeline track based on handling violations.
+* *The Protocol Fails* — a phases-row track based on handling violations.
 * *The Handoff Window Closes* — a time-locked transport or custody window that vanishes after a set shift.
 
 ---
 
 == Cross-References
 
-* Case File structure (shifts, scenes, organizations, relic timeline, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
+* Case File structure (shifts, scenes, Organizations, Operations Board, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
 * Artifact properties and Tiers: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
 * Rival faction behavior and agendas: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
 * Entity stat blocks and Fear ratings: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
