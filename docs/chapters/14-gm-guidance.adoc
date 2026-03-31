@@ -92,28 +92,48 @@ Good organizations include:
 * media exposure turning secrecy into triage
 * a buyer window, border route, or export corridor closing
 
-Every organization needs four things:
+Each organization is a countdown row on the Operations Board. When authoring an organization, define:
 
 [%header,cols="1,4"]
 |===
 | Part | Function
 
 | *Name*
-| What the pressure is.
+| What the pressure is. This appears in the leftmost cell of the row.
 
-| *Progression*
-| 3–5 milestones that describe how the pressure worsens.
+| *Starting Value*
+| How many countdown squares remain at case start (e.g., 6 means columns 14–7 are pre-filled, leaving 6 squares). Lower starting values mean the organization is already close to crisis.
+
+| *Active / Dormant*
+| Whether the organization starts active or dormant. Dormant organizations are pre-printed on the board with the Active checkbox unchecked. They become active when triggered by agent action, a milestone cross-link, or a relic milestone.
+
+| *Milestones (O#M#)*
+| 3–5 milestones labeled with O#M# shorthand (e.g., O1M1, O1M2). Each milestone describes what happens when that square is reached. Milestone text includes any cross-link consequences — instructions to advance other organization rows or trigger events.
 
 | *Triggers*
-| What advances it: time, noise, publicity, violence, packet interception, missed opportunity, or rival confidence.
+| What advances the row: time, noise, publicity, violence, packet interception, missed opportunity, or rival confidence.
 
 | *Player-Facing Signs*
 | What the agents can notice before or as it worsens.
 |===
 
+=== Milestone Cross-Links
+
+Organizations affect each other through milestone text. When writing milestones, include any consequences that ripple across the board:
+
+____
+O1M2: Police issue a public appeal for witnesses. Advance O3 (Media) by 1 square.
+
+O2M3: A wounded thief surfaces at the clinic. Advance O1 (Police) by 2 squares and O4 (Compact) by 1 square.
+____
+
+Cross-links create cascading pressure without requiring arrows or special notation on the grid.
+
 === Organization Design Rule
 
 If an organization cannot produce visible signs before it becomes a problem, it will feel arbitrary. Give players ways to notice tightening pressure without announcing the DA's numbers.
+
+Recommend a maximum of ~8 organization rows per case. If you need more than 8, consider whether two organizations are really the same pressure source with different faces.
 
 ---
 
