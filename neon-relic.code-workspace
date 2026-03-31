@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../yearzero-combat-fvtt"
+		},
+		{
+			"path": "../twilight2000-foundry-vtt"
+		},
+		{
+			"path": "../vaesen-foundry-vtt"
+		},
+		{
+			"path": "../blade-runner-foundry-vtt"
+		},
+		{
+			"path": "../morkborg-foundry-vtt"
+		},
+		{
+			"path": "../mutant-year-zero"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "neon-relic"
+	}
+}
