@@ -28,7 +28,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Case File* | A structured operation tracked on an Operations Board with a phases row (shift clock + relic milestones) and organization countdown rows. Case Files also include scenes, contacts, Containment Truths, and Covenant Request Packets. Playable in flexible order rather than through a fixed phase script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Case File* | A structured operation tracked on an Operations Board with a phases row (shift clock + relic milestones) and organization countdown rows. Case Files are built from Locations, NPC Cards, Information Cards, organizations, Containment Truths, and Covenant Request Packets. Playable in flexible order rather than through a fixed phase script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Clearance Level (CL)* | Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 | *Contact* | _See NPC Card._ In the entity model, contacts are NPC Cards with access-granting roles, organization affiliations, and knowledge. They are not a separate case-board element. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Containment Truth* | Information necessary for safe resolution of a case, such as a relic's trigger, appetite, tether, shielding method, quiescence condition, or transfer sequence. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
@@ -94,6 +94,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
+| *Information Card* | A playing-card-sized reference for a discoverable fact in a Case File, identified by an I# code (I1, I2, etc.). Lists where the information can be found (Locations), who knows it (NPCs), and when HQ can provide it as a fallback. Type is either Containment Truth or supporting intel. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Insight* | A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma — heightened perception, empathy, or expertise. Cannot be removed. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
@@ -101,7 +102,13 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Key Activity* | Scene metadata set by the DA that states what a scene is immediately trying to accomplish. Players decide how they approach it; they do not choose the Key Activity itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+|===
+
+== L
+
+[cols="1,3", frame=none, grid=rows, stripes=none]
+|===
+| *Location* | A place the agents can go during a Case File. Each Location is the DA's primary reference during play — a form listing description, availability, NPCs present, information available, organizations present, positive/negative results, and milestone changes. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
 == M
@@ -116,6 +123,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Named Threat* | A significant antagonist in a Case File — a faction operative, corrupted NPC, or supernatural entity important enough to have a name, motivations, and stat block. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *NPC Card* | A playing-card-sized reference for a significant person in a Case File. Carries organization affiliation (O#), secret, goal, artifact connection, starting knowledge (I# refs), gained knowledge (milestone-driven), locations, and positive/negative results. Contacts are NPC Cards, not standalone elements. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
 == P
@@ -141,7 +149,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Scene* | A playable opportunity in a Case File. Scenes are node-based and may be open, clue-locked, contact-locked, time-locked, or packet-locked. They are not mandatory sequence steps. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Scene* | An emergent intersection of Location, NPC, and Information entities during a Case File. A scene occurs when agents go to a location and the DA assembles the relevant NPC Cards and Information Cards. Scenes are not pre-authored event nodes. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Shift* | The core unit of operational time in a Case File. Each day contains 4 shifts of 6 hours each: Morning, Day, Evening, and Night. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Skill Dice* | Green dice in the pool, equal to the relevant Skill rating (0–5). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *Slow Action* | One of three action types in combat. Represents a committed effort: attacking, using a skill, administering first aid, or reloading a weapon. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
