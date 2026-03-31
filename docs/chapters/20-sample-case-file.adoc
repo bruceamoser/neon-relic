@@ -1,7 +1,7 @@
 ﻿[#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
-This chapter presents a full sample case built for the revised Neon Relic case structure: a reactive case board, multiple fronts, scene nodes with dependencies, delayed information returns, and a relic whose containment problem matters as much as its location.
+This chapter presents a full sample case built for the revised Neon Relic case structure: a reactive case board, multiple organizations, scene nodes with dependencies, delayed information returns, and a relic whose containment problem matters as much as its location.
 
 Use it as both a playable operation and a model for authoring future cases.
 
@@ -108,7 +108,7 @@ The Spear can be moved safely only if all of the following are true:
 * a Keep-led suppression rite is completed before vehicle transport
 * active claimant language is shut down in the containment zone
 
-If these conditions are broken, transport is still possible -- but the DA should advance the relic timeline, worsen one related front, or both.
+If these conditions are broken, transport is still possible -- but the DA should advance the relic timeline, worsen one related organization, or both.
 
 ---
 
@@ -134,7 +134,7 @@ Linked effects:
 * At `5`, Media Exposure activates if still dormant.
 * At `2`, Foreign Buyer Window worsens by 2 if active.
 
-=== Active Fronts
+=== Active Organizations
 
 ==== Vantablack Compact Recovery Operation (9)
 
@@ -194,7 +194,7 @@ Linked effects:
 * At `6`, Compact Recovery worsens by 1.
 * At `3`, Local Police Inquiry worsens by 1 if Church influence is used to divert attention.
 
-=== Dormant Fronts
+=== Dormant Organizations
 
 ==== Foreign Buyer Window (8)
 
@@ -317,7 +317,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Local Police Inquiry, Church Custody Cell.
+*Risked Organizations:* Local Police Inquiry, Church Custody Cell.
 
 *May reveal:*
 
@@ -342,7 +342,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Local Police Inquiry, Compact Recovery.
+*Risked Organizations:* Local Police Inquiry, Compact Recovery.
 
 *May reveal:*
 
@@ -367,7 +367,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Church Custody Cell, Lance Threshold Build.
+*Risked Organizations:* Church Custody Cell, Lance Threshold Build.
 
 *May reveal:*
 
@@ -391,7 +391,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Compact Recovery, Local Police Inquiry.
+*Risked Organizations:* Compact Recovery, Local Police Inquiry.
 
 *May reveal:*
 
@@ -415,7 +415,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Heist Crew Fracture, Compact Recovery.
+*Risked Organizations:* Heist Crew Fracture, Compact Recovery.
 
 *May reveal:*
 
@@ -439,7 +439,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* 1 shift.
 
-*Risked Fronts:* Foreign Buyer Window if active, otherwise Compact Recovery; Local Police Inquiry as secondary.
+*Risked Organizations:* Foreign Buyer Window if active, otherwise Compact Recovery; Local Police Inquiry as secondary.
 
 *May reveal:*
 
@@ -461,7 +461,7 @@ Scenes are not ordered. Each node lists what makes it available, what it is tryi
 
 *Time Cost:* Live scene / 1 shift minimum.
 
-*Risked Fronts:* Lance Threshold Build and whichever rival front is currently closest to crisis.
+*Risked Organizations:* Lance Threshold Build and whichever rival organization is currently closest to crisis.
 
 *May reveal:*
 
@@ -651,14 +651,14 @@ The following materials are the working play-aid appendix for this case. They ar
 
 === Handout 7: Case Board Tracker
 
-Use this tracker behind the screen or as a shared operational worksheet. Update it at the end of each shift, especially after packet returns, public incidents, or any scene that worsens a front.
+Use this tracker behind the screen or as a shared operational worksheet. Update it at the end of each shift, especially after packet returns, public incidents, or any scene that worsens an organization.
 
 Quick use:
 
 * write current values in pencil or erasable marker
 * note visible signs separately from hidden DA-side thresholds
 * mark scene availability the moment a clue, contact, or time window opens it
-* do not reveal dormant fronts to players until they have fiction on the table
+* do not reveal dormant organizations to players until they have fiction on the table
 
 ==== Relic Timeline Tracker
 
@@ -672,10 +672,10 @@ Quick use:
 |
 |===
 
-==== Active Front Tracker
+==== Active Organization Tracker
 
 |===
-| Front | Start | Current | Milestones | Narrative Signs
+| Organization | Start | Current | Milestones | Narrative Signs
 
 | Vantablack Compact Recovery
 | 9
@@ -702,10 +702,10 @@ Quick use:
 |
 |===
 
-==== Dormant Front Tracker
+==== Dormant Organization Tracker
 
 |===
-| Front | Start | Active? | Current | Trigger
+| Organization | Start | Active? | Current | Trigger
 
 | Foreign Buyer Window
 | 8
@@ -777,7 +777,7 @@ Quick use:
 
 Session notes to track between shifts:
 
-* Which front is closest to crisis?
+* Which organization is closest to crisis?
 * Which sign do the players see next?
 * Which packet or delayed result is due next shift?
 
@@ -797,7 +797,7 @@ Use this sheet for quick reference at the table. Read the public-face line first
 * Role: robbery detective on the edge of a much stranger case
 * Public face: competent, skeptical, under pressure from superiors
 * Secret: knows witness contradictions are being quietly buried
-* Use at table: quiet source, pressure valve, possible collateral if police front spikes
+* Use at table: quiet source, pressure valve, possible collateral if police organization spikes
 
 ==== Father Esteban Vale
 
@@ -825,7 +825,7 @@ Use this sheet for quick reference at the table. Read the public-face line first
 * Role: Compact regional handler
 * Public face: controlled, elegant, transactional
 * Secret: is trying to recover the sale narrative before buyers realize she lost control
-* Use at table: mover of the Compact front, architect of quiet pressure
+* Use at table: mover of the Compact organization, architect of quiet pressure
 
 ==== Ivan Lujan
 
@@ -869,14 +869,14 @@ How to use:
 * witness transfer
 * Church office available
 * likely cargo window
-* front sign appears
+* organization sign appears
 * relic event hits
 
 Recommended notation:
 
 * circle packet returns
 * underline hard time windows
-* mark crisis fronts in a contrasting color
+* mark crisis organizations in a contrasting color
 * use one or two words only per cell so the sheet stays readable
 
 ==== 10-Day Grid
@@ -910,7 +910,7 @@ Recommended notation:
 
 End-of-shift checklist:
 
-* Did a front worsen?
+* Did an organization worsen?
 * Did the relic timeline worsen?
 * Did a packet become due?
 * Did a new scene become available?
