@@ -1,7 +1,7 @@
 ﻿[#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
-This chapter presents a full sample case built for the revised Neon Relic case structure: a reactive case board, multiple organizations, scene nodes with dependencies, delayed information returns, and a relic whose containment problem matters as much as its location.
+This chapter presents a full sample case built for the revised Neon Relic case structure: an Operations Board with organization rows and relic milestones, Locations with NPC Cards and Information Cards, delayed information returns, and a relic whose containment problem matters as much as its location.
 
 Use it as both a playable operation and a model for authoring future cases.
 
@@ -59,7 +59,7 @@ The team must:
 | Cold Archive Read | A postwar occult asset repeatedly hidden rather than destroyed
 | Corruption Cost | +3 Corruption on activation
 | Artifact Die | d20
-| Emission | Pulse becoming Burst as the relic timeline advances
+| Emission | Pulse becoming Burst as relic milestones advance on the Operations Board
 |===
 
 === What the Spear Does
@@ -92,7 +92,7 @@ The Spear should not be framed as a weapon with a simple attack profile. It chan
 
 On an Artifact Die roll of `1`, one of the following occurs:
 
-* a public miracle / atrocity manifests and immediately advances the relic timeline
+* a public miracle / atrocity manifests — fill 1 extra shift quadrant on the phases row (advancing relic milestones)
 * the current bearer suffers wound bloom, conviction collapse, or ecstatic command-delusion
 * nearby witnesses begin treating random violence as sacred proof
 * electronics fail in a widening radius and the scene becomes impossible to contain quietly
@@ -108,7 +108,7 @@ The Spear can be moved safely only if all of the following are true:
 * a Keep-led suppression rite is completed before vehicle transport
 * active claimant language is shut down in the containment zone
 
-If these conditions are broken, transport is still possible -- but the DA should advance the relic timeline, worsen one related organization, or both.
+If these conditions are broken, transport is still possible -- but the DA should fill 1 extra shift quadrant on the phases row, worsen one related organization, or both.
 
 ---
 
@@ -614,7 +614,7 @@ Quick use:
 * mark scene availability the moment a clue, contact, or time window opens it
 * do not reveal dormant organizations to players until they have fiction on the table
 
-==== Relic Timeline Tracker
+==== Phases Row — Relic Milestones Tracker
 
 |===
 | Track | Start | Current | Milestones | Narrative Signs
@@ -865,9 +865,9 @@ Recommended notation:
 End-of-shift checklist:
 
 * Did an organization worsen?
-* Did the relic timeline worsen?
+* Did the relic milestones advance on the phases row?
 * Did a packet become due?
-* Did a new scene become available?
+* Did a new Location become available?
 
 ---
 
