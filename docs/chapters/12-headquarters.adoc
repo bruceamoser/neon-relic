@@ -24,7 +24,7 @@ The team earns DP collectively during *the Aftermath* of each Case File:
 | Case File fully resolved (mystery closed) | 3
 | Artifact securely contained and logged with the Covenant | 1
 | Named Threat neutralized (not just driven off) | 1
-| Primary objective completed under active case pressure (a front or relic timeline was already in a dangerous state) | 1
+| Primary objective completed under active case pressure (an organization or relic timeline was already in a dangerous state) | 1
 | Agent rescued from rival faction custody | 1
 |===
 
