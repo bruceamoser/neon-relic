@@ -28,7 +28,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Case File* | A structured operation built from shifts, scenes, contacts, organizations, a relic timeline, and Containment Truths. Case Files are playable in flexible order rather than through a fixed phase script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Case File* | A structured operation tracked on an Operations Board with a phases row (shift clock + relic milestones) and organization countdown rows. Case Files also include scenes, contacts, Containment Truths, and Covenant Request Packets. Playable in flexible order rather than through a fixed phase script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Clearance Level (CL)* | Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 | *Contact* | A person or institution that grants access, information, leverage, cover, or packet routing during a Case File. Contacts often unlock scenes or routes rather than solving the case directly. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Containment Truth* | Information necessary for safe resolution of a case, such as a relic's trigger, appetite, tether, shielding method, quiescence condition, or transfer sequence. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
@@ -47,7 +47,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Death Check* | A single d6 roll required when a Critical Injury is marked †. On 1–2: the character dies (or is permanently retired for mental death). On 3–6: survival, but the Critical Injury still applies. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 | *Department* | Specialization within a Division. Wayfinder agents choose Wings, Keep agents choose Departments, and Recovery agents choose Operational Paradigms instead. Stack is a *Keep department*, not a separate Division. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 | *Difficulty* | The number of successes (6s) required to pass a standard skill roll. Default Difficulty is 1 if a rule does not state otherwise. Opposed rolls compare totals instead of using a fixed Difficulty, and a few special rolls such as Fear checks use their own binary rules. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
-| *Director of Agents (DA)* | The table's facilitator role. The DA presents scenes, adjudicates uncertainty, tracks organizations and relic timelines, and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
+| *Director of Agents (DA)* | The table's facilitator role. The DA presents scenes, adjudicates uncertainty, tracks the Operations Board (organization rows and phases row), and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
 | *Disposition* | An NPC's current openness to engagement in Social Conflict, tracked from 1 (Closed) to 5 (Open). At Disposition 3 or higher, direct low-risk questions are answered without a roll; social rolls are reserved for sensitive disclosures or requests against self-interest. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
 | *Division* | Character class within the Verdant Covenant. The three playable Divisions are Wayfinder (research/intelligence), Recovery (field retrieval), and The Keep (vault security, custody, and logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 | *Division Item* | A signature supernatural object issued to every member of a Division. Wayfinder: Verdant Codex. Recovery: Verdant Satchel. Keep: Warden's Bracer. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
@@ -70,7 +70,8 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Fear Check* | A special binary Wits roll triggered by supernatural horror. One or more 6s = success. Any 1s = +1 Corruption. No 6s = failure (+1 Corruption + Panic Table roll). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 | *Fear Rating* | Narrative classification (0–5) of how terrifying a creature or event is. Used by the DA to determine when to call for a Fear check. 0 = no check triggered. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 | *Free Action* | An action in combat that requires negligible effort: speaking a short sentence, dropping an item, or glancing at surroundings. Unlimited per turn. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
-| *Organization* | External reactive pressure during a Case File, such as rival recovery operations, police inquiry, media exposure, or Church seizure attempts. An organization is not the artifact itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Operations Board* | The single tracking surface for a Case File. Contains a phases row (shift clock + relic milestones) and organization countdown rows. 14 columns count down from 14 → 1 (days until catastrophe). See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Organization* | External reactive pressure during a Case File, tracked as a countdown row on the Operations Board. Uses O#M# shorthand for milestones. Examples: rival recovery operations, police inquiry, media exposure, or Church seizure attempts. An organization is not the artifact itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
 == G
@@ -122,6 +123,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Panic Table* | A d6 table rolled on Fear check failure. Determines the character's involuntary response: Fight (1), Flight (2), Freeze (3), Denial (4), Compulsion (5), or Fugue (6). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Phases Row* | The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. Serves as both the shift clock and the relic escalation track — relic milestones trigger when the DA fills a shift quadrant that crosses a milestone phase number. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Push* | Re-roll all non-6 dice after a roll fails to meet its Difficulty, or after a success when you want more successes. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *Psychoanalyze* | A skill used to read psychological states, detect deception, stabilize distressed people during social scenes, and treat mental and emotional Critical Injuries. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict] and xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
@@ -130,7 +132,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Relic Timeline* | The progression of what an anomaly does if it remains active, mishandled, or unresolved. Distinct from organizations, which represent external reactive pressure. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Relic Milestones* | Phase-keyed events on the Operations Board's phases row that define what the anomaly does if it remains active, mishandled, or unresolved. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers. Distinct from organizations, which represent external reactive pressure. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
 
