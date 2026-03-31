@@ -135,22 +135,22 @@ The team usually commits a full shift to one primary type of work.
 
 == Scene Resolution Bundle
 
-When a shift becomes an active scene, resolve it as a *bundle* rather than as a single spotlight roll.
+When a shift becomes an active scene, resolve it as a *bundle* rather than as a single spotlight roll. The DA has the Location form in front of them with the relevant NPC Cards and Information Cards alongside — like a hand of cards dealt for the scene.
 
 === Step 1 -- State the Objective
 
 The table states what it wants from the scene in plain language: get access to the archive, stabilize the thief, identify the buyer route, recover the film, break the tail, or isolate the bearer.
 
-=== Step 2 -- DA States the Key Activity
+=== Step 2 -- DA Frames the Scene from the Location Form
 
-The DA identifies the scene's *Key Activity*. This is not chosen by the players. It is the operational problem the scene is centered on.
+The DA reads the Location's *description* and frames the operational situation. The Location form's *positive result* and *negative result* fields define what's at stake — the DA does not need to improvise consequences. NPC Cards present at this location are placed alongside the form; their secrets, goals, and knowledge shape the interaction.
 
-Examples:
+Examples of operational framing:
 
-* Rebuild the theft sequence.
-* Gain partial access without triggering seizure.
-* Lock down the likely export corridor.
-* Break the legitimacy feedback loop.
+* Rebuild the theft sequence from the estate's physical evidence.
+* Gain partial access to the church archive without triggering seizure.
+* Lock down the likely export corridor at the port.
+* Break the legitimacy feedback loop at the currency exchange.
 
 === Step 3 -- Each Player Declares a Unique Contribution
 
