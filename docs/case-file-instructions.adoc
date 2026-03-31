@@ -77,41 +77,44 @@ Every Containment Truth must be reachable through *at least three different path
 
 ---
 
-== Step 4: Build the Relic Timeline
+== Step 4: Build the Operations Board — Relic Milestones
 
-The Relic Timeline is what the artifact itself does if no one intervenes. This is separate from what rival factions are doing.
+Relic milestones define what the artifact itself does if no one intervenes. They are keyed to specific phase numbers on the Operations Board's phases row. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
 
-. *Set a starting threshold value* (typically 6–14, higher for slower-building cases).
-. *Write 4–5 milestones* at descending values — each one describes an escalation.
-. *Milestone 0* is the threshold event — the worst-case outcome if the case runs too long.
+. *Determine the total phases* — a 14-day case has 56 phases (14 days × 4 shifts). Phase 56 is the start; Phase 1 is catastrophe.
+. *Write 4–5 milestones* keyed to descending phase numbers — each one describes an escalation.
+. *Phase 1* is the catastrophe — the worst-case outcome if the case runs too long.
+. *Include cross-link consequences* — does a relic milestone also advance an organization row?
 
 Make each milestone specific to the artifact's logic. Don't write generic "things get spooky." If the artifact is about wounds, milestones should involve unexplained injuries appearing. If it is about sound, milestones should involve interference, phantom broadcasts, or compulsive listening.
 
 .Example milestones (for a command-type relic):
-* `10`: handlers report unusual certainty and conviction
-* `7`: witnesses start using the same phrases without coordination
-* `4`: electronics fail near the object; radios broadcast static
-* `2`: the artifact begins selecting a bearer
-* `0`: public manifestation — mass obedience event or violent claimant emergence
+* *Phase 44:* Handlers report unusual certainty and conviction.
+* *Phase 32:* Witnesses start using the same phrases without coordination. Advance O3 (Police) by 1 square.
+* *Phase 20:* Electronics fail near the object; radios broadcast static. O5 (Media) activates if still dormant.
+* *Phase 8:* The artifact begins selecting a bearer.
+* *Phase 1:* Catastrophe — public manifestation, mass obedience event, or violent claimant emergence.
 
 ---
 
-== Step 5: Create Your Organizations
+== Step 5: Create Your Organization Rows
 
-Organizations are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation.
+Organizations are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation. Each organization is a countdown row on the Operations Board.
 
 For each organization:
 
 . *Name it* — Compact Recovery, Police Inquiry, Media Exposure, Church Custody, etc.
-. *Set a starting value* (typically 6–12).
-. *Write 3–5 milestones* at descending values.
-. *List triggers* — what advances this organization (time, noise, publicity, violence, missed opportunities).
-. *Write linked effects* — when this organization hits certain milestones, does it worsen another organization or the relic timeline?
+. *Set a starting value* (typically 6–12). The DA pre-fills squares from column 14 inward to this value.
+. *Mark it Active or Dormant.* Dormant organizations are pre-printed on the board with the Active checkbox unchecked.
+. *Write 3–5 milestones* using O#M# shorthand (e.g., O1M1, O1M2).
+. *List triggers* — what advances this row (time, noise, publicity, violence, missed opportunities).
+. *Write cross-link consequences in milestone text* — when this organization hits a milestone, include instructions to advance other rows or trigger relic milestone effects.
 . *Note player-facing signs* — what can the agents notice before or as it worsens?
 
 .Aim for:
 * 2–3 *Active Organizations* (already in motion when the case starts)
 * 0–2 *Dormant Organizations* (activated by specific events during play)
+* Maximum of ~8 organization rows total
 
 .IMPORTANT
 ****
@@ -131,7 +134,7 @@ Availability:: Why is this scene accessible? (Open, Clue-locked, Contact-locked,
 Purpose:: Why does this scene exist in the case?
 Key Activity:: The operational problem at the heart of the scene (this belongs to the scene, not the players).
 Time Cost:: Usually 1 shift.
-Risked Organizations:: Which organizations or relic timeline tracks worsen if things go badly?
+Risked Organizations:: Which organization rows on the Operations Board are most likely to advance if things go badly? Could a relic milestone on the phases row also trigger?
 May Reveal:: Truths, identities, routes, or motives discoverable here.
 May Unlock:: New scenes, contacts, packet angles, or crisis branches.
 
@@ -237,7 +240,7 @@ Each shift at the table follows this procedure:
 . *Choose the team's primary undertaking.* Scene action, travel, surveillance, research, preparation, or recovery.
 . *Optionally send one Covenant Request Packet.*
 . *Resolve the undertaking.* Play the scene or handle the shift action.
-. *Advance consequences.* Worsen any organizations or relic timeline triggered by time, noise, or mishandling.
+. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time, noise, or mishandling. Fill in the next shift quadrant on the phases row and check for relic milestones crossed this shift.
 . *Mark delayed returns.* Note when packet responses or stakeout results will arrive.
 
 When a shift becomes an active scene, resolve it as a bundle:
