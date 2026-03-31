@@ -682,27 +682,26 @@ If the campaign calls for a recurring antagonist, determine their involvement:
 [[quick-case-build]]
 === Quick Case Build (15-Minute Prep Guide)
 
-Use this procedure to run from nothing to a playable case in one pass:
+Use this procedure to go from nothing to a playable case in one pass. The output is a minimal case file package: an Operations Board, a handful of Locations, NPC Cards, Information Cards, and a Relic Sheet sketch.
 
 . **Roll d66 on the Artifact Type table.** Name the artifact, give it a mundane appearance,
    and decide what kind of Containment Truths it will require.
 
 . **Roll d6 on Inciting Incident.** This determines how the case first reaches the team.
-   Brief the players in 2 sentences at the table. Do not explain the full artifact logic yet.
+   Brief the players in two sentences at the table. Do not explain the full artifact logic yet.
 
 . **Roll d6 on Location.** This determines where most of the case pressure will land.
-   Sketch 3–5 possible scenes, not a linear route.
+   Sketch 3–5 Locations on separate forms — not a linear route.
 
-. **Roll d6 on Complication.** Turn it into either an organization or a modifier on an existing organization.
+. **Roll d6 on Complication.** Turn it into an organization row on the Operations Board or a modifier on an existing organization.
 
-. **Name one Contact and one hostile pressure.** The Contact gives access. The hostile pressure
-   closes time, routes, witnesses, or secrecy.
+. **Write 2–3 NPC Cards.** At least one NPC who gives access and one hostile pressure that closes time, routes, witnesses, or secrecy.
 
-. **Define the relic timeline.** What does the anomaly do if the agents lose time or mishandle it?
+. **Set up the Operations Board.** Fill in the phases row and add organization rows with per-milestone consequences. Note what relic milestones trigger if the agents lose time or mishandle the artifact.
 
-. **Write 3 Containment Truths.** These should cover trigger, appetite, and quiescence.
+. **Write 3 Containment Truths as Information Cards.** These should cover trigger, appetite, and quiescence. Mark each as Type: Containment Truth. Ensure each has at least two field sources plus an HQ fallback.
 
-. **Open the case with one visible scene and one visible sign.** Everything else can unlock through play.
+. **Open the case with one accessible Location and one visible sign.** Everything else can unlock through play.
 
 ==== Worked Example: "The Holbrook Frequency"
 
