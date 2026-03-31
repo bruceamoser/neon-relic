@@ -8,7 +8,7 @@ The hidden engine is no longer the older phase-and-countdown model. The engine i
 
 * a *shift timeline* that measures the cost of time
 * a set of *scene nodes* that can be approached in flexible order
-* one or more *fronts* representing external reactive pressure
+* one or more *organizations* representing external reactive pressure
 * a *relic timeline* representing what the anomaly does if left uncontained
 * delayed *Covenant Request Packet* returns that make research and institutional support matter without being instant
 
@@ -33,7 +33,7 @@ Every Case File is authored as a case board built from the following parts:
 | *Contact*
 | A person or institution that grants access, information, leverage, cover, or packet routing. Contacts are often what unlock scenes rather than scenes in themselves.
 
-| *Front*
+| *Organization*
 | External reactive pressure. Rival factions, police, media, frightened custodians, smugglers, and institutional counter-moves all belong here.
 
 | *Relic Timeline*
@@ -85,7 +85,7 @@ Resolve each shift in the following order:
 
 . *Resolve the undertaking.* Play the scene, handle the travel shift, roll for access, or process the support action.
 
-. *Advance consequences.* Worsen any fronts or the relic timeline triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling.
+. *Advance consequences.* Worsen any organizations or the relic timeline triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling.
 
 . *Mark delayed returns.* Note when packet responses, stakeout results, lab work, or institutional callbacks will come back. No deep result should appear immediately unless the case author explicitly established it beforehand.
 
@@ -162,7 +162,7 @@ Each agent states a different contribution to the bundle. Duplicate contribution
 
 === Step 4 -- Roll What Matters
 
-Not every contribution requires a roll. Roll only when the outcome is uncertain and the consequence matters. The Key Activity normally requires at least one meaningful roll. Support rolls matter when failure would expose the team, cost time, or worsen a front.
+Not every contribution requires a roll. Roll only when the outcome is uncertain and the consequence matters. The Key Activity normally requires at least one meaningful roll. Support rolls matter when failure would expose the team, cost time, or worsen an organization.
 
 === Step 5 -- Disclose Results in Bands
 
@@ -176,7 +176,7 @@ Use the following resolution bands instead of binary success/failure whenever a 
 | The team gets what it came for with little immediate fallout.
 
 | *Progress With Cost*
-| The team gets the main thing, but a front worsens, a witness is spooked, a route closes, or someone takes +1 Corruption from exposure.
+| The team gets the main thing, but an organization worsens, a witness is spooked, a route closes, or someone takes +1 Corruption from exposure.
 
 | *Partial Progress*
 | The team gets one useful truth, lead, or contact, but not the whole objective. The scene points clearly to the next move.
@@ -185,18 +185,18 @@ Use the following resolution bands instead of binary success/failure whenever a 
 | The team fails to achieve the main objective, but the case still moves. A new sign, clue, packet angle, or hostile move becomes visible.
 
 | *Breach*
-| The scene goes loud, public, or occultly unstable. A front or relic timeline worsens immediately, and the next shift starts under pressure.
+| The scene goes loud, public, or occultly unstable. An organization or relic timeline worsens immediately, and the next shift starts under pressure.
 |===
 
 ---
 
-== Fronts and Relic Timeline
+== Organizations and Relic Timeline
 
 Every case should distinguish between what *other people* are doing and what the *artifact* is doing.
 
-=== Fronts
+=== Organizations
 
-A *front* is external reactive pressure. Examples:
+An *organization* is external reactive pressure. Examples:
 
 * police inquiry consolidating witness reports
 * Compact recovery teams replacing cutouts
@@ -204,7 +204,7 @@ A *front* is external reactive pressure. Examples:
 * customs or port scrutiny closing routes
 * media exposure transforming secrecy into damage control
 
-Fronts respond to agent action, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities.
+Organizations respond to agent action, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities.
 
 === Relic Timeline
 
@@ -226,7 +226,7 @@ Players should usually see *signs*, not the DA's numbers. Say:
 * "Hospital staff are using the same phrase without realizing it."
 * "Your radio dies when you reach the loading bay."
 
-Do not say: "That front advanced from 6 to 4" unless your table explicitly prefers open tracking.
+Do not say: "That organization advanced from 6 to 4" unless your table explicitly prefers open tracking.
 
 ---
 
@@ -324,8 +324,8 @@ Every authored scene should list the following fields:
 | *Time Cost*
 | Usually 1 shift. Live crises may consume the shift and spill forward.
 
-| *Risked Fronts*
-| Which fronts or relic timeline tracks are most likely to worsen if things go poorly or loudly.
+| *Risked Organizations*
+| Which organizations or relic timeline tracks are most likely to worsen if things go poorly or loudly.
 
 | *May Reveal*
 | Truths, signs, identities, routes, handling rules, or motives discoverable here.
@@ -353,7 +353,7 @@ The handout is for coordination, not for exposing the DA's hidden values.
 
 == Cross-References
 
-* DA guidance for authoring fronts, relic timelines, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
+* DA guidance for authoring organizations, relic timelines, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
 * Travel as a shift type: xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules]
 * Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
 * Containment rituals and handling profiles: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts -> Containment Rituals]
@@ -505,7 +505,7 @@ Use this procedure to run from nothing to a playable case in one pass:
 . **Roll d6 on Location.** This determines where most of the case pressure will land.
    Sketch 3–5 possible scenes, not a linear route.
 
-. **Roll d6 on Complication.** Turn it into either a front or a modifier on an existing front.
+. **Roll d6 on Complication.** Turn it into either an organization or a modifier on an existing organization.
 
 . **Name one Contact and one hostile pressure.** The Contact gives access. The hostile pressure
    closes time, routes, witnesses, or secrecy.
@@ -534,7 +534,7 @@ Use this procedure to run from nothing to a playable case in one pass:
 > imprinting alternate-life memories on listeners. If the receiver is activated in the
 > lab on Friday morning, half the department hears the same impossible broadcast.
 >
-> **Front:** The journalist's article runs Friday morning. If the artifact is not secured
+> **Organization:** The journalist's article runs Friday morning. If the artifact is not secured
 > by then, the story triggers federal interest and the Covenant loses access to the university.
 >
 > **NPC:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
