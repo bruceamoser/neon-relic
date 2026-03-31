@@ -210,41 +210,113 @@ If agents attempt brute-force recovery without quiescence, the Spear does not me
 == Key NPCs and Rival Actors
 
 [%header,cols="2,2,4"]
-|===
-| Name | Alignment | Role in the case
+== NPC Cards
 
-| *Lucia Ferreyra*
-| Estate custodian line
-| The last living family retainer who understands that the vault was a custody chamber, not a safe. Frightened, proud, and hiding the family liturgical sequence.
+Each NPC Card is a playing-card-sized reference the DA pulls alongside the active Location form.
 
-| *Detective Mateo Suárez*
-| Buenos Aires police
-| Robbery detective who knows the case is wrong but does not know how wrong. Can become a quiet source if handled cleanly.
+=== Lucia Ferreyra
 
-| *Father Esteban Vale*
-| Church Custody Cell
-| A black-chamber intermediary trying to reclaim the relic without forcing a public Church scandal.
+[horizontal]
+Organization:: Independent (estate custodian line).
+Secret:: She knows the vault was a custody chamber, not a safe — and she has the family liturgical sequence memorized.
+Goal:: Protect the family's reputation and prevent anyone from learning the true nature of what was stored.
+Artifact Connection:: Raised in the custodian tradition. Has never directly handled the Spear but has witnessed its effects during suppression rites as a child.
+Starting Knowledge:: I4 (vault was suppressive), I9 (family were custodians), I11 (partial substitute custody sequence).
+Gained Knowledge:: At O4M2: learns Church observers are monitoring the family — becomes more cooperative if offered protection.
+Locations:: L1 (Estate Aftermath).
+Positive Result:: Shares I4, I9, I11. Reveals partial containment sequence. May provide access to family chapel records (unlocks path to L7).
+Negative Result:: Refuses further contact. O4 advances 1 square (Church observers alerted by her distress).
 
-| *Sister Inés Barral*
-| Church Custody Cell
-| Archivist and ritual conservator with partial access to the older containment record. More truthful than her superiors.
+=== Detective Mateo Suárez
 
-| *Ramiro "Rami" Acosta*
-| Heist crew
-| Surviving thief suffering wound bloom and command-delusion. One of the best paths to the failed handoff.
+[horizontal]
+Organization:: O3 (Local Police Inquiry).
+Secret:: He knows the robbery case has unexplained elements — witnesses describing identical wounds, objects that should not exist — but he cannot write that in a report.
+Goal:: Close the robbery case cleanly before it becomes a political embarrassment.
+Artifact Connection:: No direct contact. Has interviewed witnesses who exhibited mild ideological contagion.
+Starting Knowledge:: I5 (witness list), I6 (wounded thief route), I8 (sketch fragments).
+Gained Knowledge:: At O3M2: learns I7 (hospital referrals) from a released witness.
+Locations:: L2 (Police Station).
+Positive Result:: Shares I5, I6, I7, I8. Becomes a quiet ongoing source. Opens unofficial access to police and hospital records.
+Negative Result:: O3 advances 1 square (official attention drawn to agents). Agents flagged in police system.
 
-| *Sabine Voss*
-| Vantablack Compact
-| Regional handler who financed the theft and intends to recover the Spear before the buyers lose confidence.
+=== Father Esteban Vale
 
-| *Iván Luján*
-| Compact cutout / nationalist fixer
-| A local intermediary who has started interpreting tactical instinct as revelation. Strong bearer candidate.
+[horizontal]
+Organization:: O4 (Church Custody Cell).
+Secret:: He has been authorized to reclaim the relic by any necessary means — but his superiors will deny his existence if he is exposed.
+Goal:: Recover the Spear into Church custody without a public ecclesiastical scandal.
+Artifact Connection:: Has read the black-chamber file. Understands the relic as a sovereignty token, not merely a devotional artifact.
+Starting Knowledge:: I9 (family were custodians), I10 (postwar custody compromise).
+Gained Knowledge:: At O4M2: learns I11 (partial substitute custody sequence) from Church archives.
+Locations:: L1 (Estate Aftermath — after O4M1), L3 (Church Archive — after O4M2).
+Positive Result:: Shares I9, I10. May negotiate information exchange if agents can demonstrate containment capability. Introduces Sister Inés.
+Negative Result:: O4 advances 1 square (Church accelerates independent recovery). Agents excluded from ecclesiastical channels.
 
-| *Brother Tomás Arce*
-| False ecclesiastical broker
-| Moves between clergy, smugglers, and collectors. May sell information to multiple sides.
-|===
+=== Sister Inés Barral
+
+[horizontal]
+Organization:: O4 (Church Custody Cell — archivist, not field operative).
+Secret:: She has access to the older containment record and believes the Church should share it, not hoard it.
+Goal:: Preserve the archival truth about the relic custody lineage, even if her superiors disagree.
+Artifact Connection:: Has studied the textual record extensively. Understands Quiescence conditions better than Father Vale.
+Starting Knowledge:: I9 (family were custodians), I10 (postwar custody compromise), I11 (partial substitute custody sequence).
+Gained Knowledge:: At O4M3: learns the retrieval cleric's full plan — may share it if she believes the agents are more careful.
+Locations:: L3 (Church Archive).
+Positive Result:: Shares I9, I10, I11. Provides the most complete available picture of Quiescence conditions. May share information even against Church orders.
+Negative Result:: O4 advances 1 square (Church tightens archive access). Sister Inés is reassigned — no longer available.
+
+=== Ramiro "Rami" Acosta
+
+[horizontal]
+Organization:: O2 (Heist Crew Fracture).
+Secret:: He knows where the Spear was last held and who currently has proximity control — but he is suffering wound bloom and command-delusion.
+Goal:: Survive. He wants medical treatment and a way out of Buenos Aires.
+Artifact Connection:: Touched the Spear during the heist. Suffering reopened wounds, religious certainty, and intermittent ecstatic episodes.
+Starting Knowledge:: I15 (first visible supernatural effects), I16 (who began speaking like a chosen ruler), I17 (site connected to final custody break).
+Gained Knowledge:: None — deteriorating.
+Locations:: L5 (Illicit Clinic — available when O2M2 triggers).
+Positive Result:: Shares I15, I16, I17. Can lead agents to L7 (Hidden Shrine). Recovered thief notes available as handout.
+Negative Result:: O2 advances 1 square (Rami disappears or is silenced by Compact). Path to L7 becomes harder.
+
+=== Sabine Voss
+
+[horizontal]
+Organization:: O1 (Vantablack Compact).
+Secret:: She financed the heist and has already taken significant losses. Her superiors are losing patience.
+Goal:: Recover the Spear and complete the sale before the Compact writes off the operation — and her.
+Artifact Connection:: No direct handling. Views the Spear as high-value merchandise, not a supernatural threat. This will change.
+Starting Knowledge:: I12 (who financed the theft), I13 (handoff collapse location).
+Gained Knowledge:: At O1M2: learns I14 (buyer demands). At O5M1: learns export route details.
+Locations:: L4 (Currency Exchange — after O1M2), L6 (Port/Export Route — after O5 activates).
+Positive Result:: I12, I13 can be extracted through interrogation or intercepted communications. Voss will not cooperate voluntarily.
+Negative Result:: O1 advances 1 square (Compact accelerates recovery). Agents marked as interference targets.
+
+=== Iván Luján
+
+[horizontal]
+Organization:: O1 (Compact cutout / nationalist fixer).
+Secret:: He has begun interpreting tactical instinct as divine revelation. He is the strongest bearer candidate.
+Goal:: He no longer wants to sell the Spear. He wants to keep it — and he is beginning to believe he was meant to.
+Artifact Connection:: Extended proximity exposure. Exhibiting claimant-language patterns: speaking of destiny, mandate, and chosen vessels.
+Starting Knowledge:: I13 (handoff collapse location), I16 (who began speaking like a chosen ruler — because it was him).
+Gained Knowledge:: None — he is becoming the problem, not gathering intelligence.
+Locations:: L4 (Currency Exchange), L7 (Hidden Shrine — as the bearer).
+Positive Result:: Agents can identify him as the bearer before he reaches full activation. L7 unlocks through his movements.
+Negative Result:: Fill 1 extra shift quadrant on the phases row. Bearer activation accelerates.
+
+=== Brother Tomás Arce
+
+[horizontal]
+Organization:: Independent (false ecclesiastical broker).
+Secret:: He wears clerical dress but has no real ecclesiastical authority. He brokers between clergy, smugglers, and collectors.
+Goal:: Profit from the chaos by selling information to whoever pays — Church, Compact, or buyers.
+Artifact Connection:: None directly. He has heard enough from multiple sources to piece together partial truths, but his knowledge is secondhand and unreliable.
+Starting Knowledge:: I10 (postwar custody compromise — partial), I14 (buyer demands — partial).
+Gained Knowledge:: At O5M1: learns I18 (export route) from courier contacts.
+Locations:: L3 (Church Archive — posing as clergy), L6 (Port/Export Route — brokering).
+Positive Result:: Shares I10 (partial), I14 (partial), I18. Information may be incomplete or slanted — but it accelerates timelines.
+Negative Result:: Information sold to Compact instead. O1 advances 1 square.
 
 === Bearer Candidates
 
