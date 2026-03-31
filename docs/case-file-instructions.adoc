@@ -72,7 +72,7 @@ These truths become the real objectives of the investigation. The agents are not
 
 .HARD RULE
 ****
-Every Containment Truth must be reachable through *at least three different paths*. If only one scene can reveal a truth, your case has a single point of failure. Redesign it.
+Every Containment Truth must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>> in Chapter 15). If only one source can reveal a truth, your case has a single point of failure. Redesign it.
 ****
 
 ---
@@ -262,9 +262,9 @@ Core Problem:: One sentence describing the operational situation
 Before you run the case, verify:
 
 [%interactive]
-* [ ] Every Containment Truth is reachable by at least 3 different paths.
-* [ ] No single scene is required for forward motion.
-* [ ] Every scene reveals a truth, unlocks a contact, narrows a route, or worsens the situation informatively.
+* [ ] Every Containment Truth has at least two field sources (Locations + NPCs) plus an HQ fallback.
+* [ ] No single Location is mandatory for forward motion.
+* [ ] Every Location reveals information, unlocks an NPC or route, or worsens the situation informatively.
 * [ ] At least one actionable option is visible at the start of each shift.
 * [ ] A failed scene produces movement, not dead air.
 * [ ] The Mystery Statement fits in one sentence.
