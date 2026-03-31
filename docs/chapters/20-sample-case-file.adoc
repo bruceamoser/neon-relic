@@ -257,177 +257,100 @@ The current bearer should feel tragic before formidable. Suitable choices includ
 
 ---
 
-== Scene Nodes
-
-Scenes are not ordered. Each node lists what makes it available, what it is trying to do immediately, and what it can unlock.
-
-=== The Estate Aftermath
-
-*Availability:* Open at case start.
-
-*Purpose:* Reconstruct the breach, the false target, and the broken custody line.
-
-*Key Activity:* Rebuild the theft sequence and identify what changed when the cradle was opened.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Local Police Inquiry, Church Custody Cell.
-
-*May reveal:*
-
-* breach method
-* false target inside the vault
-* proof the heist was funded
-* evidence the vault was suppressive, not merely secure
-
-*May unlock:*
-
-* Currency Exchange / Compact Money Trail
-* Church Archive / Quiet Custodian Interview
-* Police Station / Detective Contact
-
-=== Police Station / Detective Contact
-
-*Availability:* Open after the estate is known to the team or any police-connected clue is obtained.
-
-*Purpose:* Access witness contradictions, thief transport, plate fragments, and protected leads.
-
-*Key Activity:* Extract usable investigative movement from a robbery file turning into a public-order problem.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Local Police Inquiry, Compact Recovery.
-
-*May reveal:*
-
-* witness list
-* wounded thief route
-* hospital referrals
-* sketch fragments and contradictory statements
-
-*May unlock:*
-
-* Wounded Thief Safehouse / Illicit Clinic
-* Detective Suárez as a quiet source
-* Media-risk scenes if pressure is mishandled
-
-=== Church Archive / Quiet Custodian Interview
-
-*Availability:* Open after the estate aftermath or any Church-linked clue.
-
-*Purpose:* Confirm the estate's custodial lineage and expose pieces of Trigger and Quiescence.
-
-*Key Activity:* Gain partial access to a restricted custodial record without triggering a custody seizure.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Church Custody Cell, Lance Threshold Build.
-
-*May reveal:*
-
-* the estate family were custodians, not owners
-* the Spear was moved under compromised postwar authority
-* part of the substitute custody sequence
-
-*May unlock:*
-
-* Father Esteban Vale
-* Sister Inés Barral
-* Hidden Shrine / Temporary Custody Site if linked through old family chapels or black chambers
-
-=== Currency Exchange / Compact Money Trail
-
-*Availability:* Open after estate evidence, police data, or a packet return on financial cutouts.
-
-*Purpose:* Identify the Compact handler and failed handoff route.
-
-*Key Activity:* Trace money and courier infrastructure through quiet logistics channels.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Compact Recovery, Local Police Inquiry.
-
-*May reveal:*
-
-* who financed the theft
-* where the handoff collapsed
-* what proof buyers demanded
-
-*May unlock:*
-
-* Port / Air Cargo Broker / Export Route
-* Sabine Voss
-* Iván Luján
-
-=== Wounded Thief Safehouse / Illicit Clinic
-
-*Availability:* Open after police, street, or church leads surface a surviving thief.
-
-*Purpose:* Learn where the crew broke apart and who took proximity control after the failed sale.
-
-*Key Activity:* Stabilize or interrogate a thief before fear, injury, or rivals silence him.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Heist Crew Fracture, Compact Recovery.
-
-*May reveal:*
-
-* first visible supernatural effects
-* who began speaking like a chosen ruler
-* one site connected to the final custody break
-
-*May unlock:*
-
-* Hidden Shrine / Temporary Custody Site
-* recovered thief notes
-* police or Church cross-links depending on how the scene goes
-
-=== Port / Air Cargo Broker / Export Route
-
-*Availability:* Open once buyer proof, Compact movement, or route intelligence exists.
-
-*Purpose:* Identify how the Spear could leave the city.
-
-*Key Activity:* Lock down the likely exit corridor before the buyer window matures.
-
-*Time Cost:* 1 shift.
-
-*Risked Organizations:* Foreign Buyer Window if active, otherwise Compact Recovery; Local Police Inquiry as secondary.
-
-*May reveal:*
-
-* maritime, private air, or diplomatic export route
-* whether buyers want symbolism, proof of force, or both
-
-*May unlock:*
-
-* airport, dock, or diplomatic seizure climax branch
-* late-case transfer ambush
-
-=== Hidden Shrine / Temporary Custody Site
-
-*Availability:* Usually unlocked by at least two prior clues. The DA should not make this a single-path node.
-
-*Purpose:* Locate the bearer, isolate the custody site, and attempt controlled containment.
-
-*Key Activity:* Break the legitimacy feedback loop before the scene becomes public revelation.
-
-*Time Cost:* Live scene / 1 shift minimum.
-
-*Risked Organizations:* Lance Threshold Build and whichever rival organization is currently closest to crisis.
-
-*May reveal:*
-
-* who currently holds proximity control
-* what the bearer thinks the Spear is telling them
-* which part of Quiescence is still missing
-
-*May unlock:*
-
-* direct retrieval
-* custody conflict with Church or Compact
-* transport sequence under pressure
+== Locations
+
+Each Location is one page or form — the document in front of the DA when the agents arrive. Pull the relevant NPC Cards and Information Cards alongside it.
+
+=== L1: The Estate Aftermath
+
+[horizontal]
+Name:: The Ferreyra Estate, Recoleta district
+Description:: A fortified residential compound with shattered vault access, scattered reliquary fragments, and signs of a professional breach. The family has locked up the property and stopped answering the door.
+Availability:: *Open* — available at case start.
+NPCs Present:: Lucia Ferreyra (see NPC Card). After O4M1: Father Esteban Vale may appear if Church observers are monitoring the family.
+Information Available:: I1 (breach method), I2 (false target), I3 (funded heist proof), I4 (vault was suppressive).
+Organizations Present:: O3 (Local Police Inquiry), O4 (Church Custody Cell).
+Positive Result:: Agents reconstruct the theft sequence and learn I1–I4. Unlocks L4 (Currency Exchange) and L3 (Church Archive). Lucia may share partial custody knowledge if handled respectfully.
+Negative Result:: O3 advances 1 square (police arrive during investigation). Lucia refuses further contact. Church observers accelerate O4.
+Milestone Changes:: When O3M2: police cordon the estate — access now requires cover story or packet-supported credentials. When O4M3: Church retrieval cleric is on-site.
+
+=== L2: Police Station / Detective Contact
+
+[horizontal]
+Name:: Buenos Aires Police — Robbery Division
+Description:: A cramped detective bullpen with case boards, witness logs, and an overworked staff managing a theft that keeps getting stranger.
+Availability:: *Clue-locked* — open after the estate is known to the team or any police-connected clue is obtained.
+NPCs Present:: Detective Mateo Suárez (see NPC Card).
+Information Available:: I5 (witness list), I6 (wounded thief route), I7 (hospital referrals), I8 (sketch fragments).
+Organizations Present:: O3 (Local Police Inquiry), O1 (Compact Recovery — informants in the station).
+Positive Result:: Agents gain I5–I8. Suárez becomes a quiet source. Unlocks L5 (Illicit Clinic).
+Negative Result:: O3 advances 1 square (agents draw official attention). O6 (Media Exposure) may activate if pressure is mishandled publicly.
+Milestone Changes:: When O3M3: checkpoints and raids begin — station access restricted. When O1M2: an informant tips off the Compact about the investigation.
+
+=== L3: Church Archive / Quiet Custodian Interview
+
+[horizontal]
+Name:: Diocesan Archive, Buenos Aires Cathedral annex
+Description:: A restricted ecclesiastical archive behind two locked doors and one polite but immovable secretary. Dust, ledgers, and the smell of old ink.
+Availability:: *Clue-locked* — open after the estate aftermath or any Church-linked clue.
+NPCs Present:: Sister Inés Barral (see NPC Card). After O4M2: Father Esteban Vale arrives.
+Information Available:: I9 (family were custodians, not owners), I10 (postwar custody compromise), I11 (partial substitute custody sequence).
+Organizations Present:: O4 (Church Custody Cell).
+Positive Result:: Agents gain I9–I11. May unlock L7 (Hidden Shrine) if linked through old family chapels. Sister Inés shares partial containment knowledge.
+Negative Result:: O4 advances 1 square (Church custody cell alerted to outside interest). Access to deeper records closed.
+Milestone Changes:: When O4M3: a retrieval cleric arrives with custody demands — the archive becomes a negotiation site.
+
+=== L4: Currency Exchange / Compact Money Trail
+
+[horizontal]
+Name:: Cambio Cerrito, Microcentro district
+Description:: A nondescript currency exchange shopfront concealing wire-transfer infrastructure and a back-office courier dispatch. The owner is nervous.
+Availability:: *Clue-locked* — open after estate evidence, police data, or a packet return on financial cutouts.
+NPCs Present:: Iván Luján (see NPC Card) — may be present if Compact is active. After O1M2: Sabine Voss (see NPC Card) appears.
+Information Available:: I12 (who financed the theft), I13 (handoff collapse location), I14 (buyer demands — proof of force vs. symbolism).
+Organizations Present:: O1 (Compact Recovery), O3 (Local Police Inquiry — financial investigators).
+Positive Result:: Agents gain I12–I14. Unlocks L6 (Port/Export Route). Identifies Sabine Voss and Iván Luján.
+Negative Result:: O1 advances 1 square (Compact aware of investigators). Evidence destroyed — courier records burned.
+Milestone Changes:: When O1M2: field professionals replace cutouts — the exchange is under new management. When O5 activates: courier infrastructure shifts to export routes.
+
+=== L5: Wounded Thief Safehouse / Illicit Clinic
+
+[horizontal]
+Name:: Clínica informal, La Boca district
+Description:: An unlicensed medical practice in a converted warehouse. Chemical smells, improvised surgical equipment, and a doctor who does not ask questions.
+Availability:: *Clue-locked* — open after police, street, or church leads surface a surviving thief.
+NPCs Present:: Ramiro "Rami" Acosta (see NPC Card).
+Information Available:: I15 (first visible supernatural effects — wound bloom), I16 (who began speaking like a chosen ruler), I17 (site connected to the final custody break).
+Organizations Present:: O2 (Heist Crew Fracture), O1 (Compact Recovery — searching for survivors).
+Positive Result:: Agents gain I15–I17. Rami can lead to L7 (Hidden Shrine). Recovered thief notes available as handout.
+Negative Result:: O2 advances 1 square (thief disappears or is silenced). O1 advances 1 square (Compact operatives follow the agents).
+Milestone Changes:: When O2M2: Rami surfaces here — this is the window. When O1M2: Compact professionals are watching the clinic.
+
+=== L6: Port / Air Cargo Broker / Export Route
+
+[horizontal]
+Name:: Puerto Madero freight district
+Description:: Container yards, cargo offices, and private air charter desks. The border between legal commerce and black-market logistics.
+Availability:: *Clue-locked* — open once buyer proof, Compact movement, or route intelligence exists.
+NPCs Present:: Brother Tomás Arce (see NPC Card) — brokering export channels. After O5M1: unnamed foreign courier.
+Information Available:: I18 (export route — maritime, air, or diplomatic), I19 (buyer motivation — symbolism vs. proof of force).
+Organizations Present:: O5 (Foreign Buyer Window) if active, otherwise O1 (Compact Recovery). O3 (Local Police Inquiry) as secondary.
+Positive Result:: Agents gain I18–I19. Can interdict export corridor. Identifies late-case transfer ambush opportunity.
+Negative Result:: O5 advances 1 square (export window narrows). O1 advances 1 square (Compact secures alternative route).
+Milestone Changes:: When O5M2: handoff is imminent — this becomes a time-critical interdiction site.
+
+=== L7: Hidden Shrine / Temporary Custody Site
+
+[horizontal]
+Name:: Abandoned chapel, Flores district
+Description:: A derelict family chapel with makeshift ritual markings and the unmistakable pressure of a nearby active relic. The Spear is here — or was recently.
+Availability:: *Clue-locked* — usually unlocked by at least two prior clues. The DA should ensure multiple paths lead here.
+NPCs Present:: The current bearer (Iván Luján or another bearer candidate — see Bearer Candidates in the NPC section). Other NPCs depend on which organizations are closest to crisis.
+Information Available:: I20 (who currently holds proximity control), I21 (what the bearer believes the Spear is telling them), I22 (missing piece of Quiescence).
+Organizations Present:: Whichever organization is closest to crisis, plus Lance Threshold Build pressure.
+Positive Result:: Agents can attempt controlled containment if they know the Quiescence conditions. Direct retrieval possible.
+Negative Result:: Fill 1 extra shift quadrant on the phases row (relic milestones advance). Custody conflict with Church or Compact may erupt. Public revelation if containment fails.
+Milestone Changes:: When Phase 8: the Spear begins selecting a claimant — the shrine becomes the epicenter.
 
 ---
 
