@@ -287,7 +287,7 @@ Secret:: She financed the heist and has already taken significant losses. Her su
 Goal:: Recover the Spear and complete the sale before the Compact writes off the operation — and her.
 Artifact Connection:: No direct handling. Views the Spear as high-value merchandise, not a supernatural threat. This will change.
 Starting Knowledge:: I12 (who financed the theft), I13 (handoff collapse location).
-Gained Knowledge:: At O1M2: learns I14 (buyer demands). At O5M1: learns export route details.
+Gained Knowledge:: At O1M2: learns I14 (buyer demands). At O5M1: learns I18 (export route).
 Locations:: L4 (Currency Exchange — after O1M2), L6 (Port/Export Route — after O5 activates).
 Positive Result:: I12, I13 can be extracted through interrogation or intercepted communications. Voss will not cooperate voluntarily.
 Negative Result:: O1 advances 1 square (Compact accelerates recovery). Agents marked as interference targets.
