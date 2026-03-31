@@ -7,7 +7,7 @@ A Neon Relic *Case File* is a reactive operations board, not a scripted sequence
 The hidden engine is no longer the older phase-and-countdown model. The engine is:
 
 * an *Operations Board* with a phases row counting down days until catastrophe and organization countdown rows tracking external pressure
-* a set of *scene nodes* that can be approached in flexible order
+* a set of *Locations* that can be approached in flexible order
 * *relic milestones* keyed to the phases row, representing what the anomaly does if left uncontained
 * delayed *Covenant Request Packet* returns that make research and institutional support matter without being instant
 
@@ -507,7 +507,7 @@ A complete case file consists of the following documents:
 | 3
 | *Operations Board*
 | DA
-| Phases row (doubles as relic timeline) plus organization countdown rows. See <<operations-board>>.
+| Phases row (relic escalation track) plus Organization countdown rows. See <<operations-board>>.
 
 | 4
 | *Organization Reference*
