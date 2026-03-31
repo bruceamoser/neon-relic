@@ -485,6 +485,60 @@ The board is for coordination and pressure visibility. The DA's milestone descri
 
 ---
 
+[[case-file-package]]
+== The Case File Package
+
+A complete case file consists of the following documents:
+
+[cols="1,3,1,4", options="header"]
+|===
+| # | Document | Audience | Notes
+
+| 1
+| *Case File* (mission brief)
+| Players
+| In-world document. Only what the Covenant would share with field agents: relic surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. No secrets, no containment truths, no milestone details.
+
+| 2
+| *Case Brief* (mystery statement + DA notes)
+| DA
+| The "real story" summary — what is actually going on, who is really involved, and what the answer is. DA-only anchor document.
+
+| 3
+| *Operations Board*
+| DA
+| Phases row (doubles as relic timeline) plus organization countdown rows. See <<operations-board>>.
+
+| 4
+| *Organization Reference*
+| DA
+| All case-specific organizations listed with O#M# milestone descriptions and cross-link instructions. The DA scans this when crossing out milestone squares on the Operations Board.
+
+| 5
+| *Relic Sheet*
+| DA
+| Full artifact profile: tier, category, activation condition, mechanical effects, fracture table, containment profile, and containment truth checklist. All artifact knowledge in one place.
+
+| 6
+| *Location Pages* (1 per location)
+| DA
+| Primary play-aid — the document in front of the DA when players arrive at a Location. Fields match the Location form: name, description, availability, NPCs present (milestone-driven), information available, organizations present, positive/negative results, milestone changes.
+
+| 7
+| *NPC Cards* (playing-card size)
+| DA
+| One per NPC. The DA pulls relevant cards and places them next to the active Location page. Fields match the NPC Card schema.
+
+| 8
+| *Information Cards* (playing-card size, double-sided)
+| DA -> Players
+| *Front (player-facing):* what the agents learned. *Back (DA reference):* source Locations, source NPCs, HQ fallback phase, type (Containment Truth vs. supporting intel). Players physically receive cards when information is discovered — tangible progress tracker.
+|===
+
+For a single-session case with 5–6 Locations and 6–8 NPCs, the typical package is approximately 10–12 printed pages plus approximately 20 cards.
+
+---
+
 == Cross-References
 
 * DA guidance for authoring the Operations Board, organizations, relic milestones, and scene networks: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
