@@ -323,6 +323,80 @@
     font-family: var(--font-fill); font-size: 7.5pt;
   }
 
+  /* ── OPERATIONS BOARD GRID ── */
+  .ops-board-grid {
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 6px;
+  }
+  .ops-board-grid th {
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--ink-faded);
+    border: 1px solid var(--rule);
+    padding: 1px 0; text-align: center;
+    background: rgba(0,0,0,0.04);
+    width: calc(100% / 15);
+  }
+  .ops-board-grid th.row-label {
+    width: 60px; text-align: left; padding-left: 3px;
+    font-size: 4.5pt; letter-spacing: 0.5px;
+  }
+  .ops-board-grid td {
+    border: 1px solid var(--rule-light);
+    padding: 0; height: 11px;
+    font-family: var(--font-fill); font-size: 5pt;
+    background: var(--field-bg); text-align: center;
+  }
+  .ops-board-grid td.row-label {
+    background: rgba(0,0,0,0.04);
+    font-family: var(--font-main);
+    font-size: 4.5pt; color: var(--ink-faded);
+    text-align: left; padding-left: 3px;
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .ops-board-grid td.quartered {
+    position: relative;
+    background: var(--field-bg);
+  }
+  .ops-board-grid td.quartered::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0; right: 0;
+    border-bottom: 1px dotted var(--rule-light);
+  }
+  .ops-board-grid td.quartered::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    border-right: 1px dotted var(--rule-light);
+  }
+  .ops-milestone-row {
+    display: flex; gap: 6px; align-items: center;
+    padding: 1px 0;
+    border-bottom: 1px dotted var(--rule-light);
+    font-size: 7pt;
+  }
+  .ops-milestone-row:last-child { border-bottom: none; }
+  .ops-org-header {
+    display: flex; gap: 6px; align-items: baseline;
+    margin-bottom: 3px;
+  }
+  .ops-org-id {
+    font-family: var(--font-fill); font-size: 9pt;
+    font-weight: bold; min-width: 28px;
+  }
+  .ops-active-check {
+    display: flex; align-items: center; gap: 3px;
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase;
+    letter-spacing: 1px; color: var(--ink-faded);
+  }
+  .ops-active-check .checkbox {
+    width: 10px; height: 10px;
+    border: 1px solid var(--ink);
+    display: inline-block;
+  }
+
   /* ── SCENE NODE BLOCK ── */
   .scene-block {
     border: 1.5px solid var(--rule);
@@ -681,7 +755,7 @@
 </div>
 
 <!-- ══════════════════════════════════════════════════
-     PAGE 3 — RELIC TIMELINE & ORGANIZATIONS
+     PAGE 3 — OPERATIONS BOARD
      ══════════════════════════════════════════════════ -->
 <div class="page page-break">
   <div class="watermark">COVENANT</div>
@@ -702,52 +776,65 @@
     </div>
   </div>
 
-  <!-- SECTION VII: RELIC TIMELINE -->
-  <div class="section-title red">Section VII &mdash; Relic Timeline</div>
-  <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:6px;">
+  <!-- SECTION VII: OPERATIONS BOARD — PHASES ROW -->
+  <div class="section-title red">Section VII &mdash; Operations Board</div>
+
+  <div class="field-label" style="margin-bottom:2px;">Phases Row &mdash; Relic Milestones (fill one quadrant per shift; milestones trigger at phase numbers)</div>
+  <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:4px;">
     <div style="flex:1;">
-      <div class="field-label">Timeline Name</div>
+      <div class="field-label">Phases Row Name</div>
       <div class="field-value"></div>
     </div>
     <div style="text-align:center; min-width:80px;">
-      <div class="field-label">Starting Threshold</div>
+      <div class="field-label">Starting Value</div>
       <div style="font-family:var(--font-fill); font-size:22pt; font-weight:bold;
                   border:2px solid var(--red-stamp); width:46px; height:34px;
                   margin:3px auto 0; display:flex; align-items:center; justify-content:center;"></div>
     </div>
   </div>
 
-  <div class="field-label" style="margin-bottom:3px;">Milestones &mdash; descending values; 0 = threshold event</div>
+  <table class="ops-board-grid">
+    <tr>
+      <th class="row-label">Day</th>
+      <th>14</th><th>13</th><th>12</th><th>11</th><th>10</th><th>9</th><th>8</th>
+      <th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th>1</th>
+    </tr>
+    <tr>
+      <td class="row-label">Phases</td>
+      <td class="quartered"></td><td class="quartered"></td><td class="quartered"></td><td class="quartered"></td>
+      <td class="quartered"></td><td class="quartered"></td><td class="quartered"></td><td class="quartered"></td>
+      <td class="quartered"></td><td class="quartered"></td><td class="quartered"></td><td class="quartered"></td>
+      <td class="quartered"></td><td class="quartered"></td>
+    </tr>
+  </table>
+
+  <div class="field-label" style="margin-bottom:3px;">Phase Milestones &mdash; descending values; 0 = threshold event</div>
   <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
   <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
   <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
   <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
   <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp); font-weight:bold;">0</div><div class="milestone-desc"></div></div>
 
-  <div class="field-row" style="margin-top:4px;">
-    <div class="field">
-      <div class="field-label">Linked Effects &mdash; What other organizations worsen at which milestones?</div>
-      <div class="field-value med"></div>
-    </div>
-  </div>
-
-  <!-- SECTION VIII: ACTIVE ORGANIZATIONS -->
-  <div class="section-title">Section VIII &mdash; Active Organizations</div>
+  <!-- SECTION VIII: ORGANIZATION ROWS -->
+  <div class="section-title">Section VIII &mdash; Organization Rows</div>
 
   <!-- Organization 1 -->
   <div class="org-block">
-    <div class="org-header">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
       <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
       <div class="org-name-field"></div>
       <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
       <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
     </div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
     <div style="display:flex; gap:8px; margin-top:3px;">
-      <div style="flex:1;"><span class="field-label">Triggers</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
       <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
     </div>
     <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
@@ -755,18 +842,21 @@
 
   <!-- Organization 2 -->
   <div class="org-block">
-    <div class="org-header">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
       <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
       <div class="org-name-field"></div>
       <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
       <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
     </div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
     <div style="display:flex; gap:8px; margin-top:3px;">
-      <div style="flex:1;"><span class="field-label">Triggers</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
       <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
     </div>
     <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
@@ -802,40 +892,94 @@
     </div>
   </div>
 
-  <!-- ADDITIONAL ORGANIZATION -->
-  <div class="section-title">Section VIII (Cont.) &mdash; Additional Organization</div>
+  <!-- ADDITIONAL ORGANIZATIONS -->
+  <div class="section-title">Section VIII (Cont.) &mdash; Additional Organizations</div>
 
+  <!-- Organization 3 -->
   <div class="org-block">
-    <div class="org-header">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
       <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
       <div class="org-name-field"></div>
       <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
       <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
     </div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
     <div style="display:flex; gap:8px; margin-top:3px;">
-      <div style="flex:1;"><span class="field-label">Triggers</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
       <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
     </div>
     <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
   </div>
 
-  <!-- DORMANT ORGANIZATION -->
-  <div class="section-title" style="color:var(--ink-faded); border-color:var(--ink-faded);">Dormant Organization (activates when&hellip;)</div>
-  <div class="org-block" style="border-style:dashed;">
-    <div class="org-header">
+  <!-- Organization 4 -->
+  <div class="org-block">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
       <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
-      <div class="org-name-field" style="border-style:dashed;"></div>
+      <div class="org-name-field"></div>
       <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
-      <div class="org-value-field" style="border-style:dashed;"></div>
+      <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
     </div>
-    <div style="margin-bottom:3px;"><span class="field-label">Activation Condition</span><div class="field-value" style="min-height:14px;"></div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
     <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
+    <div style="display:flex; gap:8px; margin-top:3px;">
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
+    </div>
+    <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
+  </div>
+
+  <!-- Organization 5 -->
+  <div class="org-block">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field"></div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
+    <div style="display:flex; gap:8px; margin-top:3px;">
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
+    </div>
+    <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
+  </div>
+
+  <!-- Organization 6 -->
+  <div class="org-block">
+    <div class="ops-org-header">
+      <div class="ops-org-id"></div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field"></div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field"></div>
+      <div class="ops-active-check"><span class="checkbox"></span> Active</div>
+      <div class="ops-active-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
+    <div style="display:flex; gap:8px; margin-top:3px;">
+      <div style="flex:1;"><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value" style="min-height:14px;"></div></div>
+      <div style="flex:1;"><span class="field-label">Linked Effects</span><div class="field-value" style="min-height:14px;"></div></div>
+    </div>
+    <div style="margin-top:3px;"><span class="field-label">Player-Facing Signs</span><div class="field-value" style="min-height:14px;"></div></div>
   </div>
 
   <!-- SECTION IX: SCENE NODES -->
