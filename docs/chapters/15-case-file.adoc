@@ -32,17 +32,17 @@ Every Case File is authored as a case board built from the following parts:
 | *Organization Row*
 | A countdown row on the Operations Board tracking external reactive pressure. Each row has a name, Active checkbox, and 14 countdown squares. Milestone squares use O#M# shorthand. Rival factions, police, media, custodians, smugglers, and institutional counter-moves all belong here.
 
-| *Scene*
-| A playable opportunity. A scene is not a mandatory step in a fixed sequence. It is a node the agents can reach if its availability conditions are met.
+| *Location*
+| A place the agents can go. Each Location is the DA's primary reference during play — a full form listing what's there, who's present, and what can be learned. See <<case-entities>>.
 
-| *Contact*
-| A person or institution that grants access, information, leverage, cover, or packet routing. Contacts are often what unlock scenes rather than scenes in themselves.
+| *NPC Card*
+| A playing-card-sized reference for a significant person in the case. Carries organization affiliation (O#), secret, goal, artifact connection, knowledge (I# refs), and positive/negative results. Contacts and information sources are NPC Cards, not standalone elements.
+
+| *Information Card*
+| A playing-card-sized reference for a discoverable fact, identified by an I# code. Lists where the information can be found (Locations), who knows it (NPCs), and when HQ can provide it as a fallback.
 
 | *Containment Truth*
-| Information required for a safe resolution: trigger, appetite, tether, quiescence condition, ritual sequence, shielding method, or custody requirement.
-
-| *Key Activity*
-| Scene metadata determined by the DA. It states what the scene is trying to accomplish immediately, regardless of how the players approach it.
+| Information required for a safe resolution: trigger, appetite, tether, quiescence condition, ritual sequence, shielding method, or custody requirement. Containment Truths are Information Cards with Type set to Containment Truth.
 |===
 
 ---
