@@ -347,35 +347,17 @@ If a missed roll or skipped node would make the case unsolvable, the case board 
 
 ---
 
-== Scene Data Schema
+== Case Entities
 
-Every authored scene should list the following fields:
+Scenes are not pre-authored event nodes. They are *emergent intersections* of three independent entity types:
 
-[%header,cols="1,4"]
-|===
-| Field | Use
+* *Locations* — where things can happen. The DA's primary reference during play. Each location is a full page or form listing what's there, who's there, and what can be learned.
+* *NPC Cards* — who can be encountered. Playing-card-sized references that carry an NPC's secret, goal, artifact connection, knowledge, and organization affiliation (O# shorthand).
+* *Information Cards* — what can be learned. Playing-card-sized references identified by an I# code. Each lists where the information can be found, which NPCs know it, and when HQ can provide it as a fallback.
 
-| *Availability*
-| Why the scene is open: open at case start, clue-locked, contact-locked, time-locked, or unlocked by packet return.
+A "scene" emerges when players go to a location and the DA assembles the relevant NPC cards and Information cards for that point in the case. The DA's cognitive loop is always: _"Where are the players going? What's there?"_
 
-| *Purpose*
-| Why the scene exists in the case.
-
-| *Key Activity*
-| The immediate operational problem at the heart of the scene.
-
-| *Time Cost*
-| Usually 1 shift. Live crises may consume the shift and spill forward.
-
-| *Risked Organizations*
-| Which organization rows on the Operations Board are most likely to advance if things go poorly or loudly. Note if a relic milestone on the phases row could also trigger.
-
-| *May Reveal*
-| Truths, signs, identities, routes, handling rules, or motives discoverable here.
-
-| *May Unlock*
-| New scenes, contacts, packet angles, or crisis branches.
-|===
+Entity state changes are tied to *organization milestones on the Operations Board*, not independent phase numbers. NPCs gain knowledge, locations change access, and information becomes available — all triggered when the DA crosses out a milestone square on the board. This keeps the Operations Board as the single source of truth for "what changed."
 
 ---
 
