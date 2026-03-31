@@ -24,6 +24,19 @@ Each rival faction organization should answer four questions:
 
 If the first thing a faction does is shoot, you skipped the interesting part.
 
+=== Pre-Made Faction Dossiers
+
+Each faction section below serves as a reusable *Organization Reference* template. When building a case, the DA does not need to reinvent a faction's background — instead, copy the relevant dossier and customize it with case-specific milestones, NPC names, and local operational details.
+
+Each dossier provides:
+
+* Faction name, goals, and operational style
+* Typical resources and reach
+* Common operative types
+* A blank milestone template the DA fills in for a specific case
+
+For the full Organization Reference format and how it fits into the case file package, see <<case-file-package>>.
+
 ---
 
 == The Vantablack Compact
