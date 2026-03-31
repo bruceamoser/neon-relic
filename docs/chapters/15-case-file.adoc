@@ -1,14 +1,14 @@
 [#chapter-case-file]
 
-= The Case File: Shift-Based Procedural Structure
+= The Case File
 
-A Neon Relic *Case File* is a reactive operations board, not a scripted sequence of set scenes. The agents move through a city, town, route, institution, or chain-of-custody problem one *shift* at a time while the DA tracks what the world is doing in response.
+A Neon Relic *Case File* is a reactive operations board, not a scripted sequence of set scenes. The agents work through a case over the course of *days* — typically fourteen — while the DA tracks what the world is doing in response. Each day is divided into four *shifts* (Morning, Day, Evening, Night), giving the team a fixed number of moves before the situation becomes unrecoverable.
 
-The hidden engine is no longer the older phase-and-countdown model. The engine is:
+The engine is:
 
-* an *Operations Board* with a phases row counting down days until catastrophe and organization countdown rows tracking external pressure
+* an *Operations Board* counting down days until catastrophe, with a shift row tracking time spent and organization rows tracking external pressure
 * a set of *Locations* that can be approached in flexible order
-* *relic milestones* keyed to the phases row, representing what the anomaly does if left uncontained
+* *relic milestones* keyed to specific days, representing what the anomaly does if left uncontained
 * delayed *Covenant Request Packet* returns that make research and institutional support matter without being instant
 
 Players should experience narrative signs, mounting pressure, and operational tradeoffs. The DA may track numbers behind the screen, but the table sees symptoms, delays, rumors, closures, surveillance, compromised witnesses, and rising Corruption pressure.
@@ -24,10 +24,10 @@ Every Case File is authored as a case board built from the following parts:
 | Element | Function
 
 | *Operations Board*
-| The single tracking surface for the case. 14 columns count down from 14 → 1 (days until catastrophe). Contains a phases row and organization countdown rows.
+| The single tracking surface for the case. 14 columns count down from 14 → 1 (days until catastrophe). Contains a shift row and organization countdown rows.
 
-| *Phases Row*
-| The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. As shifts pass, quadrants are filled. Relic milestones are keyed to specific phase numbers on this row — when the DA fills a quadrant that crosses a milestone, the artifact event triggers.
+| *Shift Row*
+| The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. As shifts pass, quadrants are filled. Relic milestones are keyed to specific days on this row — when the DA fills a quadrant that crosses a milestone day, the artifact event triggers.
 
 | *Organization Row*
 | A countdown row on the Operations Board tracking external reactive pressure. Each row has a name, Active checkbox, and 14 countdown squares. Milestone squares use O#M# shorthand. Rival factions, police, media, custodians, smugglers, and institutional counter-moves all belong here.
@@ -57,17 +57,17 @@ The *Operations Board* is the single tracking surface for a Case File. It replac
 * Column 14 = case start. Column 1 = catastrophe.
 * Frame the countdown as *"Days until catastrophe"* — column 1 has concrete narrative weight: relic activation, sale, city exposure, dimensional breach, or whatever the case's worst outcome is.
 
-=== The Phases Row
+=== The Shift Row
 
-The first row of the board is the *phases row*. It serves as both the shift clock and the relic escalation track.
+The first row of the board is the *shift row*. It tracks how much time the team has spent and when relic milestones fire.
 
 * Each day-column is quartered with an X, creating 4 quadrants: *Morning*, *Day*, *Evening*, *Night*.
 * As shifts pass, the DA fills in quadrants left to right. Each filled quadrant is one spent shift.
-* *Relic milestones* are keyed to specific phase numbers on this row. When the DA fills a quadrant that crosses a relic milestone, the artifact event triggers immediately.
-* At Phase 1, catastrophe occurs — the relic's worst-case outcome fires.
-* Relic milestone descriptions live in the Case Brief, keyed to phase numbers (e.g., "Phase 40: Dream-bleed begins affecting witnesses within 100 meters").
+* *Relic milestones* are keyed to specific days on this row. When the DA fills the last quadrant of a milestone day, the artifact event triggers immediately.
+* At Day 1, catastrophe occurs — the relic's worst-case outcome fires.
+* Relic milestone descriptions live in the Case Brief, keyed to day numbers (e.g., “Day 11: Dream-bleed begins affecting witnesses within 100 meters”).
 
-The phases row answers three questions cleanly:
+The shift row answers three questions cleanly:
 
 . What did the team commit this time to?
 . What did that cost in exposure, delay, or Corruption?
@@ -98,7 +98,7 @@ Resolve each shift in the following order:
 
 . *Resolve the undertaking.* Play the scene, handle the travel shift, roll for access, or process the support action.
 
-. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling. Fill in the next shift quadrant on the phases row and check for relic milestones crossed this shift.
+. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling. Fill in the next shift quadrant on the shift row and check for relic milestones crossed this day.
 
 . *Mark delayed returns.* Note when packet responses, stakeout results, lab work, or institutional callbacks will come back. No deep result should appear immediately unless the case author explicitly established it beforehand.
 
@@ -198,14 +198,14 @@ Use the following resolution bands instead of binary success/failure whenever a 
 | The team fails to achieve the main objective, but the case still moves. A new sign, clue, packet angle, or hostile move becomes visible.
 
 | *Breach*
-| The scene goes loud, public, or occultly unstable. An organization row advances immediately, a relic milestone may trigger on the phases row, and the next shift starts under pressure.
+| The scene goes loud, public, or occultly unstable. An organization row advances immediately, a relic milestone may trigger on the shift row, and the next shift starts under pressure.
 |===
 
 ---
 
 == Organization Rows on the Operations Board
 
-Organizations are tracked as countdown rows on the Operations Board. Each organization row is an independent pressure track that shares the same 14-column grid as the phases row.
+Organizations are tracked as countdown rows on the Operations Board. Each organization row is an independent pressure track that shares the same 14-column grid as the shift row.
 
 === Row Structure
 
@@ -245,7 +245,7 @@ The DA reads the milestone description and executes.
 Some organizations are pre-printed on the board but start inactive:
 
 * The *Active* checkbox is unchecked at case start.
-* The row is inert until the DA marks it active (triggered by agent action, a milestone cross-link, or a relic milestone on the phases row).
+* The row is inert until the DA marks it active (triggered by agent action, a milestone cross-link, or a relic milestone on the shift row).
 * Once active, the organization escalates normally.
 * The board layout stays stable — no adding rows mid-session.
 
@@ -357,7 +357,7 @@ Scenes are not pre-authored event nodes. They are *emergent intersections* of th
 
 A "scene" emerges when players go to a location and the DA assembles the relevant NPC cards and Information cards for that point in the case. The DA's cognitive loop is always: _"Where are the players going? What's there?"_
 
-Entity state changes are tied to *organization milestones on the Operations Board*, not independent phase numbers. NPCs gain knowledge, locations change access, and information becomes available — all triggered when the DA crosses out a milestone square on the board. This keeps the Operations Board as the single source of truth for "what changed."
+Entity state changes are tied to *organization milestones on the Operations Board*, not independent day numbers. NPCs gain knowledge, locations change access, and information becomes available — all triggered when the DA crosses out a milestone square on the board. This keeps the Operations Board as the single source of truth for "what changed."
 
 === Locations
 
@@ -374,7 +374,7 @@ A Location is the DA's primary reference during play — one page or form per lo
 | What the agents see when they arrive.
 
 | *Availability*
-| Access condition using one of the following keywords: *open* (available from case start), *clue-locked* (requires specific information), *contact-locked* (requires an NPC introduction or referral), *time-locked* (opens at a specific phase), or *packet-locked* (unlocked when a packet returns).
+| Access condition using one of the following keywords: *open* (available from case start), *clue-locked* (requires specific information), *contact-locked* (requires an NPC introduction or referral), *time-locked* (opens on a specific day), or *packet-locked* (unlocked when a packet returns).
 
 | *NPCs Present*
 | Which NPCs can be found here. May change at milestones (e.g., "After O4M2: Suárez pulled off case").
@@ -455,7 +455,7 @@ An Information Card is a playing-card-sized reference identified by an I# code. 
 | NPC IDs who possess this knowledge.
 
 | *HQ Fallback*
-| Available from HQ at Phase X (see <<hq-safety-valve>>). If blank, the information is only available in the field.
+| Available from HQ on Day X (see <<hq-safety-valve>>). If blank, the information is only available in the field.
 
 | *Type*
 | *Containment Truth* (essential for solving the case) or *supporting intel* (useful but not required).
@@ -464,7 +464,7 @@ An Information Card is a playing-card-sized reference identified by an I# code. 
 [[hq-safety-valve]]
 === HQ Safety Valve
 
-Every Information Card can include an *HQ Fallback* phase number: "Available from HQ at Phase X." If agents miss a fact in the field — a failed roll, a skipped location, a spooked witness — they can request it from Covenant HQ. The cost is time: the request consumes one or more shifts while HQ processes records, contacts assets, or runs analysis.
+Every Information Card can include an *HQ Fallback* day number: "Available from HQ on Day X." If agents miss a fact in the field — a failed roll, a skipped location, a spooked witness — they can request it from Covenant HQ. The cost is time: the request consumes one or more shifts while HQ processes records, contacts assets, or runs analysis.
 
 This mechanism structurally prevents dead ends. The DA never needs to improvise a rescue path or hand-wave missed clues. If the information exists and HQ can plausibly obtain it, the agents can always get it — they just lose shifts. The Operations Board keeps counting down while they wait.
 
@@ -476,7 +476,7 @@ This mechanism structurally prevents dead ends. The DA never needs to improvise 
 
 The Operations Board itself serves as the table handout. Print or display the board so players can see:
 
-* the phases row counting down from column 14
+* the shift row counting down from column 14
 * which shifts have been spent
 * which organizations are active and how close they are to their next milestone
 * packet send / return markers noted in the margin or on a separate index card
@@ -507,7 +507,7 @@ A complete case file consists of the following documents:
 | 3
 | *Operations Board*
 | DA
-| Phases row (relic escalation track) plus Organization countdown rows. See <<operations-board>>.
+| Shift row (relic escalation track) plus Organization countdown rows. See <<operations-board>>.
 
 | 4
 | *Organization Reference*
@@ -532,7 +532,7 @@ A complete case file consists of the following documents:
 | 8
 | *Information Cards* (playing-card size, double-sided)
 | DA -> Players
-| *Front (player-facing):* what the agents learned. *Back (DA reference):* source Locations, source NPCs, HQ fallback phase, type (Containment Truth vs. supporting intel). Players physically receive cards when information is discovered — tangible progress tracker.
+| *Front (player-facing):* what the agents learned. *Back (DA reference):* source Locations, source NPCs, HQ fallback day, type (Containment Truth vs. supporting intel). Players physically receive cards when information is discovered — tangible progress tracker.
 |===
 
 For a single-session case with 5–6 Locations and 6–8 NPCs, the typical package is approximately 10–12 printed pages plus approximately 20 cards.
@@ -697,7 +697,7 @@ Use this procedure to go from nothing to a playable case in one pass. The output
 
 . **Write 2–3 NPC Cards.** At least one NPC who gives access and one hostile pressure that closes time, routes, witnesses, or secrecy.
 
-. **Set up the Operations Board.** Fill in the phases row and add organization rows with per-milestone consequences. Note what relic milestones trigger if the agents lose time or mishandle the artifact.
+. **Set up the Operations Board.** Fill in the shift row and add organization rows with per-milestone consequences. Note what relic milestones trigger if the agents lose time or mishandle the artifact.
 
 . **Write 3 Containment Truths as Information Cards.** These should cover trigger, appetite, and quiescence. Mark each as Type: Containment Truth. Ensure each has at least two field sources plus an HQ fallback.
 
@@ -718,7 +718,7 @@ Use this procedure to go from nothing to a playable case in one pass. The output
 > Herald — deadline Friday.
 >
 > **Operations Board — Relic Milestones:** The transmissions become clearer every night shift and begin
-> imprinting alternate-life memories on listeners. Phase milestones on the Operations Board track this escalation. If the receiver is activated in the
+> imprinting alternate-life memories on listeners. Relic milestones on the Operations Board track this escalation. If the receiver is activated in the
 > lab on Friday morning, half the department hears the same impossible broadcast.
 >
 > **Organization Row:** The journalist's article runs Friday morning. If the artifact is not secured

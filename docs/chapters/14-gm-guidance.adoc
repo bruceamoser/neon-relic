@@ -65,7 +65,7 @@ If you can explain your case only as a linear plot, it is not ready. If you can 
 
 Before writing entities, answer these questions:
 
-. *What is the artifact doing if no one contains it?* That becomes the *relic milestones* on the phases row.
+. *What is the artifact doing if no one contains it?* That becomes the *relic milestones* on the shift row.
 . *Who else is reacting to the situation?* Those become *Organizations* on the Operations Board.
 . *What does the team need to learn to resolve the case safely?* Those are the *Containment Truths* (Information Cards).
 . *Where can the agents go or who can they approach to learn those truths?* Those become *Locations* and *NPC Cards*.
@@ -139,7 +139,7 @@ Recommend a maximum of ~8 organization rows per case. If you need more than 8, c
 
 == Authoring Relic Milestones
 
-Relic milestones define *what the anomaly does if it remains uncontained*. This is distinct from rival behavior. Relic milestones are keyed to specific phase numbers on the Operations Board's phases row — when the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
+Relic milestones define *what the anomaly does if it remains uncontained*. This is distinct from rival behavior. Relic milestones are keyed to specific days on the Operations Board’s shift row — when the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
 
 When authoring relic milestones, answer:
 
@@ -153,14 +153,14 @@ Do not write relic milestones as generic "things get spooky." Each milestone sho
 
 If the artifact is about command, its milestones should produce obedience, claimant behavior, or legitimacy crises. If it is about repetition, its milestones should create loops, reenactments, or false returns.
 
-Write each milestone keyed to a phase number and include any cross-link consequences:
+Write each milestone keyed to a day number and include any cross-link consequences:
 
 ____
-Phase 40: Dream-bleed begins affecting witnesses within 100 meters.
+Day 10: Dream-bleed begins affecting witnesses within 100 meters.
 
-Phase 28: The relic begins selecting a claimant. Advance O1 (Police) by 1 square — unexplained behavior reports increase.
+Day 7: The relic begins selecting a claimant. Advance O1 (Police) by 1 square — unexplained behavior reports increase.
 
-Phase 8: Environmental logic around the artifact inverts. Temperature, sound, and gravity become unreliable within 50 meters.
+Day 2: Environmental logic around the artifact inverts. Temperature, sound, and gravity become unreliable within 50 meters.
 ____
 
 ---
@@ -286,7 +286,7 @@ The DA tracks organization rows and relic milestones on the Operations Board num
 * buyers arriving too early
 * clergy suddenly appearing at the same hospital
 
-The Operations Board is an operational tool, not a scoreboard. Players see the phases row counting down and know which organizations are active, but the milestone descriptions and cross-link consequences stay behind the screen. This keeps the structure operational rather than abstract.
+The Operations Board is an operational tool, not a scoreboard. Players see the shift row counting down and know which organizations are active, but the milestone descriptions and cross-link consequences stay behind the screen. This keeps the structure operational rather than abstract.
 
 ---
 
@@ -424,7 +424,7 @@ Partial success is valid. An artifact that was activated once but then contained
 Containment cases benefit from pressure tracks with *loss conditions linked to exposure*, not arbitrary pacing:
 
 * *The Seal Breaks* — an organization based on witness knowledge, curiosity, and publicity.
-* *The Protocol Fails* — a phases-row track based on handling violations.
+* *The Protocol Fails* — a shift-row track based on handling violations.
 * *The Handoff Window Closes* — a time-locked transport or custody window that vanishes after a set shift.
 
 ---

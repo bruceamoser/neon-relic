@@ -1,0 +1,253 @@
+= Play Aids — The Spear That Went Dark
+:doctype: article
+
+== Operations Board Tracker
+
+Use this tracker behind the screen or as a shared operational worksheet. Update it at the end of each shift, especially after packet returns, public incidents, or any action that worsens an organization.
+
+=== Shift Row — Relic Milestones Tracker
+
+|===
+| Track | Start | Current | Milestones | Narrative Signs
+
+| Lance Threshold Build
+| 14
+|
+| 11 / 8 / 5 / 2 / 0
+|
+|===
+
+=== Active Organization Tracker
+
+|===
+| Organization | Start | Current | Milestones | Narrative Signs
+
+| Vantablack Compact Recovery
+| 9
+|
+| 7 / 4 / 1 / 0
+|
+
+| Heist Crew Fracture
+| 6
+|
+| 5 / 3 / 1 / 0
+|
+
+| Local Police Inquiry
+| 10
+|
+| 8 / 6 / 3 / 0
+|
+
+| Church Custody Cell
+| 12
+|
+| 9 / 6 / 3 / 0
+|
+|===
+
+=== Dormant Organization Tracker
+
+|===
+| Organization | Start | Active? | Current | Trigger
+
+| Foreign Buyer Window
+| 8
+| No
+|
+| Proof of custody / route secured / Compact recovers control
+
+| Media Exposure
+| 6
+| No
+|
+| Public effects / loud police action / leak
+|===
+
+=== Location Availability Tracker
+
+|===
+| Location | ID | Open | Clue-Locked | Contact-Locked | Time-Locked | Notes
+
+| Estate Aftermath
+| L1
+| Yes
+|
+|
+|
+|
+
+| Police Station
+| L2
+| Conditional
+| Estate or police clue
+|
+|
+|
+
+| Church Archive
+| L3
+| Conditional
+| Church clue
+| Church contact
+|
+|
+
+| Currency Exchange
+| L4
+| Conditional
+| Funding clue
+|
+|
+|
+
+| Illicit Clinic
+| L5
+| Conditional
+| Witness or thief clue
+|
+|
+|
+
+| Export Route
+| L6
+| Conditional
+| Buyer / route clue
+| Broker access
+|
+|
+
+| Hidden Shrine
+| L7
+| No
+| 2+ location clues
+|
+|
+|
+|===
+
+---
+
+== NPC Quick-Reference Dossiers
+
+Use this sheet for quick reference at the table. Read the public-face line first when introducing the NPC, then hold the secret and use-at-table lines for DA guidance.
+
+=== Lucia Ferreyra
+
+* Role: estate retainer and last credible witness to the old custody procedure
+* Public face: exhausted, proud, private, furious that outsiders opened the vault
+* Secret: knows parts of the silence protocol and the family's postwar arrangement
+* Use at table: cautious ally, source of old-custody detail, moral witness to the estate cover story
+
+=== Detective Mateo Suárez
+
+* Role: robbery detective on the edge of a much stranger case
+* Public face: competent, skeptical, under pressure from superiors
+* Secret: knows witness contradictions are being quietly buried
+* Use at table: quiet source, pressure valve, possible collateral if police organization spikes
+
+=== Father Esteban Vale
+
+* Role: black-chamber Church intermediary
+* Public face: measured, courteous, conservative, harder than he seems
+* Secret: wants reclaiming the relic more than telling the truth about prior Church compromise
+* Use at table: rival custodian, partial ally, source of doctrinal warnings
+
+=== Sister Inés Barral
+
+* Role: archivist and ritual conservator
+* Public face: exacting, calm, observant
+* Secret: believes the Church no longer deserves sole custody
+* Use at table: best source of liturgical containment detail if trust is earned
+
+=== Ramiro Acosta
+
+* Role: surviving thief
+* Public face: dying, terrified, intermittently euphoric
+* Secret: heard the handoff collapse in real time and knows who started speaking like a claimant
+* Use at table: broken witness, urgency node, bearer clue source
+
+=== Sabine Voss
+
+* Role: Compact regional handler
+* Public face: controlled, elegant, transactional
+* Secret: is trying to recover the sale narrative before buyers realize she lost control
+* Use at table: mover of the Compact organization, architect of quiet pressure
+
+=== Iván Luján
+
+* Role: fixer, courier, possible bearer
+* Public face: practical operator with nationalist ties
+* Secret: already half-convinced the Spear has validated him
+* Use at table: bearer candidate, escalation hinge, tragedy point
+
+=== Brother Tomás Arce
+
+* Role: ecclesiastical broker and information parasite
+* Public face: charming, useful, slippery
+* Secret: sells fragments to anyone who sounds certain enough
+* Use at table: unreliable access point, false lead risk, contact unlock
+
+Quick sorting guide:
+
+* Best sources of custodial truth: Lucia Ferreyra, Sister Inés Barral
+* Best sources of police or public-pressure truth: Detective Mateo Suárez
+* Best sources of failed-handoff truth: Ramiro Acosta, Brother Tomás Arce
+* Most likely active movers of rival pressure: Sabine Voss, Iván Luján, Father Esteban Vale
+
+---
+
+== Shift Timeline
+
+Use this grid to track ten in-fiction days at four shifts per day.
+
+=== 10-Day Grid
+
+|===
+| Day | Morning | Day | Evening | Night
+
+| 1  |   |   |   |
+| 2  |   |   |   |
+| 3  |   |   |   |
+| 4  |   |   |   |
+| 5  |   |   |   |
+| 6  |   |   |   |
+| 7  |   |   |   |
+| 8  |   |   |   |
+| 9  |   |   |   |
+| 10 |   |   |   |
+|===
+
+=== Packet Tracker
+
+|===
+| Packet | Sent On | Earliest Return | Actual Return | Notes
+
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+|===
+
+End-of-shift checklist:
+
+* Did an organization worsen?
+* Did the relic milestones advance on the shift row?
+* Did a packet become due?
+* Did a new Location become available?
+
+---
+
+== Covenant Request Packet Opportunities
+
+Common packets for this case:
+
+* photo identification of thieves, police witnesses, or clergy
+* summary of known Spear legends in Covenant archives
+* cross-case comparison of postwar custody transfers
+* theological summary of Longinus, imperial relic traditions, and claimant language
+* customs and freight screening pulls connected to Compact cutouts
+
+No packet returns in fewer than 2 shifts. Deep archive, foreign, or politically sensitive requests may take 3 or more.

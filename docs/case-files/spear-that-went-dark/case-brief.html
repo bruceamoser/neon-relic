@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Brief — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(139,26,26,0.025); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--red-stamp); border-bottom:2px solid var(--red-stamp); padding:6px 0 7px; margin-bottom:10px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:22pt; letter-spacing:8px; text-transform:uppercase; color:var(--red-stamp); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--red-stamp); color:var(--red-stamp); font-family:var(--font-main); font-size:10pt; letter-spacing:5px; padding:2px 10px; transform:rotate(-2deg); margin-bottom:4px; }
+  .section-title { font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:2px; margin:8px 0 4px; }
+  .section-title.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .section-title.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+  .id-block-row { display:grid; gap:0; border:1.5px solid var(--ink); }
+  .id-cell { padding:3px 6px 4px; border-right:1px solid var(--rule); }
+  .id-cell:last-child { border-right:none; }
+  .id-label { display:block; font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:2px; }
+  .id-value { display:block; font-family:var(--font-fill); font-size:8pt; min-height:13px; border-bottom:1px dotted var(--rule); }
+  .field-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:1px; display:block; }
+  .field-value { border-bottom:1.5px solid var(--rule); min-height:14px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:8pt; margin-bottom:4px; }
+  .field-value.med { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:36px; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:50px; }
+  .field-value.xl { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:72px; }
+  .field-value.xxl { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:100px; }
+  .two-col { display:flex; gap:8px; }
+  .two-col > div { flex:1; }
+  .milestone-grid { display:grid; grid-template-columns:50px 1fr; gap:2px 6px; }
+  .milestone-day { font-family:var(--font-fill); font-size:7.5pt; border-bottom:1px solid var(--rule); text-align:center; min-height:14px; padding:1px; }
+  .milestone-desc { font-family:var(--font-fill); font-size:7.5pt; border-bottom:1px dotted var(--rule); min-height:14px; padding:1px 3px; background:var(--field-bg); }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">DA EYES ONLY</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Case Brief</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">DA EYES ONLY</div>
+      <div>Form VC-17 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="id-block-row" style="grid-template-columns: 2fr 0.8fr 0.8fr;">
+    <div class="id-cell"><span class="id-label">Case Name</span><span class="id-value">The Spear That Went Dark</span></div>
+    <div class="id-cell"><span class="id-label">Relic Tier</span><span class="id-value">4</span></div>
+    <div class="id-cell"><span class="id-label">Region</span><span class="id-value">Buenos Aires, Argentina</span></div>
+  </div>
+
+  <div class="section-title red">I &mdash; Mystery Statement</div>
+  <div>
+    <span class="field-label">Summarize the entire case in one sentence.</span>
+    <div class="field-value med">A Tier 4 sovereignty relic has surfaced in Buenos Aires after a professional theft crew funded by Vantablack Compact cutouts breached a private custody chamber. If left uncontained, the Spear will select a bearer and trigger a public mandate event. Meanwhile the Compact, the Church, local police, and foreign buyers are all moving on the same broken chain of custody. The agents need the old containment protocol before they can recover it safely.</div>
+  </div>
+
+  <div class="section-title">II &mdash; The Real Situation</div>
+  <div>
+    <span class="field-label">What is actually happening? Who is really involved? How does the case resolve?</span>
+    <div class="field-value xl">The Spear of Destiny was held for decades in a private vault beneath the Ferreyra estate under a postwar custody arrangement with the Church. The vault was not a safe — it was a ritual containment site maintained through a liturgical suppression sequence. Three nights ago, a professional theft crew breached the vault, broke the containment lineage, and failed to complete the scheduled buyer handoff. The Spear is now hidden somewhere in Buenos Aires, active and escalating. The heist crew has fractured, a surviving thief is suffering wound bloom, a Compact fixer is becoming a bearer candidate, and the Church is quietly running a parallel recovery. The agents must locate the Spear, learn its containment truths, and re-establish custody before the artifact selects a claimant and the city becomes the ritual site.</div>
+  </div>
+
+  <div class="section-title">III &mdash; Agent Objectives</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Primary Objective</span>
+      <div class="field-value med">Locate the Spear, learn the containment truths, and re-establish custody without triggering an urban threshold event.</div>
+    </div>
+    <div>
+      <span class="field-label">Secondary Objective</span>
+      <div class="field-value med">Prevent export. Identify and neutralize the emerging bearer. Preserve operational secrecy.</div>
+    </div>
+  </div>
+
+  <div class="section-title red">IV &mdash; Containment Truths Summary</div>
+  <div>
+    <span class="field-label">Trigger &mdash; What makes the artifact more active or dangerous?</span>
+    <div class="field-value" style="margin-bottom:3px;">The Spear becomes more active when moved repeatedly between custodians, exposed to fresh blood, or carried by someone making claims of destiny, divine mandate, or holy violence.</div>
+    <span class="field-label">Appetite &mdash; What does the artifact feed on, amplify, or attract?</span>
+    <div class="field-value" style="margin-bottom:3px;">Wound trauma, ideological certainty, righteous violence, proximity to a self-declared chosen bearer, and speech that turns command into sacred obligation.</div>
+    <span class="field-label">Quiescence &mdash; What conditions make it safe to handle or contain?</span>
+    <div class="field-value" style="margin-bottom:3px;">Substitute custody sequence: lead-lined cloth over consecrated ash and salt, isolation from followers and cameras, silence (no claimant language), low light, and a Keep-led suppression rite before transport.</div>
+  </div>
+
+  <div class="section-title">V &mdash; Key Actors &amp; Factions</div>
+  <div>
+    <span class="field-label">Who are the principal NPCs and organizations?</span>
+    <div class="field-value xl">Lucia Ferreyra — estate custodian, knows partial containment sequence. Detective Mateo Su&aacute;rez — robbery detective, quiet source. Father Esteban Vale — Church black-chamber intermediary. Sister In&eacute;s Barral — Church archivist, best containment source. Ramiro &ldquo;Rami&rdquo; Acosta — surviving thief, wound bloom. Sabine Voss — Compact regional handler. Iv&aacute;n Luj&aacute;n — Compact fixer, strongest bearer candidate. Brother Tom&aacute;s Arce — false ecclesiastical broker.</div>
+  </div>
+
+  <div class="section-title">VI &mdash; Resolution &amp; Endgame</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Best Case</span>
+      <div class="field-value med">Agents learn all containment truths, identify the bearer, and execute a controlled recovery at the Hidden Shrine using the full Quiescence protocol. Spear enters Covenant custody. Export prevented.</div>
+    </div>
+    <div>
+      <span class="field-label">Worst Case</span>
+      <div class="field-value med">The Spear selects a bearer who reaches full activation. Public miracle/atrocity event. Mass-casualty zone. Long-term secrecy lost. Multiple factions converge on the artifact simultaneously.</div>
+    </div>
+  </div>
+
+  <div class="section-title green">VII &mdash; Relic Milestones</div>
+  <div>
+    <span class="field-label">Keyed to day columns on the Operations Board.</span>
+    <div class="milestone-grid">
+      <div class="milestone-day">Day 11</div><div class="milestone-desc">Local hospitals and street reports begin showing recognizable cruciform-wound patterns.</div>
+      <div class="milestone-day">Day 8</div><div class="milestone-desc">Handlers suffer reopened wounds, religious certainty, and dream-imprint episodes. Advance O3 by 1 square.</div>
+      <div class="milestone-day">Day 5</div><div class="milestone-desc">Radios, surveillance gear, and vehicles fail near the Spear; witnesses report &ldquo;someone chosen is coming.&rdquo; O6 activates if still dormant.</div>
+      <div class="milestone-day">Day 2</div><div class="milestone-desc">The Spear begins selecting a claimant. Advance O5 by 2 squares if active.</div>
+      <div class="milestone-day">Day 1</div><div class="milestone-desc">Catastrophe — public miracle/atrocity, mass-casualty zone, or violent claimant manifestation.</div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+    </div>
+  </div>
+
+  <div class="section-title">VIII &mdash; DA Notes</div>
+  <div>
+    <span class="field-label">Pacing cues, tone reminders, things to watch for</span>
+    <div class="field-value xxl">The Spear is simultaneously sacred relic, imperial mandate, and weaponizable asset — each faction understands only one slice. Play the bearer candidate as tragic before formidable. The Spear does not make soldiers — it makes prophets who believe their own myth. Resist the urge to reveal the Spear early. Let the agents assemble the picture from institutional fragments and witness contradictions. The case works best when the players feel the timeline pressure without being told the countdown numbers. Cross-links between organizations should feel like emergent consequences, not scripted plot beats.</div>
+  </div>
+
+  <div class="footer">
+    <span>VC-17 &bull; The Verdant Covenant &bull; DA Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Case Brief &mdash; The Spear That Went Dark</span>
+  </div>
+</div>
+
+</body>
+</html>

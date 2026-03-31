@@ -79,21 +79,56 @@ Every Containment Truth must be available from at least *two field sources* (any
 
 == Step 4: Build the Operations Board — Relic Milestones
 
-Relic milestones define what the artifact itself does if no one intervenes. They are keyed to specific phase numbers on the Operations Board's phases row. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
+Relic milestones define what the artifact itself does if no one intervenes. They are keyed to specific days on the Operations Board’s shift row. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
 
-. *Determine the total phases* — a 14-day case has 56 phases (14 days × 4 shifts). Phase 56 is the start; Phase 1 is catastrophe.
-. *Write 4–5 milestones* keyed to descending phase numbers — each one describes an escalation.
-. *Phase 1* is the catastrophe — the worst-case outcome if the case runs too long.
+. *Count your days* — a standard case uses 14 days with 4 shifts each. Day 14 is the start; Day 1 is catastrophe.
+. *Write 4–5 milestones* keyed to descending day numbers — each one describes an escalation.
+. *Day 1* is the catastrophe — the worst-case outcome if the case runs too long.
 . *Include cross-link consequences* — does a relic milestone also advance an organization row?
 
 Make each milestone specific to the artifact's logic. Don't write generic "things get spooky." If the artifact is about wounds, milestones should involve unexplained injuries appearing. If it is about sound, milestones should involve interference, phantom broadcasts, or compulsive listening.
 
 .Example milestones (for a command-type relic):
-* *Phase 44:* Handlers report unusual certainty and conviction.
-* *Phase 32:* Witnesses start using the same phrases without coordination. Advance O3 (Police) by 1 square.
-* *Phase 20:* Electronics fail near the object; radios broadcast static. O5 (Media) activates if still dormant.
-* *Phase 8:* The artifact begins selecting a bearer.
-* *Phase 1:* Catastrophe — public manifestation, mass obedience event, or violent claimant emergence.
+* *Day 11:* Handlers report unusual certainty and conviction.
+* *Day 8:* Witnesses start using the same phrases without coordination. Advance O2 (Police) by 1 square.
+* *Day 5:* Electronics fail near the object; radios broadcast static. O3 (Media) activates if still dormant.
+* *Day 2:* The artifact begins selecting a bearer.
+* *Day 1:* Catastrophe — public manifestation, mass obedience event, or violent claimant emergence.
+
+Write these milestones on the *Case Brief*, keyed to day numbers. The board itself is just a countdown surface.
+
+=== Example Board
+
+Here is a simplified Operations Board at case start using the command-type relic example above with three organizations.
+
+.Operations Board — case start
+[cols="3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"]
+|===
+| | Active | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1
+
+| *Shifts*
+| 
+| ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕
+
+| O1: The Compact
+| ☑
+| ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □ | □ | □ | □ | □ | □
+
+| O2: Local Police
+| ☑
+| ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □ | □ | □
+
+| O3: Local Press
+| ☐
+| ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □
+|===
+
+* *Shift row:* Each cell is quartered with an X — four shift quadrants per day. The DA fills one quadrant per shift. Relic milestone descriptions live on the *Case Brief*, keyed to day numbers; when a filled quadrant crosses a milestone, the artifact event triggers.
+* *Active column:* ☑ = in motion at case start. ☐ = dormant, printed on the board but inert until a trigger marks it active.
+* *Active organizations* have dead space pre-filled from column 14 inward. O1 starts at 9 (5 dead squares, 9 live). O2 starts at 6 (8 dead squares, only 6 remain — this threat is close).
+* *Organization milestones* (O1M1, O2M1, etc.) live on the Organization Reference sheet. When the DA crosses out a milestone square, they check the reference for consequences and cross-links.
+
+For a complete board with six organizations and cross-linked milestones, see _The Spear That Went Dark_ in Chapter 20.
 
 ---
 
@@ -103,7 +138,7 @@ Organizations are external reactive pressures — rival factions, police, media,
 
 For each organization:
 
-. *Name it* — Compact Recovery, Police Inquiry, Media Exposure, Church Custody, etc.
+. *Name it* — The Compact, Local Police, Local Press, The Church, etc.
 . *Set a starting value* (typically 6–12). The DA pre-fills squares from column 14 inward to this value.
 . *Mark it Active or Dormant.* Dormant organizations are pre-printed on the board with the Active checkbox unchecked.
 . *Write 3–5 milestones* using O#M# shorthand (e.g., O1M1, O1M2).
@@ -173,7 +208,7 @@ ID:: Shorthand identifier (I1, I2, etc.).
 Content:: What the agents learn.
 Found At:: Location IDs where this can be discovered.
 Known By:: NPC IDs who possess this knowledge.
-HQ Fallback:: Available from HQ at Phase X (prevents dead ends — costs shifts).
+HQ Fallback:: Available from HQ on Day X (prevents dead ends — costs shifts).
 Type:: *Containment Truth* (essential) or *supporting intel* (useful but not required).
 
 === 6d: Cross-Link and Verify
@@ -187,7 +222,7 @@ After authoring all three entity types, verify the cross-links:
 
 .THE DEAD END TEST
 ****
-For every Containment Truth, ask: _If the agents never visit one source, can they still learn this fact?_ If no, add another source or an earlier HQ Fallback phase.
+For every Containment Truth, ask: _If the agents never visit one source, can they still learn this fact?_ If no, add another source or an earlier HQ Fallback day.
 ****
 
 ---
@@ -280,7 +315,7 @@ Each shift at the table follows this procedure:
 . *Choose the team's primary undertaking.* Scene action, travel, surveillance, research, preparation, or recovery.
 . *Optionally send one Covenant Request Packet.*
 . *Resolve the undertaking.* Play the scene or handle the shift action.
-. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time, noise, or mishandling. Fill in the next shift quadrant on the phases row and check for relic milestones crossed this shift.
+. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time, noise, or mishandling. Fill in the next shift quadrant on the shift row and check for relic milestones crossed this day.
 . *Mark delayed returns.* Note when packet responses or stakeout results will arrive.
 
 When a shift becomes an active scene, resolve it as a bundle:

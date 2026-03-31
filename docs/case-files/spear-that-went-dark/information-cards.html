@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Cards â€” The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } .page-break { page-break-after:always; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:8pt; line-height:1.25; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr 1fr 1fr; gap:0; }
+  .page-break { page-break-after:always; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .card { border:1px dashed #bbb; padding:0.18in 0.22in; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+  .card-front .card-id { font-family:var(--font-main); font-size:10pt; font-weight:bold; letter-spacing:2px; color:var(--green-stamp); border:1.5px solid var(--green-stamp); padding:1px 8px; display:inline-block; margin-bottom:4px; }
+  .card-front .card-id.truth { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .card-front .card-type-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:2px; color:var(--red-stamp); margin-bottom:3px; }
+  .card-front .card-type-label.intel { color:var(--green-stamp); }
+  .card-front .card-header-row { display:flex; justify-content:space-between; align-items:flex-start; border-bottom:1.5px solid var(--ink); padding-bottom:3px; margin-bottom:5px; }
+  .card-front .card-label { font-family:var(--font-main); font-size:5pt; letter-spacing:2px; text-transform:uppercase; color:var(--ink-faded); }
+  .card-front .content-area { flex:1; border:1px solid var(--rule); background:var(--field-bg); padding:4px 5px; font-family:var(--font-fill); font-size:7.5pt; line-height:1.35; }
+  .card-front .card-footer { margin-top:auto; padding-top:3px; font-family:var(--font-main); font-size:4pt; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-light); text-align:center; }
+  .card-back { background:rgba(45,90,39,0.03); }
+  .card-back .back-header { display:flex; justify-content:space-between; align-items:baseline; border-bottom:1.5px solid var(--ink); padding-bottom:3px; margin-bottom:5px; }
+  .card-back .back-title { font-family:var(--font-main); font-size:6.5pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink); }
+  .card-back .back-stamp { font-family:var(--font-main); font-size:5pt; letter-spacing:2px; color:var(--red-stamp); }
+  .card-back .back-id { font-family:var(--font-main); font-size:9pt; font-weight:bold; color:var(--green-stamp); border:1.5px solid var(--green-stamp); padding:0px 6px; display:inline-block; margin-bottom:4px; }
+  .card-back .back-id.truth { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .field-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:1px; }
+  .field-value { border-bottom:1px solid var(--rule); min-height:13px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:7pt; margin-bottom:4px; }
+  .field-value.med { border:1px solid var(--rule); min-height:20px; }
+  .type-row { display:flex; gap:10px; align-items:center; margin-bottom:4px; }
+  .checkbox { width:8px; height:8px; border:1px solid var(--ink); display:inline-block; }
+  .checkbox.checked { background:var(--ink); position:relative; }
+  .checkbox.checked::after { content:''; position:absolute; top:0px; left:1.5px; width:3px; height:5px; border:solid var(--paper); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
+  .type-option { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); display:flex; align-items:center; gap:3px; }
+</style>
+</head>
+<body>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     FRONT PAGE 1 â€” I1 through I8 (Player-Facing)
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page page-break">
+
+  <!-- I1 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I1</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The estate vault was breached using shaped charges matched to the vault&rsquo;s specific construction &mdash; not a random burglary technique. The crew had insider architectural plans.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I2 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I2</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The thieves bypassed significant conventional valuables &mdash; silver, paintings, documents &mdash; and went directly to the subterranean vault. They knew exactly what they were after.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I3 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I3</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The operation was professionally financed through Compact cutouts. Wire transfers, equipment procurement, and crew payments all trace back to Vantablack financial infrastructure.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I4 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I4</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The estate vault was not merely a safe. It was a custody chamber &mdash; a ritual containment site maintained through a liturgical sequence passed down through the custodian family. Breaking the vault broke the containment.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I5 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I5</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">Police have compiled a list of witnesses from the estate neighborhood who reported unusual activity the night of the theft &mdash; vehicles, shouting, and at least one person carried out on a stretcher.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I6 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I6</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">One member of the heist crew was injured during the breach and fled separately. A blood trail and taxi records suggest a route toward La Boca district.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I7 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I7</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">Hospital intake records show no matching admissions &mdash; suggesting the wounded thief sought unlicensed medical care. Street contacts may know where.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I8 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I8</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">Witness descriptions and partial security footage produce fragmentary sketches of at least two crew members who did not match any known criminal profile &mdash; suggesting outside recruitment.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     BACK PAGE 1 â€” I1 through I8 (DA-Facing)
+     Mirrored left-to-right for double-sided printing.
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page page-break">
+
+  <!-- I2 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I2</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L1 (Estate Aftermath)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Lucia Ferreyra</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 1</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">False Target &mdash; confirms the heist was targeted, not opportunistic.</div></div>
+  </div>
+
+  <!-- I1 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I1</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L1 (Estate Aftermath)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Lucia Ferreyra (inferred), Det. Su&aacute;rez (forensics, I8 cross-ref)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 1</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Breach Method &mdash; insider architectural plans used.</div></div>
+  </div>
+
+  <!-- I4 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I4</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L1 (Estate Aftermath)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Lucia Ferreyra</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Vault Was Suppressive &mdash; establishes that the theft broke active containment.</div></div>
+  </div>
+
+  <!-- I3 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I3</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L1 (Estate), L4 (Currency Exchange)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Sabine Voss (I12 cross-ref)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Funded Heist Proof &mdash; Compact financial infrastructure traced.</div></div>
+  </div>
+
+  <!-- I6 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I6</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L2 (Police Station)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Det. Su&aacute;rez</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Wounded Thief Route &mdash; blood trail leads toward La Boca.</div></div>
+  </div>
+
+  <!-- I5 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I5</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L2 (Police Station)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Det. Su&aacute;rez</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 1</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Witness List &mdash; neighborhood accounts of the theft night.</div></div>
+  </div>
+
+  <!-- I8 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I8</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L2 (Police Station)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Det. Su&aacute;rez</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Sketch Fragments &mdash; outside recruitment indicated.</div></div>
+  </div>
+
+  <!-- I7 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I7</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L2 (Police Station)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Det. Su&aacute;rez (gained at O3M2)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Hospital Referrals &mdash; no matching admissions, unlicensed care likely.</div></div>
+  </div>
+
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     FRONT PAGE 2 â€” I9 through I16 (Player-Facing)
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page page-break">
+
+  <!-- I9 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I9</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The Ferreyra family were never the owners of the Spear. They were temporary lay custodians under a postwar arrangement with ecclesiastical authorities &mdash; an arrangement never publicly regularized.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I10 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I10</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">After wartime displacement, the relic was placed with the Ferreyra family under a quiet compromise. The Church maintained a monitoring role but never officially acknowledged the arrangement.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I11 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I11</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The older containment record describes a substitute custody protocol: a specific sequence of shielding, silence, and liturgical actions required to move the Spear without triggering activation. The record is incomplete &mdash; key steps are missing or deliberately redacted.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I12 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I12</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The heist was funded by Sabine Voss through Vantablack Compact financial channels routed through the Cambio Cerrito currency exchange. Wire records, courier payments, and equipment invoices all converge.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I13 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I13</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The scheduled buyer handoff was meant to occur at a freight staging area but collapsed when the courier and the relic failed to arrive on time. The relic went sideways into someone else&rsquo;s hands.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I14 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I14</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The foreign buyer&rsquo;s requirements reveal whether they want the Spear as a proof-of-force weapon or as a symbolic legitimacy token. This distinction determines the urgency and nature of the export threat.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I15 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I15</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The surviving thief exhibits wound bloom &mdash; injuries that reopen despite treatment, bleeding in patterns that echo the Spear&rsquo;s own wound history. This is the first direct evidence that the relic is active and affecting people in proximity.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I16 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I16</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">During and after the heist, one member of the crew began speaking in command-language: references to mandate, destiny, divine selection, and righteous authority. Consistent with claimant-language described in Covenant relic archives.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     BACK PAGE 2 â€” I9 through I16 (DA-Facing)
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page page-break">
+
+  <!-- I10 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I10</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L3 (Church Archive)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Father Vale, Sister In&eacute;s, Br. Arce (partial)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Postwar Custody Compromise &mdash; quiet arrangement never publicly regularized.</div></div>
+  </div>
+
+  <!-- I9 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I9</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L1 (Estate), L3 (Church Archive)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Lucia Ferreyra, Father Vale, Sister In&eacute;s</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Custodians Not Owners &mdash; establishes real custody lineage and Church claim.</div></div>
+  </div>
+
+  <!-- I12 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I12</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L4 (Currency Exchange)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Sabine Voss</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Who Financed &mdash; Voss through Compact channels via Cambio Cerrito.</div></div>
+  </div>
+
+  <!-- I11 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I11</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L3 (Church Archive)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Lucia Ferreyra (oral tradition), Sister In&eacute;s (archival text)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Partial Substitute Custody Sequence &mdash; incomplete Quiescence protocol. Needs I22 to complete.</div></div>
+  </div>
+
+  <!-- I14 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I14</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L4 (Currency Exchange)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Sabine Voss (O1M2), Br. Arce (partial)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Buyer Demands &mdash; proof-of-force vs. symbolism distinction shapes endgame urgency.</div></div>
+  </div>
+
+  <!-- I13 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I13</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L4 (Currency Exchange)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Sabine Voss, Iv&aacute;n Luj&aacute;n</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Handoff Collapse &mdash; relic went sideways into another party&rsquo;s hands.</div></div>
+  </div>
+
+  <!-- I16 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I16</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L5 (Illicit Clinic)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Rami Acosta (witnessed), Iv&aacute;n Luj&aacute;n (producing it)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Chosen Ruler Speech &mdash; claimant-language identifies bearer selection mechanism.</div></div>
+  </div>
+
+  <!-- I15 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I15</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L5 (Illicit Clinic)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Rami Acosta (experiencing it)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">First Supernatural Effects &mdash; wound bloom confirms relic activation and proximity danger.</div></div>
+  </div>
+
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     FRONT PAGE 3 â€” I17 through I22 + 2 blank
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page page-break">
+
+  <!-- I17 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I17</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The thief knows the location where the last transfer attempt occurred &mdash; the site connected to the final break in the custody chain. This location is directly connected to where the Spear currently rests.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I18 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I18</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The Compact has established an export corridor &mdash; maritime, air charter, or diplomatic pouch &mdash; to move the Spear out of Argentina. The route, timing, and staging logistics are known to courier contacts.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I19 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I19</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The foreign buyer&rsquo;s motivation &mdash; whether the Spear is wanted as a weapon of force, a token of political legitimacy, or a devotional relic &mdash; shapes the endgame. Symbolism buyers are patient; proof-of-force buyers are not.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I20 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I20</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The person currently holding proximity control over the Spear &mdash; the bearer &mdash; can be identified at the shrine. Their identity confirms which bearer candidate has claimed the relic.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I21 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id">I21</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label intel">Supporting Intel</div>
+    <div class="content-area">The bearer&rsquo;s self-justification &mdash; what they believe the Spear is telling them, what mandate they claim, and what violence they consider righteous &mdash; reveals the Spear&rsquo;s current activation vector.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- I22 Front -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id truth">I22</div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&#9670; Containment Truth</div>
+    <div class="content-area">The final element of the Quiescence protocol &mdash; the missing step from I11&rsquo;s incomplete custody sequence. This may be a specific liturgical phrase, a physical shielding component, or a suppression rite that only a Keep team can perform.</div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Blank Card 7 -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id"></div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&nbsp;</div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+  <!-- Blank Card 8 -->
+  <div class="card card-front">
+    <div class="card-header-row"><div class="card-id"></div><div class="card-label">Information Card</div></div>
+    <div class="card-type-label">&nbsp;</div>
+    <div class="content-area"></div>
+    <div class="card-footer">Neon Relic &bull; The Verdant Covenant</div>
+  </div>
+
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     BACK PAGE 3 â€” I17 through I22 + 2 blank
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="page">
+
+  <!-- I18 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I18</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L6 (Port/Export Route)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Br. Arce (gained at O5M1)</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Export Route &mdash; maritime, air, or diplomatic channel.</div></div>
+  </div>
+
+  <!-- I17 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I17</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L5 (Illicit Clinic)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">Rami Acosta</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Final Custody Break Site &mdash; leads to current Spear location.</div></div>
+  </div>
+
+  <!-- I20 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I20</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L7 (Hidden Shrine)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Proximity Control Holder &mdash; resolving the case requires knowing who holds the Spear.</div></div>
+  </div>
+
+  <!-- I19 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I19</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L6 (Port/Export Route)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Buyer Motivation &mdash; symbolism vs. proof-of-force shapes urgency.</div></div>
+  </div>
+
+  <!-- I22 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id truth">I22</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox checked"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L7 (Hidden Shrine &mdash; environmental / bearer)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">Day 2</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Missing Quiescence Piece &mdash; combined with I11, completes substitute custody protocol.</div></div>
+  </div>
+
+  <!-- I21 Back -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">I21</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox checked"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value">L7 (Hidden Shrine)</div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value">&mdash;</div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med">Bearer Beliefs &mdash; reveals Spear&rsquo;s current activation vector.</div></div>
+  </div>
+
+  <!-- Blank Back 8 -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">&nbsp;</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+  <!-- Blank Back 7 -->
+  <div class="card card-back">
+    <div class="back-header"><div class="back-title">DA Reference</div><div class="back-stamp">DA Eyes Only</div></div>
+    <div class="back-id">&nbsp;</div>
+    <div class="type-row"><span class="type-option"><span class="checkbox"></span> Containment Truth</span><span class="type-option"><span class="checkbox"></span> Supporting Intel</span></div>
+    <div><span class="field-label">Found At (L#)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Known By (NPC)</span><div class="field-value"></div></div>
+    <div><span class="field-label">HQ Fallback (Day)</span><div class="field-value"></div></div>
+    <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
+  </div>
+
+</div>
+
+</body>
+</html>

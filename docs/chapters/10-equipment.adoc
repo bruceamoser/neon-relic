@@ -93,7 +93,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 
 Supplies can be restocked:
 
-* During the *Equipping Phase* (Phase 3 of each Case File): any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
+* During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
 * During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
 * HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 

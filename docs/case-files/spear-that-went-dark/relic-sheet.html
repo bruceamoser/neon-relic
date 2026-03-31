@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relic Sheet — The Spear of Destiny</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(139,26,26,0.025); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--red-stamp); border-bottom:2px solid var(--red-stamp); padding:6px 0 7px; margin-bottom:10px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:22pt; letter-spacing:8px; text-transform:uppercase; color:var(--red-stamp); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--red-stamp); color:var(--red-stamp); font-family:var(--font-main); font-size:10pt; letter-spacing:5px; padding:2px 10px; transform:rotate(-2deg); margin-bottom:4px; }
+  .section-title { font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:2px; margin:7px 0 4px; }
+  .section-title.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .section-title.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+  .id-block-row { display:grid; gap:0; border:1.5px solid var(--ink); margin-bottom:0; }
+  .id-block-row + .id-block-row { border-top:1px solid var(--rule); }
+  .id-cell { padding:3px 6px 4px; border-right:1px solid var(--rule); }
+  .id-cell:last-child { border-right:none; }
+  .id-label { display:block; font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:2px; }
+  .id-value { display:block; font-family:var(--font-fill); font-size:8pt; min-height:13px; border-bottom:1px dotted var(--rule); }
+  .field-row { display:flex; gap:8px; margin-bottom:4px; }
+  .field { flex:1; display:flex; flex-direction:column; }
+  .field-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:1px; }
+  .field-value { border-bottom:1.5px solid var(--rule); min-height:14px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:8pt; }
+  .field-value.med { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:32px; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:44px; }
+  .danger-box { border:1.5px solid var(--red-stamp); padding:4px 6px; margin-bottom:4px; }
+  .truth-grid { display:grid; grid-template-columns:1fr 1fr; gap:3px 8px; margin-bottom:4px; }
+  .truth-row { display:flex; align-items:baseline; gap:5px; }
+  .checkbox { width:9px; height:9px; border:1px solid var(--ink); display:inline-block; flex-shrink:0; }
+  .truth-label { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); }
+  .truth-id { font-family:var(--font-fill); font-size:7pt; min-width:24px; border-bottom:1px dotted var(--rule); }
+  .truth-desc { flex:1; font-family:var(--font-fill); font-size:7pt; border-bottom:1px dotted var(--rule); min-height:12px; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">HAZARD</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Relic Sheet</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">HAZARDOUS MATERIAL</div>
+      <div>Form VC-16 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RELIC IDENTITY -->
+  <div class="id-block-row" style="grid-template-columns: 2fr 0.5fr 1fr 0.8fr;">
+    <div class="id-cell"><span class="id-label">Relic Name</span><span class="id-value">The Spear of Destiny (Longinus-class lance relic)</span></div>
+    <div class="id-cell"><span class="id-label">Tier</span><span class="id-value">4</span></div>
+    <div class="id-cell"><span class="id-label">Category</span><span class="id-value">Relic / Instrument / War Crown Surrogate</span></div>
+    <div class="id-cell"><span class="id-label">Risk Tag</span><span class="id-value">Catastrophic</span></div>
+  </div>
+  <div class="id-block-row" style="grid-template-columns: 0.8fr 0.8fr 0.8fr 1.6fr; border-top: 1px solid var(--rule);">
+    <div class="id-cell"><span class="id-label">Corruption Cost</span><span class="id-value">+3 Corruption</span></div>
+    <div class="id-cell"><span class="id-label">Artifact Die</span><span class="id-value">d20</span></div>
+    <div class="id-cell"><span class="id-label">Emission Type</span><span class="id-value">Pulse &rarr; Burst</span></div>
+    <div class="id-cell"><span class="id-label">Mundane Appearance</span><span class="id-value">Ancient iron lance head on a wooden shaft, unremarkable to civilian eyes</span></div>
+  </div>
+
+  <!-- READS -->
+  <div class="section-title">Intelligence Reads</div>
+  <div>
+    <span class="field-label">Surface Read &mdash; What does a civilian see?</span>
+    <div class="field-value" style="margin-bottom:3px;">A Christian relic of incalculable symbolic weight.</div>
+    <span class="field-label">Operational Read &mdash; What does the Covenant understand?</span>
+    <div class="field-value" style="margin-bottom:3px;">A sovereignty amplifier and metaphysical conflict engine.</div>
+    <span class="field-label">Cold Archive Read &mdash; What does the deep record show?</span>
+    <div class="field-value" style="margin-bottom:3px;">A postwar occult asset repeatedly hidden rather than destroyed.</div>
+  </div>
+
+  <!-- ACTIVATION & EFFECT -->
+  <div class="section-title">Activation &amp; Effect</div>
+  <div class="field-row">
+    <div class="field">
+      <span class="field-label">Activation Condition &mdash; What triggers the artifact?</span>
+      <div class="field-value med">Blood exposure, public claim-language, and contested authority converge around it. A carrier invoking mandate, sacrifice, divine sanction, victory, kingship, empire, or national rebirth around fresh blood or a public audience.</div>
+    </div>
+    <div class="field">
+      <span class="field-label">Mechanical Effect &mdash; What does it do when activated?</span>
+      <div class="field-value med">Force ideological submission or ecstatic obedience in a zone; reveal/intensify the nearest claimant dynamic in a crowd; transform a confrontation into a legitimacy crisis; inflict catastrophic Corruption on anyone denying its authority in proximity.</div>
+    </div>
+  </div>
+
+  <!-- FRACTURE -->
+  <div class="danger-box">
+    <span class="field-label">Fracture &mdash; What happens on an Artifact Die roll of 1?</span>
+    <div class="field-value med" style="border-color:var(--red-stamp);">A public miracle/atrocity manifests (advance relic milestones); the current bearer suffers wound bloom, conviction collapse, or ecstatic command-delusion; nearby witnesses treat random violence as sacred proof; electronics fail in a widening radius and the scene becomes impossible to contain quietly.</div>
+  </div>
+
+  <!-- CONTAINMENT PROFILE -->
+  <div class="section-title red">Containment Profile</div>
+  <div>
+    <span class="field-label">Full handling and transport requirements</span>
+    <div class="field-value tall">Wrap in lead-lined cloth over consecrated ash and salt. Isolate bearer from followers, witnesses, and cameras. No one may address it as relic, lance, spear, destiny, empire, victory, or instrument of God during handling. Transfer in silence under low light. Keep-led suppression rite before vehicle transport. All active claimant language shut down in containment zone. If conditions are broken, fill 1 extra shift quadrant and/or worsen one related organization.</div>
+  </div>
+
+  <!-- CONTAINMENT TRUTHS CHECKLIST -->
+  <div class="section-title red">Containment Truth Checklist</div>
+  <div class="truth-grid">
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I4</span><span class="truth-desc">Trigger &mdash; blood exposure + claim-language + contested authority</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I9</span><span class="truth-desc">Appetite &mdash; wound trauma, ideological certainty, righteous violence, chosen-bearer proximity</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I11</span><span class="truth-desc">Quiescence &mdash; substitute custody: shielding, silence, no claimant language, suppression rite</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I15</span><span class="truth-desc">Supernatural effects: wound bloom, conviction overwrite, ecstatic obedience</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I16</span><span class="truth-desc">Chosen-ruler speech transforms confrontation into legitimacy crisis</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I20</span><span class="truth-desc">Proximity control required &mdash; isolation from followers and audiences</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id">I22</span><span class="truth-desc">Missing quiescence piece &mdash; consecrated ash source needed</span></div>
+    <div class="truth-row"><span class="checkbox"></span><span class="truth-id"></span><span class="truth-desc"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>VC-16 &bull; The Verdant Covenant &bull; DA Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Relic Sheet &mdash; The Spear of Destiny</span>
+  </div>
+</div>
+
+</body>
+</html>

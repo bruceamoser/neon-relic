@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON RELIC â€” Operations Board</title>
+<style>
+  /* â”€â”€ RESET â”€â”€ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* â”€â”€ FONTS â”€â”€ */
+  @font-face {
+    font-family: 'SpecialElite';
+    src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
+         local('Special Elite');
+    font-weight: normal; font-style: normal;
+  }
+  @font-face {
+    font-family: 'CourierPrime';
+    src: url('../docs/themes/CourierPrime-Regular.ttf') format('truetype'),
+         local('Courier New');
+    font-weight: normal; font-style: normal;
+  }
+
+  /* â”€â”€ PAGE â”€â”€ */
+  @page { size: letter landscape; margin: 0; }
+  @media print {
+    body { margin: 0; padding: 0; background: none; }
+    .page { box-shadow: none; margin: 0; }
+  }
+
+  :root {
+    --ink:          #1a1a18;
+    --ink-faded:    #4a4a42;
+    --ink-light:    #8a8a7e;
+    --paper:        #e8e4d8;
+    --green-stamp:  #2d5a27;
+    --red-stamp:    #8b1a1a;
+    --rule:         #999;
+    --rule-light:   #ccc;
+    --field-bg:     rgba(255,255,255,0.3);
+    --font-main:    'SpecialElite', 'Courier New', monospace;
+    --font-fill:    'CourierPrime', 'Courier New', monospace;
+  }
+
+  body {
+    background: #555;
+    font-family: var(--font-main);
+    font-size: 9pt;
+    line-height: 1.3;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 11in;
+    height: 8.5in;
+    margin: 0.3in auto;
+    padding: 0.25in 0.35in 0.25in;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* â”€â”€ PAPER TEXTURE â”€â”€ */
+  .page::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 11px,
+        rgba(0,0,0,0.012) 11px, rgba(0,0,0,0.012) 12px),
+      radial-gradient(ellipse at 15% 78%, rgba(139,119,80,0.07), transparent 55%),
+      radial-gradient(ellipse at 88% 18%, rgba(139,119,80,0.05), transparent 50%);
+    pointer-events: none; z-index: 0;
+  }
+  .page::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none; z-index: 2;
+  }
+  .page > * { position: relative; z-index: 1; }
+
+  /* â”€â”€ WATERMARK â”€â”€ */
+  .watermark {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-family: var(--font-main);
+    font-size: 80pt; letter-spacing: 18px;
+    color: rgba(139,26,26,0.025);
+    text-transform: uppercase; white-space: nowrap;
+    pointer-events: none; z-index: 0;
+  }
+
+  /* â”€â”€ PERFORATION STRIP â”€â”€ */
+  .perf-strip {
+    height: 10px;
+    border-bottom: 1.5px dashed #bbb;
+    margin-bottom: 6px;
+    overflow: hidden;
+    color: #bbb; font-size: 4pt; letter-spacing: 2.5px; line-height: 1.1;
+  }
+
+  /* â”€â”€ HEADER â”€â”€ */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid var(--red-stamp);
+    border-bottom: 2px solid var(--red-stamp);
+    padding: 4px 0 5px;
+    margin-bottom: 8px;
+  }
+  .header-left { flex: 1; }
+  .header-title {
+    font-family: var(--font-main);
+    font-size: 16pt; letter-spacing: 5px;
+    text-transform: uppercase; color: var(--red-stamp); line-height: 1;
+  }
+  .header-subtitle {
+    font-family: var(--font-main);
+    font-size: 6.5pt; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--ink-faded); margin-top: 3px;
+  }
+  .header-right {
+    text-align: right; font-size: 6pt;
+    color: var(--ink-faded); line-height: 1.6;
+  }
+  .classification {
+    display: inline-block;
+    border: 2.5px solid var(--red-stamp);
+    color: var(--red-stamp);
+    font-family: var(--font-main);
+    font-size: 9pt; letter-spacing: 4px;
+    padding: 1px 8px;
+    transform: rotate(-2deg); margin-bottom: 3px;
+  }
+
+  /* â”€â”€ BOARD TABLE â”€â”€ */
+  .board {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  .board th, .board td {
+    border: 1.5px solid var(--rule);
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  /* Label column (left side) */
+  .label-col {
+    width: 1.65in;
+    text-align: left;
+    padding: 2px 5px;
+    background: var(--field-bg);
+  }
+
+  /* Day-number header cells */
+  .board thead th {
+    font-family: var(--font-main);
+    font-size: 9pt;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: var(--ink);
+    height: 20px;
+    background: var(--field-bg);
+  }
+  .board thead th.label-col {
+    font-size: 5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faded);
+    vertical-align: bottom;
+    padding-bottom: 3px;
+  }
+  /* Catastrophe column highlight */
+  .col-cat {
+    color: var(--red-stamp) !important;
+    font-weight: bold;
+  }
+
+  /* ── SHIFT ROW ── */
+  .shift-row td {
+    padding: 0;
+    height: 0.52in;
+  }
+  .shift-row .label-col {
+    padding: 2px 5px;
+  }
+  .shift-label {
+    font-family: var(--font-main);
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink);
+    font-weight: bold;
+    line-height: 1.1;
+  }
+  .shift-sublabel {
+    font-size: 4.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-faded);
+    margin-top: 1px;
+  }
+
+  /* 2Ã—2 quadrant grid inside each shift-row cell */
+  .quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+  }
+  .quad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-main);
+    font-size: 4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--ink-light);
+    border: 0.5px solid var(--rule-light);
+  }
+
+  /* â”€â”€ RELIC MILESTONE ANNOTATION ROW â”€â”€ */
+  .ms-row td {
+    height: 18px;
+    font-family: var(--font-fill);
+    font-size: 6pt;
+    color: var(--ink-faded);
+  }
+  .ms-row .label-col {
+    font-family: var(--font-main);
+    font-size: 4.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--red-stamp);
+    padding: 1px 5px;
+  }
+
+  /* â”€â”€ SEPARATOR â”€â”€ */
+  .sep-row td {
+    height: 4px;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+  }
+  .sep-row .label-col {
+    background: transparent;
+  }
+
+  /* â”€â”€ ORGANIZATION ROWS â”€â”€ */
+  .org-row td {
+    height: 0.5in;
+  }
+  .org-row .label-col {
+    padding: 2px 4px;
+  }
+  .org-info {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 1px;
+  }
+  .org-num {
+    font-family: var(--font-fill);
+    font-size: 7pt;
+    font-weight: bold;
+    color: var(--ink);
+    flex-shrink: 0;
+  }
+  .org-name-field {
+    flex: 1;
+    border-bottom: 1px solid var(--ink);
+    min-height: 12px;
+    font-family: var(--font-fill);
+    font-size: 7.5pt;
+  }
+  .org-meta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1px;
+  }
+  .org-val-box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .org-val-label {
+    font-family: var(--font-main);
+    font-size: 4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--ink-faded);
+  }
+  .org-val-field {
+    width: 18px; height: 14px;
+    border: 1px solid var(--ink);
+    text-align: center;
+    font-family: var(--font-fill);
+    font-size: 7pt;
+    background: var(--field-bg);
+  }
+  .checkbox {
+    width: 8px; height: 8px;
+    border: 1px solid var(--ink);
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .status-label {
+    font-family: var(--font-main);
+    font-size: 4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--ink-faded);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  /* Countdown square cells */
+  .sq {
+    background: var(--field-bg);
+  }
+
+  /* â”€â”€ LEGEND â”€â”€ */
+  .legend {
+    margin-top: 6px;
+    display: flex;
+    gap: 16px;
+    font-family: var(--font-main);
+    font-size: 5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-faded);
+    padding: 0 2px;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 3px;
+  }
+  .legend-swatch {
+    width: 8px; height: 8px;
+    border: 1px solid var(--rule);
+    display: inline-block;
+  }
+  .legend-swatch.filled {
+    background: var(--ink-light);
+  }
+
+  /* â”€â”€ FOOTER â”€â”€ */
+  .footer {
+    margin-top: auto;
+    display: flex; justify-content: space-between;
+    font-family: var(--font-main);
+    font-size: 5pt; letter-spacing: 1.5px;
+    color: var(--ink-light);
+    border-top: 1px solid var(--rule-light);
+    padding-top: 3px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹</div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Operations Board</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">DA EYES ONLY</div>
+      <div>Form VC-19 &bull; Rev. 1987</div>
+      <div style="margin-top:2px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:120px; height:13px;"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOARD GRID -->
+  <table class="board">
+    <thead>
+      <tr>
+        <th class="label-col">Days Until Catastrophe</th>
+        <th>14</th><th>13</th><th>12</th><th>11</th><th>10</th><th>9</th><th>8</th>
+        <th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th class="col-cat">1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- SHIFT ROW -->
+      <tr class="shift-row">
+        <td class="label-col">
+          <div class="shift-label">Shifts</div>
+          <div class="shift-sublabel">Day Countdown &bull; Relic Milestones</div>
+        </td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+      </tr>
+
+      <!-- RELIC MILESTONE ANNOTATION ROW -->
+      <tr class="ms-row">
+        <td class="label-col">Relic Milestones</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+
+      <!-- VISUAL SEPARATOR -->
+      <tr class="sep-row"><td class="label-col"></td><td colspan="14"></td></tr>
+
+      <!-- ORGANIZATION 1 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O1</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 2 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O2</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 3 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O3</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 4 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O4</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 5 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O5</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 6 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O6</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 7 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O7</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+
+      <!-- ORGANIZATION 8 -->
+      <tr class="org-row">
+        <td class="label-col">
+          <div class="org-info">
+            <span class="org-num">O8</span>
+            <div class="org-name-field"></div>
+          </div>
+          <div class="org-meta">
+            <div class="org-val-box"><span class="org-val-label">Val</span><div class="org-val-field"></div></div>
+            <span class="status-label"><span class="checkbox"></span> Active</span>
+            <span class="status-label"><span class="checkbox"></span> Dormant</span>
+          </div>
+        </td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq"></td><td class="sq"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch filled"></div> Pre-filled (past starting value)</div>
+    <div class="legend-item"><div class="legend-swatch"></div> Active countdown square</div>
+    <div class="legend-item">O#M# = Organization milestone shorthand</div>
+    <div class="legend-item">M / D / E / N = Morning / Day / Evening / Night</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>VC-19 &bull; The Verdant Covenant &bull; DA Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Operations Board</span>
+  </div>
+</div>
+
+</body>
+</html>
