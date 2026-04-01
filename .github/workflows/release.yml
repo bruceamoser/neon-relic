@@ -48,11 +48,44 @@ jobs:
                             f"url('{cp_uri}')", html)
               pathlib.Path(dest).write_text(html, encoding='utf-8')
 
-          inline_fonts("assets/character-sheet.html", "starter-kit/agent-dossier-blank.html")
-          inline_fonts("assets/case-file-form.html",  "starter-kit/case-file-form-blank.html")
+          # Blank templates
+          blank = pathlib.Path("starter-kit/blank-templates")
+          blank.mkdir(parents=True, exist_ok=True)
+          templates = {
+              "assets/character-sheet.html":        "agent-dossier.html",
+              "assets/case-file-form.html":         "case-file-form.html",
+              "assets/case-brief.html":             "case-brief.html",
+              "assets/operations-board.html":       "operations-board.html",
+              "assets/organization-reference.html": "organization-reference.html",
+              "assets/information-card.html":       "information-card.html",
+              "assets/location-page.html":          "location-page.html",
+              "assets/npc-card.html":               "npc-card.html",
+              "assets/relic-sheet.html":            "relic-sheet.html",
+          }
+          for src, dest in templates.items():
+              inline_fonts(src, str(blank / dest))
 
+          # Prebuilt characters
+          chars = pathlib.Path("starter-kit/prebuilt-characters")
+          chars.mkdir(parents=True, exist_ok=True)
           for p in sorted(pathlib.Path("assets/prebuilt").glob("*.html")):
-              inline_fonts(str(p), f"starter-kit/{p.name}")
+              inline_fonts(str(p), str(chars / p.name))
+
+          # Sample case file
+          case_src = pathlib.Path("docs/case-files/spear-that-went-dark")
+          case_dest = pathlib.Path("starter-kit/sample-case-file")
+          case_dest.mkdir(parents=True, exist_ok=True)
+          for p in sorted(case_src.glob("*.html")):
+              inline_fonts(str(p), str(case_dest / p.name))
+          readme = case_src / "README.md"
+          if readme.exists():
+              shutil.copy2(str(readme), str(case_dest / "README.md"))
+          handouts_src = case_src / "handouts"
+          if handouts_src.is_dir():
+              handouts_dest = case_dest / "handouts"
+              handouts_dest.mkdir(exist_ok=True)
+              for md in sorted(handouts_src.glob("*.md")):
+                  shutil.copy2(str(md), str(handouts_dest / md.name))
 
           print("Font inlining complete.")
           PYEOF

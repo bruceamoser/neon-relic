@@ -31,15 +31,36 @@ Neon Relic combines:
 
 Beginning with v2.0.0, each release ships a **Neon Relic Starter Kit** — a single zip containing everything players and Directors of Agents need to run a session:
 
-| File | Contents |
-|---|---|
-| `neon-relic-core-rules.pdf` | The compiled rulebook |
-| `case-file-instructions.pdf` | Step-by-step guide for Directors of Agents |
-| `agent-dossier-blank.html` | Fillable Agent Dossier (Form VC-7) — open in any browser |
-| `case-file-form-blank.html` | Fillable Case File Form (Form VC-12) — open in any browser |
-| `character-*.html` | Five prebuilt character dossiers (one per division) |
+```
+starter-kit.zip
+├── neon-relic-core-rules.pdf          ← The compiled rulebook
+├── case-file-instructions.pdf         ← Step-by-step DA guide
+├── blank-templates/                   ← Fillable HTML forms — open in any browser
+│   ├── agent-dossier.html
+│   ├── case-brief.html
+│   ├── case-file-form.html
+│   ├── information-card.html
+│   ├── location-page.html
+│   ├── npc-card.html
+│   ├── operations-board.html
+│   ├── organization-reference.html
+│   └── relic-sheet.html
+├── prebuilt-characters/               ← Five ready-to-play agent dossiers
+│   └── character-*.html
+└── sample-case-file/                  ← The Spear That Went Dark — complete case
+    ├── README.md
+    ├── case-brief.html
+    ├── information-cards.html
+    ├── locations.html
+    ├── npc-cards.html
+    ├── operations-board.html
+    ├── organization-reference.html
+    ├── relic-sheet.html
+    └── handouts/
+        └── *.md
+```
 
-The HTML forms are fully self-contained with embedded fonts — no internet connection or external files required. They can be filled out in the browser and printed to PDF via Ctrl+P.
+All HTML forms are fully self-contained with embedded fonts — no internet connection or external files required. They can be filled out in the browser and printed to PDF via Ctrl+P.
 
 ## Repository Structure
 
