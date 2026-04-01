@@ -1,26 +1,35 @@
-# The Spear That Went Dark — Support Package
+# The Spear That Went Dark — Case Packet
 
-This directory contains image-generation prompt files for the sample case *The Spear That Went Dark*. All substantive handout text and play-aid content now lives in the book chapter `docs/chapters/20-sample-case-file.adoc`.
+This directory contains the complete case packet for *The Spear That Went Dark* — all filled-in forms for the 8-piece document package described in Chapter 15. The book chapter (`docs/chapters/20-sample-case-file.adoc`) provides design commentary and image pages; the substantive case data lives here.
 
-These prompts produce images for the case's **document package** — the set of physical or printable materials a DA assembles before play. The full package structure is defined in Chapter 15 (Case File rules) and includes:
+## Case Data Files
 
-- **Case Brief** — one-page operational summary (text-only, no image prompt needed)
-- **Operations Board** — phases row and organization countdown grid (tracker in the chapter)
-- **Locations** (L1–L7) — one-page reference per location
-- **NPC Cards** (8 NPCs) — playing-card-sized references
-- **Information Cards** (I1–I22) — playing-card-sized clue references (text-only, no image prompt needed)
-- **Relic Sheet** — artifact reference with containment profile
-- **Clue Handouts** (7 handouts) — player-facing props and packet returns
+These filled-in HTML forms contain all the mechanical and narrative content a DA needs to run the case. Print them directly from a browser — each file matches the corresponding blank template in `assets/`.
 
-## Structure
+| File | Template | Contents |
+| --- | --- | --- |
+| `case-brief.html` | VC-17 | Case identity, mystery statement, real situation, objectives, containment truths, key actors, resolution, relic milestones, DA notes |
+| `relic-sheet.html` | VC-16 | Spear profile — identity, effects, activation, fracture, containment, bearer candidates |
+| `organization-reference.html` | VC-18 | 6 organizations (O1–O6) with status, starting values, and full milestone descriptions with cross-links |
+| `operations-board.html` | VC-19 | Pre-filled operations board with 6 org rows, relic milestones, and phase annotations |
+| `locations.html` | VC-14 | 7 locations (L1–L7) with availability, NPCs, information, results, and milestone changes — one page per location |
+| `npc-cards.html` | VC-15 | 8 NPC cards (4 pages, 2 per page) with organization, secret, goal, artifact connection, knowledge, and results |
+| `information-cards.html` | Info Card | 22 information cards (I1–I22) — 3 front pages + 3 back pages for double-sided printing |
 
-- `handouts/` — one self-contained image-generation prompt per image
+### Supplemental Files (AsciiDoc)
 
-## How to Use
+These files do not have matching HTML form templates and remain in AsciiDoc format.
 
-Each file contains exactly one complete prompt that can be copied directly into an image generator. No assembly required — paste the prompt block and generate.
+| File | Contents |
+| --- | --- |
+| `handouts.adoc` | 6 handout texts (Covenant Archive, Church Memo, Museum Abstract, Black-Market Brief, Tabloid Clipping, Thief Notes) |
+| `play-aids.adoc` | Ops board trackers, NPC dossiers, shift timeline grid, packet tracker |
 
-When final images are produced, place them in `assets/png/` using the output filenames listed below. Those filenames align with the placeholder pages at the end of the sample case chapter.
+## Image-Generation Prompts
+
+The `handouts/` subdirectory contains one self-contained image-generation prompt per image. Each file can be copied directly into an image generator — no assembly required.
+
+When final images are produced, place them in `assets/png/` using the output filenames listed below. Those filenames align with the image pages at the end of the sample case chapter.
 
 ## Clue Handouts
 

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; page-break-after:always; } .page:last-child { page-break-after:auto; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:8pt; line-height:1.25; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .cut-line { border-top:1.5px dashed #aaa; margin:0; position:relative; }
+  .cut-line::before { content:'✂'; position:absolute; left:8px; top:-7px; font-size:8pt; color:#aaa; }
+  .npc-card { flex:1; padding:0.25in 0.38in 0.2in; position:relative; display:flex; flex-direction:column; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:48pt; letter-spacing:12px; color:rgba(45,90,39,0.033); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .card-header { display:flex; justify-content:space-between; align-items:flex-start; border-top:2.5px solid var(--ink); border-bottom:1.5px solid var(--ink); padding:4px 0 5px; margin-bottom:6px; }
+  .card-title { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); }
+  .card-stamp { font-family:var(--font-main); font-size:6pt; letter-spacing:3px; color:var(--red-stamp); }
+  .npc-portrait { width:0.9in; height:1.0in; border:1.5px solid var(--rule); background:var(--field-bg); display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0; }
+  .npc-portrait img { width:100%; height:100%; object-fit:cover; }
+  .npc-portrait-placeholder { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-light); }
+  .name-row { display:flex; align-items:baseline; gap:10px; margin-bottom:5px; }
+  .npc-name { flex:1.5; border-bottom:2px solid var(--ink); min-height:18px; font-family:var(--font-fill); font-size:11pt; font-weight:bold; padding:1px 3px; }
+  .npc-org { flex:1; border-bottom:1.5px solid var(--rule); min-height:16px; font-family:var(--font-fill); font-size:8pt; padding:1px 3px; background:var(--field-bg); }
+  .field-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:1px; }
+  .field-value { border-bottom:1px solid var(--rule); min-height:14px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:7.5pt; margin-bottom:4px; }
+  .field-value.med { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:28px; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:38px; }
+  .field-row { display:flex; gap:8px; }
+  .field-col { flex:1; display:flex; flex-direction:column; }
+  .section-label { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:2px; color:var(--green-stamp); border-bottom:1px solid var(--green-stamp); padding-bottom:1px; margin:4px 0 3px; }
+  .section-label.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .card-footer { margin-top:auto; font-family:var(--font-main); font-size:4.5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:3px; text-transform:uppercase; display:flex; justify-content:space-between; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════
+     PAGE 1 — Lucia Ferreyra & Detective Mateo Suárez
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- ── LUCIA FERREYRA ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Lucia Ferreyra</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">Independent (estate custodian line)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">Raised in custodian tradition. Never handled the Spear directly but witnessed its effects during suppression rites as a child.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">She knows the vault was a custody chamber, not a safe &mdash; and she has the family liturgical sequence memorized.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Protect the family&rsquo;s reputation and prevent anyone from learning the true nature of what was stored.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I4 (vault was suppressive), I9 (family were custodians), I11 (partial substitute custody sequence).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O4M2: learns Church observers are monitoring the family &mdash; becomes more cooperative if offered protection.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L1 (Estate Aftermath).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I4, I9, I11. Reveals partial containment sequence. May provide access to family chapel records (unlocks path to L7).</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">Refuses further contact. O4 advances 1 square (Church observers alerted by her distress).</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+  <div class="cut-line"></div>
+
+  <!-- ── DETECTIVE MATEO SUÁREZ ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Detective Mateo Su&aacute;rez</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O3 (Buenos Aires Police)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">No direct contact. Has interviewed witnesses who exhibited mild ideological contagion.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">He knows the robbery case has unexplained elements &mdash; witnesses describing identical wounds, objects that should not exist &mdash; but he cannot write that in a report.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Close the robbery case cleanly before it becomes a political embarrassment.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I5 (witness list), I6 (wounded thief route), I8 (sketch fragments).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O3M2: learns I7 (hospital referrals) from a released witness.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L2 (Police Station).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I5, I6, I7, I8. Becomes a quiet ongoing source. Opens unofficial access to police and hospital records.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">O3 advances 1 square (official attention drawn to agents). Agents flagged in police system.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     PAGE 2 — Father Vale & Sister Inés
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- ── FATHER ESTEBAN VALE ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Father Esteban Vale</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O4 (The Catholic Church)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">Has read the black-chamber file. Understands the relic as a sovereignty token, not merely a devotional artifact.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">Authorized to reclaim the relic by any necessary means &mdash; but his superiors will deny his existence if exposed.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Recover the Spear into Church custody without a public ecclesiastical scandal.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I9 (family were custodians), I10 (postwar custody compromise).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O4M2: learns I11 (partial substitute custody sequence) from Church archives.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L1 (Estate &mdash; after O4M1), L3 (Church Archive &mdash; after O4M2).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I9, I10. May negotiate exchange if agents demonstrate containment capability. Introduces Sister In&eacute;s.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">O4 advances 1 square (Church accelerates independent recovery). Agents excluded from ecclesiastical channels.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+  <div class="cut-line"></div>
+
+  <!-- ── SISTER INÉS BARRAL ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Sister In&eacute;s Barral</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O4 (Church &mdash; archivist)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">Studied the textual record extensively. Understands Quiescence conditions better than Father Vale.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">Has access to the older containment record and believes the Church should share it, not hoard it.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Preserve the archival truth about the relic custody lineage, even if her superiors disagree.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I9 (family were custodians), I10 (postwar custody compromise), I11 (partial substitute custody sequence).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O4M3: learns the retrieval cleric&rsquo;s full plan &mdash; may share it if she believes the agents are more careful.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L3 (Church Archive).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I9, I10, I11. Provides most complete Quiescence picture. May share information even against Church orders.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">O4 advances 1 square (Church tightens archive access). Sister In&eacute;s is reassigned &mdash; no longer available.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     PAGE 3 — Rami Acosta & Sabine Voss
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- ── RAMIRO "RAMI" ACOSTA ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Ramiro &ldquo;Rami&rdquo; Acosta</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O2 (The Theft Crew)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">Touched the Spear during the heist. Suffering reopened wounds, religious certainty, and intermittent ecstatic episodes.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">Knows where the Spear was last held and who currently has proximity control &mdash; but suffering wound bloom and command-delusion.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Survive. He wants medical treatment and a way out of Buenos Aires.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I15 (supernatural effects &mdash; wound bloom), I16 (who began speaking like a chosen ruler), I17 (final custody break site).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">None &mdash; deteriorating.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L5 (Illicit Clinic &mdash; available when O2M2 triggers).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I15, I16, I17. Can lead agents to L7 (Hidden Shrine). Recovered thief notes available as handout.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">O2 advances 1 square (Rami disappears or silenced by Compact). Path to L7 becomes harder.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+  <div class="cut-line"></div>
+
+  <!-- ── SABINE VOSS ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Sabine Voss</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O1 (Vantablack Compact)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">No direct handling. Views the Spear as high-value merchandise, not a supernatural threat. This will change.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">She financed the heist and has already taken significant losses. Her superiors are losing patience.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Recover the Spear and complete the sale before the Compact writes off the operation &mdash; and her.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I12 (who financed the theft), I13 (handoff collapse location).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O1M2: learns I14 (buyer demands). At O5M1: learns I18 (export route).</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L4 (Currency Exchange &mdash; after O1M2), L6 (Port/Export &mdash; after O5 activates).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">I12, I13 extractable through interrogation or intercepted communications. Voss will not cooperate voluntarily.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">O1 advances 1 square (Compact accelerates recovery). Agents marked as interference targets.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     PAGE 4 — Iván Luján & Brother Tomás Arce
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- ── IVÁN LUJÁN ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Iv&aacute;n Luj&aacute;n</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">O1 (Compact cutout / nationalist fixer)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">Extended proximity exposure. Exhibiting claimant-language patterns: speaking of destiny, mandate, and chosen vessels.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">He has begun interpreting tactical instinct as divine revelation. He is the strongest bearer candidate.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">He no longer wants to sell the Spear. He wants to keep it &mdash; and he is beginning to believe he was meant to.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I13 (handoff collapse location), I16 (who began speaking like a chosen ruler &mdash; because it was him).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">None &mdash; he is becoming the problem, not gathering intelligence.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L4 (Currency Exchange), L7 (Hidden Shrine &mdash; as the bearer).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Agents can identify him as the bearer before full activation. L7 unlocks through his movements.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">Fill 1 extra shift quadrant on the Operations Board. Bearer activation accelerates.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+  <div class="cut-line"></div>
+
+  <!-- ── BROTHER TOMÁS ARCE ── -->
+  <div class="npc-card">
+    <div class="watermark">COVENANT</div>
+    <div class="card-header">
+      <div class="card-title">NPC Reference Card &mdash; Neon Relic</div>
+      <div class="card-stamp">DA Eyes Only &bull; VC-AR-87-041</div>
+    </div>
+    <div style="display:flex; gap:8px; margin-bottom:5px;">
+      <div class="npc-portrait"><span class="npc-portrait-placeholder">Portrait</span></div>
+      <div style="flex:1; display:flex; flex-direction:column;">
+        <div class="name-row" style="margin-bottom:3px;">
+          <div style="flex:1.5;"><span class="field-label">Name</span><div class="npc-name">Brother Tom&aacute;s Arce</div></div>
+          <div style="flex:1;"><span class="field-label">Organization (O#)</span><div class="npc-org">Independent (false ecclesiastical broker)</div></div>
+        </div>
+        <div><span class="field-label">Artifact Connection</span><div class="field-value" style="min-height:18px;">None directly. Has heard enough from multiple sources to piece together partial truths &mdash; secondhand and unreliable.</div></div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Secret</span><div class="field-value med">He wears clerical dress but has no real ecclesiastical authority. He brokers between clergy, smugglers, and collectors.</div></div>
+      <div class="field-col"><span class="field-label">Goal</span><div class="field-value med">Profit from the chaos by selling information to whoever pays &mdash; Church, Compact, or buyers.</div></div>
+    </div>
+    <div class="section-label">Knowledge</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Starting Knowledge (I#)</span><div class="field-value" style="min-height:18px;">I10 (postwar custody compromise &mdash; partial), I14 (buyer demands &mdash; partial).</div></div>
+      <div class="field-col"><span class="field-label">Gained Knowledge (milestone-triggered)</span><div class="field-value" style="min-height:18px;">At O5M1: learns I18 (export route) from courier contacts.</div></div>
+    </div>
+    <div><span class="field-label">Locations (L#)</span><div class="field-value" style="min-height:14px;">L3 (Church Archive &mdash; posing as clergy), L6 (Port/Export &mdash; brokering).</div></div>
+    <div class="section-label red">Engagement Results</div>
+    <div class="field-row">
+      <div class="field-col"><span class="field-label">Positive Result</span><div class="field-value med">Shares I10 (partial), I14 (partial), I18. Information may be incomplete or slanted &mdash; but accelerates timelines.</div></div>
+      <div class="field-col"><span class="field-label">Negative Result</span><div class="field-value med">Information sold to Compact instead. O1 advances 1 square.</div></div>
+    </div>
+    <div class="card-footer"><span>VC-15 &bull; NPC Card</span><span>Neon Relic &copy; 2025</span></div>
+  </div>
+
+</div>
+
+</body>
+</html>

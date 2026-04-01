@@ -1,9 +1,9 @@
 ﻿[#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
-This chapter presents a full sample case built for the revised Neon Relic case structure: an Operations Board with organization rows and relic milestones, Locations with NPC Cards and Information Cards, delayed information returns, and a relic whose containment problem matters as much as its location.
+This chapter presents a complete sample case built for the revised Neon Relic case structure. Rather than reproducing every NPC card, Location form, and Information Card inline, the chapter focuses on *design commentary* — why the case is built the way it is, what makes it work, and what a DA should understand before running it.
 
-Use it as both a playable operation and a model for authoring future cases.
+The full case packet — filled-in forms for every component of the 8-piece document package — lives in `docs/case-files/spear-that-went-dark/`. Print or reference those files at the table. Read this chapter to understand the design logic behind them.
 
 ---
 
@@ -23,7 +23,7 @@ Use it as both a playable operation and a model for authoring future cases.
 
 == Working Premise
 
-The *Spear of Destiny* -- or a relic credibly believed to be that spearhead and its restored shaft assembly -- was held in a private vault beneath a fortified estate in Buenos Aires under discreet aristocratic custody. Three nights ago, the estate was hit by a professional theft crew funded through Vantablack Compact cutouts. The operation succeeded just long enough to become dangerous.
+The *Spear of Destiny* — or a relic credibly believed to be that spearhead and its restored shaft assembly — was held in a private vault beneath a fortified estate in Buenos Aires under discreet aristocratic custody. Three nights ago, the estate was hit by a professional theft crew funded through Vantablack Compact cutouts. The operation succeeded just long enough to become dangerous.
 
 The theft team breached the estate, exposed the relic to a broken custody sequence, and failed to complete the scheduled handoff. Since then, the Spear has gone still somewhere in the city while hospitals, thieves, clergy, police, and black-market intermediaries all react to different pieces of the same event.
 
@@ -47,1033 +47,103 @@ The team must:
 
 ---
 
-== The Spear of Destiny
+== Design Commentary
 
-[%header,cols="2,4"]
-|===
-| Tier | 4
-| Category | Relic / Instrument / War Crown Surrogate
-| Risk Tag | Catastrophic
-| Surface Read | A Christian relic of incalculable symbolic weight
-| Operational Read | A sovereignty amplifier and metaphysical conflict engine
-| Cold Archive Read | A postwar occult asset repeatedly hidden rather than destroyed
-| Corruption Cost | +3 Corruption on activation
-| Artifact Die | d20
-| Emission | Pulse becoming Burst as relic milestones advance on the Operations Board
-|===
+This section explains the structural choices behind *The Spear That Went Dark*. Use it as a teaching guide for building your own cases.
 
-=== What the Spear Does
+=== Artifact as Tone Engine
 
-The Spear does not merely wound. It *authorizes*.
+The Spear does not merely threaten — it *authorizes*. Every design decision flows from this core behavior. The relic milestones escalate from subtle medical anomalies (Day 11: cruciform wounds) through environmental breakdown (Day 5: electronics fail) to a public sovereignty crisis (Day 1: mass claimant event). Each milestone is specific to the artifact's logic, not generic horror.
 
-Exposure produces escalating conviction that bloodshed, legitimacy, and command have fused into one sacred right. Carriers and witnesses may begin to believe:
+This specificity shapes the entire case. NPCs do not simply "act suspicious" — they begin speaking in command-language. Locations do not just "feel ominous" — radios fail and witnesses describe conviction rather than fear. When you design your own case, let the artifact's nature flavor every entity it touches.
 
-* they were chosen to bear history
-* command belongs to whoever can endure the wound-object longest
-* violence is righteous if framed as restoration
-* old crusades, empires, and states were interrupted rather than ended
+=== Organization Architecture
 
-=== Activation Condition
+The case uses six organizations — four Active, two Dormant. This is near the recommended maximum of eight rows and produces enough cross-pressure to fill a 1-3 session case without overwhelming the DA.
 
-The Spear activates when blood exposure, public claim-language, and contested authority converge around it. A single trigger may not be enough. A carrier invoking mandate, sacrifice, divine sanction, victory, kingship, empire, or national rebirth around fresh blood or a public audience is usually sufficient.
+The four Active organizations represent distinct institutional responses to the same event:
 
-=== Mechanical Effect
+* *O1 (The Vantablack Compact, start 9)* — the criminal apparatus that caused the problem
+* *O2 (The Theft Crew, start 6)* — the unstable human debris from the heist, close to crisis
+* *O3 (Buenos Aires Police, start 10)* — an institutional response the agents cannot control
+* *O4 (The Catholic Church, start 12)* — a slow-moving rival with legitimate historical claims
 
-When fully activated, the Spear can do one of the following, depending on scene framing:
+Starting values are deliberately staggered. O2 starts at 6 — only six squares from catastrophe — making the surviving thief an urgent pressure source from the first day. O4 starts at 12, giving the Church time to observe before acting. This staggering ensures that organizations do not all hit milestones at the same time and that the DA always has at least one row that is about to escalate.
 
-* force immediate ideological submission or ecstatic obedience in a zone
-* reveal and intensify the nearest claimant dynamic in a crowd
-* transform a confrontation into a legitimacy crisis, making all bystanders choose a side
-* inflict catastrophic Corruption on anyone trying to deny its symbolic authority while in direct proximity
+The two Dormant organizations — O5 (The Foreign Buyer) and O6 (Buenos Aires Press) — activate through specific triggers tied to other milestone consequences. This means the board grows more complex as the case progresses, which matches the feeling of a deteriorating situation.
 
-The Spear should not be framed as a weapon with a simple attack profile. It changes the meaning of a scene before it changes bodies.
+=== Cross-Link Philosophy
 
-=== Fracture
+Milestone consequences are the case's real pacing engine. When O2M2 fires (a wounded thief surfaces), it advances *both* O3 (police) and O1 (Compact) — because a visible thief attracts institutional and criminal attention simultaneously. This single milestone event produces two downstream pressure changes and opens a new Location (L5: Illicit Clinic).
 
-On an Artifact Die roll of `1`, one of the following occurs:
+Cross-links like this create the illusion of an intelligent, reactive world without requiring the DA to improvise connections in real time. They also prevent the case from stalling: even if agents ignore an organization, its milestones will eventually advance other rows, keeping the board in motion.
 
-* a public miracle / atrocity manifests — fill 1 extra shift quadrant on the phases row (advancing relic milestones)
-* the current bearer suffers wound bloom, conviction collapse, or ecstatic command-delusion
-* nearby witnesses begin treating random violence as sacred proof
-* electronics fail in a widening radius and the scene becomes impossible to contain quietly
+When designing your own cross-links, write them directly into milestone text: _"O2M2: A wounded thief surfaces. Advance O3 by 2 squares and O1 by 1 square."_ The DA reads the milestone description and executes — no arrows, no flowcharts, no separate cross-reference table.
 
-=== Containment Profile
+=== Information Design
 
-The Spear can be moved safely only if all of the following are true:
+The case uses 22 Information Cards. Of those, 7 are Containment Truths — the facts agents _must_ discover for safe resolution. The remaining 15 are supporting intel that provides context, unlocks Locations, or identifies key NPCs.
 
-* it is wrapped in lead-lined cloth over consecrated ash and salt
-* the current bearer is isolated from followers, witnesses, and cameras
-* no one addresses it as relic, lance, spear, destiny, empire, victory, or instrument of God during handling
-* transfer occurs in silence under low light
-* a Keep-led suppression rite is completed before vehicle transport
-* active claimant language is shut down in the containment zone
+The critical design constraint: every Containment Truth must be reachable from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ Fallback* (a packet return on a specified day). This triple redundancy means no single failed scene, missed NPC, or bad roll can lock the agents out of victory.
 
-If these conditions are broken, transport is still possible -- but the DA should fill 1 extra shift quadrant on the phases row, worsen one related organization, or both.
+For example, I9 (Custodians Not Owners) is available at L1 (Estate), L3 (Church Archive), and from three different NPCs (Lucia, Father Vale, Sister Inés). If the agents alienate every source, HQ can deliver it on Day 2. The truth is reachable from at least five different angles.
 
----
+This redundancy does not make the case easy — it makes it *fair*. The difficulty comes from time pressure and organization escalation, not from information scarcity.
 
-== Operations Board
+=== Location Gating
 
-The Operations Board for this case uses 14 columns (14 → 1, days until catastrophe). Six organization rows track external pressure. Relic milestones are keyed to the phases row.
+The seven Locations use a structured unlock pattern:
 
-=== Phases Row — Relic Milestones (Lance Threshold Build)
+* *L1 (Estate)* — Open at case start. The guaranteed first scene.
+* *L2–L6* — Clue-locked. Each unlocks through discoveries at prior Locations or from NPC interactions.
+* *L7 (Hidden Shrine)* — Requires at least two prior clues. This is the endgame site.
 
-This is what the Spear itself does if no one re-establishes custody. Milestones trigger when the DA fills the shift quadrant that crosses the phase number.
+This funnel shape ensures that agents always have something to investigate (L1 is open, and L2 and L3 unlock easily) while requiring genuine progress before reaching the final confrontation. The DA should never have a shift where the agents have zero available Locations.
 
-* *Phase 44:* Local hospitals and street reports begin showing recognizable cruciform-wound patterns.
-* *Phase 32:* Handlers suffer reopened wounds, religious certainty, and dream-imprint episodes. Advance O3 (Local Police Inquiry) by 1 square.
-* *Phase 20:* Radios, surveillance gear, and vehicles fail near the Spear; witnesses report that "someone chosen is coming." O6 (Media Exposure) activates if still dormant.
-* *Phase 8:* The Spear begins selecting a claimant. Advance O5 (Foreign Buyer Window) by 2 squares if active.
-* *Phase 1:* Catastrophe — public miracle/atrocity, mass-casualty zone, or violent claimant manifestation.
+=== Bearer as Tragic Figure
 
-=== Organization Rows
+The case's strongest NPC — the bearer candidate (Iván Luján by default) — is designed as a tragedy, not a villain. He began as a Compact fixer and is becoming a prophet who believes his own myth. The Spear does not make soldiers; it makes claimants who believe history has chosen them.
 
-==== O1: Vantablack Compact Recovery Operation — Active (starting value 9)
+This matters because it changes the endgame tone. If the bearer were simply an antagonist, the resolution would be a combat scene. Because the bearer is a person being consumed by a mandate relic, the resolution should feel like an exorcism, an intervention, or a containment crisis — not a gunfight.
 
-* *O1M1 (column 7):* Bribery channels activate across police, hospital, and customs routes. Advance O3 (Local Police Inquiry) by 1 square.
-* *O1M2 (column 4):* Field professionals replace cutouts; disappearances and abductions begin. Advance O2 (Heist Crew Fracture) by 1 square.
-* *O1M3 (column 1):* The Compact has a likely district, safehouse, or export corridor.
-* *O1M4 (column 0):* The Compact secures the Spear or launches its final snatch. O5 (Foreign Buyer Window) activates if still dormant.
+=== Pacing Guidance
 
-==== O2: Heist Crew Fracture — Active (starting value 6)
+For a single-session case, advance organizations aggressively: 2-3 squares per shift on the most active row. The agents should feel the board tightening around them.
 
-* *O2M1 (column 5):* One thief disappears with money and papers.
-* *O2M2 (column 3):* A wounded thief surfaces through a clinic, fence, confessional chain, or lover. Advance O3 (Local Police Inquiry) by 2 squares and O1 (Compact Recovery) by 1 square.
-* *O2M3 (column 1):* The surviving crew attempts desperate relocation. Advance Lance Threshold Build — fill 1 extra shift quadrant on the phases row.
+For a multi-session case, let the first session establish the situation (the estate, the police, the Church trail) and the second session accelerate the crisis (the thief surfaces, the Compact deploys professionals, the bearer emerges).
 
-==== O3: Local Police Inquiry — Active (starting value 10)
-
-* *O3M1 (column 8):* Robbery detectives begin consolidating witness contradictions and unexplained injuries.
-* *O3M2 (column 6):* A protected witness is released, moved, or mishandled. Advance O1 (Compact Recovery) by 2 squares and O4 (Church Custody Cell) by 1 square.
-* *O3M3 (column 3):* Checkpoints, raids, and formal pressure begin closing the city. O6 (Media Exposure) activates if still dormant.
-* *O3M4 (column 0):* Police intervention lands directly on the live artifact scene. Advance Lance Threshold Build — fill 1 extra shift quadrant on the phases row.
-
-==== O4: Church Custody Cell — Active (starting value 12)
-
-* *O4M1 (column 9):* Quiet observers begin monitoring hospitals, morgues, and aristocratic channels.
-* *O4M2 (column 6):* Church observers identify Compact routes and begin tailing them. Advance O1 (Compact Recovery) by 1 square.
-* *O4M3 (column 3):* A retrieval cleric / black-chamber custodian arrives with custody demands and incomplete ritual knowledge. Advance O3 (Local Police Inquiry) by 1 square if Church influence is used to divert attention.
-
-==== O5: Foreign Buyer Window — Dormant (starting value 8)
-
-Activates when the Compact regains custody, proof of custody reaches buyers, or a viable export corridor is secured.
-
-* *O5M1 (column 5):* Advance funds move and courier infrastructure appears.
-* *O5M2 (column 2):* Diplomatic pouch, private flight, or maritime handoff is imminent.
-* *O5M3 (column 0):* The Spear leaves Argentine control.
-
-==== O6: Media Exposure — Dormant (starting value 6)
-
-Activates when public effects, police noise, hospital leaks, or visible violence make secrecy impossible.
-
-* *O6M1 (column 3):* Tabloids and radio link the heist to blackouts, wounds, and "holy signs."
-* *O6M2 (column 0):* The public story locks in and long-term secrecy is lost.
+The day countdown exists to create windows of opportunity, not to punish slow players. If the agents are paralyzed, give them a sign from the next organization milestone. If they are moving too fast, let a packet return land with partial information that redirects rather than confirms.
 
 ---
 
-== Critical Revelations
+== The Case Packet
 
-These truths must remain reachable through multiple paths.
+The complete case data for this operation is organized into the 8-piece document package defined in Chapter 15. All files are located in `docs/case-files/spear-that-went-dark/`:
 
-=== Trigger
+[%header,cols="2,3"]
+|===
+| Document | File
 
-The Spear becomes more active when:
+| Case Brief (DA only) | `case-brief.html`
+| Relic Sheet | `relic-sheet.html`
+| Operations Board | `operations-board.html`
+| Organization Reference | `organization-reference.html`
+| Location Pages (L1–L7) | `locations.html`
+| NPC Cards (8 NPCs) | `npc-cards.html`
+| Information Cards (I1–I22) | `information-cards.html`
+|===
 
-* moved repeatedly between custodians
-* exposed to fresh blood
-* carried by someone making claims of destiny, divine mandate, kingship, national rebirth, or holy violence
-
-=== Appetite
-
-It feeds on:
-
-* wound trauma
-* ideological certainty
-* righteous violence
-* proximity to a self-declared chosen bearer
-* speech that turns command into sacred obligation
-
-=== Tether
-
-The current tether is not a single person. It is a broken chain of custody. The estate vault's containment lineage descended through wartime seizure, clandestine relocation, and postwar black custody. The theft crew broke the ritual sequence that kept the Spear dormant.
-
-=== Quiescence
-
-The Spear can be moved only under a substitute custody sequence: shielding, silence, no claimant language, and a Keep-led suppression rite.
-
-=== Fracture Logic
-
-If agents attempt brute-force recovery without quiescence, the Spear does not merely resist. It turns the retrieval into a public contest of legitimacy.
+The `handouts/` subdirectory contains image-generation prompts for all visual assets (handout props, NPC portraits, location images, relic illustration).
 
 ---
 
-== Key NPCs and Rival Actors
+== DA Quick Summary
 
-[%header,cols="2,2,4"]
-== NPC Cards
+*What happened?* The Compact funded the theft. The crew breached the estate. The Spear destabilized the transfer. The handoff failed. The relic is now hidden, active, and pulling multiple factions toward one contaminated custody crisis.
 
-Each NPC Card is a playing-card-sized reference the DA pulls alongside the active Location form.
+*What do the agents need?* Where the crew broke apart, who now has proximity control, what the old containment procedure was, and how to move the relic without completing its escalation.
 
-=== Lucia Ferreyra
-
-[horizontal]
-Organization:: Independent (estate custodian line).
-Secret:: She knows the vault was a custody chamber, not a safe — and she has the family liturgical sequence memorized.
-Goal:: Protect the family's reputation and prevent anyone from learning the true nature of what was stored.
-Artifact Connection:: Raised in the custodian tradition. Has never directly handled the Spear but has witnessed its effects during suppression rites as a child.
-Starting Knowledge:: I4 (vault was suppressive), I9 (family were custodians), I11 (partial substitute custody sequence).
-Gained Knowledge:: At O4M2: learns Church observers are monitoring the family — becomes more cooperative if offered protection.
-Locations:: L1 (Estate Aftermath).
-Positive Result:: Shares I4, I9, I11. Reveals partial containment sequence. May provide access to family chapel records (unlocks path to L7).
-Negative Result:: Refuses further contact. O4 advances 1 square (Church observers alerted by her distress).
-
-=== Detective Mateo Suárez
-
-[horizontal]
-Organization:: O3 (Local Police Inquiry).
-Secret:: He knows the robbery case has unexplained elements — witnesses describing identical wounds, objects that should not exist — but he cannot write that in a report.
-Goal:: Close the robbery case cleanly before it becomes a political embarrassment.
-Artifact Connection:: No direct contact. Has interviewed witnesses who exhibited mild ideological contagion.
-Starting Knowledge:: I5 (witness list), I6 (wounded thief route), I8 (sketch fragments).
-Gained Knowledge:: At O3M2: learns I7 (hospital referrals) from a released witness.
-Locations:: L2 (Police Station).
-Positive Result:: Shares I5, I6, I7, I8. Becomes a quiet ongoing source. Opens unofficial access to police and hospital records.
-Negative Result:: O3 advances 1 square (official attention drawn to agents). Agents flagged in police system.
-
-=== Father Esteban Vale
-
-[horizontal]
-Organization:: O4 (Church Custody Cell).
-Secret:: He has been authorized to reclaim the relic by any necessary means — but his superiors will deny his existence if he is exposed.
-Goal:: Recover the Spear into Church custody without a public ecclesiastical scandal.
-Artifact Connection:: Has read the black-chamber file. Understands the relic as a sovereignty token, not merely a devotional artifact.
-Starting Knowledge:: I9 (family were custodians), I10 (postwar custody compromise).
-Gained Knowledge:: At O4M2: learns I11 (partial substitute custody sequence) from Church archives.
-Locations:: L1 (Estate Aftermath — after O4M1), L3 (Church Archive — after O4M2).
-Positive Result:: Shares I9, I10. May negotiate information exchange if agents can demonstrate containment capability. Introduces Sister Inés.
-Negative Result:: O4 advances 1 square (Church accelerates independent recovery). Agents excluded from ecclesiastical channels.
-
-=== Sister Inés Barral
-
-[horizontal]
-Organization:: O4 (Church Custody Cell — archivist, not field operative).
-Secret:: She has access to the older containment record and believes the Church should share it, not hoard it.
-Goal:: Preserve the archival truth about the relic custody lineage, even if her superiors disagree.
-Artifact Connection:: Has studied the textual record extensively. Understands Quiescence conditions better than Father Vale.
-Starting Knowledge:: I9 (family were custodians), I10 (postwar custody compromise), I11 (partial substitute custody sequence).
-Gained Knowledge:: At O4M3: learns the retrieval cleric's full plan — may share it if she believes the agents are more careful.
-Locations:: L3 (Church Archive).
-Positive Result:: Shares I9, I10, I11. Provides the most complete available picture of Quiescence conditions. May share information even against Church orders.
-Negative Result:: O4 advances 1 square (Church tightens archive access). Sister Inés is reassigned — no longer available.
-
-=== Ramiro "Rami" Acosta
-
-[horizontal]
-Organization:: O2 (Heist Crew Fracture).
-Secret:: He knows where the Spear was last held and who currently has proximity control — but he is suffering wound bloom and command-delusion.
-Goal:: Survive. He wants medical treatment and a way out of Buenos Aires.
-Artifact Connection:: Touched the Spear during the heist. Suffering reopened wounds, religious certainty, and intermittent ecstatic episodes.
-Starting Knowledge:: I15 (first visible supernatural effects), I16 (who began speaking like a chosen ruler), I17 (site connected to final custody break).
-Gained Knowledge:: None — deteriorating.
-Locations:: L5 (Illicit Clinic — available when O2M2 triggers).
-Positive Result:: Shares I15, I16, I17. Can lead agents to L7 (Hidden Shrine). Recovered thief notes available as handout.
-Negative Result:: O2 advances 1 square (Rami disappears or is silenced by Compact). Path to L7 becomes harder.
-
-=== Sabine Voss
-
-[horizontal]
-Organization:: O1 (Vantablack Compact).
-Secret:: She financed the heist and has already taken significant losses. Her superiors are losing patience.
-Goal:: Recover the Spear and complete the sale before the Compact writes off the operation — and her.
-Artifact Connection:: No direct handling. Views the Spear as high-value merchandise, not a supernatural threat. This will change.
-Starting Knowledge:: I12 (who financed the theft), I13 (handoff collapse location).
-Gained Knowledge:: At O1M2: learns I14 (buyer demands). At O5M1: learns I18 (export route).
-Locations:: L4 (Currency Exchange — after O1M2), L6 (Port/Export Route — after O5 activates).
-Positive Result:: I12, I13 can be extracted through interrogation or intercepted communications. Voss will not cooperate voluntarily.
-Negative Result:: O1 advances 1 square (Compact accelerates recovery). Agents marked as interference targets.
-
-=== Iván Luján
-
-[horizontal]
-Organization:: O1 (Compact cutout / nationalist fixer).
-Secret:: He has begun interpreting tactical instinct as divine revelation. He is the strongest bearer candidate.
-Goal:: He no longer wants to sell the Spear. He wants to keep it — and he is beginning to believe he was meant to.
-Artifact Connection:: Extended proximity exposure. Exhibiting claimant-language patterns: speaking of destiny, mandate, and chosen vessels.
-Starting Knowledge:: I13 (handoff collapse location), I16 (who began speaking like a chosen ruler — because it was him).
-Gained Knowledge:: None — he is becoming the problem, not gathering intelligence.
-Locations:: L4 (Currency Exchange), L7 (Hidden Shrine — as the bearer).
-Positive Result:: Agents can identify him as the bearer before he reaches full activation. L7 unlocks through his movements.
-Negative Result:: Fill 1 extra shift quadrant on the phases row. Bearer activation accelerates.
-
-=== Brother Tomás Arce
-
-[horizontal]
-Organization:: Independent (false ecclesiastical broker).
-Secret:: He wears clerical dress but has no real ecclesiastical authority. He brokers between clergy, smugglers, and collectors.
-Goal:: Profit from the chaos by selling information to whoever pays — Church, Compact, or buyers.
-Artifact Connection:: None directly. He has heard enough from multiple sources to piece together partial truths, but his knowledge is secondhand and unreliable.
-Starting Knowledge:: I10 (postwar custody compromise — partial), I14 (buyer demands — partial).
-Gained Knowledge:: At O5M1: learns I18 (export route) from courier contacts.
-Locations:: L3 (Church Archive — posing as clergy), L6 (Port/Export Route — brokering).
-Positive Result:: Shares I10 (partial), I14 (partial), I18. Information may be incomplete or slanted — but it accelerates timelines.
-Negative Result:: Information sold to Compact instead. O1 advances 1 square.
-
-=== Bearer Candidates
-
-The current bearer should feel tragic before formidable. Suitable choices include:
-
-* a surviving thief who interprets survival as divine favor
-* a nationalist fixer who reads activation as mandate
-* an estate retainer who believes restoration is preferable to sale
-* a Compact intermediary who mistakes tactical intuition for revelation
-
----
-
-== Locations
-
-Each Location is one page or form — the document in front of the DA when the agents arrive. Pull the relevant NPC Cards and Information Cards alongside it.
-
-=== L1: The Estate Aftermath
-
-[horizontal]
-Name:: The Ferreyra Estate, Recoleta district
-Description:: A fortified residential compound with shattered vault access, scattered reliquary fragments, and signs of a professional breach. The family has locked up the property and stopped answering the door.
-Availability:: *Open* — available at case start.
-NPCs Present:: Lucia Ferreyra (see NPC Card). After O4M1: Father Esteban Vale may appear if Church observers are monitoring the family.
-Information Available:: I1 (breach method), I2 (false target), I3 (funded heist proof), I4 (vault was suppressive).
-Organizations Present:: O3 (Local Police Inquiry), O4 (Church Custody Cell).
-Positive Result:: Agents reconstruct the theft sequence and learn I1–I4. Unlocks L4 (Currency Exchange) and L3 (Church Archive). Lucia may share partial custody knowledge if handled respectfully.
-Negative Result:: O3 advances 1 square (police arrive during investigation). Lucia refuses further contact. Church observers accelerate O4.
-Milestone Changes:: When O3M2: police cordon the estate — access now requires cover story or packet-supported credentials. When O4M3: Church retrieval cleric is on-site.
-
-=== L2: Police Station / Detective Contact
-
-[horizontal]
-Name:: Buenos Aires Police — Robbery Division
-Description:: A cramped detective bullpen with case boards, witness logs, and an overworked staff managing a theft that keeps getting stranger.
-Availability:: *Clue-locked* — open after the estate is known to the team or any police-connected clue is obtained.
-NPCs Present:: Detective Mateo Suárez (see NPC Card).
-Information Available:: I5 (witness list), I6 (wounded thief route), I7 (hospital referrals), I8 (sketch fragments).
-Organizations Present:: O3 (Local Police Inquiry), O1 (Compact Recovery — informants in the station).
-Positive Result:: Agents gain I5–I8. Suárez becomes a quiet source. Unlocks L5 (Illicit Clinic).
-Negative Result:: O3 advances 1 square (agents draw official attention). O6 (Media Exposure) may activate if pressure is mishandled publicly.
-Milestone Changes:: When O3M3: checkpoints and raids begin — station access restricted. When O1M2: an informant tips off the Compact about the investigation.
-
-=== L3: Church Archive / Quiet Custodian Interview
-
-[horizontal]
-Name:: Diocesan Archive, Buenos Aires Cathedral annex
-Description:: A restricted ecclesiastical archive behind two locked doors and one polite but immovable secretary. Dust, ledgers, and the smell of old ink.
-Availability:: *Clue-locked* — open after the estate aftermath or any Church-linked clue.
-NPCs Present:: Sister Inés Barral (see NPC Card). After O4M2: Father Esteban Vale arrives.
-Information Available:: I9 (family were custodians, not owners), I10 (postwar custody compromise), I11 (partial substitute custody sequence).
-Organizations Present:: O4 (Church Custody Cell).
-Positive Result:: Agents gain I9–I11. May unlock L7 (Hidden Shrine) if linked through old family chapels. Sister Inés shares partial containment knowledge.
-Negative Result:: O4 advances 1 square (Church custody cell alerted to outside interest). Access to deeper records closed.
-Milestone Changes:: When O4M3: a retrieval cleric arrives with custody demands — the archive becomes a negotiation site.
-
-=== L4: Currency Exchange / Compact Money Trail
-
-[horizontal]
-Name:: Cambio Cerrito, Microcentro district
-Description:: A nondescript currency exchange shopfront concealing wire-transfer infrastructure and a back-office courier dispatch. The owner is nervous.
-Availability:: *Clue-locked* — open after estate evidence, police data, or a packet return on financial cutouts.
-NPCs Present:: Iván Luján (see NPC Card) — may be present if Compact is active. After O1M2: Sabine Voss (see NPC Card) appears.
-Information Available:: I12 (who financed the theft), I13 (handoff collapse location), I14 (buyer demands — proof of force vs. symbolism).
-Organizations Present:: O1 (Compact Recovery), O3 (Local Police Inquiry — financial investigators).
-Positive Result:: Agents gain I12–I14. Unlocks L6 (Port/Export Route). Identifies Sabine Voss and Iván Luján.
-Negative Result:: O1 advances 1 square (Compact aware of investigators). Evidence destroyed — courier records burned.
-Milestone Changes:: When O1M2: field professionals replace cutouts — the exchange is under new management. When O5 activates: courier infrastructure shifts to export routes.
-
-=== L5: Wounded Thief Safehouse / Illicit Clinic
-
-[horizontal]
-Name:: Clínica informal, La Boca district
-Description:: An unlicensed medical practice in a converted warehouse. Chemical smells, improvised surgical equipment, and a doctor who does not ask questions.
-Availability:: *Clue-locked* — open after police, street, or church leads surface a surviving thief.
-NPCs Present:: Ramiro "Rami" Acosta (see NPC Card).
-Information Available:: I15 (first visible supernatural effects — wound bloom), I16 (who began speaking like a chosen ruler), I17 (site connected to the final custody break).
-Organizations Present:: O2 (Heist Crew Fracture), O1 (Compact Recovery — searching for survivors).
-Positive Result:: Agents gain I15–I17. Rami can lead to L7 (Hidden Shrine). Recovered thief notes available as handout.
-Negative Result:: O2 advances 1 square (thief disappears or is silenced). O1 advances 1 square (Compact operatives follow the agents).
-Milestone Changes:: When O2M2: Rami surfaces here — this is the window. When O1M2: Compact professionals are watching the clinic.
-
-=== L6: Port / Air Cargo Broker / Export Route
-
-[horizontal]
-Name:: Puerto Madero freight district
-Description:: Container yards, cargo offices, and private air charter desks. The border between legal commerce and black-market logistics.
-Availability:: *Clue-locked* — open once buyer proof, Compact movement, or route intelligence exists.
-NPCs Present:: Brother Tomás Arce (see NPC Card) — brokering export channels. After O5M1: unnamed foreign courier.
-Information Available:: I18 (export route — maritime, air, or diplomatic), I19 (buyer motivation — symbolism vs. proof of force).
-Organizations Present:: O5 (Foreign Buyer Window) if active, otherwise O1 (Compact Recovery). O3 (Local Police Inquiry) as secondary.
-Positive Result:: Agents gain I18–I19. Can interdict export corridor. Identifies late-case transfer ambush opportunity.
-Negative Result:: O5 advances 1 square (export window narrows). O1 advances 1 square (Compact secures alternative route).
-Milestone Changes:: When O5M2: handoff is imminent — this becomes a time-critical interdiction site.
-
-=== L7: Hidden Shrine / Temporary Custody Site
-
-[horizontal]
-Name:: Abandoned chapel, Flores district
-Description:: A derelict family chapel with makeshift ritual markings and the unmistakable pressure of a nearby active relic. The Spear is here — or was recently.
-Availability:: *Clue-locked* — usually unlocked by at least two prior clues. The DA should ensure multiple paths lead here.
-NPCs Present:: The current bearer (Iván Luján or another bearer candidate — see Bearer Candidates in the NPC section). Other NPCs depend on which organizations are closest to crisis.
-Information Available:: I20 (who currently holds proximity control), I21 (what the bearer believes the Spear is telling them), I22 (missing piece of Quiescence).
-Organizations Present:: Whichever organization is closest to crisis, plus Lance Threshold Build pressure.
-Positive Result:: Agents can attempt controlled containment if they know the Quiescence conditions. Direct retrieval possible.
-Negative Result:: Fill 1 extra shift quadrant on the phases row (relic milestones advance). Custody conflict with Church or Compact may erupt. Public revelation if containment fails.
-Milestone Changes:: When Phase 8: the Spear begins selecting a claimant — the shrine becomes the epicenter.
-
----
-
-== Information Cards
-
-Each Information Card is a playing-card-sized double-sided reference. The player-facing front states the content; the DA-facing back lists sources, NPCs, and HQ fallback timing. Cards marked *Containment Truth* are essential for safe resolution.
-
-=== I1: Breach Method
-
-[horizontal]
-Content:: The estate vault was breached using shaped charges matched to the vault's specific construction — not a random burglary technique. The crew had insider architectural plans.
-Found At:: L1 (Estate Aftermath).
-Known By:: Lucia Ferreyra (inferred from damage), Detective Suárez (forensics report, I8 cross-ref).
-HQ Fallback:: Phase 4.
-Type:: Supporting intel.
-
-=== I2: False Target
-
-[horizontal]
-Content:: The thieves bypassed significant conventional valuables — silver, paintings, documents — and went directly to the subterranean vault. They knew exactly what they were after.
-Found At:: L1 (Estate Aftermath).
-Known By:: Lucia Ferreyra.
-HQ Fallback:: Phase 4.
-Type:: Supporting intel.
-
-=== I3: Funded Heist Proof
-
-[horizontal]
-Content:: The operation was professionally financed through Compact cutouts. Wire transfers, equipment procurement, and crew payments all trace back to Vantablack financial infrastructure.
-Found At:: L1 (Estate Aftermath — documentary evidence), L4 (Currency Exchange — financial records).
-Known By:: Sabine Voss (I12 cross-ref).
-HQ Fallback:: Phase 5.
-Type:: Supporting intel.
-
-=== I4: Vault Was Suppressive
-
-[horizontal]
-Content:: The estate vault was not merely a safe. It was a custody chamber — a ritual containment site maintained through a liturgical sequence passed down through the custodian family. Breaking the vault broke the containment.
-Found At:: L1 (Estate Aftermath).
-Known By:: Lucia Ferreyra.
-HQ Fallback:: Phase 6.
-Type:: *Containment Truth* — establishes that the Spear was under active suppression and the theft created the current crisis.
-
-=== I5: Witness List
-
-[horizontal]
-Content:: Police have compiled a list of witnesses from the estate neighborhood who reported unusual activity the night of the theft — vehicles, shouting, and at least one person carried out on a stretcher.
-Found At:: L2 (Police Station).
-Known By:: Detective Suárez.
-HQ Fallback:: Phase 4.
-Type:: Supporting intel.
-
-=== I6: Wounded Thief Route
-
-[horizontal]
-Content:: One member of the heist crew was injured during the breach and fled separately. A blood trail and taxi records suggest a route toward La Boca district.
-Found At:: L2 (Police Station).
-Known By:: Detective Suárez.
-HQ Fallback:: Phase 5.
-Type:: Supporting intel.
-
-=== I7: Hospital Referrals
-
-[horizontal]
-Content:: Hospital intake records show no matching admissions — suggesting the wounded thief sought unlicensed medical care. Street contacts may know where.
-Found At:: L2 (Police Station).
-Known By:: Detective Suárez (gained at O3M2).
-HQ Fallback:: Phase 5.
-Type:: Supporting intel.
-
-=== I8: Sketch Fragments
-
-[horizontal]
-Content:: Witness descriptions and partial security footage produce fragmentary sketches of at least two crew members who did not match any known criminal profile — suggesting outside recruitment.
-Found At:: L2 (Police Station).
-Known By:: Detective Suárez.
-HQ Fallback:: Phase 5.
-Type:: Supporting intel.
-
-=== I9: Custodians Not Owners
-
-[horizontal]
-Content:: The Ferreyra family were never the owners of the Spear. They were temporary lay custodians under a postwar arrangement with ecclesiastical authorities — an arrangement never publicly regularized.
-Found At:: L1 (Estate Aftermath), L3 (Church Archive).
-Known By:: Lucia Ferreyra, Father Esteban Vale, Sister Inés Barral.
-HQ Fallback:: Phase 5.
-Type:: *Containment Truth* — establishes the real custody lineage and why the Church has a claim.
-
-=== I10: Postwar Custody Compromise
-
-[horizontal]
-Content:: After wartime displacement, the relic was placed with the Ferreyra family under a quiet compromise. The Church maintained a monitoring role but never officially acknowledged the arrangement to avoid diplomatic, doctrinal, and political complications.
-Found At:: L3 (Church Archive).
-Known By:: Father Esteban Vale, Sister Inés Barral, Brother Tomás Arce (partial).
-HQ Fallback:: Phase 6.
-Type:: Supporting intel.
-
-=== I11: Partial Substitute Custody Sequence
-
-[horizontal]
-Content:: The older containment record describes a substitute custody protocol: a specific sequence of shielding, silence, and liturgical actions required to move the Spear without triggering activation. The record is incomplete — key steps are missing or deliberately redacted.
-Found At:: L3 (Church Archive).
-Known By:: Lucia Ferreyra (family oral tradition), Sister Inés Barral (archival text).
-HQ Fallback:: Phase 7.
-Type:: *Containment Truth* — partial Quiescence protocol. Agents need this plus I22 for a complete containment plan.
-
-=== I12: Who Financed the Theft
-
-[horizontal]
-Content:: The heist was funded by Sabine Voss through Vantablack Compact financial channels routed through the Cambio Cerrito currency exchange. Wire records, courier payments, and equipment procurement invoices all converge.
-Found At:: L4 (Currency Exchange).
-Known By:: Sabine Voss.
-HQ Fallback:: Phase 6.
-Type:: Supporting intel.
-
-=== I13: Handoff Collapse Location
-
-[horizontal]
-Content:: The scheduled buyer handoff was meant to occur at a freight staging area but collapsed when the courier and the relic failed to arrive on time. The relic went sideways into someone else's hands.
-Found At:: L4 (Currency Exchange).
-Known By:: Sabine Voss, Iván Luján.
-HQ Fallback:: Phase 6.
-Type:: Supporting intel.
-
-=== I14: Buyer Demands
-
-[horizontal]
-Content:: The foreign buyer's requirements reveal whether they want the Spear as a proof-of-force weapon or as a symbolic legitimacy token. This distinction determines the urgency and the nature of the export threat.
-Found At:: L4 (Currency Exchange).
-Known By:: Sabine Voss (gained at O1M2), Brother Tomás Arce (partial).
-HQ Fallback:: Phase 7.
-Type:: Supporting intel.
-
-=== I15: First Visible Supernatural Effects
-
-[horizontal]
-Content:: The surviving thief exhibits wound bloom — injuries that reopen despite treatment, bleeding in patterns that echo the Spear's own wound history. This is the first direct evidence that the relic is active and affecting people in proximity.
-Found At:: L5 (Illicit Clinic).
-Known By:: Ramiro "Rami" Acosta (experiencing it).
-HQ Fallback:: Phase 6.
-Type:: *Containment Truth* — confirms the Spear's activation and the danger of proximity without containment.
-
-=== I16: Chosen Ruler Speech
-
-[horizontal]
-Content:: During and after the heist, one member of the crew began speaking in command-language: references to mandate, destiny, divine selection, and righteous authority. The speech pattern is consistent with claimant-language described in Covenant relic archives.
-Found At:: L5 (Illicit Clinic).
-Known By:: Ramiro "Rami" Acosta (witnessed it), Iván Luján (producing it — unknowingly).
-HQ Fallback:: Phase 7.
-Type:: *Containment Truth* — identifies claimant-language as a symptom and the mechanism by which the Spear selects a bearer.
-
-=== I17: Final Custody Break Site
-
-[horizontal]
-Content:: The thief knows the location where the last transfer attempt occurred — the site connected to the final break in the custody chain. This location is directly connected to where the Spear currently rests.
-Found At:: L5 (Illicit Clinic).
-Known By:: Ramiro "Rami" Acosta.
-HQ Fallback:: Phase 7.
-Type:: Supporting intel.
-
-=== I18: Export Route
-
-[horizontal]
-Content:: The Compact has established an export corridor — maritime, air charter, or diplomatic pouch — to move the Spear out of Argentina. The route, timing, and staging logistics are known to courier contacts.
-Found At:: L6 (Port/Export Route).
-Known By:: Brother Tomás Arce (gained at O5M1).
-HQ Fallback:: Phase 7.
-Type:: Supporting intel.
-
-=== I19: Buyer Motivation
-
-[horizontal]
-Content:: The foreign buyer's motivation — whether the Spear is wanted as a weapon of force, a token of political legitimacy, or a devotional relic — shapes the endgame. Symbolism buyers are patient; proof-of-force buyers are not.
-Found At:: L6 (Port/Export Route).
-Known By:: —
-HQ Fallback:: Phase 8.
-Type:: Supporting intel.
-
-=== I20: Proximity Control Holder
-
-[horizontal]
-Content:: The person currently holding proximity control over the Spear — the bearer — can be identified at the shrine. Their identity confirms which bearer candidate has claimed the relic.
-Found At:: L7 (Hidden Shrine).
-Known By:: —
-HQ Fallback:: —
-Type:: *Containment Truth* — resolving the case requires knowing who holds the Spear and why they believe they should.
-
-=== I21: Bearer Beliefs
-
-[horizontal]
-Content:: The bearer's self-justification — what they believe the Spear is telling them, what mandate they claim, and what violence they consider righteous — reveals the Spear's current activation vector.
-Found At:: L7 (Hidden Shrine).
-Known By:: —
-HQ Fallback:: —
-Type:: Supporting intel.
-
-=== I22: Missing Quiescence Piece
-
-[horizontal]
-Content:: The final element of the Quiescence protocol — the missing step from I11's incomplete custody sequence. This may be a specific liturgical phrase, a physical shielding component, or a suppression rite that only a Keep team can perform.
-Found At:: L7 (Hidden Shrine — environmental evidence or bearer interaction).
-Known By:: —
-HQ Fallback:: Phase 8.
-Type:: *Containment Truth* — combined with I11, this completes the substitute custody protocol needed for safe recovery.
-
----
-
-== Covenant Request Packet Opportunities
-
-The team may send one packet per shift. For this case, common packets include:
-
-* photo identification of thieves, police witnesses, or clergy
-* summary of known Spear legends in Covenant archives
-* cross-case comparison of postwar custody transfers
-* theological summary of Longinus, imperial relic traditions, and claimant language
-* customs and freight screening pulls connected to Compact cutouts
-
-No packet returns in fewer than 2 shifts. Deep archive, foreign, or politically sensitive requests may take 3 or more.
-
----
-
-== Packet Handouts and Player-Facing Documents
-
-The following handouts are written for direct use as packet returns, case props, interview excerpts, or player-facing inserts. Present them selectively rather than all at once. A good default is to let each document arrive through a different institutional channel so the case feels like a network of corroborating sources rather than one lore dump.
-
-=== Handout 1: Covenant Archive Summary
-
-Use this as the cleanest internal brief available to the team after a Wayfinder or Keep packet request. It should make the agents more cautious, not more confident.
-
-[quote]
-____
-*Covenant Archive Summary*
-
-*Subject:* Potential Longinus-class relic in black-custody circulation, Buenos Aires channel, postwar transfer lineage compromised.
-
-*Archive Classification:* Keep / Catalogers / Restricted Custodial Sequence Material
-
-*Working Assessment:* The object locally described as the Spear should not be treated as a devotional relic alone. Prior Covenant notes classify this family of objects as mandate relics: items that bind wound trauma to political legitimacy. Their danger lies less in simple curse behavior and more in their ability to convert belief, blood, and command into one self-reinforcing loop.
-
-*Known Historical Pattern:*
-
-* relic surfaces near periods of political fracture or succession anxiety
-* carriers quickly develop conviction that history requires violent completion
-* witnesses rationalize surrounding violence as justified, fated, or sacred
-* custody breaks are more dangerous than long-term sealed storage
-
-*Handling Notes:*
-
-* do not permit public language of destiny, triumph, empire, holy rule, or chosen bloodline around the object
-* isolate any current carrier from followers, cameras, and symbolic staging
-* establish substitute custody protocol before transport
-* expect ideological contagion before visible paranormal effects
-
-*Archive Warning:* This item class does not merely corrupt. It authorizes. Field teams that approach it as contraband rather than claim-object have historically lost control of the human terrain first.
-____
-
-=== Handout 2: Church Custody Memorandum
-
-Use this through Church contact access, black-chamber archives, or a partial packet routed through a sympathetic custodian. It should deepen the sense that prior containment existed for reasons no one wants to admit publicly.
-
-[quote]
-____
-*Church Custody Memorandum*
-
-*For Restricted Circulation:* Custodial review regarding the lance relic currently associated with the Buenos Aires family vault.
-
-The family in question should not be described as owners. They were temporary lay custodians under an arrangement established after wartime displacement and never publicly regularized. The arrangement was tolerated because open acknowledgment would have created political, doctrinal, and diplomatic consequences no authority wished to inherit.
-
-The object has always presented three linked dangers:
-
-* scandal of authenticity
-* political misuse
-* devotional catastrophe
-
-Past custodians reported that direct handling without procedural silence produced immediate changes in rhetoric among nearby witnesses. Speech patterns shifted first. Men spoke as if command had returned to them. Existing grievances became providential.
-
-The older black-chamber recommendation was clear:
-
-* no crowds
-* no acclamation
-* no blood near the object
-* no use of triumphal or imperial titles in the containment zone
-* no transfer without liturgical sequence and material shielding
-
-If the sequence has been broken, reclamation by force alone is contraindicated. A broken chain of custody may inflame the object rather than secure it.
-____
-
-=== Handout 3: Museum and Academic Abstract
-
-Use this through museum, university, archive, or public-record research. It is valuable because it sounds mundane while quietly confirming that the relic is dangerous even if treated as mere political myth.
-
-[quote]
-____
-*Museum and Academic Abstract*
-
-*Title:* Imperial Relic Traditions and the Political Afterlife of the Holy Lance
-
-*Abstract:* This paper surveys the long political history of lance relic traditions associated with the Passion cycle, with particular attention to the recurring claim that possession of a specific spearhead confers or symbolizes legitimate rule. While modern scholarship treats many of these traditions as layered medieval constructions, the social effect of the belief has been persistent and measurable.
-
-Across late antique, medieval, and modern contexts, the lance functions less as a devotional object than as a sovereignty token. It appears in coronation narratives, military propaganda, saintly myth, and authoritarian pageantry. The relic's cultural power lies in its instability: it can be framed as sacred witness, military inheritance, or proof that violence has been sanctified.
-
-*Research Note:* Any surviving object linked to this tradition would be culturally volatile even if entirely mundane. In a charged political environment, claims surrounding it could inspire cult devotion, nationalist appropriation, apocalyptic interpretation, or prestige-market competition.
-
-*Curatorial Conclusion:* The artifact's meaning would likely shift depending on who controls the narrative around it. That instability may be more dangerous than authenticity itself.
-____
-
-=== Handout 4: Black-Market Intelligence Brief
-
-Use this as Counterintelligence output, stolen broker notes, or a packet request routed through illicit antiquities channels. It should clarify the buyer ecology without making the market feel orderly.
-
-[quote]
-____
-*Black-Market Intelligence Brief*
-
-*Distribution:* Counterintelligence / Recovery / Need-to-Know
-
-*Subject:* Buyer interest cluster surrounding lance-class Christian war relic in Southern Cone transit channels.
-
-*Executive Summary:* The object is attractive to at least three buyer types:
-
-* prestige collectors seeking rarity and deniability
-* militant networks seeking symbolic legitimacy and propaganda value
-* intelligence intermediaries interested in coercive, ritual, or psychological applications
-
-*Why the Market Cares:* The relic is valuable even before authenticity is settled. Competing myths increase value. The most committed buyers do not require museum-grade proof. They require a plausible chain, symbolic usability, and enough fear around the object to make rivals hesitate.
-
-*Current Market Behavior:*
-
-* the Compact is spending aggressively to contain embarrassment and recover control of the sale narrative
-* secondary brokers are asking for proof-of-custody, not scholarly verification
-* at least one foreign network is willing to accept the object if staged as a movement relic rather than a devotional artifact
-
-*Operational Warning:* If photographs circulate showing the relic in a charged ritual, military, or nationalist context, the sale window will narrow and intensify. After that point, recovery becomes less about interception and more about interrupting a myth in motion.
-____
-
-=== Handout 5: Tabloid Clipping
-
-Use this as a player-facing reveal when the case begins spilling into public language. It works best after the team already knows enough to recognize that the paper is accidentally describing a real relic-pressure pattern.
-
-[quote]
-____
-*Tabloid Clipping*
-
-*Headline:* BLACKOUT TRAIL AND BLEEDING WITNESSES AFTER RECOLETA ROBBERY
-
-Residents near the suspected escape corridor from last week's high-value estate robbery reported rolling blackouts, nosebleeds, and what one shop owner called religious panic among late-night pedestrians. Hospital staff declined to comment on rumors that multiple patients arrived with unrelated injuries but described the same wound in the side when questioned separately.
-
-Police insist there is no connection between the robbery and the medical incidents. Nonetheless, witnesses continue to report vehicles stalling, radios failing, and street arguments turning strangely theatrical, with participants invoking saints, destiny, and war.
-
-One unnamed resident told our reporter: "It felt like everyone suddenly thought they were on the edge of something important. Not scared. Chosen."
-____
-
-=== Handout 6: Recovered Thief Notes
-
-Use this as found evidence, a recovered notebook page, a dead-drop copy, or text lifted from a safehouse wall. It should feel like one of the clearest windows into the moment the heist stopped being a sale and became a claimant crisis.
-
-[literal]
-....
-*Recovered Thief Notes*
-
-Not a sale. Not after the box opened.
-
-L. said hold it like cargo. Wrong. Wrong the second Raul touched the cloth and started talking like somebody was listening from the old wars.
-
-No one would shut up after that. Everybody had a reason why it had to be theirs, why we were the ones who got through, why the route changed, why the buyer would understand.
-
-Buyer man would not touch it. Kept asking for proof. Kept asking if it was stable. Raul laughed at him and said stable is for governments and dead men.
-
-Lights went. Cars died. Marta said put it back. Hector hit her. Said history had picked us. Said there are moments where command returns.
-
-We split after the clinic stop. I don't know who has it now. I know whoever does is hearing the same thing: you were not chosen to carry it. You were chosen to prove you could.
-....
-
----
-
-== Play Aids and Reference Sheets
-
-The following materials are the working play-aid appendix for this case. They are included here so the chapter contains the full case packet directly, without relying on separate support-file copies.
-
-=== Handout 7: Operations Board Tracker
-
-Use this tracker behind the screen or as a shared operational worksheet. It mirrors the Operations Board structure: a phases row for relic milestones, organization countdown rows, and a location availability grid. Update it at the end of each shift, especially after packet returns, public incidents, or any action that worsens an organization.
-
-Quick use:
-
-* write current values in pencil or erasable marker
-* note visible signs separately from hidden DA-side thresholds
-* mark location availability the moment a clue, contact, or time window opens it
-* do not reveal dormant organizations to players until they have fiction on the table
-
-==== Phases Row — Relic Milestones Tracker
-
-|===
-| Track | Start | Current | Milestones | Narrative Signs
-
-| Lance Threshold Build
-| 14
-|
-| 11 / 8 / 5 / 2 / 0
-|
-|===
-
-==== Active Organization Tracker
-
-|===
-| Organization | Start | Current | Milestones | Narrative Signs
-
-| Vantablack Compact Recovery
-| 9
-|
-| 7 / 4 / 1 / 0
-|
-
-| Heist Crew Fracture
-| 6
-|
-| 5 / 3 / 1 / 0
-|
-
-| Local Police Inquiry
-| 10
-|
-| 8 / 6 / 3 / 0
-|
-
-| Church Custody Cell
-| 12
-|
-| 9 / 6 / 3 / 0
-|
-|===
-
-==== Dormant Organization Tracker
-
-|===
-| Organization | Start | Active? | Current | Trigger
-
-| Foreign Buyer Window
-| 8
-| No
-|
-| Proof of custody / route secured / Compact recovers control
-
-| Media Exposure
-| 6
-| No
-|
-| Public effects / loud police action / leak
-|===
-
-==== Location Availability Tracker
-
-|===
-| Location | ID | Open | Clue-Locked | Contact-Locked | Time-Locked | Notes
-
-| Estate Aftermath
-| L1
-| Yes
-|
-|
-|
-|
-
-| Police Station
-| L2
-| Conditional
-| Estate or police clue
-|
-|
-|
-
-| Church Archive
-| L3
-| Conditional
-| Church clue
-| Church contact
-|
-|
-
-| Currency Exchange
-| L4
-| Conditional
-| Funding clue
-|
-|
-|
-
-| Illicit Clinic
-| L5
-| Conditional
-| Witness or thief clue
-|
-|
-|
-
-| Export Route
-| L6
-| Conditional
-| Buyer / route clue
-| Broker access
-|
-|
-
-| Hidden Shrine
-| L7
-| No
-| 2+ location clues
-|
-|
-|
-|===
-
-Session notes to track between shifts:
-
-* Which organization is closest to crisis?
-* Which sign do the players see next?
-* Which packet or delayed result is due next shift?
-
-=== Handout 8: NPC Dossiers
-
-Use this sheet for quick reference at the table. Read the public-face line first when introducing the NPC, then hold the secret and use-at-table lines for DA guidance.
-
-==== Lucia Ferreyra
-
-* Role: estate retainer and last credible witness to the old custody procedure
-* Public face: exhausted, proud, private, furious that outsiders opened the vault
-* Secret: knows parts of the silence protocol and the family's postwar arrangement
-* Use at table: cautious ally, source of old-custody detail, moral witness to the estate cover story
-
-==== Detective Mateo Suarez
-
-* Role: robbery detective on the edge of a much stranger case
-* Public face: competent, skeptical, under pressure from superiors
-* Secret: knows witness contradictions are being quietly buried
-* Use at table: quiet source, pressure valve, possible collateral if police organization spikes
-
-==== Father Esteban Vale
-
-* Role: black-chamber Church intermediary
-* Public face: measured, courteous, conservative, harder than he seems
-* Secret: wants reclaiming the relic more than telling the truth about prior Church compromise
-* Use at table: rival custodian, partial ally, source of doctrinal warnings
-
-==== Sister Ines Barral
-
-* Role: archivist and ritual conservator
-* Public face: exacting, calm, observant
-* Secret: believes the Church no longer deserves sole custody
-* Use at table: best source of liturgical containment detail if trust is earned
-
-==== Ramiro Acosta
-
-* Role: surviving thief
-* Public face: dying, terrified, intermittently euphoric
-* Secret: heard the handoff collapse in real time and knows who started speaking like a claimant
-* Use at table: broken witness, urgency node, bearer clue source
-
-==== Sabine Voss
-
-* Role: Compact regional handler
-* Public face: controlled, elegant, transactional
-* Secret: is trying to recover the sale narrative before buyers realize she lost control
-* Use at table: mover of the Compact organization, architect of quiet pressure
-
-==== Ivan Lujan
-
-* Role: fixer, courier, possible bearer
-* Public face: practical operator with nationalist ties
-* Secret: already half-convinced the Spear has validated him
-* Use at table: bearer candidate, escalation hinge, tragedy point
-
-==== Brother Tomas Arce
-
-* Role: ecclesiastical broker and information parasite
-* Public face: charming, useful, slippery
-* Secret: sells fragments to anyone who sounds certain enough
-* Use at table: unreliable access point, false lead risk, contact unlock
-
-Quick sorting guide:
-
-* Best sources of custodial truth: Lucia Ferreyra, Sister Ines Barral
-* Best sources of police or public-pressure truth: Detective Mateo Suarez
-* Best sources of failed-handoff truth: Ramiro Acosta, Brother Tomas Arce
-* Most likely active movers of rival pressure: Sabine Voss, Ivan Lujan, Father Esteban Vale
-
-=== Handout 9: Shift Timeline Handout
-
-Use this sheet to track ten in-fiction days at four shifts per day. It should answer three questions at a glance: what shift it is now, what delayed result is due next, and what window the team risks missing if it hesitates.
-
-Shift key:
-
-* Morning
-* Day
-* Evening
-* Night
-
-How to use:
-
-* packet sent
-* packet due
-* library opens
-* police shift change
-* stakeout payoff
-* witness transfer
-* Church office available
-* likely cargo window
-* organization sign appears
-* relic event hits
-
-Recommended notation:
-
-* circle packet returns
-* underline hard time windows
-* mark crisis organizations in a contrasting color
-* use one or two words only per cell so the sheet stays readable
-
-==== 10-Day Grid
-
-|===
-| Day | Morning | Day | Evening | Night
-
-| 1  |   |   |   |   
-| 2  |   |   |   |   
-| 3  |   |   |   |   
-| 4  |   |   |   |   
-| 5  |   |   |   |   
-| 6  |   |   |   |   
-| 7  |   |   |   |   
-| 8  |   |   |   |   
-| 9  |   |   |   |   
-| 10 |   |   |   |   
-|===
-
-==== Packet Tracker
-
-|===
-| Packet | Sent On | Earliest Return | Actual Return | Notes
-
-| 1 |  |  |  | 
-| 2 |  |  |  | 
-| 3 |  |  |  | 
-| 4 |  |  |  | 
-| 5 |  |  |  | 
-|===
-
-End-of-shift checklist:
-
-* Did an organization worsen?
-* Did the relic milestones advance on the phases row?
-* Did a packet become due?
-* Did a new Location become available?
+*What makes the case work?* The object is simultaneously sacred relic, imperial mandate, and weaponizable asset. Each faction understands only one slice of that truth, and the agents must assemble all three before the city becomes the ritual site.
 
 ---
 
@@ -1184,13 +254,3 @@ image::png/spear-location-7-hidden-shrine.png[Location 7 — Hidden Shrine,align
 <<<
 
 image::png/spear-relic-spear-of-destiny.png[Relic — The Spear of Destiny,align=center,pdfwidth=90%,pdfheight=80%]
-
----
-
-== DA Quick Summary
-
-*What happened?* The Compact funded the theft. The crew breached the estate. The Spear destabilized the transfer. The handoff failed. The relic is now hidden, active, and pulling multiple factions toward one contaminated custody crisis.
-
-*What do the agents need?* Where the crew broke apart, who now has proximity control, what the old containment procedure was, and how to move the relic without completing its escalation.
-
-*What makes the case work?* The object is simultaneously sacred relic, imperial mandate, and weaponizable asset. Each faction understands only one slice of that truth, and the agents must assemble all three before the city becomes the ritual site.

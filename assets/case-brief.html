@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -216,6 +216,26 @@
   .two-col { display: flex; gap: 8px; }
   .two-col > div { flex: 1; }
 
+  /* ── RELIC MILESTONES ── */
+  .milestone-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 2px 6px;
+  }
+  .milestone-day {
+    font-family: var(--font-fill); font-size: 7.5pt;
+    border-bottom: 1px solid var(--rule);
+    text-align: center;
+    min-height: 14px; padding: 1px;
+  }
+  .milestone-desc {
+    font-family: var(--font-fill); font-size: 7.5pt;
+    border-bottom: 1px dotted var(--rule);
+    min-height: 14px; padding: 1px 3px;
+    background: var(--field-bg);
+  }
+  .section-title.green { color: var(--green-stamp); border-color: var(--green-stamp); }
+
   /* ── FOOTER ── */
   .footer {
     margin-top: auto;
@@ -325,8 +345,22 @@
     </div>
   </div>
 
-  <!-- VII. DA NOTES -->
-  <div class="section-title">VII &mdash; DA Notes</div>
+  <!-- VII. RELIC MILESTONES -->
+  <div class="section-title green">VII &mdash; Relic Milestones</div>
+  <div>
+    <span class="field-label">Keyed to days on the Operations Board. When a shift crosses a milestone day, the artifact event triggers.</span>
+    <div class="milestone-grid">
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+      <div class="milestone-day"></div><div class="milestone-desc"></div>
+    </div>
+  </div>
+
+  <!-- VIII. DA NOTES -->
+  <div class="section-title">VIII &mdash; DA Notes</div>
   <div>
     <span class="field-label">Pacing cues, tone reminders, red herrings, things to watch for during play</span>
     <div class="field-value xxl"></div>

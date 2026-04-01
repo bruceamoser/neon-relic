@@ -389,7 +389,7 @@ If the team lacks proper boundary materials or the correct key, add *+1 Difficul
 | *Shielding*
 | 2
 | One full scene
-| Seal a person, object, or small zone against passive broadcast, imprint, or occult bleed until the end of the current case phase or until the boundary is broken.
+| Seal a person, object, or small zone against passive broadcast, imprint, or occult bleed until the end of the current shift or until the boundary is broken.
 
 | *Banishment / Dispersal*
 | 3

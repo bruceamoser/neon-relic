@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organization Reference — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(139,26,26,0.025); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--red-stamp); border-bottom:2px solid var(--red-stamp); padding:6px 0 7px; margin-bottom:8px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:18pt; letter-spacing:6px; text-transform:uppercase; color:var(--red-stamp); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--red-stamp); color:var(--red-stamp); font-family:var(--font-main); font-size:10pt; letter-spacing:5px; padding:2px 10px; transform:rotate(-2deg); margin-bottom:4px; }
+  .org-block { border:1.5px solid var(--rule); padding:4px 6px 5px; background:var(--field-bg); margin-bottom:5px; }
+  .org-header { display:flex; gap:6px; align-items:baseline; margin-bottom:3px; }
+  .org-id { font-family:var(--font-fill); font-size:9pt; font-weight:bold; min-width:28px; }
+  .org-name-field { flex:1; border-bottom:1.5px solid var(--ink); min-height:15px; font-family:var(--font-fill); font-size:9pt; font-weight:bold; }
+  .org-value-field { width:40px; text-align:center; border:1.5px solid var(--ink); min-height:16px; font-family:var(--font-fill); font-size:9pt; font-weight:bold; }
+  .checkbox { width:9px; height:9px; border:1px solid var(--ink); display:inline-block; flex-shrink:0; }
+  .checkbox.checked { background:var(--ink); position:relative; }
+  .checkbox.checked::after { content:''; position:absolute; top:1px; left:2px; width:3px; height:5px; border:solid var(--paper); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
+  .status-check { display:flex; align-items:center; gap:3px; font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); }
+  .milestone-row { display:flex; gap:5px; align-items:center; padding:1px 0; border-bottom:1px dotted var(--rule-light); font-size:7pt; }
+  .milestone-row:last-child { border-bottom:none; }
+  .milestone-val { width:20px; height:14px; border:1px solid var(--rule); background:var(--field-bg); text-align:center; font-family:var(--font-fill); font-size:7.5pt; flex-shrink:0; }
+  .milestone-desc { flex:1; border-bottom:1px dotted var(--rule-light); min-height:13px; font-family:var(--font-fill); font-size:7pt; }
+  .field-label { font-family:var(--font-main); font-size:4.5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); margin-bottom:1px; display:block; }
+  .field-value { border-bottom:1px solid var(--rule); min-height:12px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:7pt; }
+  .org-detail-row { display:flex; gap:6px; margin-top:2px; }
+  .org-detail-row > div { flex:1; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Organization Reference</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">DA EYES ONLY</div>
+      <div>Form VC-18 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- O1: Vantablack Compact -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O1</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">Vantablack Compact</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">9</div>
+      <div class="status-check"><span class="checkbox checked"></span> Active</div>
+      <div class="status-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">7</div><div class="milestone-desc">Bribery channels activate across police, hospital, and customs routes. Advance O3 by 1 square.</div></div>
+    <div class="milestone-row"><div class="milestone-val">4</div><div class="milestone-desc">Field professionals replace cutouts; disappearances and abductions begin. Advance O2 by 1 square.</div></div>
+    <div class="milestone-row"><div class="milestone-val">1</div><div class="milestone-desc">The Compact has a likely district, safehouse, or export corridor.</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc">The Compact secures the Spear or launches its final snatch. O5 activates if still dormant.</div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">&mdash;</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Cross-advances O2, O3, O5</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Surveillance vans, bribed officials, missing witnesses</div></div>
+    </div>
+  </div>
+
+  <!-- O2: The Theft Crew -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O2</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">The Theft Crew</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">6</div>
+      <div class="status-check"><span class="checkbox checked"></span> Active</div>
+      <div class="status-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">5</div><div class="milestone-desc">One thief disappears with money and papers.</div></div>
+    <div class="milestone-row"><div class="milestone-val">3</div><div class="milestone-desc">A wounded thief surfaces through a clinic, fence, confessional, or lover. Advance O3 by 2 and O1 by 1.</div></div>
+    <div class="milestone-row"><div class="milestone-val">1</div><div class="milestone-desc">Surviving crew attempts desperate relocation. Fill 1 extra shift quadrant on the Operations Board.</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">&mdash;</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Cross-advances O1, O3; relic milestone build</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Abandoned vehicles, bloodstains, panicked fences</div></div>
+    </div>
+  </div>
+
+  <!-- O3: Buenos Aires Police -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O3</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">Buenos Aires Police</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">10</div>
+      <div class="status-check"><span class="checkbox checked"></span> Active</div>
+      <div class="status-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">8</div><div class="milestone-desc">Robbery detectives consolidate witness contradictions and unexplained injuries.</div></div>
+    <div class="milestone-row"><div class="milestone-val">6</div><div class="milestone-desc">A protected witness is released, moved, or mishandled. Advance O1 by 2 and O4 by 1.</div></div>
+    <div class="milestone-row"><div class="milestone-val">3</div><div class="milestone-desc">Checkpoints, raids, and formal pressure close the city. O6 activates if still dormant.</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc">Police intervention lands on the live artifact scene. Fill 1 extra shift quadrant on the Operations Board.</div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">&mdash;</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Cross-advances O1, O4, O6; relic milestone build</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Checkpoints, detective queries, hospital sweeps</div></div>
+    </div>
+  </div>
+
+  <!-- O4: The Catholic Church -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O4</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">The Catholic Church</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">12</div>
+      <div class="status-check"><span class="checkbox checked"></span> Active</div>
+      <div class="status-check"><span class="checkbox"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">9</div><div class="milestone-desc">Quiet observers begin monitoring hospitals, morgues, and aristocratic channels.</div></div>
+    <div class="milestone-row"><div class="milestone-val">6</div><div class="milestone-desc">Church observers identify Compact routes and begin tailing them. Advance O1 by 1.</div></div>
+    <div class="milestone-row"><div class="milestone-val">3</div><div class="milestone-desc">A retrieval cleric arrives with custody demands and incomplete ritual knowledge. Advance O3 by 1.</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc"></div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">&mdash;</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Cross-advances O1, O3</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Clerical observers, archive access requests, ritual inquiries</div></div>
+    </div>
+  </div>
+
+  <!-- O5: The Foreign Buyer -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O5</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">The Foreign Buyer</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">8</div>
+      <div class="status-check"><span class="checkbox"></span> Active</div>
+      <div class="status-check"><span class="checkbox checked"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">5</div><div class="milestone-desc">Advance funds move and courier infrastructure appears.</div></div>
+    <div class="milestone-row"><div class="milestone-val">2</div><div class="milestone-desc">Diplomatic pouch, private flight, or maritime handoff is imminent.</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc">The Spear leaves Argentine control.</div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">Compact regains custody, proof of custody reaches buyers, or a viable export corridor is secured.</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Export escalation</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Unfamiliar couriers, coded telegrams, embassy traffic</div></div>
+    </div>
+  </div>
+
+  <!-- O6: Buenos Aires Press -->
+  <div class="org-block">
+    <div class="org-header">
+      <div class="org-id">O6</div>
+      <div style="flex-shrink:0;"><span class="field-label">Organization Name</span></div>
+      <div class="org-name-field">Buenos Aires Press</div>
+      <div style="flex-shrink:0;"><span class="field-label">Value</span></div>
+      <div class="org-value-field">6</div>
+      <div class="status-check"><span class="checkbox"></span> Active</div>
+      <div class="status-check"><span class="checkbox checked"></span> Dormant</div>
+    </div>
+    <div class="milestone-row"><div class="milestone-val">3</div><div class="milestone-desc">Tabloids and radio link the heist to blackouts, wounds, and &ldquo;holy signs.&rdquo;</div></div>
+    <div class="milestone-row"><div class="milestone-val" style="border-color:var(--red-stamp);">0</div><div class="milestone-desc">The public story locks in and long-term secrecy is lost.</div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="milestone-row"><div class="milestone-val"></div><div class="milestone-desc"></div></div>
+    <div class="org-detail-row">
+      <div><span class="field-label">Activation Condition (if Dormant)</span><div class="field-value">Public effects, police noise, hospital leaks, or visible violence make secrecy impossible.</div></div>
+      <div><span class="field-label">Linked Effects</span><div class="field-value">Secrecy loss, complicates all factions</div></div>
+      <div><span class="field-label">Player-Facing Signs</span><div class="field-value">Reporters at scenes, tabloid headlines, radio broadcasts</div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>VC-18 &bull; The Verdant Covenant &bull; DA Use Only</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Organization Reference &mdash; The Spear That Went Dark</span>
+  </div>
+</div>
+
+</body>
+</html>

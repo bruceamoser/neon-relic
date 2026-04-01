@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Location Reference — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; page-break-after:always; } .page:last-child { page-break-after:auto; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(45,90,39,0.033); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--ink); border-bottom:2px solid var(--ink); padding:6px 0 7px; margin-bottom:10px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:22pt; letter-spacing:8px; text-transform:uppercase; color:var(--ink); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--red-stamp); color:var(--red-stamp); font-family:var(--font-main); font-size:10pt; letter-spacing:5px; padding:2px 10px; transform:rotate(-2deg); margin-bottom:4px; }
+  .section-title { font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:2px; margin:9px 0 5px; }
+  .section-title.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+  .section-title.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  .field-label { font-family:var(--font-main); font-size:5.5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:2px; }
+  .field-value { border-bottom:1.5px solid var(--rule); min-height:16px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:9pt; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:58px; }
+  .field-value.med { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:40px; }
+  .field-value.xl { border:1px solid var(--rule); min-height:72px; }
+  .loc-id-row { display:flex; align-items:baseline; gap:8px; margin-bottom:5px; }
+  .loc-id { font-family:var(--font-main); font-size:14pt; font-weight:bold; letter-spacing:2px; color:var(--green-stamp); border:2px solid var(--green-stamp); padding:2px 10px; min-width:50px; text-align:center; }
+  .loc-name { flex:1; border-bottom:2px solid var(--ink); min-height:22px; font-family:var(--font-fill); font-size:12pt; font-weight:bold; padding:2px 4px; }
+  .availability-row { display:flex; align-items:baseline; gap:12px; margin-bottom:5px; }
+  .avail-keyword { display:inline-flex; gap:10px; }
+  .avail-keyword label { font-family:var(--font-main); font-size:6.5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); display:flex; align-items:center; gap:3px; }
+  .checkbox { width:9px; height:9px; border:1px solid var(--ink); display:inline-block; }
+  .checkbox.checked { background:var(--ink); position:relative; }
+  .checkbox.checked::after { content:''; position:absolute; top:1px; left:2px; width:3px; height:5px; border:solid var(--paper); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
+  .result-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:5px; }
+  .result-col { display:flex; flex-direction:column; }
+  .loc-image { width:100%; height:1.6in; border:1.5px solid var(--rule); background:var(--field-bg); margin-bottom:5px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .loc-image-placeholder { font-family:var(--font-main); font-size:6pt; text-transform:uppercase; letter-spacing:2px; color:var(--ink-light); }
+  .notes-line { border-bottom:1px solid var(--rule-light); height:17px; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L1 — THE ESTATE AFTERMATH
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Location Reference</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">DA EYES ONLY</div>
+      <div>Form VC-14 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span>
+      </div>
+    </div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L1</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">The Ferreyra Estate, Recoleta District</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A fortified residential compound with shattered vault access, scattered reliquary fragments, and signs of a professional breach. The family has locked up the property and stopped answering the door.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox checked"></span> Open</label><label><span class="checkbox"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Available at case start.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Lucia Ferreyra. After O4M1: Father Esteban Vale may appear if Church observers are monitoring the family.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I1 (breach method), I2 (false target), I3 (funded heist proof), I4 (vault was suppressive &mdash; Containment Truth).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O3 (Buenos Aires Police), O4 (The Catholic Church).</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents reconstruct the theft sequence and learn I1&ndash;I4. Unlocks L4 (Currency Exchange) and L3 (Church Archive). Lucia may share partial custody knowledge if handled respectfully.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O3 advances 1 square (police arrive during investigation). Lucia refuses further contact. Church observers accelerate O4.</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O3M2: police cordon the estate &mdash; access now requires cover story or packet-supported credentials. O4M3: Church retrieval cleric is on-site.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L1 &mdash; The Ferreyra Estate</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L2 — POLICE STATION
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L2</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Buenos Aires Police &mdash; Robbery Division</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A cramped detective bullpen with case boards, witness logs, and an overworked staff managing a theft that keeps getting stranger.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after the estate is known to the team or any police-connected clue is obtained.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Detective Mateo Su&aacute;rez.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I5 (witness list), I6 (wounded thief route), I7 (hospital referrals), I8 (sketch fragments).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O3 (Buenos Aires Police), O1 (Vantablack Compact &mdash; informants in the station).</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents gain I5&ndash;I8. Su&aacute;rez becomes a quiet source. Unlocks L5 (Illicit Clinic).</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O3 advances 1 square (agents draw official attention). O6 (Buenos Aires Press) may activate if pressure is mishandled publicly.</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O3M3: checkpoints and raids begin &mdash; station access restricted. O1M2: an informant tips off the Compact about the investigation.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L2 &mdash; Police Station</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L3 — CHURCH ARCHIVE
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L3</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Diocesan Archive, Cathedral Annex</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A restricted ecclesiastical archive behind two locked doors and one polite but immovable secretary. Dust, ledgers, and the smell of old ink.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after the estate aftermath or any Church-linked clue.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Sister In&eacute;s Barral. After O4M2: Father Esteban Vale arrives.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I9 (family were custodians, not owners &mdash; Containment Truth), I10 (postwar custody compromise), I11 (partial substitute custody sequence &mdash; Containment Truth).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O4 (The Catholic Church).</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents gain I9&ndash;I11. May unlock L7 (Hidden Shrine) if linked through old family chapels. Sister In&eacute;s shares partial containment knowledge.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O4 advances 1 square (The Catholic Church alerted to outside interest). Access to deeper records closed.</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O4M3: a retrieval cleric arrives with custody demands &mdash; the archive becomes a negotiation site.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L3 &mdash; Church Archive</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L4 — CURRENCY EXCHANGE
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L4</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Cambio Cerrito, Microcentro District</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A nondescript currency exchange shopfront concealing wire-transfer infrastructure and a back-office courier dispatch. The owner is nervous.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after estate evidence, police data, or a packet return on financial cutouts.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Iv&aacute;n Luj&aacute;n (if Compact is active). After O1M2: Sabine Voss appears.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I12 (who financed the theft), I13 (handoff collapse location), I14 (buyer demands &mdash; proof of force vs. symbolism).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O1 (Vantablack Compact), O3 (Buenos Aires Police &mdash; financial investigators).</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents gain I12&ndash;I14. Unlocks L6 (Port/Export Route). Identifies Sabine Voss and Iv&aacute;n Luj&aacute;n.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O1 advances 1 square (Compact aware of investigators). Evidence destroyed &mdash; courier records burned.</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O1M2: field professionals replace cutouts &mdash; exchange under new management. When O5 activates: courier infrastructure shifts to export routes.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L4 &mdash; Currency Exchange</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L5 — ILLICIT CLINIC
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L5</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Cl&iacute;nica Informal, La Boca District</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">An unlicensed medical practice in a converted warehouse. Chemical smells, improvised surgical equipment, and a doctor who does not ask questions.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after police, street, or church leads surface a surviving thief.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Ramiro &ldquo;Rami&rdquo; Acosta.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I15 (supernatural effects &mdash; wound bloom &mdash; Containment Truth), I16 (who began speaking like a chosen ruler &mdash; Containment Truth), I17 (site of the final custody break).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O2 (The Theft Crew), O1 (Vantablack Compact &mdash; searching for survivors).</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents gain I15&ndash;I17. Rami can lead to L7 (Hidden Shrine). Recovered thief notes available as handout.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O2 advances 1 square (thief disappears or is silenced). O1 advances 1 square (Compact operatives follow the agents).</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O2M2: Rami surfaces here &mdash; this is the window. O1M2: Compact professionals are watching the clinic.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L5 &mdash; Illicit Clinic</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L6 — PORT / EXPORT ROUTE
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L6</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Puerto Madero Freight District</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">Container yards, cargo offices, and private air charter desks. The border between legal commerce and black-market logistics.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open once buyer proof, Compact movement, or route intelligence exists.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">Brother Tom&aacute;s Arce (brokering export channels). After O5M1: unnamed foreign courier.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I18 (export route &mdash; maritime, air, or diplomatic), I19 (buyer motivation &mdash; symbolism vs. proof of force).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">O5 (The Foreign Buyer) if active, otherwise O1 (Vantablack Compact). O3 (Buenos Aires Police) as secondary.</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents gain I18&ndash;I19. Can interdict export corridor. Identifies late-case transfer ambush opportunity.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">O5 advances 1 square (export window narrows). O1 advances 1 square (Compact secures alternative route).</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">O5M2: handoff is imminent &mdash; this becomes a time-critical interdiction site.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L6 &mdash; Export Route</span></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════
+     L7 — HIDDEN SHRINE
+     ════════════════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="header">
+    <div class="header-left"><div class="header-title">Location Reference</div><div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div></div>
+    <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
+  </div>
+  <div class="loc-id-row"><div class="loc-id">L7</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Abandoned Chapel, Flores District</div></div></div>
+  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A derelict family chapel with makeshift ritual markings and the unmistakable pressure of a nearby active relic. The Spear is here &mdash; or was recently.</div></div>
+  <div class="section-title green">Availability</div>
+  <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
+  <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Usually unlocked by at least two prior clues. The DA should ensure multiple paths lead here.</div></div>
+  <div class="section-title">NPCs Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">NPCs found at this location (note milestone-triggered changes)</span><div class="field-value med">The current bearer (Iv&aacute;n Luj&aacute;n or another bearer candidate). Other NPCs depend on which organizations are closest to crisis.</div></div>
+  <div class="section-title green">Information Available</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Information IDs (I#) discoverable at this location</span><div class="field-value med">I20 (who holds proximity control &mdash; Containment Truth), I21 (what the bearer believes the Spear is telling them), I22 (missing piece of Quiescence &mdash; Containment Truth).</div></div>
+  <div class="section-title">Organizations Present</div>
+  <div style="margin-bottom:5px;"><span class="field-label">Organizations with interest or operational presence here (O#)</span><div class="field-value" style="min-height:20px;">Whichever organization is closest to crisis, plus Lance Threshold Build pressure.</div></div>
+  <div class="section-title red">Engagement Results</div>
+  <div class="result-grid">
+    <div class="result-col"><span class="field-label">Positive Result &mdash; successful engagement</span><div class="field-value tall">Agents can attempt controlled containment if they know the Quiescence conditions. Direct retrieval possible.</div></div>
+    <div class="result-col"><span class="field-label">Negative Result &mdash; failed engagement</span><div class="field-value tall">Fill 1 extra shift quadrant on the Operations Board (relic milestones advance). Custody conflict with Church or Compact may erupt. Public revelation if containment fails.</div></div>
+  </div>
+  <div class="section-title">Milestone Changes</div>
+  <div style="margin-bottom:5px;"><span class="field-label">How this location changes when organization milestones are reached</span><div class="field-value med">Day 2: the Spear begins selecting a claimant &mdash; the shrine becomes the epicenter.</div></div>
+  <div class="footer"><span>VC-14 &bull; The Verdant Covenant &bull; DA Use Only</span><span>Neon Relic &copy; 2025</span><span>L7 &mdash; Hidden Shrine</span></div>
+</div>
+
+</body>
+</html>
