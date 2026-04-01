@@ -16,15 +16,6 @@ These filled-in HTML forms contain all the mechanical and narrative content a DA
 | `npc-cards.html` | VC-15 | 8 NPC cards (4 pages, 2 per page) with organization, secret, goal, artifact connection, knowledge, and results |
 | `information-cards.html` | Info Card | 22 information cards (I1–I22) — 3 front pages + 3 back pages for double-sided printing |
 
-### Supplemental Files (AsciiDoc)
-
-These files do not have matching HTML form templates and remain in AsciiDoc format.
-
-| File | Contents |
-| --- | --- |
-| `handouts.adoc` | 6 handout texts (Covenant Archive, Church Memo, Museum Abstract, Black-Market Brief, Tabloid Clipping, Thief Notes) |
-| `play-aids.adoc` | Ops board trackers, NPC dossiers, shift timeline grid, packet tracker |
-
 ## Image-Generation Prompts
 
 The `handouts/` subdirectory contains one self-contained image-generation prompt per image. Each file can be copied directly into an image generator — no assembly required.
