@@ -2,451 +2,410 @@
 
 = The Case File
 
-A Neon Relic *Case File* is a reactive operations board, not a scripted sequence of set scenes. The agents work through a case over the course of *days* — typically fourteen — while the DA tracks what the world is doing in response. Each day is divided into four *shifts* (Morning, Day, Evening, Night), giving the team a fixed number of moves before the situation becomes unrecoverable.
+The phone rings at 2 a.m. A Wayfinder analyst has matched an occult energy signature to a stolen object last seen in a Buenos Aires vault. By the time your agents land, the police are already involved, the building is sealed, and a wounded thief has disappeared into the city's clinic network. Somewhere in the noise, a relic is waking up.
 
-The engine is:
+This is a *Case File* — Neon Relic's structure for investigation, pressure, and consequence. A Case File is not a scripted adventure with numbered scenes that play in order. It is a living situation that the agents walk into and the DA manages as it deteriorates. The world does not wait for the players to catch up. Every shift they spend talking to the wrong person, chasing a dead lead, or recovering from a Corruption spike is a shift the relic spends getting worse.
 
-* an *Operations Board* counting down days until catastrophe, with a shift row tracking time spent and organization rows tracking external pressure
-* a set of *Locations* that can be approached in flexible order
-* *relic milestones* keyed to specific days, representing what the anomaly does if left uncontained
-* delayed *Covenant Request Packet* returns that make research and institutional support matter without being instant
+A case typically runs over *fourteen days*, each divided into four *shifts* — Morning, Day, Evening, and Night. The team has a fixed number of moves before the situation becomes unrecoverable. They will not use all of them wisely, and that is the point.
 
-Players should experience narrative signs, mounting pressure, and operational tradeoffs. The DA may track numbers behind the screen, but the table sees symptoms, delays, rumors, closures, surveillance, compromised witnesses, and rising Corruption pressure.
+The case runs on four interlocking pieces:
 
----
+* The *Operations Board* — a single tracking surface where days count down toward catastrophe, organizations advance toward their own crises, and relic milestones fire when the clock hits specific days.
+* *Locations* — places the agents can go, each one a self-contained reference sheet the DA pulls when the players say "we're heading to the church archive."
+* *NPC Cards* and *Information Cards* — the people who know things and the facts they carry, cross-linked so the DA always knows who has what and where to find them.
+* *Covenant Request Packets* — the team's lifeline to institutional support, slow enough to cost real time but reliable enough to prevent dead ends.
 
-== Case Board Anatomy
-
-Every Case File is authored as a case board built from the following parts:
-
-[%header,cols="1,4"]
-|===
-| Element | Function
-
-| *Operations Board*
-| The single tracking surface for the case. 14 columns count down from 14 → 1 (days until catastrophe). Contains a shift row and organization countdown rows.
-
-| *Shift Row*
-| The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. As shifts pass, quadrants are filled. Relic milestones are keyed to specific days on this row — when the DA fills a quadrant that crosses a milestone day, the artifact event triggers.
-
-| *Organization Row*
-| A countdown row on the Operations Board tracking external reactive pressure. Each row has a name, Active checkbox, and 14 countdown squares. Milestone squares use O#M# shorthand. Rival factions, police, media, custodians, smugglers, and institutional counter-moves all belong here.
-
-| *Location*
-| A place the agents can go. Each Location is the DA's primary reference during play — a full form listing what's there, who's present, and what can be learned. See <<case-entities>>.
-
-| *NPC Card*
-| A playing-card-sized reference for a significant person in the case. Carries organization affiliation (O#), secret, goal, artifact connection, knowledge (I# refs), and positive/negative results. Contacts and information sources are NPC Cards, not standalone elements.
-
-| *Information Card*
-| A playing-card-sized reference for a discoverable fact, identified by an I# code. Lists where the information can be found (Locations), who knows it (NPCs), and when HQ can provide it as a fallback.
-
-| *Containment Truth*
-| Information required for a safe resolution: trigger, appetite, tether, quiescence condition, ritual sequence, shielding method, or custody requirement. Containment Truths are Information Cards with Type set to Containment Truth.
-|===
+The players see none of the numbers. They see a detective who has doubled the uniformed presence at the station. They hear a radio die when they reach the loading bay. They notice that hospital staff are using the same phrase without realizing it. The DA translates the board state into the world, and the world translates into pressure at the table.
 
 ---
 
+[[operations-board]]
 == The Operations Board
 
-The *Operations Board* is the single tracking surface for a Case File. It replaces separate shift timelines, relic timelines, and organization milestone lists with one unified countdown grid.
+Everything in a Case File flows through the *Operations Board*. It is the DA's primary instrument — a single sheet of paper that tracks how much time the team has spent, how close each external threat is to its next crisis point, and when the relic itself escalates.
 
-=== Layout
-
-* *14 columns*, numbered *14 → 1*, counting down left to right.
-* Column 14 = case start. Column 1 = catastrophe.
-* Frame the countdown as *"Days until catastrophe"* — column 1 has concrete narrative weight: relic activation, sale, city exposure, dimensional breach, or whatever the case's worst outcome is.
+The board is a grid. Fourteen columns, numbered *14 down to 1*, counting left to right. Column 14 is the first day of the case. Column 1 is catastrophe — the relic activates in public, the sale closes, the bearer reaches full manifestation, or whatever the worst outcome is for this particular artifact. Every row on the board counts down toward that same endpoint.
 
 === The Shift Row
 
-The first row of the board is the *shift row*. It tracks how much time the team has spent and when relic milestones fire.
+The first row is the *shift row*. Each of the fourteen day-columns is divided into four quadrants — *Morning*, *Day*, *Evening*, *Night* — giving the case a total of fifty-six shifts from start to catastrophe. As shifts pass, the DA fills in quadrants from left to right. Each filled quadrant represents one block of time the team has committed to something: a scene, a stakeout, a packet request, travel, or recovery.
 
-* Each day-column is quartered with an X, creating 4 quadrants: *Morning*, *Day*, *Evening*, *Night*.
-* As shifts pass, the DA fills in quadrants left to right. Each filled quadrant is one spent shift.
-* *Relic milestones* are keyed to specific days on this row. When the DA fills the last quadrant of a milestone day, the artifact event triggers immediately.
-* At Day 1, catastrophe occurs — the relic's worst-case outcome fires.
-* Relic milestone descriptions live in the Case Brief, keyed to day numbers (e.g., “Day 11: Dream-bleed begins affecting witnesses within 100 meters”).
+*Relic milestones* are keyed to specific days on this row. When the DA fills the last quadrant of a milestone day, the artifact event triggers immediately. These milestones are not generic "things get worse" beats — they are specific to the relic's nature. A sovereignty artifact begins imprinting command-language on nearby witnesses. A wound relic reopens old injuries in everyone who has handled it. A surveillance artifact starts broadcasting its location to anyone tuned to the right frequency. The milestone descriptions live in the Case Brief, and they fire whether the agents are ready or not.
 
-The shift row answers three questions cleanly:
+At Day 1, catastrophe occurs. The relic's final escalation plays out. The case is over, one way or another.
+
+The shift row answers three questions every time it advances:
 
 . What did the team commit this time to?
-. What did that cost in exposure, delay, or Corruption?
-. What changed elsewhere while they were doing it?
+. What did that cost — in exposure, delay, or Corruption?
+. What changed in the world while they were doing it?
 
-=== Default Shift Names
+=== The Rhythm of a Day
 
-Use these unless the case benefits from a different cadence:
+Each day has four shifts. Use these names unless the case calls for something different:
 
-* *Morning* -- first access, official hours, resets, and overnight consequences become visible
-* *Day* -- public movement, bureaucracy, traffic, witnesses, routine business
-* *Evening* -- social access, handoffs, covert movement, fatigue, changing police posture
-* *Night* -- stakeouts, theft, clandestine rites, transport, and the highest supernatural volatility
+* *Morning* — first access, official hours, overnight consequences become visible, bureaucracies open
+* *Day* — public movement, witnesses available, traffic, routine business, the easiest time to be seen
+* *Evening* — social access, covert handoffs, fatigue setting in, police shift changes, surveillance windows
+* *Night* — stakeouts, break-ins, clandestine rites, smuggler transports, and the highest supernatural volatility
 
-Not every shift becomes a full scene at the table. Some shifts are resolved quickly as travel, packet handling, quiet research, or recovery.
-
----
-
-== Shift Procedure
-
-Resolve each shift in the following order:
-
-. *Review visible pressure signs.* State what changed since the last shift: news, patrols, wounded contacts, closed routes, dream bleed, rival sightings, strange weather, radio noise, or silence from a packet request.
-
-. *Choose the team's primary undertaking.* Usually this is one of the following: scene action, travel, surveillance, research, preparation, or recovery. If the team splits, the DA should resolve only the parts that matter and keep the consequences legible.
-
-. *Optionally send one Covenant Request Packet.* Only one packet may be sent during a shift. It may contain multiple related asks if they concern the same subject thread.
-
-. *Resolve the undertaking.* Play the scene, handle the travel shift, roll for access, or process the support action.
-
-. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time passage, loud action, public exposure, missed windows, packet interception, or artifact mishandling. Fill in the next shift quadrant on the shift row and check for relic milestones crossed this day.
-
-. *Mark delayed returns.* Note when packet responses, stakeout results, lab work, or institutional callbacks will come back. No deep result should appear immediately unless the case author explicitly established it beforehand.
+Not every shift becomes a full scene at the table. Some shifts pass in a sentence: "You spend the morning waiting for the packet to come back. Nothing arrives." Others consume the entire session. The shift structure is a reliable clock, not a mandate to roleplay every four-hour block.
 
 ---
 
-== Shift Types
+== Running a Shift
 
-The team usually commits a full shift to one primary type of work.
+When the table is ready to move forward, each shift follows the same six-step rhythm. It takes less than a minute when nothing dramatic is happening and expands naturally when a scene demands it.
 
-[%header,cols="1,4"]
+=== Step 1: Set the Scene
+
+Open the shift by telling the players what has changed since the last one. This is where the Operations Board does its work — you are translating numbers into atmosphere. Do not say "Organization 3 advanced to milestone 2." Say:
+
+____
+"The morning paper leads with a break-in at the Ferreyra estate. Detective Suárez has doubled the uniformed presence at the station, and two men in dark suits are asking questions at the hotel front desk."
+____
+
+If nothing has changed, say that too. Silence is its own kind of pressure.
+
+=== Step 2: Choose an Undertaking
+
+The team decides what to do with this shift. Most undertakings fall into one of these categories:
+
+[%header,cols="1,3"]
 |===
-| Shift Type | What It Covers
+| Undertaking | What It Looks Like
 
-| *Scene Action*
-| Direct engagement with a node: interview, break-in, archive access, clinic visit, ritual site approach, search, interrogation, or confrontation.
+| *Scene*
+| Go somewhere, talk to someone, investigate something. This is the heart of most shifts.
 
 | *Travel*
-| Movement between cities, districts, stakeout positions, ports, hospitals, estates, or border crossings. See xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules].
-
-| *Research*
-| Library, archive, hospital, customs, police, or academic work done locally rather than through packet return.
-
-| *Preparation*
-| Requisition, disguise, route planning, cover identities, arranging meetings, prepping containment materials, or building a trap.
+| Move to a new city, region, or country. May cost multiple shifts depending on distance and method. See xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules].
 
 | *Surveillance*
-| Watching a contact, a route, a house, a ward, a shrine, a cargo path, or a likely handoff point. Often produces delayed results.
+| Watch a location or person without engaging. Results arrive later. The DA notes what the stakeout will reveal and which shift it pays off.
+
+| *Research*
+| Dig through records, study a relic fragment, or analyze a sample. Usually generates a delayed result.
+
+| *Preparation*
+| Acquire gear, set up a safe house, prepare a containment site, brief an ally. Not glamorous, but sometimes the difference between a clean recovery and a catastrophe.
 
 | *Recovery*
-| Medical stabilization, sleep, stress control, quiet regrouping, or equipment recovery after a bad scene.
+| Rest, treat injuries, manage Corruption. The world keeps moving while the agents do nothing. That is the cost.
 |===
+
+If the team splits, resolve each part that matters and keep consequences visible. The goal is clarity, not thoroughness — if a split produces nothing interesting, summarize it in a sentence and move on.
+
+=== Step 3: Send a Packet (Optional)
+
+The team may send *one Covenant Request Packet* during any shift. A packet is a communication to Covenant headquarters — Wayfinder research, Keep logistics, or Recovery field support — asking for information, analysis, or assistance. Packets are the agents' institutional lifeline, and they are deliberately slow.
+
+=== Step 4: Resolve the Undertaking
+
+Play out the scene, handle the travel, resolve the support action. This is where dice hit the table, NPCs talk, and consequences emerge. When a shift becomes an active scene, use the Scene Resolution procedure described later in this chapter.
+
+=== Step 5: Advance the Board
+
+After the undertaking resolves, update the Operations Board:
+
+. *Fill the next shift quadrant* on the shift row. If this completes a milestone day, the relic milestone triggers immediately — read the milestone description from the Case Brief and play it out.
+. *Advance any organization rows* that were triggered by what happened during this shift. A loud scene, a visible arrest, a failed containment attempt, or simply the passage of time can cause one or more organizations to escalate. Cross out the next empty square on each affected row, moving toward column 1.
+. *Check for organization milestones.* If an organization's countdown has reached a milestone square, read the milestone description and execute its consequences. This may advance other organizations, activate dormant rows, or change what is available at a Location.
+
+=== Step 6: Note Delayed Returns
+
+If anything during this shift created a future payoff — a packet sent, a stakeout started, a lab sample submitted — write down three things: what will come back, the earliest shift it can arrive, and what could disrupt it. Delayed returns are one of the main reasons Neon Relic feels like procedural investigation instead of omniscient adventuring.
 
 ---
 
-== Scene Resolution Bundle
+== Scene Resolution
 
-When a shift becomes an active scene, resolve it as a *bundle* rather than as a single spotlight roll. The DA has the Location form in front of them with the relevant NPC Cards and Information Cards alongside — like a hand of cards dealt for the scene.
+When a shift becomes an active scene — the agents arrive at a location, confront an NPC, attempt a recovery operation, or walk into a crisis — resolve it as a *scene bundle*. This is a structured framework for giving every player something meaningful to do, not a replacement for freeform roleplay.
 
-=== Step 1 -- State the Objective
+=== How It Works
 
-The table states what it wants from the scene in plain language: get access to the archive, stabilize the thief, identify the buyer route, recover the film, break the tail, or isolate the bearer.
+. *State the objective.* What are the agents trying to accomplish in this scene? "Get the custody records from the church archive." "Intercept the handoff at the port." "Stabilize the wounded thief before the police arrive."
 
-=== Step 2 -- DA Frames the Scene from the Location Form
+. *The DA names the Key Activity.* This is the primary skill test that determines the scene's outcome — the roll that moves the case forward or doesn't. Only one player makes this roll.
 
-The DA reads the Location's *description* and frames the operational situation. The Location form's *positive result* and *negative result* fields define what's at stake — the DA does not need to improvise consequences. NPC Cards present at this location are placed alongside the form; their secrets, goals, and knowledge shape the interaction.
+. *Each other player declares a contribution.* Contributions represent how the rest of the team supports the Key Activity. Each player chooses a different type:
 
-Examples of operational framing:
-
-* Rebuild the theft sequence from the estate's physical evidence.
-* Gain partial access to the church archive without triggering seizure.
-* Lock down the likely export corridor at the port.
-* Break the legitimacy feedback loop at the currency exchange.
-
-=== Step 3 -- Each Player Declares a Unique Contribution
-
-Each agent states a different contribution to the bundle. Duplicate contributions should be rare. If two agents try the same thing, one of them is probably actually doing support, cover, or follow-through instead.
-
-[%header,cols="1,4"]
+[%header,cols="1,3"]
 |===
-| Contribution Type | Use
+| Contribution Type | What It Does
 
 | *Immediate*
-| Directly solves the present scene objective. Search the office, question the witness, pick the lock, read the ritual notes, or break the code.
+| Direct support happening right now — covering fire, distraction, medical assist, persuasion backup. Adds dice to the Key Activity roll.
 
 | *Shield*
-| Reduces fallout while the scene is happening. Cover story, lookout, crowd control, medical stabilization, counter-surveillance, or ritual insulation.
+| Protective action — watching exits, managing witnesses, running interference with police. Does not add dice but reduces consequences on a bad result.
 
 | *Position*
-| Improves what happens next. Secure an exit, tag a vehicle, plant a recorder, line up a second meeting, or establish a future access point.
+| Setting up future advantage — planting a tracking device, photographing documents, establishing an escape route. Does not affect this scene but creates a benefit for the next one.
 
 | *Delayed*
-| Sets a later payoff. Lab drop, dead-drop signal, recurring watch, borrowed file, institutional callback, or tracing request.
+| Launching a parallel thread — sending a packet, starting surveillance on the back entrance, making a phone call to an asset. The result arrives in a future shift.
 |===
 
-=== Step 4 -- Roll What Matters
+. *Roll what matters.* The Key Activity player rolls their dice pool. Contributions modify the outcome as described above.
 
-Not every contribution requires a roll. Roll only when the outcome is uncertain and the consequence matters. The Key Activity normally requires at least one meaningful roll. Support rolls matter when failure would expose the team, cost time, or worsen an organization.
-
-=== Step 5 -- Disclose Results in Bands
-
-Use the following resolution bands instead of binary success/failure whenever a scene has multiple moving parts:
+. *The DA discloses results.* The outcome falls into one of five bands:
 
 [%header,cols="1,4"]
 |===
-| Result Band | Meaning
+| Result Band | What Happens
 
 | *Clean Progress*
-| The team gets what it came for with little immediate fallout.
+| The agents get what they came for. The scene objective is achieved without complications. Information is revealed, access is granted, an NPC cooperates.
 
 | *Progress With Cost*
-| The team gets the main thing, but an organization worsens, a witness is spooked, a route closes, or someone takes +1 Corruption from exposure.
+| The agents achieve the objective, but something goes wrong along the way — an organization advances on the board, a witness is spooked, a trail of evidence is left behind, or someone takes Corruption.
 
 | *Partial Progress*
-| The team gets one useful truth, lead, or contact, but not the whole objective. The scene points clearly to the next move.
+| Some of what the agents wanted is achieved, but a key piece is missing or a complication arises. They learn part of the truth but not all of it. They get access but the NPC holds something back.
 
 | *Setback With Signal*
-| The team fails to achieve the main objective, but the case still moves. A new sign, clue, packet angle, or hostile move becomes visible.
+| The scene goes badly, but the agents learn something from the failure. They do not get what they came for, but the DA reveals a clue, an NPC's true allegiance, or a direction for the next move. Information should still flow even on failure.
 
 | *Breach*
-| The scene goes loud, public, or occultly unstable. An organization row advances immediately, a relic milestone may trigger on the shift row, and the next shift starts under pressure.
+| The scene goes loud, public, or occultly unstable. An organization row advances immediately, a relic milestone may trigger, and the next shift starts under severe pressure.
 |===
+
+The goal of scene resolution is to keep information flowing regardless of dice results. A failed roll should produce movement, not silence. If the agents botch the approach at the church archive, they still notice that someone else has been through the records recently. If the handoff goes wrong at the port, they see the Compact fixer's face before he disappears. Dead air is the enemy of investigation games.
 
 ---
 
-== Organization Rows on the Operations Board
+== Organization Rows
 
-Organizations are tracked as countdown rows on the Operations Board. Each organization row is an independent pressure track that shares the same 14-column grid as the shift row.
-
-=== Row Structure
-
-Each organization row has:
-
-* *Name* — the faction or pressure source (Police, Compact, Church, Media, etc.)
-* *Active checkbox* — checked when the organization is in play, unchecked for dormant organizations
-* *14 countdown squares* — matching the board's 14 columns
-
-At case start, the DA fills squares from column 14 inward to the organization's starting value. An organization starting at 6 has columns 14–7 already filled — only 6 squares remain before catastrophe. The dead space visually communicates how close the threat is.
-
-=== Escalation
-
-When an organization escalates, the DA crosses out the next empty square moving toward column 1. When a milestone square is reached, its event triggers.
-
-=== O#M# Shorthand
-
-Milestone squares are labeled with *O#M#* shorthand:
-
-* *O1M1* = Organization 1, Milestone 1
-* *O2M3* = Organization 2, Milestone 3
-
-Milestone descriptions live in the organization's reference text, not on the grid itself.
-
-=== Cross-Links
-
-Organizations affect each other through milestone text, not arrows or grid notation. A milestone description contains its own consequences:
-
-____
-O2M3: A wounded thief surfaces at the clinic. Color in 2 Police squares and 1 Compact square.
-____
-
-The DA reads the milestone description and executes.
-
-=== Dormant Organizations
-
-Some organizations are pre-printed on the board but start inactive:
-
-* The *Active* checkbox is unchecked at case start.
-* The row is inert until the DA marks it active (triggered by agent action, a milestone cross-link, or a relic milestone on the shift row).
-* Once active, the organization escalates normally.
-* The board layout stays stable — no adding rows mid-session.
+Below the shift row, the Operations Board holds *organization rows* — countdown tracks representing external pressure sources that are reacting to the case independently of the agents with their own agendas and timetables.
 
 === What Organizations Represent
 
-An *organization* is external reactive pressure. Examples:
+An organization is any external force that creates pressure in the case. Not every organization is hostile — some are simply institutional, operating on their own timetable and making the agents' work harder through indifference or competing priorities.
 
-* police inquiry consolidating witness reports
-* Compact recovery teams replacing cutouts
-* Church custodians attempting unilateral seizure
-* customs or port scrutiny closing routes
-* media exposure transforming secrecy into damage control
+Examples:
 
-Organizations respond to agent action, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities. Recommend a maximum of ~8 organization rows per case.
+* A police inquiry consolidating witness reports and closing in on the crime scene
+* A Compact recovery team replacing burned cutouts and reestablishing their acquisition chain
+* Church custodians attempting a parallel recovery through their own historical channels
+* Customs officials tightening port scrutiny after an anonymous tip
+* A media outlet investigating the same event for entirely mundane reasons
 
-=== What Players See
+Organizations respond to agent activity, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities. A case should have no more than about *eight organization rows* — enough to create cross-pressure without overwhelming the DA's tracking.
 
-Players should usually see *signs*, not the DA's numbers. Say:
+=== How Organization Rows Work
+
+Each organization row has:
+
+* A *name* identifying the faction or pressure source
+* An *Active checkbox* — checked when the organization is in play, unchecked for dormant organizations
+* *14 countdown squares* matching the board's 14 columns
+
+At case start, the DA fills in squares from column 14 inward to the organization's starting value. An organization starting at 6 has columns 14 through 7 already filled — only 6 squares remain before catastrophe. That dead space on the board is visual shorthand for how close the threat is.
+
+When an organization *escalates*, the DA crosses out the next empty square moving toward column 1. When a *milestone square* is reached, its event triggers. Milestone squares are labeled with *O#M#* shorthand — O1M1 means Organization 1, Milestone 1; O2M3 means Organization 2, Milestone 3. The milestone descriptions live in the Organization Reference document, not on the grid itself.
+
+=== Cross-Links
+
+Organizations do not exist in isolation. When one organization hits a milestone, its consequences often ripple into other rows. These connections are written directly into the milestone descriptions:
+
+____
+O2M2: A wounded thief surfaces at the clinic. Advance O3 (Police) by 2 squares and O1 (Compact) by 1 square.
+____
+
+The DA reads the milestone description and executes it. There are no arrows, no flowcharts, no separate cross-reference table. The text says what happens. This simplicity is deliberate — it means the DA never has to interpret a diagram mid-session. Read the milestone, do what it says, move on.
+
+Cross-links create the illusion of an intelligent, reactive world without requiring the DA to improvise connections in real time. They also prevent cases from stalling: even if the agents ignore an organization entirely, its milestones will eventually advance other rows, keeping the board in motion and the pressure rising.
+
+=== Dormant Organizations
+
+Some organizations are pre-printed on the board but start the case inactive:
+
+* Their *Active checkbox* is unchecked at case start.
+* The row is inert — no escalation, no milestones — until the DA marks it active.
+* Activation is triggered by agent action, a milestone cross-link from another organization, or a relic milestone on the shift row.
+* Once active, the organization escalates normally.
+* The board layout stays stable. No rows are added mid-session.
+
+Dormant organizations are how the case grows more complex as it progresses. The foreign buyer does not appear on Day 14. The press does not start investigating until someone does something visible. When these rows activate, the board tightens, and the players feel the situation deteriorating around them.
+
+=== What the Players See
+
+The players should see *signs*, not numbers. As a DA, your job is to translate the board into the world:
 
 * "The station has twice the uniformed presence it did this morning."
-* "Hospital staff are using the same phrase without realizing it."
+* "Hospital staff are using the same phrase — 'miracle wound' — without realizing it."
 * "Your radio dies when you reach the loading bay."
 
-Do not say: "That organization advanced from 6 to 4" unless your table explicitly prefers open tracking.
+Do not say "That organization advanced from 6 to 4." The board is the DA's instrument. The players experience its effects through the fiction.
 
 ---
 
 == Covenant Request Packets
 
-The Covenant can help, but it cannot help instantly.
+The Covenant can help. It just cannot help fast enough.
 
-=== Packet Rule
+The agents may send *one Covenant Request Packet per shift* — a communication to headquarters requesting research, analysis, identification, or logistical support. A single packet may contain multiple related questions if they concern the same subject thread:
 
-The team may send *one Covenant Request Packet per shift*.
+* Identify this priest and these two shell companies.
+* Compare this relic phrase against Wayfinder custody records.
+* Pull hospital admissions linked to this plate fragment and district.
 
-A packet may ask for multiple related things if they concern one subject thread, such as:
-
-* identify this priest and these two shell companies
-* compare this relic phrase against Wayfinder custody records
-* pull hospital admissions linked to this plate fragment and district
-
-Packets should be specific. "Tell us everything about the Spear of Destiny" is not a useful field request. "Summarize prior custody failures and known handling prohibitions" is.
+Packets should be *specific*. "Tell us everything about the Spear of Destiny" is not a useful field request — it would take Wayfinder three weeks and fill a filing cabinet. "Summarize prior custody failures and known handling prohibitions" gets a usable answer in a reasonable timeframe.
 
 === Response Time
 
-* Minimum response time is *2 shifts*.
-* Deep archive, foreign, classified, or politically sensitive packets usually take *3+ shifts*.
-* A packet can come back incomplete, delayed, intercepted, or partially wrong if that fits the case.
+The minimum response time is *two shifts*. Deep archive, foreign, classified, or politically sensitive requests usually take *three or more shifts*. A packet can also come back incomplete, delayed, intercepted, or partially wrong if that serves the case.
 
-=== Packet Results
+The delay is intentional. It means the team cannot halt the investigation to wait for headquarters to solve the problem. They have to keep moving with incomplete information, and when the packet finally arrives, it either confirms a theory they have already been acting on or redirects them at a cost of time already spent.
 
-Packet returns should do one of the following:
+=== What Packets Return
 
-* unlock a scene
-* provide a Containment Truth
-* identify a Contact
-* confirm or collapse a theory
-* reveal a rival move or route window
+A good packet return does one of the following:
 
-Packets should not solve the whole case. They should make the next field decision sharper.
+* Unlocks a scene — a new location becomes available, or an existing one changes.
+* Provides a Containment Truth — the agents learn something they need for safe recovery.
+* Identifies a Contact — an NPC the team did not previously know about.
+* Confirms or collapses a theory — the agents' working hypothesis is validated or demolished.
+* Reveals a rival's move — the Compact has deployed a second team, or the Church has filed a custody claim.
+
+Packets should never solve the entire case. They should make the next field decision sharper.
 
 ---
 
 == Delayed Results
 
-Some actions should not pay off in the same shift:
+Not everything pays off in the same shift. Packet requests take time. Lab analysis takes time. A police record pull through a contact, a stakeout report, a smuggler's callback, hospital surveillance footage, a priestly archive request routed through hierarchy — all of these create *delayed results*.
 
-* packet requests
-* lab analysis
-* police record pulls through a contact
-* stakeout reporting
-* smuggler callbacks
-* hospital surveillance
-* priestly archive access routed through hierarchy
+When an action creates a delayed payoff, write down three things:
 
-When an action creates delayed payoff, write down:
+. *What will return* — what information or resource the agents will receive.
+. *Earliest shift it can return* — when the result becomes available.
+. *What can disrupt it* — what could delay, intercept, or corrupt the result.
 
-. *What will return*
-. *Earliest shift it can return*
-. *What can disrupt it*
-
-Delayed returns are one of the main ways Neon Relic feels procedural instead of omniscient.
+Delayed returns are one of the core reasons Neon Relic feels like procedural investigation rather than omniscient adventuring. The agents make a decision now and live with the consequences of not having that information yet. When the result finally arrives, it changes the landscape of the case — sometimes by confirming a theory, sometimes by making a theory obsolete.
 
 ---
 
-== Solvability Rules
+== Keeping the Case Solvable
 
-The case must remain solvable even when the agents approach it in the "wrong" order.
+A Case File must remain solvable regardless of the order agents approach it. This is not a suggestion — it is a structural requirement. If a missed roll or a skipped location can make the case unwinnable, the case is not ready to play.
 
-Use these rules when authoring and running a case:
+When authoring and running a case, follow these rules:
 
-. Every *Containment Truth* must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>>).
-. No single Location may be mandatory for forward motion.
-. Every Location should either reveal information, unlock an NPC or route, or worsen the situation in an informative way.
-. At least one accessible Location should remain visible at the start of each shift.
-. A failed scene should produce movement, not dead air.
+. Every *Containment Truth* must be available from at least *two field sources* — any combination of Locations and NPCs — plus an *HQ fallback* (see <<hq-safety-valve>>).
+. No single Location may be mandatory for forward progress. If the agents never visit the church archive, they must still be able to learn what they need from another source.
+. Every Location should either reveal information, unlock a new NPC or route, or worsen the situation in a way that teaches the agents something.
+. At least one accessible Location must be visible at the start of each shift. The agents should never sit at the table with zero options.
+. A failed scene must produce movement, not dead air. Even a botched approach should reveal something — a direction, a complication, a name, a contradiction.
 
-If a missed roll or skipped Location would make the case unsolvable, the entity web is not ready.
+If the agents can reach a state where they have no leads, no options, and no way forward, the entity web needs more cross-links before you run it.
 
 ---
 
+[[case-entities]]
 == Case Entities
 
-Scenes are not pre-authored event nodes. They are *emergent intersections* of three independent entity types:
+Scenes in Neon Relic are not pre-authored event nodes. They are *emergent intersections* of three independent entity types: Locations, NPC Cards, and Information Cards. A "scene" happens when the players go somewhere and the DA assembles the relevant references for that moment in the case.
 
-* *Locations* — where things can happen. The DA's primary reference during play. Each location is a full page or form listing what's there, who's there, and what can be learned.
-* *NPC Cards* — who can be encountered. Playing-card-sized references that carry an NPC's secret, goal, artifact connection, knowledge, and organization affiliation (O# shorthand).
-* *Information Cards* — what can be learned. Playing-card-sized references identified by an I# code. Each lists where the information can be found, which NPCs know it, and when HQ can provide it as a fallback.
+The DA's cognitive loop during play is always the same: _"Where are the players going? What's there? Who's there? What can they learn?"_
 
-A "scene" emerges when players go to a location and the DA assembles the relevant NPC cards and Information cards for that point in the case. The DA's cognitive loop is always: _"Where are the players going? What's there?"_
-
-Entity state changes are tied to *organization milestones on the Operations Board*, not independent day numbers. NPCs gain knowledge, locations change access, and information becomes available — all triggered when the DA crosses out a milestone square on the board. This keeps the Operations Board as the single source of truth for "what changed."
+Entity state does not change on a fixed timeline. It changes when *organization milestones fire on the Operations Board*. An NPC gains new knowledge when O2M2 triggers. A Location changes access when O4M3 fires. Information becomes available when the board says it does. This keeps the Operations Board as the single source of truth for "what just changed?"
 
 === Locations
 
-A Location is the DA's primary reference during play — one page or form per location. When players say where they're going, the DA pulls the location form and assembles the relevant NPC and Information cards alongside it.
+A Location is the DA's primary reference during play — one page or form per location. When the players say where they are going, the DA pulls the Location form and lays out the relevant NPC Cards and Information Cards alongside it. Everything the DA needs for that scene is physically in front of them.
+
+Each Location form tracks:
 
 [%header,cols="1,4"]
 |===
-| Field | Description
+| Field | What It Contains
 
 | *Name*
-| Location name.
+| The location's name — the estate, the police station, the church archive, the clinic.
 
 | *Description*
-| What the agents see when they arrive.
+| What the agents see when they arrive. This is the read-aloud or paraphrased opening.
 
 | *Availability*
-| Access condition using one of the following keywords: *open* (available from case start), *clue-locked* (requires specific information), *contact-locked* (requires an NPC introduction or referral), *time-locked* (opens on a specific day), or *packet-locked* (unlocked when a packet returns).
+| How the Location becomes accessible. Use one of these keywords: *open* (available from case start), *clue-locked* (requires specific information), *contact-locked* (requires an NPC introduction or referral), *time-locked* (opens on a specific day), or *packet-locked* (unlocked when a Covenant packet returns).
 
 | *NPCs Present*
-| Which NPCs can be found here. May change at milestones (e.g., "After O4M2: Suárez pulled off case").
+| Which NPCs can be found here. This may change at milestones — for example, "After O4M2: Suárez pulled off the case."
 
 | *Information Available*
-| Information IDs (I#) discoverable at this location.
+| The Information Card IDs (I#) discoverable at this location.
 
 | *Organizations Present*
-| Which organizations have interest or operational presence here (O# shorthand).
+| Which organizations have interest or operational presence here (O# shorthand). This tells the DA which rows might advance based on what happens in this scene.
 
 | *Positive Result*
-| What the agents gain from a successful engagement — Information IDs, NPC access, new locations opened.
+| What the agents gain from a successful engagement — Information IDs learned, NPC access granted, new Locations opened.
 
 | *Negative Result*
-| What happens if the scene goes badly — organization advances on the Operations Board, tails established, locations closed.
+| What happens if the scene goes badly — organization advances on the board, tails established, witnesses spooked, Locations closed.
 
 | *Milestone Changes*
-| How this location changes when specific organization milestones are reached (e.g., "When O4M2: Suárez pulled off case. When O4M3: station locked down.").
+| How this Location changes when specific organization milestones are reached — "When O4M2: Suárez pulled off case. When O4M3: station locked down."
 |===
 
 === NPC Cards
 
-An NPC Card is a playing-card-sized reference that the DA pulls alongside a location form. Each NPC exists independently — they may appear at multiple locations and carry their own knowledge state.
+An NPC Card is a playing-card-sized reference that the DA pulls alongside a Location form. Each NPC exists independently — they may appear at multiple Locations and carry their own evolving knowledge.
 
 [%header,cols="1,4"]
 |===
-| Field | Description
+| Field | What It Contains
 
 | *Name*
-| NPC name.
+| The NPC's name.
 
 | *Organization*
 | Affiliated organization (O# shorthand), faction, or independent.
 
 | *Secret*
-| What they are hiding.
+| What they are hiding — not necessarily sinister, but always relevant.
 
 | *Goal*
-| What they are actively trying to accomplish during this case.
+| What they are actively trying to accomplish *right now* during this case.
 
 | *Artifact Connection*
 | How they encountered the artifact and what effect proximity has had on them.
 
 | *Starting Knowledge*
-| Information IDs (I#) they know at case start.
+| Information Card IDs (I#) they know at case start.
 
 | *Gained Knowledge*
-| Information they learn at specific organization milestones (e.g., "At O2M2: knows Compact handler name").
+| Information they learn at specific organization milestones — "At O2M2: knows Compact handler name."
 
 | *Locations*
-| Where they can be found (L# shorthand or location name).
+| Where they can be found (L# or location name).
 
 | *Positive Result*
 | What they share if approached well — Information IDs, introductions, access granted.
 
 | *Negative Result*
-| What happens if the encounter goes badly — organization advance on the Operations Board, tail placed, witness spooked.
+| What happens if the encounter goes badly — organization advance on the board, tail placed, witness spooked.
 |===
+
+A good test for every NPC: _If the agents were not present, what would this NPC do on their own?_ If the answer is "nothing," the NPC is an information dispenser, not a character. Give them an active agenda or cut them.
 
 === Information Cards
 
-An Information Card is a playing-card-sized reference identified by an I# code. Each card represents a single discoverable fact — a witness statement, a forensic result, a document, or a rumor. Information cards are designed as double-sided: the player-facing front states the content; the DA-facing back lists sources and consequences.
+An Information Card is a playing-card-sized reference identified by an *I#* code. Each card represents a single discoverable fact — a witness statement, a forensic result, a document, or a rumor.
+
+Information Cards are *double-sided*. The player-facing front states what the agents learn. The DA-facing back lists sources, cross-links, and consequences.
 
 [%header,cols="1,4"]
 |===
-| Field | Description
+| Field | What It Contains
 
 | *ID*
-| Shorthand identifier (I1, I2, I3, etc.).
+| Shorthand identifier — I1, I2, I3, and so on.
 
 | *Content*
-| What the agents learn — the fact, clue, or intelligence.
+| What the agents learn — the fact, clue, or piece of intelligence.
 
 | *Found At*
 | Location IDs (L#) where this information can be discovered.
@@ -461,87 +420,94 @@ An Information Card is a playing-card-sized reference identified by an I# code. 
 | *Containment Truth* (essential for solving the case) or *supporting intel* (useful but not required).
 |===
 
+When the agents discover information during play, the DA physically hands them the player-facing side of the card. This makes progress tangible — the growing stack of Information Cards on the table is a visible measure of how much the team has pieced together.
+
 [[hq-safety-valve]]
-=== HQ Safety Valve
+=== The HQ Safety Valve
 
-Every Information Card can include an *HQ Fallback* day number: "Available from HQ on Day X." If agents miss a fact in the field — a failed roll, a skipped location, a spooked witness — they can request it from Covenant HQ. The cost is time: the request consumes one or more shifts while HQ processes records, contacts assets, or runs analysis.
+Every Information Card can include an *HQ Fallback* day: "Available from HQ on Day X." This is the structural mechanism that prevents dead ends. If the agents miss a fact in the field — a failed roll, a skipped Location, a spooked witness — they can request it from Covenant HQ through a standard packet. The cost is time: the request consumes one or more shifts while HQ processes records, contacts assets, or runs analysis.
 
-This mechanism structurally prevents dead ends. The DA never needs to improvise a rescue path or hand-wave missed clues. If the information exists and HQ can plausibly obtain it, the agents can always get it — they just lose shifts. The Operations Board keeps counting down while they wait.
+This means the DA never needs to improvise a rescue path or hand-wave a missed clue. If the information exists and HQ can plausibly obtain it, the agents can always get it. They just lose shifts — and the Operations Board keeps counting down while they wait.
 
-> *Design note:* The HQ Fallback replaces the hard "3 paths per truth" authoring rule. DAs should ensure every Containment Truth has at least two field sources (any combination of Locations and NPCs) plus an HQ fallback. Supporting intel may have fewer sources or no HQ fallback at all.
+Every Containment Truth should have at least two field sources (any combination of Locations and NPCs) plus an HQ fallback. Supporting intel may have fewer sources or no HQ fallback at all.
 
 ---
 
-== Operations Board as Table Handout
+== The Operations Board at the Table
 
-The Operations Board itself serves as the table handout. Print or display the board so players can see:
+Print or display the Operations Board so the players can see:
 
-* the shift row counting down from column 14
-* which shifts have been spent
-* which organizations are active and how close they are to their next milestone
-* packet send / return markers noted in the margin or on a separate index card
+* The shift row counting down from 14
+* Which shifts have been spent
+* Which organizations are active and how close they are to their next milestone
+* Packet send and return markers noted in the margin or on a separate index card
 
-The board is for coordination and pressure visibility. The DA's milestone descriptions, relic milestone triggers, and cross-link consequences stay behind the screen.
+The board serves as the table's coordination surface. Players can look at it and see the pressure closing in. But the DA's milestone descriptions, relic milestone triggers, and cross-link consequences stay behind the screen. The players know the clock is ticking. They do not know exactly what happens when it hits zero.
 
 ---
 
 [[case-file-package]]
 == The Case File Package
 
-A complete case file consists of the following documents:
+A complete Case File consists of eight documents. Together they form the *case file package* — everything a DA needs to run the case and everything the players need to engage with it.
 
 [cols="1,3,1,4", options="header"]
 |===
-| # | Document | Audience | Notes
+| # | Document | Audience | Purpose
 
 | 1
 | *Case File* (mission brief)
 | Players
-| In-world document. Only what the Covenant would share with field agents: relic surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. No secrets, no containment truths, no milestone details.
+| An in-world document from the Covenant. Contains only what the organization would share with field agents: the relic's surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. No secrets, no Containment Truths, no milestone details.
 
 | 2
-| *Case Brief* (mystery statement + DA notes)
-| DA
-| The "real story" summary — what is actually going on, who is really involved, and what the answer is. DA-only anchor document.
+| *Case Brief — DA* (mystery statement + DA notes)
+| DA only
+| The real story. What is actually happening, who is really involved, and how the case resolves. The DA's anchor document — every question about "what is going on?" starts here.
 
 | 3
-| *Operations Board*
-| DA
-| Shift row (relic escalation track) plus Organization countdown rows. See <<operations-board>>.
+| *Case Brief — Player* (player-facing summary)
+| Players
+| A briefing document containing the case name, region, objectives, known actors, initial leads, and operational parameters. What the agents know walking in.
 
 | 4
-| *Organization Reference*
-| DA
-| All case-specific organizations listed with O#M# milestone descriptions and cross-link instructions. The DA scans this when crossing out milestone squares on the Operations Board.
+| *Operations Board*
+| DA (visible to players)
+| Shift row plus organization countdown rows. The single tracking surface for the case.
 
 | 5
-| *Relic Sheet*
-| DA
-| Full artifact profile: tier, category, activation condition, mechanical effects, fracture table, containment profile, and containment truth checklist. All artifact knowledge in one place.
+| *Organization Reference*
+| DA only
+| All case organizations listed with their O#M# milestone descriptions and cross-link instructions. The DA scans this when crossing out milestone squares on the board.
 
 | 6
-| *Location Pages* (1 per location)
-| DA
-| Primary play-aid — the document in front of the DA when players arrive at a Location. Fields match the Location form: name, description, availability, NPCs present (milestone-driven), information available, organizations present, positive/negative results, milestone changes.
+| *Relic Sheet*
+| DA only
+| Full artifact profile: tier, category, activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
 
 | 7
-| *NPC Cards* (playing-card size)
-| DA
-| One per NPC. The DA pulls relevant cards and places them next to the active Location page. Fields match the NPC Card schema.
+| *Location Pages* (one per Location)
+| DA only
+| The documents in front of the DA when the players arrive at a Location. Each page matches the Location form described above.
 
 | 8
+| *NPC Cards* (playing-card size)
+| DA only
+| One per NPC. The DA pulls relevant cards and places them next to the active Location page.
+
+| 9
 | *Information Cards* (playing-card size, double-sided)
 | DA -> Players
-| *Front (player-facing):* what the agents learned. *Back (DA reference):* source Locations, source NPCs, HQ fallback day, type (Containment Truth vs. supporting intel). Players physically receive cards when information is discovered — tangible progress tracker.
+| Front (player-facing): what the agents learn. Back (DA reference): source Locations, source NPCs, HQ fallback day, type. Players physically receive cards when information is discovered.
 |===
 
-For a single-session case with 5–6 Locations and 6–8 NPCs, the typical package is approximately 10–12 printed pages plus approximately 20 cards.
+For a single-session case with five or six Locations and six to eight NPCs, the typical package is roughly ten to twelve printed pages plus about twenty cards. That is intentional. A Case File should fit in a manila folder, not fill a three-ring binder.
 
 ---
 
 == Cross-References
 
-* DA guidance for authoring the Operations Board, Organizations, relic milestones, and entity authoring: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
+* DA guidance for authoring the Operations Board, organizations, relic milestones, and entity design: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
 * Travel as a shift type: xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules]
 * Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
 * Containment rituals and handling profiles: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts -> Containment Rituals]
@@ -551,10 +517,7 @@ For a single-session case with 5–6 Locations and 6–8 NPCs, the typical packa
 [[case-file-generator]]
 == Case File Generator Tables
 
-The shift-based Case File structure is the backbone of every Neon Relic session. The
-tables below give DAs a fast oracle system for building a functional case in
-under 15 minutes. Roll on each table in sequence or pick entries that fit your
-campaign arc.
+Sometimes you need a case in fifteen minutes. The tables below give DAs a fast oracle system for building a playable case file from a handful of dice rolls. Roll on each table in sequence or pick entries that fit your campaign arc. Either way, you will have a functional case at the end — maybe rough, maybe improvised, but functional.
 
 ---
 
@@ -682,26 +645,23 @@ If the campaign calls for a recurring antagonist, determine their involvement:
 [[quick-case-build]]
 === Quick Case Build (15-Minute Prep Guide)
 
-Use this procedure to go from nothing to a playable case in one pass. The output is a minimal case file package: an Operations Board, a handful of Locations, NPC Cards, Information Cards, and a Relic Sheet sketch.
+Use this procedure to go from nothing to a playable case in one sitting. The output is a minimal but functional case file package: an Operations Board, a handful of Locations, NPC Cards, Information Cards, and a Relic Sheet sketch.
 
-. **Roll d66 on the Artifact Type table.** Name the artifact, give it a mundane appearance,
-   and decide what kind of Containment Truths it will require.
+. *Roll d66 on the Artifact Type table.* Name the artifact, give it a mundane appearance, and decide what kind of Containment Truths it will require.
 
-. **Roll d6 on Inciting Incident.** This determines how the case first reaches the team.
-   Brief the players in two sentences at the table. Do not explain the full artifact logic yet.
+. *Roll d6 on Inciting Incident.* This determines how the case reaches the team. Brief the players in two sentences. Do not explain the artifact's full logic yet.
 
-. **Roll d6 on Location.** This determines where most of the case pressure will land.
-   Sketch 3–5 Locations on separate forms — not a linear route.
+. *Roll d6 on Location.* This sets the primary theater of operations. Sketch three to five Locations on separate forms — not a linear route, but a web of places the agents might visit in any order.
 
-. **Roll d6 on Complication.** Turn it into an organization row on the Operations Board or a modifier on an existing organization.
+. *Roll d6 on Complication.* Turn it into an organization row on the Operations Board or a modifier on an existing organization.
 
-. **Write 2–3 NPC Cards.** At least one NPC who gives access and one hostile pressure that closes time, routes, witnesses, or secrecy.
+. *Write two or three NPC Cards.* At least one NPC who gives access and one hostile presence that closes time, routes, witnesses, or secrecy.
 
-. **Set up the Operations Board.** Fill in the shift row and add organization rows with per-milestone consequences. Note what relic milestones trigger if the agents lose time or mishandle the artifact.
+. *Set up the Operations Board.* Fill in the shift row and add organization rows with per-milestone consequences. Note what relic milestones trigger if the agents lose time or mishandle the artifact.
 
-. **Write 3 Containment Truths as Information Cards.** These should cover trigger, appetite, and quiescence. Mark each as Type: Containment Truth. Ensure each has at least two field sources plus an HQ fallback.
+. *Write three Containment Truths as Information Cards.* These should cover trigger, appetite, and quiescence. Mark each as Type: Containment Truth. Make sure each has at least two field sources plus an HQ fallback.
 
-. **Open the case with one accessible Location and one visible sign.** Everything else can unlock through play.
+. *Open the case with one accessible Location and one visible sign.* Everything else can unlock through play.
 
 ==== Worked Example: "The Holbrook Frequency"
 
@@ -726,4 +686,3 @@ Use this procedure to go from nothing to a playable case in one pass. The output
 >
 > **NPC Card:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
 > She wants grant funding, not interference. She will cooperate — for a price.
-

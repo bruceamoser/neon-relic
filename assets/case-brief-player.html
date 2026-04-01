@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON RELIC — Case Brief (Player)</title>
+<style>
+  /* ── RESET ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── FONTS ── */
+  @font-face {
+    font-family: 'SpecialElite';
+    src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
+         local('Special Elite');
+    font-weight: normal; font-style: normal;
+  }
+  @font-face {
+    font-family: 'CourierPrime';
+    src: url('../docs/themes/CourierPrime-Regular.ttf') format('truetype'),
+         local('Courier New');
+    font-weight: normal; font-style: normal;
+  }
+
+  /* ── PAGE ── */
+  @page { size: letter portrait; margin: 0; }
+  @media print {
+    body { margin: 0; padding: 0; background: none; }
+    .page { box-shadow: none; margin: 0; }
+  }
+
+  :root {
+    --ink:          #1a1a18;
+    --ink-faded:    #4a4a42;
+    --ink-light:    #8a8a7e;
+    --paper:        #e8e4d8;
+    --green-stamp:  #2d5a27;
+    --red-stamp:    #8b1a1a;
+    --rule:         #999;
+    --rule-light:   #ccc;
+    --field-bg:     rgba(255,255,255,0.3);
+    --font-main:    'SpecialElite', 'Courier New', monospace;
+    --font-fill:    'CourierPrime', 'Courier New', monospace;
+  }
+
+  body {
+    background: #555;
+    font-family: var(--font-main);
+    font-size: 9pt;
+    line-height: 1.3;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 8.5in;
+    height: 11in;
+    margin: 0.3in auto;
+    padding: 0.3in 0.42in 0.32in;
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── PAPER TEXTURE ── */
+  .page::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 11px,
+        rgba(0,0,0,0.012) 11px, rgba(0,0,0,0.012) 12px),
+      radial-gradient(ellipse at 15% 78%, rgba(139,119,80,0.07), transparent 55%),
+      radial-gradient(ellipse at 88% 18%, rgba(139,119,80,0.05), transparent 50%);
+    pointer-events: none; z-index: 0;
+  }
+  .page::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none; z-index: 2;
+  }
+  .page > * { position: relative; z-index: 1; }
+
+  /* ── WATERMARK ── */
+  .watermark {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-family: var(--font-main);
+    font-size: 80pt; letter-spacing: 18px;
+    color: rgba(45,90,39,0.03);
+    text-transform: uppercase; white-space: nowrap;
+    pointer-events: none; z-index: 0;
+  }
+
+  /* ── PERFORATION STRIP ── */
+  .perf-strip {
+    height: 11px;
+    border-bottom: 1.5px dashed #bbb;
+    margin-bottom: 8px;
+    overflow: hidden;
+    color: #bbb; font-size: 4pt; letter-spacing: 2.5px; line-height: 1.1;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid var(--green-stamp);
+    border-bottom: 2px solid var(--green-stamp);
+    padding: 6px 0 7px;
+    margin-bottom: 10px;
+  }
+  .header-left { flex: 1; }
+  .header-title {
+    font-family: var(--font-main);
+    font-size: 20pt; letter-spacing: 6px;
+    text-transform: uppercase; color: var(--green-stamp); line-height: 1;
+  }
+  .header-subtitle {
+    font-family: var(--font-main);
+    font-size: 7pt; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--ink-faded); margin-top: 4px;
+  }
+  .header-right {
+    text-align: right; font-size: 6.5pt;
+    color: var(--ink-faded); line-height: 1.6;
+  }
+  .classification {
+    display: inline-block;
+    border: 2.5px solid var(--green-stamp);
+    color: var(--green-stamp);
+    font-family: var(--font-main);
+    font-size: 10pt; letter-spacing: 5px;
+    padding: 2px 10px;
+    transform: rotate(-2deg); margin-bottom: 4px;
+  }
+
+  /* ── SECTION TITLE ── */
+  .section-title {
+    font-family: var(--font-main);
+    font-size: 7pt; text-transform: uppercase; letter-spacing: 3px;
+    color: var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 2px; margin: 8px 0 4px;
+  }
+  .section-title.green { color: var(--green-stamp); border-color: var(--green-stamp); }
+
+  /* ── ID BLOCKS ── */
+  .id-block-row {
+    display: grid; gap: 0;
+    border: 1.5px solid var(--ink);
+  }
+  .id-cell {
+    padding: 3px 6px 4px;
+    border-right: 1px solid var(--rule);
+  }
+  .id-cell:last-child { border-right: none; }
+  .id-label {
+    display: block;
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--ink-faded); margin-bottom: 2px;
+  }
+  .id-value {
+    display: block;
+    font-family: var(--font-fill);
+    font-size: 8pt; min-height: 13px;
+    border-bottom: 1px dotted var(--rule);
+  }
+
+  /* ── FIELD COMPONENTS ── */
+  .field-label {
+    font-family: var(--font-main);
+    font-size: 5pt; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--ink-faded); margin-bottom: 1px;
+    display: block;
+  }
+  .field-value {
+    border-bottom: 1.5px solid var(--rule);
+    min-height: 14px; padding: 1px 3px;
+    background: var(--field-bg);
+    font-family: var(--font-fill); font-size: 8pt;
+    margin-bottom: 4px;
+  }
+  .field-value.med {
+    border: 1px solid var(--rule); border-bottom: 1.5px solid var(--rule);
+    min-height: 36px;
+  }
+  .field-value.tall {
+    border: 1px solid var(--rule); border-bottom: 1.5px solid var(--rule);
+    min-height: 50px;
+  }
+  .field-value.xl {
+    border: 1px solid var(--rule); border-bottom: 1.5px solid var(--rule);
+    min-height: 72px;
+  }
+  .field-value.xxl {
+    border: 1px solid var(--rule); border-bottom: 1.5px solid var(--rule);
+    min-height: 100px;
+  }
+
+  /* ── SIDE-BY-SIDE ── */
+  .two-col { display: flex; gap: 8px; }
+  .two-col > div { flex: 1; }
+
+  /* ── NPC DOSSIER ── */
+  .npc-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    gap: 4px 8px;
+    padding: 3px 0;
+    border-bottom: 1px dotted var(--rule-light);
+  }
+  .npc-row:last-child { border-bottom: none; }
+  .npc-field {
+    font-family: var(--font-fill); font-size: 7.5pt;
+    border-bottom: 1px dotted var(--rule-light);
+    min-height: 13px; padding: 1px 2px;
+    background: var(--field-bg);
+  }
+  .npc-header {
+    font-family: var(--font-main); font-size: 5pt;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--ink-faded); padding: 2px 0 1px;
+  }
+
+  /* ── NOTES LINES ── */
+  .notes-lines { width: 100%; }
+  .notes-line { border-bottom: 1px solid var(--rule-light); height: 17px; }
+
+  /* ── CALLOUT BOX ── */
+  .callout-box {
+    border: 1.5px solid var(--green-stamp);
+    padding: 5px 7px;
+    background: rgba(45,90,39,0.04); margin: 4px 0;
+  }
+  .callout-box .field-label { color: var(--green-stamp); font-size: 5.5pt; }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: auto;
+    display: flex; justify-content: space-between;
+    font-family: var(--font-main);
+    font-size: 5pt; letter-spacing: 1.5px;
+    color: var(--ink-light);
+    border-top: 1px solid var(--rule-light);
+    padding-top: 4px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Agent Briefing</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">CLASSIFIED</div>
+      <div>Form VC-18 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE IDENTITY -->
+  <div class="id-block-row" style="grid-template-columns: 2fr 0.8fr 1fr;">
+    <div class="id-cell">
+      <span class="id-label">Case Name</span>
+      <span class="id-value"></span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Region</span>
+      <span class="id-value"></span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Classification</span>
+      <span class="id-value"></span>
+    </div>
+  </div>
+
+  <!-- I. SITUATION SUMMARY -->
+  <div class="section-title green">I &mdash; Situation Summary</div>
+  <div>
+    <span class="field-label">What the Covenant knows. Brief the agents on the operational situation.</span>
+    <div class="field-value xl"></div>
+  </div>
+
+  <!-- II. AGENT OBJECTIVES -->
+  <div class="section-title">II &mdash; Agent Objectives</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Primary Objective &mdash; What must the agents accomplish?</span>
+      <div class="field-value med"></div>
+    </div>
+    <div>
+      <span class="field-label">Secondary Objective &mdash; Bonus or optional goals</span>
+      <div class="field-value med"></div>
+    </div>
+  </div>
+
+  <!-- III. KNOWN ORGANIZATIONS -->
+  <div class="section-title">III &mdash; Known Organizations</div>
+  <div>
+    <span class="field-label">Organizations the Covenant has identified as active or potentially involved. What the agents know walking in.</span>
+    <div class="field-value xl"></div>
+  </div>
+
+  <!-- IV. INITIAL CONTACTS -->
+  <div class="section-title green">IV &mdash; Initial Contacts</div>
+  <div>
+    <span class="field-label">NPCs the agents are aware of at case start &mdash; names, roles, and what the Covenant knows about each.</span>
+    <div class="npc-row" style="border-bottom: none;">
+      <div class="npc-header">Name</div>
+      <div class="npc-header">Role / Affiliation</div>
+      <div class="npc-header">Known Information</div>
+    </div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+    <div class="npc-row"><div class="npc-field"></div><div class="npc-field"></div><div class="npc-field"></div></div>
+  </div>
+
+  <!-- V. STARTING LEADS -->
+  <div class="section-title">V &mdash; Starting Leads</div>
+  <div>
+    <span class="field-label">Available locations, lines of inquiry, or contacts the agents can pursue immediately.</span>
+    <div class="field-value xl"></div>
+  </div>
+
+  <!-- VI. OPERATIONAL PARAMETERS -->
+  <div class="section-title">VI &mdash; Operational Parameters</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Timeline Pressure &mdash; How urgent is the situation?</span>
+      <div class="field-value med"></div>
+    </div>
+    <div>
+      <span class="field-label">Constraints &mdash; Rules of engagement, cover identities, secrecy requirements</span>
+      <div class="field-value med"></div>
+    </div>
+  </div>
+
+  <!-- VII. REGIONAL CONTACTS -->
+  <div class="section-title green">VII &mdash; Regional Contacts</div>
+  <div>
+    <span class="field-label">Covenant assets, safe houses, supply caches, or local contacts in the operational area.</span>
+    <div class="field-value med"></div>
+  </div>
+
+  <!-- VIII. AGENT NOTES -->
+  <div class="section-title">VIII &mdash; Agent Notes</div>
+  <div>
+    <span class="field-label">Space for player notes during play.</span>
+    <div class="notes-lines">
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>VC-18 &bull; The Verdant Covenant &bull; Agent Briefing</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Case Brief &mdash; Player</span>
+  </div>
+</div>
+
+</body>
+</html>

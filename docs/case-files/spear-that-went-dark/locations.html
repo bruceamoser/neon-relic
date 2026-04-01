@@ -43,8 +43,11 @@
   .checkbox.checked::after { content:''; position:absolute; top:1px; left:2px; width:3px; height:5px; border:solid var(--paper); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
   .result-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:5px; }
   .result-col { display:flex; flex-direction:column; }
-  .loc-image { width:100%; height:1.6in; border:1.5px solid var(--rule); background:var(--field-bg); margin-bottom:5px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .loc-intro { display:flex; gap:10px; margin-bottom:5px; }
+  .loc-image { width:2.4in; min-width:2.4in; aspect-ratio:3/4; border:1.5px solid var(--rule); background:var(--field-bg); display:flex; align-items:center; justify-content:center; overflow:hidden; }
   .loc-image-placeholder { font-family:var(--font-main); font-size:6pt; text-transform:uppercase; letter-spacing:2px; color:var(--ink-light); }
+  .loc-image img { width:100%; height:100%; object-fit:cover; object-position:top; }
+  .loc-desc { flex:1; display:flex; flex-direction:column; justify-content:center; }
   .notes-line { border-bottom:1px solid var(--rule-light); height:17px; }
   .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
 </style>
@@ -72,8 +75,10 @@
     </div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L1</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">The Ferreyra Estate, Recoleta District</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A fortified residential compound with shattered vault access, scattered reliquary fragments, and signs of a professional breach. The family has locked up the property and stopped answering the door.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-1-estate-aftermath.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A fortified residential compound with shattered vault access, scattered reliquary fragments, and signs of a professional breach. The family has locked up the property and stopped answering the door.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox checked"></span> Open</label><label><span class="checkbox"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Available at case start.</div></div>
@@ -104,8 +109,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L2</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Buenos Aires Police &mdash; Robbery Division</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A cramped detective bullpen with case boards, witness logs, and an overworked staff managing a theft that keeps getting stranger.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-2-police-station.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A cramped detective bullpen with case boards, witness logs, and an overworked staff managing a theft that keeps getting stranger.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after the estate is known to the team or any police-connected clue is obtained.</div></div>
@@ -136,8 +143,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L3</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Diocesan Archive, Cathedral Annex</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A restricted ecclesiastical archive behind two locked doors and one polite but immovable secretary. Dust, ledgers, and the smell of old ink.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-3-church-archive.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A restricted ecclesiastical archive behind two locked doors and one polite but immovable secretary. Dust, ledgers, and the smell of old ink.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after the estate aftermath or any Church-linked clue.</div></div>
@@ -168,8 +177,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L4</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Cambio Cerrito, Microcentro District</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A nondescript currency exchange shopfront concealing wire-transfer infrastructure and a back-office courier dispatch. The owner is nervous.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-4-currency-exchange.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A nondescript currency exchange shopfront concealing wire-transfer infrastructure and a back-office courier dispatch. The owner is nervous.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after estate evidence, police data, or a packet return on financial cutouts.</div></div>
@@ -200,8 +211,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L5</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Cl&iacute;nica Informal, La Boca District</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">An unlicensed medical practice in a converted warehouse. Chemical smells, improvised surgical equipment, and a doctor who does not ask questions.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-5-illicit-clinic.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">An unlicensed medical practice in a converted warehouse. Chemical smells, improvised surgical equipment, and a doctor who does not ask questions.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open after police, street, or church leads surface a surviving thief.</div></div>
@@ -232,8 +245,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L6</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Puerto Madero Freight District</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">Container yards, cargo offices, and private air charter desks. The border between legal commerce and black-market logistics.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-6-port-export-route.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">Container yards, cargo offices, and private air charter desks. The border between legal commerce and black-market logistics.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Open once buyer proof, Compact movement, or route intelligence exists.</div></div>
@@ -264,8 +279,10 @@
     <div class="header-right"><div class="classification">DA EYES ONLY</div><div>Form VC-14 &bull; Rev. 1987</div><div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;"><span>Case ID:</span><span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span></div></div>
   </div>
   <div class="loc-id-row"><div class="loc-id">L7</div><div style="flex:1;"><span class="field-label">Location Name</span><div class="loc-name">Abandoned Chapel, Flores District</div></div></div>
-  <div class="loc-image"><span class="loc-image-placeholder">Location Image</span></div>
-  <div style="margin-bottom:5px;"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A derelict family chapel with makeshift ritual markings and the unmistakable pressure of a nearby active relic. The Spear is here &mdash; or was recently.</div></div>
+  <div class="loc-intro">
+    <div class="loc-image"><img src="handouts/spear-location-7-hidden-shrine.png" alt="Location"></div>
+    <div class="loc-desc"><span class="field-label">Description &mdash; What the agents see when they arrive</span><div class="field-value med">A derelict family chapel with makeshift ritual markings and the unmistakable pressure of a nearby active relic. The Spear is here &mdash; or was recently.</div></div>
+  </div>
   <div class="section-title green">Availability</div>
   <div class="availability-row"><div class="avail-keyword"><label><span class="checkbox"></span> Open</label><label><span class="checkbox checked"></span> Clue-Locked</label><label><span class="checkbox"></span> Contact-Locked</label><label><span class="checkbox"></span> Time-Locked</label><label><span class="checkbox"></span> Packet-Locked</label></div></div>
   <div style="margin-bottom:5px;"><span class="field-label">Availability Condition (if not Open)</span><div class="field-value" style="min-height:20px;">Usually unlocked by at least two prior clues. The DA should ensure multiple paths lead here.</div></div>

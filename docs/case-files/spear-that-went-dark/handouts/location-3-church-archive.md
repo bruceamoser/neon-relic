@@ -1,7 +1,0 @@
-# Image Prompt — Location 3: Church Archive
-
-Copy the entire prompt below into an image generator. Output filename: `spear-location-3-church-archive.png`
-
----
-
-Create a single full-page portrait image of a Catholic church basement archive in Buenos Aires, used as a restricted custodial record room. The space is narrow and deep with stone or plastered walls, a low vaulted ceiling, and rows of dark wooden shelving and metal filing cabinets packed with bound ledgers, labeled document boxes, and rolled papers tied with cotton ribbon. A single desk sits near the entrance with a green-shaded banker's lamp casting a warm pool of light over an open ledger and a magnifying glass. The rest of the room recedes into shadow, with only the spines of old volumes catching faint reflected light. A small crucifix hangs on the wall above the desk. The air should feel heavy and still — dust motes visible in the lamplight, a sense of layered institutional secrecy preserved in paper and silence. The atmosphere should be scholarly, claustrophobic, and quietly authoritative — this is where the Church keeps the things it does not discuss in public. Use a late-1980s analog photography aesthetic: warm incandescent lamp against cool ambient shadow, muted earth tones, visible grain, archival stillness. No fantasy elements, no glowing manuscripts, no supernatural imagery, no modern styling, no horror-movie cobwebs.

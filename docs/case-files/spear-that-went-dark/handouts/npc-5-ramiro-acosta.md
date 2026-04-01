@@ -1,7 +1,0 @@
-# Image Prompt — NPC 5: Ramiro "Rami" Acosta
-
-Copy the entire prompt below into an image generator. Output filename: `spear-npc-5-ramiro-acosta.png`
-
----
-
-Create a single portrait-oriented character illustration of Ramiro Acosta, a surviving thief in his early thirties suffering from wound bloom and intermittent command-delusion after exposure to a supernatural relic. He is gaunt, feverish, terrified, and occasionally euphoric. His face is drawn and pale with dark circles under wide darting eyes, patchy stubble, and a sheen of sweat. He wears a stained undershirt or cheap open button-down, with a visible bandage on one forearm or side — an injury that looks older than it should, faintly discolored. He is half-seated on a sagging clinic cot or leaning against a bare wall. The background should suggest a back-alley clinic or squat — exposed brick, a bare bulb overhead, a metal folding chair, a crumpled blanket, maybe an IV stand improvised from a coat rack. His expression shifts between raw fear and a strange unfocused intensity, as though he is listening to something no one else can hear. The overall tone should be realistic, visceral, and unsettling — this is a man whose body survived a job his mind did not. Use a late-1980s analog portrait aesthetic: harsh overhead light, deep shadows, desaturated palette, visible grain. No fantasy elements, no visible supernatural effects, no glowing wounds, no horror-movie gore, no modern styling.

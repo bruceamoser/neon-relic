@@ -1,7 +1,0 @@
-# Image Prompt — NPC 1: Lucia Ferreyra
-
-Copy the entire prompt below into an image generator. Output filename: `spear-npc-1-lucia-ferreyra.png`
-
----
-
-Create a single portrait-oriented character illustration of Lucia Ferreyra, an Argentine woman in her late sixties who serves as the last family retainer of a once-powerful Buenos Aires estate. She is dignified, weathered, proud, and visibly exhausted. Her face shows deep lines of worry and sleeplessness but her posture is upright and controlled. She wears conservative dark clothing appropriate to a wealthy household's senior staff in the late 1980s — a high-collared blouse under a dark cardigan or fitted jacket, simple gold earrings, hair pulled back severely. Her expression is guarded and faintly hostile, as though she is deciding whether to trust the person looking at her. The background should suggest the interior of an old Buenos Aires estate — dark wood paneling, a heavy curtain edge, a sliver of tiled floor — dimly lit and slightly decayed. The lighting should be warm but low, as from a single table lamp. The overall tone should be realistic, grounded, and melancholy — this is a woman protecting a secret she has carried for decades. Use a late-1980s analog portrait aesthetic: muted color palette, slight grain, no digital sharpness. No fantasy elements, no glowing effects, no supernatural imagery, no modern styling, no glamour lighting.

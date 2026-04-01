@@ -1,339 +1,238 @@
 = Building a Case File
-:doctype: article
-:toc: left
-:toclevels: 2
-:icons: font
-:pdf-theme: neon-relic
-:pdf-themesdir: {docdir}/themes
 
-[.lead]
-_A practical step-by-step guide for Directors of Agents._
+You have read the rules. You have run the sample case — or at least read through it. Now you want to build your own. Good. The process is not complicated, but it is specific. A Neon Relic case is not a story you write in advance and then reveal to the players. It is a situation you construct out of interconnected pieces, set in motion, and manage as it deteriorates.
+
+This guide walks through the process from first concept to a finished case file package ready for the table. Each step tells you which template file to open, which fields to fill in, and what to think about as you work. By the end, you will have a complete set of documents — printed, organized, and ready to play.
+
+If you want to skip the methodical approach and build something fast, the xref:chapters/15-case-file.adoc#case-file-generator[Case File Generator Tables] in Chapter 15 can get you to a playable case in fifteen minutes.
 
 ---
 
-== Before You Begin
+== Before You Start
 
-A Case File is a reactive operations board, not a scripted adventure. You are building a network of opportunities and pressures that the agents will navigate on their own terms. If your case can only be explained as a linear plot, it is not ready.
+Gather the blank template files from the starter kit. You will use these throughout the process:
 
-This guide walks you through building a complete Case File from scratch. For the full rules and mechanical detail, see the _Case File_ chapter and _DA Guidance_ chapter of the core rulebook.
+[%header,cols="2,3"]
+|===
+| Template | What You Will Use It For
 
-*What you will need:*
+| `case-brief-da.html` | Your mystery statement, the real situation, containment truths, resolution notes — the DA's master reference.
+| `case-brief-player.html` | The briefing you hand to the players — only what the Covenant would share with field agents.
+| `operations-board.html` | The single tracking surface for the case — shift row, organization rows, milestones.
+| `organization-reference.html` | Detailed milestone descriptions for each organization, including cross-link consequences.
+| `relic-sheet.html` | Full artifact profile — tier, category, effects, fracture table, containment truths.
+| `location-page.html` | One per location. The document in front of you when players arrive somewhere.
+| `npc-card.html` | One per significant NPC. Pull these alongside location pages during play.
+| `information-card.html` | One per discoverable fact. Double-sided — player front, DA back.
+|===
 
-* Blank templates for the case file package (see <<case-file-package>> in Chapter 15): Case File brief, Case Brief, Operations Board, Organization Reference, Relic Sheet, Location Pages, NPC Cards, and Information Cards
-* The core rulebook for reference
-* About 15–30 minutes of prep time
+Open all of these now, or at least have them accessible. You will move between them as you work.
 
 ---
 
-== Step 1: Choose the Artifact
+== Step 1: Choose Your Artifact
 
-Everything starts with the artifact. Before you think about location, NPCs, or plot, decide what the object is and what it does.
+Every case begins with a relic. Open the *Relic Sheet* (`relic-sheet.html`) and start filling it in.
 
-.Decide these first:
-. *Mundane appearance* — What does it look like if you didn't know what it was?
-. *Tier* — How dangerous is it? (Tier 1–4)
-. *Risk Tag* — Stable, Volatile, Catastrophic, or Unknown?
-. *Activation condition* — What triggers its power?
-. *Core effect* — What does it actually do when activated?
-. *Fracture consequence* — What goes wrong on an Artifact Die roll of 1?
-. *Corruption cost* — How much Corruption does activation inflict? (+1 to +3 by tier)
+You do not need the complete artifact profile yet — just enough to anchor the case. Decide these three things:
 
-If you are stuck, roll on the *d66 Artifact Type* table in the Case File chapter.
+* *What is it?* Not its cosmic significance, but its mundane form. A cassette tape. A surgical instrument. A pocket watch. A spearhead in a wooden shaft. The more ordinary it looks, the more unsettling it becomes when its nature emerges.
+* *What does it do?* Pick one core behavior. A wound relic reopens injuries. A sovereignty relic imprints command-language. A surveillance relic broadcasts to anyone who knows how to listen. This behavior will flavor every entity in the case.
+* *What makes it worse?* Think about what the artifact responds to. Handling? Blood? Claims of divine authority? Movement between custodians? This becomes the *trigger* — one of the three Containment Truths the agents must discover.
 
-.TIP
-****
-The artifact's logic should flavor everything else. If the artifact is about command, NPCs should argue about authority. If it is about memory, witnesses should repeat themselves without knowing it. Let the artifact define the mood.
-****
+Fill in the Relic Sheet's name, tier, category, and the Activation Condition and Containment Truths sections as far as you can. You will return to refine this as the case takes shape.
 
 ---
 
 == Step 2: Write the Mystery Statement
 
-Summarize the entire case in one sentence using this template:
+Open the *Case Brief — DA* (`case-brief-da.html`). The first field on the form is the *Mystery Statement* — a single sentence that captures the entire situation.
 
-[quote]
+A good mystery statement answers: _What happened, what is still happening, and what will happen if the agents fail?_
+
+Examples:
+
+* _"A stolen spearhead with sovereignty properties has destabilized a black-market handoff and is pulling multiple factions toward one contaminated chain-of-custody crisis."_
+* _"A radio receiver modified with 1943 ESP components is broadcasting parallel-timeline transmissions from a university lab, and a journalist's story will go to press in 48 hours."_
+
+If you cannot fit it in one sentence, the case is too diffuse. Simplify until you can.
+
+Write it in the Mystery Statement field on the DA Case Brief. Then fill in the *Real Situation* field below it — a paragraph or two explaining what is actually happening, who is really involved, and how the case can be resolved.
+
+---
+
+== Step 3: Define the Containment Truths
+
+Still on the *Case Brief — DA* (`case-brief-da.html`), fill in the *Containment Truths Summary* section. Every relic has three essential facts the agents must discover for a safe recovery:
+
+* *Trigger* — What makes the artifact more active or dangerous? What should the agents avoid doing?
+* *Appetite* — What does the artifact feed on, amplify, or attract? What kind of behavior, emotion, or energy makes it stronger?
+* *Quiescence* — What conditions make it safe to handle? What materials, rituals, or environmental factors suppress the artifact's effects?
+
+Write these in clear, specific terms. "The Spear becomes more active when moved repeatedly between custodians" is useful. "The Spear is dangerous" is not.
+
+These three truths will become *Information Cards* later — the most critical cards in the case, each requiring multiple discovery paths to ensure the agents can always find them.
+
+---
+
+== Step 4: Build the Operations Board
+
+Open the *Operations Board* (`operations-board.html`). This is the backbone of the case — the single surface where you track time, organization pressure, and relic escalation.
+
+=== The Shift Row
+
+The top row of the board is already formatted with 14 day-columns, each quartered into four shifts. During play, you will fill in quadrants as shifts pass. For now, decide where the *relic milestones* fall.
+
+Relic milestones are keyed to specific day numbers. When the last shift of a milestone day is filled, the artifact event triggers. Write your milestone descriptions in the DA Case Brief under the *Relic Milestones* section, keyed to day numbers:
+
+* *Day 11:* Early signs — subtle physical symptoms, environmental glitches, the first hint that something is wrong.
+* *Day 8:* Escalation — the artifact's behavior is now affecting people who are not in direct contact with it.
+* *Day 5:* Crisis point — the artifact is actively dangerous. Public effects are becoming difficult to conceal.
+* *Day 2:* Endgame — the artifact is reaching its final state. Bearer selection, activation sequence, or dimensional breach is imminent.
+* *Day 1:* Catastrophe — the worst-case outcome plays out.
+
+You do not need exactly five milestones. Scale to your case. A short case might have three; a long campaign arc might have seven.
+
+=== Organization Rows
+
+Below the shift row, add a row for each organization in the case. Each row needs:
+
+* A *name* — who or what this organization is.
+* A *starting value* — how many squares remain before their catastrophe. Higher means more time; lower means more immediate pressure.
+* *Milestone squares* — specific points on the countdown where something happens, labeled with O#M# shorthand (O1M1, O1M2, etc.).
+
+Stagger the starting values. If every organization starts at the same number, they will all hit their milestones at the same time, which turns varied pressure into a single overwhelming beat. Give the most urgent organization a starting value of 5 or 6. Give the slowest one 11 or 12.
+
+Write the *milestone descriptions* in the Organization Reference document (see the next step).
+
+---
+
+== Step 5: Flesh Out the Organizations
+
+Open the *Organization Reference* (`organization-reference.html`). For each organization on the Operations Board, create an entry with:
+
+* The organization's O# identifier and name
+* Whether it starts *active* or *dormant* (dormant organizations activate through triggers you will write into other milestones)
+* Each milestone's *O#M#* label and description — including what happens narratively and what happens mechanically (which other organization rows advance, what Locations change, what NPCs appear or disappear)
+
+The milestone descriptions are where you write the *cross-links* — the connections between organizations that make the case feel alive. When the wounded thief surfaces at the clinic (O2M2), it should advance the police and the Compact because a visible thief attracts both institutional and criminal attention. Write that directly into the milestone text:
+
 ____
-A [Tier X artifact] has surfaced in [Location]. If left uncontained, it will [relic outcome]. Meanwhile [Organization 1] and [Organization 2] are moving on the same problem. The agents need [Containment Truths] before they can recover it safely.
+O2M2: The surviving thief surfaces at the illicit clinic with wound bloom. Advance O3 (Police) by 2 squares. Advance O1 (Compact) by 1 square. L5 (Illicit Clinic) becomes available.
 ____
 
-Write this on the Case Brief under *Mystery Statement*. If it takes more than one sentence, the case is too diffuse — simplify.
+Aim for four to six active organizations in a standard case, with zero to two dormant organizations that activate through play. More than eight total rows is difficult to track during a session.
 
 ---
 
-== Step 3: Define Containment Truths
+== Step 6: Create the Case Entities
 
-Containment Truths are the facts the agents need to learn before they can safely resolve the case. Write three:
+This is where the case takes shape as a playable experience. You will create three types of documents: Location pages, NPC Cards, and Information Cards. These three entity types are the building blocks of every scene in the case.
 
-. *Trigger* — What makes the artifact more active or dangerous?
-. *Appetite* — What does the artifact feed on, amplify, or attract?
-. *Quiescence* — What conditions make it safe to handle, transport, or contain?
+=== Locations
 
-These truths become the real objectives of the investigation. The agents are not just finding the artifact — they are learning how to survive it.
+Open a blank *Location Page* (`location-page.html`) for each location in the case. A standard case has five to seven locations. For each one, fill in:
 
-.HARD RULE
-****
-Every Containment Truth must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>> in Chapter 15). If only one source can reveal a truth, your case has a single point of failure. Redesign it.
-****
+* *Name* — The estate. The police station. The church archive. The currency exchange. The clinic. Keep them concrete and evocative.
+* *Description* — What the agents see when they arrive. Write this as if you are reading it aloud at the table.
+* *Availability* — How the location becomes accessible. Use one of the standard keywords: *open* (available from the start), *clue-locked* (requires specific information), *contact-locked* (requires NPC introduction), *time-locked* (opens on a specific day), or *packet-locked* (unlocked by a Covenant packet return).
+* *NPCs Present* — Who is here, and how that changes at milestones.
+* *Information Available* — Which Information Card IDs (I#) can be discovered here.
+* *Organizations Present* — Which organizations have interest here (O# shorthand).
+* *Positive / Negative Results* — What happens if the scene goes well or badly.
+* *Milestone Changes* — How the location changes when organization milestones fire.
 
----
+Make sure at least one location is *open* at case start. Always give the agents somewhere to go.
 
-== Step 4: Build the Operations Board — Relic Milestones
+=== NPC Cards
 
-Relic milestones define what the artifact itself does if no one intervenes. They are keyed to specific days on the Operations Board’s shift row. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers immediately.
+Open a blank *NPC Card* (`npc-card.html`) for each significant NPC. A standard case has six to eight NPCs. For each one, fill in:
 
-. *Count your days* — a standard case uses 14 days with 4 shifts each. Day 14 is the start; Day 1 is catastrophe.
-. *Write 4–5 milestones* keyed to descending day numbers — each one describes an escalation.
-. *Day 1* is the catastrophe — the worst-case outcome if the case runs too long.
-. *Include cross-link consequences* — does a relic milestone also advance an organization row?
+* *Name and Organization* — Who they are and who they work for (O# shorthand).
+* *Secret* — What they are hiding from the agents. Not necessarily sinister — a priest might be hiding that his order has already sent a recovery team.
+* *Goal* — What they are actively trying to accomplish during the case. If an NPC has no active agenda, they are an information dispenser. Give them a goal or cut them.
+* *Artifact Connection* — How they encountered the relic and what effect proximity has had on them.
+* *Starting Knowledge / Gained Knowledge* — Which Information Cards (I#) they know at case start, and which they gain at specific milestones.
+* *Locations* — Where they can be found.
+* *Positive / Negative Results* — What they give if approached well, what goes wrong if approached badly.
 
-Make each milestone specific to the artifact's logic. Don't write generic "things get spooky." If the artifact is about wounds, milestones should involve unexplained injuries appearing. If it is about sound, milestones should involve interference, phantom broadcasts, or compulsive listening.
+=== Information Cards
 
-.Example milestones (for a command-type relic):
-* *Day 11:* Handlers report unusual certainty and conviction.
-* *Day 8:* Witnesses start using the same phrases without coordination. Advance O2 (Police) by 1 square.
-* *Day 5:* Electronics fail near the object; radios broadcast static. O3 (Media) activates if still dormant.
-* *Day 2:* The artifact begins selecting a bearer.
-* *Day 1:* Catastrophe — public manifestation, mass obedience event, or violent claimant emergence.
+Open a blank *Information Card* (`information-card.html`) for each discoverable fact. A standard case has fifteen to twenty-five Information Cards. For each one, fill in:
 
-Write these milestones on the *Case Brief*, keyed to day numbers. The board itself is just a countdown surface.
+* *ID* — I1, I2, I3, and so on.
+* *Content* — What the agents learn. Write this on the player-facing side.
+* *Found At* — Which Locations (L#) where this can be discovered.
+* *Known By* — Which NPCs know this.
+* *HQ Fallback* — What day HQ can provide this if the agents miss it in the field. Leave blank only for supporting intel that is not critical.
+* *Type* — *Containment Truth* or *supporting intel*.
 
-=== Example Board
+After creating all three entity types, cross-check them:
 
-Here is a simplified Operations Board at case start using the command-type relic example above with three organizations.
-
-.Operations Board — case start
-[cols="3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"]
-|===
-| | Active | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1
-
-| *Shifts*
-| 
-| ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✕
-
-| O1: The Compact
-| ☑
-| ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □ | □ | □ | □ | □ | □
-
-| O2: Local Police
-| ☑
-| ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □ | □ | □
-
-| O3: Local Press
-| ☐
-| ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | ■ | □ | □ | □ | □
-|===
-
-* *Shift row:* Each cell is quartered with an X — four shift quadrants per day. The DA fills one quadrant per shift. Relic milestone descriptions live on the *Case Brief*, keyed to day numbers; when a filled quadrant crosses a milestone, the artifact event triggers.
-* *Active column:* ☑ = in motion at case start. ☐ = dormant, printed on the board but inert until a trigger marks it active.
-* *Active organizations* have dead space pre-filled from column 14 inward. O1 starts at 9 (5 dead squares, 9 live). O2 starts at 6 (8 dead squares, only 6 remain — this threat is close).
-* *Organization milestones* (O1M1, O2M1, etc.) live on the Organization Reference sheet. When the DA crosses out a milestone square, they check the reference for consequences and cross-links.
-
-For a complete board with six organizations and cross-linked milestones, see _The Spear That Went Dark_ in Chapter 20.
-
----
-
-== Step 5: Create Your Organization Rows
-
-Organizations are external reactive pressures — rival factions, police, media, clergy, or any other force pushing on the same situation. Each organization is a countdown row on the Operations Board.
-
-For each organization:
-
-. *Name it* — The Compact, Local Police, Local Press, The Church, etc.
-. *Set a starting value* (typically 6–12). The DA pre-fills squares from column 14 inward to this value.
-. *Mark it Active or Dormant.* Dormant organizations are pre-printed on the board with the Active checkbox unchecked.
-. *Write 3–5 milestones* using O#M# shorthand (e.g., O1M1, O1M2).
-. *List triggers* — what advances this row (time, noise, publicity, violence, missed opportunities).
-. *Write cross-link consequences in milestone text* — when this organization hits a milestone, include instructions to advance other rows or trigger relic milestone effects.
-. *Note player-facing signs* — what can the agents notice before or as it worsens?
-
-.Aim for:
-* 2–3 *Active Organizations* (already in motion when the case starts)
-* 0–2 *Dormant Organizations* (activated by specific events during play)
-* Maximum of ~8 organization rows total
-
-.IMPORTANT
-****
-If an organization cannot produce visible signs before it becomes a problem, it will feel arbitrary to the players. Always give them something to notice.
-****
-
----
-
-== Step 6: Author Case Entities
-
-Case entities are independent building blocks, not sequential steps. Author Locations, NPC Cards, and Information Cards separately, then cross-link them.
-
-=== 6a: Write Locations
-
-For each location, fill in:
-
-[horizontal]
-Name:: Location name.
-Description:: What the agents see when they arrive.
-Availability:: Access condition — *Open*, *Clue-locked*, *Contact-locked*, *Time-locked*, or *Packet-locked*.
-NPCs Present:: Which NPCs can be found here (may change at milestones).
-Information Available:: Information IDs (I#) discoverable at this location.
-Organizations Present:: Which organizations have interest or presence here (O# shorthand).
-Positive Result:: What agents gain from a successful engagement — Information IDs, NPC access, new locations.
-Negative Result:: What happens if the scene goes badly — organization advances, tails, closures.
-Milestone Changes:: How this location changes at specific milestones (e.g., "When O4M2: Suárez pulled off case").
-
-.Build 5–8 Locations for a standard case:
-
-* 2–3 should be *Open* at case start
-* The rest should unlock through investigation, NPC introductions, or packet returns
-* The final confrontation / containment location should require at least 2 prior unlocks
-
-=== 6b: Write NPC Cards
-
-For each significant NPC, create a playing-card-sized reference card:
-
-[horizontal]
-Name:: NPC name.
-Organization:: Affiliated organization (O#), faction, or independent.
-Secret:: Something they are hiding from the agents.
-Goal:: What they are actively trying to accomplish during this case.
-Artifact Connection:: How they encountered the artifact and what effect proximity has had.
-Starting Knowledge:: Information IDs (I#) they know at case start.
-Gained Knowledge:: Information learned at milestones (e.g., "At O2M2: knows handler name — I7").
-Locations:: Where they can be found.
-Positive Result:: What they share if approached well — Information IDs, introductions, access.
-Negative Result:: What happens if encounter goes badly — organization advance, tail, spooked witness.
-
-=== 6c: Write Information Cards
-
-For each discoverable fact, create a playing-card-sized reference card:
-
-[horizontal]
-ID:: Shorthand identifier (I1, I2, etc.).
-Content:: What the agents learn.
-Found At:: Location IDs where this can be discovered.
-Known By:: NPC IDs who possess this knowledge.
-HQ Fallback:: Available from HQ on Day X (prevents dead ends — costs shifts).
-Type:: *Containment Truth* (essential) or *supporting intel* (useful but not required).
-
-=== 6d: Cross-Link and Verify
-
-After authoring all three entity types, verify the cross-links:
-
-* Every *Found At* reference points to a real Location. Every *Known By* reference points to a real NPC Card.
-* Every Containment Truth has at least *two field sources* (Locations + NPCs) plus an *HQ Fallback*.
-* Every NPC's *Locations* field matches a real Location's *NPCs Present* field.
-* Every Location's *Information Available* matches Information Cards' *Found At* entries.
+* Every *Found At* reference on an Information Card must point to a real Location. Every *Known By* must point to a real NPC.
+* Every NPC's *Locations* field must match a Location's *NPCs Present* field.
+* Every Location's *Information Available* must match Information Cards' *Found At* entries.
+* Every Containment Truth must have at least *two field sources* (Locations and NPCs) plus an *HQ Fallback*.
 
 .THE DEAD END TEST
 ****
-For every Containment Truth, ask: _If the agents never visit one source, can they still learn this fact?_ If no, add another source or an earlier HQ Fallback day.
+For every Containment Truth, ask: _If the agents never visit one source, can they still learn this?_ If no, add another source or assign an earlier HQ Fallback day.
 ****
 
 ---
 
-== Step 7: Create Key NPCs
+== Step 7: Write the Player Briefing
 
-Every significant NPC needs three things:
+Open the *Case Brief — Player* (`case-brief-player.html`). This is what you hand to the players at the start of the session.
 
-[horizontal]
-Secret:: Something they are hiding from the agents (not necessarily sinister).
-Goal:: What they are actively trying to accomplish *right now* during this case.
-Artifact Connection:: How they encountered the artifact and what effect proximity has had on them.
+The *Player Case Brief* contains only what the Covenant would share with field agents: the case name, region, objectives, known actors, starting leads, and operational parameters. No secrets, no Containment Truths, no milestone details.
 
-.Build 4–8 NPCs for a standard case:
-
-* At least 1 potential ally / quiet source
-* At least 1 rival faction operative
-* At least 1 civilian or institutional figure caught in the middle
-* At least 1 viable bearer candidate if the artifact selects carriers
-
-.TIP
-****
-Ask: _If the agents were not present, what would this NPC do?_ If the answer is nothing, the NPC is an information dispenser. Cut them or give them an active agenda.
-****
+Write it in the Covenant's institutional voice — brisk, factual, slightly formal, and carefully redacted. The players should feel like they are reading a classified briefing, not a game summary.
 
 ---
 
-== Step 8: Set Up the Shift Timeline
+== Step 8: Final Assembly
 
-The shift timeline is the operational calendar. Prepare a tracker showing:
+Gather everything you have created:
 
-* *10 days* (default), *4 shifts per day*: Morning, Day, Evening, Night
-* Mark any *known windows* — handoff deadlines, event nights, transport schedules
-* Leave space for *packet send/return markers*
-* Note any *time-locked scenes* or *organization triggers* tied to specific shifts
+[%header,cols="1,3"]
+|===
+| Document | Status
 
-This handout is for coordination — share it with the table. Do *not* put your hidden organization values on it.
+| Case Brief — DA | Mystery statement, real situation, containment truths, relic milestones, resolution notes, DA pacing guidance.
+| Case Brief — Player | Covenant briefing — only what the agents would know walking in.
+| Case File Form | In-world mission document for players.
+| Operations Board | Shift row with relic milestones, organization rows with starting values and milestone squares.
+| Organization Reference | All organizations, each with O#M# milestone descriptions and cross-link consequences.
+| Relic Sheet | Full artifact profile, fracture table, containment truth checklist.
+| Location Pages | One per location, cross-linked to NPCs and Information Cards.
+| NPC Cards | One per NPC, cross-linked to Locations and Information Cards.
+| Information Cards | One per discoverable fact, cross-linked to Locations and NPCs.
+|===
 
----
-
-== Step 9: Prepare Packet Guidance
-
-The agents can send one Covenant Request Packet per shift. Before play, prepare:
-
-* 3–5 *likely packet requests* based on the case's available leads
-* The *minimum response time* (default is 2 shifts; sensitive requests take 3+)
-* What each response *contains* — a truth, a contact, a scene unlock, or a theory confirmation
-* Whether any packet can be *intercepted, delayed, or partially wrong*
-
-Packets should sharpen the next decision, not solve the case.
-
----
-
-== Step 10: Assemble the Case File Package
-
-Gather your work from the previous steps into the complete case file package (see <<case-file-package>> in Chapter 15):
-
-. *Case File* (player brief) — Write the in-world mission brief containing only what the Covenant would share: relic surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. Include the Case ID (`VC-[Region Code]-[Year]-[Number]`), region, format (session count), shift cadence, and core problem statement.
-. *Case Brief* (DA only) — Write your mystery statement and DA notes: what is actually going on, who is really involved, and how the case resolves.
-. *Operations Board* — Completed in Steps 4–5.
-. *Organization Reference* — List all organizations with their O#M# milestone descriptions and cross-link instructions.
-. *Relic Sheet* — Full artifact profile from Step 1: tier, category, activation condition, mechanical effects, fracture table, containment profile, and containment truth checklist.
-. *Location Pages* — One per Location from Step 6a.
-. *NPC Cards* — One per NPC from Steps 6b and 7.
-. *Information Cards* — One per information entry from Step 6c, double-sided (player-facing front, DA reference back).
-
----
-
-== Quick Reference: The Solvability Checklist
+=== The Solvability Checklist
 
 Before you run the case, verify:
 
 [%interactive]
 * [ ] Every Containment Truth has at least two field sources (Locations + NPCs) plus an HQ fallback.
-* [ ] No single Location is mandatory for forward motion.
-* [ ] Every Location reveals information, unlocks an NPC or route, or worsens the situation informatively.
+* [ ] No single Location is mandatory for forward progress.
+* [ ] Every Location reveals information, unlocks an NPC or route, or worsens the situation in an informative way.
 * [ ] At least one actionable option is visible at the start of each shift.
 * [ ] A failed scene produces movement, not dead air.
 * [ ] The Mystery Statement fits in one sentence.
 * [ ] Each organization has player-facing signs before it becomes a crisis.
 * [ ] Each NPC has a secret, a goal, and an artifact connection.
 
----
-
-== Quick Reference: Session Flow
-
-Each shift at the table follows this procedure:
-
-. *Review visible pressure signs.* State what changed since the last shift.
-. *Choose the team's primary undertaking.* Scene action, travel, surveillance, research, preparation, or recovery.
-. *Optionally send one Covenant Request Packet.*
-. *Resolve the undertaking.* Play the scene or handle the shift action.
-. *Advance consequences.* On the Operations Board, advance any organization rows triggered by time, noise, or mishandling. Fill in the next shift quadrant on the shift row and check for relic milestones crossed this day.
-. *Mark delayed returns.* Note when packet responses or stakeout results will arrive.
-
-When a shift becomes an active scene, resolve it as a bundle:
-
-. State the objective.
-. You state the Key Activity.
-. Each player declares a unique contribution (Immediate, Shield, Position, or Delayed).
-. Roll what matters.
-. Disclose results in bands: Clean Progress, Progress With Cost, Partial Progress, Setback With Signal, or Breach.
+If all of that checks out, print the package, organize it in a folder, and sit down at the table. The case is ready.
 
 ---
 
 == Cross-References
 
 [horizontal]
-Full case file rules:: _Chapter 15: The Case File_
-DA guidance and authoring tools:: _Chapter 14: Director of Agents Guidance_
-Artifact tiers and containment profiles:: _Chapter 11: Artifacts of Power and Doom_
-Rival faction behavior:: _Chapter 17: Rival Factions_
-Corruption mechanics:: _Chapter 8: Corruption, Fear & Healing_
-Case generator tables:: _Chapter 15: Case File Generator Tables_
+Full case file rules:: xref:chapters/15-case-file.adoc#chapter-case-file[Chapter 15: The Case File]
+Sample case (The Spear That Went Dark):: xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Chapter 20: Sample Case File]
+DA guidance and running toolkit:: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Chapter 14: Director of Agents Guidance]
+Artifact tiers and containment profiles:: xref:chapters/11-artifacts.adoc#chapter-artifacts[Chapter 11: Artifacts of Power and Doom]
+Case generator tables:: xref:chapters/15-case-file.adoc#case-file-generator[Chapter 15: Case File Generator Tables]

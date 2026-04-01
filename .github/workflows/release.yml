@@ -58,8 +58,8 @@ jobs:
           blank.mkdir(parents=True, exist_ok=True)
           templates = {
               "assets/character-sheet.html":        "agent-dossier.html",
-              "assets/case-file-form.html":         "case-file-form.html",
-              "assets/case-brief.html":             "case-brief.html",
+              "assets/case-brief-da.html":          "case-brief-da.html",
+              "assets/case-brief-player.html":      "case-brief-player.html",
               "assets/operations-board.html":       "operations-board.html",
               "assets/organization-reference.html": "organization-reference.html",
               "assets/information-card.html":       "information-card.html",
@@ -82,15 +82,12 @@ jobs:
           case_dest.mkdir(parents=True, exist_ok=True)
           for p in sorted(case_src.glob("*.html")):
               inline_fonts(str(p), str(case_dest / p.name))
-          readme = case_src / "README.md"
-          if readme.exists():
-              shutil.copy2(str(readme), str(case_dest / "README.md"))
           handouts_src = case_src / "handouts"
           if handouts_src.is_dir():
               handouts_dest = case_dest / "handouts"
               handouts_dest.mkdir(exist_ok=True)
-              for md in sorted(handouts_src.glob("*.md")):
-                  shutil.copy2(str(md), str(handouts_dest / md.name))
+              for img in sorted(handouts_src.glob("*.png")):
+                  shutil.copy2(str(img), str(handouts_dest / img.name))
 
           print("Font inlining complete.")
           PYEOF

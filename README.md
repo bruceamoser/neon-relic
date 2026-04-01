@@ -37,8 +37,8 @@ starter-kit.zip
 ├── case-file-instructions.pdf         ← Step-by-step DA guide
 ├── blank-templates/                   ← Fillable HTML forms — open in any browser
 │   ├── agent-dossier.html
-│   ├── case-brief.html
-│   ├── case-file-form.html
+│   ├── case-brief-da.html
+│   ├── case-brief-player.html
 │   ├── information-card.html
 │   ├── location-page.html
 │   ├── npc-card.html
@@ -48,8 +48,9 @@ starter-kit.zip
 ├── prebuilt-characters/               ← Five ready-to-play agent dossiers
 │   └── character-*.html
 └── sample-case-file/                  ← The Spear That Went Dark — complete case
-    ├── README.md
-    ├── case-brief.html
+    ├── start-here.html
+    ├── case-brief-da.html
+    ├── case-brief-player.html
     ├── information-cards.html
     ├── locations.html
     ├── npc-cards.html
@@ -57,7 +58,7 @@ starter-kit.zip
     ├── organization-reference.html
     ├── relic-sheet.html
     └── handouts/
-        └── *.md
+        └── *.png
 ```
 
 All HTML forms are fully self-contained with embedded fonts — no internet connection or external files required. They can be filled out in the browser and printed to PDF via Ctrl+P.

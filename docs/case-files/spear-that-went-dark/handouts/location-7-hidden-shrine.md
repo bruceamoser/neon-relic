@@ -1,7 +1,0 @@
-# Image Prompt — Location 7: Hidden Shrine / Temporary Custody Site
-
-Copy the entire prompt below into an image generator. Output filename: `spear-location-7-hidden-shrine.png`
-
----
-
-Create a single full-page portrait image of a hidden improvised shrine in a disused Buenos Aires chapel or basement crypt, currently serving as an unauthorized custody site for a stolen relic. The space is small and vaulted with crumbling plaster walls exposing old brickwork, a stone or concrete floor, and a low arched ceiling. At the center is a crude altar — a heavy wooden table or stone slab draped with a stained cloth, with candle stubs in mismatched holders casting flickering warm light. Around the altar are scattered signs of recent habitation: a sleeping bag, empty water bottles, food wrappers, a transistor radio, and a battered notebook open on the floor. On the wall behind the altar, someone has pinned or taped newspaper clippings, a hand-drawn map, and a religious print — an improvised devotional arrangement that feels more obsessive than sacred. The relic itself is not visible but the space where it would rest is conspicuously cleared and prepared. The atmosphere should feel claustrophobic, charged, and wrong — a place where containment has been replaced by veneration. Use a late-1980s analog photography aesthetic: candlelight and flashlight mix, deep shadow, warm amber against cold stone, visible grain. No fantasy elements, no glowing relics, no visible supernatural effects, no horror-movie staging, no modern equipment, no digital styling.

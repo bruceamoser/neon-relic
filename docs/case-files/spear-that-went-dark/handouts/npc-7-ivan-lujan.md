@@ -1,7 +1,0 @@
-# Image Prompt — NPC 7: Iván Luján
-
-Copy the entire prompt below into an image generator. Output filename: `spear-npc-7-ivan-lujan.png`
-
----
-
-Create a single portrait-oriented character illustration of Iván Luján, an Argentine nationalist fixer and Compact cutout in his late thirties who is becoming a bearer candidate for a supernatural relic. He is practical, intense, and beginning to show signs that tactical instinct is being replaced by something resembling revelation. His face is handsome in a rough working way — dark hair combed back, strong jaw, sharp eyes that hold the viewer's gaze a beat too long. He wears a leather jacket over a dark shirt, open collar, with a silver chain or medallion visible at the throat. His posture is confident and slightly forward-leaning, as though he is about to make a pronouncement rather than a request. The background should suggest a Buenos Aires backstreet at dusk or a dim warehouse doorway — cracked stucco, a metal shutter, warm amber streetlight catching his face from one side. His expression is calm but charged, like a man who has recently stopped doubting himself entirely. The overall tone should be realistic and ominous — this is a man halfway to believing he was chosen, and he is more dangerous for being half-right. Use a late-1980s analog portrait aesthetic: warm-amber and shadow contrast, desaturated background, visible grain. No fantasy elements, no glowing auras, no visible supernatural effects, no modern styling, no action-hero posing.

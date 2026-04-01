@@ -1,7 +1,0 @@
-# Image Prompt — NPC 8: Brother Tomás Arce
-
-Copy the entire prompt below into an image generator. Output filename: `spear-npc-8-brother-tomas-arce.png`
-
----
-
-Create a single portrait-oriented character illustration of Brother Tomás Arce, an ecclesiastical broker and information parasite in his early fifties who moves between clergy, smugglers, and collectors. He is charming, useful, slippery, and fundamentally unreliable. His face is round and pleasant with a receding hairline, warm brown eyes that crinkle when he smiles, and the easy affability of a man who has never met a confidence he could not betray. He wears a rumpled clerical shirt with the collar loosened or missing, a worn sport coat with patched elbows, and carries a battered leather satchel stuffed with papers. The background should suggest a café table in a Buenos Aires barrio — a scratched marble tabletop, a small espresso cup, a folded newspaper, warm midday light filtering through a dirty window. His expression is friendly, open, and subtly evasive — he is already thinking about who else he can sell this conversation to. The overall tone should be realistic and wryly human — this is a man who survives by being the second person everyone calls. Use a late-1980s analog portrait aesthetic: warm natural light, muted earth tones, slight grain, candid-photo feel. No fantasy elements, no glowing effects, no supernatural imagery, no modern styling, no sinister caricature.

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Here — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
+  :root {
+    --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e;
+    --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a;
+    --rule:#999; --rule-light:#ccc;
+    --font-main:'SpecialElite','Courier New',monospace;
+    --font-fill:'CourierPrime','Courier New',monospace;
+  }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.45; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; min-height:11in; margin:0.3in auto; padding:0.4in 0.5in 0.5in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:60pt; letter-spacing:14px; color:rgba(45,90,39,0.03); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+
+  .header { border-top:3px solid var(--ink); border-bottom:2px solid var(--ink); padding:8px 0 10px; margin-bottom:16px; }
+  .header-title { font-family:var(--font-main); font-size:22pt; letter-spacing:6px; text-transform:uppercase; color:var(--ink); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:8pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:6px; }
+  .header-case { font-family:var(--font-main); font-size:7pt; letter-spacing:2px; color:var(--ink-light); margin-top:4px; }
+
+  h2 { font-family:var(--font-main); font-size:9pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:3px; margin:20px 0 8px; }
+  h2.red { color:var(--red-stamp); border-color:var(--red-stamp); }
+  h2.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+
+  p { font-family:var(--font-fill); font-size:8.5pt; line-height:1.5; margin-bottom:8px; color:var(--ink); }
+  p.intro { font-size:9pt; line-height:1.55; margin-bottom:14px; }
+
+  .file-list { list-style:none; margin:0 0 10px; padding:0; }
+  .file-list li { padding:6px 0; border-bottom:1px dotted var(--rule-light); display:flex; align-items:baseline; gap:8px; }
+  .file-list li:last-child { border-bottom:none; }
+  .file-num { font-family:var(--font-main); font-size:7pt; color:var(--ink-faded); min-width:18px; text-align:right; }
+  .file-link { font-family:var(--font-fill); font-size:8.5pt; }
+  .file-link a { color:var(--ink); text-decoration:underline; text-underline-offset:2px; }
+  .file-link a:hover { color:var(--red-stamp); }
+  .file-desc { font-family:var(--font-fill); font-size:7.5pt; color:var(--ink-faded); margin-left:4px; }
+
+  .note-box { border:1.5px solid var(--green-stamp); padding:8px 10px; margin:14px 0; background:rgba(45,90,39,0.04); }
+  .note-box p { font-size:8pt; margin-bottom:0; color:var(--ink-faded); }
+  .note-box strong { color:var(--green-stamp); }
+
+  .footer { margin-top:24px; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">VERDANT COVENANT</div>
+
+  <div class="header">
+    <div class="header-title">Start Here</div>
+    <div class="header-subtitle">Neon Relic &mdash; Sample Case File</div>
+    <div class="header-case">Case: The Spear That Went Dark &bull; VC-AR-87-041 &bull; Buenos Aires, Argentina</div>
+  </div>
+
+  <p class="intro">This folder contains everything you need to run <em>The Spear That Went Dark</em> &mdash; a complete sample case file for Neon Relic. The documents are organized into the 8-piece case file package described in Chapter 15. Print them, spread them on the table, and you are ready to play.</p>
+
+  <p class="intro">If this is your first case, read the <strong>Case Brief &mdash; DA</strong> first. It tells you what is actually happening, who is really involved, and how the case resolves. Then hand the <strong>Agent Briefing</strong> to the players &mdash; it contains only what the Covenant would share with field agents.</p>
+
+  <h2 class="green">Player Handout</h2>
+  <p>Give this to the players at the start of the session.</p>
+
+  <ul class="file-list">
+    <li>
+      <span class="file-num">1.</span>
+      <span class="file-link"><a href="case-brief-player.html">case-brief-player.html</a></span>
+      <span class="file-desc">&mdash; The Agent Briefing. Situation summary, objectives, known organizations, starting contacts, and operational parameters. <strong>No spoilers.</strong></span>
+    </li>
+  </ul>
+
+  <h2 class="red">DA Documents</h2>
+  <p>These are for your eyes only. Do not share them with the players.</p>
+
+  <ul class="file-list">
+    <li>
+      <span class="file-num">2.</span>
+      <span class="file-link"><a href="case-brief-da.html">case-brief-da.html</a></span>
+      <span class="file-desc">&mdash; The DA&rsquo;s master reference. Mystery statement, the real situation, containment truths, relic milestones, key actors, resolution paths, and pacing notes. <strong>Read this first.</strong></span>
+    </li>
+    <li>
+      <span class="file-num">3.</span>
+      <span class="file-link"><a href="relic-sheet.html">relic-sheet.html</a></span>
+      <span class="file-desc">&mdash; Full artifact profile for the Spear of Destiny. Tier, category, activation condition, mechanical effects, fracture table, and containment truth checklist.</span>
+    </li>
+    <li>
+      <span class="file-num">4.</span>
+      <span class="file-link"><a href="operations-board.html">operations-board.html</a></span>
+      <span class="file-desc">&mdash; The Operations Board. Shift row with relic milestones, six organization countdown rows, and packet tracking. Print this and put it where the table can see it.</span>
+    </li>
+    <li>
+      <span class="file-num">5.</span>
+      <span class="file-link"><a href="organization-reference.html">organization-reference.html</a></span>
+      <span class="file-desc">&mdash; All six organizations with their O#M# milestone descriptions and cross-link consequences. Keep this behind the screen.</span>
+    </li>
+    <li>
+      <span class="file-num">6.</span>
+      <span class="file-link"><a href="locations.html">locations.html</a></span>
+      <span class="file-desc">&mdash; Seven location pages (L1&ndash;L7). Pull the relevant page when the players say where they&rsquo;re going.</span>
+    </li>
+    <li>
+      <span class="file-num">7.</span>
+      <span class="file-link"><a href="npc-cards.html">npc-cards.html</a></span>
+      <span class="file-desc">&mdash; Eight NPC Cards. Place the relevant cards next to the active location page during play.</span>
+    </li>
+    <li>
+      <span class="file-num">8.</span>
+      <span class="file-link"><a href="information-cards.html">information-cards.html</a></span>
+      <span class="file-desc">&mdash; Twenty-two Information Cards (I1&ndash;I22). Player-facing front, DA reference back. Hand players the front side when they discover information.</span>
+    </li>
+  </ul>
+
+  <h2 class="green">Handouts</h2>
+  <p>The <code>handouts/</code> subdirectory contains all the visual assets for the case &mdash; clue handout images, NPC portraits, location images, and the relic illustration. Print or display these during play as physical props for the table.</p>
+
+  <div class="note-box">
+    <p><strong>Running order:</strong> Read the Case Brief. Skim the Operations Board and Organization Reference to understand the pressure structure. Glance through the Location pages and NPC Cards so you know the cast. Then sit down and play. You do not need to memorize anything &mdash; the forms are designed to be consulted during the session.</p>
+  </div>
+
+  <h2>Building Your Own</h2>
+  <p>Once you have played or read through this case, the step-by-step guide in <em>Building a Case File</em> (included in the rulebook) walks you through creating your own case from scratch, referencing the blank template files in the <code>blank-templates/</code> folder.</p>
+
+  <div class="footer">
+    <span>The Verdant Covenant &bull; Neon Relic</span>
+    <span>&copy; 2025</span>
+    <span>Start Here &mdash; The Spear That Went Dark</span>
+  </div>
+</div>
+
+</body>
+</html>

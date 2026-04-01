@@ -1,7 +1,0 @@
-# Image Prompt — NPC 4: Sister Inés Barral
-
-Copy the entire prompt below into an image generator. Output filename: `spear-npc-4-sister-ines-barral.png`
-
----
-
-Create a single portrait-oriented character illustration of Sister Inés Barral, a Catholic archivist and ritual conservator in her late forties. She is exacting, calm, observant, and quietly principled. Her face is framed by a modest modern habit or a simple dark veil over a plain blouse — post-Vatican II religious dress rather than a full traditional habit. She has sharp watchful eyes behind reading glasses pushed partway down her nose, a composed mouth, and the steady hands of someone who handles fragile documents for a living. She holds or is near a bound archival ledger or sheaf of old papers tied with cotton ribbon. The background should suggest a church archive or basement record room — metal shelving stacked with labeled boxes, a desk lamp casting a warm pool, faded stone or plaster walls. Her expression is patient and appraising, as though she is deciding how much of the truth the person across from her deserves. The overall tone should be realistic, scholarly, and quietly tense — this is a woman who knows the institution she serves no longer deserves sole custody of what she protects. Use a late-1980s analog portrait aesthetic: warm incandescent light, muted earth tones, faint grain. No fantasy elements, no glowing effects, no supernatural imagery, no modern styling, no romantic idealization.

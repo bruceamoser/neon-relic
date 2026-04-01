@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Briefing — The Spear That Went Dark</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
+  :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#e8e4d8; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
+  body { background:#555; font-family:var(--font-main); font-size:9pt; line-height:1.3; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:8.5in; height:11in; margin:0.3in auto; padding:0.3in 0.42in 0.32in; background:var(--paper); position:relative; overflow:hidden; box-shadow:3px 3px 20px rgba(0,0,0,0.55); display:flex; flex-direction:column; }
+  .page::before { content:''; position:absolute; inset:0; background: repeating-linear-gradient(0deg,transparent,transparent 11px,rgba(0,0,0,0.012) 11px,rgba(0,0,0,0.012) 12px), radial-gradient(ellipse at 15% 78%,rgba(139,119,80,0.07),transparent 55%), radial-gradient(ellipse at 88% 18%,rgba(139,119,80,0.05),transparent 50%); pointer-events:none; z-index:0; }
+  .page::after { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(0,0,0,0.03) 1px,transparent 1px); background-size:3px 3px; pointer-events:none; z-index:2; }
+  .page > * { position:relative; z-index:1; }
+  .watermark { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) rotate(-35deg); font-family:var(--font-main); font-size:80pt; letter-spacing:18px; color:rgba(45,90,39,0.03); text-transform:uppercase; white-space:nowrap; pointer-events:none; z-index:0; }
+  .perf-strip { height:11px; border-bottom:1.5px dashed #bbb; margin-bottom:8px; overflow:hidden; color:#bbb; font-size:4pt; letter-spacing:2.5px; line-height:1.1; }
+  .header { display:flex; justify-content:space-between; align-items:flex-start; border-top:3px solid var(--green-stamp); border-bottom:2px solid var(--green-stamp); padding:6px 0 7px; margin-bottom:10px; }
+  .header-left { flex:1; }
+  .header-title { font-family:var(--font-main); font-size:20pt; letter-spacing:6px; text-transform:uppercase; color:var(--green-stamp); line-height:1; }
+  .header-subtitle { font-family:var(--font-main); font-size:7pt; letter-spacing:3px; text-transform:uppercase; color:var(--ink-faded); margin-top:4px; }
+  .header-right { text-align:right; font-size:6.5pt; color:var(--ink-faded); line-height:1.6; }
+  .classification { display:inline-block; border:2.5px solid var(--green-stamp); color:var(--green-stamp); font-family:var(--font-main); font-size:10pt; letter-spacing:5px; padding:2px 10px; transform:rotate(-2deg); margin-bottom:4px; }
+  .section-title { font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:3px; color:var(--ink); border-bottom:1.5px solid var(--ink); padding-bottom:2px; margin:8px 0 4px; }
+  .section-title.green { color:var(--green-stamp); border-color:var(--green-stamp); }
+  .id-block-row { display:grid; gap:0; border:1.5px solid var(--ink); }
+  .id-cell { padding:3px 6px 4px; border-right:1px solid var(--rule); }
+  .id-cell:last-child { border-right:none; }
+  .id-label { display:block; font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:2px; }
+  .id-value { display:block; font-family:var(--font-fill); font-size:8pt; min-height:13px; border-bottom:1px dotted var(--rule); }
+  .field-label { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink-faded); margin-bottom:1px; display:block; }
+  .field-value { border-bottom:1.5px solid var(--rule); min-height:14px; padding:1px 3px; background:var(--field-bg); font-family:var(--font-fill); font-size:8pt; margin-bottom:4px; }
+  .field-value.med { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:36px; }
+  .field-value.tall { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:50px; }
+  .field-value.xl { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:72px; }
+  .field-value.xxl { border:1px solid var(--rule); border-bottom:1.5px solid var(--rule); min-height:100px; }
+  .two-col { display:flex; gap:8px; }
+  .two-col > div { flex:1; }
+  .npc-row { display:grid; grid-template-columns:1.5fr 1fr 2fr; gap:4px 8px; padding:3px 0; border-bottom:1px dotted var(--rule-light); }
+  .npc-row:last-child { border-bottom:none; }
+  .npc-field { font-family:var(--font-fill); font-size:7.5pt; border-bottom:1px dotted var(--rule-light); min-height:13px; padding:1px 2px; background:var(--field-bg); }
+  .npc-header { font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); padding:2px 0 1px; }
+  .notes-lines { width:100%; }
+  .notes-line { border-bottom:1px solid var(--rule-light); height:17px; }
+  .callout-box { border:1.5px solid var(--green-stamp); padding:5px 7px; background:rgba(45,90,39,0.04); margin:4px 0; }
+  .callout-box .field-label { color:var(--green-stamp); font-size:5.5pt; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:4px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="watermark">COVENANT</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-title">Agent Briefing</div>
+      <div class="header-subtitle">Neon Relic &mdash; The Verdant Covenant</div>
+    </div>
+    <div class="header-right">
+      <div class="classification">CLASSIFIED</div>
+      <div>Form VC-18 &bull; Rev. 1987</div>
+      <div style="margin-top:3px; display:flex; align-items:baseline; gap:5px; justify-content:flex-end;">
+        <span>Case ID:</span>
+        <span style="border-bottom:1px solid var(--rule); display:inline-block; min-width:130px; height:14px;">VC-AR-87-041</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CASE IDENTITY -->
+  <div class="id-block-row" style="grid-template-columns: 2fr 0.8fr 1fr;">
+    <div class="id-cell">
+      <span class="id-label">Case Name</span>
+      <span class="id-value">The Spear That Went Dark</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Region</span>
+      <span class="id-value">Buenos Aires, Argentina</span>
+    </div>
+    <div class="id-cell">
+      <span class="id-label">Classification</span>
+      <span class="id-value">Priority Retrieval</span>
+    </div>
+  </div>
+
+  <!-- I. SITUATION SUMMARY -->
+  <div class="section-title green">I &mdash; Situation Summary</div>
+  <div>
+    <span class="field-label">What the Covenant knows. Brief the agents on the operational situation.</span>
+    <div class="field-value xl">Three nights ago, a professional theft crew breached a private vault beneath the Ferreyra estate in Buenos Aires. The vault held an artifact of significant concern&nbsp;&mdash; a relic historically associated with sovereignty, divine mandate, and mass persuasion. The theft crew fractured before completing their planned handoff. The artifact is now loose in Buenos Aires. Local police are investigating the break-in as an art theft. At least one other organization is running a parallel recovery. The Covenant needs the artifact located and returned to containment before it reaches a buyer or activates in the field.</div>
+  </div>
+
+  <!-- II. AGENT OBJECTIVES -->
+  <div class="section-title">II &mdash; Agent Objectives</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Primary Objective</span>
+      <div class="field-value med">Locate the artifact and establish Covenant custody. Learn whatever containment protocols are needed to transport it safely.</div>
+    </div>
+    <div>
+      <span class="field-label">Secondary Objective</span>
+      <div class="field-value med">Prevent the artifact from leaving the country. Maintain operational secrecy. Identify any individuals who may have been psychologically affected by proximity to the relic.</div>
+    </div>
+  </div>
+
+  <!-- III. KNOWN ORGANIZATIONS -->
+  <div class="section-title">III &mdash; Known Organizations</div>
+  <div>
+    <span class="field-label">Organizations the Covenant has identified as active or potentially involved.</span>
+    <div class="field-value xl">Buenos Aires Metropolitan Police&nbsp;&mdash; investigating the vault breach as a residential robbery. Likely to encounter agents at the estate or in the neighbourhood. The Church (local diocese)&nbsp;&mdash; the Ferreyra vault had historical Church connections. Expect clerical interest in the artifact&rsquo;s recovery. Unknown Buyers&nbsp;&mdash; intelligence suggests the theft was commissioned, not opportunistic. Someone is expecting delivery. The Ferreyra Estate&nbsp;&mdash; the custodian family. Cooperative but frightened. May have partial knowledge of the artifact&rsquo;s handling requirements.</div>
+  </div>
+
+  <!-- IV. INITIAL CONTACTS -->
+  <div class="section-title green">IV &mdash; Initial Contacts</div>
+  <div>
+    <span class="field-label">NPCs the agents are aware of at case start.</span>
+    <div class="npc-row" style="border-bottom: none;">
+      <div class="npc-header">Name</div>
+      <div class="npc-header">Role / Affiliation</div>
+      <div class="npc-header">Known Information</div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field">Lucia Ferreyra</div>
+      <div class="npc-field">Estate custodian</div>
+      <div class="npc-field">Owner of the vault. Reported the theft. Covenant source says she has partial knowledge of the artifact&rsquo;s history and handling.</div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field">Detective Mateo Su&aacute;rez</div>
+      <div class="npc-field">Buenos Aires police</div>
+      <div class="npc-field">Lead detective on the robbery case. Known to be methodical. Can be approached carefully if agents establish a plausible cover.</div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field">Father Esteban Vale</div>
+      <div class="npc-field">Local parish</div>
+      <div class="npc-field">Church contact identified by Wayfinder intelligence. May have knowledge of the artifact&rsquo;s ecclesiastical history. Approach with caution&nbsp;&mdash; loyalties unclear.</div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+    </div>
+    <div class="npc-row">
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+      <div class="npc-field"></div>
+    </div>
+  </div>
+
+  <!-- V. STARTING LEADS -->
+  <div class="section-title">V &mdash; Starting Leads</div>
+  <div>
+    <span class="field-label">Available locations, lines of inquiry, or contacts the agents can pursue immediately.</span>
+    <div class="field-value xl">The Ferreyra Estate&nbsp;&mdash; the crime scene. Police have processed it but may not have understood what they were looking at. Lucia Ferreyra is willing to meet. The local police station&nbsp;&mdash; Detective Su&aacute;rez has physical evidence and witness statements. Access requires cover or leverage. Church archives&nbsp;&mdash; historical records of the artifact&rsquo;s custody chain may exist in the diocesan archive.</div>
+  </div>
+
+  <!-- VI. OPERATIONAL PARAMETERS -->
+  <div class="section-title">VI &mdash; Operational Parameters</div>
+  <div class="two-col">
+    <div>
+      <span class="field-label">Timeline Pressure</span>
+      <div class="field-value med">HIGH. The artifact is active and escalating. Covenant analysts estimate the situation will become uncontainable within days, not weeks. Every shift matters.</div>
+    </div>
+    <div>
+      <span class="field-label">Constraints</span>
+      <div class="field-value med">Maintain cover identities. Do not reveal Covenant existence to local authorities. Minimize civilian exposure to the artifact. Standard Rules of Engagement apply&nbsp;&mdash; lethal force only to protect life.</div>
+    </div>
+  </div>
+
+  <!-- VII. REGIONAL CONTACTS -->
+  <div class="section-title green">VII &mdash; Regional Contacts</div>
+  <div>
+    <span class="field-label">Covenant assets, safe houses, or local contacts in the operational area.</span>
+    <div class="field-value med">HQ will provide standard Covenant Request Packet support. No permanent safe house in Buenos Aires&nbsp;&mdash; secure a hotel or short-let under cover names. Emergency extraction via the port is available as a last resort.</div>
+  </div>
+
+  <!-- VIII. AGENT NOTES -->
+  <div class="section-title">VIII &mdash; Agent Notes</div>
+  <div>
+    <span class="field-label">Space for player notes during play.</span>
+    <div class="notes-lines">
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>VC-18 &bull; The Verdant Covenant &bull; Agent Briefing</span>
+    <span>Neon Relic &copy; 2025</span>
+    <span>Case Brief &mdash; Player &mdash; The Spear That Went Dark</span>
+  </div>
+</div>
+
+</body>
+</html>

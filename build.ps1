@@ -8,9 +8,9 @@
       - Core rulebook PDF (via asciidoctor-pdf)
       - Case file instructions PDF (via asciidoctor-pdf)
       - Self-contained HTML files with embedded fonts for:
-        - 9 blank DA templates (agent dossier, case file form, case brief,
-          operations board, organization reference, information card,
-          location page, NPC card, relic sheet)
+        - 9 blank DA templates (agent dossier, case brief DA,
+          case brief player, operations board, organization reference,
+          information card, location page, NPC card, relic sheet)
         - 5 prebuilt character dossiers
       - Sample case file (The Spear That Went Dark) with all filled HTML
         forms and markdown handouts
@@ -119,8 +119,8 @@ New-Item -ItemType Directory -Path $blankDir | Out-Null
 
 $blankTemplates = @(
     @{ Src = 'assets\character-sheet.html';        Dest = 'agent-dossier.html' }
-    @{ Src = 'assets\case-file-form.html';         Dest = 'case-file-form.html' }
-    @{ Src = 'assets\case-brief.html';             Dest = 'case-brief.html' }
+    @{ Src = 'assets\case-brief-da.html';          Dest = 'case-brief-da.html' }
+    @{ Src = 'assets\case-brief-player.html';      Dest = 'case-brief-player.html' }
     @{ Src = 'assets\operations-board.html';       Dest = 'operations-board.html' }
     @{ Src = 'assets\organization-reference.html'; Dest = 'organization-reference.html' }
     @{ Src = 'assets\information-card.html';       Dest = 'information-card.html' }
@@ -169,14 +169,9 @@ $handoutsDir = Join-Path $caseDir 'handouts'
 if (Test-Path $handoutsDir) {
     $handoutsDestDir = Join-Path $caseDestDir 'handouts'
     New-Item -ItemType Directory -Path $handoutsDestDir | Out-Null
-    Copy-Item -Path (Join-Path $handoutsDir '*.md') -Destination $handoutsDestDir
+    Copy-Item -Path (Join-Path $handoutsDir '*.png') -Destination $handoutsDestDir
 }
 
-# README — copy as-is
-$caseReadme = Join-Path $caseDir 'README.md'
-if (Test-Path $caseReadme) {
-    Copy-Item -Path $caseReadme -Destination $caseDestDir
-}
 Write-Host " done" -ForegroundColor Green
 
 # ── Package ───────────────────────────────────────────────────────────────────

@@ -1,7 +1,0 @@
-# Image Prompt — Location 1: The Estate Aftermath
-
-Copy the entire prompt below into an image generator. Output filename: `spear-location-1-estate-aftermath.png`
-
----
-
-Create a single full-page portrait image of the interior of a breached private estate vault in Buenos Aires, photographed in the aftermath of a professional burglary. The room is a reinforced basement chamber beneath a once-grand Argentine mansion — thick plaster walls, a heavy iron-banded door standing open with its lock mechanism visibly defeated, and a stone or tiled floor littered with debris. At the center is an empty display cradle or lead-lined reliquary stand, its glass or metal housing cracked open and the interior padding disturbed. Scattered around the floor are overturned wooden crates, a broken padlock, a flashlight with a dead beam, and a few scraps of protective wrapping — lead-foil cloth, consecrated salt residue, ash smudges. The lighting is dim and uneven — a single portable work lamp left behind by the thieves casts harsh directional light across the scene, with deep shadows in the corners. The overall atmosphere should feel violated, clinical, and faintly wrong — not a ransacked room but a surgically opened containment vessel. Use a late-1980s analog photography aesthetic: tungsten-balanced indoor light, visible grain, muted tones, slight motion blur on edges. No fantasy elements, no glowing residue, no visible supernatural effects, no modern security equipment, no digital styling.

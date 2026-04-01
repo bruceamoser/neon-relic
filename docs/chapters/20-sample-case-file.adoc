@@ -1,130 +1,70 @@
-﻿[#chapter-sample-case-file]
+[#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
-This chapter presents a complete sample case built for the revised Neon Relic case structure. Rather than reproducing every NPC card, Location form, and Information Card inline, the chapter focuses on *design commentary* — why the case is built the way it is, what makes it work, and what a DA should understand before running it.
+Three nights ago, someone broke into the fortified Ferreyra estate in Buenos Aires and stole a relic that had been sitting in a ritual vault since the end of the Second World War. The containment sequence — a liturgical suppression rite maintained for four decades by a succession of aristocratic custodians and discreet Church intermediaries — was shattered the moment the vault door came open. The theft crew expected a black-market handoff. What they got was a fractured chain of custody, a wounded colleague, a Compact fixer who is beginning to hear voices of divine mandate, and a church hierarchy that is quietly running its own parallel recovery.
 
-The full case packet — filled-in forms for every component of the 8-piece document package — lives in `docs/case-files/spear-that-went-dark/`. Print or reference those files at the table. Read this chapter to understand the design logic behind them.
+The agents arrive after the clean version of the crime is already over. What remains is a contaminated intelligence market circling an artifact that is simultaneously sacred relic, imperial mandate, and weaponizable asset. No faction understands all three at once. The agents have to.
 
----
+This chapter introduces the sample case that ships with Neon Relic. The full case file package — every filled-in form, every NPC Card, every Location page, every Information Card — lives in the starter kit under `sample-case-file/`. Print those documents. Spread them on your table. Use them exactly as written for your first session, or read through them to see how the system works before building your own.
 
-== Case Summary
-
-[%header,cols="2,4"]
-|===
-| Case ID | VC-AR-87-041
-| Region | Buenos Aires, Argentina
-| Format | 1-3 sessions
-| Primary Rival | The Vantablack Compact
-| Secondary Pressure | Local law enforcement, Church custodians, foreign buyers
-| Shift Cadence | 4 shifts per day
-| Packet Response Floor | 2 shifts
-| Core Problem | A stolen relic has destabilized a black-market handoff and is pulling multiple factions toward one contaminated chain-of-custody crisis.
-|===
-
-== Working Premise
-
-The *Spear of Destiny* — or a relic credibly believed to be that spearhead and its restored shaft assembly — was held in a private vault beneath a fortified estate in Buenos Aires under discreet aristocratic custody. Three nights ago, the estate was hit by a professional theft crew funded through Vantablack Compact cutouts. The operation succeeded just long enough to become dangerous.
-
-The theft team breached the estate, exposed the relic to a broken custody sequence, and failed to complete the scheduled handoff. Since then, the Spear has gone still somewhere in the city while hospitals, thieves, clergy, police, and black-market intermediaries all react to different pieces of the same event.
-
-The agents arrive after the clean version of the crime is already over. What remains is a contaminated intelligence market circling an artifact that behaves like:
-
-* a Christian wound relic
-* an imperial mandate object
-* a Cold War occult weapon
-
-No faction understands all three at once.
-
-== Agent Objectives
-
-The team must:
-
-. Locate the Spear before the Compact or foreign buyers recover its chain.
-. Determine what interrupted the handoff.
-. Learn the Spear's containment truths before direct recovery.
-. Prevent export.
-. Re-establish custody without triggering an urban threshold event.
+What follows here is not a second copy of those documents. It is the story of the case — the narrative a DA needs to internalize before sitting down to run it — followed by the visual handouts and portraits you will use at the table.
 
 ---
 
-== Design Commentary
+== The Situation
 
-This section explains the structural choices behind *The Spear That Went Dark*. Use it as a teaching guide for building your own cases.
+The *Spear of Destiny* — or a relic credibly identified as that spearhead and its restored shaft assembly — was held in a private vault beneath the Ferreyra estate under a postwar custody arrangement with the Catholic Church. The vault was not merely a safe. It was a ritual containment site, maintained through a liturgical suppression sequence that had to be performed on a precise schedule by authorized custodians. Three nights ago, a professional theft crew breached the vault, broke the containment lineage, and failed to complete the buyer handoff that was supposed to follow.
 
-=== Artifact as Tone Engine
+Since then, the Spear has gone still somewhere in the city. The heist crew has fractured — one member is suffering from wound bloom at an off-grid clinic, another has vanished, and the surviving leader is trying to fence the object through a currency exchange with connections to foreign buyers. The Vantablack Compact, which funded the theft through cutouts, has deployed a regional fixer named Iván Luján to recover the asset. Luján is becoming the strongest bearer candidate — the Spear does not make soldiers, it makes prophets who believe their own myth. Meanwhile, the Buenos Aires police are building a robbery case they do not fully understand, and the Church is quietly sending its own people to get the relic back.
 
-The Spear does not merely threaten — it *authorizes*. Every design decision flows from this core behavior. The relic milestones escalate from subtle medical anomalies (Day 11: cruciform wounds) through environmental breakdown (Day 5: electronics fail) to a public sovereignty crisis (Day 1: mass claimant event). Each milestone is specific to the artifact's logic, not generic horror.
+The agents enter this mess somewhere around Day 14 on the Operations Board. They have roughly two weeks before the Spear finishes selecting a claimant and the city becomes the ritual site.
 
-This specificity shapes the entire case. NPCs do not simply "act suspicious" — they begin speaking in command-language. Locations do not just "feel ominous" — radios fail and witnesses describe conviction rather than fear. When you design your own case, let the artifact's nature flavor every entity it touches.
+=== What the Agents Need
 
-=== Organization Architecture
+Four things, in rough order of discovery:
 
-The case uses six organizations — four Active, two Dormant. This is near the recommended maximum of eight rows and produces enough cross-pressure to fill a 1-3 session case without overwhelming the DA.
+. *Where the crew broke apart* — what happened after the theft, where the pieces landed.
+. *Who has proximity control* — who is physically closest to the Spear right now and how close they are to bearer selection.
+. *The old containment protocol* — what the liturgical suppression sequence was, what materials are needed to replicate it, and who still knows the procedure.
+. *A recovery plan* — how to move the Spear from its current location to Covenant custody without completing its escalation.
 
-The four Active organizations represent distinct institutional responses to the same event:
+=== What Makes This Case Work
 
-* *O1 (The Vantablack Compact, start 9)* — the criminal apparatus that caused the problem
-* *O2 (The Theft Crew, start 6)* — the unstable human debris from the heist, close to crisis
-* *O3 (Buenos Aires Police, start 10)* — an institutional response the agents cannot control
-* *O4 (The Catholic Church, start 12)* — a slow-moving rival with legitimate historical claims
+The Spear is the center of every decision in the case, but it is not a simple MacGuffin. It has its own behavior — it authorizes. Each relic milestone on the Operations Board represents a specific escalation tied to the Spear's nature: cruciform wounds appearing on handlers, electronics failing in proximity, witnesses speaking in command-language, and ultimately, a public sovereignty event. Every NPC, every Location, and every organization row is flavored by what the Spear does to the people near it.
 
-Starting values are deliberately staggered. O2 starts at 6 — only six squares from catastrophe — making the surviving thief an urgent pressure source from the first day. O4 starts at 12, giving the Church time to observe before acting. This staggering ensures that organizations do not all hit milestones at the same time and that the DA always has at least one row that is about to escalate.
+The six organizations create layered cross-pressure. The theft crew is close to collapse (starting value 6 — only six squares from catastrophe). The police are building slowly (starting value 10). The Church moves deliberately (starting value 12). The Compact is aggressive (starting value 9). Two dormant organizations — the foreign buyer and the Buenos Aires press — activate through milestone triggers, making the board more complex as the situation deteriorates.
 
-The two Dormant organizations — O5 (The Foreign Buyer) and O6 (Buenos Aires Press) — activate through specific triggers tied to other milestone consequences. This means the board grows more complex as the case progresses, which matches the feeling of a deteriorating situation.
+The cross-links are the real pacing engine. When the wounded thief surfaces (O2M2), it advances both the police and the Compact — because a visible thief attracts institutional and criminal attention simultaneously. These ripple effects create the feeling of an intelligent, reactive world without requiring the DA to improvise connections at the table.
 
-=== Cross-Link Philosophy
+---
 
-Milestone consequences are the case's real pacing engine. When O2M2 fires (a wounded thief surfaces), it advances *both* O3 (police) and O1 (Compact) — because a visible thief attracts institutional and criminal attention simultaneously. This single milestone event produces two downstream pressure changes and opens a new Location (L5: Illicit Clinic).
+== Running the Case
 
-Cross-links like this create the illusion of an intelligent, reactive world without requiring the DA to improvise connections in real time. They also prevent the case from stalling: even if agents ignore an organization, its milestones will eventually advance other rows, keeping the board in motion.
+If this is your first Neon Relic case, run it exactly as written. Print the case file package from the starter kit, read the Case Brief, study the Operations Board, and familiarize yourself with the NPC Cards and Location pages. You do not need to memorize everything — the forms are designed to be consulted during play, not recited from memory.
 
-When designing your own cross-links, write them directly into milestone text: _"O2M2: A wounded thief surfaces. Advance O3 by 2 squares and O1 by 1 square."_ The DA reads the milestone description and executes — no arrows, no flowcharts, no separate cross-reference table.
+For pacing guidance:
 
-=== Information Design
+* *Single session:* Advance organizations aggressively — two to three squares per shift on the most active row. The agents should feel the board tightening around them from the start.
+* *Multi-session:* Let the first session establish the situation — the estate, the police, the Church trail. Let the second session accelerate the crisis — the thief surfaces, the Compact deploys, the bearer emerges.
 
-The case uses 22 Information Cards. Of those, 7 are Containment Truths — the facts agents _must_ discover for safe resolution. The remaining 15 are supporting intel that provides context, unlocks Locations, or identifies key NPCs.
+The day countdown creates windows of opportunity, not a punishment for slow play. If the agents are paralyzed, give them a sign from the next organization milestone. If they are moving too quickly, let a packet return with partial information that redirects rather than confirms.
 
-The critical design constraint: every Containment Truth must be reachable from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ Fallback* (a packet return on a specified day). This triple redundancy means no single failed scene, missed NPC, or bad roll can lock the agents out of victory.
+=== Building Your Own
 
-For example, I9 (Custodians Not Owners) is available at L1 (Estate), L3 (Church Archive), and from three different NPCs (Lucia, Father Vale, Sister Inés). If the agents alienate every source, HQ can deliver it on Day 2. The truth is reachable from at least five different angles.
-
-This redundancy does not make the case easy — it makes it *fair*. The difficulty comes from time pressure and organization escalation, not from information scarcity.
-
-=== Location Gating
-
-The seven Locations use a structured unlock pattern:
-
-* *L1 (Estate)* — Open at case start. The guaranteed first scene.
-* *L2–L6* — Clue-locked. Each unlocks through discoveries at prior Locations or from NPC interactions.
-* *L7 (Hidden Shrine)* — Requires at least two prior clues. This is the endgame site.
-
-This funnel shape ensures that agents always have something to investigate (L1 is open, and L2 and L3 unlock easily) while requiring genuine progress before reaching the final confrontation. The DA should never have a shift where the agents have zero available Locations.
-
-=== Bearer as Tragic Figure
-
-The case's strongest NPC — the bearer candidate (Iván Luján by default) — is designed as a tragedy, not a villain. He began as a Compact fixer and is becoming a prophet who believes his own myth. The Spear does not make soldiers; it makes claimants who believe history has chosen them.
-
-This matters because it changes the endgame tone. If the bearer were simply an antagonist, the resolution would be a combat scene. Because the bearer is a person being consumed by a mandate relic, the resolution should feel like an exorcism, an intervention, or a containment crisis — not a gunfight.
-
-=== Pacing Guidance
-
-For a single-session case, advance organizations aggressively: 2-3 squares per shift on the most active row. The agents should feel the board tightening around them.
-
-For a multi-session case, let the first session establish the situation (the estate, the police, the Church trail) and the second session accelerate the crisis (the thief surfaces, the Compact deploys professionals, the bearer emerges).
-
-The day countdown exists to create windows of opportunity, not to punish slow players. If the agents are paralyzed, give them a sign from the next organization milestone. If they are moving too fast, let a packet return land with partial information that redirects rather than confirms.
+Once you have run or read through *The Spear That Went Dark*, you are ready to build your own case. The step-by-step guide in xref:case-file-instructions.adoc[Building a Case File] walks through the process from artifact concept to finished package, referencing the blank template forms included in the starter kit. The generator tables in <<case-file-generator>> can jump-start the process with a handful of dice rolls.
 
 ---
 
 == The Case Packet
 
-The complete case data for this operation is organized into the 8-piece document package defined in Chapter 15. All files are located in `docs/case-files/spear-that-went-dark/`:
+The complete case data is organized into the 8-piece document package defined in xref:chapters/15-case-file.adoc#case-file-package[The Case File Package]. All filled-in forms are located in the starter kit under `sample-case-file/`:
 
 [%header,cols="2,3"]
 |===
 | Document | File
 
-| Case Brief (DA only) | `case-brief.html`
+| Case Brief — DA | `case-brief-da.html`
+| Case Brief — Player | `case-brief-player.html`
 | Relic Sheet | `relic-sheet.html`
 | Operations Board | `operations-board.html`
 | Organization Reference | `organization-reference.html`
@@ -133,7 +73,7 @@ The complete case data for this operation is organized into the 8-piece document
 | Information Cards (I1–I22) | `information-cards.html`
 |===
 
-The `handouts/` subdirectory contains image-generation prompts for all visual assets (handout props, NPC portraits, location images, relic illustration).
+The `handouts/` subdirectory contains all the visual assets — clue handout images, NPC portraits, location images, and the relic illustration.
 
 ---
 
@@ -149,7 +89,7 @@ The `handouts/` subdirectory contains image-generation prompts for all visual as
 
 == Handout Images
 
-Each of the following pages contains a full-page handout image generated from the prompt files under `docs/case-files/spear-that-went-dark/handouts/`. Print or display these during play as physical clue documents for the players.
+Each of the following pages contains a full-page handout image. Print or display these during play as physical clue documents for the players.
 
 <<<
 
