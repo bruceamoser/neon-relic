@@ -241,6 +241,33 @@
     min-height: 12px;
   }
 
+  /* ── RELIC IMAGE ── */
+  .relic-image-section {
+    display: flex; gap: 10px; align-items: flex-start; margin-bottom: 4px;
+  }
+  .relic-image-frame {
+    width: 2in; min-height: 2in;
+    border: 2px solid var(--ink);
+    background: var(--field-bg);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .relic-image-frame img {
+    max-width: 100%; max-height: 2in;
+    object-fit: contain;
+  }
+  .relic-image-placeholder {
+    font-family: var(--font-main);
+    font-size: 6pt; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--ink-light); text-align: center;
+  }
+  .relic-image-reads { flex: 1; }
+
+  /* ── DA NOTES ── */
+  .notes-lines { width: 100%; }
+  .notes-line { border-bottom: 1px solid var(--rule-light); height: 15px; }
+
   /* ── FOOTER ── */
   .footer {
     margin-top: auto;
@@ -314,15 +341,21 @@
     </div>
   </div>
 
-  <!-- READS -->
+  <!-- RELIC IMAGE + READS -->
   <div class="section-title">Intelligence Reads</div>
-  <div>
-    <span class="field-label">Surface Read &mdash; What does a civilian see?</span>
-    <div class="field-value" style="margin-bottom:3px;"></div>
-    <span class="field-label">Operational Read &mdash; What does the Covenant understand?</span>
-    <div class="field-value" style="margin-bottom:3px;"></div>
-    <span class="field-label">Cold Archive Read &mdash; What does the deep record show?</span>
-    <div class="field-value" style="margin-bottom:3px;"></div>
+  <div class="relic-image-section">
+    <div class="relic-image-frame">
+      <!-- Replace with: <img src="path/to/relic-image.png" alt="Relic photograph"> -->
+      <span class="relic-image-placeholder">Affix relic<br>photograph<br>here</span>
+    </div>
+    <div class="relic-image-reads">
+      <span class="field-label">Surface Read &mdash; What does a civilian see?</span>
+      <div class="field-value" style="margin-bottom:3px;"></div>
+      <span class="field-label">Operational Read &mdash; What does the Covenant understand?</span>
+      <div class="field-value" style="margin-bottom:3px;"></div>
+      <span class="field-label">Cold Archive Read &mdash; What does the deep record show?</span>
+      <div class="field-value" style="margin-bottom:3px;"></div>
+    </div>
   </div>
 
   <!-- ACTIVATION & EFFECT -->
@@ -364,6 +397,19 @@
     <div class="truth-row"><span class="checkbox"></span><span class="truth-id"></span><span class="truth-desc"></span></div>
   </div>
 
+  <!-- DA NOTES -->
+  <div class="section-title green">Designated Agent Notes</div>
+  <table class="notes-lines">
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+    <tr><td class="notes-line"></td></tr>
+  </table>
+
   <!-- FOOTER -->
   <div class="footer">
     <span>VC-16 &bull; The Verdant Covenant &bull; DA Use Only</span>
@@ -372,5 +418,6 @@
   </div>
 </div>
 
+<script src="form-tools.js"></script>
 </body>
 </html>
