@@ -24,6 +24,8 @@ At the start of any hostile confrontation, each participant draws an *Initiative
 
 Initiative uses card draw only. Do not add initiative modifiers for posture, terrain, or gear. Those factors still matter through cover, surprise, action economy, and range penalties.
 
+> *Talent exception:* Certain Division Talents (such as the Recovery Division's *Combat Reflexes*) modify the card draw. These are the only source of initiative modification — they represent specialized tactical training, not equipment bonuses.
+
 === Surprise and Ambush
 
 A *surprise* occurs when one side is unaware of the other at the moment combat begins.
@@ -316,6 +318,18 @@ A chase is divided into *chase rounds*. Each round, both the fleeing and pursuin
 * During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
 * If the pursuing party reaches Contact: normal combat resumes.
 * *Hiding:* If the fleeing party is at Far or Very Far and succeeds on a Sneak roll (Difficulty 2), they may break the chase entirely without reaching Escaped — they simply vanish into the environment.
+
+---
+
+== Combat Around Vehicles
+
+Not every vehicle encounter is a chase. When combat occurs at or near stationary vehicles — roadblock shootouts, parking lot ambushes, or attacks on a parked convoy — use standard combat rules with the following guidance:
+
+* *Vehicles as cover:* A vehicle provides cover equal to its Armor Rating. Agents behind a vehicle add the vehicle's Armor Rating to their defense as if it were personal armor (Gear Dice, 6s absorb damage). Unlike personal armor, vehicle cover does not degrade from 1s — the vehicle absorbs Wear instead (1 Wear per combat scene in which it provides cover).
+* *Attacking vehicles:* To disable a vehicle, attack it using Force (melee) or Firearms (ranged) against Difficulty 1. Damage is applied as Wear after subtracting the vehicle's Armor Rating (each point of damage that exceeds armor = 1 Wear). At 5 Wear, the vehicle is disabled.
+* *Targeting occupants:* Attacking someone inside a vehicle requires a called shot (1 stunt point) or the vehicle's windows/doors to be open. Closed vehicles provide full Armor Rating to occupants. Open vehicles (windows down, convertibles) provide half Armor Rating (round down).
+
+For moving vehicle encounters, use the Chase and Pursuit rules above. If a chase transitions into a stationary firefight (e.g., vehicles crash and combatants exit), switch to standard combat using the guidance in this section.
 
 ---
 

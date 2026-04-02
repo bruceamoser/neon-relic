@@ -85,7 +85,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 3
 | Safeguard Protocol
 | Reinforced vault with analog combination locks, stocked through underground contacts the Covenant officially denies knowing. The manifest is updated by hand.
-| *+1 CL* to all characters during the Equipping Phase of each Case File. High-capacity weapons no longer consume an extra DP to requisition repeatedly.
+| During the Equipping Phase, all agents may requisition items up to *CL 4* regardless of personal CL. This does not change the agent's CL for any other purpose. High-capacity weapons no longer consume an extra DP to requisition repeatedly.
 
 | *The Faraday Cage*
 | 4
@@ -233,11 +233,11 @@ It never applies to individual agents — the Covenant evaluates teams, not hero
 |===
 | Score | Rank | What It Means
 
-| 0–4   | *Unknown*           | The cell is new or unproven. Covenant resources are minimal; access is limited to Tier 1 upgrades and standard CL 1–2 requisitions.
-| 5–9   | *Acknowledged*      | The cell has delivered results. Wayfinder and Keep division contacts treat the cell as credible. CL 3 requisitions become available.
-| 10–14 | *Trusted*           | The cell handles significant cases. The Covenant routes priority case files through them. CL 4 access opens. Keep reinforcements available.
-| 15–19 | *Honored*           | The cell has operated at the highest levels. Named contacts within Covenant leadership. Access to Classified Archive and Covenant assets.
-| 20    | *Covenant Elite*    | Fewer than a dozen cells in history have reached this. The Covenant treats the cell as irreplaceable. No resource limits. Legacy recorded.
+| 0–4   | *Unknown*           | The cell is new or unproven. Covenant resources are minimal; access is limited to Tier 1 upgrades and standard requisitions. *Information access:* Operational briefings only; no archive access.
+| 5–9   | *Acknowledged*      | The cell has delivered results. Wayfinder and Keep division contacts treat the cell as credible. *Information access:* Standard archive access; classified materials redacted.
+| 10–14 | *Trusted*           | The cell handles significant cases. The Covenant routes priority case files through them. Keep reinforcements available. *Information access:* Full archive access; classified materials available with DA approval.
+| 15–19 | *Honored*           | The cell has operated at the highest levels. Named contacts within Covenant leadership. *Information access:* Unrestricted access including Covenant historical records.
+| 20    | *Covenant Elite*    | Fewer than a dozen cells in history have reached this. The Covenant treats the cell as irreplaceable. No resource limits. Legacy recorded. *Information access:* Unrestricted; may request records from allied organizations.
 |===
 
 ---

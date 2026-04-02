@@ -239,6 +239,7 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 | *Shadow Walker* | +1 Corruption | Become entirely imperceptible to mundane guards or cameras for a scene, provided you do not attack.
 | *Adrenaline Junkie* | — | When you have a −1 penalty to Strength, gain +2 bonus dice to all Agility rolls.
 | *Gallows Humor* _(Healing)_ | — | Once per session, after surviving a combat encounter, crack a dark joke. You and all allies who hear you heal 1d4 Corruption.
+| *Combat Reflexes* | — | When initiative cards are drawn, draw two cards and keep one. Discard the other face-down. Alternatively, after all cards are drawn, you may swap your initiative card with a willing ally's card.
 |===
 
 == Division 3: The Keep
@@ -267,8 +268,11 @@ All Keepers wear the *Warden's Bracer*, marking them as guardians of the Covenan
 * Dampens artifact emissions in close proximity long enough for controlled handling
 * Warns the wearer if containment fails
 * Allows safe handling of cursed objects
-* Absorbs Corruption (soaks 1 Corruption per session)
-* Grants *+1 to Armor Rating*
+
+The Bracer has two distinct mechanical functions:
+
+* *Armor:* +1 Armor Rating (applies to physical damage only, following standard armor rules in xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor])
+* *Corruption Absorption:* Once per session, passively absorbs 1 point of Corruption that would be gained from any source. This does not require activation — the Bracer intercepts the first Corruption point automatically. This ability refreshes each session.
 
 === Keep Departments
 

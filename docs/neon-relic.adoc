@@ -18,6 +18,14 @@ _"What is found must be known. What is known must be contained. What is containe
 — _The Oath of the Verdant Covenant_
 
 // ─────────────────────────────────────────────────────────────────────────────
+//  FRONT MATTER — Copyright, Credits, Legal
+// ─────────────────────────────────────────────────────────────────────────────
+
+include::chapters/00-front-matter.adoc[]
+
+<<<
+
+// ─────────────────────────────────────────────────────────────────────────────
 //  PART I — INTRODUCTION
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -182,3 +190,11 @@ _Distribution: All Personnel_
 image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
 include::chapters/21-glossary.adoc[leveloffset=+1]
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  APPENDIX — YZE FREE TABLETOP LICENSE
+// ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+include::chapters/22-yze-license.adoc[leveloffset=+1]

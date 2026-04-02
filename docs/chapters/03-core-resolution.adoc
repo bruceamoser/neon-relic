@@ -3,6 +3,10 @@
 
 The foundation of Project Neon Relic relies on the classic *dice-pool variant* of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition — key themes in analog horror.
 
+=== Defining "Session"
+
+Throughout this book, "once per session" means once per continuous play session at your table — typically 3 to 4 hours. If your group plays significantly shorter sessions (under 2 hours), the DA may allow once-per-session abilities to carry over to the next session if unused. If your group plays extended sessions (6+ hours), the DA may reset once-per-session abilities at a natural midpoint (a significant scene break, shift change, or return to HQ). The intent is that agents recover at a rate of roughly once per 3–4 hours of play, regardless of how your group structures its calendar.
+
 == The Anatomy of the Dice Pool
 
 The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
@@ -59,6 +63,14 @@ However, pushing represents the character exerting maximum physical, mental, or 
 * You immediately gain *+1 Corruption*.
 
 > *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for the full rules.
+
+****
+*What happens when you push?*
+
+When your agent pushes a roll, they aren't simply gritting their teeth and trying harder. Something deeper activates — an involuntary reflex born from proximity to the unnatural. Maybe a phrase from a containment ritual surfaces unbidden. Maybe your hands remember how an artifact felt, and that phantom sensation steadies your grip. Maybe the whispers you've been ignoring since your last case suddenly become useful, guiding your attention to exactly the right detail.
+
+Whatever form it takes, pushing means your contaminated mind is offering you a shortcut. The help is real. The cost is real. Every push is a transaction with something you don't fully understand, and it always leaves a mark — +1 Corruption, regardless of the task. The library is not safer than the field. The thing inside you doesn't care where you are.
+****
 
 The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 

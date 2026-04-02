@@ -1,0 +1,49 @@
+// Front Matter — Copyright, Credits, and Legal Notices
+// This page appears before the Introduction chapter.
+
+[discrete]
+== {empty}
+
+[.text-center]
+*Project Neon Relic* +
+Core Rules — First Edition
+
+Version 2.2.0
+
+'''
+
+[.small]
+--
+*Written by* Bruce Moser and Stu [Last Name TBD]
+
+*Playtesters:* Chris [Last Name TBD], Eric [Last Name TBD], Paul [Last Name TBD]
+
+*Layout and Design:* [TBD] +
+*Cover Art:* [TBD] +
+*Interior Art:* [TBD] +
+*Editing:* [TBD]
+
+'''
+
+*Year Zero Engine Attribution* +
+This game uses the Year Zero Engine, created by Fria Ligan AB (Free League Publishing).
+The Year Zero Engine System Reference Document is used under Fria Ligan AB's Free Tabletop License.
+
+This game is not affiliated with, sponsored, or endorsed by Fria Ligan AB.
+The Year Zero Engine System Reference Document is used under Fria Ligan AB's Free Tabletop License.
+
+'''
+
+©2026 Bruce Moser and Stu [Last Name TBD]. All rights reserved.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the authors, except for brief quotations in reviews and certain other noncommercial uses permitted by copyright law.
+
+ISBN: [To be assigned]
+
+Project Neon Relic is a trademark of Bruce Moser. +
+Year Zero Engine is a trademark of Fria Ligan AB. +
+All other trademarks are the property of their respective owners.
+
+First printing: [Month Year] +
+Printed in [Country]
+--

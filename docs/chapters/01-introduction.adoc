@@ -88,6 +88,57 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 *Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- has a strong field identity, but it is still part of *The Keep*, not a fourth playable Division. See xref:chapters/09-divisions.adoc#stack-logistics[Stack (Logistics)] for details.
 ====
 
+=== Quick Response Teams
+
+Under normal operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
+This process is methodical, documented, and safe — when time permits.
+
+Time rarely permits.
+
+When an artifact surfaces under hostile conditions — rival factions converging, civilian exposure escalating, or containment failures cascading beyond a single Division's capability — the Covenant activates a *Quick Response Team*.
+QRTs are ad-hoc field units assembled from available agents across all three Divisions, deployed to handle situations that require the full locate-retrieve-contain cycle in compressed, dangerous timeframes.
+
+Your agents are a QRT.
+You were not hand-picked for compatibility.
+You were available, qualified, and willing — or at least, you didn't refuse fast enough.
+The Wayfinder on your team knows how to find the artifact and what it does.
+The Recovery operative knows how to get it out.
+The Keep agent knows how to make sure it stays contained.
+None of you can do the others' jobs, and all of you are expendable enough to be sent together rather than in sequence.
+
+QRT activation is uncommon.
+Most Covenant operations proceed through normal divisional channels.
+The cases your team receives are the ones that can't wait — situations too volatile for the standard process, too dangerous for a single Division, or too politically sensitive to risk sequential handoffs that might leak information.
+This is why the Operations Board counts down.
+This is why rival factions are already moving when you arrive.
+You were sent because the situation has already escalated beyond routine.
+
+QRT members retain their Division authority, equipment, and clearance.
+There is no formal QRT command structure — teams establish their own field leadership, which may shift between members depending on the phase of the operation.
+A Wayfinder might lead during investigation, a Recovery agent during extraction, a Keep specialist during containment.
+Flexibility is the point.
+
+==== QRT Deployment and Standing
+
+The quality of QRT assignments reflects the team's Covenant Standing:
+
+[%header,cols="1,4"]
+|===
+| Standing | Assignment Quality
+
+| *0–4*
+| You receive cases other teams passed on — cold leads, hostile territories, inadequate intel. The Covenant is testing whether your team can function.
+
+| *5–9*
+| Standard QRT assignments with reasonable intelligence packages and logistics support.
+
+| *10–14*
+| Priority cases with advance Wayfinder research, pre-positioned equipment, and Keep consultation on containment profiles.
+
+| *15+*
+| The team may request specific assignments. The Covenant treats your team as a proven asset and provides accordingly.
+|===
+
 ---
 
 == How to Use This Book

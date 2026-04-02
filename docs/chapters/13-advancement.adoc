@@ -100,12 +100,11 @@ Experience Points (XP) are the game's *only* advancement currency. They are awar
 
 | Increase a Skill by 1 | 5 XP | Maximum rating of 5
 | Purchase a new Talent | 6 XP | General, Division, or Wing/Paradigm/Department Talent
-| Increase Clearance Level (CL) by 1 | 3 XP | Once per Case File; DA approval required for fiction fit
 |===
 
-Clearance increases represent institutional trust and access expansion, not just personal capability. DAs should require a fiction trigger (mission performance, formal commendation, reassignment, or political sponsorship) before the increase is finalized.
+> *Note:* Clearance Level is no longer purchased directly with XP. To increase CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). See the General Talents list below.
 
-=== Worked Example: Session Debrief and CL Increase
+=== Worked Example: Session Debrief and Talent Purchase
 
 The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Keep Warden currently at Clearance Level 2 with 8 XP carried over from the previous Case File.
 
@@ -140,10 +139,10 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 *Yusuf's player spends XP:*
 
-* *3 XP → Clearance Level increase (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. The DA agrees this is a valid fiction trigger and approves the increase.
-* *9 XP remain* for future sessions.
+* *6 XP → Requisition Authority talent (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. Yusuf's Covenant Standing is 10, which meets the CL 3 prerequisite (Standing 9+). The DA agrees this is a valid fiction trigger and approves the purchase.
+* *6 XP remain* for future sessions.
 
-> *DA note:* CL increases are not automatic once the 3 XP threshold is met. A fiction trigger must exist — a commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.
+> *DA note:* Requisition Authority purchases should be supported by a fiction trigger — a commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.
 
 == General Talents
 
@@ -168,6 +167,7 @@ This is the *canonical General Talents list* used at character creation and duri
 | *Iron Will* _(Healing)_ | Land the killing blow or banish a supernatural threat? The rush of victory heals 1 Corruption.
 | *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
 | *Flee the Scene* | Gain +2 bonus dice to Agility when rolling explicitly to escape a conflict.
+| *Requisition Authority* _(Repeatable)_ | Increase your Clearance Level by 1 (maximum CL 5). May be purchased multiple times. _Prerequisite:_ Covenant Standing must equal or exceed the target CL × 3 (CL 3 requires Standing 9+, CL 4 requires Standing 12+, CL 5 requires Standing 15+).
 |===
 
 ---

@@ -94,7 +94,17 @@ The team decides what to do with this shift. Most undertakings fall into one of 
 | Rest, treat injuries, manage Corruption. The world keeps moving while the agents do nothing. That is the cost.
 |===
 
-If the team splits, resolve each part that matters and keep consequences visible. The goal is clarity, not thoroughness — if a split produces nothing interesting, summarize it in a sentence and move on.
+==== Split Operations
+
+Agents may split across different locations during the same shift.
+Each subgroup resolves their scene independently — the DA handles one group's scene, then the other's, or alternates between them at dramatic moments.
+This is efficient but dangerous: backup is a full shift away, and agents operating alone or in pairs lose access to skill coverage they may desperately need.
+A split team can cover more ground but cannot respond to complications together.
+
+Communication between split groups during a shift requires payphones or pre-arranged check-in times.
+If one group encounters a threat, the other group cannot intervene until the following shift unless they abandon their current undertaking (losing the shift with no benefit).
+
+Split operations do not change how the Operations Board advances — one shift still passes for all active organizations, regardless of how many locations the team covers.
 
 === Step 3: Send a Packet (Optional)
 
@@ -686,3 +696,39 @@ Use this procedure to go from nothing to a playable case in one sitting. The out
 >
 > **NPC Card:** Dr. Frances Okafor, 44, physics faculty. She knows the signal is anomalous.
 > She wants grant funding, not interference. She will cooperate — for a price.
+
+---
+
+== Between Case Files
+
+When a Case File concludes, the team enters a downtime period before the next assignment. The DA determines how much time passes (days to weeks), but the following steps occur regardless of duration:
+
+=== 1. Aftermath Phase
+
+Award Development Points. Update Covenant Standing. Process equipment returns to Stack. (See xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing] and xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for detailed procedures.)
+
+=== 2. Recovery Phase
+
+Resolve all pending healing — physical injuries requiring downtime phases, mental injuries requiring Psychoanalyze campaigns, and Corruption recovery via Full Rest. Each downtime phase represents roughly one week. The DA determines how many downtime phases are available based on the gap between cases. (See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for recovery methods.)
+
+=== 3. HQ Investment Phase
+
+Spend accumulated Development Points on facility upgrades and personnel recruitment. New facilities become available at the start of the next Case File. (See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters] for the full facility list.)
+
+=== 4. Personal Phase
+
+Each player answers one question about their agent's downtime:
+
+* *What did your agent do to decompress?* (Establishes or reinforces Anchor connections)
+* *Did anything about the last case follow you home?* (Seeds Dark Secret development or Corruption narrative)
+* *Did you reach out to anyone — or did anyone reach out to you?* (Develops NPC relationships and potential complications)
+
+The DA may use Personal Phase answers to seed hooks for the next Case File. Agents who skip the Personal Phase or describe isolation gain *+1 Corruption* — the Covenant's work consumes those who don't maintain human connections.
+
+=== 5. Briefing
+
+The Covenant assigns the next Case File. Assignment quality reflects the cell's reputation:
+
+* *Standing 0–4 (Unknown):* The team receives whatever case nobody else wants.
+* *Standing 5–14 (Acknowledged / Trusted):* Cases matching the team's demonstrated competencies.
+* *Standing 15+ (Honored / Elite):* The team may request specific assignments or receive priority cases with advanced intel.

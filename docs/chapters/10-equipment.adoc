@@ -171,7 +171,9 @@ If your Enc. exceeds *Strength × 3*, you are *Overloaded*:
 
 === Clearance Levels (CL) and Requisition
 
-Every item lists a *Clearance Level (CL)* requirement. Agents requisition gear during the *Equipping Phase* between Case Files through their Division's Stack contact. Your character's current CL determines which items you can request:
+Every item lists a *Clearance Level (CL)* requirement. CL governs *equipment requisition only* — it does not control information access or institutional authority (those are governed by Covenant Standing; see xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing]).
+
+Agents requisition gear during the *Equipping Phase* between Case Files through their Division's Stack contact. Your character's current CL determines which items you can request:
 
 [%header,cols="^1,3"]
 |===
@@ -181,9 +183,10 @@ Every item lists a *Clearance Level (CL)* requirement. Agents requisition gear d
 | 2 | Agents with at least one completed Case File, or Division default.
 | 3 | Agents with field commendations or specific Division clearance.
 | 4 | Senior agents and Warden rank — restricted hardware and experimental tech.
+| 5 | Maximum clearance — prototype equipment and Covenant legacy assets.
 |===
 
-Clearance is a *narrative resource* — the DA may escalate or revoke access based on the agent's standing with the Covenant (see Division Standing rules).
+Starting CL is set by Division and Age Group (see xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation]). CL advancement is handled through the *Requisition Authority* general talent (see xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]).
 
 ---
 

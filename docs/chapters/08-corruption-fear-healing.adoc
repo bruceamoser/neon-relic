@@ -11,6 +11,8 @@ Corruption starts at *0* and increases from there. It is gained directly from it
 
 When a character's Corruption *exceeds* their threshold, their mind permanently fractures. The character enters a catatonic state and is *immediately removed from the campaign*.
 
+> When Corruption threshold is breached simultaneously with a physical Broken state, see the Simultaneous Injury Resolution rule in xref:chapters/07-health-damage-armor.adoc#chapter-health[Chapter 7: Health, Damage & Armor].
+
 == Sources of Corruption
 
 [%header,cols="2,1,4"]
@@ -138,6 +140,14 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 
+****
+*Why can't I add a skill to Fear Checks?*
+
+Fear Checks deliberately break the standard resolution pattern. Every other roll in Neon Relic lets you apply training and experience — that's the point of skills. Fear is different. No amount of training prepares the human mind for direct, sensory confrontation with something that violates the natural order. When your eyes register an entity that shouldn't exist, your brain tries to pattern-match against everything it knows — and fails. That failure is what the Wits-only roll represents. Your rational mind, stripped of all professional scaffolding, trying to hold itself together. Skills can't help you here.
+
+The 1s-generating-Corruption rider is also unique to Fear Checks. In mechanical terms, this means that even a successful Fear Check can cost you — your mind survived the encounter, but the act of processing what you saw leaves a mark. This is intentional. Fear is never free.
+****
+
 === The Panic Table
 
 On a failed Fear check (no 6s), roll *d6*:
@@ -153,6 +163,16 @@ On a failed Fear check (no 6s), roll *d6*:
 | *5* | *Compulsion* | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2).
 | *6* | *Fugue* | DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene.
 |===
+
+==== Panic Attacks Against Allies
+
+When a Fight panic result targets another agent, resolve it as a single Brawl attack at the panicked character's full dice pool.
+The target may Dodge (spending their Fast Action as normal) but cannot Parry — the attack comes without warning.
+The panicked agent cannot spend stunt points, cannot push the roll, and cannot choose to continue attacking after the initial strike.
+After the single attack resolves (hit or miss), the panic breaks and the agent regains control on their next turn, disoriented but aware of what they did.
+
+If the attack Breaks the target, proceed with normal Broken/Critical Injury rules.
+The panicked agent gains +1 Corruption from the guilt of harming an ally.
 
 === Fear Ratings
 

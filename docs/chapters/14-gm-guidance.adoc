@@ -409,6 +409,20 @@ Ritual scenes work best when the team *earns the procedure through investigation
 
 Use xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals] for the actual field procedure.
 
+****
+.A Note on Containment Rituals
+Containment rituals are intentionally unstandardized.
+The Covenant's centuries of experience have produced one consistent finding: no two artifacts respond to the same procedure.
+Some require elaborate multi-day ceremonies with precise geometric arrangements and chanted invocations.
+Others are neutralized by placing them in a lead-lined box, singing a specific lullaby, or — in one documented case — reading aloud from a telephone directory while the artifact sits in a bowl of salt water.
+
+When designing containment rituals for your Case Files, let the artifact's origin and personality dictate the process.
+The base mechanics (Lore rolls, Difficulty modifiers, Decay advancement) are provided in xref:chapters/11-artifacts.adoc#containment-rituals[Chapter 11 — Artifacts].
+Everything else is yours to invent.
+The stranger and more specific the ritual, the better.
+Agents should feel like they're solving a puzzle unique to each artifact, not following a standard operating procedure.
+****
+
 === Measuring Success in Containment Cases
 
 A containment case is resolved when all three of the following are true:

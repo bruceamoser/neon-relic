@@ -39,6 +39,16 @@ If any Attribute is reduced to *0*, your character becomes *Broken*:
 * The character is immediately *incapacitated*.
 * They must roll on a *Critical Injury table*, which can result in lethal consequences or permanent maiming depending on the severity of the attack.
 
+=== Simultaneous Injury Resolution
+
+When multiple end-states trigger from a single sequence of events, resolve them in this order:
+
+. *Physical damage resolves first.* Apply all damage, check for Broken state, roll Critical Injury if applicable.
+. *Death Check resolves second.* If the Critical Injury requires a Death Check (†), resolve it immediately. If the character dies, they are dead — no further checks apply.
+. *Corruption threshold resolves third.* After all physical injury effects are complete, check whether any Corruption gained during the sequence (from Critical Injury results, Fear Checks triggered by witnessing an ally's injury, or other sources) has pushed the character over their Corruption threshold. If so, the character enters catatonia.
+
+This means a character can survive being shot only to have their mind break from the trauma of the experience. It also means a character who fails their Death Check is simply dead — the Corruption is rendered moot. The physical world moves faster than the psyche unravels.
+
 ---
 
 == Death and Dying
@@ -247,8 +257,10 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 == Armor Mechanics
 
-To survive lethal encounters, agents utilize armor (such as concealed Kevlar vests or tactical riot gear):
+Armor protects against *physical damage only*. When an agent suffers physical damage targeting Strength or Agility, they roll Gear Dice equal to their Armor Rating. Mental damage (targeting Wits or Empathy) and Corruption damage bypass armor entirely — no amount of Kevlar protects the psyche.
 
 . When you suffer physical damage, roll a number of *Gear Dice* equal to the item's *Armor Rating*.
 . Every *6* rolled absorbs *1 point* of incoming damage before it reduces your Strength.
 . *Degradation:* If you roll any *1s* on an armor save, the Armor Rating is permanently reduced by 1 until repaired by Stack during downtime.
+
+*Gear Dice cannot be pushed.* When you push a roll, you reroll all non-6 dice from your Attribute and Skill pools. Gear Dice are never rerolled — they represent equipment performance, not personal effort. However, any 1s rolled on Gear Dice still cause degradation (reduce the item's Gear Bonus or Armor Rating by 1) whether the roll is pushed or not.

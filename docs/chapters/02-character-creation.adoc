@@ -18,7 +18,7 @@ Your *Division* is your character class. It defines your role within the Covenan
 | *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy, Wits
 |===
 
-> *Clearance Level (CL)* represents your seniority and authorization within the Covenant. A higher CL grants access to better gear requisitions and more sensitive intelligence. Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1).
+> *Clearance Level (CL)* determines what equipment your agent can requisition from Stack during the Equipping Phase — nothing else. Information access and institutional trust are governed by Covenant Standing (see xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing]). Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1, maximum 5).
 
 Read the full Division descriptions in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] before making your choice.
 

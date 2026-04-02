@@ -504,6 +504,176 @@ profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 
 ---
 
+== Medium-Threat Adversaries
+
+The following entries fill the gap between low-tier nuisances and lethal high-tier threats. Each is designed to recur across multiple scenes without being trivially defeated or impossibly dangerous. A prepared QRT should find these adversaries challenging but survivable.
+
+=== The Vessel (Artifact-Possessed Human)
+
+[*Human / Artifact-Corrupted / Threat: Medium*]
+
+----
+Attributes: STR 3 | AGI 3 | WIT 4 | EMP 2
+Armor Rating: 0
+Fear Rating: 2
+
+Skills:
+  Manipulate 3 | Lore 2 | Brawl 2 | Endure 3
+
+Movement: 1 zone / Fast Action (standard)
+
+Special Abilities:
+  Resonance Broadcast (Passive) — All characters within the same zone as the
+  Vessel gain +1 Corruption at the start of each round. This effect persists
+  even if the Vessel is unconscious — only physical separation (moving to a
+  different zone) or artifact suppression stops it.
+
+  Artifact Reflex (+1 Corruption to Vessel) — When threatened, the artifact
+  surges through the Vessel's body. The Vessel may make a Manipulate roll
+  (4 dice) as a Fast Action, targeting one agent in the same zone. On success,
+  the target experiences a flash of the artifact's origin — vivid, disorienting,
+  painful. The target takes 1 Wits damage (mental, no armor). On 2+ successes,
+  the target also loses their next Fast Action as they recover.
+
+  Borrowed Resilience (Passive) — The first time the Vessel would become Broken
+  from Strength damage, the artifact absorbs the blow. The Vessel immediately
+  heals to STR 1 and emits a Corruption pulse: +1 Corruption to all characters
+  within Near range. This ability triggers once only.
+
+Broken State: When the Vessel is Broken, the human host collapses. The artifact
+resonance lingers in the body for 1d6 rounds — during this window, any agent in
+the same zone continues to gain +1 Corruption per round from Resonance Broadcast.
+After the resonance dissipates, the host is unconscious but alive. Psychoanalyze
+(Difficulty 2) can be attempted during downtime to begin the decontamination
+process.
+----
+
+*Motivation:* The Vessel doesn't have a unified motivation — the human and the artifact want different things. The human may beg for help, attempt to flee, or cooperate with agents who seem capable of removing the artifact. The artifact wants proximity to other artifacts, wants to be activated, and resists containment. The DA should alternate between these two drives based on stress level — the artifact takes over when the Vessel is frightened or in pain.
+
+*DA Guidance:* Vessels are moral dilemmas, not combat encounters. The ideal resolution is containment and decontamination, not violence. If agents kill a Vessel, the human host dies — this should have narrative consequences (Standing loss, guilt, Corruption from the act). Vessels work best as recurring NPCs who appear in multiple scenes, growing more unstable as the Case File progresses and the artifact's influence deepens. Consider starting the Vessel at Stage 1 corruption in early scenes and advancing to Stage 2 by the climax.
+
+---
+
+=== The Resonance Echo (Non-Corporeal Manifestation)
+
+[*Supernatural / Artifact-Generated / Threat: Medium*]
+
+----
+Attributes: STR — (incorporeal) | AGI — (incorporeal) | WIT 5 | EMP 4
+Armor Rating: Immune to physical damage
+Fear Rating: 3
+
+Skills: None (the Echo does not act with intention)
+
+Movement: Zone-locked (occupies 1–2 zones defined at creation; does not move)
+
+Special Abilities:
+  Immersion Field (Passive) — At the start of each round, all characters within
+  the Echo's zone(s) must resist the Echo's influence. Roll a Wits-only check
+  at Difficulty 1 (follows Fear Check conventions — Wits only, no skill).
+  Failure: the character experiences the historical trauma as if they were a
+  participant — takes 1 Wits damage and 1 Empathy damage (mental, no armor).
+  Success: the character observes the replay from a dissociated perspective and
+  takes no damage, but gains a fragmentary clue about the artifact's history
+  (the DA provides one sensory detail per success — a face, a location, a
+  spoken word, a smell).
+
+  Corruption Bleed (Passive) — The Echo's zone is saturated with residual
+  artifact energy. All characters within the zone gain +1 Corruption at the end
+  of each scene spent inside the zone (not per round — per scene). Extended
+  investigation is possible but costly.
+
+  Escalation (Triggered) — If any character within the Echo's zone activates an
+  artifact, uses a Division Talent, or pushes a roll, the Echo intensifies. For
+  the remainder of the scene, Immersion Field damage increases to 2 Wits + 1
+  Empathy, and the Fear Rating increases to 4. The historical replay becomes
+  more vivid and violent.
+
+  Loop Reset (Passive) — At the end of each scene, the Echo restarts its cycle.
+  Characters who leave the zone and return trigger the Immersion Field anew. The
+  Echo does not tire, deplete, or weaken through repetition.
+
+Broken State: The Echo cannot be Broken through damage. It is dispersed by one
+of three methods:
+  1. Identify and remove the anchor object — every Echo is tethered to a
+     physical object within its zone. Investigate (Difficulty 2) to locate it.
+     Removing the object from the zone immediately disperses the Echo.
+  2. Containment ritual — Lore (Difficulty 2), requires knowledge of the
+     artifact's origin event. Advances artifact Decay by +1.
+  3. Artifact suppression — If the source artifact is contained or neutralized,
+     the Echo fades within 1d6 rounds.
+----
+
+*Motivation:* None. The Echo is not sentient — it's a scar in local reality, endlessly replaying because the artifact's energy has nowhere else to go. It cannot be reasoned with, bargained with, or intimidated. It simply is.
+
+*DA Guidance:* Resonance Echoes are investigation puzzles, not combat encounters. The threat isn't the Echo itself (which can be avoided by leaving the zone) — it's that the Echo occupies a location the agents need to access. The clues embedded in the Immersion Field make the Echo simultaneously dangerous and useful: agents who endure the replay learn about the artifact's history, which may be essential for containment. Design Echoes around specific historical events tied to the Case File's artifact. The more vivid and specific the replay, the better — don't describe "a battle" when you can describe "a woman in a blue coat being dragged from a church while snow falls through the broken roof."
+
+---
+
+=== The Collector (Artifact Hoarder)
+
+[*Human / Artifact-Corrupted / Threat: Medium*]
+
+----
+Attributes: STR 3 | AGI 3 | WIT 4 | EMP 2
+Armor Rating: 1 (artifact-warded clothing — subtle, not tactical)
+Fear Rating: 0 (human, but deeply unsettling — see DA Guidance)
+
+Skills:
+  Lore 4 | Manipulate 3 | Investigate 3 | Sleight of Hand 3 | Sneak 2 | Tech 2
+
+Movement: 1 zone / Fast Action (standard)
+
+Special Abilities:
+  Artifact Arsenal — The Collector carries 2–3 Tier 1 artifacts and uses them
+  tactically. Artifact activation follows standard rules (Corruption cost,
+  Artifact Die roll), but the Collector's boosted threshold means they can
+  afford costs that would destroy most NPCs. The DA should select artifacts from
+  the existing catalog or create case-specific ones.
+  Suggested loadout: one defensive artifact (sensory disruption, environmental
+  manipulation), one information-gathering artifact (surveillance, detection),
+  one escape artifact (concealment, misdirection). Collectors avoid combat
+  artifacts — they survive by knowing more and leaving faster.
+
+  Corrupted Resilience (Passive) — The Collector's Corruption threshold is 18
+  (far above normal). Their current Corruption is 11–14 (deep into Reality
+  Distortion stage). This means they exhibit visible corruption effects —
+  electronics glitch in their presence, shadows move wrong, their speech
+  occasionally includes words they didn't intend to say. These effects are not
+  mechanically dangerous but provide atmosphere.
+
+  Artifact Sense (Passive) — The Collector automatically detects active artifacts
+  within Short range (1–2 zones). They can identify artifact tier and risk
+  category by spending a Slow Action and rolling Lore (Difficulty 1). This
+  ability does not cost Corruption — it's a consequence of prolonged exposure,
+  not an activated power.
+
+  Poison Knowledge (Triggered, once per scene) — If the Collector identifies an
+  agent carrying an artifact, they may offer accurate, detailed information
+  about the artifact's properties, risks, and history. This information is
+  always truthful and always unsettling. The agent receiving this information
+  must make a Fear Check (Wits only, standard Fear rules) — not because the
+  Collector is frightening, but because the depth and accuracy of their
+  knowledge implies intimate experience with forces that should have destroyed
+  them.
+
+Broken State: When Broken, the Collector collapses. Their carried artifacts
+remain active and may emit Corruption (Aura type, +1 Corruption per round in
+the same zone) until properly secured. If the Collector is killed, their
+personal Corruption discharges in a burst: all characters within Near range
+gain +2 Corruption. Recovery agents experienced with artifact handling may
+attempt a Lore (Difficulty 2) roll to shield against this burst, reducing it
+to +1.
+----
+
+*Motivation:* The Collector wants to keep their collection and add to it. They are not ideological — they don't want to activate artifacts for power or revelation. They want to _have_ them. Ownership is the addiction. They'll negotiate, lie, flee, and use artifacts to escape, but they won't start fights. If cornered without escape, they'll offer to trade: one artifact from their collection in exchange for their freedom and the rest. This bargain is genuine but creates a Covenant protocol violation for any agent who accepts.
+
+*DA Guidance:* Collectors are recurring antagonists, not one-scene threats. Introduce them early in a Case File as someone who knows too much, then reveal their nature gradually. The Collector's value is that they create moral complexity: they have information the agents need, they're willing to share it (for a price), and killing them creates a Corruption burst that endangers everyone. The optimal approach — from the Covenant's perspective — is to capture the Collector, confiscate their collection, and hand them over to the Keep for long-term observation. But the Collector knows this, and they've evaded the Covenant before.
+
+Collectors should not appear in every Case File. One Collector per campaign arc is sufficient. If the agents encounter the same Collector across multiple cases, their Corruption should visibly advance between appearances — more pronounced reality distortion, deeper fugue states, artifacts behaving erratically in their proximity. The Collector is on a trajectory, and the agents can see where it ends.
+
+---
+
 == Corrupted NPCs
 
 *Corrupted NPCs* are human characters — factional contacts, civilians, or even Covenant support staff — whose Corruption has crossed into active dysfunction. Unlike Fracture Wraiths or Hollows, they are still alive. They still want things. But *what* they want has been bent by prolonged corruption exposure.
