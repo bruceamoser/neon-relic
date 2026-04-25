@@ -79,7 +79,7 @@ Use this list only if the character belongs to *The Keep* and selected *Stack (L
 ---
 == Advancement
 
-Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each Case File through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
+Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
 [%header,cols="^1,5"]
 |===
@@ -139,7 +139,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 *Yusuf's player spends XP:*
 
-* *6 XP → Requisition Authority talent (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. Yusuf's Covenant Standing is 10, which meets the CL 3 prerequisite (Standing 9+). The DA agrees this is a valid fiction trigger and approves the purchase.
+* *6 XP → Requisition Authority talent (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. The DA agrees this is a valid fiction trigger and approves the purchase.
 * *6 XP remain* for future sessions.
 
 > *DA note:* Requisition Authority purchases should be supported by a fiction trigger — a commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.

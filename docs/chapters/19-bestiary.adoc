@@ -498,7 +498,7 @@ at their final level. The DA chooses which skill based on the dead agent's
 profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 ----
 
-*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP (the vision is painful but clarifying). The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity.
+*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP at the end of the session (the vision is painful but clarifying; this XP is not awarded immediately and cannot be spent mid-scene). The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity.
 
 *Motivation:* The Fracture Wraith is not the dead agent. It is the *moment of death* given form. It seeks to replicate the conditions of its creation — drawing living agents toward high-corruption situations, artifact activation, and the threshold of corruption. It doesn't know it's doing this. It believes it's trying to warn them.
 
