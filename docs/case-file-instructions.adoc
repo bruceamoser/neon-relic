@@ -233,6 +233,6 @@ If all of that checks out, print the package, organize it in a folder, and sit d
 [horizontal]
 Full case file rules:: xref:chapters/15-case-file.adoc#chapter-case-file[Chapter 15: The Case File]
 Sample case (The Spear That Went Dark):: xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Chapter 20: Sample Case File]
-DA guidance and running toolkit:: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Chapter 14: Director of Agents Guidance]
+DA guidance and running toolkit:: xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Chapter 14: Director of Agents Guidance]
 Artifact tiers and containment profiles:: xref:chapters/11-artifacts.adoc#chapter-artifacts[Chapter 11: Artifacts of Power and Doom]
 Case generator tables:: xref:chapters/15-case-file.adoc#case-file-generator[Chapter 15: Case File Generator Tables]
