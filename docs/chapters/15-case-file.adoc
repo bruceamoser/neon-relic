@@ -488,53 +488,48 @@ The board serves as the table's coordination surface. Players can look at it and
 [[case-file-package]]
 == The Case File Package
 
-A complete Case File consists of *nine documents*. Together they form the *case file package* — everything a DA needs to run the case and everything the players need to engage with it.
+A complete Case File consists of *eight documents*. Together they form the *case file package* — everything a DA needs to run the case and everything the players need to engage with it.
 
 [cols="1,3,1,4", options="header"]
 |===
 | # | Document | Audience | Purpose
 
 | 1
-| *Case File* (mission brief)
-| Players
-| An in-world document from the Covenant. Contains only what the organization would share with field agents: the relic's surface description, region, timeline pressure, known organizations, starting NPC dossiers, and regional contacts. No secrets, no Containment Truths, no milestone details.
-
-| 2
 | *Case Brief — DA* (mystery statement + DA notes)
 | DA only
 | The real story. What is actually happening, who is really involved, and how the case resolves. The DA's anchor document — every question about "what is going on?" starts here.
 
-| 3
-| *Case Brief — Player* (player-facing summary)
+| 2
+| *Case Brief — Player* (agent briefing / mission brief)
 | Players
-| A briefing document containing the case name, region, objectives, known actors, initial leads, and operational parameters. What the agents know walking in.
+| An in-world briefing document from the Covenant containing the case name, region, objectives, known organizations, starting NPC dossiers, initial leads, operational parameters, and regional contacts. Only what the Covenant would share with field agents — no secrets, no Containment Truths, no milestone details.
 
-| 4
+| 3
 | *Operations Board*
 | DA (visible to players)
 | Shift row plus organization countdown rows. The single tracking surface for the case.
 
-| 5
+| 4
 | *Organization Reference*
 | DA only
 | All case organizations listed with their O#M# milestone descriptions and cross-link instructions. The DA scans this when crossing out milestone squares on the board.
 
-| 6
+| 5
 | *Relic Sheet*
 | DA only
-| Full artifact profile: *Tier* (a measure of the artifact's lethality, containment difficulty, and the Corruption exposure it generates — Tier 1 to Tier 4, defined in xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]), activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
+| Full artifact profile: *Tier* (a measure of the artifact's lethality, containment difficulty, and the Corruption exposure it generates — Tier 1 to Tier 3, defined in xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]), activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
 
-| 7
+| 6
 | *Location Pages* (one per Location)
 | DA only
 | The documents in front of the DA when the players arrive at a Location. Each page matches the Location form described above.
 
-| 8
+| 7
 | *NPC Cards* (playing-card size)
 | DA only
 | One per NPC. The DA pulls relevant cards and places them next to the active Location page.
 
-| 9
+| 8
 | *Information Cards* (playing-card size, double-sided)
 | DA -> Players
 | Front (player-facing): what the agents learn. Back (DA reference): source Locations, source NPCs, HQ fallback day, type. Players physically receive cards when information is discovered.
@@ -553,7 +548,7 @@ For a single-session case with five or six Locations and six to eight NPCs, the 
 * *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief procedure (Aftermath Phase), downtime phase healing rules, Dark Secret development
 * *xref:chapters/16-travel.adoc#chapter-travel[Ch 16 — Travel and Journey Rules]* — Travel as a shift type, cost in shifts, vehicle options
 * *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior and agendas for the Operations Board (Compact, MJ-12, Church, and others)
-* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of all nine case file package documents in use
+* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of all eight case file package documents in use
 
 ---
 
