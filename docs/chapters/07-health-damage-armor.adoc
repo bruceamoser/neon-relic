@@ -74,7 +74,7 @@ A *Death Check* is a single d6 roll. It is required whenever a Critical Injury i
 * *1–2:* The character dies.
 * *3–6:* The character survives — the Critical Injury still applies and must be treated, but they cling to life.
 
-*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+2 instead of d6 (death only on 1, and only if the Heal roll succeeded). On failure: no change; Death Check proceeds normally.
+*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+1 instead of d6 (death only on a natural 1 — result 2 on the table). On failure: no change; Death Check proceeds normally.
 
 === The Stabilization Window
 
