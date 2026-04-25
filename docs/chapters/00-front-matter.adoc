@@ -8,15 +8,15 @@
 *Project Neon Relic* +
 Core Rules — First Edition
 
-Version 2.3.0
+Version 2.3.1
 
 '''
 
 [.small]
 --
-*Written by* Bruce Moser and Stu [Last Name TBD]
+*Written by* Bruce Moser and Stewart Voit
 
-*Playtesters:* Chris [Last Name TBD], Eric [Last Name TBD], Paul [Last Name TBD]
+*Playtesters:* Chris [Last Name TBD], Eric [Last Name TBD], Paul Schirf
 
 *Layout and Design:* [TBD] +
 *Cover Art:* [TBD] +
