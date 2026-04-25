@@ -17,6 +17,13 @@ The case runs on four interlocking pieces:
 
 The players see none of the numbers. They see a detective who has doubled the uniformed presence at the station. They hear a radio die when they reach the loading bay. They notice that hospital staff are using the same phrase without realizing it. The DA translates the board state into the world, and the world translates into pressure at the table.
 
+[NOTE]
+====
+This chapter describes the *Case File system as it runs at the table* — the mechanics of shifts, scene resolution, packets, organizations, and entity types. It is the reference document for play.
+
+xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance] covers the *design process*: how to author an Operations Board, write NPC Cards, construct entity webs, and pace a case. If you are building a Case File from scratch, start there. If you are running one, use this chapter.
+====
+
 ---
 
 [[operations-board]]
@@ -136,7 +143,18 @@ When a shift becomes an active scene — the agents arrive at a location, confro
 
 . *State the objective.* What are the agents trying to accomplish in this scene? "Get the custody records from the church archive." "Intercept the handoff at the port." "Stabilize the wounded thief before the police arrive."
 
-. *The DA names the Key Activity.* This is the primary skill test that determines the scene's outcome — the roll that moves the case forward or doesn't. Only one player makes this roll.
+. *The DA names the Key Activity.* This is the primary skill test that determines the scene's outcome — the roll that moves the case forward or doesn't. Only one player makes this roll. The DA chooses the Key Activity based on the scene's actual objective:
++
+--
+* _Physical entry or covert approach_ → Move (AGL) or Infiltrate (AGL)
+* _Questioning or persuading a witness_ → Manipulate (EMP) or Persuade (EMP)
+* _Examining a crime scene or analyzing evidence_ → Investigate (WIT)
+* _Identifying an artifact or occult signature_ → Lore (WIT)
+* _Breaking into a locked system, bypassing security_ → Tech (WIT)
+* _Physical confrontation or overcoming resistance_ → Fight (STR) or Shoot (AGL)
+
+The player with the highest relevant skill pool should make the roll, but the table may discuss and decide which agent takes point. If no player has any dice in the relevant skill, the DA may allow a straight Attribute roll at Difficulty 2.
+--
 
 . *Each other player declares a contribution.* Contributions represent how the rest of the team supports the Key Activity. Each player chooses a different type:
 
@@ -201,7 +219,7 @@ Examples:
 * Customs officials tightening port scrutiny after an anonymous tip
 * A media outlet investigating the same event for entirely mundane reasons
 
-Organizations respond to agent activity, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities. A case should have no more than about *eight organization rows* — enough to create cross-pressure without overwhelming the DA's tracking.
+Organizations respond to agent activity, visible anomalies, publicity, money movement, faction paranoia, and missed opportunities. A standard case should have *four to eight organization rows* — enough to create cross-pressure without overwhelming the DA's tracking. More than eight organizations are rarely needed and tend to produce redundant pressure rather than distinct threats.
 
 === How Organization Rows Work
 
@@ -430,6 +448,17 @@ Information Cards are *double-sided*. The player-facing front states what the ag
 | *Containment Truth* (essential for solving the case) or *supporting intel* (useful but not required).
 |===
 
+[NOTE]
+====
+*Containment Truth* is the term for information that is mechanically necessary for safe artifact recovery. A Case File typically has three Containment Truths:
+
+* *Trigger Condition* — what causes the artifact to activate.
+* *Appetite* — what the artifact is drawn to or seeks (people, emotions, locations).
+* *Quiescence Condition* — what suppresses or neutralizes the artifact long enough for containment.
+
+No safe containment is possible without all three. Containment Truths are always Type: Containment Truth on Information Cards, and every one of them must have at least two field sources plus an HQ fallback. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts] for the full Containment Profile structure.
+====
+
 When the agents discover information during play, the DA physically hands them the player-facing side of the card. This makes progress tangible — the growing stack of Information Cards on the table is a visible measure of how much the team has pieced together.
 
 [[hq-safety-valve]]
@@ -459,7 +488,7 @@ The board serves as the table's coordination surface. Players can look at it and
 [[case-file-package]]
 == The Case File Package
 
-A complete Case File consists of eight documents. Together they form the *case file package* — everything a DA needs to run the case and everything the players need to engage with it.
+A complete Case File consists of *nine documents*. Together they form the *case file package* — everything a DA needs to run the case and everything the players need to engage with it.
 
 [cols="1,3,1,4", options="header"]
 |===
@@ -493,7 +522,7 @@ A complete Case File consists of eight documents. Together they form the *case f
 | 6
 | *Relic Sheet*
 | DA only
-| Full artifact profile: tier, activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
+| Full artifact profile: *Tier* (a measure of the artifact's lethality, containment difficulty, and the Corruption exposure it generates — Tier 1 to Tier 4, defined in xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]), activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
 
 | 7
 | *Location Pages* (one per Location)
@@ -517,10 +546,14 @@ For a single-session case with five or six Locations and six to eight NPCs, the 
 
 == Cross-References
 
-* DA guidance for authoring the Operations Board, organizations, relic milestones, and entity design: xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance]
-* Travel as a shift type: xref:chapters/16-travel.adoc#chapter-travel[Travel and Journey Rules]
-* Corruption gain mechanics: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Containment rituals and handling profiles: xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts -> Containment Rituals]
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — How to author an Operations Board, write Organization rows with milestones, design NPC Cards and entity webs, structure the Case File package, and pace a case from start to catastrophe
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (field exposure, artifact emissions, pushing rolls), Fear Checks, Broken state, recovery methods (Full Rest, Psychoanalyze), downtime phases
+* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Tiers, Containment Profiles, Containment Truths (Trigger/Appetite/Quiescence), Decay track, Containment Ritual procedure, Fracture table
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Development Point awards, Covenant Standing tracks, HQ Investment Phase options, Threat Meter and Compromise Events
+* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief procedure (Aftermath Phase), downtime phase healing rules, Dark Secret development
+* *xref:chapters/16-travel.adoc#chapter-travel[Ch 16 — Travel and Journey Rules]* — Travel as a shift type, cost in shifts, vehicle options
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior and agendas for the Operations Board (Compact, MJ-12, Church, and others)
+* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of all nine case file package documents in use
 
 ---
 
@@ -709,7 +742,13 @@ Award Development Points. Update Covenant Standing. Process equipment returns to
 
 === 2. Recovery Phase
 
-Resolve all pending healing — physical injuries requiring downtime phases, mental injuries requiring Psychoanalyze campaigns, and Corruption recovery via Full Rest. Each downtime phase represents roughly one week. The DA determines how many downtime phases are available based on the gap between cases. (See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for recovery methods.)
+Resolve all pending healing — physical injuries requiring downtime phases, mental injuries requiring Psychoanalyze campaigns, and Corruption recovery via Full Rest.
+
+A *downtime phase* is a discrete rest-and-recovery period lasting approximately one week of in-world time. It is the basic unit of between-case recovery. Physical Critical Injuries and Broken conditions clear at a rate of one phase per requirement, with each successful Heal roll advancing progress. The DA determines how many downtime phases are available based on the gap between cases — a rushed reassignment may allow only one phase, while an extended stand-down may allow three or four.
+
+A *Psychoanalyze campaign* is a sustained treatment track for mental injuries: Corruption-driven trauma, persistent fear responses, or Broken conditions rooted in occult exposure. It requires a willing agent, an accessible therapist or Covenant psychologist, and at least one downtime phase per treatment step. The number of steps depends on severity. A Psychoanalyze campaign may be interrupted by a new Case File assignment — incomplete treatment does not reset, but the condition does not improve until it resumes. The mechanics for Psychoanalyze are in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+
+Corruption recovery via *Full Rest* requires a minimum of one downtime phase with no artifact exposure, no field work, and no significant stress. This reduces Corruption by 1. Multiple phases spent in genuine recovery can reduce Corruption further. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for all recovery methods.
 
 === 3. HQ Investment Phase
 
