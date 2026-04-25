@@ -57,7 +57,9 @@ Because Corruption naturally builds toward lethal levels, characters must active
 | *Healing Talents* | Varies by talent | See Division Talents and General Talents marked with _(Healing)_.
 |===
 
-> *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices. Maximum per-session active recovery: up to 1d4 (Anchor) + 1 (Safe Scene) = up to 5 Corruption. Even at maximum, a single bad session can overwhelm a session's recovery.
+> *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
+>
+> *Session Healing Cap:* Regardless of all sources combined — Anchor Scenes, Safe Scenes, Talents (Confessor, Duct Tape & WD-40, etc.), or HQ Facilities (Faraday Cage) — an agent may heal *no more than 5 Corruption per session* from active in-session sources. Full Rest (24-hour downtime between sessions) is not subject to this cap. This cap enforces the asymmetric economy: even perfectly optimized play cannot fully reset Corruption within a single session. Multiple agents using Talents on the same target also count toward that target's session cap — not the user's.
 
 === Anchors
 
