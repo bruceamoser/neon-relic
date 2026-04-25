@@ -1,6 +1,12 @@
 [#chapter-equipment]
 = 1980s Equipment and Analog Gear
 
+This chapter covers the physical tools available to Covenant agents: investigative gear, weapons, armor, vehicles, and consumable supplies. It also describes the Requisition system (how agents acquire equipment through their Clearance Level), the Resource Die system (tracking consumable supplies), Encumbrance (what agents can carry), Vehicle Rules (chases, damage, and repair), and the Crafting and Repair rules (maintaining and improvising gear in the field).
+
+Repairs and gear degradation connect to the core system described in xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor] and xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Ch 3 — Core Resolution]. Refer to xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat] for the Ammo Die and vehicle chase rules that run during active scenes.
+
+---
+
 Navigating the neon-lit streets and abandoned industrial sectors of the 1980s requires specialized equipment. Items provide a *Gear Bonus* (extra black d6 dice) to specific skill rolls. Pushing a roll can cause the item to break, temporarily reducing its bonus.
 
 To reflect the covert nature of the Covenant, characters do not use personal cash. Instead, they utilize their *Clearance Level (CL)* during the Equipping Phase to requisition supplies from Stack. Items are categorized by their required CL.
@@ -43,21 +49,21 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 | *Brass Knuckles* | +1 | 1 | Physical (STR) | Engaged | Concealable. | 1
 | *Switchblade* | +1 | 2 | Physical (STR) | Engaged | Concealable; puncture criticals. | 1
-| *Stun Gun / Taser* | +2 | Stun | Physical (STR) | Engaged | Target loses their next Slow Action (stunned). | 2
-| *.38 Snub-nose Revolver* | +2 | 2 | Physical (STR) | Short | Reliable — ignore first 1 when pushing. | 2
-| *9mm Semi-Auto Pistol* | +2 | 2 | Physical (STR) | Short | High capacity; split successes to hit multiple targets. | 3
+| *Stun Gun / Taser* | +2 | — | Physical (STR) | Engaged | No Strength damage. Target is *Stunned*: loses their next Slow Action. Effect ends if the target takes any damage. | 2
+| *.38 Snub-nose Revolver* | +2 | 2 | Physical (STR) | Short | Reliable — when pushing the roll, ignore the first 1 that appears on a *Gear Die* (preventing one degradation step). | 2
+| *9mm Semi-Auto Pistol* | +2 | 2 | Physical (STR) | Short | High capacity. Extra successes beyond the first may each be spent to hit an additional target in Engaged range (declare before resolving damage). | 3
 | *Pump-Action Shotgun* | +3 | 3 | Physical (STR) | Short | +1 Damage at Engaged range. Loud and bulky. | 3
-| *M16 Assault Rifle* | +2 | 3 | Physical (STR) | Long | Full auto — can push twice, consumes extra ammo. | 4
+| *M16 Assault Rifle* | +2 | 3 | Physical (STR) | Long | *Full Auto* — see xref:chapters/05-combat.adoc#chapter-combat[Ch 5 Full Auto rules] for the two-attack-roll, two-Ammo-Die procedure. Consumes extra ammunition each turn fired. | 4
 |===
 
 == Armor
 
-[%header,cols="2,^1,3,^1"]
+[%header,cols="2,^1,^1,3,^1"]
 |===
-| Armor | Rating | Special | CL
+| Armor | Rating | Enc | Special | CL
 
-| *Concealed Kevlar Vest* | 3 | Wearer passes as civilian at distance. | 3
-| *Tactical Riot Armor* | 6 | Bulky; −2 penalty to Agility rolls. | 4
+| *Concealed Kevlar Vest* | 3 | 1 | Wearer passes as civilian at distance. | 3
+| *Tactical Riot Armor* | 6 | 3 | Bulky; −2 penalty to Agility rolls. | 4
 |===
 
 ---
@@ -99,13 +105,15 @@ Supplies can be restocked:
 
 === Supply Categories
 
+[NOTE]
+====
+*Ammunition is NOT tracked here.* Ammo is tracked exclusively using the Ammo Die system in xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat] (rolling after every turn fired). There is no separate scene-level Resource Die for ammunition — those rows are removed. The Supply Categories table below covers non-ammo consumables only.
+====
+
 [%header,cols="2,^1,^1,3"]
 |===
 | Supply | Starting Die | CL | Notes
 
-| *Pistol Ammunition* (.38, 9mm) | d10 | 2 | Roll after any firefight. Full auto or suppressive fire: roll twice.
-| *Shotgun Shells* | d8 | 3 | Roll after any firefight. Pump-action: each shot is a meaningful use.
-| *Rifle Rounds* (M16, .308) | d8 | 4 | Roll after any firefight. Full auto or suppressive fire: roll twice.
 | *Basic First Aid Kit* | d10 | 1 | Roll after each Heal roll that consumes supplies (bandages, antiseptic, splints). Does not roll for passive access checks.
 | *Trauma Surgical Kit* | d8 | 3 | Roll after each surgical Heal action (treating Critical Injuries, field surgery). High consumption.
 | *Battery Pack (general electronics)* | d8 | 1 | Roll after each scene in which an electronic device (flashlight, radio, recording device) is used continuously for more than 30 minutes. Devices operated briefly do not trigger a roll.
@@ -113,8 +121,6 @@ Supplies can be restocked:
 | *Field Rations* | d8 | 1 | Only tracked on *extended journeys* (overnight+) or during prolonged operations without a hot meal. Roll once per day in the field. Not required for standard Case Files.
 | *Artifact Components* (optional) | d6 | — | Ritual components, containment salts, reactive chemicals. Roll after each artifact interaction requiring preparation materials. DA may waive this for simple artifact containment.
 |===
-
-> *Ammo in combat:* The combat chapter tracks ammunition with an Ammo Resource Die by weapon class (see xref:chapters/05-combat.adoc#chapter-combat[Combat]). The values there override these defaults for in-combat rolls. The values above apply to *scene-level* tracking — they are rolled at the end of a fight, not per shot.
 
 === Scarcity in the 1980s Field
 
@@ -148,7 +154,7 @@ Every agent can carry a limited amount of gear before it slows them down. Encumb
 
 An agent's carry capacity is *Strength × 2* Enc. points.
 
-Wearing armor adds its CL to your total Enc. (Concealed Kevlar = +1; Tactical Riot Armor = +2).
+Wearing armor adds its *Enc* value to your total Enc (Concealed Kevlar = +1; Tactical Riot Armor = +3).
 
 === Encumbered
 
@@ -180,8 +186,8 @@ Agents requisition gear during the *Equipping Phase* between Case Files through 
 | CL | Who Can Access
 
 | 1 | All agents — basic field supplies.
-| 2 | Agents with at least one completed Case File, or Division default.
-| 3 | Agents with field commendations or specific Division clearance.
+| 2 | Agents at Division default (Recovery) or with one completed Case File.
+| 3 | Agents at Division default (Wayfinder, Keep) or with field commendations — this is the starting CL for Wayfinder and Keep agents.
 | 4 | Senior agents and Warden rank — restricted hardware and experimental tech.
 | 5 | Maximum clearance — prototype equipment and Covenant legacy assets.
 |===
@@ -199,8 +205,8 @@ Vehicles are field assets — tools to get there, get away, and occasionally get
 Each vehicle has five stats:
 
 * *Speed:* A relative rating — Slow, Medium, Fast, or Very Fast. Sets the Difficulty modifier on chase pursuit rolls (see Chase Rules below).
-* *Armor Rating (AR):* Damage reduction against attacks targeting the vehicle directly (ramming, gunfire). Characters inside an armored vehicle use the vehicle's AR in place of worn armor while they remain inside.
-* *Reliability:* Starting Wear track (Max 5). Each instance of vehicle damage or a pushed vehicle roll adds 1 Wear. At 3 Wear: −1 die on all vehicle rolls. At 5 Wear: the vehicle stops.
+* *Armor Rating (AR):* Damage reduction against attacks targeting the vehicle directly (ramming, gunfire). Characters inside an armored vehicle use the vehicle's AR *instead of* their worn armor while they remain inside — the vehicle's protection replaces, not adds to, personal armor (consistent with xref:chapters/05-combat.adoc#chapter-combat[Ch 5 cover rules]). Wearing armor outside the vehicle provides the worn AR as normal.
+* *Reliability:* The vehicle's maximum Wear before breakdown. Each instance of vehicle damage or a pushed vehicle roll adds 1 Wear. *At half Reliability (round down):* −1 die on all vehicle rolls. *At full Reliability Wear:* the vehicle stops. _Example: a vehicle with Reliability 4 takes a −1 die penalty at 2 Wear and stops at 4 Wear._
 * *Handling:* A bonus or penalty applied to all pursuit and evasion rolls (Wits or Agility depending on maneuver type). Represents how nimble the vehicle is.
 * *Capacity:* Number of occupants (passengers + driver) and approximate cargo Enc.
 
@@ -253,6 +259,8 @@ Vehicle conflict follows the same chase structure as foot chases (xref:chapters/
 
 ==== Chase Structure
 
+Vehicle conflict follows the same procedural structure as foot chases (xref:chapters/05-combat.adoc#chapter-combat[Combat]), but uses vehicle-specific position names. *Note:* Foot chases use the combat zone scale (Engaged/Near/Short/Long/Distant). Vehicle chases use the following 5-position *Contact Track* — both measure closing/opening distance but at a scale appropriate to vehicles.
+
 A vehicle chase uses a *Contact Track* — a 5-step range:
 
 [%header,cols="^1,3"]
@@ -294,11 +302,11 @@ Declare before rolling. No cost unless noted.
 |===
 | Maneuver | Skill | Effect
 
-| *Ram* | Force (WIT) | Only available at Contact. Roll Force opposed by opponent's Tech. On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
+| *Ram* | Force (STR) | Only available at Contact. Roll Force (STR) opposed by opponent's Tech (WIT). On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
 | *PIT Maneuver* | Tech (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
 | *Gunfire from Vehicle* | Firearms (standard roll) | Available at Following or closer. −1 die on all shooting rolls from a moving vehicle unless the shooter has the *Stable Platform* talent. A passenger shooting from a moving car is at −1 die; a driver shooting is at −2 dice.
-| *Off-Road Break* | AGI Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
-| *Blending In* | WIT (Sneak) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
+| *Off-Road Break* | Tech (AGI) Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
+| *Blending In* | Sneak (WIT) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
 |===
 
 === Vehicle Damage
@@ -341,13 +349,19 @@ and relying on whoever in your cell knows which end of a soldering iron is hot.
 Stack Division agents are the backbone of field readiness — but any experienced
 agent can manage a field fix if the situation demands it.
 
+> *Terminology clarification:* This chapter uses "Gear Die" (black d6) and "Resource Die" (the stepped d4–d12 supply tracker) as distinct terms. *Gear Dice* are the black d6 dice in any skill roll pool — rolling a 1 on any Gear Die may degrade the item. *Resource Dice* are the consumable supply trackers (stepping down from d12 → d4 → Depleted). These are different systems.
+
 ---
 
 === Gear Degradation
 
 Every item with a *Gear Bonus* risks degradation when any Gear Die in the pool
-rolls a *1* on the initial roll. The item's Gear Bonus is permanently reduced by 1
-until repaired. An item reduced to Gear Bonus 0 is *Broken* and cannot be used.
+rolls a *1* on the initial roll (not on a push — Gear Dice are never rerolled when pushing). The item's Gear Bonus is permanently reduced by 1 until repaired. An item reduced to Gear Bonus 0 is *Broken* and cannot be used.
+
+[NOTE]
+====
+This degradation system is identical to the one in xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor] and xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Ch 3 — Core Resolution]. Ch 7 is the canonical source; this chapter repeats the relevant rules for equipment-specific context only.
+====
 
 This works consistently across all item types:
 
@@ -385,9 +399,13 @@ Repairing gear requires **time**, **parts**, and a **Tech** roll.
 | *Degraded* (Gear Bonus below max) | Below max (≥1) | 1 | Quick Repair: 15 minutes (1 scene)
 | *Broken* (Gear Bonus 0, non-electronic) | 0 | 2 | Full Repair: 1 Shift (~4 hours)
 | *Broken* (Gear Bonus 0, electronic/mechanical) | 0 | 3 | Full Repair: 1 Shift; requires Power Tools
-| *Combat-Damaged Vehicle* | See Reliability | 3 | Full Day; requires Auto Repair kit
 | *Artifact-Adjacent Damage* | — | 4 | Requires Occult Lab or Wayfinder consult
 |===
+
+[NOTE]
+====
+*Vehicle repair* uses a separate system — see <<vehicle-damage,Vehicle Damage and Repair>> earlier in this chapter (Tech roll Difficulty 2, 30 minutes per 1 Wear cleared). Do not use this table for vehicle Wear.
+====
 
 **Success:** Each success restores Gear Bonus by 1 (up to the item's maximum).
 A single Quick Repair roll can restore a Degraded item but not a Broken one —
@@ -493,8 +511,7 @@ more, they're held together with duct tape and prayer).
 
 > Improvised items **cannot** be upgraded with proper parts after the fact —
 > once improvised, always improvised. The exception is Stack Division agents
-> with the *Prototyper* talent, who may treat any improvised item as fully
-> professional for one roll before it is destroyed.
+> with the *Prototyper* talent, who may grant any improvised item an *Artifact Die (d8)* for a single skill roll — after that roll, the item is permanently destroyed (consistent with the Prototyper talent in xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]).
 
 ==== Improvised Item Failure
 
@@ -505,12 +522,12 @@ the item fails outright. Roll on the following table:
 |===
 | d6 | Improvised Item Failure
 
-| 1 | *Catastrophic Break.* Item is destroyed instantly. If a weapon, the wielder takes 1 damage.
-| 2 | *Jams or Jams Shut.* Item is unusable this scene. Can be cleared with a free action next round.
-| 3 | *Splinters / Shrapnel.* Item breaks; nearest ally in zone rolls AGI Diff 1 or takes 1 damage.
-| 4 | *Power Surge.* Electronic items: short circuit, sparks. Clear by spending a Slow Action.
-| 5 | *Reduced Function.* Item still usable but provides no bonus die (treat as no item).
-| 6 | *Quick Fix.* Roll was a near-miss — item is stable. Gear Die stays at current step.
+| 1 | *Catastrophic Break.* Item is destroyed instantly. If a weapon, the wielder takes 1 Strength damage (no roll to avoid).
+| 2 | *Jams or Jams Shut.* Item is unusable this scene. Can be cleared with a free action next round (no roll needed).
+| 3 | *Splinters / Shrapnel.* Item breaks; nearest ally in zone rolls *Endure (AGI) Difficulty 1* or takes 1 Strength damage.
+| 4 | *Power Surge.* Electronic items only: short circuit, sparks. Make a *Tech (WIT) Difficulty 1* roll; on success, cleared with a Slow Action. On failure, the item is Broken (requires Full Repair).
+| 5 | *Reduced Function.* Item still usable but provides no Gear Bonus die (treat as an improvised item with no dice contribution).
+| 6 | *Quick Fix.* Near-miss — item is stable. Gear Die stays at current step; no degradation.
 |===
 
 ---
@@ -521,6 +538,11 @@ Stack agents aren't just better at repairs — they have a different relationshi
 with gear entirely. Training in Covenant workshops, maintaining equipment under
 operational conditions, and sourcing parts through a network of trusted contacts
 gives Stack agents mechanical advantages no other Division matches.
+
+[NOTE]
+====
+These are *background advantages* intrinsic to Stack training — always active, no activation cost. They do not replace or conflict with Stack's *activated talents* (Jury-Rig, Prototyper, Duct Tape & WD-40, etc.) from xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9]. Both apply independently.
+====
 
 [%header,cols="2,4"]
 |===
@@ -533,7 +555,20 @@ gives Stack agents mechanical advantages no other Division matches.
 | *Workshop Access*     | At HQ, Stack agents may use the <<facility-covenant-armorer,Covenant Armorer>> facility at no additional cost, even before it is fully built. They improvise the bench themselves.
 |===
 
+[NOTE]
+====
+*Simplified crafting option (DA guidance):* The full parts economy (Junk Die, Hardware Components, Specialized Parts, Covenant Cache Parts) can feel like a lot to track. DAs running lighter sessions may substitute a single *Parts Die (d8)* for all non-vehicle repairs. Roll it like any Resource Die after each repair — 1–2: step down; 3+: no change. Replenish it at HQ or during Equipping Phase. This is a deliberate simplification, not the default rule.
+====
+
 > **Cross-reference:** Stack Division full description, background options, and Talents
 > (including *Jury-Rig*, *Prototyper*, *Duct Tape & WD-40*) are in
 > xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+
+== Cross-References
+
+* *xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Ch 3 — Core Resolution]* — Gear Dice in skill pools, gear degradation (canonical rule), pushing rolls
+* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Ammo Die system (single canonical ammo tracking), vehicle chases as they apply during combat, cover AR vs worn armor
+* *xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]* — Armor Rating rules, armor degradation, Strength damage, Broken state
+* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Stack Division talents (Jury-Rig, Prototyper, Duct Tape & WD-40), Recovery starting CL and armor exception, Clearance Level by Division
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Equipping Phase, Covenant Armorer facility, Requisition Authority talent, Standing vs CL distinction
 
