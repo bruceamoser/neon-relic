@@ -20,7 +20,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 | Trigger | Corruption Gained | Description
 
 | *Pushing a Roll* | +1 | Exerting your absolute limits invites psychic static.
-| *Activating a Division Talent* | +1 | Talents that tap the supernatural exact a cost.
+| *Activating a Division Talent* | +1 (or free) | Most talents that tap the supernatural exact a cost. Talents marked *—* in their Corruption Cost column are free to activate — healing and passive-support talents carry no Corruption. See each talent's entry in xref:chapters/09-talents.adoc#chapter-talents[Talents].
 | *Occult Exposure* | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. DA sets severity.
 | *Artifact Activation* | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier.
 | *Fear Check (any 1s rolled)* | +1 | The mind cracks trying to process the unprocessable. See Fear rules below.
