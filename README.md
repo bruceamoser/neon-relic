@@ -16,7 +16,7 @@ Neon Relic combines:
 - The **investigative, base-building structure** of *Vaesen*
 - The **high-stakes psychological tension** of the *Alien RPG*
 - The **moral ambiguity and humanity attrition** of the *Blade Runner RPG*
-- A unique **Resonance and Corruption** mechanic where using occult power accelerates your doom
+- A unique **Corruption** mechanic where occult exposure and desperate choices accelerate your doom
 
 ## Project Status
 
@@ -98,7 +98,7 @@ This project draws inspiration and mechanical precedent from these existing YZE 
 - **Mutant: Year Zero** — Dice-pool foundation, base-building (The Ark)
 - **Forbidden Lands** — Stronghold management, push mechanics, gear degradation
 - **Vaesen** — Procedural mystery structure, episodic investigation, headquarters upgrades
-- **Alien RPG** — Stress/Panic system (inspiration for Resonance/Corruption)
+- **Alien RPG** — Stress/Panic system (inspiration for Corruption's escalation design)
 - **Blade Runner RPG** — Humanity attrition, moral ambiguity
 - **Twilight: 2000** — Step-dice variant reference (not used, but studied)
 

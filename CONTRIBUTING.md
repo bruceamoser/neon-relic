@@ -87,7 +87,7 @@ Examples:
 feat(#1): add step-by-step character creation procedure
 feat(#3): draft initiative and action economy rules
 feat(#3): add zone definitions and range categories
-feat(#6): add fear check mechanic and Resonance integration
+feat(#6): add fear check mechanic and Corruption integration
 fix(#4): correct critical injury severity thresholds
 chore: remove temp issue body files
 ```
