@@ -99,7 +99,7 @@ To stabilize a Dying ally during the stabilization window:
 
 Some Critical Injury results carry extreme conditions that change how the Death Check works:
 
-* *Result 66 (DOA):* Without immediate intervention, death is automatic — no roll is made. An ally may attempt a Heal roll (Difficulty 4, same round only) to make a Death Check possible. If the Heal succeeds, the character makes a Death Check with *no bonus* (plain d6; the Medical Training +2 does not apply here — the Heal action's entire effort went into keeping the patient alive long enough to roll). Surviving: see the Critical Injury table. If no ally attempts the Heal this round, the character dies — there are no further attempts.
+* *Result 66 (DOA):* Without immediate intervention, death is automatic — no roll is made. An ally may attempt a Heal roll (Difficulty 4, same round only) to make a Death Check possible. If the Heal succeeds, the character makes a Death Check with *no bonus* (plain d6; the Medical Training +1 does not apply here — the Heal action's entire effort went into keeping the patient alive long enough to roll). Surviving: see the Critical Injury table. If no ally attempts the Heal this round, the character dies — there are no further attempts.
 * *Result 55 (Shattered Will), 46 (Catatonic Episode) — mental death:* These require a mental Death Check (mind, not body). The check uses the same procedure (d6, 1–2 = failure). Failure = permanent catatonia, character retirement. These are not physical death — the character is retired from play but may remain as an NPC.
 
 > *Design note:* Result 66 (DOA) is rare — it requires an overwhelmingly lethal physical event to reach the worst end of the D66 table. Most character deaths will come from failed Death Checks, not from this result.
@@ -145,7 +145,7 @@ Some results are marked *†* (Death Check). When you roll one, roll a single d6
 * On a *1–2:* Your character dies.
 * On a *3–6:* You survive — barely. The Critical Injury still applies.
 
-A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (WIT)* roll (Difficulty 2) to give a dying ally *+2 to their death check die* before it's rolled (effectively making death only on a 1).
+A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (WIT)* roll (Difficulty 2) to give a dying ally *+1 to their death check die* before it's rolled (effectively making death only on a natural 1 — result 2 on the table).
 
 ---
 
