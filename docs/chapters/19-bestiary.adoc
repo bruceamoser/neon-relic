@@ -265,7 +265,8 @@ Special Abilities:
   Shard Burst (Slow Action) — The Construct fires crystallized occult shards
   in a cone. All agents within Near range take 2 Strength damage. Armor applies.
   No attack roll — the DA describes the burst; agents may spend a Fast Action
-  to Dodge (opposed AGI roll, Difficulty 2 to avoid) before it lands.
+  to Dodge (opposed Agility roll; the attacker's successes must exceed the
+  defender's to hit — ties favor the defender) before it lands.
 
   Anchored to Artifact — The Construct cannot move more than Long range from
   the artifact it protects. If the artifact is moved, the Construct follows
@@ -302,6 +303,56 @@ For quick reference when building encounters:
 |===
 
 > Named Threats are specific individuals (a faction leader, a bound entity with a centuries-long history) and should be developed individually rather than drawn from this reference list. The stat blocks above represent archetypes, not named antagonists.
+
+---
+
+=== Vantablack Compact Field Professional
+
+[*Human / The Vantablack Compact / Threat: High*]
+
+----
+Attributes: STR 3 | AGI 5 | WIT 4 | EMP 3
+Armor Rating: 1 (concealed ballistic vest)
+Fear Rating: 0
+
+Skills:
+  Brawl 2 | Endure 2
+  Sneak 4 | Sleight of Hand 3
+  Firearms 3
+  Investigate 3 | Tech 2
+  Manipulate 3
+
+Special Abilities:
+  Counter-Surveillance — The Field Professional immediately detects
+  standard Covenant surveillance setups (stakeouts, tails, static
+  observation posts). If the agents attempt an Investigate roll to
+  surveil a Compact operative, it is opposed by the Professional's
+  Investigate 3 (ties go to the Professional — they've done this longer
+  than most agents have been alive).
+
+  Sterile Exit — When a Compact professional is Broken or their mission
+  is compromised, they trigger a prepared extraction protocol. All
+  physical evidence of their presence is destroyed or removed within
+  2d6 minutes (DA controls timing). Agents have a narrow window to
+  secure evidence before the protocol completes. Tech (Difficulty 2)
+  to identify the extraction route; Sneak (AGI) or Investigate (WIT)
+  (Difficulty 3) to interrupt it.
+
+  Non-Confrontational Default — Compact professionals do not escalate
+  to lethal force unless trapped. If outmaneuvered, they attempt
+  negotiation, misdirection, or extraction. They carry suppressed
+  sidearms but use them only to buy escape time.
+
+Broken State: Tactical extraction. The Professional abandons the
+current operation, destroys materials, and goes to ground. They will
+resurface in a later Case File with knowledge of the agents' methods.
+A captured Compact professional will cooperate only in exchange for
+specific concessions (their freedom, their handler's identity protected,
+access to their collection returned).
+
+Motivation: Acquire the artifact with minimum exposure. The Compact has
+a client waiting. The agents are the only variable they didn't plan for.
+----
 
 ---
 
@@ -356,7 +407,7 @@ means. It can be dispersed by:
   (2) A Containment Ritual (see xref:chapters/11-artifacts.adoc#containment-rituals[Containment Rituals]) performed
       by an agent with Lore 3+, taking one full scene.
   (3) Destroying the artifact at its core (Artifact Fracture; triggers
-      a Corruption Cascade — everyone in the zone takes +3 Corruption).
+      a Corruption spike — everyone in the zone takes +3 Corruption).
 ----
 
 *Broken State:* Dispersed. The zone returns to normal. Physical damage from the trauma-origin remains (stains, broken furniture, cold spots). The artifact anchor must be contained; leaving it creates a new Mire within 1d6 days.
@@ -498,7 +549,7 @@ at their final level. The DA chooses which skill based on the dead agent's
 profile (e.g., a dead Firearms 3 agent becomes a Wraith with Firearms 3).
 ----
 
-*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. Characters who witness the dissolution gain +1 XP at the end of the session (the vision is painful but clarifying; this XP is not awarded immediately and cannot be spent mid-scene). The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity.
+*Broken State:* Release. The Wraith dissolves in a cascade of static images — faces, file documents, artifact photographs — before going silent. The dissolution does not grant XP; experience points come from surviving and understanding, not from destroying what the Covenant failed to protect. Instead, each character who witnesses the dissolution gains a *Clarifying Vision*: the DA reveals one true fact about the artifact that created the Wraith — its origin, its prior victim, or its Containment Truth. The corruption spike that created the Wraith is fully discharged; the location is safe from this specific entity. Every agent present gains *+1 Corruption* from witnessing the dissolution — the price of clarity.
 
 *Motivation:* The Fracture Wraith is not the dead agent. It is the *moment of death* given form. It seeks to replicate the conditions of its creation — drawing living agents toward high-corruption situations, artifact activation, and the threshold of corruption. It doesn't know it's doing this. It believes it's trying to warn them.
 
@@ -569,8 +620,8 @@ Movement: Zone-locked (occupies 1–2 zones defined at creation; does not move)
 
 Special Abilities:
   Immersion Field (Passive) — At the start of each round, all characters within
-  the Echo's zone(s) must resist the Echo's influence. Roll a Wits-only check
-  at Difficulty 1 (follows Fear Check conventions — Wits only, no skill).
+  the Echo's zone(s) resist the Echo's influence. This uses the same mechanic
+  as a Fear Check (Wits attribute only, no skill bonus), Difficulty 1.
   Failure: the character experiences the historical trauma as if they were a
   participant — takes 1 Wits damage and 1 Empathy damage (mental, no armor).
   Success: the character observes the replay from a dissociated perspective and
@@ -639,11 +690,11 @@ Special Abilities:
   (far above normal, and set directly by the DA — not derived from the
   standard `10 + Empathy` player formula; NPCs and supernatural entities may
   have DA-assigned thresholds that reflect their unique nature rather than the
-  player formula). Their current Corruption is 11–14 (deep into Reality
-  Distortion stage). This means they exhibit visible corruption effects —
-  electronics glitch in their presence, shadows move wrong, their speech
-  occasionally includes words they didn't intend to say. These effects are not
-  mechanically dangerous but provide atmosphere.
+  player formula). Their current Corruption is 11–14 (deeply corrupted — well
+  past the point where most humans would have reached catatonia). This means
+  they exhibit visible corruption effects — electronics glitch in their presence,
+  shadows move wrong, their speech occasionally includes words they didn't intend
+  to say. These effects are not mechanically dangerous but provide atmosphere.
 
   Artifact Sense (Passive) — The Collector automatically detects active artifacts
   within Short range (1–2 zones). They can identify artifact tier and prior
@@ -708,9 +759,9 @@ Corrupted NPCs are not villains in the traditional sense. They are *victims*. Co
 
 Detecting a Corrupted NPC in play:
 
-* *Wits (Investigate) Difficulty 2:* Notice that the NPC's behavior is inconsistent with their established pattern.
-* *Lore (Wits) Difficulty 3:* Identify the specific artifact exerting influence based on the NPC's behavioral distortions.
-* *Empathy (Psychoanalyze) Difficulty 2:* Confirm the NPC is compromised; learn how long it has been going on.
+* *Investigate (WIT) Difficulty 2:* Notice that the NPC's behavior is inconsistent with their established pattern.
+* *Lore (WIT) Difficulty 3:* Identify the specific artifact exerting influence based on the NPC's behavioral distortions.
+* *Psychoanalyze (EMP) Difficulty 2:* Confirm the NPC is compromised; learn how long it has been going on.
 
 > *Design note:* Corrupted NPCs are the game's most human horror. The artifacts don't just corrupt agents — they reach out through anyone who gets close to them. The party's best informant may already be Stage 1. The Covenant archivist they trusted for six Case Files may have been Stage 2 for months.
 
@@ -778,3 +829,13 @@ Every entity needs an end condition. Answer: *What does it look like when this t
 === Step 7 — Write the Motivation
 
 Even mindless entities have a directive. Define it in one sentence. If you can't, the entity isn't ready yet.
+
+---
+
+== Cross-References
+
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Fear Check mechanics (Wits-only, no push, no helping dice), Broken state and recovery, Corruption threshold (`10 + EMP`), Psychoanalyze procedure, Corrupted NPC recovery
+* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Containment Rituals (referenced in entity dissolution conditions), Artifact Tiers, Division Instrument interactions, Fracture table (artifact destruction = Corruption spike)
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Faction dossiers for Vantablack Compact, Ember Accord, MJ-12, Hellfire Consortium — operational behavior descriptions to complement the stat blocks here
+* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Dodge (opposed Agility roll, attacker must strictly exceed defender's successes), armor mechanics, zone movement
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Entity Behavioral Taxonomy (four types: Echoing Remnant, Shard Construct, Bound Entity, Manifest Presence), dissolution conditions, NPC Cards for factional operatives
