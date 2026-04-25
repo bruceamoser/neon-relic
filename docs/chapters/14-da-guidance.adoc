@@ -1,9 +1,9 @@
-[#chapter-gm-guidance]
+[#chapter-da-guidance]
 = Director of Agents Guidance
 
-Running Neon Relic well means understanding what kind of game it is trying to be: an *investigation horror* game where the real terror is not the monster in the vault, but the agents' growing awareness that the Covenant cannot fully protect them from what they're being asked to do.
+This chapter provides tools for the DA to prepare and run individual Case Files: structuring the Operations Board, authoring Organizations and relic milestones, building the clue web from cross-linked entity cards, and handling containment missions. Use it as a working reference, not a rulebook.
 
-This chapter gives you the tools to prepare and run individual cases, develop mysteries that hold together under player pressure, and handle the unexpected. Use it as a working reference, not a rulebook.
+Running Neon Relic well means understanding what kind of game it is trying to be: an *investigation horror* game where the real terror is not the monster in the vault, but the agents' growing awareness that the Covenant cannot fully protect them from what they're being asked to do.
 
 ---
 
@@ -57,7 +57,14 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 == Operations Board Authoring
 
-The new Case File structure is built around an *Operations Board*: Locations, NPC Cards, Information Cards, organizations, relic milestones, and delayed returns tracked on the Operations Board.
+The new Case File structure is built around an *Operations Board*: Locations, NPC Cards, Information Cards, organizations, relic milestones, and delayed returns tracked on the Operations Board (see xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File] for the full Operations Board structure and terminology).
+
+> *Key Terms:*
+> * *Shift* — a unit of in-game time (approximately one day or one major event period). The Operations Board's shift row tracks how many shifts have passed.
+> * *Containment Truth* — an Information Card whose content is required for successful artifact containment. These are the clues agents must find to complete the Case File safely.
+> * *Packet* — a delayed information return from a research request, police records pull, lab analysis, or similar. Packets arrive at a future shift, not immediately.
+> * *Relic Milestone* — a keyed event on the shift row representing what the uncontained artifact does as time passes.
+> * *Organization* — an external reactive pressure group (police, rival faction, media, etc.) tracked as a countdown row on the Operations Board.
 
 If you can explain your case only as a linear plot, it is not ready. If you can explain it as a network of opportunities and pressures, it is.
 
@@ -210,7 +217,7 @@ The case must remain solvable even when the agents approach it in the wrong orde
 
 Use the following hard rules:
 
-. Every *Containment Truth* must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* (see <<hq-safety-valve>>).
+. Every *Containment Truth* must be available from at least *two field sources* (any combination of Locations and NPCs) plus an *HQ fallback* — meaning the Wayfinder Codex or Occult Lab should be able to surface the clue via a Lore (WIT) Difficulty 2 roll if both field sources fail (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]).
 . No single Location may be mandatory for forward motion.
 . Every failed or partial scene must still generate movement — a failed roll at a Location should produce information, pressure, or a new route, not silence.
 . At least one accessible Location should remain visible at the start of each shift.
@@ -292,17 +299,20 @@ The Operations Board is an operational tool, not a scoreboard. Players see the s
 
 == NPC Motivation Design
 
-Every significant NPC gets an *NPC Card* with the following fields, matching the NPC Cards described in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+Every significant NPC gets an *NPC Card* with the following fields, matching the NPC Cards described in xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File].
 
 [%header,cols="1,4"]
 |===
 | Field | Design Note
 
 | *Name* | The NPC's name and a one-line description (role, age, distinguishing feature).
+| *Tags* | Classification tags for the NPC type: Witness, Operative, Civilian, Cultist, Authority, Specialist. Tags inform how the DA plays them and how agents can approach them. An NPC may have multiple tags (e.g., Witness + Authority). Tags are not hidden from players.
 | *Organization* | Affiliated organization (O# shorthand), faction, or independent.
+| *Disposition* | Starting attitude toward the agents: Hostile / Wary / Neutral / Cooperative. This is the NPC's default at first contact. Disposition can shift based on player actions — the DA updates this on the card.
 | *Secret* | Something the NPC is hiding from the agents. Not necessarily sinister — a witness might be hiding that they trespassed, not that they're a cultist. The secret creates the reason they don't just tell the agents everything at the start.
 | *Goal* | What the NPC is actively trying to accomplish right now. Not a background motivation — a current action. They are doing something during this case.
 | *Artifact Connection* | How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Corruption consequence (nightmares, strange certainty about things they can't know).
+| *Corruption Exposure* | How much Corruption the NPC has accumulated from artifact proximity. This is tracked separately from any PC Corruption. Exposed NPCs may exhibit behavioral anomalies that serve as clues (obsession, displaced certainty, sleep disruption, physical symptoms). Note current exposure level and observable symptoms.
 | *Starting Knowledge* | Information IDs (I#) the NPC knows at case start. A police detective knows the crime scene details (I1). A museum curator knows the artifact's provenance (I3). Starting knowledge determines what the NPC can share from the first encounter.
 | *Gained Knowledge* | Information the NPC learns at specific organization milestones. Write these as milestone triggers: "At O2M2: knows Compact handler name (I7)." Gained knowledge makes NPCs feel like active participants in a moving case, not static dispensers.
 | *Locations* | Where they can be found (L# or location name). NPCs may appear at multiple Locations.
@@ -318,16 +328,16 @@ Ask: *If the agents were not present, what would this NPC do?* If the answer is 
 
 == Supernatural Entity Behavior
 
-Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates:
+Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates. Full stat blocks for each entity type appear in xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]; the taxonomy below defines how they *behave*, not their stats. All entity types listed here correspond to named entries in Ch 19.
 
 [%header,cols="1,4"]
 |===
 | Entity Type | Behavior Pattern
 
-| *Echoing Remnant* | Acts on memory, not will. Repeats actions associated with its final emotional state. An Echoing Remnant from a violent event will reenact something about that event — not attack intelligently. Agents who understand the echo can sometimes avoid it entirely.
-| *Shard Construct* | Single-directive: protect the artifact. No curiosity, no self-preservation beyond mission, no social engagement. Cannot be persuaded or manipulated. Can be outmaneuvered (if you aren't between the Construct and the artifact, it doesn't care about you).
-| *Bound Entity* | Has a will, has a history, has something it wants. Bound Entities can be communicated with through Lore and Psychoanalyze (not Manipulate — they see through human social mechanics). They respond to truth, to acknowledgment of what happened to them. They can be bargained with.
-| *Manifest Presence* | A high-tier supernatural intrusion: an entity that has begun to impose its logic on local reality. Does not fight — it *redefines the situation*. Agents trying to act normally in its presence find that normality is no longer available. These entities are solved through removing their anchor (the artifact) or performing a containment ritual, not fought.
+| *Echoing Remnant* | Acts on memory, not will. Repeats actions associated with its final emotional state — the last dominant feeling at the moment of binding. An Echoing Remnant from a violent event will reenact something about that event — not attack intelligently. Agents who understand the echo pattern (Lore (WIT) Difficulty 2 to identify it) can sometimes avoid it entirely by not replicating the trigger conditions.
+| *Shard Construct* | Single-directive: protect the artifact. No curiosity, no self-preservation beyond mission, no social engagement. Cannot be persuaded or manipulated. Can be outmaneuvered — if you aren't between the Construct and the artifact, it does not care about you. *Dissolution condition:* remove the artifact it is bound to from its location.
+| *Bound Entity* | Has a will, a history, and something it wants. Bound Entities can be communicated with through Lore (WIT) and Psychoanalyze (EMP) — not Manipulate (they see through human social mechanics). They respond to truth and to acknowledgment of what happened to them. They can be bargained with. *Dissolution condition:* fulfil or formally witness the entity's unresolved purpose.
+| *Manifest Presence* | A high-tier supernatural intrusion: an entity that has begun to impose its logic on local reality. Does not fight — it *redefines the situation*. Agents trying to act normally in its presence find that normality is no longer available. *Dissolution condition:* remove its anchor (the artifact) or perform a complete Banishment ritual (Ch 11). These entities are solved through containment, not combat.
 |===
 
 ---
@@ -414,13 +424,13 @@ Use xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containmen
 
 ****
 .A Note on Containment Rituals
-Containment rituals are intentionally unstandardized.
+Containment rituals are part of the core artifact-handling system (see xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]).
 The Covenant's centuries of experience have produced one consistent finding: no two artifacts respond to the same procedure.
 Some require elaborate multi-day ceremonies with precise geometric arrangements and chanted invocations.
 Others are neutralized by placing them in a lead-lined box, singing a specific lullaby, or — in one documented case — reading aloud from a telephone directory while the artifact sits in a bowl of salt water.
 
 When designing containment rituals for your Case Files, let the artifact's origin and personality dictate the process.
-The base mechanics (Lore rolls, Difficulty modifiers, Decay advancement) are provided in xref:chapters/11-artifacts.adoc#containment-rituals[Chapter 11 — Artifacts].
+The base mechanics (Lore (WIT) rolls, Difficulty modifiers, Decay advancement) are provided in xref:chapters/11-artifacts.adoc#chapter-artifacts[Chapter 11 — Artifacts].
 Everything else is yours to invent.
 The stranger and more specific the ritual, the better.
 Agents should feel like they're solving a puzzle unique to each artifact, not following a standard operating procedure.
@@ -448,8 +458,11 @@ Containment cases benefit from pressure tracks with *loss conditions linked to e
 
 == Cross-References
 
-* Case File structure (shifts, scenes, Organizations, Operations Board, packets): xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
-* Artifact properties and Tiers: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
-* Rival faction behavior and agendas: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
-* Entity stat blocks and Fear ratings: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
-* Corruption consequences: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (artifact emissions, ritual pushing costs), Fear Check rules, Broken state — all relevant to entity encounters and artifact handling in sessions
+* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Tiers, Containment Profiles, Decay track, Ritual procedure, Activation action cost, Division Instrument interactions
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — HQ fallback for clue delivery (Occult Lab, Microfiche Archive), DP awards from Case File resolution, Threat Meter triggers
+* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief questions, Dark Secret exposure consequences, session definition
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Full Operations Board structure (shifts, Organizations, relic milestones, Locations, NPC Cards, Information Cards, packets, Between Case Files)
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior tables, rival cell tactics, Named Threat stat profiles
+* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Stat blocks for all four entity types (Echoing Remnant, Shard Construct, Bound Entity, Manifest Presence), Fear ratings, dissolution conditions
+* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of a complete Operations Board, including Organizations, relic milestones, NPC Cards, and Information Cards

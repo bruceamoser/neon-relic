@@ -154,7 +154,7 @@ _Distribution: Director of Agents Materials — Do Not Distribute to Players_
 
 image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwidth=100%]
 
-include::chapters/14-gm-guidance.adoc[leveloffset=+1]
+include::chapters/14-da-guidance.adoc[leveloffset=+1]
 
 include::chapters/15-case-file.adoc[leveloffset=+1]
 
