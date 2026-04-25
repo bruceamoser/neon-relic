@@ -273,8 +273,8 @@ The *pursuing vehicle* wins by moving to or holding position 1–2.
 
 Each round of a chase, both drivers make a roll:
 
-* *Tech (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers with vehicles under pressure.
-* *Evasion (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward.
+* *Tech (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers with vehicles under pressure. Use this for all standard chase rolls.
+* *Tech (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward. The DA may call for AGI + Tech instead of WIT + Tech when a maneuver is more reflexive than tactical.
 
 Both sides roll simultaneously. The side with more successes moves the Contact Track one position in their favor. Ties: no position change.
 

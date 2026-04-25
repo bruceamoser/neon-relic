@@ -304,12 +304,12 @@ When one side is fleeing and the other is pursuing, use the following chase rule
 A chase is divided into *chase rounds*. Each round, both the fleeing and pursuing party roll their relevant attribute + skill:
 
 * *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
-* *By vehicle:* Agility + Tech (operating the vehicle) — full vehicle rules are forthcoming (#21)
+* *By vehicle:* Wits + Tech (see xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Vehicle Chase Rules] for full vehicle chase procedure, speed modifiers, and maneuvers)
 
 === Chase Outcome Per Round
 
 * Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing).
-* Track relative distance on a simple 5-step track: *Contact → Near → Far → Very Far → Escaped*.
+* Track relative distance on a 5-step track: *Contact → Following → Closing → Widening → Escaped*.
 * Start at Contact. Fleeing party wins a round → move one step toward Escaped. Pursuing party wins → move one step toward Contact.
 
 === Escape and Recapture
@@ -317,7 +317,7 @@ A chase is divided into *chase rounds*. Each round, both the fleeing and pursuin
 * The fleeing party *escapes* when they reach the Escaped position.
 * During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
 * If the pursuing party reaches Contact: normal combat resumes.
-* *Hiding:* If the fleeing party is at Far or Very Far and succeeds on a Sneak roll (Difficulty 2), they may break the chase entirely without reaching Escaped — they simply vanish into the environment.
+* *Hiding:* If the fleeing party is at Widening and succeeds on a Sneak roll (Difficulty 2), they may break the chase entirely without reaching Escaped — they simply vanish into the environment.
 
 ---
 

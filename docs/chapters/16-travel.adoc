@@ -157,9 +157,11 @@ Once a tail is confirmed, the driver can attempt to lose it. This is a *Chase se
 
 Three options, each requiring one skill roll:
 
-. *Outrun:* AGI (on foot) or WIT (driving). Difficulty 2. Success = tail loses visual. Failure = they stay on you, and the leg's Road Event is escalated by one (worsening conditions, additional exposure).
+. *Outrun:* WIT + Tech (driving away) or AGI + Endure (on foot). Difficulty 2. Success = tail loses visual. Failure = they stay on you, and the leg's Road Event is escalated by one (worsening conditions, additional exposure).
 . *Blend In:* AGI (Sneak) or WIT (Investigate, to find a crowd). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
 . *Double Back / Trap:* WIT (Investigate). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
+
+> *Abbreviated vs. full chase:* The three options above are a streamlined resolution for travel-context tails. For a tactical vehicle chase during a Case File scene or combat, use the full Vehicle Chase Rules (xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Equipment → Vehicle Chase Rules]). The primary skill for vehicle chases is always *WIT + Tech*.
 
 *On failure:* The tail remains. The team may try again next shift if the route continues. If the tail stays through arrival, the followers learn where the team is going.
 
