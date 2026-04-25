@@ -1,6 +1,8 @@
 [#chapter-advancement]
 = Advancement, Talents, and Dark Secrets
 
+This chapter covers three connected systems: *Dark Secrets* (character hooks that generate XP when they complicate the mission), *Advancement* (the per-session XP debrief and how XP is spent on skills and talents), and *Talents* (General, Division, and Background abilities). Each agent has one Dark Secret and one Background Talent from creation; additional General and Division Talents are purchased with XP during play.
+
 == Dark Secrets
 
 A *Dark Secret* is a specific fact from your character's past — something true, hidden, and consequential. It is not a personality flaw or a general backstory. It names something: an event, a decision, a relationship that *someone wants to remain buried*.
@@ -11,6 +13,16 @@ Dark Secrets serve two purposes in the game:
 . *XP question.* At the end of each session, the DA asks: *"Did your Dark Secret complicate the mission?"* If yes: +1 XP. That is the entirety of the mechanical system.
 
 There are no rules for voluntary activation, mandatory exposure, or faction consequences. If your secret surfaces, play it. Whether it surfaced because you chose to bring it in or because the DA did, the XP question applies the same way. Everything else is fiction.
+
+=== Faction Consequences
+
+Some Dark Secrets name a connection to a rival faction or outside organization (*The Competing Employer*, *The Loyalty Debt*, etc.). When a secret of this type is exposed during play — to the team, to the Covenant, or to the faction itself — the DA uses the following as a default consequence framework:
+
+* *Exposed to the team:* No mechanical consequence. The team chooses how to respond in fiction. The XP trigger still applies.
+* *Exposed to the Covenant:* The cell loses *−1 Standing* immediately. If the agent is found to have actively aided a rival faction, the loss is *−3 Standing* and the agent is placed on formal review (one Case File of reduced Equipping Phase access: CL reduced by 1 for that Case File only).
+* *Exposed to the rival faction:* The faction gains a leverage hold on the agent. Once per arc, the DA may present the agent with a task from the faction (not a mandatory action — but refusal has narrative consequences the DA controls).
+
+These consequences apply only when the secret is actually exposed in play — not when the player mentions it at the table. If it never surfaces, it never triggers. The DA should use exposure sparingly and always in service of the narrative.
 
 > *Choosing a secret:* Pick one from your Division's example list below, or write your own. The only requirement: it must be specific enough that the DA can look at it and ask "what happens if the investigation goes *here*?"
 
@@ -63,7 +75,7 @@ There are no rules for voluntary activation, mandatory exposure, or faction cons
 
 === Stack Dark Secrets (Keep — Logistics Department)
 
-Use this list only if the character belongs to *The Keep* and selected *Stack (Logistics)* as their department during character creation.
+Use this list only if the character belongs to *The Keep* and selected *Stack (Logistics)* as their department during character creation. *Stack characters use this table instead of the general Keep Dark Secrets table* — not in addition to it. This table reflects the specific nature of logistics-channel secrets and is calibrated to the same narrative weight as the other three division tables.
 
 [%header,cols="2,5"]
 |===
@@ -79,15 +91,15 @@ Use this list only if the character belongs to *The Keep* and selected *Stack (L
 ---
 == Advancement
 
-Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* through a structured debriefing. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
+Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* — not at the end of a Case File. A session corresponds to one real-world play period (typically 2–4 hours). XP is awarded through a structured *Debriefing* that the DA runs immediately at session end. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
 [%header,cols="^1,5"]
 |===
 | # | Debriefing Question
 
-| 1 | Did you participate in the session? _(Automatic +1 XP)_
+| 1 | Did you participate in the session? _(Automatic +1 XP — this is always yes.)_
 | 2 | Did you risk your life for a fellow Covenant member or an innocent civilian?
-| 3 | Did your Dark Secret complicate the mission, or did you heavily interact with your Anchor?
+| 3 | Did your Dark Secret complicate the mission, or did you heavily interact with your *Anchor*? _(An Anchor is a significant personal relationship or obligation from the character's life outside the Covenant — a family member, a close friend, a mentor. It is defined at character creation. See xref:chapters/03-character-creation.adoc#chapter-character-creation[Ch 3 — Character Creation].)_
 | 4 | Did the team successfully secure or contain an Occult Artifact?
 | 5 | Did you learn something new and significant about the supernatural threat or rival factions?
 |===
@@ -102,7 +114,7 @@ Experience Points (XP) are the game's *only* advancement currency. They are awar
 | Purchase a new Talent | 6 XP | General, Division, or Wing/Paradigm/Department Talent
 |===
 
-> *Note:* Clearance Level is no longer purchased directly with XP. To increase CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). See the General Talents list below.
+> *Note on CL and Standing:* Clearance Level is no longer purchased directly with XP. To increase a character's *personal* CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). This raises the individual agent's permanent CL independent of team Standing. Separately, team Standing (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]) grants the *entire cell* a temporary equipping-phase cap (CL 3 at Standing 5, CL 4 at Standing 10) — but this is a cell-wide access floor, not a personal CL increase. If an agent's personal CL is already higher than the cell's Standing-granted floor, use their personal CL. If lower, use whichever is higher during the Equipping Phase only.
 
 === Worked Example: Session Debrief and Talent Purchase
 
@@ -148,25 +160,27 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 This is the *canonical General Talents list* used at character creation and during XP advancement. General Talents use the same concise format as the rest of the manuscript's talent lists: talent name plus effect text, with tags only when mechanically relevant.
 
+> *Healing Tag and Stacking:* Talents with the _(Healing)_ tag can heal Corruption. Each tagged talent's trigger is independent, but a character may heal a maximum of *3 Corruption per session* from Healing-tagged General Talents combined — regardless of how many they possess or how many triggers fire. This cap does not apply to Corruption healed by HQ facilities, the Warden's Bracer, or Division talents.
+
 [%header,cols="2,4"]
 |===
 | Talent | Effect
 
-| *Street Medic* | Restore 2 physical Attribute points instead of 1 when successfully using Heal.
-| *Cathartic Release* _(Healing)_ | Once per session, dedicate a moment to breaking down, screaming, or venting. Heal 1 Corruption.
+| *Street Medic* | Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).
+| *Cathartic Release* _(Healing)_ | Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.
 | *Hair-Trigger* | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
-| *Paranormal Intuition* | When entering a room, roll Wits (Investigate). On success, the DA must tell you if a supernatural entity has been here in the last 24 hours.
+| *Paranormal Intuition* | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
 | *Heavy Packer* | Your carry capacity increases to *Strength × 3* Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3).
-| *Skeptic's Shield* | Once per session, outright ignore a minor supernatural effect by rigidly refusing to acknowledge the impossible.
-| *Night Owl* | Ignore all penalties from sleep deprivation. Operate perfectly in the dark.
-| *Chain Smoker* _(Healing)_ | Consume a scarce resource (cigarette, specific 80s junk food) during stress. Heal 1 Corruption.
-| *Analog Junkie* | Gain +2 Gear dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche).
-| *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single critical roll.
-| *Desensitized* | Gain +1 bonus die to all Empathy rolls when dealing with horrific or gruesome crime scenes.
-| *Lucky Coin* | Once per session, ignore a 1 rolled on a Gear die, preventing item degradation.
-| *Iron Will* _(Healing)_ | Land the killing blow or banish a supernatural threat? The rush of victory heals 1 Corruption.
+| *Skeptic's Shield* | Once per session, when exposed to a *minor supernatural effect* — defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration — you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects.
+| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 die).
+| *Chain Smoker* _(Healing)_ | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory.
+| *Analog Junkie* | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases.
+| *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.
+| *Desensitized* | Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating *horrific or gruesome* scenes (DA-designated — typically scenes involving mass casualties, mutilation, or sustained supernatural terror). Does not apply to standard combat or single-casualty crime scenes.
+| *Lucky Coin* | Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll.
+| *Iron Will* _(Healing)_ | When you *personally* deliver the killing blow to a Named Threat or banish a supernatural entity (using the Banishment ritual in full), heal 1 Corruption. A "killing blow" requires your attack to reduce the target to 0 Strength. Banishment must be a completed ritual, not just an attack on an entity.
 | *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
-| *Flee the Scene* | Gain +2 bonus dice to Agility when rolling explicitly to escape a conflict.
+| *Flee the Scene* | Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.
 | *Requisition Authority* _(Repeatable)_ | Increase your *personal* Clearance Level by 1 (maximum CL 5). May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
 |===
 
@@ -176,11 +190,13 @@ This is the *canonical General Talents list* used at character creation and duri
 
 Everyone was someone else before joining The Covenant. Your background offers a unique perspective on how you interact with the world around you. You may select a background from the list, or work with your Director to create something unprecedented.
 
-Each Background Talent grants *+1 to a specific skill* and reflects the habits and expertise carried over from your agent's civilian life. Background Talents have no Corruption cost and no activation requirement — the bonus is always active.
+Each Background Talent grants *+1 bonus die on rolls using a specific skill*. This is a bonus die added to the dice pool — it is not a permanent increase to the skill's rating. The skill's rating (1–5) does not change; you simply roll one additional d6 on those rolls. Background Talents have no Corruption cost and no activation requirement — the bonus is always active.
+
+> *Design Note — Skill Distribution:* The current Background Talent list skews heavily toward Investigate, Lore, and Manipulate backgrounds. This reflects the game's investigation focus but may limit variety for combat-oriented characters. Players who want to reinforce Firearms, Brawl, or Force may find fewer natural-fit options. DAs are encouraged to approve custom backgrounds (one background, one skill, one narrative concept) when the list doesn't match the character concept.
 
 [%header,cols="2,1,4"]
 |===
-| Background | Skill Bonus | Description
+| Background | Bonus Die Skill | Description
 
 | *Accountant* | +1 Investigate | You spent years tracking numbers, discrepancies, and hidden financial patterns. Few irregularities escape your trained eye.
 | *Actor* | +1 Manipulate | You are comfortable becoming someone else entirely, adopting personas and convincing others of your performance.
@@ -248,3 +264,14 @@ Each Background Talent grants *+1 to a specific skill* and reflects the habits a
 | *Woodworker* | +1 Force | Years of manual craftsmanship have strengthened your hands and arms.
 | *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
 |===
+
+---
+
+== Cross-References
+
+* *xref:chapters/03-character-creation.adoc#chapter-character-creation[Ch 3 — Character Creation]* — Anchor definition (referenced in Debrief Q3), selecting Dark Secret and Background Talent at creation
+* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Talents (Wayfinder, Recovery, Keep; purchased with XP after creation), Wing/Paradigm/Department Talents
+* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Clearance Level definitions, CL 1–5 item access, Requisition Phase
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Covenant Standing (cell-level CL access floors), DP awards (separate from XP), Faraday Cage and Corruption healing
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Case File Aftermath structure, Debrief timing relative to Case File resolution
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Faction consequence triggers for Dark Secrets with outside-organization connections
