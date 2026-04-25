@@ -410,6 +410,6 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 | *Shield of the Covenant* | +1 Corruption | When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.
 | *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
 | *Medical Training* | — | Spend a Slow Action and make a *Heal (WIT) roll at Difficulty 2* before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls — those are separate emergency Heal actions.
-| *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.
+| *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (Wits) roll regarding the history of a contained artifact.
 | *The Confessor* _(Healing)_ | — | Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.
 |===

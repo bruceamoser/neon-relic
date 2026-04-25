@@ -646,8 +646,8 @@ Special Abilities:
   mechanically dangerous but provide atmosphere.
 
   Artifact Sense (Passive) — The Collector automatically detects active artifacts
-  within Short range (1–2 zones). They can identify artifact tier and risk
-  category by spending a Slow Action and rolling Lore (Difficulty 1). This
+  within Short range (1–2 zones). They can identify artifact tier and prior
+  activation history by spending a Slow Action and rolling Lore (Difficulty 1). This
   ability does not cost Corruption — it's a consequence of prolonged exposure,
   not an activated power.
 
@@ -709,7 +709,7 @@ Corrupted NPCs are not villains in the traditional sense. They are *victims*. Co
 Detecting a Corrupted NPC in play:
 
 * *Wits (Investigate) Difficulty 2:* Notice that the NPC's behavior is inconsistent with their established pattern.
-* *Wits (Lore) Difficulty 3:* Identify the specific artifact exerting influence based on the NPC's behavioral distortions.
+* *Lore (Wits) Difficulty 3:* Identify the specific artifact exerting influence based on the NPC's behavioral distortions.
 * *Empathy (Psychoanalyze) Difficulty 2:* Confirm the NPC is compromised; learn how long it has been going on.
 
 > *Design note:* Corrupted NPCs are the game's most human horror. The artifacts don't just corrupt agents — they reach out through anyone who gets close to them. The party's best informant may already be Stage 1. The Covenant archivist they trusted for six Case Files may have been Stage 2 for months.

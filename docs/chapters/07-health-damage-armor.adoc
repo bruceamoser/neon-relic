@@ -164,7 +164,7 @@ Roll when Broken by *Strength or Agility* damage.
 | 15 | *Sprained Wrist* | Cannot use two-handed weapons. −1 die on all AGI rolls. | Splint + 1 downtime phase.
 | 16 | *Grazed* | Strength returns to 1. Scar remains (cosmetic). | No treatment needed.
 | 21 | *Concussion* | Wits reduced by 1 until treated. Disorientation: must succeed on Wits roll (Diff 1) to use Slow Actions. | Heal roll + 24 hours rest.
-| 22 | *Shoulder Dislocation* | Dominant arm useless. −2 dice on all STR rolls. | Heal check (Difficulty 2); 1 downtime phase.
+| 22 | *Shoulder Dislocation* | Dominant arm useless. −2 dice on all STR rolls. | Heal roll (Difficulty 2); 1 downtime phase.
 | 23 | *Torn Knee* | Movement costs double (2 Fast Actions per zone instead of 1). | Surgery (Keep facility) + 1 downtime phase.
 | 24 | *Ringing Ears* | −1 die on all WIT-based rolls for rest of session. | No treatment needed — fades by next session.
 | 25 | *Fractured Hand* | −2 dice on all AGI rolls. Cannot wield weapons requiring grip. | Splint + 2 downtime phases.
@@ -177,7 +177,7 @@ Roll when Broken by *Strength or Agility* damage.
 | 36 | *Blinding Strike* | One eye damaged: −1 die on all ranged attack and Investigate rolls permanently. Insight: *+1 die on Empathy rolls* (you understand fragility now). | Cannot be fully healed; monocle/patch is acquired (CL 1).
 | 41 | *Severed Tendon* | Permanently −1 Agility. | Keep surgical facility restores −1 penalty only.
 | 42 | *Trauma Shock* | Frozen for 1d6 rounds. No actions possible. Strength returns to 1 after unfreezing. | Recovers on its own; stimulants (Fast Action) end it immediately.
-| 43 | *Broken Vertebra* | Agility reduced by 2. Risk of paralysis: any further STR/AGI damage to 0 triggers death check without rolling. | Keep surgical facility (requires 2 downtime phases, Difficulty 3 Heal check).
+| 43 | *Broken Vertebra* | Agility reduced by 2. Risk of paralysis: any further STR/AGI damage to 0 triggers death check without rolling. | Keep surgical facility (requires 2 downtime phases, Difficulty 3 Heal roll).
 | 44 | *Organ Damage* | Strength maximum reduced by 2 permanently. | Keep surgical facility can restore 1 point.
 | 45 | *Severed Ear* | Permanent −1 die on Investigate rolls. Insight: *+1 die on Empathy rolls* (you listen more carefully now). | Cosmetic only; scar remains.
 | 46 | *Gutted* † | Bleeding: lose 1 Strength per round. Death check after 3 rounds if untreated. Heal (Difficulty 3) stops bleeding. | Emergency surgery (Keep facility) required; 2 downtime phases.

@@ -73,7 +73,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 3
 | Secure Communications Room
 | Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm. A full-time archivist — never seen without reading glasses and cigarettes — maintains the stacks.
-| Permanent *+2 Gear bonus* to Wits (Lore) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
+| Permanent *+2 Gear bonus* to Lore (Wits) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
 
 | *The Occult Laboratory*
 | 3
@@ -147,7 +147,7 @@ Personnel are not combatants. If the HQ is directly attacked, they flee or hide 
 | *Underground Field Medic*
 | 2
 | A struck-off physician — too many questions asked, too many bullet wounds treated no-questions-asked. Brilliant in a crisis.
-| During downtime, one character may be treated for a non-fatal Critical Injury (removes the injury without Attribute loss if a Heal roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
+| During downtime, one character may be treated for a non-lethal Critical Injury (removes the injury without Attribute loss if a Heal roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
 
 | *Black-Market Fence*
 | 3

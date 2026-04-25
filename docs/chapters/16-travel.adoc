@@ -196,7 +196,7 @@ The 1980s travel experience has no shortcuts and no digital assists. Consider:
 
 == Travel and Pressure
 
-Travel should interact with the case board.
+Travel should interact with the Operations Board.
 
 Use travel shifts to:
 

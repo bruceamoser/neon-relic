@@ -493,7 +493,7 @@ A complete Case File consists of eight documents. Together they form the *case f
 | 6
 | *Relic Sheet*
 | DA only
-| Full artifact profile: tier, category, activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
+| Full artifact profile: tier, activation condition, mechanical effects, fracture table, containment profile, and Containment Truth checklist.
 
 | 7
 | *Location Pages* (one per Location)

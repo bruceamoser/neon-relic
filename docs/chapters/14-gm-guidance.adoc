@@ -55,9 +55,9 @@ Ask each player: *Why is your character Covenant?* The answer should involve som
 
 ---
 
-== Case Board Authoring
+== Operations Board Authoring
 
-The new Case File structure is built as a *case board*: Locations, NPC Cards, Information Cards, organizations, relic milestones, and delayed returns tracked on the Operations Board.
+The new Case File structure is built around an *Operations Board*: Locations, NPC Cards, Information Cards, organizations, relic milestones, and delayed returns tracked on the Operations Board.
 
 If you can explain your case only as a linear plot, it is not ready. If you can explain it as a network of opportunities and pressures, it is.
 
@@ -292,17 +292,20 @@ The Operations Board is an operational tool, not a scoreboard. Players see the s
 
 == NPC Motivation Design
 
-Every significant NPC gets an *NPC Card* with the following fields. The first three define who the NPC is; the rest define how they function in the case.
+Every significant NPC gets an *NPC Card* with the following fields, matching the NPC Cards described in xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 
 [%header,cols="1,4"]
 |===
 | Field | Design Note
 
+| *Name* | The NPC's name and a one-line description (role, age, distinguishing feature).
+| *Organization* | Affiliated organization (O# shorthand), faction, or independent.
 | *Secret* | Something the NPC is hiding from the agents. Not necessarily sinister — a witness might be hiding that they trespassed, not that they're a cultist. The secret creates the reason they don't just tell the agents everything at the start.
 | *Goal* | What the NPC is actively trying to accomplish right now. Not a background motivation — a current action. They are doing something during this case.
 | *Artifact Connection* | How did this NPC encounter the case's artifact, and what effect has that proximity had on them? Even tangential NPCs should have a small Corruption consequence (nightmares, strange certainty about things they can't know).
 | *Starting Knowledge* | Information IDs (I#) the NPC knows at case start. A police detective knows the crime scene details (I1). A museum curator knows the artifact's provenance (I3). Starting knowledge determines what the NPC can share from the first encounter.
 | *Gained Knowledge* | Information the NPC learns at specific organization milestones. Write these as milestone triggers: "At O2M2: knows Compact handler name (I7)." Gained knowledge makes NPCs feel like active participants in a moving case, not static dispensers.
+| *Locations* | Where they can be found (L# or location name). NPCs may appear at multiple Locations.
 | *Positive Result* | What happens when the agents engage the NPC successfully — Information IDs shared, introductions made, access granted. Write specific results so the DA reads from the card instead of improvising.
 | *Negative Result* | What happens when the encounter goes badly — organization advance on the Operations Board, tail placed, witness spooked, location access revoked. Negative results create consequences without requiring DA judgment calls.
 |===
