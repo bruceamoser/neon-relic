@@ -50,7 +50,7 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 === Actions that Shift Disposition Down (−1)
 
 * A failed Manipulate roll (the NPC sees through the attempt)
-* The NPC catches an agent in a lie (DA's judgment, or a failed opposed Investigate roll from the NPC)
+* The NPC detects an agent's deception (DA's judgment, or the NPC wins an opposed Psychoanalyze or Empathy roll against the agent's Manipulate — see NPC Social Defense below)
 * An agent makes a physical threat or veiled threat while the NPC's Disposition is 3+
 * A successful Psychoanalyze roll by the DA on behalf of the NPC (they read the agents — see NPC Social Defense below)
 * An agent reveals information that endangers the NPC or confirms they are a target
@@ -60,6 +60,26 @@ Disposition shifts up (toward Open) or down (toward Closed) based on agent actio
 * *Disposition 3 or higher:* The NPC will answer direct, low-risk questions truthfully (though not necessarily fully). No roll required for general cooperation. Sensitive asks, incriminating admissions, or requests against self-interest still call for a roll.
 * *Disposition 2:* The NPC requires a successful social roll to answer even basic questions. They will lie by default.
 * *Disposition 1:* The NPC is done with the scene. They must be brought back to 2 before any social rolls are possible. Physical containment is required for continued interrogation.
+
+=== Recovering from Disposition 1
+
+At Disposition 1, social rolls are impossible. The agents must take *non-roll actions* to restore openness before any roll can be attempted:
+
+* Voluntarily reveal information that demonstrates good faith (show them the agents are on the same side of something)
+* Show physical evidence that validates the NPC's position or confirms a shared threat
+* Remove a perceived threat (uncuff them, step back, send the intimidating agent away)
+* Make a concrete, verifiable concession — offer protection, return a possession, give them their phone back
+* Allow time to pass — at DA discretion, minutes to hours depending on how the scene ended
+
+These actions do not require rolls. The DA judges when the accumulated effort is sufficient to shift from 1 to 2. Do not rush it — a convincing recovery from Disposition 1 should feel earned.
+
+=== Disposition Between Scenes
+
+When agents re-encounter an NPC in a later scene, the DA sets a new starting Disposition informed by the previous interaction:
+
+* If the last scene ended positively (Disposition 3+), the NPC starts at their previous Disposition or one step lower (they've had time to reconsider what they shared).
+* If the last scene ended badly (Disposition 1–2), the NPC starts at 1 or 2 at DA discretion. Significant time passed, a changed situation, or a concrete show of good faith can allow a higher starting point.
+* If a *Closed source* consequence was applied, the NPC will not engage again this mission regardless of Disposition — the window is gone.
 
 === What Counts as a Roll-Free Question?
 
@@ -90,16 +110,19 @@ Used to deceive, persuade, bribe, leverage, or appeal to self-interest. Manipula
 
 * *On success:* NPC complies with the specific request, AND Disposition shifts +1 (they feel the interaction was productive, even if later they're not sure why).
 * *On failure:* Request denied. Disposition shifts −1. The NPC has clocked the attempt.
-* *On a pushed failure:* As above, but Disposition shifts −2. The NPC is now certain they are being worked, and they know by whom.
+* *On a pushed failure:* As above, but Disposition shifts −2 (instead of −1). The NPC is now certain they are being worked, and they know by whom. As with all pushed rolls, the agent also gains +1 Corruption (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]).
 
 === Command (Empathy)
 
 Used to assert authority, direct behavior under pressure, or coordinate. Command does not persuade — it *compels through confidence and force of presence*. It works when the NPC is uncertain what to do, when the agents represent a legitimate authority, or when the situation is dangerous enough that someone taking charge feels like relief.
 
 * *Command normally does not create cooperation at Disposition 2.* At *Disposition 2*, it only works for immediate emergency direction when the agents clearly have situational authority: "Get down," "Move away from the door," "Stay behind me." It does not extract information or create trust.
-* *Command does not work at Disposition 1.* An NPC who is fully closed will not accept authority from the agents at all.
+* *Command does not work at Disposition 1.* An NPC who is fully closed will not accept authority from the agents at all. If an agent attempts Command at Disposition 1, the DA should inform them before the dice are rolled — no action is spent, and no roll is made.
+* *At Disposition 2*, emergency commands (immediate physical directives only — "Get down," "Step back," "Don't call anyone") are resolved at Difficulty 2. Command at Disposition 2 cannot extract information or build cooperation.
 * *On success:* NPC complies fully for the immediate scene. No Disposition shift.
 * *On failure:* NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the DA's discretion.
+
+*Opposed roll:* If the NPC is actively arguing or bargaining their way out of compliance (rather than just passively refusing), the DA may call for an opposed roll: Command (EMP) vs the NPC's Manipulate (EMP). On a tie, the agent wins — see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution] for opposed roll tie-breaking rules. On NPC win, the agent's authority is undermined: no Disposition shift, but the NPC gains visible confidence and may escalate.
 
 === Psychoanalyze (Empathy)
 
@@ -111,13 +134,16 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 * On success: DA must reveal one true thing about this NPC's psychological state, motivation, or deception. This grants two benefits on the agent's next social roll (Manipulate or Command) against the same NPC in the same scene:
 ** +1 bonus die
 ** The effective Difficulty of the follow-up roll is reduced by 1 (minimum Difficulty 1)
-* These benefits expire if not used in the same scene or if the NPC's Disposition changes before the follow-up roll.
+* These benefits expire if not used in the same scene, or if the NPC's Disposition *drops* before the follow-up roll. A Disposition increase (from evidence shown, a service performed, etc.) does not invalidate Reading benefits — the agent's insight remains relevant as the NPC warms up.
+
+> *Stunt interaction:* Extra successes on a Reading roll become stunt points as normal (see <<stunts-in-social-conflict,Stunts in Social Conflict>> below). Spending the *Pressure Point* stunt on a Reading roll causes the DA to reveal an additional detail beyond the standard Reading reveal. Spending *Full Read* (2 SP) grants its scene-long benefits (+2 dice, Difficulty 1) in place of the standard single-use benefits — Full Read is strictly superior and replaces them.
 
 > *Example:* An agent faces a Hostile NPC (Disposition 2, Difficulty 3 for social rolls). The agent first uses Psychoanalyze (Reading) to understand the NPC. On success, the follow-up Manipulate roll is made at Difficulty 2 (reduced from 3) with +1 bonus die. This means a roll generating 3+ successes now produces stunt points, compared to needing 4+ successes without the Psychoanalyze step.
 
 *Stabilizing:* You are treating an NPC's fear, trauma, or distress to make them more communicative.
 
-* On success: Disposition shifts +2 (the NPC feels seen and safe). Difficulty equals the source of distress (supernatural encounter: Difficulty 3; mundane fear: Difficulty 1).
+* On success: Disposition shifts +2 (the NPC feels seen and safe). Stabilizing cannot raise Disposition above 4 (Cautious) — reaching Disposition 5 (Open) requires the NPC to genuinely want to help, which comes from sustained positive interaction, not a single calming roll.
+* Difficulty by distress source: supernatural trauma (entity exposure, artifact terror) = Difficulty 3; mundane fear (physical danger, intimidation) = Difficulty 1; complex emotional distress (grief, moral conflict, deeply held belief) = Difficulty 2.
 * On failure: Disposition shifts −1 (you probed and made it worse).
 
 ---
@@ -127,11 +153,11 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The DA may call for:
 
 * *Opposed Psychoanalyze roll:* DA rolls on behalf of the NPC. Use this when the NPC is actively reading the agents rather than merely resisting. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
-* *Lie detection:* The DA may roll NPC Wits (no skill) against an agent's Manipulate roll. On NPC success, the deception is detected and Disposition shifts −1 immediately.
+* *Lie detection:* When an NPC is actively trying to catch an agent in a deception, the DA rolls opposed: NPC Empathy + Psychoanalyze (if the NPC is trained — intelligence operatives, therapists, con artists, experienced detectives) *or* NPC Empathy with no skill dice (untrained NPCs) vs the agent's Manipulate roll. On NPC win, the deception is detected and Disposition shifts −1 immediately. This aligns with the opposed roll pairing in xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution] (Manipulate vs Psychoanalyze).
 
-If the DA calls for active social defense during a Manipulate attempt, treat it as a *combined test*: the agent must meet the Disposition-based Difficulty *and* beat the NPC's opposing roll.
+If the DA calls for active social defense during a Manipulate attempt, treat it as a *combined test*: the agent must meet the Disposition-based Difficulty *and* beat the NPC's opposing roll. Count the agent's total successes against both thresholds simultaneously — the agent needs to meet the Difficulty number AND exceed the NPC's successes. Stunt points are successes in excess of whichever threshold is higher.
 
-These are at DA discretion, not every NPC has this capability. Social defense is for NPCs with relevant training: intelligence operatives, therapists, con artists, experienced detectives.
+These are at DA discretion, not every NPC has this capability. When building NPC cards for case files, add a *Social Defense* note if the NPC has active resistance capabilities. Suggested baseline: NPCs with social defense have Empathy 3+ and Psychoanalyze 2. Untrained NPCs use Empathy alone with no skill dice — they can feel the attempt but can't precisely identify it. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files] for NPC card format.
 
 ---
 
@@ -145,9 +171,9 @@ When a social scene ends badly (Disposition reaches 1, or the agents leave havin
 
 | *Closed source* | The NPC will not speak to the agents again this mission. The information they held may be inaccessible.
 | *Alert raised* | The NPC warns someone — their employer, their family, or *the Vantablack Compact*. Agents' activities are now known to a new party.
-| *Physical escalation* | The scene tips into violence. The NPC or their contacts move against the agents.
-| *Faction response* | A rival faction learns that the Covenant is investigating. Their own response begins accelerating.
-| *Trust erosion* | A Covenant contact or superior is told about the agents' approach. Standing within the Covenant takes a hit for the current case.
+| *Physical escalation* | The scene tips into violence. The NPC or their contacts move against the agents. If combat begins, see xref:chapters/05-combat.adoc#chapter-combat[Combat] for initiative and action economy. The NPC or their contacts typically act first — treat as a Surprise round if the agents didn't anticipate violence.
+| *Faction response* | A rival faction learns that the Covenant is investigating. Their own response begins accelerating. See xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions] for faction escalation mechanics.
+| *Trust erosion* | A Covenant contact or superior is told about the agents' approach. Standing within the Covenant takes a hit for the current case. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters] for Standing mechanics.
 |===
 
 ---
@@ -158,6 +184,8 @@ Social encounters with entities, artifacts, or cult members may cross into super
 
 * *Direct supernatural revelation during a Manipulate scene* (the NPC says something that cannot be explained naturally): Fear check, Fear Rating 1 or 2.
 * *Psychoanalyze roll on a contaminated NPC* (someone who has long-term artifact exposure): Roll Psychoanalyze as normal. On any failure, the agent picks up a psychic echo — immediate Fear check, Fear Rating 2. On success, the agent gets the information but gains +1 Corruption.
+
+> *Exception:* This is the only roll in Neon Relic where a *success* costs Corruption. Reading a contaminated mind means absorbing a fragment of what contaminated it. The information is accurate — but the contact is inherently dangerous. This cannot be mitigated by skill or luck. See also the cross-reference in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 
 See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for full Fear check rules.
 
@@ -171,7 +199,7 @@ See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption,
 
 *Round 1:* Agent Petra Vasquez attempts Psychoanalyze (Read) — she wants to understand what Elias actually believes before making any demands. The DA sets Difficulty 2: Elias is hostile, but reading him is easier than persuading him or getting him to volunteer anything.
 
-Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 4, 3, 2, 1 — one success.
+Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 6, 4, 3, 1 — two successes. Meets Difficulty 2 exactly — no extra successes, no stunt points. This reinforces the rule: stunts require exceeding the Difficulty, not merely meeting it.
 
 *DA reveals:* Elias genuinely believes the artifact protected his sister during a cancer diagnosis two years ago. He is not performing faith. He is terrified that if it leaves his possession, she will relapse. He is not lying about any of this.
 
@@ -185,17 +213,70 @@ Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. The DA sets Difficulty 2: Elia
 
 *Round 4:* Marcus now pushes for something *against Elias's interests*: the name of the fence who moved the relic. That would expose Elias to retaliation, so the DA calls for a Manipulate roll.
 
-Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 1 (Disposition 4, sensitive ask). Rolls: 6, 6, 5, 4, 2, 2, 1 — two successes.
+Note: Petra passed the social focal point to Marcus — this is a tag-team approach. Petra's Psychoanalyze Reading bonus (+1 die, −1 Difficulty) applied only to Petra's follow-up roll (she used it in Round 2 for Stabilizing). Marcus makes a fresh Manipulate roll at the current Disposition-based Difficulty. His Reading benefit comes from re-reading Elias himself (or trusting Petra's briefing — the DA should decide if a second Read is needed).
+
+Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 1 (Disposition 4, sensitive ask). Rolls: 6, 6, 5, 4, 2, 2, 1 — two successes. Two successes at Difficulty 1 = 1 extra success = 1 stunt point.
+
+Marcus spends the stunt point on *Bought Silence* (see xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills] for Manipulate stunts): Elias won't mention this conversation to anyone for at least 24 hours — enough time for the agents to move on Talvez before Elias has a chance to warn him.
 
 *Success:* Elias gives the name: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
 
-*Outcome:* The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target.
+*Outcome:* The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target. Spend stunt points on skill-specific effects to shape what success means.
+
+---
+
+---
+
+== Pushing Social Rolls
+
+All social rolls may be pushed per the standard push rules (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). Pushing always costs +1 Corruption, in addition to any Disposition penalties listed here. Push *before* knowing the outcome is final — the push replaces your non-6 dice.
+
+[%header,cols="2,3,3"]
+|===
+| Skill | Pushed Failure | Note
+
+| *Manipulate* | Disposition −2 (instead of −1). NPC now certain they are being worked. +1 Corruption. | Most punishing push in the social system.
+| *Command* | No Disposition shift. NPC recognizes desperation. They may become emboldened or dismissive (DA discretion). +1 Corruption. | No extra Disposition penalty because Command doesn't move Disposition on success either.
+| *Psychoanalyze (Reading)* | DA provides misleading information (agent projects their own fears). No Disposition shift. +1 Corruption. | Pushed Reading failure is narratively dangerous — the wrong read leads to wrong leverage.
+| *Psychoanalyze (Stabilizing)* | Disposition −2 (instead of −1). Agent pressed a raw nerve and made it significantly worse. +1 Corruption. | Match the severity of Manipulate pushed failure.
+|===
+
+---
+
+[[stunts-in-social-conflict]]
+== Stunts in Social Conflict
+
+Extra successes on social rolls become stunt points, as normal (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). These may be spent on the relevant skill's stunt list in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]:
+
+* *Manipulate stunts* (Bought Silence, Read the Room, Turned Asset) apply *in addition to* the automatic Disposition +1 shift from success.
+* *Command stunts* (Rally, Coordinated Action, Hold the Line) apply *in addition to* the NPC's compliance.
+* *Psychoanalyze stunts* (Pressure Point, Decompress, Full Read) apply *in addition to* Reading or Stabilizing effects.
+
+Stunt effects and Disposition effects are cumulative — they are separate outcomes of the same roll. Stunt points must be spent immediately (within the same action) or they are lost.
+
+---
+
+== Multiple Agents in Social Scenes
+
+The Helping rules from xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution] apply to social rolls. An ally present in the scene may add +1 die to another agent's social roll if they have the relevant skill or the DA accepts a narrative justification (silent moral support for Psychoanalyze, physical presence during Command, feeding intel for Manipulate).
+
+Only one agent should be the social focal point for a given NPC at a time. Other agents may:
+
+* Help (add +1 die to the focal agent's roll)
+* Wait and observe — a successful Psychoanalyze (Reading) roll by a watching agent can be shared verbally before the focal agent rolls, providing the Reading bonus
+* Attempt their own social rolls on subsequent actions
+
+Multiple simultaneous social attempts on the same NPC risk overwhelming them — at DA discretion, aggressive teamwork may impose a −1 Disposition penalty. Rotating the focal point mid-scene (handing off from one agent to another) is legitimate, but per-agent Reading bonuses do not transfer — only the agent who made the Reading roll benefits from it on their own follow-up roll.
 
 ---
 
 == Cross-References
 
-* Skills in context: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
+* Core dice mechanics, opposed rolls, pushing, and stunt points: xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution Mechanics]
+* Skills in context (skill stunt lists): xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
 * Fear checks during social scenes: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Using Manipulate stunts: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills] (Skill Stunts)
+* Combat transition on physical escalation: xref:chapters/05-combat.adoc#chapter-combat[Combat]
+* Rival faction responses: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
+* Covenant Standing (Trust erosion): xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
+* NPC card format: xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
 * NPC Faction relationships: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
