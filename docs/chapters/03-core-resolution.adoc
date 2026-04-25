@@ -9,7 +9,13 @@ Throughout this book, "once per session" means once per continuous play session 
 
 == The Anatomy of the Dice Pool
 
-The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
+The core philosophy of the Year Zero Engine is that *rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic*.
+
+> **When to roll — and when not to:** Both conditions must be true simultaneously. If the outcome is not genuinely uncertain, narrate success. If failure would produce no meaningful consequence (trying again is trivially available, the stakes are negligible), skip the roll. Rolling dice when it is not necessary is the most common error new DAs make — unnecessary rolls slow the table, dilute tension, and make success feel arbitrary.
+>
+> *No roll needed:* A trained medic (Heal 3) bandaging a minor cut in a safe room. An agent searching an already-unlocked filing cabinet at their own HQ. A character with Force 4 snapping a hollow interior door.
+>
+> *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
 
 [%header,cols="2,1,3,1"]
 |===
@@ -31,6 +37,8 @@ Each *6* rolled counts as *one success*.
 * *Special binary roll:* A few subsystems, especially *Fear checks*, define their own pass/fail rule instead of using Difficulty.
 
 Successes beyond what was needed are *extra successes*. If the roll supports stunts, each extra success becomes *1 Stunt Point*.
+
+> **Stunt Points must be spent immediately.** They are not saved between rolls or carried into subsequent actions. If you do not spend a Stunt Point at the moment it is generated, it is lost. Decide how to spend extra successes before the next roll at the table.
 
 [%header,cols="1,4"]
 |===
@@ -85,6 +93,8 @@ When you roll a dice pool that includes *Gear Dice*, you risk damaging the item.
 An item whose Gear Bonus has been reduced to *0* is *Broken* — it provides no dice to rolls and cannot be used until repaired.
 
 > This rule applies identically to all gear: weapons (Gear Bonus reduced by 1), armor (Armor Rating reduced by 1), and tools. Improvised items break outright when their sole Gear Die shows a 1 — see xref:chapters/10-equipment.adoc#_improvised_item_failure[Improvised Item Failure].
+>
+> **Gear Degradation example:** Kowalski uses his lockpick kit (+2 Gear Dice) to crack a lock. The first Gear Die shows a 1 — the kit is nicked. *Gear Bonus reduced from +2 to +1*. He still needs more successes, so he pushes. Gear Dice are locked at their initial values; he rerolls only his Attribute and Skill Dice. No further degradation can occur on this push — the kit already took its damage on the initial roll. If he had rolled no 1s on the Gear Dice initially, the kit would be undamaged regardless of what happens on the push.
 
 > For full repair rules, see xref:chapters/10-equipment.adoc#crafting-and-repair[Crafting and Repair].
 
@@ -136,6 +146,25 @@ The following pairings arise most frequently in play. Either side may push their
 
 > *Mismatched skills are allowed.* If a situation calls for it, the DA may permit any logical pairing. The table above is guidance, not a hard constraint.
 
+---
+
+== Range Zones
+
+Actions in Neon Relic use *five range zones* to describe spatial relationships between characters and threats. Range affects who can help, who can be targeted by attacks, and the Difficulty of many rolls.
+
+[%header,cols="1,2,3"]
+|===
+| Zone | Distance | Typical Context
+
+| *Engaged* | Arm's reach | Physical melee contact; grappling, close-quarters brawls
+| *Close* | Same room (~10 m) | Hallway conversations, helping a nearby ally, short-range gunfight
+| *Near* | Short dash away (~30 m) | Across a courtyard, adjacent rooms, parking-lot cover
+| *Far* | Line of sight (~100 m) | Street-level sniper positions, exterior building perimeters
+| *Very Far* | Edge of engagement (~300 m) | Long-range rifles only; most skills have no effect at this range
+|===
+
+Helping requires *Engaged or Close* range. Most social rolls require at least *Close*. Full rules for zone-based movement, attack reach, and Difficulty modifiers are in xref:chapters/05-combat.adoc#chapter-combat[Combat].
+
 === Pushed Opposed Rolls
 
 Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, apply the standard tie-breaking rule: the PC wins if a PC is involved.
@@ -152,6 +181,13 @@ An ally may help if **both** of the following are true:
 
 * They are present in the scene (Engaged or Close range — same room, same vehicle, actively coordinating).
 * They have a *rating of at least 1* in the relevant skill, **or** they can provide a plausible narrative justification for how their own skill set contributes (DA approval).
+
+> **Helping with a non-matching skill:** The DA determines whether a different skill plausibly contributes.
+> * *Lore aiding Investigate:* An archivist explains a library's organizational system before the searcher begins — reducing cognitive load. DA allows Lore to help Investigate.
+> * *Tech aiding Manipulate:* A hacker has pulled the target's financial records and whispers key facts to the negotiator. DA allows Tech to help Manipulate.
+> * *Force aiding Command:* A soldier stands visibly armed at the negotiator's shoulder. Non-verbal intimidation. DA allows Force to help Command.
+>
+> The test: does the narrative make sense? Could that skill plausibly improve the outcome? If yes, it helps. If it is a stretch, the DA declines.
 
 === The Helping Bonus
 
@@ -199,7 +235,19 @@ If the group fails to meet the threshold:
 * Individual characters who succeeded are not penalized — they did their part.
 * Characters who failed *may push* as normal (gaining +1 Corruption each), independently.
 
-> **Group rolls and Corruption:** Each character manages their own Corruption on a group roll independently. A group roll gone wrong — four agents all pushing, all gaining +1 Corruption — creates the kind of compounding pressure that makes the Corruption system matter.
+> **Group rolls and pushing:** Each character's push decision is independent. A character who already succeeded *cannot* push — there is nothing to improve. A character who failed may push (gaining +1 Corruption) and compare their new total against the same Difficulty. If the group wants to push sequentially to check whether the threshold is met before risking more Corruption, resolve pushes one character at a time in any order.
+>
+> Each character manages their own Corruption independently. A group roll gone wrong — four agents all pushing, all gaining +1 Corruption — creates the kind of compounding pressure that makes the Corruption system matter.
+
+---
+
+== Cross-References
+
+* Gear repair rules: xref:chapters/10-equipment.adoc#crafting-and-repair[Equipment — Crafting and Repair]
+* Zone-based movement and attack Difficulty in combat: xref:chapters/05-combat.adoc#chapter-combat[Combat]
+* Corruption mechanics and the push cost: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
+* Skill list and stunt tables: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
+* Social conflict and Disposition-based opposed rolls: xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict]
 
 ---
 
