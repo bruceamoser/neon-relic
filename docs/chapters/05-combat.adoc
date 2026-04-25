@@ -229,17 +229,21 @@ A character *in cover* benefits from partial physical shielding.
 
 === Ammunition
 
-Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die:
+Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die based on the weapon type and current magazine state:
 
 [%header,cols="2,1,2"]
 |===
 | Ammo State | Die | Notes
 
-| *Full magazine* | d8 | Fresh load; most pistols and rifles
-| *Half loaded* | d6 | Partially used
-| *Low / scrounged* | d4 | Found ammo, emergency reload
-| *Drum / extended mag* | d10 | Special acquisition (CL 4)
+| *Pistol — full magazine* | d10 | 9mm, .38, .45; standard load
+| *Shotgun — full load* | d8 | Pump or semi-auto shotgun
+| *Rifle — full magazine* | d8 | Assault rifle, battle rifle, .308
+| *Half loaded (any)* | d6 | Partially used magazine
+| *Low / scrounged (any)* | d4 | Found ammo, emergency reload
+| *Drum / extended mag* | d12 | Special acquisition (CL 4)
 |===
+
+> *Two-track ammo system:* This table governs *in-combat per-shot tracking* — roll when you push a Firearms roll, fire full auto, or the DA calls for it. Between scenes, use the *Supply-level Resource Dice* in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment] to track how much ammo the team has on hand. When you reload in the field, roll the supply die; then reset the weapon's combat ammo die to its 'full' value from this table.
 
 *When do you roll the ammo die?*
 
