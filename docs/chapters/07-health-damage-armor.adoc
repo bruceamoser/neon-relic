@@ -247,6 +247,40 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 ---
 
+== Attribute Recovery
+
+Attributes damaged during play (by physical or mental damage) recover over time. The process is separate from Corruption healing (see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]).
+
+=== Standard Recovery
+
+[%header,cols="2,3,3"]
+|===
+| Recovery Type | Attributes Restored | Conditions
+
+| *Short Rest (1 Shift)* | 1 point to each damaged attribute | Must be in a safe location (no active threat, no travel). 1 Shift ≈ 4 hours.
+| *Full Downtime* | All attribute damage cleared | Between Case Files — the team returns to base, rests, and recovers fully.
+| *Medical Aid (Heal WIT check)* | +1 point per success beyond Difficulty | Difficulty 1 for basic aid (cuts, bruises); Difficulty 2 for serious wounds; Difficulty 3 for critical injuries. Requires a First Aid Kit.
+|===
+
+=== Broken Recovery
+
+An attribute at 0 (Broken state) cannot recover through rest alone — the damage is too severe.
+
+To recover from Broken:
+
+. An ally must succeed on a *Heal (WIT) roll, Difficulty 2* (First Aid Kit required).
+. On success, the Broken attribute is restored to *1*. The character is no longer Broken.
+. This takes a *full Shift* and requires the character to rest without interruption.
+. Each failed Heal attempt still requires the Shift of rest before retrying.
+
+*Night Terrors (Critical Injury result 21):* A character with Night Terrors does not benefit from Short Rest recovery for Agility damage. Recovery is halved (1 point per 2 Shifts instead of 1 per Shift) until the Critical Injury is treated.
+
+=== Infirmary (HQ Facility)
+
+The Keep's Infirmary (xref:chapters/12-headquarters.adoc#chapter-headquarters[HQ → Infirmary]) provides enhanced Short Rest recovery: *3 Attribute points* per Shift instead of 1. This is what Ch 12 means by "2 additional Attribute points beyond normal rest" — the baseline 1 + 2 = 3.
+
+---
+
 === Cross-References
 
 * *Corruption gain* from mental criticals is applied immediately (see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]).
