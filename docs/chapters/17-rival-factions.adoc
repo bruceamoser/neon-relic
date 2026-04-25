@@ -2,7 +2,11 @@
 [#chapter-rival-factions]
 = Rival Factions
 
-The Covenant rarely works a case alone. Rival factions pressure the board by buying access, intimidating witnesses, moving routes, changing official posture, and converting uncertainty into leverage.
+The Covenant rarely works a case alone. When agents arrive at a scene, someone else is usually already interested — buying access, intimidating witnesses, rerouting artifacts, or maneuvering through official channels. These are *rival factions*: external organizations with their own agendas, assets, and timetables that do not align with safe containment.
+
+This chapter provides reusable *faction dossiers* for the four primary rival organizations agents encounter. Each dossier describes a faction’s goals, operational style, and escalation pattern. When building a Case File, copy the relevant dossier and customize it with case-specific milestone consequences, NPC names, and local details. The dossier becomes that Case File’s *Organization Row* entry on the Operations Board.
+
+Rival factions create the Operations Board’s *external pressure*. They do not wait for the agents. Their organization rows advance on the board based on agent activity, elapsed shifts, and milestone cross-links. A faction that reaches its final milestone before the Covenant contains the artifact means the case has been lost — on their terms, not the agents’.
 
 Run rivals as *organizations first* and combatants second.
 
@@ -28,14 +32,36 @@ If the first thing a faction does is shoot, you skipped the interesting part.
 
 Each faction section below serves as a reusable *Organization Reference* template. When building a case, the DA does not need to reinvent a faction's background — instead, copy the relevant dossier and customize it with case-specific milestones, NPC names, and local operational details.
 
-Each dossier provides:
+For the full Organization Reference format and how it fits into the case file package, see xref:chapters/15-case-file.adoc#case-file-package[Ch 15 — The Case File Package].
 
-* Faction name, goals, and operational style
-* Typical resources and reach
-* Common operative types
-* A blank milestone template the DA fills in for a specific case
+=== Mapping a Faction Dossier to an Organization Row
 
-For the full Organization Reference format and how it fits into the case file package, see <<case-file-package>>.
+The Ch 15 Operations Board uses *Organization Rows* with 14 countdown squares and labeled milestone squares. When you bring a faction into a case, translate their dossier into an Organization Row entry like this:
+
+[%header,cols="1,3"]
+|===
+| Organization Row Field | From This Dossier
+
+| *Name*
+| Faction name (e.g., "The Vantablack Compact")
+
+| *Starting Value*
+| How active they are at case start. Dormant (unchecked) = they don't know about the case yet. Starting value 8 = they've been tracking this artifact for weeks.
+
+| *Milestone 1 (early)*
+| First visible sign from the *Early signs* row.
+
+| *Milestone 2 (middle)*
+| An escalated move from the *Pressure pattern* row.
+
+| *Milestone 3 (crisis)*
+| The *Crisis move* from the dossier.
+
+| *Cross-links*
+| What advances other rows when this milestone fires. A Compact snatch attempt might advance the Police row; an Accord public rite advances MJ-12.
+|===
+
+For each faction section below, a blank milestone template is included. Fill in the specific consequences, NPC names, and locations for each case.
 
 ---
 
@@ -57,6 +83,23 @@ Their campaign role is *covert competition*.
 
 Use the Compact when you want professionals who can mirror Covenant tradecraft without matching Covenant ethics.
 
+.Compact Milestone Template
+[%header,cols="1,3,3"]
+|===
+| Milestone | Label | Consequence (Fill In)
+| O_M1 | Compact Active | First Compact operative arrives. Add a tail on one agent or seal one Location's access.
+| O_M2 | Compact Pressure | A witness disappears or changes their story. One Information Card moves to "unavailable" unless the agents act this shift.
+| O_M3 | Compact Crisis | [Fill in: snatch attempt / export handoff / evidence erasure]. Cross-links: ___
+|===
+
+.Typical Compact Operative
+[%header,cols="1,1,1,1,1"]
+|===
+| STR | AGL | WIT | EMP | Skills
+| 3 | 4 | 4 | 2 | Sneak 3, Shoot 2, Manipulate 2, Investigate 2
+|===
+_Compact operatives have 1 point of Armor (concealed vest) and carry a suppressed pistol (Ammo Die d6). They do not fight unless trapped._
+
 ---
 
 == The Ember Accord
@@ -76,6 +119,23 @@ Their campaign role is *fanatical escalation*.
 |===
 
 Use the Ember Accord when the problem is not only possession of the artifact but an ideology that demands activation regardless of cost.
+
+.Accord Milestone Template
+[%header,cols="1,3,3"]
+|===
+| Milestone | Label | Consequence (Fill In)
+| O_M1 | Accord Gathering | A devotional cell is forming around the artifact. Witnesses are becoming believers instead of sources.
+| O_M2 | Accord Rite | The Accord attempts a group activation rite. Relic milestone on the shift row may trigger early if the rite succeeds.
+| O_M3 | Accord Crisis | [Fill in: public activation event / sacrificial rite]. Cross-links: ___
+|===
+
+.Typical Accord Zealot
+[%header,cols="1,1,1,1,1"]
+|===
+| STR | AGL | WIT | EMP | Skills
+| 3 | 2 | 2 | 4 | Manipulate 3, Lore 2, Fight 2
+|===
+_Accord zealots have no armor and rarely carry firearms. They fight desperately when cornered and are immune to Intimidate. A devoted leader (the Herald) has EMP 5, Lore 3, and causes a Fear Check (Rating 2) on a first encounter._
 
 ---
 
@@ -97,6 +157,23 @@ Their campaign role is *state power and containment-through-force*.
 
 Use MJ-12 when the threat is surveillance, black-bag extraction, official deniability, and overwhelming tactical response.
 
+.MJ-12 Milestone Template
+[%header,cols="1,3,3"]
+|===
+| Milestone | Label | Consequence (Fill In)
+| O_M1 | MJ-12 Surveillance | Agents are under surveillance. One Location becomes "monitored" — any scene there risks being observed and reported.
+| O_M2 | MJ-12 Lockdown | MJ-12 moves to isolate the artifact site. Access to one Location is suspended until agents can bypass official control.
+| O_M3 | MJ-12 Extraction | [Fill in: tactical seizure / transport lockdown / detention]. Cross-links: ___
+|===
+
+.Typical MJ-12 Field Agent
+[%header,cols="1,1,1,1,1"]
+|===
+| STR | AGL | WIT | EMP | Skills
+| 4 | 3 | 3 | 2 | Shoot 3, Fight 2, Investigate 2, Tech 1
+|===
+_MJ-12 field agents wear concealed ballistic vests (Armor 2) and operate in pairs. They have authority to detain, restrict access, and commandeer resources. They are not equipped for supernatural phenomena and gain Corruption normally from artifact exposure._
+
 ---
 
 == The Hellfire Consortium
@@ -117,6 +194,23 @@ Their campaign role is *elite corruption and patronage*.
 
 Use the Consortium when the artifact is moving through luxury channels, shell companies, private estates, or buyers who think occult catastrophe is an acceptable line item.
 
+.Consortium Milestone Template
+[%header,cols="1,3,3"]
+|===
+| Milestone | Label | Consequence (Fill In)
+| O_M1 | Consortium Interest | Legal and financial obstruction begins. One NPC becomes uncooperative; one Location requires a new access route.
+| O_M2 | Consortium Acquisition | The artifact is moved to a private, controlled environment. Field access requires a new Contact or a Covenant packet.
+| O_M3 | Consortium Crisis | [Fill in: controlled activation / private rite / export under diplomatic cover]. Cross-links: ___
+|===
+
+.Typical Consortium Operative (Private Security)
+[%header,cols="1,1,1,1,1"]
+|===
+| STR | AGL | WIT | EMP | Skills
+| 4 | 3 | 2 | 2 | Shoot 3, Fight 3, Manipulate 1
+|===
+_Consortium security wear visible body armor (Armor 3) and operate in teams of four. They enforce exclusion zones without engaging in conversation. Consortium principals (the wealthy clients) are rarely present at operational sites but can accelerate any Organization Row milestone by two squares with a phone call._
+
 ---
 
 == Player-Facing Signs of Rival Pressure
@@ -131,3 +225,13 @@ Before a faction organization worsens, show at least one sign:
 * the team's cover story stops being enough
 
 The faction organization should feel like a tightening web, not a surprise teleport.
+
+---
+
+== Cross-References
+
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Organization Row format, milestone cross-links, case-file-package structure, how dormant organizations activate
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Threat Meter (faction escalation that carries over between Case Files), Compromise Events triggered by rival breaches, Rival Cells as a structural threat
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Entity Behavioral Taxonomy, NPC Card design for faction operatives, Operations Board authoring
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions (this chapter)]* — Faction dossiers serve as Organization Reference templates for the Case File package
+* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Supernatural threats associated with rival factions: Compact-summoned constructs, Accord-provoked entities, MJ-12 Shard Construct programs
