@@ -1,6 +1,12 @@
 [#chapter-artifacts]
 = Artifacts of Power and Doom
 
+This chapter covers the game's treatment of *Occult Artifacts* — how they work, how they are used, and how they are contained. It includes the Artifact Die and Activation Procedure, the Corruption cost system, emission rules (Aura, Pulse, Burst), the Containment-First play principle, a starting catalog of period artifacts, DA guidelines for designing new artifacts, Containment Profiles, Containment Rituals, and the optional Artifact Decay rule.
+
+Artifact mechanics tie directly to the Corruption system in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]. Division Instrument interactions (Verdant Codex, Verdant Satchel, Warden's Bracer) are described in xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions].
+
+---
+
 In an occult thriller setting, artifacts are fundamentally dangerous — objects of immense, unknowable power that exact a heavy toll on the human mind and physical reality. Project Neon Relic leans heavily into the *"Artifact of Doom"* narrative trope, ensuring that utilizing magic is always a terrifying gamble.
 
 == The Mechanics of Occult Artifacts
@@ -37,6 +43,7 @@ The Artifact Die does not generate successes or add to skill pools. It is purely
 When an agent activates an artifact, resolve the following steps in order:
 
 . **Meet the activation condition.** Each artifact has a specific trigger — a spoken phrase, a physical action, a blood offering, a frequency. If the condition is not met, the artifact does not respond.
+. **Declare activation.** Activating an artifact is a *Slow Action* (it requires preparation, concentration, or deliberate physical engagement with the activation condition). Some artifact entries may specify a different action cost — those override this default.
 . **Pay the Corruption cost.** The activating agent immediately gains Corruption equal to the artifact's tier (+1/+2/+3). This cost is paid whether the die fractures or not. It is never reduced, waived, or transferred.
 . **The effect resolves.** The artifact's stated mechanical effect takes place. Most effects grant automatic successes, bypass skill rolls, or impose conditions on targets. There is no additional roll to determine whether the effect works — the Corruption cost _is_ the price of certainty.
 . **Roll the Artifact Die.** The player rolls the artifact's current Artifact Die.
@@ -128,8 +135,8 @@ Some high-threat artifacts emit corruption into the environment even when not di
 | Triggered by alarms, loud noise, blood contact, or ritual disruption
 
 | *Burst*
-| Short to Long (1–4 zones)
-| +2 Corruption (or +1 on successful Endure/Wits mitigation roll, DA choice)
+| Short to Distant (up to 4 zones)
+| +2 Corruption to all targets in range (or +1 on successful Endure (AGI) roll, Difficulty 2, DA choice based on scene severity)
 | Catastrophic failure mode; major escalation beat
 |===
 
@@ -137,11 +144,12 @@ Emission is optional per artifact and should be tied to tier and narrative stake
 
 == Catalog of 1980s Occult Artifacts
 
-[%header,cols="2,^1,2,3,3,2"]
+[%header,cols="2,^1,^1,2,3,3,2"]
 |===
-| Artifact | Die | Mundane Appearance | Effect | Cost & Fracture | Emission
+| Artifact | Risk Tag | Die | Mundane Appearance | Effect | Cost & Fracture | Emission
 
 | *The Betamax of St. Jude*
+| Volatile
 | d8
 | Degraded Betamax tape in unmarked black sleeve.
 | Displays the immediate 10-minute future when played on a VCR. Auto-success on any opposed Wits or Agility roll in the current scene.
@@ -149,30 +157,34 @@ Emission is optional per artifact and should be tied to tier and narrative stake
 | *Pulse* — when any VCR in the same building powers on, future-vision fragments leak to all agents in the same zone. +1 Corruption.
 
 | *The Obsidian Walkman*
+| Stable
 | d6
 | Heavy, modified Sony cassette player with stone-like casing.
-| Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues or bypass Investigation rolls.
+| Hear the ambient frequencies of the dead. Communicate with spirits to discover hidden clues; once per scene, bypass a single Investigate roll automatically.
 | *1 Corruption.* User deafened by psychic static; gains permanent phobia of silence.
 | *Aura* — the dead broadcast continuously while the Walkman is carried. +1 Corruption at scene start for the carrier and all agents sharing the zone.
 
 | *The Oppenheimer Lens*
+| Stable
 | d8
 | Aviator sunglasses with fused desert-glass lenses.
-| See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions.
+| See the true monstrous forms of entities hiding in human guises. Pierce all supernatural illusions for the remainder of the scene.
 | *1 Corruption.* Lenses shatter; shards cause 1 permanent Agility damage.
 | —
 
 | *The Judas Coin*
+| Volatile
 | d12
 | Heavy silver denarius, unnaturally warm.
-| Target overwhelmed by greed or guilt during social interaction. Auto-success on Empathy (Manipulate).
+| Target overwhelmed by greed or guilt during social interaction. Auto-success on a single Manipulate (EMP) roll. _The Coin is Tier 2 (2 Corruption) despite its single-roll scope because it is uniquely reliable — it never fails to succeed and removes all social opposition._
 | *2 Corruption.* Coin burns through user's flesh (1 physical damage); target becomes violently hostile.
 | *Pulse* — when any monetary transaction occurs in the same zone (payment, barter, till), the Coin pulses guilt to the nearest agent. +1 Corruption.
 
 | *The Chronos Polaroid*
+| Stable
 | d6
 | Polaroid SX-70 camera smelling of ozone.
-| Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis.
+| Photographs a location as it appeared 24 hours prior. Bypasses tracking or forensic analysis — automatically produces evidence of activities in the past 24 hours.
 | *1 Corruption.* Flash acts as beacon, alerting nearest supernatural entity to party's exact location.
 | —
 |===
@@ -198,10 +210,15 @@ Each artifact has a baseline Encumbrance value equal to its *Corruption cost tie
 
 === Active Artifact Pressure
 
-Carrying an artifact that has been *activated at least once this Case File* imposes *+1 Enc.* above its base value for the remainder of the session. The artifact's metaphysical structure is disturbed — it pushes back.
+Carrying an artifact that has been *activated at least once this Case File* imposes *+1 Enc.* above its base value for the *remainder of the Case File* (not just the current session). The artifact's metaphysical structure is disturbed — it pushes back.
 
 * This additional Enc. is invisible to standard detectors — only characters with the *Lore* skill or Wayfinder training can sense something is off.
 * If an active artifact's pressure pushes the carrier into the *Encumbered* state, they also gain *+1 Corruption* at the start of each scene while carrying it (the corruption leaks passively).
+
+[NOTE]
+====
+This passive Corruption gain is an *additional Corruption source* not listed in the Ch 8 Corruption sources table. Add it as a situational entry: "Carrying an activated artifact (Encumbered by it) | +1 per scene" — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing].
+====
 
 === Stacking Artifacts
 
@@ -219,7 +236,7 @@ Carrying more than one artifact simultaneously is permitted but discouraged:
 
 Every Neon Relic campaign arc should have a unique artifact at its heart — a
 specific, dangerous object with a history, a hunger, and consequences that ripple
-through the case file. The catalog above provides examples, but GMs need a
+through the case file. The catalog above provides examples, but DAs need a
 structured framework for designing originals.
 
 The rules below use a **Corruption Budget** system: the power of an artifact's
@@ -230,8 +247,7 @@ No free rides. No safe artifacts.
 
 === The Artifact Template
 
-Every artifact needs five defined components. Fill in each section before
-introducing the artifact to players.
+Every artifact needs *six defined components* — five mandatory and one optional. Fill in each section before introducing the artifact to players.
 
 [%header,cols="1,3,4"]
 |===
@@ -350,7 +366,7 @@ kept inert during transport and what triggers it inadvertently.
 
 Containment rituals are not spellcasting talents. They are risky *Lore-led procedures* used to suppress an artifact, shield a target from occult bleed, or disperse a manifestation long enough to regain custody. Wayfinders most often lead them, but any agent with Lore may attempt one.
 
-* *Who can lead:* Any agent with *Lore 1+* may attempt a *Quiescence* or *Shielding* ritual. *Banishment* rituals, or any ritual aimed at a *Tier 3+* artifact or a fully manifest entity, require *Lore 3+* or active Wayfinder support.
+* *Who can lead:* Any agent with *Lore 1+* may attempt a *Quiescence* or *Shielding* ritual. *Banishment* rituals, or any ritual aimed at a *Tier 3* artifact or a fully manifest entity, require *Lore 3+* or active Wayfinder support. If no Wayfinder is available in the cell, any agent with *Lore 2+* may attempt Banishment at *+1 Difficulty* — the gap between competent knowledge and specialist training is real and costly.
 * *What rituals do not do:* A ritual rarely solves the whole case by itself. If the anchor, artifact, or ritual site remains uncontrolled, the threat can return when the pressure rises again.
 * *Pushing:* Ritual rolls may be pushed as normal. If the ritual targets an artifact or entity that is already active, manifest, or broadcasting, the ritual leader gains *+1 Corruption* when the roll resolves, even on success.
 
@@ -377,21 +393,26 @@ If the team lacks proper boundary materials or the correct key, add *+1 Difficul
 
 ==== Ritual Types
 
-[%header,cols="2,1,2,4"]
+All ritual rolls use *Lore (WIT)* unless a specific Containment Profile states otherwise.
+
+[%header,cols="2,1,1,1,4"]
 |===
-| Ritual Type | Base Diff | Default Time | On Success
+| Ritual Type | Skill | Base Diff | Default Time | On Success
 
 | *Quiescence*
+| Lore (WIT)
 | 2
 | 10 minutes
 | Suppress an artifact's activation or emission for one scene or one transport leg. If the artifact uses a *Ritual Quiescence* Containment Profile, the rite is considered renewed for the next 24 hours.
 
 | *Shielding*
+| Lore (WIT)
 | 2
 | One full scene
 | Seal a person, object, or small zone against passive broadcast, imprint, or occult bleed until the end of the current shift or until the boundary is broken.
 
 | *Banishment / Dispersal*
+| Lore (WIT)
 | 3
 | One full scene
 | Disperse a manifestation, collapse an active ritual site, or force an entity back to its anchor. If the anchor is immediately contained or removed, the effect holds; if not, the threat may return on the next clock advance or major disturbance.
@@ -400,7 +421,7 @@ If the team lacks proper boundary materials or the correct key, add *+1 Difficul
 Apply these modifiers unless an artifact or bestiary entry gives a fixed ritual Difficulty:
 
 * *+1* if the target is Tier 3, actively emitting, or spreading across multiple people.
-* *+2* if the target is Tier 4, catastrophic, or imposing itself across multiple zones.
+* *+2* if the target is Tier 3 *Catastrophic* (spreading across multiple zones or a major active threat that defies normal ritual containment).
 * *+1* if the ritual is performed while moving, under attack, or amid public panic.
 * *−1* if the team has the exact containment profile, true name, or recovered ritual notes.
 * *−1* if the rite is performed in a properly prepared HQ vault, Occult Lab, or equivalent secured site.
@@ -464,8 +485,8 @@ On failure, the ritual does not take hold. The DA chooses or rolls one backlash 
 ==== Starter Rituals
 
 * *Field Quiescence Rite:* Re-wrap, re-phrase, or re-seal an artifact before transport. This is the default answer to a *Ritual Quiescence* Containment Profile and the usual way to renew a temporary seal after mishandling.
-* *Lead-and-Salt Shield:* Used on contaminated carriers, artifact-imprinted survivors, and occult broadcasts. This is the default rite for suppressing *Artifact Imprint* and similar lingering calls.
-* *Anchor Dispersal Circuit:* Used against manifestations such as *The Mire* or *The Listening*. It does not destroy them permanently unless the anchor is simultaneously removed, isolated, or neutralized.
+* *Lead-and-Salt Shield:* Used on contaminated carriers, artifact-imprinted survivors, and occult broadcasts. This is the default rite for suppressing *Artifact Imprint* and similar lingering calls. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8] for Corruption healing conditions that make a Shielding ritual necessary.
+* *Anchor Dispersal Circuit:* Used against manifestations such as *The Mire* or *The Listening* (see xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]). It does not destroy them permanently unless the anchor is simultaneously removed, isolated, or neutralized. Critical Injuries sustained during failed Banishment rituals use the standard Critical Injury table in xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor].
 
 ---
 
@@ -506,7 +527,7 @@ it when:
 
 | 0 | Starting die | Active and fully dangerous
 | 1–2 | Step down one die from current | Effect weakened; Corruption cost reduced by 1 (min 1)
-| 3–4 | Step down two dice from current | Barely active; only works on activation rolls of 5–6
+| 3–4 | Step down two dice from current | Severely weakened; the Corruption cost is reduced by 1 (minimum 1) and the effect is noticeably diminished — the DA may describe the effect as partial or uncertain, but the effect *still fires* (consistent with the Activation Procedure's "the effect always fires" rule). The Corruption cost is paid regardless.
 | 5 | — | Inert. Artifact is neutralized and safe for permanent containment. Case closed.
 |===
 
@@ -617,6 +638,8 @@ The following three artifacts illustrate missions where *preventing activation i
 
 ---
 
+---
+
 [[quarantine-bell]]
 ==== The Quarantine Bell
 
@@ -643,4 +666,22 @@ The following three artifacts illustrate missions where *preventing activation i
 **Emission (Burst):** When the bell rings — including accidentally — all targets within 1–2 zones gain +1 Corruption before any activation roll is made.
 
 **DA Guidance:** The Quarantine Bell is ideal for a ticking-clock transport mission. The agents must move it from a recovery site to a Keep facility — across a city, under possible surveillance, in 1980s vehicles on 1980s roads. Every speed bump, every near-collision, every moment a rival faction closes in is a potential ringing event. Frame this as a logistical thriller, not a combat encounter. The threat is the object itself, not the people pursuing it.
+
+---
+
+== Division Instrument Interactions with Artifacts
+
+The three Division Instruments (Verdant Codex, Verdant Satchel, Warden's Bracer) each interact with Occult Artifacts in specific ways. Full mechanics are in xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]; the relevant interactions from an artifacts perspective are:
+
+* *Verdant Satchel (Recovery):* Artifacts inside the Satchel do not emit passive Corruption (Aura type). The instability warning triggers when an artifact reaches Volatile or Catastrophic rating. The one-round stabilization delays activation or emission. The Satchel does not prevent Burst emissions originating from artifacts outside the bag.
+* *Verdant Codex (Wayfinder):* Lore (WIT) rolls supported by Codex notes gain +1 bonus die — this applies to ritual identification rolls, artifact research, and identifying Containment Profiles.
+* *Warden's Bracer (Keep):* The Bracer's once-per-session Corruption absorption (1 point, passive) applies to any Corruption source — including artifact emissions, ritual pushing costs, and passive pressure from carrying activated artifacts.
+
+== Cross-References
+
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources table (artifact activations, passive pressure), Corruption Threshold, healing recovery, pushing rolls
+* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Instrument mechanics (Codex, Satchel, Bracer), Containment Protocol talent (Keep), Wayfinder Lore skills
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Faraday Cage (Corruption healing), Corruption Dampening Vault (containment support), Occult Lab (ritual site), Covenant Armorer
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Pacing artifact reveals, Containment Truth, handling multiple active artifacts in a session
+* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Entity connections to artifact fracture events, entity Corruption values, manifestation triggers
 
