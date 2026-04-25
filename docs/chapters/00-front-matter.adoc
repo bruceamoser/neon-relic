@@ -8,7 +8,7 @@
 *Project Neon Relic* +
 Core Rules — First Edition
 
-Version 2.3.1
+Version 2.3.2
 
 '''
 
@@ -34,7 +34,7 @@ The Year Zero Engine System Reference Document is used under Fria Ligan AB's Fre
 
 '''
 
-©2026 Bruce Moser and Stu [Last Name TBD]. All rights reserved.
+©2026 Bruce Moser and Stewart Voit. All rights reserved.
 
 No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the authors, except for brief quotations in reviews and certain other noncommercial uses permitted by copyright law.
 
