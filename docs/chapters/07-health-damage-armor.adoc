@@ -82,7 +82,7 @@ A Broken character who has rolled a Death-Check result (†) has a limited windo
 
 * *Within the same scene:* An ally may attempt to stabilize the Dying character (see First Aid below).
 * *End of scene without treatment:* The character must roll their Death Check unmodified. No ally assistance.
-* *Instant Death exceptions:* Critical Injury result *66 (DOA)* requires an immediate Death Check — there is no window. The Heal roll to influence it must be attempted within the same round (not the same scene).
+* *Extreme Critical Injury exceptions:* Critical Injury result *66 (DOA)* requires an immediate Death Check — there is no window. The Heal roll to make the check possible (Difficulty 4) must be attempted within the same round (not the same scene). See *Extreme Critical Injuries* below.
 
 === First Aid: Stabilizing a Dying Character
 
@@ -95,14 +95,14 @@ To stabilize a Dying ally during the stabilization window:
 * *On success:* The Dying state is resolved. The Critical Injury remains. The character is Broken/Unconscious but no longer dying. They need rest and proper medical care, but they will live.
 * *On failure:* Stabilization attempt failed. The character may try again if time permits (same scene). Each failed attempt reduces the character's current Strength by 1 (the effort causes further distress).
 
-=== Instant Death
+=== Extreme Critical Injuries
 
-Two Critical Injury results bypass the Death Check entirely:
+Some Critical Injury results carry extreme conditions that change how the Death Check works:
 
-* *Result 66 (DOA) with automatic failure:* This death check cannot succeed — there is no roll. If the Heal roll (Difficulty 4, same round) is not made in time, the character dies. There are no further attempts.
-* *Result 55 (Shattered Will), 46 (Catatonic Episode*) — mental death:* Mental Death Checks work the same way; success or failure has the same probability (d6, 1–2 = retirement). These represent permanent catatonia, not physical death — but the character is retired from play regardless.
+* *Result 66 (DOA):* Without immediate intervention, death is automatic — no roll is made. An ally may attempt a Heal roll (Difficulty 4, same round only) to make a Death Check possible. If the Heal succeeds, the character makes a Death Check with *no bonus* (plain d6; the Medical Training +2 does not apply here — the Heal action's entire effort went into keeping the patient alive long enough to roll). Surviving: see the Critical Injury table. If no ally attempts the Heal this round, the character dies — there are no further attempts.
+* *Result 55 (Shattered Will), 46 (Catatonic Episode) — mental death:* These require a mental Death Check (mind, not body). The check uses the same procedure (d6, 1–2 = failure). Failure = permanent catatonia, character retirement. These are not physical death — the character is retired from play but may remain as an NPC.
 
-> *Design note:* Instant physical death (result 66) is rare and requires an enormous attack to reach the worst end of the D66 table. It represents an overwhelmingly lethal event. Most character deaths will come from failed Death Checks, not from this result.
+> *Design note:* Result 66 (DOA) is rare — it requires an overwhelmingly lethal physical event to reach the worst end of the D66 table. Most character deaths will come from failed Death Checks, not from this result.
 
 === Character Death and Continuity
 
