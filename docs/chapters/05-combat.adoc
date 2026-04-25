@@ -9,7 +9,7 @@ Combat rules are designed for *investigation-first play*: most situations should
 
 == Initiative
 
-At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept — DA preference). Higher card value acts first. Ties are resolved simultaneously.
+At the start of any hostile confrontation, each participant draws an *Initiative Card* from a standard deck of playing cards (Ace through 10, face cards removed or kept — DA preference). Higher card value acts first. Tied cards are broken by each tied participant drawing one replacement card — compare and re-resolve until the tie is broken.
 
 === Initiative Card Draw
 
@@ -30,8 +30,8 @@ Initiative uses card draw only. Do not add initiative modifiers for posture, ter
 
 A *surprise* occurs when one side is unaware of the other at the moment combat begins.
 
-* To attempt an ambush, the attacking side must succeed on a *Sneak (AGI)* roll opposed by the target's *Investigate (WIT)*. Use group roll rules if multiple ambushers are involved.
-* If the ambush succeeds: the ambushing side takes a *free full round of actions* before initiative cards are drawn for anyone.
+* To attempt an ambush, the attacking side must succeed on a *Sneak (AGI)* roll opposed by the target's *Investigate (WIT)*. If multiple ambushers are involved, use the Group Roll rules (the best roller leads; others help): see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+* If the ambush succeeds: the ambushing side takes a *free full round of actions* before initiative cards are drawn. Each ambusher may take one Slow Action and one Fast Action during this surprise round, in any order they choose among themselves (since they are coordinating). Targets cannot use Reactive Actions (Dodge, Parry) during the surprise round.
 * If the ambush fails: draw initiative normally; no advantage granted.
 
 ---
@@ -95,6 +95,8 @@ Combat space is divided into *abstract zones* rather than measured distances. A 
 
 Moving *one zone* costs one Fast Action. Moving *two zones* (running) costs both your Fast Action and your Slow Action for the round — you forgo your attack.
 
+> **Movement economy summary:** 1 zone = 1 Fast Action. 2 zones = 1 Fast Action + 1 Slow Action (your whole turn). You cannot move more than 2 zones in a single turn under normal circumstances. A Talent or stunt may modify this.
+
 [%header,cols="1,3"]
 |===
 | Range Category | Definition
@@ -156,10 +158,33 @@ Every zone has optional *terrain features* the DA can invoke:
 
 | *Cramped* (closets, crawlspaces, car interiors) | Long-armed weapons (rifles, shotguns) suffer −2 dice. All movement into/out of zone takes a Slow Action.
 | *Rough* (rubble, debris, slick floor) | Moving into this zone requires a Fast Action *and* an Agility roll (Difficulty 1). On failure, character is prone.
-| *Dark* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down) unless the character has a light source. Sneak rolls gain +2 dice.
+| *Dark* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down, minimum 1 die) unless the character has a light source. Sneak rolls gain +2 dice.
 | *Open* (parking lots, fields) | No cover available in this zone. All ranged attacks against targets here gain +1 die.
 | *Elevated* | Characters here gain +2 to their Initiative card value; ranged attacks against them suffer −1 die.
 |===
+
+---
+
+== Armor
+
+*Armor Rating (AR)* measures how many Gear Dice of protection a piece of armor provides. When an attack hits, roll a number of d6s equal to the armor's AR. Each 6 rolled *absorbs 1 point of damage* before it reaches the target's Strength.
+
+[%header,cols="2,1,3"]
+|===
+| Armor Type | AR | Notes
+
+| *Light jacket / heavy clothing* | 1 | Standard civilian outer layer. Minimal ballistic protection.
+| *Leather jacket / reinforced coat* | 2 | Better against blunt and blade. Poor against firearms.
+| *Kevlar vest (standard)* | 3 | Covenant-issue soft armor. CL 3 requisition.
+| *Tactical plate vest* | 4 | Hard plate inserts. Heavy — +1 Encumbrance. CL 4 requisition.
+| *Full tactical kit (vest + plates)* | 5 | Maximum field armor. Unwieldy in confined spaces.
+|===
+
+> **How armor Gear Dice work:** If you're wearing AR 3 armor and take 4 damage, roll 3d6. Each 6 absorbs 1 damage. If you roll two 6s, you take 4 − 2 = 2 Strength damage. If you roll three 6s, you take 1 damage. If you roll zero 6s, you take all 4.
+
+> **Armor degradation:** When you roll an armor die and get a 1, the armor's condition degrades — reduce its AR by 1 permanently until repaired. See xref:chapters/10-equipment.adoc#chapter-equipment[Equipment] for repair rules. This represents sustained damage to the protective layers that a brief field inspection cannot fix.
+
+> **Armor and vehicles:** Vehicles have an Armor Rating that functions identically to personal armor but absorbs Wear rather than personal attribute damage. See Vehicle Combat below.
 
 ---
 
@@ -172,7 +197,9 @@ Declare your target (must be at Engaged range). Roll your dice pool:
 * *Heavy melee* (knife, crowbar, brawl against an armored target): *Force (STR)* + Weapon Gear Bonus
 * *Fast melee* (unarmed strikes, quick knife work): *Brawl (STR)* + Weapon Gear Bonus
 
-On a hit (meeting the attack's Difficulty, usually 1), deal the weapon's flat *Damage* value directly to the target's Strength. Armor intercepts first.
+> **Heavy vs. Fast melee:** A weapon's classification (Heavy or Fast) is listed in the Equipment tables (see xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]). As a rule of thumb: weapons requiring two hands or significant force to wield effectively are Heavy; light, one-handed, or improvised strikes are Fast. When improvising with an unlisted object, the DA determines which skill applies based on how the agent is using it.
+
+On a hit (meeting the attack's Difficulty, usually 1), deal the weapon's flat *Damage* value directly to the target's Strength. *Armor intercepts first* — see Armor below.
 
 Successes beyond the attack's Difficulty are *Stunt Points* — see Combat Stunts below.
 
@@ -190,10 +217,10 @@ All maneuvers require a successful melee attack roll. If the attack misses (no 6
 |===
 | Maneuver | Skill | Effect
 
-| *Grapple* | Brawl (STR) opposed by Force or Brawl (target's choice) | Target is grappled: they cannot move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll).
+| *Grapple* | Brawl (STR) opposed by Force or Brawl (target's choice) | Target is grappled: they *cannot* move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll). They *can* still take Fast Actions (draw a one-handed weapon, attempt to break free as their Slow Action) and use Reactive Actions (Dodge counts as a Fast Action and is still permitted). Being Grappled does not prevent speaking, using a single-handed item, or making an unarmed attack against the grappler (Brawl, −2 dice, one-handed only).
 | *Shove* | Force (STR) opposed by Endure (STR) | Target is pushed back one zone and is knocked prone. If target is already at a zone edge (stairs, window, rooftop), this may be lethal.
 | *Disarm* | Sleight of Hand (AGI) opposed by Force or Brawl | Target drops their held weapon. It lands at Engaged range on the floor.
-| *Feint* | Brawl (STR) opposed by Wits | No damage this turn. On success: target cannot Dodge your next attack this round. You gain +2 dice on your next melee roll against them.
+| *Feint* | Brawl (STR) opposed by Wits | No damage this turn. On success: target cannot Dodge *or* Parry your next attack this round — the feint commits their reaction to the false opening. You gain +2 dice on your next melee roll against them.
 |===
 
 ---
@@ -225,7 +252,7 @@ A character *in cover* benefits from partial physical shielding.
 * **Soft cover** (car door, wooden desk, drywall): +2 Armor Rating against ranged attacks only.
 * **Hard cover** (concrete pillar, stone wall, engine block): +4 Armor Rating against ranged attacks only.
 * Taking cover requires a Fast Action (move into cover within the current zone).
-* A character who fires from cover *loses the cover bonus* for any attacks made against them *that round* — you have to expose yourself to shoot.
+* A character who fires from cover *loses the cover bonus against any return fire that round* — you must expose yourself to shoot, and that window persists until your next turn when you can take cover again. Cover returns automatically at the start of your next turn if you do not fire again.
 
 === Ammunition
 
@@ -247,14 +274,24 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 *When do you roll the ammo die?*
 
-* After *pushing a Firearms roll* (you burned through rounds trying to compensate).
-* After a *full auto burst* (M16 or equivalent — roll twice).
-* At the DA's discretion when dramatically appropriate (long firefight, ambush, running chase).
+* After *every turn in which you fire* (standard fire — the die represents the resource pressure of sustained combat).
+* After *pushing a Firearms roll* — roll an additional time (you burned through extra rounds).
+* After a *full auto burst* — roll *twice* (see Full Auto below).
+* At the DA's discretion when dramatically appropriate (ambush, very long firefight).
 
 *Rolling the ammo die:*
 
 * Roll the current die. On a *1 or 2*, step the die down one size (d8→d6→d4→empty).
 * On *empty* (die was d4 and rolled 1–2): weapon is dry. Reload costs a Slow Action.
+
+=== Full Auto
+
+Weapons capable of fully automatic fire (noted in the Equipment tables) may fire a *full auto burst* on a Slow Action instead of a standard shot.
+
+* *Effect:* Make *two separate attack rolls* against the same target (or split between two targets in the same zone). Resolve each roll independently — each can hit, miss, or generate stunt points.
+* *Ammo:* Roll the ammo die *twice* after a full auto burst (once per attack).
+* *Penalty:* After firing full auto, the firing character suffers −1 die on all Firearms rolls until the start of their next turn (recoil and muzzle rise).
+* *When in doubt:* If the Equipment tables do not specify a weapon as full auto, it fires semi-auto only.
 
 ---
 
@@ -264,7 +301,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 * *Type:* Fast Action (reactive — used on someone else's turn, not yours)
 * *When:* After a melee or ranged attack is declared against you, before the attacker rolls.
-* *Effect:* Add your *Agility* dice to your "defense pool." The attacker must beat both their own roll and your dodge roll (compare successes; attacker needs more than you).
+* *Effect:* Add your *Agility* dice to your "defense pool." The attacker must beat your dodge roll (attacker needs *strictly more* successes than you — ties favor the defender). Compare successes; if equal, the dodge succeeds and you take no damage.
 * *Cost:* You lose your Fast Action on your *next* turn.
 * *Limitation:* You cannot dodge if you have no Fast Action remaining this round (already spent), if you are prone, if you are Grappled, or if the attack was from ambush (surprise round).
 
@@ -272,7 +309,7 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 * *Type:* Slow Action (reactive — used on someone else's turn)
 * *When:* After a melee attack is declared against you, before the attacker rolls. Requires a held melee weapon.
-* *Effect:* Roll *Brawl or Force* (your choice). If you match or exceed the attacker's successes, you take no damage. If you beat the attacker's successes, they lose their Slow Action next round (their weapon arm is numbed or they are off-balance).
+* *Effect:* Roll *Brawl or Force* (your choice). If you match *or* exceed the attacker's successes, you take no damage — the parry is clean. If you beat the attacker's successes by 2 or more, they also lose their Slow Action next round (weapon arm numbed or off-balance). If the attacker beats your parry, you take the attack's full damage (the parry failed).
 * *Cost:* You lose your Slow Action on your *next* turn.
 * *Limitation:* Cannot parry ranged attacks, unarmed shoves, or any attack from a weapon with Damage 4+.
 
@@ -280,21 +317,21 @@ Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reloa
 
 == Combat Stunts
 
-Extra successes (6s beyond the attack's required Difficulty, usually 1) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise.
+Extra successes (6s beyond the attack's required Difficulty, usually 1) are *Stunt Points*. Spend them from the table below. One stunt point = one effect unless listed otherwise. You may spend multiple stunt points on different effects from the same attack — purchase all effects simultaneously before the DA narrates the outcome.
 
 [%header,cols="^1,2,4"]
 |===
 | Cost | Stunt | Effect
 
 | 1 | *Knock Prone* | Target is knocked to the ground. They must spend a Fast Action to stand.
-| 1 | *Disarm* | Target drops their held weapon at Engaged range (without a full Disarm maneuver roll).
+| 1 | *Disarm* | Target drops their held weapon at Engaged range (without a full Disarm maneuver roll). The weapon lands at Engaged range from the target — either party could pick it up.
 | 1 | *Target Limb* | Attack hits a specific limb. DA applies a situational penalty (hobbled, one-armed, etc.) until treated.
 | 1 | *Push Back* | Target is forced one zone away.
-| 1 | *Scare* | Target must immediately make a *Fear check* (Fear Rating 1) even if no supernatural trigger is present. The violence itself breaks them.
+| 1 | *Scare* | Target must immediately make a *Fear Check* (Fear Rating 1) even if no supernatural trigger is present — the violence itself is the threat. See xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Fear Checks].
 | 2 | *Double Damage* | Deal the weapon's Damage value twice instead of once.
 | 2 | *Suppressive Fire* | Target is pinned — they cannot move zones until the start of your next turn unless they succeed on a Wits roll (Difficulty 2).
 | 2 | *Destroy Cover* | Target's cover is destroyed or invalidated after this attack.
-| 3 | *Critical Hit* | Attack triggers a roll on the Critical Injury table _(Issue #4)_, regardless of whether the target is Broken.
+| 3 | *Critical Hit* | Attack triggers a roll on the Critical Injury table, regardless of whether the target is Broken. See xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Critical Injuries].
 |===
 
 ---
@@ -310,6 +347,8 @@ A chase is divided into *chase rounds*. Each round, both the fleeing and pursuin
 * *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
 * *By vehicle:* Wits + Tech (see xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Vehicle Chase Rules] for full vehicle chase procedure, speed modifiers, and maneuvers)
 
+> **DA discretion on skill choice:** These are default options. The DA may call for other skills when the context demands it — a chase through a crowded market could use Manipulate (EMP) to slip through a crowd; a chase through a building's maintenance passages could use Investigate (WIT). The DA should always tell the players which skill they're calling before the roll.
+
 === Chase Outcome Per Round
 
 * Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing).
@@ -320,8 +359,8 @@ A chase is divided into *chase rounds*. Each round, both the fleeing and pursuin
 
 * The fleeing party *escapes* when they reach the Escaped position.
 * During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
-* If the pursuing party reaches Contact: normal combat resumes.
-* *Hiding:* If the fleeing party is at Widening and succeeds on a Sneak roll (Difficulty 2), they may break the chase entirely without reaching Escaped — they simply vanish into the environment.
+* If the pursuing party reaches Contact: normal combat resumes. Draw initiative cards immediately; the pursuit party does not get a free round unless they successfully set up an ambush (see Surprise and Ambush).
+* *Hiding attempt:* If the fleeing party is at Widening, they may attempt to break the chase entirely — succeed on a Sneak roll (Difficulty 2) to vanish into the environment. This attempt may be made *once per chase*; if it fails, the hiding window has passed and the fleeing party must reach Escaped normally.
 
 ---
 
@@ -330,10 +369,12 @@ A chase is divided into *chase rounds*. Each round, both the fleeing and pursuin
 Not every vehicle encounter is a chase. When combat occurs at or near stationary vehicles — roadblock shootouts, parking lot ambushes, or attacks on a parked convoy — use standard combat rules with the following guidance:
 
 * *Vehicles as cover:* A vehicle provides cover equal to its Armor Rating. Agents behind a vehicle add the vehicle's Armor Rating to their defense as if it were personal armor (Gear Dice, 6s absorb damage). Unlike personal armor, vehicle cover does not degrade from 1s — the vehicle absorbs Wear instead (1 Wear per combat scene in which it provides cover).
-* *Attacking vehicles:* To disable a vehicle, attack it using Force (melee) or Firearms (ranged) against Difficulty 1. Damage is applied as Wear after subtracting the vehicle's Armor Rating (each point of damage that exceeds armor = 1 Wear). At 5 Wear, the vehicle is disabled.
+* *Attacking vehicles:* Targeting a vehicle (to disable it, breach it, or destroy it) uses Force (melee) or Firearms (ranged) at Difficulty 1 — no special maneuver is needed, just a successful hit. Each point of damage that exceeds the vehicle's Armor Rating reduces the vehicle by 1 Wear. At 5 Wear, the vehicle is disabled. Typical vehicle Armor Ratings are listed in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
 * *Targeting occupants:* Attacking someone inside a vehicle requires a called shot (1 stunt point) or the vehicle's windows/doors to be open. Closed vehicles provide full Armor Rating to occupants. Open vehicles (windows down, convertibles) provide half Armor Rating (round down).
 
 For moving vehicle encounters, use the Chase and Pursuit rules above. If a chase transitions into a stationary firefight (e.g., vehicles crash and combatants exit), switch to standard combat using the guidance in this section.
+
+> **Wear** is the vehicle damage track. It runs from 0 (undamaged) to 5 (disabled). At Wear 5, the vehicle cannot move, its systems are failing, and it may be on fire — DA determines consequences. Repairing Wear requires tools, time, and a successful Tech (WIT) roll. Full vehicle Wear and repair rules are in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
 
 ---
 
@@ -343,12 +384,13 @@ When 3 or more combatants on the NPC side share a common purpose and act togethe
 
 === Mob Rules
 
-* A mob draws *one Initiative card* and acts as a single entity.
-* A mob has a shared Strength pool equal to *3 × mob size* (3 per member, max 15).
-* A mob attacks as one unit: roll dice pool equal to the *highest individual's pool* + bonus dice equal to mob members beyond the first (max +3).
-* *Splitting a mob:* Area effects (full auto, explosive, fire) or AoE-capable stunts can split a mob, with the DA distributing Strength loss across members.
+* A mob draws *one Initiative card* and acts as a single entity on that card.
+* A mob has a shared Strength pool equal to *3 per member* (e.g., a 4-person mob has Strength 12). Maximum mob Strength is 15 regardless of size.
+* A mob attacks as one unit: roll dice pool equal to the *best individual's dice pool* plus bonus dice equal to the number of additional members (beyond the first), *maximum +3 bonus dice total*.
+* *Damage to a mob:* Any attack that deals Strength damage reduces the mob's shared pool. When the mob Strength pool reaches 0, the mob is broken — all members are Broken or fleeing. The DA may narrate intermediate casualties at thresholds (e.g., one member falls at Strength 6, another at Strength 3).
+* *Splitting a mob:* Area effects (full auto burst, explosive, fire) or AoE-capable stunts can split a mob into two smaller groups. The DA distributes remaining Strength between them.
 
-> Mobs represent low-tier hostiles (cultist grunt, security guard, Compact foot soldier). Named or significant NPCs always act individually.
+> Mobs represent low-tier hostiles (cultist grunts, security guards, Compact foot soldiers). Named or significant NPCs always act individually with their own initiative and stat blocks.
 
 ---
 
@@ -384,6 +426,19 @@ When any PC attribute reaches 0, they are *Broken*:
 * They collapse and are incapacitated.
 * They must roll on the appropriate *Critical Injury table* (see xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Critical Injuries]).
 * They are out of the fight unless stabilized by an ally (Heal roll, costs a Slow Action, requires a First Aid Kit).
-* An unstabilized Broken PC *dies* at the end of the scene unless treated.
+* An unstabilized Broken PC *dies at the end of the scene* — defined as when the immediate danger has passed and the group can act freely, not at the end of the round in which they fell. This means teammates have a window during the fight to stabilize them. If combat ends and the PC has not been stabilized, they die.
 
 > *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. DAs should give players narrative opportunities to take prisoners rather than mandating lethality.
+
+---
+
+== Cross-References
+
+* **Core dice rules and pushing:** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
+* **Group rolls (ambush coordination):** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
+* **Skill stunts (non-combat):** xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
+* **Fear Checks (Scare stunt, Intimidating Display, Warning Shot):** xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Corruption, Fear & Healing]
+* **Critical Injuries (Critical Hit stunt, Broken state):** xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Health, Damage & Armor]
+* **Broken state and recovery:** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
+* **Equipment (weapon stats, armor types, vehicle AR, Wear repair):** xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]
+* **Vehicle chase detailed rules:** xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Equipment — Vehicle Chase Rules]
