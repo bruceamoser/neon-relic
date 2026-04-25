@@ -45,6 +45,8 @@ Successes beyond what was needed are *extra successes*. If the roll supports stu
 
 > *Total successes vs. extra successes:* Unless a rule says otherwise, only successes beyond the required threshold become stunt points. If a subsystem explicitly says "each success" does something, count the total successes rolled after determining whether the roll passed.
 
+> *Difficulty vs. modifiers — two different things:* **Difficulty** (the number in the table above) is how many successes a roll requires. It does *not* change the size of the dice pool. When a rule says "Difficulty 2" the roller must score 2 sixes. A **modifier** (written as +X or −X) *adds or removes dice* from the pool before rolling. The two can stack: a roll may be both Difficulty 2 (needs 2 successes) *and* have a −1 modifier (one fewer die). Rules always specify which they mean; when in doubt, "Difficulty 2" is the shorthand for a hard but achievable task.
+
 Extra successes can be spent on *stunts* — extra narrative or mechanical benefits such as:
 
 * Completing an action significantly faster

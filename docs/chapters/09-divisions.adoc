@@ -97,7 +97,7 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 |===
 | Talent | Cost | Effect
 
-| *Burned Asset* | +1 Corruption | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make a Hard (−2) Empathy roll to see through it.
+| *Burned Asset* | +1 Corruption | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make an *Empathy (Psychoanalyze) roll at Difficulty 2* to see through it.
 | *Signal Intercept* | +1 Corruption | Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel.
 | *Compartmentalized Mind* _(Healing)_ | — | Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption.
 |===
@@ -332,7 +332,7 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 |===
 | Talent | Cost | Effect
 
-| *Lockdown* | +1 Corruption | Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without making a Hard (−2) Force roll.
+| *Lockdown* | +1 Corruption | Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without making a *Strength (Force) roll at Difficulty 2*.
 | *Threat Assessment* | +1 Corruption | When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it.
 | *Sentinel's Vigil* _(Healing)_ | — | Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption.
 |===
@@ -406,7 +406,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 |===
 | Talent | Cost | Effect
 
-| *Containment Protocol* | +1 Corruption | Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a Hard (−2) roll to cross it.
+| *Containment Protocol* | +1 Corruption | Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a *Strength (Force) roll at Difficulty 2* to cross it.
 | *Shield of the Covenant* | +1 Corruption | When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.
 | *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
 | *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Wits (Lore) roll regarding the history of a contained artifact.
