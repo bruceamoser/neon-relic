@@ -122,7 +122,7 @@ Fear checks are a *special binary roll*. They do *not* use the standard Difficul
 . Roll dice equal to your current *Wits* attribute (no skill modifier — Fear is instinctual, not trained).
 . *One or more 6s = success.* You hold it together.
 . *Any 1s rolled (one or more) = +1 Corruption.* Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
-. *No 6s = failure.* Gain +1 Corruption AND roll d6 on the *Panic Table*.
+. *No 6s = failure.* Suffer *1 Mental (Wits) damage*, gain +1 Corruption, AND roll d6 on the *Panic Table*. This is mental injury — it represents the mind cracking under the weight of the unprocessable.
 
 Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying harder" against the absolute horror of the unnatural.
 
@@ -134,8 +134,8 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 
 | Yes | No | Clean pass. No consequence.
 | Yes | Yes | Pass, but +1 Corruption. The exposure marks you.
-| No | No | Fail. +1 Corruption + Panic Table.
-| No | Yes | Worst case. +1 Corruption (from 1s) + 1 Corruption (from failure) = *+2 Corruption* + Panic Table.
+| No | No | Fail. 1 Mental (WIT) damage + +1 Corruption + Panic Table.
+| No | Yes | Worst case. 1 Mental (WIT) damage + +1 Corruption (from 1s) + +1 Corruption (from failure) = *+2 Corruption* + Panic Table.
 |===
 
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
