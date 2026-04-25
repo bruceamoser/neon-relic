@@ -62,11 +62,19 @@ Because Corruption naturally builds toward lethal levels, characters must active
 |===
 | Method | Effect | Requirements
 
-| *Anchor Scene* | Heal *1d4 Corruption* | Once per session. Dedicate a scene to interacting with your Anchor.
-| *Safe Scene Recovery* | Heal *1 Corruption* | Once per session. Dedicate a quiet downtime or decompression scene to personal reflection or rest. Cannot be the same scene used for an Anchor activation.
+| *Anchor Scene* | Heal *1d4 Corruption* | Once per session. Physically hold or interact with your Anchor in a safe, unhurried moment. Player describes the interaction. See detailed rules below.
+| *Safe Scene Recovery* | Heal *1 Corruption* | Once per session. Dedicate a quiet scene to personal decompression — sleep, a meal, a walk, listening to music, a phone call with family. The scene must be *safe* (no active threats, no time pressure). Must be a *different scene* than the one used for an Anchor activation — the two recovery methods cannot share the same moment. No object or specific memory required; just the absence of pressure.
 | *Full Rest (24 hours)* | Heal Corruption equal to *Empathy score* | Full 24-hour cycle resting in a secure, non-anomalous location (defined as: no active artifact emissions, no supernatural entities, no uncontained occult material in the building). Covenant HQ with an active Faraday Cage qualifies. A hotel room or safe house qualifies. Full Rest is typically available only *between Case Files* or during extended downtime within a case (at DA discretion); it cannot be taken during an active shift. **Faraday Cage stacking:** Full Rest and the Faraday Cage (xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]) stack — a character who takes Full Rest at HQ with access to the Cage recovers Empathy score + up to 4 additional Corruption.
 | *Healing Talents* | Varies by talent | See Division Talents and General Talents marked with _(Healing)_.
 |===
+
+> **Anchor Scene vs. Safe Scene — what's the difference?**
+>
+> An *Anchor Scene* requires a specific object, a specific memory, and active player engagement with that memory in fiction. It heals more (1d4, potentially 2–4 Corruption) because it's doing psychological work — confronting the thing that grounds you to the world before the Covenant.
+>
+> A *Safe Scene* requires only the *absence of threat and pressure* — no supernatural contact, no mission urgency. A character can share a meal, sit quietly, or simply sleep. It heals less (1 Corruption, flat) because it's passive recovery, not active processing.
+>
+> Both count against the *per-session active recovery cap of 5 Corruption*. You may use both in the same session, but they must be separate scenes.
 
 > *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
 >
@@ -153,7 +161,9 @@ Fear checks are a *special binary roll*. They do *not* use the standard Difficul
 . *Any 1s rolled (one or more) = +1 Corruption.* Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
 . *No 6s = failure.* Suffer *1 Mental (Wits) damage*, gain +1 Corruption, AND roll d6 on the *Panic Table*. This is mental injury — it represents the mind cracking under the weight of the unprocessable.
 
-Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying harder" against the absolute horror of the unnatural.
+Fear checks *cannot be pushed* and *cannot receive helping dice*.
+
+Fear is involuntary — there is no "trying harder" against the absolute horror of the unnatural. Pushing assumes deliberate effort and expenditure of personal resources; that option does not exist when the primal response has already engaged. Similarly, no ally can steady your nerves against something that violates the physical laws of the universe. Presence helps; coaching doesn't. The Psychoanalyze skill and certain Talents can address the *aftermath* of a failed Fear Check (see Panic Table and Healing Talents) — but they cannot intervene in the moment between seeing the entity and the mind's reaction to it.
 
 ==== Four Outcomes
 
@@ -172,11 +182,11 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 
 ****
-*Why can't I add a skill to Fear Checks?*
+*Why can't I push or help on a Fear Check?*
 
-Fear Checks deliberately break the standard resolution pattern. Every other roll in Neon Relic lets you apply training and experience — that's the point of skills. Fear is different. No amount of training prepares the human mind for direct, sensory confrontation with something that violates the natural order. When your eyes register an entity that shouldn't exist, your brain tries to pattern-match against everything it knows — and fails. That failure is what the Wits-only roll represents. Your rational mind, stripped of all professional scaffolding, trying to hold itself together. Skills can't help you here.
+Fear Checks deliberately break the standard resolution pattern. Every other roll lets you apply training and experience — that's what skills are for. Fear is different. No training prepares the human mind for direct sensory confrontation with something that violates natural law. The Wits-only roll represents your rational mind, stripped of professional scaffolding, trying to hold itself together. Skills can't help. Other people can't help.
 
-The 1s-generating-Corruption rider is also unique to Fear Checks. In mechanical terms, this means that even a successful Fear Check can cost you — your mind survived the encounter, but the act of processing what you saw leaves a mark. This is intentional. Fear is never free.
+What can help is recovery: Psychoanalyze and Healing Talents address the aftermath of panic, not the moment of terror. Presence, preparation, and swift containment reduce the number of Fear Checks you're forced to make — the best answer to Fear is never being in a position to need the roll.
 ****
 
 === The Panic Table
