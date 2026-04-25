@@ -18,7 +18,15 @@ Your *Division* is your character class. It defines your role within the Covenan
 | *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy, Wits
 |===
 
-> *Clearance Level (CL)* determines what equipment your agent can requisition from Stack during the Equipping Phase — nothing else. Information access and institutional trust are governed by Covenant Standing (see xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing]). Your final CL equals your Division's base CL plus your Age Group modifier (minimum 1, maximum 5).
+> **Clearance Level (CL) vs. Covenant Standing — they are not the same thing.**
+>
+> | | *Clearance Level (CL)* | *Covenant Standing*
+> | *What it is* | Equipment authorization tier | Institutional reputation and trust
+> | *How it changes* | Division base + Age Group modifier (min 1, max 5) | Earned via mission success; reduced by exposure or failure
+> | *What it gates* | Gear requisitions during Equipping Phase | Information access, advanced facilities, some talent prerequisites
+> | *Defined in* | This chapter (Step 3) | xref:chapters/12-headquarters.adoc#covenant-standing[Headquarters]
+>
+> High CL means your agent is trusted with expensive or dangerous equipment. High Standing means the Covenant trusts your agent's *judgment*. Both matter, but they increase through different actions and govern different systems.
 
 Read the full Division descriptions in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] before making your choice.
 
@@ -65,7 +73,16 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 
 > *Division Favorite Attribute:* Each Division has one *Favorite Attribute* — the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. *Wayfinder:* Wits | *Recovery:* Agility | *The Keep:* Empathy. Investing there is strongly recommended but not mechanically enforced.
 
-> *Attributes as Health:* Your attributes also serve as your health pools. Strength absorbs physical damage; Agility absorbs exhaustion; Wits absorbs mental horror; Empathy absorbs emotional trauma. A score of 0 in any attribute means your character is *Broken*.
+> **Attributes as Health Pools**
+>
+> Your four attributes serve a dual purpose: they define your dice pools *and* they are your health. When your agent takes damage, the relevant attribute is reduced:
+>
+> * *Physical damage* (bullets, blunt trauma, falls) → reduces *Strength*
+> * *Exhaustion damage* (sprint, forced march, exertion) → reduces *Agility*
+> * *Mental horror* (supernatural imagery, occult overload) → reduces *Wits*
+> * *Emotional trauma* (witnessing atrocity, corruption of bonds) → reduces *Empathy*
+>
+> When *any* attribute reaches *0*, your agent is **Broken** — incapacitated and unable to act independently. Broken does not mean dead. Full rules for damage, Broken state, and recovery in xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
 ---
 
@@ -94,7 +111,15 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 > *Unranked skills:* A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice — there are no "untrained" restrictions.
 
-> *Division Key Skill — Starting Cap Exception:* Each Division has one designated Key Skill that may start at rating *4* instead of the normal maximum of 3. This represents professional specialization before Covenant service. You may spend up to 4 of your starting points on that skill.
+> **Division Key Skill — Starting Cap Exception**
+>
+> Each Division has one designated *Key Skill* that may start at rating **4** instead of the normal cap of 3. This single exception represents professional mastery acquired before Covenant service:
+>
+> * *Wayfinder Key Skill:* Lore
+> * *Recovery Key Skill:* Firearms
+> * *The Keep Key Skill:* Command
+>
+> You may spend up to 4 of your starting skill points on your Division's Key Skill. No other skill may exceed 3 at character creation. During play, any skill may advance to a maximum of 5 via XP — the Key Skill restriction applies only at creation.
 
 [%header,cols="1,1"]
 |===
@@ -109,11 +134,16 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 == Step 5: Choose Your Starting Talents
 
-At creation, every agent selects *three* talents:
+At creation, every agent selects *three* talents, one from each of the following categories:
 
-* *One Division Talent* chosen from your Division's talent list in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]. You may only choose from your own Division's list at creation. — *OR* — *One General Talent* chosen from the General Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]. General Talents are available to every agent regardless of Division.
-* *One Wing, Paradigm, or Department Talent* chosen from your Wing, Paradigm, or Department's talent list in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]. You may only choose from your own Wing, Paradigm, or Department list at creation.
-* *One Background Talent* chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]. Background Talents are available to every agent regardless of Division.
+[%header,cols="2,3,2"]
+|===
+| Slot | What to Choose | Where to Find the List
+
+| *Division or General Talent* | One talent from your Division's talent list *OR* one General Talent (not both). | Division list: xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]. General list: xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
+| *Wing / Paradigm / Department Talent* | One talent from your specific sub-unit's list. Must match your Wing, Paradigm, or Department from Step 2. | xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] — find your sub-unit section.
+| *Background Talent* | One talent from the Background Talents list. Available to every agent regardless of Division. Always passive — no activation cost. | xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
+|===
 
 Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive — no activation cost.
 
@@ -137,6 +167,16 @@ Once attributes are set, note the following:
 | *Broken Thresholds* | Any attribute reaching 0
 |===
 
+> **The Corruption Threshold — and why Empathy matters**
+>
+> `10 + Empathy` is the absolute limit of what your agent's mind can endure. Exceeding it means *permanent catatonia* — the character is retired from play. It is not a target. It is a cliff edge.
+>
+> A character with Empathy 2 has a threshold of 12. Empathy 4 gives a threshold of 14. That two-point difference represents entire sessions of additional safety margin in a game where Corruption accumulates through pushing rolls, talent activation, artifact handling, and surviving supernatural encounters.
+>
+> As threshold approaches, your options narrow: lower Empathy reduces social dice pools, reduces your passive resistance to emotional trauma, and leaves no buffer for emergencies. The game's Corruption economy is deliberately asymmetric — Corruption is easier to gain than to lose.
+>
+> Manage your Empathy carefully at creation. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for the full economy.
+
 > *Maximum Corruption Threshold* is the number at which your character's mind permanently fractures, resulting in catatonia and character retirement. This is the most important number on your sheet — protect it.
 
 ---
@@ -144,6 +184,8 @@ Once attributes are set, note the following:
 == Step 7: Claim Your Division Item
 
 Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
+
+> **Division Item vs. Starting Kit:** The Division Item (Step 7) is separate from and in addition to the Starting Kit (Step 8). You receive both. The Division Item is a piece of Covenant-issue hardware unique to your Division; the Starting Kit is the standard field loadout appropriate to your role. Stack agents also have a department-specific kit variant described in Step 8.
 
 [cols="1,2,4"]
 |===
@@ -181,7 +223,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 * Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
 * Lore reference binder (photocopied Covenant texts on known artifact types)
 * Formal attire or tactical jacket _(player's choice based on role)_
-* 1× sidearm _(optional, CL 3 permitted — Wardens only)_
+* 1× sidearm _(optional — Wardens only. Wardens are pre-authorized for a CL 3 sidearm because they perform physical vault security and field escort operations. Catalogers, Internal CI, and Stack agents must requisition a sidearm normally against their standard CL.)_
 
 *Stack Department Variant:* Keep agents who choose the Stack department replace the Containment kit and Lore reference binder with the following:
 
@@ -213,6 +255,19 @@ Record your Anchor's name and the memory it represents on your character sheet.
 == Step 10: Choose Your Dark Secret
 
 Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the DA can use it as a story hook when the investigation points in the right direction.
+
+> **What makes a good Dark Secret?**
+>
+> * *Specific, not vague.* "I used to drink too much" is not a Dark Secret. "I destroyed evidence that would have exposed my supervisor's corruption, and the Covenant has the original file" is.
+> * *Actionable.* The DA should be able to make it appear in play — it should have a name, a face, or a faction that could show up in a case.
+> * *Morally complicated.* The best secrets involve something your character did, chose, or failed to prevent — not just embarrassment.
+>
+> **Examples:**
+>
+> * _Loyalty:_ Your former handler is now working for the Vantablack Compact. You haven't reported this to the Covenant.
+> * _Cover-up:_ You falsified your field report after a containment failure. Someone died who didn't have to.
+> * _Double identity:_ The government agency that employed you before still believes you're their operative. You haven't corrected them.
+> * _Forbidden contact:_ You are in quiet communication with a known Ember Accord operative. You tell yourself it isn't a problem.
 
 Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in xref:chapters/13-advancement.adoc#_dark_secrets[Dark Secrets].
 
@@ -331,3 +386,14 @@ Petra records the *Verdant Satchel* automatically. From the Recovery Kit she tak
 * *Country of Origin:* United States (California)
 
 > _"Former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
+
+---
+
+== Cross-References
+
+* **Divisions and talent lists:** xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
+* **Background Talents, General Talents, Dark Secret rules:** xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]
+* **Clearance Level requisition rules:** xref:chapters/12-headquarters.adoc#covenant-standing[Headquarters — Covenant Standing]
+* **Attributes as damage pools, Broken state, healing:** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
+* **Anchor mechanics and Corruption healing:** xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
+* **Corruption full rules and economy:** xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
