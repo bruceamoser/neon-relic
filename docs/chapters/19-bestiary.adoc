@@ -636,7 +636,10 @@ Special Abilities:
   artifacts — they survive by knowing more and leaving faster.
 
   Corrupted Resilience (Passive) — The Collector's Corruption threshold is 18
-  (far above normal). Their current Corruption is 11–14 (deep into Reality
+  (far above normal, and set directly by the DA — not derived from the
+  standard `10 + Empathy` player formula; NPCs and supernatural entities may
+  have DA-assigned thresholds that reflect their unique nature rather than the
+  player formula). Their current Corruption is 11–14 (deep into Reality
   Distortion stage). This means they exhibit visible corruption effects —
   electronics glitch in their presence, shadows move wrong, their speech
   occasionally includes words they didn't intend to say. These effects are not

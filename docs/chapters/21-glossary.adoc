@@ -115,7 +115,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Maximum Corruption Threshold* | The point at which a character's mind permanently fractures: 10 + Empathy score. Exceeding this value retires the character. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Maximum Corruption Threshold* | The point at which a character's mind permanently fractures: 10 + Empathy score (base). Modified by Redundant Safeties talent (+2) and Fracture Point injury (−2). Exceeding this value retires the character. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 |===
 
 == N

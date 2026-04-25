@@ -11,6 +11,14 @@ Corruption starts at *0* and increases from there. It is gained directly from it
 
 When a character's Corruption *exceeds* their threshold, their mind permanently fractures. The character enters a catatonic state and is *immediately removed from the campaign*.
 
+*Threshold modifiers stack on top of the base formula:*
+
+* *Redundant Safeties* talent (Stack Division): +2 to threshold (effective threshold = `12 + Empathy`).
+* *Fracture Point* Critical Injury (Result 45): −2 to threshold permanently (effective threshold = `8 + Empathy`).
+* Both modifiers apply simultaneously if relevant.
+
+*Retroactive threshold drop:* If permanent Empathy loss (Critical Injury or other source) drops your Corruption Threshold below your current Corruption score, you must immediately attempt a Fear Check. On failure, catatonia triggers at once. On success, you remain active but must reduce your Corruption below the new threshold by the end of the next session or face catatonia automatically.
+
 > When Corruption threshold is breached simultaneously with a physical Broken state, see the Simultaneous Injury Resolution rule in xref:chapters/07-health-damage-armor.adoc#chapter-health[Chapter 7: Health, Damage & Armor].
 
 == Sources of Corruption
@@ -38,6 +46,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 | *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop.
 | *10–12* | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence.
 | *13–14* | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps.
+| *15–17* | Collapse of Self | The character's sense of personal identity begins to dissolve. They speak in third person, lose track of which memories are theirs, and may briefly mistake allies for entities. −1 die on all social skill rolls (they are visibly wrong). _This range is only reachable by characters with the Redundant Safeties talent or similar threshold-expanding effects._
 | *Exceeds Threshold* | *Catatonic Revelation* | The character's mind completely breaks upon perceiving the underlying, terrifying geometry of the universe. Permanent catatonic state. *Immediately removed from the campaign.*
 |===
 
