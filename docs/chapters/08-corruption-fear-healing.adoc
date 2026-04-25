@@ -176,7 +176,15 @@ The panicked agent gains +1 Corruption from the guilt of harming an ally.
 
 === Fear Ratings
 
-Fear Rating is a *narrative tool* for the DA — it classifies how terrifying a creature or event is on a 1–5 scale and appears in Bestiary stat blocks. It does *not* mechanically modify the Fear check roll. The DA uses it to decide *when* to call for a check and how to frame the fiction.
+Fear Rating is how the DA classifies how terrifying a creature or event is on a 1–5 scale. It appears in Bestiary stat blocks.
+
+*What Fear Rating does mechanically:*
+
+* *Fear Rating 0* = this entity or event does *not* trigger a Fear Check. No check is called.
+* *Fear Rating 1–5* = this entity or event triggers a Fear Check when a character first directly confronts it. The DA calls the check.
+* Fear Rating does *not* modify the dice pool, success threshold, or outcome of the Fear Check itself — the roll is always Wits dice, binary success, regardless of how horrifying the source is.
+
+*Escalation:* Some creatures have a Fear Rating that increases during an encounter (e.g., "Fear Rating 2 initially; 4 once its nature is understood"). An escalation is a *new escalation* per the trigger rule above — it calls for a new Fear Check even if the character has already made one this scene.
 
 [%header,cols="1,1,4"]
 |===
