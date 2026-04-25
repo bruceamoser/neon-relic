@@ -11,7 +11,11 @@ Within that Division, players select a *Department* background. At character cre
 
 Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding directly into the game's risk-reward loop. Each talent list includes one *Healing* talent usable freely once per session.
 
+> **Corruption cost summary:** Talents marked with *+1 Corruption* in the Cost column require gaining 1 Corruption to activate. Talents marked with *—* are free to use — these are always passive effects, per-session healing talents, or reactions that carry no Corruption cost. This distinction is consistent across all Division and sub-unit lists. Healing talents are specifically noted with the _(Healing)_ tag and are always free.
+
 Unless a Talent explicitly says otherwise, read these abilities as *scene-shaping leverage*, not complete scene resolution. They should reveal a lead, buy time, create access, or improve odds under pressure rather than trivialize artifacts, rivals, or core investigation procedures.
+
+> **Design note — healing talent triggers:** Each Division and sub-unit has one _(Healing)_ talent. Trigger conditions vary intentionally: some require a completed field action (covert objective, combat win), others spend a Shift in deliberate recovery activity. The principle is that the trigger should match each sub-unit's operational philosophy — a Wayfinder heals through learning, a Recovery agent heals through action, a Keeper heals through duty. If a specific session's circumstances make a healing trigger unreachable, the DA may rule a comparable equivalent (e.g., a Warden who performed emergency vault security during active combat may count that as a completed "guard mission").
 
 == Division 1: The Wayfinder
 
@@ -24,11 +28,16 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
 [cols="1,2"]
 |===
 | *Key Attributes* | Wits, Empathy
-| *Favorite Attribute* | Wits
+| *Primary Attribute* | Wits _(guidance, not a rule — see note below)_
 | *Key Skills* | Investigate, Lore, Tech, Psychoanalyze
 | *Key Skill (Cap 4 at creation)* | Lore
 | *Starting Clearance Level* | 3
 |===
+
+[NOTE]
+====
+*Primary Attribute:* "Primary Attribute" in the Key Stats tables is a design recommendation, not a mechanical rule. It describes the attribute most central to a Division's playstyle and is intended as guidance for players deciding where to invest Attribute points — it does not grant any inherent bonus.
+====
 
 === The Verdant Codex (Division Item)
 
@@ -41,6 +50,11 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 * Stores large scrolls without damage
 * Faintly glows near ancient magic
 * Contains a living map lining that slowly reveals *suspected* artifact correlations and previously researched sites
+
+*Codex mechanical functions:*
+
+* *Research bonus:* Once per scene, when making a Lore (WIT) or Investigate (WIT) roll supported by notes you've written in the Codex, gain +1 bonus die.
+* *Lore preservation:* Any Lore (WIT) roll that succeeds while using the Codex automatically records the result — the DA must confirm that the information cannot be "forgotten" by later Corruption or injury effects.
 
 === Wayfinder Wings
 
@@ -135,11 +149,16 @@ Unlike other Divisions, the Recovery Division has *no internal departments*. Eve
 [cols="1,2"]
 |===
 | *Key Attributes* | Strength, Agility
-| *Favorite Attribute* | Agility
+| *Primary Attribute* | Agility _(guidance, not a rule — see note in Wayfinder Key Stats)_
 | *Key Skills* | Force, Brawl, Firearms, Sneak
 | *Key Skill (Cap 4 at creation)* | Firearms
 | *Starting Clearance Level* | 2
 |===
+
+[NOTE]
+====
+*Recovery agents and body armor:* Recovery agents begin at CL 2, which means standard body armor (typically CL 3 in the equipment tables) falls outside normal requisition authority. The Recovery Division's exposure to direct physical danger is acknowledged by the Covenant, however — an agent may submit a *personal protection request* to their Keep liaison. If the agent has a *Standing* score of at least 2, the Keep may grant a one-time CL exception allowing requisition of armor rated CL 3 or lower. This does not permanently raise the agent's CL — it covers a single item, one request per Case File.
+====
 
 === The Verdant Satchel (Division Item)
 
@@ -151,6 +170,12 @@ All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag
 * Contains a small dimensional containment compartment
 * Keeps a small selection of ordinary field tools immediately accessible (rope, chalk, spikes, vials, etc.)
 * Enchantment of Warding obscures any magical object placed inside from detection
+
+*Satchel mechanical functions:*
+
+* *Aura suppression:* Artifacts inside the Satchel do not emit passive Corruption to nearby characters. Remove passive aura triggers for as long as the artifact remains sealed inside.
+* *Instability warning:* When an artifact inside the Satchel approaches a Volatile or Catastrophic rating (per the Catalogers' classification system), the Satchel becomes warm and vibrates — a warning sign the agent can detect without a roll, giving time to stop and reassess.
+* *Artifact stabilization:* Once per scene, delay an artifact's activation or emission by one round without a roll — giving the team a brief window to react before the effect triggers.
 
 === Recovery Paradigms
 
@@ -234,11 +259,11 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 |===
 | Talent | Cost | Effect
 
-| *Conditioned Mind* | — | Once per session, entirely ignore the Corruption point generated from pushing a roll.
+| *Conditioned Mind* | — | *Declare before you push the roll.* Once per session, you may push a roll and entirely ignore the +1 Corruption that pushing costs. The push happens normally; only the Corruption is negated. This is not retroactive — if you push without declaring Conditioned Mind first, the Corruption is already spent.
 | *Unstoppable Force* | +1 Corruption | Your next successful melee or unarmed attack inflicts +2 damage.
-| *Shadow Walker* | +1 Corruption | Become entirely imperceptible to mundane guards or cameras for a scene, provided you do not attack.
-| *Adrenaline Junkie* | — | When you have a −1 penalty to Strength, gain +2 bonus dice to all Agility rolls.
-| *Gallows Humor* _(Healing)_ | — | Once per session, after surviving a combat encounter, crack a dark joke. You and all allies who hear you heal 1d4 Corruption.
+| *Shadow Walker* | +1 Corruption | For the duration of a scene, you are entirely imperceptible to *mundane* guards and cameras — they do not see you, register you on film, or notice your presence. *Limitations:* (1) Attacking breaks the effect immediately and it cannot be reactivated this scene. (2) Speaking to, touching, or otherwise interacting with an NPC in a way that demands acknowledgment breaks the effect for that NPC only. (3) Supernatural perception (entities with non-human senses, artifact-enhanced security, possessed observers) is not fooled — Shadow Walker only bypasses mundane human and electronic detection.
+| *Adrenaline Junkie* | — | When your *Strength has taken at least 1 point of damage* (i.e., your current Strength is below your starting score), gain +2 bonus dice to all Agility rolls. This bonus applies for as long as your Strength remains below its normal value and disappears once Strength is fully healed.
+| *Gallows Humor* _(Healing)_ | — | Once per session, *immediately after a combat encounter ends* (all hostiles are neutralized, fled, or surrendered), crack a dark joke about what just happened. You and all allies who can *hear you* (same zone or adjacent zone) heal 1d4 Corruption. "Surviving" means the encounter ended without the team being captured or forced to flee the scene. This talent cannot trigger during a chase or while combat is ongoing.
 | *Combat Reflexes* | — | When initiative cards are drawn, draw two cards and keep one. Discard the other face-down. Alternatively, after all cards are drawn, you may swap your initiative card with a willing ally's card.
 |===
 
@@ -255,7 +280,7 @@ Members of the Keep are entrusted with the stewardship of the Covenant's most se
 [cols="1,2"]
 |===
 | *Key Attributes* | Empathy, Wits
-| *Favorite Attribute* | Empathy
+| *Primary Attribute* | Empathy _(guidance, not a rule — see note in Wayfinder Key Stats)_
 | *Key Skills* | Lore, Command, Endure, Heal
 | *Key Skill (Cap 4 at creation)* | Command
 | *Starting Clearance Level* | 3
@@ -388,6 +413,11 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 
 *Stack Talents (Choose 1 at Creation)*
 
+[NOTE]
+====
+*Design note — talent count:* Stack has six talent options compared to three for every other sub-unit. This is intentional. Stack's role is the most operationally broad of any Keep department — covering logistics, repair, modification, invention, and field support. The wider talent list reflects Stack's unique position as the Covenant's primary technical backbone, with different agents specializing in very different aspects of the department's work.
+====
+
 [%header,cols="2,1,4"]
 |===
 | Talent | Cost | Effect
@@ -406,10 +436,19 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 |===
 | Talent | Cost | Effect
 
-| *Containment Protocol* | +1 Corruption | Quickly improvise a ward using mundane materials (salt, copper wire). Any supernatural entity must make a *Strength (Force) roll at Difficulty 2* to cross it.
-| *Shield of the Covenant* | +1 Corruption | When an ally within Engaged range is attacked, automatically step in front of the blow. Take the damage but halve its severity.
-| *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are possessed.
+| *Containment Protocol* | +1 Corruption | Spend a Fast Action improvising a ward using mundane materials (salt, copper wire, chalk markings). Make a *Lore (WIT) roll at Difficulty 1* to set it. On success, any supernatural entity must make a *Force (STR) roll at Difficulty 2* to cross the ward. On failure, the ward still goes up but lasts only one round. The ward persists until an entity breaks through it or the scene ends.
+| *Shield of the Covenant* | +1 Corruption | When an ally within *Engaged range* is attacked, you may step in front of the blow as a Reactive Fast Action. You take the damage instead of your ally. Halve the damage you take (round down, minimum 1). Your armor applies normally against the redirected attack.
+| *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are *possessed* (defined as: under active supernatural domination by an entity — their will is overridden, not merely influenced). This does not detect high-Corruption individuals who are acting of their own will, only those actively controlled. The target does not know you used this talent.
 | *Medical Training* | — | Spend a Slow Action and make a *Heal (WIT) roll at Difficulty 2* before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls — those are separate emergency Heal actions.
-| *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (Wits) roll regarding the history of a contained artifact.
-| *The Confessor* _(Healing)_ | — | Spend a quiet moment listening to an ally confess their Dark Secret. Both you and the ally heal *1d4 Corruption*.
+| *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a *registered* artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers — unknown or newly recovered artifacts require a normal Lore roll.
+| *The Confessor* _(Healing)_ | — | Spend a quiet moment outside combat listening to one ally share their *Dark Secret* or confess a fear or failing. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
 |===
+
+== Cross-References
+
+* *xref:chapters/02-character-creation.adoc#chapter-character-creation[Ch 2 — Character Creation]* — Division selection, starting CL, Key Skill caps, Background Talents, Division Items
+* *xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]* — Armor Rating rules, damage from Force, Strength as health track
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (including talent activation costs), Corruption Threshold (10 + Empathy), healing conditions, pushing rolls
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Standing score, requisition authority by CL, facility interactions with Division talents
+* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement, Talents & Dark Secrets]* — General Talents, Background Talents, additional talent acquisition, XP spending, Dark Secrets
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — DA discretion on talent edge cases, NPC Corruption scores, possession mechanics
