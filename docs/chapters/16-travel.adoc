@@ -1,9 +1,14 @@
 [#chapter-travel]
 = Travel and Journey Rules
 
-The Covenant operates in an era of paper maps, wrong turns, dead payphones, and long stretches of road where no one can help quickly. Travel is not a detached mini-game. It is a *shift type* inside the case engine.
+The Covenant operates in an era of paper maps, wrong turns, dead payphones, and long stretches of road where no one can help quickly. Travel is not a detached mini-game. It is a *shift type* inside the case engine. Every shift in transit is a shift the Operations Board keeps counting down — the team gets closer to the destination while organizations advance and relic milestones tick over.
 
 Getting there changes what else can happen.
+
+[NOTE]
+====
+This chapter covers travel as it functions within the xref:chapters/15-case-file.adoc#chapter-case-file[Case File] framework. For vehicle types and full technical stats (Armor Rating, Reliability, HP), see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]. For tactical vehicle chases during scenes, see the Vehicle Chase Rules in Ch 10.
+====
 
 ---
 
@@ -83,7 +88,7 @@ Use route choices to create tradeoffs:
 |===
 | Vehicle | Speed | Capacity (Enc.) | Noise | Notes
 
-| *On Foot* | Slow | Personal carry only | Silent | Surveillance-proof but exhausting. Extended travel = risk of Agility damage from fatigue.
+| *On Foot* | Slow | Personal carry only | Silent | Surveillance-proof but exhausting. Extended travel over multiple shifts risks exhaustion — the DA may require an Endure (AGI) roll (Difficulty 2) to avoid arriving Broken.
 | *Bicycle* | Slow-Medium | +4 Enc. (rack) | Silent | Urban movement; can enter places cars can't. Cannot outrun a vehicle chase.
 | *Compact Car (e.g., Honda Civic)* | Medium | 20 Enc. | Low | Inconspicuous. +1 die on Sneak rolls to avoid surveillance.
 | *Full-Size Sedan (e.g., Crown Vic)* | Medium | 25 Enc. | Low | The standard Covenant field vehicle. Reliable. Boring. Perfect.
@@ -96,7 +101,7 @@ Use route choices to create tradeoffs:
 
 *Vehicle Damage:* Vehicles have a simplified *Reliability track*. Each time a vehicle roll is pushed, or the vehicle is involved in a collision, it takes 1 Wear. At 3 Wear, the vehicle has a problem (engine issue, flat tire, blown fuse). At 5 Wear, it stops.
 
-A Tech roll (Difficulty 2, +First Aid Kit bonus applies if using proper tools) can clear 1 Wear per scene of work. Full repair requires a mechanic, a day, and the right parts.
+A Tech (WIT) roll (Difficulty 2) can clear 1 Wear per scene of work with proper tools. Full repair requires a mechanic, a day, and the right parts. For full vehicle Reliability values and Armor Ratings, see xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
 
 ---
 
@@ -104,9 +109,9 @@ A Tech roll (Difficulty 2, +First Aid Kit bonus applies if using proper tools) c
 
 Only roll when the route is actually contested.
 
-* *Car or motorcycle:* WIT (Investigate) to read the route, Difficulty 1 in clear conditions, 2 at night or in weather, 3 under pursuit or in unfamiliar territory.
-* *Foot or urban transit:* AGI (Sneak) to move without drawing attention, Difficulty 1 normally, 2 in hostile areas.
-* *Charter flight or helicopter:* WIT (Tech) to coordinate with the pilot or operate comms, Difficulty 2.
+* *Car or motorcycle:* Investigate (WIT) to read the route, Difficulty 1 in clear conditions, 2 at night or in weather, 3 under pursuit or in unfamiliar territory.
+* *Foot or urban transit:* Sneak (AGI) to move without drawing attention, Difficulty 1 normally, 2 in hostile areas.
+* *Charter flight or helicopter:* Tech (WIT) to coordinate with the pilot or operate comms, Difficulty 2.
 
 *On success:* The shift resolves cleanly, or the team gains one useful fact about the destination or route.
 
@@ -126,15 +131,15 @@ Roll *d12* when a travel shift becomes complicated.
 
 | 1 | *Weather Turn.* A fast-developing storm (rain, fog, snowdrift). All vehicle rolls at −1 die until the team stops and waits it out (minimum 30 minutes in-game) or pushes through. If they push, weather worsens.
 | 2 | *Breakdown.* Vehicle takes 1 Wear immediately. Tech roll (Difficulty 2) to address roadside or continue at −1 die on all vehicle rolls.
-| 3 | *Police Checkpoint.* Roadblock ahead — routine or targeted. The team must choose: reroute (+1 leg to the journey), talk their way through (Manipulate Difficulty 2; failure = detained briefly), or bluff past (Sneak Difficulty 3).
+| 3 | *Police Checkpoint.* Roadblock ahead — routine or targeted. The team must choose: reroute (+1 leg to the journey), talk their way through (Manipulate (EMP) Difficulty 2; failure = detained briefly), or bluff past (Sneak (AGI) Difficulty 3).
 | 4 | *Road Accident.* A civilian incident is visible ahead — a crash, a stalled car, a figure in the road. Stopping may be medically necessary but adds time and a potential witness.
 | 5 | *Tail Detected.* A vehicle has been maintaining pace behind the team for the last leg (see Rules for Being Followed below).
 | 6 | *Corruption Event.* The drive passes through a zone of residual occult activity. Every character gains *+1 Corruption*. No check required — the exposure just happens. The area smells like copper coins and burnt static.
-| 7 | *CB Radio Intercept.* The team picks up a fragment of conversation relevant to the Case File — a police dispatch, a rival faction contact check, a panicked civilian. Roll Investigate (Difficulty 2) to extract actionable intelligence.
-| 8 | *Trucker's Information.* A rest stop encounter with a long-haul trucker who has been on the road through the destination area. Neutral contact. Investigate (Difficulty 1) reveals one useful local detail (road closures, unusual activity, a landmark). Buy them coffee.
+| 7 | *CB Radio Intercept.* The team picks up a fragment of conversation relevant to the Case File — a police dispatch, a rival faction contact check, a panicked civilian. Roll Investigate (WIT) Difficulty 2 to extract actionable intelligence.
+| 8 | *Trucker's Information.* A rest stop encounter with a long-haul trucker who has been on the road through the destination area. Neutral contact. Investigate (WIT) Difficulty 1 reveals one useful local detail (road closures, unusual activity, a landmark). Buy them coffee.
 | 9 | *Wrong Turn.* Navigation error. Add +1 leg to the journey. The new route passes through an area with different terrain (DA chooses: industrial, residential, rural, waterfront — add flavor).
-| 10 | *Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (Difficulty 2) to assess. No immediate danger — but it should be noted.
-| 11 | *Fuel Stop.* The team must stop for gas (or food, or rest). A short public window of vulnerability opens. Sneak (Difficulty 1) to transit without being noted by anyone watching.
+| 10 | *Mechanical Oddity.* Something in the vehicle is behaving strangely — electronics flickering, compass spinning, tape player recording on its own. Artifact proximity or corruption leak suspected. Lore (WIT) Difficulty 2 to assess. No immediate danger — but it should be noted.
+| 11 | *Fuel Stop.* The team must stop for gas (or food, or rest). A short public window of vulnerability opens. Sneak (AGI) Difficulty 1 to transit without being noted by anyone watching.
 | 12 | *Clean Run.* No event this shift. The team arrives ahead of schedule. They may ask the DA one question about the destination that they would have known if they'd had more time to prepare.
 |===
 
@@ -147,9 +152,9 @@ Roll *d12* when a travel shift becomes complicated.
 A tail can appear at any point during a travel shift — or it may have started before departure (the team's HQ may already be watched). The DA may introduce a tail narratively or trigger it via Roll #5 on the Road Event table.
 
 To notice a tail:
-* *Wits (Investigate) Difficulty 2* — passive awareness during normal travel.
-* *Wits (Investigate) Difficulty 1* — if the team is specifically looking for surveillance.
-* The tail makes no roll — the DA decides if they are being careful. A professional tail (MJ-12, experienced Consortium operative) imposes +1 Difficulty to the detection roll.
+* *Investigate (WIT) Difficulty 2* — passive awareness during normal travel.
+* *Investigate (WIT) Difficulty 1* — if the team is specifically looking for surveillance.
+* The tail makes no roll — the DA decides if they are being careful. A professional tail (MJ-12, experienced Vantablack Compact operative) imposes +1 Difficulty to the detection roll.
 
 === Losing a Tail
 
@@ -157,11 +162,11 @@ Once a tail is confirmed, the driver can attempt to lose it. This is a *Chase se
 
 Three options, each requiring one skill roll:
 
-. *Outrun:* WIT + Tech (driving away) or AGI + Endure (on foot). Difficulty 2. Success = tail loses visual. Failure = they stay on you, and the leg's Road Event is escalated by one (worsening conditions, additional exposure).
-. *Blend In:* AGI (Sneak) or WIT (Investigate, to find a crowd). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
-. *Double Back / Trap:* WIT (Investigate). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
+. *Outrun:* Tech (WIT) (vehicle) or Endure (AGI) (on foot). Difficulty 2. Success = tail loses visual. Failure = they stay on you, and the leg's Road Event is escalated by one (worsening conditions, additional exposure).
+. *Blend In:* Sneak (AGI) or Investigate (WIT) (to find a crowd or crowd-accessible route). Difficulty 2. Success = tail loses the vehicle or person in ambient traffic. Requires stopping or drastically altering route.
+. *Double Back / Trap:* Investigate (WIT). Difficulty 3. Success = not only is the tail lost, but the team may identify *who* is following them (a glimpse, a plate, a voice on a radio). This is valuable intelligence.
 
-> *Abbreviated vs. full chase:* The three options above are a streamlined resolution for travel-context tails. For a tactical vehicle chase during a Case File scene or combat, use the full Vehicle Chase Rules (xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Equipment → Vehicle Chase Rules]). The primary skill for vehicle chases is always *WIT + Tech*.
+> *Abbreviated vs. full chase:* The three options above are a streamlined resolution for travel-context tails. They resolve a tail as a single meaningful decision without interrupting the case engine flow. For a tactical vehicle chase during a Case File scene, use the full Vehicle Chase Rules in xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]. The primary skill for vehicle chases is always *Tech (WIT)*.
 
 *On failure:* The tail remains. The team may try again next shift if the route continues. If the tail stays through arrival, the followers learn where the team is going.
 
@@ -190,7 +195,7 @@ The 1980s travel experience has no shortcuts and no digital assists. Consider:
 * *Road maps:* Required for unfamiliar routes. Without a map, add +1 Difficulty to all navigation rolls. Maps can be obtained at gas stations or found in the glovebox of a vehicle — rarely accurate for back roads.
 * *Payphones:* The reliable way to communicate in the field. Payphones require correct change (loose quarters are standard Covenant field kit). Calls can be traced within approximately 10 minutes — keep it short.
 * *Weather:* Before cellular radar, weather in remote areas can surprise a team. The DA may introduce weather as a narrative beat at any point without a Road Event trigger.
-* *Rest stops:* The I-system rest stops are the 1980s version of networking hubs — truckers, salespeople, and anyone moving across America overnight. A character with Manipulate 2+ can gather rumors at a rest stop with a single Difficulty 1 roll.
+* *Rest stops:* The I-system rest stops are the 1980s version of networking hubs — truckers, salespeople, and anyone moving across America overnight. A character with Manipulate (EMP) 2+ can gather rumors at a rest stop with a Difficulty 1 roll.
 
 ---
 
@@ -206,3 +211,12 @@ Use travel shifts to:
 * convert a stakeout into a moving problem
 
 If travel never costs time, never risks exposure, and never changes the board, skip it entirely.
+
+---
+
+== Cross-References
+
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Shift types, Operations Board mechanics, how travel shifts advance organization rows and relic milestones
+* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Full vehicle stats (Reliability, Armor Rating, HP), Vehicle Chase Rules (full tactical procedure), vehicle modifications
+* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Full chase rules for on-foot or vehicle pursuit during an active scene; Sneak (AGI) for ambush/infiltration
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption gain from road events (event 6) and artifact exposure during transit
