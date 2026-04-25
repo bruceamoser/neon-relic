@@ -6,8 +6,8 @@
 
 ## Designers
 
-- **Bruce** — Co-designer and system architect
-- **Stu** — Co-designer, worldbuilding and lore
+- **Bruce Moser** — Co-designer and system architect
+- **Stewart Voit** — Co-designer, worldbuilding and lore
 
 ## Concept
 
@@ -68,15 +68,17 @@ All HTML forms are fully self-contained with embedded fonts — no internet conn
 ```
 neon-relic/
 ├── .github/                        ← GitHub repo metadata and templates
-├── assets/                         ← Art assets, HTML previews, SVG dividers, logos
+├── assets/                         ← Blank HTML form templates, prebuilt characters, SVG dividers
 ├── docs/
+│   ├── case-file-instructions.adoc ← Step-by-step DA guide to building a case file
+│   ├── case-files/                 ← Filled-in sample case file sources (The Spear That Went Dark)
 │   ├── chapters/                   ← Canonical chapter source files (AsciiDoc)
-│   ├── output/                     ← Generated build artifacts (PDF, release assets)
+│   ├── design/                     ← Design documents and issue trackers (reference only)
 │   ├── references/                 ← YZE reference material from published games
-│   ├── themes/                     ← Asciidoctor PDF theme files
-│   ├── neon-relic.adoc             ← Master book file for the compiled rulebook
-│   └── neon-relic-core-rules.md    ← Markdown core rules reference document
+│   ├── themes/                     ← Asciidoctor PDF theme files and embedded fonts
+│   └── neon-relic.adoc             ← Master book file for the compiled rulebook
 ├── tools/                          ← Process and gap-analysis support docs
+├── build.ps1                       ← PowerShell build script — generates PDFs, self-contained HTML, and starter-kit.zip
 ├── CONTRIBUTING.md                 ← Issue, release, and workflow SOP
 └── README.md
 ```
@@ -87,8 +89,10 @@ neon-relic/
 |---|---|
 | `docs/chapters/*.adoc` | **Canonical chapter source files** for the current compiled rulebook. |
 | `docs/neon-relic.adoc` | Master AsciiDoc book that assembles the full release-ready rulebook. |
-| `docs/neon-relic-core-rules.md` | Markdown reference version of the rules text and design material. |
-| `docs/output/neon-relic-X.Y.Z.pdf` | Generated PDF artifact (versioned). Gitignored — uploaded to each GitHub release as `neon-relic.pdf` to keep the download URL stable. |
+| `docs/case-file-instructions.adoc` | Step-by-step guide for DAs building a case file from scratch. |
+| `docs/case-files/spear-that-went-dark/` | Complete worked example case file with all filled HTML forms. |
+| `build.ps1` | Build script — generates PDFs, inlines fonts into HTML templates, and packages `starter-kit.zip`. |
+| `assets/*.html` | Blank printable HTML templates (Case Brief, Relic Sheet, NPC Card, etc.). |
 | `docs/references/*.md` | Year Zero Engine reference material from existing YZE games. Used for mechanical consistency and inspiration. |
 
 ## Year Zero Engine References
@@ -104,9 +108,12 @@ This project draws inspiration and mechanical precedent from these existing YZE 
 
 ## Future Plans
 
-- [ ] Complete core rules document
+- [x] Complete core rules document (Chapters 1–22)
+- [x] Case file system and sample case file (The Spear That Went Dark)
+- [x] DA guide and case file instructions
+- [x] Form-fillable HTML templates and starter kit build pipeline
 - [ ] Playtesting and balance iteration
-- [ ] Director of Agents guide and adventure module templates
+- [ ] Art direction and layout
 - [ ] Foundry VTT system module implementation
 
 ## License
