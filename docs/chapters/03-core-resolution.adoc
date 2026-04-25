@@ -74,6 +74,18 @@ Whatever form it takes, pushing means your contaminated mind is offering you a s
 
 The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 
+=== Gear Degradation
+
+When you roll a dice pool that includes *Gear Dice*, you risk damaging the item. If any Gear Die in the *initial roll* shows a *1*, the item's *Gear Bonus is permanently reduced by 1* (until repaired by Stack during downtime).
+
+*Gear Dice are never rerolled when pushing.* When you push, you pick up only your Attribute and Skill Dice — Gear Dice keep their initial values. If a Gear Die already showed a 1 on the initial roll, that degradation has already occurred before the push.
+
+An item whose Gear Bonus has been reduced to *0* is *Broken* — it provides no dice to rolls and cannot be used until repaired.
+
+> This rule applies identically to all gear: weapons (Gear Bonus reduced by 1), armor (Armor Rating reduced by 1), and tools. Improvised items break outright when their sole Gear Die shows a 1 — see xref:chapters/10-equipment.adoc#_improvised_item_failure[Improvised Item Failure].
+
+> For full repair rules, see xref:chapters/10-equipment.adoc#crafting-and-repair[Crafting and Repair].
+
 ---
 
 == Opposed Rolls

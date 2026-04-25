@@ -343,13 +343,21 @@ agent can manage a field fix if the situation demands it.
 
 ---
 
-=== Gear Degradation Recap
+=== Gear Degradation
 
-Every piece of equipment with a **Gear Die** risks degradation when that die rolls
-a **1**. Gear degrades one step down the die chain (d12 → d10 → d8 → d6 → d4 →
-Broken). A **Broken** item cannot be used until repaired.
+Every item with a *Gear Bonus* risks degradation when any Gear Die in the pool
+rolls a *1* on the initial roll. The item's Gear Bonus is permanently reduced by 1
+until repaired. An item reduced to Gear Bonus 0 is *Broken* and cannot be used.
 
-> Stack Division Talent *Jury-Rig* can restore a broken item mid-scene at the cost
+This works consistently across all item types:
+
+* *Weapons and tools:* A 1 on any Gear Die reduces the Gear Bonus by 1 (fewer dice on the next roll).
+* *Armor:* A 1 on any armor-save Gear Die reduces the Armor Rating by 1.
+* *Improvised items:* Begin with Gear Bonus 1 (one black d6). A 1 breaks them immediately — roll on the Improvised Item Failure table below instead of reducing Gear Bonus.
+
+Gear Dice are never rerolled on a push. See xref:chapters/03-core-resolution.adoc#_gear_degradation[Core Resolution → Gear Degradation] for the full rule.
+
+> Stack Division Talent *Jury-Rig* can restore a Broken item mid-scene at the cost
 > of +1 Corruption. Formal repair rules below handle everything else.
 
 ---
@@ -372,18 +380,18 @@ Repairing gear requires **time**, **parts**, and a **Tech** roll.
 
 [%header,cols="2,1,2,3"]
 |===
-| Condition | Gear Die | Repair Diff | Time Required
+| Condition | Gear Bonus | Repair Diff | Time Required
 
-| *Degraded* (d10–d4)        | Any step below max | 1 | Quick Repair: 15 minutes (1 scene)
-| *Broken* (non-electronic)  | —                  | 2 | Full Repair: 1 Shift (~4 hours)
-| *Broken* (electronic/mechanical) | —            | 3 | Full Repair: 1 Shift; requires Power Tools
-| *Combat-Damaged Vehicle*   | Reliability die    | 3 | Full Day; requires Auto Repair kit
-| *Artifact-Adjacent Damage* | —                  | 4 | Requires Occult Lab or Wayfinder consult
+| *Degraded* (Gear Bonus below max) | Below max (≥1) | 1 | Quick Repair: 15 minutes (1 scene)
+| *Broken* (Gear Bonus 0, non-electronic) | 0 | 2 | Full Repair: 1 Shift (~4 hours)
+| *Broken* (Gear Bonus 0, electronic/mechanical) | 0 | 3 | Full Repair: 1 Shift; requires Power Tools
+| *Combat-Damaged Vehicle* | See Reliability | 3 | Full Day; requires Auto Repair kit
+| *Artifact-Adjacent Damage* | — | 4 | Requires Occult Lab or Wayfinder consult
 |===
 
-**Success:** Each success restores the Gear Die one step (up to its maximum).
-A single Quick Repair roll can only ever restore to the step *above* Broken — a
-Broken item must be fully repaired before it can be used again.
+**Success:** Each success restores Gear Bonus by 1 (up to the item's maximum).
+A single Quick Repair roll can restore a Degraded item but not a Broken one —
+a Broken item requires a Full Repair before it can be used again.
 
 **Failure:** The repair attempt fails but does not make things worse.
 **Complication (Pushed roll only):** A pushed Repair roll that fails delivers a
@@ -464,23 +472,23 @@ at reduced effectiveness and carry a higher risk of failure.
 Roll **Tech** (WIT), using the difficulty from the table below. Requires at
 minimum a **Junk Die (d6)** as parts; step it down after crafting.
 
-Improvised items begin with a **d8 Gear Die** (never start at d10 or d12 —
-they're held together with duct tape and prayer).
+Improvised items begin with *Gear Bonus 1* (one black d6 in the pool — never
+more, they're held together with duct tape and prayer).
 
 [%header,cols="2,1,1,4"]
 |===
 | Improvised Item     | Tech Diff | Time | Notes
 
 | *Club / Makeshift Bludgeon* | 1 | 1 minute | Damage 1, Slow. No Gear Die — it's a pipe.
-| *Shiv / Field Knife*        | 1 | 5 minutes | Damage 1, Fast. Gear d8. Breaks on 1–2.
-| *Molotov Cocktail*          | 1 | 10 minutes | Blast 1, Fire. No Gear Die — single use.
-| *Improvised First Aid Kit*  | 2 | 20 minutes | Functions as Basic First Aid (d8). Gear d8.
-| *Signal Jammer*             | 2 | 1 hour | Blocks comms in zone. Gear d8. Electronics.
+| *Shiv / Field Knife*        | 1 | 5 minutes | Damage 1, Fast. Gear Bonus 1. Breaks on 1 (failure table).
+| *Molotov Cocktail*          | 1 | 10 minutes | Blast 1, Fire. No Gear Bonus — single use.
+| *Improvised First Aid Kit*  | 2 | 20 minutes | Functions as Basic First Aid. Gear Bonus 1.
+| *Signal Jammer*             | 2 | 1 hour | Blocks comms in zone. Gear Bonus 1. Electronics.
 | *Tripwire / Alarm Trap*     | 2 | 30 minutes | Spend; triggers on intruder entry. Single use.
-| *Garrote Wire*              | 1 | 5 minutes | Grapple-linked attack. No Gear Die — simple tool.
-| *Lockpick Set (crude)*      | 3 | 1 hour | Sleight of Hand −1 die compared to proper picks.
-| *Improvised Bug Detector*   | 3 | 2 hours | Detect surveillance; −1 die vs. professional gear.
-| *Field Radio Booster*       | 3 | 2 hours | Extend comms range by 1 zone. Gear d8. Electronics.
+| *Garrote Wire*              | 1 | 5 minutes | Grapple-linked attack. No Gear Bonus — simple tool.
+| *Lockpick Set (crude)*      | 3 | 1 hour | Sleight of Hand −1 die compared to proper picks. Gear Bonus 1.
+| *Improvised Bug Detector*   | 3 | 2 hours | Detect surveillance; −1 die vs. professional gear. Gear Bonus 1.
+| *Field Radio Booster*       | 3 | 2 hours | Extend comms range by 1 zone. Gear Bonus 1. Electronics.
 |===
 
 > Improvised items **cannot** be upgraded with proper parts after the fact —
@@ -490,8 +498,8 @@ they're held together with duct tape and prayer).
 
 ==== Improvised Item Failure
 
-When a Gear Die on an improvised item comes up **1**, it does not simply degrade —
-roll on the following table:
+When a Gear Die on an improvised item comes up **1**, it does not simply reduce Gear Bonus —
+the item fails outright. Roll on the following table:
 
 [%header,cols="1,3"]
 |===
