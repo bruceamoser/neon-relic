@@ -18,15 +18,17 @@ Your *Division* is your character class. It defines your role within the Covenan
 | *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy, Wits
 |===
 
-> **Clearance Level (CL) vs. Covenant Standing — they are not the same thing.**
->
-> | | *Clearance Level (CL)* | *Covenant Standing*
-> | *What it is* | Equipment authorization tier | Institutional reputation and trust
-> | *How it changes* | Division base + Age Group modifier (min 1, max 5) | Earned via mission success; reduced by exposure or failure
-> | *What it gates* | Gear requisitions during Equipping Phase | Information access, advanced facilities, some talent prerequisites
-> | *Defined in* | This chapter (Step 3) | xref:chapters/12-headquarters.adoc#covenant-standing[Headquarters]
->
-> High CL means your agent is trusted with expensive or dangerous equipment. High Standing means the Covenant trusts your agent's *judgment*. Both matter, but they increase through different actions and govern different systems.
+[NOTE]
+.Clearance Level (CL) vs. Covenant Standing
+====
+These two numbers measure different kinds of trust, and new agents often confuse them.
+
+*Clearance Level* is an equipment authorization tier. It determines what gear your agent can requisition during the Equipping Phase — higher CL means access to more expensive or more dangerous hardware. Your starting CL is set by your Division base plus an Age Group modifier (minimum 1, maximum 5), and it is defined here in Step 3.
+
+*Covenant Standing* is institutional reputation. It reflects how much the Covenant trusts your agent's judgment, and it gates information access, advanced HQ facilities, and some talent prerequisites. Standing is earned through mission success and lost through exposure or failure. It is defined in xref:chapters/12-headquarters.adoc#covenant-standing[Headquarters].
+
+High CL means the Covenant will hand you a suppressed rifle. High Standing means the Covenant will tell you _why_ you need one. Both matter, but they increase through different actions and govern different systems.
+====
 
 Read the full Division descriptions in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] before making your choice.
 
