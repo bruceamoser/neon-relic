@@ -263,4 +263,6 @@ Armor protects against *physical damage only*. When an agent suffers physical da
 . Every *6* rolled absorbs *1 point* of incoming damage before it reduces your Strength.
 . *Degradation:* If you roll any *1s* on an armor save, the Armor Rating is permanently reduced by 1 until repaired by Stack during downtime.
 
-*Gear Dice cannot be pushed.* When you push a roll, you reroll all non-6 dice from your Attribute and Skill pools. Gear Dice are never rerolled — they represent equipment performance, not personal effort. However, any 1s rolled on Gear Dice still cause degradation (reduce the item's Gear Bonus or Armor Rating by 1) whether the roll is pushed or not.
+*Gear Dice cannot be pushed.* When you push a roll, you reroll all non-6 dice from your Attribute and Skill pools. Gear Dice are never rerolled — they represent equipment performance, not personal effort. Any 1s rolled on Gear Dice cause degradation (reduce the item's Armor Rating by 1) on the initial roll.
+
+> *Unified degradation rule:* Armor Rating is an item's Gear Bonus for defensive rolls. The same degradation rule applies to all gear — weapons, armor, and tools alike. See xref:chapters/03-core-resolution.adoc#_gear_degradation[Core Resolution → Gear Degradation] for the authoritative rule.
