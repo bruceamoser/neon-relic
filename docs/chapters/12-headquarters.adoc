@@ -301,10 +301,10 @@ cannot be purchased with Development Points alone.
 | Reward | Min. Standing | Effect
 
 | *Tier 2 HQ Upgrades Unlocked*       | 5  | Cell may begin purchasing Tier 2 facilities (see <<hq-upgrade-tree>>). DP cost unchanged.
-| *CL 3 Requisition Access*           | 5  | Standard CL 3 gear is available without special authorization.
+| *CL 3 Requisition Access*           | 5  | During Equipping Phase, the *entire cell* may requisition items up to CL 3 — even agents whose personal CL is still 2. This does not change individual agents' personal CL score.
 | *Keep Reinforcements*               | 10 | Once per arc, request a second Covenant cell for 1 session of operational support. They arrive equipped; they do not share Standing.
 | *Tier 3 HQ Upgrades Unlocked*       | 10 | Cell may begin purchasing Tier 3 facilities. DP cost unchanged.
-| *CL 4 Requisition Access*           | 10 | High-tier equipment (specialized surveillance, artifact containment casings, prototype weapons) available via formal request.
+| *CL 4 Requisition Access*           | 10 | During Equipping Phase, the entire cell may requisition items up to CL 4 regardless of personal CL. High-tier equipment available via formal request. Does not change individual agents' personal CL scores.
 | *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore and Investigate rolls during pre-departure research.
 | *Covenant Asset Call-In*            | 15 | Once per campaign arc, the Covenant deploys a named asset — insider at a government agency, black-market arms contact, demolitions specialist — to assist directly.
 | *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their Keeper (xp replacement PC) begins play with 3 Standing already gained toward the cell total.
