@@ -1,6 +1,10 @@
 [#chapter-headquarters]
 = Headquarters Management
 
+This chapter covers the Covenant Safehouse — your cell's persistent base of operations — and the two systems attached to it: the *HQ Upgrade Tree* (spending Development Points to expand facilities and capabilities) and *Covenant Standing* (the cell's reputation within the Covenant, which gates access to higher-tier resources and privileged information).
+
+Facilities are permanent once built. They do not require ongoing maintenance or upkeep costs — the Covenant handles logistics. The cost is in Development Points and time, not recurring expenditure (#648).
+
 In YZE games, a persistent base of operations is a fundamental pillar of long-term campaign play. In _Mutant: Year Zero_ it's the Ark; in _Forbidden Lands_, the Stronghold; in _Vaesen_, Castle Gyllencreutz. In Project Neon Relic, the *Headquarters* serves as a mechanical anchor, a psychological safe haven from Corruption, and an economic resource sink giving players ownership over the world.
 
 == The Covenant Safehouse
@@ -28,6 +32,8 @@ The team earns DP collectively during *the Aftermath* of each Case File:
 | Agent rescued from rival faction custody | 1
 |===
 
+> *Definitions:* A *Named Threat* is any faction operative or supernatural entity that appears as a recurring antagonist with a Covenant file entry (see xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]). *Active case pressure* means the Operations Board has at least one Organization at Escalation 2+ or a relic milestone triggered during the Case File. The *primary objective* is the artifact containment goal stated in the Case Brief — not any side objective the cell chose to pursue. *Neutralized* means captured, destroyed, or otherwise permanently removed from the board for the arc — a threat that flees and returns later does not count.
+
 DP is spent immediately during downtime or banked for future Case Files. There is no cap on banked DP.
 
 ---
@@ -48,12 +54,12 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | *Secure Communications Room*
 | 2
 | Encrypted landline bank, reel-to-reel tape vault, scrambled HAM radio array. No one outside the Covenant can track calls to or from this room.
-| +1 die on Command rolls when coordinating with Covenant contacts between Case Files. One free contact call per downtime (no CL requirement).
+| +1 die on Command (EMP) rolls when coordinating with Covenant contacts between Case Files. One free contact call per downtime (no CL requirement).
 
 | *Basic Medical Bay*
 | 2
 | Field triage table, locked pharmaceutical cabinet, sterilized instruments. Not elegant, but it keeps people alive.
-| During downtime, each character recovers *2 additional Attribute points* (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal Difficulty 2; success removes the injury without Attribute loss).
+| During downtime, each character recovers *2 additional Attribute points of their choice* (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal (WIT) Difficulty 2; success removes the injury without Attribute loss).
 
 | *Safeguard Protocol*
 | 1
@@ -73,13 +79,17 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 3
 | Secure Communications Room
 | Wall-to-wall collection of newspaper records, police reports, and occult journals on microfilm. A full-time archivist — never seen without reading glasses and cigarettes — maintains the stacks.
-| Permanent *+2 Gear bonus* to Lore (Wits) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
+| Permanent *+2 Gear bonus* to Lore (WIT) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
+
+> *Division interaction:* A Wayfinder agent using the Verdant Codex in the Archive gains both the Codex's +1 bonus die and the Archive's +2 Gear bonus on the same Lore (WIT) roll.
 
 | *The Occult Laboratory*
 | 3
 | Basic Medical Bay
 | Sterile environment with chemical analysis tools, EMF meters, and purpose-built containment vessels. Smells permanently of ozone and burnt copper.
-| Safely identify unknown artifact triggers without risking accidental activation. Lore roll to identify artifact tier is Difficulty 1 here (instead of 2). Failed identification rolls do not trigger the artifact.
+| Safely identify unknown artifact triggers without risking accidental activation. Lore (WIT) roll to identify artifact tier is Difficulty 1 here (instead of 2). Failed identification rolls do not trigger the artifact.
+
+> *Division interaction:* A Wayfinder agent using the Verdant Codex in the Lab gains +1 bonus die on the Lore (WIT) identification roll in addition to the Lab's reduced difficulty.
 
 | *The Black-Market Armory*
 | 3
@@ -91,7 +101,8 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 4
 | Secure Communications Room
 | Lead-lined room sealed against electromagnetic and supernatural interference. No phones work inside. No spirits answer. Silence like the inside of a safe.
-| One character per downtime can heal up to *4 Corruption*. Requires a full day inside — the character is unavailable for other downtime activities that day.
+| One character per downtime can heal up to *4 Corruption*. Requires a full day (one Case File downtime period) inside — the character is unavailable for other downtime activities that day. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing] for all Corruption healing rules; the Faraday Cage is an exception that applies only during downtime at HQ. +
+*Division interaction:* A Keep agent whose Warden's Bracer provides passive Corruption absorption may still use both the Bracer's per-session absorption AND heal in the Faraday Cage — they do not conflict.
 |===
 
 === Tier 3 — Advanced Operations
@@ -118,12 +129,13 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 6
 | Faraday Cage + Occult Laboratory
 | A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
-| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]). Vault must be re-consecrated after 3 Case Files (Lore Difficulty 2; failure = 1 random artifact "wakes up").
+| Store up to *3 active artifacts* without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]). Vault must be re-consecrated after 3 Case Files (Lore (WIT) Difficulty 2; failure = 1 random artifact "wakes up" — roll d6 to determine which stored artifact). +
+*Cage + Vault interaction:* The Corruption Dampening Vault is a sub-chamber inside the Faraday Cage. A character healing Corruption in the Cage while artifacts are stored in the Vault sub-chamber is safe — the shielding prevents any passive emission. A Keep agent using the Containment Protocol talent (see xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]) may apply the talent's bonus to re-consecration rolls here.
 
 | *Safe House Network*
 | 6
 | Secure Communications Room + Safeguard Protocol
-| A constellation of bolt-holes, friendly business fronts, and sympathetic innkeepers spread across the region — pre-loaded with emergency cash, clean IDs, and a single burner phone.
+| A constellation of bolt-holes, friendly business fronts, and sympathetic innkeepers spread across the region — pre-loaded with emergency cash, clean IDs, and a contact pager (each safe house maintains a dedicated pager number registered to a cutout identity).
 | The team always has a fallback safe house available in any new investigation city, no setup required. Removes all "no safe place to rest" environmental penalties while away from HQ. On failure during the HQ Compromise event, one safe house absorbs the breach instead of HQ itself (one-time use; must rebuild, 3 DP).
 |===
 
@@ -134,6 +146,8 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 Beyond infrastructure, the team can recruit individual *contacts and specialists* using Development Points. Personnel provide passive benefits between Case Files and can be called upon during active missions at the DA's discretion.
 
 Personnel are not combatants. If the HQ is directly attacked, they flee or hide — they do not fight to defend the base.
+
+*Activating Personnel:* Requesting a personnel benefit during a Case File requires only a narrative declaration ("I contact the Dispatcher") — no roll is required unless the DA determines the contact is under surveillance, compromised, or operating outside their stated capability. In those cases, use Command (EMP) Difficulty 2 to reach them. Personnel benefits listed as "once per Case File" reset at the start of each new Case File.
 
 [%header,cols="2,^1,3,2"]
 |===
@@ -147,7 +161,7 @@ Personnel are not combatants. If the HQ is directly attacked, they flee or hide 
 | *Underground Field Medic*
 | 2
 | A struck-off physician — too many questions asked, too many bullet wounds treated no-questions-asked. Brilliant in a crisis.
-| During downtime, one character may be treated for a non-lethal Critical Injury (removes the injury without Attribute loss if a Heal roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
+| During downtime, one character may be treated for a non-lethal Critical Injury (removes the injury without Attribute loss if a Heal (WIT) roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
 
 | *Black-Market Fence*
 | 3
@@ -157,12 +171,12 @@ Personnel are not combatants. If the HQ is directly attacked, they flee or hide 
 | *Covenant Scholar*
 | 3
 | A former academic — history, linguistics, or theology — recruited (or blackmailed) into the Covenant's extended network. Corresponds by mail only.
-| +1 die on pre-mission Lore rolls when the scholar is consulted (same city or via correspondence). Can translate dead languages overnight (remove the "ancient language" investigation obstacle without a roll).
+| +1 die on pre-mission Lore (WIT) rolls when the scholar is consulted (same city or via correspondence). Can translate dead languages overnight (remove the "ancient language" investigation obstacle without a roll).
 
 | *Signals Technician*
 | 4
 | An ex-NSA field tech — burned, paranoid, and very good at making equipment do things it shouldn't.
-| Once per Case File, plant a real-time audio tap on a rival faction's communication line (Investigate Difficulty 2; success = one scene of intercepted intel). Also: +1 die on all Tech rolls within HQ.
+| Once per Case File, plant a real-time audio tap on a rival faction's communication line (Investigate (WIT) Difficulty 2; success = one scene of intercepted intel). Also: +1 die on all Tech (WIT) rolls within HQ.
 |===
 
 ---
@@ -179,9 +193,9 @@ The Threat Meter increases by 1 when:
 
 * The team uses explosives or automatic weapons fire in a populated area
 * A rival faction agent escapes alive with knowledge of the team's base location
-* The team fails to contain a corruption leak (active artifact left unsecured overnight)
+* The team fails to contain a corruption leak (*active artifact left overnight in open storage* — not inside the Corruption Dampening Vault or Occult Lab containment vessels)
 * A deceased agent's civilian identity is linked to the Covenant by law enforcement
-* The team's case pressure reaches crisis and breaks containment during a Case File
+* The team's *case pressure escalates to crisis and breaks containment* — meaning an Organization reaches Escalation 3 on the Operations Board and the Case File ends without resolution
 
 The Threat Meter decreases by 1 at the end of any Case File in which the team was completely covert (no civilian witnesses, no law enforcement contact, no corruption incidents).
 
@@ -193,23 +207,23 @@ When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the ne
 |===
 | Roll | Compromise Type
 
-| 1–2 | *Surveillance* — A rival team has a long lens on the safehouse. The HQ is not breached, but the Threat Meter resets to 4 (not 0). All Tier 2+ facilities are temporarily offline until the surveillance is identified and dealt with (a mini-investigation, 1 session).
-| 3–4 | *Break-In* — Evidence of entry, triggered sensors, one personnel contact goes missing. One randomly determined facility is trashed (unavailable until repaired at half DP cost). Threat Meter resets to 3.
+| 1–2 | *Surveillance* — A rival team has a long lens on the safehouse. The HQ is not breached, but the Threat Meter resets to 4 (not 0). All Tier 2+ facilities are temporarily offline until the surveillance is identified and dealt with (a mini-investigation, 1 Case File).
+| 3–4 | *Break-In* — Evidence of entry, triggered sensors, one personnel contact goes missing. One facility is trashed — to determine which, number all built facilities in construction order and roll d6 (re-roll if the result exceeds your facility count). The trashed facility is unavailable until repaired at half DP cost. Threat Meter resets to 3.
 | 5 | *Direct Assault* — A hostile team hits the safehouse hard. Run a full HQ defense scene (see below). One facility destroyed on failure; none if the team holds. Threat Meter resets to 2.
-| 6 | *Burned* — The safehouse is fully compromised. The team must relocate (lose all Tier 1–2 facilities; Tier 3 facilities survive only if the Safe House Network is built). Threat Meter resets to 0. All banked DP intact; team starts rebuilding at new location.
+| 6 | *Burned* — The safehouse is fully compromised. No defense scene is run — the breach happens between Case Files. The team receives a single scene to extract critical equipment and personnel before the location is abandoned. Lose all Tier 1–2 facilities; Tier 3 facilities survive only if the Safe House Network is built (they relocate to the fallback address). Threat Meter resets to 0. All banked DP intact; rebuild begins at the new location on the next Case File's Aftermath.
 |===
 
 === HQ Defense Scene
 
-If the compromise event results in a direct assault (rolls 5–6), run it as a structured conflict:
+If the compromise event results in a direct assault (roll 5 only — the *Burned* result on 6 does not use this procedure), run it as a structured conflict:
 
 * The DA establishes attacker strength (Grunt × team size or Elite × half team size from the Bestiary).
 * Safeguard Protocol gives +1 die on the team's first initiative roll.
-* Characters who are *Broken* during an HQ defense scene and not stabilized before the scene ends immediately suffer the Dying state (no stabilization window extension).
+* Characters who are *Broken* during an HQ defense scene follow standard Broken rules (Critical Injury + out of fight; see xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]). Stabilization must occur before end of scene to prevent the Dying state.
 * If the attackers are driven off or destroyed: Threat Meter resets to 2; HQ is undamaged.
-* If the team retreats: roll on the Compromise Event table again (once) to determine collateral damage.
+* If the team retreats: roll on the Compromise Event table again (once) to determine collateral damage (re-roll results of 5 or 6).
 
-> *Optional — Named Threats:* If the Threat Meter has recently been driven up by a specific rival faction, the DA may assign a Named Threat as the assault leader. This escalates the scene but awards +2 DP if the Named Threat is captured or killed.
+> *Optional — Named Threats:* If the Threat Meter has recently been driven up by a specific rival faction, the DA may assign a Named Threat as the assault leader. This escalates the scene but awards +2 DP if the Named Threat is captured or killed. An *arc* is a sequence of 3–5 Case Files centered on a shared antagonist or artifact thread; the DA determines arc boundaries.
 
 ---
 
@@ -225,6 +239,8 @@ messes*.
 Standing is tracked as a single score from **0 to 20**, shared by the entire cell.
 It never applies to individual agents — the Covenant evaluates teams, not heroes.
 
+> *Note on CL, Standing, and Requisition Authority:* These three systems overlap but serve distinct purposes. A character's personal *CL (Covenant Level)* represents their individual combat clearance and affects which weapons they can legally carry (see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]). *Standing* is a cell-level score that unlocks collective resource access, case priority, and information tiers. *Requisition Authority* is an in-fiction narrative mechanism — who you can call to get things. Standing rewards (below) grant cell-wide CL requisition caps that temporarily raise what the *whole team* can access during equipping — but do not change any agent's personal CL score.
+
 ---
 
 === Standing Ranks
@@ -233,11 +249,11 @@ It never applies to individual agents — the Covenant evaluates teams, not hero
 |===
 | Score | Rank | What It Means
 
-| 0–4   | *Unknown*           | The cell is new or unproven. Covenant resources are minimal; access is limited to Tier 1 upgrades and standard requisitions. *Information access:* Operational briefings only; no archive access.
-| 5–9   | *Acknowledged*      | The cell has delivered results. Wayfinder and Keep division contacts treat the cell as credible. *Information access:* Standard archive access; classified materials redacted.
-| 10–14 | *Trusted*           | The cell handles significant cases. The Covenant routes priority case files through them. Keep reinforcements available. *Information access:* Full archive access; classified materials available with DA approval.
-| 15–19 | *Honored*           | The cell has operated at the highest levels. Named contacts within Covenant leadership. *Information access:* Unrestricted access including Covenant historical records.
-| 20    | *Covenant Elite*    | Fewer than a dozen cells in history have reached this. The Covenant treats the cell as irreplaceable. No resource limits. Legacy recorded. *Information access:* Unrestricted; may request records from allied organizations.
+| 0–4   | *Unknown*           | The cell is new or unproven. Covenant resources are minimal; access is limited to Tier 1 upgrades and standard requisitions. *Information access:* Operational briefings only — the Case Brief as written, no supplementary Covenant archive material. Lore (WIT) rolls using Covenant research assets gain no bonus dice.
+| 5–9   | *Acknowledged*      | The cell has delivered results. Wayfinder and Keep division contacts treat the cell as credible. *Information access:* Standard archive access (Microfiche Archive if built); classified materials are redacted when sent. Lore (WIT) research rolls gain +1 die from Covenant channels (not from personal skill).
+| 10–14 | *Trusted*           | The cell handles significant cases. The Covenant routes priority case files through them. Keep reinforcements available. *Information access:* Full archive access; classified materials available with DA approval. Lore (WIT) research rolls gain +2 dice from Covenant channels. One additional pre-case clue per Case File (DA provides it with the Case Brief).
+| 15–19 | *Honored*           | The cell has operated at the highest levels. Named contacts within Covenant leadership. *Information access:* Unrestricted access including Covenant historical records and cold case files. Lore (WIT) research rolls gain +3 dice from Covenant channels. Cold case files provided on request (no roll required).
+| 20    | *Covenant Elite*    | Fewer than a dozen cells in history have reached this. The Covenant treats the cell as irreplaceable. No resource limits. Legacy recorded. *Information access:* Unrestricted; may request records from allied organizations. Lore (WIT) research rolls gain +3 dice plus one automatic success from Covenant channels.
 |===
 
 ---
@@ -289,6 +305,8 @@ Covenant knows. It always knows.
 > Standing — it simply stops routing cases to them and begins reassigning their
 > contacts. Effective retirement.
 
+> *Design Note — Asymmetry:* Standing is intentionally harder to gain than to lose. A single civilian casualty costs −2 Standing; a perfect artifact recovery earns +2. This mirrors the Corruption economy: the Covenant, like the artifacts themselves, punishes desperation. Cells that stay clean, keep quiet, and contain artifacts properly are the only ones that last. The asymmetry is a feature, not a bug.
+
 ---
 
 === Standing Rewards
@@ -301,11 +319,11 @@ cannot be purchased with Development Points alone.
 | Reward | Min. Standing | Effect
 
 | *Tier 2 HQ Upgrades Unlocked*       | 5  | Cell may begin purchasing Tier 2 facilities (see <<hq-upgrade-tree>>). DP cost unchanged.
-| *CL 3 Requisition Access*           | 5  | During Equipping Phase, the *entire cell* may requisition items up to CL 3 — even agents whose personal CL is still 2. This does not change individual agents' personal CL score.
-| *Keep Reinforcements*               | 10 | Once per arc, request a second Covenant cell for 1 session of operational support. They arrive equipped; they do not share Standing.
+| *CL 3 Requisition Access*           | 5  | During Equipping Phase, the *entire cell* may requisition items up to CL 3 — even agents whose personal CL is still 2. This does not change individual agents' personal CL score; it raises the cell-wide equipping cap only.
+| *Keep Reinforcements*               | 10 | Once per arc (3–5 Case Files), request a second Covenant cell for 1 Case File of operational support. They arrive equipped; they do not share Standing.
 | *Tier 3 HQ Upgrades Unlocked*       | 10 | Cell may begin purchasing Tier 3 facilities. DP cost unchanged.
 | *CL 4 Requisition Access*           | 10 | During Equipping Phase, the entire cell may requisition items up to CL 4 regardless of personal CL. High-tier equipment available via formal request. Does not change individual agents' personal CL scores.
-| *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore and Investigate rolls during pre-departure research.
+| *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore (WIT) and Investigate (WIT) rolls during pre-departure research.
 | *Covenant Asset Call-In*            | 15 | Once per campaign arc, the Covenant deploys a named asset — insider at a government agency, black-market arms contact, demolitions specialist — to assist directly.
 | *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their Keeper (xp replacement PC) begins play with 3 Standing already gained toward the cell total.
 | *Unrestricted HQ Upgrade*           | 20 | Once per arc, build any single HQ upgrade for 0 DP. The Covenant funds it directly.
@@ -316,9 +334,10 @@ cannot be purchased with Development Points alone.
 === Standing and HQ Upgrade Gates
 
 Some HQ facilities already require specific prerequisites (DP investment and prior
-facilities). **Standing gates** apply on top of those prerequisites for the most
-sensitive upgrades. These upgrades cannot be built regardless of DP until the
-Standing threshold is met.
+facilities in the upgrade tree). **Standing gates** apply *in addition to* those
+prerequisites for the most sensitive upgrades — meeting the DP and facility
+prerequisites is not sufficient alone. The facility cannot be built until both the
+DP/facility prerequisite AND the Standing threshold are met.
 
 [%header,cols="3,1,1"]
 |===
@@ -336,7 +355,9 @@ Standing threshold is met.
 > **Design Note:** Standing gates exist because Tier 2 and 3 facilities represent
 > the Covenant extending significant trust to a cell. An unproven cell does not get
 > access to the Occult Laboratory or the Corruption Dampening Vault. They have to
-> earn it.
+> earn it. These gates are separate from the DP economy — you can bank enough DP
+> to build the Vault immediately at Standing 10; you cannot build it at Standing 9
+> regardless of DP.
 
 ---
 
@@ -363,4 +384,52 @@ Roll on this table during the first session:
 cell reaches a Standing tier higher than the player cell's, the Covenant begins
 routing priority cases to the rival — the next case the player cell receives is
 a leftover (roll Complication twice, keep both results).
+
+=== Rival Cell Interaction Mechanics
+
+When the player cell and a rival cell intersect on the same Case File, resolve shared-territory conflicts with these procedures:
+
+* *Contested Artifact Recovery:* Both cells find the same artifact in the same scene. Each cell makes a Sneak (AGI) or Investigate (WIT) contested roll (the cell as a group uses the highest relevant skill). The winner reaches the artifact first; the loser may pursue or withdraw. A tie means the artifact is found simultaneously — negotiate or fight.
+* *Shared Information:* If the rival cell holds information the player cell needs, they may trade (one clue for one clue), negotiate (Command (EMP) Difficulty 3 to extract it freely), or coerce (Athletics (STR) or Intimidate (EMP) Difficulty 2, but triggers −1 Standing for aggression against a Covenant cell).
+* *Combined Operations:* If both cells cooperate (DA's call), each cell adds +1 die to all rolls for the duration of the scene. Both cells share the DP and Standing gains. If the operation goes badly, both cells share the losses.
+* *Hostile Cell Escalation:* A Hostile or Compromised rival cell may actively oppose the player cell. Treat their operatives as NPCs with stats equal to the player cell's average. If the rival cell is destroyed, gain +2 DP and +1 Standing (once per arc).
+
+---
+
+== DA Pacing Guidance
+
+=== When to Advance the Threat Meter
+
+The Threat Meter should tick up *during play*, not as a between-Case-File bookkeeping exercise. Announce increases openly when they result from visible player actions (explosives, escaped witnesses). Only advance it silently when the cause is something the players genuinely wouldn't know about (a rival faction operative spotting the HQ, a deceased agent's ID surfacing). Keep the meter itself hidden — the dread of not knowing how close they are to a Compromise Event is the point.
+
+Run Compromise Events when the meter hits 6 — do not delay them into the next arc. They're not punishments; they're Case Files. Treat the Surveillance or Break-In results as seeds for a mini-investigation, not as flat negative outcomes.
+
+=== Pacing HQ Upgrades
+
+A typical campaign arc (3–5 Case Files) should end with the cell completing one Tier 2 facility if they're playing clean. Don't accelerate this — the upgrade tree is meant to feel like tangible progress over a campaign, not an early session loadout. The DP triggers are calibrated so that a cell succeeding on every award earns roughly 7–9 DP per Case File; a Tier 2 facility costs 3–4 DP. Pace accordingly.
+
+The Faraday Cage is the single most important upgrade in the tree. Don't introduce it until the cell has had at least one scene where Corruption was a genuine crisis. Unlocking the Cage should feel like survival, not optimization.
+
+=== Introducing Rival Cells
+
+Roll on the Rival Cell table at campaign start and keep the result private. Don't reveal the rival cell's nature until the cells actually intersect. A *Shadow* rival cell (result 6) should remain mysterious for multiple arcs — don't over-explain. An *Allied* cell (result 1) should have a named contact the players can actually call on; give them a face.
+
+If the rival cell's Standing surpasses the player cell's by 5+, have the Covenant route one "prestige" Case File to the rival openly — this is a cue for the players, not a punishment. Let them chase it back.
+
+=== Using the Black-Market Armory
+
+The Armory's CL 4 access should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
+
+---
+
+== Cross-References
+
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption healing rules (the Faraday Cage is an exception for HQ downtime healing; all other healing rules apply as written)
+* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Instrument interactions with HQ facilities (Verdant Codex + Archive/Lab, Warden's Bracer + Vault)
+* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Personal CL scores, Gear Bonus definitions, CL requisition rules
+* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact containment in Corruption Dampening Vault, Occult Lab identification procedures
+* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — Requisition Authority and how it relates to Standing; XP and Debrief awards
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Operations Board, Organization Escalation, Case File Aftermath (DP awards)
+* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Named Threat definitions, rival faction operative stat blocks for HQ Defense Scenes
+* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — NPC stat blocks (Grunt and Elite tiers for HQ Defense Scene attacker strength)
 
