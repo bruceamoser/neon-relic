@@ -167,7 +167,7 @@ This is the *canonical General Talents list* used at character creation and duri
 | *Iron Will* _(Healing)_ | Land the killing blow or banish a supernatural threat? The rush of victory heals 1 Corruption.
 | *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
 | *Flee the Scene* | Gain +2 bonus dice to Agility when rolling explicitly to escape a conflict.
-| *Requisition Authority* _(Repeatable)_ | Increase your Clearance Level by 1 (maximum CL 5). May be purchased multiple times. _Prerequisite:_ Covenant Standing must equal or exceed the target CL × 3 (CL 3 requires Standing 9+, CL 4 requires Standing 12+, CL 5 requires Standing 15+).
+| *Requisition Authority* _(Repeatable)_ | Increase your *personal* Clearance Level by 1 (maximum CL 5). May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
 |===
 
 ---
