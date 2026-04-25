@@ -1,7 +1,7 @@
 [#chapter-sample-case-file]
 = Sample Case File: The Spear That Went Dark
 
-This chapter presents a complete, ready-to-run Neon Relic case file. *The Spear That Went Dark* is the introductory sample that ships with the game. It demonstrates every system working together: the Operations Board, the nine-document case package, Containment Truths, Organizations, NPC Cards, Location Pages, and Information Cards. Run it as written for your first session, or read through it to understand how the pieces fit before building your own.
+This chapter presents a complete, ready-to-run Neon Relic case file. *The Spear That Went Dark* is the introductory sample that ships with the game. It demonstrates every system working together: the Operations Board, the eight-document case package, Containment Truths, Organizations, NPC Cards, Location Pages, and Information Cards. Run it as written for your first session, or read through it to understand how the pieces fit before building your own.
 
 The full document package — all filled-in forms — lives in the starter kit under `sample-case-file/`. This chapter provides the narrative architecture the DA needs to run the case, plus the handout images and NPC portraits for use at the table.
 
@@ -56,15 +56,14 @@ Once you have run or read through *The Spear That Went Dark*, you are ready to b
 [#sample-case-packet]
 == The Case Packet
 
-The complete case data is organized into the nine-document case file package defined in xref:chapters/15-case-file.adoc#case-file-package[The Case File Package]. All filled-in forms are located in the starter kit under `sample-case-file/`:
+The complete case data is organized into the eight-document case file package defined in xref:chapters/15-case-file.adoc#case-file-package[The Case File Package]. All filled-in forms are located in the starter kit under `sample-case-file/`:
 
 [%header,cols="2,3"]
 |===
 | Document | File
 
-| Case File (Mission Brief — Player-Facing) | `case-file-mission-brief.html`
 | Case Brief — DA | `case-brief-da.html`
-| Case Brief — Player | `case-brief-player.html`
+| Case Brief — Player (Agent Briefing) | `case-brief-player.html`
 | Relic Sheet | `relic-sheet.html`
 | Operations Board | `operations-board.html`
 | Organization Reference | `organization-reference.html`
@@ -90,7 +89,7 @@ The object is simultaneously sacred relic, imperial mandate, and weaponizable as
 
 == Cross-References
 
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Full case file package structure (nine documents), scene resolution mechanics, Organizations Board, Containment Truths, Information Cards
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Full case file package structure (eight documents), scene resolution mechanics, Organizations Board, Containment Truths, Information Cards
 * *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Tier 2+ relic behavior, Containment Profile structure (Trigger/Appetite/Quiescence), Containment Ritual procedure
 * *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Operations Board authoring, NPC Card design, entity web construction
 * *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Vantablack Compact operational behavior, MJ-12 surveillance profile, Church-adjacent faction dynamics

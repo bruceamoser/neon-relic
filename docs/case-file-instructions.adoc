@@ -200,8 +200,7 @@ Gather everything you have created:
 | Document | Status
 
 | Case Brief — DA | Mystery statement, real situation, containment truths, relic milestones, resolution notes, DA pacing guidance.
-| Case Brief — Player | Covenant briefing — only what the agents would know walking in.
-| Case File Form | In-world mission document for players.
+| Case Brief — Player | Covenant agent briefing — case name, region, objectives, known organizations, NPC dossiers, starting leads, operational parameters, regional contacts.
 | Operations Board | Shift row with relic milestones, organization rows with starting values and milestone squares.
 | Organization Reference | All organizations, each with O#M# milestone descriptions and cross-link consequences.
 | Relic Sheet | Full artifact profile, fracture table, containment truth checklist.
