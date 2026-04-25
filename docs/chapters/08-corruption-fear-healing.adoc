@@ -33,6 +33,8 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 | *Artifact Activation* | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier.
 | *Fear Check (any 1s rolled)* | +1 | The mind cracks trying to process the unprocessable. See Fear rules below.
 | *Failed Fear Check* | +1 | On top of any 1s penalty. See Fear rules below.
+| *Successful Psychoanalyze on contaminated NPC* | +1 | Reading a corrupted mind transfers a fragment. Unique: the only roll where *success* costs Corruption. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
+| *Other sources* | Varies | Artifact emissions (passive auras, pulses, Corruption Cascade), creature passive Corruption, Mental Critical Injury results, ritual backlash, and specific supernatural interactions. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts], xref:chapters/07-health-damage-armor.adoc#chapter-health[Health & Damage], and xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary] for details.
 |===
 
 == Corruption Effects
@@ -42,10 +44,10 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 | Corruption | Stage | Mechanical & Narrative Consequence
 
 | *1–3* | Nosebleeds / Migraines | Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control.
-| *4–6* | Auditory Hallucinations | Distinct whispers from the void — voices of the dead or entities from beyond.
-| *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop.
-| *10–12* | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence.
-| *13–14* | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps.
+| *4–6* | Auditory Hallucinations | Distinct whispers from the void — voices of the dead or entities from beyond. *Mechanical:* Once per session, the DA may describe a specific hallucination and require a Wits roll (Difficulty 1) to distinguish real from imagined. Failure = the character acts on the hallucination for one round.
+| *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop. *Mechanical:* −1 die on Sleight of Hand and Firearms rolls. Visible tremors: NPCs and allies may notice. The character cannot fully conceal them.
+| *10–12* | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence. *Mechanical:* Electronic Gear Dice in the character's possession degrade one step at the start of each scene. Allies in the same zone gain +1 Corruption at the start of each scene (contamination leaking outward).
+| *13–14* | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps. *Mechanical:* At the start of each scene, the DA rolls a d6. On a 1–2, the character enters a brief fugue (DA controls character for one round; player does not remember it). This is distinct from the Panic Table Fugue (result 6), which is an acute one-time response — the stage Fugue is chronic and recurring.
 | *15–17* | Collapse of Self | The character's sense of personal identity begins to dissolve. They speak in third person, lose track of which memories are theirs, and may briefly mistake allies for entities. −1 die on all social skill rolls (they are visibly wrong). _This range is only reachable by characters with the Redundant Safeties talent or similar threshold-expanding effects._
 | *Exceeds Threshold* | *Catatonic Revelation* | The character's mind completely breaks upon perceiving the underlying, terrifying geometry of the universe. Permanent catatonic state. *Immediately removed from the campaign.*
 |===
@@ -62,11 +64,13 @@ Because Corruption naturally builds toward lethal levels, characters must active
 
 | *Anchor Scene* | Heal *1d4 Corruption* | Once per session. Dedicate a scene to interacting with your Anchor.
 | *Safe Scene Recovery* | Heal *1 Corruption* | Once per session. Dedicate a quiet downtime or decompression scene to personal reflection or rest. Cannot be the same scene used for an Anchor activation.
-| *Full Rest (24 hours)* | Heal Corruption equal to *Empathy score* | Full 24-hour cycle resting in a secure, non-anomalous location (e.g., Covenant HQ).
+| *Full Rest (24 hours)* | Heal Corruption equal to *Empathy score* | Full 24-hour cycle resting in a secure, non-anomalous location (defined as: no active artifact emissions, no supernatural entities, no uncontained occult material in the building). Covenant HQ with an active Faraday Cage qualifies. A hotel room or safe house qualifies. Full Rest is typically available only *between Case Files* or during extended downtime within a case (at DA discretion); it cannot be taken during an active shift. **Faraday Cage stacking:** Full Rest and the Faraday Cage (xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]) stack — a character who takes Full Rest at HQ with access to the Cage recovers Empathy score + up to 4 additional Corruption.
 | *Healing Talents* | Varies by talent | See Division Talents and General Talents marked with _(Healing)_.
 |===
 
 > *Design note:* Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest — but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
+>
+> *Session cap math:* From Ch 8 sources alone (Anchor + Safe Scene), the maximum in-session active recovery is up to 1d4 + 1 = 5 Corruption. Division Healing talents (xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] — Confessor, Gallows Humor, etc.) may add 1–4 additional Corruption healing per session depending on team composition. Between Case Files, HQ Facilities (xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters] — Faraday Cage) provide further recovery. The Session Healing Cap (see below) ensures even optimal play cannot fully erase a bad session's Corruption.
 >
 > *Session Healing Cap:* Regardless of all sources combined — Anchor Scenes, Safe Scenes, Talents (Confessor, Duct Tape & WD-40, etc.), or HQ Facilities (Faraday Cage) — an agent may heal *no more than 5 Corruption per session* from active in-session sources. Full Rest (24-hour downtime between sessions) is not subject to this cap. This cap enforces the asymmetric economy: even perfectly optimized play cannot fully reset Corruption within a single session. Multiple agents using Talents on the same target also count toward that target's session cap — not the user's.
 
@@ -74,7 +78,18 @@ Because Corruption naturally builds toward lethal levels, characters must active
 
 Every character begins with an *Anchor* — a tangible, physical object linked to a core humanizing memory (e.g., a cassette tape recording of a lost spouse's voice). In a moment of quiet downtime, a character can dedicate a scene to interacting with their Anchor. This grounded roleplay provides powerful mechanical healing.
 
+*Anchor Scene Requirements:*
+
+* The character must *physically hold or interact with* their Anchor.
+* The scene must be *safe* — no active threats, no time pressure, no combat.
+* The player should *describe the interaction* (at least a sentence or two of roleplay).
+* Anchor scenes *can occur during a Case File* if the team has a genuine moment of safety (a secured safe house, a quiet vehicle, a defended position at the DA's discretion).
+* *If the Anchor is lost or destroyed:* The character cannot use this recovery method until they create a new Anchor during a downtime phase — a meaningful roleplay scene with the DA. The new Anchor must be tied to a genuine memory. Acquiring a new Anchor is a narrative milestone, not a mechanical transaction.
+* *One Anchor at a time.* A character cannot carry backup Anchors to cycle through.
+
 === Random 1980s Anchor Table (Roll d66)
+
+> *Occult properties:* Several Anchor entries hint at subtle supernatural properties (a compass that points toward entities, a lighter with a blue flame). These are *narrative flavor* — the DA may describe them reacting to supernatural phenomena, but they do not provide reliable detection or mechanical advantage. An Anchor is a psychological comfort object, not a tool. Players cannot use Anchor properties as a substitute for proper detection equipment.
 
 [%header,cols="^1,4,^1,4"]
 |===
@@ -121,9 +136,12 @@ The DA calls for a Fear check when a character directly confronts a source of ge
 | *Witnessing violent supernatural death* | An ally or bystander is killed or consumed by occult means in front of the character
 | *Occult revelation* | Irrefutable proof of something the human mind cannot accommodate — a genuine miracle, an impossible geometry, a speaking dead
 | *Sustained entity presence* | For each *additional round* a character remains within Engaged range of an active, hostile entity (after the initial check)
+| *Contact with contaminated minds* | Attempting Psychoanalyze on an NPC with artifact exposure or long-term occult contamination. Fear Rating per DA (typically 1–2). See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict] for Psychoanalyze procedure.
 |===
 
-> *One check per trigger:* If the same entity is already known to the character from a prior session and has been observed before, no new Fear check is required merely for seeing it again — only for new escalations (it doing something new, getting closer, attacking).
+> *One check per trigger:* If the same entity is already known to the character from a prior session and has been observed before, no new Fear check is required merely for seeing it again — only for new escalations (it doing something new, getting closer, attacking, or *changing in a way that increases its threat* such as revealing a new form or escalating its Fear Rating).
+
+> *Edge cases:* A character who is Broken, unconscious, or in a Fugue panic state does *not* make Fear checks. A character who failed a Fear check and is currently suffering a Panic result does not make additional Fear checks until the Panic result ends. Sustained presence checks (each additional round) apply even to characters who succeeded on their initial check.
 
 === The Fear Check Procedure
 
@@ -149,6 +167,8 @@ Fear checks *cannot be pushed*. Fear is involuntary — there is no "trying hard
 | No | Yes | Worst case. 1 Mental (WIT) damage + +1 Corruption (from 1s) + +1 Corruption (from failure) = *+2 Corruption* + Panic Table.
 |===
 
+> *Why higher Wits means more Corruption on success:* Rolling more dice increases both the chance of a 6 (success) and the chance of a 1 (Corruption). A Wits-5 character who succeeds on a Fear check has a ~60% chance of still gaining +1 Corruption from the 1s rider. This is intentional — sharper minds process more of what they saw, and that awareness has a cost. Fear is never free. The consolation is that Wits 5 characters almost never fail the check entirely.
+
 > *Why Wits?* Fear strikes the rational, pattern-recognizing mind first. The brain tries to *explain* what the eyes are seeing — and fails. Empathy governs emotional horror (grief, bargaining, despair); that comes later, through the Corruption track.
 
 ****
@@ -167,19 +187,19 @@ On a failed Fear check (no 6s), roll *d6*:
 |===
 | Roll | Response | What Happens
 
-| *1* | *Fight* | Attack nearest creature (ally or foe) with bare hands this round. Cannot use weapons.
-| *2* | *Flight* | Run at full speed away from the source. Drop held items.
-| *3* | *Freeze* | Paralyzed. Cannot move, speak, or act. Allies can move you (Slow Action).
-| *4* | *Denial* | Treat the supernatural as mundane for rest of scene. Cannot acknowledge entity as real.
-| *5* | *Compulsion* | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2).
-| *6* | *Fugue* | DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene.
+| *1* | *Fight* | Attack nearest creature (ally or foe) with bare hands. Cannot use weapons. Resolve as a single Brawl attack: *Agility + Brawl skill dice* (no Gear Dice — bare hands only, unarmed damage = 1). Ends automatically after the single strike.
+| *2* | *Flight* | Run at maximum speed (2 zones per round) away from the source for *1d6 rounds*, or until reaching a dead end. Drop held items when the panic begins. An ally may physically restrain the fleeing character (opposed Brawl/Force roll, spending a Slow Action).
+| *3* | *Freeze* | Paralyzed. Cannot move, speak, or act. Allies can move the character (Slow Action). *Exit:* An ally spends a Slow Action and makes a Psychoanalyze (EMP) roll (Difficulty 1) to snap them out, OR the Fear source is no longer visible.
+| *4* | *Denial* | Treat the supernatural as mundane for rest of scene. Cannot acknowledge entity as real. *Early exit:* An ally may attempt Psychoanalyze (Difficulty 2) to break denial. On success, character acknowledges the entity but is Shaken (−1 die on all rolls for the remainder of the scene).
+| *5* | *Compulsion* | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2) frees them.
+| *6* | *Fugue* | DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene. *Early exit:* An ally may attempt Psychoanalyze (Difficulty 3) to recover the character mid-scene. On success, the player regains control but is disoriented (−2 dice on all rolls for the remainder of the scene).
 |===
 
 ==== Panic Attacks Against Allies
 
-When a Fight panic result targets another agent, resolve it as a single Brawl attack at the panicked character's full dice pool.
-The target may Dodge (spending their Fast Action as normal) but cannot Parry — the attack comes without warning.
-The panicked agent cannot spend stunt points, cannot push the roll, and cannot choose to continue attacking after the initial strike.
+When a Fight panic result targets another agent, resolve it as a single Brawl attack: *Agility + Brawl skill dice* (no Gear Dice — bare hands only).
+The target may Dodge (spending their Fast Action as normal) but cannot Parry — the attack is a surprise strike with no warning (treat as a surprise attack per xref:chapters/05-combat.adoc#chapter-combat[Combat: Surprise]; Parry requires anticipation that the attack is coming).
+The panicked agent cannot spend stunt points, cannot push the roll, and cannot continue attacking after the initial strike.
 After the single attack resolves (hit or miss), the panic breaks and the agent regains control on their next turn, disoriented but aware of what they did.
 
 If the attack Breaks the target, proceed with normal Broken/Critical Injury rules.
@@ -195,7 +215,9 @@ Fear Rating is how the DA classifies how terrifying a creature or event is on a 
 * *Fear Rating 1–5* = this entity or event triggers a Fear Check when a character first directly confronts it. The DA calls the check.
 * Fear Rating does *not* modify the dice pool, success threshold, or outcome of the Fear Check itself — the roll is always Wits dice, binary success, regardless of how horrifying the source is.
 
-*Escalation:* Some creatures have a Fear Rating that increases during an encounter (e.g., "Fear Rating 2 initially; 4 once its nature is understood"). An escalation is a *new escalation* per the trigger rule above — it calls for a new Fear Check even if the character has already made one this scene.
+*Escalation:* Some creatures have a Fear Rating that increases during an encounter (e.g., "Fear Rating 2 initially; 4 once its nature is understood"). An escalation is a *new trigger* per the rule above — it calls for a new Fear Check even if the character has already made one this scene. An escalation includes: the entity doing something new, getting closer, attacking, revealing a new form, or *increasing its Fear Rating*.
+
+> *DA Frequency Guidance:* Fear Rating 1–2 — call for one check on first direct confrontation per scene. Fear Rating 3–4 — call for a check each time the entity acts directly against a character (not just passive presence). Fear Rating 5 — call for a check every round the entity is within sight. These are guidelines, not hard rules; the DA adjusts for pacing.
 
 [%header,cols="1,1,4"]
 |===
@@ -209,3 +231,27 @@ Fear Rating is how the DA classifies how terrifying a creature or event is on a 
 |===
 
 Fear Ratings are a property of supernatural *entities* and *events*, not of individual characters. Add the Fear Rating stat to entity stat blocks in the Bestiary (xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]).
+
+---
+
+== Attribute Healing
+
+This chapter covers Corruption healing. Attribute damage (Strength, Agility, Wits, Empathy) is healed separately through rest and medical treatment:
+
+* *Field treatment and First Aid:* See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor → Attribute Recovery].
+* *Downtime recovery at HQ:* See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters → Infirmary].
+* *Psychoanalyze for mental attribute recovery (Wits/Empathy):* See the Psychoanalyze skill in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills].
+
+---
+
+== Cross-References
+
+* Core resolution mechanics, push cost and Corruption: xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
+* Character creation — Anchors, starting Corruption: xref:chapters/02-character-creation.adoc#chapter-creation[Character Creation]
+* Broken state, Critical Injuries, Corruption from mental criticals: xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
+* Division Talents — Corruption cost and Healing talents: xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
+* Artifact activation and passive emissions: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
+* HQ Corruption healing (Faraday Cage, Corruption Dampening Vault): xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
+* Creature Fear Ratings and Corruption attacks: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
+* Social conflict Fear checks (contaminated NPCs): xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict]
+* Combat (Fear check from Scare stunt, surprise rules): xref:chapters/05-combat.adoc#chapter-combat[Combat]
