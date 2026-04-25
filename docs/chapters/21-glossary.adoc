@@ -2,41 +2,55 @@
 = Glossary of Game Terms
 :sectnums!:
 
-Quick reference for all game-specific terms used in the Neon Relic core rules. Entries are alphabetical. Cross-references point to the chapter where the full rules appear.
+This chapter is a quick-reference glossary of game-specific terms used throughout the Neon Relic core rules. Entries are alphabetical. Each definition includes a cross-reference to the chapter where the full rules appear — the glossary is a lookup aid, not a replacement for the canonical rules text.
+
+Not every game term appears here. The glossary covers the terms most likely to cause confusion or require mid-session lookup. For complete rules, consult the referenced chapter. For the full skill list, see xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]. For the complete talent catalog, see xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 
 ---
 
+[#glossary-a]
 == A
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
+| *Aftermath* | The structured wrap-up phase that follows the resolution of a Case File. Characters earn Development Points (DP) during Aftermath based on outcomes, then spend them on Headquarters upgrades before the next Case File begins. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 | *Age Group* | Character creation choice determining starting Attribute and Skill point pools. Three tiers: Young (14 attribute / 10 skill), Experienced (13 / 12), Senior (12 / 14). See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 | *Anchor* | A physical object linked to a humanizing memory. Once per session, a character may interact with their Anchor to heal 1d4 Corruption. See xref:chapters/08-corruption-fear-healing.adoc#_anchors[Anchors].
+| *Arc* | A sequence of 3–5 Case Files centered on a shared antagonist, artifact thread, or escalating crisis. Arcs provide long-term narrative structure without prescribing outcomes. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Armor Rating* | The number of Gear dice rolled to absorb incoming damage. Each 6 rolled cancels one point of damage. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
+| *Artifact Die* | A step-down usage die tracking an artifact's remaining stability. Starts at d20 and steps down (d20→d12→d10→d8→d6→d4→Fractured) each time a 1 is rolled on activation. When the die steps past d4, the artifact fractures. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
+| *Artifact Tier* | An artifact's threat classification. Tier 1 (Uncanny): 1 Corruption on activation. Tier 2 (Threatening): 2 Corruption. Tier 3 (Catastrophic): 3 Corruption. Determines base Corruption cost and case file severity. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
 | *Attribute Dice* | White dice in the pool, equal to the relevant Attribute score (Strength, Agility, Wits, or Empathy). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 |===
 
+[#glossary-b]
 == B
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Background* | Recovery Division's equivalent of Departments. Defines the agent's pre-Covenant expertise and grants narrative hooks. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+| *Background Talent* | A General Talent tagged *Background* representing the agent's pre-Covenant professional expertise. Chosen at character creation. Provides a bonus die (not a rating increase) when the agent acts within their background domain. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 | *Broken* | State when any Attribute reaches 0. The character is incapacitated and rolls on the appropriate Critical Injury table (Physical or Mental). See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
+[#glossary-c]
 == C
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Case File* | A structured operation tracked on an Operations Board with a shift row (time tracker + relic milestones) and organization countdown rows. Case Files are built from Locations, NPC Cards, Information Cards, organizations, Containment Truths, and Covenant Request Packets. Playable in flexible order rather than through a linear script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Clearance Level (CL)* | Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
+| *Clearance Level (CL)* | Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1, maximum 5. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 | *Contact* | _See NPC Card._ In the entity model, contacts are NPC Cards with access-granting roles, organization affiliations, and knowledge. They are not a separate case-board element. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Containment Truth* | Information necessary for safe resolution of a case, such as a relic's trigger, appetite, tether, shielding method, quiescence condition, or transfer sequence. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Corruption* | Cumulative psychological and occult damage track. Gained from pushing rolls, Division Talent activation, Fear, artifact use, and supernatural exposure. *Maximum Corruption Threshold* = 10 + Empathy score; exceeding it causes permanent catatonia and character retirement. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Containment Profile* | An artifact's full physical and procedural containment record: the combination of measures that suppress it without dispersing it. Used by The Keep during long-term custody. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
+| *Containment Ritual* | A Lore-led field procedure used to suppress, shield, or disperse an artifact or manifestation. Three types: *Quiescence* (suppress active effects, Base Difficulty 2, 10 min), *Shielding* (seal against passive emissions, Base Difficulty 2, full scene), and *Banishment* (disperse a manifestation or collapse a ritual site, Base Difficulty 3, full scene, Lore 3+ required). See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
+| *Containment Truth* | A formal statement about an artifact's behavior that enables safe resolution of a case. Each Containment Truth has three components: *Trigger Condition* (what causes the artifact to activate or escalate), *Appetite* (what the artifact seeks when active), and *Quiescence Condition* (what must be done to return it to dormancy). Case files typically include three to five Containment Truths. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files] and xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
+| *Corruption* | Cumulative psychological and occult damage track. Gained from pushing rolls, Division Talent activation, Fear Checks (rolling 1s), artifact activation, supernatural exposure, and rolling on the Mental Critical Injury table. *Maximum Corruption Threshold* = 10 + Empathy score; exceeding it causes permanent catatonia and character retirement. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Corruption Cascade* | The penalty for carrying three or more artifacts simultaneously. All carried artifacts leak their Corruption cost at end of scene, even if none were activated. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
 | *Covenant Request Packet* | A field request sent to the Covenant for delayed support such as archive pulls, identity checks, freight screening, or comparative case data. Only one packet may be sent per shift, and responses take at least 2 shifts. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Cover* | Terrain protection in combat. Soft cover (low walls, furniture) grants +2 Armor Rating. Hard cover (concrete walls, vehicles) grants +4 Armor Rating. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 | *Critical Injury* | A specific wound or trauma rolled on a D66 table when a character becomes Broken. Physical criticals use the Physical table (STR/AGI = 0); mental criticals use the Mental & Emotional table (WIT/EMP = 0). Some entries are marked † (Death Check). See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
+[#glossary-d]
 == D
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -45,9 +59,11 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Damage Type* | One of three categories: *Physical* (targets STR or AGI), *Mental* (targets WIT or EMP), or *Corruption* (added directly to the Corruption track). See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 | *Dark Secret* | A specific hidden fact from the character's past — an event, decision, or relationship someone wants buried. Serves as a roleplay device and XP hook ("Did your Dark Secret complicate the mission?" = +1 XP). See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
 | *Death Check* | A single d6 roll required when a Critical Injury is marked †. On 1–2: the character dies (or is permanently retired for mental death). On 3–6: survival, but the Critical Injury still applies. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
+| *Debrief* | The structured end-of-case-file phase where Experience Points are awarded. The DA asks five debrief questions; each "yes" answer grants +1 XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
 | *Department* | Specialization within a Division. Wayfinder agents choose Wings, Keep agents choose Departments, and Recovery agents choose Operational Paradigms instead. Stack is a *Keep department*, not a separate Division. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+| *Development Points (Dev Points / DP)* | The shared resource the cell earns during Aftermath and spends on Headquarters facilities, personnel, and infrastructure upgrades. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 | *Difficulty* | The number of successes (6s) required to pass a standard skill roll. Default Difficulty is 1 if a rule does not state otherwise. Opposed rolls compare totals instead of using a fixed Difficulty, and a few special rolls such as Fear checks use their own binary rules. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
-| *Director of Agents (DA)* | The table’s facilitator role. The DA presents scenes, adjudicates uncertainty, tracks the Operations Board (organization rows and shift row), and portrays the world and opposition. See xref:chapters/14-gm-guidance.adoc#chapter-gm-guidance[Director of Agents Guidance].
+| *Director of Agents (DA)* | The table's facilitator role. The DA presents scenes, adjudicates uncertainty, tracks the Operations Board (organization rows and shift row), and portrays the world and opposition. See xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Director of Agents Guidance].
 | *Disposition* | An NPC's current openness to engagement in Social Conflict, tracked from 1 (Closed) to 5 (Open). At Disposition 3 or higher, direct low-risk questions are answered without a roll; social rolls are reserved for sensitive disclosures or requests against self-interest. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
 | *Division* | Character class within the Verdant Covenant. The three playable Divisions are Wayfinder (research/intelligence), Recovery (field retrieval), and The Keep (vault security, custody, and logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 | *Division Item* | A signature supernatural object issued to every member of a Division. Wayfinder: Verdant Codex. Recovery: Verdant Satchel. Keep: Warden's Bracer. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
@@ -55,6 +71,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Dying* | State when a Broken character has an active Death Check Critical Injury (result marked †) that has not yet been resolved. An untreated Dying character will die. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
+[#glossary-e]
 == E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -62,48 +79,47 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each Case File through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 |===
 
+[#glossary-f]
 == F
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Fast Action* | One of three action types in combat. Represents a quick or secondary effort: moving one zone, drawing a weapon, taking cover, or using a small item. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 | *Fear Check* | A special binary Wits roll triggered by supernatural horror. One or more 6s = success. Any 1s = +1 Corruption. No 6s = failure (+1 Corruption + Panic Table roll). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
-| *Fear Rating* | Narrative classification (0–5) of how terrifying a creature or event is. Used by the DA to determine when to call for a Fear check. 0 = no check triggered. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Fear Rating* | Narrative classification (1–5) of how terrifying a creature or event is. Used by the DA to determine when to call for a Fear check. Only events with a Fear Rating trigger Fear checks — mundane dangers do not. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Fracture* | The catastrophic failure state of an artifact when its Artifact Die steps past d4. The artifact's metaphysical structure collapses and its Fracture Condition triggers immediately. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
 | *Free Action* | An action in combat that requires negligible effort: speaking a short sentence, dropping an item, or glancing at surroundings. Unlimited per turn. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
-| *Operations Board* | The single tracking surface for a Case File. Contains a shift row (time tracker + relic milestones) and organization countdown rows. 14 columns count down from 14 → 1 (days until catastrophe). See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Organization* | External reactive pressure during a Case File, tracked as a countdown row on the Operations Board. Uses O#M# shorthand for milestones. Examples: rival factions, law enforcement, local press, religious institutions, smuggling networks. An organization is not the artifact itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
+[#glossary-g]
 == G
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Gear Dice* | Black dice in the pool contributed by equipment. Each 1 rolled on a Gear die causes the item to degrade one step. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *General Talent* | A talent available to any character regardless of Division, providing a mechanical exception or situational bonus. General Talents are chosen at character creation in place of a Division Talent or purchased later for 6 XP. The canonical list lives in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+| *Group Roll* | A roll where all team members roll the same skill simultaneously. The team succeeds if a specified number of members succeed individually. Used in travel, stealth, and investigation scenes. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 |===
 
+[#glossary-h]
 == H
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Development Points (DP)* | The shared resource the cell earns during Aftermath and spends on Headquarters facilities, personnel, and infrastructure upgrades. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 | *Headquarters (HQ)* | The Covenant facility serving as the team's base of operations between Case Files. Provides medical care, equipment requisition, research facilities, and downtime activities. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 |===
 
+[#glossary-i]
 == I
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Information Card* | A playing-card-sized reference for a discoverable fact in a Case File, identified by an I# code (I1, I2, etc.). Lists where the information can be found (Locations), who knows it (NPCs), and when HQ can provide it as a fallback. Type is either Containment Truth or supporting intel. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Initiative Card* | A playing card (Ace through 10) drawn at the start of each combat round to determine action order. Higher values act first; ties resolve simultaneously. Cards are discarded and redrawn each round. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 | *Insight* | A permanent mechanical bonus gained from certain Critical Injuries, marked *(Insight)* in the injury name or effect. Represents a silver lining from trauma — heightened perception, empathy, or expertise. Cannot be removed. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
-== K
-
-[cols="1,3", frame=none, grid=rows, stripes=none]
-|===
-|===
-
+[#glossary-l]
 == L
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -111,6 +127,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Location* | A place the agents can go during a Case File. Each Location is the DA's primary reference during play — a form listing description, availability, NPCs present, information available, organizations present, positive/negative results, and milestone changes. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
+[#glossary-m]
 == M
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -118,6 +135,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Maximum Corruption Threshold* | The point at which a character's mind permanently fractures: 10 + Empathy score (base). Modified by Redundant Safeties talent (+2) and Fracture Point injury (−2). Exceeding this value retires the character. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
 |===
 
+[#glossary-n]
 == N
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -126,21 +144,35 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *NPC Card* | A playing-card-sized reference for a significant person in a Case File. Carries organization affiliation (O#), secret, goal, artifact connection, starting knowledge (I# refs), gained knowledge (milestone-driven), locations, and positive/negative results. Contacts are NPC Cards, not standalone elements. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 |===
 
+[#glossary-o]
+== O
+
+[cols="1,3", frame=none, grid=rows, stripes=none]
+|===
+| *Operations Board* | The single tracking surface for a Case File. Contains a shift row (time tracker + relic milestones) and organization countdown rows. 14 columns count down from 14 → 1 (days until catastrophe). See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Operational Paradigm* | Recovery Division's sub-specialization, equivalent to Wings (Wayfinder) or Departments (Keep). Defines the agent's field expertise. The three Paradigms are Ex-Agency Operative, Heavy-Hitter, and Acquisition Specialist. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+| *Opposed Roll* | A contested roll where both sides assemble dice pools and compare total successes. The side with more successes wins. Ties favor the defender (or the side specified by the rule). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+| *Organization* | External reactive pressure during a Case File, tracked as a countdown row on the Operations Board. Uses O#M# shorthand for milestones. Examples: rival factions, law enforcement, local press, religious institutions, smuggling networks. An organization is not the artifact itself. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+|===
+
+[#glossary-p]
 == P
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Panic Table* | A d6 table rolled on Fear check failure. Determines the character's involuntary response: Fight (1), Flight (2), Freeze (3), Denial (4), Compulsion (5), or Fugue (6). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
-| *Shift Row* | The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. Tracks time spent and relic escalation — relic milestones trigger when the DA fills a shift quadrant that crosses a milestone day. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Push* | Re-roll all non-6 dice after a roll fails to meet its Difficulty, or after a success when you want more successes. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *Psychoanalyze* | A skill used to read psychological states, detect deception, stabilize distressed people during social scenes, and treat mental and emotional Critical Injuries. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict] and xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
+[#glossary-r]
 == R
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Relic Milestones* | Day-keyed events on the Operations Board’s shift row that define what the anomaly does if it remains active, mishandled, or unresolved. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers. Distinct from organizations, which represent external reactive pressure. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Relic Milestones* | Day-keyed events on the Operations Board's shift row that define what the anomaly does if it remains active, mishandled, or unresolved. When the DA fills a shift quadrant that crosses a relic milestone, the artifact event triggers. Distinct from organizations, which represent external reactive pressure. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Resource Die* | A step-down die (d8→d6→d4→empty) used to track consumable resources like ammunition. Roll after each combat scene; on a 1, the die steps down. When the die steps past d4, the resource is depleted. See xref:chapters/05-combat.adoc#chapter-combat[Combat] and xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
+| *Risk Tag* | An artifact's activation risk classification: Stable, Volatile, Catastrophic, or Unknown. Determines how dangerous field activation is and what happens on a bad Artifact Die result. See xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts].
 |===
 
 
@@ -151,11 +183,13 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 |===
 | *Scene* | An emergent intersection of Location, NPC, and Information entities during a Case File. A scene occurs when agents go to a location and the DA assembles the relevant NPC Cards and Information Cards. Scenes are not pre-authored event nodes. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Shift* | The core unit of operational time in a Case File. Each day contains 4 shifts of 6 hours each: Morning, Day, Evening, and Night. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
+| *Shift Row* | The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. Tracks time spent and relic escalation — relic milestones trigger when the DA fills a shift quadrant that crosses a milestone day. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Skill Dice* | Green dice in the pool, equal to the relevant Skill rating (0–5). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *Slow Action* | One of three action types in combat. Represents a committed effort: attacking, using a skill, administering first aid, or reloading a weapon. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
-| *Stunt Points* | Extra successes (6s) beyond the required Difficulty on a roll that allows stunt spending. In combat, they can be spent on special effects such as increased damage, disarming, or knockback. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
+| *Stunt Points* | Extra successes (6s) beyond the required Difficulty on a successful roll. Stunt points can be spent on special effects — narrative or mechanical benefits determined by context. In combat, stunt options include increased damage (+1 per SP), disarming (2 SP), or knockback (1 SP). Outside combat, each skill has its own stunt table. See xref:chapters/05-combat.adoc#chapter-combat[Combat] and xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Skill Stunts].
 |===
 
+[#glossary-t]
 == T
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -163,6 +197,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *The Verdant Covenant* | The ancient secret society the player characters serve. Discovers, recovers, and contains supernatural artifacts to protect humanity. Organized into three operational Divisions (Wayfinder, Recovery, The Keep). Stack (Logistics) is a department within The Keep. See xref:chapters/01-introduction.adoc#_the_verdant_covenant[The Verdant Covenant].
 |===
 
+[#glossary-v]
 == V
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
@@ -171,16 +206,38 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Verdant Satchel* | Recovery Division Item. A specially enchanted field bag that masks minor artifact signatures, stabilizes transport, warns of instability, and keeps basic field tools ready. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 |===
 
+[#glossary-w]
 == W
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Warden's Bracer* | Keep Division Item. Dampens nearby emissions during handling, warns of containment failure, enables safer handling of cursed objects, absorbs 1 Corruption per session, and grants +1 Armor Rating. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+| *Wing* | Wayfinder Division's sub-specialization, equivalent to Departments (Keep) or Operational Paradigms (Recovery). The two Wings are Research and Counterintelligence. Each Wing emphasizes a different aspect of Wayfinder work and grants access to Wing-specific Talents. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 |===
 
+[#glossary-z]
 == Z
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Zone* | An abstract area of space used for combat positioning — a room, corridor, alley, or rooftop section. Moving one zone costs a Fast Action; moving two zones (running) costs both the Fast and Slow Action for the round. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 |===
+
+---
+
+== Cross-References
+
+* *xref:chapters/02-character-creation.adoc#chapter-character-creation[Ch 2 — Character Creation]* — Age Groups, CL calculation, Division selection, Background Talents
+* *xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Ch 3 — Core Resolution]* — Dice pools, Difficulty, pushing, opposed rolls, group rolls
+* *xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Ch 4 — Attributes & Skills]* — Full skill list, skill stunts, attribute descriptions
+* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Initiative Cards, actions, zones, cover, stunt options
+* *xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Ch 6 — Social Conflict]* — Disposition, Psychoanalyze, social rolls
+* *xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]* — Broken, Dying, Critical Injuries, Death Check, Insight
+* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption track, Fear Checks, Panic Table, Anchors, Maximum Corruption Threshold
+* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Covenant Divisions]* — Division Items, Division Talents, Wings, Departments, Operational Paradigms
+* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Gear, Resource Dice, Armor Rating in play
+* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Die, Tiers, Risk Tags, Containment Rituals, Corruption Cascade, Fracture
+* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Aftermath, Development Points, HQ facilities
+* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP, Debrief questions, General Talents, Dark Secrets
+* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — Director of Agents Guidance]* — DA role, entity design, Operations Board authoring
+* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case Files]* — Case File structure, Operations Board, Shifts, Organizations, Relic Milestones, Information Cards, NPC Cards, Locations
