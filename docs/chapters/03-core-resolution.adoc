@@ -82,7 +82,7 @@ When your agent pushes a roll, they aren't simply gritting their teeth and tryin
 Whatever form it takes, pushing means your contaminated mind is offering you a shortcut. The help is real. The cost is real. Every push is a transaction with something you don't fully understand, and it always leaves a mark — +1 Corruption, regardless of the task. The library is not safer than the field. The thing inside you doesn't care where you are.
 ****
 
-The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
+The analog nature of 1980s technology complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 
 === Gear Degradation
 
