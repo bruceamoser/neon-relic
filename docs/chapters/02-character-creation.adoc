@@ -80,7 +80,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 > Your four attributes serve a dual purpose: they define your dice pools *and* they are your health. When your agent takes damage, the relevant attribute is reduced:
 >
 > * *Physical damage* (bullets, blunt trauma, falls) → reduces *Strength*
-> * *Exhaustion damage* (sprint, forced march, exertion) → reduces *Agility*
+> * *Hobbling damage* (sprint, forced march, exertion) → reduces *Agility*
 > * *Mental horror* (supernatural imagery, occult overload) → reduces *Wits*
 > * *Emotional trauma* (witnessing atrocity, corruption of bonds) → reduces *Empathy*
 >
