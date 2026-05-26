@@ -90,10 +90,8 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 
 === Quick Response Teams
 
-Under normal operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
+Under standard operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
 This process is methodical, documented, and safe — when time permits.
-
-Time rarely permits.
 
 When an artifact surfaces under hostile conditions — rival factions converging, civilian exposure escalating, or containment failures cascading beyond a single Division's capability — the Covenant activates a *Quick Response Team*.
 QRTs are ad-hoc field units assembled from available agents across all three Divisions, deployed to handle situations that require the full locate-retrieve-contain cycle in compressed, dangerous timeframes.
