@@ -15,7 +15,7 @@ The core philosophy of the Year Zero Engine is that *rolling dice should only oc
 >
 > *No roll needed:* A trained medic (Heal 3) bandaging a minor cut in a safe room. An agent searching an already-unlocked filing cabinet at their own HQ. A character with Force 4 snapping a hollow interior door.
 >
-> *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
+> *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded or otherwise separated for immediate visual clarity at the gaming table:
 
 [%header,cols="2,1,3,1"]
 |===
