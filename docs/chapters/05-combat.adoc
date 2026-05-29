@@ -256,42 +256,7 @@ A character *in cover* benefits from partial physical shielding.
 
 === Ammunition
 
-Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die based on the weapon type and current magazine state:
-
-[%header,cols="2,1,2"]
-|===
-| Ammo State | Die | Notes
-
-| *Pistol — full magazine* | d10 | 9mm, .38, .45; standard load
-| *Shotgun — full load* | d8 | Pump or semi-auto shotgun
-| *Rifle — full magazine* | d8 | Assault rifle, battle rifle, .308
-| *Half loaded (any)* | d6 | Partially used magazine
-| *Low / scrounged (any)* | d4 | Found ammo, emergency reload
-| *Drum / extended mag* | d12 | Special acquisition (CL 4)
-|===
-
-> *Two-track ammo system:* This table governs *in-combat per-shot tracking* — roll when you push a Firearms roll, fire full auto, or the DA calls for it. Between scenes, use the *Supply-level Resource Dice* in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment] to track how much ammo the team has on hand. When you reload in the field, roll the supply die; then reset the weapon's combat ammo die to its 'full' value from this table.
-
-*When do you roll the ammo die?*
-
-* After *every turn in which you fire* (standard fire — the die represents the resource pressure of sustained combat).
-* After *pushing a Firearms roll* — roll an additional time (you burned through extra rounds).
-* After a *full auto burst* — roll *twice* (see Full Auto below).
-* At the DA's discretion when dramatically appropriate (ambush, very long firefight).
-
-*Rolling the ammo die:*
-
-* Roll the current die. On a *1 or 2*, step the die down one size (d8→d6→d4→empty).
-* On *empty* (die was d4 and rolled 1–2): weapon is dry. Reload costs a Slow Action.
-
-=== Full Auto
-
-Weapons capable of fully automatic fire (noted in the Equipment tables) may fire a *full auto burst* on a Slow Action instead of a standard shot.
-
-* *Effect:* Make *two separate attack rolls* against the same target (or split between two targets in the same zone). Resolve each roll independently — each can hit, miss, or generate stunt points.
-* *Ammo:* Roll the ammo die *twice* after a full auto burst (once per attack).
-* *Penalty:* After firing full auto, the firing character suffers −1 die on all Firearms rolls until the start of their next turn (recoil and muzzle rise).
-* *When in doubt:* If the Equipment tables do not specify a weapon as full auto, it fires semi-auto only.
+Ammunition is tracked using a *Resource Die* that steps down as you fire. Full ammunition tracking rules — including the ammo die table, when to roll, and full automatic fire — are in xref:chapters/appendix-combat.adoc#ammunition-tracking[Appendix: Advanced Combat → Ammunition Tracking].
 
 ---
 
@@ -327,7 +292,7 @@ Extra successes (6s beyond the attack's required Difficulty, usually 1) are *Stu
 | 1 | *Disarm* | Target drops their held weapon at Engaged range (without a full Disarm maneuver roll). The weapon lands at Engaged range from the target — either party could pick it up.
 | 1 | *Target Limb* | Attack hits a specific limb. DA applies a situational penalty (hobbled, one-armed, etc.) until treated.
 | 1 | *Push Back* | Target is forced one zone away.
-| 1 | *Scare* | Target must immediately make a *Fear Check* (Fear Rating 1) even if no supernatural trigger is present — the violence itself is the threat. See xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Fear Checks].
+| 1 | *Scare* | Target must immediately make a *Corruption Burst* (Burst Rating 1) even if no supernatural trigger is present — the violence itself is the threat. See xref:chapters/08-corruption-fear-healing.adoc#corruption-burst-procedure[Corruption Burst].
 | 2 | *Double Damage* | Deal the weapon's Damage value twice instead of once.
 | 2 | *Suppressive Fire* | Target is pinned — they cannot move zones until the start of your next turn unless they succeed on a Wits roll (Difficulty 2).
 | 2 | *Destroy Cover* | Target's cover is destroyed or invalidated after this attack.
@@ -336,61 +301,14 @@ Extra successes (6s beyond the attack's required Difficulty, usually 1) are *Stu
 
 ---
 
-== Chase and Pursuit
+== Advanced Combat Rules
 
-When one side is fleeing and the other is pursuing, use the following chase rules.
+The following situational combat systems are detailed in xref:chapters/appendix-combat.adoc#appendix-combat[Appendix: Advanced Combat Rules]:
 
-=== Chase Structure
-
-A chase is divided into *chase rounds*. Each round, both the fleeing and pursuing party roll their relevant attribute + skill:
-
-* *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
-* *By vehicle:* Wits + Tech (see xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Vehicle Chase Rules] for full vehicle chase procedure, speed modifiers, and maneuvers)
-
-> **DA discretion on skill choice:** These are default options. The DA may call for other skills when the context demands it — a chase through a crowded market could use Manipulate (EMP) to slip through a crowd; a chase through a building's maintenance passages could use Investigate (WIT). The DA should always tell the players which skill they're calling before the roll.
-
-=== Chase Outcome Per Round
-
-* Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing).
-* Track relative distance on a 5-step track: *Contact → Following → Closing → Widening → Escaped*.
-* Start at Contact. Fleeing party wins a round → move one step toward Escaped. Pursuing party wins → move one step toward Contact.
-
-=== Escape and Recapture
-
-* The fleeing party *escapes* when they reach the Escaped position.
-* During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
-* If the pursuing party reaches Contact: normal combat resumes. Draw initiative cards immediately; the pursuit party does not get a free round unless they successfully set up an ambush (see Surprise and Ambush).
-* *Hiding attempt:* If the fleeing party is at Widening, they may attempt to break the chase entirely — succeed on a Sneak roll (Difficulty 2) to vanish into the environment. This attempt may be made *once per chase*; if it fails, the hiding window has passed and the fleeing party must reach Escaped normally.
-
----
-
-== Combat Around Vehicles
-
-Not every vehicle encounter is a chase. When combat occurs at or near stationary vehicles — roadblock shootouts, parking lot ambushes, or attacks on a parked convoy — use standard combat rules with the following guidance:
-
-* *Vehicles as cover:* A vehicle provides cover equal to its Armor Rating. Agents behind a vehicle add the vehicle's Armor Rating to their defense as if it were personal armor (Gear Dice, 6s absorb damage). Unlike personal armor, vehicle cover does not degrade from 1s — the vehicle absorbs Wear instead (1 Wear per combat scene in which it provides cover).
-* *Attacking vehicles:* Targeting a vehicle (to disable it, breach it, or destroy it) uses Force (melee) or Firearms (ranged) at Difficulty 1 — no special maneuver is needed, just a successful hit. Each point of damage that exceeds the vehicle's Armor Rating reduces the vehicle by 1 Wear. At 5 Wear, the vehicle is disabled. Typical vehicle Armor Ratings are listed in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
-* *Targeting occupants:* Attacking someone inside a vehicle requires a called shot (1 stunt point) or the vehicle's windows/doors to be open. Closed vehicles provide full Armor Rating to occupants. Open vehicles (windows down, convertibles) provide half Armor Rating (round down).
-
-For moving vehicle encounters, use the Chase and Pursuit rules above. If a chase transitions into a stationary firefight (e.g., vehicles crash and combatants exit), switch to standard combat using the guidance in this section.
-
-> **Wear** is the vehicle damage track. It runs from 0 (undamaged) to 5 (disabled). At Wear 5, the vehicle cannot move, its systems are failing, and it may be on fire — DA determines consequences. Repairing Wear requires tools, time, and a successful Tech (WIT) roll. Full vehicle Wear and repair rules are in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
-
----
-
-== Group Combat (Multiple NPCs)
-
-When 3 or more combatants on the NPC side share a common purpose and act together, they may be treated as a *mob*.
-
-=== Mob Rules
-
-* A mob draws *one Initiative card* and acts as a single entity on that card.
-* A mob has a shared Strength pool equal to *3 per member* (e.g., a 4-person mob has Strength 12). Maximum mob Strength is 15 regardless of size.
-* A mob attacks as one unit: roll dice pool equal to the *best individual's dice pool* plus bonus dice equal to the number of additional members (beyond the first), *maximum +3 bonus dice total*.
-* *Damage to a mob:* Any attack that deals Strength damage reduces the mob's shared pool. When the mob Strength pool reaches 0, the mob is broken — all members are Broken or fleeing. The DA may narrate intermediate casualties at thresholds (e.g., one member falls at Strength 6, another at Strength 3).
-* *Splitting a mob:* Area effects (full auto burst, explosive, fire) or AoE-capable stunts can split a mob into two smaller groups. The DA distributes remaining Strength between them.
-
-> Mobs represent low-tier hostiles (cultist grunts, security guards, Compact foot soldiers). Named or significant NPCs always act individually with their own initiative and stat blocks.
+* *Chase and Pursuit* — foot chase structure, escape/recapture rules.
+* *Combat Around Vehicles* — vehicles as cover, attacking vehicles and occupants.
+* *Vehicle Conflict* — Contact Track, chase rolls, speed modifiers, vehicle maneuvers (Ram, PIT, Gunfire, Off-Road Break, Blending In), vehicle damage and breakdown.
+* *Group Combat (Mob Rules)* — treating multiple NPCs as a single mob with shared Strength.
 
 ---
 
@@ -427,6 +345,8 @@ When any PC attribute reaches 0, they are *Broken*:
 * They must roll on the appropriate *Critical Injury table* (see xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Critical Injuries]).
 * They are out of the fight unless stabilized by an ally (Heal roll, costs a Slow Action, requires a First Aid Kit).
 * An unstabilized Broken PC *dies at the end of the scene* — defined as when the immediate danger has passed and the group can act freely, not at the end of the round in which they fell. This means teammates have a window during the fight to stabilize them. If combat ends and the PC has not been stabilized, they die.
+
+> *DA Guidance — When does the scene end?* The scene ends when the DA declares it over — typically when the last hostile threat is neutralized, has fled, or has been contained. If all enemies are down and the team's only remaining action is stabilizing a downed ally, the scene is *not over yet* — the agents are still acting under combat urgency. The DA should not call scene end while a teammate is actively bleeding out and allies are attempting to reach them. The scene ends when the group transitions from combat urgency to free action: looting the room, securing the perimeter, calling for extraction. If in doubt, give the team one more round to act before calling it.
 
 > *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. DAs should give players narrative opportunities to take prisoners rather than mandating lethality.
 

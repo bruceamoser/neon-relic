@@ -34,7 +34,7 @@ Each *6* rolled counts as *one success*.
 
 * *Standard roll:* You succeed if your total successes meet or exceed the Difficulty.
 * *Opposed roll:* Both sides roll, then compare total successes; the higher total wins. Ties are resolved in favor of the player character.
-* *Special binary roll:* A few subsystems, especially *Fear checks*, define their own pass/fail rule instead of using Difficulty.
+* *Special binary roll:* A few subsystems, especially *Corruption Burst checks*, define their own pass/fail rule instead of using Difficulty.
 
 Successes beyond what was needed are *extra successes*. If the roll supports stunts, each extra success becomes *1 Stunt Point*.
 
@@ -72,7 +72,7 @@ However, pushing represents the character exerting maximum physical, mental, or 
 
 * You immediately gain *+1 Corruption*.
 
-> *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for the full rules.
+> *Design note:* Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] for the full rules.
 
 ****
 *What happens when you push?*

@@ -5,9 +5,9 @@ In Project Neon Relic, players are sworn members of *The Verdant Covenant*. Beca
 
 Within that Division, players select a *Department* background. At character creation, agents choose *three* starting talents:
 
-* *One Division Talent* — chosen from the Division's talent list in this chapter — *or one General Talent* from xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+* *One Division Talent* — chosen from the Division's talent list in this chapter — *or one General Talent* from xref:chapters/13-advancement.adoc#chapter-advancement[Advancement and Talents].
 * *One Wing, Paradigm, or Department Talent* — chosen from the talent list of the specific Wing, Paradigm, or Department the agent belongs to in this chapter.
-* *One Background Talent* — chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+* *One Background Talent* — chosen from the Background Talents list in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement and Talents].
 
 Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding directly into the game's risk-reward loop. Each talent list includes one *Healing* talent usable freely once per session.
 
@@ -16,6 +16,113 @@ Most Division and sub-unit Talents cost *+1 Corruption* to activate, feeding dir
 Unless a Talent explicitly says otherwise, read these abilities as *scene-shaping leverage*, not complete scene resolution. They should reveal a lead, buy time, create access, or improve odds under pressure rather than trivialize artifacts, rivals, or core investigation procedures.
 
 > **Design note — healing talent triggers:** Each Division and sub-unit has one _(Healing)_ talent. Trigger conditions vary intentionally: some require a completed field action (covert objective, combat win), others spend a Shift in deliberate recovery activity. The principle is that the trigger should match each sub-unit's operational philosophy — a Wayfinder heals through learning, a Recovery agent heals through action, a Keeper heals through duty. If a specific session's circumstances make a healing trigger unreachable, the DA may rule a comparable equivalent (e.g., a Warden who performed emergency vault security during active combat may count that as a completed "guard mission").
+
+---
+
+=== Covenant Organizational Structure
+
+....
+                          The Verdant Covenant
+              ┌───────────────────┼───────────────────┐
+              │                   │                   │
+        ┌─────▼─────┐      ┌─────▼─────┐      ┌──────▼─────┐
+        │ WAYFINDER  │      │ RECOVERY   │      │ THE KEEP   │
+        │ (Research  │      │ (Field     │      │ (Vault     │
+        │  & Intel)  │      │  Retrieval)│      │  Security  │
+        └─────┬──────┘      └─────┬──────┘      │ & Logistics│
+              │                   │              └──────┬─────┘
+        ┌─────┴─────┐      ┌─────┴──────────┐   ┌──────┴─────────────┐
+        │           │      │        │        │   │      │      │      │
+   ┌────▼───┐ ┌─────▼──┐ ┌▼───────┐│┌───────▼┐ ┌▼─────┐│┌─────▼┐┌───▼──┐
+   │Research│ │Counter-│ │Ex-Agency│││Acquisi-│ │Cata- │││War-  ││Stack │
+   │Wing    │ │intel   │ │Operative│││tion    │ │logers│││dens  ││(Logi-│
+   │        │ │Wing    │ │         │││Special-│ │      │││      ││stics)│
+   └───┬────┘ └───┬────┘ └───┬─────┘││ist     │ └──┬───┘││└──┬───┘└──┬───┘
+       │          │          │      ││└───┬───┘    │    ││   │       │
+  Desk │     Desk │     Handler    ││ Infiltrator  │  Int│CI │   Quarter-
+  Analyst    Analyst   Breacher    ││ Grifter   Intake  ││Counter- master
+  Field      Field     Ghost   Heavy│ Wheelman  Archivist│Exposure Field
+  Analyst    Analyst          Hitter│           Contain-  │Analyst  Tech
+  Liaison    Technical        │     │           ment      │Infiltr. Inventor
+             Analyst      Enforcer  │           Architect │Investi-
+                          Close Prot│                     │gator
+                          Wrecker   │                     │Vetting
+                                    │                     │Officer
+                            Vault Guardian
+                            Escort Warden
+                            Field Warden
+....
+
+---
+
+=== Global Structure
+
+The Verdant Covenant operates across *five continents* through a cellular structure designed to maintain operational secrecy. No single member — not even the most senior leadership — knows the full scope of the organization.
+
+[%header,cols="2,3,^1"]
+|===
+| Tier | Description | Approximate Count
+
+| *Central Council*
+| The governing body. Location unknown to field agents. Communicates only through intermediaries. Sets strategic priorities, arbitrates inter-division disputes, and authorizes Tier 3 artifact operations.
+| 7–12 members
+
+| *Regional Hubs*
+| Continental coordination centers managing cells within a geographic zone. Each hub has a *Regional Director* (one per Division) who handles assignment routing, resource allocation, and inter-cell mediation. Hubs are not permanent buildings — they rotate locations every 18–24 months.
+| 6 hubs (Americas, Europe, Africa/Middle East, Central Asia, East Asia/Pacific, Oceania)
+
+| *Field Cells*
+| The operational units. Each cell is assigned a home city and operates semi-autonomously within its region. Cells do not know each other's locations unless leadership authorizes contact.
+| ~80–120 active cells globally
+
+| *Extended Network*
+| Civilian contacts, academic consultants, sympathetic law enforcement, and retired agents who provide intelligence and logistical support without being sworn members. They know pieces of the truth — never the whole picture.
+| ~400–600 individuals
+|===
+
+> *Total active personnel:* Approximately 500–700 sworn members globally, plus the extended network. For an organization protecting the world from supernatural threats, this is a skeleton crew — and that's the point. The Covenant cannot afford to be large. Every new member is a potential leak, a potential compromise, a potential vessel for Corruption. Growth is slow, vetting is brutal, and attrition is constant.
+
+> *Secrecy at scale:* The Covenant survives because of three structural safeguards: (1) *cellular isolation* — cells cannot contact each other without hub authorization; (2) *cover diversity* — the organization has no unified public identity, no logo, no letterhead; and (3) *plausible deniability* — the extended network believes they're helping a private research foundation, a government intelligence subcontractor, or an eccentric philanthropist. The truth is compartmentalized so thoroughly that even a captured and interrogated agent can only compromise their own cell and their regional hub contact.
+
+---
+
+=== Inter-Division Dynamics
+
+The three Divisions are not a harmonious machine. They are three departments within a clandestine organization under constant pressure, and they behave accordingly.
+
+==== Why Divisions Sometimes Pursue the Same Artifact
+
+It happens more often than leadership would like:
+
+* *Competing intelligence.* A Wayfinder Research Wing identifies an artifact through historical records. Simultaneously, a Counterintelligence Wing detects a rival faction moving on the same artifact through signals intelligence. Both routes generate a case — and both routes reach different regional hubs before anyone cross-references.
+* *Different threat assessments.* The Keep classifies an artifact as contained (stable, in a museum, not actively dangerous). A Wayfinder analysis disagrees — the artifact is dormant, not contained, and will wake up. Both assessments are valid. Both generate operational responses.
+* *Bureaucratic friction.* A Recovery cell recovers an artifact and begins transport. A Keep team arrives claiming they have transfer authority. Both have legitimate paperwork. The regional hub issued contradictory orders because two Directors signed off on different operational plans.
+
+This is not a bug in the Covenant's structure — it's an unavoidable consequence of compartmentalization. The same secrecy that protects the organization from external threats creates internal blind spots.
+
+==== When Competition Helps
+
+* *Redundancy.* If one cell fails, the other is already in position. The Covenant loses fewer artifacts to single points of failure.
+* *Accountability.* Cells that know another team is watching perform better. Sloppy containment gets reported.
+* *Fresh perspective.* A Wayfinder team and a Recovery team approach the same problem differently. Sometimes the answer requires both approaches.
+
+==== When Competition Hurts
+
+* *Friendly fire.* Two cells operating on the same target without knowing each other's identities can and do interfere with each other's operations. In extreme cases, they've fought.
+* *Resource waste.* Two cells burning DP, contacts, and cover identities on the same artifact is expensive for an organization that can't afford waste.
+* *Standing games.* Cells competing for the same artifact are also competing for Standing. The temptation to sabotage a rival cell's operation — even subtly, even passively — is real.
+
+==== How Leadership Mediates
+
+When overlapping operations are discovered:
+
+. The *Regional Director* for the affected zone contacts both cells and issues a priority ruling — one cell takes point, the other supports or withdraws.
+. If the cells are in different regions, the *Central Council* arbitrates. This takes time. The artifact doesn't wait.
+. In practice, the cell that's closest to containment usually wins priority. The other cell is reassigned with +1 DP as compensation for operational disruption.
+
+> *Design note for DAs:* Inter-division tension is a rich source of Case File complications. A rival Covenant cell showing up mid-operation — are they here to help or to take over? — creates drama that doesn't require supernatural threats. Use it sparingly (once per arc at most) but don't avoid it.
+
+---
 
 == Division 1: The Wayfinder
 
@@ -27,9 +134,7 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
 
 [cols="1,2"]
 |===
-| *Key Attributes* | Wits, Empathy
 | *Primary Attribute* | Wits _(guidance, not a rule — see note below)_
-| *Key Skills* | Investigate, Lore, Tech, Psychoanalyze
 | *Key Skill (Cap 4 at creation)* | Lore
 | *Starting Clearance Level* | 3
 |===
@@ -37,6 +142,8 @@ The Wayfinder Division serves as the primary investigative arm of the Covenant. 
 [NOTE]
 ====
 *Primary Attribute:* "Primary Attribute" in the Key Stats tables is a design recommendation, not a mechanical rule. It describes the attribute most central to a Division's playstyle and is intended as guidance for players deciding where to invest Attribute points — it does not grant any inherent bonus.
+
+*Key Skill:* Each Division has one Key Skill that may be raised to 4 during character creation (the normal cap is 3). This represents the Division's signature competency.
 ====
 
 === The Verdant Codex (Division Item)
@@ -148,9 +255,7 @@ Unlike other Divisions, the Recovery Division has *no internal departments*. Eve
 
 [cols="1,2"]
 |===
-| *Key Attributes* | Strength, Agility
 | *Primary Attribute* | Agility _(guidance, not a rule — see note in Wayfinder Key Stats)_
-| *Key Skills* | Force, Brawl, Firearms, Sneak
 | *Key Skill (Cap 4 at creation)* | Firearms
 | *Starting Clearance Level* | 2
 |===
@@ -243,7 +348,7 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 |===
 | Talent | Cost | Effect
 
-| *Ghost Entry* | +1 Corruption | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, gain +3 bonus dice instead. Leave no trace of entry.
+| *Ghost Entry* | +1 Corruption | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, you may spend additional Corruption (1 per required success) to bypass it instead of rolling. Leave no trace of entry.
 | *The Long Con* | +1 Corruption | After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor.
 | *Clean Getaway* _(Healing)_ | — | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption.
 |===
@@ -274,9 +379,7 @@ Members of the Keep are entrusted with the stewardship of the Covenant's most se
 
 [cols="1,2"]
 |===
-| *Key Attributes* | Empathy, Wits
 | *Primary Attribute* | Empathy _(guidance, not a rule — see note in Wayfinder Key Stats)_
-| *Key Skills* | Lore, Command, Endure, Heal
 | *Key Skill (Cap 4 at creation)* | Command
 | *Starting Clearance Level* | 3
 |===
@@ -436,5 +539,5 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 | *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are *possessed* (defined as: under active supernatural domination by an entity — their will is overridden, not merely influenced). This does not detect high-Corruption individuals who are acting of their own will, only those actively controlled. The target does not know you used this talent.
 | *Medical Training* | — | Spend a Slow Action and make a *Heal (WIT) roll at Difficulty 2* before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls — those are separate emergency Heal actions.
 | *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a *registered* artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers — unknown or newly recovered artifacts require a normal Lore roll.
-| *The Confessor* _(Healing)_ | — | Spend a quiet moment outside combat listening to one ally share their *Dark Secret* or confess a fear or failing. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
+| *The Confessor* _(Healing)_ | — | Spend a quiet moment outside combat listening to one ally share a fear, a failing, or a burden they have been carrying. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
 |===

@@ -7,15 +7,15 @@ Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — 
 
 == Step 1: Choose Your Division
 
-Your *Division* is your character class. It defines your role within the Covenant, your key attributes, your starting skills, and your access to supernatural Division Talents. Your Division tells the group what kind of pressure you are trained to handle -- not that you can solve scenes cleanly on your own. There are three Divisions:
+Your *Division* is your character class. It defines your role within the Covenant, your primary attribute, your starting skills, and your access to supernatural Division Talents. Your Division tells the group what kind of pressure you are trained to handle -- not that you can solve scenes cleanly on your own. There are three Divisions:
 
 [%header,cols="1,2,1,2"]
 |===
-| Division | Role | CL | Key Attributes
+| Division | Role | CL | Primary Attribute
 
-| *Wayfinder* | Research and intelligence. You find what others don't know exists. | 3 | Wits, Empathy
-| *Recovery* | Field retrieval. You go in and bring the artifact out. | 2 | Strength, Agility
-| *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy, Wits
+| *Wayfinder* | Research and intelligence. You find what others don't know exists. | 3 | Wits
+| *Recovery* | Field retrieval. You go in and bring the artifact out. | 2 | Agility
+| *The Keep* | Vault security, custody, and logistics. You guard what has been won — and equip those who win it. | 3 | Empathy
 |===
 
 [NOTE]
@@ -151,7 +151,7 @@ Most Division Talents cost *+1 Corruption* to activate. One talent per list is a
 
 Talents and Division items are meant to create *leverage*: a clue path, a brief edge, a safer handling window, a cleaner extraction. They should not change the game's default expectation that agents must still investigate, improvise, and pay a price for certainty.
 
-> *Talent Advancement:* Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+> *Talent Advancement:* Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement and Talents].
 
 ---
 
@@ -177,7 +177,7 @@ Once attributes are set, note the following:
 >
 > As threshold approaches, your options narrow: lower Empathy reduces social dice pools, reduces your passive resistance to emotional trauma, and leaves no buffer for emergencies. The game's Corruption economy is deliberately asymmetric — Corruption is easier to gain than to lose.
 >
-> Manage your Empathy carefully at creation. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for the full economy.
+> Manage your Empathy carefully at creation. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] for the full economy.
 
 > *Maximum Corruption Threshold* is the number at which your character's mind permanently fractures, resulting in catatonia and character retirement. This is the most important number on your sheet — protect it.
 
@@ -241,41 +241,20 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 
 == Step 9: Choose Your Anchor
 
-Every agent carries an *Anchor* — a tangible, physical object tied to a core humanizing memory from before the Covenant. It connects you to the ordinary world you are fighting to protect, and it is your most reliable tool for healing Corruption.
+Every agent has an *Anchor* — a personal source of solace that grounds them against the psychological toll of Covenant work. An Anchor is not a physical object; it is the practice, habit, or connection where the character finds peace. It connects you to who you are outside the mission.
 
 Choose one of the following options:
 
-* *Roll d66* on the Anchor Table in the Healing chapter and accept the result as written.
-* *Invent your own:* name a specific object and the memory attached to it. Run it by your DA.
+* *Roll d66* on the Anchor Sources table in the Healing chapter and accept the result as written.
+* *Invent your own:* name the source of solace and describe how the character engages with it. Run it by your DA.
 
-Record your Anchor's name and the memory it represents on your character sheet.
+Record your Anchor on your character sheet.
 
-> *Mechanic:* Once per session, dedicate a scene to your Anchor — a quiet moment where you handle the object and let the memory surface. Heal *1d4 Corruption*. Full rules in the Healing chapter.
-
----
-
-== Step 10: Choose Your Dark Secret
-
-Every Covenant agent harbors a *Dark Secret* — something from their past that the Covenant knows, or should know, about them. It must be specific enough that the DA can use it as a story hook when the investigation points in the right direction.
-
-> **What makes a good Dark Secret?**
->
-> * *Specific, not vague.* "I used to drink too much" is not a Dark Secret. "I destroyed evidence that would have exposed my supervisor's corruption, and the Covenant has the original file" is.
-> * *Actionable.* The DA should be able to make it appear in play — it should have a name, a face, or a faction that could show up in a case.
-> * *Morally complicated.* The best secrets involve something your character did, chose, or failed to prevent — not just embarrassment.
->
-> **Examples:**
->
-> * _Loyalty:_ Your former handler is now working for the Vantablack Compact. You haven't reported this to the Covenant.
-> * _Cover-up:_ You falsified your field report after a containment failure. Someone died who didn't have to.
-> * _Double identity:_ The government agency that employed you before still believes you're their operative. You haven't corrected them.
-> * _Forbidden contact:_ You are in quiet communication with a known Ember Accord operative. You tell yourself it isn't a problem.
-
-Choose one from your Division's example list in the Advancement chapter, or write your own. The XP question at session end — *"Did your Dark Secret complicate the mission?"* — is the mechanical payoff. Full rules and Division-specific examples are in xref:chapters/13-advancement.adoc#_dark_secrets[Dark Secrets].
+> *Mechanic:* Once per session, dedicate a scene to your Anchor — a quiet moment where you actively engage with your source of solace. Heal *1d4 Corruption*. Full rules in the Healing chapter.
 
 ---
 
-== Step 11: Name, Country of Origin, and Biography
+== Step 10: Name, Country of Origin, and Biography
 
 Choose a name appropriate for your campaign's 1980s setting. Record your *Country of Origin*. Then write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
 
@@ -305,8 +284,7 @@ After completing all steps, your sheet should record:
 | *Starting Gear* | Division kit (department variant if applicable) ± optional items
 | *Corruption* | Starts at 0
 | *Max Corruption Threshold* | 10 + Empathy
-| *Dark Secret* | Chosen from Division list or custom (see Advancement chapter)
-| *Anchor* | Object name + memory (see Healing chapter)
+| *Anchor* | Source of solace (see Healing chapter)
 |===
 
 ---
@@ -328,7 +306,7 @@ Petra's six years in DEA field operations put her at age 34 — she selects *Exp
 | Attribute | Score | Reasoning
 
 | Strength | 4 | Ex-agency physical conditioning
-| Agility | 4 | Trained for fast entries; Recovery Key Attribute
+| Agility | 4 | Trained for fast entries; Recovery Primary Attribute
 | Wits | 3 | Sharp but not an analyst
 | Empathy | 2 | Gets by on presence, not charm; lower threshold is a real risk
 |===
@@ -376,13 +354,9 @@ Petra records the *Verdant Satchel* automatically. From the Recovery Kit she tak
 
 === Step 9: Anchor
 
-> *Anchor:* A cassette tape — Los Lobos, _By the Light of the Moon_, 1987. Her brother Marco made it for her birthday. She keeps it in the inside pocket of her field jacket and hasn't listened to it since the Tucson raid.
+> *Anchor:* Memory / Nostalgia — a cassette tape her brother Marco made for her birthday. She keeps it in the inside pocket of her field jacket. She doesn't listen to it — the Walkman's rewind button is broken — but holding it and remembering that birthday is enough.
 
-=== Step 10: Dark Secret
-
-> *Dark Secret:* Petra's former DEA supervisor is now working for *The Vantablack Compact*. She has not reported this.
-
-=== Step 11: Name, Country of Origin, and Biography
+=== Step 10: Name, Country of Origin, and Biography
 
 * *Name:* Petra Vasquez
 * *Country of Origin:* United States (California)

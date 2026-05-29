@@ -19,7 +19,7 @@ Neon Relic's default protagonists are *competent but vulnerable containment spec
 
 * Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
 * Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
-* Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions, surviving trauma, and confronting your Dark Secret.
+* Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions and surviving trauma.
 * Not a game where Division gear or Talents replace investigation. The Covenant equips you to enter the problem, not to bypass it.
 
 ---
@@ -151,3 +151,59 @@ This rulebook is organized into six parts:
 * *Part VI: Glossary* -- Quick reference for all game terms.
 
 If you are a player, start with Character Creation and Core Mechanics. If you are the DA (the *Director*), read everything -- but especially the Director section and the Corruption chapter.
+
+---
+
+== How Play Works
+
+A typical Neon Relic session follows a structured rhythm: the team spends *shifts* investigating locations, interviewing NPCs, and gathering information while external pressure mounts on the *Operations Board*. Understanding shifts, shift actions, and Covenant packets is essential for every player — not just the DA.
+
+=== Shifts
+
+Each in-game day is divided into four *shifts*:
+
+[%header,cols="1,2"]
+|===
+| Shift | Approximate Time
+
+| *Morning* | 6:00 AM – 12:00 PM
+| *Day* | 12:00 PM – 6:00 PM
+| *Evening* | 6:00 PM – 12:00 AM
+| *Night* | 12:00 AM – 6:00 AM
+|===
+
+During each shift, the team undertakes *one primary action* as a group. The DA advances the Operations Board by one square after each shift, regardless of what the team does. Time is always running.
+
+=== Shift Actions
+
+The team chooses one action per shift:
+
+[%header,cols="2,4"]
+|===
+| Action | What It Does
+
+| *Scene* | Go to a Location, interact with NPCs, gather information, or attempt an objective. This is the core investigative action.
+| *Travel* | Move between cities or distant locations. Short urban travel is free; long-distance travel costs a full shift.
+| *Surveillance* | Stake out a Location or NPC. Requires a full shift; reveals activity patterns, arrivals, or organization movements.
+| *Research* | Spend time in archives, libraries, or the Covenant's records. May reveal historical context, artifact precedent, or NPC backgrounds.
+| *Preparation* | Plan an approach, acquire equipment, set up a safe house, or coordinate with Covenant contacts.
+| *Recovery* | Rest, heal, or decompress. Required for Anchor Scenes and Safe Scene recovery (see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing]).
+|===
+
+=== Covenant Packets
+
+The team can send *one packet* to Covenant HQ per shift — a request for information, analysis, equipment, or authorization. Packets are not instant:
+
+* *Minimum response time:* 2 shifts. The request goes out, HQ processes it, and the response arrives no sooner than two shifts later.
+* *Requests must be specific.* "Tell us everything about the artifact" gets nothing. "Run the serial number on this pocket watch against Keep intake records from 1920–1930" gets results.
+* *HQ responses may be incomplete, delayed, or intercepted.* The DA controls what comes back and when.
+
+The packet system means the team cannot pause the investigation to wait for HQ to solve their problems. They have to keep moving with incomplete information — and when the packet arrives, it either confirms what they've already been acting on or redirects them at a cost of time already spent.
+
+=== Time Pressure
+
+A standard case runs up to *fourteen days* — 56 shifts total. The Operations Board tracks every shift spent. While the team investigates, rival factions advance on their own timelines. An organization that reaches its crisis milestone before containment means the case is lost on their terms.
+
+The clock is the game's central tension. Every shift spent on recovery, travel, or a dead lead is a shift the artifact spends getting worse and rival factions spend getting closer.
+
+For full DA-facing rules on the Operations Board, Locations, NPC Cards, Information Cards, and case construction, see xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — The Case File].

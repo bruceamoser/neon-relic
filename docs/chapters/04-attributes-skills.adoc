@@ -109,7 +109,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 | Cost | Stunt | Effect
 
 | 1 | *Controlled Break* | You force open the door/lock/container without damaging the contents or triggering adjacent mechanisms. Finesse in violence.
-| 1 | *Intimidating Display* | Your feat of strength is visibly dramatic. One NPC present must make a *Fear Check* (Fear Rating 1) or immediately comply with your next simple demand. See xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Fear Checks].
+| 1 | *Intimidating Display* | Your feat of strength is visibly dramatic. One NPC present must make a *Corruption Burst* (Burst Rating 1) or immediately comply with your next simple demand. See xref:chapters/08-corruption-fear-healing.adoc#corruption-burst-procedure[Corruption Burst].
 | 2 | *Clear the Room* | A shove, flip, or sweep clears all loose objects from the zone simultaneously (useful for destroying a cultist's ritual setup, or just making a scene).
 |===
 
@@ -169,7 +169,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 | 1 | *Aimed Shot* | The shot hits exactly the intended location (specific limb, lock, cable, tire). DA treats the result as precision even at range.
 | 1 | *Suppression* | Target is pinned behind cover until start of your next turn. They cannot move zones or fire back without losing their cover bonus.
-| 2 | *Warning Shot* | You visibly miss by design, close enough to be terrifying. The target must make a *Fear Check* (Fear Rating 2) or drop to the ground and remain there for 1 round. No ammo die roll required for this shot. See xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Fear Checks].
+| 2 | *Warning Shot* | You visibly miss by design, close enough to be terrifying. The target must make a *Corruption Burst* (Burst Rating 2) or drop to the ground and remain there for 1 round. No ammo die roll required for this shot. See xref:chapters/08-corruption-fear-healing.adoc#corruption-burst-procedure[Corruption Burst].
 |===
 
 ---
@@ -250,7 +250,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 == General Talents
 
-General Talents are not defined in this chapter. The canonical advancement rules and full General Talents catalog live in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+General Talents are not defined in this chapter. The canonical advancement rules and full General Talents catalog live in xref:chapters/13-advancement.adoc#chapter-advancement[Advancement and Talents].
 
 At character creation, an agent may choose one General Talent in place of their starting Division Talent, as described in xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 

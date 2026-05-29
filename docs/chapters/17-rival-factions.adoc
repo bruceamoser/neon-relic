@@ -135,7 +135,7 @@ Use the Ember Accord when the problem is not only possession of the artifact but
 | STR | AGL | WIT | EMP | Skills
 | 3 | 2 | 2 | 4 | Manipulate 3, Lore 2, Fight 2
 |===
-_Accord zealots have no armor and rarely carry firearms. They fight desperately when cornered and are immune to Intimidate. A devoted leader (the Herald) has EMP 5, Lore 3, and causes a Fear Check (Rating 2) on a first encounter._
+_Accord zealots have no armor and rarely carry firearms. They fight desperately when cornered and are immune to Intimidate. A devoted leader (the Herald) has EMP 5, Lore 3, and causes a Corruption Burst (Rating 2) on a first encounter._
 
 ---
 
@@ -173,6 +173,18 @@ Use MJ-12 when the threat is surveillance, black-bag extraction, official deniab
 | 4 | 3 | 3 | 2 | Shoot 3, Fight 2, Investigate 2, Tech 1
 |===
 _MJ-12 field agents wear concealed ballistic vests (Armor 2) and operate in pairs. They have authority to detain, restrict access, and commandeer resources. They are not equipped for supernatural phenomena and gain Corruption normally from artifact exposure._
+
+****
+*How much does the government actually know?*
+
+The US government's awareness of occult artifacts is fragmented and deliberately compartmentalized. MJ-12 is not a unified policy — it is a black-budget program buried inside the Department of Defense, known to fewer than two dozen officials. Most of the federal government has no idea artifacts exist.
+
+MJ-12 knows artifacts are real and dangerous. They do not understand *why* artifacts exist, what the entities are, or what containment actually requires. Their approach is military: secure the site, extract the object, study it in a controlled facility, and weaponize anything useful. This approach has produced catastrophic failures — classified incidents at research sites that MJ-12 attributes to operator error rather than acknowledging the artifacts' inherent nature.
+
+The Covenant remains independent for three reasons: (1) it predates MJ-12 by centuries and has institutional knowledge that no government program can replicate; (2) the Covenant operates globally across jurisdictions that no single nation controls; and (3) every time a government has attempted to monopolize artifact containment, the results have been worse — the Covenant's archives contain multiple case studies of state-run containment programs that collapsed, leaked, or were corrupted by the artifacts themselves.
+
+MJ-12 and the Covenant are aware of each other. The relationship is hostile but restrained — MJ-12 considers the Covenant an unauthorized non-state actor operating on US soil, and the Covenant considers MJ-12 dangerously incompetent. Neither can afford open conflict. The Cold War provides cover for both: MJ-12 hides its operations behind national security classification, and the Covenant hides behind the assumption that secret societies are conspiracy theories.
+****
 
 ---
 

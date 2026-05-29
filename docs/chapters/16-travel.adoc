@@ -88,14 +88,14 @@ Use route choices to create tradeoffs:
 |===
 | Vehicle | Speed | Capacity (Enc.) | Noise | Notes
 
-| *On Foot* | Slow | Personal carry only | Silent | Surveillance-proof but exhausting. Extended travel over multiple shifts risks exhaustion — the DA may require an Endure (AGI) roll (Difficulty 2) to avoid arriving Broken.
-| *Bicycle* | Slow-Medium | +4 Enc. (rack) | Silent | Urban movement; can enter places cars can't. Cannot outrun a vehicle chase.
+| *On Foot* | Slow | Personal carry only | Silent | Low profile; hard to track in crowds. Extended travel over multiple shifts risks exhaustion — the DA may require an Endure (AGI) roll (Difficulty 2) to avoid arriving Broken.
+| *Bicycle* | Slow-Medium | +4 Enc. (rack) | Silent | Urban movement; can cut through alleys, parks, and stairways that vehicles cannot follow. Outrunning a car on open road is impossible, but terrain advantage in dense urban areas is significant.
 | *Compact Car (e.g., Honda Civic)* | Medium | 20 Enc. | Low | Inconspicuous. +1 die on Sneak rolls to avoid surveillance.
 | *Full-Size Sedan (e.g., Crown Vic)* | Medium | 25 Enc. | Low | The standard Covenant field vehicle. Reliable. Boring. Perfect.
 | *Panel Van* | Medium | 50 Enc. | Medium | Can transport personnel and equipment. −1 die on Sneak rolls; noticed in residential areas.
-| *Pickup Truck* | Medium | 40 Enc. | Medium | Useful in rural terrain. Bed cargo is visible. Common enough to blend in.
+| *Pickup Truck* | Medium | 40 Enc. | Medium | Useful in rural terrain. Bed cargo is visible unless covered (bed cap or tarp). Common enough to blend in.
 | *Motorcycle* | Fast | 10 Enc. | Medium | Best for tailing, losing a tail, and city navigation. Terrible in bad weather (−2 dice in rain/snow).
-| *Helicopter (chartered)* | Very Fast | 30 Enc. | High | Expensive; requires a Contact. Arrival is conspicuous. Never use near civilian populations if covert.
+| *Helicopter (chartered)* | Very Fast | 30 Enc. | High | Expensive; requires a Contact. Arrival is conspicuous — rotor noise announces you from a distance. Never use near civilian populations if covert.
 | *Boat (motorized)* | Slow-Medium | 60 Enc. | Medium | Coastal and river access. Cannot be followed by road. Not available in every scenario.
 |===
 

@@ -101,7 +101,7 @@ Supplies can be restocked:
 
 * During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
 * During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Deft Hands roll (Difficulty 1–2) to access without authorization.
-* HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
+* Cell *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 
 === Supply Categories
 
@@ -253,91 +253,9 @@ For long-distance intercontinental rapid response only. Requires a licensed pilo
 Coastal/river access. Cannot be followed by road vehicles. Night operations: −1 die on all navigation rolls without instruments.
 |===
 
-=== Vehicle Conflict — Actions and Chase Rules
+=== Vehicle Conflict, Damage, and Breakdown
 
-Vehicle conflict follows the same chase structure as foot chases (xref:chapters/05-combat.adoc#chapter-combat[Combat]), with vehicle-specific modifications.
-
-==== Chase Structure
-
-Vehicle conflict follows the same procedural structure as foot chases (xref:chapters/05-combat.adoc#chapter-combat[Combat]), but uses vehicle-specific position names. *Note:* Foot chases use the combat zone scale (Engaged/Near/Short/Long/Distant). Vehicle chases use the following 5-position *Contact Track* — both measure closing/opening distance but at a scale appropriate to vehicles.
-
-A vehicle chase uses a *Contact Track* — a 5-step range:
-
-[%header,cols="^1,3"]
-|===
-| Position | State
-
-| 1 | *Rammed / Contact* — vehicles are adjacent; ramming and boarding are possible.
-| 2 | *Following* — pursuing vehicle is directly behind; gunfire from rear positions is possible.
-| 3 | *Closing* — pursuit is active; the gap is narrowing or holding.
-| 4 | *Widening* — the pursued vehicle has gained distance; gunfire at Long range only.
-| 5 | *Escaped* — the pursuer has lost visual contact. Chase ends.
-|===
-
-The *pursued vehicle* wins by moving to position 5.
-The *pursuing vehicle* wins by moving to or holding position 1–2.
-
-==== Chase Roll
-
-Each round of a chase, both drivers make a roll:
-
-* *Tech (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers with vehicles under pressure. Use this for all standard chase rolls.
-* *Tech (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward. The DA may call for AGI + Tech instead of WIT + Tech when a maneuver is more reflexive than tactical.
-
-Both sides roll simultaneously. The side with more successes moves the Contact Track one position in their favor. Ties: no position change.
-
-*Speed modifiers:*
-
-* Each speed tier above the opponent's: +1 die on the chase roll.
-* Each speed tier below the opponent's: −1 die on the chase roll.
-* Handling bonus/penalty applies directly to the roll.
-
-*Pushing a chase roll:* +1 Corruption as normal. The vehicle also takes 1 Wear immediately (the driver is wringing everything out of it).
-
-==== Vehicle Maneuvers
-
-Declare before rolling. No cost unless noted.
-
-[%header,cols="1,2,3"]
-|===
-| Maneuver | Skill | Effect
-
-| *Ram* | Force (STR) | Only available at Contact. Roll Force (STR) opposed by opponent's Tech (WIT). On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
-| *PIT Maneuver* | Tech (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
-| *Gunfire from Vehicle* | Firearms (standard roll) | Available at Following or closer. −1 die on all shooting rolls from a moving vehicle unless the shooter has the *Stable Platform* talent. A passenger shooting from a moving car is at −1 die; a driver shooting is at −2 dice.
-| *Off-Road Break* | Tech (AGI) Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
-| *Blending In* | Sneak (WIT) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
-|===
-
-=== Vehicle Damage
-
-When a vehicle takes damage (from ramming, gunfire, or environmental hazard):
-
-. Roll damage as normal. Subtract the vehicle's AR.
-. Remaining damage is applied as *Wear* (not as Strength damage to occupants, unless the damage is extraordinary).
-. At 5 Wear: vehicle stops. Characters inside may take 1 Agility damage from the sudden stop (Endure Difficulty 1 to avoid).
-. *Structural damage:* At DA discretion, a catastrophic hit (4+ damage after AR) may cause a specific system failure: blown tire (−2 die Handling), cracked windscreen (blindness penalties for driver), fuel leak (vehicle stops at end of scene unless repaired).
-
-*Repairing Wear:*
-
-* Tech roll (Difficulty 2) + 30 minutes + access to tools: clear 1 Wear.
-* Full garage repairs (overnight, proper tools): restore to starting Reliability.
-* Field repairs without tools: Tech Difficulty 4, clears 1 Wear, cannot reduce below 3.
-
-=== Vehicle Breakdown
-
-When Reliability reaches 5 Wear, the vehicle stops. Roll d6:
-
-[%header,cols="^1,4"]
-|===
-| Roll | Breakdown Type
-
-| 1–2 | *Total Failure.* Engine seized. Not repairable in the field. Needs a tow and a full day of garage work (restore to 2 Wear, 4 hours minimum).
-| 3–4 | *Serious Fault.* Driveable at Slow speed only. Tech (Difficulty 3) to clear in field; otherwise full garage repair.
-| 5–6 | *Inconvenient Failure.* Battery, tire, or small component. Tech (Difficulty 1) to address in 15 minutes. 1 Wear remains after fix.
-|===
-
-A breakdown during an active chase is resolved immediately: the broken-down vehicle is treated as *Contact* on the next round (the pursuer closes automatically).
+Full vehicle conflict rules — the Contact Track, chase rolls, speed modifiers, vehicle maneuvers (Ram, PIT, Gunfire, Off-Road Break, Blending In), vehicle damage, Wear, and breakdown — are in xref:chapters/appendix-combat.adoc#vehicle-chase-rules[Appendix: Advanced Combat → Vehicle Conflict].
 
 ---
 
@@ -404,7 +322,7 @@ Repairing gear requires **time**, **parts**, and a **Tech** roll.
 
 [NOTE]
 ====
-*Vehicle repair* uses a separate system — see <<vehicle-damage,Vehicle Damage and Repair>> earlier in this chapter (Tech roll Difficulty 2, 30 minutes per 1 Wear cleared). Do not use this table for vehicle Wear.
+*Vehicle repair* uses a separate system — see xref:chapters/appendix-combat.adoc#vehicle-damage[Appendix: Advanced Combat → Vehicle Damage] (Tech roll Difficulty 2, 30 minutes per 1 Wear cleared). Do not use this table for vehicle Wear.
 ====
 
 **Success:** Each success restores Gear Bonus by 1 (up to the item's maximum).
@@ -434,7 +352,7 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
 | Hardware Components    | d8  | Electronics, communications gear, vehicle parts
 | Medical Supplies       | d10 | See Resource Dice table in Consumables section
 | Specialized Parts      | d6  | High-tech, rare, or artifact-adjacent repairs only — not scavengeable
-| Covenant Cache Parts   | d12 | HQ-supplied; best quality; no acquisition roll needed
+| Covenant Cache Parts   | d12 | Covenant-supplied; best quality; no acquisition roll needed
 |===
 
 ---
@@ -552,12 +470,14 @@ These are *background advantages* intrinsic to Stack training — always active,
 | *Faster Repairs*      | Quick Repairs take 5 minutes instead of 15. Full Repairs take 2 hours instead of a full Shift.
 | *Parts Economy*       | Stack agents never step down a Junk Die on a successful repair — only failed repairs consume parts.
 | *Known Contacts*      | Once per case, a Stack agent can source **Hardware Components (d8)** without a Covenant requisition (a contact comes through).
-| *Workshop Access*     | At HQ, Stack agents may use the <<facility-covenant-armorer,Covenant Armorer>> facility at no additional cost, even before it is fully built. They improvise the bench themselves.
+| *Workshop Access*     | At a cell location, Stack agents may use the <<facility-covenant-armorer,Covenant Armorer>> capability at no additional cost, even before it is fully established. They improvise the bench themselves.
 |===
 
 [NOTE]
 ====
-*Simplified crafting option (DA guidance):* The full parts economy (Junk Die, Hardware Components, Specialized Parts, Covenant Cache Parts) can feel like a lot to track. DAs running lighter sessions may substitute a single *Parts Die (d8)* for all non-vehicle repairs. Roll it like any Resource Die after each repair — 1–2: step down; 3+: no change. Replenish it at HQ or during Equipping Phase. This is a deliberate simplification, not the default rule.
+*Default crafting rule:* All non-vehicle repairs use a single *Parts Die (d8)* as the parts tracker. Roll it like any Resource Die after each repair — 1–2: step down; 3+: no change. Replenish it at a cell location or during Equipping Phase. This keeps crafting simple and fast at the table.
+
+*Detailed crafting option (DA guidance):* For groups that want more granular resource tracking, the full parts economy (Junk Die, Hardware Components, Specialized Parts, Covenant Cache Parts) described earlier in this section provides deeper material management. Use it when your table enjoys logistical gameplay — but the Parts Die is the default rule.
 ====
 
 > **Cross-reference:** Stack Division full description, background options, and Talents

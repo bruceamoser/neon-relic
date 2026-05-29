@@ -19,7 +19,7 @@ NAME
 
 Attributes: STR X | AGI X | WIT X | EMP X
 Armor Rating: X (type)
-Fear Rating: X (0 for humans unless marked)
+Burst Rating: X (0 for humans unless marked)
 
 Skills:
   Force X | Brawl X | Endure X
@@ -40,7 +40,7 @@ Motivation: One sentence describing what this adversary wants in this scene.
 * *Attributes* are used exactly as PC attributes — as both dice pool maximums and health pools. When Strength reaches 0, the adversary is Broken.
 * *Skills not listed* default to 0.
 * *Armor Rating* functions identically to PC armor — Gear dice rolled against incoming damage.
-* *Fear Rating* applies to supernatural entities and rare humans. 0 = no Fear check triggered. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+* *Burst Rating* applies to supernatural entities and rare humans. 0 = no Corruption Burst triggered. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing].
 * *Broken State* defines what happens when the adversary's Strength hits 0.
 * *Damage types* in special abilities should specify their type and target: Physical (STR or AGI), Mental (WIT or EMP), or Corruption. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 
@@ -66,7 +66,7 @@ Special: [One sentence if applicable, or "—"]
 ----
 Attributes: STR 3 | AGI 2 | WIT 2 | EMP 3
 Armor Rating: 0
-Fear Rating: 0
+Burst Rating: 0
 
 Skills:
   Force 1 | Brawl 2
@@ -96,7 +96,7 @@ Motivation: Protect the artifact/ritual/site. They believe you are desecrating s
 ----
 Attributes: STR 4 | AGI 3 | WIT 3 | EMP 4
 Armor Rating: 1 (concealed vest — improvised, not rated)
-Fear Rating: 0
+Burst Rating: 0
 
 Skills:
   Force 2 | Brawl 3 | Endure 2
@@ -131,7 +131,7 @@ They want to delay, contain, or eliminate you before word reaches the Covenant.
 ----
 Attributes: STR 5 | AGI 4 | WIT 3 | EMP 2
 Armor Rating: 4 (Tactical Kevlar — military spec)
-Fear Rating: 0
+Burst Rating: 0
 
 Skills:
   Force 3 | Brawl 3 | Endure 3
@@ -141,7 +141,7 @@ Skills:
 
 Special Abilities:
   Suppressive Discipline — MJ-12 agents do not panic under mundane violence.
-  Supernatural Fear checks are still required, but they roll with *+1 bonus die*
+  Supernatural Corruption Burst checks are still required, but they roll with *+1 bonus die*
   (training).
 
   Tactical Communication — If two or more MJ-12 agents are present, they act
@@ -169,7 +169,7 @@ operatives if exposed. No witnesses.
 ----
 Attributes: STR 3 | AGI 3 | WIT 4 | EMP 3
 Armor Rating: 2 (ritual garments — treated leather with artifact weaving)
-Fear Rating: 2 (the things they've done are visible in their eyes)
+Burst Rating: 2 (the things they've done are visible in their eyes)
 
 Skills:
   Brawl 2 | Endure 3
@@ -210,7 +210,7 @@ inconvenience that should have been avoided.
 ----
 Attributes: STR 4 | AGI 3 | WIT 1 | EMP 0
 Armor Rating: 2 (force of coherence — the entity's structural integrity)
-Fear Rating: 2 (objects move wrong; the air gets cold)
+Burst Rating: 2 (objects move wrong; the air gets cold)
 
 Skills:
   Force 3
@@ -252,7 +252,7 @@ strong emotional state.
 ----
 Attributes: STR 8 | AGI 3 | WIT 2 | EMP 0
 Armor Rating: 5 (crystallized occult energy — the artifact's self-defense)
-Fear Rating: 4 (wrongness of form; the geometry of it shouldn't work)
+Burst Rating: 4 (wrongness of form; the geometry of it shouldn't work)
 
 Skills:
   Force 5 | Brawl 4 | Endure 4
@@ -313,7 +313,7 @@ For quick reference when building encounters:
 ----
 Attributes: STR 3 | AGI 5 | WIT 4 | EMP 3
 Armor Rating: 1 (concealed ballistic vest)
-Fear Rating: 0
+Burst Rating: 0
 
 Skills:
   Brawl 2 | Endure 2
@@ -371,7 +371,7 @@ a client waiting. The agents are the only variable they didn't plan for.
 | *Empathy* | 5 (uses Empathy to manipulate; passively broadcasts)
 | *Skills* | Psychoanalyze 3 (passive pressure), Manipulate 2 (hallucination-induced)
 | *Armor Rating* | Immune to physical damage
-| *Fear Rating* | 3
+| *Burst Rating* | 3
 | *Corruption Cost* | +1 Corruption per minute spent within it (scene = +3 total)
 |===
 
@@ -420,7 +420,7 @@ means. It can be dispersed by:
 | *Empathy* | 0
 | *Skills* | Force 3, Brawl 2, Endure 3
 | *Armor Rating* | 1 (physical deadness reduces impact)
-| *Fear Rating* | 2
+| *Burst Rating* | 2
 | *Corruption Cost* | +1 Corruption on first sighting; +1 if recognized as someone known
 |===
 
@@ -462,7 +462,7 @@ removed.
 | *Empathy* | 5
 | *Skills* | Investigate 4, Sneak 5, Manipulate 3
 | *Armor Rating* | Immune to physical damage while intangible
-| *Fear Rating* | 2 (initially); 4 (once its nature is understood)
+| *Burst Rating* | 2 (initially); 4 (once its nature is understood)
 | *Corruption Cost* | +2 Corruption when it speaks directly to a character
 |===
 
@@ -512,7 +512,7 @@ Tech roll (Difficulty 3) to disrupt its signal network.
 | *Empathy* | 6 (weaponized grief)
 | *Skills* | Psychoanalyze 4, Manipulate 4, Brawl 3 (manifested physical form)
 | *Armor Rating* | 3 (partially intangible)
-| *Fear Rating* | 4 (maximum if the Wraith wears the face of a dead teammate)
+| *Burst Rating* | 4 (maximum if the Wraith wears the face of a dead teammate)
 | *Corruption Cost* | +2 Corruption on first contact; +1 each subsequent scene
 |===
 
@@ -523,9 +523,9 @@ Tech roll (Difficulty 3) to disrupt its signal network.
 ----
 Familiar Face — The Fracture Wraith appears as a dead Covenant agent.
 If any surviving character knew the deceased, seeing the Wraith triggers
-an immediate Fear Check (Fear Rating 4). If no character knew the
+an immediate Corruption Burst (Burst Rating 4). If no character knew the
 deceased, it appears as a figure whose face they can't quite place —
-Fear Rating 2.
+Burst Rating 2.
 
 Guilt Echo — Once per scene, the Wraith can attempt a Psychoanalyze roll
 (opposed by the target's Wits). On success: the target relives a specific
@@ -557,7 +557,7 @@ The following entries fill the gap between low-tier nuisances and lethal high-ti
 ----
 Attributes: STR 3 | AGI 3 | WIT 4 | EMP 2
 Armor Rating: 0
-Fear Rating: 2
+Burst Rating: 2
 
 Skills:
   Manipulate 3 | Lore 2 | Brawl 2 | Endure 3
@@ -603,7 +603,7 @@ process.
 ----
 Attributes: STR — (incorporeal) | AGI — (incorporeal) | WIT 5 | EMP 4
 Armor Rating: Immune to physical damage
-Fear Rating: 3
+Burst Rating: 3
 
 Skills: None (the Echo does not act with intention)
 
@@ -612,7 +612,7 @@ Movement: Zone-locked (occupies 1–2 zones defined at creation; does not move)
 Special Abilities:
   Immersion Field (Passive) — At the start of each round, all characters within
   the Echo's zone(s) resist the Echo's influence. This uses the same mechanic
-  as a Fear Check (Wits attribute only, no skill bonus), Difficulty 1.
+  as a Corruption Burst check (Wits attribute only, no skill bonus), Difficulty 1.
   Failure: the character experiences the historical trauma as if they were a
   participant — takes 1 Wits damage and 1 Empathy damage (mental, no armor).
   Success: the character observes the replay from a dissociated perspective and
@@ -628,7 +628,7 @@ Special Abilities:
   Escalation (Triggered) — If any character within the Echo's zone activates an
   artifact, uses a Division Talent, or pushes a roll, the Echo intensifies. For
   the remainder of the scene, Immersion Field damage increases to 2 Wits + 1
-  Empathy, and the Fear Rating increases to 4. The historical replay becomes
+  Empathy, and the Burst Rating increases to 4. The historical replay becomes
   more vivid and violent.
 
   Loop Reset (Passive) — At the end of each scene, the Echo restarts its cycle.
@@ -659,7 +659,7 @@ of three methods:
 ----
 Attributes: STR 3 | AGI 3 | WIT 4 | EMP 2
 Armor Rating: 1 (artifact-warded clothing — subtle, not tactical)
-Fear Rating: 0 (human, but deeply unsettling — see DA Guidance)
+Burst Rating: 0 (human, but deeply unsettling -- see DA Guidance)
 
 Skills:
   Lore 4 | Manipulate 3 | Investigate 3 | Deft Hands 3 | Sneak 2 | Tech 2
@@ -697,7 +697,7 @@ Special Abilities:
   agent carrying an artifact, they may offer accurate, detailed information
   about the artifact's properties, risks, and history. This information is
   always truthful and always unsettling. The agent receiving this information
-  must make a Fear Check (Wits only, standard Fear rules) — not because the
+  must make a Corruption Burst check (Wits only, standard Burst rules) -- not because the
   Collector is frightening, but because the depth and accuracy of their
   knowledge implies intimate experience with forces that should have destroyed
   them.
@@ -725,7 +725,7 @@ Collectors should not appear in every Case File. One Collector per campaign arc 
 
 === Corruption Threshold and Behavior
 
-The Corruption thresholds from xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
+The Corruption thresholds from xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
 
 [%header,cols="^1,2,4"]
 |===
@@ -733,7 +733,7 @@ The Corruption thresholds from xref:chapters/08-corruption-fear-healing.adoc#cha
 
 | *0* | 0–3 | Normal. No mechanical difference from a baseline NPC.
 | *1* | 4–7 | *Distorted.* The NPC is erratic — inconsistent, prone to misreading motives. −1 die on all social skill rolls targeting them. They believe they are functioning normally.
-| *2* | 8–10 | *Compromised.* The NPC's primary goal has been replaced by the logic of a corrupting artifact. They act with genuine conviction in service of something the artifact wants. Fear Rating 1 (their behavior is uncanny and wrong).
+| *2* | 8--10 | *Compromised.* The NPC's primary goal has been replaced by the logic of a corrupting artifact. They act with genuine conviction in service of something the artifact wants. Burst Rating 1 (their behavior is uncanny and wrong).
 | *3* | 11+ | *Broken.* The NPC meets the Fracture Wraith threshold or reaches catatonia. If not Catatonic, treat as equivalent to a Hollow (see above) — still moving, but no longer present.
 |===
 
@@ -801,7 +801,7 @@ Limit special abilities by tier:
 . At least one ability should have *a meaningful counter* that can be discovered with a successful Lore or Investigate roll.
 . Avoid purely defensive abilities — entities that can only be hurt in specific ways are frustrating if players can't find the method.
 
-=== Step 5 — Set Fear Rating
+=== Step 5 — Set Burst Rating
 
 [%header,cols="^1,3"]
 |===
