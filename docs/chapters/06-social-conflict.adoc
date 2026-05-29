@@ -37,7 +37,7 @@ The DA sets starting Disposition based on the NPC's relationship to the agents a
 
 == Shifting Disposition
 
-Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes.
+Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes. All disposition shifts are done at the DA's discretion and may vary depending on the situation.
 
 === Actions that Shift Disposition Up (+1)
 
