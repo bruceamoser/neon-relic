@@ -25,8 +25,9 @@
   /* ── PAGE ── */
   @page { size: letter portrait; margin: 0; }
   @media print {
-    body { margin: 0; padding: 0; background: none; }
-    .page { box-shadow: none; margin: 0; }
+    html, body { margin: 0; padding: 0; background: none; height: auto; }
+    .page { box-shadow: none; margin: 0; height: auto; overflow: visible; page-break-inside: avoid; page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
   }
 
   :root {
