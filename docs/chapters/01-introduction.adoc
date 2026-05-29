@@ -38,7 +38,7 @@ The technological environment is characterized by analog limitations, forcing a 
 
 The juxtaposition of high-tech, neon-lit urban sprawl against the ancient, rotting, cosmic horror of the artifacts creates a stark, atmospheric dichotomy. Audio aesthetics play a major role -- underground clubs pulse with aggressive synthwave beats, while secretive government laboratories hum with the low, oppressive frequencies of massive server mainframes.
 
-The tactile, error-prone nature of 1980s technology maps flawlessly to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.
+The tactile, error-prone nature of 1980s technology maps naturally to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.
 
 ---
 
@@ -90,10 +90,8 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 
 === Quick Response Teams
 
-Under normal operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
+Under standard operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
 This process is methodical, documented, and safe — when time permits.
-
-Time rarely permits.
 
 When an artifact surfaces under hostile conditions — rival factions converging, civilian exposure escalating, or containment failures cascading beyond a single Division's capability — the Covenant activates a *Quick Response Team*.
 QRTs are ad-hoc field units assembled from available agents across all three Divisions, deployed to handle situations that require the full locate-retrieve-contain cycle in compressed, dangerous timeframes.
