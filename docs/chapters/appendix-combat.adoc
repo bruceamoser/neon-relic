@@ -1,0 +1,197 @@
+[#appendix-combat]
+= Appendix: Advanced Combat Rules
+
+This appendix collects situational combat rules that most sessions will not use. The core combat loop — zones, actions, initiative, conditions, and Broken — is in xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]. The rules here cover ammunition tracking, full automatic fire, chases, vehicle combat, and large-group (mob) combat.
+
+---
+
+[[ammunition-tracking]]
+== Ammunition Tracking
+
+Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die based on the weapon type and current magazine state:
+
+[%header,cols="2,1,2"]
+|===
+| Ammo State | Die | Notes
+
+| *Pistol — full magazine* | d10 | 9mm, .38, .45; standard load
+| *Shotgun — full load* | d8 | Pump or semi-auto shotgun
+| *Rifle — full magazine* | d8 | Assault rifle, battle rifle, .308
+| *Half loaded (any)* | d6 | Partially used magazine
+| *Low / scrounged (any)* | d4 | Found ammo, emergency reload
+| *Drum / extended mag* | d12 | Special acquisition (CL 4)
+|===
+
+> *Two-track ammo system:* This table governs *in-combat per-shot tracking* — roll when you push a Firearms roll, fire full auto, or the DA calls for it. Between scenes, use the *Supply-level Resource Dice* in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment] to track how much ammo the team has on hand. When you reload in the field, roll the supply die; then reset the weapon's combat ammo die to its 'full' value from this table.
+
+*When do you roll the ammo die?*
+
+* After *every turn in which you fire* (standard fire — the die represents the resource pressure of sustained combat).
+* After *pushing a Firearms roll* — roll an additional time (you burned through extra rounds).
+* After a *full auto burst* — roll *twice* (see Full Auto below).
+* At the DA's discretion when dramatically appropriate (ambush, very long firefight).
+
+*Rolling the ammo die:*
+
+* Roll the current die. On a *1 or 2*, step the die down one size (d8→d6→d4→empty).
+* On *empty* (die was d4 and rolled 1–2): weapon is dry. Reload costs a Slow Action.
+
+=== Full Auto
+
+Weapons capable of fully automatic fire (noted in the Equipment tables) may fire a *full auto burst* on a Slow Action instead of a standard shot.
+
+* *Effect:* Make *two separate attack rolls* against the same target (or split between two targets in the same zone). Resolve each roll independently — each can hit, miss, or generate stunt points.
+* *Ammo:* Roll the ammo die *twice* after a full auto burst (once per attack).
+* *Penalty:* After firing full auto, the firing character suffers −1 die on all Firearms rolls until the start of their next turn (recoil and muzzle rise).
+* *When in doubt:* If the Equipment tables do not specify a weapon as full auto, it fires semi-auto only.
+
+---
+
+[[chase-and-pursuit]]
+== Chase and Pursuit
+
+When one side is fleeing and the other is pursuing, use the following chase rules.
+
+=== Chase Structure
+
+A chase is divided into *chase rounds*. Each round, both the fleeing and pursuing party roll their relevant attribute + skill:
+
+* *On foot:* Agility + Sneak (for stealth flight) or Agility + Endure (for pure sprint)
+* *By vehicle:* Wits + Tech (see <<vehicle-chase-rules>> for full vehicle chase procedure, speed modifiers, and maneuvers)
+
+> **DA discretion on skill choice:** These are default options. The DA may call for other skills when the context demands it — a chase through a crowded market could use Manipulate (EMP) to slip through a crowd; a chase through a building's maintenance passages could use Investigate (WIT). The DA should always tell the players which skill they're calling before the roll.
+
+=== Chase Outcome Per Round
+
+* Compare successes. The side with more successes *gains distance* (fleeing) or *closes distance* (pursuing).
+* Track relative distance on a 5-step track: *Contact → Following → Closing → Widening → Escaped*.
+* Start at Contact. Fleeing party wins a round → move one step toward Escaped. Pursuing party wins → move one step toward Contact.
+
+=== Escape and Recapture
+
+* The fleeing party *escapes* when they reach the Escaped position.
+* During a chase, characters may still attack (at whatever range the current position represents) but do so at *−1 die* (distraction of movement).
+* If the pursuing party reaches Contact: normal combat resumes. Draw initiative cards immediately; the pursuit party does not get a free round unless they successfully set up an ambush (see Surprise and Ambush).
+* *Hiding attempt:* If the fleeing party is at Widening, they may attempt to break the chase entirely — succeed on a Sneak roll (Difficulty 2) to vanish into the environment. This attempt may be made *once per chase*; if it fails, the hiding window has passed and the fleeing party must reach Escaped normally.
+
+---
+
+[[combat-around-vehicles]]
+== Combat Around Vehicles
+
+Not every vehicle encounter is a chase. When combat occurs at or near stationary vehicles — roadblock shootouts, parking lot ambushes, or attacks on a parked convoy — use standard combat rules with the following guidance:
+
+* *Vehicles as cover:* A vehicle provides cover equal to its Armor Rating. Agents behind a vehicle add the vehicle's Armor Rating to their defense as if it were personal armor (Gear Dice, 6s absorb damage). Unlike personal armor, vehicle cover does not degrade from 1s — the vehicle absorbs Wear instead (1 Wear per combat scene in which it provides cover).
+* *Attacking vehicles:* Targeting a vehicle (to disable it, breach it, or destroy it) uses Force (melee) or Firearms (ranged) at Difficulty 1 — no special maneuver is needed, just a successful hit. Each point of damage that exceeds the vehicle's Armor Rating reduces the vehicle by 1 Wear. At 5 Wear, the vehicle is disabled. Typical vehicle Armor Ratings are listed in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
+* *Targeting occupants:* Attacking someone inside a vehicle requires a called shot (1 stunt point) or the vehicle's windows/doors to be open. Closed vehicles provide full Armor Rating to occupants. Open vehicles (windows down, convertibles) provide half Armor Rating (round down).
+
+For moving vehicle encounters, use the <<chase-and-pursuit>> rules above. If a chase transitions into a stationary firefight (e.g., vehicles crash and combatants exit), switch to standard combat using the guidance in this section.
+
+> **Wear** is the vehicle damage track. It runs from 0 (undamaged) to 5 (disabled). At Wear 5, the vehicle cannot move, its systems are failing, and it may be on fire — DA determines consequences. Repairing Wear requires tools, time, and a successful Tech (WIT) roll. Full vehicle Wear and repair rules are in <<vehicle-damage>>.
+
+---
+
+[[vehicle-chase-rules]]
+== Vehicle Conflict — Actions and Chase Rules
+
+Vehicle conflict follows the same chase structure as foot chases (<<chase-and-pursuit>>), with vehicle-specific modifications. Vehicle stat blocks and the 1980s vehicle roster are in xref:chapters/10-equipment.adoc#chapter-equipment[Equipment].
+
+=== Contact Track
+
+Vehicle conflict uses a *Contact Track* — a 5-step range distinct from the foot-chase position track:
+
+[%header,cols="^1,3"]
+|===
+| Position | State
+
+| 1 | *Rammed / Contact* — vehicles are adjacent; ramming and boarding are possible.
+| 2 | *Following* — pursuing vehicle is directly behind; gunfire from rear positions is possible.
+| 3 | *Closing* — pursuit is active; the gap is narrowing or holding.
+| 4 | *Widening* — the pursued vehicle has gained distance; gunfire at Long range only.
+| 5 | *Escaped* — the pursuer has lost visual contact. Chase ends.
+|===
+
+The *pursued vehicle* wins by moving to position 5.
+The *pursuing vehicle* wins by moving to or holding position 1–2.
+
+=== Chase Roll
+
+Each round of a chase, both drivers make a roll:
+
+* *Tech (WIT):* The primary chase skill. Represents reading traffic, anticipating routes, and making calculated maneuvers with vehicles under pressure. Use this for all standard chase rolls.
+* *Tech (AGI):* Used when attempting sudden unpredictable movement — cutting through a building site, reversing against traffic, going off-road. Higher risk, higher reward. The DA may call for AGI + Tech instead of WIT + Tech when a maneuver is more reflexive than tactical.
+
+Both sides roll simultaneously. The side with more successes moves the Contact Track one position in their favor. Ties: no position change.
+
+*Speed modifiers:*
+
+* Each speed tier above the opponent's: +1 die on the chase roll.
+* Each speed tier below the opponent's: −1 die on the chase roll.
+* Handling bonus/penalty applies directly to the roll.
+
+*Pushing a chase roll:* +1 Corruption as normal. The vehicle also takes 1 Wear immediately (the driver is wringing everything out of it).
+
+=== Vehicle Maneuvers
+
+Declare before rolling. No cost unless noted.
+
+[%header,cols="1,2,3"]
+|===
+| Maneuver | Skill | Effect
+
+| *Ram* | Force (STR) | Only available at Contact. Roll Force (STR) opposed by opponent's Tech (WIT). On success: both vehicles take 1–3 damage (equal to Force successes); Contact Track does not change; occupants of both vehicles take 1 Agility damage (thrown around). Cannot ram a vehicle more than two speed tiers faster.
+| *PIT Maneuver* | Tech (WIT) Difficulty 3 | Available at Contact only. On success: target vehicle spins — they lose their next action and the pursuer moves to Contact. On failure: the maneuvering driver's vehicle takes 1 Wear.
+| *Gunfire from Vehicle* | Firearms (standard roll) | Available at Following or closer. −1 die on all shooting rolls from a moving vehicle unless the shooter has the *Stable Platform* talent. A passenger shooting from a moving car is at −1 die; a driver shooting is at −2 dice.
+| *Off-Road Break* | Tech (AGI) Difficulty 2 | Drive off the paved route. On success: move one position on the Contact Track toward Escaped. On failure: vehicle takes 1 Wear and no position change. If in a vehicle with off-road penalty (Motorcycle in rain, Van, Helicopter equivalent): add +1 Difficulty.
+| *Blending In* | Sneak (WIT) Difficulty 2 | Abandon the direct chase and disappear into traffic or terrain. On success: move directly to Escaped (skip the track). On failure: no change and opponent moves one step toward Contact.
+|===
+
+---
+
+[[vehicle-damage]]
+== Vehicle Damage
+
+When a vehicle takes damage (from ramming, gunfire, or environmental hazard):
+
+. Roll damage as normal. Subtract the vehicle's AR.
+. Remaining damage is applied as *Wear* (not as Strength damage to occupants, unless the damage is extraordinary).
+. At 5 Wear: vehicle stops. Characters inside may take 1 Agility damage from the sudden stop (Endure Difficulty 1 to avoid).
+. *Structural damage:* At DA discretion, a catastrophic hit (4+ damage after AR) may cause a specific system failure: blown tire (−2 die Handling), cracked windscreen (blindness penalties for driver), fuel leak (vehicle stops at end of scene unless repaired).
+
+*Repairing Wear:*
+
+* Tech roll (Difficulty 2) + 30 minutes + access to tools: clear 1 Wear.
+* Full garage repairs (overnight, proper tools): restore to starting Reliability.
+* Field repairs without tools: Tech Difficulty 4, clears 1 Wear, cannot reduce below 3.
+
+=== Vehicle Breakdown
+
+When Reliability reaches 5 Wear, the vehicle stops. Roll d6:
+
+[%header,cols="^1,4"]
+|===
+| Roll | Breakdown Type
+
+| 1–2 | *Total Failure.* Engine seized. Not repairable in the field. Needs a tow and a full day of garage work (restore to 2 Wear, 4 hours minimum).
+| 3–4 | *Serious Fault.* Driveable at Slow speed only. Tech (Difficulty 3) to clear in field; otherwise full garage repair.
+| 5–6 | *Inconvenient Failure.* Battery, tire, or small component. Tech (Difficulty 1) to address in 15 minutes. 1 Wear remains after fix.
+|===
+
+A breakdown during an active chase is resolved immediately: the broken-down vehicle is treated as *Contact* on the next round (the pursuer closes automatically).
+
+---
+
+[[group-combat]]
+== Group Combat (Multiple NPCs)
+
+When 3 or more combatants on the NPC side share a common purpose and act together, they may be treated as a *mob*.
+
+=== Mob Rules
+
+* A mob draws *one Initiative card* and acts as a single entity on that card.
+* A mob has a shared Strength pool equal to *3 per member* (e.g., a 4-person mob has Strength 12). Maximum mob Strength is 15 regardless of size.
+* A mob attacks as one unit: roll dice pool equal to the *best individual's dice pool* plus bonus dice equal to the number of additional members (beyond the first), *maximum +3 bonus dice total*.
+* *Damage to a mob:* Any attack that deals Strength damage reduces the mob's shared pool. When the mob Strength pool reaches 0, the mob is broken — all members are Broken or fleeing. The DA may narrate intermediate casualties at thresholds (e.g., one member falls at Strength 6, another at Strength 3).
+* *Splitting a mob:* Area effects (full auto burst, explosive, fire) or AoE-capable stunts can split a mob into two smaller groups. The DA distributes remaining Strength between them.
+
+> Mobs represent low-tier hostiles (cultist grunts, security guards, Compact foot soldiers). Named or significant NPCs always act individually with their own initiative and stat blocks.

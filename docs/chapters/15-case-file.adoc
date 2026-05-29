@@ -461,6 +461,43 @@ No safe containment is possible without all three. Containment Truths are always
 
 When the agents discover information during play, the DA physically hands them the player-facing side of the card. This makes progress tangible — the growing stack of Information Cards on the table is a visible measure of how much the team has pieced together.
 
+==== Example: A Simple Investigation Web
+
+The following shows how Locations, NPCs, and Information Cards connect for a small case. The artifact is a cursed pocket watch recovered from an antiques dealer. Three Containment Truths (CT) must be discovered before the team can safely contain it.
+
+....
+                        ┌──────────────────┐
+                        │  L1: Antiques     │
+                        │  Shop (crime scene)│
+                        │  NPC: N1 (owner)  │
+                        │  Info: I1, I2     │
+                        └────────┬─────────┘
+                                 │
+                   ┌─────────────┼─────────────┐
+                   │             │             │
+          ┌────────▼───────┐  ┌──▼──────────┐  ┌▼───────────────┐
+          │ L2: County     │  │ L3: Victim's│  │ L4: University │
+          │ Records Office │  │ Apartment   │  │ Library        │
+          │ NPC: N2 (clerk)│  │ NPC: N3     │  │ NPC: N4 (prof) │
+          │ Info: I3 [CT1] │  │ Info: I4    │  │ Info: I5 [CT2] │
+          └────────────────┘  └──────┬──────┘  └───────┬────────┘
+                                     │                 │
+                               ┌─────▼─────────────────▼──┐
+                               │ L5: St. Anne's Church     │
+                               │ NPC: N5 (parish priest)   │
+                               │ Info: I6 [CT3]            │
+                               └───────────────────────────┘
+....
+
+* *I1* — The watch was sold by a man matching the description of a known Compact fixer. _(Leads to L2.)_
+* *I2* — The previous owner died holding the watch; cause of death listed as "acute senescence." _(Leads to L3.)_
+* *I3 [CT1]* — County deed records show the watch was part of a 1923 estate sale from St. Anne's Parish. _(Containment Truth: provenance.)_
+* *I4* — The victim's journal mentions a recurring dream about a church bell. _(Leads to L4 and L5.)_
+* *I5 [CT2]* — Professor Harlan's research notes describe the watch's activation trigger: it responds to sustained skin contact. _(Containment Truth: trigger.)_
+* *I6 [CT3]* — The parish priest knows the original blessing that sealed the watch in 1923 — a specific Latin invocation. _(Containment Truth: quiescence.)_
+
+The web ensures that every Location leads to at least one other Location, every Containment Truth has a field source, and no single failure can block the investigation entirely. If the agents miss I3 at the records office, HQ can pull the deed history on Day 6 (HQ Fallback).
+
 [[hq-safety-valve]]
 === The HQ Safety Valve
 
@@ -558,14 +595,14 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 11 | Cassette tape               | Recordings of events before they happen; playback causes hemorrhaging
 | 12 | Pocket watch                | Stops time in a 5-meter radius for d6 rounds; user ages accelerated
 | 13 | Hospital chart              | Accurate medical diagnosis of anyone named in it; reading causes symptoms
-| 14 | Photograph                  | Shows what the subject fears most; viewing drives Fear check
+| 14 | Photograph                  | Shows what the subject fears most; viewing drives Corruption Burst
 | 15 | Book (journal/diary)        | Compels reader to continue until finished; knowledge is real and dangerous
 | 16 | Vinyl record                | Music causes compliance in listeners within earshot; player is compelled too
 | 21 | Military dog tags           | Reveals the moment of death of anyone who held the tags
 | 22 | Children's toy              | Locates any child within a mile; toy speaks in the missing child's voice
 | 23 | Radio receiver              | Picks up transmissions from parallel timelines; maddening incoherence
 | 24 | Compass                     | Points toward the nearest supernatural entity regardless of direction
-| 25 | Mirror (compact or full)    | Shows true form of all entities reflected; cannot be looked away from
+| 25 | Mirror (compact or full)    | Shows true form of all entities reflected; compels the gaze of anyone who looks into it
 | 26 | Surgical instrument         | Wounds inflicted by it cannot be healed by normal medicine
 | 31 | Film reel                   | Footage shows crimes not yet committed; watching causes +1 Corruption
 | 32 | Blueprint or schematics     | Construction following these plans creates a corrupted space; builders don't survive
@@ -581,7 +618,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 | 46 | Painting or portrait        | Subject watches through it; communicates, manipulates, hungers
 | 51 | Typewriter                  | Text typed on it becomes true; reality reconfigures to match
 | 52 | Map (hand-drawn)            | Accurate to a location that doesn't exist — yet
-| 53 | Clock (grandfather or wall) | Slows time in a building-sized area; those inside age normally
+| 53 | Clock (grandfather or wall) | Slows time in a building-sized area; those outside the zone age normally while those inside experience minutes as hours
 | 54 | Syringe / vial of fluid     | Injection grants a specific ability; dependency forms within 24 hours
 | 55 | Musical instrument          | Performance compels specific emotional response; player loses control
 | 56 | Weapon (pistol, knife)      | Kills what cannot be killed; user marked for retaliation by its kind
@@ -728,9 +765,9 @@ Resolve all pending healing — physical injuries requiring downtime phases, men
 
 A *downtime phase* is a discrete rest-and-recovery period lasting approximately one week of in-world time. It is the basic unit of between-case recovery. Physical Critical Injuries and Broken conditions clear at a rate of one phase per requirement, with each successful Heal roll advancing progress. The DA determines how many downtime phases are available based on the gap between cases — a rushed reassignment may allow only one phase, while an extended stand-down may allow three or four.
 
-A *Psychoanalyze campaign* is a sustained treatment track for mental injuries: Corruption-driven trauma, persistent fear responses, or Broken conditions rooted in occult exposure. It requires a willing agent, an accessible therapist or Covenant psychologist, and at least one downtime phase per treatment step. The number of steps depends on severity. A Psychoanalyze campaign may be interrupted by a new Case File assignment — incomplete treatment does not reset, but the condition does not improve until it resumes. The mechanics for Psychoanalyze are in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+A *Psychoanalyze campaign* is a sustained treatment track for mental injuries: Corruption-driven trauma, persistent panic responses, or Broken conditions rooted in occult exposure. It requires a willing agent, an accessible therapist or Covenant psychologist, and at least one downtime phase per treatment step. The number of steps depends on severity. A Psychoanalyze campaign may be interrupted by a new Case File assignment — incomplete treatment does not reset, but the condition does not improve until it resumes. The mechanics for Psychoanalyze are in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing].
 
-Corruption recovery via *Full Rest* requires a minimum of one downtime phase with no artifact exposure, no field work, and no significant stress. This reduces Corruption by 1. Multiple phases spent in genuine recovery can reduce Corruption further. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing] for all recovery methods.
+Corruption recovery via *Full Rest* requires a minimum of one downtime phase with no artifact exposure, no field work, and no significant stress. This reduces Corruption by 1. Multiple phases spent in genuine recovery can reduce Corruption further. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] for all recovery methods.
 
 === 3. HQ Investment Phase
 
@@ -741,15 +778,32 @@ Spend accumulated Development Points on facility upgrades and personnel recruitm
 Each player answers one question about their agent's downtime:
 
 * *What did your agent do to decompress?* (Establishes or reinforces Anchor connections)
-* *Did anything about the last case follow you home?* (Seeds Dark Secret development or Corruption narrative)
+* *Did anything about the last case follow you home?* (Seeds Corruption narrative or personal complications)
 * *Did you reach out to anyone — or did anyone reach out to you?* (Develops NPC relationships and potential complications)
 
 The DA may use Personal Phase answers to seed hooks for the next Case File. Agents who skip the Personal Phase or describe isolation gain *+1 Corruption* — the Covenant's work consumes those who don't maintain human connections.
 
 === 5. Briefing
 
-The Covenant assigns the next Case File. Assignment quality reflects the cell's reputation:
+The Covenant assigns the next Case File. Understanding the *assignment pipeline* clarifies why some cells get better cases than others — and why "better" doesn't mean "easier."
 
-* *Standing 0–4 (Unknown):* The team receives whatever case nobody else wants.
-* *Standing 5–14 (Acknowledged / Trusted):* Cases matching the team's demonstrated competencies.
-* *Standing 15+ (Honored / Elite):* The team may request specific assignments or receive priority cases with advanced intel.
+==== The Assignment Pipeline
+
+Case Files originate from three sources:
+
+. *Wayfinder intelligence* — The Research or Counterintelligence Wing identifies an artifact through historical analysis, signals intercept, or field report. This generates a *Proactive Case* — the Covenant knows about the threat before it escalates.
+. *Incident response* — A civilian report, media story, or law enforcement anomaly triggers a Covenant alert. This generates a *Reactive Case* — the artifact is already active, and the clock is already ticking.
+. *Cold case reactivation* — A previously dormant artifact resurfaces, a containment failure is detected, or new evidence reopens a closed file. This generates a *Legacy Case* — old, complicated, and poorly documented.
+
+The *Regional Hub Director* for the cell's zone evaluates incoming cases against available cells and assigns based on three factors:
+
+* *Capability match* — Does the cell have the skills, equipment, and Standing to handle this case? A cell with no Occult Laboratory shouldn't be sent to identify a Tier 3 artifact.
+* *Proximity* — Is the cell close enough to respond within the case's time pressure? Reactive Cases demand fast deployment; Proactive Cases allow more flexibility.
+* *Standing* — Higher Standing doesn't mean easier cases. It means the Covenant trusts the cell with *more dangerous and sensitive* ones. A Standing 15 cell receives priority Tier 3 cases, Named Threat operations, and cross-regional assignments — the missions where failure has catastrophic consequences.
+
+==== Assignment Quality by Standing
+
+* *Standing 0–4 (Unknown):* The cell receives whatever case nobody else wants — cold cases with bad documentation, low-tier artifacts in inconvenient locations, cleanup after another cell's failure.
+* *Standing 5–9 (Acknowledged):* Cases matching the cell's demonstrated competencies. The regional hub routes cases that play to the cell's strengths.
+* *Standing 10–14 (Trusted):* The cell receives advance briefing material (one additional pre-case clue), priority on time-sensitive Reactive Cases, and occasional cross-regional assignments.
+* *Standing 15+ (Honored / Elite):* The cell may *request* specific assignments or receive priority tasking on high-value targets. This is not cherry-picking easy work — it's being trusted with the cases that would destroy a less experienced team. The Covenant's most dangerous operations go to its most proven cells.

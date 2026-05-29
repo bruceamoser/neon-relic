@@ -3,7 +3,7 @@
 
 This chapter covers the game's treatment of *Occult Artifacts* — how they work, how they are used, and how they are contained. It includes the Artifact Die and Activation Procedure, the Corruption cost system, emission rules (Aura, Pulse, Burst), the Containment-First play principle, a starting catalog of period artifacts, DA guidelines for designing new artifacts, Containment Profiles, Containment Rituals, and the optional Artifact Decay rule.
 
-Artifact mechanics tie directly to the Corruption system in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]. Division Instrument interactions (Verdant Codex, Verdant Satchel, Warden's Bracer) are described in xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions].
+Artifact mechanics tie directly to the Corruption system in xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption and Healing]. Division Instrument interactions (Verdant Codex, Verdant Satchel, Warden's Bracer) are described in xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions].
 
 ---
 
@@ -217,7 +217,7 @@ Carrying an artifact that has been *activated at least once this Case File* impo
 
 [NOTE]
 ====
-This passive Corruption gain is an *additional Corruption source* not listed in the Ch 8 Corruption sources table. Add it as a situational entry: "Carrying an activated artifact (Encumbered by it) | +1 per scene" — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing].
+This passive Corruption gain is an *additional Corruption source* not listed in the Ch 8 Corruption sources table. Add it as a situational entry: "Carrying an activated artifact (Encumbered by it) | +1 per scene" — see xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption and Healing].
 ====
 
 === Stacking Artifacts

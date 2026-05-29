@@ -46,6 +46,8 @@ image::vegas-vic.png[Vegas Vic — The Pioneer Club,align=center,pdfwidth=60%]
 
 include::chapters/01-introduction.adoc[leveloffset=+1]
 
+include::chapters/01b-opening-fiction.adoc[leveloffset=+1]
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  PART II — CHARACTER CREATION
 // ─────────────────────────────────────────────────────────────────────────────
@@ -192,8 +194,12 @@ image::svg/placeholder-section.svg[Section image placeholder,align=center,pdfwid
 include::chapters/21-glossary.adoc[leveloffset=+1]
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  APPENDIX — YZE FREE TABLETOP LICENSE
+//  APPENDICES
 // ─────────────────────────────────────────────────────────────────────────────
+
+<<<
+
+include::chapters/appendix-combat.adoc[leveloffset=+1]
 
 <<<
 
