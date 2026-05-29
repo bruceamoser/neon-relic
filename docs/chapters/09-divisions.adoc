@@ -155,11 +155,6 @@ Unlike other Divisions, the Recovery Division has *no internal departments*. Eve
 | *Starting Clearance Level* | 2
 |===
 
-[NOTE]
-====
-*Recovery agents and body armor:* Recovery agents begin at CL 2, which means standard body armor (typically CL 3 in the equipment tables) falls outside normal requisition authority. The Recovery Division's exposure to direct physical danger is acknowledged by the Covenant, however — an agent may submit a *personal protection request* to their Keep liaison. If the agent has a *Standing* score of at least 2, the Keep may grant a one-time CL exception allowing requisition of armor rated CL 3 or lower. This does not permanently raise the agent's CL — it covers a single item, one request per Case File.
-====
-
 === The Verdant Satchel (Division Item)
 
 All Recovery agents carry the *Verdant Satchel*, a specially enchanted field bag designed to safely transport relics. The Satchel provides the following benefits:
