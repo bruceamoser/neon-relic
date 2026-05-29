@@ -249,7 +249,7 @@ No free rides. No safe artifacts.
 
 Every artifact needs *six defined components* — five mandatory and one optional. Fill in each section before introducing the artifact to players.
 
-[%header,cols="1,3,4"]
+[%header,cols="2,3,4"]
 |===
 | Component | What It Defines | Design Prompt
 
@@ -292,7 +292,7 @@ of the effect. Use this framework to set the Corruption cost for a new artifact.
 The Artifact Die is assigned separately based on history and resilience — see
 <<using-an-artifact,Artifact Die Levels>>.
 
-[%header,cols="1,1,4"]
+[%header,cols="2,2,5"]
 |===
 | Tier | Corruption Cost | Effect Power Level
 
