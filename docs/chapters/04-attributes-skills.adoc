@@ -254,14 +254,3 @@ General Talents are not defined in this chapter. The canonical advancement rules
 
 At character creation, an agent may choose one General Talent in place of their starting Division Talent, as described in xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 
----
-
-== Cross-References
-
-* **Skill cap and Key Skill rules at creation:** xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation]
-* **Pushing rolls and Corruption cost:** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Combat stunts:** xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* **Fear Checks (triggered by Intimidating Display, Warning Shot):** xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Corruption, Fear & Healing]
-* **Grappled state (triggered by Neck Crank):** xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* **Broken state (attributes at 0):** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* **Division Talents and General Talents list:** xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]; xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]

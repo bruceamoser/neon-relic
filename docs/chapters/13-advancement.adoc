@@ -265,13 +265,3 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
 |===
 
----
-
-== Cross-References
-
-* *xref:chapters/03-character-creation.adoc#chapter-character-creation[Ch 3 — Character Creation]* — Anchor definition (referenced in Debrief Q3), selecting Dark Secret and Background Talent at creation
-* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Talents (Wayfinder, Recovery, Keep; purchased with XP after creation), Wing/Paradigm/Department Talents
-* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Clearance Level definitions, CL 1–5 item access, Requisition Phase
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Covenant Standing (cell-level CL access floors), DP awards (separate from XP), Faraday Cage and Corruption healing
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Case File Aftermath structure, Debrief timing relative to Case File resolution
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Faction consequence triggers for Dark Secrets with outside-organization connections

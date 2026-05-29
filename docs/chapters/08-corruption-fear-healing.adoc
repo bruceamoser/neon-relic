@@ -252,16 +252,3 @@ This chapter covers Corruption healing. Attribute damage (Strength, Agility, Wit
 * *Downtime recovery at HQ:* See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters → Infirmary].
 * *Psychoanalyze for mental attribute recovery (Wits/Empathy):* See the Psychoanalyze skill in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills].
 
----
-
-== Cross-References
-
-* Core resolution mechanics, push cost and Corruption: xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* Character creation — Anchors, starting Corruption: xref:chapters/02-character-creation.adoc#chapter-creation[Character Creation]
-* Broken state, Critical Injuries, Corruption from mental criticals: xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* Division Talents — Corruption cost and Healing talents: xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
-* Artifact activation and passive emissions: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
-* HQ Corruption healing (Faraday Cage, Corruption Dampening Vault): xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
-* Creature Fear Ratings and Corruption attacks: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
-* Social conflict Fear checks (contaminated NPCs): xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict]
-* Combat (Fear check from Scare stunt, surprise rules): xref:chapters/05-combat.adoc#chapter-combat[Combat]

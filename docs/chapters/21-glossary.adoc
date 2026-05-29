@@ -223,21 +223,3 @@ Not every game term appears here. The glossary covers the terms most likely to c
 | *Zone* | An abstract area of space used for combat positioning — a room, corridor, alley, or rooftop section. Moving one zone costs a Fast Action; moving two zones (running) costs both the Fast and Slow Action for the round. See xref:chapters/05-combat.adoc#chapter-combat[Combat].
 |===
 
----
-
-== Cross-References
-
-* *xref:chapters/02-character-creation.adoc#chapter-character-creation[Ch 2 — Character Creation]* — Age Groups, CL calculation, Division selection, Background Talents
-* *xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Ch 3 — Core Resolution]* — Dice pools, Difficulty, pushing, opposed rolls, group rolls
-* *xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Ch 4 — Attributes & Skills]* — Full skill list, skill stunts, attribute descriptions
-* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Initiative Cards, actions, zones, cover, stunt options
-* *xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Ch 6 — Social Conflict]* — Disposition, Psychoanalyze, social rolls
-* *xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]* — Broken, Dying, Critical Injuries, Death Check, Insight
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption track, Fear Checks, Panic Table, Anchors, Maximum Corruption Threshold
-* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Covenant Divisions]* — Division Items, Division Talents, Wings, Departments, Operational Paradigms
-* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Gear, Resource Dice, Armor Rating in play
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Die, Tiers, Risk Tags, Containment Rituals, Corruption Cascade, Fracture
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Aftermath, Development Points, HQ facilities
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP, Debrief questions, General Talents, Dark Secrets
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — Director of Agents Guidance]* — DA role, entity design, Operations Board authoring
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case Files]* — Case File structure, Operations Board, Shifts, Organizations, Relic Milestones, Information Cards, NPC Cards, Locations

@@ -677,11 +677,3 @@ The three Division Instruments (Verdant Codex, Verdant Satchel, Warden's Bracer)
 * *Verdant Codex (Wayfinder):* Lore (WIT) rolls supported by Codex notes gain +1 bonus die — this applies to ritual identification rolls, artifact research, and identifying Containment Profiles.
 * *Warden's Bracer (Keep):* The Bracer's once-per-session Corruption absorption (1 point, passive) applies to any Corruption source — including artifact emissions, ritual pushing costs, and passive pressure from carrying activated artifacts.
 
-== Cross-References
-
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources table (artifact activations, passive pressure), Corruption Threshold, healing recovery, pushing rolls
-* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Instrument mechanics (Codex, Satchel, Bracer), Containment Protocol talent (Keep), Wayfinder Lore skills
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Faraday Cage (Corruption healing), Corruption Dampening Vault (containment support), Occult Lab (ritual site), Covenant Armorer
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Pacing artifact reveals, Containment Truth, handling multiple active artifacts in a session
-* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Entity connections to artifact fracture events, entity Corruption values, manifestation triggers
-

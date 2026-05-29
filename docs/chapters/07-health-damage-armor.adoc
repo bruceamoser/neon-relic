@@ -333,19 +333,6 @@ The Keep's Infirmary (xref:chapters/12-headquarters.adoc#chapter-headquarters[HQ
 
 ---
 
-=== Cross-References
-
-* *Core dice mechanics, Difficulty, pushing, and Gear Dice:* xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution Mechanics]
-* *Combat damage application and action economy for field stabilization:* xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* *Medical equipment (First Aid Kit, Trauma Surgical Kit, armor items):* xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]
-* *Division Talents (Medical Training, Warden's Bracer):* xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
-* *Corruption gain from mental criticals:* xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* *Healing Corruption:* xref:chapters/08-corruption-fear-healing.adoc#_healing_corruption[Healing Corruption]
-* *Downtime recovery and Keep medical facilities:* xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
-* *Full death check rules and Covenant notification:* <<_death_and_dying,Death and Dying>> (this chapter)
-* *Character advancement and skill retraining:* xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]
-* *Artifact Imprint and Veil Burn containment:* xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals]
-
 == Armor Mechanics
 
 Armor protects against *physical damage only*. When an agent suffers physical damage targeting Strength or Agility, they roll Gear Dice equal to their Armor Rating. Mental damage (targeting Wits or Empathy) and Corruption damage bypass armor entirely — no amount of Kevlar protects the psyche.

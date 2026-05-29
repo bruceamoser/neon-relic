@@ -457,15 +457,3 @@ Containment cases benefit from pressure tracks with *loss conditions linked to e
 * *The Protocol Fails* — a shift-row track based on handling violations.
 * *The Handoff Window Closes* — a time-locked transport or custody window that vanishes after a set shift.
 
----
-
-== Cross-References
-
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (artifact emissions, ritual pushing costs), Fear Check rules, Broken state — all relevant to entity encounters and artifact handling in sessions
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Tiers, Containment Profiles, Decay track, Ritual procedure, Activation action cost, Division Instrument interactions
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — HQ fallback for clue delivery (Occult Lab, Microfiche Archive), DP awards from Case File resolution, Threat Meter triggers
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief questions, Dark Secret exposure consequences, session definition
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Full Operations Board structure (shifts, Organizations, relic milestones, Locations, NPC Cards, Information Cards, packets, Between Case Files)
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior tables, rival cell tactics, Named Threat stat profiles
-* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Stat blocks for all four entity types (Echoing Remnant, Shard Construct, Bound Entity, Manifest Presence), Fear ratings, dissolution conditions
-* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of a complete Operations Board, including Organizations, relic milestones, NPC Cards, and Information Cards

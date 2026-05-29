@@ -87,15 +87,6 @@ The object is simultaneously sacred relic, imperial mandate, and weaponizable as
 
 ---
 
-== Cross-References
-
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Full case file package structure (eight documents), scene resolution mechanics, Organizations Board, Containment Truths, Information Cards
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Tier 2+ relic behavior, Containment Profile structure (Trigger/Appetite/Quiescence), Containment Ritual procedure
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Operations Board authoring, NPC Card design, entity web construction
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Vantablack Compact operational behavior, MJ-12 surveillance profile, Church-adjacent faction dynamics
-
----
-
 == Handout Images
 
 Each of the following pages contains a full-page handout image. Print or display these during play as physical clue documents for the players.

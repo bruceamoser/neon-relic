@@ -226,12 +226,3 @@ Before a faction organization worsens, show at least one sign:
 
 The faction organization should feel like a tightening web, not a surprise teleport.
 
----
-
-== Cross-References
-
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Organization Row format, milestone cross-links, case-file-package structure, how dormant organizations activate
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Threat Meter (faction escalation that carries over between Case Files), Compromise Events triggered by rival breaches, Rival Cells as a structural threat
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Entity Behavioral Taxonomy, NPC Card design for faction operatives, Operations Board authoring
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions (this chapter)]* — Faction dossiers serve as Organization Reference templates for the Case File package
-* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — Supernatural threats associated with rival factions: Compact-summoned constructs, Accord-provoked entities, MJ-12 Shard Construct programs

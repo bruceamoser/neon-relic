@@ -241,16 +241,6 @@ If the group fails to meet the threshold:
 
 ---
 
-== Cross-References
-
-* Gear repair rules: xref:chapters/10-equipment.adoc#crafting-and-repair[Equipment — Crafting and Repair]
-* Zone-based movement and attack Difficulty in combat: xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* Corruption mechanics and the push cost: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Skill list and stunt tables: xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
-* Social conflict and Disposition-based opposed rolls: xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict]
-
----
-
 == Worked Examples
 
 === Standard Roll: Searching the Burned Office

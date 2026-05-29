@@ -539,19 +539,6 @@ For a single-session case with five or six Locations and six to eight NPCs, the 
 
 ---
 
-== Cross-References
-
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — How to author an Operations Board, write Organization rows with milestones, design NPC Cards and entity webs, structure the Case File package, and pace a case from start to catastrophe
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (field exposure, artifact emissions, pushing rolls), Fear Checks, Broken state, recovery methods (Full Rest, Psychoanalyze), downtime phases
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Tiers, Containment Profiles, Containment Truths (Trigger/Appetite/Quiescence), Decay track, Containment Ritual procedure, Fracture table
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Development Point awards, Covenant Standing tracks, HQ Investment Phase options, Threat Meter and Compromise Events
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief procedure (Aftermath Phase), downtime phase healing rules, Dark Secret development
-* *xref:chapters/16-travel.adoc#chapter-travel[Ch 16 — Travel and Journey Rules]* — Travel as a shift type, cost in shifts, vehicle options
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior and agendas for the Operations Board (Compact, MJ-12, Church, and others)
-* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of all eight case file package documents in use
-
----
-
 [[case-file-generator]]
 == Case File Generator Tables
 

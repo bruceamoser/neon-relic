@@ -17,8 +17,8 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 |===
 | Item | Gear Bonus & Effect | Enc. | CL
 
-| *Heavy-Duty Maglite* | +1 to Investigate in the dark. Can act as blunt weapon (Damage 1). | ½ | 1
-| *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | ½ | 1
+| *Heavy-Duty Maglite* | +1 to Investigate in the dark. Can act as blunt weapon (Damage 1). | 1/2 | 1
+| *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | 1/2 | 1
 | *Polaroid SX-70 Camera* | +2 to Lore when studying a crime scene. Produces instant evidence. | 1 | 2
 | *Air Ion Counter* | +1 to Investigate. Bulky spirit detector measuring static drops. | 1 | 2
 | *Acoustic Coupler Modem* | +1 to Tech. Interface with remote mainframes via payphone. | 1 | 2
@@ -33,9 +33,9 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 | Item | Gear Bonus & Effect | Enc. | CL
 
 | *Basic First Aid Kit* | +1 to Heal. Bandages, antiseptics, painkillers. | 1 | 1
-| *Lockpick Kit* | +2 to Deft Hands when bypassing mechanical locks. | ½ | 2
+| *Lockpick Kit* | +2 to Deft Hands when bypassing mechanical locks. | 1/2 | 2
 | *Crowbar / Bolt Cutters* | +2 to Force when breaking through chains or sealed doors. | 1 | 2
-| *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | ½ | 2
+| *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | 1/2 | 2
 | *Trauma Surgical Kit* | +3 to Heal. Sutures, adrenaline, blood-clotting agents. | 2 | 3
 |===
 
@@ -144,7 +144,7 @@ Every agent can carry a limited amount of gear before it slows them down. Encumb
 |===
 | Enc. | Examples
 
-| ½ | Small concealable items: a pocket recorder, lockpick kit, walkie-talkie.
+| 1/2 | Small concealable items: a pocket recorder, lockpick kit, walkie-talkie.
 | 1 | Standard field gear: first aid kit, camera, crowbar, pistol.
 | 2 | Heavy or bulky gear: trauma surgical kit, thermal camera, shotgun.
 | 3+ | Oversized or special items: heavy weapons, large artifact containment cases.

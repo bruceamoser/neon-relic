@@ -356,15 +356,6 @@ a client waiting. The agents are the only variable they didn't plan for.
 
 ---
 
-== Cross-References
-
-* Fear ratings and check triggers: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Faction affiliations and politics: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
-* Artifacts and what spawns Constructs: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
-* Corruption gain from supernatural sources: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-
----
-
 == Additional Supernatural Entities
 
 === The Mire (Psychic Contamination Zone)
@@ -388,7 +379,7 @@ a client waiting. The agents are the only variable they didn't plan for.
 
 *Special Abilities:*
 
-----
+--
 Zone Control — The Mire occupies a defined zone (one to three
 interconnected rooms). All Wits and Empathy rolls made inside the zone
 are at −2 dice. Firearms and Force rolls are unaffected; the Mire does
@@ -408,7 +399,7 @@ means. It can be dispersed by:
       by an agent with Lore 3+, taking one full scene.
   (3) Destroying the artifact at its core (Artifact Fracture; triggers
       a Corruption spike — everyone in the zone takes +3 Corruption).
-----
+--
 
 *Broken State:* Dispersed. The zone returns to normal. Physical damage from the trauma-origin remains (stains, broken furniture, cold spots). The artifact anchor must be contained; leaving it creates a new Mire within 1d6 days.
 
@@ -479,7 +470,7 @@ removed.
 
 *Special Abilities:*
 
-----
+--
 Absolute Silence — The Listening's presence is announced by the
 sudden total cessation of ambient noise. Phones stop mid-ring. Tape
 recorders erase. Radio static vanishes. Characters with Investigate 2+
@@ -500,7 +491,7 @@ Intangible — The Listening cannot be harmed by physical attacks. It can
 only be targeted by a Containment Ritual (see xref:chapters/11-artifacts.adoc#containment-rituals[Containment Rituals]) or destroyed by removing all
 corrupted surveillance equipment from its zone of origin and performing a
 Tech roll (Difficulty 3) to disrupt its signal network.
-----
+--
 
 *Broken State:* Static. A burst of white noise — every electronic device in Near range emits a single piercing tone and loses 1 Gear Bonus permanently. The Listening disperses. It may reconstitute in 1d6 days if its occult origin point is not addressed.
 
@@ -830,12 +821,3 @@ Every entity needs an end condition. Answer: *What does it look like when this t
 
 Even mindless entities have a directive. Define it in one sentence. If you can't, the entity isn't ready yet.
 
----
-
-== Cross-References
-
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Fear Check mechanics (Wits-only, no push, no helping dice), Broken state and recovery, Corruption threshold (`10 + EMP`), Psychoanalyze procedure, Corrupted NPC recovery
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Containment Rituals (referenced in entity dissolution conditions), Artifact Tiers, Division Instrument interactions, Fracture table (artifact destruction = Corruption spike)
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Faction dossiers for Vantablack Compact, Ember Accord, MJ-12, Hellfire Consortium — operational behavior descriptions to complement the stat blocks here
-* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Dodge (opposed Agility roll, attacker must strictly exceed defender's successes), armor mechanics, zone movement
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — Entity Behavioral Taxonomy (four types: Echoing Remnant, Shard Construct, Bound Entity, Manifest Presence), dissolution conditions, NPC Cards for factional operatives

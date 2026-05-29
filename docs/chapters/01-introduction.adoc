@@ -1,7 +1,7 @@
 [#chapter-introduction]
 = Introduction
 
-*Project Neon Relic* is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called *The Verdant Covenant*, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world -- or the people who find them.
+*Project Neon Relic* is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called *The Verdant Covenant*, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world -- or the people who find them. Along the way, agents may encounter *supernatural entities* -- ghosts, animated objects, corrupted humans, and worse -- spawned or sustained by these artifacts.
 
 The game uses the *Year Zero Engine (YZE)* dice-pool variant -- the same framework behind _Vaesen_, _Mutant: Year Zero_, _Forbidden Lands_, and the _Alien RPG_. If you have played any of those, the core dice mechanics will feel familiar. What makes Neon Relic different is its *Corruption* system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
 

@@ -430,15 +430,3 @@ When any PC attribute reaches 0, they are *Broken*:
 
 > *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. DAs should give players narrative opportunities to take prisoners rather than mandating lethality.
 
----
-
-== Cross-References
-
-* **Core dice rules and pushing:** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Group rolls (ambush coordination):** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Skill stunts (non-combat):** xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
-* **Fear Checks (Scare stunt, Intimidating Display, Warning Shot):** xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Corruption, Fear & Healing]
-* **Critical Injuries (Critical Hit stunt, Broken state):** xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Health, Damage & Armor]
-* **Broken state and recovery:** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* **Equipment (weapon stats, armor types, vehicle AR, Wear repair):** xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]
-* **Vehicle chase detailed rules:** xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Equipment — Vehicle Chase Rules]
