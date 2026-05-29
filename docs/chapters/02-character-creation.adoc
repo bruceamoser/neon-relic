@@ -80,7 +80,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 > Your four attributes serve a dual purpose: they define your dice pools *and* they are your health. When your agent takes damage, the relevant attribute is reduced:
 >
 > * *Physical damage* (bullets, blunt trauma, falls) → reduces *Strength*
-> * *Exhaustion damage* (sprint, forced march, exertion) → reduces *Agility*
+> * *Hobbling damage* (sprint, forced march, exertion) → reduces *Agility*
 > * *Mental horror* (supernatural imagery, occult overload) → reduces *Wits*
 > * *Emotional trauma* (witnessing atrocity, corruption of bonds) → reduces *Empathy*
 >
@@ -100,7 +100,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Brawl | STR | 3 | Recovery
 | Endure | STR | 3 | Keep
 | Sneak | AGI | 3 | Recovery
-| Sleight of Hand | AGI | 3 | Keep (Stack)
+| Deft Hands | AGI | 3 | Keep (Stack)
 | Firearms | AGI | 3 | Recovery
 | Investigate | WIT | 3 | Wayfinder, Keep (Stack)
 | Tech | WIT | 3 | Wayfinder, Keep (Stack)
@@ -389,13 +389,3 @@ Petra records the *Verdant Satchel* automatically. From the Recovery Kit she tak
 
 > _"Former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
 
----
-
-== Cross-References
-
-* **Divisions and talent lists:** xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
-* **Background Talents, General Talents, Dark Secret rules:** xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets]
-* **Clearance Level requisition rules:** xref:chapters/12-headquarters.adoc#covenant-standing[Headquarters — Covenant Standing]
-* **Attributes as damage pools, Broken state, healing:** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* **Anchor mechanics and Corruption healing:** xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* **Corruption full rules and economy:** xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]

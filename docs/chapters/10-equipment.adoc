@@ -17,8 +17,8 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 |===
 | Item | Gear Bonus & Effect | Enc. | CL
 
-| *Heavy-Duty Maglite* | +1 to Investigate in the dark. Can act as blunt weapon (Damage 1). | ½ | 1
-| *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | ½ | 1
+| *Heavy-Duty Maglite* | +1 to Investigate in the dark. Can act as blunt weapon (Damage 1). | 1/2 | 1
+| *Micro-Cassette Recorder* | +1 to Psychoanalyze. Captures EVPs (Electronic Voice Phenomena). | 1/2 | 1
 | *Polaroid SX-70 Camera* | +2 to Lore when studying a crime scene. Produces instant evidence. | 1 | 2
 | *Air Ion Counter* | +1 to Investigate. Bulky spirit detector measuring static drops. | 1 | 2
 | *Acoustic Coupler Modem* | +1 to Tech. Interface with remote mainframes via payphone. | 1 | 2
@@ -33,9 +33,9 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 | Item | Gear Bonus & Effect | Enc. | CL
 
 | *Basic First Aid Kit* | +1 to Heal. Bandages, antiseptics, painkillers. | 1 | 1
-| *Lockpick Kit* | +2 to Sleight of Hand when bypassing mechanical locks. | ½ | 2
+| *Lockpick Kit* | +2 to Deft Hands when bypassing mechanical locks. | 1/2 | 2
 | *Crowbar / Bolt Cutters* | +2 to Force when breaking through chains or sealed doors. | 1 | 2
-| *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | ½ | 2
+| *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | 1/2 | 2
 | *Trauma Surgical Kit* | +3 to Heal. Sutures, adrenaline, blood-clotting agents. | 2 | 3
 |===
 
@@ -49,7 +49,7 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 | *Brass Knuckles* | +1 | 1 | Physical (STR) | Engaged | Concealable. | 1
 | *Switchblade* | +1 | 2 | Physical (STR) | Engaged | Concealable; puncture criticals. | 1
-| *Stun Gun / Taser* | +2 | — | Physical (STR) | Engaged | No Strength damage. Target is *Stunned*: loses their next Slow Action. Effect ends if the target takes any damage. | 2
+| *Stun Gun / Taser* | +2 | — | Physical (STR) | Engaged | No Strength damage. Target is *Stunned*: loses their next Slow Action. | 2
 | *.38 Snub-nose Revolver* | +2 | 2 | Physical (STR) | Short | Reliable — when pushing the roll, ignore the first 1 that appears on a *Gear Die* (preventing one degradation step). | 2
 | *9mm Semi-Auto Pistol* | +2 | 2 | Physical (STR) | Short | High capacity. Extra successes beyond the first may each be spent to hit an additional target in Engaged range (declare before resolving damage). | 3
 | *Pump-Action Shotgun* | +3 | 3 | Physical (STR) | Short | +1 Damage at Engaged range. Loud and bulky. | 3
@@ -100,7 +100,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 Supplies can be restocked:
 
 * During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
-* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
+* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Deft Hands roll (Difficulty 1–2) to access without authorization.
 * HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 
 === Supply Categories
@@ -144,7 +144,7 @@ Every agent can carry a limited amount of gear before it slows them down. Encumb
 |===
 | Enc. | Examples
 
-| ½ | Small concealable items: a pocket recorder, lockpick kit, walkie-talkie.
+| 1/2 | Small concealable items: a pocket recorder, lockpick kit, walkie-talkie.
 | 1 | Standard field gear: first aid kit, camera, crowbar, pistol.
 | 2 | Heavy or bulky gear: trauma surgical kit, thermal camera, shotgun.
 | 3+ | Oversized or special items: heavy weapons, large artifact containment cases.
@@ -504,7 +504,7 @@ more, they're held together with duct tape and prayer).
 | *Signal Jammer*             | 2 | 1 hour | Blocks comms in zone. Gear Bonus 1. Electronics.
 | *Tripwire / Alarm Trap*     | 2 | 30 minutes | Spend; triggers on intruder entry. Single use.
 | *Garrote Wire*              | 1 | 5 minutes | Grapple-linked attack. No Gear Bonus — simple tool.
-| *Lockpick Set (crude)*      | 3 | 1 hour | Sleight of Hand −1 die compared to proper picks. Gear Bonus 1.
+| *Lockpick Set (crude)*      | 3 | 1 hour | Deft Hands −1 die compared to proper picks. Gear Bonus 1.
 | *Improvised Bug Detector*   | 3 | 2 hours | Detect surveillance; −1 die vs. professional gear. Gear Bonus 1.
 | *Field Radio Booster*       | 3 | 2 hours | Extend comms range by 1 zone. Gear Bonus 1. Electronics.
 |===

@@ -122,8 +122,8 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 |===
 | Talent | Cost | Effect
 
-| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's likely activation trigger or its likely base effect without a Lore roll.
-| *Ghost in the Machine* | +1 Corruption | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
+| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll.
+| *Ghost in the Machine* | +1 Corruption | Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference.
 | *The Hunch* | +1 Corruption | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
 | *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
 | *Eldritch Empathy* | +1 Corruption | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
@@ -154,11 +154,6 @@ Unlike other Divisions, the Recovery Division has *no internal departments*. Eve
 | *Key Skill (Cap 4 at creation)* | Firearms
 | *Starting Clearance Level* | 2
 |===
-
-[NOTE]
-====
-*Recovery agents and body armor:* Recovery agents begin at CL 2, which means standard body armor (typically CL 3 in the equipment tables) falls outside normal requisition authority. The Recovery Division's exposure to direct physical danger is acknowledged by the Covenant, however — an agent may submit a *personal protection request* to their Keep liaison. If the agent has a *Standing* score of at least 2, the Keep may grant a one-time CL exception allowing requisition of armor rated CL 3 or lower. This does not permanently raise the agent's CL — it covers a single item, one request per Case File.
-====
 
 === The Verdant Satchel (Division Item)
 
@@ -381,7 +376,7 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 |===
 | Talent | Cost | Effect
 
-| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail.
+| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail. This talent can target anyone, including fellow Covenant agents, though doing so may have consequences.
 | *Loyalty Test* | +1 Corruption | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence.
 | *Debriefing Protocol* _(Healing)_ | — | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
 |===
@@ -443,12 +438,3 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 | *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a *registered* artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers — unknown or newly recovered artifacts require a normal Lore roll.
 | *The Confessor* _(Healing)_ | — | Spend a quiet moment outside combat listening to one ally share their *Dark Secret* or confess a fear or failing. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
 |===
-
-== Cross-References
-
-* *xref:chapters/02-character-creation.adoc#chapter-character-creation[Ch 2 — Character Creation]* — Division selection, starting CL, Key Skill caps, Background Talents, Division Items
-* *xref:chapters/07-health-damage-armor.adoc#chapter-health[Ch 7 — Health, Damage & Armor]* — Armor Rating rules, damage from Force, Strength as health track
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (including talent activation costs), Corruption Threshold (10 + Empathy), healing conditions, pushing rolls
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Standing score, requisition authority by CL, facility interactions with Division talents
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement, Talents & Dark Secrets]* — General Talents, Background Talents, additional talent acquisition, XP spending, Dark Secrets
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — DA discretion on talent edge cases, NPC Corruption scores, possession mechanics

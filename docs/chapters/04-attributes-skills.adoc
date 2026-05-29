@@ -35,7 +35,7 @@ The thirteen core skills are mapped to these four attributes, tailored to suppor
 
 .3+| *Agility*
 | Sneak | Infiltrating corporate research facilities, bypassing analog security systems.
-| Sleight of Hand | Picking locks, pocketing small artifacts, disarming mechanical traps.
+| Deft Hands | Picking locks, pocketing small artifacts, disarming mechanical traps.
 | Firearms | Utilizing period-accurate weaponry (.38 revolvers, pump-action shotguns).
 
 .4+| *Wits*
@@ -130,7 +130,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 |===
 | Cost | Stunt | Effect
 
-| 1 | *Grind Through* | You complete the physical task despite having failed an earlier linked roll this scene (you were already exhausted but push through anyway).
+| 1 | *Grind Through* | You remain focused and are able to push through the physical task at hand. You may ignore one penalty on your next roll. Only one stunt point may be spent this way per success.
 | 1 | *Inspire* | Your visible physical resilience gives allies heart. One ally in the scene recovers 1 point of Agility.
 | 2 | *Unfazed* | You succeed and take no Agility damage from whatever environmental or physical threat triggered the roll (extreme cold, sleep deprivation, toxic air).
 |===
@@ -150,7 +150,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 | 2 | *Ghost Pass* | Your passage through *this location* leaves zero physical trace (no footprints, disturbed dust, or thermal record). You cannot be tracked from this location. This applies only to your entry and movement during this scene — it does not retroactively erase evidence from earlier in the session, and it does not cover actions you take once inside (items moved, locks broken, witnesses seen).
 |===
 
-==== Sleight of Hand
+==== Deft Hands
 
 [%header,cols="^1,2,4"]
 |===
@@ -184,7 +184,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 | 1 | *Pattern Lock* | You not only find the evidence — you identify why it matters. The DA must tell you one piece of context about the object's history or origin.
 | 1 | *Clock It* | You determine precisely when an event occurred (within the hour, or narrowed to a 30-minute window). Time is often as revealing as the event.
-| 2 | *Hidden Compartment* | You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established but not yet disclosed.
+| 2 | *Hidden Compartment* | You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established for the case, but not yet disclosed. If there are no more hidden elements in the case, the stunt points are forfeit.
 |===
 
 ==== Tech
@@ -254,14 +254,3 @@ General Talents are not defined in this chapter. The canonical advancement rules
 
 At character creation, an agent may choose one General Talent in place of their starting Division Talent, as described in xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 
----
-
-== Cross-References
-
-* **Skill cap and Key Skill rules at creation:** xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation]
-* **Pushing rolls and Corruption cost:** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Combat stunts:** xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* **Fear Checks (triggered by Intimidating Display, Warning Shot):** xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Corruption, Fear & Healing]
-* **Grappled state (triggered by Neck Crank):** xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* **Broken state (attributes at 0):** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* **Division Talents and General Talents list:** xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]; xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]

@@ -37,7 +37,7 @@ The DA sets starting Disposition based on the NPC's relationship to the agents a
 
 == Shifting Disposition
 
-Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes.
+Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes. All disposition shifts are done at the DA's discretion and may vary depending on the situation.
 
 === Actions that Shift Disposition Up (+1)
 
@@ -268,15 +268,3 @@ Only one agent should be the social focal point for a given NPC at a time. Other
 
 Multiple simultaneous social attempts on the same NPC risk overwhelming them — at DA discretion, aggressive teamwork may impose a −1 Disposition penalty. Rotating the focal point mid-scene (handing off from one agent to another) is legitimate, but per-agent Reading bonuses do not transfer — only the agent who made the Reading roll benefits from it on their own follow-up roll.
 
----
-
-== Cross-References
-
-* Core dice mechanics, opposed rolls, pushing, and stunt points: xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution Mechanics]
-* Skills in context (skill stunt lists): xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
-* Fear checks during social scenes: xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* Combat transition on physical escalation: xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* Rival faction responses: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]
-* Covenant Standing (Trust erosion): xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
-* NPC card format: xref:chapters/15-case-file.adoc#chapter-case-file[Case Files]
-* NPC Faction relationships: xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Rival Factions]

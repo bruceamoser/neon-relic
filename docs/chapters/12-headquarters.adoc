@@ -277,9 +277,9 @@ All gains are cumulative — multiple criteria can apply in a single case.
 | Named Threat operative captured (not just fled)      | +3 | Rare; named threat must be confirmed Covenant-file target
 |===
 
-> The maximum Standing gain in a single case is **+6** (containment + zero exposure +
-> clean resolution, for example). Avoid banking on Tier 3 cases to push the track —
-> those cases are designed to hurt.
+> The maximum Standing gain in a single case is **+6**, regardless of how many
+> triggers apply. If the combined total exceeds +6, cap it at +6. Avoid banking on
+> Tier 3 cases to push the track — those cases are designed to hurt.
 
 ---
 
@@ -420,16 +420,4 @@ If the rival cell's Standing surpasses the player cell's by 5+, have the Covenan
 
 The Armory's CL 4 access should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
 
----
-
-== Cross-References
-
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption healing rules (the Faraday Cage is an exception for HQ downtime healing; all other healing rules apply as written)
-* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Instrument interactions with HQ facilities (Verdant Codex + Archive/Lab, Warden's Bracer + Vault)
-* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Personal CL scores, Gear Bonus definitions, CL requisition rules
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact containment in Corruption Dampening Vault, Occult Lab identification procedures
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — Requisition Authority and how it relates to Standing; XP and Debrief awards
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Operations Board, Organization Escalation, Case File Aftermath (DP awards)
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Named Threat definitions, rival faction operative stat blocks for HQ Defense Scenes
-* *xref:chapters/19-bestiary.adoc#chapter-bestiary[Ch 19 — Bestiary]* — NPC stat blocks (Grunt and Elite tiers for HQ Defense Scene attacker strength)
 

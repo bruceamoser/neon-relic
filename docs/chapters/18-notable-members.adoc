@@ -76,11 +76,3 @@ The DA may introduce archive entries as in-play resources. Some uses:
 
 * *Arc seeds:* A specific historical agent’s unresolved case may form the backbone of a campaign arc. "What Parsons didn’t destroy in 1952 resurfaced in Buenos Aires last week" is a complete briefing opening.
 
----
-
-== Cross-References
-
-* *xref:chapters/09-divisions-talents.adoc#chapter-divisions[Ch 9 — Divisions & Talents]* — Wayfinder, Recovery, and Keep Division structures; the Divisions represented by historical members
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Current Corruption mechanics; historical “cascade” terminology maps to standard Corruption track
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Containment Profiles and Containment Truths referenced by historical recovery operations
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — The Restricted Stack (where archive entries are housed), Warden access requirements

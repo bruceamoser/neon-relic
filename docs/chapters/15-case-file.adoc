@@ -6,7 +6,7 @@ The phone rings at 2 a.m. A Wayfinder analyst has matched an occult energy signa
 
 This is a *Case File* — Neon Relic's structure for investigation, pressure, and consequence. A Case File is not a scripted adventure with numbered scenes that play in order. It is a living situation that the agents walk into and the DA manages as it deteriorates. The world does not wait for the players to catch up. Every shift they spend talking to the wrong person, chasing a dead lead, or recovering from a Corruption spike is a shift the relic spends getting worse.
 
-A case typically runs over *fourteen days*, each divided into four *shifts* — Morning, Day, Evening, and Night. The team has a fixed number of moves before the situation becomes unrecoverable. They will not use all of them wisely, and that is the point.
+A case typically runs over *fourteen days or fewer*, each divided into four *shifts* — Morning, Day, Evening, and Night. The board's fourteen columns represent the maximum duration of a single case. For shorter cases, the DA fills in unused columns from the left (starting at Day 14) and moves the effective start to a later day. For campaigns that span more than fourteen days, the DA should split the scenario across multiple boards, each representing a distinct phase of the investigation.
 
 The case runs on four interlocking pieces:
 
@@ -536,19 +536,6 @@ A complete Case File consists of *eight documents*. Together they form the *case
 |===
 
 For a single-session case with five or six Locations and six to eight NPCs, the typical package is roughly ten to twelve printed pages plus about twenty cards. That is intentional. A Case File should fit in a manila folder, not fill a three-ring binder.
-
----
-
-== Cross-References
-
-* *xref:chapters/14-da-guidance.adoc#chapter-da-guidance[Ch 14 — DA Guidance]* — How to author an Operations Board, write Organization rows with milestones, design NPC Cards and entity webs, structure the Case File package, and pace a case from start to catastrophe
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption sources (field exposure, artifact emissions, pushing rolls), Fear Checks, Broken state, recovery methods (Full Rest, Psychoanalyze), downtime phases
-* *xref:chapters/11-artifacts.adoc#chapter-artifacts[Ch 11 — Artifacts]* — Artifact Tiers, Containment Profiles, Containment Truths (Trigger/Appetite/Quiescence), Decay track, Containment Ritual procedure, Fracture table
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Development Point awards, Covenant Standing tracks, HQ Investment Phase options, Threat Meter and Compromise Events
-* *xref:chapters/13-advancement.adoc#chapter-advancement[Ch 13 — Advancement]* — XP Debrief procedure (Aftermath Phase), downtime phase healing rules, Dark Secret development
-* *xref:chapters/16-travel.adoc#chapter-travel[Ch 16 — Travel and Journey Rules]* — Travel as a shift type, cost in shifts, vehicle options
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Organization behavior and agendas for the Operations Board (Compact, MJ-12, Church, and others)
-* *xref:chapters/20-sample-case-file.adoc#chapter-sample-case-file[Ch 20 — Sample Case File]* — Worked example of all eight case file package documents in use
 
 ---
 

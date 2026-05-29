@@ -158,7 +158,7 @@ Every zone has optional *terrain features* the DA can invoke:
 
 | *Cramped* (closets, crawlspaces, car interiors) | Long-armed weapons (rifles, shotguns) suffer −2 dice. All movement into/out of zone takes a Slow Action.
 | *Rough* (rubble, debris, slick floor) | Moving into this zone requires a Fast Action *and* an Agility roll (Difficulty 1). On failure, character is prone.
-| *Dark* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down, minimum 1 die) unless the character has a light source. Sneak rolls gain +2 dice.
+| *Darkness* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down, minimum 1 die) unless the character has a light source. Sneak rolls gain +2 dice.
 | *Open* (parking lots, fields) | No cover available in this zone. All ranged attacks against targets here gain +1 die.
 | *Elevated* | Characters here gain +2 to their Initiative card value; ranged attacks against them suffer −1 die.
 |===
@@ -219,7 +219,7 @@ All maneuvers require a successful melee attack roll. If the attack misses (no 6
 
 | *Grapple* | Brawl (STR) opposed by Force or Brawl (target's choice) | Target is grappled: they *cannot* move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll). They *can* still take Fast Actions (draw a one-handed weapon, attempt to break free as their Slow Action) and use Reactive Actions (Dodge counts as a Fast Action and is still permitted). Being Grappled does not prevent speaking, using a single-handed item, or making an unarmed attack against the grappler (Brawl, −2 dice, one-handed only).
 | *Shove* | Force (STR) opposed by Endure (STR) | Target is pushed back one zone and is knocked prone. If target is already at a zone edge (stairs, window, rooftop), this may be lethal.
-| *Disarm* | Sleight of Hand (AGI) opposed by Force or Brawl | Target drops their held weapon. It lands at Engaged range on the floor.
+| *Disarm* | Deft Hands (AGI) opposed by Force or Brawl | Target drops their held weapon. It lands at Engaged range on the floor.
 | *Feint* | Brawl (STR) opposed by Wits | No damage this turn. On success: target cannot Dodge *or* Parry your next attack this round — the feint commits their reaction to the false opening. You gain +2 dice on your next melee roll against them.
 |===
 
@@ -430,15 +430,3 @@ When any PC attribute reaches 0, they are *Broken*:
 
 > *Capture over kill:* The Covenant defaults to capturing hostile humans for interrogation. NPCs with relevant information are more valuable alive. DAs should give players narrative opportunities to take prisoners rather than mandating lethality.
 
----
-
-== Cross-References
-
-* **Core dice rules and pushing:** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Group rolls (ambush coordination):** xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* **Skill stunts (non-combat):** xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]
-* **Fear Checks (Scare stunt, Intimidating Display, Warning Shot):** xref:chapters/08-corruption-fear-healing.adoc#fear-checks[Corruption, Fear & Healing]
-* **Critical Injuries (Critical Hit stunt, Broken state):** xref:chapters/07-health-damage-armor.adoc#_critical_injuries[Health, Damage & Armor]
-* **Broken state and recovery:** xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* **Equipment (weapon stats, armor types, vehicle AR, Wear repair):** xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]
-* **Vehicle chase detailed rules:** xref:chapters/10-equipment.adoc#_vehicle_conflict_actions_and_chase_rules[Equipment — Vehicle Chase Rules]

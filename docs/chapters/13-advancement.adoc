@@ -172,7 +172,7 @@ This is the *canonical General Talents list* used at character creation and duri
 | *Paranormal Intuition* | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
 | *Heavy Packer* | Your carry capacity increases to *Strength × 3* Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3).
 | *Skeptic's Shield* | Once per session, when exposed to a *minor supernatural effect* — defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration — you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects.
-| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 die).
+| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).
 | *Chain Smoker* _(Healing)_ | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory.
 | *Analog Junkie* | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases.
 | *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.
@@ -224,14 +224,14 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Firefighter* | +1 Force | You are trained to break through barriers and force entry during emergencies.
 | *Fisher* | +1 Endure | Working long hours on the water has given you patience and resilience.
 | *Food Service Professional* | +1 Manipulate | You have mastered the art of dealing with difficult people while maintaining composure.
-| *Gambler* | +1 Sleight of Hand | You know how to move cards, chips, and small objects without drawing attention.
+| *Gambler* | +1 Deft Hands | You know how to move cards, chips, and small objects without drawing attention.
 | *Gardener* | +1 Lore | Your knowledge of plants, natural cycles, and organic growth runs deep.
 | *Hiker* | +1 Endure | You are accustomed to long treks through rough terrain and difficult conditions.
 | *Historian* | +1 Lore | You have studied the past and understand how ancient events shape the present.
 | *Journalist* | +1 Investigate | Asking questions and digging for the truth is part of your nature.
 | *Librarian* | +1 Lore | You have spent years cataloging and studying vast collections of knowledge.
-| *Locksmith* | +1 Sleight of Hand | Locks, tumblers, and mechanical security devices are familiar tools of your trade.
-| *Lockpicking Hobbyist* | +1 Sleight of Hand | What began as a pastime has made you remarkably skilled with delicate mechanisms.
+| *Locksmith* | +1 Deft Hands | Locks, tumblers, and mechanical security devices are familiar tools of your trade.
+| *Lockpicking Hobbyist* | +1 Deft Hands | What began as a pastime has made you remarkably skilled with delicate mechanisms.
 | *Mechanic* | +1 Tech | Engines, machines, and broken equipment rarely intimidate you.
 | *Metal Detectorist* | +1 Investigate | You've spent countless hours searching for hidden objects beneath the earth.
 | *Military Veteran* | +1 Firearms | You received formal training in weapons and battlefield discipline.
@@ -260,18 +260,8 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Technician* | +1 Tech | You repair and maintain specialized equipment.
 | *Translator* | +1 Manipulate | Understanding language nuances allows you to influence conversations and negotiations.
 | *Urban Explorer* | +1 Sneak | You specialize in quietly entering and navigating abandoned structures.
-| *Watch Enthusiast* | +1 Sleight of Hand | You possess remarkable dexterity working with tiny mechanical components.
+| *Watchmaker* | +1 Deft Hands | You possess remarkable dexterity working with tiny mechanical components.
 | *Woodworker* | +1 Force | Years of manual craftsmanship have strengthened your hands and arms.
 | *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
 |===
 
----
-
-== Cross-References
-
-* *xref:chapters/03-character-creation.adoc#chapter-character-creation[Ch 3 — Character Creation]* — Anchor definition (referenced in Debrief Q3), selecting Dark Secret and Background Talent at creation
-* *xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9 — Divisions]* — Division Talents (Wayfinder, Recovery, Keep; purchased with XP after creation), Wing/Paradigm/Department Talents
-* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Clearance Level definitions, CL 1–5 item access, Requisition Phase
-* *xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]* — Covenant Standing (cell-level CL access floors), DP awards (separate from XP), Faraday Cage and Corruption healing
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Case File Aftermath structure, Debrief timing relative to Case File resolution
-* *xref:chapters/17-rival-factions.adoc#chapter-rival-factions[Ch 17 — Rival Factions]* — Faction consequence triggers for Dark Secrets with outside-organization connections

@@ -141,7 +141,7 @@ Physical death and Corruption-threshold death are distinct retirement paths:
 When a character is *Broken* (any Attribute reduced to 0), they immediately roll on the appropriate Critical Injury table. The table used depends on *what type of damage Broke them*:
 
 * *Physical (Strength = 0):* Roll on the Physical Critical Injury table.
-* *Exhaustion (Agility = 0):* Roll on the Physical Critical Injury table (the body has failed). The DA should *reinterpret results for exhaustion context* — a 'Head Shot' becomes a stroke or aneurysm; an 'Arterial Strike' becomes a cardiovascular crisis; 'Arm Blown Off' represents total muscular collapse. The mechanical effect of the rolled result is unchanged. Only the narrative framing adapts.
+* *Hobbling (Agility = 0):* Roll on the Physical Critical Injury table (the body has failed). The DA should *reinterpret results for hobbling context* — a 'Head Shot' becomes a stroke or aneurysm; an 'Arterial Strike' becomes a cardiovascular crisis; 'Arm Blown Off' represents total muscular collapse. The mechanical effect of the rolled result is unchanged. Only the narrative framing adapts.
 * *Mental (Wits = 0):* Roll on the Mental & Emotional Critical Injury table.
 * *Emotional (Empathy = 0):* Roll on the Mental & Emotional Critical Injury table.
 
@@ -243,7 +243,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 | 11 | *Shaken* | −1 die on all WIT and EMP rolls until end of scene. Wits or Empathy returns to 1. | Rest or reassurance (Empathy roll, Difficulty 1).
 | 12 | *Distracted* | Cannot push rolls until the end of scene (mind can't sustain the effort). | ends automatically with scene change.
-| 13 | *Tremors* | Fine motor control impaired: −1 die on Sleight of Hand and Firearms this session. | No treatment needed — fades by next session.
+| 13 | *Tremors* | Fine motor control impaired: −1 die on Deft Hands and Firearms this session. | No treatment needed — fades by next session.
 | 14 | *Dissociation* | Character acts on autopilot: DA narrates their next turn's actions. | Psychoanalyze check (Difficulty 1) by ally to snap them out early.
 | 15 | *Paranoid Flash* | Character immediately acts on the nearest perceived threat (DA chooses target — may be an ally). | Psychoanalyze (Difficulty 1) ends it; 1 Empathy cost to the treating ally.
 | 16 | *Acute Anxiety* | All Difficulty ratings increase by 1 for rest of scene. | Scene change ends it automatically.
@@ -332,19 +332,6 @@ To recover from Broken:
 The Keep's Infirmary (xref:chapters/12-headquarters.adoc#chapter-headquarters[HQ → Infirmary]) provides enhanced Short Rest recovery: *3 Attribute points* per Shift instead of 1. This is what Ch 12 means by "2 additional Attribute points beyond normal rest" — the baseline 1 + 2 = 3.
 
 ---
-
-=== Cross-References
-
-* *Core dice mechanics, Difficulty, pushing, and Gear Dice:* xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution Mechanics]
-* *Combat damage application and action economy for field stabilization:* xref:chapters/05-combat.adoc#chapter-combat[Combat]
-* *Medical equipment (First Aid Kit, Trauma Surgical Kit, armor items):* xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]
-* *Division Talents (Medical Training, Warden's Bracer):* xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
-* *Corruption gain from mental criticals:* xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing]
-* *Healing Corruption:* xref:chapters/08-corruption-fear-healing.adoc#_healing_corruption[Healing Corruption]
-* *Downtime recovery and Keep medical facilities:* xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
-* *Full death check rules and Covenant notification:* <<_death_and_dying,Death and Dying>> (this chapter)
-* *Character advancement and skill retraining:* xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]
-* *Artifact Imprint and Veil Burn containment:* xref:chapters/11-artifacts.adoc#containment-rituals[Artifacts → Containment Rituals]
 
 == Armor Mechanics
 

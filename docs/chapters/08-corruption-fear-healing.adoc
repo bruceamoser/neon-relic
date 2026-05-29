@@ -45,7 +45,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 | *1–3* | Nosebleeds / Migraines | Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control.
 | *4–6* | Auditory Hallucinations | Distinct whispers from the void — voices of the dead or entities from beyond. *Mechanical:* Once per session, the DA may describe a specific hallucination and require a Wits roll (Difficulty 1) to distinguish real from imagined. Failure = the character acts on the hallucination for one round.
-| *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop. *Mechanical:* −1 die on Sleight of Hand and Firearms rolls. Visible tremors: NPCs and allies may notice. The character cannot fully conceal them.
+| *7–9* | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop. *Mechanical:* −1 die on Deft Hands and Firearms rolls. Visible tremors: NPCs and allies may notice. The character cannot fully conceal them.
 | *10–12* | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence. *Mechanical:* Electronic Gear Dice in the character's possession degrade one step at the start of each scene. Allies in the same zone gain +1 Corruption at the start of each scene (contamination leaking outward).
 | *13–14* | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps. *Mechanical:* At the start of each scene, the DA rolls a d6. On a 1–2, the character enters a brief fugue (DA controls character for one round; player does not remember it). This is distinct from the Panic Table Fugue (result 6), which is an acute one-time response — the stage Fugue is chronic and recurring.
 | *15–17* | Collapse of Self | The character's sense of personal identity begins to dissolve. They speak in third person, lose track of which memories are theirs, and may briefly mistake allies for entities. −1 die on all social skill rolls (they are visibly wrong). _This range is only reachable by characters with the Redundant Safeties talent or similar threshold-expanding effects._
@@ -252,16 +252,3 @@ This chapter covers Corruption healing. Attribute damage (Strength, Agility, Wit
 * *Downtime recovery at HQ:* See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters → Infirmary].
 * *Psychoanalyze for mental attribute recovery (Wits/Empathy):* See the Psychoanalyze skill in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills].
 
----
-
-== Cross-References
-
-* Core resolution mechanics, push cost and Corruption: xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]
-* Character creation — Anchors, starting Corruption: xref:chapters/02-character-creation.adoc#chapter-creation[Character Creation]
-* Broken state, Critical Injuries, Corruption from mental criticals: xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor]
-* Division Talents — Corruption cost and Healing talents: xref:chapters/09-divisions.adoc#chapter-divisions[Divisions]
-* Artifact activation and passive emissions: xref:chapters/11-artifacts.adoc#chapter-artifacts[Artifacts]
-* HQ Corruption healing (Faraday Cage, Corruption Dampening Vault): xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]
-* Creature Fear Ratings and Corruption attacks: xref:chapters/19-bestiary.adoc#chapter-bestiary[Bestiary]
-* Social conflict Fear checks (contaminated NPCs): xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict]
-* Combat (Fear check from Scare stunt, surprise rules): xref:chapters/05-combat.adoc#chapter-combat[Combat]

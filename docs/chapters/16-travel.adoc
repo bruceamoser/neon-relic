@@ -212,11 +212,3 @@ Use travel shifts to:
 
 If travel never costs time, never risks exposure, and never changes the board, skip it entirely.
 
----
-
-== Cross-References
-
-* *xref:chapters/15-case-file.adoc#chapter-case-file[Ch 15 — Case File]* — Shift types, Operations Board mechanics, how travel shifts advance organization rows and relic milestones
-* *xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]* — Full vehicle stats (Reliability, Armor Rating, HP), Vehicle Chase Rules (full tactical procedure), vehicle modifications
-* *xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat]* — Full chase rules for on-foot or vehicle pursuit during an active scene; Sneak (AGI) for ambush/infiltration
-* *xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Ch 8 — Corruption, Fear & Healing]* — Corruption gain from road events (event 6) and artifact exposure during transit
