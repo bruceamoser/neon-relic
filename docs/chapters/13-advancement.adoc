@@ -172,7 +172,7 @@ This is the *canonical General Talents list* used at character creation and duri
 | *Paranormal Intuition* | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
 | *Heavy Packer* | Your carry capacity increases to *Strength × 3* Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3).
 | *Skeptic's Shield* | Once per session, when exposed to a *minor supernatural effect* — defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration — you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects.
-| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 die).
+| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).
 | *Chain Smoker* _(Healing)_ | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory.
 | *Analog Junkie* | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases.
 | *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.

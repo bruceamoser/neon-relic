@@ -5,7 +5,7 @@ The foundation of Project Neon Relic relies on the classic *dice-pool variant* o
 
 === Defining "Session"
 
-Throughout this book, "once per session" means once per continuous play session at your table — typically 3 to 4 hours. If your group plays significantly shorter sessions (under 2 hours), the DA may allow once-per-session abilities to carry over to the next session if unused. If your group plays extended sessions (6+ hours), the DA may reset once-per-session abilities at a natural midpoint (a significant scene break, shift change, or return to HQ). The intent is that agents recover at a rate of roughly once per 3–4 hours of play, regardless of how your group structures its calendar.
+Throughout this book, "once per session" means once per continuous play session at your table — typically 3 to 4 hours. If your group plays significantly shorter sessions (under 2 hours), the DA may consider once-per-session abilities to span across two or more sessions. If your group plays extended sessions (6+ hours), the DA may reset once-per-session abilities at a natural midpoint (a significant scene break, shift change, or return to HQ). The intent is that agents recover at a rate of roughly once per 3–4 hours of play, regardless of how your group structures its calendar.
 
 == The Anatomy of the Dice Pool
 
@@ -15,7 +15,7 @@ The core philosophy of the Year Zero Engine is that *rolling dice should only oc
 >
 > *No roll needed:* A trained medic (Heal 3) bandaging a minor cut in a safe room. An agent searching an already-unlocked filing cabinet at their own HQ. A character with Force 4 snapping a hollow interior door.
 >
-> *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded for immediate visual clarity at the gaming table:
+> *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded, or otherwise separated, for immediate visual clarity at the gaming table:
 
 [%header,cols="2,1,3,1"]
 |===
@@ -33,7 +33,7 @@ Every standard skill roll has a *Difficulty*. If a rule does not list one, the d
 Each *6* rolled counts as *one success*.
 
 * *Standard roll:* You succeed if your total successes meet or exceed the Difficulty.
-* *Opposed roll:* Both sides roll, then compare total successes; the higher total wins.
+* *Opposed roll:* Both sides roll, then compare total successes; the higher total wins. Ties are resolved in favor of the player character.
 * *Special binary roll:* A few subsystems, especially *Fear checks*, define their own pass/fail rule instead of using Difficulty.
 
 Successes beyond what was needed are *extra successes*. If the roll supports stunts, each extra success becomes *1 Stunt Point*.
@@ -82,7 +82,7 @@ When your agent pushes a roll, they aren't simply gritting their teeth and tryin
 Whatever form it takes, pushing means your contaminated mind is offering you a shortcut. The help is real. The cost is real. Every push is a transaction with something you don't fully understand, and it always leaves a mark — +1 Corruption, regardless of the task. The library is not safer than the field. The thing inside you doesn't care where you are.
 ****
 
-The analog nature of 1980s technology perfectly complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
+The analog nature of 1980s technology naturally complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item — short-circuiting alkaline batteries or jamming mechanisms — effectively reducing its inherent bonus until it can be repaired during downtime.
 
 === Gear Degradation
 
@@ -167,7 +167,7 @@ Helping requires *Engaged or Close* range. Most social rolls require at least *C
 
 === Pushed Opposed Rolls
 
-Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *before* comparing results. If both sides push and the result is still a tie, apply the standard tie-breaking rule: the PC wins if a PC is involved.
+Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared *after* comparing results. The loser may push the roll and if this causes the loser to become the winner, then the new loser may push the roll. Each roll may be pushed only once. If both sides push and the result is still a tie, apply the standard tie-breaking rule outlined in Section 3.3.
 
 ---
 

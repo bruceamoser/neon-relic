@@ -158,7 +158,7 @@ Every zone has optional *terrain features* the DA can invoke:
 
 | *Cramped* (closets, crawlspaces, car interiors) | Long-armed weapons (rifles, shotguns) suffer −2 dice. All movement into/out of zone takes a Slow Action.
 | *Rough* (rubble, debris, slick floor) | Moving into this zone requires a Fast Action *and* an Agility roll (Difficulty 1). On failure, character is prone.
-| *Dark* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down, minimum 1 die) unless the character has a light source. Sneak rolls gain +2 dice.
+| *Darkness* | All Investigate, Firearms, and ranged attack rolls lose half their dice (round down, minimum 1 die) unless the character has a light source. Sneak rolls gain +2 dice.
 | *Open* (parking lots, fields) | No cover available in this zone. All ranged attacks against targets here gain +1 die.
 | *Elevated* | Characters here gain +2 to their Initiative card value; ranged attacks against them suffer −1 die.
 |===
