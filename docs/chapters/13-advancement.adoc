@@ -260,7 +260,7 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Technician* | +1 Tech | You repair and maintain specialized equipment.
 | *Translator* | +1 Manipulate | Understanding language nuances allows you to influence conversations and negotiations.
 | *Urban Explorer* | +1 Sneak | You specialize in quietly entering and navigating abandoned structures.
-| *Watch Enthusiast* | +1 Deft Hands | You possess remarkable dexterity working with tiny mechanical components.
+| *Watchmaker* | +1 Deft Hands | You possess remarkable dexterity working with tiny mechanical components.
 | *Woodworker* | +1 Force | Years of manual craftsmanship have strengthened your hands and arms.
 | *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
 |===

@@ -122,8 +122,8 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 |===
 | Talent | Cost | Effect
 
-| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's likely activation trigger or its likely base effect without a Lore roll.
-| *Ghost in the Machine* | +1 Corruption | Use Tech to directly interface with electronic devices jammed or possessed by anomalous entities.
+| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll.
+| *Ghost in the Machine* | +1 Corruption | Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference.
 | *The Hunch* | +1 Corruption | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
 | *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
 | *Eldritch Empathy* | +1 Corruption | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
@@ -381,7 +381,7 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 |===
 | Talent | Cost | Effect
 
-| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail.
+| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail. This talent can target anyone, including fellow Covenant agents, though doing so may have consequences.
 | *Loyalty Test* | +1 Corruption | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence.
 | *Debriefing Protocol* _(Healing)_ | — | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
 |===
