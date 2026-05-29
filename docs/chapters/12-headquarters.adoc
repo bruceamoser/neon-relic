@@ -277,9 +277,9 @@ All gains are cumulative — multiple criteria can apply in a single case.
 | Named Threat operative captured (not just fled)      | +3 | Rare; named threat must be confirmed Covenant-file target
 |===
 
-> The maximum Standing gain in a single case is **+6** (containment + zero exposure +
-> clean resolution, for example). Avoid banking on Tier 3 cases to push the track —
-> those cases are designed to hurt.
+> The maximum Standing gain in a single case is **+6**, regardless of how many
+> triggers apply. If the combined total exceeds +6, cap it at +6. Avoid banking on
+> Tier 3 cases to push the track — those cases are designed to hurt.
 
 ---
 
