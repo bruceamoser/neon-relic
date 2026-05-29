@@ -6,7 +6,7 @@ The phone rings at 2 a.m. A Wayfinder analyst has matched an occult energy signa
 
 This is a *Case File* — Neon Relic's structure for investigation, pressure, and consequence. A Case File is not a scripted adventure with numbered scenes that play in order. It is a living situation that the agents walk into and the DA manages as it deteriorates. The world does not wait for the players to catch up. Every shift they spend talking to the wrong person, chasing a dead lead, or recovering from a Corruption spike is a shift the relic spends getting worse.
 
-A case typically runs over *fourteen days*, each divided into four *shifts* — Morning, Day, Evening, and Night. The team has a fixed number of moves before the situation becomes unrecoverable. They will not use all of them wisely, and that is the point.
+A case typically runs over *fourteen days or fewer*, each divided into four *shifts* — Morning, Day, Evening, and Night. The board's fourteen columns represent the maximum duration of a single case. For shorter cases, the DA fills in unused columns from the left (starting at Day 14) and moves the effective start to a later day. For campaigns that span more than fourteen days, the DA should split the scenario across multiple boards, each representing a distinct phase of the investigation.
 
 The case runs on four interlocking pieces:
 
