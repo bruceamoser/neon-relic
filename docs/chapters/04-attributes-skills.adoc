@@ -35,7 +35,7 @@ The thirteen core skills are mapped to these four attributes, tailored to suppor
 
 .3+| *Agility*
 | Sneak | Infiltrating corporate research facilities, bypassing analog security systems.
-| Sleight of Hand | Picking locks, pocketing small artifacts, disarming mechanical traps.
+| Deft Hands | Picking locks, pocketing small artifacts, disarming mechanical traps.
 | Firearms | Utilizing period-accurate weaponry (.38 revolvers, pump-action shotguns).
 
 .4+| *Wits*
@@ -150,7 +150,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 | 2 | *Ghost Pass* | Your passage through *this location* leaves zero physical trace (no footprints, disturbed dust, or thermal record). You cannot be tracked from this location. This applies only to your entry and movement during this scene — it does not retroactively erase evidence from earlier in the session, and it does not cover actions you take once inside (items moved, locks broken, witnesses seen).
 |===
 
-==== Sleight of Hand
+==== Deft Hands
 
 [%header,cols="^1,2,4"]
 |===

@@ -224,14 +224,14 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Firefighter* | +1 Force | You are trained to break through barriers and force entry during emergencies.
 | *Fisher* | +1 Endure | Working long hours on the water has given you patience and resilience.
 | *Food Service Professional* | +1 Manipulate | You have mastered the art of dealing with difficult people while maintaining composure.
-| *Gambler* | +1 Sleight of Hand | You know how to move cards, chips, and small objects without drawing attention.
+| *Gambler* | +1 Deft Hands | You know how to move cards, chips, and small objects without drawing attention.
 | *Gardener* | +1 Lore | Your knowledge of plants, natural cycles, and organic growth runs deep.
 | *Hiker* | +1 Endure | You are accustomed to long treks through rough terrain and difficult conditions.
 | *Historian* | +1 Lore | You have studied the past and understand how ancient events shape the present.
 | *Journalist* | +1 Investigate | Asking questions and digging for the truth is part of your nature.
 | *Librarian* | +1 Lore | You have spent years cataloging and studying vast collections of knowledge.
-| *Locksmith* | +1 Sleight of Hand | Locks, tumblers, and mechanical security devices are familiar tools of your trade.
-| *Lockpicking Hobbyist* | +1 Sleight of Hand | What began as a pastime has made you remarkably skilled with delicate mechanisms.
+| *Locksmith* | +1 Deft Hands | Locks, tumblers, and mechanical security devices are familiar tools of your trade.
+| *Lockpicking Hobbyist* | +1 Deft Hands | What began as a pastime has made you remarkably skilled with delicate mechanisms.
 | *Mechanic* | +1 Tech | Engines, machines, and broken equipment rarely intimidate you.
 | *Metal Detectorist* | +1 Investigate | You've spent countless hours searching for hidden objects beneath the earth.
 | *Military Veteran* | +1 Firearms | You received formal training in weapons and battlefield discipline.
@@ -260,7 +260,7 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 | *Technician* | +1 Tech | You repair and maintain specialized equipment.
 | *Translator* | +1 Manipulate | Understanding language nuances allows you to influence conversations and negotiations.
 | *Urban Explorer* | +1 Sneak | You specialize in quietly entering and navigating abandoned structures.
-| *Watch Enthusiast* | +1 Sleight of Hand | You possess remarkable dexterity working with tiny mechanical components.
+| *Watch Enthusiast* | +1 Deft Hands | You possess remarkable dexterity working with tiny mechanical components.
 | *Woodworker* | +1 Force | Years of manual craftsmanship have strengthened your hands and arms.
 | *Writer* | +1 Investigate | Research and storytelling have sharpened your ability to uncover hidden truths.
 |===

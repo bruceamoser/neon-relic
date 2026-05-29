@@ -219,7 +219,7 @@ All maneuvers require a successful melee attack roll. If the attack misses (no 6
 
 | *Grapple* | Brawl (STR) opposed by Force or Brawl (target's choice) | Target is grappled: they *cannot* move zones, use two-handed weapons, or take Slow Actions until they break free (costs their Slow Action, opposed Brawl/Force roll). They *can* still take Fast Actions (draw a one-handed weapon, attempt to break free as their Slow Action) and use Reactive Actions (Dodge counts as a Fast Action and is still permitted). Being Grappled does not prevent speaking, using a single-handed item, or making an unarmed attack against the grappler (Brawl, −2 dice, one-handed only).
 | *Shove* | Force (STR) opposed by Endure (STR) | Target is pushed back one zone and is knocked prone. If target is already at a zone edge (stairs, window, rooftop), this may be lethal.
-| *Disarm* | Sleight of Hand (AGI) opposed by Force or Brawl | Target drops their held weapon. It lands at Engaged range on the floor.
+| *Disarm* | Deft Hands (AGI) opposed by Force or Brawl | Target drops their held weapon. It lands at Engaged range on the floor.
 | *Feint* | Brawl (STR) opposed by Wits | No damage this turn. On success: target cannot Dodge *or* Parry your next attack this round — the feint commits their reaction to the false opening. You gain +2 dice on your next melee roll against them.
 |===
 

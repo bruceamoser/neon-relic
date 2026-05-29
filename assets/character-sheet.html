@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEON RELIC — Agent Dossier</title>
+<title>NEON RELIC � Agent Dossier</title>
 <style>
-  /* ── RESET ── */
+  /* -- RESET -- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* ── SPECIAL ELITE FONT ── */
+  /* -- SPECIAL ELITE FONT -- */
   @font-face {
     font-family: 'SpecialElite';
     src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
@@ -24,7 +24,7 @@
     font-style: normal;
   }
 
-  /* ── PAGE ── */
+  /* -- PAGE -- */
   @page { size: letter portrait; margin: 0; }
   @media print {
     body { margin: 0; padding: 0; background: none; }
@@ -68,7 +68,7 @@
   }
   .page-break { page-break-after: always; }
 
-  /* ── PAPER TEXTURE ── */
+  /* -- PAPER TEXTURE -- */
   .page::before {
     content: '';
     position: absolute; inset: 0;
@@ -88,7 +88,7 @@
   }
   .page > * { position: relative; z-index: 1; }
 
-  /* ── WATERMARK ── */
+  /* -- WATERMARK -- */
   .watermark {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%) rotate(-35deg);
@@ -99,7 +99,7 @@
     pointer-events: none; z-index: 0;
   }
 
-  /* ── PERFORATION STRIP ── */
+  /* -- PERFORATION STRIP -- */
   .perf-strip {
     height: 11px;
     border-bottom: 1.5px dashed #bbb;
@@ -108,7 +108,7 @@
     color: #bbb; font-size: 4pt; letter-spacing: 2.5px; line-height: 1.1;
   }
 
-  /* ── HEADER (PAGE 1) ── */
+  /* -- HEADER (PAGE 1) -- */
   .header {
     display: flex;
     justify-content: space-between;
@@ -143,7 +143,7 @@
     transform: rotate(-2deg); margin-bottom: 4px;
   }
 
-  /* ── SECTION TITLE ── */
+  /* -- SECTION TITLE -- */
   .section-title {
     font-family: var(--font-main);
     font-size: 7pt; text-transform: uppercase; letter-spacing: 3px;
@@ -154,7 +154,7 @@
   .section-title.green { color: var(--green-stamp); border-color: var(--green-stamp); }
   .section-title.red   { color: var(--red-stamp);   border-color: var(--red-stamp);   }
 
-  /* ── IDENTITY BLOCK ── */
+  /* -- IDENTITY BLOCK -- */
   .id-block-row1 {
     display: grid;
     grid-template-columns: 2.6fr 1fr 1fr;
@@ -188,7 +188,7 @@
     border-bottom: 1px dotted var(--rule);
   }
 
-  /* ── ATTRIBUTES + SKILLS UNIFIED COLUMN GRID ── */
+  /* -- ATTRIBUTES + SKILLS UNIFIED COLUMN GRID -- */
   .attr-skill-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -197,7 +197,7 @@
   }
   .attr-skill-col { display: flex; flex-direction: column; }
 
-  /* Attribute box — no bottom border so it flows into skill area */
+  /* Attribute box � no bottom border so it flows into skill area */
   .attr-box {
     border: 1.5px solid var(--ink);
     border-bottom: none;
@@ -235,7 +235,7 @@
     border: 1px solid var(--ink); background: transparent;
   }
 
-  /* Skill area — connected directly under attr-box */
+  /* Skill area � connected directly under attr-box */
   .skill-area {
     border: 1.5px solid var(--ink);
     border-top: 1px solid var(--rule-light);
@@ -268,7 +268,7 @@
     flex-shrink: 0;
   }
 
-  /* ── CORRUPTION ── */
+  /* -- CORRUPTION -- */
   .corruption-track {
     display: flex; align-items: center;
     gap: 3px; flex-wrap: nowrap;
@@ -296,7 +296,7 @@
   }
   .corr-stage-ref b { color: var(--ink); font-weight: normal; font-style: normal; }
 
-  /* ── TALENT BLOCKS ── */
+  /* -- TALENT BLOCKS -- */
   .three-col {
     display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;
   }
@@ -324,7 +324,7 @@
     font-size: 6.5pt; color: var(--ink-faded); min-height: 18px; line-height: 1.4;
   }
 
-  /* ── GEAR TABLE ── */
+  /* -- GEAR TABLE -- */
   .gear-table {
     width: 100%; border-collapse: collapse; font-size: 7.5pt;
   }
@@ -345,7 +345,7 @@
   }
   .gear-table td.center, .gear-table th.center { text-align: center; width: 52px; }
 
-  /* ── FIELD ROWS ── */
+  /* -- FIELD ROWS -- */
   .field-row { display: flex; gap: 10px; margin-bottom: 5px; }
   .field { flex: 1; display: flex; flex-direction: column; }
   .field-label {
@@ -368,7 +368,7 @@
     min-height: 72px;
   }
 
-  /* ── ANCHOR / DARK SECRET ── */
+  /* -- ANCHOR / DARK SECRET -- */
   .anchor-box {
     border: 1.5px solid var(--green-stamp);
     padding: 5px 7px;
@@ -382,11 +382,11 @@
   }
   .secret-box .field-label { color: var(--red-stamp); font-size: 6pt; }
 
-  /* ── NOTES LINES ── */
+  /* -- NOTES LINES -- */
   .notes-lines { width: 100%; }
   .notes-line  { border-bottom: 1px solid var(--rule-light); height: 17px; }
 
-  /* ── FOOTER ── */
+  /* -- FOOTER -- */
   .footer {
     position: absolute; bottom: 0.2in; left: 0.42in; right: 0.42in;
     display: flex; justify-content: space-between;
@@ -396,7 +396,7 @@
     border-top: 1px solid var(--rule-light); padding-top: 3px;
   }
 
-  /* ── PAGE 2 HEADER ── */
+  /* -- PAGE 2 HEADER -- */
   .p2-header {
     display: flex; justify-content: space-between; align-items: baseline;
     border-top: 2px solid var(--ink);
@@ -430,12 +430,12 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════
-     PAGE 1 — OPERATIONS SHEET
-     ══════════════════════════════════════════════════ -->
+<!-- --------------------------------------------------
+     PAGE 1 � OPERATIONS SHEET
+     -------------------------------------------------- -->
 <div class="page page-break">
   <div class="watermark">COVENANT</div>
-  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="perf-strip">? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?</div>
 
   <!-- HEADER -->
   <div class="header">
@@ -531,7 +531,7 @@
         <div class="attr-name">Agility</div>
         <div class="attr-score"></div>
         <div class="attr-range">2 &ndash; 5</div>
-        <div class="attr-dmg-label">Exhaustion</div>
+        <div class="attr-dmg-label">Hobbling</div>
         <div class="attr-dmg-track">
           <div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div>
         </div>
@@ -539,7 +539,7 @@
       <div class="skill-area">
         <div class="skill-area-header">Skills</div>
         <div class="skill-row"><span class="skill-name">Sneak</span><div class="skill-box"></div></div>
-        <div class="skill-row"><span class="skill-name">Sleight of Hand</span><div class="skill-box"></div></div>
+        <div class="skill-row"><span class="skill-name">Deft Hands</span><div class="skill-box"></div></div>
         <div class="skill-row"><span class="skill-name">Firearms</span><div class="skill-box"></div></div>
       </div>
     </div>
@@ -591,7 +591,7 @@
 
     <!-- Track -->
     <div style="flex:1;">
-      <div class="corr-label" style="margin-bottom:4px;">Current Corruption — mark left to right</div>
+      <div class="corr-label" style="margin-bottom:4px;">Current Corruption � mark left to right</div>
       <div class="corruption-track">
         <span class="cpip">1</span><span class="cpip">2</span><span class="cpip">3</span>
         <span class="cpip">4</span><span class="cpip">5</span><span class="cpip">6</span>
@@ -660,12 +660,12 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     PAGE 2 — BACKGROUND & EQUIPMENT
-     ══════════════════════════════════════════════════ -->
+<!-- --------------------------------------------------
+     PAGE 2 � BACKGROUND & EQUIPMENT
+     -------------------------------------------------- -->
 <div class="page">
   <div class="watermark">COVENANT</div>
-  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="perf-strip">? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?</div>
 
   <!-- PAGE 2 HEADER -->
   <div class="p2-header">

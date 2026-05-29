@@ -33,7 +33,7 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 | Item | Gear Bonus & Effect | Enc. | CL
 
 | *Basic First Aid Kit* | +1 to Heal. Bandages, antiseptics, painkillers. | 1 | 1
-| *Lockpick Kit* | +2 to Sleight of Hand when bypassing mechanical locks. | ½ | 2
+| *Lockpick Kit* | +2 to Deft Hands when bypassing mechanical locks. | ½ | 2
 | *Crowbar / Bolt Cutters* | +2 to Force when breaking through chains or sealed doors. | 1 | 2
 | *Long-Range Walkie-Talkies* | Communication over a few miles (no supernatural interference). | ½ | 2
 | *Trauma Surgical Kit* | +3 to Heal. Sutures, adrenaline, blood-clotting agents. | 2 | 3
@@ -100,7 +100,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 Supplies can be restocked:
 
 * During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
-* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Sleight of Hand roll (Difficulty 1–2) to access without authorization.
+* During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Deft Hands roll (Difficulty 1–2) to access without authorization.
 * HQ *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 
 === Supply Categories
@@ -504,7 +504,7 @@ more, they're held together with duct tape and prayer).
 | *Signal Jammer*             | 2 | 1 hour | Blocks comms in zone. Gear Bonus 1. Electronics.
 | *Tripwire / Alarm Trap*     | 2 | 30 minutes | Spend; triggers on intruder entry. Single use.
 | *Garrote Wire*              | 1 | 5 minutes | Grapple-linked attack. No Gear Bonus — simple tool.
-| *Lockpick Set (crude)*      | 3 | 1 hour | Sleight of Hand −1 die compared to proper picks. Gear Bonus 1.
+| *Lockpick Set (crude)*      | 3 | 1 hour | Deft Hands −1 die compared to proper picks. Gear Bonus 1.
 | *Improvised Bug Detector*   | 3 | 2 hours | Detect surveillance; −1 die vs. professional gear. Gear Bonus 1.
 | *Field Radio Booster*       | 3 | 2 hours | Extend comms range by 1 zone. Gear Bonus 1. Electronics.
 |===

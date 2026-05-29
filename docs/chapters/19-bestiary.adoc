@@ -23,7 +23,7 @@ Fear Rating: X (0 for humans unless marked)
 
 Skills:
   Force X | Brawl X | Endure X
-  Sneak X | Sleight of Hand X | Firearms X
+  Sneak X | Deft Hands X | Firearms X
   Investigate X | Tech X | Lore X
   Manipulate X | Command X | Psychoanalyze X
 
@@ -317,7 +317,7 @@ Fear Rating: 0
 
 Skills:
   Brawl 2 | Endure 2
-  Sneak 4 | Sleight of Hand 3
+  Sneak 4 | Deft Hands 3
   Firearms 3
   Investigate 3 | Tech 2
   Manipulate 3
@@ -671,7 +671,7 @@ Armor Rating: 1 (artifact-warded clothing — subtle, not tactical)
 Fear Rating: 0 (human, but deeply unsettling — see DA Guidance)
 
 Skills:
-  Lore 4 | Manipulate 3 | Investigate 3 | Sleight of Hand 3 | Sneak 2 | Tech 2
+  Lore 4 | Manipulate 3 | Investigate 3 | Deft Hands 3 | Sneak 2 | Tech 2
 
 Movement: 1 zone / Fast Action (standard)
 

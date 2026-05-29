@@ -139,7 +139,7 @@ The following pairings arise most frequently in play. Either side may push their
 | Command (EMP) | Manipulate (EMP) | Asserting authority vs. someone talking their way out from under it
 | Force (STR) | Endure (STR) | Trying to physically overpower or restrain another character
 | Brawl (STR) | Brawl (STR) | Contested grapple, disarm, or shove
-| Sleight of Hand (AGI) | Investigate (WIT) | Planting or pocketing an item without being noticed
+| Deft Hands (AGI) | Investigate (WIT) | Planting or pocketing an item without being noticed
 | Sneak (AGI) | Investigate (WIT) | Tailing a target without being made
 | Tech (WIT) | Tech (WIT) | Counter-hacking: both parties on the same BBS or mainframe simultaneously
 |===
@@ -282,7 +282,7 @@ If Petra had rolled 0 successes and the operative also rolled 0, the tail contin
 
 === Helping: Cracking a Locked File Cabinet
 
-*Situation:* Stack agent Kowalski is picking a government-grade lock. Sleight of Hand 2 (AGI 3 + skill 2 = 5 dice). Keep agent Osei has Sleight of Hand 1 and offers to hold the flashlight steady and narrate the tumblers. DA approves.
+*Situation:* Stack agent Kowalski is picking a government-grade lock. Deft Hands 2 (AGI 3 + skill 2 = 5 dice). Keep agent Osei has Deft Hands 1 and offers to hold the flashlight steady and narrate the tumblers. DA approves.
 
 * Osei adds +1 die. Kowalski rolls *6 dice* total instead of 5.
 * Result: 6, 6, 5, 3, 2, 1 → 2 successes. The lock opens, and the extra success means it opens fast — no time lost.

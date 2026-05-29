@@ -441,7 +441,7 @@ Before the final ritual roll, allies may either help normally or perform one of 
 | Remove one missing-key penalty by confirming the true name, activation condition, or anchor logic.
 
 | *Build the Boundary*
-| Tech or Sleight of Hand
+| Tech or Deft Hands
 | Gain *+1 die* on the ritual roll or ignore one improvised-material penalty.
 
 | *Hold the Line*

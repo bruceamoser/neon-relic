@@ -80,7 +80,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 > Your four attributes serve a dual purpose: they define your dice pools *and* they are your health. When your agent takes damage, the relevant attribute is reduced:
 >
 > * *Physical damage* (bullets, blunt trauma, falls) → reduces *Strength*
-> * *Exhaustion damage* (sprint, forced march, exertion) → reduces *Agility*
+> * *Hobbling damage* (sprint, forced march, exertion) → reduces *Agility*
 > * *Mental horror* (supernatural imagery, occult overload) → reduces *Wits*
 > * *Emotional trauma* (witnessing atrocity, corruption of bonds) → reduces *Empathy*
 >
@@ -100,7 +100,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Brawl | STR | 3 | Recovery
 | Endure | STR | 3 | Keep
 | Sneak | AGI | 3 | Recovery
-| Sleight of Hand | AGI | 3 | Keep (Stack)
+| Deft Hands | AGI | 3 | Keep (Stack)
 | Firearms | AGI | 3 | Recovery
 | Investigate | WIT | 3 | Wayfinder, Keep (Stack)
 | Tech | WIT | 3 | Wayfinder, Keep (Stack)
