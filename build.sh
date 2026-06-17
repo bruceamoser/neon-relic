@@ -28,6 +28,26 @@ fi
 rm -rf "$STARTER_KIT" "$ZIP_FILE"
 mkdir -p "$STARTER_KIT"
 
+# ── Helper: convert HTML to PDF via Chrome headless ──────────────────────────
+
+html_to_pdf() {
+    local html_file="$1"
+    local pdf_file="$2"
+    local tmp_html="${html_file%.html}-tmp-$$.html"
+
+    # .page margin:0.3in auto adds 0.6in vertical → overflows letter paper.
+    # Replace with margin:0 auto to prevent phantom second page.
+    sed 's/margin: *0\.3in auto/margin: 0 auto/g' "$html_file" > "$tmp_html"
+
+    "$CHROME" \
+        --headless --disable-gpu --no-sandbox \
+        --print-to-pdf="$pdf_file" \
+        --print-to-pdf-no-header \
+        "file://${tmp_html}" 2>/dev/null
+
+    rm -f "$tmp_html"
+}
+
 echo ""
 echo "=== Neon Relic Starter Kit Build ==="
 echo ""
@@ -80,43 +100,42 @@ echo "         done"
 
 # ── 3. Blank HTML Templates + PDFs ───────────────────────────────────────────
 
-echo "  [3/5] Blank HTML templates + PDFs..."
+echo "  [3/6] Blank HTML templates + PDFs..."
 BLANK_DIR="$STARTER_KIT/blank-templates"
 mkdir -p "$BLANK_DIR"
 
 for html in "$REPO_ROOT/assets/"*.html; do
     [ -f "$html" ] || continue
     base=$(basename "$html")
+    pdf_base="${base%.html}.pdf"
 
     # Self-contained HTML (inline fonts)
     inline_fonts "$html" "$BLANK_DIR/$base"
 
-    # Copy PDF if it exists alongside the source HTML
-    pdf="${html%.html}.pdf"
-    [ -f "$pdf" ] && cp "$pdf" "$BLANK_DIR/"
+    # Generate PDF from source HTML
+    html_to_pdf "$html" "$BLANK_DIR/$pdf_base"
 done
 echo "         done"
 
 # ── 4. Prebuilt Characters ───────────────────────────────────────────────────
 
-echo "  [4/5] Prebuilt character dossiers..."
+echo "  [4/6] Prebuilt character dossiers..."
 PREBUILT_DIR="$STARTER_KIT/prebuilt-characters"
 mkdir -p "$PREBUILT_DIR"
 
 for html in "$REPO_ROOT/assets/prebuilt/"*.html; do
     [ -f "$html" ] || continue
     base=$(basename "$html")
+    pdf_base="${base%.html}.pdf"
 
     inline_fonts "$html" "$PREBUILT_DIR/$base"
-
-    pdf="${html%.html}.pdf"
-    [ -f "$pdf" ] && cp "$pdf" "$PREBUILT_DIR/"
+    html_to_pdf "$html" "$PREBUILT_DIR/$pdf_base"
 done
 echo "         done"
 
 # ── 5. Sample Case File ──────────────────────────────────────────────────────
 
-echo "  [5/5] Sample case file (The Spear That Went Dark)..."
+echo "  [5/6] Sample case file (The Spear That Went Dark)..."
 CASE_DIR="$REPO_ROOT/docs/case-files/spear-that-went-dark"
 CASE_DEST="$STARTER_KIT/sample-case-file"
 mkdir -p "$CASE_DEST"
@@ -124,11 +143,10 @@ mkdir -p "$CASE_DEST"
 for html in "$CASE_DIR/"*.html; do
     [ -f "$html" ] || continue
     base=$(basename "$html")
+    pdf_base="${base%.html}.pdf"
 
     inline_fonts "$html" "$CASE_DEST/$base"
-
-    pdf="${html%.html}.pdf"
-    [ -f "$pdf" ] && cp "$pdf" "$CASE_DEST/"
+    html_to_pdf "$html" "$CASE_DEST/$pdf_base"
 done
 
 # Copy handout images
@@ -138,7 +156,7 @@ if [ -d "$CASE_DIR/handouts" ]; then
 fi
 echo "         done"
 
-# ── Package ───────────────────────────────────────────────────────────────────
+# ── 6. Package ───────────────────────────────────────────────────────────────────
 
 echo ""
 echo "  Packaging starter-kit.zip..."
