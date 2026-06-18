@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEON RELIC — Case Brief</title>
+<title>NEON RELIC � Case Brief</title>
 <style>
-  /* ── RESET ── */
+  /* -- RESET -- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* ── FONTS ── */
+  /* -- FONTS -- */
   @font-face {
     font-family: 'SpecialElite';
     src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
@@ -22,11 +22,11 @@
     font-weight: normal; font-style: normal;
   }
 
-  /* ── PAGE ── */
+  /* -- PAGE -- */
   @page { size: letter portrait; margin: 0; }
   @media print {
     html, body { margin: 0; padding: 0; background: none; height: auto; }
-    .page { box-shadow: none; margin: 0; height: auto; overflow: visible; page-break-inside: avoid; page-break-after: always; }
+    .page { box-shadow: none; margin: 0; height: auto; overflow: visible; page-break-inside: avoid; page-break-after: always; background-color: #f0ead6 !important; }
     .page:last-child { page-break-after: auto; }
   }
 
@@ -34,7 +34,7 @@
     --ink:          #1a1a18;
     --ink-faded:    #4a4a42;
     --ink-light:    #8a8a7e;
-    --paper:        #e8e4d8;
+    --paper:        #f0ead6;
     --green-stamp:  #2d5a27;
     --red-stamp:    #8b1a1a;
     --rule:         #999;
@@ -67,7 +67,7 @@
     flex-direction: column;
   }
 
-  /* ── PAPER TEXTURE ── */
+  /* -- PAPER TEXTURE -- */
   .page::before {
     content: '';
     position: absolute; inset: 0;
@@ -87,7 +87,7 @@
   }
   .page > * { position: relative; z-index: 1; }
 
-  /* ── WATERMARK ── */
+  /* -- WATERMARK -- */
   .watermark {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%) rotate(-35deg);
@@ -98,7 +98,7 @@
     pointer-events: none; z-index: 0;
   }
 
-  /* ── PERFORATION STRIP ── */
+  /* -- PERFORATION STRIP -- */
   .perf-strip {
     height: 11px;
     border-bottom: 1.5px dashed #bbb;
@@ -107,7 +107,7 @@
     color: #bbb; font-size: 4pt; letter-spacing: 2.5px; line-height: 1.1;
   }
 
-  /* ── HEADER ── */
+  /* -- HEADER -- */
   .header {
     display: flex;
     justify-content: space-between;
@@ -142,7 +142,7 @@
     transform: rotate(-2deg); margin-bottom: 4px;
   }
 
-  /* ── SECTION TITLE ── */
+  /* -- SECTION TITLE -- */
   .section-title {
     font-family: var(--font-main);
     font-size: 7pt; text-transform: uppercase; letter-spacing: 3px;
@@ -152,7 +152,7 @@
   }
   .section-title.red { color: var(--red-stamp); border-color: var(--red-stamp); }
 
-  /* ── ID BLOCKS ── */
+  /* -- ID BLOCKS -- */
   .id-block-row {
     display: grid; gap: 0;
     border: 1.5px solid var(--ink);
@@ -175,7 +175,7 @@
     border-bottom: 1px dotted var(--rule);
   }
 
-  /* ── FIELD COMPONENTS ── */
+  /* -- FIELD COMPONENTS -- */
   .field-label {
     font-family: var(--font-main);
     font-size: 5pt; text-transform: uppercase; letter-spacing: 1.5px;
@@ -206,18 +206,18 @@
     min-height: 100px;
   }
 
-  /* ── DANGER BOX ── */
+  /* -- DANGER BOX -- */
   .danger-box {
     border: 1.5px solid var(--red-stamp);
     padding: 4px 6px;
     margin-bottom: 4px;
   }
 
-  /* ── SIDE-BY-SIDE ── */
+  /* -- SIDE-BY-SIDE -- */
   .two-col { display: flex; gap: 8px; }
   .two-col > div { flex: 1; }
 
-  /* ── RELIC MILESTONES ── */
+  /* -- RELIC MILESTONES -- */
   .milestone-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -237,7 +237,7 @@
   }
   .section-title.green { color: var(--green-stamp); border-color: var(--green-stamp); }
 
-  /* ── FOOTER ── */
+  /* -- FOOTER -- */
   .footer {
     margin-top: auto;
     display: flex; justify-content: space-between;
@@ -254,7 +254,7 @@
 
 <div class="page">
   <div class="watermark">DA EYES ONLY</div>
-  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+  <div class="perf-strip">? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?</div>
 
   <!-- HEADER -->
   <div class="header">

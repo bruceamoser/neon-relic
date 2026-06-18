@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards — The Barbarian's Cup</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:16px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; grid-column:1/-1; margin:0 0 6px; }
+  .label { font-size:6pt; text-transform:uppercase; color:#4a4a42; letter-spacing:1px; }
+  .value { font-size:8.5pt; border-bottom:1px dotted #999; padding-bottom:2px; }
+  .full { grid-column:1/-1; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">NPC Cards — The Barbarian's Cup</h1>
+
+<!-- NPC1: João Rosário -->
+<div class="card">
+<h1>NPC1 — João "The Jesuit" Rosário</h1>
+<div class="full"><span class="label">Role</span><span class="value">Antiquities Broker — Former Seminarian, Current Disaster</span></div>
+<div><span class="label">Organization</span><span class="value">O1 — The Broker</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Nervous, charming, deeply compromised</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Rosário was a Covenant informant from 1979–1984. He fed Wayfinder information about artifact movements through Southeast Asia in exchange for the Covenant looking the other way on his less legitimate dealings. The relationship ended badly when Rosário sold an artifact the Covenant wanted to a private collector before informing them. He's been waiting for the Covenant to come back for him ever since. When agents arrive, he assumes they're here to settle accounts — not to help.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Close the auction. Get the cup out of his life. Survive whatever comes next. If survival means betraying the bidders to the Covenant, he's willing — but he needs it to look like it wasn't his choice.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Handled the cup once, with three layers of gloves. Has not slept properly since. Keeps a crucifix in his pocket — he left the seminary but the crucifix never left him. The cup was in his wall safe for two nights before he moved it to the bank — he still can't go in his own bedroom. The room feels "wrong." He can't explain it.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I3, I4</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I5 (O1M1), I6 (O1M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L2 (office/apartment), L7 (auction — as auctioneer). Possible: L3 (viewings).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Rosário cooperates with agents who offer him a way out that preserves his reputation. He's a coward, not a villain. Mention Sister Maria Cheng — his guilt about leaving the seminary is a lever. <strong>−</strong> If threatened or humiliated, he activates a dead-man switch that closes the auction early. Lose 2 shifts. Advance all orgs by 2 squares.</span></div>
+</div>
+
+<!-- NPC2: Farouk Al-Masri -->
+<div class="card">
+<h1>NPC2 — Farouk Al-Masri</h1>
+<div class="full"><span class="label">Role</span><span class="value">Cell Leader — Al-Quds Liberation Front</span></div>
+<div><span class="label">Organization</span><span class="value">O2 — Al-Quds Liberation Front</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Anxious, out of his depth, secretly relieved someone is here</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Farouk has never killed anyone. His entire "career" as a militant has been rhetoric, fundraising, and online posting. He was sent to Macau because the Front's leadership considered this a low-priority acquisition — they didn't believe the cup was real. Farouk touched the cup (gloved) and realized it IS real, and now he's trapped: if he completes the purchase, he's responsible for whatever happens next. If he withdraws, his own organization will consider him a coward or a traitor. He has no good options. He's been praying five times a day and adding an extra prayer: "Please let someone stop this."</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Get out. He doesn't know how. He's hoping — without admitting it — that someone (the agents, the police, fate) will intervene so he doesn't have to make a choice.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Handled during private viewing. His hands shook. The cup was cold. He can still feel the cold in his palms, days later. He keeps the viewing photographs in a sealed envelope because looking at them makes him nauseous. He sleeps in the car, not the cottage — he doesn't want to be near the photograph Nasim keeps.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I9</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I12 (O2M2), I17 (O2M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L3 (viewing — past), L5 (safe house — present), L7 (auction).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Farouk can be flipped. A Manipulate (Diff 3) or genuine human appeal (Diff 2, if approached alone) convinces him to withdraw the bid and provide the Front's plans. He cries when he agrees. <strong>−</strong> If confronted in front of Nasim, Farouk cannot show weakness. He will bluster and escalate — Nasim is watching, and Farouk is afraid of him too.</span></div>
+</div>
+
+<!-- NPC3: Nasim -->
+<div class="card">
+<h1>NPC3 — Nasim</h1>
+<div class="full"><span class="label">Role</span><span class="value">Second-in-Command — The Real Danger</span></div>
+<div><span class="label">Organization</span><span class="value">O2 — Al-Quds Liberation Front</span></div>
+<div><span class="label">Disposition</span><span class="value">1 — Hostile, obsessed, sleepless</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Nasim was not always like this. He was a quiet, devout man until his family was killed in a conflict he had nothing to do with. Grief radicalized him. The cup completed the transformation. He believes — genuinely, psychotically — that the cup is a divine instrument. That it was placed on Earth to purify. That he was chosen to wield it. He has not slept more than 2 hours a night since the viewing. He doesn't need to. The cup is keeping him awake. (It's not. It's just adrenaline and psychosis. But the cup IS humming — and Nasim can hear it.)</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Acquire the cup. Use it. He has identified a reservoir in the Hong Kong New Territories. He has a plan. He believes this is the will of God. He will not be stopped by argument, only by force or superior tactics.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Handled once, gloved, during viewing. The cup hummed. Nasim heard it. He's been chasing that sound ever since. He carries a photograph of the cup in his shirt pocket — over his heart. The photograph is creased from being held too many times. He talks to it.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I9</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I12 (O2M2), I17 (O2M2), I19 (O2M3)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L5 (safe house), L7 (auction).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Nasim cannot be reasoned with, but he can be outmaneuvered. He's not a tactical genius — he's a sleep-deprived fanatic. A distraction or a false target pulls him off course. <strong>−</strong> If Nasim touches the cup, he will try to activate it immediately — by throwing himself into the sea with it, by drinking from it, by whatever means available. He is the catastrophe vector.</span></div>
+</div>
+
+<!-- NPC4: Dr. Park Min-ho -->
+<div class="card">
+<h1>NPC4 — Dr. Park Min-ho</h1>
+<div class="full"><span class="label">Role</span><span class="value">CEO — Daewon Pharmaceutical</span></div>
+<div><span class="label">Organization</span><span class="value">O3 — Daewon Pharmaceutical</span></div>
+<div><span class="label">Disposition</span><span class="value">4 — Serene, welcoming, completely delusional</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Park's wellness-guru persona is not entirely an act. He genuinely believes in the universe's benevolence. He also genuinely believes that acquiring the cup is his destiny, revealed to him in a meditation retreat in Bali. He has told no one on his board about the cup's lethality — he framed the acquisition as "a historical artifact with holistic research potential." He has not thought through what happens when the board learns the truth. He has not thought through much. He is running on certainty and kombucha.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Acquire the cup. "Understand" it. Use its "gift" to cure disease. He has not considered the possibility that the cup's gift is not cure but death. He will not consider it. The universe does not make mistakes.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Never touched it. Saw photographs. Felt "an immediate energetic connection." Has started a journal about it — handwritten, earnest, increasingly unhinged. The journal opens with "Day 1: The universe has shown me something beautiful." It gets worse from there.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I10</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I14 (O3M2), I15 (accessible from case start — his journal is on his desk)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L4 (Hong Kong office), L7 (auction).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Park is not hostile. He will talk to anyone, about anything, for as long as they'll listen. Agents can extract information through conversation — he's incapable of not sharing his vision. <strong>−</strong> Park cannot be convinced the cup is dangerous. Any attempt to do so is reframed as "fear-based thinking." The only way to stop him is to physically prevent him from acquiring the cup. He will not fight. He will be very disappointed in everyone.</span></div>
+</div>
+
+<!-- NPC5: Dr. Yoon Seo-yeon -->
+<div class="card">
+<h1>NPC5 — Dr. Yoon Seo-yeon</h1>
+<div class="full"><span class="label">Role</span><span class="value">Head of R&D — Daewon Pharmaceutical</span></div>
+<div><span class="label">Organization</span><span class="value">O3 — Daewon Pharmaceutical</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Professional, skeptical, increasingly alarmed</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Yoon took this job because Daewon offered her a lab, a budget, and freedom from academic politics. She did not sign up for mystical teacups. She swabbed the viewing room table after the cup was removed. She ran the analysis. The residue killed her cell cultures — all of them — within 90 seconds. She ran it again. Same result. She told Park. Park said "we can work with that." Yoon has not slept in three days. She is starting to think she might need to do something that ends her career, or worse. She has copies of the data. She has not decided what to do with them.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Understand the mechanism. If the mechanism cannot be controlled, prevent Daewon from releasing anything derived from it. She would rather be a whistleblower than a mass killer — but she's not a hero. She's a scientist trying to do the right thing while keeping her life intact.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Never touched the cup. Swabbed the table where it sat. The residue alone killed everything in her lab. She is the only person in the case who understands the science — and she's terrified.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I14</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I15 (O3M2 — she found Park's journal and read it)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L4 (Hong Kong office), L7 (auction — in the hazmat van).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Yoon is the most important ally in the case. If agents reach her before the auction, she can provide Daewon security details, the mobile lab location, and the bid amount. A Psychoanalyze (Diff 2) or genuine conversation may flip her — she'll sabotage Daewon's bid from within. <strong>−</strong> If agents threaten her or her career, she withdraws. Push too hard and she'll choose self-preservation. She's not a hero — she's a scientist who wants to do the right thing and survive the experience.</span></div>
+</div>
+
+<!-- NPC6: Shi Yánxìn -->
+<div class="card">
+<h1>NPC6 — Shi Yánxìn</h1>
+<div class="full"><span class="label">Role</span><span class="value">The Last Guardian — Shaolin Monk, Age 74</span></div>
+<div><span class="label">Organization</span><span class="value">O4 — The Monk</span></div>
+<div><span class="label">Disposition</span><span class="value">4 — Patient, kind, quietly funny</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">The monk blames himself for everything. He was 14 when the Red Guards came. He hid the cup instead of fleeing with it. He chose the cup over his own safety. He spent 8 years in a labor camp, telling no one what he'd hidden. When he was released in 1974, the monastery was gutted, the wall was intact, the cavity was empty. Someone else had found it. He's been searching for 13 years. He found the Hong Kong dealer six months ago, but the cup had already moved to Rosário. He arrived in Macau three weeks before the agents. He's been waiting in the park, feeding pigeons, composing the apology he'll give the cup when he finally holds it again. The apology is 13 years long.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Recover the cup. Restore it if possible. Contain it if not. Tell it he's sorry. Then — if the agents allow — return to Shaolin and plant a new tree where the old one was. The original tree died in 1967. No one knows why. The monk knows.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Last person to hold the cup before it was hidden. He was 14. He remembers it humming — not cold and menacing like now, but warm, like a cat purring against your palm. He's been listening for that sound for 38 years. The stone from Bodhidharma's cave is sewn into the lining of his robe — he's carried it since his release from the labor camp, waiting for the day he'd need it.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I7, I8, CT-2</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I18 (O4M2), CT-3</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L6 (Camões Garden, every Morning), L7 (auction — in the shadows, near the eastern cannon).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> The monk is the key to safe containment. He has the stone from Bodhidharma's cave. He knows the restoration ritual. He will help agents who show genuine care for the cup — not as a weapon to be neutralized, but as a confused thing that used to be holy. <strong>−</strong> If agents treat the cup as merely a threat, the monk still helps — but he withholds the stone. He'll only give it if he believes the Covenant will honor the cup's history, not just neutralize its danger. "You see a weapon. I see a confused old friend. Come back when you see more clearly."</span></div>
+</div>
+
+<!-- NPC7: Inspector Matias Guterres -->
+<div class="card">
+<h1>NPC7 — Inspector Matias Guterres</h1>
+<div class="full"><span class="label">Role</span><span class="value">Macau Judiciary Police</span></div>
+<div><span class="label">Organization</span><span class="value">O5 — Macau Judiciary Police</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Suspicious, methodical, under-resourced</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Guterres has been a cop in Macau for 22 years. He's seen everything the territory can offer — triads, smuggling, the occasional international fugitive. He's never seen anything like this. He doesn't believe in cursed teacups. He believes in evidence. The problem is the evidence doesn't make sense: a dead orchid with no cause of death, a banker who's suddenly wealthy, a Portuguese antique dealer who looks like he hasn't slept in a month. Guterres is three days from putting it together — and when he does, he'll either be the agents' best asset or their worst complication.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Solve the case. If the case turns out to involve things he can't explain, he'll accept that — but he won't accept being lied to. He's a cop, not a soldier. He wants answers, not glory.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">None. Has not seen the cup. Has only seen its effects — the dead orchid, Rosário's behavior, the money trail. He is five days from seeing the cup in person, and when he does, his worldview will need to adjust quickly.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">None (until O5 activated)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I13 (O5M1), I20 (O5M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L2 (after O5M1 — investigating Rosário), L7 (possible — police raid if O5M2 triggered).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Guterres can be an ally if agents are straight with him. He can provide police resources, arrest bidders on unrelated charges, and secure the auction site. "I don't need to understand what that cup does. I just need to know who the bad guys are." <strong>−</strong> If agents lie to him or obstruct his investigation, he investigates THEM. He's methodical and patient. He will find out. And when he does, he'll be very disappointed — and very thorough.</span></div>
+</div>
+
+<!-- NPC8: Agent Chen Wei -->
+<div class="card">
+<h1>NPC8 — Agent Chen Wei</h1>
+<div class="full"><span class="label">Role</span><span class="value">Chinese Ministry of State Security</span></div>
+<div><span class="label">Organization</span><span class="value">O6 — Chinese State Security</span></div>
+<div><span class="label">Disposition</span><span class="value">1 — Professional, silent, watching</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Agent Chen is not a villain. She's a mid-level MSS officer who was handed a file about a stolen cultural artifact and told "handle it." She's good at her job. The file led her to Macau, where she discovered that the stolen teacup is being bid on by terrorists and a foreign pharmaceutical company. She has not told her superiors about the pharmaceutical angle — it complicates things. She has not told them about the dead orchid. She's operating at the edge of her mandate, because returning the cup to China is the right thing to do, but she's starting to suspect the cup might not be just a cup. Something about the surveillance photographs is wrong — the cup looks different in every frame. She's been trying to convince herself it's a lighting issue.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Secure the cup for the People's Republic of China. Prevent it from leaving Chinese territory. Secondary: prevent a diplomatic incident. She will not start a fight, but she will finish one.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Has not touched the cup. Has surveillance photographs. Something about the photographs is wrong — the cup looks different in every frame. Lighting issue. Has to be. She's been telling herself this for three days.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">None (until O6 activated)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I16 (O6M1), I21 (O6M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">Macau (surveillance, after O6M1), L7 (intervention, after O6M2).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Chen can be reasoned with if agents acknowledge Chinese sovereignty over the artifact AND offer a solution that doesn't involve the cup leaving Chinese territory. The Covenant's Keep in Hong Kong (pre-handover) might be acceptable — it's technically still British, but Chen can frame it as "under observation." She is not unreasonable. She is doing her job. <strong>−</strong> If agents try to smuggle the cup out of Macau, Chen intervenes with deadly force. She has a team of four. They are not messing around. Treat as High-threat (Force 3, Endure 3, Armor 2, coordinated tactics).</span></div>
+</div>
+
+</body>
+</html>

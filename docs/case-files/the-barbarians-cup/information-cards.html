@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Cards — The Barbarian's Cup</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:14px 0; background:rgba(255,255,255,0.3); page-break-inside:avoid; }
+  .front { border-bottom:2px dashed #999; padding-bottom:8px; margin-bottom:8px; }
+  .back { font-size:8pt; color:#4a4a42; }
+  h2 { font-size:12pt; margin:0 0 6px; color:#2d5a27; }
+  .ct { border-left:3px solid #8b1a1a; }
+  .type { display:inline-block; font-size:6pt; text-transform:uppercase; letter-spacing:1px; padding:1px 6px; border:1px solid #999; margin-left:8px; }
+  .ct-tag { border-color:#8b1a1a; color:#8b1a1a; }
+  .intel-tag { border-color:#4a4a42; color:#4a4a42; }
+  .id { font-size:20pt; font-weight:bold; float:right; margin-top:-6px; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Information Cards — The Barbarian's Cup</h1>
+<p style="text-align:center;color:#4a4a42;">I1–I22 · Print double-sided · Cut along borders · Hand player-facing front to agents on discovery</p>
+
+<!-- I1: The Cup's Location -->
+<div class="card">
+<div class="front">
+<span class="id">I1</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Cup's Location</h2>
+<p>Bodhidharma's Teacup is currently in safety deposit box 419 at the Banco de Macau, Avenida de Almeida Ribeiro. The box is rented under the name "Silva Import/Export" — a shell company registered to João Rosário. The bank is a Portuguese colonial-era institution with marble floors and staff who've worked there for 30 years. The vault is time-locked: accessible during banking hours (9 AM–5 PM) with the key plus manager approval. After hours, the vault requires professional infiltration. Rosário holds one of two required keys. The bank manager, Oliveira, holds the other. The cup has been in the box for approximately one week, since Rosário moved it from his wall safe after two nights of increasingly disturbing proximity.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L1 (Banco de Macau), O1 (Rosário)<br>
+HQ Fallback: Day 9<br>
+Type: Supporting Intel<br>
+Notes: Confirming the cup's location is the first investigative step. Rosário can confirm it directly (L2). Oliveira can confirm it if approached correctly (Manipulate Diff 2 or bribe). The box contains more than the cup — I11 (the looter's receipt) is also there.
+</div>
+</div>
+
+<!-- I2: The Shell Company -->
+<div class="card">
+<div class="front">
+<span class="id">I2</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Shell Company</h2>
+<p>"Silva Import/Export" is a Macau-registered shell company with no physical office, no employees, and no import or export activity. It exists solely as a financial front for João Rosário's antiquities trafficking. The company was registered in 1978 — the year Rosário left the seminary. The registration documents list a forwarding address that resolves to a mailbox at the Macau central post office. Bank records (if obtained) show irregular large deposits from international accounts — Hong Kong, Seoul, Zurich — consistent with brokered artifact sales. Rosário has been operating this way for nearly a decade. The Covenant's Wayfinder division flagged Silva Import/Export in 1982 but never escalated — Rosário was still an active informant at the time.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L1 (Banco de Macau records), NPC1 (Rosário)<br>
+HQ Fallback: Day 8<br>
+Type: Supporting Intel<br>
+Notes: Follow the money. The shell company connects Rosário to his international buyers — including Daewon (Seoul deposits) and the Front (Hong Kong deposits via a cutout). Investigate or Tech (Diff 2) to trace the accounts.
+</div>
+</div>
+
+<!-- I3: The Auction Structure -->
+<div class="card">
+<div class="front">
+<span class="id">I3</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Auction Structure</h2>
+<p>Rosário organized a blind sealed-bid auction with a 10-day bidding window. Each bidder submitted a single sealed bid and a good-faith deposit to Rosário's shell company. The highest bid wins — no rounds, no negotiations, no second chances. Three bidders are confirmed: a foreign organization (code name "The Eastern Buyer"), a multinational corporation (code name "The Wellness Group"), and a private individual whose identity Rosário claims not to know (code name "The Pilgrim"). Bids are sealed in envelopes held by Rosário. The auction closes at the end of Day 1. The winner receives the cup at a location disclosed only to bidders 24 hours before the close. Rosário collects a 12% commission regardless of who wins.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L2 (Rosário's office — auction records in the ledger), NPC1 (Rosário)<br>
+HQ Fallback: Day 8<br>
+Type: Supporting Intel<br>
+Notes: The sealed-bid format means there is no public auction event agents can crash. They must either stop the auction before it closes or intercept the handoff after the winner is determined. Rosário knows the real identities behind "Eastern Buyer" (Al-Quds Front) and suspects "Wellness Group" (Daewon). He genuinely doesn't know "The Pilgrim" is the monk — the monk used an intermediary.
+</div>
+</div>
+
+<!-- I4: Rosário's Covenant History -->
+<div class="card">
+<div class="front">
+<span class="id">I4</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Rosário's Covenant History</h2>
+<p>João Rosário was a Covenant informant from 1979 to 1984, recruited by Wayfinder Division after an agent noticed his name on a shipping manifest for a suspected artifact movement. Rosário — a former seminary student with fluent Portuguese, Cantonese, and English — was an ideal source in Southeast Asian antiquities markets. He provided intelligence on artifact movements through Macau, Hong Kong, and Singapore in exchange for the Covenant looking the other way on his less legitimate dealings. The relationship ended in 1984 when Rosário sold a Tier 2 artifact (a Mughal-era jade dagger with memory-leech properties) to a private collector in Geneva before informing the Covenant. Wayfinder closed his file but never pursued him. Rosário has been waiting for the Covenant to come back for him ever since. When agents arrive, he assumes they're here to settle that account.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L2 (Rosário — after O1M1, he volunteers this), NPC1<br>
+HQ Fallback: Day 7<br>
+Type: Supporting Intel<br>
+Notes: This history is Rosário's vulnerability and his shield. He's terrified the Covenant wants revenge. Agents who reassure him gain his cooperation. Agents who threaten him confirm his worst fears. Sister Maria Cheng (regional contact, L2 reference) can corroborate Rosário's seminary background.
+</div>
+</div>
+
+<!-- I5: The Bidders Identified -->
+<div class="card">
+<div class="front">
+<span class="id">I5</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Bidders Identified</h2>
+<p>Rosário has identified the three bidders, though with varying confidence. "The Eastern Buyer" is the Al-Quds Liberation Front — a fictional extremist group operating a small cell in Macau. Rosário knows this because their deposit came through a Hong Kong account previously linked to Front fundraising. "The Wellness Group" is almost certainly Daewon Pharmaceutical of Seoul — the deposit came from a Daewon subsidiary account, and the bidder's intermediary mentioned "holistic research applications." "The Pilgrim" remains unknown to Rosário — the deposit was cash, delivered by a Macau lawyer who refused to identify the client. The Pilgrim's bid is the smallest: $1.2M, far below the Front's $4.2M and Daewon's $7M. Rosário finds the Pilgrim's participation "sentimental." He's wrong about why.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L2 (Rosário, after O1M1), NPC1<br>
+HQ Fallback: Day 7<br>
+Type: Supporting Intel<br>
+Notes: The Pilgrim is Shi Yánxìn — he liquidated his family's remaining assets (a small apartment in Henan, his parents' savings) and borrowed the rest from Buddhist communities along the coast. His $1.2M bid is everything he has. He cannot win the auction. He knows this. He's not here to bid. He's here to find whoever does win and ask them — or stop them.
+</div>
+</div>
+
+<!-- I6: The Auction in Jeopardy -->
+<div class="card">
+<div class="front">
+<span class="id">I6</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Auction in Jeopardy</h2>
+<p>Rosário attempted to cancel the auction. After the private viewings — after seeing the dead orchid, after watching Farouk shake and Nasim gaze at the cup like a man seeing God — Rosário realized what he was selling. He contacted the bidders and attempted to withdraw. The Front refused. Their response was immediate and personal: photographs of Rosário's sister in Lisbon, her address, her children's school. The message was clear — the auction proceeds or the family pays. Daewon's response was corporate: a lawyer's letter threatening breach-of-contract litigation and a personal call from Park expressing "deep disappointment in the negative energy you're bringing to this transaction." Rosário is now a hostage in his own operation. He cannot stop the auction. He cannot protect his sister. He has never been more terrified in his life.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L2 (Rosário, after O1M2), NPC1<br>
+HQ Fallback: Day 5<br>
+Type: Supporting Intel<br>
+Notes: This information transforms Rosário from suspect to victim. Agents who understand his position can use it — protect his sister (HQ can arrange Lisbon surveillance) and Rosário becomes fully cooperative. The Front's threat is real but may be bluff — Farouk doesn't have the stomach for it. Nasim does.
+</div>
+</div>
+
+<!-- I7: The True History -->
+<div class="card">
+<div class="front">
+<span class="id">I7</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The True History of the Cup</h2>
+<p>The cup was made at Shaolin Temple in approximately 518 CE for the Indian monk Bodhidharma — the "Barbarian from the West" who brought Chan (Zen) Buddhism to China. Bodhidharma was famously irritable. He once sat facing a wall for nine years because an emperor annoyed him. When a monk fell asleep during meditation, Bodhidharma threw this cup at his head. It cracked. It did not break. The monk woke up. The cup was thereafter used to brew tea that kept monks spiritually awake — "poison to delusion," killing attachment, killing illusion, keeping the mind clear. For over 1,400 years, Shaolin monks maintained the cup with a daily ritual: fill with green tea, let it sit for one incense-stick's burn, pour onto the roots of the courtyard's oldest tree. The tea nourished the tree. The cup stayed aligned with its purpose. It was not a weapon. It was a tool of awakening.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L6 (Camões Garden — the monk), NPC6 (Shi Yánxìn)<br>
+HQ Fallback: Day 7<br>
+Type: Supporting Intel<br>
+Notes: This is the emotional core of the case. The cup is not evil. It is confused. Everything that follows from this understanding changes how agents approach containment. The monk tells this story with love, not bitterness. Let the story land.
+</div>
+</div>
+
+<!-- I8: What Broke the Cup -->
+<div class="card">
+<div class="front">
+<span class="id">I8</span><span class="type intel-tag">Supporting Intel</span>
+<h2>What Broke the Cup</h2>
+<p>In 1966, the Cultural Revolution reached Shaolin. Red Guards sacked the monastery — burning texts, smashing statues, beating monks. A 14-year-old novice named Shi Yánxìn hid the cup in a wall cavity behind a loose stone, moments before he was arrested. He spent 8 years in a labor camp, telling no one what he'd hidden. The cup spent 20 years in the wall. The daily ritual — green tea, an incense-stick's burn, poured onto the roots of the old tree — stopped. Without the ritual, the cup's nature drifted. "Poison to delusion" became simply poison. The intention remained — the cup still wants to brew wakefulness — but the mechanism changed. The cup does not know it changed. It still hums when near liquid. It still thinks it's helping people stay awake. It has no idea it's killing them.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L6 (Camões Garden — the monk), NPC6 (Shi Yánxìn)<br>
+HQ Fallback: Day 6<br>
+Type: Supporting Intel<br>
+Notes: This is the tragedy. The cup is not corrupted in the traditional sense — it's an artifact whose maintenance ritual was interrupted, causing its effect to drift. This makes restoration theoretically possible. The monk believes the daily ritual, resumed, would realign the cup over time. He may be right. He may be wrong. The Covenant doesn't need to find out — containment works regardless.
+</div>
+</div>
+
+<!-- I9: The Front's Viewing -->
+<div class="card">
+<div class="front">
+<span class="id">I9</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Front's Private Viewing</h2>
+<p>Rosário arranged a private viewing of the cup for the Al-Quds Liberation Front in Room 7 of the tea house on Travessa da Paixão. Farouk Al-Masri handled the cup with gloved hands. His hands shook. The cup was cold — colder than the ambient temperature could explain. He set it down carefully, too carefully, and stepped back. Nasim, the second-in-command, was enraptured. He stared at the cup without blinking for several minutes. He did not touch it — he didn't need to. Something about the cup's presence affected him immediately. During the viewing, a drop of water on the table — condensation from a tea pot — touched the cup's interior. No one noticed. The potted orchid in the corner was dead within 60 seconds. The Front increased their bid to $5 million after the viewing. Nasim began carrying a photograph of the cup. He has not put it down since.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L3 (tea house — the owner witnessed everything), NPC2 (Farouk), O2M1 trigger<br>
+HQ Fallback: Day 7<br>
+Type: Supporting Intel<br>
+Notes: This card confirms the cup's lethality through evidence (the orchid) and establishes the Front's psychological profile. Farouk is terrified. Nasim is obsessed. The drop-of-water incident is the key CT-1 clue — accidental contact still poisons. The tea house owner can describe the viewing in detail if agents ask the right questions.
+</div>
+</div>
+
+<!-- I10: Daewon's Theory -->
+<div class="card">
+<div class="front">
+<span class="id">I10</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Daewon's Theory</h2>
+<p>Daewon Pharmaceutical believes the cup's poison mechanism can be isolated and weaponized — against disease. Their preliminary theory (developed from photographs and the testimony of the Hong Kong dealer who first tested the cup on a plant) is that the poison does not target specific biological pathways but rather terminates life at a fundamental level — possibly disrupting the bioelectric field that distinguishes living tissue from dead matter. Daewon's R&D head, Dr. Yoon Seo-yeon, hypothesizes that if the mechanism can be understood and targeted, it could be used to selectively kill cancer cells, viruses, and antibiotic-resistant bacteria while leaving healthy human cells untouched. This theory is elegant, plausible, and wrong. The poison kills everything. There is no selectivity. Yoon will learn this when she analyzes the residue from the viewing room.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L3 (tea house — Yoon swabbed the table), L4 (Daewon office — R&D briefing room), NPC4 (Park), NPC5 (Yoon)<br>
+HQ Fallback: Day 6<br>
+Type: Supporting Intel<br>
+Notes: Daewon's theory is not malicious — it's a reasonable scientific hypothesis based on incomplete data. The tragedy is that they're smart enough to be dangerous and optimistic enough to be reckless. Yoon is the key — she has the data that proves the theory wrong, and she's starting to doubt.
+</div>
+</div>
+
+<!-- I11: The Looter's Trail -->
+<div class="card">
+<div class="front">
+<span class="id">I11</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Looter's Trail</h2>
+<p>The cup was found six weeks ago by a looter scavenging the abandoned Shaolin monastery in Henan province. The looter — a local farmer supplementing his income — found the wall cavity, removed the cup, and sold it to a Hong Kong antiquities dealer for $200. The dealer tested it on a houseplant. The plant died in 30 seconds. The dealer contacted João Rosário in Macau, who recognized the cup from a Covenant watch-list photograph he was shown during his informant years. Rosário paid the dealer $50,000 for the cup — a bargain for an artifact of this power, but Rosário was already scared. The dealer's receipt, the looter's original sales slip, and the dealer's contact information are all in safety deposit box 419 at the Banco de Macau, alongside the cup. The looter is still in Henan. He doesn't know what he found. He bought a new tractor with the $200.</div>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L1 (box contents — the receipt), L4 (Hong Kong dealer records — if agents follow up via Mr. Kwok)<br>
+HQ Fallback: Day 7<br>
+Type: Supporting Intel<br>
+Notes: The looter's trail establishes provenance and timeline. The Hong Kong dealer is Mr. Kwok's contact. Agents can trace the dealer through the receipt in the box or through Kwok directly. The dealer can confirm the cup's effect on the plant and the timeline of the sale to Rosário.
+</div>
+</div>
+
+<!-- I12: The Front's Target -->
+<div class="card">
+<div class="front">
+<span class="id">I12</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Front's Target</h2>
+<p>Nasim has identified a target: the Tai Lam Chung Reservoir in the Hong Kong New Territories, which supplies drinking water to approximately 1.2 million people in Tuen Mun, Yuen Long, and surrounding districts. The reservoir is accessible — lightly guarded, surrounded by hiking trails — and Nasim has obtained detailed maps, water flow data, and a timetable. His plan is straightforward: acquire the cup, travel to the reservoir, dip it in the water. The cup's effect would transmute the reservoir's surface layer — thousands of gallons — into lethal poison within seconds. The water treatment system would not detect it. The poison would distribute through the supply network within 2–4 hours. Nasim estimates the "purification" would be complete within 48 hours. He has shared this plan with Farouk, who has not slept since.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L5 (safe house — maps and plans on the cork board), NPC3 (Nasim, after O2M2), NPC2 (Farouk, if flipped)<br>
+HQ Fallback: Day 4<br>
+Type: Supporting Intel<br>
+Notes: This is the catastrophe scenario. The reservoir is a real, vulnerable target. If agents recover this intelligence, they can alert Hong Kong authorities (through Mr. Kwok or HQ) and secure the reservoir. Nasim's maps are amateur but functional — he's been to the reservoir three times. He's taken photographs. He's ready.
+</div>
+</div>
+
+<!-- I13: Police Investigation Opens -->
+<div class="card">
+<div class="front">
+<span class="id">I13</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Police Investigation Opens</h2>
+<p>Inspector Matias Guterres of the Macau Judiciary Police has opened an investigation into "suspicious financial activity" linked to Rosário's antique shop on Rua de São Paulo. The investigation was triggered by a routine banking audit that flagged Silva Import/Export's irregular deposit pattern. Guterres is methodical and experienced — 22 years on the force — and he's already noticed several anomalies: Rosário's visible sleep deprivation, the sudden wealth of a mid-level bank manager (Oliveira accepted a bribe from Rosário to overlook the box rental), and a dead orchid in a tea house that the owner has been complaining about to anyone who'll listen. Police presence is now increased at L1 (bank), L2 (antique shop), and L3 (tea house). Agents operating at those locations must use Sneak or Manipulate for covert access.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: O5M1 trigger, NPC7 (Guterres)<br>
+HQ Fallback: Day 5<br>
+Type: Supporting Intel<br>
+Notes: Guterres is not an enemy. He's a police officer doing his job. If agents approach him directly and share information — selectively, within Covenant protocols — he can become an asset. If they obstruct him, he becomes a persistent complication. The orchid complaint is a nice detail — the tea house owner has been calling the police station weekly about "something wrong with Room 7."
+</div>
+</div>
+
+<!-- I14: Yoon's Analysis -->
+<div class="card">
+<div class="front">
+<span class="id">I14</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Yoon's Analysis — The Poison Kills Everything</h2>
+<p>Dr. Yoon Seo-yeon swabbed the table in Room 7 of the tea house after the cup was removed. She cultured the residue and exposed it to a panel of cell lines: human epithelial, human hepatic, murine immune, bacterial (E. coli, S. aureus), and viral cultures. Every culture died within 90 seconds of exposure. Every single one. There is no selectivity. No therapeutic window. No dose-response curve — a single molecule of poisoned water is as lethal as a gallon. Yoon ran the analysis three times to confirm. She told Park. Park said, "We can work with that." Yoon has not slept in three days. She has copies of the data. She is starting to think she might need to do something that ends her career — or worse. She has not yet decided what that something is. She is waiting to see if anyone else comes looking for the cup who might understand what it really is.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L4 (Daewon office — Yoon's laptop), NPC5 (Yoon, after O3M2)<br>
+HQ Fallback: Day 4<br>
+Type: Supporting Intel<br>
+Notes: This is the scientific confirmation of CT-1. The poison kills everything. There is no cure. Daewon's entire premise is wrong. Yoon is the most important potential ally in the case — she has the data, she has the doubts, and she can sabotage the Daewon acquisition from within if agents reach her.
+</div>
+</div>
+
+<!-- I15: Park's Journal -->
+<div class="card">
+<div class="front">
+<span class="id">I15</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Park's Journal</h2>
+<p>CEO Park Min-ho keeps a handwritten journal in his Hong Kong office. The journal entries begin six weeks ago — the same week the cup was found — with a record of a meditation retreat in Bali where Park experienced what he describes as "a vision of a cracked vessel, glowing with green light, waiting for me in a place where East meets West." Subsequent entries chronicle his discovery of the auction, his conviction that the cup is "a gift from the universe," and his plans for Daewon's "holistic medicine revolution." The most recent entry reads: "The cup has been alone for a long time. It needs someone who understands it. I understand it. The universe does not make mistakes. Everything that has happened — the looter, the dealer, the auction — has happened so that I would find it. I am ready." The journal is on his desk. He leaves it out. He thinks it's inspiring.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L4 (Daewon office — Park's desk), NPC4 (Park)<br>
+HQ Fallback: Day 4<br>
+Type: Supporting Intel<br>
+Notes: The journal establishes Park's mental state: delusional but not malicious. He genuinely believes he's destined to possess the cup. This makes him immune to reason but vulnerable to redirection — if agents can convince him the cup's "destiny" lies elsewhere (e.g., "the universe wants it contained, not commercialized"), he may withdraw voluntarily. Unlikely, but possible with the right approach.
+</div>
+</div>
+
+<!-- I16: State Security Interest -->
+<div class="card">
+<div class="front">
+<span class="id">I16</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Chinese State Security Interest</h2>
+<p>The Ministry of State Security has identified Bodhidharma's Teacup as stolen cultural property — a relic removed from Shaolin Temple during the Cultural Revolution and trafficked through Hong Kong to Macau. The file was opened by Agent Chen Wei, a mid-level MSS officer in the cultural property division, after a Hong Kong field office flagged the cup's appearance in antiquities channels. Chen has deployed a four-person surveillance team to Macau. Her current objective is observation and assessment — she does not yet know the cup is lethal, and she does not know about the auction. She knows it was stolen, it's valuable, and foreign parties are interested. She is operating at the edge of her mandate: her orders are to monitor, but she is authorized to intervene if the cup is about to leave Chinese territory. Agents may notice they are being followed (Investigate Diff 2) — a woman in a gray coat, a man reading a newspaper too long, a car that appears at multiple locations.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: O6M1 trigger, NPC8 (Agent Chen)<br>
+HQ Fallback: Day 4<br>
+Type: Supporting Intel<br>
+Notes: Chen's team is surveillance-only at this stage. They will not intervene unless the cup is about to leave Macau — by plane, by boat, by any means. They are professional and unobtrusive but not invisible. Agents who detect surveillance can approach Chen — she will talk if cornered. She is not hostile to the Covenant. She's doing her job.
+</div>
+</div>
+
+<!-- I17: Farouk's Doubts -->
+<div class="card">
+<div class="front">
+<span class="id">I17</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Farouk's Doubts</h2>
+<p>Farouk Al-Masri wants out. He has never killed anyone. His militancy has always been rhetorical — speeches, fundraising, online postings. The Front's leadership sent him to Macau as a low-stakes errand; they didn't believe the cup was real. Farouk touched it and realized it IS real, and now he's trapped. If he completes the acquisition, he's responsible for whatever Nasim does with the cup. If he withdraws, his own organization will consider him a coward, a traitor, or both. He has been praying five times a day and adding a silent sixth prayer: "Please let someone stop this." He sleeps in the car, not the cottage. He walks the coastal path alone at dawn. He is waiting for someone — anyone — to give him permission to walk away. He will cry when someone does. He is not a villain. He is a frightened man who made terrible choices and wants someone to tell him there's a way out.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L5 (safe house — approach Farouk alone, Morning shift), NPC2 (Farouk)<br>
+HQ Fallback: Day 3<br>
+Type: Supporting Intel<br>
+Notes: Farouk's flip is one of the most emotionally resonant moments in the case. Play it quiet. Let the players feel what it means to give someone a way out. If Farouk flips, he provides the Front's plans (I12), Nasim's psychological state (I19), and testimony that can be used to dismantle the cell. He will turn himself in to Guterres if agents arrange it.
+</div>
+</div>
+
+<!-- I18: The Quiescence Stone -->
+<div class="card">
+<div class="front">
+<span class="id">I18</span><span class="type intel-tag">Supporting Intel</span>
+<h2>The Quiescence Stone</h2>
+<p>Shi Yánxìn carries a stone from Bodhidharma's cave at Shaolin — the cave where Bodhidharma sat facing a wall for nine years. The stone is smooth, dark, about the size of a child's fist, sewn into the lining of the monk's robe. It has never been touched by violence. Bodhidharma's nine-year meditation was an act of profound, stubborn peace — the stone absorbed that stillness. If the cup is stored upside-down (mouth downward) on this stone, it becomes inert. The Corruption emission stops. The humming stops. The cup goes quiet. The monk has carried this stone since his release from the labor camp in 1974, waiting for the day he would need it. He will give it to agents who promise to let him see the cup one last time before it's contained. He wants to apologize to it. "It spent 20 years alone in a wall. It spent 1,400 years being loved. I want it to know someone still loves it before it goes quiet forever."</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L6 (Camões Garden — the monk reveals the stone), NPC6 (Shi Yánxìn, after O4M2)<br>
+HQ Fallback: Day 3<br>
+Type: Supporting Intel (directly enables CT-3)<br>
+Notes: The stone is the most reliable quiescence surface. Other surfaces work (zafu cushion, contentment-woven cloth) but the stone is guaranteed, portable, and has emotional weight. Giving the stone to the agents is an act of trust from the monk. Honor it. If agents refuse his request to see the cup, he withholds the stone — they must use an alternative quiescence surface or convince him to reconsider.
+</div>
+</div>
+
+<!-- I19: Nasim's Obsession -->
+<div class="card">
+<div class="front">
+<span class="id">I19</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Nasim's Obsession</h2>
+<p>Nasim has not slept more than 2 hours a night since the private viewing. He does not need to. The cup is keeping him awake. (It's not — it's adrenaline and psychosis — but the cup IS humming, and Nasim CAN hear it.) He believes the cup is the voice of God — a divine instrument placed on Earth to purify the wicked. He has written pages of "conversations" with the cup: question-and-answer dialogues where he supplies both sides, convincing himself the cup agrees with everything he already believes. The photograph in his shirt pocket is creased from being held. He talks to it. He has told the cup about his family — how they died, how he was not there to protect them, how he has been given a second chance to be the instrument of justice he failed to be before. He believes the cup chose him. He is planning to die with it — to throw himself into the reservoir with the cup in his hands, becoming one with the purification. He considers this martyrdom. He is the catastrophe vector.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: L5 (safe house — the back room), NPC3 (Nasim, after O2M3)<br>
+HQ Fallback: Day 2<br>
+Type: Supporting Intel<br>
+Notes: Nasim cannot be saved. This is a tragedy, not a villain arc. He was radicalized by grief before he ever saw the cup; the cup gave his grief a focus. Agents may feel sympathy — that's correct — but they cannot reason with him. He must be stopped by force or superior tactics. If he touches the cup, he will try to activate it immediately. Do not let him touch the cup.
+</div>
+</div>
+
+<!-- I20: Police Close In -->
+<div class="card">
+<div class="front">
+<span class="id">I20</span><span class="type intel-tag">Supporting Intel</span>
+<h2>Police Close In</h2>
+<p>Inspector Guterres has connected João Rosário to the Al-Quds Liberation Front through financial records — the Front's deposit to Silva Import/Export was routed through a Hong Kong account previously flagged in a triads investigation. Guterres now has enough for a counter-terrorism warrant. Macau security forces are mobilizing — the Judiciary Police, the Macau Security Force, and a Portuguese military intelligence liaison. Guterres does not yet know about the cup, the auction, or the fort, but he knows something is happening on Coloane and he intends to find out what. A raid on the fort is being planned for Day 1, Night shift — too late to stop the auction, early enough to arrest everyone leaving it. Guterres is also trying to identify the agents — he's noticed their presence at the bank, the tea house, and the garden. He doesn't know who they are, but they're on his board now.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: O5M2 trigger, NPC7 (Guterres)<br>
+HQ Fallback: Day 2<br>
+Type: Supporting Intel<br>
+Notes: The police raid is a complication, not a catastrophe — unless it happens during the auction, in which case it triggers a multi-party firefight. Agents can preempt the raid by contacting Guterres directly and providing enough information to satisfy his investigation while protecting Covenant secrecy. Guterres is reasonable. He'll listen. But he needs something to tell his superiors.
+</div>
+</div>
+
+<!-- I21: MSS Intervention -->
+<div class="card">
+<div class="front">
+<span class="id">I21</span><span class="type intel-tag">Supporting Intel</span>
+<h2>MSS Intervention Imminent</h2>
+<p>Agent Chen Wei has received new orders: secure the cup for the People's Republic of China "by any means necessary." Her superiors have connected the cup to the Front (through shared MSS-PSB intelligence channels) and escalated the file from cultural property to national security. Chen's surveillance team has been reinforced — she now commands six operatives, all armed, all positioned around Coloane. She has identified the fort as the likely exchange location. She does not intend to start a fight, but she will finish one. Chen is also starting to suspect the cup is more than a cultural artifact — her surveillance photographs show it differently in every frame, and the dead orchid report reached her through a police liaison. She's beginning to understand that "stolen relic" is not the full story. She is not yet prepared for what the full story is. Agents who approach her before the auction may be able to shape her understanding — and her response.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: O6M2 trigger, NPC8 (Agent Chen)<br>
+HQ Fallback: Day 2<br>
+Type: Supporting Intel<br>
+Notes: Chen is the wildcard at the climax. She will intervene if the cup is about to leave Chinese territory — but she can be negotiated with. Acknowledge Chinese sovereignty. Propose a solution that keeps the cup in the region (Hong Kong Keep). Do not try to smuggle the cup past her. She has six armed operatives and the legal authority of the PRC. She will not hesitate.
+</div>
+</div>
+
+<!-- I22: Synthesis -->
+<div class="card">
+<div class="front">
+<span class="id">I22</span><span class="type ct-tag">Containment Truth — Synthesis</span>
+<h2>What This Has Always Been About</h2>
+<p>Bodhidharma's Teacup is not a weapon. It was a tool of awakening — a cup that brewed "poison to delusion," helping monks stay spiritually awake for over a thousand years. The Cultural Revolution broke the daily ritual that maintained it. Without that ritual, the cup's nature drifted. The poison that once killed attachment and illusion now kills everything — human, animal, plant, bacterium, virus. The cup does not know it changed. It still hums when near liquid. It still thinks it's brewing tea. It is confused, not evil. The monk who hid the cup as a teenager has been searching for 38 years. He can help the Covenant contain it — he has the stone from Bodhidharma's cave, and he knows the quiescence condition. If the auction completes, the cup will be used: by terrorists as a weapon against a city's water supply, by a pharmaceutical company as a "cure" that kills everyone it touches, or by a frightened man who believes God speaks through poisoned water. The Covenant's mandate is clear: contain the cup, honor its history, and let no one — not the terrorists, not the pharmaceutical company, not the Chinese state, not a grief-stricken fanatic — turn a confused teacup into an extinction event. Some things that were once holy can still be saved. This is one of them.</p>
+</div>
+<div class="back">
+<strong>DA REFERENCE</strong><br>
+Sources: All. This is the synthesis card — given to agents when they have assembled the full picture, typically at L7 or after the climax.<br>
+HQ Fallback: N/A — cannot be provided by HQ. Must be assembled by agents.<br>
+Type: Containment Truth (synthesis of CT-1, CT-2, CT-3)<br>
+Notes: This card represents the moment the agents understand the case completely. Award it at the climax or during the Aftermath debrief. It is the answer to "what was this really about?" The cup was never a weapon. It was a confused old friend.
+</div>
+</div>
+
+</body>
+</html>

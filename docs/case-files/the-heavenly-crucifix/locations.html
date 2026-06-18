@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations — The Heavenly Crucifix</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; line-height:1.5; }
+  .loc { border:2px solid #1a1a18; padding:16px; margin:20px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; }
+  h2 { font-size:11pt; color:#2d5a27; margin:0 0 8px; }
+  .id { font-size:8pt; color:#4a4a42; float:right; }
+  table { width:100%; border-collapse:collapse; margin:6px 0; font-size:8.5pt; }
+  th { text-align:left; background:rgba(0,0,0,0.06); padding:2px 6px; font-size:6.5pt; text-transform:uppercase; width:80px; }
+  td { padding:2px 6px; border-bottom:1px dotted #999; }
+  .results { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:6px 0; }
+  .pos { border-left:3px solid #2d5a27; padding:4px 8px; font-size:8pt; }
+  .neg { border-left:3px solid #8b1a1a; padding:4px 8px; font-size:8pt; }
+  hr { border:none; border-top:1px dashed #999; }
+  @media print { .loc { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1>Location Pages — The Heavenly Crucifix</h1>
+<p style="color:#4a4a42;">Seven locations. Pull the relevant page when agents arrive.</p>
+
+<!-- L1: Prague Castle Chapel Museum -->
+<div class="loc">
+<h2>L1 — Prague Castle Chapel Museum <span class="id">L1</span></h2>
+<table>
+<tr><th>Description</th><td>A small museum on the castle grounds, housed in a former chapel. Displays objects associated with the Defenestration of 1618 and the Thirty Years' War. Three rooms: the main hall (the defenestration window is here), a side gallery of religious artifacts, and a curatorial office. Quiet, underfunded, staffed by two elderly docents and a part-time curator. The crucifix was displayed in a glass case in the side gallery.</td></tr>
+<tr><th>Availability</th><td>Day shifts only (Morning, Day). Closed Evening and Night. Public access — agents can enter as tourists.</td></tr>
+<tr><th>NPCs Present</th><td>Curator Marek (civilian, not a full NPC — cooperative, knows the forgery is good but not who made it). After O3M1: Cardinal Voss visits, may overlap with agents.</td></tr>
+<tr><th>Information</th><td>I1 (the forgery details), I2 (theft timeline), I3 (police report). I4 (shrine site mention) if agents ask specifically about the crucifix's origin.</td></tr>
+<tr><th>Organizations</th><td>None present at case start. O5 after M1 — police presence.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Curator Marek is flattered by attention. A successful Manipulate (Diff 1) or genuine interest in the history earns full cooperation. The forgery can be examined — Tech or Lore (Diff 2) reveals the iron composition is wrong (modern alloy, not meteoric).</div>
+<div class="neg"><strong>− Negative:</strong> If agents are aggressive or overtly "official," Marek becomes nervous and calls security. Police arrive next shift. If agents handle the forgery without gloves, they leave fingerprints that O5 traces (M1 triggers one day earlier).</div>
+</div>
+</div>
+
+<!-- L2: Countess Martinice, Brno -->
+<div class="loc">
+<h2>L2 — Countess Martinice's Retirement Home, Brno <span class="id">L2</span></h2>
+<table>
+<tr><th>Description</th><td>A state-run retirement facility in Brno, two hours east of Prague. Clean, institutional, smelling of boiled cabbage and disinfectant. Countess Alžběta Martinice, 82, occupies room 314. She is sharp, lonely, and has been waiting for someone to ask about the crucifix. Her room contains family letters, a hand-drawn family tree, and a diary entry from 1908 describing a visit to "the old place in the forest."</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Visiting hours end at 8 PM. Staff are indifferent — agents can pass as relatives.</td></tr>
+<tr><th>NPCs Present</th><td>NPC2 (Countess Martinice). After O3M1: Father Tomas (NPC5) may also be visiting — he arrived ahead of the agents.</td></tr>
+<tr><th>Information</th><td>I4 (family tree — traces crucifix to shrine), I5 (the shrine location), I6 (the family letters — mentions "iron from the sky"). I7 (the 1908 diary) if agents build rapport.</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The Countess is eager to help. She gives the agents her family letters and tree if treated with respect. If agents mention the Church, she becomes guarded — she knows the Church suppressed the shrine story and does not trust clergy. A Psychoanalyze (Diff 1) reveals she's been holding onto this story her whole life, waiting for someone who would believe her.</div>
+<div class="neg"><strong>− Negative:</strong> If agents are dismissive, impatient, or threaten the Countess, she closes down permanently. Information can only be recovered via HQ fallback (losing 2 shifts). If Father Tomas is present, he will report the agents' visit to Cardinal Voss immediately.</div>
+</div>
+</div>
+
+<!-- L3: Vienna First District Gallery -->
+<div class="loc">
+<h2>L3 — Kunstsalon Heller, Vienna First District <span class="id">L3</span></h2>
+<table>
+<tr><th>Description</th><td>A private antiquities gallery in Vienna's wealthy First District. Discreet, appointment-only, specializing in "special provenance" objects — code for items with questionable ownership histories. The owner,Dieter Heller, is a middleman between thieves and collectors. The back room has a reinforced door, a safe, and soundproofing.</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Appointments required — agents must pose as buyers or use credentials. Night access requires infiltration.</td></tr>
+<tr><th>NPCs Present</th><td>Dieter Heller (civilian, not a full NPC — nervous, greedy, easily intimidated). Elena Varga (NPC4) may be present depending on O2 progression.</td></tr>
+<tr><th>Information</th><td>I8 (the Vienna test — Heller witnessed it), I9 (Compact's involvement), I10 (buyer is "an American, very famous — you would know the name"). I11 (Munich bank vault location) if Heller is pressured or paid.</td></tr>
+<tr><th>Organizations</th><td>O2 (Compact). After O2M2: O6 may begin surveillance.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Heller is terrified of the thief after watching him survive three point-blank gunshots in the back room. He will cooperate with anyone who seems capable of making "this nightmare end." A Manipulate or Command (Diff 1) gets full disclosure. Heller can arrange a meeting with Varga.</div>
+<div class="neg"><strong>− Negative:</strong> If agents arrive aggressively, Heller triggers a silent alarm. Compact security arrives in 1 shift. If the meeting goes public (police called, gunfire), O5 advances by 2 squares.</div>
+</div>
+</div>
+
+<!-- L4: Munich Bank Vault -->
+<div class="loc">
+<h2>L4 — Bayerische Handelsbank, Munich <span class="id">L4</span></h2>
+<table>
+<tr><th>Description</th><td>A private bank in central Munich with anonymous safe deposit boxes. Box 718 was rented under a false name three weeks ago. The bank is all marble, brass, and discretion. The vault is underground, time-locked, and guarded.</td></tr>
+<tr><th>Availability</th><td>Day shifts only. The vault requires a key (Reiner has it) + bank manager cooperation, or a Tech/Sneak operation. Evening/Night requires black-bag infiltration (Tech Diff 3, Sneak Diff 2).</td></tr>
+<tr><th>NPCs Present</th><td>Bank Manager Vogel (civilian — officious, rule-bound). Klaus Reiner (NPC3) is NOT here — the crucifix is gone — but the box contains evidence of his stay: a discarded shirt with bloodstains (no wounds, but the shirt tore when he was shot), a receipt for a Vienna hotel, and a note with Varga's contact number.</td></tr>
+<tr><th>Information</th><td>I11 (Varga's contact), I12 (Reiner's psychological state — the shirt and note suggest testing), I13 (Compact's fee structure — found in a discarded envelope). I14 (the Zurich meeting) from a travel itinerary in the box.</td></tr>
+<tr><th>Organizations</th><td>None present. After O5M2: German police may be coordinating with Svoboda.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> A smooth operation (bank hours, forged credentials, or a good Manipulate on Vogel) yields the box contents cleanly. The evidence allows agents to track Varga directly.</div>
+<div class="neg"><strong>− Negative:</strong> A botched infiltration triggers the bank's security. Munich police respond. O5 advances by 1. The box is impounded as evidence — agents must request it through HQ, costing 2 shifts.</div>
+</div>
+</div>
+
+<!-- L5: Zurich Private Airport -->
+<div class="loc">
+<h2>L5 — Zurich Private Aviation Terminal <span class="id">L5</span></h2>
+<table>
+<tr><th>Description</th><td>A discreet FBO (fixed-base operator) serving private jets at Zurich Airport. The meeting between Varga and Warhol's intermediary occurred here, in a private lounge. The terminal has flight logs, a café, and staff who are paid to forget faces.</td></tr>
+<tr><th>Availability</th><td>All shifts. The terminal is always staffed. Public access to the café — agents can pose as travelers. Flight logs require credentials or a bribe.</td></tr>
+<tr><th>NPCs Present</th><td>Terminal manager (civilian — professional, discreet). NPC7 (Warhol's intermediary) if agents arrive at the right time.</td></tr>
+<tr><th>Information</th><td>I14 (the Gulfstream tail number), I15 (flight plan — New York to Zurich, no return filed), I16 (the intermediary's name). I17 (Warhol's identity — the manager recognized him: "the soup can artist").</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> A generous bribe or successful Manipulate (Diff 2) on the terminal manager gets the flight logs and the intermediary's contact. The tail number traces to Warhol's holding company.</div>
+<div class="neg"><strong>− Negative:</strong> If agents are overt or threatening, the manager reports them to Swiss aviation security. Access is revoked. HQ must pull the records, costing 2 shifts. O4 activates with a 1-square penalty.</div>
+</div>
+</div>
+
+<!-- L6: Bohemian Forest Shrine Site -->
+<div class="loc">
+<h2>L6 — Pagan Shrine Site, Bohemian Forest (Šumava) <span class="id">L6</span></h2>
+<table>
+<tr><th>Description</th><td>A remote clearing deep in the Šumava National Park, near the West German border. The shrine was demolished in the 11th century, but the foundation stones remain — a circle of weathered granite blocks, half-buried under moss and fallen leaves. The air is cold even in summer. Metal detectors register faint returns beneath the soil. The site has a palpable stillness — no birdsong, no animal tracks. The Corruption signature is low but constant: an ambient hum at the edge of perception.</td></tr>
+<tr><th>Availability</th><td>All shifts. Accessible only by hiking trail (2 shifts from Prague, 1 shift from the hunting lodge). No roads. No facilities. Agents must carry in equipment.</td></tr>
+<tr><th>NPCs Present</th><td>None at case start. After O6M1: a two-man KGB surveillance team is in the area (not at the shrine itself — observing from a distance).</td></tr>
+<tr><th>Information</th><td>I18 (the meteorite fragments — still in the ground), I19 (the pagan origin confirmed — Slavic ritual objects among the stones), CT-1 (full confirmation of the pagan origin), CT-3 (additional iron fragments are harvestable).</td></tr>
+<tr><th>Organizations</th><td>After O6M1: Soviet Intelligence is active in the area.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Excavating a fragment (Force + Tech combined, Diff 2, 2 hours) recovers a fist-sized piece of meteoric iron. A Lore roll (Diff 2) confirms its composition matches the crucifix. Agents can seal the site with a Containment Protocol ward (NPC5's talent if present, or the team's Keep agent).</div>
+<div class="neg"><strong>− Negative:</strong> Digging without proper containment training triggers a Corruption Aura: +1 Corruption per scene at the site. If the KGB team is present, they photograph the agents and report to Moscow. O6 advances by 1. If agents extract iron without authorization, they are in Covenant protocol violation — Standing loss on case completion.</div>
+</div>
+</div>
+
+<!-- L7: Bavarian Hunting Lodge -->
+<div class="loc">
+<h2>L7 — Jagdhütte Alpenblick, Bavarian Forest <span class="id">L7</span></h2>
+<table>
+<tr><th>Description</th><td>A remote hunting lodge 3 km from the West German–Czech border. Stone construction, timber roof, two floors. The main hall has a stone fireplace, mounted antlers, and heavy wooden furniture. The basement is a cold storage room converted to a meeting space. The lodge is owned by a Compact shell company. Isolated — nearest village is 12 km. Access by a single forest road.</td></tr>
+<tr><th>Availability</th><td>Accessible after O2M3 (Day 2). Before that, the location is unknown. After Day 2, agents can reach it: 1 shift from Munich, 1 shift from the shrine site. The exchange is scheduled for Day 1, Evening shift.</td></tr>
+<tr><th>NPCs Present</th><td>Day 2–1: Klaus Reiner (NPC3), Elena Varga (NPC4). Day 1 Evening: Cardinal Voss (NPC1), Hans (NPC6), Father Tomas (NPC5). Day 1 Evening: Andy Warhol (NPC8) arrives by car from the airstrip.</td></tr>
+<tr><th>Information</th><td>I21 (Warhol's motivation), I22 (the full story — the shrine, the meteorite, the Church's suppression). All remaining unrecovered Information Cards become available here as final revelations.</td></tr>
+<tr><th>Organizations</th><td>O1, O2, O3, O4 converge here at Day 1. This is the climax.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Agents arrive before the exchange and control the environment. They can set up containment, negotiate with Varga (she will betray Reiner for the right price), or intercept Warhol before he enters. A coordinated plan involving all team members can achieve containment without violence.</div>
+<div class="neg"><strong>− Negative:</strong> If agents arrive during or after the exchange, they walk into a three-way standoff. Reiner is invincible and manic. Varga's security is armed. The Church team is in position. Warhol is in the parking lot. Any gunfire triggers O5 (police) and potentially O6 (Soviet response). A Breach result here is catastrophic — multiple deaths, international incident, artifact lost.</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEON RELIC — Information Cards</title>
+<title>NEON RELIC � Information Cards</title>
 <style>
-  /* ── RESET ── */
+  /* -- RESET -- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* ── FONTS ── */
+  /* -- FONTS -- */
   @font-face {
     font-family: 'SpecialElite';
     src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
@@ -22,11 +22,11 @@
     font-weight: normal; font-style: normal;
   }
 
-  /* ── PAGE ── */
+  /* -- PAGE -- */
   @page { size: letter portrait; margin: 0; }
   @media print {
     html, body { margin: 0; padding: 0; background: none; height: auto; }
-    .page { box-shadow: none; margin: 0; height: auto; overflow: visible; page-break-inside: avoid; page-break-after: always; }
+    .page { box-shadow: none; margin: 0; height: auto; overflow: visible; page-break-inside: avoid; page-break-after: always; background-color: #f0ead6 !important; }
     .page:last-child { page-break-after: auto; }
   }
 
@@ -34,7 +34,7 @@
     --ink:          #1a1a18;
     --ink-faded:    #4a4a42;
     --ink-light:    #8a8a7e;
-    --paper:        #e8e4d8;
+    --paper:        #f0ead6;
     --green-stamp:  #2d5a27;
     --red-stamp:    #8b1a1a;
     --rule:         #999;
@@ -69,7 +69,7 @@
   }
   .page-break { page-break-after: always; }
 
-  /* ── PAPER TEXTURE ── */
+  /* -- PAPER TEXTURE -- */
   .page::before {
     content: '';
     position: absolute; inset: 0;
@@ -89,7 +89,7 @@
   }
   .page > * { position: relative; z-index: 1; }
 
-  /* ── CARD ── */
+  /* -- CARD -- */
   .card {
     border: 1px dashed #bbb;
     padding: 0.18in 0.22in;
@@ -99,7 +99,7 @@
     overflow: hidden;
   }
 
-  /* ── FRONT CARD (Player-Facing) ── */
+  /* -- FRONT CARD (Player-Facing) -- */
   .card-front .card-id {
     font-family: var(--font-main);
     font-size: 10pt; font-weight: bold; letter-spacing: 2px;
@@ -148,7 +148,7 @@
     text-align: center;
   }
 
-  /* ── BACK CARD (DA-Facing) ── */
+  /* -- BACK CARD (DA-Facing) -- */
   .card-back {
     background: rgba(45,90,39,0.03);
   }
@@ -218,11 +218,11 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════
-     PAGE 1 — FRONT SIDES (Player-Facing)
+<!-- --------------------------------------------------
+     PAGE 1 � FRONT SIDES (Player-Facing)
      Print this page, then flip and print page 2
      on the back to create double-sided cards.
-     ══════════════════════════════════════════════════ -->
+     -------------------------------------------------- -->
 <div class="page page-break">
 
   <!-- Card 1 Front -->
@@ -315,15 +315,15 @@
 
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     PAGE 2 — BACK SIDES (DA-Facing)
+<!-- --------------------------------------------------
+     PAGE 2 � BACK SIDES (DA-Facing)
      Mirror layout: print on reverse of page 1.
      Cards are mirrored left-to-right so they align
      when the page is flipped on the long edge.
-     ══════════════════════════════════════════════════ -->
+     -------------------------------------------------- -->
 <div class="page">
 
-  <!-- Card 2 Back (mirrors Card 2 position — right col, row 1) -->
+  <!-- Card 2 Back (mirrors Card 2 position � right col, row 1) -->
   <div class="card card-back">
     <div class="back-header">
       <div class="back-title">DA Reference</div>
@@ -340,7 +340,7 @@
     <div><span class="field-label">Notes</span><div class="field-value med"></div></div>
   </div>
 
-  <!-- Card 1 Back (mirrors Card 1 position — left col, row 1) -->
+  <!-- Card 1 Back (mirrors Card 1 position � left col, row 1) -->
   <div class="card card-back">
     <div class="back-header">
       <div class="back-title">DA Reference</div>

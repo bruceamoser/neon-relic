@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations — The Barbarian's Cup</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; line-height:1.5; }
+  .loc { border:2px solid #1a1a18; padding:16px; margin:20px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; }
+  h2 { font-size:11pt; color:#2d5a27; margin:0 0 8px; }
+  .id { font-size:8pt; color:#4a4a42; float:right; }
+  table { width:100%; border-collapse:collapse; margin:6px 0; font-size:8.5pt; }
+  th { text-align:left; background:rgba(0,0,0,0.06); padding:2px 6px; font-size:6.5pt; text-transform:uppercase; width:80px; }
+  td { padding:2px 6px; border-bottom:1px dotted #999; }
+  .results { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:6px 0; }
+  .pos { border-left:3px solid #2d5a27; padding:4px 8px; font-size:8pt; }
+  .neg { border-left:3px solid #8b1a1a; padding:4px 8px; font-size:8pt; }
+  hr { border:none; border-top:1px dashed #999; }
+  @media print { .loc { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1>Location Pages — The Barbarian's Cup</h1>
+<p style="color:#4a4a42;">Seven locations. Pull the relevant page when agents arrive.</p>
+
+<!-- L1: Banco de Macau -->
+<div class="loc">
+<h2>L1 — Banco de Macau, Safety Deposit Vault <span class="id">L1</span></h2>
+<table>
+<tr><th>Description</th><td>A Portuguese colonial-era bank on Macau's main avenue, Avenida de Almeida Ribeiro. Marble floors, slow ceiling fans, staff who've worked there for 30 years. The cup is in box 419, rented under the name "Silva Import/Export" (Rosário's shell company). The vault is time-locked — accessible during banking hours with the key + manager approval. After hours requires infiltration (Tech Diff 3, Sneak Diff 2). The bank has an old silent alarm system — unreliable but still connected to the Macau police station three blocks away.</td></tr>
+<tr><th>Availability</th><td>Day shifts only (Morning, Day). Closed Evening and Night. Banking hours: 9 AM–5 PM.</td></tr>
+<tr><th>NPCs Present</th><td>Bank Manager Oliveira (civilian — officious, bribable, knows the value of his discretion). After O5M1: plainclothes police presence in the lobby.</td></tr>
+<tr><th>Information</th><td>I1 (the cup's current location confirmed), I2 (Rosário's rental records — Silva Import/Export is a front). I11 (the looter's original sales receipt) if agents search the box contents.</td></tr>
+<tr><th>Organizations</th><td>O1 (Rosário has access — he holds one of the two required keys). After O5M1: O5 (police presence).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> A successful Manipulate (Diff 2) on Oliveira confirms the box number and renter. A substantial bribe (Oliveira knows his value) gets a 10-minute private vault visit during banking hours. The sales receipt inside the box traces the cup from Henan to Hong Kong to Macau.</div>
+<div class="neg"><strong>− Negative:</strong> Botched infiltration triggers the silent alarm. Macau police respond within 15 minutes. Box 419 is impounded as evidence. O5 activates immediately with a 2-square penalty (or advances by 2 if already active). The cup becomes a police evidence item — recovery now requires legal maneuvering or a police station heist.</div>
+</div>
+</div>
+
+<!-- L2: Rosário's Antique Shop -->
+<div class="loc">
+<h2>L2 — Rosário's Antique Shop, Rua de São Paulo <span class="id">L2</span></h2>
+<table>
+<tr><th>Description</th><td>A narrow three-story shop near the ruins of St. Paul's — Macau's most famous landmark. Ground floor: legitimate antiques (mostly fake — Rosário is a competent forger). Second floor: Rosário's office — ledger books, auction records, a wall safe behind a framed print of St. Francis Xavier. Third floor: Rosário's apartment — cluttered, bachelor, he's been sleeping on the couch because his bedroom is too close to the safe where he briefly stored the cup and now the room feels "wrong." He can't explain it. The bedroom door has been closed for two weeks.</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Shop is open to the public during Day — agents can enter as customers. Evening requires appointment or infiltration. Night: Rosário is usually home, sleeping on the couch.</td></tr>
+<tr><th>NPCs Present</th><td>João Rosário (NPC1) — he lives here. After O4M1: Shi Yánxìn may visit, seeking Rosário — the monk has been tracing the cup's path and Rosário is the last link.</td></tr>
+<tr><th>Information</th><td>I3 (auction structure — sealed bid, 10-day window, 3 confirmed bidders), I4 (Rosário's Covenant backchannel — he was an informant from 1979–1984), I5 (the bidders' codenames — Rosário doesn't know the Front's real identity, but suspects Daewon). After O1M2: I6 (the auction in jeopardy).</td></tr>
+<tr><th>Organizations</th><td>O1. After O5M1: O5 may have surveillance outside.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Rosário cooperates if treated with respect — or a credible threat. He'd rather the Covenant take the cup than complete the auction. He just needs deniability. A Manipulate (Diff 2) or genuine appeal to his fear gets full cooperation. If agents bring up Sister Maria Cheng (regional contact), Rosário's emotional guard drops — she's the one person from his seminary days he still respects.</div>
+<div class="neg"><strong>− Negative:</strong> If agents are aggressive, overt, or humiliate Rosário in front of neighbors, he triggers a dead-man switch — the auction closes early. Lose 2 shifts. Advance all orgs by 2 squares. Rosário also has a panic button connected to a private security firm. They arrive in 1 shift.</div>
+</div>
+</div>
+
+<!-- L3: The Tea House -->
+<div class="loc">
+<h2>L3 — The Tea House, Travessa da Paixão <span class="id">L3</span></h2>
+<table>
+<tr><th>Description</th><td>A traditional Macanese tea house on a narrow side street whose name means "Passion Lane." Bamboo screens, private rooms with sliding paper doors, staff paid to forget faces. The viewing room (Room 7, at the back) still contains the table where the cup was displayed during private viewings for both the Front and Daewon. The potted orchid in the corner is dead — a single drop of water touched the cup's interior during the Front's viewing (Nasim, distracted by the cup's humming, accidentally let it contact a water droplet on the table). The tea house owner is baffled and slightly superstitious about Room 7 now. He's been burning incense in there.</td></tr>
+<tr><th>Availability</th><td>All shifts. Public access — agents can enter as customers. Room 7 requires a tea order (minimum spend) or a bribe to the owner. The owner lingers — he wants to know what happened to his orchid.</td></tr>
+<tr><th>NPCs Present</th><td>Tea House Owner (civilian — superstitious, talkative, keeps a cricket in a cage by the register). Possible: Rosário (NPC1) if he's arranging another viewing. Farouk (NPC2) if he returns to the scene (unlikely — he doesn't want to see Room 7 again). Daewon representatives depending on timing.</td></tr>
+<tr><th>Information</th><td>I8 (the dead orchid — forensic evidence of the cup's effect). I9 (the Front's viewing — the owner saw everything from behind the bamboo screen; Farouk was terrified, Nasim was enraptured). I10 (Daewon's viewing — Yoon swabbed the table after the cup was removed; the owner thought it was weird but didn't intervene). CT-1 trigger evidence (the cup touched water accidentally — the orchid proves it).</td></tr>
+<tr><th>Organizations</th><td>None permanently. O1, O2, O3 may be present at different times based on case progression.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Examining the dead orchid with Tech or Lore (Diff 2) reveals cellular death with no known mechanism — the plant cells are intact but not alive. This is the first hard evidence of the cup's unique lethality. The owner, if treated kindly, shares everything he saw during both viewings. He's been dying to tell someone.</div>
+<div class="neg"><strong>− Negative:</strong> If agents disturb Room 7 before gathering evidence, Rosário hears about it (the owner calls him) and has the room cleaned. Evidence lost. I8 becomes HQ-only (Day 6 fallback). The owner becomes uncooperative — he doesn't want trouble.</div>
+</div>
+</div>
+
+<!-- L4: Daewon Hong Kong Office -->
+<div class="loc">
+<h2>L4 — Daewon Pharmaceutical Regional Office, Hong Kong <span class="id">L4</span></h2>
+<table>
+<tr><th>Description</th><td>A sleek 23rd-floor office in a Central District tower. Floor-to-ceiling windows overlooking Victoria Harbour. The office has a meditation room, kombucha on tap, a living wall of ferns, and a framed quote from Park's favorite wellness book: "The universe provides for those who align." Below the surface: a secure R&D briefing room where Yoon has been analyzing the cup data. Her laptop contains preliminary findings — and copies of data she hasn't shared with Park.</td></tr>
+<tr><th>Availability</th><td>Day shifts only. Corporate security at the lobby — agents must pose as business visitors, investors, or regulators. Evening/Night requires infiltration (Tech Diff 2, Sneak Diff 3) — the tower has 24-hour security and keycard access after 7 PM.</td></tr>
+<tr><th>NPCs Present</th><td>Dr. Park Min-ho (NPC4) if agents arrive during business hours — he's usually in the meditation room between meetings. Dr. Yoon Seo-yeon (NPC5) in the R&D briefing room — she rarely leaves.</td></tr>
+<tr><th>Information</th><td>I10 (Daewon's theory — poison as cure). I14 (Yoon's preliminary analysis — it kills everything, including human cells). I15 (Park's personal notes — his journal about the cup's "energy" is on his desk; he leaves it out because he doesn't think anyone would find his beliefs unusual).</td></tr>
+<tr><th>Organizations</th><td>O3.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Yoon is having doubts. A genuine conversation (Psychoanalyze Diff 2) or a demonstration of the cup's danger may flip her. She can provide the Daewon bid amount ($7M), the security team details (4 former ROK special forces), and the mobile lab location. Park will talk to anyone about his vision — extracting information from him is easy; extracting useful information requires patience.</div>
+<div class="neg"><strong>− Negative:</strong> Park is unreachable by reason. Any attempt to convince him the cup is dangerous is interpreted as "negative energy" or "fear-based thinking." He will smile, offer kombucha, and have security escort agents out. If agents threaten Park, Daewon security engages — treat as Medium-threat (Force 3, Endure 2, Armor 1). If agents break into the office at night, Yoon's laptop is encrypted (Tech Diff 3).</div>
+</div>
+</div>
+
+<!-- L5: Al-Quds Safe House -->
+<div class="loc">
+<h2>L5 — Al-Quds Safe House, Coloane Village <span class="id">L5</span></h2>
+<table>
+<tr><th>Description</th><td>A rented fishing cottage on the southern coast of Coloane Island. Isolated, overgrown, smells of salt and neglect. The cottage has two rooms: a front room with maps, a shortwave radio, a laptop (incongruously modern — Farouk's), and a cork board with photographs of Macau infrastructure, and a back room where Nasim sits in the dark with a photograph of the cup. Farouk sleeps in the car — a rented Toyota parked in the weeds. He doesn't like being in the same building as the photograph. The cottage has no running water (the pump is broken) — the irony of planning water poisoning from a house with no water is lost on Nasim.</td></tr>
+<tr><th>Availability</th><td>All shifts. Remote — 1 shift travel from central Macau. No police presence. No neighbors within 500 meters. The nearest village is a 20-minute walk. The cottage is visible from the coastal path but not from the road.</td></tr>
+<tr><th>NPCs Present</th><td>Farouk Al-Masri (NPC2), Nasim (NPC3). Always at least one present. Farouk is outside during the day (sitting in the car, staring at the sea). Nasim is inside, always. At night, Farouk sometimes walks the coastal path alone.</td></tr>
+<tr><th>Information</th><td>I12 (the Front's target — a reservoir in the Hong Kong New Territories; maps and timetables on the cork board). I17 (Farouk's doubts — he'll confess if approached alone, away from Nasim). I19 (Nasim's obsession — the back room contains his "shrine" to the cup: the photograph, a candle, pages of writing in Arabic describing his conversations with the cup).</td></tr>
+<tr><th>Organizations</th><td>O2.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Farouk is reachable — if approached alone (Morning shift, when he walks the coastal path). A Manipulate (Diff 3) or Psychoanalyze (Diff 2) can convince him to withdraw the bid and provide the Front's plans. He cries when he agrees. He's not a killer. He's a frightened man who made terrible choices and wants someone to tell him there's a way out.</div>
+<div class="neg"><strong>− Negative:</strong> Nasim cannot be reasoned with. If agents are detected approaching the cottage, Nasim attacks — not strategically, but suicidally. He wants to die near the cup. He considers this martyrdom. Treat as Medium-threat combatant (Force 2, Endure 2, no armor, no self-preservation instinct). If Nasim is killed, Farouk shuts down completely — all information from him becomes inaccessible without extensive intervention.</div>
+</div>
+</div>
+
+<!-- L6: Camões Garden -->
+<div class="loc">
+<h2>L6 — Camões Garden, Macau <span class="id">L6</span></h2>
+<table>
+<tr><th>Description</th><td>A quiet public garden named after the Portuguese poet Luís de Camões, whose bronze bust watches over the grotto. Grottoes, banyan trees with aerial roots, mosaic-tiled benches, old men playing Chinese chess. Every morning, an old monk sits on the same bench near the grotto, feeding pigeons from a paper bag. He's been doing this for three weeks — since he arrived in Macau. The pigeons are very fat. The monk is very patient. He chose this bench because it has a clear sightline to both the garden entrance and the back path. He sees everyone who enters.</td></tr>
+<tr><th>Availability</th><td>All shifts. Public park — agents can approach freely. The monk is present every Morning shift (guaranteed). Other shifts: 50% chance (roll a die; on even, he's there). He's never there at Night — he stays at a Buddhist guesthouse in the Inner Harbour.</td></tr>
+<tr><th>NPCs Present</th><td>Shi Yánxìn (NPC6). After O4M1: he expects the agents and will greet them by name. He may have tea waiting — green tea, not poisoned, from a thermos he carries. He does not drink from the cup he's looking for.</td></tr>
+<tr><th>Information</th><td>I7 (the cup's true history — Bodhidharma, Shaolin, the ritual). I8 (what broke the cup — the Cultural Revolution, the interrupted ritual, the drift). I18 (the quiescence stone — sewn into his robe, a stone from the cave where Bodhidharma sat facing a wall for nine years). CT-2 source (the cup's appetite — the monk can explain what the cup is drawn to). CT-3 source (quiescence — the monk knows how to make the cup go quiet).</td></tr>
+<tr><th>Organizations</th><td>O4.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The monk is an ally. He shares everything if agents show respect — not for him, but for the cup. "It is not evil. It is confused. There is a difference." He offers the stone from Bodhidharma's cave if agents promise to let him see the cup one last time before it's contained. A genuine conversation with the monk (no roll needed — just roleplay it) yields I7, I8, and the framework for CT-2.</div>
+<div class="neg"><strong>− Negative:</strong> If agents are dismissive, aggressive, or mock the cup's spiritual significance, the monk withdraws. He still helps — he won't let the cup be used as a weapon — but on his terms, on his timeline. Information delayed by 2 shifts. He will not give the stone. "You see a weapon. I see a confused old friend. Come back when you see more clearly."</div>
+</div>
+</div>
+
+<!-- L7: Fortaleza de Coloane -->
+<div class="loc">
+<h2>L7 — Fortaleza de Coloane (Abandoned Portuguese Fort) <span class="id">L7</span></h2>
+<table>
+<tr><th>Description</th><td>A crumbling 17th-century Portuguese fort on Coloane's eastern headland. Cannon emplacements overlooking the South China Sea — the cannons are rusted, pointing at nothing. The central courtyard has been cleared for the auction: a single wooden table (borrowed from a village church), six folding chairs, a portable generator powering a single bare bulb hung from a cannon mount. The fort is isolated — one dirt road in, the sea on three sides, cliffs dropping 30 meters to rocks and white water. Rosário chose it because "no one comes here." The wind is constant. The bulb swings. The sea is loud.</td></tr>
+<tr><th>Availability</th><td>Accessible after O2M3 (Day 2). Before that, the location is unknown — Rosário hasn't disclosed it. After Day 2, agents can reach it: 1 shift travel from central Macau (ferry to Coloane, then jeep or hike). The auction is scheduled for Day 1, Evening shift. All parties converge that night.</td></tr>
+<tr><th>NPCs Present</th><td>Day 1 Evening: João Rosário (NPC1) — auctioneer, terrified, standing behind the table. Farouk Al-Masri (NPC2) — sitting in a folding chair, visibly shaking. Nasim (NPC3) — standing behind Farouk, sleepless, watching the road. Dr. Park Min-ho (NPC4) — serene, hands folded, waiting for destiny. Dr. Yoon Seo-yeon (NPC5) — in the hazmat van parked 100 meters down the road, monitoring via radio. Shi Yánxìn (NPC6) — in the shadows, near the eastern cannon. Watching. Waiting. Possible: Inspector Guterres (NPC7) if O5M2 triggered — police approach from the road. Agent Chen Wei (NPC8) if O6M2 triggered — MSS team in position on the headland.</td></tr>
+<tr><th>Information</th><td>I22 (synthesis card — the full story). All remaining unrecovered Information Cards. CT-1, CT-2, CT-3 converge here.</td></tr>
+<tr><th>Organizations</th><td>O1, O2, O3, O4 converge. O5, O6 may appear depending on earlier triggers. This is the climax.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Agents arrive before the envelopes are opened. They can negotiate, intervene, or intercept any handoff. The monk is present — if agents have the stone, he can perform the quiescence ritual on-site (requires 10 uninterrupted minutes of the cup resting inverted on the stone). Farouk can be flipped. Yoon can be turned. Park can be stalled. Rosário will follow whoever seems most likely to survive. The scene is tense but controllable — until someone moves.</div>
+<div class="neg"><strong>− Negative:</strong> If agents arrive during or after the envelope opening, the winner has the cup. If multiple parties attempt to claim it simultaneously, violence erupts. Nasim will try to take the cup and run toward the sea — he plans to throw himself in with the cup, poisoning the water around him. Park will try to "reason" with everyone — he is genuinely confused when people don't see the cup's "beauty." Rosário will hide behind the cannons. A Breach result here is catastrophic: the cup is in play, at least one party will try to use it, and the Corruption spike will be detectable by every Covenant monitoring station in the hemisphere.</div>
+</div>
+</div>
+
+</body>
+</html>

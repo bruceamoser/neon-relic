@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations — The Boudica Pact</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; line-height:1.5; }
+  .loc { border:2px solid #1a1a18; padding:16px; margin:20px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; }
+  h2 { font-size:11pt; color:#2d5a27; margin:0 0 8px; }
+  .id { font-size:8pt; color:#4a4a42; float:right; }
+  table { width:100%; border-collapse:collapse; margin:6px 0; font-size:8.5pt; }
+  th { text-align:left; background:rgba(0,0,0,0.06); padding:2px 6px; font-size:6.5pt; text-transform:uppercase; width:80px; }
+  td { padding:2px 6px; border-bottom:1px dotted #999; }
+  .results { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:6px 0; }
+  .pos { border-left:3px solid #2d5a27; padding:4px 8px; font-size:8pt; }
+  .neg { border-left:3px solid #8b1a1a; padding:4px 8px; font-size:8pt; }
+  hr { border:none; border-top:1px dashed #999; }
+  @media print { .loc { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1>Location Pages — The Boudica Pact</h1>
+<p style="color:#4a4a42;">Seven locations. Pull the relevant page when agents arrive.</p>
+
+<!-- L1: Dunn's Farm -->
+<div class="loc">
+<h2>L1 — Dunn's Farm, Staffordshire <span class="id">L1</span></h2>
+<table>
+<tr><th>Description</th><td>A failing farm in rural Staffordshire. The crops in the north field are withered — not dead, but grey, as though colour has been drained from them. Locusts sit motionless on the fence posts, all facing inward toward the field. The well water tastes of salt — brine, in the middle of England. The farmhouse is locked. Post piles up on the doorstep — uncollected for two weeks. The binding locus is a spot in the north field where the soil is darker, warmer to the touch, and the ground feels… wrong underfoot. A hole, approximately 2 cm in diameter and 1.2 meters deep, marks where the coin was — the plough strike is visible in the surrounding soil.</td></tr>
+<tr><th>Availability</th><td>All shifts. Remote — 1 shift from Birmingham. No roadblocks at case start.</td></tr>
+<tr><th>NPCs Present</th><td>None (Dunn is gone). After O3M1: Ministry officials and Mr. Philip Croft (NPC7) may be present.</td></tr>
+<tr><th>Information</th><td>I1 (the epicenter confirmed), I2 (the hole — gold residue and anomalous mineral content), I7 (local folklore — "the red woman under the hill").</td></tr>
+<tr><th>Organizations</th><td>O3 after activation (Ministry of Agriculture presence).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Soil analysis (Tech Diff 1) confirms gold particulate and a mineral signature not native to the region — the gold is Anglo-Saxon in composition, and there are trace elements consistent with 1st-century CE Roman smelting techniques. The hole is exactly 1.2 m deep — consistent with a plough strike. An Investigate (Diff 1) finds partial tyre tracks leading away from the farm — Dunn's truck, headed north.</div>
+<div class="neg"><strong>− Negative:</strong> Extended time at the locus causes +1 Corruption per scene (the entity's proximity). The locusts are unsettling but harmless — unless the hole is disturbed. If agents dig or probe the hole, the locusts swarm defensively: treat as an environmental hazard (Agility Diff 2 to avoid, 1 Physical damage on failure). The swarm disperses after 1 round.</div>
+</div>
+</div>
+
+<!-- L2: The Plough and Furrow -->
+<div class="loc">
+<h2>L2 — The Plough and Furrow (Local Pub), Staffordshire <span class="id">L2</span></h2>
+<table>
+<tr><th>Description</th><td>A village pub three miles from Dunn's farm. Low ceilings, dark wood, a fireplace that's always lit. The regulars — a rotating cast of farmers, retirees, and the village postman — occupy the same stools they've occupied for decades. Arthur Dunn drank here every Thursday. His stool is empty. There's a betting pool pinned to the wall behind the bar: "What Arthur Found." Entries range from "Roman hoard" to "unexploded bomb" to "absolutely nothing and he's having us on." The pot is £47.</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Night: closed.</td></tr>
+<tr><th>NPCs Present</th><td>NPC1 (Composite townsfolk — the regulars). The pub landlord (civilian — talkative, worried about Arthur, will extend last call for anyone asking about him).</td></tr>
+<tr><th>Information</th><td>I3 (Arthur's find — "he showed us a coin one night, gold, Saxon-looking"), I4 (contradictory accounts — the pub bet), I5 (Arthur's habits — fishing trip, Scotland, left suddenly), I7 (local folklore — "the red woman" story).</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Buying a round loosens tongues. A Manipulate (Diff 1) or genuine friendliness gets the full range of stories — contradictory, partial, but collectively painting a picture. Mrs. Albright, a regular in her seventies, has been having dreams about a woman in red standing at the edge of her property. She attributes this to cheese before bed. She's wrong. The contradictions in the stories are the point — agents must sort truth from pub talk.</div>
+<div class="neg"><strong>− Negative:</strong> If agents are aggressive, "official," or flash Covenant credentials, the pub goes quiet. "No comment" from everyone. Information is limited to what's publicly known — I3 only. The regulars close ranks around their missing friend.</div>
+</div>
+</div>
+
+<!-- L3: Birmingham Museum -->
+<div class="loc">
+<h2>L3 — Birmingham Museum and Art Gallery <span class="id">L3</span></h2>
+<table>
+<tr><th>Description</th><td>A Victorian-era museum in central Birmingham. The Anglo-Saxon gallery occupies the east wing — glass display cases housing the Staffordshire Hoard: 3,500 pieces of gold and garnet, arranged by type. The public display includes approximately 30 coins. Below the gallery, accessible through a staff-only stairwell, is the secure vault — climate-controlled, motion-sensored, behind two locked doors with rotating key codes. The vault holds the more fragile hoard pieces and items not on public display. A coin in the public gallery is easier to access but more visible. A coin in the vault is harder to reach but the theft might go unnoticed for hours.</td></tr>
+<tr><th>Availability</th><td>Day shifts (public hours — 10 AM to 5 PM). Evening/Night: closed, security patrols every 45 minutes.</td></tr>
+<tr><th>NPCs Present</th><td>Dr. Helen Price (NPC2 — Day shifts, curator's office). Mr. Samuel Okonkwo (NPC3 — Evening/Night shifts, security desk).</td></tr>
+<tr><th>Information</th><td>I6 (the hoard — 3,500 pieces, "Unrecovered Item #7"), I8 (Dr. Price's notes — the anomalous coin mentioned in dig records), I9 (shifted displays — after O1M1), I15 (Okonkwo's testimony — after O1M2). CT-3 source (any coin from the hoard = valid for the binding).</td></tr>
+<tr><th>Organizations</th><td>O1 (Birmingham Museum).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Dr. Price is a scientist. Evidence moves her. If agents can demonstrate the blight is real and connected to the hoard, she may allow supervised access to a coin — "for scientific study." This is the diplomatic route. Mr. Okonkwo is an ally after O1M2 — he provides patrol gaps, vault code timing, and a 90-second camera loop window. He cannot override security, but he knows when it's vulnerable.</div>
+<div class="neg"><strong>− Negative:</strong> If agents attempt to steal a coin and fail, Price locks down the museum. Police are called. All museum access is permanently revoked. The agents must attempt infiltration at maximum difficulty (+2 to all Sneak/Tech rolls) or abandon the museum route entirely — requiring HQ to source a coin from a private collection (costs 3 shifts). If Okonkwo is threatened or his job is put at risk, he shuts down and provides no further help.</div>
+</div>
+</div>
+
+<!-- L4: The British Library -->
+<div class="loc">
+<h2>L4 — The British Library, London <span class="id">L4</span></h2>
+<table>
+<tr><th>Description</th><td>The manuscript reading room — quiet, climate-controlled, smelling of old paper and leather binding. Readers work at individual desks under soft lamps. Eadwine's chronicle is an 8th-century vellum codex, approximately 40 folios, written in a Mercian minuscule hand. The manuscript is fragile — handled with cotton gloves, supported on a foam rest. The catalogue entry describes it as "Chronicle of the Abbey of St. Chad, Mercia, with marginalia." The marginalia are where the interesting parts are.</td></tr>
+<tr><th>Availability</th><td>Day shifts. Reading room hours: 9:30 AM–8 PM Monday–Thursday, 9:30 AM–5 PM Friday–Saturday. Requires a reader's card — agents can acquire one with credentials (1 hour processing) or a Manipulate (Diff 1) on the admissions desk.</td></tr>
+<tr><th>NPCs Present</th><td>Manuscript librarian (civilian — helpful, precise, will not let anyone mishandle the manuscript. Will provide a magnifying glass and offers tea if agents are respectful).</td></tr>
+<tr><th>Information</th><td>I10 (Eadwine's chronicle — describes the reinforcement of "an older binding made by the iron-men"), I11 (reference to "the book of reckonings in the iron-men's city of stone" — Rome), I16 (Eadwine's marginalia — the binding words in Old English, between complaints about food and the abbot). CT-2 source (Eadwine describes the entity as "the queen who would not leave" and "a wanting that wears the shape of anger").</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The chronicle is the key to the entire case. Eadwine recorded everything — the binding site location, the pact terms (as he understood them), the binding words, and a reference to the Roman ledger in "the iron-men's city of stone." A Lore or Investigate (Diff 2) extracts all relevant information. The binding words are in Old English but Eadwine also provides a Latin gloss in the margin — readable by anyone with Lore or classical education.</div>
+<div class="neg"><strong>− Negative:</strong> The manuscript is in Old English. If no agent reads Old English, the librarian can arrange a translation — but it takes 1 shift. Alternatively, HQ can provide a translation (cost 1 shift). Rushing the manuscript handling or attempting to photograph it without permission gets the agents ejected from the reading room. Access is revoked for 24 hours.</div>
+</div>
+</div>
+
+<!-- L5: Vatican Archive -->
+<div class="loc">
+<h2>L5 — The Vatican Apostolic Archive, Rome <span class="id">L5</span></h2>
+<table>
+<tr><th>Description</th><td>A climate-controlled archive vault beneath the Vatican. Miles of shelves. The air is cool and dry. The ledger — Codex Mercaturae Britanniae — is in Section XVII, shelf 4, mis-catalogued as a medieval merchant's book. It's a thin codex, 12 folios, bound in worn leather. The handwriting is a neat imperial bureaucratic minuscule — the hand of a Roman clerk who recorded an "exceptional expense" without asking what it was for. The ledger was stamped by Agricola's office and countersigned by an unnamed priest of a syncretic cult — Celtic earth-rites meeting Roman contract-law.</td></tr>
+<tr><th>Availability</th><td>Day shifts (archive hours: 9 AM–1 PM, Monday–Saturday). Access requires credentials and an appointment. The appointment system has a six-week backlog. Father Matteo can expedite for scholars or Church-affiliated visitors.</td></tr>
+<tr><th>NPCs Present</th><td>Father Matteo (NPC4 — the archivist).</td></tr>
+<tr><th>Information</th><td>I12 (the ledger — "one binding, site CXVII"), I13 (the terms — gold in earth = binding holds; no quantity specified), I21 (the ledger's provenance — Agricola's stamp, the unnamed priest's countersignature). CT-1 and CT-3 sources.</td></tr>
+<tr><th>Organizations</th><td>O2 (Vatican Archive).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Father Matteo is cooperative. He's a scholar. He's curious about why Covenant agents want a Roman trade ledger. A Manipulate (Diff 2) or genuine scholarly interest expedites access. Church credentials (if any agent has them) bypass the backlog entirely. Matteo has already read the ledger — he can summarize its contents while the physical codex is retrieved. He knows it describes something that shouldn't be in a trade ledger. He's been waiting for someone to ask about it.</div>
+<div class="neg"><strong>− Negative:</strong> If agents attempt to break in or steal the ledger, the Swiss Guard is alerted. The Vatican is not a place to cause an incident. Agents are detained, then deported. The case becomes significantly harder — the ledger's contents must be obtained through HQ fallback (cost 3 shifts). If agents lie to Matteo and he discovers the deception, his disposition drops to 1 — he will still help (his oath requires it) but he provides minimum cooperation and the minimum information. No context. No interpretation. Just the text.</div>
+</div>
+</div>
+
+<!-- L6: Dr. Rhys's Cottage -->
+<div class="loc">
+<h2>L6 — Dr. Rhys's Cottage, Wales <span class="id">L6</span></h2>
+<table>
+<tr><th>Description</th><td>A stone cottage in the Welsh countryside, near Hay-on-Wye. The garden is overgrown in a deliberate, curated way — Dr. Rhys gardens the way she archaeology: letting things reveal themselves. Inside: bookshelves covering every wall, a desk covered in dig notes and photographs, a kettle that's always on. The Staffordshire Hoard excavation records occupy an entire shelf — box files labelled by year, trench, and find number. Somewhere in those boxes is the anomaly report for a coin that didn't match anything else in the hoard.</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Dr. Rhys is retired — she's usually home. She gardens. She's happy to talk about the hoard. Few people ask.</td></tr>
+<tr><th>NPCs Present</th><td>Dr. Margaret Rhys (NPC5).</td></tr>
+<tr><th>Information</th><td>I14 (the anomalous coin — "we couldn't date it, the iconography was wrong"), I19 (the dig records — exact coordinates of the anomalous coin find, matching the binding locus). CT-1 partial source (the coin was deeper than they dug — Dr. Rhys theorized about why).</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Dr. Rhys is delighted to discuss the hoard. She provides the dig records, the anomaly report, and her personal theory: "I think the hoard was buried for a reason, not hidden. Hidden means you want to find it again. Buried means you want it to stay." She's right. No roll required — she gives the agents everything. The dig coordinates are precise to within 2 meters. They match the binding locus on Dunn's farm exactly.</div>
+<div class="neg"><strong>− Negative:</strong> None. Dr. Rhys is a pure ally. The only risk is spending too long in Wales — the clock is ticking in Staffordshire. Travel to and from Wales costs 1 shift each way. Agents must decide if the dig records are worth the time.</div>
+</div>
+</div>
+
+<!-- L7: The Binding Locus (Climax) -->
+<div class="loc">
+<h2>L7 — The Binding Locus, Dunn's Farm (Climax Site) <span class="id">L7</span></h2>
+<table>
+<tr><th>Description</th><td>The exact spot in the north field where the keystone coin was removed. The soil is darker here — almost black, as though something beneath is casting a shadow upward. It's warm to the touch (34–36°C, regardless of weather). The hole — 2 cm wide, 1.2 m deep — is still there. The air tastes metallic. Birds do not sing within 100 meters. At Day 3, the ground begins to breathe — rising and falling millimetres, as though something beneath is inhaling. At Day 1, the silence is absolute. The voice can be heard — not with ears, but at the base of the skull: someone very hungry, very far away, calling.</td></tr>
+<tr><th>Availability</th><td>All shifts. 1 shift from Birmingham. After O3M1: inside the quarantine zone — Sneak (Diff 2) to access without Ministry detection. After O3M2: Sneak (Diff 3) — the quarantine has tightened.</td></tr>
+<tr><th>NPCs Present</th><td>Possible: Ministry officials (O3 — after activation). Arthur Dunn (NPC6 — if found via O4M2). The Entity (NPC8 — manifesting as a heat-shimmer and a voice during the re-burial ritual or at Day 1).</td></tr>
+<tr><th>Information</th><td>I22 (synthesis — what this has always been about). All remaining unrecovered Information Cards become available here as final revelations.</td></tr>
+<tr><th>Organizations</th><td>O3 (after activation). The Entity is present as a condition, not an organization.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The re-burial ritual works — IF agents have a coin from the hoard AND the binding words (from Eadwine's chronicle or the Roman ledger). The ritual takes 10 minutes. The agent performing the burial speaks the words, places the coin in the earth, and covers it. The ground settles. The warmth fades. The locusts disperse. Birdsong returns — tentative at first, then full. The binding is restored. The blight recedes over the following 24 hours. The entity returns to dormancy. The agent pays +2 Corruption.</div>
+<div class="neg"><strong>− Negative:</strong> If re-burial is attempted without the binding words, the ground rejects the coin — Fracture condition triggers (see Relic Sheet). If the entity has reached Day 1 manifestation, the ritual still works but the performing agent takes +3 Corruption (instead of +2) and must make an Endure (AGI) Diff 3 roll or be knocked unconscious by the entity's resistance. If the ritual fails twice (coin shatters), the binding is permanently broken. The entity is unbound. The Decay track advances by 2. The case shifts from "contain" to "survive."</div>
+</div>
+</div>
+
+</body>
+</html>
