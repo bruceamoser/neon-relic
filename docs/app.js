@@ -629,7 +629,7 @@ const NR = (function() {
   }
 
   function buildStepDivision() {
-    let html = '<div class="wizard-step-title">Step 1: Choose Your Division</div>';
+    let html = '<div class="wizard-step-title">Choose Your Division</div>';
     html += '<p style="font-size:8pt; margin-bottom:12px; color:var(--ink-faded);">Your Division is your character class. It defines your role within the Covenant, your primary attribute, your starting skills, and your access to supernatural Division Talents.</p>';
     html += '<div class="option-cards cols-3">';
     Object.entries(NR_DATA.divisions).forEach(([key, div]) => {
@@ -651,7 +651,7 @@ const NR = (function() {
     if (!divKey) return '<p>Select a Division first.</p>';
     const div = NR_DATA.divisions[divKey];
     const subLabel = div.subUnits.label;
-    let html = `<div class="wizard-step-title">Step 2: Choose Your ${subLabel}</div>`;
+    let html = `<div class="wizard-step-title">Choose Your ${subLabel}</div>`;
     html += `<p style="font-size:8pt; margin-bottom:12px; color:var(--ink-faded);">Within the ${div.name} Division, choose your ${subLabel.toLowerCase()} and specialty.</p>`;
     html += '<div class="option-cards cols-2">';
     Object.entries(div.subUnits.options).forEach(([key, opt]) => {
@@ -679,7 +679,7 @@ const NR = (function() {
   }
 
   function buildStepAgeGroup() {
-    let html = '<div class="wizard-step-title">Step 3: Choose Your Age Group</div>';
+    let html = '<div class="wizard-step-title">Choose Your Age Group</div>';
     html += '<p style="font-size:8pt; margin-bottom:12px; color:var(--ink-faded);">Younger characters are physically sharper (more attribute points); older characters are more skilled and better connected (more skill points and higher clearance).</p>';
     html += '<div class="option-cards cols-3">';
     Object.entries(NR_DATA.ageGroups).forEach(([key, ag]) => {
@@ -702,7 +702,7 @@ const NR = (function() {
     const attrs = wizardSelections.attributes || { strength: 2, agility: 2, wits: 2, empathy: 2 };
     const spent = Object.values(attrs).reduce((a, b) => a + b, 0);
     const remaining = ag.attrPoints - spent;
-    let html = `<div class="wizard-step-title">Step 3 (cont.): Distribute Attribute Points</div>`;
+    let html = `<div class="wizard-step-title">Distribute Attribute Points</div>`;
     html += `<p style="font-size:8pt; margin-bottom:4px; color:var(--ink-faded);">You have <strong>${ag.attrPoints} Attribute Points</strong>. Each attribute minimum: 2, maximum: 5.</p>`;
     html += `<div class="points-remaining${remaining < 0 ? ' warning' : ''}">Points remaining: <strong>${remaining}</strong></div>`;
     NR_DATA.attributes.forEach(attr => {
@@ -731,7 +731,7 @@ const NR = (function() {
     const skills = wizardSelections.skills || {};
     const spent = Object.values(skills).reduce((a, b) => a + b, 0);
     const remaining = ag.skillPoints - spent;
-    let html = `<div class="wizard-step-title">Step 4: Distribute Skill Points</div>`;
+    let html = `<div class="wizard-step-title">Distribute Skill Points</div>`;
     html += `<p style="font-size:8pt; margin-bottom:4px; color:var(--ink-faded);">You have <strong>${ag.skillPoints} Skill Points</strong>. No skill may exceed 3, except your Division Key Skill (${NR_DATA.skills.find(s=>s.key===div.keySkill).name}) which may reach 4.</p>`;
     html += `<div class="points-remaining${remaining < 0 ? ' warning' : ''}">Points remaining: <strong>${remaining}</strong></div>`;
     html += '<div style="display:grid; grid-template-columns:1fr 1fr; gap:4px;">';
@@ -757,7 +757,7 @@ const NR = (function() {
     const divKey = wizardSelections.division;
     const subKey = wizardSelections.subUnit;
     if (!divKey || !subKey) return '<p>Select Division and Department first.</p>';
-    let html = '<div class="wizard-step-title">Step 5: Choose Your Three Starting Talents</div>';
+    let html = '<div class="wizard-step-title">Choose Your Starting Talents</div>';
     html += '<p style="font-size:7pt; color:var(--ink-faded); margin-bottom:8px;">Select one talent from each category below.</p>';
 
     // Slot 1: Division Talent OR General Talent
@@ -810,7 +810,7 @@ const NR = (function() {
     const div = NR_DATA.divisions[divKey];
     const isStack = wizardSelections.subUnit === 'stack';
     const kit = isStack && div.stackKit ? div.stackKit : div.startingKit;
-    let html = '<div class="wizard-step-title">Steps 6–7: Statistics & Starting Gear</div>';
+    let html = '<div class="wizard-step-title">Statistics &amp; Starting Gear</div>';
 
     // Calculated stats
     const agKey = wizardSelections.ageGroup;
@@ -841,7 +841,7 @@ const NR = (function() {
   }
 
   function buildStepAnchor() {
-    let html = '<div class="wizard-step-title">Step 9: Choose Your Anchor</div>';
+    let html = '<div class="wizard-step-title">Choose Your Anchor</div>';
     html += '<p style="font-size:8pt; margin-bottom:8px; color:var(--ink-faded);">Your Anchor is a personal source of solace — a practice, habit, or connection that grounds you against the psychological toll of Covenant work. Once per session, dedicate a scene to your Anchor to heal 1d4 Corruption.</p>';
     html += '<p style="font-size:7pt; margin-bottom:8px;">Choose from the list below or invent your own:</p>';
     html += '<div style="max-height:300px; overflow-y:auto; border:1px solid var(--rule); margin-bottom:12px;">';
@@ -862,7 +862,7 @@ const NR = (function() {
   }
 
   function buildStepName() {
-    let html = '<div class="wizard-step-title">Step 10: Name, Country & Biography</div>';
+    let html = '<div class="wizard-step-title">Name, Origin &amp; Biography</div>';
     html += '<div class="field" style="margin-bottom:10px;">';
     html += '<div class="field-label">Agent Name (Surname, First)</div>';
     html += `<input type="text" id="wiz-name" value="${wizardSelections.agentName || ''}" placeholder="e.g., Vasquez, Petra" style="width:100%; font-family:var(--font-fill); padding:6px; border:1px solid var(--rule); font-size:11pt;">`;
@@ -881,6 +881,7 @@ const NR = (function() {
 
   // ─── WIZARD SELECTIONS ──────────────────────────────────
   function wizardSelectDivision(key) {
+    if (wizardSelections.division === key) return; // no-op if same
     wizardSelections.division = key;
     wizardSelections.subUnit = null;
     wizardSelections.specialty = null;
@@ -904,6 +905,7 @@ const NR = (function() {
   }
 
   function wizardSelectAgeGroup(key) {
+    if (wizardSelections.ageGroup === key) return; // no-op if same
     wizardSelections.ageGroup = key;
     wizardSelections.attributes = { strength: 2, agility: 2, wits: 2, empathy: 2 };
     wizardSelections.skills = {};
