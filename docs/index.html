@@ -109,6 +109,46 @@ body {
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
+/* Reference tab wrapper */
+.ref-wrapper {
+  max-width: 900px; margin: 0 auto;
+  background: var(--paper);
+  padding: 20px 24px;
+  border: 1px solid var(--rule);
+}
+.ref-wrapper h2 {
+  font-family: var(--font-main);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 4px; margin-bottom: 12px;
+  font-size: 12pt; letter-spacing: 2px;
+}
+.ref-wrapper h3 {
+  font-family: var(--font-main);
+  font-size: 9pt; color: var(--green-stamp);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px; margin: 16px 0 6px;
+}
+.ref-wrapper h4 {
+  font-size: 8pt; color: var(--green-stamp);
+  margin: 8px 0 4px;
+}
+.ref-wrapper table {
+  width: 100%; border-collapse: collapse; font-size: 7.5pt;
+}
+.ref-wrapper th {
+  text-align: left; background: rgba(0,0,0,0.06);
+  padding: 3px 6px; border-bottom: 1.5px solid var(--ink);
+  font-family: var(--font-main); font-size: 6pt;
+  text-transform: uppercase; letter-spacing: 1px;
+  color: var(--ink-faded);
+}
+.ref-wrapper td {
+  padding: 3px 6px; border-bottom: 1px dotted var(--rule-light);
+  color: var(--ink);
+}
+.ref-wrapper p { font-size: 7.5pt; color: var(--ink-faded); margin-bottom: 6px; }
+.ref-wrapper strong { color: var(--ink); }
+
 /* ═══════════════════════════════════════════════════════════
    CHARACTER SHEET STYLES (matching blank template aesthetic)
    ═══════════════════════════════════════════════════════════ */
@@ -647,6 +687,24 @@ body {
 }
 .info-tip:hover { background: var(--ink); color: var(--paper); }
 
+/* Sheet edit buttons */
+.sheet-edit-btn {
+  font-family: var(--font-main);
+  font-size: 6pt; padding: 1px 5px;
+  border: 1px solid var(--rule);
+  background: var(--field-bg);
+  color: var(--ink-faded);
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.sheet-edit-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* Encumbrance warning */
+.stat-box.encumbered { border-color: var(--red-stamp); border-width: 2px; }
+.stat-box.encumbered .stat-value { color: var(--red-stamp); }
+
 /* DICE ROLLER */
 .dice-pool { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; min-height: 40px; }
 .die {
@@ -762,7 +820,6 @@ body {
      ═══════════════════════════════════════════════════════ -->
 <div id="tab-nav">
   <button class="active" data-tab="tab-sheet">Character Sheet</button>
-  <button data-tab="tab-create">Creation Wizard</button>
   <button data-tab="tab-equipment">Equipment</button>
   <button data-tab="tab-talents">Talents</button>
   <button data-tab="tab-rules">Rules Reference</button>
@@ -803,12 +860,12 @@ body {
         <span class="id-value" contenteditable="true" data-field="name"></span>
       </div>
       <div class="id-cell">
-        <span class="id-label">Division</span>
-        <span class="id-value" data-field="division"></span>
+        <span class="id-label">Division <button class="sheet-edit-btn" onclick="NR.pickDivision()" title="Choose Division">✎</button></span>
+        <span class="id-value" data-field="division" style="cursor:pointer;" onclick="NR.pickDivision()"></span>
       </div>
       <div class="id-cell">
-        <span class="id-label">Wing / Paradigm / Dept.</span>
-        <span class="id-value" data-field="subUnit"></span>
+        <span class="id-label">Wing / Paradigm / Dept. <button class="sheet-edit-btn" onclick="NR.pickSubUnit()" title="Choose Dept">✎</button></span>
+        <span class="id-value" data-field="subUnit" style="cursor:pointer;" onclick="NR.pickSubUnit()"></span>
       </div>
     </div>
     <div class="id-block-row2">
@@ -867,24 +924,28 @@ body {
     </div>
 
     <!-- SECTION V: TALENTS -->
-    <div class="section-title green">Section V &mdash; Talents &amp; Abilities</div>
+    <div class="section-title green">
+      Section V &mdash; Talents &amp; Abilities
+      <button class="sheet-edit-btn" onclick="NR.addExtraTalent()" title="Add talent (6 XP)" style="margin-left:8px;">+ Add Talent</button>
+    </div>
     <div class="three-col">
       <div class="talent-block">
-        <div class="talent-type">Division Talent — or — General Talent</div>
+        <div class="talent-type">Division / General Talent <button class="sheet-edit-btn" onclick="NR.pickTalent(1)" title="Choose">+</button></div>
         <div class="talent-name" data-field="talent1name"></div>
         <div class="talent-desc" data-field="talent1desc"></div>
       </div>
       <div class="talent-block">
-        <div class="talent-type">Wing / Paradigm / Dept. Talent</div>
+        <div class="talent-type">Wing / Paradigm / Dept. Talent <button class="sheet-edit-btn" onclick="NR.pickTalent(2)" title="Choose">+</button></div>
         <div class="talent-name" data-field="talent2name"></div>
         <div class="talent-desc" data-field="talent2desc"></div>
       </div>
       <div class="talent-block">
-        <div class="talent-type">Background Talent</div>
+        <div class="talent-type">Background Talent <button class="sheet-edit-btn" onclick="NR.pickTalent(3)" title="Choose">+</button></div>
         <div class="talent-name" data-field="talent3name"></div>
         <div class="talent-desc" data-field="talent3desc"></div>
       </div>
     </div>
+    <div id="extra-talents"></div>
 
     <div class="sheet-footer">
       <span>VC-7 &bull; The Verdant Covenant &bull; Internal Use Only</span>
@@ -915,22 +976,33 @@ body {
     <!-- EQUIPMENT -->
     <div class="section-title green">Section V (cont.) &mdash; Equipment &amp; Requisitions</div>
     <div class="field-row" style="margin-bottom:5px;">
-      <div class="field">
-        <div class="field-label">Division Signature Item</div>
+      <div class="field" style="flex:2;">
+        <div class="field-label">Division Signature Item <span class="info-tip" onclick="NR.showDivisionItemInfo()" title="Click for item benefits">?</span></div>
         <div class="field-value" data-field="divisionItem"></div>
+      </div>
+      <div class="stat-box">
+        <div class="corr-label">Total Enc.</div>
+        <div class="stat-value" data-field="totalEnc">0</div>
+      </div>
+      <div class="stat-box">
+        <div class="corr-label">Capacity (STR×2)</div>
+        <div class="stat-value" data-field="encCapacity">4</div>
       </div>
     </div>
     <table class="gear-table" id="gear-table">
       <tr><th>Item / Description</th><th class="center">Gear Bonus</th><th class="center">Enc.</th></tr>
-      <!-- 10 rows populated by JS -->
     </table>
+    <div style="text-align:right; margin-top:3px;">
+      <button class="sheet-edit-btn" onclick="NR.addGearItem()" title="Add item">+ Add Item</button>
+    </div>
 
-    <!-- RESOURCE DICE -->
-    <div style="display:flex; gap:14px; align-items:flex-start; margin:6px 0 7px;">
+    <!-- RESOURCE DICE (dynamic) -->
+    <div style="display:flex; gap:14px; align-items:flex-start; margin:6px 0 7px;" id="resource-dice-section">
       <div style="flex:1;">
         <div class="corr-label" style="margin-bottom:4px;">Resource Dice &mdash; click to step down</div>
-        <div style="display:flex; gap:10px;" id="resource-dice">
-          <!-- Populated by JS -->
+        <div style="display:flex; gap:10px;" id="resource-dice"></div>
+        <div style="margin-top:4px;">
+          <button class="sheet-edit-btn" onclick="NR.addResourceDie()" title="Add custom resource die">+ Add Resource</button>
         </div>
       </div>
       <div class="stat-box">
@@ -972,59 +1044,36 @@ body {
 </div><!-- /sheet-container -->
 </div><!-- /tab-sheet -->
 
-<!-- ── TAB: CREATION WIZARD ──────────────────────────────── -->
-<div class="tab-panel" id="tab-create">
-<div class="wizard-container" id="wizard">
-  <div class="wizard-progress" id="wizard-progress"></div>
-  <div id="wizard-steps">
-    <!-- Steps populated by JS -->
-  </div>
-  <div class="wizard-nav">
-    <button id="wiz-prev" onclick="NR.wizardPrev()">← Previous</button>
-    <span style="font-size:8pt;color:var(--ink-faded);" id="wiz-step-label"></span>
-    <button id="wiz-next" onclick="NR.wizardNext()">Next →</button>
-  </div>
-</div>
-</div>
-
 <!-- ── TAB: EQUIPMENT REFERENCE ──────────────────────────── -->
 <div class="tab-panel" id="tab-equipment">
-  <div style="max-width:900px; margin:0 auto;">
-    <h2 style="font-family:var(--font-main); border-bottom:2px solid var(--ink); padding-bottom:4px; margin-bottom:12px;">Equipment Reference</h2>
-    <div id="equipment-ref">
-      <!-- Populated by JS -->
-    </div>
-    <h2 style="font-family:var(--font-main); border-bottom:2px solid var(--ink); padding-bottom:4px; margin:24px 0 12px;">Vehicles</h2>
-    <div id="vehicles-ref">
-      <!-- Populated by JS -->
-    </div>
+  <div class="ref-wrapper">
+    <h2>Equipment Reference</h2>
+    <div id="equipment-ref"><!-- Populated by JS --></div>
+    <h2 style="margin-top:24px;">Vehicles</h2>
+    <div id="vehicles-ref"><!-- Populated by JS --></div>
   </div>
 </div>
 
 <!-- ── TAB: TALENTS REFERENCE ────────────────────────────── -->
 <div class="tab-panel" id="tab-talents">
-  <div style="max-width:900px; margin:0 auto;">
-    <h2 style="font-family:var(--font-main); border-bottom:2px solid var(--ink); padding-bottom:4px; margin-bottom:12px;">Talents Reference</h2>
-    <div id="talents-ref">
-      <!-- Populated by JS -->
-    </div>
+  <div class="ref-wrapper">
+    <h2>Talents Reference</h2>
+    <div id="talents-ref"><!-- Populated by JS --></div>
   </div>
 </div>
 
 <!-- ── TAB: RULES REFERENCE ──────────────────────────────── -->
 <div class="tab-panel" id="tab-rules">
-  <div style="max-width:900px; margin:0 auto;">
-    <h2 style="font-family:var(--font-main); border-bottom:2px solid var(--ink); padding-bottom:4px; margin-bottom:12px;">Quick Rules Reference</h2>
-    <div id="rules-ref">
-      <!-- Populated by JS -->
-    </div>
+  <div class="ref-wrapper">
+    <h2>Quick Rules Reference</h2>
+    <div id="rules-ref"><!-- Populated by JS --></div>
   </div>
 </div>
 
 <!-- ── TAB: DICE ROLLER ──────────────────────────────────── -->
 <div class="tab-panel" id="tab-dice">
-<div style="max-width:600px; margin:0 auto;">
-  <h2 style="font-family:var(--font-main); border-bottom:2px solid var(--ink); padding-bottom:4px; margin-bottom:12px;">YZE Dice Roller</h2>
+<div class="ref-wrapper" style="max-width:600px;">
+  <h2>YZE Dice Roller</h2>
   <div style="background:var(--field-bg); border:1px solid var(--rule); padding:12px; margin-bottom:12px;">
     <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
       <div>
@@ -1065,13 +1114,18 @@ body {
   </div>
   <div class="dice-pool" id="dice-pool-display"></div>
   <div class="roll-result" id="roll-result" style="display:none;"></div>
-  <div style="font-size:7pt; color:var(--ink-faded); margin-top:8px;">
+  <p style="font-size:7pt; color:var(--ink-faded); margin-top:8px;">
     <strong>YZE Dice Pool:</strong> Roll Attribute + Skill + Gear dice (d6s). 6s = Success. 1s on Gear dice = gear degradation. Pushing re-rolls all non-6, non-1 dice but costs +1 Corruption.
-  </div>
+  </p>
 </div>
 </div>
 
 </div><!-- /content -->
+
+<!-- ─── MODAL OVERLAY ─── -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal-content"></div>
+</div>
 
 <!-- Toast -->
 <div class="toast" id="toast"></div>
