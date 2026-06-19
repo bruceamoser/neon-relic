@@ -500,10 +500,14 @@ const NR = (function() {
 
     if (!state.gear) state.gear = [];
     state.gear.forEach((item, i) => {
-      // Auto-fill encumbrance for items without explicit enc
+      // Auto-fill encumbrance and bonus for items without explicit values
       if (!item.enc && item.name) {
         const autoEnc = getItemEncumbrance(item.name);
         if (autoEnc) item.enc = autoEnc;
+      }
+      if (!item.bonus && item.name) {
+        const autoBonus = getItemBonus(item.name);
+        if (autoBonus) item.bonus = autoBonus;
       }
       const tooltip = item.name ? getItemTooltip(item.name) : '';
       const row = document.createElement('tr');
@@ -838,7 +842,8 @@ const NR = (function() {
       ...NR_DATA.equipment.armor
     ];
     for (const item of allCats) {
-      if (name.includes(item.name.toLowerCase()) || item.name.toLowerCase().includes(name)) {
+      const itemNameLow = item.name.toLowerCase();
+      if (name.includes(itemNameLow) || itemNameLow.includes(name)) {
         return item;
       }
     }
@@ -846,20 +851,62 @@ const NR = (function() {
   }
 
   function getItemEncumbrance(itemName) {
-    // Try lookup first
+    if (!itemName) return '';
+    // Try equipment table lookup first
     const eq = lookupEquipmentItem(itemName);
     if (eq && eq.enc) return eq.enc;
-    // Fallback: parse known patterns
-    const name = (itemName || '').toLowerCase();
-    if (name.includes('pocket') || name.includes('derringer') || name.includes('knife')) return '½';
-    if (name.includes('camera') || name.includes('crowbar') || name.includes('pistol') || name.includes('revolver')) return '1';
-    if (name.includes('shotgun') || name.includes('rifle') || name.includes('thermal')) return '2';
-    if (name.includes('armor') && name.includes('riot')) return '3';
-    if (name.includes('kevlar') || name.includes('vest')) return '1';
+    // Division signature items
+    const name = itemName.toLowerCase();
+    if (name.includes('verdant codex')) return '1';
+    if (name.includes('verdant satchel')) return '1';
+    if (name.includes("warden's bracer") || name.includes('warden bracer')) return '½';
+    // Starting kit items — parse by keyword
+    if (name.includes('briefcase')) return '1';
+    if (name.includes('camera') && name.includes('35mm')) return '1';
+    if (name.includes('forged credential') || name.includes('press pass')) return '½';
+    if (name.includes('civilian clothing') || name.includes('coverall') || name.includes('utility vest')) return '1';
+    if (name.includes('derringer')) return '½';
+    if (name.includes('pocket knife') || name.includes('pocket knife')) return '½';
+    if (name.includes('sidearm') || name.includes('revolver') || name.includes('pistol')) return '1';
+    if (name.includes('flashlight') || name.includes('maglite')) return '½';
+    if (name.includes('rope')) return '1';
+    if (name.includes('zip tie')) return '½';
+    if (name.includes('chalk')) return '½';
+    if (name.includes('crowbar')) return '1';
+    if (name.includes('field jacket') || name.includes('holster')) return '1';
+    if (name.includes('containment kit') || name.includes('salt') || name.includes('copper wire')) return '2';
+    if (name.includes('lore reference binder') || name.includes('binder')) return '1';
+    if (name.includes('formal attire') || name.includes('tactical jacket')) return '1';
+    if (name.includes('personal toolkit') || name.includes('screwdriver') || name.includes('soldering')) return '2';
+    if (name.includes('signal jammer')) return '1';
+    if (name.includes('walkie-talkie') || name.includes('walkie talkie')) return '½';
+    if (name.includes('duct tape') || name.includes('wd-40')) return '½';
+    if (name.includes('shotgun')) return '2';
+    if (name.includes('rifle') || name.includes('m16') || name.includes('assault')) return '2';
+    if (name.includes('thermal') || name.includes('infrared')) return '2';
+    if (name.includes('riot armor') || name.includes('tactical riot')) return '3';
+    if (name.includes('kevlar') || name.includes('concealed vest')) return '1';
+    if (name.includes('camera')) return '1';
+    if (name.includes('lockpick')) return '½';
+    if (name.includes('first aid') || name.includes('trauma') || name.includes('surgical')) return name.includes('trauma') || name.includes('surgical') ? '2' : '1';
+    return '';
+  }
+
+  function getItemBonus(itemName) {
+    if (!itemName) return '';
+    // Try equipment table lookup first
+    const eq = lookupEquipmentItem(itemName);
+    if (eq && eq.bonus) return eq.bonus;
+    // Parse from description strings like "Gear Die d6"
+    const name = itemName.toLowerCase();
+    const gearDieMatch = itemName.match(/gear die\s*(d\d+)/i);
+    if (gearDieMatch) return gearDieMatch[1];
+    if (name.includes('signal jammer')) return 'd6';
     return '';
   }
 
   function getItemTooltip(itemName) {
+    if (!itemName) return itemName;
     const eq = lookupEquipmentItem(itemName);
     if (eq) {
       let tip = eq.name;
@@ -871,6 +918,9 @@ const NR = (function() {
       tip += '\nCL: ' + eq.cl + ' | Enc: ' + eq.enc;
       return tip;
     }
+    // For division/kit items, generate a simplified tooltip
+    const enc = getItemEncumbrance(itemName);
+    if (enc) return itemName + '\nEnc: ' + enc;
     return itemName;
   }
 
