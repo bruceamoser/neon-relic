@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locations — The Cormsil Compact</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; line-height:1.5; }
+  .loc { border:2px solid #1a1a18; padding:16px; margin:20px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; }
+  h2 { font-size:11pt; color:#2d5a27; margin:0 0 8px; }
+  .id { font-size:8pt; color:#4a4a42; float:right; }
+  table { width:100%; border-collapse:collapse; margin:6px 0; font-size:8.5pt; }
+  th { text-align:left; background:rgba(0,0,0,0.06); padding:2px 6px; font-size:6.5pt; text-transform:uppercase; width:80px; }
+  td { padding:2px 6px; border-bottom:1px dotted #999; }
+  .results { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:6px 0; }
+  .pos { border-left:3px solid #2d5a27; padding:4px 8px; font-size:8pt; }
+  .neg { border-left:3px solid #8b1a1a; padding:4px 8px; font-size:8pt; }
+  hr { border:none; border-top:1px dashed #999; }
+  @media print { .loc { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1>Location Pages — The Cormsil Compact</h1>
+<p style="color:#4a4a42;">Seven locations. Pull the relevant page when agents arrive.</p>
+
+<!-- L1: Cormsil Village -->
+<div class="loc">
+<h2>L1 — Cormsil Village (General) <span class="id">L1</span></h2>
+<table>
+<tr><th>Description</th><td>A farming town of 400 people in the Yorkshire Dales. One pub (The Dōmere Arms — the pub has always been called that, no one knows why), one church (St. Cuthbert's, 12th century, built on older foundations), one library (burned), one school, scattered sheep farms. The village green has a medieval market cross. The atmosphere is tense — the town is divided between those calling the survival a miracle and those who are uneasy. The air feels heavier than it should.</td></tr>
+<tr><th>Availability</th><td>All shifts. The pub is open Day and Evening. The church is open Day and Evening. The library site is accessible any time (cordoned off, not guarded).</td></tr>
+<tr><th>NPCs Present</th><td>Various townsfolk. Tom Dwerryhouse (NPC2 — at the pub or his farm, L7). Mary Dwerryhouse (NPC4 — at the farm or visiting Eleanor). Margaret Hale (NPC5 — around town, drawn to the library). Reverend Paul Threlfall (NPC3 — at the church, L3).</td></tr>
+<tr><th>Information</th><td>I1 (the town's history — medieval, Saxon foundations, pre-Saxon settlement nearby), I2 (the fire — what the town knows), I3 (the compact's existence — the glass case at the library). I6 (Dwerryhouse's notes) after O2M1.</td></tr>
+<tr><th>Organizations</th><td>O1 (the returned are present throughout town), O2 (the skeptical townsfolk).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The town is small — everyone knows everything, and most are willing to talk if approached with respect. A Manipulate (Diff 1) or genuine interest in local history earns cooperation. The pub is the social hub — agents who buy a round will hear everything.</div>
+<div class="neg"><strong>− Negative:</strong> Agents stand out. If they're aggressive, officious, or dismissive, the town closes ranks. The returned are everywhere — agents may encounter them before they're ready. Extended conversation with a returned is +1 Corruption.</div>
+</div>
+</div>
+
+<!-- L2: The Burned Library -->
+<div class="loc">
+<h2>L2 — The Burned Library <span class="id">L2</span></h2>
+<table>
+<tr><th>Description</th><td>The remains of the Cormsil Public Library. A stone shell — the roof collapsed, the interior is ash and twisted shelving. The glass case that held the compact is visible in the reading room rubble: shattered, empty, but still labeled "Cormsil Compact, 1882 — On Permanent Loan from the Town Council." The smell of burnt paper and melted plastic lingers. The site is cordoned off with police tape but not guarded. The fire investigator's report is filed at the town council office.</td></tr>
+<tr><th>Availability</th><td>All shifts. The site is accessible — no guard, just tape. Night visits require a light source.</td></tr>
+<tr><th>NPCs Present</th><td>Possible: one of the returned (they're drawn to the site — they don't know why). Eleanor Vane (NPC1 — she visits sometimes; she doesn't know why either). After O1M2: the returned gather here every evening.</td></tr>
+<tr><th>Information</th><td>I3 (the compact's existence confirmed — the glass case label, compact ash remnants), I5 (the compact's terms — partial; a fire-damaged copy was stored in the church), I7 (the fire investigator's report — confirms candle cause, notes "unexplained survivor behavior").</td></tr>
+<tr><th>Organizations</th><td>O1 (the returned are drawn here). After O1M2: the returned gather here at dusk.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The site is accessible and physical evidence is intact. The glass case label is unambiguous — agents don't need a roll to confirm the compact existed. The fire investigator's report at the town council office provides objective confirmation of events.</div>
+<div class="neg"><strong>− Negative:</strong> The returned are drawn here. Agents investigating the library will encounter at least one. The ash is unstable — a fumbled Investigate roll disturbs the debris and collapses part of a remaining wall (no damage, but attracts attention).</div>
+</div>
+</div>
+
+<!-- L3: St. Cuthbert's Church and Crypt -->
+<div class="loc">
+<h2>L3 — St. Cuthbert's Church and Crypt <span class="id">L3</span></h2>
+<table>
+<tr><th>Description</th><td>A Norman church, 12th century, built on Saxon foundations. Stone walls, wooden pews, stained glass depicting local saints and agricultural scenes. The crypt is older — pre-Norman, possibly the original Saxon church floor. Accessed by stone stairs behind the vestry. The Society's manual is hidden behind a loose stone in the crypt's east wall, behind a wooden panel that hasn't been moved since 1882. The church vestry also holds parish records, including a fire-damaged partial copy of the compact.</td></tr>
+<tr><th>Availability</th><td>Church: Day and Evening shifts. Crypt: accessible with the vicar's permission or via Sneak (Diff 2 — the stairs are stone and sound carries). Night access requires infiltration.</td></tr>
+<tr><th>NPCs Present</th><td>Reverend Paul Threlfall (NPC3 — the current vicar. A good man who knows something is spiritually wrong in his parish and doesn't know what to do about it. He's been praying for guidance. The agents showing up feels like an answer.)</td></tr>
+<tr><th>Information</th><td>I9 (the Society's manual — behind the loose stone in the crypt), I5 (the fire-damaged compact copy — stored in the church vestry, partial but legible: describes "annual acknowledgment" and "the sleeping arrangement").</td></tr>
+<tr><th>Organizations</th><td>None. The church is neutral ground.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Reverend Threlfall is an unconditional ally. He believes the agents are an answer to prayer. He'll give them access to the crypt and the vestry, share the fire-damaged compact copy, and tell them about the loose stone ("the old vicar's hiding spot — my predecessor's predecessor mentioned it, but I never looked"). A Manipulate roll is not required.</div>
+<div class="neg"><strong>− Negative:</strong> The manual is hidden well. Finding it without the vicar's help requires an Investigate roll (Diff 2). The crypt is unsettling — +1 Corruption for extended time below ground. If agents are hostile to Threlfall or dismiss his faith, he withdraws access to the crypt.</div>
+</div>
+</div>
+
+<!-- L4: Eleanor Vane's Cottage -->
+<div class="loc">
+<h2>L4 — Eleanor Vane's Cottage <span class="id">L4</span></h2>
+<table>
+<tr><th>Description</th><td>A small stone cottage on the edge of Cormsil, surrounded by an overgrown garden — Eleanor hasn't tended it since the fire. The curtains are drawn. Inside: tidy, quiet, oppressive. Books everywhere — Eleanor was a librarian for 30 years. A clock ticks too loudly. Eleanor sits in her armchair in the front room. She doesn't move much. She's waiting for the next visit. The air in the cottage is stale and heavy — the windows haven't been opened in weeks.</td></tr>
+<tr><th>Availability</th><td>Day and Evening shifts. Eleanor rarely leaves. She'll answer the door — she's desperate for someone to talk to who isn't one of the returned.</td></tr>
+<tr><th>NPCs Present</th><td>Eleanor Vane (NPC1). Possible: one of the returned may be visiting — they come daily. After O4M2: Eleanor is catatonic for hours at a time, then writes compulsively.</td></tr>
+<tr><th>Information</th><td>I4 (Eleanor's testimony — the fire, the returned, the visits, her deterioration). After O4M2: I11 ("The stone is warm" — Eleanor's channeled message from the Dōmere).</td></tr>
+<tr><th>Organizations</th><td>O4 (Eleanor). O1 may be present (a returned visiting).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Eleanor is the most honest witness in Cormsil. She tells the agents everything — the candle, the fire, the people running into the woods, the daily visits, the way they "forgive" her. A Psychoanalyze roll (Diff 1) reveals she's not suicidal — she's being kept awake by forces she can't name. She's a witness, not an enemy. She'll help agents however she can.</div>
+<div class="neg"><strong>− Negative:</strong> She's also the most fragile person in Cormsil. Pushing her too hard causes collapse — she becomes catatonic and unavailable for 1 shift. The returned visit frequently — agents may encounter one here. Extended conversation with a returned is +1 Corruption. The cottage is oppressive — +1 Corruption for scenes longer than 1 shift.</div>
+</div>
+</div>
+
+<!-- L5: The Bodleian Library, Oxford -->
+<div class="loc">
+<h2>L5 — The Bodleian Library, Oxford <span class="id">L5</span></h2>
+<table>
+<tr><th>Description</th><td>The manuscript reading room of one of the world's oldest libraries. Wood-paneled, silent, smelling of old paper and leather. The vicar's papers are held here — Arthur Hailes, Vicar of Cormsil, 1876–1891: his personal correspondence, parish records, and a sealed letter to the Bishop of Ripon dated 1883. The letter describes the 1882 compact and The Society in cautious, uncomfortable terms. Also includes a reference to "the volume I have hidden, which I was instructed to return and did not."</td></tr>
+<tr><th>Availability</th><td>Day shifts only. Reading room hours: 9 AM to 5 PM. Reader's card required — can be arranged through Covenant academic affiliate Dr. Alderson (University of York) or obtained on-site with credentials (Manipulate Diff 2). Travel: 2 shifts from Cormsil.</td></tr>
+<tr><th>NPCs Present</th><td>Manuscript librarian (civilian — helpful, academic, protective of the collection).</td></tr>
+<tr><th>Information</th><td>I10 (the vicar's summary of the compact terms — acknowledgment, annual ritual, the spirit's acceptance). I15 (the vicar's letter — mentions The Society, the hidden manual, and the vicar's unease). CT-1 partial source (confirms the compact's function).</td></tr>
+<tr><th>Organizations</th><td>O3 (The Society's Trail — activates if agents discover the first Society reference here).</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The vicar's papers are accessible with standard academic credentials. A Lore or Investigate (Diff 2) extracts all relevant information. The manuscript librarian is helpful to serious researchers. The letter confirms the manual was hidden deliberately — not lost, but left.</div>
+<div class="neg"><strong>− Negative:</strong> The letter is sealed. Opening it requires the librarian's permission (Manipulate Diff 2) or stealth (Sneak Diff 2). If agents damage the seal, the librarian is displeased — Oxford takes its manuscripts seriously. Access may be revoked. A fumbled roll costs 1 additional shift as agents navigate bureaucracy.</div>
+</div>
+</div>
+
+<!-- L6: The British Library, London -->
+<div class="loc">
+<h2>L6 — The British Library, London <span class="id">L6</span></h2>
+<table>
+<tr><th>Description</th><td>Manuscript collection. Sir Geoffrey Colne's <em>"Of Certain Subterranean Presences in the County of York"</em> (1642) — a leather-bound folio. Colne was a 17th-century antiquarian who documented folklore, strange occurrences, and "things the Church prefers not to acknowledge." His manuscript describes the Dōmere, records a failed 1642 binding attempt, and includes — in the margins, in a different hand — an Old English riddle that encodes the spirit's true name. The manuscript is fragile; careful handling is required.</td></tr>
+<tr><th>Availability</th><td>Day shifts only. Reading room hours. Reader's card required. Travel: 3 shifts from Cormsil, 2 shifts from Oxford.</td></tr>
+<tr><th>NPCs Present</th><td>Manuscript librarian (civilian — professional, helpful).</td></tr>
+<tr><th>Information</th><td>I13 (the Dōmere's nature and history — pre-Celtic, the one who remembers wrongs, called "Dōmere" by the Saxons), I17 (the failed 1642 binding — what went wrong, what Colne learned), I18 (the riddle — encoding the true name "Dōmere" — essential for the silencing ritual). CT-1 full source. CT-2 partial source.</td></tr>
+<tr><th>Organizations</th><td>None.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> Colne's manuscript is the Rosetta Stone for this case. It identifies the spirit, explains its function, and provides the silencing ritual framework. A Lore or Investigate (Diff 2) extracts everything. The riddle is solvable — an Old English kenning that, when translated, yields "Dōmere" (the Doomer, the Judge).</div>
+<div class="neg"><strong>− Negative:</strong> The riddle is in Old English. If no agent reads Old English, the librarian can arrange translation — this adds +1 shift but guarantees accuracy. The manuscript is fragile — a fumbled roll damages a page; the riddle becomes partially illegible, adding +1 Diff to the silencing ritual. Travel time from Cormsil is significant (3 shifts).</div>
+</div>
+</div>
+
+<!-- L7: The Standing Stone -->
+<div class="loc">
+<h2>L7 — The Standing Stone (Climax Site) <span class="id">L7</span></h2>
+<table>
+<tr><th>Description</th><td>A weathered standing stone in a sheep field half a mile from Cormsil. Pre-Saxon — likely Brigantes. The farmer who owns the field (Tom Dwerryhouse, NPC2) has noticed the stone is warm. It's never been warm before. The soil around it is darker. The grass within a 2-meter radius has died. This is the Dōmere's original resting place — where the Celts dug their ritual well, where the Saxons found it, where the church was built to contain it, where the compact was read aloud for 105 years. The well is still here — capped with a Saxon stone slab, overgrown, invisible unless you know where to look. The air around the stone hums at the edge of hearing. Birds avoid the radius.</td></tr>
+<tr><th>Availability</th><td>All shifts. The field is Dwerryhouse's — he'll grant access if he trusts the agents (O2M1 or successful Manipulate). Without his permission, agents must trespass (Sneak Diff 1 — it's a sheep field, not a military base).</td></tr>
+<tr><th>NPCs Present</th><td>Possible: Tom Dwerryhouse (NPC2 — he checks the stone daily now). Margaret Hale (NPC5 — after O1M3, if she's volunteered, she'll meet agents here). During the ritual: the returned will converge on the site (arrive in 1 shift after the ritual begins).</td></tr>
+<tr><th>Information</th><td>I19 (the standing stone's significance — the pre-Saxon site, warm stone, dead grass), I20 (the well — the Dōmere's access point to the surface, the Saxon cap). CT-3 partial source (the soil is required for the ritual).</td></tr>
+<tr><th>Organizations</th><td>O1 (the returned will converge here during the ritual). The spirit's presence is strongest here — +2 Corruption per scene.</td></tr>
+</table>
+<div class="results">
+<div class="pos"><strong>+ Positive:</strong> The site is accessible and Dwerryhouse is cooperative (if agents are straight with him). The ritual can be performed here — all three components converge at this location. The well is findable (Investigate Diff 1 — the Saxon cap is visible once you know what to look for). Soil extraction is straightforward — dig beneath the stone's base.</div>
+<div class="neg"><strong>− Negative:</strong> The Dōmere resists. Performing the ritual causes +2 Corruption for all participants. The returned will converge on the site — agents must hold them off (not violently — they're civilians, but they're compelled) while the ritual completes. If the volunteer loses their nerve, the ritual fails. The spirit speaks directly into the agents' minds, cataloguing their own negligent acts, demanding to know why they deserve to judge it. The standing stone may crack if the ritual goes wrong — cosmetic but terrifying.</div>
+</div>
+</div>
+
+</body>
+</html>

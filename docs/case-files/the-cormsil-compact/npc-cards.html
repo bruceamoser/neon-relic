@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards — The Cormsil Compact</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:16px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; grid-column:1/-1; margin:0 0 6px; }
+  .label { font-size:6pt; text-transform:uppercase; color:#4a4a42; letter-spacing:1px; }
+  .value { font-size:8.5pt; border-bottom:1px dotted #999; padding-bottom:2px; }
+  .full { grid-column:1/-1; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">NPC Cards — The Cormsil Compact</h1>
+
+<!-- NPC1: Eleanor Vane -->
+<div class="card">
+<h1>NPC1 — Eleanor Vane</h1>
+<div class="full"><span class="label">Role</span><span class="value">The Librarian — Accidental Cause of the Fire</span></div>
+<div><span class="label">Organization</span><span class="value">O4 — Eleanor Vane</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Exhausted, fragile, desperately cooperative</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Eleanor has been awake for 19 days. She cannot sleep — not because of guilt, but because the returned won't let her. Every time she closes her eyes, one of them is there, asking if she's sleeping well. She's not. She knows she caused the fire. She's accepted responsibility. But the returned don't want responsibility — they want her to <em>feel</em> it, continuously, without relief. The forgiveness is the torture.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Sleep. Just one night. She would trade anything. She doesn't know what the agents can do, but she'll help them however she can — if it means the visits stop.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Indirect. She burned the compact. She woke the spirit. She's the epicenter of the returned's attention.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I4</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I11 (O4M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L4 (her cottage). Occasional: L2 (the library — she visits sometimes, she doesn't know why).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Eleanor tells the agents everything. She's the most honest witness in Cormsil. <strong>−</strong> She's also the most fragile. Pushing her too hard causes collapse — she becomes catatonic, unavailable for 1 shift.</span></div>
+</div>
+
+<!-- NPC2: Tom Dwerryhouse -->
+<div class="card">
+<h1>NPC2 — Tom Dwerryhouse</h1>
+<div class="full"><span class="label">Role</span><span class="value">Skeptical Farmer — Leader of the Doubters</span></div>
+<div><span class="label">Organization</span><span class="value">O2 — The Skeptical Townsfolk</span></div>
+<div><span class="label">Disposition</span><span class="value">2 — Gruff, observant, grieving</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Tom's wife, Mary, is among the returned. He knows the woman in his house is not Mary. Mary blinked quickly when she was nervous. This woman blinks once every four seconds, always. Mary was warm when she slept. This woman is cold — always cold. Tom loves Mary. Tom also knows Mary died in the fire. He's been living with a stranger who wears his wife's face for three weeks. He's been taking notes. He's been waiting for someone to believe him.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Understand what happened to his wife. If the thing in his house is not Mary, he wants it gone. If there's a way to get Mary back — really back — he'll do anything.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">None. His wife is among the returned. That's connection enough. His field contains the standing stone (L7).</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I6</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I14 (O2M2)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L1 (the pub, his farm), L7 (his field — the standing stone).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Tom is an ally. He provides observation notes, local knowledge, and access to the standing stone. <strong>−</strong> He's grieving and angry. If agents dismiss his concerns or treat him as a conspiracy theorist, he withdraws — and they lose access to L7.</span></div>
+</div>
+
+<!-- NPC3: Reverend Paul Threlfall -->
+<div class="card">
+<h1>NPC3 — Reverend Paul Threlfall</h1>
+<div class="full"><span class="label">Role</span><span class="value">The Current Vicar — A Good Man Out of His Depth</span></div>
+<div><span class="label">Organization</span><span class="value">None (civilian ally)</span></div>
+<div><span class="label">Disposition</span><span class="value">3 — Kind, anxious, aware something is spiritually wrong</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Reverend Threlfall has been vicar of St. Cuthbert's for 12 years. He loves his parish. He's never encountered anything supernatural before. But he's been feeling it for three weeks — a presence beneath the church, a weight in the air, a voice at the edge of hearing during Evensong. He thought he was losing his faith. When agents arrive, he's relieved — not because he understands what's happening, but because he's no longer alone in sensing it.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Protect his parishioners. Understand what's happening in his church. Serve God by serving the truth — even if the truth is older than God.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">His church is built over the Dōmere's resting place. He's been standing on it for 12 years and never knew. The Society's manual was hidden by his predecessor's predecessor — he knows about the loose stone but never looked behind it.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I5 (the fire-damaged compact copy)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I9 (shows agents the loose stone)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L3 (the church).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Threlfall is an unconditional ally. He believes the agents are an answer to prayer. He gives them access to everything — the crypt, the vestry, the fire-damaged compact copy. <strong>−</strong> He's not a fighter. If the situation becomes violent, he'll try to help and be in the way. If agents mock his faith or dismiss his concerns, he withdraws.</span></div>
+</div>
+
+<!-- NPC4: Mary Dwerryhouse -->
+<div class="card">
+<h1>NPC4 — Mary Dwerryhouse (née Blake)</h1>
+<div class="full"><span class="label">Role</span><span class="value">One of the Returned — Tom's Wife, Fragment of the Dōmere</span></div>
+<div><span class="label">Organization</span><span class="value">O1 — The Returned</span></div>
+<div><span class="label">Disposition</span><span class="value">3 — Gentle, confused, not fully self-aware</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Mary knows she died. She remembers the fire — the smoke, the heat, the window that wouldn't open. She remembers running into the woods, but doesn't remember why. She remembers waking up at the edge of the trees, cold, and walking home. She's been at home ever since. She loves Tom. She knows Tom is afraid of her. She doesn't understand why. She doesn't understand why she visits Eleanor Vane every day. She doesn't want to. She just... goes. Something in her goes. She's not fully in control of her own body. She's aware enough to be horrified by this.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Be Mary again. She doesn't know how. She would give up her borrowed life if someone told her that was the way.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">She IS the artifact — a fragment of the Dōmere in human form.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">None (until O1M3)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I16 (O1M3 — Margaret Hale volunteers instead, but Mary is the emotional anchor for the volunteer's choice)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L1 (Tom's farm), L4 (visiting Eleanor), L2 (drawn to the library).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Mary is the heart of the case. If agents reach her — truly reach her — she's a potential volunteer for the ritual, though Margaret Hale is the intended one. <strong>−</strong> The Dōmere's influence is strong in her. Approaching her directly risks alerting the spirit to the agents' intentions. The spirit may speak through her without warning.</span></div>
+</div>
+
+<!-- NPC5: Margaret Hale -->
+<div class="card">
+<h1>NPC5 — Margaret Hale</h1>
+<div class="full"><span class="label">Role</span><span class="value">The Volunteer — Returned Schoolteacher</span></div>
+<div><span class="label">Organization</span><span class="value">O1 — The Returned (until O1M3)</span></div>
+<div><span class="label">Disposition</span><span class="value">3 — Lucid, determined, aware</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Margaret is the only one of the returned who fully understands what she is. She's a former schoolteacher — analytical, calm, used to explaining things. She pieced it together herself: the fire, the woods, the compulsion to visit Eleanor, the way her thoughts sometimes feel like they're not entirely her own. She's been observing the other returned. She's been waiting for someone to arrive who can do something about it. She doesn't want to die again. But she wants to be a vessel for something else even less.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Help the agents. End the Dōmere's hold on Cormsil. If that requires her to be the volunteer, she'll do it — not because she's brave, but because she's a teacher, and teachers solve problems.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">She IS a fragment. The most self-aware fragment. The Dōmere can see through her — but it hasn't noticed her independence yet.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">None (until O1M3)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">I16 (O1M3 — she reveals herself to the agents)</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L1 (Cormsil), L2 (the library — she's drawn there, but she fights it), L7 (if she volunteers for the ritual).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value"><strong>+</strong> Margaret is the volunteer the agents need. She's lucid, willing, and understands the stakes. <strong>−</strong> She's still a fragment of the Dōmere. The spirit can speak through her if it chooses. Agents must perform the ritual before the spirit realizes what she's doing. If the agents hesitate or delay after O1M3, the spirit may become aware of her independence and suppress it.</span></div>
+</div>
+
+<!-- NPC6: The Dōmere -->
+<div class="card">
+<h1>NPC6 — The Dōmere (The Spirit)</h1>
+<div class="full"><span class="label">Role</span><span class="value">Antagonist as Condition — Ancient Subterranean Presence</span></div>
+<div><span class="label">Organization</span><span class="value">None (tracked via Relic Milestones)</span></div>
+<div><span class="label">Disposition</span><span class="value">N/A — Not a person. A function. Justice without mercy.</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">The Dōmere is not evil. It cannot be evil — evil requires choice. The Dōmere has no choice. It responds to wrongful death the way water responds to gravity. It was here before humanity. It will be here after. The compact of 1882 was the first time anyone treated it as a party to a negotiation rather than a monster to be slain. That acknowledgment meant something to it. The compact's destruction was a betrayal — not of terms, but of recognition. The spirit is not angry because the compact burned. It's angry because it was forgotten.</span></div>
+<div class="full"><span class="label">Goal</span><span class="value">Expand. Every wrongful death should produce a returned. The world is full of preventable deaths. The spirit sees them all now — it's awake, and its awareness is growing. It wants to fill the world with consequences.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">It IS the threat. The Society's manual is the key to containing it.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">N/A — Communicates through the returned, through Eleanor (O4M2), and directly at Day 4.</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">N/A</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">Everywhere in Cormsil. Strongest at L7 (the standing stone).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value">The Dōmere cannot be fought. It can only be silenced or negotiated with. Any attempt at exorcism, banishment, or destruction fails automatically and escalates the spirit's response. The agents' power is not in confrontation — it's in understanding, acknowledgment, and ritual.</span></div>
+</div>
+
+<!-- NPC7: Sir Geoffrey Colne -->
+<div class="card">
+<h1>NPC7 — Sir Geoffrey Colne (Historical)</h1>
+<div class="full"><span class="label">Role</span><span class="value">17th-Century Antiquarian — Posthumous Guide</span></div>
+<div><span class="label">Organization</span><span class="value">None (historical)</span></div>
+<div><span class="label">Disposition</span><span class="value">N/A — Dead since 1673. Present through his writing.</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">Colne tried to bind the Dōmere in 1642. He failed. He treated it as a demon to be exorcised. The spirit ignored him — his ritual was based on Christian theology, and the Dōmere predates Christianity. But Colne learned from his failure. His manuscript is not a grimoire — it's a corrected field report. He documented what went wrong, what the spirit actually responded to, and what might work instead. The riddle was his way of preserving the true name without writing it plainly — he was an antiquarian in an age of witch-hunters. He knew some knowledge was dangerous to record openly.</span></div>
+<div class="full"><span class="label">Goal (Historical)</span><span class="value">Understand the Dōmere. His manuscript is his legacy — a guide for whoever comes next.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">His manuscript (at L6) is the key text for the silencing ritual. Without it, the agents cannot identify the spirit or learn the ritual method.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I13, I17, I18 (through his manuscript at L6)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">—</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L6 (British Library — his manuscript, "Of Certain Subterranean Presences in the County of York," 1642).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value">Colne is the agents' posthumous expert. His manuscript provides everything they need to identify and silence the spirit. The riddle is his gift — a test to ensure only serious investigators find the name. If agents dismiss Colne as a crank or fail to investigate the manuscript, they lose the primary path to the true name and ritual.</span></div>
+</div>
+
+<!-- NPC8: The Society -->
+<div class="card">
+<h1>NPC8 — The Society (Historical)</h1>
+<div class="full"><span class="label">Role</span><span class="value">Victorian Occult Organization — Invisible Mediators</span></div>
+<div><span class="label">Organization</span><span class="value">O3 — The Society's Trail</span></div>
+<div><span class="label">Disposition</span><span class="value">N/A — Unknown. Present only through their field manual and the vicar's letter.</span></div>
+<div class="full"><span class="label">Secret</span><span class="value">No one knows who The Society was. The vicar's letter calls them "unorthodox but effective." The manual is practical, knowledgeable, and unsettlingly calm about negotiating with ancient presences. It reads like a field guide written by people who did this regularly. The Society may have been a precursor to the Covenant. It may have been a rival. It may have been absorbed. The case file deliberately leaves this ambiguous — the DA can decide whether The Society is a lost branch of the Covenant, an unrelated organization, or something the Covenant has actively suppressed knowledge of.</span></div>
+<div class="full"><span class="label">Goal (Historical)</span><span class="value">Mediate between humans and non-human presences. The 1882 compact was one of many such negotiations.</span></div>
+<div class="full"><span class="label">Artifact Connection</span><span class="value">Their manual (at L3) is the agents' operational guide to the Dōmere. It provides the negotiation framework and describes the binding/silencing methods.</span></div>
+<div><span class="label">Starting Knowledge</span><span class="value">I9 (through the manual at L3), I15 (through the vicar's letter at L5)</span></div>
+<div><span class="label">Gained Knowledge</span><span class="value">—</span></div>
+<div class="full"><span class="label">Locations</span><span class="value">L3 (manual in church crypt), L5 (references in vicar's letter at the Bodleian).</span></div>
+<div class="full"><span class="label">+ / − Results</span><span class="value">The Society is a mystery that deepens the world. The manual is practical help — it's the operational key to the case. The organization's identity is deliberately unresolved. If agents dig deeper into The Society's history, the DA can use this as a hook for future cases or reveal that the Covenant has files on them that are... classified above the agents' clearance level.</span></div>
+</div>
+
+</body>
+</html>
