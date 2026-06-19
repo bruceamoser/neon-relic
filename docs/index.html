@@ -895,7 +895,7 @@ body {
     </div>
 
     <!-- SECTIONS III: ATTRIBUTES & SKILLS -->
-    <div class="section-title">Section III &mdash; Attributes &amp; Skills</div>
+    <div class="section-title">Section III &mdash; Attributes &amp; Skills <span id="attr-skill-counts" style="font-size:6pt; color:var(--ink-light);"></span></div>
     <div class="attr-skill-grid" id="attr-skill-grid">
       <!-- Populated by JS -->
     </div>
@@ -1012,10 +1012,12 @@ body {
     </div>
 
     <!-- CRITICAL INJURIES -->
-    <div class="section-title red">Section VI &mdash; Critical Injuries &amp; Conditions</div>
+    <div class="section-title red">Section VI &mdash; Critical Injuries &amp; Conditions <button class="sheet-edit-btn" onclick="NR.pickCriticalInjury()" title="Add injury" style="margin-left:6px;">+ Add</button></div>
+    <div id="critical-injuries">
     <div class="notes-lines">
       <div class="notes-line"></div><div class="notes-line"></div>
       <div class="notes-line"></div><div class="notes-line"></div>
+    </div>
     </div>
 
     <!-- BIOGRAPHY -->

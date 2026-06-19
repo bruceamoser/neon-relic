@@ -14,6 +14,7 @@ const NR = (function() {
     talent1: null, talent2: null, talent3: null,
     extraTalents: [],
     divisionItem: '', gear: [], resourceDice: {},
+    criticalInjuries: [],
     cl: 1, standing: 0, xp: 0,
     creationComplete: false
   };
@@ -29,6 +30,7 @@ const NR = (function() {
     buildGearTable();
     buildResourceDice();
     buildExtraTalents();
+    buildCriticalInjuries();
     buildEquipmentRef();
     buildTalentsRef();
     buildRulesRef();
@@ -60,6 +62,7 @@ const NR = (function() {
         if (parsed.skills) state.skills = Object.assign({}, parsed.skills);
         if (parsed.resourceDice) state.resourceDice = Object.assign({}, parsed.resourceDice);
         if (parsed.extraTalents) state.extraTalents = parsed.extraTalents.slice();
+        if (parsed.criticalInjuries) state.criticalInjuries = parsed.criticalInjuries.slice();
         if (!state.gear) state.gear = [];
         detectResourceDice();
       }
@@ -72,6 +75,7 @@ const NR = (function() {
         const field = e.target.getAttribute('data-field');
         if (field) {
           state[field] = e.target.textContent.trim();
+          if (field === 'age') detectAgeGroup();
           saveState();
           const indicator = document.getElementById('save-indicator');
           if (indicator) indicator.textContent = '● Saving...';
@@ -83,6 +87,7 @@ const NR = (function() {
         const field = e.target.getAttribute('data-field');
         if (field) {
           state[field] = e.target.textContent.trim();
+          if (field === 'age') detectAgeGroup();
           saveState();
         }
       }
@@ -224,7 +229,12 @@ const NR = (function() {
   function adjustAttr(attrKey, delta) {
     const val = state.attributes[attrKey] || 2;
     const newVal = val + delta;
-    if (newVal < 2 || newVal > 5) return;
+    if (newVal < 2) return;
+    const divKey = getDivKey(state.division);
+    const div = divKey ? NR_DATA.divisions[divKey] : null;
+    const isPrimary = div && div.primaryAttribute === attrKey;
+    const max = isPrimary ? 5 : 4;
+    if (newVal > max) return;
     state.attributes[attrKey] = newVal;
     saveState();
     renderSheet();
@@ -235,6 +245,15 @@ const NR = (function() {
     const cur = state.skills[skillKey] || 0;
     const newVal = cur + delta;
     if (newVal < 0 || newVal > 5) return;
+    const divKey = getDivKey(state.division);
+    const div = divKey ? NR_DATA.divisions[divKey] : null;
+    const isKeySkill = div && div.keySkill === skillKey;
+    // During character creation: key skill max 4, others max 3
+    // After creation (or if no division): all max 5
+    if (!state.creationComplete && div) {
+      const maxForSkill = isKeySkill ? 4 : 3;
+      if (newVal > maxForSkill) return;
+    }
     state.skills[skillKey] = newVal;
     saveState();
     renderSheet();
@@ -389,6 +408,66 @@ const NR = (function() {
     container.innerHTML = html;
   }
 
+  // ─── CRITICAL INJURIES ──────────────────────────────────
+  function pickCriticalInjury() {
+    let html = '<h3>Critical Injuries</h3>';
+    html += '<p style="font-size:7pt; color:var(--ink-faded); margin-bottom:8px;">Select an injury to add to your sheet. Roll d66 during play to determine randomly.</p>';
+    html += '<div class="talent-list" style="max-height:50vh;">';
+    NR_DATA.criticalInjuries.forEach((ci, i) => {
+      html += `<div class="talent-item" onclick="NR.addCriticalInjury(${i})"><strong>${ci.roll} — ${ci.name}</strong>${ci.lethal?' <span style="color:var(--red-stamp);font-size:6pt;">LETHAL</span>':''}<br><span style="color:var(--ink-faded);">${ci.effect}</span><br><span style="font-size:6pt; color:var(--green-stamp);">Healing: ${ci.healing}</span></div>`;
+    });
+    html += '</div>';
+    openModal(html);
+  }
+
+  function addCriticalInjury(index) {
+    const ci = NR_DATA.criticalInjuries[index];
+    if (!ci) return;
+    if (!state.criticalInjuries) state.criticalInjuries = [];
+    // Don't add duplicates
+    if (state.criticalInjuries.find(i => i.name === ci.name)) {
+      showToast('Injury already recorded', 'warn');
+      closeModal();
+      return;
+    }
+    state.criticalInjuries.push(ci);
+    saveState();
+    renderSheet();
+    closeModal();
+    showToast('Added: ' + ci.name);
+  }
+
+  function removeCriticalInjury(index) {
+    if (!state.criticalInjuries) return;
+    state.criticalInjuries.splice(index, 1);
+    saveState();
+    renderSheet();
+  }
+
+  function buildCriticalInjuries() {
+    const container = document.getElementById('critical-injuries');
+    if (!container) return;
+    if (!state.criticalInjuries || state.criticalInjuries.length === 0) {
+      container.innerHTML = `<div class="notes-lines">
+        <div class="notes-line"></div><div class="notes-line"></div>
+        <div class="notes-line"></div><div class="notes-line"></div>
+      </div>`;
+      return;
+    }
+    let html = '';
+    state.criticalInjuries.forEach((ci, i) => {
+      html += `<div style="display:flex; align-items:flex-start; gap:6px; padding:2px 0; border-bottom:1px dotted var(--rule-light); font-size:7pt;">
+        <button class="sheet-edit-btn" onclick="NR.removeCriticalInjury(${i})" title="Remove" style="flex-shrink:0; font-size:6pt; padding:0 4px;">✕</button>
+        <div>
+          <strong>${ci.name}</strong>${ci.lethal?' <span style="color:var(--red-stamp);">[LETHAL]</span>':''}
+          <span style="color:var(--ink-faded);"> — ${ci.effect}</span>
+          <div style="font-size:6pt; color:var(--green-stamp);">Healing: ${ci.healing}</div>
+        </div>
+      </div>`;
+    });
+    container.innerHTML = html;
+  }
+
   // ─── GEAR / ENCUMBRANCE ─────────────────────────────────
   function addGearItem() {
     state.gear.push({ name: '', bonus: '', enc: '' });
@@ -421,10 +500,16 @@ const NR = (function() {
 
     if (!state.gear) state.gear = [];
     state.gear.forEach((item, i) => {
+      // Auto-fill encumbrance for items without explicit enc
+      if (!item.enc && item.name) {
+        const autoEnc = getItemEncumbrance(item.name);
+        if (autoEnc) item.enc = autoEnc;
+      }
+      const tooltip = item.name ? getItemTooltip(item.name) : '';
       const row = document.createElement('tr');
       row.setAttribute('data-gear', i);
       row.innerHTML = `
-        <td contenteditable="true" data-gear="${i}" data-field="name">${item.name || ''}</td>
+        <td contenteditable="true" data-gear="${i}" data-field="name" title="${tooltip.replace(/"/g,'&quot;')}">${item.name || ''}</td>
         <td class="center" contenteditable="true" data-gear="${i}" data-field="bonus">${item.bonus || ''}</td>
         <td class="center" contenteditable="true" data-gear="${i}" data-field="enc">${item.enc || ''}</td>
         <td class="center" style="width:28px; padding:0;"><button class="sheet-edit-btn" onclick="NR.removeGearItem(${i})" title="Remove item" style="font-size:7pt;">✕</button></td>
@@ -465,7 +550,7 @@ const NR = (function() {
   // ─── RESOURCE DICE ──────────────────────────────────────
   function detectResourceDice() {
     const keywords = {
-      ammo: ['firearm', 'revolver', 'pistol', 'shotgun', 'rifle', 'sidearm', 'weapon', 'ammo', 'derringer'],
+      ammo: ['revolver', 'pistol', 'shotgun', 'rifle', 'assault rifle', 'firearm'],
       medical: ['heal', 'first aid', 'medical', 'surgical', 'trauma', 'bandage'],
       battery: ['battery', 'electronic', 'radio', 'camera', 'recorder', 'modem', 'maglite', 'flashlight', 'walkie', 'spirit box', 'thermal', 'infrared', 'jammer', 'multimeter'],
       rations: ['ration', 'food']
@@ -555,6 +640,7 @@ const NR = (function() {
     buildGearTable();
     buildResourceDice();
     buildExtraTalents();
+    buildCriticalInjuries();
   }
 
   function setField(field, value) {
@@ -579,11 +665,22 @@ const NR = (function() {
     const divKey = getDivKey(state.division);
     const div = divKey ? NR_DATA.divisions[divKey] : null;
 
+    // Calculate point totals for header
+    let attrSpent = 0, attrTotal = getAttrPointCap() || '?';
+    let skillSpent = 0, skillTotal = getSkillPointCap() || '?';
+    Object.values(state.attributes).forEach(v => { attrSpent += v || 0; });
+    Object.values(state.skills).forEach(v => { skillSpent += v || 0; });
+    const countsEl = document.getElementById('attr-skill-counts');
+    if (countsEl) {
+      countsEl.textContent = ` (Attrs: ${attrSpent}/${attrTotal} | Skills: ${skillSpent}/${skillTotal})`;
+    }
+
     NR_DATA.attributes.forEach(attr => {
       const skills = NR_DATA.skills.filter(s => s.attr === attr.key);
       const isPrimary = div && div.primaryAttribute === attr.key;
       const attrVal = state.attributes[attr.key] || 2;
       const dmg = state.attributeDamage[attr.key] || 0;
+      const attrMax = isPrimary ? 5 : 4;
 
       const col = document.createElement('div');
       col.className = 'attr-skill-col';
@@ -595,9 +692,9 @@ const NR = (function() {
         <div style="display:flex; align-items:center; justify-content:center; gap:4px;">
           <button class="sheet-edit-btn" onclick="NR.adjustAttr('${attr.key}', -1)" ${attrVal <= 2 ? 'disabled' : ''} style="font-size:10pt; padding:2px 8px;">−</button>
           <div class="attr-score" style="min-width:20px;">${attrVal}</div>
-          <button class="sheet-edit-btn" onclick="NR.adjustAttr('${attr.key}', 1)" ${attrVal >= 5 ? 'disabled' : ''} style="font-size:10pt; padding:2px 8px;">+</button>
+          <button class="sheet-edit-btn" onclick="NR.adjustAttr('${attr.key}', 1)" ${attrVal >= attrMax ? 'disabled' : ''} style="font-size:10pt; padding:2px 8px;">+</button>
         </div>
-        <div class="attr-range">2 – 5</div>
+        <div class="attr-range">2 – ${attrMax}</div>
         <div class="attr-dmg-label">${attr.damageLabel}</div>
         <div class="attr-dmg-track" data-dmg="${attr.key}">
           ${Array(attr.max).fill(0).map((_, i) =>
@@ -698,6 +795,83 @@ const NR = (function() {
     if (lc.includes('recovery')) return 'recovery';
     if (lc.includes('keep')) return 'keep';
     return null;
+  }
+
+  function detectAgeGroup() {
+    const age = parseInt(state.age);
+    if (isNaN(age)) return;
+    if (age >= 22 && age <= 28) state.ageGroup = 'Young';
+    else if (age >= 29 && age <= 38) state.ageGroup = 'Experienced';
+    else if (age >= 39 && age <= 52) state.ageGroup = 'Senior';
+    else state.ageGroup = '';
+    setField('ageGroup', state.ageGroup);
+  }
+
+  function getAgeGroupKey() {
+    const ag = (state.ageGroup || '').toLowerCase();
+    if (ag.includes('young')) return 'young';
+    if (ag.includes('experienced')) return 'experienced';
+    if (ag.includes('senior')) return 'senior';
+    return null;
+  }
+
+  function getAttrPointCap() {
+    const agKey = getAgeGroupKey();
+    if (!agKey || !NR_DATA.ageGroups[agKey]) return null;
+    return NR_DATA.ageGroups[agKey].attrPoints;
+  }
+
+  function getSkillPointCap() {
+    const agKey = getAgeGroupKey();
+    if (!agKey || !NR_DATA.ageGroups[agKey]) return null;
+    return NR_DATA.ageGroups[agKey].skillPoints;
+  }
+
+  // Look up an item in equipment tables for encumbrance and description
+  function lookupEquipmentItem(itemName) {
+    if (!itemName) return null;
+    const name = itemName.toLowerCase();
+    const allCats = [
+      ...NR_DATA.equipment.investigative,
+      ...NR_DATA.equipment.tools,
+      ...NR_DATA.equipment.weapons,
+      ...NR_DATA.equipment.armor
+    ];
+    for (const item of allCats) {
+      if (name.includes(item.name.toLowerCase()) || item.name.toLowerCase().includes(name)) {
+        return item;
+      }
+    }
+    return null;
+  }
+
+  function getItemEncumbrance(itemName) {
+    // Try lookup first
+    const eq = lookupEquipmentItem(itemName);
+    if (eq && eq.enc) return eq.enc;
+    // Fallback: parse known patterns
+    const name = (itemName || '').toLowerCase();
+    if (name.includes('pocket') || name.includes('derringer') || name.includes('knife')) return '½';
+    if (name.includes('camera') || name.includes('crowbar') || name.includes('pistol') || name.includes('revolver')) return '1';
+    if (name.includes('shotgun') || name.includes('rifle') || name.includes('thermal')) return '2';
+    if (name.includes('armor') && name.includes('riot')) return '3';
+    if (name.includes('kevlar') || name.includes('vest')) return '1';
+    return '';
+  }
+
+  function getItemTooltip(itemName) {
+    const eq = lookupEquipmentItem(itemName);
+    if (eq) {
+      let tip = eq.name;
+      if (eq.bonus) tip += '\nBonus: ' + eq.bonus;
+      if (eq.damage) tip += '\nDamage: ' + eq.damage;
+      if (eq.range) tip += '\nRange: ' + eq.range;
+      if (eq.traits) tip += '\nTraits: ' + eq.traits;
+      if (eq.notes) tip += '\n' + eq.notes;
+      tip += '\nCL: ' + eq.cl + ' | Enc: ' + eq.enc;
+      return tip;
+    }
+    return itemName;
   }
 
   // ─── TAB NAVIGATION ─────────────────────────────────────
@@ -932,7 +1106,8 @@ const NR = (function() {
     pickTalent, selectTalent, switchTalentTab,
     addExtraTalent, addExtraTalentConfirm, removeExtraTalent,
     addGearItem, removeGearItem,
-    addResourceDie
+    addResourceDie,
+    pickCriticalInjury, addCriticalInjury, removeCriticalInjury
   };
 })();
 
