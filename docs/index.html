@@ -781,9 +781,10 @@ body {
 /* PRINT STYLES */
 @media print {
   body { background: none; }
-  #toolbar, #tab-nav, .wizard-container, .modal-overlay, .toast { display: none !important; }
+  #toolbar, #tab-nav, .modal-overlay, .toast, .no-print { display: none !important; }
   #content { max-width: none; padding: 0; }
-  .tab-panel { display: block !important; }
+  .tab-panel { display: none !important; }
+  #tab-sheet { display: block !important; }
   .sheet-page {
     box-shadow: none; margin: 0; padding: 0.25in 0.4in 0.3in;
     page-break-after: always; min-height: auto;
@@ -1048,8 +1049,11 @@ body {
 
 <!-- ── TAB: EQUIPMENT REFERENCE ──────────────────────────── -->
 <div class="tab-panel" id="tab-equipment">
-  <div class="ref-wrapper">
-    <h2>Equipment Reference</h2>
+  <div class="ref-wrapper" id="ref-equipment-content">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <h2 style="margin:0;">Equipment Reference</h2>
+      <button class="sheet-edit-btn no-print" onclick="NR.printRef('ref-equipment-content')" style="font-size:8pt; padding:4px 12px;">🖶 Print</button>
+    </div>
     <div id="equipment-ref"><!-- Populated by JS --></div>
     <h2 style="margin-top:24px;">Vehicles</h2>
     <div id="vehicles-ref"><!-- Populated by JS --></div>
@@ -1058,16 +1062,22 @@ body {
 
 <!-- ── TAB: TALENTS REFERENCE ────────────────────────────── -->
 <div class="tab-panel" id="tab-talents">
-  <div class="ref-wrapper">
-    <h2>Talents Reference</h2>
+  <div class="ref-wrapper" id="ref-talents-content">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <h2 style="margin:0;">Talents Reference</h2>
+      <button class="sheet-edit-btn no-print" onclick="NR.printRef('ref-talents-content')" style="font-size:8pt; padding:4px 12px;">🖶 Print</button>
+    </div>
     <div id="talents-ref"><!-- Populated by JS --></div>
   </div>
 </div>
 
 <!-- ── TAB: RULES REFERENCE ──────────────────────────────── -->
 <div class="tab-panel" id="tab-rules">
-  <div class="ref-wrapper">
-    <h2>Quick Rules Reference</h2>
+  <div class="ref-wrapper" id="ref-rules-content">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <h2 style="margin:0;">Quick Rules Reference</h2>
+      <button class="sheet-edit-btn no-print" onclick="NR.printRef('ref-rules-content')" style="font-size:8pt; padding:4px 12px;">🖶 Print</button>
+    </div>
     <div id="rules-ref"><!-- Populated by JS --></div>
   </div>
 </div>

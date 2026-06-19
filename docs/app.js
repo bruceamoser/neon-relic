@@ -1051,6 +1051,35 @@ const NR = (function() {
     input.click();
   }
 
+  // ─── REFERENCE TAB PRINT ────────────────────────────────
+  function printRef(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    // Clone the content into a temporary printable window
+    const printWindow = window.open('', '_blank', 'width=800,height=600');
+    if (!printWindow) { window.print(); return; }
+    printWindow.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Print</title>');
+    // Copy styles
+    const styles = document.querySelectorAll('style, link[rel="stylesheet"]');
+    styles.forEach(s => { printWindow.document.write(s.outerHTML); });
+    printWindow.document.write('<style>');
+    printWindow.document.write('body { background: #f0ead6; font-family: "Special Elite", "Courier New", monospace; padding: 20px; color: #1a1a18; }');
+    printWindow.document.write('table { width:100%; border-collapse:collapse; font-size:7.5pt; }');
+    printWindow.document.write('th { text-align:left; background:rgba(0,0,0,0.06); padding:3px 6px; border-bottom:1.5px solid #1a1a18; font-size:6pt; text-transform:uppercase; }');
+    printWindow.document.write('td { padding:3px 6px; border-bottom:1px dotted #ccc; }');
+    printWindow.document.write('h2 { border-bottom:2px solid #1a1a18; padding-bottom:4px; font-size:12pt; }');
+    printWindow.document.write('h3 { font-size:9pt; color:#2d5a27; border-bottom:1px solid #999; }');
+    printWindow.document.write('h4 { font-size:8pt; color:#2d5a27; }');
+    printWindow.document.write('p { font-size:7.5pt; }');
+    printWindow.document.write('@media print { @page { size: letter; margin: 0.5in; } }');
+    printWindow.document.write('</style></head><body>');
+    printWindow.document.write(container.innerHTML);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.focus();
+    setTimeout(() => { printWindow.print(); printWindow.close(); }, 500);
+  }
+
   // ═════════════════════════════════════════════════════════
   // EQUIPMENT REFERENCE TAB
   // ═════════════════════════════════════════════════════════
@@ -1157,7 +1186,8 @@ const NR = (function() {
     addExtraTalent, addExtraTalentConfirm, removeExtraTalent,
     addGearItem, removeGearItem,
     addResourceDie,
-    pickCriticalInjury, addCriticalInjury, removeCriticalInjury
+    pickCriticalInjury, addCriticalInjury, removeCriticalInjury,
+    printRef
   };
 })();
 
