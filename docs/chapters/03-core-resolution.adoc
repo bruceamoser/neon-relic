@@ -17,7 +17,7 @@ The core philosophy of the Year Zero Engine is that *rolling dice should only oc
 >
 > *Roll required:* A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded, or otherwise separated, for immediate visual clarity at the gaming table:
 
-[%header,cols="2,1,3,1"]
+[cols="2,1,3,1", options="header"]
 |===
 | Dice Type | Color | Source | Typical Range
 
@@ -40,7 +40,7 @@ Successes beyond what was needed are *extra successes*. If the roll supports stu
 
 > **Stunt Points must be spent immediately.** They are not saved between rolls or carried into subsequent actions. If you do not spend a Stunt Point at the moment it is generated, it is lost. Decide how to spend extra successes before the next roll at the table.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Difficulty | Use
 
@@ -134,7 +134,7 @@ If both sides roll zero successes, the outcome is *no change* — the situation 
 
 The following pairings arise most frequently in play. Either side may push their roll as normal, gaining +1 Corruption.
 
-[%header,cols="2,2,3"]
+[cols="2,2,3", options="header"]
 |===
 | Active Roll | Opposing Roll | Situation
 
@@ -156,7 +156,7 @@ The following pairings arise most frequently in play. Either side may push their
 
 Actions in Neon Relic use *five range zones* to describe spatial relationships between characters and threats. Range affects who can help, who can be targeted by attacks, and the Difficulty of many rolls.
 
-[%header,cols="1,2,3"]
+[cols="1,2,3", options="header"]
 |===
 | Zone | Distance | Typical Context
 
@@ -222,7 +222,7 @@ Some situations call for the *entire team to attempt the same action simultaneou
 . Count how many characters *succeed* (met the roll's Difficulty, usually 1).
 . Compare against the *Group Success Threshold* set by the DA:
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Threshold | When to Use
 

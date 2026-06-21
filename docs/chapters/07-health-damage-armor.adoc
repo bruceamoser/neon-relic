@@ -7,7 +7,7 @@ In the Year Zero Engine, characters do not possess a traditional, escalating poo
 
 Every source of damage specifies its type and target attribute. The attack defines the damage, not the defender.
 
-[%header,cols="2,2,4"]
+[cols="2,2,4", options="header"]
 |===
 | Damage Type | Target | Sources
 
@@ -66,7 +66,7 @@ Being *Broken* is not the same as being dead. Death is a separate, subsequent ev
 
 === The Three States
 
-[%header,cols="1,2,4"]
+[cols="1,2,4", options="header"]
 |===
 | State | Status | What It Means
 
@@ -186,7 +186,7 @@ When a character rolls a Critical Injury, their Broken Attribute *remains at 0* 
 
 Roll when Broken by *Strength or Agility* damage.
 
-[%header,cols="^1,2,4,3"]
+[cols="^1,2,4,3", options="header"]
 |===
 | D66 | Injury | Mechanical Effect | Healing
 
@@ -236,7 +236,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 > *All mental criticals:* Gain *+1 Corruption* upon rolling this table, in addition to any listed in the individual result. This +1 applies *once per Broken event*, not per roll — rerolls triggered by Veil Madness (result 63) or similar effects do not trigger the +1 again. Accumulate all Corruption from the sequence and check the threshold once at the end (Step 3 of Simultaneous Injury Resolution).
 
-[%header,cols="^1,2,4,3"]
+[cols="^1,2,4,3", options="header"]
 |===
 | D66 | Injury | Mechanical Effect | Recovery
 
@@ -304,7 +304,7 @@ Attributes damaged during play (by physical or mental damage) recover over time.
 
 === Standard Recovery
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Recovery Type | Attributes Restored | Conditions
 

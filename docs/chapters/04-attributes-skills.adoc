@@ -3,7 +3,7 @@
 
 Characters are defined by *four core attributes*, representing their fundamental physical and mental foundations. In Project Neon Relic, these traditional YZE attributes are updated to fit the modern, investigative tone of an occult thriller:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Attribute | Description
 
@@ -24,7 +24,7 @@ Characters are defined by *four core attributes*, representing their fundamental
 
 The thirteen core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
 
-[%header,cols="1,1,4"]
+[cols="1,1,4", options="header"]
 |===
 | Attribute | Skill | Application in the 1980s Occult Setting
 
@@ -82,7 +82,7 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 
 The following stunts may be purchased on *any* successful skill roll, regardless of which skill is being used. They represent clever execution rather than specialized technique.
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -104,7 +104,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Force
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -115,7 +115,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Brawl
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -126,7 +126,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Endure
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -141,7 +141,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Sneak
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -152,7 +152,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Deft Hands
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -163,7 +163,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Firearms
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -178,7 +178,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Investigate
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -189,7 +189,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Tech
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -200,7 +200,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Lore
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -215,7 +215,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Manipulate
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -226,7 +226,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Command
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 
@@ -237,7 +237,7 @@ The following stunts are available *only* when rolling the listed skill. They re
 
 ==== Psychoanalyze
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Cost | Stunt | Effect
 

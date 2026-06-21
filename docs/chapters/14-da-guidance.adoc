@@ -94,7 +94,7 @@ Good organizations include:
 
 Each organization is a countdown row on the Operations Board. When authoring an organization, define:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Part | Function
 
@@ -294,7 +294,7 @@ The Operations Board is an operational tool, not a scoreboard. Players see the s
 
 Every significant NPC gets an *NPC Card* with the following fields. The first three define who the NPC is; the rest define how they function in the case.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Field | Design Note
 
@@ -317,7 +317,7 @@ Ask: *If the agents were not present, what would this NPC do?* If the answer is 
 
 Supernatural entities in Neon Relic do not think the way humans do. Avoid playing them like slow, dangerous people. Use these behavioral templates:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Entity Type | Behavior Pattern
 
@@ -344,7 +344,7 @@ When players go somewhere you didn't prepare:
 
 Roll when you need an unexpected complication mid-case, when a scene is going too smoothly, or to generate pre-session texture.
 
-[%header,cols="^1,4"]
+[cols="^1,4", options="header"]
 |===
 | D12 | Complication
 
@@ -372,7 +372,7 @@ Not every case ends with an artifact activation. Many of the Covenant's most imp
 
 Before the session begins, define a concrete containment goal separate from any activation contingency:
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Containment Objective | Example Mission Frame
 

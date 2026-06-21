@@ -7,7 +7,7 @@ This chapter covers two connected systems: *Advancement* (the per-session XP deb
 
 Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* — not at the end of a Case File. A session corresponds to one real-world play period (typically 2–4 hours). XP is awarded through a structured *Debriefing* that the DA runs immediately at session end. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
-[%header,cols="^1,5"]
+[cols="^1,5", options="header"]
 |===
 | # | Debriefing Question
 
@@ -20,7 +20,7 @@ Experience Points (XP) are the game's *only* advancement currency. They are awar
 
 === Spending XP
 
-[%header,cols="3,1,2"]
+[cols="3,1,2", options="header"]
 |===
 | Upgrade | XP Cost | Limit
 
@@ -36,7 +36,7 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 
 *The DA runs the debrief questions:*
 
-[%header,cols="3,1,2"]
+[cols="3,1,2", options="header"]
 |===
 | Debriefing Question | Answer | Result
 
@@ -76,7 +76,7 @@ This is the *canonical General Talents list* used at character creation and duri
 
 > *Healing Tag and Stacking:* Talents with the _(Healing)_ tag can heal Corruption. Each tagged talent's trigger is independent, but a character may heal a maximum of *3 Corruption per session* from Healing-tagged General Talents combined — regardless of how many they possess or how many triggers fire. This cap does not apply to Corruption healed by city network capabilities, the Warden's Bracer, or Division talents.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Talent | Effect
 
@@ -108,7 +108,7 @@ Each Background Talent grants *+1 bonus die on rolls using a specific skill*. Th
 
 > *Design Note — Skill Distribution:* The current Background Talent list skews heavily toward Investigate, Lore, and Manipulate backgrounds. This reflects the game's investigation focus but may limit variety for combat-oriented characters. Players who want to reinforce Firearms, Brawl, or Force may find fewer natural-fit options. DAs are encouraged to approve custom backgrounds (one background, one skill, one narrative concept) when the list doesn't match the character concept.
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Background | Bonus Die Skill | Description
 

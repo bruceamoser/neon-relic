@@ -59,7 +59,7 @@ Unless a Talent explicitly says otherwise, read these abilities as *scene-shapin
 
 The Verdant Covenant operates across *five continents* through a cellular structure designed to maintain operational secrecy. No single member — not even the most senior leadership — knows the full scope of the organization.
 
-[%header,cols="2,3,^1"]
+[cols="2,3,^1", options="header"]
 |===
 | Tier | Description | Approximate Count
 
@@ -169,7 +169,7 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 
 The Research Wing is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -185,7 +185,7 @@ _Research personnel do not retrieve artifacts._ Once an artifact's existence and
 
 *Research Wing Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -198,7 +198,7 @@ _Research personnel do not retrieve artifacts._ Once an artifact's existence and
 
 The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -214,7 +214,7 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 
 *Counterintelligence Wing Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -225,7 +225,7 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 
 === Wayfinder Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -285,7 +285,7 @@ Choose one paradigm that defines your agent's prior experience:
 
 Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -296,7 +296,7 @@ Former intelligence or special forces. Trained in infiltration, extraction, and 
 
 *Ex-Agency Operative Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -309,7 +309,7 @@ Former intelligence or special forces. Trained in infiltration, extraction, and 
 
 Brute-force specialist. Comfortable in direct violent confrontation above all else.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -320,7 +320,7 @@ Brute-force specialist. Comfortable in direct violent confrontation above all el
 
 *Heavy-Hitter Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -333,7 +333,7 @@ Brute-force specialist. Comfortable in direct violent confrontation above all el
 
 Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -344,7 +344,7 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 
 *Acquisition Specialist Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -355,7 +355,7 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 
 === Recovery Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -405,7 +405,7 @@ The Catalogers are responsible for the documentation, classification, and contai
 
 The Department also designs containment chambers tailored to each artifact's characteristics: sealed vaults, protective casings, environmental stabilization systems, isolation chambers, or other specialized safeguards. Catalogers conduct periodic inspections to verify that artifacts remain secure and containment measures remain effective.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -416,7 +416,7 @@ The Department also designs containment chambers tailored to each artifact's cha
 
 *Cataloger Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -435,7 +435,7 @@ The Wardens serve as the defensive arm of the Keep. They are responsible for the
 * Coordinating with Counterintelligence on infiltration threats
 * Conducting field operations to disrupt hostile activities or recover stolen property when credible threats emerge
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -451,7 +451,7 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 
 *Warden Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -464,7 +464,7 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 
 Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -475,7 +475,7 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 
 *Internal CI Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -500,7 +500,7 @@ Stack is *not* a separate playable Division. Agents choose *The Keep* at charact
 
 Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -516,7 +516,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 *Design note — talent count:* Stack has six talent options compared to three for every other sub-unit. This is intentional. Stack's role is the most operationally broad of any Keep department — covering logistics, repair, modification, invention, and field support. The wider talent list reflects Stack's unique position as the Covenant's primary technical backbone, with different agents specializing in very different aspects of the department's work.
 ====
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 
@@ -530,7 +530,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 
 === Keep Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Talent | Cost | Effect
 

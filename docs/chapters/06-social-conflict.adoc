@@ -11,7 +11,7 @@ Social conflict in Neon Relic uses the *Disposition model* — a lightweight sys
 
 Every NPC who is not immediately cooperative has a *Disposition* — a state describing their current openness to engagement. Disposition exists on a 5-point track:
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Score | State | Behaviour
 
@@ -165,7 +165,7 @@ These are at DA discretion, not every NPC has this capability. When building NPC
 
 When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the DA applies one or more consequences:
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Consequence Type | Example
 
@@ -231,7 +231,7 @@ Marcus spends the stunt point on *Bought Silence* (see xref:chapters/04-attribut
 
 All social rolls may be pushed per the standard push rules (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). Pushing always costs +1 Corruption, in addition to any Disposition penalties listed here. Push *before* knowing the outcome is final — the push replaces your non-6 dice.
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Skill | Pushed Failure | Note
 

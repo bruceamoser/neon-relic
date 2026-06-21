@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NEON RELIC — Operations Board</title>
 <style>
-  /* â”€â”€ RESET â”€â”€ */
+  /* ── RESET ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  /* â”€â”€ FONTS â”€â”€ */
+  /* ── FONTS ── */
   @font-face {
     font-family: 'SpecialElite';
     src: url('../docs/themes/SpecialElite-Regular.ttf') format('truetype'),
@@ -22,7 +22,7 @@
     font-weight: normal; font-style: normal;
   }
 
-  /* â”€â”€ PAGE â”€â”€ */
+  /* ── PAGE ── */
   @page { size: letter landscape; margin: 0; }
   @media print {
     html, body { margin: 0; padding: 0; background: none; height: auto; }
@@ -67,7 +67,7 @@
     flex-direction: column;
   }
 
-  /* â”€â”€ PAPER TEXTURE â”€â”€ */
+  /* ── PAPER TEXTURE ── */
   .page::before {
     content: '';
     position: absolute; inset: 0;
@@ -87,7 +87,7 @@
   }
   .page > * { position: relative; z-index: 1; }
 
-  /* â”€â”€ WATERMARK â”€â”€ */
+  /* ── WATERMARK ── */
   .watermark {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%) rotate(-35deg);
@@ -98,7 +98,7 @@
     pointer-events: none; z-index: 0;
   }
 
-  /* â”€â”€ PERFORATION STRIP â”€â”€ */
+  /* ── PERFORATION STRIP ── */
   .perf-strip {
     height: 10px;
     border-bottom: 1.5px dashed #bbb;
@@ -107,7 +107,7 @@
     color: #bbb; font-size: 4pt; letter-spacing: 2.5px; line-height: 1.1;
   }
 
-  /* â”€â”€ HEADER â”€â”€ */
+  /* ── HEADER ── */
   .header {
     display: flex;
     justify-content: space-between;
@@ -142,7 +142,7 @@
     transform: rotate(-2deg); margin-bottom: 3px;
   }
 
-  /* â”€â”€ BOARD TABLE â”€â”€ */
+  /* ── BOARD TABLE ── */
   .board {
     width: 100%;
     border-collapse: collapse;
@@ -232,7 +232,7 @@
     border: 0.5px solid var(--rule-light);
   }
 
-  /* â”€â”€ RELIC MILESTONE ANNOTATION ROW â”€â”€ */
+  /* ── RELIC MILESTONE ANNOTATION ROW ── */
   .ms-row td {
     height: 18px;
     font-family: var(--font-fill);
@@ -248,7 +248,7 @@
     padding: 1px 5px;
   }
 
-  /* â”€â”€ SEPARATOR â”€â”€ */
+  /* ── SEPARATOR ── */
   .sep-row td {
     height: 4px;
     border-left: none;
@@ -259,7 +259,7 @@
     background: transparent;
   }
 
-  /* â”€â”€ ORGANIZATION ROWS â”€â”€ */
+  /* ── ORGANIZATION ROWS ── */
   .org-row td {
     height: 0.5in;
   }
@@ -334,7 +334,7 @@
     background: var(--field-bg);
   }
 
-  /* â”€â”€ LEGEND â”€â”€ */
+  /* ── LEGEND ── */
   .legend {
     margin-top: 6px;
     display: flex;
@@ -358,7 +358,7 @@
     background: var(--ink-light);
   }
 
-  /* â”€â”€ FOOTER â”€â”€ */
+  /* ── FOOTER ── */
   .footer {
     margin-top: auto;
     display: flex; justify-content: space-between;
@@ -375,7 +375,7 @@
 
 <div class="page">
   <div class="watermark">COVENANT</div>
-  <div class="perf-strip">â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹ â—‹</div>
+  <div class="perf-strip">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
 
   <!-- HEADER -->
   <div class="header">

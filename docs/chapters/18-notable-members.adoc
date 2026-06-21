@@ -14,7 +14,7 @@ What follows is a curated excerpt from those archives: notable members from acro
 [[notable-medieval-renaissance]]
 == The Medieval & Renaissance Eras
 
-[%header,cols="3,1,1,5"]
+[cols="3,1,1,5", options="header"]
 |===
 | Member | Dates | Division | Legacy
 
@@ -34,7 +34,7 @@ What follows is a curated excerpt from those archives: notable members from acro
 [[notable-enlightenment-victorian]]
 == The Enlightenment & Victorian Eras
 
-[%header,cols="3,1,1,5"]
+[cols="3,1,1,5", options="header"]
 |===
 | Member | Dates | Division | Legacy
 
@@ -54,7 +54,7 @@ What follows is a curated excerpt from those archives: notable members from acro
 [[notable-20th-century]]
 == The 20th Century (Pre-1980s)
 
-[%header,cols="3,1,1,5"]
+[cols="3,1,1,5", options="header"]
 |===
 | Member | Dates | Division | Legacy
 

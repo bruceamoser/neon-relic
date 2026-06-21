@@ -9,7 +9,7 @@ Every player in Neon Relic portrays a sworn agent of *The Verdant Covenant* — 
 
 Your *Division* is your character class. It defines your role within the Covenant, your primary attribute, your starting skills, and your access to supernatural Division Talents. Your Division tells the group what kind of pressure you are trained to handle -- not that you can solve scenes cleanly on your own. There are three Divisions:
 
-[%header,cols="1,2,1,2"]
+[cols="1,2,1,2", options="header"]
 |===
 | Division | Role | CL | Primary Attribute
 
@@ -50,7 +50,7 @@ Your Wing, Paradigm, or Department determines which sub-unit Talent list you sel
 
 Choose an *Age Group* that reflects your agent's seniority and experience. This determines your age range, attribute point pool, skill point pool (used in Step 4), and *Clearance Level modifier* — the longer you've served the Covenant, the higher your authorization.
 
-[%header,cols="1,1,1,1,1"]
+[cols="1,1,1,1,1", options="header"]
 |===
 | Age Group | Age Range | Attribute Points | Skill Points | CL Modifier
 
@@ -63,7 +63,7 @@ Younger characters are physically sharper (more attribute points); older charact
 
 Distribute your *Attribute Points* across your four core attributes. Each attribute has a minimum score of *2* and a maximum score of *5*.
 
-[%header,cols="1,1,4"]
+[cols="1,1,4", options="header"]
 |===
 | Attribute | Range | Description
 
@@ -92,7 +92,7 @@ Distribute your *Attribute Points* across your four core attributes. Each attrib
 
 Distribute your *Skill Points* (determined by your Age Group in Step 3) across the thirteen core skills. No single skill may exceed *3* at character creation.
 
-[%header,cols="2,1,2,4"]
+[cols="2,1,2,4", options="header"]
 |===
 | Skill | Attr | Starting Max | Recommended Division Priority
 
@@ -123,7 +123,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 >
 > You may spend up to 4 of your starting skill points on your Division's Key Skill. No other skill may exceed 3 at character creation. During play, any skill may advance to a maximum of 5 via XP — the Key Skill restriction applies only at creation.
 
-[%header,cols="1,1"]
+[cols="1,1", options="header"]
 |===
 | Division | Key Skill (Starting Cap: 4)
 
@@ -138,7 +138,7 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 
 At creation, every agent selects *three* talents, one from each of the following categories:
 
-[%header,cols="2,3,2"]
+[cols="2,3,2", options="header"]
 |===
 | Slot | What to Choose | Where to Find the List
 

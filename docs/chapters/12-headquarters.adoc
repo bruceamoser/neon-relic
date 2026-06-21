@@ -29,7 +29,7 @@ Additional capabilities are acquired through the *HQ Upgrade Tree* using Develop
 
 The team earns DP collectively during *the Aftermath* of each Case File:
 
-[%header,cols="3,^1"]
+[cols="3,^1", options="header"]
 |===
 | Trigger | DP Earned
 
@@ -71,7 +71,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 1 upgrades have no prerequisites.* Any can be established from the start of the campaign.
 
-[%header,cols="2,^1,3,3"]
+[cols="2,^1,3,3", options="header"]
 |===
 | Capability | DP Cost | Narrative | Mechanical Benefit
 
@@ -95,7 +95,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 2 upgrades each require at least one Tier 1 capability to be established first.* Prerequisites listed per upgrade.
 
-[%header,cols="2,^1,2,3,2"]
+[cols="2,^1,2,3,2", options="header"]
 |===
 | Capability | DP Cost | Prerequisite | Narrative | Mechanical Benefit
 
@@ -133,7 +133,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 *Tier 3 upgrades require at least two Tier 2 capabilities to be established.* Prerequisites listed per upgrade.
 
-[%header,cols="2,^1,2,3,2"]
+[cols="2,^1,2,3,2", options="header"]
 |===
 | Capability | DP Cost | Prerequisite | Narrative | Mechanical Benefit
 
@@ -173,7 +173,7 @@ Personnel are not combatants. If a cell location is directly attacked, they flee
 
 *Activating Personnel:* Requesting a personnel benefit during a Case File requires only a narrative declaration ("I contact the Dispatcher") — no roll is required unless the DA determines the contact is under surveillance, compromised, or operating outside their stated capability. In those cases, use Command (EMP) Difficulty 2 to reach them. Personnel benefits listed as "once per Case File" reset at the start of each new Case File.
 
-[%header,cols="2,^1,3,2"]
+[cols="2,^1,3,2", options="header"]
 |===
 | Personnel | DP Cost | Who They Are | Benefit
 
@@ -227,7 +227,7 @@ The Threat Meter decreases by 1 at the end of any Case File in which the team wa
 
 When the Threat Meter hits 6, the DA triggers a *Compromise Event* before the next Case File begins. Roll d6:
 
-[%header,cols="^1,4"]
+[cols="^1,4", options="header"]
 |===
 | Roll | Compromise Type
 
@@ -269,7 +269,7 @@ It never applies to individual agents — the Covenant evaluates teams, not hero
 
 === Standing Ranks
 
-[%header,cols="1,1,4"]
+[cols="1,1,4", options="header"]
 |===
 | Score | Rank | What It Means
 
@@ -287,7 +287,7 @@ It never applies to individual agents — the Covenant evaluates teams, not hero
 Standing increases at the end of a case when specific outcomes are achieved.
 All gains are cumulative — multiple criteria can apply in a single case.
 
-[%header,cols="3,1,3"]
+[cols="3,1,3", options="header"]
 |===
 | Trigger | Standing Gain | Notes
 
@@ -312,7 +312,7 @@ All gains are cumulative — multiple criteria can apply in a single case.
 Standing losses are immediate and cannot be avoided by narrative justification. The
 Covenant knows. It always knows.
 
-[%header,cols="3,1,3"]
+[cols="3,1,3", options="header"]
 |===
 | Trigger | Standing Loss | Notes
 
@@ -338,7 +338,7 @@ Covenant knows. It always knows.
 Standing unlocks access to resources, upgrades, and Covenant infrastructure that
 cannot be purchased with Development Points alone.
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Reward | Min. Standing | Effect
 
@@ -363,7 +363,7 @@ prerequisites for the most sensitive upgrades — meeting the DP and capability
 prerequisites is not sufficient alone. The capability cannot be established until both the
 DP/capability prerequisite AND the Standing threshold are met.
 
-[%header,cols="3,1,1"]
+[cols="3,1,1", options="header"]
 |===
 | Capability | DP Cost | Min. Standing
 
@@ -374,7 +374,6 @@ DP/capability prerequisite AND the Standing threshold are met.
 | *Corruption Dampening Vault* (Tier 3)   | 6 DP | 10
 | *Safe House Network* (Tier 3)           | 6 DP | 15
 | *Covenant Armorer* (Tier 3)             | 5 DP | 10
-|===
 |===
 
 > **Design Note:** Standing gates exist because Tier 2 and 3 capabilities represent
@@ -393,7 +392,7 @@ same region. Rival cells compete for case priority, Covenant resources, and Stan
 
 Roll on this table during the first session:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Rival Cell Relationship
 

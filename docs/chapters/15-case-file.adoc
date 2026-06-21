@@ -78,7 +78,7 @@ If nothing has changed, say that too. Silence is its own kind of pressure.
 
 The team decides what to do with this shift. Most undertakings fall into one of these categories:
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Undertaking | What It Looks Like
 
@@ -158,7 +158,7 @@ The player with the highest relevant skill pool should make the roll, but the ta
 
 . *Each other player declares a contribution.* Contributions represent how the rest of the team supports the Key Activity. Each player chooses a different type:
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Contribution Type | What It Does
 
@@ -179,7 +179,7 @@ The player with the highest relevant skill pool should make the roll, but the ta
 
 . *The DA discloses results.* The outcome falls into one of five bands:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Result Band | What Happens
 
@@ -346,7 +346,7 @@ A Location is the DA's primary reference during play — one page or form per lo
 
 Each Location form tracks:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Field | What It Contains
 
@@ -382,7 +382,7 @@ Each Location form tracks:
 
 An NPC Card is a playing-card-sized reference that the DA pulls alongside a Location form. Each NPC exists independently — they may appear at multiple Locations and carry their own evolving knowledge.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Field | What It Contains
 
@@ -425,7 +425,7 @@ An Information Card is a playing-card-sized reference identified by an *I#* code
 
 Information Cards are *double-sided*. The player-facing front states what the agents learn. The DA-facing back lists sources, cross-links, and consequences.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Field | What It Contains
 
@@ -588,7 +588,7 @@ Sometimes you need a case in fifteen minutes. The tables below give DAs a fast o
 
 Roll two d6s: the first die is the tens digit, the second is the units digit.
 
-[%header,cols="1,2,4"]
+[cols="1,2,4", options="header"]
 |===
 | d66 | Form | Nature
 
@@ -636,7 +636,7 @@ Roll two d6s: the first die is the tens digit, the second is the units digit.
 
 How does the cell first become aware of the case?
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Inciting Incident
 
@@ -654,7 +654,7 @@ How does the cell first become aware of the case?
 
 Where does the case take place?
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Location
 
@@ -672,7 +672,7 @@ Where does the case take place?
 
 What makes this case harder than it should be?
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Complication
 
@@ -690,7 +690,7 @@ What makes this case harder than it should be?
 
 If the campaign calls for a recurring antagonist, determine their involvement:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Named Threat Angle
 

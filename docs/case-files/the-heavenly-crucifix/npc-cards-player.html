@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards (Player) — The Heavenly Crucifix</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:16px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; display:grid; grid-template-columns:180px 1fr; gap:6px 14px; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; grid-column:1/-1; margin:0 0 6px; }
+  h2 { font-size:12pt; letter-spacing:2px; color:#2d5a27; grid-column:1/-1; margin:0; }
+  .stamp { text-align:center; border:2px solid #8b1a1a; color:#8b1a1a; padding:4px 12px; font-size:7pt; letter-spacing:3px; display:inline-block; margin:0 auto 16px; }
+  .label { font-size:6pt; text-transform:uppercase; color:#4a4a42; letter-spacing:1px; }
+  .value { font-size:8.5pt; border-bottom:1px dotted #999; padding-bottom:2px; }
+  .full { grid-column:1/-1; }
+  .photo { grid-row:2/8; display:flex; align-items:flex-start; justify-content:center; }
+  .photo img { border:4px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.3); max-width:200px; height:auto; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<div style="text-align:center;"><div class="stamp">COVENANT EYES ONLY — FIELD COPY</div></div>
+<h1 style="text-align:center;">Background Check Summaries — Central Europe</h1>
+<p style="color:#4a4a42;text-align:center;">Preliminary profiles compiled from public records, surveillance, and open-source intelligence. Verification in progress.</p>
+
+<!-- ── SVG Filter Definitions (shared) ── -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="linear" slope="0.85"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="lowcon">
+      <feComponentTransfer><feFuncR type="linear" slope="0.8" intercept="0.1"/><feFuncG type="linear" slope="0.8" intercept="0.1"/><feFuncB type="linear" slope="0.8" intercept="0.1"/></feComponentTransfer>
+    </filter>
+    <filter id="surveil">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="gnoise"/>
+      <feBlend in="SourceGraphic" in2="gnoise" mode="multiply" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="linear" slope="0.82"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+</svg>
+
+<!-- NPC1: Cardinal Voss -->
+<div class="card">
+<h2>NPC1 — Senior Cleric (Identity Unconfirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Vatican Official — Purpose of Visit Unknown</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Cordial, guarded, carrying visible internal tension</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European male, estimated early 60s. Dressed in clerical attire of high ecclesiastical rank — quality of garments suggests senior curial position. Tall, thin, posture described as formal but weighted. Facial expression: composed but strained around the eyes — consistent with sustained internal conflict. Movements are deliberate, unhurried. Subject has been observed in Prague within the timeframe of interest. Carries a leather portfolio — contents unknown. Traveling with a small team including a younger cleric (see NPC5) and a security attachment (see NPC6).</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity partially confirmed through ecclesiastical directories: senior member of the Roman Curia, believed to be attached to the Congregation for the Doctrine of the Faith. Specific name and title under active confirmation. Arrived in Prague approximately three days after the event of interest. Purpose of visit: unstated. The Congregation for the Doctrine of the Faith is known to handle matters involving Church patrimony and historical artifacts — a focus consistent with potential interest in the object. No criminal record. Public profile: limited — the subject's position typically operates below public visibility. Travel history: incomplete, under investigation.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest. Ecclesiastical rank and timing of arrival coincide with the event of interest. The subject's guarded demeanor and the presence of a security attachment suggest operational purpose beyond routine Church business. Cooperation posture: unknown. Threat posture: assessed as low. Engagement may yield information if handled diplomatically. Source reliability: ecclesiastical directories (partial), surveillance (preliminary).</span></div>
+</div>
+
+<!-- NPC2: Countess Martinice -->
+<div class="card">
+<h2>NPC2 — Elderly Female Resident (Brno Facility)</h2>
+<div><span class="label">Occupation</span><span class="value">Retired — Former Aristocratic Family</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Sharp, alert, eager for conversation</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European female, 82 years of age. Residing in a state-run retirement facility in Brno, Czech Republic. Physical presentation: frail but mentally acute — staff reports describe her as "sharp" and "waiting for visitors." Room contains framed photographs, handwritten letters, and a hand-drawn document resembling a family tree. The resident's family name appears in historical records connected to the object of interest. Subject has reportedly been at the facility for several years. No history of cognitive decline noted in available medical records.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identified as Countess Alžběta Martinice, last surviving member of the Martinice noble line. The Martinice family is historically associated with the Defenestration of Prague (1618) — Count Jaroslav Bořita of Martinice was one of the three officials thrown from Prague Castle windows and survived. Family holdings were seized by the communist government in the mid-20th century. The Countess donated a historical artifact to Prague Castle in 1952 under circumstances described in available records as "under pressure." The artifact was displayed at Prague Castle until recently. The Countess is the last living person with direct family knowledge of the artifact's history and provenance.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of high interest — possibly the most important source of provenance information. The Countess possesses generational knowledge of the object's origin, history, and significance. Her advanced age makes timely engagement a priority. Approach with respect and patience — she is reported to be receptive to genuine interest in her family history but guarded around clergy. Source reliability: public records (high), facility staff reports (confirmed), historical records (verified).</span></div>
+</div>
+
+<!-- NPC3: Klaus Reiner -->
+<div class="card">
+<h2>NPC3 — Male, Professional Thief (Identity Partially Confirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Professional Thief — Current Location Unknown</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Arrogant, erratic, exhibiting signs of psychological deterioration</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European male, estimated mid-30s. German or Austrian nationality — accent analysis pending. Build: lean, athletic. Surveillance imagery from Vienna shows subject moving with unusual confidence — posture described as "untouchable." Subject was observed entering a Vienna gallery and departing approximately 45 minutes later — demeanor noticeably altered between entry and exit. Recent imagery suggests deterioration in grooming and increased agitation. Subject is believed to be in possession of the object of interest. Current location: unknown — actively being sought.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity: Klaus Reiner, German national, age 34. Criminal record in Germany and Austria — multiple convictions for theft, burglary, and art fraud. Known associate of organized crime networks operating in Central Europe. Released from custody 18 months ago — parole status: active. Known to work with a broker (see NPC4) who arranges high-value contracts. No history of violent crime prior to current situation — previous offenses are property crimes only. Subject's recent behavior represents a significant deviation from established pattern. Financial records: multiple large-sum deposits in past 30 days, origins under investigation.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of high interest — primary subject. Current bearer of the object of interest. Behavioral indicators suggest psychological deterioration possibly related to object proximity. Subject's known location history provides a trail (Prague → Vienna → Munich → unknown). Locating subject is the highest operational priority. Subject is assessed as potentially dangerous — not due to violent history, but due to recent behavioral change of unknown cause. Approach with caution. Source reliability: criminal records (high), surveillance (preliminary), financial data (partial).</span></div>
+</div>
+
+<!-- NPC4: Elena Varga -->
+<div class="card">
+<h2>NPC4 — Female, Professional Broker (Identity Confirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Art and Antiquities Broker — Vienna</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Professional, transactional, unflappable</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European female, estimated late 30s. Hungarian nationality per immigration records. Professional attire — business dress, quality assessed as high. Posture and movement described as economical, confident. Facial expression: neutral, watchful — typical of professional negotiators. Subject operates from multiple locations in Vienna and has been observed at the First District gallery (L3). Carries a tablet device and encrypted phone. Physical presentation consistent with high-end professional services role.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Elena Varga, Hungarian national, age 38. Licensed art dealer and broker, Vienna. Business registration: sole proprietorship, "Varga Art Advisory." No criminal record. Known to facilitate high-value transactions between private collectors and acquisition specialists. Business associates include antiquities dealers, private security contractors, and offshore financial service providers. Travel history: frequent movement between Vienna, Zurich, Munich, and Prague — consistent with Central European art market operations. Financial activity: multiple offshore accounts flagged in preliminary review. Subject's client list is not publicly accessible but is believed to include both legitimate collectors and parties operating outside standard art market channels.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest — probable intermediary. Subject's professional network and travel patterns position her at the center of the object's movement chain. Cooperation posture: transactional — likely to respond to incentive-based engagement. Threat posture: assessed as low — subject's profile suggests pragmatism over principle. Engagement strategy should emphasize mutual benefit. Source reliability: business registry (high), travel records (confirmed), financial data (partial).</span></div>
+</div>
+
+<!-- NPC5: Father Tomas -->
+<div class="card">
+<h2>NPC5 — Younger Cleric, Scholarly Type</h2>
+<div><span class="label">Occupation</span><span class="value">Jesuit Historian — Church Recovery Team</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Scholarly, curious, less guarded than superior</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European male, estimated mid-40s. Clerical attire — Jesuit order per visual identification. Build: slight, academic. Carries a satchel containing documents and what appears to be historical reference materials. Facial expression: open, engaged, intellectually animated. Observed in conversation with the senior cleric (NPC1) — dynamic suggests subordinate role but with independent opinions. Has been seen taking notes and consulting maps. Demeanor described as approachable — less formal and guarded than the senior cleric.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity partially confirmed: believed to be Father Tomas, a Jesuit historian specializing in Central European ecclesiastical history. Published academic works on Bohemian religious artifacts and the intersection of pagan and Christian sacred sites in the Šumava region. Academic reputation: rigorous, intellectually curious, described by peers as "more interested in truth than doctrine." Attached to the Church recovery team led by NPC1. No criminal record. Travel history: arrived in Prague with NPC1. Professional background suggests expertise relevant to the object's historical context and origin.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of potential interest — possible source of historical expertise. The subject's academic background in pagan-Christian syncretism in the Bohemian region may be directly relevant to the object's origin. Scholarly disposition suggests receptiveness to evidence-based dialogue. May be more approachable than the senior cleric. Source reliability: academic publications (confirmed), ecclesiastical directories (partial), surveillance (preliminary).</span></div>
+</div>
+
+<!-- NPC6: Hans -->
+<div class="card">
+<h2>NPC6 — Male, Security Attachment (Identity Unconfirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Security — Church Recovery Team</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Silent, watchful, professionally alert</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European male, estimated late 30s. Build: athletic, military bearing. Dress: civilian clothing — plain, functional, no distinguishing insignia. Posture described as relaxed but poised — consistent with professional security training. Eyes continuously scanning environment during observation periods. Positioned consistently near the senior cleric (NPC1) — protective formation. Movements are economical and precise. Subject does not initiate conversation and responses to approach are described as minimal. Physical presentation consistent with close-protection specialist.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity unconfirmed. Appearance and bearing are consistent with Vatican security personnel — possibly Swiss Guard or former military attached to Church protective detail. No criminal record found under preliminary search parameters. No hotel registration, travel documentation, or employment records located — consistent with official Church travel under diplomatic or ecclesiastical credentials. Subject's precise background, nationality, and training are unknown. Assessment is based on observational indicators only. Subject's presence on a Church recovery team suggests the Vatican considers this operation to require protective security — a notable escalation from standard cultural patrimony recovery.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of note — protective security for NPC1. Subject is not assessed as independently hostile but will respond to threats against the senior cleric. Professional training level: assessed as high. Engagement: not recommended as primary contact — approach NPC1 or NPC5 instead. Subject's presence confirms the Church regards this operation as serious. Source reliability: surveillance (observed), public records (no match — consistent with official status).</span></div>
+</div>
+
+<!-- NPC7: The Intermediary -->
+<div class="card">
+<h2>NPC7 — Female, Art Dealer (Identity Partially Confirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Art Dealer — Buyer's Intermediary</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Cautious, discreet, visibly stressed</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">European female, estimated early 40s. Professional attire — art world business dress, quality assessed as high. Physical presentation: polished but showing signs of stress — visible tension in shoulders and jaw, shadows under eyes in recent surveillance imagery. Carries a designer handbag and frequently checks a mobile phone. Subject has been observed at the Zurich private aviation terminal and at high-end Vienna establishments. Demeanor described as watchful, nervous — scanning environment upon entry to any location.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity: Margot Lefèvre, French national, age 42. Registered art dealer with offices in Paris and New York. Professional specialization: "special acquisitions" for private clients — a category that includes sourcing objects not available on the open market. Client list is confidential. Known to represent high-net-worth individuals in the contemporary art world. Travel history: frequent transatlantic movement. Recent travel includes Zurich within the timeframe of interest. Financial records: retainer payments from a New York-based holding company — beneficial owner under investigation. No criminal record.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest — intermediary for the buyer. Subject's professional role and recent travel place her in the transaction chain. Stress indicators suggest awareness of the object's nature beyond standard art acquisition. Cooperation posture: unknown — subject's discretion is professional but may be compromised by evident anxiety. Engagement strategy: psychological approach may be more effective than financial inducement. Source reliability: business registry (high), travel records (confirmed), surveillance (preliminary).</span></div>
+</div>
+
+<!-- NPC8: Andy Warhol -->
+<div class="card">
+<h2>NPC8 — American Male, High-Net-Worth Individual (Identity Partially Shielded)</h2>
+<div><span class="label">Occupation</span><span class="value">Artist / Cultural Figure — United States</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Polite, detached, vibrating with quiet anxiety</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">American male, late 50s. Distinctive appearance — silver-white hair, pale complexion, frequently wears dark sunglasses regardless of lighting conditions. Build: thin, fragile — movement suggests physical caution, possibly due to prior medical trauma. Dress: distinctive, high-fashion, recognizable. Subject is internationally famous — visual identification is immediate. Observed carrying a Polaroid camera. Physical presentation: guarded, physically withdrawn — does not initiate physical contact and flinches if touched unexpectedly. Subject's public persona is well-documented; private demeanor is described as quieter and more anxious than public presentation suggests.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity: Andy Warhol, American artist and cultural figure. Public biography is extensively documented. Relevant background: survived an assassination attempt in 1968 — shot three times at close range, clinically dead on the operating table before resuscitation. Wears a surgical corset as a result of injuries sustained. Known to have a profound fear of hospitals and medical settings. Publicly expresses interest in religious imagery and mortality themes in his artwork. Recent travel: private aircraft movement from New York to Zurich confirmed via air traffic records. Purpose of travel: unstated. No criminal record. Financial resources: substantial — capable of funding high-seven-figure acquisitions.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of high interest — believed to be the buyer. Subject's documented near-death experience and ongoing physical vulnerability provide a comprehensible motivation for interest in the object. Subject is not assessed as hostile or dangerous — psychological profile suggests a frightened individual making a fear-driven decision rather than a calculated acquisition. Engagement strategy: honest, compassionate appeal may be more effective than confrontation. Subject's fame and public visibility are operational factors — any interaction carries risk of public exposure. Source reliability: public records (high), travel records (confirmed), psychological assessment (preliminary).</span></div>
+</div>
+
+</body>
+</html>

@@ -16,7 +16,7 @@ Run rivals as *organizations first* and combatants second.
 
 Each rival faction organization should answer four questions:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Question | What to Decide
 
@@ -38,7 +38,7 @@ For the full Organization Reference format and how it fits into the case file pa
 
 The Ch 15 Operations Board uses *Organization Rows* with 14 countdown squares and labeled milestone squares. When you bring a faction into a case, translate their dossier into an Organization Row entry like this:
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Organization Row Field | From This Dossier
 
@@ -71,7 +71,7 @@ A discreet transnational conspiracy of fixers, collectors, intelligence cutouts,
 
 Their campaign role is *covert competition*.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Compact Organization Behavior | Notes
 
@@ -84,7 +84,7 @@ Their campaign role is *covert competition*.
 Use the Compact when you want professionals who can mirror Covenant tradecraft without matching Covenant ethics.
 
 .Compact Milestone Template
-[%header,cols="1,3,3"]
+[cols="1,3,3", options="header"]
 |===
 | Milestone | Label | Consequence (Fill In)
 | O_M1 | Compact Active | First Compact operative arrives. Add a tail on one agent or seal one Location's access.
@@ -93,7 +93,7 @@ Use the Compact when you want professionals who can mirror Covenant tradecraft w
 |===
 
 .Typical Compact Operative
-[%header,cols="1,1,1,1,1"]
+[cols="1,1,1,1,1", options="header"]
 |===
 | STR | AGL | WIT | EMP | Skills
 | 3 | 4 | 4 | 2 | Sneak 3, Shoot 2, Manipulate 2, Investigate 2
@@ -108,7 +108,7 @@ A true-believer occult movement built around revelation, purification, and sacri
 
 Their campaign role is *fanatical escalation*.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Accord Organization Behavior | Notes
 
@@ -121,7 +121,7 @@ Their campaign role is *fanatical escalation*.
 Use the Ember Accord when the problem is not only possession of the artifact but an ideology that demands activation regardless of cost.
 
 .Accord Milestone Template
-[%header,cols="1,3,3"]
+[cols="1,3,3", options="header"]
 |===
 | Milestone | Label | Consequence (Fill In)
 | O_M1 | Accord Gathering | A devotional cell is forming around the artifact. Witnesses are becoming believers instead of sources.
@@ -130,7 +130,7 @@ Use the Ember Accord when the problem is not only possession of the artifact but
 |===
 
 .Typical Accord Zealot
-[%header,cols="1,1,1,1,1"]
+[cols="1,1,1,1,1", options="header"]
 |===
 | STR | AGL | WIT | EMP | Skills
 | 3 | 2 | 2 | 4 | Manipulate 3, Lore 2, Fight 2
@@ -145,7 +145,7 @@ A heavily militarized branch of the American Department of Defense responsible f
 
 Their campaign role is *state power and containment-through-force*.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | MJ-12 Organization Behavior | Notes
 
@@ -158,7 +158,7 @@ Their campaign role is *state power and containment-through-force*.
 Use MJ-12 when the threat is surveillance, black-bag extraction, official deniability, and overwhelming tactical response.
 
 .MJ-12 Milestone Template
-[%header,cols="1,3,3"]
+[cols="1,3,3", options="header"]
 |===
 | Milestone | Label | Consequence (Fill In)
 | O_M1 | MJ-12 Surveillance | Agents are under surveillance. One Location becomes "monitored" — any scene there risks being observed and reported.
@@ -167,7 +167,7 @@ Use MJ-12 when the threat is surveillance, black-bag extraction, official deniab
 |===
 
 .Typical MJ-12 Field Agent
-[%header,cols="1,1,1,1,1"]
+[cols="1,1,1,1,1", options="header"]
 |===
 | STR | AGL | WIT | EMP | Skills
 | 4 | 3 | 3 | 2 | Shoot 3, Fight 2, Investigate 2, Tech 1
@@ -194,7 +194,7 @@ An elite, global network of corporate executives, politicians, and billionaires 
 
 Their campaign role is *elite corruption and patronage*.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Consortium Organization Behavior | Notes
 
@@ -207,7 +207,7 @@ Their campaign role is *elite corruption and patronage*.
 Use the Consortium when the artifact is moving through luxury channels, shell companies, private estates, or buyers who think occult catastrophe is an acceptable line item.
 
 .Consortium Milestone Template
-[%header,cols="1,3,3"]
+[cols="1,3,3", options="header"]
 |===
 | Milestone | Label | Consequence (Fill In)
 | O_M1 | Consortium Interest | Legal and financial obstruction begins. One NPC becomes uncooperative; one Location requires a new access route.
@@ -216,7 +216,7 @@ Use the Consortium when the artifact is moving through luxury channels, shell co
 |===
 
 .Typical Consortium Operative (Private Security)
-[%header,cols="1,1,1,1,1"]
+[cols="1,1,1,1,1", options="header"]
 |===
 | STR | AGL | WIT | EMP | Skills
 | 4 | 3 | 2 | 2 | Shoot 3, Fight 3, Manipulate 1
