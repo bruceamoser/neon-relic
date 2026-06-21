@@ -1,0 +1,6 @@
+Bytes at offset 9227-9262: 20 61 6e 64 20 73 61 66 65 20 c3 a2 e2 82 ac e2 80 9d 20 77 68 65 6e 20 74 69 6d 65 20 70 65 72 6d 69 74
+Decoded as UTF-8: ' and safe â€” when time permit'
+
+Full double-encoded em dash sequence count: 12
+Context bytes: 73 61 66 65 20 c3 a2 e2 82 ac e2 80 9d 20 77 68 65 6e 20 74 69 6d 65 20 70 65 72 6d
+Context as UTF-8: 'safe â€” when time perm'
