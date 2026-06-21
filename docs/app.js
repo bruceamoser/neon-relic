@@ -609,12 +609,33 @@ const NR = (function() {
   }
 
   function addResourceDie() {
-    const name = prompt('Resource name (e.g., "Ammo", "Battery", "C4"):');
-    if (!name) return;
-    const key = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    let html = '<h3>Add Resource Die</h3>';
+    html += '<p style="font-size:7.5pt; color:var(--ink-faded); margin-bottom:12px;">Create a custom resource to track (e.g., Ammo, Battery, C4, Fuel).</p>';
+    html += '<div style="margin-bottom:12px;">';
+    html += '<label style="display:block; font-family:var(--font-main); font-size:7pt; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Resource Name</label>';
+    html += '<input type="text" id="new-resource-name" placeholder="e.g. C4" style="width:100%; font-family:var(--font-fill); font-size:10pt; padding:8px; border:2px solid var(--rule); background:var(--field-bg); box-sizing:border-box;" autofocus>';
+    html += '</div>';
+    html += '<div style="display:flex; gap:8px; justify-content:flex-end;">';
+    html += '<button onclick="NR.closeModal()" style="font-family:var(--font-main); padding:8px 16px; border:1px solid var(--rule); background:var(--field-bg); cursor:pointer;">Cancel</button>';
+    html += '<button onclick="NR.confirmAddResourceDie()" style="font-family:var(--font-main); padding:8px 16px; border:none; background:var(--green-stamp); color:var(--paper); cursor:pointer;">Add Resource</button>';
+    html += '</div>';
+    openModal(html);
+    // Focus the input after modal renders
+    setTimeout(function() {
+      var inp = document.getElementById('new-resource-name');
+      if (inp) inp.focus();
+    }, 100);
+  }
+
+  function confirmAddResourceDie() {
+    var inp = document.getElementById('new-resource-name');
+    var name = inp ? inp.value.trim() : '';
+    if (!name) { showToast('Enter a resource name', 'warn'); return; }
+    var key = name.toLowerCase().replace(/[^a-z0-9]/g, '');
     state.resourceDice[key] = 'd6';
     saveState();
     buildResourceDice();
+    closeModal();
     showToast('Added resource: ' + name);
   }
 
@@ -1185,9 +1206,9 @@ const NR = (function() {
     pickTalent, selectTalent, switchTalentTab,
     addExtraTalent, addExtraTalentConfirm, removeExtraTalent,
     addGearItem, removeGearItem,
-    addResourceDie,
+    addResourceDie, confirmAddResourceDie,
     pickCriticalInjury, addCriticalInjury, removeCriticalInjury,
-    printRef
+    printRef, closeModal
   };
 })();
 

@@ -79,9 +79,10 @@ body {
   border-radius: 2px;
   transition: background 0.15s;
 }
-#toolbar button:hover, #toolbar select:hover { background: #4a4a44; }
+#toolbar button:hover, #toolbar button:active, #toolbar button:focus-visible,
+#toolbar select:hover, #toolbar select:active, #toolbar select:focus-visible { background: #4a4a44; }
 #toolbar button.primary { background: var(--green-stamp); border-color: var(--green-stamp); color: var(--paper); }
-#toolbar button.primary:hover { background: #3a7a33; }
+#toolbar button.primary:hover, #toolbar button.primary:active, #toolbar button.primary:focus-visible { background: #3a7a33; }
 #toolbar button.danger { background: var(--red-stamp); border-color: var(--red-stamp); color: var(--paper); }
 #toolbar .save-indicator { font-size: 7pt; color: var(--ink-light); }
 
@@ -101,7 +102,7 @@ body {
   text-transform: uppercase; letter-spacing: 1.5px;
   transition: all 0.15s;
 }
-#tab-nav button:hover { color: var(--paper); }
+#tab-nav button:hover, #tab-nav button:active, #tab-nav button:focus-visible { color: var(--paper); }
 #tab-nav button.active { color: var(--green-stamp); border-bottom-color: var(--green-stamp); }
 
 /* -- CONTENT AREA -- */
@@ -596,9 +597,9 @@ body {
   cursor: pointer;
   text-transform: uppercase; letter-spacing: 1px;
 }
-.wizard-nav button:hover { background: var(--ink); color: var(--paper); }
+.wizard-nav button:hover, .wizard-nav button:active, .wizard-nav button:focus-visible { background: var(--ink); color: var(--paper); }
 .wizard-nav button:disabled { opacity: 0.3; cursor: default; }
-.wizard-nav button:disabled:hover { background: var(--paper); color: var(--ink); }
+.wizard-nav button:disabled:hover, .wizard-nav button:disabled:active { background: var(--paper); color: var(--ink); }
 
 /* Option cards for division/department selection */
 .option-cards { display: grid; gap: 10px; }
@@ -611,7 +612,7 @@ body {
   transition: all 0.15s;
   background: var(--field-bg);
 }
-.option-card:hover { border-color: var(--ink); }
+.option-card:hover, .option-card:active, .option-card:focus-visible { border-color: var(--ink); }
 .option-card.selected { border-color: var(--green-stamp); background: rgba(45,90,39,0.08); }
 .option-card .card-title {
   font-family: var(--font-main);
@@ -652,7 +653,7 @@ body {
   font-size: 12pt; cursor: pointer;
   line-height: 1;
 }
-.stat-control button:hover { background: var(--ink); color: var(--paper); }
+.stat-control button:hover, .stat-control button:active, .stat-control button:focus-visible { background: var(--ink); color: var(--paper); }
 .stat-control button:disabled { opacity: 0.2; cursor: default; }
 .points-remaining {
   font-family: var(--font-main);
@@ -668,7 +669,7 @@ body {
   cursor: pointer; font-size: 7.5pt;
   transition: background 0.1s;
 }
-.talent-item:hover { background: rgba(45,90,39,0.06); }
+.talent-item:hover, .talent-item:active, .talent-item:focus-visible { background: rgba(45,90,39,0.06); }
 .talent-item.selected { background: rgba(45,90,39,0.12); border-left: 3px solid var(--green-stamp); }
 .talent-item .talent-cost {
   font-size: 6pt; color: var(--red-stamp);
@@ -685,7 +686,7 @@ body {
   cursor: help; margin-left: 3px;
   vertical-align: middle;
 }
-.info-tip:hover { background: var(--ink); color: var(--paper); }
+.info-tip:hover, .info-tip:active, .info-tip:focus-visible { background: var(--ink); color: var(--paper); }
 
 /* Sheet edit buttons */
 .sheet-edit-btn {
@@ -699,7 +700,7 @@ body {
   border-radius: 2px;
   transition: all 0.15s;
 }
-.sheet-edit-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.sheet-edit-btn:hover, .sheet-edit-btn:active, .sheet-edit-btn:focus-visible { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
 /* Encumbrance warning */
 .stat-box.encumbered { border-color: var(--red-stamp); border-width: 2px; }
@@ -794,10 +795,252 @@ body {
   @page { size: letter portrait; margin: 0; }
 }
 
-/* Responsive: for screens smaller than letter, scale down */
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE: Tablet & Mobile (≤900px)
+   ═══════════════════════════════════════════════════════════ */
 @media screen and (max-width: 900px) {
-  .sheet-page { width: 100%; min-height: auto; padding: 0.2in; }
-  .sheet-header-title { font-size: 18pt; }
+  /* -- Sheet page scaling -- */
+  .sheet-page { width: 100%; min-height: auto; padding: 0.18in 0.2in 0.22in; }
+  .sheet-header-title { font-size: 16pt; letter-spacing: 6px; }
+  .sheet-header-subtitle { font-size: 6.5pt; letter-spacing: 2px; }
+  .classification { font-size: 9pt; letter-spacing: 3px; padding: 2px 8px; }
+
+  /* -- Header stacks vertically -- */
+  .sheet-header { flex-direction: column; gap: 8px; }
+  .sheet-header-right { text-align: left; }
+
+  /* -- ID blocks — collapse to 2 columns -- */
+  .id-block-row1 { grid-template-columns: 1fr 1fr; }
+  .id-block-row2 { grid-template-columns: 1fr 1fr; }
+
+  /* -- Attribute/skill grid — 2 columns -- */
+  .attr-skill-grid { grid-template-columns: repeat(2, 1fr); gap: 5px; }
+
+  /* -- Talent blocks — 2 columns -- */
+  .three-col { grid-template-columns: 1fr 1fr; gap: 6px; }
+
+  /* -- Field rows stack -- */
+  .field-row { flex-direction: column; gap: 6px; }
+
+  /* -- Toolbar -- */
+  #toolbar { gap: 8px; padding: 6px 10px; }
+  #toolbar .logo { font-size: 12pt; letter-spacing: 3px; }
+  #toolbar button, #toolbar select {
+    padding: 8px 14px; font-size: 7.5pt; min-height: 40px;
+  }
+
+  /* -- Tab nav — horizontal scroll -- */
+  #tab-nav {
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    padding: 0 8px; flex-wrap: nowrap;
+  }
+  #tab-nav button {
+    white-space: nowrap; flex-shrink: 0;
+    padding: 10px 14px; font-size: 7.5pt; min-height: 40px;
+  }
+
+  /* -- Content area -- */
+  #content { padding: 12px 8px; }
+
+  /* -- Corruption track — wrap, larger targets -- */
+  .corruption-track { flex-wrap: wrap; gap: 4px; }
+  .cpip {
+    width: 30px; height: 30px; font-size: 8pt;
+    min-width: 30px; min-height: 30px;
+  }
+  .corr-stage-ref { min-width: auto; font-size: 6pt; }
+
+  /* -- Damage pips — larger touch targets -- */
+  .attr-dmg-track .pip { width: 22px; height: 22px; min-width: 22px; min-height: 22px; }
+
+  /* -- Skill boxes — larger -- */
+  .skill-box { width: 36px; height: 28px; font-size: 11pt; line-height: 26px; }
+  .skill-row { font-size: 8pt; padding: 5px 4px; }
+  .skill-row .sheet-edit-btn {
+    padding: 2px 8px; font-size: 9pt;
+    min-width: 28px; min-height: 28px;
+  }
+
+  /* -- Sheet edit buttons — larger -- */
+  .sheet-edit-btn { padding: 3px 10px; font-size: 7pt; min-height: 28px; }
+
+  /* -- Option cards -- */
+  .option-cards.cols-3 { grid-template-columns: 1fr 1fr; }
+  .option-cards.cols-2 { grid-template-columns: 1fr 1fr; }
+
+  /* -- Reference wrapper — full width, scrollable tables -- */
+  .ref-wrapper {
+    padding: 14px 12px; max-width: 100%;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .ref-wrapper table { font-size: 7pt; min-width: 500px; }
+  .ref-wrapper th, .ref-wrapper td { padding: 4px 4px; }
+
+  /* -- Gear table — horizontal scroll -- */
+  .gear-table {
+    display: block; width: 100%;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+
+  /* -- Modal -- */
+  .modal { max-width: 95vw; max-height: 85vh; padding: 14px; }
+  .modal h3 { font-size: 10pt; }
+  .modal table { font-size: 7pt; }
+
+  /* -- Dice roller -- */
+  #dice-pool-display { gap: 4px; }
+  .die { width: 32px; height: 32px; font-size: 12pt; }
+
+  /* -- Wizard -- */
+  .wizard-container { max-width: 100%; padding: 16px; }
+  .wizard-step-title { font-size: 13pt; letter-spacing: 2px; }
+  .wizard-progress .step-dot { width: 32px; height: 32px; font-size: 8pt; }
+
+  /* -- Page 2 header -- */
+  .p2-header { flex-direction: column; gap: 6px; }
+  .p2-title { font-size: 14pt; letter-spacing: 4px; }
+  .p2-right { text-align: left; }
+  .p2-agent-line { min-width: 100px; }
+
+  /* -- Footer — relative positioning (not absolute) -- */
+  .sheet-footer {
+    position: relative; bottom: auto; left: auto; right: auto;
+    margin-top: 14px; flex-wrap: wrap; gap: 4px;
+  }
+
+  /* -- Section titles -- */
+  .section-title { font-size: 6.5pt; letter-spacing: 2px; }
+
+  /* -- Talent block -- */
+  .talent-block { min-height: auto; }
+  .talent-name { font-size: 8pt; }
+  .talent-desc { font-size: 6pt; }
+
+  /* -- Stat box -- */
+  .stat-box .stat-value { font-size: 16pt; min-height: 20px; }
+
+  /* -- Anchor box -- */
+  .anchor-box { padding: 4px 6px; }
+
+  /* -- Notes lines -- */
+  .notes-line { height: 14px; }
+
+  /* -- Wizard nav buttons -- */
+  .wizard-nav button { padding: 10px 16px; font-size: 8pt; min-height: 44px; }
+
+  /* -- Stat controls -- */
+  .stat-control .stat-label { width: 80px; font-size: 7pt; }
+  .stat-control .stat-val { width: 32px; height: 32px; font-size: 12pt; line-height: 28px; }
+  .stat-control button { width: 32px; height: 32px; font-size: 14pt; min-width: 32px; min-height: 32px; }
+
+  /* -- Talent list items -- */
+  .talent-item { padding: 10px 8px; font-size: 7pt; }
+
+  /* -- Resource dice section -- */
+  #resource-dice-section { flex-wrap: wrap; }
+
+  /* -- ID values -- */
+  .id-value { font-size: 8pt; min-height: 16px; }
+  .id-label { font-size: 5pt; }
+
+  /* -- Field values -- */
+  .field-value { font-size: 8pt; }
+  .field-label { font-size: 5pt; }
+
+  /* -- Watermark smaller -- */
+  .watermark { font-size: 50pt; letter-spacing: 10px; }
+
+  /* -- Corruption threshold / stat boxes inline -- */
+  #corruption-track ~ .stat-box { min-width: 60px; }
+
+  /* -- Info tip larger -- */
+  .info-tip { width: 20px; height: 20px; line-height: 18px; font-size: 9pt; }
+
+  /* -- Dice roller form elements -- */
+  #tab-dice select { min-height: 36px; padding: 6px; font-size: 10pt; }
+  #tab-dice button { min-height: 44px; padding: 10px 20px; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE: Small Phones (≤480px)
+   ═══════════════════════════════════════════════════════════ */
+@media screen and (max-width: 480px) {
+  .sheet-page { padding: 0.10in 0.12in 0.15in; }
+  .sheet-header-title { font-size: 12pt; letter-spacing: 4px; }
+  .classification { font-size: 7pt; letter-spacing: 2px; }
+
+  /* -- Single column for all grids -- */
+  .id-block-row1, .id-block-row2 { grid-template-columns: 1fr; }
+  .attr-skill-grid { grid-template-columns: 1fr; }
+  .three-col { grid-template-columns: 1fr; }
+  .option-cards.cols-2, .option-cards.cols-3 { grid-template-columns: 1fr; }
+
+  /* -- Toolbar compact -- */
+  #toolbar { gap: 4px; padding: 4px 6px; }
+  #toolbar .logo {
+    font-size: 10pt; letter-spacing: 2px;
+    width: 100%; text-align: center; margin-right: 0;
+  }
+  #toolbar button, #toolbar select {
+    padding: 6px 10px; font-size: 6.5pt; min-height: 36px;
+  }
+
+  /* -- Tab nav -- */
+  #tab-nav button { padding: 8px 10px; font-size: 6.5pt; min-height: 36px; }
+
+  /* -- Content -- */
+  #content { padding: 8px 4px; }
+
+  /* -- Corruption pips slightly smaller but still tappable -- */
+  .cpip { width: 26px; height: 26px; font-size: 7pt; min-width: 26px; min-height: 26px; }
+
+  /* -- Skill boxes -- */
+  .skill-box { width: 30px; height: 24px; font-size: 9pt; line-height: 22px; }
+
+  /* -- Modal full-width -- */
+  .modal {
+    max-width: 100vw; max-height: 90vh;
+    padding: 10px; border-width: 2px;
+    margin: 4px;
+  }
+  .modal h3 { font-size: 9pt; letter-spacing: 1px; }
+
+  /* -- Header -- */
+  .sheet-header { padding: 4px 0; }
+  .sheet-header-subtitle { font-size: 5.5pt; letter-spacing: 2px; }
+  .sheet-header-right { font-size: 5.5pt; }
+
+  /* -- Page 2 -- */
+  .p2-title { font-size: 12pt; letter-spacing: 3px; }
+
+  /* -- Dice -- */
+  .die { width: 28px; height: 28px; font-size: 10pt; }
+
+  /* -- Wizard -- */
+  .wizard-container { padding: 10px; border-width: 1px; }
+  .wizard-step-title { font-size: 11pt; letter-spacing: 2px; }
+  .wizard-progress .step-dot { width: 26px; height: 26px; font-size: 7pt; }
+
+  /* -- Watermark -- */
+  .watermark { font-size: 36pt; letter-spacing: 6px; }
+
+  /* -- Toast spans bottom -- */
+  .toast { left: 10px; right: 10px; bottom: 10px; text-align: center; font-size: 7pt; }
+
+  /* -- Reference tables -- */
+  .ref-wrapper { padding: 10px 8px; }
+  .ref-wrapper table { font-size: 6.5pt; min-width: 420px; }
+
+  /* -- Perf strip -- */
+  .perf-strip { font-size: 3pt; letter-spacing: 1.5px; }
+
+  /* -- Save indicator -- */
+  #toolbar .save-indicator { display: none; }
+
+  /* -- Dice roller form stacking -- */
+  #tab-dice .ref-wrapper > div:first-of-type > div {
+    flex-direction: column; align-items: stretch;
+  }
 }
 </style>
 </head>
