@@ -334,6 +334,58 @@
     background: var(--field-bg);
   }
 
+  /* Past-day square (before case start) */
+  .sq.past {
+    background: rgba(0,0,0,0.10);
+  }
+
+  /* ── BLACKED-OUT PAST COLUMNS ── */
+  /* Columns before the case start day are immutable past — heavily blacked out.
+     Apply .col-past to th, td, and .quad elements in past-day columns. */
+  .col-past {
+    background-color: rgba(0,0,0,0.35) !important;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.08) 3px,
+      rgba(0,0,0,0.08) 6px
+    ) !important;
+  }
+  .board thead th.col-past {
+    color: rgba(240,234,214,0.2) !important;
+    background-color: rgba(0,0,0,0.40) !important;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.10) 3px,
+      rgba(0,0,0,0.10) 6px
+    ) !important;
+  }
+  .quad.filled.col-past {
+    background-color: rgba(0,0,0,0.50) !important;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.12) 3px,
+      rgba(0,0,0,0.12) 6px
+    ) !important;
+    color: rgba(240,234,214,0.15) !important;
+    border-color: rgba(0,0,0,0.15) !important;
+  }
+  .sq.past.col-past {
+    background-color: rgba(0,0,0,0.40) !important;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      rgba(0,0,0,0.10) 3px,
+      rgba(0,0,0,0.10) 6px
+    ) !important;
+  }
+
   /* ── LEGEND ── */
   .legend {
     margin-top: 6px;
@@ -356,6 +408,22 @@
   }
   .legend-swatch.filled {
     background: var(--ink-light);
+  }
+  .legend-swatch.past {
+    background: rgba(0,0,0,0.18);
+    position: relative;
+  }
+  .legend-swatch.past::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 1px,
+      rgba(0,0,0,0.06) 1px,
+      rgba(0,0,0,0.06) 2px
+    );
   }
 
   /* ── FOOTER ── */
@@ -409,20 +477,20 @@
           <div class="shift-label">Shifts</div>
           <div class="shift-sublabel">Day Countdown &bull; Relic Milestones</div>
         </td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
       </tr>
 
       <!-- RELIC MILESTONE ANNOTATION ROW -->
@@ -591,10 +659,11 @@
 
   <!-- LEGEND -->
   <div class="legend">
+    <div class="legend-item"><div class="legend-swatch past"></div> Past days (immutable)</div>
     <div class="legend-item"><div class="legend-swatch filled"></div> Pre-filled (past starting value)</div>
     <div class="legend-item"><div class="legend-swatch"></div> Active countdown square</div>
     <div class="legend-item">O#M# = Organization milestone shorthand</div>
-    <div class="legend-item">M / D / E / N = Morning / Day / Evening / Night</div>
+    <div class="legend-item">N / M / D / E = Night / Morning / Day / Evening</div>
   </div>
 
   <!-- FOOTER -->

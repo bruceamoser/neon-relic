@@ -396,11 +396,11 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: color 0.15s ease;
+  pointer-events: auto !important;
 }
 .ms-badge:hover {
   color: #a02020;
   text-decoration: underline;
-}
 }
 .ms-cell.ms-triggered { background: rgba(139,26,26,0.12); }
 .ms-cell.ms-triggered .ms-badge {
@@ -585,8 +585,9 @@ body {
 }
 .ms-label {
   position: absolute;
-  bottom: 1px; left: 50%;
-  transform: translateX(-50%);
+  bottom: 0; left: 0; right: 0;
+  text-align: center;
+  padding: 2px 0;
   font-family: var(--font-fill);
   font-size: 1rem;
   font-weight: bold;
@@ -594,6 +595,7 @@ body {
   white-space: nowrap;
   cursor: pointer;
   transition: color 0.15s ease;
+  pointer-events: auto !important;
 }
 .ms-label:hover {
   color: #a02020;
@@ -625,6 +627,109 @@ body {
 .board td:nth-child(4n+3),
 .board th:nth-child(4n+3) {
   border-right-width: 2.5px;
+}
+
+/* ── PAST-DAY COLUMNS (BLACKED OUT) ── */
+/* Columns before the case start day are immutable past — heavily blacked out. */
+.col-past {
+  background-color: rgba(0,0,0,0.35) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.08) 3px,
+    rgba(0,0,0,0.08) 6px
+  ) !important;
+  pointer-events: none !important;
+  cursor: not-allowed !important;
+}
+
+/* Day header: past columns — nearly black with faint text */
+.board thead th.col-past {
+  color: rgba(240,234,214,0.2) !important;
+  background-color: rgba(0,0,0,0.40) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.10) 3px,
+    rgba(0,0,0,0.10) 6px
+  ) !important;
+}
+
+/* Shift quadrants in past columns: near-black filled state */
+.quad.filled.col-past {
+  background-color: rgba(0,0,0,0.50) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.12) 3px,
+    rgba(0,0,0,0.12) 6px
+  ) !important;
+  color: rgba(240,234,214,0.15) !important;
+  border-color: rgba(0,0,0,0.15) !important;
+}
+
+/* Org squares in past columns — solid dark */
+.sq.col-past {
+  background-color: rgba(0,0,0,0.35) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.08) 3px,
+    rgba(0,0,0,0.08) 6px
+  ) !important;
+}
+
+/* Consumed org squares in past columns — even darker */
+.sq.consumed.col-past {
+  background-color: rgba(0,0,0,0.40) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.10) 3px,
+    rgba(0,0,0,0.10) 6px
+  ) !important;
+}
+
+/* Override the consumed diagonal strikethrough on past squares */
+.sq.consumed.col-past::after {
+  background: rgba(0,0,0,0.15);
+  height: 1px;
+}
+
+/* MS row cells in past columns */
+.ms-row td.col-past,
+.ms-cell.col-past {
+  background-color: rgba(0,0,0,0.35) !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.08) 3px,
+    rgba(0,0,0,0.08) 6px
+  ) !important;
+  color: rgba(139,26,26,0.10) !important;
+}
+
+/* MS cell in past: hide ms badges */
+.ms-cell.col-past .ms-badge {
+  opacity: 0.15 !important;
+}
+
+/* Override all hover/active states for past columns */
+.col-past:hover,
+.col-past:active,
+.sq.col-past:hover,
+.sq.col-past:active,
+.quad.col-past:hover,
+.quad.col-past:active {
+  background-color: rgba(0,0,0,0.35) !important;
+  transform: none !important;
+  border-color: var(--rule) !important;
 }
 
 /* ── CURRENT DAY COLUMN HIGHLIGHT ── */
@@ -680,6 +785,22 @@ body {
   display: inline-block;
 }
 .legend-swatch.filled { background: var(--ink-light); }
+.legend-swatch.past {
+  background: rgba(0,0,0,0.18);
+  position: relative;
+}
+.legend-swatch.past::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 1px,
+    rgba(0,0,0,0.06) 1px,
+    rgba(0,0,0,0.06) 2px
+  );
+}
 .legend-swatch.consumed {
   background: rgba(0,0,0,0.08);
   position: relative;
@@ -914,123 +1035,7 @@ body {
 .btn-small.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
 /* ═══════════════════════════════════════════════════════════
-   DICE ROLLER IN MODAL
-   ═══════════════════════════════════════════════════════════ */
-.dice-roller-panel { }
-.dice-row {
-  display: flex; align-items: center; gap: 10px;
-  margin-bottom: 8px;
-}
-.dice-row label {
-  width: 140px;
-  font-family: var(--font-main);
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--ink-faded);
-}
-.dice-row select {
-  font-family: var(--font-fill);
-  font-size: 1.15rem;
-  padding: 4px 8px;
-  border: 1px solid var(--rule);
-  background: var(--field-bg);
-  min-width: 70px;
-}
-.dice-pool-summary {
-  font-family: var(--font-main);
-  font-size: 1.05rem;
-  padding: 8px;
-  background: var(--field-bg);
-  border: 1px solid var(--rule);
-  margin: 8px 0;
-  text-align: center;
-}
-.dice-actions {
-  display: flex; gap: 8px; margin: 10px 0;
-}
-.btn-roll {
-  font-family: var(--font-main);
-  font-size: 1.3rem;
-  padding: 10px 24px;
-  border: 2px solid var(--ink);
-  background: var(--ink);
-  color: var(--paper);
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  flex: 1;
-  transition: background 0.15s;
-}
-.btn-roll:hover { background: #333; }
-.btn-push {
-  font-family: var(--font-main);
-  font-size: 1.3rem;
-  padding: 10px 24px;
-  border: 2px solid var(--red-stamp);
-  background: var(--red-stamp);
-  color: var(--paper);
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  flex: 1;
-  transition: background 0.15s;
-}
-.btn-push:hover { background: #a02020; }
-.btn-push:disabled { opacity: 0.4; cursor: not-allowed; }
-
-.dice-pool-display {
-  display: flex; gap: 6px; flex-wrap: wrap;
-  margin: 8px 0; min-height: 40px;
-  justify-content: center;
-}
-.die {
-  width: 40px; height: 40px;
-  border: 2px solid var(--ink);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-fill);
-  font-size: 1.8rem; font-weight: bold;
-  background: var(--field-bg);
-  animation: rollIn 0.4s ease-out;
-  border-radius: 3px;
-}
-.die.attr { background: #fafaf5; }
-.die.skill { background: #e8f0e0; border-color: #3a6b35; }
-.die.gear { background: #3a3a36; color: #d4d0c8; border-color: #1a1a18; }
-.die.artifact { background: #6b1a1a; color: #f0d0a0; border-color: #8b1a1a; }
-.die.success {
-  background: var(--green-stamp) !important;
-  color: var(--paper) !important;
-  border-color: var(--green-stamp) !important;
-  box-shadow: 0 0 8px rgba(45,90,39,0.5);
-}
-.die.danger {
-  background: var(--red-stamp) !important;
-  color: var(--paper) !important;
-  border-color: var(--red-stamp) !important;
-}
-
-@keyframes rollIn {
-  from { transform: rotate(180deg) scale(0); opacity: 0; }
-  to { transform: rotate(0) scale(1); opacity: 1; }
-}
-
-.result-summary {
-  font-family: var(--font-main);
-  font-size: 1.15rem;
-  padding: 10px;
-  border: 1.5px solid var(--rule);
-  background: var(--field-bg);
-  line-height: 1.6;
-  text-align: center;
-}
-.success-count { color: var(--green-stamp); font-weight: bold; font-size: 1.7rem; }
-.stunt-count { color: #d4a017; font-weight: bold; }
-.fail-count { color: var(--red-stamp); font-weight: bold; }
-.gear-warn { color: var(--red-stamp); font-weight: bold; }
-
-/* ═══════════════════════════════════════════════════════════
-   SIDE PANELS (Agent Roster, Combat, Social)
+   SIDE PANELS (NPC Roster, Locations, Social)
    ═══════════════════════════════════════════════════════════ */
 .side-panel {
   position: fixed; top: 48px; right: 0;
@@ -1070,19 +1075,6 @@ body {
 .toast.warn { border-left-color: var(--red-stamp); }
 .toast.success { border-left-color: var(--green-stamp); }
 .toast.info { border-left-color: #559; }
-
-/* ═══════════════════════════════════════════════════════════
-   Agent Sheet Modal styles
-   ═══════════════════════════════════════════════════════════ */
-.agent-sheet-modal { }
-.agent-sheet-modal input[type="number"] {
-  font-family: var(--font-fill);
-  font-size: 1.1rem;
-  width: 50px;
-  text-align: center;
-  border: 1px solid var(--rule);
-  background: var(--field-bg);
-}
 
 /* ═══════════════════════════════════════════════════════════
    Infocard flip styles
@@ -1157,27 +1149,6 @@ body {
   font-family: var(--font-main);
 }
 
-/* --- SANDBOX MODE INDICATOR --- */
-#sandbox-indicator {
-  display: none;
-  position: fixed; top: 52px; left: 50%; transform: translateX(-50%);
-  z-index: 2000;
-  background: #a68a1a; color: #1a1a18;
-  padding: 4px 20px;
-  font-family: var(--font-main); font-size: 1.1rem;
-  text-transform: uppercase; letter-spacing: 3px;
-  border: 2px solid #8b1a1a;
-  border-radius: 2px;
-  pointer-events: none;
-}
-body.sandbox-mode .board-page {
-  border: 3px solid #a68a1a;
-  box-shadow: 0 0 20px rgba(166,138,26,0.3);
-}
-body.sandbox-mode #toolbar {
-  border-bottom-color: #a68a1a;
-}
-
 /* --- INFO WEB MAP OVERLAY --- */
 #infoweb-overlay {
   display: none;
@@ -1221,20 +1192,30 @@ body.sandbox-mode #toolbar {
 }
 .infoweb-close:hover { color: var(--red-stamp); }
 
-/* --- SESSION LOG PANEL --- */
-#session-log-panel {
-  position: fixed; top: 48px; left: 0;
-  width: 280px; max-height: calc(100vh - 48px);
-  overflow-y: auto;
-  background: var(--paper);
-  border-right: 3px solid var(--red-stamp);
-  border-bottom: 3px solid var(--red-stamp);
-  box-shadow: 3px 3px 15px rgba(0,0,0,0.45);
-  z-index: 500;
-  font-size: 1rem;
+/* --- CASE FILE IFRAME VIEWER --- */
+#casefile-overlay {
   display: none;
+  position: fixed; inset: 0;
+  z-index: 1800;
+  background: rgba(0,0,0,0.78);
+  align-items: center; justify-content: center;
 }
-#session-log-panel::before {
+#casefile-overlay.open {
+  display: flex;
+  animation: fadeIn 0.2s ease;
+}
+#casefile-container {
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  width: 92vw;
+  height: 90vh;
+  max-width: 1200px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#casefile-container::before {
   content: '';
   position: absolute; inset: 0;
   background:
@@ -1242,7 +1223,77 @@ body.sandbox-mode #toolbar {
       rgba(0,0,0,0.008) 11px, rgba(0,0,0,0.008) 12px);
   pointer-events: none; z-index: 0;
 }
-#session-log-panel > * { position: relative; z-index: 1; }
+#casefile-container > * { position: relative; z-index: 1; }
+
+.casefile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 2px solid var(--red-stamp);
+  background: rgba(0,0,0,0.03);
+  flex-shrink: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.casefile-title {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--red-stamp);
+  flex: 1;
+  min-width: 150px;
+}
+.casefile-view-toggle {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.casefile-view-btn {
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  border: 1px solid var(--rule);
+  background: var(--field-bg);
+  color: var(--ink-faded);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.casefile-view-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.casefile-view-btn:hover { background: var(--ink); color: var(--paper); }
+.casefile-view-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.casefile-close-btn {
+  font-family: var(--font-main);
+  font-size: 2.2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--ink);
+  padding: 0 4px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.casefile-close-btn:hover { color: var(--red-stamp); }
+
+#casefile-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #fff;
+}
 
 /* --- ARIA LIVE REGION (visually hidden) --- */
 #aria-live-region {
@@ -1308,8 +1359,7 @@ body.sandbox-mode #toolbar {
 @media print {
   body { background: none; }
   #toolbar, .modal-overlay, .toast, .no-print, .side-panel,
-  #pressure-strip, #sandbox-indicator, #session-log-panel,
-  #infoweb-overlay, #aria-live-region { display: none !important; }
+  #pressure-strip, #infoweb-overlay, #aria-live-region { display: none !important; }
   #content { max-width: none; padding: 0; }
   .board-page {
     box-shadow: none; margin: 0; padding: 0.2in 0.3in 0.2in;
@@ -1361,38 +1411,32 @@ body.sandbox-mode #toolbar {
   <button onclick="NR.undo()" title="Undo (Ctrl+Z)">↩ Undo</button>
   <button onclick="NR.redo()" title="Redo (Ctrl+Y)">↪ Redo</button>
   <span class="toolbar-sep"></span>
-  <button onclick="NR.openDiceRoller()" class="primary" title="Open Dice Roller (R)">🎲 Dice</button>
   <button onclick="NR.togglePressureMeter()" title="Toggle Pressure Meter (P)">⏳ Pressure</button>
   <span class="toolbar-sep"></span>
-  <button onclick="NR.toggleAgentRoster()" title="Agent Roster (A)">👥 Agents</button>
   <button onclick="NR.toggleNPCRoster()" title="NPC Roster (N)">👤 NPCs</button>
-  <button onclick="NR.toggleCombatPanel()" title="Combat Tracker (C)">⚔ Combat</button>
   <button onclick="NR.toggleSocialPanel()" title="Social Tracker (S)">💬 Social</button>
   <span class="toolbar-sep"></span>
   <button onclick="NR.openCaseBrief()" title="Open Case Brief">📋 Brief</button>
   <button onclick="NR.openRelicSheet()" title="Open Relic Sheet">✦ Relic</button>
   <button onclick="NR.toggleLocationList()" title="Location List (Shift+L)">📍 Locs</button>
   <button onclick="NR.toggleInfoWebMap()" title="Toggle Information Web Map (W)">🕸 Web</button>
-  <button onclick="NR.generatePrompt()" title="Generate Narrative Prompt (?)">💡 Prompt</button>
-  <button onclick="NR.toggleSessionLog()" title="Toggle Session Log (L)">📝 Log</button>
   <span class="toolbar-sep"></span>
-  <button onclick="NR.toggleSandbox()" class="accent" title="Toggle Sandbox Mode (!)">🧪 Sandbox</button>
+  <button onclick="NR.CaseFileViewer.open('caseBrief')" title="View original Case Brief HTML in iframe">📄 Brief File</button>
+  <button onclick="NR.CaseFileViewer.open('operationsBoard')" title="View original Operations Board HTML in iframe">📄 Board File</button>
+  <button onclick="NR.CaseFileViewer.open('relics')" title="View original Relic Sheet HTML in iframe">📄 Relic File</button>
+  <button onclick="NR.CaseFileViewer.open('organizations')" title="View original Organization Reference HTML in iframe">📄 Org File</button>
+  <button onclick="NR.CaseFileViewer.open('infoCards')" title="View original Information Cards HTML in iframe">📄 Info File</button>
+  <button onclick="NR.CaseFileViewer.open('startHere')" title="View original Start Here HTML in iframe">📄 Start File</button>
   <span class="toolbar-sep"></span>
   <button onclick="NR.openSaveModal()" title="Save game state (Ctrl+S)">💾 Save</button>
   <button onclick="NR.openLoadModal()" title="Load game state (Ctrl+O)">📂 Load</button>
-  <button onclick="NR.resetCase()" class="danger" title="Reset to blank board">✕ Reset</button>
+  <button onclick="NR.resetCase()" class="danger" title="Reset to starting values for current case">✕ Reset</button>
   <button onclick="NR.printBoard()" title="Print operations board">🖶 Print</button>
   <span class="save-indicator" id="save-indicator">● Ready</span>
 </div>
 
 <!-- Pressure Meter Strip -->
 <div id="pressure-strip"></div>
-
-<!-- Sandbox Mode Indicator -->
-<div id="sandbox-indicator" role="status" aria-live="polite">SANDBOX MODE</div>
-
-<!-- Session Log Panel (left side) -->
-<div class="side-panel" id="session-log-panel" style="left:0; right:auto; border-left:none; border-right:3px solid var(--red-stamp);"></div>
 
 <!-- Info Web Map Overlay -->
 <div id="infoweb-overlay" role="dialog" aria-modal="true" aria-label="Information Web Map">
@@ -1466,11 +1510,12 @@ body.sandbox-mode #toolbar {
 
   <!-- LEGEND -->
   <div class="legend" id="board-legend">
-    <div class="legend-item"><div class="legend-swatch filled"></div> Pre-filled (past)</div>
+    <div class="legend-item"><div class="legend-swatch past"></div> Past days (immutable)</div>
+    <div class="legend-item"><div class="legend-swatch filled"></div> Shift filled</div>
     <div class="legend-item"><div class="legend-swatch"></div> Active square</div>
     <div class="legend-item"><div class="legend-swatch consumed"></div> Consumed</div>
     <div class="legend-item">O#M# = Org Milestone</div>
-    <div class="legend-item">M/D/E/N = Morning/Day/Evening/Night</div>
+    <div class="legend-item">N/M/D/E = Night/Morning/Day/Evening</div>
   </div>
 
   <!-- FOOTER -->
@@ -1503,16 +1548,25 @@ body.sandbox-mode #toolbar {
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
+     CASE FILE IFRAME VIEWER
+     ═══════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="casefile-overlay" role="dialog" aria-modal="true" aria-label="Case File Viewer" style="z-index:1800;">
+  <div id="casefile-container">
+    <div class="casefile-header">
+      <span class="casefile-title" id="casefile-title">Case File</span>
+      <div class="casefile-view-toggle" id="casefile-view-toggle">
+        <button class="casefile-view-btn active" id="casefile-btn-da" onclick="NR.CaseFileViewer.switchView('da')" title="Director of Agents version">DA View</button>
+        <button class="casefile-view-btn" id="casefile-btn-player" onclick="NR.CaseFileViewer.switchView('player')" title="Player-facing version (if available)">Player View</button>
+      </div>
+      <button class="casefile-close-btn" onclick="NR.CaseFileViewer.close()" aria-label="Close case file viewer">&times;</button>
+    </div>
+    <iframe id="casefile-iframe" src="" title="Case File Document"></iframe>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
      SIDE PANELS
      ═══════════════════════════════════════════════════════ -->
-<div class="side-panel" id="agent-roster-panel">
-  <!-- Populated by NR.AgentTracker.renderRoster() -->
-</div>
-
-<div class="side-panel" id="combat-tracker-panel">
-  <!-- Populated by NR.CombatTracker.renderPanel() -->
-</div>
-
 <div class="side-panel" id="social-tracker-panel">
   <!-- Populated by NR.SocialTracker.renderPanel() -->
 </div>

@@ -10,6 +10,8 @@ const NR_DATA = (function() {
     region: '',
     currentDay: 14,
     shiftsFilled: [],
+    discoveredInfo: [],
+    understoodInfo: [],
     organizations: [
       createBlankOrg('O1', 1), createBlankOrg('O2', 2),
       createBlankOrg('O3', 3), createBlankOrg('O4', 4),
@@ -50,9 +52,9 @@ const NR_DATA = (function() {
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 7, label: 'O1M1', description: 'The Compact sends a cleaner to eliminate loose ends. The agents find a body at their hotel — a warning.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false },
-          { day: 4, label: 'O1M2', description: 'Cleaner fails. The Compact escalates to direct action — a black-market hit squad is dispatched.', crossAdvances: [{ targetOrg: 'O3', squares: 2 }], triggered: false },
-          { day: 1, label: 'O1M3', description: 'The Compact makes its final play. All remaining assets converge on the Spear\'s location for a violent extraction.', crossAdvances: [], triggered: false }
+          { day: 7, label: 'O1M1', description: 'Bribery channels activate across police, hospital, and customs routes.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false },
+          { day: 4, label: 'O1M2', description: 'Field professionals replace cutouts; disappearances and abductions begin.', crossAdvances: [{ targetOrg: 'O2', squares: 1 }], triggered: false },
+          { day: 1, label: 'O1M3', description: 'The Compact has a likely district, safehouse, or export corridor.', crossAdvances: [], triggered: false }
         ],
         linkedEffects: 'Escalation increases heat on all players in Buenos Aires underworld.',
         playerSigns: 'Increased surveillance, unfamiliar faces tailing agents, vehicles parked outside safe houses.', notes: ''
@@ -62,9 +64,9 @@ const NR_DATA = (function() {
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 5, label: 'O2M1', description: 'One crew member cracks under pressure and reaches out to the agents. He offers information in exchange for protection.', crossAdvances: [{ targetOrg: 'O6', squares: 1 }], triggered: false },
-          { day: 3, label: 'O2M2', description: 'The crew fragments. Internal betrayal leads to a shootout at a crew safehouse.', crossAdvances: [{ targetOrg: 'O3', squares: 2 }], triggered: false },
-          { day: 1, label: 'O2M3', description: 'The last surviving crew member makes a desperate play for the Spear, seeking to sell it and disappear.', crossAdvances: [], triggered: false }
+          { day: 5, label: 'O2M1', description: 'One thief disappears with money and papers.', crossAdvances: [], triggered: false },
+          { day: 3, label: 'O2M2', description: 'A wounded thief surfaces through a clinic, fence, confessional, or lover. Cross-advances police and Compact.', crossAdvances: [{ targetOrg: 'O3', squares: 2 }, { targetOrg: 'O1', squares: 1 }], triggered: false },
+          { day: 1, label: 'O2M3', description: 'Surviving crew attempts desperate relocation. Fill 1 extra shift quadrant on the Operations Board.', crossAdvances: [], triggered: false }
         ],
         linkedEffects: 'Crew paranoia makes them unpredictable — they may attack agents or rivals without warning.',
         playerSigns: 'Underground contacts go quiet. Safehouse locations are abandoned. Burner phones stop ringing.', notes: ''
@@ -74,9 +76,9 @@ const NR_DATA = (function() {
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 8, label: 'O3M1', description: 'Homicide detective Mateo Suarez connects the deaths to a larger pattern. Police investigation widens.', crossAdvances: [{ targetOrg: 'O6', squares: 1 }], triggered: false },
-          { day: 6, label: 'O3M2', description: 'Police obtain a warrant for the agents\' hotel. Federal authorities are notified.', crossAdvances: [{ targetOrg: 'O4', squares: 1 }], triggered: false },
-          { day: 3, label: 'O3M3', description: 'Police-Compact confrontation. A full-scale law enforcement operation targets known Compact locations.', crossAdvances: [{ targetOrg: 'O1', squares: 1 }], triggered: false }
+          { day: 8, label: 'O3M1', description: 'Robbery detectives consolidate witness contradictions and unexplained injuries.', crossAdvances: [], triggered: false },
+          { day: 6, label: 'O3M2', description: 'A protected witness is released, moved, or mishandled. Cross-advances Compact and Church.', crossAdvances: [{ targetOrg: 'O1', squares: 2 }, { targetOrg: 'O4', squares: 1 }], triggered: false },
+          { day: 3, label: 'O3M3', description: 'Checkpoints, raids, and formal pressure close the city. O6 activates if still dormant.', crossAdvances: [], triggered: false }
         ],
         linkedEffects: 'Police pressure forces all factions to act more aggressively.',
         playerSigns: 'Police cruisers in the neighborhood. Hotel staff asking questions. Wanted posters.', notes: ''
@@ -86,9 +88,9 @@ const NR_DATA = (function() {
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 9, label: 'O4M1', description: 'Father Esteban Vale reports the theft to the Vatican. A Church investigator is dispatched.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false },
-          { day: 6, label: 'O4M2', description: 'Church leadership goes public with a statement about "desecration of a holy relic." Public pressure mounts.', crossAdvances: [{ targetOrg: 'O3', squares: 2 }, { targetOrg: 'O6', squares: 1 }], triggered: false },
-          { day: 3, label: 'O4M3', description: 'The Church threatens diplomatic consequences. Argentine government pressured to resolve the situation.', crossAdvances: [{ targetOrg: 'O5', squares: 1 }], triggered: false }
+          { day: 9, label: 'O4M1', description: 'Quiet observers begin monitoring hospitals, morgues, and aristocratic channels.', crossAdvances: [], triggered: false },
+          { day: 6, label: 'O4M2', description: 'Church observers identify Compact routes and begin tailing them.', crossAdvances: [{ targetOrg: 'O1', squares: 1 }], triggered: false },
+          { day: 3, label: 'O4M3', description: 'A retrieval cleric arrives with custody demands and incomplete ritual knowledge.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false }
         ],
         linkedEffects: 'Church involvement attracts international attention.',
         playerSigns: 'Increased clergy presence near crime scenes. Church volunteers asking questions. Nuns at the hospital.', notes: ''
@@ -138,14 +140,14 @@ const NR_DATA = (function() {
     });
   }
 
-  // Pre-fill shift quadrants for days already passed based on case's currentDay.
+  // Pre-fill shift quadrants for days already passed based on case\'s currentDay.
   // E.g., currentDay=10 means days 14-11 are fully filled; day 10 is the active day.
   function finalizeShiftsFilled(caseObj) {
     if (!caseObj.shiftsFilled || caseObj.shiftsFilled.length === 0) {
       const currentDay = caseObj.currentDay || 14;
       caseObj.shiftsFilled = [];
       for (let day = 14; day > currentDay; day--) {
-        ['M', 'D', 'E', 'N'].forEach(shift => {
+        ['N', 'M', 'D', 'E'].forEach(shift => {
           caseObj.shiftsFilled.push({ day: day, shift: shift, filled: true, undertaking: '' });
         });
       }
@@ -608,7 +610,7 @@ const NR_DATA = (function() {
       portrait: 'handouts/spear-npc-8-brother-tomas-arce.png',
       organization: 'Independent (false ecclesiastical broker)',
       attributes: { strength: 2, agility: 3, wits: 4, empathy: 3 },
-      skills: { manipulate: 5, deceive: 4, investigate: 2, sneak: 3 },
+      skills: { manipulate: 5, lore: 4, investigate: 2, sneak: 3 },
       gear: 'Fake clerical dress, broker\'s notebook, multiple burner phones',
       disposition: 2,
       secret: 'He wears clerical dress but has no real ecclesiastical authority. He brokers between clergy, smugglers, and collectors.',
@@ -719,133 +721,133 @@ const NR_DATA = (function() {
 
   const SPEAR_INFO_CARDS = [
     {
-      id: 'I1', content: 'The estate vault was breached using shaped charges matched to the vault\'s specific construction — not a random burglary technique. The crew had insider architectural plans.',
+      id: 'I1', title: 'Breach Method', content: 'The estate vault was breached using shaped charges matched to the vault\'s specific construction — not a random burglary technique. The crew had insider architectural plans.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L1'], knownBy: ['Lucia Ferreyra (inferred)', 'Det. Suárez (forensics)'],
       hqFallback: 'Day 1', daNotes: 'Breach Method — insider architectural plans used.', revealed: false
     },
     {
-      id: 'I2', content: 'The thieves bypassed significant conventional valuables — silver, paintings, documents — and went directly to the subterranean vault. They knew exactly what they were after.',
+      id: 'I2', title: 'False Target', content: 'The thieves bypassed significant conventional valuables — silver, paintings, documents — and went directly to the subterranean vault. They knew exactly what they were after.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L1'], knownBy: ['Lucia Ferreyra'],
       hqFallback: 'Day 1', daNotes: 'False Target — confirms the heist was targeted, not opportunistic.', revealed: false
     },
     {
-      id: 'I3', content: 'The operation was professionally financed through Compact cutouts. Wire transfers, equipment procurement, and crew payments all trace back to Vantablack financial infrastructure.',
+      id: 'I3', title: 'Funded Heist Proof', content: 'The operation was professionally financed through Compact cutouts. Wire transfers, equipment procurement, and crew payments all trace back to Vantablack financial infrastructure.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L1', 'L4'], knownBy: ['Sabine Voss (I12 cross-ref)'],
       hqFallback: 'Day 2', daNotes: 'Funded Heist Proof — Compact financial infrastructure traced.', revealed: false
     },
     {
-      id: 'I4', content: 'The estate vault was not merely a safe. It was a custody chamber — a ritual containment site maintained through a liturgical sequence passed down through the custodian family. Breaking the vault broke the containment.',
+      id: 'I4', title: 'Vault Was Suppressive', content: 'The estate vault was not merely a safe. It was a custody chamber — a ritual containment site maintained through a liturgical sequence passed down through the custodian family. Breaking the vault broke the containment.',
       type: 'containment-truth', truthStatus: 'trigger',
       foundAt: ['L1'], knownBy: ['Lucia Ferreyra'],
       hqFallback: 'Day 2', daNotes: 'Vault Was Suppressive — establishes that the theft broke active containment.', revealed: false
     },
     {
-      id: 'I5', content: 'Police have compiled a list of witnesses from the estate neighborhood who reported unusual activity the night of the theft — vehicles, shouting, and at least one person carried out on a stretcher.',
+      id: 'I5', title: 'Witness List', content: 'Police have compiled a list of witnesses from the estate neighborhood who reported unusual activity the night of the theft — vehicles, shouting, and at least one person carried out on a stretcher.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L2'], knownBy: ['Det. Suárez'],
       hqFallback: 'Day 1', daNotes: 'Witness List — neighborhood accounts of the theft night.', revealed: false
     },
     {
-      id: 'I6', content: 'One member of the heist crew was injured during the breach and fled separately. A blood trail and taxi records suggest a route toward La Boca district.',
+      id: 'I6', title: 'Wounded Thief Route', content: 'One member of the heist crew was injured during the breach and fled separately. A blood trail and taxi records suggest a route toward La Boca district.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L2'], knownBy: ['Det. Suárez'],
       hqFallback: 'Day 2', daNotes: 'Wounded Thief Route — blood trail leads toward La Boca.', revealed: false
     },
     {
-      id: 'I7', content: 'Hospital intake records show no matching admissions — suggesting the wounded thief sought unlicensed medical care. Street contacts may know where.',
+      id: 'I7', title: 'Hospital Referrals', content: 'Hospital intake records show no matching admissions — suggesting the wounded thief sought unlicensed medical care. Street contacts may know where.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L2'], knownBy: ['Det. Suárez (gained at O3M2)'],
       hqFallback: 'Day 2', daNotes: 'Hospital Referrals — no matching admissions, unlicensed care likely.', revealed: false
     },
     {
-      id: 'I8', content: 'Witness descriptions and partial security footage produce fragmentary sketches of at least two crew members who did not match any known criminal profile — suggesting outside recruitment.',
+      id: 'I8', title: 'Sketch Fragments', content: 'Witness descriptions and partial security footage produce fragmentary sketches of at least two crew members who did not match any known criminal profile — suggesting outside recruitment.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L2'], knownBy: ['Det. Suárez'],
       hqFallback: 'Day 2', daNotes: 'Sketch Fragments — outside recruitment indicated.', revealed: false
     },
     {
-      id: 'I9', content: 'The Spear is drawn to wound trauma, ideological certainty, righteous violence, and the proximity of anyone who believes themselves chosen. It does not merely react to these conditions — it seeks them out.',
+      id: 'I9', title: 'Appetite Pattern', content: 'The Spear is drawn to wound trauma, ideological certainty, righteous violence, and the proximity of anyone who believes themselves chosen. It does not merely react to these conditions — it seeks them out.',
       type: 'containment-truth', truthStatus: 'appetite',
-      foundAt: ['L1', 'L3', 'L5'], knownBy: ['Lucia Ferreyra', 'Father Vale', 'Sister Inés', 'Rami Acosta (observed effects)'],
+      foundAt: ['L1', 'L3', 'L5'], knownBy: ['Lucia Ferreyra (observed effects)', 'Dr. Maro (wound bloom pattern)', 'Father Vale', 'Sister Inés', 'Rami Acosta (observed effects)'],
       hqFallback: 'Day 2', daNotes: 'Appetite Pattern — what the relic feeds on and is drawn toward.', revealed: false
     },
     {
-      id: 'I10', content: 'After wartime displacement, the relic was placed with the Ferreyra family under a quiet compromise. The Church maintained a monitoring role but never officially acknowledged the arrangement.',
+      id: 'I10', title: 'Postwar Custody Compromise', content: 'After wartime displacement, the relic was placed with the Ferreyra family under a quiet compromise. The Church maintained a monitoring role but never officially acknowledged the arrangement.',
       type: 'supporting-intel', truthStatus: null,
-      foundAt: ['L3'], knownBy: ['Father Vale', 'Sister Inés'],
+      foundAt: ['L3'], knownBy: ['Father Vale', 'Sister Inés', 'Br. Arce (partial)'],
       hqFallback: 'Day 2', daNotes: 'Postwar Custody Compromise.', revealed: false
     },
     {
-      id: 'I11', content: 'The older containment record describes a substitute custody protocol: a specific sequence of shielding, silence, and liturgical actions required to move the Spear without triggering activation. The record is incomplete — key steps are missing or deliberately redacted.',
+      id: 'I11', title: 'Partial Substitute Custody Sequence', content: 'The older containment record describes a substitute custody protocol: a specific sequence of shielding, silence, and liturgical actions required to move the Spear without triggering activation. The record is incomplete — key steps are missing or deliberately redacted.',
       type: 'containment-truth', truthStatus: 'quiescence',
       foundAt: ['L3'], knownBy: ['Lucia Ferreyra (oral tradition)', 'Sister Inés (archival text)'],
       hqFallback: 'Day 2', daNotes: 'Partial Substitute Custody Sequence.', revealed: false
     },
     {
-      id: 'I12', content: 'The heist was funded by Sabine Voss through Vantablack Compact financial channels routed through the Cambio Cerrito currency exchange.',
+      id: 'I12', title: 'Who Financed', content: 'The heist was funded by Sabine Voss through Vantablack Compact financial channels routed through the Cambio Cerrito currency exchange.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L4'], knownBy: ['Sabine Voss'],
       hqFallback: 'Day 2', daNotes: 'Who Financed — Voss through Compact channels.', revealed: false
     },
     {
-      id: 'I13', content: 'The scheduled buyer handoff was meant to occur at a freight staging area but collapsed when the courier and the relic failed to arrive on time. The relic went sideways into someone else\'s hands.',
+      id: 'I13', title: 'Handoff Collapse', content: 'The scheduled buyer handoff was meant to occur at a freight staging area but collapsed when the courier and the relic failed to arrive on time. The relic went sideways into someone else\'s hands.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L4'], knownBy: ['Sabine Voss', 'Iván Luján'],
       hqFallback: 'Day 2', daNotes: 'Handoff Collapse.', revealed: false
     },
     {
-      id: 'I14', content: 'The foreign buyer\'s requirements reveal whether they want the Spear as a proof-of-force weapon or as a symbolic legitimacy token. This distinction determines the urgency and nature of the export threat.',
+      id: 'I14', title: 'Buyer Demands', content: 'The foreign buyer\'s requirements reveal whether they want the Spear as a proof-of-force weapon or as a symbolic legitimacy token. This distinction determines the urgency and nature of the export threat.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L4'], knownBy: ['Sabine Voss (O1M2)', 'Br. Arce (partial)'],
       hqFallback: 'Day 2', daNotes: 'Buyer Demands — shapes endgame urgency.', revealed: false
     },
     {
-      id: 'I15', content: 'The surviving thief exhibits wound bloom — injuries that reopen despite treatment, bleeding in patterns that echo the Spear\'s own wound history.',
+      id: 'I15', title: 'First Supernatural Effects', content: 'The surviving thief exhibits wound bloom — injuries that reopen despite treatment, bleeding in patterns that echo the Spear\'s own wound history.',
       type: 'containment-truth', truthStatus: 'effect',
       foundAt: ['L5'], knownBy: ['Rami Acosta (experiencing it)'],
       hqFallback: 'Day 2', daNotes: 'First Supernatural Effects.', revealed: false
     },
     {
-      id: 'I16', content: 'During and after the heist, one member of the crew began speaking in command-language: references to mandate, destiny, divine selection, and righteous authority.',
+      id: 'I16', title: 'Chosen Ruler Speech', content: 'During and after the heist, one member of the crew began speaking in command-language: references to mandate, destiny, divine selection, and righteous authority.',
       type: 'containment-truth', truthStatus: 'proximity',
       foundAt: ['L5'], knownBy: ['Rami Acosta (witnessed)', 'Iván Luján (producing it)'],
       hqFallback: 'Day 2', daNotes: 'Chosen Ruler Speech — claimant-language.', revealed: false
     },
     {
-      id: 'I17', content: 'The thief knows the location where the last transfer attempt occurred — the site connected to the final break in the custody chain.',
+      id: 'I17', title: 'Final Custody Break Site', content: 'The thief knows the location where the last transfer attempt occurred — the site connected to the final break in the custody chain.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L5'], knownBy: ['Rami Acosta'],
       hqFallback: 'Day 2', daNotes: 'Final Custody Break Site.', revealed: false
     },
     {
-      id: 'I18', content: 'The Compact has established an export corridor — maritime, air charter, or diplomatic pouch — to move the Spear out of Argentina.',
+      id: 'I18', title: 'Export Route', content: 'The Compact has established an export corridor — maritime, air charter, or diplomatic pouch — to move the Spear out of Argentina.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L6'], knownBy: ['Br. Arce (gained at O5M1)'],
       hqFallback: 'Day 2', daNotes: 'Export Route.', revealed: false
     },
     {
-      id: 'I19', content: 'The foreign buyer\'s motivation — whether the Spear is wanted as a weapon of force, a token of political legitimacy, or a devotional relic — shapes the endgame.',
+      id: 'I19', title: 'Buyer Motivation', content: 'The foreign buyer\'s motivation — whether the Spear is wanted as a weapon of force, a token of political legitimacy, or a devotional relic — shapes the endgame.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L6'], knownBy: ['—'],
       hqFallback: 'Day 2', daNotes: 'Buyer Motivation.', revealed: false
     },
     {
-      id: 'I20', content: 'The person currently holding proximity control over the Spear — the bearer — can be identified at the shrine.',
+      id: 'I20', title: 'Proximity Control Holder', content: 'The person currently holding proximity control over the Spear — the bearer — can be identified at the shrine.',
       type: 'containment-truth', truthStatus: 'effect',
       foundAt: ['L7'], knownBy: ['—'],
       hqFallback: '—', daNotes: 'Proximity Control Holder.', revealed: false
     },
     {
-      id: 'I21', content: 'The bearer\'s self-justification — what they believe the Spear is telling them — reveals the Spear\'s current activation vector.',
+      id: 'I21', title: 'Bearer Beliefs', content: 'The bearer\'s self-justification — what they believe the Spear is telling them — reveals the Spear\'s current activation vector.',
       type: 'supporting-intel', truthStatus: null,
       foundAt: ['L7'], knownBy: ['—'],
       hqFallback: '—', daNotes: 'Bearer Beliefs.', revealed: false
     },
     {
-      id: 'I22', content: 'The final element of the Quiescence protocol — the missing step from I11\'s incomplete custody sequence.',
+      id: 'I22', title: 'Missing Quiescence Piece', content: 'The final element of the Quiescence protocol — the missing step from I11\'s incomplete custody sequence.',
       type: 'containment-truth', truthStatus: 'missing',
       foundAt: ['L7'], knownBy: ['—'],
       hqFallback: 'Day 2', daNotes: 'Missing Quiescence Piece.', revealed: false
@@ -907,80 +909,78 @@ const NR_DATA = (function() {
     shiftsFilled: [],
     organizations: [
       {
-        id: 'O1', name: 'Vantablack Compact', value: 8, active: true, dormant: false,
+        id: 'O1', name: 'The Thieves', value: 8, active: true, dormant: false,
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 9, label: 'O1M1', description: 'Compact fixer Elena Varga arrives in Prague to broker the sale. She makes contact with the thief and begins arranging the exchange.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false },
-          { day: 5, label: 'O1M2', description: 'The Compact grows nervous about the thief\'s erratic behavior. Varga requests backup — a cleaner is dispatched.', crossAdvances: [{ targetOrg: 'O3', squares: 2 }], triggered: false },
-          { day: 1, label: 'O1M3', description: 'The exchange at the Bavarian hunting lodge. Varga and the Compact attempt to close the deal before everything falls apart.', crossAdvances: [], triggered: false }
+          { day: 5, label: 'O1M1', description: 'Reiner tests the crucifix in Vienna. The signature spikes. Reiner becomes fully aware of his invincibility. He begins demanding a higher price.', crossAdvances: [{ targetOrg: 'O2', squares: 1 }], triggered: false },
+          { day: 3, label: 'O1M2', description: 'Immortality mania fully sets in. Reiner engages in overtly dangerous behavior — picking fights, challenging people to shoot him. The Compact becomes alarmed.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false },
+          { day: 2, label: 'O1M3', description: 'Reiner agrees to the exchange location. The hunting lodge is set.', crossAdvances: [{ targetOrg: 'O2', squares: 1 }], triggered: false }
         ],
-        linkedEffects: 'Compact presence attracts Church counter-intelligence. Varga\'s movements expose the buyer network.',
-        playerSigns: 'Eastern European men in dark suits at hotels. Currency exchanges processing unusual amounts. Prague underworld unusually quiet.',
-        notes: ''
-      },
-      {
-        id: 'O2', name: 'Countess Martinice', value: 10, active: true, dormant: false,
-        activationCondition: '',
-        squaresConsumed: [],
-        milestones: [
-          { day: 8, label: 'O2M1', description: 'Countess Martinice receives a visitor from the Church. She becomes defensive and may destroy records if pressured.', crossAdvances: [{ targetOrg: 'O4', squares: 1 }], triggered: false },
-          { day: 5, label: 'O2M2', description: 'The Countess decides to cooperate fully with the agents if they\'ve earned her trust. She reveals the family tree and letters.', crossAdvances: [{ targetOrg: 'O6', squares: 1 }], triggered: false },
-          { day: 2, label: 'O2M3', description: 'The Countess\'s estate in Brno is searched by Church authorities. If agents haven\'t secured the documents, they are confiscated.', crossAdvances: [{ targetOrg: 'O4', squares: 2 }], triggered: false }
-        ],
-        linkedEffects: 'The Countess holds the key to the shrine site. Her cooperation or obstruction determines whether agents can locate additional meteoric iron.',
-        playerSigns: 'Letters from Brno arriving at agents\' hotel. A family servant asking discrete questions.',
-        notes: ''
-      },
-      {
-        id: 'O3', name: 'Klaus Reiner — The Thief', value: 7, active: true, dormant: false,
-        activationCondition: '',
-        squaresConsumed: [],
-        milestones: [
-          { day: 7, label: 'O3M1', description: 'Reiner tests the crucifix in Vienna — throwing himself down stairs, walking into traffic. He emerges unscathed. His confidence becomes dangerous.', crossAdvances: [{ targetOrg: 'O1', squares: 1 }], triggered: false },
-          { day: 5, label: 'O3M2', description: 'Immortality mania sets in. Reiner begins seeking life-threatening situations. He publicly challenges a local tough to shoot him.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }, { targetOrg: 'O7', squares: 1 }], triggered: false },
-          { day: 1, label: 'O3M3', description: 'Reiner at the exchange — manic, invincible, and utterly convinced of his divine mandate.', crossAdvances: [], triggered: false }
-        ],
-        linkedEffects: 'Reiner\'s behavior escalates from erratic to suicidal-manic.',
+        linkedEffects: 'Reiner\'s behavior escalates from erratic to suicidal-manic. His invincibility makes direct confrontation impossible.',
         playerSigns: 'News reports of a man surviving impossible accidents. Vienna hospital records showing a patient who walked away from unsurvivable trauma.',
-        notes: ''
+        notes: 'Professional theft crew. Lead: Klaus Reiner (NPC3). Currently in possession of the crucifix. Motivated by payment; unaware of the full implications.'
       },
       {
-        id: 'O4', name: 'Cardinal Voss & Church Team', value: 9, active: true, dormant: false,
+        id: 'O2', name: 'Vantablack Compact', value: 9, active: true, dormant: false,
         activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 8, label: 'O4M1', description: 'Cardinal Voss arrives in Prague with a Vatican recovery team. He presents himself as cooperative but begins his own investigation.', crossAdvances: [{ targetOrg: 'O2', squares: 1 }], triggered: false },
-          { day: 6, label: 'O4M2', description: 'The Church team identifies the shrine site independently. Voss dispatches a team to the Bohemian Forest.', crossAdvances: [{ targetOrg: 'O6', squares: 2 }], triggered: false },
-          { day: 3, label: 'O4M3', description: 'Voss attempts to claim ecclesiastical authority over the crucifix. He demands the agents turn over any recovered artifacts.', crossAdvances: [{ targetOrg: 'O5', squares: 1 }], triggered: false }
+          { day: 7, label: 'O2M1', description: 'Varga secures the buyer\'s commitment. The Compact begins moving money through Zurich accounts.', crossAdvances: [{ targetOrg: 'O5', squares: 1 }], triggered: false },
+          { day: 5, label: 'O2M2', description: 'Varga learns the Church is closing in. She doubles her fee and begins preparing an exit strategy. NPC4\'s disposition changes — she is now willing to betray the buyer for a better deal.', crossAdvances: [], triggered: false },
+          { day: 2, label: 'O2M3', description: 'Exchange location finalized: hunting lodge in the Bavarian Forest. Varga arranges security.', crossAdvances: [{ targetOrg: 'O3', squares: 1 }], triggered: false }
         ],
-        linkedEffects: 'The Church\'s parallel investigation creates a race condition.',
-        playerSigns: 'Vatican diplomatic plates on black cars. Priests at every location the agents visit.',
-        notes: ''
+        linkedEffects: 'Compact presence attracts Church counter-intelligence and Police attention. Varga\'s movements expose the buyer network.',
+        playerSigns: 'Eastern European men in dark suits at hotels. Currency exchanges processing unusual amounts. Prague underworld unusually quiet.',
+        notes: 'Brokered by Elena Varga (NPC4). The Compact does not want the crucifix — they want the commission. Playing all sides.'
       },
       {
-        id: 'O5', name: 'Andy Warhol — The Buyer', value: 10, active: false, dormant: true,
-        activationCondition: 'Activated when the agents trace the Compact\'s money trail or when O1M2 fires.',
+        id: 'O3', name: 'The Church / Cardinal Voss', value: 10, active: true, dormant: false,
+        activationCondition: '',
         squaresConsumed: [],
         milestones: [
-          { day: 5, label: 'O5M1', description: 'Warhol\'s representative arrives in Munich to inspect the merchandise. The buyer\'s identity becomes traceable.', crossAdvances: [{ targetOrg: 'O1', squares: 1 }], triggered: false },
-          { day: 2, label: 'O5M2', description: 'Warhol himself travels to Bavaria. He is frail, polite, and utterly convinced the crucifix is meant for him.', crossAdvances: [], triggered: false }
+          { day: 7, label: 'O3M1', description: 'Church team arrives in Prague. Cardinal Voss visits the Castle, confirms the forgery, and begins his own investigation. He will approach the agents if they are present — cordial, non-hostile, but non-cooperative.', crossAdvances: [], triggered: false },
+          { day: 5, label: 'O3M2', description: 'Voss learns of the Compact\'s involvement and the buyer\'s existence. He escalates: the Church team is now authorized to use "extraordinary measures."', crossAdvances: [], triggered: false },
+          { day: 2, label: 'O3M3', description: 'Voss learns the exchange location. The Church team moves to Bavaria. Voss believes he can talk the thief down — he is wrong.', crossAdvances: [], triggered: false }
         ],
-        linkedEffects: 'Warhol\'s involvement transforms the case from artifact recovery to celebrity crisis management.',
-        playerSigns: 'Factory employees spotted in Munich. Pop art references in Compact communications.',
-        notes: 'Dormant until activated by money trail discovery or O1M2.'
+        linkedEffects: 'The Church\'s parallel investigation creates a race condition. Voss\'s secret knowledge of the pagan origin haunts every decision.',
+        playerSigns: 'Vatican diplomatic plates on black cars. Priests at every location the agents visit. A Swiss Guard in civilian clothes watching the exits.',
+        notes: 'Congregation for the Doctrine of the Faith recovery team. Lead: Cardinal Voss (NPC1). Team: Father Tomas (NPC5), Hans (NPC6).'
       },
       {
-        id: 'O6', name: 'Bohemian Forest Shrine', value: 12, active: false, dormant: true,
-        activationCondition: 'Activated when agents discover the Countess\'s documents or when O4M2 fires.',
+        id: 'O4', name: 'The Buyer / Andy Warhol', value: 8, active: false, dormant: true,
+        activationCondition: 'Dormant until triggered by O1M3 or agent investigation. Once active, squares pre-fill from Day 8.',
         squaresConsumed: [],
         milestones: [
-          { day: 4, label: 'O6M1', description: 'The shrine site is located. Excavation reveals additional meteoric iron fragments — the threat is replicable.', crossAdvances: [{ targetOrg: 'O4', squares: 1 }], triggered: false },
-          { day: 2, label: 'O6M2', description: 'The Church team arrives at the shrine. A confrontation between agents, Church recovery team, and Compact operatives.', crossAdvances: [], triggered: false }
+          { day: 5, label: 'O4M1', description: 'Warhol\'s intermediary confirms the purchase. The Gulfstream is fueled. Warhol tells his Factory assistant he\'s "going to Europe for a very important meeting."', crossAdvances: [], triggered: false },
+          { day: 2, label: 'O4M2', description: 'Warhol arrives at Zurich airport. He is nervous, quiet, carrying a Polaroid camera and a checkbook. He asks the intermediary if the thing "really works."', crossAdvances: [], triggered: false }
         ],
-        linkedEffects: 'The shrine site changes the classification from "unique relic recovery" to "containment of replicable threat."',
-        playerSigns: 'Old maps of the Bohemian Forest. Pagan symbols on local buildings.',
-        notes: 'Dormant until activated by Countess documents or O4M2.'
+        linkedEffects: 'Warhol\'s involvement transforms the case from artifact recovery to celebrity crisis management. His safety is a moral responsibility.',
+        playerSigns: 'Factory employees spotted in Munich. Pop art references in Compact communications. A Gulfstream at a private terminal in Zurich.',
+        notes: 'Dormant until triggered by O1M3 or agent investigation. Warhol is not a criminal mastermind — he is a deeply frightened man.'
+      },
+      {
+        id: 'O5', name: 'Prague Police', value: 11, active: true, dormant: false,
+        activationCondition: '',
+        squaresConsumed: [],
+        milestones: [
+          { day: 6, label: 'O5M1', description: 'The forgery is discovered by museum staff, who report the theft. Svoboda opens an investigation.', crossAdvances: [], triggered: false },
+          { day: 3, label: 'O5M2', description: 'Svoboda traces the theft to the Compact\'s Vienna operation. He requests international cooperation.', crossAdvances: [{ targetOrg: 'O2', squares: 1 }], triggered: false }
+        ],
+        linkedEffects: 'Police investigation may uncover the Covenant\'s involvement. Svoboda is methodical and competent — he may reach conclusions before the agents do.',
+        playerSigns: 'Police cruisers near the Castle. A detective asking questions at the museum. Hotel staff checking guest registrations.',
+        notes: 'Inspector Radim Svoboda leads the theft investigation. Not Covenant. Not compromised. Methodical.'
+      },
+      {
+        id: 'O6', name: 'Soviet Intelligence', value: 6, active: false, dormant: true,
+        activationCondition: 'Dormant until triggered by: (a) agents accessing the shrine site L6, or (b) O2M1 if agents fail a Delayed action to cover financial tracks. The KGB has been monitoring Compact money movements in Vienna for years.',
+        squaresConsumed: [],
+        milestones: [
+          { day: 4, label: 'O6M1', description: 'A KGB Vienna station officer identifies the transaction pattern and connects it to the Prague theft. A two-man surveillance team is deployed.', crossAdvances: [], triggered: false }
+        ],
+        linkedEffects: 'KGB surveillance is a complication, not a combat encounter. They follow the agents. If agents lead them to the shrine, Soviet Intelligence gains everything.',
+        playerSigns: 'A car that appears at multiple locations. Fresh cigarette butts (Belomorkanal brand). Boot prints consistent with Soviet military footwear.',
+        notes: 'Dormant until triggered by shrine access or financial tracks exposure. Two-man team — surveillance only unless provoked.'
       },
       { id: 'O7', name: '', value: 0, active: false, dormant: true, activationCondition: '', squaresConsumed: [], milestones: [], linkedEffects: '', playerSigns: '', notes: '' },
       { id: 'O8', name: '', value: 0, active: false, dormant: true, activationCondition: '', squaresConsumed: [], milestones: [], linkedEffects: '', playerSigns: '', notes: '' }
@@ -1039,6 +1039,8 @@ const NR_DATA = (function() {
       secret: 'She has been ordered to close the deal before the Compact writes off the operation. Her career depends on this.',
       goal: 'Complete the sale of the crucifix to Warhol and disappear.',
       artifactConnection: 'No direct handling. Views the crucifix as merchandise.',
+      startingKnowledge: [{ info: 'I9', desc: 'Bearer must believe they are immortal for activation.' }, { info: 'I10', desc: 'Removing crucifix from bearer terminates immortality.' }, { info: 'I14', desc: 'Zurich terminal meeting between Varga and intermediary.' }, { info: 'I16', desc: 'Margot Lefèvre is Warhol\'s art dealer intermediary.' }],
+      gainedKnowledge: [{ trigger: 'O2M2', desc: 'Learns I12 — shrine must be secured to prevent replication.' }, { trigger: 'O2M3', desc: 'Learns I17 — Warhol is the buyer, 1968 shooting survivor.' }],
       locations: ['L1', 'L3'],
       positiveResult: 'Reveals the buyer network and handoff timeline.',
       negativeResult: 'O1 advances 1 square. Cleaner dispatched.',
@@ -1053,6 +1055,8 @@ const NR_DATA = (function() {
       secret: 'He is the bearer. The crucifix has made him immortal and manic — he cannot be killed while wearing it.',
       goal: 'Keep the crucifix. He believes he is divinely chosen.',
       artifactConnection: 'Bearer. Wears the crucifix at all times. Has died and resurrected at least three times.',
+      startingKnowledge: [{ info: 'I1', desc: 'Crucifix stolen from Brno chapel using insider knowledge.' }, { info: 'I8', desc: 'Crucifix forged from meteoric iron at Bohemian shrine.' }],
+      gainedKnowledge: [{ trigger: 'O1M1', desc: 'Learns I9 — discovers he must believe he is immortal for the crucifix to work.' }],
       locations: ['L2', 'L5'],
       positiveResult: 'Agents can identify the bearer and containment conditions.',
       negativeResult: 'O3 advances 1 square. Reiner becomes more erratic.',
@@ -1067,6 +1071,8 @@ const NR_DATA = (function() {
       secret: 'Her family has guarded the shrine site for generations. She holds the key to locating the original meteoric iron source.',
       goal: 'Protect her family\'s legacy and prevent the shrine from being exploited.',
       artifactConnection: 'Family custodian lineage. Knows the shrine\'s location and history.',
+      startingKnowledge: [{ info: 'I4', desc: 'Crucifix grants conditional immortality — each near-death costs +2 Corruption.' }, { info: 'I5', desc: 'Compact arranged sale to Andy Warhol at Bavarian hunting lodge.' }, { info: 'I6', desc: 'Wire transfers trace Compact payments to Warhol.' }, { info: 'I7', desc: 'Family has guarded Bohemian Forest shrine for 400+ years.' }],
+      gainedKnowledge: [],
       locations: ['L4'],
       positiveResult: 'Reveals shrine location and family records.',
       negativeResult: 'Records destroyed. O2 advances 1 square.',
@@ -1081,6 +1087,8 @@ const NR_DATA = (function() {
       secret: 'Authorized to use any means necessary to recover the crucifix. The Vatican will disavow him if exposed.',
       goal: 'Recover the crucifix for the Church and suppress knowledge of its true nature.',
       artifactConnection: 'Has studied Church records on the crucifix. Understands it as both holy relic and dangerous artifact.',
+      startingKnowledge: [{ info: 'I5', desc: 'Compact arranged sale to Andy Warhol.' }, { info: 'I13', desc: 'Warhol\'s interest is personal — believes crucifix can cure his health.' }],
+      gainedKnowledge: [{ trigger: 'O3M1', desc: 'Learns I11 — additional meteoric iron at shrine makes artifact replicable.' }, { trigger: 'O3M2', desc: 'Learns I12 — shrine must be secured to prevent more artifacts.' }],
       locations: ['L1', 'L5'],
       positiveResult: 'May negotiate shared custody if agents demonstrate containment capability.',
       negativeResult: 'O4 advances 1 square. Church accelerates recovery.',
@@ -1088,16 +1096,66 @@ const NR_DATA = (function() {
     },
     {
       id: 'npc-warhol', name: 'Andy Warhol', role: 'The Buyer',
-      organization: 'O5 (Independent — celebrity collector)',
+      organization: 'O4 (The Buyer)',
       attributes: { strength: 2, agility: 2, wits: 3, empathy: 3 },
-      skills: { manipulate: 3, lore: 2 },
-      disposition: 4,
-      secret: 'He is dying and believes the crucifix will save him. He is wrong — it will only make him unkillably dying.',
-      goal: 'Acquire the crucifix as both art and salvation.',
-      artifactConnection: 'None yet. Obsessed with the idea of the crucifix as a transformative artifact.',
-      locations: ['L5'],
-      positiveResult: 'Can be convinced to withdraw if agents show him the truth.',
-      negativeResult: 'O5 advances 1 square. Warhol\'s representatives escalate.',
+      skills: { manipulate: 2, lore: 2, psychoanalyze: 0 },
+      disposition: 3,
+      secret: 'Warhol is not a villain. He is a man who died on an operating table in 1968 and has spent every day since waiting for the next Valerie Solanas to walk through the door. He wears a surgical corset. He is terrified of hospitals. He cannot be touched without flinching. The crucifix is not an acquisition — it is the only thing that has ever promised him he will not have to be afraid again.',
+      goal: 'Acquire the crucifix. Wear it. Stop being afraid. He has not thought beyond that moment.',
+      artifactConnection: 'Never touched it. Does not fully understand it. Believes it is a miracle — and for him, that is enough.',
+      startingKnowledge: [],
+      gainedKnowledge: [{ trigger: 'O4M2', desc: 'Learns I21 — full account of his 1968 shooting and clinical death.' }, { trigger: '—', desc: 'Learns I22 if agents explain the crucifix\'s true pagan origin.' }],
+      locations: ['L7'],
+      positiveResult: 'Warhol does not fight. If agents explain what the crucifix really is — and what it will do to him — he listens. A genuine human conversation can convince him to walk away.',
+      negativeResult: 'If agents threaten him, he withdraws. If anyone uses violence in his presence, he freezes. Warhol\'s safety is the agents\' moral responsibility.',
+      daNotes: ''
+    },
+    {
+      id: 'npc-tomas', name: 'Father Tomas', role: 'Jesuit Historian — Church Recovery Team',
+      organization: 'O3 (The Church)',
+      attributes: { strength: 2, agility: 2, wits: 4, empathy: 4 },
+      skills: { lore: 4, investigate: 3, manipulate: 2, command: 2 },
+      disposition: 3,
+      secret: 'Tomas has read the Martinice file. He knows the crucifix is pagan. Unlike Voss, he is not conflicted — he is excited. He believes the truth makes the object more significant, not less: proof that God works through unexpected materials. He has been quietly trying to convince Voss to publish the finding. Voss has been refusing.',
+      goal: 'Study the crucifix. Publish the truth — that divinity can manifest through meteoric iron as easily as through blessed relics. He sees this as expanding the Church\'s understanding, not threatening it.',
+      artifactConnection: 'Has studied the file extensively. Can identify the crucifix\'s origin with a Lore check. Carries a 1923 letter from Voss\'s predecessor describing the shrine site.',
+      startingKnowledge: [{ info: 'I5', desc: 'Compact arranged sale to Andy Warhol.' }, { info: 'I7', desc: 'Countess\'s family guarded Bohemian Forest shrine.' }, { info: 'I8', desc: 'Crucifix forged from meteoric iron — pagan origin, not Christian.' }],
+      gainedKnowledge: [{ trigger: '—', desc: 'Learns I18 if agents take him to the shrine site (L6).' }],
+      locations: ['L2', 'L6', 'L7'],
+      positiveResult: 'Tomas will share CT-1 and I5 with agents who engage him intellectually. He is the easiest path to the shrine site — he has directions.',
+      negativeResult: 'If agents mock or dismiss his faith, he withdraws. Tomas reports everything to Voss.',
+      daNotes: ''
+    },
+    {
+      id: 'npc-hans', name: 'Hans (Hansjörg Metzler)', role: 'Swiss Guard — Church Recovery Team (Security)',
+      organization: 'O3 (The Church)',
+      attributes: { strength: 4, agility: 3, wits: 3, empathy: 2 },
+      skills: { brawl: 3, endure: 3, firearms: 3, investigate: 2, heal: 2 },
+      disposition: 1,
+      secret: 'Hans is not just a Swiss Guard. Before taking the Vatican oath, he served six years in Swiss military intelligence. He speaks four languages and has killed two men — both in defense of Church personnel during a 1983 artifact incident the Vatican never acknowledged. He is not here for the crucifix. He is here to keep Voss alive, and he will do that at any cost.',
+      goal: 'Protect Voss. Secondary: recover the crucifix for the Church. If these goals conflict, Voss\'s safety wins.',
+      artifactConnection: 'None. He regards it as an object, not a relic. His faith is in people, not things.',
+      startingKnowledge: [{ info: 'I5', desc: 'Compact arranged sale to Andy Warhol.' }],
+      gainedKnowledge: [{ trigger: '—', desc: 'Figures out I10 independently — removing crucifix terminates immortality (non-lethal restraint).' }],
+      locations: ['L7'],
+      positiveResult: 'If agents share CT-2 with Hans, he becomes an ally. At the hunting lodge, he will help restrain Reiner rather than fight the agents.',
+      negativeResult: 'If agents threaten Voss, Hans engages without warning. Treat as a Medium-threat adversary (Brawl 3, Endure 3, Armor 1).',
+      daNotes: ''
+    },
+    {
+      id: 'npc-lefevre', name: 'Margot Lefèvre', role: 'Art Dealer — Warhol\'s Intermediary',
+      organization: 'O4 (The Buyer — civilian intermediary)',
+      attributes: { strength: 2, agility: 2, wits: 3, empathy: 3 },
+      skills: { manipulate: 3, investigate: 2, lore: 2 },
+      disposition: 2,
+      secret: 'Margot has been Warhol\'s "special acquisitions" dealer for six years. She has sourced occult objects before — nothing like this, but she is not naïve. She knows the crucifix is real. She has seen the photographs from Vienna. She is terrified of Reiner and deeply uneasy about what Warhol is buying. If cornered, she will name Warhol — not out of disloyalty, but because she cannot carry the weight of the secret alone anymore.',
+      goal: 'Complete the acquisition. Protect Warhol\'s anonymity. Go home and never take another commission like this.',
+      artifactConnection: 'Has seen photographs and test results. Has never touched the crucifix.',
+      startingKnowledge: [{ info: 'I16', desc: 'She is Warhol\'s art dealer intermediary for special acquisitions.' }, { info: 'I17', desc: 'Warhol is the buyer — 1968 shooting survivor seeking guarantee.' }],
+      gainedKnowledge: [{ trigger: 'O4M2', desc: 'Learns I21 — full account of Warhol\'s 1968 shooting and clinical death.' }],
+      locations: ['L5', 'L7'],
+      positiveResult: 'A Psychoanalyze (Diff 2) or Manipulate (Diff 2) breaks her composure — she cries and tells everything.',
+      negativeResult: 'If agents threaten her physically, she shuts down and lawyers up. All her information becomes HQ-only.',
       daNotes: ''
     }
   ];
@@ -1113,30 +1171,39 @@ const NR_DATA = (function() {
   ];
 
   const CRUCIFIX_INFO_CARDS = [
-    { id: 'I1', content: 'The crucifix was stolen from a private chapel in Brno. The thief used insider knowledge of the estate\'s security.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Elena Varga'], hqFallback: 'Day 1' },
-    { id: 'I2', content: 'Vantablack Compact financed the theft. Elena Varga is the operational lead.', type: 'supporting-intel', foundAt: ['L1', 'L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 2' },
-    { id: 'I3', content: 'Klaus Reiner is the thief. He has been wearing the crucifix since the theft and has survived multiple fatal incidents.', type: 'containment-truth', truthStatus: 'trigger', foundAt: ['L2'], knownBy: ['Klaus Reiner'], hqFallback: 'Day 2' },
-    { id: 'I4', content: 'The crucifix grants conditional immortality: the bearer cannot die while wearing it, but each near-death resurrection costs +2 Corruption.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L2'], knownBy: ['Klaus Reiner (experiencing it)'], hqFallback: 'Day 3' },
-    { id: 'I5', content: 'The Compact has arranged a sale to Andy Warhol for an undisclosed sum. The exchange is scheduled at a Bavarian hunting lodge.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 3' },
-    { id: 'I6', content: 'Wire transfer records trace the Compact\'s payment network to Warhol\'s Factory accounts.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 4' },
-    { id: 'I7', content: 'The Countess\'s family has guarded the Bohemian Forest shrine for over 400 years. The shrine contains the original meteoric iron source.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Countess Martinice'], hqFallback: 'Day 4' },
-    { id: 'I8', content: 'The crucifix was forged from meteoric iron at the Bohemian shrine in the 14th century. Multiple fragments remain at the site.', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L4', 'L6'], knownBy: ['Countess Martinice'], hqFallback: 'Day 5' },
-    { id: 'I9', content: 'The bearer must believe they are immortal for the crucifix to activate. Physical contact plus absolute conviction triggers the effect.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L5'], knownBy: ['—'], hqFallback: 'Day 5' },
-    { id: 'I10', content: 'Removing the crucifix from the bearer terminates the immortality effect — but the bearer will not voluntarily remove it.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Cardinal Voss'], hqFallback: 'Day 6' },
-    { id: 'I11', content: 'Additional meteoric iron fragments at the shrine mean the threat is replicable — more crucifixes could be forged.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['—'], hqFallback: '—' },
-    { id: 'I12', content: 'The shrine must be secured to prevent additional artifacts from being created from the remaining meteoric iron.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['—'], hqFallback: '—' },
-    { id: 'I13', content: 'Warhol\'s interest is personal — he believes the crucifix\'s immortality can cure his deteriorating health.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['Warhol\'s representatives'], hqFallback: 'Day 6' }
+    { id: 'I1', title: 'The Replacement', content: 'The crucifix was stolen from a private chapel in Brno. The thief used insider knowledge of the estate\'s security.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Elena Varga'], hqFallback: 'Day 1' },
+    { id: 'I2', title: 'When It Happened', content: 'Vantablack Compact financed the theft. Elena Varga is the operational lead.', type: 'supporting-intel', foundAt: ['L1', 'L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 2' },
+    { id: 'I3', title: 'The Police Investigation', content: 'Klaus Reiner is the thief. He has been wearing the crucifix since the theft and has survived multiple fatal incidents.', type: 'containment-truth', truthStatus: 'trigger', foundAt: ['L2'], knownBy: ['Klaus Reiner'], hqFallback: 'Day 2' },
+    { id: 'I4', title: 'The Martinice Family Tree', content: 'The crucifix grants conditional immortality: the bearer cannot die while wearing it, but each near-death resurrection costs +2 Corruption.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L2'], knownBy: ['Klaus Reiner (experiencing it)'], hqFallback: 'Day 3' },
+    { id: 'I5', title: 'Where It Came From', content: 'The Compact has arranged a sale to Andy Warhol for an undisclosed sum. The exchange is scheduled at a Bavarian hunting lodge.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 3' },
+    { id: 'I6', title: 'Not of This Earth', content: 'Wire transfer records trace the Compact\'s payment network to Warhol\'s Factory accounts.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Elena Varga'], hqFallback: 'Day 4' },
+    { id: 'I7', title: 'The Grandmother\'s Diary', content: 'The Countess\'s family has guarded the Bohemian Forest shrine for over 400 years. The shrine contains the original meteoric iron source.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Countess Martinice'], hqFallback: 'Day 4' },
+    { id: 'I8', title: 'What Happened in Vienna', content: 'The crucifix was forged from meteoric iron at the Bohemian shrine in the 14th century. Multiple fragments remain at the site.', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L4', 'L6'], knownBy: ['Countess Martinice'], hqFallback: 'Day 5' },
+    { id: 'I9', title: 'Who Is Brokering the Sale', content: 'The bearer must believe they are immortal for the crucifix to activate. Physical contact plus absolute conviction triggers the effect.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L5'], knownBy: ['—'], hqFallback: 'Day 5' },
+    { id: 'I10', title: 'The Buyer — What Heller Overheard', content: 'Removing the crucifix from the bearer terminates the immortality effect — but the bearer will not voluntarily remove it.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Cardinal Voss'], hqFallback: 'Day 6' },
+    { id: 'I11', title: 'Where It Was Stored', content: 'Additional meteoric iron fragments at the shrine mean the threat is replicable — more crucifixes could be forged.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['—'], hqFallback: '—' },
+    { id: 'I12', title: 'The Thief Is Unraveling', content: 'The shrine must be secured to prevent additional artifacts from being created from the remaining meteoric iron.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['—'], hqFallback: '—' },
+    { id: 'I13', title: 'The Church\'s Mandate', content: 'Warhol\'s interest is personal — he believes the crucifix\'s immortality can cure his deteriorating health.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['Warhol\'s representatives'], hqFallback: 'Day 6' },
+    { id: 'I14', title: 'The Airport Meeting', content: 'A meeting occurred at the Zurich private aviation terminal between Varga and an unidentified intermediary. Flight records show a Gulfstream III registered to a Delaware holding company tracing to a New York art foundation. The intermediary was described as "a European woman, well-dressed, nervous, carrying a leather portfolio." The meeting lasted 40 minutes.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Elena Varga'], hqFallback: 'Day 5' },
+    { id: 'I15', title: 'The Gulfstream\'s Flight Plan', content: 'The Gulfstream III filed a flight plan from Teterboro Airport, New Jersey, to Zurich with no return date. The aircraft is owned by "Silver Cloud Enterprises," a subsidiary of Warhol Enterprises, Inc. The flight plan lists one passenger: "A. Warhol." The intermediary booked the Zurich terminal lounge under her own name: Margot Lefèvre.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Elena Varga'], hqFallback: 'Day 4' },
+    { id: 'I16', title: 'The Intermediary', content: 'Margot Lefèvre is a French art dealer specializing in "private acquisitions for discerning clients." She has represented Warhol in six previous purchases of unusual objects — occult texts, a purported alchemical manuscript, a reliquary. Her gallery is in the 6th arrondissement of Paris. She is not Covenant, not Compact, not Church — a civilian caught in something larger than she expected.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Margot Lefèvre', 'Elena Varga'], hqFallback: 'Day 5' },
+    { id: 'I17', title: 'The Buyer', content: 'The buyer is Andy Warhol. The artist survived a near-fatal shooting by Valerie Solanas in 1968 — clinically dead for five minutes, revived after emergency surgery. He has spent eighteen years searching for a guarantee it will never happen again. Warhol is not a criminal mastermind. He is a deeply frightened man with the resources to buy a solution to his fear.', type: 'supporting-intel', foundAt: ['L5', 'L7'], knownBy: ['Margot Lefèvre'], hqFallback: 'Day 3' },
+    { id: 'I18', title: 'More Iron Beneath the Stones', content: 'Excavation at the shrine site reveals additional fragments of meteoric iron beneath the foundation stones — raw ore, dark with high nickel content, cold to the touch. The meteorite shattered on impact, scattering fragments across a roughly circular area 30 meters in diameter. Each fragment, if forged and worn, would carry the same property as the crucifix. The artifact is replicable.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Shrine excavation', 'Father Tomas'], hqFallback: 'Day 3' },
+    { id: 'I19', title: 'The Shrine Builders', content: 'Among the shrine stones: fragments of Slavic pagan ritual objects — a small iron amulet depicting Perun\'s axe, pottery shards with solar symbols, a fire pit with stones arranged in a radial pattern. Carbon dating places the shrine\'s construction at approximately 900–950 CE. The builders were a Western Slavic community — likely the Dulebes or Lutici — who witnessed the meteorite impact and incorporated it into their religious practice.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Shrine excavation', 'Father Tomas'], hqFallback: 'Day 3' },
+    { id: 'I20', title: 'Eyes in the Forest', content: 'Agents detect signs of recent surveillance near the shrine site: fresh cigarette butts (Soviet brand: Belomorkanal), a discarded film canister, boot prints consistent with Soviet military footwear. A KGB Vienna station has identified the Compact\'s money trail and connected it to the Prague theft. A two-man surveillance team is operating in the Šumava region — they are following the agents.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Field observation'], hqFallback: 'Day 3' },
+    { id: 'I21', title: 'Why Him', content: 'Warhol told an interviewer in 1985: "I don\'t believe in death. I don\'t believe in it because you\'re not around to know you\'ve had it." On June 3, 1968, Valerie Solanas shot him three times. The first bullet passed through his left lung, spleen, stomach, liver, and right lung. He was declared clinically dead at 4:51 PM. Surgeons opened his chest and massaged his heart until it restarted. He wore a surgical corset for the rest of his life. The crucifix is not a purchase — it is an end to an eighteen-year panic attack.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['Margot Lefèvre', 'Andy Warhol'], hqFallback: 'Day 2' },
+    { id: 'I22', title: 'What This Has Always Been About', content: 'The Crucifix of St. Vitus is not a Christian relic. It is forged from meteoric iron that fell on the Bohemian Forest in approximately 900 CE. The pagan community that witnessed the impact built a shrine and venerated the iron as a fragment of their sky-god\'s armor. When the Church arrived, the shrine was destroyed, the iron reforged into a crucifix, and the origin suppressed. The iron grants immunity to bodily harm because it is not from Earth. There is more iron at the shrine site. The artifact is replicable. The Covenant\'s mandate: contain the crucifix, seal the shrine, and let no one turn this into something worse.', type: 'containment-truth', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' }
   ];
 
   // ═══════════════════════════════════════════════════════════
-  // THE BARBARIAN'S CUP CASE DATA
+  // THE BARBARIAN\'S CUP CASE DATA
   // ═══════════════════════════════════════════════════════════
 
   const BARBARIANS_CUP = {
     caseId: 'VC-MO-87-004',
     caseName: 'The Barbarian\'s Cup',
     region: 'Macau / Hong Kong / South China Sea',
-    currentDay: 14,
+    currentDay: 10,
     shiftsFilled: [],
     organizations: [
       {
@@ -1221,7 +1288,7 @@ const NR_DATA = (function() {
       { day: 5, description: 'The cup\'s "personality" becomes more pronounced. It starts humming audibly. Rosário can\'t sleep in the same building. The Front\'s second-in-command becomes obsessed.' },
       { day: 1, description: 'CATASTROPHE: The auction at an abandoned Portuguese fort on Coloane. All parties converge. The cup is on a table. Someone is about to win. The monk is in the back, waiting.' }
     ],
-    currentDayDisplay: 14,
+    currentDayDisplay: 10,
     relicSheet: {
       name: 'Bodhidharma\'s Teacup (The Barbarian\'s Cup)',
       tier: 'Tier 2 — Threatening',
@@ -1235,14 +1302,14 @@ const NR_DATA = (function() {
   finalizeShiftsFilled(BARBARIANS_CUP);
 
   const BARBARIANS_NPCS = [
-    { id: 'npc-rosario', name: 'João "The Jesuit" Rosário', role: 'Antiquities Broker — Former Seminarian', organization: 'O1 (The Broker)', attributes: { strength: 2, agility: 3, wits: 4, empathy: 3 }, skills: { manipulate: 4, investigate: 3, lore: 3 }, disposition: 2, secret: 'Former Covenant informant from 1979–1984. The relationship ended badly. He\'s been waiting for the Covenant to come back for him.', goal: 'Close the auction. Get the cup out of his life. Survive whatever comes next.', artifactConnection: 'Handled the cup once, with three layers of gloves. Has not slept properly since.', locations: ['L2'], positiveResult: 'Cooperates with agents who offer him a way out that preserves his reputation.', negativeResult: 'If threatened, activates dead-man switch — auction closes early. Lose 2 shifts.', daNotes: '' },
-    { id: 'npc-farouk', name: 'Farouk Al-Masri', role: 'Cell Leader — Al-Quds Liberation Front', organization: 'O2 (Al-Quds Liberation Front)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 4 }, skills: { manipulate: 3, command: 2 }, disposition: 2, secret: 'He has never killed anyone. He was sent as a low-priority errand. He touched the cup and realized it IS real. Now he\'s trapped.', goal: 'Get out. He doesn\'t know how. He\'s hoping someone will intervene.', artifactConnection: 'Handled during viewing. Hands shook. Can still feel the cold in his palms.', locations: ['L5'], positiveResult: 'Can be flipped — a Manipulate (Diff 3) or genuine human appeal convinces him to withdraw the bid.', negativeResult: 'If confronted in front of Nasim, Farouk cannot show weakness.', daNotes: '' },
-    { id: 'npc-nasim', name: 'Nasim', role: 'Second-in-Command — The Real Danger', organization: 'O2 (Al-Quds Liberation Front)', attributes: { strength: 3, agility: 4, wits: 3, empathy: 2 }, skills: { firearms: 3, endure: 4, manipulate: 2 }, disposition: 1, secret: 'Believes the cup is a divine instrument. Plans to poison a Hong Kong reservoir. Has not slept more than 2 hours a night since the viewing.', goal: 'Acquire the cup. Use it. He will not be stopped by argument — only by force or superior tactics.', artifactConnection: 'Handled once, gloved, during viewing. Carries a photograph of the cup over his heart.', locations: ['L5'], positiveResult: 'Cannot be reasoned with, but can be outmaneuvered — he\'s a sleep-deprived fanatic.', negativeResult: 'If Nasim touches the cup, he will try to activate it immediately.', daNotes: '' },
-    { id: 'npc-park', name: 'Dr. Park Min-ho', role: 'CEO — Daewon Pharmaceutical', organization: 'O3 (Daewon Pharmaceutical)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 5 }, skills: { command: 4, manipulate: 4, lore: 2 }, disposition: 4, secret: 'Believes acquiring the cup is his destiny, revealed in a meditation retreat. Has not told his board the cup kills everything.', goal: 'Acquire the cup. "Understand" it. Use its "gift" to cure disease.', artifactConnection: 'Never touched it. Saw photographs. Felt "an immediate energetic connection."', locations: ['L4'], positiveResult: 'Will talk to anyone about his vision — extracting information is easy.', negativeResult: 'Cannot be convinced the cup is dangerous. Smiles, offers kombucha, has security escort agents out.', daNotes: '' },
-    { id: 'npc-yoon', name: 'Dr. Yoon Seo-yeon', role: 'Head of R&D — Daewon Pharmaceutical', organization: 'O3 (Daewon Pharmaceutical)', attributes: { strength: 2, agility: 3, wits: 5, empathy: 3 }, skills: { tech: 4, investigate: 4, heal: 3 }, disposition: 2, secret: 'She swabbed the viewing room table. The residue killed everything. She told Park. He said "we can work with that." She\'s starting to think she might need to be a whistleblower.', goal: 'Understand the mechanism. If it cannot be controlled, prevent Daewon from releasing anything derived from it.', artifactConnection: 'Never touched the cup. Swabbed the table where it sat. The residue killed everything in her lab.', locations: ['L4'], positiveResult: 'Most important ally in the case — can provide Daewon security details, bid amount, and sabotage from within.', negativeResult: 'If threatened, she withdraws. She\'s not a hero — she\'s a scientist who wants to survive.', daNotes: '' },
+    { id: 'npc-rosario', name: 'João "The Jesuit" Rosário', role: 'Antiquities Broker — Former Seminarian', organization: 'O1 (The Broker)', attributes: { strength: 2, agility: 3, wits: 4, empathy: 3 }, skills: { manipulate: 4, investigate: 3, lore: 3 }, disposition: 2, secret: 'Former Covenant informant from 1979–1984. The relationship ended badly. He\'s been waiting for the Covenant to come back for him.', goal: 'Close the auction. Get the cup out of his life. Survive whatever comes next.', artifactConnection: 'Handled the cup once, with three layers of gloves. Has not slept properly since.', startingKnowledge: [{ info: 'I3', desc: 'Blind sealed-bid auction � three bidders confirmed.' }, { info: 'I4', desc: 'Former Covenant informant 1979�1984.' }], gainedKnowledge: [{ trigger: 'O1M1', desc: 'Learns I5 � bidders identified: Al-Quds Front, Daewon, The Pilgrim.' }, { trigger: 'O1M2', desc: 'Learns I6 � auction cancellation failed, Front threatened his family.' }], locations: ['L2'], positiveResult: 'Cooperates with agents who offer him a way out that preserves his reputation.', negativeResult: 'If threatened, activates dead-man switch — auction closes early. Lose 2 shifts.', daNotes: '' },
+    { id: 'npc-farouk', name: 'Farouk Al-Masri', role: 'Cell Leader — Al-Quds Liberation Front', organization: 'O2 (Al-Quds Liberation Front)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 4 }, skills: { manipulate: 3, command: 2 }, disposition: 2, secret: 'He has never killed anyone. He was sent as a low-priority errand. He touched the cup and realized it IS real. Now he\'s trapped.', goal: 'Get out. He doesn\'t know how. He\'s hoping someone will intervene.', artifactConnection: 'Handled during viewing. Hands shook. Can still feel the cold in his palms.', startingKnowledge: [{ info: 'I9', desc: 'Drop of water touched cup � orchid dead in 60 seconds. Nasim enraptured.' }], gainedKnowledge: [{ trigger: 'O2M2', desc: 'Learns I12 � Nasim\'s target is Tai Lam Chung Reservoir.' }, { trigger: 'O2M2', desc: 'Learns I17 � he wants out, has never killed anyone.' }], locations: ['L5'], positiveResult: 'Can be flipped — a Manipulate (Diff 3) or genuine human appeal convinces him to withdraw the bid.', negativeResult: 'If confronted in front of Nasim, Farouk cannot show weakness.', daNotes: '' },
+    { id: 'npc-nasim', name: 'Nasim', role: 'Second-in-Command — The Real Danger', organization: 'O2 (Al-Quds Liberation Front)', attributes: { strength: 3, agility: 4, wits: 3, empathy: 2 }, skills: { firearms: 3, endure: 4, manipulate: 2 }, disposition: 1, secret: 'Believes the cup is a divine instrument. Plans to poison a Hong Kong reservoir. Has not slept more than 2 hours a night since the viewing.', goal: 'Acquire the cup. Use it. He will not be stopped by argument — only by force or superior tactics.', artifactConnection: 'Handled once, gloved, during viewing. Carries a photograph of the cup over his heart.', startingKnowledge: [{ info: 'I9', desc: 'Drop of water touched cup � orchid dead in 60 seconds. He was enraptured.' }], gainedKnowledge: [{ trigger: 'O2M2', desc: 'Learns I12 � identifies Tai Lam Chung Reservoir as target.' }, { trigger: 'O2M2', desc: 'Learns I17 � Farouk wants out, Nasim distrusts him.' }, { trigger: 'O2M3', desc: 'Learns I19 � believes cup is voice of God, plans martyrdom.' }], locations: ['L5'], positiveResult: 'Cannot be reasoned with, but can be outmaneuvered — he\'s a sleep-deprived fanatic.', negativeResult: 'If Nasim touches the cup, he will try to activate it immediately.', daNotes: '' },
+    { id: 'npc-park', name: 'Dr. Park Min-ho', role: 'CEO — Daewon Pharmaceutical', organization: 'O3 (Daewon Pharmaceutical)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 5 }, skills: { command: 4, manipulate: 4, lore: 2 }, disposition: 4, secret: 'Believes acquiring the cup is his destiny, revealed in a meditation retreat. Has not told his board the cup kills everything.', goal: 'Acquire the cup. "Understand" it. Use its "gift" to cure disease.', artifactConnection: 'Never touched it. Saw photographs. Felt "an immediate energetic connection."', startingKnowledge: [{ info: 'I10', desc: 'Daewon believes poison mechanism can be isolated to kill cancer � theory is wrong.' }], gainedKnowledge: [{ trigger: 'O3M2', desc: 'Learns I14 � Yoon confirms poison kills everything, but he dismisses it.' }, { trigger: '�', desc: 'I15 accessible from case start � his personal journal is on his desk.' }], locations: ['L4'], positiveResult: 'Will talk to anyone about his vision — extracting information is easy.', negativeResult: 'Cannot be convinced the cup is dangerous. Smiles, offers kombucha, has security escort agents out.', daNotes: '' },
+    { id: 'npc-yoon', name: 'Dr. Yoon Seo-yeon', role: 'Head of R&D — Daewon Pharmaceutical', organization: 'O3 (Daewon Pharmaceutical)', attributes: { strength: 2, agility: 3, wits: 5, empathy: 3 }, skills: { tech: 4, investigate: 4, heal: 3 }, disposition: 2, secret: 'She swabbed the viewing room table. The residue killed everything. She told Park. He said "we can work with that." She\'s starting to think she might need to be a whistleblower.', goal: 'Understand the mechanism. If it cannot be controlled, prevent Daewon from releasing anything derived from it.', artifactConnection: 'Never touched the cup. Swabbed the table where it sat. The residue killed everything in her lab.', startingKnowledge: [{ info: 'I14', desc: 'Lab analysis confirms poison kills everything � no selectivity, no therapeutic window.' }], gainedKnowledge: [{ trigger: 'O3M2', desc: 'Learns I15 � found Park\'s journal; he believes the cup is his destiny.' }], locations: ['L4'], positiveResult: 'Most important ally in the case — can provide Daewon security details, bid amount, and sabotage from within.', negativeResult: 'If threatened, she withdraws. She\'s not a hero — she\'s a scientist who wants to survive.', daNotes: '' },
     { id: 'npc-shixin', name: 'Shi Yánxìn', role: 'The Last Guardian — Shaolin Monk, Age 74', organization: 'O4 (The Monk)', attributes: { strength: 2, agility: 3, wits: 5, empathy: 5 }, skills: { lore: 5, endure: 4, manipulate: 3, heal: 3 }, disposition: 4, secret: 'Blames himself for everything. Has been searching for the cup for 38 years. Carries the quiescence stone sewn into his robe.', goal: 'Recover the cup. Restore it if possible. Contain it if not. Tell it he\'s sorry.', artifactConnection: 'Last person to hold the cup before it was hidden. Was 14. Remembers it humming warm — like a cat purring.', locations: ['L6'], positiveResult: 'Key to safe containment. Has the stone from Bodhidharma\'s cave. Knows the restoration ritual.', negativeResult: 'If agents treat the cup as merely a threat, he still helps — but withholds the stone.', daNotes: '' },
     { id: 'npc-guterres', name: 'Inspector Matias Guterres', role: 'Macau Judiciary Police', organization: 'O5 (Macau Judiciary Police)', attributes: { strength: 3, agility: 2, wits: 4, empathy: 3 }, skills: { investigate: 4, command: 3, firearms: 3 }, disposition: 2, secret: 'Has been a cop for 22 years. Doesn\'t believe in cursed teacups. Believes in evidence. The evidence doesn\'t make sense.', goal: 'Solve the case. He wants answers, not glory.', artifactConnection: 'None. Has not seen the cup. Has only seen its effects — dead orchid, Rosário\'s behavior, money trail.', locations: ['L2'], positiveResult: 'Can be an ally if agents are straight with him. Can provide police resources.', negativeResult: 'If agents lie to him, he investigates THEM. Methodical and patient.', daNotes: '' },
-    { id: 'npc-chenwei', name: 'Agent Chen Wei', role: 'Chinese Ministry of State Security', organization: 'O6 (Chinese State Security)', attributes: { strength: 2, agility: 3, wits: 4, empathy: 2 }, skills: { investigate: 4, firearms: 3, command: 3, sneak: 3 }, disposition: 1, secret: 'Mid-level MSS officer. File led her to Macau. Discovered the cup is being bid on by terrorists and a foreign pharma company. Operating at the edge of her mandate.', goal: 'Secure the cup for the PRC. Prevent it from leaving Chinese territory.', artifactConnection: 'Has not touched the cup. Has surveillance photographs. Something about the photographs is wrong.', locations: ['L7'], positiveResult: 'Can be reasoned with if agents acknowledge Chinese sovereignty and offer a solution keeping the cup in the region.', negativeResult: 'If agents try to smuggle the cup out, she intervenes with deadly force. Six armed operatives.', daNotes: '' }
+    { id: 'npc-chenwei', name: 'Agent Chen Wei', role: 'Chinese Ministry of State Security', organization: 'O6 (Chinese State Security)', attributes: { strength: 2, agility: 3, wits: 4, empathy: 2 }, skills: { investigate: 4, firearms: 3, command: 3, sneak: 3 }, disposition: 1, secret: 'Mid-level MSS officer. File led her to Macau. Discovered the cup is being bid on by terrorists and a foreign pharma company. Operating at the edge of her mandate.', goal: 'Secure the cup for the PRC. Prevent it from leaving Chinese territory.', artifactConnection: 'Has not touched the cup. Has surveillance photographs. Something about the photographs is wrong.', startingKnowledge: [], gainedKnowledge: [{ trigger: 'O6M1', desc: 'Learns I16 � identifies cup as stolen cultural property, deploys surveillance.' }, { trigger: 'O6M2', desc: 'Learns I21 � authorized to secure cup "by any means necessary."' }], locations: ['L7'], positiveResult: 'Can be reasoned with if agents acknowledge Chinese sovereignty and offer a solution keeping the cup in the region.', negativeResult: 'If agents try to smuggle the cup out, she intervenes with deadly force. Six armed operatives.', daNotes: '' }
   ];
 
   const BARBARIANS_LOCATIONS = [
@@ -1256,28 +1323,28 @@ const NR_DATA = (function() {
   ];
 
   const BARBARIANS_INFO_CARDS = [
-    { id: 'I1', content: 'Bodhidharma\'s Teacup is in safety deposit box 419 at the Banco de Macau, rented under "Silva Import/Export" — Rosário\'s shell company.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Rosário'], hqFallback: 'Day 9' },
-    { id: 'I2', content: '"Silva Import/Export" is a Macau-registered shell with no physical office. Bank records show large deposits from Hong Kong, Seoul, Zurich.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Rosário'], hqFallback: 'Day 8' },
-    { id: 'I3', content: 'Rosário organized a blind sealed-bid auction with a 10-day window. Three bidders confirmed: "Eastern Buyer," "Wellness Group," and "The Pilgrim."', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário'], hqFallback: 'Day 8' },
-    { id: 'I4', content: 'Rosário was a Covenant informant from 1979–1984. The relationship ended badly when he sold an artifact the Covenant wanted.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário'], hqFallback: 'Day 7' },
-    { id: 'I5', content: 'Bidders identified: Al-Quds Liberation Front ($4.2M), Daewon Pharmaceutical ($7M), and "The Pilgrim" — a private individual whose identity Rosário doesn\'t know.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário (O1M1)'], hqFallback: 'Day 7' },
-    { id: 'I6', content: 'Rosário attempted to cancel the auction. The Front threatened his family. He is now a hostage in his own operation.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário (O1M2)'], hqFallback: 'Day 5' },
-    { id: 'I7', content: 'The cup was made at Shaolin Temple ~518 CE for Bodhidharma — the monk who brought Chan Buddhism to China. It brewed "poison to delusion."', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Shi Yánxìn'], hqFallback: 'Day 7' },
-    { id: 'I8', content: 'In 1966, Red Guards sacked Shaolin. A 14-year-old novice hid the cup. Without the daily ritual for 20 years, "poison to delusion" became literal poison. The cup doesn\'t know it changed.', type: 'supporting-intel', foundAt: ['L3', 'L6'], knownBy: ['Shi Yánxìn'], hqFallback: 'Day 6' },
-    { id: 'I9', content: 'During the Front\'s private viewing, a drop of water accidentally touched the cup. The potted orchid was dead within 60 seconds. Nasim was enraptured.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Tea House Owner', 'Farouk'], hqFallback: 'Day 7' },
-    { id: 'I10', content: 'Daewon believes the poison mechanism can be isolated to selectively kill cancer cells and viruses. This theory is wrong. The poison kills everything.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Park', 'Yoon'], hqFallback: 'Day 6' },
-    { id: 'I11', content: 'The looter found the cup, sold it for $200 in Hong Kong. The dealer contacted Rosário. The looter\'s sales receipt is in the safety deposit box with the cup.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['—'], hqFallback: 'Day 7' },
-    { id: 'I12', content: 'Nasim\'s target: Tai Lam Chung Reservoir in Hong Kong New Territories — supplies 1.2 million people. Maps on the cottage cork board.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Nasim', 'Farouk (if flipped)'], hqFallback: 'Day 4' },
-    { id: 'I13', content: 'Inspector Guterres has opened an investigation into suspicious financial activity linked to Rosário. Police presence at L1, L2, L3.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Guterres (O5M1)'], hqFallback: 'Day 5' },
-    { id: 'I14', content: 'Yoon\'s lab analysis confirms: the poison kills everything — human cells, bacteria, viruses. No selectivity. No therapeutic window. A single molecule is as lethal as a gallon.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L4'], knownBy: ['Yoon (O3M2)'], hqFallback: 'Day 4' },
-    { id: 'I15', content: 'Park\'s personal journal records his conviction that the cup is his destiny. "The universe does not make mistakes."', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Park'], hqFallback: 'Day 4' },
-    { id: 'I16', content: 'Agent Chen of the MSS has identified the cup as stolen cultural property. A surveillance team is deployed to Macau.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Chen (O6M1)'], hqFallback: 'Day 4' },
-    { id: 'I17', content: 'Farouk wants out. He has never killed anyone. He prays five times a day and adds a silent sixth prayer: "Please let someone stop this."', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Farouk (O2M2)'], hqFallback: 'Day 3' },
-    { id: 'I18', content: 'The quiescence stone from Bodhidharma\'s cave — smooth, dark, sewn into the monk\'s robe. Cup stored upside-down on this stone goes quiet.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L6'], knownBy: ['Shi Yánxìn (O4M2)'], hqFallback: 'Day 3' },
-    { id: 'I19', content: 'Nasim believes the cup is the voice of God. He has written pages of "conversations" with it. He plans to die with it — martyrdom.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Nasim (O2M3)'], hqFallback: 'Day 2' },
-    { id: 'I20', content: 'Guterres is planning a raid on Coloane. He\'s noticed the agents\' presence. They\'re on his board now.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Guterres (O5M2)'], hqFallback: 'Day 2' },
-    { id: 'I21', content: 'MSS intervention imminent. Chen has orders to secure the cup "by any means necessary." Six operatives, all armed.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Chen (O6M2)'], hqFallback: 'Day 2' },
-    { id: 'I22', content: 'Synthesis: The cup was never a weapon. It was a tool of awakening, confused by 20 years of silence. The monk can help contain it. Some things that were once holy can still be saved.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' }
+    { id: 'I1', title: 'The Cup\'s Location', content: 'Bodhidharma\'s Teacup is in safety deposit box 419 at the Banco de Macau, rented under "Silva Import/Export" — Rosário\'s shell company.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Rosário'], hqFallback: 'Day 9' },
+    { id: 'I2', title: 'The Shell Company', content: '"Silva Import/Export" is a Macau-registered shell with no physical office. Bank records show large deposits from Hong Kong, Seoul, Zurich.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Rosário'], hqFallback: 'Day 8' },
+    { id: 'I3', title: 'The Auction Structure', content: 'Rosário organized a blind sealed-bid auction with a 10-day window. Three bidders confirmed: "Eastern Buyer," "Wellness Group," and "The Pilgrim."', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário'], hqFallback: 'Day 8' },
+    { id: 'I4', title: 'Rosário\'s Covenant History', content: 'Rosário was a Covenant informant from 1979–1984. The relationship ended badly when he sold an artifact the Covenant wanted.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário'], hqFallback: 'Day 7' },
+    { id: 'I5', title: 'The Bidders Identified', content: 'Bidders identified: Al-Quds Liberation Front ($4.2M), Daewon Pharmaceutical ($7M), and "The Pilgrim" — a private individual whose identity Rosário doesn\'t know.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário (O1M1)'], hqFallback: 'Day 7' },
+    { id: 'I6', title: 'The Auction in Jeopardy', content: 'Rosário attempted to cancel the auction. The Front threatened his family. He is now a hostage in his own operation.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Rosário (O1M2)'], hqFallback: 'Day 5' },
+    { id: 'I7', title: 'The True History of the Cup', content: 'The cup was made at Shaolin Temple ~518 CE for Bodhidharma — the monk who brought Chan Buddhism to China. It brewed "poison to delusion."', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Shi Yánxìn'], hqFallback: 'Day 7' },
+    { id: 'I8', title: 'What Broke the Cup', content: 'In 1966, Red Guards sacked Shaolin. A 14-year-old novice hid the cup. Without the daily ritual for 20 years, "poison to delusion" became literal poison. The cup doesn\'t know it changed.', type: 'supporting-intel', foundAt: ['L3', 'L6'], knownBy: ['Shi Yánxìn'], hqFallback: 'Day 6' },
+    { id: 'I9', title: 'The Front\'s Private Viewing', content: 'During the Front\'s private viewing, a drop of water accidentally touched the cup. The potted orchid was dead within 60 seconds. Nasim was enraptured.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Tea House Owner', 'Farouk'], hqFallback: 'Day 7' },
+    { id: 'I10', title: 'Daewon\'s Theory', content: 'Daewon believes the poison mechanism can be isolated to selectively kill cancer cells and viruses. This theory is wrong. The poison kills everything.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Park', 'Yoon'], hqFallback: 'Day 6' },
+    { id: 'I11', title: 'The Looter\'s Trail', content: 'The looter found the cup, sold it for $200 in Hong Kong. The dealer contacted Rosário. The looter\'s sales receipt is in the safety deposit box with the cup.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['—'], hqFallback: 'Day 7' },
+    { id: 'I12', title: 'The Front\'s Target', content: 'Nasim\'s target: Tai Lam Chung Reservoir in Hong Kong New Territories — supplies 1.2 million people. Maps on the cottage cork board.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Nasim', 'Farouk (if flipped)'], hqFallback: 'Day 4' },
+    { id: 'I13', title: 'Police Investigation Opens', content: 'Inspector Guterres has opened an investigation into suspicious financial activity linked to Rosário. Police presence at L1, L2, L3.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Guterres (O5M1)'], hqFallback: 'Day 5' },
+    { id: 'I14', title: 'Yoon\'s Analysis — The Poison Kills Everything', content: 'Yoon\'s lab analysis confirms: the poison kills everything — human cells, bacteria, viruses. No selectivity. No therapeutic window. A single molecule is as lethal as a gallon.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L4'], knownBy: ['Yoon (O3M2)'], hqFallback: 'Day 4' },
+    { id: 'I15', title: 'Park\'s Journal', content: 'Park\'s personal journal records his conviction that the cup is his destiny. "The universe does not make mistakes."', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Park'], hqFallback: 'Day 4' },
+    { id: 'I16', title: 'Chinese State Security Interest', content: 'Agent Chen of the MSS has identified the cup as stolen cultural property. A surveillance team is deployed to Macau.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Chen (O6M1)'], hqFallback: 'Day 4' },
+    { id: 'I17', title: 'Farouk\'s Doubts', content: 'Farouk wants out. He has never killed anyone. He prays five times a day and adds a silent sixth prayer: "Please let someone stop this."', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Farouk (O2M2)'], hqFallback: 'Day 3' },
+    { id: 'I18', title: 'The Quiescence Stone', content: 'The quiescence stone from Bodhidharma\'s cave — smooth, dark, sewn into the monk\'s robe. Cup stored upside-down on this stone goes quiet.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L6'], knownBy: ['Shi Yánxìn (O4M2)'], hqFallback: 'Day 3' },
+    { id: 'I19', title: 'Nasim\'s Obsession', content: 'Nasim believes the cup is the voice of God. He has written pages of "conversations" with it. He plans to die with it — martyrdom.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Nasim (O2M3)'], hqFallback: 'Day 2' },
+    { id: 'I20', title: 'Police Close In', content: 'Guterres is planning a raid on Coloane. He\'s noticed the agents\' presence. They\'re on his board now.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Guterres (O5M2)'], hqFallback: 'Day 2' },
+    { id: 'I21', title: 'MSS Intervention Imminent', content: 'MSS intervention imminent. Chen has orders to secure the cup "by any means necessary." Six operatives, all armed.', type: 'supporting-intel', foundAt: ['—'], knownBy: ['Chen (O6M2)'], hqFallback: 'Day 2' },
+    { id: 'I22', title: 'What This Has Always Been About', content: 'Synthesis: The cup was never a weapon. It was a tool of awakening, confused by 20 years of silence. The monk can help contain it. Some things that were once holy can still be saved.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' }
   ];
 
   // ═══════════════════════════════════════════════════════════
@@ -1363,14 +1430,14 @@ const NR_DATA = (function() {
   finalizeShiftsFilled(BOUDICA_PACT);
 
   const BOUDICA_NPCS = [
-    { id: 'npc-albright', name: 'Mrs. Albright', role: 'Village Pub Owner', organization: 'Independent', attributes: { strength: 2, agility: 2, wits: 3, empathy: 4 }, disposition: 4, secret: 'Has been having dreams of a woman in red walking the fields. The dreams started the night Dunn vanished.', goal: 'Help the agents understand what\'s happening to her village.', artifactConnection: 'None. But she knows everyone and everything.', locations: ['L2'], positiveResult: 'Provides local knowledge, Dunn\'s habits, and pub gossip — including who else noticed the blight.', negativeResult: 'If dismissed, she stops talking. Information lost.', daNotes: '' },
-    { id: 'npc-price', name: 'Dr. Helen Price', role: 'Museum Curator', organization: 'O1 (Birmingham Museum)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 2 }, disposition: 2, secret: 'Doesn\'t believe in cursed coins. Has been having headaches since the keystone was removed — doesn\'t connect them.', goal: 'Protect the Staffordshire Hoard. She\'s spent 10 years studying it.', artifactConnection: 'None. Studying the hoard for a decade. She\'s noticed the coins feel warm.', locations: ['L3'], positiveResult: 'Evidence might convince her. A scientist at heart — show her the blight is real.', negativeResult: 'Protective of the hoard. Will not lend a coin without extraordinary proof.', daNotes: '' },
-    { id: 'npc-okonkwo', name: 'Mr. Okonkwo', role: 'Night Security Guard', organization: 'O1 (Birmingham Museum)', attributes: { strength: 3, agility: 2, wits: 3, empathy: 4 }, disposition: 3, secret: 'Has seen the coins glow — a faint reddish warmth visible only in peripheral vision. Knows the patrol schedule and security gaps.', goal: 'Help anyone who takes him seriously. His supervisor dismissed his report.', artifactConnection: 'None. Observing anomalous effects in the museum.', locations: ['L3'], positiveResult: 'Provides patrol schedules, 90-second camera loop window, and security gaps.', negativeResult: 'If dismissed or mocked, he withdraws.', daNotes: '' },
-    { id: 'npc-matteo', name: 'Father Matteo', role: 'Vatican Archivist', organization: 'O2 (Vatican Archive)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 4 }, disposition: 3, secret: 'Has read the ledger. Knows it describes something that shouldn\'t be in a trade ledger. Has been waiting for someone to ask about it.', goal: 'Help the right people find the ledger. He\'s been waiting quietly.', artifactConnection: 'None. Curator of the ledger. Understands its significance.', locations: ['L5'], positiveResult: 'Confirms ledger existence, expedites access. Church credentials bypass the backlog.', negativeResult: 'Bound by procedure. Access delayed by 1 day if agents fail Manipulate roll.', daNotes: '' },
-    { id: 'npc-croft', name: 'Philip Croft', role: 'Agricultural Inspector', organization: 'O3 (Ministry of Agriculture)', attributes: { strength: 2, agility: 2, wits: 4, empathy: 3 }, disposition: 3, secret: 'Has been investigating the blight for the Ministry. He knows it\'s not a crop disease — but he can\'t say that in his report.', goal: 'Find the real cause. His career depends on submitting a report, but he knows the report will be wrong.', artifactConnection: 'None. Observing the blight\'s effects.', locations: ['L1'], positiveResult: 'Provides soil analysis, blight radius data, and Ministry internal reports.', negativeResult: 'Cannot help openly — his report must follow Ministry protocols.', daNotes: '' },
-    { id: 'npc-dunn', name: 'Arthur Dunn', role: 'Missing Farmer', organization: 'O4 (The Farmer\'s Trail)', attributes: { strength: 4, agility: 2, wits: 2, empathy: 3 }, disposition: 2, secret: 'Threw the coin in a Scottish river. Has been circling Staffordshire ever since. Can feel the coin calling him. Exhausted, confused, and increasingly desperate.', goal: 'Go home. He can\'t. Something won\'t let him.', artifactConnection: 'Handled the coin. Carried it for days. Can still feel it.', locations: ['L7'], positiveResult: 'Confirms the coin is unrecoverable. Provides narrative weight.', negativeResult: 'If found too late, Dunn may have already collapsed from exhaustion.', daNotes: '' },
-    { id: 'npc-baker', name: 'Reverend Baker', role: 'Cormsil Vicar', organization: 'Independent (Church of England)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 5 }, disposition: 4, secret: 'Found references to the 1882 compact in the parish records. Doesn\'t understand what it means but knows it\'s important.', goal: 'Help the village. He\'s the spiritual center of Cormsil.', artifactConnection: 'None. Custodian of parish records.', locations: ['L2'], positiveResult: 'Provides parish records referencing the compact.', negativeResult: 'Limited by his lack of knowledge — can only point, not explain.', daNotes: '' },
-    { id: 'npc-entity', name: 'The Entity ("The Red Woman")', role: 'Bound Presence', organization: 'Independent — the binding subject', attributes: { strength: 6, agility: 4, wits: 6, empathy: 1 }, disposition: 1, secret: 'Is Boudica\'s dying curse adopted by something older than the Celts. Cannot be killed — only bound.', goal: 'Be acknowledged. It wants the wrong of its binding to be recognized.', artifactConnection: 'The subject of the binding. The coin is its lock.', locations: ['L7'], positiveResult: 'Can be re-bound with the ritual. Responds to acknowledgment.', negativeResult: 'If the binding fails, partially manifests. +3 Corruption to everyone at locus.', daNotes: '' }
+    { id: 'npc-townsfolk', name: 'The Townsfolk (The Plough and Furrow Regulars)', role: 'Composite — Conflicting Witnesses', organization: 'None (civilian)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 3 }, disposition: 3, secret: 'None of them are lying. They\'re all telling the truth as they remember it. Arthur was vague. He showed different people different things at different times. The contradictions are in Arthur\'s storytelling, not the townsfolk\'s honesty. Mrs. Albright, a regular in her seventies, has been having vivid dreams about a woman in red standing at the edge of her property. She attributes this to cheese before bed. She\'s wrong.', goal: 'Help Arthur — they\'re genuinely worried. Win the pub bet about what he found — they\'re also bored. The two motivations coexist comfortably, as they do in village life.', artifactConnection: 'Several handled the coin briefly — Arthur passed it around one night. They remember it being "warm." One regular, Mr. Threlfall, tried to bite it to check if it was real gold. "Tasted like metal. Warm metal. Shouldn\'t be warm."', startingKnowledge: [{ info: 'I3', desc: 'Locusts sighted near farm — navigate toward binding locus.' }, { info: 'I4', desc: 'Dunn left for Scotland three weeks ago, hasn\'t returned.' }], gainedKnowledge: [{ trigger: '—', desc: 'Learns I5 if agents buy a round — any gold from hoard matches binding terms.' }, { trigger: '—', desc: 'Learns I7 if agents ask about local stories — Eadwine\'s chronicle.' }], locations: ['L2'], positiveResult: 'Friendly, helpful, genuinely worried about Arthur. A pint and patience gets everything they know — which is more than any one of them realizes individually.', negativeResult: 'If agents are aggressive or "official," the pub closes ranks. "No comment" from everyone. Information is limited to I3 only.', daNotes: '' },
+    { id: 'npc-price', name: 'Dr. Helen Price', role: 'Museum Curator', organization: 'O1 (Birmingham Museum)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 2 }, disposition: 2, secret: 'Doesn\'t believe in cursed coins. Has been having headaches since the keystone was removed — doesn\'t connect them.', goal: 'Protect the Staffordshire Hoard. She\'s spent 10 years studying it.', artifactConnection: 'None. Studying the hoard for a decade. She\'s noticed the coins feel warm.', startingKnowledge: [{ info: 'I6', desc: 'Coins in Anglo-Saxon gallery emit faint reddish glow at night.' }, { info: 'I8', desc: 'Chronicle contains binding words in Old English for re-burial ritual.' }], gainedKnowledge: [{ trigger: 'O1M1', desc: 'Learns I9 — Roman ledger records original pact: gold in earth, binding holds.' }], locations: ['L3'], positiveResult: 'Evidence might convince her. A scientist at heart — show her the blight is real.', negativeResult: 'Protective of the hoard. Will not lend a coin without extraordinary proof.', daNotes: '' },
+    { id: 'npc-okonkwo', name: 'Mr. Okonkwo', role: 'Night Security Guard', organization: 'O1 (Birmingham Museum)', attributes: { strength: 3, agility: 2, wits: 3, empathy: 4 }, disposition: 3, secret: 'Has seen the coins glow — a faint reddish warmth visible only in peripheral vision. Knows the patrol schedule and security gaps.', goal: 'Help anyone who takes him seriously. His supervisor dismissed his report.', artifactConnection: 'None. Observing anomalous effects in the museum.', startingKnowledge: [], gainedKnowledge: [{ trigger: 'O1M2', desc: 'Learns I15 — coins glowing, shifting toward Staffordshire.' }], locations: ['L3'], positiveResult: 'Provides patrol schedules, 90-second camera loop window, and security gaps.', negativeResult: 'If dismissed or mocked, he withdraws.', daNotes: '' },
+    { id: 'npc-matteo', name: 'Father Matteo', role: 'Vatican Archivist', organization: 'O2 (Vatican Archive)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 4 }, disposition: 3, secret: 'Has read the ledger. Knows it describes something that shouldn\'t be in a trade ledger. Has been waiting for someone to ask about it.', goal: 'Help the right people find the ledger. He\'s been waiting quietly.', artifactConnection: 'None. Curator of the ledger. Understands its significance.', startingKnowledge: [{ info: 'I11', desc: 'Dr. Rhys\'s anomaly report — GPR showed void at 1.2m at binding locus.' }], gainedKnowledge: [{ trigger: 'O2M2', desc: 'Learns I12 — anomaly coordinates match binding locus exactly.' }, { trigger: 'O2M2', desc: 'Learns I13 — binding locus active, ground breathing.' }, { trigger: 'O2M2', desc: 'Learns I21 — Roman ledger bears Agricola\'s official stamp, 78 CE.' }], locations: ['L5'], positiveResult: 'Confirms ledger existence, expedites access. Church credentials bypass the backlog.', negativeResult: 'Bound by procedure. Access delayed by 1 day if agents fail Manipulate roll.', daNotes: '' },
+    { id: 'npc-rhys', name: 'Dr. Margaret Rhys', role: 'Retired Archaeologist — Excavated the Staffordshire Hoard', organization: 'None (civilian)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 4 }, disposition: 4, secret: 'Dr. Rhys recorded the anomalous coin in her dig notes and then let it go. The funding ran out. The next dig season never happened. She retired. For three years, she\'s been telling herself the anomaly was nothing — a misidentified Roman coin. But she dreams about it. In her dreams, the coin is warm. In her dreams, the face on the coin opens its mouth to speak and she always wakes up before it does.', goal: 'Help the agents. See the hoard understood — truly understood — before she dies. She\'s 71. She wants her work to mean something.', artifactConnection: 'Handled the Staffordshire Hoard pieces during excavation. The anomalous coin was never found — it was deeper than they dug. But she held other pieces. She remembers one garnet-inlaid strip that felt warm in her hand, even through gloves. She thought it was the sun. It wasn\'t the sun.', startingKnowledge: [{ info: 'I14', desc: 'Entity can be heard at locus — voice in layers of Old English, Brythonic, something older.' }, { info: 'I19', desc: 'Excavation records — grid coordinates match binding locus precisely.' }], gainedKnowledge: [], locations: ['L6'], positiveResult: 'Dr. Rhys is a pure ally. She gives the agents everything — dig records, anomaly report, coordinates, personal theories. No roll required. She\'s been waiting for this conversation.', negativeResult: 'None. But time spent in Wales is time not spent in Rome or Birmingham. The clock is ticking. Travel costs 1 shift each way.', daNotes: '' },
+    { id: 'npc-croft', name: 'Philip Croft', role: 'Agricultural Inspector', organization: 'O3 (Ministry of Agriculture)', attributes: { strength: 2, agility: 2, wits: 4, empathy: 3 }, disposition: 3, secret: 'Has been investigating the blight for the Ministry. He knows it\'s not a crop disease — but he can\'t say that in his report.', goal: 'Find the real cause. His career depends on submitting a report, but he knows the report will be wrong.', artifactConnection: 'None. Observing the blight\'s effects.', startingKnowledge: [], gainedKnowledge: [{ trigger: 'O3M1', desc: 'Learns I17 — Ministry declares Agricultural Health Zone around Dunn\'s farm.' }, { trigger: 'O3M2', desc: 'Learns I20 — Ministry expands quarantine to 12-mile radius.' }], locations: ['L1'], positiveResult: 'Provides soil analysis, blight radius data, and Ministry internal reports.', negativeResult: 'Cannot help openly — his report must follow Ministry protocols.', daNotes: '' },
+    { id: 'npc-dunn', name: 'Arthur Dunn', role: 'Accidental Catalyst — Missing', organization: 'O4 (The Farmer\'s Trail)', attributes: { strength: 4, agility: 2, wits: 2, empathy: 3 }, disposition: 2, secret: 'Arthur didn\'t throw the coin in a river. He still has it. It\'s in his coat pocket. He\'s been driving aimlessly for two weeks, unable to go home, unable to go anywhere. The coin is calling him back to the farm. He hasn\'t slept more than an hour at a time since he pulled the coin from the earth.', goal: 'Go home. He can\'t. The coin won\'t let him — not until the binding is either restored or broken. He wants to sleep. He wants to go back to before he found the coin. He knows neither is possible.', artifactConnection: 'Current holder of the original keystone coin. Has been carrying it for two weeks. Experiences: warmth in his pocket, dreams of a woman in red standing at the edge of his field, an overwhelming urge to go home combined with an overwhelming fear of going home.', startingKnowledge: [{ info: 'I3', desc: 'Locusts sighted near farm — navigate toward binding locus.' }, { info: 'I4', desc: 'He left for Scotland three weeks ago, hasn\'t returned.' }], gainedKnowledge: [{ trigger: 'O4M2', desc: 'Learns I18 — found at motel near Lichfield, coin testimony.' }], locations: ['L7'], positiveResult: 'If found, Arthur hands over the coin. He wants it gone. He doesn\'t want payment. He wants to sleep. He will answer every question — the agents are the first people who have seemed to understand what\'s happening to him.', negativeResult: 'If agents threaten him or attempt to confiscate the coin without explanation, Arthur panics. He flees. The coin stays with him. The trail goes permanently cold. The original keystone coin is lost — agents must use a museum replacement.', daNotes: '' },
+    { id: 'npc-entity', name: 'The Entity ("The Red Woman")', role: 'Bound Presence', organization: 'Independent — the binding subject', attributes: { strength: 6, agility: 4, wits: 6, empathy: 1 }, disposition: 1, secret: 'Is Boudica\'s dying curse adopted by something older than the Celts. Cannot be killed — only bound.', goal: 'Be acknowledged. It wants the wrong of its binding to be recognized.', artifactConnection: 'The subject of the binding. The coin is its lock.', startingKnowledge: [], gainedKnowledge: [{ trigger: '—', desc: 'Experienced through symptoms — locusts, brine, silence, breathing earth, voice at Day 1.' }], locations: ['L7'], positiveResult: 'Can be re-bound with the ritual. Responds to acknowledgment.', negativeResult: 'If the binding fails, partially manifests. +3 Corruption to everyone at locus.', daNotes: '' }
   ];
 
   const BOUDICA_LOCATIONS = [
@@ -1384,20 +1451,28 @@ const NR_DATA = (function() {
   ];
 
   const BOUDICA_INFO_CARDS = [
-    { id: 'I1', content: 'Soil analysis at the farm confirms gold residue at the binding locus. The hole is 1.2 meters deep — the coin was buried deeper than a plough typically reaches.', type: 'containment-truth', truthStatus: 'trigger', foundAt: ['L1'], knownBy: ['Philip Croft'], hqFallback: 'Day 6' },
-    { id: 'I2', content: 'Arthur Dunn found "something interesting" while ploughing. He showed it at the pub. Described as a gold coin, warm to the touch, with a woman\'s face on one side.', type: 'supporting-intel', foundAt: ['L1', 'L2'], knownBy: ['Mrs. Albright'], hqFallback: 'Day 6' },
-    { id: 'I3', content: 'Locusts have been sighted near the farm. Unusual for Staffordshire. They navigate toward the binding locus regardless of wind direction.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Mrs. Albright', 'Philip Croft'], hqFallback: 'Day 5' },
-    { id: 'I4', content: 'Dunn left for a "fishing trip" to Scotland three weeks ago. He has not returned. His cottage is locked. His post is piling up.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Mrs. Albright'], hqFallback: 'Day 5' },
-    { id: 'I5', content: 'The Staffordshire Hoard includes gold coins from the 7th century. Any gold from the hoard matches the binding\'s terms — "gold, measured by weight."', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Dr. Price'], hqFallback: 'Day 4' },
-    { id: 'I6', content: 'Mr. Okonkwo reports the coins in the Anglo-Saxon gallery emit a faint reddish glow visible only in peripheral vision. The glow intensifies at night.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Mr. Okonkwo (O1M2)'], hqFallback: 'Day 3' },
-    { id: 'I7', content: 'Eadwine\'s chronicle describes "the queen who would not leave" and a binding reinforced with gold. References "the book of reckonings in the iron-men\'s city of stone" — the Roman ledger in Rome.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['—'], hqFallback: 'Day 5' },
-    { id: 'I8', content: 'The chronicle contains binding words in Old English. Speaking these words during the re-burial is one way to complete the ritual.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L4'], knownBy: ['—'], hqFallback: 'Day 4' },
-    { id: 'I9', content: 'The Roman ledger records the original pact: "One binding, site CXVII, province of Britannia. Payment: gold, measured by weight. Gold in earth, binding holds."', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 4' },
-    { id: 'I10', content: 'The ledger specifies no minimum gold quantity. A single coin is sufficient. The Romans were precise about loopholes.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 3' },
-    { id: 'I11', content: 'Dr. Rhys\'s anomaly report: during the 1984 excavation, ground-penetrating radar showed a void at 1.2 meters. The team assumed it was a natural cavity. It was the keystone\'s resting place.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Dr. Rhys'], hqFallback: 'Day 3' },
-    { id: 'I12', content: 'The anomaly coordinates match the binding locus on Dunn\'s farm exactly. The void is now empty — the coin was removed in 1987.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Dr. Rhys'], hqFallback: 'Day 2' },
-    { id: 'I13', content: 'The binding locus is active. Soil temperature is 4°C above ambient. The ground rises and falls — approximately 2 cm every 30 seconds.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L7'], knownBy: ['—'], hqFallback: 'Day 2' },
-    { id: 'I14', content: 'The entity can be heard at the locus — a voice in layers: Old English, Brythonic, something older. It is reciting wrongs. Every preventable death it has witnessed.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' }
+    { id: 'I1', title: 'The Epicenter', content: 'Soil analysis at the farm confirms gold residue at the binding locus. The hole is 1.2 meters deep — the coin was buried deeper than a plough typically reaches.', type: 'containment-truth', truthStatus: 'trigger', foundAt: ['L1'], knownBy: ['Philip Croft'], hqFallback: 'Day 6' },
+    { id: 'I2', title: 'The Hole', content: 'Arthur Dunn found "something interesting" while ploughing. He showed it at the pub. Described as a gold coin, warm to the touch, with a woman\'s face on one side.', type: 'supporting-intel', foundAt: ['L1', 'L2'], knownBy: ['Mrs. Albright'], hqFallback: 'Day 6' },
+    { id: 'I3', title: 'Arthur\'s Find', content: 'Locusts have been sighted near the farm. Unusual for Staffordshire. They navigate toward the binding locus regardless of wind direction.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Mrs. Albright', 'Philip Croft'], hqFallback: 'Day 5' },
+    { id: 'I4', title: 'The Pub Bet', content: 'Dunn left for a "fishing trip" to Scotland three weeks ago. He has not returned. His cottage is locked. His post is piling up.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Mrs. Albright'], hqFallback: 'Day 5' },
+    { id: 'I5', title: 'Arthur\'s Habits', content: 'The Staffordshire Hoard includes gold coins from the 7th century. Any gold from the hoard matches the binding\'s terms — "gold, measured by weight."', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Dr. Price'], hqFallback: 'Day 4' },
+    { id: 'I6', title: 'The Staffordshire Hoard', content: 'Mr. Okonkwo reports the coins in the Anglo-Saxon gallery emit a faint reddish glow visible only in peripheral vision. The glow intensifies at night.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Mr. Okonkwo (O1M2)'], hqFallback: 'Day 3' },
+    { id: 'I7', title: 'The Red Woman', content: 'Eadwine\'s chronicle describes "the queen who would not leave" and a binding reinforced with gold. References "the book of reckonings in the iron-men\'s city of stone" — the Roman ledger in Rome.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['—'], hqFallback: 'Day 5' },
+    { id: 'I8', title: 'The Anomalous Coin', content: 'The chronicle contains binding words in Old English. Speaking these words during the re-burial is one way to complete the ritual.', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L4'], knownBy: ['—'], hqFallback: 'Day 4' },
+    { id: 'I9', title: 'Shifted Displays', content: 'The Roman ledger records the original pact: "One binding, site CXVII, province of Britannia. Payment: gold, measured by weight. Gold in earth, binding holds."', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 4' },
+    { id: 'I10', title: 'Eadwine\'s Chronicle', content: 'The ledger specifies no minimum gold quantity. A single coin is sufficient. The Romans were precise about loopholes.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 3' },
+    { id: 'I11', title: 'The Book of Reckonings', content: 'Dr. Rhys\'s anomaly report: during the 1984 excavation, ground-penetrating radar showed a void at 1.2 meters. The team assumed it was a natural cavity. It was the keystone\'s resting place.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Dr. Rhys'], hqFallback: 'Day 3' },
+    { id: 'I12', title: 'The Roman Ledger', content: 'The anomaly coordinates match the binding locus on Dunn\'s farm exactly. The void is now empty — the coin was removed in 1987.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['Dr. Rhys'], hqFallback: 'Day 2' },
+    { id: 'I13', title: 'The Terms', content: 'The binding locus is active. Soil temperature is 4°C above ambient. The ground rises and falls — approximately 2 cm every 30 seconds.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L7'], knownBy: ['—'], hqFallback: 'Day 2' },
+    { id: 'I14', title: 'The Anomaly Report', content: 'The entity can be heard at the locus — a voice in layers: Old English, Brythonic, something older. It is reciting wrongs. Every preventable death it has witnessed.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' },
+    { id: 'I15', title: 'Okonkwo\'s Testimony', content: 'Mr. Samuel Okonkwo, night security guard at the Birmingham Museum for 15 years, reports that the coins in the Anglo-Saxon gallery have begun glowing — a faint reddish warmth, visible only in peripheral vision. The glow began approximately three weeks ago and has been intensifying. The coins also shift position overnight toward the north wall — toward Staffordshire. His supervisor dismissed his report as "reflection from the exit sign." It\'s not a reflection. Okonkwo will talk to anyone who takes him seriously. He knows the patrol schedules, the vault code rotation, and when the security camera feeds loop.', type: 'supporting-intel', truthStatus: null, foundAt: ['L3'], knownBy: ['Mr. Okonkwo (O1M2)'], hqFallback: 'Day 2' },
+    { id: 'I16', title: 'Eadwine\'s Marginalia', content: 'Between complaints about the abbey\'s food and observations about the weather, Eadwine recorded the binding words in Old English, with a Latin gloss in the margin. Translated: "The debt is paid. The gold is placed. The binding holds. That which was taken is returned. That which would take is denied. By the weight of the gold and the word of the king, let the earth keep what the earth keeps. Let the sleeper sleep." The Latin version in the Roman ledger is terser but equally valid: "Aurum in terra. Pactum tenet. Quod ablatum est, redditur. Quod auferre vult, negatur." Either version works. The entity does not care about language. An agent must speak the words aloud at the binding locus during the ritual.', type: 'supporting-intel', truthStatus: null, foundAt: ['L4', 'L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 4' },
+    { id: 'I17', title: 'Quarantine', content: 'The British Ministry of Agriculture has declared an "Agricultural Health Zone" in a 5-mile radius around Dunn\'s farm. Roadblocks have appeared on county roads — Ministry officials in green Land Rovers, checking identifications. The official explanation is "soil-borne pathogen investigation." Mr. Philip Croft, a senior agricultural inspector, is leading the investigation. He knows the official explanation doesn\'t match the evidence. Movement within the quarantine zone is restricted — agents must use Covenant credentials (Manipulate Diff 1), stealth (Sneak Diff 2), or alternative routes.', type: 'supporting-intel', truthStatus: null, foundAt: ['L1'], knownBy: ['Philip Croft (O3M1)'], hqFallback: 'Day 3' },
+    { id: 'I18', title: 'Dunn Found', content: 'Arthur Dunn has been located at a motel near Lichfield, 20 miles from his farm. He\'s been there for three days. He hasn\'t slept more than an hour at a time. He keeps touching his coat pocket — the pocket where the coin was. "I can still feel it," he says. "It\'s not in my pocket anymore. I threw it in a river in Scotland. But I can still feel it. It\'s warm. It\'s always warm." Dunn is found, but the coin\'s status is unclear — his testimony conflicts with the NPC secret that he still has it.', type: 'supporting-intel', truthStatus: null, foundAt: ['L7'], knownBy: ['Arthur Dunn (O4M2)'], hqFallback: 'Day 2' },
+    { id: 'I19', title: 'The Dig Coordinates', content: 'Dr. Margaret Rhys\'s excavation records include precise grid coordinates for the anomalous coin\'s radar return: Grid Reference SK 10203 07214 — the north field of Arthur Dunn\'s farm, approximately 15 meters from the field boundary hedgerow, at a depth of 1.2 meters. These coordinates match the binding locus precisely. The main hoard deposit was located 40 meters to the southwest — the Anglo-Saxons buried the bulk of the gold away from the keystone to avoid disturbing it. The keystone was the anchor. The rest was reinforcement.', type: 'supporting-intel', truthStatus: null, foundAt: ['L6'], knownBy: ['Dr. Margaret Rhys'], hqFallback: 'Day 4' },
+    { id: 'I20', title: 'Quarantine Expands', content: 'The Ministry of Agriculture has expanded the Agricultural Health Zone to a 12-mile radius around Dunn\'s farm, encompassing several villages and reaching the outskirts of Birmingham. Roadblocks have multiplied. Museum security has increased further — museum infiltration is now Hard difficulty. The re-burial site is deep inside the quarantine zone — agents must cross at least two checkpoints to reach it.', type: 'supporting-intel', truthStatus: null, foundAt: ['L1'], knownBy: ['Philip Croft (O3M2)'], hqFallback: 'Day 1' },
+    { id: 'I21', title: 'The Ledger\'s Provenance', content: 'The Roman ledger — Codex Mercaturae Britanniae — bears the official stamp of Gnaeus Julius Agricola\'s office, dated 78 CE. It is countersigned by an unnamed priest described only as "priest of the [syncretic] cult." The priest\'s name has been deliberately scratched from the document — carefully removed with a blade, leaving a rectangular hole in the vellum. Father Matteo notes that the handwriting of the removal is 4th-century — Christian, after the Empire\'s conversion. The early Church was systematic about erasing pagan practitioners from official records but kept the ledger. The pact was a hybrid — Celtic earth-rites combined with Roman contract-law, designed to contain something neither could destroy.', type: 'supporting-intel', truthStatus: null, foundAt: ['L5'], knownBy: ['Father Matteo (O2M2)'], hqFallback: 'Day 3' },
+    { id: 'I22', title: 'What This Has Always Been About', content: 'After Boudica\'s defeat in 61 CE, her dying curse was adopted by something older than the Celts: a presence in the earth that had no name, no form, no voice until she gave it one. The Romans couldn\'t destroy it. They bargained: gold in the earth, the curse sleeps. The Anglo-Saxons reinforced the bargain 500 years later with the Staffordshire Hoard. A monk named Eadwine recorded it. A farmer named Arthur Dunn broke it by accident in 1987. The entity is not evil. It is incompatible. It wants the land back — not to rule, but to return to a state before human presence. The binding holds as long as gold stays in the earth. The agents must put it back. A single coin. The right words. The right place. The door closes. The sleeper sleeps. For now.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['—'], hqFallback: '—' }
   ];
 
   // ═══════════════════════════════════════════════════════════
@@ -1408,7 +1483,7 @@ const NR_DATA = (function() {
     caseId: 'VC-UK-87-012',
     caseName: 'The Cormsil Compact',
     region: 'Yorkshire Dales, England → Oxford → London',
-    currentDay: 14,
+    currentDay: 10,
     shiftsFilled: [],
     organizations: [
       {
@@ -1470,7 +1545,7 @@ const NR_DATA = (function() {
       { day: 4, description: 'The spirit speaks directly — a voice from beneath the earth, reciting wrongs in layers of language. Every preventable death in Cormsil\'s history. Everyone in the village hears it.' },
       { day: 1, description: 'CATASTROPHE: The Dōmere attempts expansion beyond Cormsil. The returned lose their anchor. Eleanor Vane may die from exhaustion. The binding must be performed now or never.' }
     ],
-    currentDayDisplay: 14,
+    currentDayDisplay: 10,
     relicSheet: {
       name: 'The Dōmere ("The Buried Judge")',
       tier: 'Tier 2 — Subterranean Presence',
@@ -1484,91 +1559,49 @@ const NR_DATA = (function() {
   finalizeShiftsFilled(CORMSIL_COMPACT);
 
   const CORMSIL_NPCS = [
-    { id: 'npc-eleanor', name: 'Eleanor Vane', role: 'Librarian — The Anchor', organization: 'O4 (Eleanor Vane)', attributes: { strength: 2, agility: 2, wits: 4, empathy: 5 }, disposition: 3, secret: 'Fell asleep. A scented candle ignited a stack of books. 25 people died. She has not slept in over three weeks. Being visited daily by people who "forgive" her.', goal: 'End this. She can\'t take much more. She\'s deteriorating.', artifactConnection: 'The spirit\'s conduit. The returned are extensions of the spirit — they visit her because the spirit compels them.', locations: ['L1'], positiveResult: 'Eleanor shares everything — the fire, the returned, the visits. Genuinely wants help.', negativeResult: 'If agents are accusatory, she withdraws. O4 advances 2 squares.', daNotes: '' },
-    { id: 'npc-dwerryhouse', name: 'Tom Dwerryhouse', role: 'Farmer — Skeptic Leader', organization: 'O2 (The Skeptical Townsfolk)', attributes: { strength: 3, agility: 2, wits: 3, empathy: 3 }, disposition: 2, secret: 'His wife Mary is among the returned. He knows the woman in his house is not his wife. Has been documenting the tells for weeks.', goal: 'Get his wife back. Understand what happened. He\'ll do whatever it takes.', artifactConnection: 'None. Living with one of the returned. The standing stone is in his field.', locations: ['L2'], positiveResult: 'Shares documentation of returned tells. Reveals standing stone location.', negativeResult: 'If agents dismiss his concerns, he acts alone — confronts returned, triggers O2M2 early.', daNotes: '' },
-    { id: 'npc-hale', name: 'Margaret Hale', role: 'Returned — Former Schoolteacher', organization: 'O1 (The Returned)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 5 }, disposition: 4, secret: 'Has pieced together what she is. Remembers dying. Knows she is being used. The intended volunteer for the silencing ritual.', goal: 'Help the agents silence the Dōmere. She is willing to release the spirit\'s fragment — ending her borrowed existence.', artifactConnection: 'One of the returned. A fragment of the Dōmere inhabits her body.', locations: ['L1', 'L7'], positiveResult: 'Volunteers for the silencing ritual. Her self-awareness is the key to breaking the spirit\'s hold.', negativeResult: 'If agents cannot reach her before O1M3, she may lose the will to resist.', daNotes: '' },
-    { id: 'npc-baker-c', name: 'Reverend Baker', role: 'Cormsil Vicar', organization: 'Independent (Church of England)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 5 }, disposition: 4, secret: 'Found references to the 1882 compact in the parish records. Discovered the Society\'s manual in the crypt but was too afraid to move it.', goal: 'Help the village. He\'s the spiritual center but out of his depth.', artifactConnection: 'None. Custodian of parish records and de facto guardian of the Society\'s manual.', locations: ['L3'], positiveResult: 'Directs agents to the crypt and the Society\'s manual.', negativeResult: 'Too afraid to act directly. Can only point, not lead.', daNotes: '' },
-    { id: 'npc-colne', name: 'Sir Geoffrey Colne (Manuscript)', role: '1642 Scholar — Deceased', organization: 'Historical', attributes: { strength: 0, agility: 0, wits: 5, empathy: 3 }, disposition: 0, secret: 'His manuscript "Of Certain Subterranean Presences in the County of York" describes the Dōmere, a failed binding attempt, and the silencing ritual. Contains the Old English riddle encoding the spirit\'s true name.', goal: 'Posthumous: his manuscript is the key to the silencing ritual.', artifactConnection: 'Attempted to bind the Dōmere in 1642. Failed because he treated it as an enemy rather than a party.', locations: ['L6'], positiveResult: 'Manuscript provides silencing ritual, spirit description, and riddle for true name.', negativeResult: 'Manuscript is fragile. Restricted access at British Library.', daNotes: '' },
-    { id: 'npc-vicar', name: 'The Vicar of 1882 (Papers)', role: 'Society Collaborator — Deceased', organization: 'O3 (The Society)', attributes: { strength: 0, agility: 0, wits: 4, empathy: 4 }, disposition: 0, secret: 'Collaborated with The Society to broker the 1882 compact. Hid the Society\'s manual in the crypt. His papers at the Bodleian reference "the volume I have hidden."', goal: 'Posthumous: his papers provide context for the Society and the compact.', artifactConnection: 'None. Administrator of the compact.', locations: ['L5'], positiveResult: 'Papers provide Society context, compact summary, and note about hidden manual.', negativeResult: 'Papers are incomplete — missing key operational details found only in the manual.', daNotes: '' },
-    { id: 'npc-society', name: 'The Society (Organization)', role: 'Victorian Occult Organization', organization: 'O3 (The Society\'s Trail)', attributes: { strength: 0, agility: 0, wits: 5, empathy: 3 }, disposition: 0, secret: 'Brokered the 1882 compact. Had no name worth recording — "they prefer to remain unremembered." Effective, organized, and vanished without a trace.', goal: 'Their manual and methods are the only remaining evidence they existed.', artifactConnection: 'Understood what others didn\'t: the Dōmere is not malicious — it is absolute.', locations: ['—'], positiveResult: 'Their manual is the key operational document.', negativeResult: 'Almost nothing is known about them. This is intentional.', daNotes: '' },
-    { id: 'npc-mary', name: 'Mary Dwerryhouse', role: 'Returned — Tom\'s Wife', organization: 'O1 (The Returned)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 4 }, disposition: 3, secret: 'Among the returned. The fragment inhabiting her body still loves her husband. She can sometimes act independently — small gestures, a familiar expression. This is the crack in the spirit\'s control.', goal: 'Reach her husband. The fragment is weakening — the spirit\'s control is not absolute.', artifactConnection: 'A fragment of the Dōmere inhabits her body. The spirit acts through her.', locations: ['L2'], positiveResult: 'Through Mary, agents can understand the returned aren\'t hostile — they\'re vessels.', negativeResult: 'If the spirit\'s control strengthens, Mary loses her ability to resist.', daNotes: '' }
+    { id: 'npc-eleanor', name: 'Eleanor Vane', role: 'Librarian — The Anchor', organization: 'O4 (Eleanor Vane)', attributes: { strength: 2, agility: 2, wits: 4, empathy: 5 }, disposition: 3, secret: 'Fell asleep. A scented candle ignited a stack of books. 25 people died. She has not slept in over three weeks. Being visited daily by people who "forgive" her.', goal: 'End this. She can\'t take much more. She\'s deteriorating.', artifactConnection: 'The spirit\'s conduit. The returned are extensions of the spirit — they visit her because the spirit compels them.', startingKnowledge: [{ info: 'I4', desc: 'She fell asleep at desk, woke to smoke. 25 people ran into woods, returned unharmed.' }], gainedKnowledge: [{ trigger: 'O4M2', desc: 'Learns I11 — collapses, writes "The stone is warm" compulsively.' }], locations: ['L1'], positiveResult: 'Eleanor shares everything — the fire, the returned, the visits. Genuinely wants help.', negativeResult: 'If agents are accusatory, she withdraws. O4 advances 2 squares.', daNotes: '' },
+    { id: 'npc-dwerryhouse', name: 'Tom Dwerryhouse', role: 'Farmer — Skeptic Leader', organization: 'O2 (The Skeptical Townsfolk)', attributes: { strength: 3, agility: 2, wits: 3, empathy: 3 }, disposition: 2, secret: 'His wife Mary is among the returned. He knows the woman in his house is not his wife. Has been documenting the tells for weeks.', goal: 'Get his wife back. Understand what happened. He\'ll do whatever it takes.', artifactConnection: 'None. Living with one of the returned. The standing stone is in his field.', startingKnowledge: [{ info: 'I6', desc: 'Meticulous observations of returned — blink rate, cool skin, unison speech.' }], gainedKnowledge: [{ trigger: 'O2M2', desc: 'Learns I14 — skeptics confront returned, they speak in unison: "We are the balance."' }], locations: ['L2'], positiveResult: 'Shares documentation of returned tells. Reveals standing stone location.', negativeResult: 'If agents dismiss his concerns, he acts alone — confronts returned, triggers O2M2 early.', daNotes: '' },
+    { id: 'npc-hale', name: 'Margaret Hale', role: 'Returned — Former Schoolteacher', organization: 'O1 (The Returned)', attributes: { strength: 2, agility: 2, wits: 5, empathy: 5 }, disposition: 4, secret: 'Has pieced together what she is. Remembers dying. Knows she is being used. The intended volunteer for the silencing ritual.', goal: 'Help the agents silence the Dōmere. She is willing to release the spirit\'s fragment — ending her borrowed existence.', artifactConnection: 'One of the returned. A fragment of the Dōmere inhabits her body.', startingKnowledge: [], gainedKnowledge: [{ trigger: 'O1M3', desc: 'Learns I16 — reveals herself to agents, offers to volunteer for ritual.' }], locations: ['L1', 'L7'], positiveResult: 'Volunteers for the silencing ritual. Her self-awareness is the key to breaking the spirit\'s hold.', negativeResult: 'If agents cannot reach her before O1M3, she may lose the will to resist.', daNotes: '' },
+    { id: 'npc-threlfall', name: 'Reverend Paul Threlfall', role: 'The Current Vicar — A Good Man Out of His Depth', organization: 'None (civilian ally)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 5 }, disposition: 3, secret: 'Has been vicar of St. Cuthbert\'s for 12 years. He loves his parish. He\'s never encountered anything supernatural before — but for three weeks he\'s felt a presence beneath the church, a weight in the air, a voice at the edge of hearing during Evensong. He thought he was losing his faith. When agents arrive, he\'s relieved — not because he understands, but because he\'s no longer alone in sensing it.', goal: 'Protect his parishioners. Understand what\'s happening in his church. Serve God by serving the truth — even if the truth is older than God.', artifactConnection: 'His church is built over the Dōmere\'s resting place. He\'s been standing on it for 12 years and never knew. The Society\'s manual was hidden by his predecessor\'s predecessor.', startingKnowledge: [{ info: 'I5', desc: 'Fire-damaged compact copy in vestry — describes annual acknowledgment at the stone.' }], gainedKnowledge: [{ trigger: '—', desc: 'Learns I9 — shows agents loose stone in crypt hiding the Society\'s manual.' }], locations: ['L3'], positiveResult: 'Threlfall is an unconditional ally. He believes the agents are an answer to prayer. He gives them access to everything — the crypt, the vestry, the fire-damaged compact copy.', negativeResult: 'He\'s not a fighter. If agents mock his faith or dismiss his concerns, he withdraws.', daNotes: '' },
+    { id: 'npc-colne', name: 'Sir Geoffrey Colne (Manuscript)', role: '1642 Scholar — Deceased', organization: 'Historical', attributes: { strength: 0, agility: 0, wits: 5, empathy: 3 }, disposition: 0, secret: 'His manuscript "Of Certain Subterranean Presences in the County of York" describes the Dōmere, a failed binding attempt, and the silencing ritual. Contains the Old English riddle encoding the spirit\'s true name.', goal: 'Posthumous: his manuscript is the key to the silencing ritual.', artifactConnection: 'Attempted to bind the Dōmere in 1642. Failed because he treated it as an enemy rather than a party.', startingKnowledge: [{ info: 'I13', desc: 'His manuscript identifies the Dōmere — predates Celts, cannot be killed, responds to wrongful death.' }, { info: 'I17', desc: '1642 exorcism failed — spirit ignored Christian rites entirely.' }, { info: 'I18', desc: 'Old English riddle in margins encodes true name — "Dōmere".' }], gainedKnowledge: [], locations: ['L6'], positiveResult: 'Manuscript provides silencing ritual, spirit description, and riddle for true name.', negativeResult: 'Manuscript is fragile. Restricted access at British Library.', daNotes: '' },
+    { id: 'npc-vicar', name: 'The Vicar of 1882 (Papers)', role: 'Society Collaborator — Deceased', organization: 'O3 (The Society)', attributes: { strength: 0, agility: 0, wits: 4, empathy: 4 }, disposition: 0, secret: 'Collaborated with The Society to broker the 1882 compact. Hid the Society\'s manual in the crypt. His papers at the Bodleian reference "the volume I have hidden."', goal: 'Posthumous: his papers provide context for the Society and the compact.', artifactConnection: 'None. Administrator of the compact.', startingKnowledge: [], gainedKnowledge: [], locations: ['L5'], positiveResult: 'Papers provide Society context, compact summary, and note about hidden manual.', negativeResult: 'Papers are incomplete — missing key operational details found only in the manual.', daNotes: '' },
+    { id: 'npc-society', name: 'The Society (Organization)', role: 'Victorian Occult Organization', organization: 'O3 (The Society\'s Trail)', attributes: { strength: 0, agility: 0, wits: 5, empathy: 3 }, disposition: 0, secret: 'Brokered the 1882 compact. Had no name worth recording — "they prefer to remain unremembered." Effective, organized, and vanished without a trace.', goal: 'Their manual and methods are the only remaining evidence they existed.', artifactConnection: 'Understood what others didn\'t: the Dōmere is not malicious — it is absolute.', startingKnowledge: [{ info: 'I9', desc: 'Society\'s manual hidden in crypt — practical guide to negotiating with subterranean presences.' }, { info: 'I15', desc: 'Vicar\'s sealed letter — Society "prefer to remain unremembered."' }], gainedKnowledge: [], locations: ['—'], positiveResult: 'Their manual is the key operational document.', negativeResult: 'Almost nothing is known about them. This is intentional.', daNotes: '' },
+    { id: 'npc-mary', name: 'Mary Dwerryhouse', role: 'Returned — Tom\'s Wife', organization: 'O1 (The Returned)', attributes: { strength: 2, agility: 2, wits: 3, empathy: 4 }, disposition: 3, secret: 'Among the returned. The fragment inhabiting her body still loves her husband. She can sometimes act independently — small gestures, a familiar expression. This is the crack in the spirit\'s control.', goal: 'Reach her husband. The fragment is weakening — the spirit\'s control is not absolute.', artifactConnection: 'A fragment of the Dōmere inhabits her body. The spirit acts through her.', startingKnowledge: [], gainedKnowledge: [{ trigger: 'O1M3', desc: 'Learns I16 — Margaret Hale volunteers; Mary is emotional anchor for the choice.' }], locations: ['L2'], positiveResult: 'Through Mary, agents can understand the returned aren\'t hostile — they\'re vessels.', negativeResult: 'If the spirit\'s control strengthens, Mary loses her ability to resist.', daNotes: '' }
   ];
 
   const CORMSIL_LOCATIONS = [
-    { id: 'L1', name: 'Eleanor Vane\'s Cottage, Cormsil', description: 'A small cottage at the edge of the village. Curtains drawn. Post piling up. Eleanor hasn\'t left in days. Inside: the same sentence written on every surface.', availability: 'Day/Evening shifts', npcsPresent: 'Eleanor Vane, Margaret Hale (sometimes)', cluesPresent: ['I1', 'I2'], organizations: ['O4'], positiveResult: 'Eleanor provides the fire account and description of the returned.', negativeResult: 'Eleanor is fragile. Aggressive questioning worsens her condition.', daNotes: '' },
-    { id: 'L2', name: 'Dwerryhouse Farm, Cormsil', description: 'A working farm on the edge of the village. Tom\'s wife Mary is among the returned — she\'s here but she\'s not his wife. The standing stone is in the north field.', availability: 'All shifts', npcsPresent: 'Tom Dwerryhouse, Mary Dwerryhouse', cluesPresent: ['I3', 'I4'], organizations: ['O2'], positiveResult: 'Dwerryhouse shares documentation. Standing stone location revealed.', negativeResult: 'Mary may act on the spirit\'s will if agents threaten Tom.', daNotes: '' },
-    { id: 'L3', name: 'St. Cuthbert\'s Church Crypt, Cormsil', description: 'The village church. The crypt contains parish records dating to the 12th century. Behind a loose stone: the Society\'s manual, hidden by the vicar in 1882.', availability: 'All shifts', npcsPresent: 'Reverend Baker', cluesPresent: ['I5', 'I6'], organizations: ['O3'], positiveResult: 'Society manual provides negotiation framework and references to Colne\'s manuscript.', negativeResult: 'Crypt is dark and damp. Manual is fragile — handle carefully.', daNotes: '' },
-    { id: 'L4', name: 'The Burned Library, Cormsil', description: 'The remains of the village library. Charred beams, melted glass, the smell of old smoke. The compact of 1882 was stored here in a glass case. All that remains is ash.', availability: 'All shifts', npcsPresent: 'The Returned (evenings, after O1M2)', cluesPresent: ['I7', 'I8'], organizations: ['O1'], positiveResult: 'Glass case fragments confirm the compact was here and is now destroyed.', negativeResult: 'The returned gather here at night. Approaching them may trigger escalation.', daNotes: '' },
-    { id: 'L5', name: 'Bodleian Library, Oxford', description: 'Holds the vicar\'s papers — letters, parish records, and a note about the hidden manual. Also contains references to The Society and the 1882 compact.', availability: 'Day shifts only', npcsPresent: 'Research librarians', cluesPresent: ['I9', 'I10'], organizations: ['O3'], positiveResult: 'Vicar\'s papers contextualize the Society and confirm the manual was hidden deliberately.', negativeResult: 'Bodleian access requires academic credentials or a compelling reason.', daNotes: '' },
-    { id: 'L6', name: 'British Library, London', description: 'Holds Sir Geoffrey Colne\'s 1642 manuscript "Of Certain Subterranean Presences in the County of York." Describes the Dōmere, a failed binding, and the silencing ritual. Contains an Old English riddle encoding the spirit\'s true name.', availability: 'Day shifts only', npcsPresent: 'Manuscript librarians', cluesPresent: ['I11', 'I12'], organizations: [], positiveResult: 'Manuscript provides ritual method and riddle for true name "Dōmere."', negativeResult: 'Manuscript is fragile and restricted. May require special handling.', daNotes: '' },
-    { id: 'L7', name: 'The Standing Stone, Dwerryhouse\'s Field', description: 'A pre-Saxon standing stone in the north field of Dwerryhouse Farm. Marks the Dōmere\'s original resting place before the Saxons built the church. The stone is warm to the touch. The soil beneath is darker, warmer than surrounding earth.', availability: 'All shifts', npcsPresent: 'The Returned (Day 1)', cluesPresent: ['I13', 'I14'], organizations: ['O1', 'O2'], positiveResult: 'The ritual site. All three components converge here.', negativeResult: 'The spirit resists. The silencing ritual is contested.', daNotes: '' }
+    { id: 'L1', name: 'Cormsil Village (General)', description: 'A farming town of 400 people in the Yorkshire Dales. One pub (The Dōmere Arms), one church (St. Cuthbert\'s, 12th century, built on older foundations), one library (burned), one school, scattered sheep farms. The atmosphere is tense — the town is divided between those calling the survival a miracle and those who are uneasy.', availability: 'All shifts. Pub: Day/Evening. Church: Day/Evening. Library site: any time.', npcsPresent: 'Tom Dwerryhouse, Mary Dwerryhouse, Margaret Hale, Reverend Paul Threlfall, various townsfolk', cluesPresent: ['I1', 'I2', 'I3', 'I6'], organizations: ['O1', 'O2'], positiveResult: 'The town is small — everyone knows everything. A Manipulate (Diff 1) or genuine interest earns cooperation. The pub is the social hub.', negativeResult: 'Agents stand out. Aggressive or dismissive behavior causes the town to close ranks. Extended conversation with a returned is +1 Corruption.', daNotes: '' },
+    { id: 'L2', name: 'The Burned Library', description: 'The remains of the Cormsil Public Library. A stone shell — the roof collapsed, the interior is ash and twisted shelving. The glass case that held the compact is visible in the reading room rubble: shattered, empty, but still labeled "Cormsil Compact, 1882." The site is cordoned off with police tape but not guarded.', availability: 'All shifts. No guard — just tape. Night visits require a light source.', npcsPresent: 'Possible: one of the returned (drawn to the site). Eleanor Vane (visits sometimes). After O1M2: the returned gather here every evening.', cluesPresent: ['I3', 'I5', 'I7'], organizations: ['O1'], positiveResult: 'The site is accessible and physical evidence is intact. The glass case label is unambiguous. Fire investigator\'s report at town council office provides objective confirmation.', negativeResult: 'The returned are drawn here. The ash is unstable — a fumbled Investigate roll may disturb debris and attract attention.', daNotes: '' },
+    { id: 'L3', name: 'St. Cuthbert\'s Church and Crypt', description: 'A Norman church, 12th century, built on Saxon foundations. The crypt is older — pre-Norman, possibly the original Saxon church floor. The Society\'s manual is hidden behind a loose stone in the crypt\'s east wall. The church vestry holds parish records and a fire-damaged partial copy of the compact.', availability: 'Church: Day/Evening. Crypt: accessible with vicar\'s permission or Sneak Diff 2. Night access requires infiltration.', npcsPresent: 'Reverend Paul Threlfall (the current vicar — a good man who knows something is spiritually wrong)', cluesPresent: ['I5', 'I9'], organizations: [], positiveResult: 'Reverend Threlfall is an unconditional ally. He gives access to the crypt, vestry, and fire-damaged compact copy. No Manipulate roll required.', negativeResult: 'The manual is hidden well. Finding it without the vicar\'s help requires Investigate Diff 2. The crypt is unsettling — +1 Corruption for extended time below ground.', daNotes: '' },
+    { id: 'L4', name: 'Eleanor Vane\'s Cottage', description: 'A small stone cottage on the edge of Cormsil, surrounded by an overgrown garden. Curtains drawn. Inside: tidy, quiet, oppressive. Books everywhere. A clock ticks too loudly. Eleanor sits in her armchair, waiting for the next visit. The air is stale and heavy — windows haven\'t been opened in weeks.', availability: 'Day/Evening shifts. Eleanor rarely leaves.', npcsPresent: 'Eleanor Vane. Possible: one of the returned visiting. After O4M2: Eleanor is catatonic for hours, then writes compulsively.', cluesPresent: ['I4', 'I11'], organizations: ['O4', 'O1'], positiveResult: 'Eleanor is the most honest witness in Cormsil. She tells agents everything. A Psychoanalyze roll (Diff 1) reveals she\'s being kept awake by forces she can\'t name.', negativeResult: 'She\'s fragile. Pushing too hard causes collapse — catatonic for 1 shift. Extended conversation with a returned is +1 Corruption. The cottage is oppressive — +1 Corruption for scenes longer than 1 shift.', daNotes: '' },
+    { id: 'L5', name: 'The Bodleian Library, Oxford', description: 'The manuscript reading room of one of the world\'s oldest libraries. Holds Vicar Arthur Hailes\'s papers: personal correspondence, parish records, and a sealed letter to the Bishop of Ripon (1883). The letter describes the 1882 compact and The Society in cautious terms.', availability: 'Day shifts only (9 AM–5 PM). Reader\'s card required. Travel: 2 shifts from Cormsil.', npcsPresent: 'Manuscript librarian (civilian — helpful, academic)', cluesPresent: ['I10', 'I15'], organizations: ['O3'], positiveResult: 'The vicar\'s papers are accessible with standard academic credentials. Lore or Investigate Diff 2 extracts all relevant information.', negativeResult: 'The letter is sealed. Opening it requires librarian\'s permission (Manipulate Diff 2) or stealth (Sneak Diff 2). A fumbled roll costs 1 additional shift.', daNotes: '' },
+    { id: 'L6', name: 'The British Library, London', description: 'Manuscript collection. Sir Geoffrey Colne\'s "Of Certain Subterranean Presences in the County of York" (1642) — a leather-bound folio describing the Dōmere, a failed 1642 binding attempt, and including an Old English riddle encoding the spirit\'s true name in the margins.', availability: 'Day shifts only. Reader\'s card required. Travel: 3 shifts from Cormsil, 2 from Oxford.', npcsPresent: 'Manuscript librarian (civilian — professional, helpful)', cluesPresent: ['I13', 'I17', 'I18'], organizations: [], positiveResult: 'Colne\'s manuscript is the Rosetta Stone for this case. It identifies the spirit, explains its function, and provides the silencing ritual framework. Lore or Investigate Diff 2 extracts everything.', negativeResult: 'The riddle is in Old English. If no agent reads Old English, translation adds +1 shift. The manuscript is fragile — a fumbled roll damages a page, adding +1 Diff to the silencing ritual. Travel time from Cormsil is significant (3 shifts).', daNotes: '' },
+    { id: 'L7', name: 'The Standing Stone (Climax Site)', description: 'A weathered standing stone in a sheep field half a mile from Cormsil. Pre-Saxon — likely Brigantes. The farmer Tom Dwerryhouse has noticed the stone is warm. The grass within a 2m radius has died. The well is here — capped with a Saxon stone slab, overgrown. The air around the stone hums at the edge of hearing. Birds avoid the radius.', availability: 'All shifts. Dwerryhouse grants access if he trusts the agents (O2M1 or successful Manipulate). Otherwise Sneak Diff 1.', npcsPresent: 'Tom Dwerryhouse (checks the stone daily). Margaret Hale (after O1M3, if she volunteers). During ritual: the returned converge.', cluesPresent: ['I19', 'I20'], organizations: ['O1', 'O2'], positiveResult: 'The site is accessible and Dwerryhouse is cooperative. The ritual can be performed here — all three components converge. The well is findable (Investigate Diff 1).', negativeResult: 'The Dōmere resists. Performing the ritual causes +2 Corruption for all participants. The returned converge — agents must hold them off non-violently. The spirit speaks directly into agents\' minds, cataloguing their own negligent acts.', daNotes: '' }
   ];
 
   const CORMSIL_INFO_CARDS = [
-    { id: 'I1', content: 'The library fire was accidental — a librarian fell asleep, a scented candle ignited books. 25 people were seen running into the woods. They emerged the next morning, unharmed, claiming no memory.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Eleanor Vane'], hqFallback: 'Day 9' },
-    { id: 'I2', content: 'The returned exhibit specific tells: slowed blink rate (3–4 seconds), cool skin (~34°C), tendency to complete others\' sentences or speak in unison. These are consistent across all 25.', type: 'containment-truth', truthStatus: 'effect', foundAt: ['L1', 'L2'], knownBy: ['Eleanor Vane', 'Tom Dwerryhouse'], hqFallback: 'Day 8' },
-    { id: 'I3', content: 'Tom Dwerryhouse\'s notes document the tells across multiple returned over three weeks. The pattern is consistent and escalating.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['Tom Dwerryhouse (O2M1)'], hqFallback: 'Day 7' },
-    { id: 'I4', content: 'The standing stone in Dwerryhouse\'s north field is warm to the touch. It predates the Saxon church. The Dōmere\'s original resting place is beneath it.', type: 'containment-truth', truthStatus: 'trigger', foundAt: ['L2', 'L7'], knownBy: ['Tom Dwerryhouse'], hqFallback: 'Day 7' },
-    { id: 'I5', content: 'The Society\'s manual is a handwritten Victorian field guide to negotiating with subterranean presences. It describes the Dōmere, negotiation methods, and references "Colne\'s manuscript" and "the standing stone at Cormsil."', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['—'], hqFallback: 'Day 6' },
-    { id: 'I6', content: 'The manual describes the framework for the 1882 compact: acknowledgment, formal agreement, and an annual reading at the library. The compact was stored in the library\'s "History of Cormsil" section.', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['—'], hqFallback: 'Day 6' },
-    { id: 'I7', content: 'The compact of 1882 was stored in a glass case in the library. It burned in the fire. All that remains is ash and fragments of the case.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Eleanor Vane'], hqFallback: 'Day 8' },
-    { id: 'I8', content: 'The returned gather at the burned library every evening after O1M2. They stand in a circle, facing inward. They don\'t speak. They just stand.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['— (observation)'], hqFallback: 'Day 5' },
-    { id: 'I9', content: 'The vicar\'s letter at the Bodleian mentions "the volume I have hidden" — confirming the manual was placed in the crypt deliberately. The letter also notes The Society "has no name worth recording."', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['—'], hqFallback: 'Day 4' },
-    { id: 'I10', content: 'The vicar\'s papers include a summary of the 1882 compact terms and a reference to Sir Geoffrey Colne\'s manuscript at the British Library.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['—'], hqFallback: 'Day 4' },
-    { id: 'I11', content: 'Colne\'s manuscript "Of Certain Subterranean Presences in the County of York" describes the Dōmere in detail: a pre-Celtic entity that responds to wrongful death by embodying the deceased.', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L6'], knownBy: ['—'], hqFallback: 'Day 4' },
-    { id: 'I12', content: 'The manuscript contains an Old English riddle: "The judge beneath, who cannot speak / Dōm-ere, Dōm-ere, the Saxon\'s leak." The spirit\'s true name is Dōmere — "the Doomer, the Judge."', type: 'containment-truth', truthStatus: 'quiescence', foundAt: ['L6'], knownBy: ['—'], hqFallback: 'Day 3' },
-    { id: 'I13', content: 'The standing stone marks the Dōmere\'s original resting place. Soil from beneath the stone is darker and warmer than surrounding earth. It must be used in the silencing ritual.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['—'], hqFallback: 'Day 2' },
-    { id: 'I14', content: 'A returned volunteer who chooses true death over borrowed existence is the third component of the silencing ritual. Margaret Hale is the intended volunteer — she has pieced together what she is.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['L7'], knownBy: ['Margaret Hale (O1M3)'], hqFallback: '—' }
-  ];
-
-  // ═══════════════════════════════════════════════════════════
-  // PROMPT TEMPLATES FOR NR.PromptGenerator
-  // ═══════════════════════════════════════════════════════════
-
-  const PROMPT_TEMPLATES = [
-    { type: 'corruption', weight: 1, templates: [
-      'An agent notices their Corruption creeping — describe the physical manifestation they experience right now.',
-      'The Corruption threshold has been crossed. What does {agent} see in their peripheral vision that no one else can see?',
-      'The anchor object in {agent}\'s pocket grows warm. Describe the memory that surfaces — and why it hurts.',
-      'A mundane object in the room begins to bleed. Only one agent notices. Which one, and what do they do?'
-    ]},
-    { type: 'milestone', weight: 1, templates: [
-      'A milestone has fired: {milestone_desc}. What public event occurs that the agents cannot ignore?',
-      'The board shifts. Describe the moment the agents realize {org_name} has just escalated — what do they see, hear, or feel?',
-      'Cross-advance chain: {chain_desc}. How does this cascade manifest in the physical world right now?',
-      'The relic pulses. Every agent within range feels it differently. Describe each agent\'s unique sensation.'
-    ]},
-    { type: 'combat', weight: 1, templates: [
-      'Combat is about to begin. Describe the tableau — the lighting, the sounds, the expressions on faces — before the first move.',
-      'The fight is turning against the agents. What environmental detail could they exploit if they notice it?',
-      'An NPC combatant hesitates. What do they see in one of the agents that makes them reconsider?',
-      'The zone shifts. Describe how the physical space changed — a door opened, a light went out, something fell.'
-    ]},
-    { type: 'social', weight: 1, templates: [
-      '{npc_name} is {disposition}. What subtle tell reveals they are holding something back?',
-      'The conversation reaches an impasse. What unexpected detail in the room could break the tension?',
-      'An NPC says something that contradicts their own secret. What slip did they make?',
-      'The agents have leverage. How does {npc_name} physically react when they realize they\'ve been outmaneuvered?'
-    ]},
-    { type: 'discovery', weight: 1, templates: [
-      'New information card revealed: {info_id}. How is this clue physically discovered — not found, but stumbled upon?',
-      'A location becomes accessible: {loc_name}. Describe the threshold moment when the agents first step inside.',
-      'The agents put two clues together. What connection do they suddenly make that changes everything?',
-      'An NPC unexpectedly shares something they shouldn\'t. Why do they trust the agents with this?'
-    ]},
-    { type: 'shift', weight: 1, templates: [
-      'A new shift begins: {shift_name} on Day {day}. Describe the city at this time of day — what\'s different?',
-      'Time passes. The countdown continues. What mundane detail reminds the agents that the clock is ticking?',
-      'The shift changes from day to night. How does the atmosphere of the investigation transform?',
-      'Day {day} is ending. What loose end keeps one of the agents awake tonight?'
-    ]},
-    { type: 'atmosphere', weight: 2, templates: [
-      'Set the scene for the current moment. What is the weather doing? What sounds are in the background? What does the air smell like?',
-      'Describe a brief, wordless moment — something an agent notices out a window, in a reflection, or in a stranger\'s expression.',
-      'A radio is playing somewhere. What song comes on, and why does it feel significant?',
-      'An animal appears at the edge of the scene. What kind of animal, and what does it do?',
-      'Describe the meal the agents haven\'t had time to eat. What are they craving, and what are they actually sustaining themselves on?'
-    ]}
+    { id: 'I1', title: 'The Town of Cormsil', content: 'Cormsil is a farming town of ~400 people in the Yorkshire Dales. The earliest recorded settlement is Saxon, with pre-Saxon standing stones and burial mounds. The pub is called The Dōmere Arms — no one knows why. The town is insular, agricultural, and deeply resistant to outside attention.', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Local interviews'], hqFallback: 'Day 9' },
+    { id: 'I2', title: 'The Library Fire', content: 'Three weeks ago, the Cormsil Public Library caught fire. The librarian, Eleanor Vane, fell asleep at her desk; a scented candle ignited books. 25 people were inside. Witnesses saw them running into the woods behind the library. They emerged the next morning, unharmed, claiming no memory of the night. The official fire report notes this as "unexplained survivor behavior."', type: 'supporting-intel', foundAt: ['L1', 'L2', 'L4'], knownBy: ['Eleanor Vane'], hqFallback: 'Day 9' },
+    { id: 'I3', title: 'The Compact of 1882', content: 'Among the wreckage of the burned library, a shattered glass case is visible in the reading room rubble. Its brass label reads: "Cormsil Compact, 1882 — On Permanent Loan from the Town Council." The case is empty. Ash fragments suggest the document was inside when the fire reached it. No one in town can say what the compact was.', type: 'supporting-intel', foundAt: ['L1', 'L2', 'L3'], knownBy: ['—'], hqFallback: 'Day 8' },
+    { id: 'I4', title: 'Eleanor\'s Testimony', content: 'Eleanor Vane\'s testimony: she fell asleep at her desk, woke to smoke, saw people running toward the woods. Since the fire, every day, the 25 survivors visit her — one by one — to tell her they forgive her. "They don\'t want me to die. They want me to KNOW." She has not slept in 19 days.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Eleanor Vane (O4M1)'], hqFallback: 'Day 8' },
+    { id: 'I5', title: 'The Fire-Damaged Copy', content: 'A fire-damaged partial copy of the compact is stored in the vestry of St. Cuthbert\'s Church. Legible sections describe: "the annual acknowledgment, to be read aloud at the stone on the first day of spring," and "the sleeping arrangement, whereby the buried one shall remain quiet so long as the compact is honored." Signed by Vicar Arthur Hailes and a second name deliberately scratched away. Witnessed by "The Society, this 14th day of March, 1882."', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Reverend Threlfall'], hqFallback: 'Day 7' },
+    { id: 'I6', title: 'Dwerryhouse\'s Notes', content: 'Tom Dwerryhouse\'s notebook: meticulous observations of the returned over three weeks. Documents blink rate (3-4 seconds vs normal 2-5/sec), cool skin (~34°C), unison speech, tendency to finish each other\'s sentences. Also records that all 25 visit Eleanor daily and she hasn\'t slept. "I\'ve watched her window. The light is always on."', type: 'supporting-intel', foundAt: ['L1', 'L2'], knownBy: ['Tom Dwerryhouse (O2M1)'], hqFallback: 'Day 7' },
+    { id: 'I7', title: 'The Fire Investigator\'s Report', content: 'The North Yorkshire Fire Service report confirms: fire was accidental (scented candle). An unusual section titled "Survivor Behavior" notes all 25 casualties exited through the rear fire door into the woodland — inconsistent with standard evacuation patterns. Found at the treeline at ~0700 hours, disoriented, with no memory of the intervening 9 hours. Medical examination found no injuries. The investigator recommended further inquiry; none was pursued.', type: 'supporting-intel', foundAt: ['L2'], knownBy: ['— (town council office)'], hqFallback: 'Day 7' },
+    { id: 'I8', title: 'The Returned Coordinate', content: 'The returned have begun coordinating. They visit Eleanor in groups. They speak in unison without appearing to notice. Three returned ordered the same drink at the pub simultaneously, in the same words. They have started gathering at the burned library at dusk — standing in a loose group, facing the ruins, silent. They disperse after an hour. Tom Dwerryhouse says: "They\'re getting organized. They don\'t know they are, but something\'s organizing them."', type: 'supporting-intel', foundAt: ['— (O1M1 trigger, Day 7)'], knownBy: ['Tom Dwerryhouse'], hqFallback: 'Day 6' },
+    { id: 'I9', title: 'The Society\'s Manual', content: 'Behind a loose stone in the crypt of St. Cuthbert\'s Church: a handwritten Victorian field guide — "A Practical Guide to Negotiation with Subterranean Presences — For Field Use Only — The Society." Describes entities "bound to specific geographies, predating human settlement, responsive to moral imbalance." A section titled "The Yorkshire Presence" matches the Dōmere exactly: "Cannot be slain. Responds to compact. Prefers acknowledgment to confrontation. Do not attempt exorcism — it predates the faith." References Colne\'s manuscript (1642) and "the standing stone at Cormsil."', type: 'supporting-intel', foundAt: ['L3'], knownBy: ['Reverend Threlfall (shows agents the loose stone)'], hqFallback: 'Day 5' },
+    { id: 'I10', title: 'The Vicar\'s Summary', content: 'Vicar Arthur Hailes\'s handwritten summary of the 1882 compact negotiations: "The entity accepted the terms after three nights of negotiation at the stone. It speaks in layers — Old English first, then something older. It understands language but not time. The compact requires annual acknowledgment of all wrongful deaths within its radius. The entity accepted and withdrew. I was told it would sleep so long as the reading continued." The vicar also admits hiding the Society\'s manual rather than returning it.', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['—'], hqFallback: 'Day 6' },
+    { id: 'I11', title: 'The Stone Is Warm', content: 'After collapsing into catatonia, Eleanor Vane wakes and begins writing compulsively — pages filled with a single sentence: "The stone is warm." She has never been to any standing stone. She doesn\'t recognize the handwriting as her own. The Dōmere is speaking through her. The standing stone in Dwerryhouse\'s field has been growing warmer for three weeks. The spirit is rising.', type: 'supporting-intel', foundAt: ['L4'], knownBy: ['Eleanor Vane (O4M2 trigger)'], hqFallback: 'Day 4' },
+    { id: 'I12', title: 'The Vigil', content: 'Every evening, the 25 returned gather at the burned library. They form a circle in the rubble, facing inward, standing perfectly still — for exactly one hour, from dusk to full dark — and then disperse, walking home separately, resuming their lives as if nothing happened. When asked about the vigil, they seem genuinely confused: "What vigil? We don\'t go to the library. It\'s burned." They have no memory of the gatherings. The town is terrified.', type: 'supporting-intel', foundAt: ['— (O1M2 trigger, Day 4)'], knownBy: ['— (observation)'], hqFallback: 'Day 4' },
+    { id: 'I13', title: 'Colne\'s Manuscript — The Dōmere', content: 'Sir Geoffrey Colne\'s 1642 manuscript identifies the entity: "Called Dōmere by the Saxons — the Doomer, the Judge. It predates the Celts, the Brigantes, and all known settlement. It cannot be killed — it is not alive in any sense we understand. It is a function of the earth, as gravity is a function of mass. It responds to wrongful death. It cannot abide an unbalanced moral ledger." Colne describes his failed 1642 exorcism attempt: "I treated it as a demon. It is not a demon. It ignored my ritual entirely."', type: 'containment-truth', truthStatus: 'appetite', foundAt: ['L6'], knownBy: ['— (Colne\'s manuscript)'], hqFallback: 'Day 5' },
+    { id: 'I14', title: 'The Confrontation', content: 'The skeptical townsfolk, led by Tom Dwerryhouse, attempt to confront the returned during their evening vigil. As they approach, the 25 returned turn as one — a single, synchronized movement — and speak in unison: "We are the balance. Do not interfere." The voice is layered — Old English, Brythonic, and something older, simultaneously. The skeptics fall silent. Several weep. The town is now openly divided.', type: 'supporting-intel', foundAt: ['— (O2M2 trigger, Day 3)'], knownBy: ['Tom Dwerryhouse'], hqFallback: 'Day 3' },
+    { id: 'I15', title: 'The Vicar\'s Letter', content: 'Vicar Arthur Hailes\'s sealed letter to the Bishop of Ripon (March 1883): "A compact has been reached between the town and a presence I am reluctant to name. The negotiations were mediated by persons who identified themselves only as The Society. I found them unorthodox but effective. They provided a volume of reference which I was instructed to return. I have not done so. I have hidden this volume in the church. The Society, I suspect, would understand. They have no name worth recording, for they prefer to remain unremembered."', type: 'supporting-intel', foundAt: ['L5'], knownBy: ['— (O3M1 trigger)'], hqFallback: 'Day 3' },
+    { id: 'I16', title: 'Margaret Hale\'s Offer', content: 'One of the returned approaches the agents with clear intent — Margaret Hale, a former schoolteacher. "I know what I am. I died in the fire. I remember the smoke, and the heat, and a window that wouldn\'t open." She has pieced together what the returned are, what the Dōmere is, and what\'s being done through them. She offers to help — understanding that helping may mean ending her borrowed existence. "I\'ve already died once. At least this time, I\'ll know why."', type: 'supporting-intel', foundAt: ['L1'], knownBy: ['Margaret Hale (O1M3 trigger, Day 2)'], hqFallback: '—' },
+    { id: 'I17', title: 'The Failed Binding of 1642', content: 'Colne\'s manuscript describes his failed 1642 binding attempt. He approached the Dōmere as a demon to be exorcised — Latin rites, holy water, Church authority. The spirit ignored him entirely. "It did not resist. It did not flee. It simply... failed to notice. It was as though I had attempted to command the tide to stop." Colne learned from his failure: what the spirit responds to (acknowledgment, not command), what it wants (recognition of wrongs), and what might work instead (negotiation, compact, binding through consent).', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['—'], hqFallback: 'Day 5' },
+    { id: 'I18', title: 'The Riddle', content: 'In the margins of Colne\'s manuscript, an Old English riddle: "I was here before the first king knelt. / I weigh what no scale can hold. / I sleep when remembered, wake when forgot. / The Saxons named me. Speak my name — / and I will answer." The answer is "Dōmere" — the Doomer, the Judge. The name, when spoken at the standing stone, forces the spirit to acknowledge the speaker. It is the first component of the silencing ritual.', type: 'supporting-intel', foundAt: ['L6'], knownBy: ['— (Colne\'s manuscript margins)'], hqFallback: 'Day 4' },
+    { id: 'I19', title: 'The Standing Stone', content: 'In a sheep field half a mile from Cormsil, a weathered standing stone rises from the earth — pre-Saxon, likely Brigantes. The farmer Tom Dwerryhouse has noticed the stone is warm. The grass within a 2-meter radius has died. Birds avoid the radius. Sheep won\'t graze within 10 meters. The stone is granite, ~1.5m tall, no visible markings — but warm to the touch. This is the Dōmere\'s original resting place, where the compact was read aloud for 105 years.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['Tom Dwerryhouse'], hqFallback: 'Day 4' },
+    { id: 'I20', title: 'The Well', content: 'Beneath the standing stone, capped with a Saxon stone slab and overgrown, is a well — a ritual shaft dug by the Brigantes when they first encountered the Dōmere. It descends ~6m to a natural fissure in the bedrock — the spirit\'s access point to the surface. Soil from beneath the stone is darker and warmer than surrounding earth, slightly luminous in absolute darkness. A handful of this soil is the second component of the silencing ritual.', type: 'supporting-intel', foundAt: ['L7'], knownBy: ['— (Investigate Diff 1 to locate)'], hqFallback: 'Day 3' },
+    { id: 'I21', title: 'The Ritual Components', content: 'Cross-referencing the Society\'s manual with Colne\'s manuscript reveals the complete silencing ritual. Three components required: (1) The True Name — "Dōmere" spoken aloud at the standing stone. (2) Soil from the Pre-Saxon Site — a handful of earth from beneath the standing stone. (3) A Returned Volunteer — one of the 25 must willingly participate, speaking words of release. Margaret Hale (NPC5) is the intended volunteer. The ritual takes ~30 minutes; the Dōmere resists throughout.', type: 'supporting-intel', foundAt: ['L3', 'L6', 'L7'], knownBy: ['— (synthesis required)'], hqFallback: 'Day 2' },
+    { id: 'I22', title: 'What This Has Always Been About', content: 'The Dōmere is older than humanity. It is not a ghost, not a demon, not a god — it is a function: justice without mercy, consequence without choice, a ledger that must balance. The compact of 1882 was the first time anyone treated it as a party to negotiation rather than a monster to be slain. The annual reading kept it asleep for 105 years because acknowledgment satisfied its function. The library fire destroyed the compact. The spirit woke in a world where 25 people burned and no one answered for it. The agents can silence it, negotiate, or fail. The Dōmere will not be the same as it was in 1882. It has been forgotten once. It will not trust again easily.', type: 'containment-truth', truthStatus: 'synthesis', foundAt: ['— (synthesis of all CTs)'], knownBy: ['—'], hqFallback: '—' }
   ];
 
   // ═══════════════════════════════════════════════════════════
@@ -1647,6 +1680,40 @@ const NR_DATA = (function() {
   }
 
   // ═══════════════════════════════════════════════════════════
+  // CASE FILE HTML PATH RESOLUTION
+  // Maps case keys → directory paths relative to web-app-da-board/
+  // ═══════════════════════════════════════════════════════════
+  const CASE_FILE_DIRS = {
+    spear:     '../case-files/spear-that-went-dark',
+    crucifix:  '../case-files/the-heavenly-crucifix',
+    barbarians:'../case-files/the-barbarians-cup',
+    boudica:   '../case-files/the-boudica-pact',
+    cormsil:   '../case-files/the-cormsil-compact'
+  };
+
+  // Entity type → (DA filename, Player filename)
+  const ENTITY_FILE_MAP = {
+    locations:       { da: 'locations.html',              player: 'locations-player.html' },
+    npcs:            { da: 'npc-cards.html',              player: 'npc-cards-player.html' },
+    organizations:   { da: 'organization-reference.html', player: 'organization-reference-player.html' },
+    relics:          { da: 'relic-sheet.html',            player: 'relic-summary-player.html' },
+    infoCards:       { da: 'information-cards.html',      player: 'information-cards.html' },
+    caseBrief:       { da: 'case-brief-da.html',          player: 'case-brief-player.html' },
+    operationsBoard: { da: 'operations-board.html',       player: 'operations-board.html' },
+    startHere:       { da: 'start-here.html',             player: 'start-here.html' }
+  };
+
+  // Which cases have player-facing variants of entity files
+  // (locations-player.html, npc-cards-player.html, organization-reference-player.html, etc.)
+  const PLAYER_VARIANTS_AVAILABLE = {
+    barbarians: true,   // has player variants for most entity types
+    boudica: true,
+    crucifix: true,
+    cormsil: true,
+    spear: false        // only case-brief-player.html exists; no other player variants
+  };
+
+  // ═══════════════════════════════════════════════════════════
   // PUBLIC API
   // ═══════════════════════════════════════════════════════════
   return {
@@ -1672,7 +1739,6 @@ const NR_DATA = (function() {
     CORMSIL_NPCS: CORMSIL_NPCS,
     CORMSIL_LOCATIONS: CORMSIL_LOCATIONS,
     CORMSIL_INFO_CARDS: CORMSIL_INFO_CARDS,
-    PROMPT_TEMPLATES: PROMPT_TEMPLATES,
     CASE_LIBRARY: CASE_LIBRARY,
     getDefaultState: getDefaultState,
     getSpearOfDestinyState: getSpearOfDestinyState,
@@ -1686,6 +1752,9 @@ const NR_DATA = (function() {
     CORRUPTION_STAGES: CORRUPTION_STAGES,
     DISPOSITION_LEVELS: DISPOSITION_LEVELS,
     COMBAT_ZONES: COMBAT_ZONES,
-    SOCIAL_MANEUVERS: SOCIAL_MANEUVERS
+    SOCIAL_MANEUVERS: SOCIAL_MANEUVERS,
+    CASE_FILE_DIRS: CASE_FILE_DIRS,
+    ENTITY_FILE_MAP: ENTITY_FILE_MAP,
+    PLAYER_VARIANTS_AVAILABLE: PLAYER_VARIANTS_AVAILABLE
   };
 })();
