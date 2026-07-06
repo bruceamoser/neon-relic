@@ -25,7 +25,8 @@ Experience Points (XP) are the game's *only* advancement currency. They are awar
 | Upgrade | XP Cost | Limit
 
 | Increase a Skill by 1 | 5 XP | Maximum rating of 5
-| Purchase a new Talent | 6 XP | General, Division, or Wing/Paradigm/Department Talent
+| Purchase a new Talent (at-will or per-session) | 6 XP | General, Division, or Wing/Paradigm/Department Talent
+| Purchase a new Talent (per-case-file) | 10 XP | High-impact talents restricted to once per Case File
 |===
 
 > *Note on CL and Standing:* Clearance Level is no longer purchased directly with XP. To increase a character's *personal* CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). This raises the individual agent's permanent CL independent of team Standing. Separately, team Standing (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]) grants the *entire cell* a temporary equipping-phase cap (CL 3 at Standing 5, CL 4 at Standing 10) — but this is a cell-wide access floor, not a personal CL increase. If an agent's personal CL is already higher than the cell's Standing-granted floor, use their personal CL. If lower, use whichever is higher during the Equipping Phase only.
@@ -76,26 +77,26 @@ This is the *canonical General Talents list* used at character creation and duri
 
 > *Healing Tag and Stacking:* Talents with the _(Healing)_ tag can heal Corruption. Each tagged talent's trigger is independent, but a character may heal a maximum of *3 Corruption per session* from Healing-tagged General Talents combined — regardless of how many they possess or how many triggers fire. This cap does not apply to Corruption healed by city network capabilities, the Warden's Bracer, or Division talents.
 
-[cols="2,4", options="header"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Street Medic* | Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).
-| *Cathartic Release* _(Healing)_ | Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.
-| *Hair-Trigger* | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
-| *Paranormal Intuition* | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
-| *Heavy Packer* | Your carry capacity increases to *Strength × 3* Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3).
-| *Skeptic's Shield* | Once per session, when exposed to a *minor supernatural effect* — defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration — you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects.
-| *Night Owl* | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).
-| *Chain Smoker* _(Healing)_ | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory.
-| *Analog Junkie* | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases.
-| *Grit Your Teeth* | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.
-| *Desensitized* | Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating *horrific or gruesome* scenes (DA-designated — typically scenes involving mass casualties, mutilation, or sustained supernatural terror). Does not apply to standard combat or single-casualty crime scenes.
-| *Lucky Coin* | Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll.
-| *Iron Will* _(Healing)_ | When you *personally* deliver the killing blow to a Named Threat or banish a supernatural entity (using the Banishment ritual in full), heal 1 Corruption. A "killing blow" requires your attack to reduce the target to 0 Strength. Banishment must be a completed ritual, not just an attack on an entity.
-| *Brawler* | Unarmed strikes inflict base damage of 2 instead of 1.
-| *Flee the Scene* | Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.
-| *Requisition Authority* _(Repeatable)_ | Increase your *personal* Clearance Level by 1 (maximum CL 5). May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
+| *Street Medic* | At-Will | 0 | Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).
+| *Cathartic Release* _(Healing)_ | Per-Session | +1 | Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.
+| *Hair-Trigger* | At-Will | 0 | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
+| *Paranormal Intuition* | At-Will | +1 | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
+| *Heavy Packer* | At-Will | 0 | Your carry capacity increases to *Strength × 3* Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3).
+| *Skeptic's Shield* | Per-Session | +1 | Once per session, when exposed to a *minor supernatural effect* — defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration — you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects.
+| *Night Owl* | At-Will | 0 | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).
+| *Chain Smoker* _(Healing)_ | Per-Session | +1 | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory.
+| *Analog Junkie* | At-Will | 0 | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases.
+| *Grit Your Teeth* | Per-Session | +1 | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.
+| *Desensitized* | At-Will | 0 | Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating *horrific or gruesome* scenes (DA-designated — typically scenes involving mass casualties, mutilation, or sustained supernatural terror). Does not apply to standard combat or single-casualty crime scenes.
+| *Lucky Coin* | At-Will | +1 | Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll.
+| *Iron Will* _(Healing)_ | Per-Session | +1 | When you *personally* deliver the killing blow to a Named Threat or banish a supernatural entity (using the Banishment ritual in full), heal 1 Corruption. A "killing blow" requires your attack to reduce the target to 0 Strength. Banishment must be a completed ritual, not just an attack on an entity.
+| *Brawler* | At-Will | 0 | Unarmed strikes inflict base damage of 2 instead of 1.
+| *Flee the Scene* | At-Will | 0 | Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.
+| *Requisition Authority* _(Repeatable)_ | At-Will | 0 | Increase your *personal* Clearance Level by 1 (maximum CL 5). May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
 |===
 
 ---

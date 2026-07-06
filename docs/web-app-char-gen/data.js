@@ -204,41 +204,41 @@ const NR_DATA = {
   // ─── DIVISION TALENTS ────────────────────────────────────
   divisionTalents: {
     wayfinder: [
-      { name: "The Antiquarian's Eye", cost: "+1 Corruption",
+      { name: "The Antiquarian's Eye", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll." },
-      { name: "Ghost in the Machine", cost: "+1 Corruption",
+      { name: "Ghost in the Machine", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference." },
-      { name: "The Hunch", cost: "+1 Corruption",
+      { name: "The Hunch", cost: "+2 Corruption", frequency: "per-case-file", corruptionCost: 2,
         effect: "Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully." },
-      { name: "Academic Grounding", cost: "— (Healing)",
+      { name: "Academic Grounding", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally." },
-      { name: "Eldritch Empathy", cost: "+1 Corruption",
+      { name: "Eldritch Empathy", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity." }
     ],
     recovery: [
-      { name: "Conditioned Mind", cost: "—",
+      { name: "Conditioned Mind", cost: "—", frequency: "per-session", corruptionCost: 0,
         effect: "Declare before you push the roll. Once per session, you may push a roll and entirely ignore the +1 Corruption that pushing costs." },
-      { name: "Unstoppable Force", cost: "+1 Corruption",
+      { name: "Unstoppable Force", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Your next successful melee or unarmed attack inflicts +2 damage." },
-      { name: "Shadow Walker", cost: "+1 Corruption",
+      { name: "Shadow Walker", cost: "+2 Corruption", frequency: "per-case-file", corruptionCost: 2,
         effect: "For the duration of a scene, you are entirely imperceptible to mundane guards and cameras. Attacking breaks the effect immediately." },
-      { name: "Adrenaline Junkie", cost: "—",
+      { name: "Adrenaline Junkie", cost: "—", frequency: "at-will", corruptionCost: 0,
         effect: "When your Strength has taken at least 1 point of damage, gain +2 bonus dice to all Agility rolls." },
-      { name: "Gallows Humor", cost: "— (Healing)",
+      { name: "Gallows Humor", cost: "+2 Corruption", frequency: "per-case-file", corruptionCost: 2,
         effect: "Once per session, immediately after a combat encounter ends, crack a dark joke. You and all allies who can hear you heal 1d4 Corruption." },
-      { name: "Combat Reflexes", cost: "—",
+      { name: "Combat Reflexes", cost: "—", frequency: "per-session", corruptionCost: 0,
         effect: "When initiative cards are drawn, draw two cards and keep one. Alternatively, you may swap your initiative card with a willing ally's card." }
     ],
     keep: [
-      { name: "Lockdown", cost: "+1 Corruption",
+      { name: "Lockdown", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without a Strength (Force) roll at Difficulty 2." },
-      { name: "Threat Assessment", cost: "+1 Corruption",
+      { name: "Threat Assessment", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it." },
-      { name: "Sentinel's Vigil", cost: "— (Healing)",
+      { name: "Sentinel's Vigil", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption." },
-      { name: "Hazard Classification", cost: "+1 Corruption",
+      { name: "Hazard Classification", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Upon first contact with an unknown artifact, instantly determine its danger rating (Inert / Active / Volatile / Catastrophic) and one primary containment requirement." },
-      { name: "Registry Cross-Reference", cost: "+1 Corruption",
+      { name: "Registry Cross-Reference", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item." }
     ]
   },
@@ -247,99 +247,99 @@ const NR_DATA = {
   subUnitTalents: {
     // Wayfinder Wings
     research: [
-      { name: "Pattern Recognition", cost: "+1 Corruption",
+      { name: "Pattern Recognition", cost: "+1 Corruption", frequency: "at-will", corruptionCost: 1,
         effect: "When examining a document, site, or artifact for the first time, identify one plausible connection to a previously catalogued case." },
-      { name: "Deep Archive Access", cost: "+1 Corruption",
+      { name: "Deep Archive Access", cost: "+1 Corruption", frequency: "at-will", corruptionCost: 0,
         effect: "Spend an action consulting restricted Covenant records. Gain +2 bonus dice on your next Lore or Investigate roll this scene." },
-      { name: "Methodical Review", cost: "— (Healing)",
+      { name: "Methodical Review", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll." }
     ],
     counterintel: [
-      { name: "Burned Asset", cost: "+1 Corruption",
+      { name: "Burned Asset", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make an Empathy (Psychoanalyze) roll at Difficulty 2 to see through it." },
-      { name: "Signal Intercept", cost: "+1 Corruption",
+      { name: "Signal Intercept", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel." },
-      { name: "Compartmentalized Mind", cost: "— (Healing)",
+      { name: "Compartmentalized Mind", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption." }
     ],
     // Recovery Paradigms
     exAgency: [
-      { name: "Dead Drop Protocol", cost: "+1 Corruption",
+      { name: "Dead Drop Protocol", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Establish an instant covert information exchange with any NPC contact. Gain one actionable piece of intelligence from the DA without a roll." },
-      { name: "Exfiltration Specialist", cost: "+1 Corruption",
+      { name: "Exfiltration Specialist", cost: "+1 Corruption", frequency: "at-will", corruptionCost: 0,
         effect: "When retreating or extracting under fire, you and all allies within Short range gain +1 bonus die to their next Agility roll this round." },
-      { name: "Spycraft Discipline", cost: "— (Healing)",
+      { name: "Spycraft Discipline", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption." }
     ],
     heavyHitter: [
-      { name: "Wrecking Ball", cost: "+1 Corruption",
+      { name: "Wrecking Ball", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "When attacking an inanimate object or structure (door, wall, barricade, vehicle), gain +3 bonus dice to the Force roll and inflict +2 damage on a success." },
-      { name: "Stand Your Ground", cost: "+1 Corruption",
+      { name: "Stand Your Ground", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating." },
-      { name: "Blunt Trauma Recovery", cost: "— (Healing)",
+      { name: "Blunt Trauma Recovery", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after winning a physical confrontation through brute force, heal 1 Corruption." }
     ],
     acquisition: [
-      { name: "Ghost Entry", cost: "+1 Corruption",
+      { name: "Ghost Entry", cost: "+2 Corruption", frequency: "per-case-file", corruptionCost: 2,
         effect: "Bypass a single ordinary locked door, security system, or physical barrier without a roll. Leave no trace of entry." },
-      { name: "The Long Con", cost: "+1 Corruption",
+      { name: "The Long Con", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor." },
-      { name: "Clean Getaway", cost: "— (Healing)",
+      { name: "Clean Getaway", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption." }
     ],
     // Keep Departments
     catalogers: [
-      { name: "Hazard Classification", cost: "+1 Corruption",
+      { name: "Hazard Classification", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Upon first contact with an unknown artifact, instantly determine its danger rating and one primary containment requirement — no roll needed." },
-      { name: "Registry Cross-Reference", cost: "+1 Corruption",
+      { name: "Registry Cross-Reference", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item. The DA must reveal one actionable link." },
-      { name: "Archival Calm", cost: "— (Healing)",
+      { name: "Archival Calm", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Spend a Shift updating the artifact registry with new findings. Heal 1 Corruption and grant one ally who contributed field data +1 bonus die on their next Lore roll." }
     ],
     wardens: [
-      { name: "Lockdown", cost: "+1 Corruption",
+      { name: "Lockdown", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Seal a room, corridor, or building entrance. No entity may pass through for one full round without a Strength (Force) roll at Difficulty 2." },
-      { name: "Threat Assessment", cost: "+1 Corruption",
+      { name: "Threat Assessment", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "When entering a new area, instantly identify the single greatest physical threat present. The DA must describe it." },
-      { name: "Sentinel's Vigil", cost: "— (Healing)",
+      { name: "Sentinel's Vigil", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption." }
     ],
     internalCI: [
-      { name: "Silent Audit", cost: "+1 Corruption",
+      { name: "Silent Audit", cost: "+2 Corruption", frequency: "per-case-file", corruptionCost: 2,
         effect: "Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail." },
-      { name: "Loyalty Test", cost: "+1 Corruption",
+      { name: "Loyalty Test", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence." },
-      { name: "Debriefing Protocol", cost: "— (Healing)",
+      { name: "Debriefing Protocol", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption." }
     ],
     stack: [
-      { name: "Jury-Rig", cost: "+1 Corruption",
+      { name: "Jury-Rig", cost: "+1 Corruption", frequency: "per-session", corruptionCost: 1,
         effect: "Restore a Broken item to Gear Bonus 1 mid-scene. The fix is temporary — the item degrades again after the scene ends." },
-      { name: "Redundant Safeties", cost: "—",
+      { name: "Redundant Safeties", cost: "—", frequency: "at-will", corruptionCost: 0,
         effect: "Your Corruption threshold increases by +2 (effective threshold = 12 + Empathy instead of 10 + Empathy)." },
-      { name: "Duct Tape & WD-40", cost: "— (Healing)",
+      { name: "Duct Tape & WD-40", cost: "— (Healing)", frequency: "per-session", corruptionCost: 1,
         effect: "Once per session, after successfully repairing a piece of gear or equipment in the field, heal 1 Corruption." }
     ]
   },
 
   // ─── GENERAL TALENTS ─────────────────────────────────────
   generalTalents: [
-    { name: "Street Medic", effect: "Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).", healing: false },
-    { name: "Cathartic Release", effect: "Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.", healing: true },
-    { name: "Hair-Trigger", effect: "Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.", healing: false },
-    { name: "Paranormal Intuition", effect: "When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.", healing: false },
-    { name: "Heavy Packer", effect: "Your carry capacity increases to Strength × 3 Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4.", healing: false },
-    { name: "Skeptic's Shield", effect: "Once per session, when exposed to a minor supernatural effect, you may outright ignore it by rigidly refusing to acknowledge the impossible.", healing: false },
-    { name: "Night Owl", effect: "Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).", healing: false },
-    { name: "Chain Smoker", effect: "Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent.", healing: true },
-    { name: "Analog Junkie", effect: "Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel).", healing: false },
-    { name: "Grit Your Teeth", effect: "Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.", healing: false },
-    { name: "Desensitized", effect: "Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating horrific or gruesome scenes.", healing: false },
-    { name: "Lucky Coin", effect: "Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll.", healing: false },
-    { name: "Iron Will", effect: "When you personally deliver the killing blow to a Named Threat or banish a supernatural entity, heal 1 Corruption.", healing: true },
-    { name: "Brawler", effect: "Unarmed strikes inflict base damage of 2 instead of 1.", healing: false },
-    { name: "Flee the Scene", effect: "Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.", healing: false },
-    { name: "Requisition Authority", effect: "Increase your personal Clearance Level by 1 (maximum CL 5). May be purchased multiple times. Repeatable.", healing: false }
+    { name: "Street Medic", effect: "Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Cathartic Release", effect: "Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.", healing: true, frequency: "per-session", corruptionCost: 1 },
+    { name: "Hair-Trigger", effect: "Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Paranormal Intuition", effect: "When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.", healing: false, frequency: "at-will", corruptionCost: 1 },
+    { name: "Heavy Packer", effect: "Your carry capacity increases to Strength × 3 Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4.", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Skeptic's Shield", effect: "Once per session, when exposed to a minor supernatural effect, you may outright ignore it by rigidly refusing to acknowledge the impossible.", healing: false, frequency: "per-session", corruptionCost: 1 },
+    { name: "Night Owl", effect: "Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice).", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Chain Smoker", effect: "Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent.", healing: true, frequency: "per-session", corruptionCost: 1 },
+    { name: "Analog Junkie", effect: "Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel).", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Grit Your Teeth", effect: "Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling.", healing: false, frequency: "per-session", corruptionCost: 1 },
+    { name: "Desensitized", effect: "Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating horrific or gruesome scenes.", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Lucky Coin", effect: "Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll.", healing: false, frequency: "at-will", corruptionCost: 1 },
+    { name: "Iron Will", effect: "When you personally deliver the killing blow to a Named Threat or banish a supernatural entity, heal 1 Corruption.", healing: true, frequency: "per-session", corruptionCost: 1 },
+    { name: "Brawler", effect: "Unarmed strikes inflict base damage of 2 instead of 1.", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Flee the Scene", effect: "Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Requisition Authority", effect: "Increase your personal Clearance Level by 1 (maximum CL 5). May be purchased multiple times. Repeatable.", healing: false, frequency: "at-will", corruptionCost: 0 }
   ],
 
   // ─── BACKGROUND TALENTS ──────────────────────────────────
