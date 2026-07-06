@@ -167,7 +167,7 @@ const NR_DATA = (function() {
     { key: 'investigate', name: 'Investigate', attr: 'wits' },
     { key: 'tech', name: 'Tech', attr: 'wits' },
     { key: 'lore', name: 'Lore', attr: 'wits' },
-    { key: 'heal', name: 'Heal', attr: 'wits' },
+    { key: 'heal', name: 'Heal', attr: 'empathy' },
     { key: 'manipulate', name: 'Manipulate', attr: 'empathy' },
     { key: 'command', name: 'Command', attr: 'empathy' },
     { key: 'psychoanalyze', name: 'Psychoanalyze', attr: 'empathy' }

@@ -191,7 +191,7 @@ const NR_DATA = {
       desc: "Operating 1980s mainframes, hacking BBS networks, repairing analog equipment." },
     { key: "lore",         name: "Lore",         attr: "wits",     maxStart: 3,
       desc: "Decoding ancient occult texts, identifying mythological creatures and artifact origins." },
-    { key: "heal",         name: "Heal",         attr: "wits",     maxStart: 3,
+    { key: "heal",         name: "Heal",         attr: "empathy",     maxStart: 3,
       desc: "Field medicine, triage, emergency stabilization, and treating physical injuries." },
     { key: "manipulate",   name: "Manipulate",   attr: "empathy",  maxStart: 3,
       desc: "Bribing informants, deceiving rivals, leveraging secrets, or extracting sensitive disclosures." },
@@ -324,7 +324,7 @@ const NR_DATA = {
 
   // ─── GENERAL TALENTS ─────────────────────────────────────
   generalTalents: [
-    { name: "Street Medic", effect: "Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).", healing: false, frequency: "at-will", corruptionCost: 0 },
+    { name: "Street Medic", effect: "Restore 2 physical Attribute points instead of 1 when successfully using Heal (EMP).", healing: false, frequency: "at-will", corruptionCost: 0 },
     { name: "Cathartic Release", effect: "Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.", healing: true, frequency: "per-session", corruptionCost: 1 },
     { name: "Hair-Trigger", effect: "Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.", healing: false, frequency: "at-will", corruptionCost: 0 },
     { name: "Paranormal Intuition", effect: "When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.", healing: false, frequency: "at-will", corruptionCost: 1 },
@@ -557,23 +557,23 @@ const NR_DATA = {
 
   // ─── CRITICAL INJURIES ───────────────────────────────────
   criticalInjuries: [
-    { roll: "11–12", name: "Wind Knocked Out", effect: "−1 die on all actions for 1d6 rounds.", lethal: false, healing: "Heal (WIT) Difficulty 1; recovery time: d6 hours." },
-    { roll: "13–14", name: "Bruised Ribs", effect: "−1 die on Strength and Agility rolls until healed.", lethal: false, healing: "Heal (WIT) Difficulty 1; recovery time: d6 days." },
-    { roll: "15–16", name: "Sprained Wrist", effect: "−1 die on Deft Hands and Firearms rolls until healed.", lethal: false, healing: "Heal (WIT) Difficulty 1; recovery time: d6 days." },
-    { roll: "21–22", name: "Deep Gash", effect: "Bleeding: lose 1 Strength per round until Heal (WIT) Difficulty 1 applied.", lethal: false, healing: "Heal (WIT) Difficulty 1; recovery time: d6 days." },
+    { roll: "11–12", name: "Wind Knocked Out", effect: "−1 die on all actions for 1d6 rounds.", lethal: false, healing: "Heal (EMP) Difficulty 1; recovery time: d6 hours." },
+    { roll: "13–14", name: "Bruised Ribs", effect: "−1 die on Strength and Agility rolls until healed.", lethal: false, healing: "Heal (EMP) Difficulty 1; recovery time: d6 days." },
+    { roll: "15–16", name: "Sprained Wrist", effect: "−1 die on Deft Hands and Firearms rolls until healed.", lethal: false, healing: "Heal (EMP) Difficulty 1; recovery time: d6 days." },
+    { roll: "21–22", name: "Deep Gash", effect: "Bleeding: lose 1 Strength per round until Heal (EMP) Difficulty 1 applied.", lethal: false, healing: "Heal (EMP) Difficulty 1; recovery time: d6 days." },
     { roll: "23–24", name: "Concussion", effect: "−2 dice on Wits rolls for d6 hours. Cannot push Wits rolls.", lethal: false, healing: "Rest; recovery time: d6 days." },
-    { roll: "25–26", name: "Broken Nose", effect: "−1 die on Manipulate and Psychoanalyze rolls until healed.", lethal: false, healing: "Heal (WIT) Difficulty 1; recovery time: d6 days." },
-    { roll: "31–32", name: "Cracked Ribs", effect: "−2 dice on Strength and Agility rolls. Cannot push these rolls.", lethal: false, healing: "Heal (WIT) Difficulty 2; recovery time: 2d6 days." },
-    { roll: "33–34", name: "Fractured Arm", effect: "Arm unusable. −2 dice on actions requiring both hands.", lethal: false, healing: "Heal (WIT) Difficulty 2; recovery time: 2d6 weeks." },
-    { roll: "35–36", name: "Fractured Leg", effect: "Cannot run. Move one zone per Slow Action. −2 dice on Agility rolls.", lethal: false, healing: "Heal (WIT) Difficulty 2; recovery time: 2d6 weeks." },
-    { roll: "41–42", name: "Punctured Lung", effect: "−2 dice on all actions. Cannot push any rolls. Suffocation risk.", lethal: true, healing: "Heal (WIT) Difficulty 3; recovery time: d6 weeks. Lethal if untreated." },
-    { roll: "43–44", name: "Internal Bleeding", effect: "Lose 1 Strength per hour until Heal (WIT) Difficulty 2 applied.", lethal: true, healing: "Heal (WIT) Difficulty 2; recovery time: d6 days. Lethal within d6 hours if untreated." },
-    { roll: "45–46", name: "Cracked Skull", effect: "−2 dice on Wits rolls. Stunt Points cannot be spent. Unconscious on d6 roll of 1–2 each scene.", lethal: true, healing: "Heal (WIT) Difficulty 3; recovery time: 2d6 weeks. Lethal if untreated." },
-    { roll: "51–52", name: "Severed Artery", effect: "Lose 1 Strength per round until Heal (WIT) Difficulty 2 applied. Death within d6 rounds if untreated.", lethal: true, healing: "Heal (WIT) Difficulty 2; immediate treatment required. Recovery: 2d6 weeks." },
-    { roll: "53–54", name: "Ruptured Organ", effect: "−3 dice on all actions. Cannot push. Lose 1 Strength per scene.", lethal: true, healing: "Heal (WIT) Difficulty 3 + surgical kit; recovery time: 2d6 weeks in infirmary." },
-    { roll: "55–56", name: "Spinal Injury", effect: "Paralyzed from injury site down. Cannot move without assistance.", lethal: false, healing: "Heal (WIT) Difficulty 3; recovery time: 3d6 weeks. May be permanent at DA discretion." },
-    { roll: "61–62", name: "Shattered Jaw", effect: "Cannot speak intelligibly. −3 dice on Manipulate and Command.", lethal: false, healing: "Heal (WIT) Difficulty 2; recovery time: 2d6 weeks." },
-    { roll: "63–64", name: "Crushed Hand", effect: "Hand destroyed. −3 dice on Deft Hands. Cannot use two-handed weapons.", lethal: false, healing: "Heal (WIT) Difficulty 2; recovery time: 3d6 weeks. May be permanent." },
+    { roll: "25–26", name: "Broken Nose", effect: "−1 die on Manipulate and Psychoanalyze rolls until healed.", lethal: false, healing: "Heal (EMP) Difficulty 1; recovery time: d6 days." },
+    { roll: "31–32", name: "Cracked Ribs", effect: "−2 dice on Strength and Agility rolls. Cannot push these rolls.", lethal: false, healing: "Heal (EMP) Difficulty 2; recovery time: 2d6 days." },
+    { roll: "33–34", name: "Fractured Arm", effect: "Arm unusable. −2 dice on actions requiring both hands.", lethal: false, healing: "Heal (EMP) Difficulty 2; recovery time: 2d6 weeks." },
+    { roll: "35–36", name: "Fractured Leg", effect: "Cannot run. Move one zone per Slow Action. −2 dice on Agility rolls.", lethal: false, healing: "Heal (EMP) Difficulty 2; recovery time: 2d6 weeks." },
+    { roll: "41–42", name: "Punctured Lung", effect: "−2 dice on all actions. Cannot push any rolls. Suffocation risk.", lethal: true, healing: "Heal (EMP) Difficulty 3; recovery time: d6 weeks. Lethal if untreated." },
+    { roll: "43–44", name: "Internal Bleeding", effect: "Lose 1 Strength per hour until Heal (EMP) Difficulty 2 applied.", lethal: true, healing: "Heal (EMP) Difficulty 2; recovery time: d6 days. Lethal within d6 hours if untreated." },
+    { roll: "45–46", name: "Cracked Skull", effect: "−2 dice on Wits rolls. Stunt Points cannot be spent. Unconscious on d6 roll of 1–2 each scene.", lethal: true, healing: "Heal (EMP) Difficulty 3; recovery time: 2d6 weeks. Lethal if untreated." },
+    { roll: "51–52", name: "Severed Artery", effect: "Lose 1 Strength per round until Heal (EMP) Difficulty 2 applied. Death within d6 rounds if untreated.", lethal: true, healing: "Heal (EMP) Difficulty 2; immediate treatment required. Recovery: 2d6 weeks." },
+    { roll: "53–54", name: "Ruptured Organ", effect: "−3 dice on all actions. Cannot push. Lose 1 Strength per scene.", lethal: true, healing: "Heal (EMP) Difficulty 3 + surgical kit; recovery time: 2d6 weeks in infirmary." },
+    { roll: "55–56", name: "Spinal Injury", effect: "Paralyzed from injury site down. Cannot move without assistance.", lethal: false, healing: "Heal (EMP) Difficulty 3; recovery time: 3d6 weeks. May be permanent at DA discretion." },
+    { roll: "61–62", name: "Shattered Jaw", effect: "Cannot speak intelligibly. −3 dice on Manipulate and Command.", lethal: false, healing: "Heal (EMP) Difficulty 2; recovery time: 2d6 weeks." },
+    { roll: "63–64", name: "Crushed Hand", effect: "Hand destroyed. −3 dice on Deft Hands. Cannot use two-handed weapons.", lethal: false, healing: "Heal (EMP) Difficulty 2; recovery time: 3d6 weeks. May be permanent." },
     { roll: "65–66", name: "Fracture Point", effect: "Permanent −2 to Corruption Threshold. −1 Empathy permanently.", lethal: false, healing: "Cannot be healed. Permanent character change." }
   ]
 };

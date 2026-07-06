@@ -38,16 +38,16 @@ The thirteen core skills are mapped to these four attributes, tailored to suppor
 | Deft Hands | Picking locks, pocketing small artifacts, disarming mechanical traps.
 | Firearms | Utilizing period-accurate weaponry (.38 revolvers, pump-action shotguns).
 
-.4+| *Wits*
+.3+| *Wits*
 | Investigate | Searching crime scenes for anomalous evidence, analyzing forensic data.
 | Tech | Operating 1980s mainframes, hacking BBS networks, repairing analog equipment.
 | Lore | Decoding ancient occult texts, identifying mythological creatures and artifact origins.
-| Heal | Field medicine, triage, emergency stabilization, and treating physical injuries in the field or at base.
 
-.3+| *Empathy*
+.4+| *Empathy*
 | Manipulate | Bribing informants, deceiving rivals, leveraging secrets, or extracting sensitive disclosures.
 | Command | Directing panicked civilians, asserting emergency authority, and coordinating team actions under fire.
 | Psychoanalyze | Reading psychological states, detecting deception through behavior, and stabilizing traumatized witnesses so they can talk.
+| Heal | Treating psychological damage and stabilizing mental trauma through empathy and connection.
 |===
 
 > *Division Key Skill:* During character creation, each Division designates one Key Skill with a starting cap of *4* instead of the standard maximum of 3. See the Character Creation chapter for details.
