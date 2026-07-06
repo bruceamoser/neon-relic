@@ -38,6 +38,13 @@ Each *6* rolled counts as *one success*.
 
 Successes beyond what was needed are *extra successes*. If the roll supports stunts, each extra success becomes *1 Stunt Point*.
 
+.Stunt Points Formula
+====
+_stuntPoints = max(0, successes − difficulty)_
+====
+
+The formula is applied *after* determining whether the roll passes: subtract the Difficulty from the number of 6s rolled. If the result is positive, those are your Stunt Points. If the roll fails (successes < Difficulty), stunt points are zero regardless of how many 6s were rolled.
+
 > **Stunt Points must be spent immediately.** They are not saved between rolls or carried into subsequent actions. If you do not spend a Stunt Point at the moment it is generated, it is lost. Decide how to spend extra successes before the next roll at the table.
 
 [cols="1,4", options="header"]

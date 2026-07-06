@@ -799,7 +799,7 @@ Board (always visible, z-index: 1)
 
 3. **Post-Roll Options:**
    - **Push:** Button shows "PUSH (+1 Corruption)". Confirms with Corruption cost. Re-rolls only non-6, non-gear dice. New dice animate in. Combined successes shown.
-   - **Spend Stunts:** If stunt points > 0, dropdown shows available stunts filtered by the skill used. Generic stunts always available. Skill-specific stunts shown when that skill is used. Costs 1–2 SP each. Selecting a stunt deducts from SP pool and logs the effect.
+   - **Spend Stunts:** If stunt points > 0, dropdown shows available general stunts. All stunts are available on any skill roll. Costs 1–2 SP each. Selecting a stunt deducts from SP pool and logs the effect.
    - **Accept Result:** "Done" button closes modal, logs the roll result to session log.
 
 4. **Edge Cases:**
@@ -1470,7 +1470,7 @@ Layout: 2×2 grid per letter page, cut lines indicated by crop marks.
   - Push mechanic with auto-Corruption increment
   - Gear degradation auto-detection
   - Artifact die integration
-  - Stunt spending menu (filtered by skill)
+  - Stunt spending menu (general stunts available on any skill)
 - Dice Roller modal UI
 - Quick Roll toolbar dropdown (pre-configured per agent)
 - Special rolls: d66 critical injury, d6 panic, Corruption burst (BR 1–5)

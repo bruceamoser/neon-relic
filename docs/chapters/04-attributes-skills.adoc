@@ -60,7 +60,7 @@ The thirteen core skills are mapped to these four attributes, tailored to suppor
 
 ---
 
-== Skill Stunts
+== Stunts
 
 When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *Stunt Point*. You may spend Stunt Points to achieve effects beyond simple success.
 
@@ -78,9 +78,9 @@ When you roll more 6s than the *minimum needed to succeed*, each extra 6 is a *S
 
 > *Cross-reference:* Combat stunts — spending stunt points during an attack roll — are defined in the Combat chapter (xref:chapters/05-combat.adoc#chapter-combat[Combat]). The stunt economy is the same.
 
-=== Generic Stunts (Available on Any Skill)
+=== Stunts
 
-The following stunts may be purchased on *any* successful skill roll, regardless of which skill is being used. They represent clever execution rather than specialized technique.
+The following stunts may be purchased on *any* successful skill roll, regardless of which skill is being used.
 
 [cols="^1,2,4", options="header"]
 |===
@@ -93,160 +93,6 @@ The following stunts may be purchased on *any* successful skill roll, regardless
 | 2 | *Extended Effect* | The outcome of your action lasts an additional scene or at least one hour longer than it otherwise would.
 | 2 | *Additional Target* | Your action's results apply to one additional target in the same zone (the DA determines relevance).
 |===
-
----
-
-=== Skill-Specific Stunts
-
-The following stunts are available *only* when rolling the listed skill. They represent specialized applications of trained technique.
-
-=== Strength Skills
-
-==== Force
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Controlled Break* | You force open the door/lock/container without damaging the contents or triggering adjacent mechanisms. Finesse in violence.
-| 1 | *Intimidating Display* | Your feat of strength is visibly dramatic. One NPC present must make a *Corruption Burst* (Burst Rating 1) or immediately comply with your next simple demand. See xref:chapters/08-corruption-fear-healing.adoc#corruption-burst-procedure[Corruption Burst].
-| 2 | *Clear the Room* | A shove, flip, or sweep clears all loose objects from the zone simultaneously (useful for destroying a cultist's ritual setup, or just making a scene).
-|===
-
-==== Brawl
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Stay Down* | Target cannot stand up until the start of your next turn (they must spend a Slow Action to rise but simply cannot).
-| 1 | *Weapon Strike* | You've slapped or struck their weapon arm. Target suffers −1 die on all attack rolls until the end of the round.
-| 2 | *Neck Crank* | Target is immediately Grappled (see xref:chapters/05-combat.adoc#chapter-combat[Combat]) without requiring a separate maneuver roll. Costs 2 Stunt Points — you spend both at once to achieve a control hold in the same action that caused the hit.
-|===
-
-==== Endure
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Grind Through* | You remain focused and are able to push through the physical task at hand. You may ignore one penalty on your next roll. Only one stunt point may be spent this way per success.
-| 1 | *Inspire* | Your visible physical resilience gives allies heart. One ally in the scene recovers 1 point of Agility.
-| 2 | *Unfazed* | You succeed and take no Agility damage from whatever environmental or physical threat triggered the roll (extreme cold, sleep deprivation, toxic air).
-|===
-
----
-
-=== Agility Skills
-
-==== Sneak
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Shadow Step* | You can take one additional move action as part of the same turn/scene phase without breaking your stealth. You haven't just crept in — you've repositioned perfectly.
-| 1 | *Identify Exit* | As you infiltrate, you map the fastest withdrawal route. You have +2 dice on any Sneak roll to leave this location later this scene.
-| 2 | *Ghost Pass* | Your passage through *this location* leaves zero physical trace (no footprints, disturbed dust, or thermal record). You cannot be tracked from this location. This applies only to your entry and movement during this scene — it does not retroactively erase evidence from earlier in the session, and it does not cover actions you take once inside (items moved, locks broken, witnesses seen).
-|===
-
-==== Deft Hands
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Undetected* | The target of your pick-pocket, lift, or plant does not notice the action even after the immediate scene ends. They will assume the item was misplaced, not taken.
-| 1 | *Speed Lock* | You open a lock in seconds. No time resource is consumed; the DA cannot use the time you spent as a complication.
-| 2 | *Perfect Plant* | You plant an item on a target in a way that will implicate them credibly. Subsequent investigation will find the planted item and treat it as the target's possession.
-|===
-
-==== Firearms
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Aimed Shot* | The shot hits exactly the intended location (specific limb, lock, cable, tire). DA treats the result as precision even at range.
-| 1 | *Suppression* | Target is pinned behind cover until start of your next turn. They cannot move zones or fire back without losing their cover bonus.
-| 2 | *Warning Shot* | You visibly miss by design, close enough to be terrifying. The target must make a *Corruption Burst* (Burst Rating 2) or drop to the ground and remain there for 1 round. No ammo die roll required for this shot. See xref:chapters/08-corruption-fear-healing.adoc#corruption-burst-procedure[Corruption Burst].
-|===
-
----
-
-=== Wits Skills
-
-==== Investigate
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Pattern Lock* | You not only find the evidence — you identify why it matters. The DA must tell you one piece of context about the object's history or origin.
-| 1 | *Clock It* | You determine precisely when an event occurred (within the hour, or narrowed to a 30-minute window). Time is often as revealing as the event.
-| 2 | *Hidden Compartment* | You find something the scene intended to conceal — a room the blueprints don't show, a file folder in a false wall, a trapdoor. DA must reveal one hidden element they had established for the case, but not yet disclosed. If there are no more hidden elements in the case, the stunt points are forfeit.
-|===
-
-==== Tech
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Trace* | Successfully accessing a system also identifies who else accessed it recently — one account or one physical terminal is revealed.
-| 1 | *Improvised Repair* | The item you're repairing also gets a temporary improvement: a degraded weapon gets +1 Gear die this session; a damaged radio broadcasts on a sealed channel.
-| 2 | *Ghost Session* | Your access to *this digital system* leaves no log entry. No one can prove you were connected. This applies to digital access only (mainframe, terminal, BBS, phone system) — it does not cover physical surveillance cameras, witnesses, or analog records of your presence.
-|===
-
-==== Lore
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Deep Context* | Your knowledge is not just what this thing is — you know what it was used for. DA provides one historical or ritual context detail beyond what would normally be available.
-| 1 | *Weakness Identified* | Your lore grants you tactical information: an entity type's vulnerability, an artifact's known failure condition, a ritual's interruption point. +1 die on the next relevant roll.
-| 2 | *Primary Source* | You recall a specific source — a text, a case file, a person — that would contain detailed operational information about this entity or artifact. The DA must confirm the source exists and tell you how to find it. If the DA has not pre-established such a source, they invent one that is consistent with the setting and the case — it now exists and can be found.
-|===
-
----
-
-=== Empathy Skills
-
-==== Manipulate
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Bought Silence* | The target doesn't just comply — they will not mention this conversation to anyone for at least 24 hours. The DA may extend this window if the narrative warrants it (extreme fear, deep loyalty, significant leverage). The silence expires if the target is directly threatened or compelled by a more powerful authority.
-| 1 | *Read the Room* | Beyond this individual, you gauge how the wider group or faction feels about the situation. The DA tells you one faction-level attitude or intention.
-| 2 | *Turned Asset* | On an already-successful Manipulate, the target now actively wants to help you beyond the scope of your request. They will volunteer additional information or assistance once this session.
-|===
-
-==== Command
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Rally* | One Broken ally in the scene immediately acts on their next turn as if they had recovered — they can take their full action once before the impairment resumes.
-| 1 | *Coordinated Action* | Your directive enables two allies to act at the same initiative card slot this round. Both take their normal actions — neither loses their action to assist the other. This does not grant extra actions; it simply synchronizes timing so both effects land simultaneously (useful for simultaneous entries, simultaneous attacks, or flanking maneuvers).
-| 2 | *Hold the Line* | All allies who can hear you gain +1 die on their next roll this round. The effect of strong leadership under pressure.
-|===
-
-==== Psychoanalyze
-
-[cols="^1,2,4", options="header"]
-|===
-| Cost | Stunt | Effect
-
-| 1 | *Pressure Point* | You've identified something this person fears or desperately needs. The DA must reveal one personal vulnerability, driving motivation, or exploitable need.
-| 1 | *Decompress* | The person you're treating recovers 1 additional Wits or Empathy point beyond the normal healing (max to their normal maximum).
-| 2 | *Full Read* | You have comprehensively understood this person's psychological state. For the rest of *this scene*, all Psychoanalyze rolls against them gain +2 bonus dice and are treated as Difficulty 1 — you know their cues, their resistances, and their breaking points. This benefit applies to this scene only. If the same NPC appears in a future scene under different emotional circumstances, they are not pre-read.
-|===
-
----
 
 == General Talents
 

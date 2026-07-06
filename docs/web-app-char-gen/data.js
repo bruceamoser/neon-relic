@@ -525,49 +525,16 @@ const NR_DATA = {
     { roll: 6, response: "Fugue", effect: "DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene." }
   ],
 
-  // ─── SKILL STUNTS (abbreviated) ──────────────────────────
-  stunts: {
-    force: [
-      { cost: 1, name: "Controlled Break", effect: "Force open without damaging contents or triggering adjacent mechanisms." },
-      { cost: 1, name: "Intimidating Display", effect: "One NPC must make a Corruption Burst (BR 1) or comply with your next simple demand." },
-      { cost: 2, name: "Clear the Room", effect: "A shove, flip, or sweep clears all loose objects from the zone simultaneously." }
-    ],
-    brawl: [
-      { cost: 1, name: "Stay Down", effect: "Target cannot stand up until start of your next turn." },
-      { cost: 1, name: "Weapon Strike", effect: "Target suffers −1 die on all attack rolls until end of round." },
-      { cost: 2, name: "Neck Crank", effect: "Target is immediately Grappled without requiring a separate maneuver roll." }
-    ],
-    endure: [
-      { cost: 1, name: "Grind Through", effect: "Ignore one penalty on your next roll." },
-      { cost: 1, name: "Inspire", effect: "One ally in the scene recovers 1 point of Agility." },
-      { cost: 2, name: "Unfazed", effect: "Take no Agility damage from whatever triggered the roll." }
-    ],
-    sneak: [
-      { cost: 1, name: "Shadow Step", effect: "Take one additional move action without breaking stealth." },
-      { cost: 1, name: "Identify Exit", effect: "+2 dice on any Sneak roll to leave this location later this scene." },
-      { cost: 2, name: "Ghost Pass", effect: "Passage through this location leaves zero physical trace." }
-    ],
-    deftHands: [
-      { cost: 1, name: "Undetected", effect: "Target of pick-pocket/lift/plant does not notice even after the scene ends." },
-      { cost: 1, name: "Speed Lock", effect: "Open a lock in seconds. No time resource consumed." },
-      { cost: 2, name: "Perfect Plant", effect: "Plant an item on a target so that subsequent investigation treats it as their possession." }
-    ],
-    firearms: [
-      { cost: 1, name: "Aimed Shot", effect: "Shot hits exactly the intended location (specific limb, lock, cable, tire)." },
-      { cost: 1, name: "Suppression", effect: "Target pinned behind cover until start of your next turn." },
-      { cost: 2, name: "Warning Shot", effect: "Target must make Corruption Burst (BR 2) or drop and remain down for 1 round." }
-    ],
-    investigate: [
-      { cost: 1, name: "Pattern Lock", effect: "DA must tell you one piece of context about the object's history or origin." },
-      { cost: 1, name: "Clock It", effect: "Determine precisely when an event occurred (within 30-minute window)." },
-      { cost: 2, name: "Hidden Compartment", effect: "Find something the scene intended to conceal — DA must reveal one hidden element." }
-    ],
-    tech: [
-      { cost: 1, name: "Trace", effect: "Identify who else accessed the system recently — one account or terminal revealed." },
-      { cost: 1, name: "Improvised Repair", effect: "Item also gets a temporary improvement (+1 Gear die this session, etc.)." },
-      { cost: 2, name: "Ghost Session", effect: "Access to this digital system leaves no log entry. No one can prove you were connected." }
-    ]
-  },
+  // ─── GENERAL STUNTS ──────────────────────────────────────
+  // Available on any successful skill roll. Costs are in Stunt Points.
+  stunts: [
+    { cost: 1, name: "Faster", effect: "Accomplish the action in half the expected time." },
+    { cost: 1, name: "Quieter", effect: "Accomplish the action without leaving a detectable trace." },
+    { cost: 1, name: "Precise", effect: "Your result is exactly as intended — no collateral effects, no ambiguity." },
+    { cost: 1, name: "Aid", effect: "Your success automatically assists an ally's next related roll this scene (+1 die)." },
+    { cost: 2, name: "Extended Effect", effect: "The outcome lasts an additional scene or at least one hour longer." },
+    { cost: 2, name: "Additional Target", effect: "Your action's results apply to one additional target in the same zone." }
+  ],
 
   // ─── CLEARANCE LEVELS ────────────────────────────────────
   clearanceLevels: [
