@@ -104,7 +104,7 @@ Every mechanic the DA needs at their fingertips during play, organized by rules 
 | **Success Counting** | Each 6 = 1 success. Difficulty 1–5+. Extra 6s = Stunt Points | Auto-count successes, highlight extra successes, show available stunts |
 | **Push Mechanic** | Re-roll non-6 dice. Cost: +1 Corruption. Gear dice are locked (never re-rolled). Gear 1s = degradation | Push button that auto-increments Corruption, locks gear dice, re-rolls attribute+skill |
 | **Gear Degradation** | Gear die showing 1 on initial roll = Gear Bonus −1. At 0 = Broken | Visual gear condition tracker; auto-apply degradation on 1s |
-| **Stunt Points** | Must be spent immediately. Generic stunts (Faster, Quieter, Precise, Aid) + skill-specific stunts | Pop-up stunt menu showing available stunts by skill; deduct from total |
+| **Stunt Points** | Must be spent immediately. General stunts (Faster, Quieter, Precise, Aid, Extended Effect, Additional Target) | Pop-up stunt menu showing available general stunts; deduct from total |
 
 ### 2.2 Attributes & Skills (Chapter 4)
 
@@ -112,7 +112,7 @@ Every mechanic the DA needs at their fingertips during play, organized by rules 
 |----------|---------------|------------------------|
 | **4 Attributes** | Strength, Agility, Wits, Empathy (2–5 each). Serve as both dice pools AND health pools | Live attribute displays with damage overlays |
 | **13 Skills** | Force, Brawl, Endure, Sneak, Deft Hands, Firearms, Investigate, Tech, Lore, Heal, Manipulate, Command, Psychoanalyze (0–5) | Quick-reference skill table with descriptions |
-| **Skill Stunts** | 3 stunts per skill plus 5 generic stunts, each with cost (1–2 SP) | Contextual stunt suggestions after every roll |
+| **General Stunts** | 6 general stunts available on any skill, each with cost (1–2 SP) | Contextual stunt suggestions after every roll |
 | **Division Key Skill** | One skill per division capped at 4 at creation, 5 during play | Highlight agent-specific key skills |
 | **Attribute as Health** | Damage reduces attributes directly. STR=0 or AGI=0 → Physical Broken. WIT=0 or EMP=0 → Mental Broken | Damage trackers on each attribute; auto-detect Broken state |
 
