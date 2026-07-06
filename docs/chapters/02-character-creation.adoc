@@ -149,6 +149,18 @@ At creation, every agent selects *three* talents, one from each of the following
 
 Most Division Talents cost *+1 Corruption* to activate. One talent per list is a *Healing* talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive — no activation cost.
 
+Talents are further restricted by *usage frequency*, which determines how often they can be activated and when their uses reset:
+
+[cols="2,5", options="header"]
+|===
+| Frequency | Rule
+| *At-Will* | Can be activated any number of times. Each activation costs the listed Corruption. Passive talents (no activation) are always at-will.
+| *Per-Session* | Limited uses per play session. Uses reset at the start of each new session via Session Reset. Most Medium-impact talents fall here.
+| *Per-Case-File* | Limited uses per Case File operation. Uses reset at the start of each new Case File via Case File Reset. Reserved for the most powerful, case-altering talents.
+|===
+
+See the individual talent tables in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] and xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for each talent's frequency and Corruption cost.
+
 Talents and Division items are meant to create *leverage*: a clue path, a brief edge, a safer handling window, a cleaner extraction. They should not change the game's default expectation that agents must still investigate, improvise, and pay a price for certainty.
 
 > *Talent Advancement:* Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement and Talents].
