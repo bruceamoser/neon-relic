@@ -83,7 +83,7 @@ A *Death Check* is a single d6 roll. It is required whenever a Critical Injury i
 * *1–2:* The character dies.
 * *3–6:* The character survives — the Critical Injury still applies and must be treated, but they cling to life.
 
-*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+1 instead of d6 (death only on a natural 1 — result 2 on the table). On failure: no change; Death Check proceeds normally.
+*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (EMP) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+1 instead of d6 (death only on a natural 1 — result 2 on the table). On failure: no change; Death Check proceeds normally.
 
 === The Stabilization Window
 
@@ -97,7 +97,7 @@ A Broken character who has rolled a Death-Check result (†) has a limited windo
 
 To stabilize a Dying ally during the stabilization window:
 
-* *Skill:* Heal (WIT)
+* *Skill:* Heal (EMP)
 * *Action:* Slow Action
 * *Requirements:* A First Aid Kit (+1 Gear Bonus to Heal, Resource Die d10 — see xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]) must be present and not exhausted. Without one, the Heal roll is made at −2 dice: −1 from the missing Gear Bonus, and −1 additional penalty for improvising without supplies.
 * *Difficulty:* 2 (normal), 3 (if Gutted or Arterial Strike), 4 (if DOA attempted mid-round)
@@ -155,7 +155,7 @@ Some results are marked *†* (Death Check). When you roll one, roll a single d6
 * On a *1–2:* Your character dies.
 * On a *3–6:* You survive — barely. The Critical Injury still applies.
 
-A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (WIT)* roll (Difficulty 2) to give a dying ally *+1 to their death check die* before it's rolled (effectively making death only on a natural 1 — result 2 on the table).
+A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (EMP)* roll (Difficulty 2) to give a dying ally *+1 to their death check die* before it's rolled (effectively making death only on a natural 1 — result 2 on the table).
 
 ---
 
@@ -319,7 +319,7 @@ An attribute at 0 (Broken state) cannot recover through rest alone — the damag
 
 To recover from Broken:
 
-. An ally must succeed on a *Heal (WIT) roll, Difficulty 2* (First Aid Kit required).
+. An ally must succeed on a *Heal (EMP) roll, Difficulty 2* (First Aid Kit required).
 . On success, the Broken attribute is restored to *1*. The character is no longer Broken.
 . This takes a *full Shift* and requires the character to rest without interruption.
 . Each failed Heal attempt still requires the Shift of rest before retrying.

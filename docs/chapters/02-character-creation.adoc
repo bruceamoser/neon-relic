@@ -105,10 +105,10 @@ Distribute your *Skill Points* (determined by your Age Group in Step 3) across t
 | Investigate | WIT | 3 | Wayfinder, Keep (Stack)
 | Tech | WIT | 3 | Wayfinder, Keep (Stack)
 | Lore | WIT | 3 | Wayfinder, Keep
-| Heal | WIT | 3 | Keep
 | Manipulate | EMP | 3 | Wayfinder
 | Command | EMP | 3 | Keep
 | Psychoanalyze | EMP | 3 | Wayfinder, Keep
+| Heal | EMP | 3 | Keep
 |===
 
 > *Unranked skills:* A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice — there are no "untrained" restrictions.

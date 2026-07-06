@@ -83,7 +83,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | *Basic Medical Bay*
 | 2
 | A discreet clinic arrangement — a struck-off doctor's back room, a veterinary practice after hours, or a university lab with a sympathetic researcher. Not elegant, but it keeps people alive.
-| During downtime, each character recovers *2 additional Attribute points of their choice* (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal (WIT) Difficulty 2; success removes the injury without Attribute loss).
+| During downtime, each character recovers *2 additional Attribute points of their choice* (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal (EMP) Difficulty 2; success removes the injury without Attribute loss).
 
 | *Safeguard Protocol*
 | 1
@@ -185,7 +185,7 @@ Personnel are not combatants. If a cell location is directly attacked, they flee
 | *Underground Field Medic*
 | 2
 | A struck-off physician — too many questions asked, too many bullet wounds treated no-questions-asked. Brilliant in a crisis.
-| During downtime, one character may be treated for a non-lethal Critical Injury (removes the injury without Attribute loss if a Heal (WIT) roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
+| During downtime, one character may be treated for a non-lethal Critical Injury (removes the injury without Attribute loss if a Heal (EMP) roll at Difficulty 2 succeeds). Does not replace the Basic Medical Bay; stacks with it.
 
 | *Black-Market Fence*
 | 3
