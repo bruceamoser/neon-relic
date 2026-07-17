@@ -58,7 +58,7 @@ Once you have run or read through *The Spear That Went Dark*, you are ready to b
 
 The complete case data is organized into the eight-document case file package defined in xref:chapters/15-case-file.adoc#case-file-package[The Case File Package]. All filled-in forms are located in the starter kit under `sample-case-file/`:
 
-[%header,cols="2,3"]
+[cols="2,3", options="header"]
 |===
 | Document | File
 

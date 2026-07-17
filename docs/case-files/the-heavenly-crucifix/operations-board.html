@@ -6,8 +6,8 @@
 <title>Operations Board — The Heavenly Crucifix</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  @font-face { font-family: 'SpecialElite'; src: url('../../docs/themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
-  @font-face { font-family: 'CourierPrime'; src: url('../../docs/themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
+  @font-face { font-family: 'SpecialElite'; src: url('../../themes/SpecialElite-Regular.ttf') format('truetype'), local('Special Elite'); }
+  @font-face { font-family: 'CourierPrime'; src: url('../../themes/CourierPrime-Regular.ttf') format('truetype'), local('Courier New'); }
   @page { size: letter landscape; margin: 0; }
   @media print { body { margin:0; padding:0; background:none; } .page { box-shadow:none; margin:0; } }
   :root { --ink:#1a1a18; --ink-faded:#4a4a42; --ink-light:#8a8a7e; --paper:#f0ead6; --green-stamp:#2d5a27; --red-stamp:#8b1a1a; --rule:#999; --rule-light:#ccc; --field-bg:rgba(255,255,255,0.3); --font-main:'SpecialElite','Courier New',monospace; --font-fill:'CourierPrime','Courier New',monospace; }
@@ -57,10 +57,19 @@
   .sq.past { background:rgba(0,0,0,0.08); }
   .sq.ms { position:relative; }
   .sq.ms::after { content:attr(data-ms); position:absolute; bottom:1px; left:50%; transform:translateX(-50%); font-family:var(--font-fill); font-size:4pt; color:var(--red-stamp); white-space:nowrap; }
+
+  /* ── PAST-DAY COLUMNS (BLACKED OUT) ── */
+  .col-past { background-color:rgba(0,0,0,0.35) !important; background-image:repeating-linear-gradient(45deg,transparent,transparent 3px,rgba(0,0,0,0.08) 3px,rgba(0,0,0,0.08) 6px) !important; }
+  .board thead th.col-past { color:rgba(240,234,214,0.2) !important; background-color:rgba(0,0,0,0.40) !important; background-image:repeating-linear-gradient(45deg,transparent,transparent 3px,rgba(0,0,0,0.10) 3px,rgba(0,0,0,0.10) 6px) !important; }
+  .quad.filled.col-past { background-color:rgba(0,0,0,0.50) !important; background-image:repeating-linear-gradient(45deg,transparent,transparent 3px,rgba(0,0,0,0.12) 3px,rgba(0,0,0,0.12) 6px) !important; color:rgba(240,234,214,0.15) !important; border-color:rgba(0,0,0,0.15) !important; }
+  .sq.past.col-past { background-color:rgba(0,0,0,0.40) !important; background-image:repeating-linear-gradient(45deg,transparent,transparent 3px,rgba(0,0,0,0.10) 3px,rgba(0,0,0,0.10) 6px) !important; }
+
   .legend { margin-top:6px; display:flex; gap:16px; font-family:var(--font-main); font-size:5pt; text-transform:uppercase; letter-spacing:1px; color:var(--ink-faded); padding:0 2px; flex-wrap:wrap; }
   .legend-item { display:flex; align-items:center; gap:3px; }
   .legend-swatch { width:8px; height:8px; border:1px solid var(--rule); display:inline-block; }
   .legend-swatch.filled { background:var(--ink-light); }
+  .legend-swatch.past { background:rgba(0,0,0,0.18); position:relative; }
+  .legend-swatch.past::after { content:''; position:absolute; inset:0; background:repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(0,0,0,0.06) 1px,rgba(0,0,0,0.06) 2px); }
   .footer { margin-top:auto; display:flex; justify-content:space-between; font-family:var(--font-main); font-size:5pt; letter-spacing:1.5px; color:var(--ink-light); border-top:1px solid var(--rule-light); padding-top:3px; text-transform:uppercase; }
 </style>
 </head>
@@ -89,31 +98,36 @@
     <thead>
       <tr>
         <th class="label-col">Days Until Catastrophe</th>
-        <th>14</th><th>13</th><th>12</th><th>11</th><th>10</th><th>9</th><th>8</th>
+        <th class="col-past">14</th><th class="col-past">13</th><th class="col-past">12</th><th class="col-past">11</th><th>10</th><th>9</th><th>8</th>
         <th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th class="col-cat">1</th>
       </tr>
     </thead>
     <tbody>
       <tr class="shift-row">
-        <td class="label-col"><div class="shift-label">Shifts</div><div class="shift-sublabel">M / D / E / N per day</div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
-        <td><div class="quad-grid"><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div><div class="quad">N</div></div></td>
+        <td class="label-col"><div class="shift-label">Shifts</div><div class="shift-sublabel">N / M / D / E per day</div></td>
+        <!-- Days 14–11: past (before case start), blacked out, shifts pre-filled -->
+        <td class="col-past"><div class="quad-grid"><div class="quad filled col-past">N</div><div class="quad filled col-past">M</div><div class="quad filled col-past">D</div><div class="quad filled col-past">E</div></div></td>
+        <td class="col-past"><div class="quad-grid"><div class="quad filled col-past">N</div><div class="quad filled col-past">M</div><div class="quad filled col-past">D</div><div class="quad filled col-past">E</div></div></td>
+        <td class="col-past"><div class="quad-grid"><div class="quad filled col-past">N</div><div class="quad filled col-past">M</div><div class="quad filled col-past">D</div><div class="quad filled col-past">E</div></div></td>
+        <td class="col-past"><div class="quad-grid"><div class="quad filled col-past">N</div><div class="quad filled col-past">M</div><div class="quad filled col-past">D</div><div class="quad filled col-past">E</div></div></td>
+        <!-- Days 10–1: active days -->
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
+        <td><div class="quad-grid"><div class="quad">N</div><div class="quad">M</div><div class="quad">D</div><div class="quad">E</div></div></td>
       </tr>
       <tr class="ms-row">
         <td class="label-col">Relic Milestones</td>
-        <td></td><td></td><td></td><td></td><td></td><td></td>
+        <!-- Days 14–11: past (before case start) -->
+        <td class="col-past"></td><td class="col-past"></td><td class="col-past"></td><td class="col-past"></td>
+        <!-- Days 10–1: active -->
+        <td></td><td></td>
         <td style="font-size:4.5pt;">Day 8</td><td></td><td></td>
         <td style="font-size:4.5pt;">Day 5</td><td></td><td></td><td></td>
         <td style="font-size:4.5pt; font-weight:bold;">Day 1</td>
@@ -129,7 +143,7 @@
             <span class="status-label"><span class="checkbox checked"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
         <td class="sq"></td><td class="sq ms" data-ms="O1M1" style="border-bottom:2px solid var(--red-stamp);"></td>
         <td class="sq"></td><td class="sq ms" data-ms="O1M2" style="border-bottom:2px solid var(--red-stamp);"></td>
@@ -145,7 +159,7 @@
             <span class="status-label"><span class="checkbox checked"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
         <td class="sq ms" data-ms="O2M1" style="border-bottom:2px solid var(--red-stamp);"></td>
         <td class="sq"></td><td class="sq ms" data-ms="O2M2" style="border-bottom:2px solid var(--red-stamp);"></td>
@@ -162,7 +176,7 @@
             <span class="status-label"><span class="checkbox checked"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td><td class="sq past"></td>
         <td class="sq ms" data-ms="O3M1" style="border-bottom:2px solid var(--red-stamp);"></td>
         <td class="sq"></td><td class="sq ms" data-ms="O3M2" style="border-bottom:2px solid var(--red-stamp);"></td>
@@ -179,7 +193,7 @@
             <span class="status-label"><span class="checkbox"></span> Active</span><span class="status-label"><span class="checkbox checked"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td><td class="sq past"></td>
         <td class="sq"></td><td class="sq"></td>
         <td class="sq ms" data-ms="O4M1" style="border-bottom:2px solid var(--red-stamp);"></td>
@@ -196,7 +210,7 @@
             <span class="status-label"><span class="checkbox checked"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td>
         <td class="sq ms" data-ms="O5M1" style="border-bottom:2px solid var(--red-stamp);"></td>
         <td class="sq"></td><td class="sq"></td><td class="sq"></td>
@@ -213,7 +227,7 @@
             <span class="status-label"><span class="checkbox"></span> Active</span><span class="status-label"><span class="checkbox checked"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
+        <td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td><td class="sq past col-past"></td>
         <td class="sq past"></td><td class="sq past"></td><td class="sq past"></td><td class="sq past"></td>
         <td class="sq"></td><td class="sq"></td>
         <td class="sq ms" data-ms="O6M1" style="border-bottom:2px solid var(--red-stamp);"></td>
@@ -228,7 +242,7 @@
             <span class="status-label"><span class="checkbox"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq col-past"></td><td class="sq col-past"></td><td class="sq col-past"></td><td class="sq col-past"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
       </tr>
       <tr class="org-row">
         <td class="label-col">
@@ -238,16 +252,17 @@
             <span class="status-label"><span class="checkbox"></span> Active</span><span class="status-label"><span class="checkbox"></span> Dormant</span>
           </div>
         </td>
-        <td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
+        <td class="sq col-past"></td><td class="sq col-past"></td><td class="sq col-past"></td><td class="sq col-past"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td><td class="sq"></td>
       </tr>
     </tbody>
   </table>
 
   <div class="legend">
+    <div class="legend-item"><div class="legend-swatch past"></div> Past days (immutable)</div>
     <div class="legend-item"><div class="legend-swatch filled"></div> Pre-filled (past starting value)</div>
     <div class="legend-item"><div class="legend-swatch"></div> Active countdown square</div>
     <div class="legend-item">O#M# = Organization milestone shorthand</div>
-    <div class="legend-item">M / D / E / N = Morning / Day / Evening / Night</div>
+    <div class="legend-item">N / M / D / E = Night / Morning / Day / Evening</div>
   </div>
 
   <div class="footer">

@@ -1,0 +1,380 @@
+# Talents Need to Be More Restrictive
+
+## New Rules
+> Talents need to be restricted to three levels based on power/impact:
+> 1. Low power talents — at will but gain corruption
+> 2. Medium power — once per session + gain corruption
+> 3. High power — once per case file + gain corruption
+
+---
+
+## Design Approach
+
+The three tiers are a **rules classification**, not a data field. The goal is to assess each talent's actual game impact and assign:
+
+- **`frequency`** — how often it can be used: `at-will`, `per-session`, or `per-case-file`
+- **`corruptionCost`** — numeric corruption cost on activation
+
+The classification analysis below evaluates every talent's mechanical impact to produce these assignments. Once decided, `frequency` and `corruptionCost` become the implementation fields added to the data model.
+
+---
+
+## Current State
+
+### No Frequency Enforcement Exists
+All active talents cost the same +1 Corruption and can be activated as often as the player is willing to pay. "Once per session" is purely narrative text in talent descriptions — not mechanically tracked or enforced. "Once per case file" does not exist for talents (only for HQ personnel abilities in Chapter 12).
+
+### Talent Data Structure (`src/data/item-models.mjs:237-261`)
+Existing fields: `talentType`, `corruptionCost` (number, always 0 or 1), `hasHealingTag`, `isOncePerSession`, `usesPerSession: { value, max }`, `effect`
+
+**Missing fields:** `frequency` (at-will / per-session / per-case-file), `usesPerPeriod.caseFile` tracking. The `corruptionCost` field exists but is always 0 or 1 — needs to support differential costs (0, 1, 2).
+
+### Usage Tracking
+- `usesPerSession` exists on TalentDataModel — `item-document.mjs:134` checks `isOncePerSession && uses.value <= 0`
+- `item-document.mjs:124-167` `useTalent()` decrements `uses.value`, applies corruption
+- `actor-document.mjs:176-203` `resetSession()` resets per-session tracking
+- No per-case-file reset exists. No `caseFileTalentsUsed` tracking on the actor model.
+
+### Talent Count
+| Category | Count |
+|----------|-------|
+| Division Talents | 17 (5-6 per division) |
+| Sub-Unit Talents | ~30 (Stack has 6, others have 3) |
+| General Talents | 16 |
+| Background Talents | 65 |
+| **Total** | **~128 talents** |
+
+---
+
+## Talent Impact Classification
+
+### Classification Criteria
+- **Low impact** (at-will): Small numerical bonus (+1 die, +1 damage), passive always-on effect, minor situational convenience, no scene-altering power. Always active or activatable at will.
+- **Medium impact** (per-session): Significant mechanical advantage, scene-level leverage, information without a roll, once-per-session healing, moderate combat buff. Frequency limited to 1-2 uses per session.
+- **High impact** (per-case-file): Scene-altering or case-altering effect, major narrative information (DA must answer truthfully), large AoE healing/effect, full negation of a major threat. Frequency limited to once per case file.
+
+---
+
+### GENERAL TALENTS (16) — Source: `docs/chapters/13-advancement.adoc`
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Street Medic | Low | at-will | 0 | Passive: restore 2 physical attribute points instead of 1 when using Heal. Always on. |
+| Cathartic Release | Medium | per-session | +1 | 1/session healing after breaking something. Non-combat trigger. Already labeled once/session. |
+| Hair-Trigger | Low | at-will | 0 | Passive: draw weapon as free action. Always on, minor action economy. |
+| Paranormal Intuition | Low | at-will | +1 | Situational detection of supernatural presence. Costs corruption, minor effect. |
+| Heavy Packer | Low | at-will | 0 | Passive: +2 encumbrance. Always on, convenience. |
+| Skeptic's Shield | Medium | per-session | +1 | 1/session ignore one supernatural effect entirely. Defensive, powerful but narrow. |
+| Night Owl | Low | at-will | 0 | Passive: reduce darkness/visibility penalties. Always on, situational. |
+| Chain Smoker | Medium | per-session | +1 | Healing with resource cost (consumables). Has per-session healing tag. |
+| Analog Junkie | Low | at-will | 0 | Passive: +2 with specific era tech. Always on, narrow scope. |
+| Grit Your Teeth | Medium | per-session | +1 | 1/session ignore any single penalty. Versatile defensive tool. |
+| Desensitized | Low | at-will | 0 | Passive: +1 to resist fear/intimidation. Always on, narrow scope. |
+| Lucky Coin | Low | at-will | +1 | Prevent one gear degradation at will. Costs corruption, minor economy. |
+| Iron Will | Medium | per-session | +1 | Conditional healing on kill/banish. Triggered, so frequency is self-limiting but effect is significant. |
+| Brawler | Low | at-will | 0 | Passive: +1 unarmed damage. Always on, minor. |
+| Flee the Scene | Low | at-will | 0 | Passive: +2 to escape/pursuit rolls. Always on, situational. |
+| Requisition Authority | Low | at-will | 0 | Passive: permanent +1 CL increase (repeatable purchase). No activation — it modifies your character sheet. |
+
+**General Talents Summary:** 9 Low, 7 Medium, 0 High
+
+---
+
+### WAYFINDER DIVISION TALENTS (5) — Source: `docs/chapters/09-divisions.adoc`
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| The Antiquarian's Eye | Medium | per-session | +1 | Identify artifact purpose without a roll. Skips a major investigation step. |
+| Ghost in the Machine | Medium | per-session | +1 | Bypass supernatural tech interference for one scene. Situational but powerful when relevant. |
+| The Hunch | High | per-case-file | +2 | **DA must answer one question truthfully.** This is the most powerful information-gathering ability in the game. Case-altering. |
+| Academic Grounding | Medium | per-session | +1 | Healing talent (1 Corruption, 1 hour). Once per session via healing tag. |
+| Eldritch Empathy | Medium | per-session | +1 | Sense a supernatural entity's emotional state and intent. Skips investigation steps. |
+
+**Wayfinder Division Summary:** 0 Low, 4 Medium, 1 High (The Hunch)
+
+---
+
+### WAYFINDER SUB-UNIT TALENTS — Source: `docs/chapters/09-divisions.adoc`
+
+**Research Wing (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Pattern Recognition | Low | at-will | +1 | Identify one connection on inspection. Costs corruption, minor info. |
+| Deep Archive Access | Low | at-will | 0 | Passive: +2 dice to next Lore/Investigate after research. One-time bonus, self-limiting. |
+| Methodical Review | Medium | per-session | +1 | Healing + ally buff. Costs a Shift. Once per session via healing tag. |
+
+**Counterintelligence (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Burned Asset | Medium | per-session | +1 | Deploy cover story vs Diff 2. Useful but roll-gated. |
+| Signal Intercept | Medium | per-session | +1 | Eavesdrop on communications for entire scene. Scene-length advantage. |
+| Compartmentalized Mind | Medium | per-session | +1 | 1/session healing after CI action. Healing tag. |
+
+**Wayfinder Sub-Unit Summary:** 2 Low, 4 Medium, 0 High
+
+---
+
+### RECOVERY DIVISION TALENTS (6) — Source: `docs/chapters/09-divisions.adoc`
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Conditioned Mind | Medium | per-session | 0 | 1/session negate push corruption. Already labeled once/session. No corruption cost (it prevents corruption). |
+| Unstoppable Force | Medium | per-session | +1 | +2 damage for one attack. Combat buff, once per engagement feels right. |
+| Shadow Walker | High | per-case-file | +2 | **Full scene mundane invisibility.** Extremely powerful — bypass entire encounters. Currently a major balance concern (audit issue #578). |
+| Adrenaline Junkie | Low | at-will | 0 | Passive: +2 AGI when at or below half STR. Conditional always-on. |
+| Gallows Humor | High | per-case-file | +2 | **1d4 corruption healing for the entire team.** AoE heal that bypasses the 5/session cap for each recipient. Case-altering recovery. |
+| Combat Reflexes | Medium | per-session | 0 | Draw 2 initiative cards, keep 1. Already per-session narrative. Passive-esque in effect. |
+
+**Recovery Division Summary:** 1 Low, 3 Medium, 2 High (Shadow Walker, Gallows Humor)
+
+---
+
+### RECOVERY SUB-UNIT TALENTS — Source: `docs/chapters/09-divisions.adoc`
+
+**Ex-Agency Operative (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Dead Drop Protocol | Medium | per-session | +1 | Free intelligence without a roll. Skips investigation. |
+| Exfiltration Specialist | Low | at-will | 0 | Passive: +1 AGI to self and nearby allies. Always on aura. |
+| Spycraft Discipline | Medium | per-session | +1 | 1/session healing after covert operation. Healing tag. |
+
+**Heavy-Hitter (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Wrecking Ball | Medium | per-session | +1 | +3 dice +2 damage vs objects/structures. Powerful but narrow (objects only). |
+| Stand Your Ground | Medium | per-session | +1 | Immovable, +2 AR for one turn. Strong defensive cooldown. |
+| Blunt Trauma Recovery | Medium | per-session | +1 | 1/session healing after combat. Healing tag. |
+
+**Acquisition Specialist (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Ghost Entry | High | per-case-file | +2 | **Bypass any lock without a roll, leave no trace.** Eliminates an entire obstacle category. |
+| The Long Con | Medium | per-session | +1 | +3 Manipulate after building rapport. Strong but requires setup. |
+| Clean Getaway | Medium | per-session | +1 | 1/session healing after escape. Healing tag. |
+
+**Recovery Sub-Unit Summary:** 1 Low, 7 Medium, 1 High (Ghost Entry)
+
+---
+
+### KEEP DIVISION TALENTS — Source: `docs/chapters/09-divisions.adoc` and `talents.yaml`
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Containment Protocol | Medium | per-session | +1 | Fast action ward vs supernatural for one scene. Powerful but narrow. |
+| Shield of the Covenant | Medium | per-session | +1 | Intercept an attack, take half damage. Strong defensive tool. |
+| The Inquisitor's Gaze | High | per-case-file | +2 | **Know an NPC's exact corruption value and possession status.** Eliminates hidden threat — massive information advantage. |
+| Medical Training | Medium | per-session | +1 | Improve an ally's Death Check. Life-or-death intervention, already per-session. |
+| Sanctuary Master | Low | at-will | 0 | Auto-succeed Lore for artifacts registered in HQ. Extremely narrow scope. |
+| The Confessor | High | per-case-file | +2 | **Both speaker and target heal 1d4 corruption.** Repeatable per target per scene. No daily cap. This is the most abusable healing talent (audit issue #582). |
+
+**Keep Division Summary:** 1 Low, 3 Medium, 2 High (Inquisitor's Gaze, The Confessor)
+
+---
+
+### KEEP SUB-UNIT TALENTS — Source: `docs/chapters/09-divisions.adoc`
+
+**Catalogers (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Hazard Classification | Medium | per-session | +1 | Free artifact danger rating without a roll. Skips a risk assessment step. |
+| Registry Cross-Reference | Medium | per-session | +1 | Free connection between two registered artifacts. Information without roll. |
+| Archival Calm | Medium | per-session | +1 | Healing + ally buff. Costs a Shift. Healing tag. |
+
+**Wardens (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Lockdown | Medium | per-session | +1 | Seal one entrance for 1 round. Tactical, narrow duration. |
+| Threat Assessment | Medium | per-session | +1 | Free threat identification on entering an area. Skips assessment. |
+| Sentinel's Vigil | Medium | per-session | +1 | 1/session healing after guard duty. Healing tag. |
+
+**Internal CI (3):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Silent Audit | High | per-case-file | +2 | **Secretly access any personnel file in the Covenant.** Massive narrative information — can reshape a case. |
+| Loyalty Test | Medium | per-session | +1 | +2 Empathy to detect deception. Strong but narrow. |
+| Debriefing Protocol | Medium | per-session | +1 | 1/session healing after investigation. Healing tag. |
+
+**Stack / Logistics — has 6 talents (audit issue #580):**
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| Requisition Expert | Low | at-will | 0 | Auto-acquire one item during Equipping Phase. Passive — modifies the requisition procedure. |
+| Jury-Rig | Medium | per-session | +1 | Instantly restore a broken item mid-scene. Powerful gear economy save. |
+| Prototyper | Medium | per-session | +1 | Grant an Artifact Die to an item; item is destroyed after. Strong but self-destructive. |
+| Duct Tape & WD-40 | Medium | per-session | +1 | Repair all gear + heal. Shift cost. Healing tag. |
+| Experimental Shielding | Medium | per-session | +1 | 1/session ignore one Gear Die degradation. Gear economy protection. |
+| Redundant Safeties | Low | at-will | 0 | Passive: +2 corruption threshold. Always on, character sheet modifier. |
+
+**Keep Sub-Unit Summary:** 2 Low, 11 Medium, 1 High (Silent Audit)
+
+---
+
+### BACKGROUND TALENTS (65) — Source: `docs/chapters/13-advancement.adoc`
+
+All 65 background talents follow an identical pattern: **+1 bonus die to a specific skill**. Examples: Archaeologist (+1 Lore), Police Officer (+1 Investigate), Military Veteran (+1 Firearms), etc.
+
+| Talent | Impact | Frequency | Corruption | Rationale |
+|--------|--------|-----------|------------|-----------|
+| All 65 Background Talents | Low | at-will | 0 | Passive always-on +1 die to a single skill. No activation. Minor numerical bonus. |
+
+**Background Talents Summary:** 65 Low, 0 Medium, 0 High
+
+---
+
+## Classification Totals
+
+| Category | Low (at-will) | Medium (per-session) | High (per-case-file) |
+|----------|---------------|---------------------|----------------------|
+| General (16) | 9 | 7 | 0 |
+| Wayfinder Division (5) | 0 | 4 | 1 (The Hunch) |
+| Wayfinder Sub-Unit (6) | 2 | 4 | 0 |
+| Recovery Division (6) | 1 | 3 | 2 (Shadow Walker, Gallows Humor) |
+| Recovery Sub-Unit (9) | 1 | 7 | 1 (Ghost Entry) |
+| Keep Division (6) | 1 | 3 | 2 (Inquisitor's Gaze, The Confessor) |
+| Keep Sub-Unit (15) | 2 | 12 | 1 (Silent Audit) |
+| Background (65) | 65 | 0 | 0 |
+| **TOTAL (~128)** | **81** | **40** | **7** |
+
+### High-Impact Talents (7 — need per-case-file restriction)
+1. **The Hunch** (Wayfinder) — DA must answer truthfully
+2. **Shadow Walker** (Recovery) — full scene mundane invisibility
+3. **Gallows Humor** (Recovery) — 1d4 AoE corruption heal for entire team
+4. **Ghost Entry** (Recovery Acq. Specialist) — bypass any lock, no roll, no trace
+5. **The Inquisitor's Gaze** (Keep) — know NPC corruption + possession status
+6. **The Confessor** (Keep) — both heal 1d4, repeatable per target per scene
+7. **Silent Audit** (Keep Internal CI) — secretly access any Covenant personnel file
+
+---
+
+## Implementation: Fields to Add
+
+Based on the classification above, the data model needs these fields (NOT a `powerLevel` field):
+
+### `TalentDataModel` (`src/data/item-models.mjs:237-261`)
+- **`frequency`** — StringField: `"at-will"` | `"per-session"` | `"per-case-file"`. Determines when usage resets.
+- **`corruptionCost`** — existing NumberField, but expand range from 0-1 to 0-2. High-impact talents cost 2 corruption.
+- **`usesPerPeriod`** — SchemaField replacing current `usesPerSession`: `{ session: {value, max}, caseFile: {value, max} }`. The `max` value enforces frequency.
+
+### `AgentDataModel` (`src/data/actor-models.mjs`)
+- **`sessionTalentsUsed`** — tracks which per-session talents have been expended this session
+- **`caseFileTalentsUsed`** — tracks which per-case-file talents have been expended this case file
+
+---
+
+## Complete File Inventory (~35 files across 2 repos)
+
+### REPO 1: `foundry-neon-relic-system` — Data Schema (3 files)
+
+| # | File | Change |
+|---|------|--------|
+| 1 | `src/data/item-models.mjs:237-261` | Add `frequency` (StringField) and `usesPerPeriod` (SchemaField). Expand `corruptionCost` range to 0-2. |
+| 2 | `src/data/actor-models.mjs:66-73,106-111` | Add `sessionTalentsUsed` and `caseFileTalentsUsed` tracking to AgentDataModel |
+| 3 | `src/system/config.mjs:48-54` | Add `NEON_RELIC.talentFrequencies` config enum (at-will / per-session / per-case-file) |
+
+### REPO 1: `foundry-neon-relic-system` — Logic (5 files)
+
+| # | File | Change |
+|---|------|--------|
+| 4 | `src/item/item-document.mjs:124-167` | Rewrite `useTalent()` to check `frequency`, enforce usage limits, apply `corruptionCost` (0/1/2), track on actor model |
+| 5 | `src/actor/actor-document.mjs:176-203` | Add `resetCaseFile()` method; update `resetSession()` for new tracking fields |
+| 6 | `src/actor/agent/agent-sheet.mjs:258-285` | Update talent drop handler for frequency-aware limits |
+| 7 | `src/components/corruption.mjs` | Support differential corruption costs (0/1/2) when talent is activated |
+| 8 | `src/system/session-tracker.mjs` | Add `performCaseFileReset()` alongside existing `performSessionReset()` |
+
+### REPO 1: `foundry-neon-relic-system` — UI Templates (5 files)
+
+| # | File | Change |
+|---|------|--------|
+| 9 | `src/templates/actor/agent/agent-talents.hbs` | Add frequency indicator (at-will / per-session / per-case-file label) and usage tracker |
+| 10 | `src/templates/item/talent.hbs` | Add frequency dropdown and usesPerPeriod fields |
+| 11 | `src/templates/actor/agent/wizard/step-talents.hbs` | Add frequency label in slot display |
+| 12 | `src/templates/actor/agent/wizard/talent-picker.hbs` | Add frequency/impact indicator in picker entries |
+| 13 | `src/templates/actor/agent/wizard/step-summary.hbs` | Add frequency label in summary |
+
+### REPO 1: `foundry-neon-relic-system` — Compendium & Locale (3 files)
+
+| # | File | Change |
+|---|------|--------|
+| 14 | `src/packs/talents.yaml` (all ~128 entries) | Apply classification table above: set `frequency` and `corruptionCost` on every talent |
+| 15 | `src/packs/rules-reference.yaml` | Update rules journal with frequency system explanation |
+| 16 | `src/lang/en.yaml:321-343,461-466,1076-1094` | Add i18n keys: `Frequency`, `AtWill`, `PerSession`, `PerCaseFile`, usage cap messages |
+
+### REPO 1: `foundry-neon-relic-system` — Infrastructure & Styles (3 files)
+
+| # | File | Change |
+|---|------|--------|
+| 17 | `src/styles/_agent-sheet.scss:736-803` | Add frequency indicator and usage tracker styles |
+| 18 | `src/system/sockets.mjs` | Add `CASE_FILE_RESET` socket event |
+| 19 | `DEVELOPMENT-PLAN.md` | Update talent section with frequency system |
+
+### REPO 2: `neon-relic` — Rulebook Chapters (5 files)
+
+| # | File | Change |
+|---|------|--------|
+| 20 | `docs/chapters/02-character-creation.adoc:137-154` | Add frequency rules to Step 5. Explain at-will, per-session, per-case-file. Update Petra worked example. |
+| 21 | `docs/chapters/09-divisions.adoc` (all talent tables) | Add Frequency and Corruption Cost columns to all 16+ talent tables. Apply classification above. |
+| 22 | `docs/chapters/13-advancement.adoc` | Add frequency to all 16 General Talents entries. Define frequency-based purchase rules. |
+| 23 | `docs/chapters/08-corruption-fear-healing.adoc` | Update Sources of Corruption with frequency-based costs. Update healing talent rules. |
+| 24 | `docs/chapters/21-glossary.adoc` | Add entries for "At-Will", "Per-Session", "Per-Case-File" |
+
+### REPO 2: `neon-relic` — Web App (3 files)
+
+| # | File | Change |
+|---|------|--------|
+| 25 | `docs/web-app-char-gen/data.js:204-412` | Apply classification to all talent objects: set `frequency` and numeric `corruptionCost` |
+| 26 | `docs/web-app-char-gen/app.js:263-409,643-668` | Frequency-aware picker and display |
+| 27 | `docs/web-app-char-gen/index.html` | Frequency display CSS |
+
+### REPO 2: `neon-relic` — Printable & Prebuilt (3 + 12 files)
+
+| # | File | Change |
+|---|------|--------|
+| 28 | `assets/character-sheet.html:299-322,623-639` | Add frequency labels and usage checkboxes to talent blocks |
+| 29 | `starter-kit/blank-templates/agent-dossier.html` | Add frequency label areas |
+| 30 | `docs/web-app-da-board/data.js:256-475` | Update PREBUILT_AGENTS talent objects |
+| 31-42 | `starter-kit/prebuilt-characters/character-*.html` (5) + `assets/prebuilt/character-*.html` (5) + `Bruce-Stuff/character-*.html` (2) | Add frequency labels to talent blocks |
+
+---
+
+## What Needs to Change
+
+### Phase 1: Classification Review
+Review the classification table above. The 7 high-impact talents and 40 medium-impact talents are the key decisions. The 65 background talents and ~12 passive general/division talents are straightforward low-impact.
+
+### Phase 2: Data Model
+Add `frequency` and `usesPerPeriod` to TalentDataModel. Add session/case-file tracking to AgentDataModel. Expand `corruptionCost` range to 0-2.
+
+### Phase 3: Logic
+Rewrite `useTalent()` to enforce frequency. Add `resetCaseFile()`. Wire per-case-file reset to the case file lifecycle.
+
+### Phase 4: UI
+Add frequency labels and usage trackers to talent tab, item sheet, wizard, picker, and summary.
+
+### Phase 5: Rules Text
+Apply the classification to all talent tables in the rulebook. Document the frequency system.
+
+### Phase 6: Compendium & Web App
+Apply `frequency` and `corruptionCost` to all ~128 compendium talent entries and all web app talent data.
+
+## Design Decisions Required
+1. **Slot limits by frequency**: How many per-case-file talents per character? (Recommended: max 1 at creation, max 2 total)
+2. **XP costs by frequency**: Should high-frequency-restricted talents cost more XP? (Recommended: at-will 6 XP, per-session 6 XP, per-case-file 10 XP)
+3. **Stack normalization**: Stack has 6 sub-unit talents. Should they be trimmed to 3 to match others? (Audit issue #580)
+4. **Healing talent cap**: Currently 3/session for healing tags. Does frequency replace or supplement this?
+5. **Corruption costs**: At-will +1, per-session +1, per-case-file +2 (per the classification above)?
+
+## Related Issues
+- #571: Free Talents vs Ch 8 Sources of Corruption
+- #577: Healing Talent Triggers — Wildly Uneven Attainability
+- #578: Shadow Walker — Full-Scene Invisibility Extremely Powerful
+- #580: Stack Has 6 Sub-Unit Talents vs 3 for Others
+- #582: The Confessor — Repeatable Use Undefined
+

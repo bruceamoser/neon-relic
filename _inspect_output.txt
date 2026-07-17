@@ -1,0 +1,152 @@
+=== PDF INFO ===
+Total pages: 228
+Metadata: {'format': 'PDF 1.4', 'title': 'Neon Relic Core Rules', 'author': '', 'subject': '', 'keywords': '', 'creator': '', 'producer': 'pikepdf 10.9.1', 'creationDate': "D:20260620193858+00'00", 'modDate': '', 'trapped': '', 'encryption': None}
+
+=== TEXT EXTRACTION: Pages 160-170 ===
+
+--- Page 160 (1574 chars) ---
+  Preview: Personnel | DP Cost | Who They Are | Benefit | Station Dispatcher | (Police) | 2 | A civilian 911 dispatcher who owes | the Covenant a significant debt. | Passes case-relevant police radio | traffic when it crosses their desk. | Once per Case File, | request police incident | records, scanner traffic | intercepts, or a 10- | minute window of police | non-response in one | location. | Underground Field | Medic | 2 | A struck-off physician 
+
+--- Page 161 (1796 chars) ---
+  Preview: Personnel | DP Cost | Who They Are | Benefit | Signals Technician | 4 | An ex-NSA field tech — burned, | paranoid, and very good at making | equipment do things it shouldn’t. | Once per Case File, | plant a real-time audio | tap on a rival faction’s | communication line | (Investigate (WIT) | Difficulty 2; success = | one scene of intercepted | intel). Also: +1 die on | all Tech (WIT) rolls at | the Secure | Communications Room. | 13.5.
+
+--- Page 162 (2726 chars) ---
+  Preview: Roll | Compromise Type | 1–2 | Surveillance — A rival team has eyes on one of the cell’s locations. The location | is not breached, but the Threat Meter resets to 4 (not 0). All Tier 2+ capabilities | associated with that location are temporarily offline until the surveillance is | identified and dealt with (a mini-investigation, 1 Case File). | 3–4 | Break-In — Evidence of entry at one location, triggered sensor
+
+--- Page 163 (2403 chars) ---
+  Preview: 13.6. Covenant Standing (Reputation System) | Covenant Standing is a per-cell meta-progression score that measures how the Verdant | Covenant perceives your cell’s effectiveness, discretion, and reliability. It is not glamour — | it does not mean fame. A cell with high Standing is one that has been trusted with increasingly | sensitive operations because they do not leave messes. | Standing is tracked as a 
+
+--- Page 164 (2016 chars) ---
+  Preview: Score | Rank | What It Means | 15–19 | Honored | The cell has operated at the highest levels. Named contacts within | Covenant leadership. Information access: Unrestricted access | including Covenant historical records and cold case files. Lore | (WIT) research rolls gain +3 dice from Covenant channels. Cold case | files provided on request (no roll required). | 20 | Covenant Elite | Fewer than a dozen cells in history h
+
+--- Page 165 (1829 chars) ---
+  Preview: are designed to hurt. | Losing Standing | Standing losses are immediate and cannot be avoided by narrative justification. The Covenant | knows. It always knows. | Trigger | Standing | Loss | Notes | Confirmed civilian casualties | −2 per | casualty | Witnesses who survive and go public count | as −3 instead | Supernatural event reported in media | −3 | Any press coverage of supernatural | phenomena linked to a case | Artifact lost
+
+--- Page 166 (2140 chars) ---
+  Preview: Reward | Min. | Standing | Effect | Tier 2 Upgrades Unlocked | 5 | Cell may begin establishing Tier 2 capabilities (see HQ | Upgrade Tree). DP cost unchanged. | CL 3 Requisition Access | 5 | During Equipping Phase, the entire cell may requisition | items up to CL 3 — even agents whose personal CL is still | 2. This does not change individual agents' personal CL | score; it raises the cell-wide equipping cap only. | Keep Rein
+
+--- Page 167 (2054 chars) *** ISSUE FOUND *** ---
+  >> [%header,cols="1,4"]
+
+--- Page 168 (3237 chars) ---
+  Preview: Rival Cell Standing: Track the rival cell’s Standing separately. If a rival cell reaches a Standing tier | higher than the player cell’s, the Covenant begins routing priority cases to the rival — the next case | the player cell receives is a leftover (roll Complication twice, keep both results). | === Rival Cell Interaction Mechanics | When the player cell and a rival cell intersect on the same Case File,
+
+--- Page 169 (2589 chars) *** ISSUE FOUND *** ---
+  >> [%header,cols="3,1,2"]
+  >> [%header,cols="3,1,2"]
+
+--- Page 170 (3187 chars) *** ISSUE FOUND *** ---
+  >> [%header,cols="2,4"]
+
+
+=== FULL PDF SEARCH: "%header" ===
+  Page 167: [%header,cols="1,4"]
+  Page 169: [%header,cols="3,1,2"]
+  Page 169: [%header,cols="3,1,2"]
+  Page 170: [%header,cols="2,4"]
+  Page 171: [%header,cols="2,1,4"]
+  Page 177: [%header,cols="1,4"]
+  Page 178: [%header,cols="^1,4"]
+  Page 179: [%header,cols="2,4"]
+  Page 183: [%header,cols="1,4"]
+  Page 185: [%header,cols="1,4"]
+  Page 186: [%header,cols="1,4"]
+  Page 189: [%header,cols="1,2,4"]
+  Page 190: [%header,cols="1,4"]
+  Page 190: [%header,cols="1,4"]
+  Page 191: [%header,cols="1,4"]
+  Page 191: [%header,cols="1,4"]
+  Page 194: [%header,cols="2,1,1,2,3"]
+  Page 196: [%header,cols="^1,4"]
+  Page 199: [%header,cols="1,3"]
+  Page 200: [%header,cols="1,4"]
+  Page 200: .Compact Milestone Template [%header,cols="1,3,3"]
+  Page 200: .Typical Compact Operative [%header,cols="1,1,1,1,1"]
+  Page 201: [%header,cols="1,4"]
+  Page 201: .Accord Milestone Template [%header,cols="1,3,3"]
+  Page 201: .Typical Accord Zealot [%header,cols="1,1,1,1,1"]
+  Page 202: [%header,cols="1,4"]
+  Page 202: .MJ-12 Milestone Template [%header,cols="1,3,3"]
+  Page 202: .Typical MJ-12 Field Agent [%header,cols="1,1,1,1,1"]
+  Page 203: [%header,cols="1,4"]
+  Page 204: .Consortium Milestone Template [%header,cols="1,3,3"]
+  Page 204: .Typical Consortium Operative (Private Security) [%header,cols="1,1,1,1,1"]
+  Page 205: [%header,cols="3,1,1,5"]
+  Page 206: [%header,cols="3,1,1,5"]
+  Page 207: [%header,cols="3,1,1,5"]
+  Page 209: [%header,cols="1,3"]
+  Page 210: [%header,cols="1,3"]
+  Page 211: [%header,cols="1,3"]
+  Page 214: [%header,cols="^1,1,1,1,1"]
+  Page 215: [%header,cols="^1,3"]
+  Page 224: [%header,cols="2,1,2"]
+  Page 226: [%header,cols="1,2,3"]
+  Page 227: [%header,cols="^1,4"]
+Total pages with "%header": 32
+Page numbers: [167, 169, 170, 171, 177, 178, 179, 183, 185, 186, 189, 190, 191, 194, 196, 199, 200, 201, 202, 203, 204, 205, 206, 207, 209, 210, 211, 214, 215, 224, 226, 227]
+
+=== SEARCH FOR RAW ASCIIDOC DIRECTIVES ===
+  "[%header" found on pages: [167, 169, 170, 171, 177, 178, 179, 183, 185, 186, 189, 190, 191, 194, 196, 199, 200, 201, 202, 203, 204, 205, 206, 207, 209, 210, 211, 214, 215, 224, 226, 227]
+  "[cols=" found on pages: [219, 220, 221, 222, 223, 224]
+  "options="header"": NOT FOUND
+  "[%autowidth": NOT FOUND
+  "[%footer": NOT FOUND
+  "include::": NOT FOUND
+
+=== PDF TOC / BOOKMARKS ===
+Total TOC entries: 15
+[L1] p1: Project Neon Relic
+[L1] p2: Table of Contents
+[L1] p5: Chapter 1. Introduction
+[L1] p12: Chapter 2. Field Report: The Holbrook Frequency
+[L1] p16: Chapter 3. Creating Your Agent
+[L1] p28: Chapter 4. Core Resolution Mechanics
+[L1] p38: Chapter 5. Attributes and Skills
+[L1] p47: Chapter 6. Combat
+[L1] p58: Chapter 7. Social Conflict
+[L1] p68: Chapter 8. Health, Damage, and Armor
+[L1] p85: Chapter 9. Corruption and Healing
+[L1] p98: Chapter 10. Covenant Divisions
+[L1] p117: Chapter 11. 1980s Equipment and Analog Gear
+[L1] p132: Chapter 12. Artifacts of Power and Doom
+[L1] p151: Chapter 13. Headquarters Management
+
+=== FILE TIMESTAMPS ===
+PDF modified: 2026-06-20 15:38:59.445492
+  00-front-matter.adoc: 2026-06-17 22:24:36.045246
+  01-introduction.adoc: 2026-06-20 20:38:00.326155
+  01b-opening-fiction.adoc: 2026-05-29 00:56:12.479718
+  02-character-creation.adoc: 2026-06-20 20:38:00.496956
+  03-core-resolution.adoc: 2026-06-20 20:38:00.542962
+  04-attributes-skills.adoc: 2026-06-20 20:38:00.554955
+  05-combat.adoc: 2026-06-20 20:38:00.564979
+  06-social-conflict.adoc: 2026-06-20 20:38:00.579804
+  07-health-damage-armor.adoc: 2026-06-20 20:38:00.588137
+  08-corruption-fear-healing.adoc: 2026-06-20 20:38:00.596443
+  09-divisions.adoc: 2026-06-20 20:38:00.606716
+  10-equipment.adoc: 2026-06-20 20:38:00.614011
+  11-artifacts.adoc: 2026-06-20 20:38:00.622015
+  12-headquarters.adoc: 2026-06-20 20:38:00.633298
+  13-advancement.adoc: 2026-06-20 20:38:00.649589
+  14-da-guidance.adoc: 2026-06-20 20:38:00.661607
+  15-case-file.adoc: 2026-06-20 20:38:00.674147
+  16-travel.adoc: 2026-06-20 20:38:00.694111
+  17-rival-factions.adoc: 2026-06-20 20:38:00.703094
+  18-notable-members.adoc: 2026-06-20 20:38:00.713585
+  19-bestiary.adoc: 2026-06-20 20:38:00.730571
+  20-sample-case-file.adoc: 2026-06-20 20:38:00.744235
+  21-glossary.adoc: 2026-06-17 22:24:36.052399
+  22-yze-license.adoc: 2026-04-01 23:25:27.743587
+  appendix-combat.adoc: 2026-06-20 20:38:00.759043
+  neon-relic.adoc: 2026-06-20 20:39:20.691025
+  build.ps1: 2026-04-01 00:26:28.466943
+
+=== CACHE CHECK ===
+  No cache: .asciidoctor
+  No cache: .asciidoctor-pdf
+  No cache: docs/.asciidoctor
+  No cache: docs/.asciidoctor-pdf
+  No cache: C:\Users\bruce/.asciidoctor
+  No cache: C:\Users\bruce/.asciidoctor-pdf
+
+=== DONE ===

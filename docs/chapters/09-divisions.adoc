@@ -59,7 +59,7 @@ Unless a Talent explicitly says otherwise, read these abilities as *scene-shapin
 
 The Verdant Covenant operates across *five continents* through a cellular structure designed to maintain operational secrecy. No single member — not even the most senior leadership — knows the full scope of the organization.
 
-[%header,cols="2,3,^1"]
+[cols="2,3,^1", options="header"]
 |===
 | Tier | Description | Approximate Count
 
@@ -169,7 +169,7 @@ All Wayfinders bear the *Verdant Codex*, an enchanted field journal for recordin
 
 The Research Wing is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -185,20 +185,20 @@ _Research personnel do not retrieve artifacts._ Once an artifact's existence and
 
 *Research Wing Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Pattern Recognition* | +1 Corruption | When examining a document, site, or artifact for the first time, identify one plausible connection to a previously catalogued case — the DA must reveal a useful lead, not the entire answer.
-| *Deep Archive Access* | +1 Corruption | Spend an action consulting restricted Covenant records. Gain +2 bonus dice on your next Lore or Investigate roll this scene.
-| *Methodical Review* _(Healing)_ | — | Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll.
+| *Pattern Recognition* | At-Will | +1 | When examining a document, site, or artifact for the first time, identify one plausible connection to a previously catalogued case — the DA must reveal a useful lead, not the entire answer.
+| *Deep Archive Access* | At-Will | 0 | Spend an action consulting restricted Covenant records. Gain +2 bonus dice on your next Lore or Investigate roll this scene.
+| *Methodical Review* _(Healing)_ | Per-Session | +1 | Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll.
 |===
 
 *Counterintelligence Wing*
 
 The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -214,26 +214,26 @@ Through the vigilance of the Counterintelligence Wing, the Covenant ensures that
 
 *Counterintelligence Wing Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Burned Asset* | +1 Corruption | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make an *Empathy (Psychoanalyze) roll at Difficulty 2* to see through it.
-| *Signal Intercept* | +1 Corruption | Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel.
-| *Compartmentalized Mind* _(Healing)_ | — | Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption.
+| *Burned Asset* | Per-Session | +1 | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make an *Empathy (Psychoanalyze) roll at Difficulty 2* to see through it.
+| *Signal Intercept* | Per-Session | +1 | Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel.
+| *Compartmentalized Mind* _(Healing)_ | Per-Session | +1 | Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption.
 |===
 
 === Wayfinder Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *The Antiquarian's Eye* | +1 Corruption | On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll.
-| *Ghost in the Machine* | +1 Corruption | Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference.
-| *The Hunch* | +1 Corruption | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
-| *Academic Grounding* _(Healing)_ | — | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
-| *Eldritch Empathy* | +1 Corruption | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
+| *The Antiquarian's Eye* | Per-Session | +1 | On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll.
+| *Ghost in the Machine* | Per-Session | +1 | Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference.
+| *The Hunch* | Per-Case-File | +2 | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully.
+| *Academic Grounding* _(Healing)_ | Per-Session | +1 | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally.
+| *Eldritch Empathy* | Per-Session | +1 | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity.
 |===
 
 == Division 2: The Recovery
@@ -285,7 +285,7 @@ Choose one paradigm that defines your agent's prior experience:
 
 Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -296,20 +296,20 @@ Former intelligence or special forces. Trained in infiltration, extraction, and 
 
 *Ex-Agency Operative Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Dead Drop Protocol* | +1 Corruption | Establish an instant covert information exchange with any NPC contact. Gain one actionable piece of intelligence from the DA without a roll.
-| *Exfiltration Specialist* | +1 Corruption | When retreating or extracting under fire, you and all allies within Short range gain +1 bonus die to their next Agility roll this round.
-| *Spycraft Discipline* _(Healing)_ | — | Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption.
+| *Dead Drop Protocol* | Per-Session | +1 | Establish an instant covert information exchange with any NPC contact. Gain one actionable piece of intelligence from the DA without a roll.
+| *Exfiltration Specialist* | At-Will | 0 | When retreating or extracting under fire, you and all allies within Short range gain +1 bonus die to their next Agility roll this round.
+| *Spycraft Discipline* _(Healing)_ | Per-Session | +1 | Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption.
 |===
 
 *Heavy-Hitter (Brawler)*
 
 Brute-force specialist. Comfortable in direct violent confrontation above all else.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -320,20 +320,20 @@ Brute-force specialist. Comfortable in direct violent confrontation above all el
 
 *Heavy-Hitter Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Wrecking Ball* | +1 Corruption | When attacking an inanimate object or structure (door, wall, barricade, vehicle), gain +3 bonus dice to the Force roll and inflict +2 damage on a success.
-| *Stand Your Ground* | +1 Corruption | Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating.
-| *Blunt Trauma Recovery* _(Healing)_ | — | Once per session, after winning a physical confrontation through brute force, heal 1 Corruption.
+| *Wrecking Ball* | Per-Session | +1 | When attacking an inanimate object or structure (door, wall, barricade, vehicle), gain +3 bonus dice to the Force roll and inflict +2 damage on a success.
+| *Stand Your Ground* | Per-Session | +1 | Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating.
+| *Blunt Trauma Recovery* _(Healing)_ | Per-Session | +1 | Once per session, after winning a physical confrontation through brute force, heal 1 Corruption.
 |===
 
 *Acquisition Specialist (Thief)*
 
 Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -344,27 +344,27 @@ Expert in bypassing security, stealing valuable objects, and getting in and out 
 
 *Acquisition Specialist Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Ghost Entry* | +1 Corruption | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, you may spend additional Corruption (1 per required success) to bypass it instead of rolling. Leave no trace of entry.
-| *The Long Con* | +1 Corruption | After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor.
-| *Clean Getaway* _(Healing)_ | — | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption.
+| *Ghost Entry* | Per-Case-File | +2 | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, you may spend additional Corruption (1 per required success) to bypass it instead of rolling. Leave no trace of entry.
+| *The Long Con* | Per-Session | +1 | After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor.
+| *Clean Getaway* _(Healing)_ | Per-Session | +1 | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption.
 |===
 
 === Recovery Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Conditioned Mind* | — | *Declare before you push the roll.* Once per session, you may push a roll and entirely ignore the +1 Corruption that pushing costs. The push happens normally; only the Corruption is negated. This is not retroactive — if you push without declaring Conditioned Mind first, the Corruption is already spent.
-| *Unstoppable Force* | +1 Corruption | Your next successful melee or unarmed attack inflicts +2 damage.
-| *Shadow Walker* | +1 Corruption | For the duration of a scene, you are entirely imperceptible to *mundane* guards and cameras — they do not see you, register you on film, or notice your presence. *Limitations:* (1) Attacking breaks the effect immediately and it cannot be reactivated this scene. (2) Speaking to, touching, or otherwise interacting with an NPC in a way that demands acknowledgment breaks the effect for that NPC only. (3) Supernatural perception (entities with non-human senses, artifact-enhanced security, possessed observers) is not fooled — Shadow Walker only bypasses mundane human and electronic detection.
-| *Adrenaline Junkie* | — | When your *Strength has taken at least 1 point of damage* (i.e., your current Strength is below your starting score), gain +2 bonus dice to all Agility rolls. This bonus applies for as long as your Strength remains below its normal value and disappears once Strength is fully healed.
-| *Gallows Humor* _(Healing)_ | — | Once per session, *immediately after a combat encounter ends* (all hostiles are neutralized, fled, or surrendered), crack a dark joke about what just happened. You and all allies who can *hear you* (same zone or adjacent zone) heal 1d4 Corruption. "Surviving" means the encounter ended without the team being captured or forced to flee the scene. This talent cannot trigger during a chase or while combat is ongoing.
-| *Combat Reflexes* | — | When initiative cards are drawn, draw two cards and keep one. Discard the other face-down. Alternatively, after all cards are drawn, you may swap your initiative card with a willing ally's card.
+| *Conditioned Mind* | Per-Session | 0 | *Declare before you push the roll.* Once per session, you may push a roll and entirely ignore the +1 Corruption that pushing costs. The push happens normally; only the Corruption is negated. This is not retroactive — if you push without declaring Conditioned Mind first, the Corruption is already spent.
+| *Unstoppable Force* | Per-Session | +1 | Your next successful melee or unarmed attack inflicts +2 damage.
+| *Shadow Walker* | Per-Case-File | +2 | For the duration of a scene, you are entirely imperceptible to *mundane* guards and cameras — they do not see you, register you on film, or notice your presence. *Limitations:* (1) Attacking breaks the effect immediately and it cannot be reactivated this scene. (2) Speaking to, touching, or otherwise interacting with an NPC in a way that demands acknowledgment breaks the effect for that NPC only. (3) Supernatural perception (entities with non-human senses, artifact-enhanced security, possessed observers) is not fooled — Shadow Walker only bypasses mundane human and electronic detection.
+| *Adrenaline Junkie* | At-Will | 0 | When your *Strength has taken at least 1 point of damage* (i.e., your current Strength is below your starting score), gain +2 bonus dice to all Agility rolls. This bonus applies for as long as your Strength remains below its normal value and disappears once Strength is fully healed.
+| *Gallows Humor* _(Healing)_ | Per-Case-File | +2 | Once per session, *immediately after a combat encounter ends* (all hostiles are neutralized, fled, or surrendered), crack a dark joke about what just happened. You and all allies who can *hear you* (same zone or adjacent zone) heal 1d4 Corruption. "Surviving" means the encounter ended without the team being captured or forced to flee the scene. This talent cannot trigger during a chase or while combat is ongoing.
+| *Combat Reflexes* | Per-Session | 0 | When initiative cards are drawn, draw two cards and keep one. Discard the other face-down. Alternatively, after all cards are drawn, you may swap your initiative card with a willing ally's card.
 |===
 
 == Division 3: The Keep
@@ -405,7 +405,7 @@ The Catalogers are responsible for the documentation, classification, and contai
 
 The Department also designs containment chambers tailored to each artifact's characteristics: sealed vaults, protective casings, environmental stabilization systems, isolation chambers, or other specialized safeguards. Catalogers conduct periodic inspections to verify that artifacts remain secure and containment measures remain effective.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -416,13 +416,13 @@ The Department also designs containment chambers tailored to each artifact's cha
 
 *Cataloger Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Hazard Classification* | +1 Corruption | Upon first contact with an unknown artifact, instantly determine its danger rating (Inert / Active / Volatile / Catastrophic) and one primary containment requirement — no roll needed.
-| *Registry Cross-Reference* | +1 Corruption | Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item. The DA must reveal one actionable link.
-| *Archival Calm* _(Healing)_ | — | Spend a Shift updating the artifact registry with new findings. Heal 1 Corruption and grant one ally who contributed field data +1 bonus die on their next Lore roll.
+| *Hazard Classification* | Per-Session | +1 | Upon first contact with an unknown artifact, instantly determine its danger rating (Inert / Active / Volatile / Catastrophic) and one primary containment requirement — no roll needed.
+| *Registry Cross-Reference* | Per-Session | +1 | Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item. The DA must reveal one actionable link.
+| *Archival Calm* _(Healing)_ | Per-Session | +1 | Spend a Shift updating the artifact registry with new findings. Heal 1 Corruption and grant one ally who contributed field data +1 bonus die on their next Lore roll.
 |===
 
 *The Wardens*
@@ -435,7 +435,7 @@ The Wardens serve as the defensive arm of the Keep. They are responsible for the
 * Coordinating with Counterintelligence on infiltration threats
 * Conducting field operations to disrupt hostile activities or recover stolen property when credible threats emerge
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -451,20 +451,20 @@ Through the actions of the Wardens, the Verdant Covenant ensures that what is co
 
 *Warden Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Lockdown* | +1 Corruption | Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without making a *Strength (Force) roll at Difficulty 2*.
-| *Threat Assessment* | +1 Corruption | When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it.
-| *Sentinel's Vigil* _(Healing)_ | — | Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption.
+| *Lockdown* | Per-Session | +1 | Seal a room, corridor, or building entrance. No entity — mundane or supernatural — may pass through it for one full round without making a *Strength (Force) roll at Difficulty 2*.
+| *Threat Assessment* | Per-Session | +1 | When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it.
+| *Sentinel's Vigil* _(Healing)_ | Per-Session | +1 | Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption.
 |===
 
 *Internal Counterintelligence*
 
 Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -475,13 +475,13 @@ Working in coordination with the Wayfinder Division's Counterintelligence Wing, 
 
 *Internal CI Talents (Choose 1 at Creation)*
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Silent Audit* | +1 Corruption | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail. This talent can target anyone, including fellow Covenant agents, though doing so may have consequences.
-| *Loyalty Test* | +1 Corruption | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence.
-| *Debriefing Protocol* _(Healing)_ | — | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
+| *Silent Audit* | Per-Case-File | +2 | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail. This talent can target anyone, including fellow Covenant agents, though doing so may have consequences.
+| *Loyalty Test* | Per-Session | +1 | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence.
+| *Debriefing Protocol* _(Healing)_ | Per-Session | +1 | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption.
 |===
 
 [[stack-logistics]]
@@ -500,7 +500,7 @@ Stack is *not* a separate playable Division. Agents choose *The Keep* at charact
 
 Stack agents design, modify, and distribute the tools used by Covenant agents — from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Specialty | Description
 
@@ -516,28 +516,28 @@ Stack agents design, modify, and distribute the tools used by Covenant agents �
 *Design note — talent count:* Stack has six talent options compared to three for every other sub-unit. This is intentional. Stack's role is the most operationally broad of any Keep department — covering logistics, repair, modification, invention, and field support. The wider talent list reflects Stack's unique position as the Covenant's primary technical backbone, with different agents specializing in very different aspects of the department's work.
 ====
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item without spending from your CL Pool. This item is in addition to your normal CL-pool allocation. You may still make an above-CL requisition roll for a different item if desired.
-| *Jury-Rig* | +1 Corruption | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
-| *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
-| *Duct Tape & WD-40* _(Healing)_ | — | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
-| *Experimental Shielding* | +1 Corruption | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
-| *Redundant Safeties* | — | Passive. Your Maximum Corruption Threshold increases by 2 (to 12 + Empathy). Years of handling unstable prototypes have hardened your psyche.
+| *Requisition Expert* | At-Will | 0 | During the Equipping Phase, automatically acquire any one non-artifact item without spending from your CL Pool. This item is in addition to your normal CL-pool allocation. You may still make an above-CL requisition roll for a different item if desired.
+| *Jury-Rig* | Per-Session | +1 | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
+| *Prototyper* | Per-Session | +1 | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
+| *Duct Tape & WD-40* _(Healing)_ | Per-Session | +1 | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
+| *Experimental Shielding* | Per-Session | +1 | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die.
+| *Redundant Safeties* | At-Will | 0 | Passive. Your Maximum Corruption Threshold increases by 2 (to 12 + Empathy). Years of handling unstable prototypes have hardened your psyche.
 |===
 
 === Keep Talents (Choose 1 at Creation)
 
-[%header,cols="2,1,4"]
+[cols="2,1,1,3", options="header"]
 |===
-| Talent | Cost | Effect
+| Talent | Frequency | Corruption | Effect
 
-| *Containment Protocol* | +1 Corruption | Spend a Fast Action improvising a ward using mundane materials (salt, copper wire, chalk markings). Make a *Lore (WIT) roll at Difficulty 1* to set it. On success, any supernatural entity must make a *Force (STR) roll at Difficulty 2* to cross the ward. On failure, the ward still goes up but lasts only one round. The ward persists until an entity breaks through it or the scene ends.
-| *Shield of the Covenant* | +1 Corruption | When an ally within *Engaged range* is attacked, you may step in front of the blow as a Reactive Fast Action. You take the damage instead of your ally. Halve the damage you take (round down, minimum 1). Your armor applies normally against the redirected attack.
-| *The Inquisitor's Gaze* | +1 Corruption | While conversing with someone, instantly know their current Corruption score and whether they are *possessed* (defined as: under active supernatural domination by an entity — their will is overridden, not merely influenced). This does not detect high-Corruption individuals who are acting of their own will, only those actively controlled. The target does not know you used this talent.
-| *Medical Training* | — | Spend a Slow Action and make a *Heal (WIT) roll at Difficulty 2* before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls — those are separate emergency Heal actions.
-| *Sanctuary Master* | — | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a *registered* artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers — unknown or newly recovered artifacts require a normal Lore roll.
-| *The Confessor* _(Healing)_ | — | Spend a quiet moment outside combat listening to one ally share a fear, a failing, or a burden they have been carrying. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
+| *Containment Protocol* | Per-Session | +1 | Spend a Fast Action improvising a ward using mundane materials (salt, copper wire, chalk markings). Make a *Lore (WIT) roll at Difficulty 1* to set it. On success, any supernatural entity must make a *Force (STR) roll at Difficulty 2* to cross the ward. On failure, the ward still goes up but lasts only one round. The ward persists until an entity breaks through it or the scene ends.
+| *Shield of the Covenant* | Per-Session | +1 | When an ally within *Engaged range* is attacked, you may step in front of the blow as a Reactive Fast Action. You take the damage instead of your ally. Halve the damage you take (round down, minimum 1). Your armor applies normally against the redirected attack.
+| *The Inquisitor's Gaze* | Per-Case-File | +2 | While conversing with someone, instantly know their current Corruption score and whether they are *possessed* (defined as: under active supernatural domination by an entity — their will is overridden, not merely influenced). This does not detect high-Corruption individuals who are acting of their own will, only those actively controlled. The target does not know you used this talent.
+| *Medical Training* | Per-Session | +1 | Spend a Slow Action and make a *Heal (EMP) roll at Difficulty 2* before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls — those are separate emergency Heal actions.
+| *Sanctuary Master* | At-Will | 0 | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a *registered* artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers — unknown or newly recovered artifacts require a normal Lore roll.
+| *The Confessor* _(Healing)_ | Per-Case-File | +2 | Spend a quiet moment outside combat listening to one ally share a fear, a failing, or a burden they have been carrying. Both you and the ally heal *1d4 Corruption*. *Limit:* once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed — partial confessions or trivial admissions don't count.
 |===

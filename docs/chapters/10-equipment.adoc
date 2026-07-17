@@ -13,7 +13,7 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 
 == Investigative & Paranormal Tech
 
-[%header,cols="2,4,^1,^1"]
+[cols="2,4,^1,^1", options="header"]
 |===
 | Item | Gear Bonus & Effect | Enc. | CL
 
@@ -28,7 +28,7 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 
 == Standard Tools & Survival Gear
 
-[%header,cols="2,4,^1,^1"]
+[cols="2,4,^1,^1", options="header"]
 |===
 | Item | Gear Bonus & Effect | Enc. | CL
 
@@ -43,7 +43,7 @@ To reflect the covert nature of the Covenant, characters do not use personal cas
 
 Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rating. All mundane weapons deal *Physical (STR)* damage unless noted otherwise.
 
-[%header,cols="2,^1,^1,1,1,3,^1"]
+[cols="2,^1,^1,1,1,3,^1", options="header"]
 |===
 | Weapon | Gear Bonus | Damage | Type | Range | Special Traits | CL
 
@@ -58,7 +58,7 @@ Weapons provide a Gear Bonus (added to Firearms or Brawl) and a flat Damage rati
 
 == Armor
 
-[%header,cols="2,^1,^1,3,^1"]
+[cols="2,^1,^1,3,^1", options="header"]
 |===
 | Armor | Rating | Enc | Special | CL
 
@@ -83,7 +83,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 
 *At d4, a result of 1–2:* The supply is *depleted*. Remove the resource from the character's gear. The activity is completed (if mid-scene), but no more uses remain.
 
-[%header,cols="^1,3"]
+[cols="^1,3", options="header"]
 |===
 | Die | Supply Level
 
@@ -110,7 +110,7 @@ Supplies can be restocked:
 *Ammunition is NOT tracked here.* Ammo is tracked exclusively using the Ammo Die system in xref:chapters/05-combat.adoc#chapter-combat[Ch 5 — Combat] (rolling after every turn fired). There is no separate scene-level Resource Die for ammunition — those rows are removed. The Supply Categories table below covers non-ammo consumables only.
 ====
 
-[%header,cols="2,^1,^1,3"]
+[cols="2,^1,^1,3", options="header"]
 |===
 | Supply | Starting Die | CL | Notes
 
@@ -140,7 +140,7 @@ Every agent can carry a limited amount of gear before it slows them down. Encumb
 
 === Encumbrance Scale
 
-[%header,cols="^1,3"]
+[cols="^1,3", options="header"]
 |===
 | Enc. | Examples
 
@@ -181,7 +181,7 @@ Every item lists a *Clearance Level (CL)* requirement. CL governs *equipment req
 
 Agents requisition gear during the *Equipping Phase* between Case Files through their Division's Stack contact. Your character's current CL determines which items you can request:
 
-[%header,cols="^1,3"]
+[cols="^1,3", options="header"]
 |===
 | CL | Who Can Access
 
@@ -274,7 +274,7 @@ Each vehicle has five stats:
 
 === 1980s Vehicle Roster
 
-[%header,cols="2,^1,^1,^1,^1,2"]
+[cols="2,^1,^1,^1,^1,2", options="header"]
 |===
 | Vehicle | Speed | AR | Reliability | Handling | Capacity & Notes
 
@@ -372,7 +372,7 @@ Repairing gear requires **time**, **parts**, and a **Tech** roll.
 | *Tools Required* | Basic toolkit (most repairs); specialized kit for electronics/artifacts
 |===
 
-[%header,cols="2,1,2,3"]
+[cols="2,1,2,3", options="header"]
 |===
 | Condition | Gear Bonus | Repair Diff | Time Required
 
@@ -406,7 +406,7 @@ scavenged or on-hand parts). Roll the Junk Die after completing repairs:
 - **Junk Die Exhausted:** No spare parts of that type remain. Acquire more (see
   <<component-sourcing>>).
 
-[%header,cols="2,1,3"]
+[cols="2,1,3", options="header"]
 |===
 | Parts Category | Resource Die | Used For
 
@@ -434,7 +434,7 @@ junkyard, abandoned building, mechanic's garage), an agent may spend a
 - **Success:** Find d6 uses worth of Junk/Scrap (or roll on Scavenge table below).
 - **Extra Successes (2+):** Upgrade the find to Hardware Components instead of Junk.
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Scavenge Location | Typical Find (d6)
 
@@ -473,7 +473,7 @@ minimum a **Junk Die (d6)** as parts; step it down after crafting.
 Improvised items begin with *Gear Bonus 1* (one black d6 in the pool — never
 more, they're held together with duct tape and prayer).
 
-[%header,cols="2,1,1,4"]
+[cols="2,1,1,4", options="header"]
 |===
 | Improvised Item     | Tech Diff | Time | Notes
 
@@ -498,7 +498,7 @@ more, they're held together with duct tape and prayer).
 When a Gear Die on an improvised item comes up **1**, it does not simply reduce Gear Bonus —
 the item fails outright. Roll on the following table:
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | d6 | Improvised Item Failure
 
@@ -524,7 +524,7 @@ gives Stack agents mechanical advantages no other Division matches.
 These are *background advantages* intrinsic to Stack training — always active, no activation cost. They do not replace or conflict with Stack's *activated talents* (Jury-Rig, Prototyper, Duct Tape & WD-40, etc.) from xref:chapters/09-divisions.adoc#chapter-divisions[Ch 9]. Both apply independently.
 ====
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Advantage | Effect
 

@@ -10,7 +10,7 @@ This appendix collects situational combat rules that most sessions will not use.
 
 Ammunition is tracked using a *Resource Die*. When you acquire a weapon or reload, set its ammo die based on the weapon type and current magazine state:
 
-[%header,cols="2,1,2"]
+[cols="2,1,2", options="header"]
 |===
 | Ammo State | Die | Notes
 
@@ -100,7 +100,7 @@ Vehicle conflict follows the same chase structure as foot chases (<<chase-and-pu
 
 Vehicle conflict uses a *Contact Track* — a 5-step range distinct from the foot-chase position track:
 
-[%header,cols="^1,3"]
+[cols="^1,3", options="header"]
 |===
 | Position | State
 
@@ -135,7 +135,7 @@ Both sides roll simultaneously. The side with more successes moves the Contact T
 
 Declare before rolling. No cost unless noted.
 
-[%header,cols="1,2,3"]
+[cols="1,2,3", options="header"]
 |===
 | Maneuver | Skill | Effect
 
@@ -168,7 +168,7 @@ When a vehicle takes damage (from ramming, gunfire, or environmental hazard):
 
 When Reliability reaches 5 Wear, the vehicle stops. Roll d6:
 
-[%header,cols="^1,4"]
+[cols="^1,4", options="header"]
 |===
 | Roll | Breakdown Type
 

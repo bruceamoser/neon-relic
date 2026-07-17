@@ -1,0 +1,138 @@
+﻿asciidoctor-pdf.bat : asciidoctor: WARNING: chapters/09-divisions.adoc: line 22: section title out of sequence: 
+expected level 2, got level 3
+At line:1 char:11
++ $output = & asciidoctor-pdf docs/neon-relic.adoc -o starter-kit/test- ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (asciidoctor: WA... 2, got level 3:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+asciidoctor: WARNING: chapters/09-divisions.adoc: line 58: section title out of sequence: expected level 2, got level 3
+asciidoctor: WARNING: chapters/09-divisions.adoc: line 89: section title out of sequence: expected level 2, got level 3
+asciidoctor: ERROR: chapters/12-headquarters.adoc: line 380: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/12-headquarters.adoc: line 408: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/13-advancement.adoc: line 21: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/13-advancement.adoc: line 31: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/13-advancement.adoc: line 64: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/13-advancement.adoc: line 101: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/13-advancement.adoc: line 183: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/14-da-guidance.adoc: line 120: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/14-da-guidance.adoc: line 310: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/14-da-guidance.adoc: line 330: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/14-da-guidance.adoc: line 365: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/14-da-guidance.adoc: line 392: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 104: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 178: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 202: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 381: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 420: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 451: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 575: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 633: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 651: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 669: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 687: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/15-case-file.adoc: line 705: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/16-travel.adoc: line 45: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/16-travel.adoc: line 102: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/16-travel.adoc: line 146: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 29: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 64: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 84: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 95: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 101: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 121: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 132: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 138: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 158: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 169: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 175: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 207: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 218: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/17-rival-factions.adoc: line 224: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/18-notable-members.adoc: line 34: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/18-notable-members.adoc: line 54: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/18-notable-members.adoc: line 67: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 305: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 378: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 427: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 469: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 519: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 740: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 783: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/19-bestiary.adoc: line 816: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/20-sample-case-file.adoc: line 75: table missing leading separator; recovering 
+automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 19: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 27: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 40: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 58: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 65: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 77: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 85: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 93: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 101: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 108: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 115: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 123: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 133: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 142: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 153: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 160: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 168: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 175: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/21-glossary.adoc: line 182: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/appendix-combat.adoc: line 25: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/appendix-combat.adoc: line 114: table missing leading separator; recovering automatically
+asciidoctor: ERROR: chapters/appendix-combat.adoc: line 149: table missing leading separator; recovering automatically
+asciidoctor: WARNING: chapters/appendix-combat.adoc: line 178: unterminated table block
+asciidoctor: ERROR: chapters/appendix-combat.adoc: line 180: table missing leading separator; recovering automatically
+asciidoctor: ERROR: the table cell on page 170 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 176 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 178 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 182 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 184 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 186 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 189 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 195 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 200 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: cannot fit contents of table cell into specified column width
+asciidoctor: ERROR: the table cell on page 210 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 214 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 214 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 214 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 214 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 218 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 220 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 227 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page
+asciidoctor: ERROR: the table cell on page 230 has been truncated; Asciidoctor PDF does not support table cell content 
+that exceeds the height of a single page

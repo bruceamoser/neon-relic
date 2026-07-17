@@ -14,6 +14,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Anchor* | A physical object linked to a humanizing memory. Once per session, a character may interact with their Anchor to heal 1d4 Corruption. See xref:chapters/08-corruption-fear-healing.adoc#_anchors[Anchors].
 | *Armor Rating* | The number of Gear dice rolled to absorb incoming damage. Each 6 rolled cancels one point of damage. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 | *Attribute Dice* | White dice in the pool, equal to the relevant Attribute score (Strength, Agility, Wits, or Empathy). See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
+| *At-Will* | A talent usage frequency. At-will talents can be activated any number of times, paying the listed Corruption cost for each activation. Passive talents (no activation required) are always at-will. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 |===
 
 == B
@@ -51,7 +52,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 | *Disposition* | An NPC's current openness to engagement in Social Conflict, tracked from 1 (Closed) to 5 (Open). At Disposition 3 or higher, direct low-risk questions are answered without a roll; social rolls are reserved for sensitive disclosures or requests against self-interest. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict].
 | *Division* | Character class within the Verdant Covenant. The three playable Divisions are Wayfinder (research/intelligence), Recovery (field retrieval), and The Keep (vault security, custody, and logistics). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 | *Division Item* | A signature supernatural object issued to every member of a Division. Wayfinder: Verdant Codex. Recovery: Verdant Satchel. Keep: Warden's Bracer. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
-| *Division Talent* | A class-specific ability unique to one Division. Costs +1 Corruption to activate (most talents). See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
+| *Division Talent* | A class-specific ability unique to one Division. Costs +1 to +2 Corruption to activate depending on impact. Usage frequency (at-will, per-session, or per-case-file) determines how often it can be activated. See xref:chapters/09-divisions.adoc#chapter-divisions[Divisions].
 | *Dying* | State when a Broken character has an active Death Check Critical Injury (result marked †) that has not yet been resolved. An untreated Dying character will die. See xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].
 |===
 
@@ -60,7 +61,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Equipping Phase* | A formal between-case step where agents requisition gear from Stack using their CL Pool (point-buy: sum of item CLs ≤ personal CL). Above-CL items require a 1d6 roll (success on 6; Stack agents succeed on 5–6). All requisitioned items are returned at case end. See xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear] and xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each Case File through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+| *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each session through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. XP is tracked as three values: *Total XP* (lifetime earned), *XP Spent* (cumulative purchases), and *Current XP* (Total − Spent, available to spend). See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 |===
 
 == F
@@ -126,6 +127,8 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Panic Table* | A d6 table rolled on Fear check failure. Determines the character's involuntary response: Fight (1), Flight (2), Freeze (3), Denial (4), Compulsion (5), or Fugue (6). See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
+| *Per-Case-File* | A talent usage frequency. Per-case-file talents have limited uses that reset at the start of each new Case File via Case File Reset. Reserved for the most powerful, case-altering talents. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
+| *Per-Session* | A talent usage frequency. Per-session talents have limited uses that reset at the start of each new play session via Session Reset. Most Medium-impact talents use this frequency. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
 | *Shift Row* | The top row of the Operations Board. Each day-column is quartered into Morning / Day / Evening / Night. Tracks time spent and relic escalation — relic milestones trigger when the DA fills a shift quadrant that crosses a milestone day. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Push* | Re-roll all non-6 dice after a roll fails to meet its Difficulty, or after a success when you want more successes. Costs +1 Corruption. Each roll may only be pushed once. Gear dice that show 1 on the push cause degradation. See xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution].
 | *Psychoanalyze* | A skill used to read psychological states, detect deception, stabilize distressed people during social scenes, and treat mental and emotional Critical Injuries. See xref:chapters/06-social-conflict.adoc#chapter-social-conflict[Social Conflict] and xref:chapters/07-health-damage-armor.adoc#chapter-health[Health, Damage & Armor].

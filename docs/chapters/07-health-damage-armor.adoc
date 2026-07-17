@@ -7,7 +7,7 @@ In the Year Zero Engine, characters do not possess a traditional, escalating poo
 
 Every source of damage specifies its type and target attribute. The attack defines the damage, not the defender.
 
-[%header,cols="2,2,4"]
+[cols="2,2,4", options="header"]
 |===
 | Damage Type | Target | Sources
 
@@ -66,7 +66,7 @@ Being *Broken* is not the same as being dead. Death is a separate, subsequent ev
 
 === The Three States
 
-[%header,cols="1,2,4"]
+[cols="1,2,4", options="header"]
 |===
 | State | Status | What It Means
 
@@ -83,7 +83,7 @@ A *Death Check* is a single d6 roll. It is required whenever a Critical Injury i
 * *1–2:* The character dies.
 * *3–6:* The character survives — the Critical Injury still applies and must be treated, but they cling to life.
 
-*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (WIT) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+1 instead of d6 (death only on a natural 1 — result 2 on the table). On failure: no change; Death Check proceeds normally.
+*Medical Training Talent (Keep):* An ally with Medical Training may spend a Slow Action to make a *Heal (EMP) roll (Difficulty 2)* before the Death Check is rolled. On success: the dying character rolls d6+1 instead of d6 (death only on a natural 1 — result 2 on the table). On failure: no change; Death Check proceeds normally.
 
 === The Stabilization Window
 
@@ -97,7 +97,7 @@ A Broken character who has rolled a Death-Check result (†) has a limited windo
 
 To stabilize a Dying ally during the stabilization window:
 
-* *Skill:* Heal (WIT)
+* *Skill:* Heal (EMP)
 * *Action:* Slow Action
 * *Requirements:* A First Aid Kit (+1 Gear Bonus to Heal, Resource Die d10 — see xref:chapters/10-equipment.adoc#chapter-equipment[Equipment]) must be present and not exhausted. Without one, the Heal roll is made at −2 dice: −1 from the missing Gear Bonus, and −1 additional penalty for improvising without supplies.
 * *Difficulty:* 2 (normal), 3 (if Gutted or Arterial Strike), 4 (if DOA attempted mid-round)
@@ -119,7 +119,7 @@ When a character dies:
 
 . *Gear returns to Stack.* Division equipment, the Division Signature Item (Verdant Codex, Warden's Bracer, etc.), and all Covenant-issued gear are logged and returned at the end of the Case File.
 . *Covenant notification.* The character is officially listed as *Fallen in the Line of Duty*. The circumstances are filed — truthfully or not, at the surviving team's discretion.
-. *Character replacement.* A new character enters play at the start of the next Case File. They begin with the same XP total as the lowest-XP surviving member of the team (minimum: the character creation baseline values as defined in xref:chapters/02-character-creation.adoc#chapter-creation[Character Creation]). If a character dies *mid-Case-File*, the DA may introduce the replacement at a narratively appropriate moment in the same mission — a Covenant backup team, a local contact activated as emergency support, or a specialist from HQ. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for XP totals and spending.
+. *Character replacement.* A new character enters play at the start of the next Case File. They begin with the same *Total XP* as the lowest-Total-XP surviving member of the team, with *Spent XP reset to 0* — the new agent allocates their own purchases (minimum: the character creation baseline values as defined in xref:chapters/02-character-creation.adoc#chapter-creation[Character Creation]). If a character dies *mid-Case-File*, the DA may introduce the replacement at a narratively appropriate moment in the same mission — a Covenant backup team, a local contact activated as emergency support, or a specialist from HQ. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for the three-track XP model and spending rules.
 . *Legacy.* The deceased character's player chooses one lasting effect: a significant item the new character carries (with DA permission), an NPC connection inherited, or a reputation within the Covenant that precedes them.
 
 === Corruption Death vs. Physical Death
@@ -155,7 +155,7 @@ Some results are marked *†* (Death Check). When you roll one, roll a single d6
 * On a *1–2:* Your character dies.
 * On a *3–6:* You survive — barely. The Critical Injury still applies.
 
-A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (WIT)* roll (Difficulty 2) to give a dying ally *+1 to their death check die* before it's rolled (effectively making death only on a natural 1 — result 2 on the table).
+A character with *Medical Training* (Keep talent) may spend a Slow Action making a *Heal (EMP)* roll (Difficulty 2) to give a dying ally *+1 to their death check die* before it's rolled (effectively making death only on a natural 1 — result 2 on the table).
 
 ---
 
@@ -186,7 +186,7 @@ When a character rolls a Critical Injury, their Broken Attribute *remains at 0* 
 
 Roll when Broken by *Strength or Agility* damage.
 
-[%header,cols="^1,2,4,3"]
+[cols="^1,2,4,3", options="header"]
 |===
 | D66 | Injury | Mechanical Effect | Healing
 
@@ -236,7 +236,7 @@ Roll when Broken by *Wits or Empathy* damage. Mental criticals always gain Corru
 
 > *All mental criticals:* Gain *+1 Corruption* upon rolling this table, in addition to any listed in the individual result. This +1 applies *once per Broken event*, not per roll — rerolls triggered by Veil Madness (result 63) or similar effects do not trigger the +1 again. Accumulate all Corruption from the sequence and check the threshold once at the end (Step 3 of Simultaneous Injury Resolution).
 
-[%header,cols="^1,2,4,3"]
+[cols="^1,2,4,3", options="header"]
 |===
 | D66 | Injury | Mechanical Effect | Recovery
 
@@ -304,7 +304,7 @@ Attributes damaged during play (by physical or mental damage) recover over time.
 
 === Standard Recovery
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Recovery Type | Attributes Restored | Conditions
 
@@ -319,7 +319,7 @@ An attribute at 0 (Broken state) cannot recover through rest alone — the damag
 
 To recover from Broken:
 
-. An ally must succeed on a *Heal (WIT) roll, Difficulty 2* (First Aid Kit required).
+. An ally must succeed on a *Heal (EMP) roll, Difficulty 2* (First Aid Kit required).
 . On success, the Broken attribute is restored to *1*. The character is no longer Broken.
 . This takes a *full Shift* and requires the character to rest without interruption.
 . Each failed Heal attempt still requires the Shift of rest before retrying.

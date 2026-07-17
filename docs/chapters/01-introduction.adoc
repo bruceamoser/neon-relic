@@ -66,7 +66,7 @@ The Covenant believes this numerical balance acts as a metaphysical anchor, keep
 
 Within the Covenant there are *three Divisions*, each responsible for a different stage of the artifact lifecycle:
 
-[%header,cols="2,3,5"]
+[cols="2,3,5", options="header"]
 |===
 | Division | Motto Segment | Purpose
 
@@ -86,6 +86,36 @@ Within the Covenant there are *three Divisions*, each responsible for a differen
 [NOTE]
 ====
 *Note on Stack:* The Keep's Department of Logistics -- informally known as *"Stack"* -- has a strong field identity, but it is still part of *The Keep*, not a fourth playable Division. See xref:chapters/09-divisions.adoc#stack-logistics[Stack (Logistics)] for details.
+====
+
+=== Document Classification
+
+The Verdant Covenant classifies all documents, intelligence, and operational materials into one of four classification tiers. These appear throughout this rulebook on part dividers and are referenced in Case File documents:
+
+[cols="2,1,4", options="header"]
+|===
+| Classification | Minimum Clearance | Who May Access
+
+| *Unrestricted*
+| None
+| All Covenant personnel. This covers public-facing operational doctrine, basic organizational structure, and agent onboarding materials.
+
+| *Restricted*
+| CL 1+
+| Operational personnel assigned to active Case Files. Includes field reports, location files, NPC dossiers, and tactical assessments.
+
+| *Secret*
+| CL 2+
+| Agents with verified need-to-know. Includes Division-specific capabilities, artifact containment profiles, headquarters schematics, and detailed Covenant Standing records.
+
+| *Top Secret*
+| CL 4+
+| Director of Agents and senior Covenant leadership only. Includes faction intelligence assessments, artifact origin theories, and sensitive historical records. Distribution to players is expressly prohibited.
+|===
+
+[NOTE]
+====
+*For Players:* Classification tags on rulebook part dividers indicate the intended audience. Parts labeled _Restricted_, _Secret_, or _Top Secret_ contain information your agent may not know at character creation — read them at your DA's discretion, not your own curiosity.
 ====
 
 === Quick Response Teams
@@ -120,7 +150,7 @@ Flexibility is the point.
 
 The quality of QRT assignments reflects the team's Covenant Standing:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Standing | Assignment Quality
 
@@ -162,7 +192,7 @@ A typical Neon Relic session follows a structured rhythm: the team spends *shift
 
 Each in-game day is divided into four *shifts*:
 
-[%header,cols="1,2"]
+[cols="1,2", options="header"]
 |===
 | Shift | Approximate Time
 
@@ -178,7 +208,7 @@ During each shift, the team undertakes *one primary action* as a group. The DA a
 
 The team chooses one action per shift:
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Action | What It Does
 
