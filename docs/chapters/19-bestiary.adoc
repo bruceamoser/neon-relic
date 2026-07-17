@@ -292,7 +292,7 @@ with the artifact.
 
 For quick reference when building encounters:
 
-[%header,cols="^1,1,2,1"]
+[cols="^1,1,2,1", options="header"]
 |===
 | Tier | Label | Description | Typical Strength
 
@@ -360,7 +360,7 @@ a client waiting. The agents are the only variable they didn't plan for.
 
 === The Mire (Psychic Contamination Zone)
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Attribute | Value
 
@@ -409,7 +409,7 @@ means. It can be dispersed by:
 
 === The Hollow
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Attribute | Value
 
@@ -451,7 +451,7 @@ removed.
 
 === The Listening
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Attribute | Value
 
@@ -501,7 +501,7 @@ Tech roll (Difficulty 3) to disrupt its signal network.
 
 === Fracture Wraith
 
-[%header,cols="1,3"]
+[cols="1,3", options="header"]
 |===
 | Attribute | Value
 
@@ -727,7 +727,7 @@ Collectors should not appear in every Case File. One Collector per campaign arc 
 
 The Corruption thresholds from xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] apply to NPCs as well as agents. For simplicity, the DA tracks NPC corruption with a three-stage shorthand:
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Stage | Corruption | Behavior
 
@@ -770,7 +770,7 @@ Choose the entity's Tier from the NPC Tier Reference table. Named Threats requir
 
 Use the following baselines as starting points:
 
-[%header,cols="^1,1,1,1,1"]
+[cols="^1,1,1,1,1", options="header"]
 |===
 | Tier | STR | AGI | WIT | EMP
 
@@ -803,7 +803,7 @@ Limit special abilities by tier:
 
 === Step 5 — Set Burst Rating
 
-[%header,cols="^1,3"]
+[cols="^1,3", options="header"]
 |===
 | Rating | When to Use
 

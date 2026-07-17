@@ -56,7 +56,7 @@ When an agent activates an artifact, resolve the following steps in order:
 
 An artifact's starting die is not mechanically locked to its Corruption tier. It reflects the artifact's **metaphysical resilience** — the depth of its origin event, its age, how many times it has been activated without containment, and how well-preserved its internal structure remains.
 
-[%header,cols="^1,4"]
+[cols="^1,4", options="header"]
 |===
 | Starting Die | Typical Artifact
 
@@ -99,7 +99,7 @@ Unknown effects are valid outcomes. If no one can safely predict activation cons
 
 Assign one risk tag to every artifact entry:
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | Risk Tag | Meaning
 
@@ -120,7 +120,7 @@ Assign one risk tag to every artifact entry:
 
 Some high-threat artifacts emit corruption into the environment even when not directly activated by an agent.
 
-[%header,cols="1,1,2,3"]
+[cols="1,1,2,3", options="header"]
 |===
 | Emission Type | Baseline Radius | Typical Corruption Effect | Use Case
 
@@ -144,7 +144,7 @@ Emission is optional per artifact and should be tied to tier and narrative stake
 
 == Catalog of 1980s Occult Artifacts
 
-[%header,cols="2,^1,^1,2,3,3,2"]
+[cols="2,^1,^1,2,3,3,2", options="header"]
 |===
 | Artifact | Risk Tag | Die | Mundane Appearance | Effect | Cost & Fracture | Emission
 
@@ -199,7 +199,7 @@ Artifacts are not merely heavy objects — they exert *metaphysical pressure* on
 
 Each artifact has a baseline Encumbrance value equal to its *Corruption cost tier*:
 
-[%header,cols="^1,^1,3"]
+[cols="^1,^1,3", options="header"]
 |===
 | Artifact Tier | Enc. | Notes
 
@@ -249,7 +249,7 @@ No free rides. No safe artifacts.
 
 Every artifact needs *six defined components* — five mandatory and one optional. Fill in each section before introducing the artifact to players.
 
-[%header,cols="2,3,4"]
+[cols="2,3,4", options="header"]
 |===
 | Component | What It Defines | Design Prompt
 
@@ -292,7 +292,7 @@ of the effect. Use this framework to set the Corruption cost for a new artifact.
 The Artifact Die is assigned separately based on history and resilience — see
 <<using-an-artifact,Artifact Die Levels>>.
 
-[%header,cols="2,2,5"]
+[cols="2,2,5", options="header"]
 |===
 | Tier | Corruption Cost | Effect Power Level
 
@@ -327,7 +327,7 @@ These rules prevent artifacts from becoming "I win" buttons:
 Containment is half the job. Before introducing an artifact, define how it is
 kept inert during transport and what triggers it inadvertently.
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Containment Type | How It Works | Example Trigger (Inadvertent Activation)
 
@@ -372,7 +372,7 @@ Containment rituals are not spellcasting talents. They are risky *Lore-led proce
 
 ==== Minimum Inputs
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Input | Requirement
 
@@ -395,7 +395,7 @@ If the team lacks proper boundary materials or the correct key, add *+1 Difficul
 
 All ritual rolls use *Lore (WIT)* unless a specific Containment Profile states otherwise.
 
-[%header,cols="2,1,1,1,4"]
+[cols="2,1,1,1,4", options="header"]
 |===
 | Ritual Type | Skill | Base Diff | Default Time | On Success
 
@@ -432,7 +432,7 @@ Each *successful containment ritual* advances the artifact's *Decay* by *+1*, if
 
 Before the final ritual roll, allies may either help normally or perform one of the following support actions. Each successful support action may only benefit the ritual once:
 
-[%header,cols="2,2,4"]
+[cols="2,2,4", options="header"]
 |===
 | Support Action | Skill | Effect
 
@@ -459,7 +459,7 @@ In practice, this usually means *Wayfinder leads, Recovery secures the target, K
 
 On failure, the ritual does not take hold. The DA chooses or rolls one backlash from the table below. On a *pushed failure*, apply *two different* backlash results.
 
-[%header,cols="1,4"]
+[cols="1,4", options="header"]
 |===
 | d6 | Backlash
 
@@ -521,7 +521,7 @@ it when:
 - A containment ritual is performed correctly (+1 Decay per ritual)
 - The Artifact Die steps down due to activation (+1 Decay per step-down)
 
-[%header,cols="1,1,4"]
+[cols="1,1,4", options="header"]
 |===
 | Decay Score | Artifact Die | Status
 

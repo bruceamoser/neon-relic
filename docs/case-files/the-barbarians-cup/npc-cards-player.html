@@ -1,0 +1,135 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards (Player) — The Barbarian's Cup</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:16px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; display:grid; grid-template-columns:180px 1fr; gap:6px 14px; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; grid-column:1/-1; margin:0 0 6px; }
+  h2 { font-size:12pt; letter-spacing:2px; color:#2d5a27; grid-column:1/-1; margin:0; }
+  .stamp { text-align:center; border:2px solid #8b1a1a; color:#8b1a1a; padding:4px 12px; font-size:7pt; letter-spacing:3px; display:inline-block; margin:0 auto 16px; }
+  .label { font-size:6pt; text-transform:uppercase; color:#4a4a42; letter-spacing:1px; }
+  .value { font-size:8.5pt; border-bottom:1px dotted #999; padding-bottom:2px; }
+  .full { grid-column:1/-1; }
+  .photo { grid-row:2/8; display:flex; align-items:flex-start; justify-content:center; }
+  .photo img { border:4px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.3); max-width:200px; height:auto; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<div style="text-align:center;"><div class="stamp">COVENANT EYES ONLY — FIELD COPY</div></div>
+<h1 style="text-align:center;">Background Check Summaries — Macau</h1>
+<p style="color:#4a4a42;text-align:center;">Preliminary profiles compiled from public records, surveillance, and open-source intelligence. Verification in progress.</p>
+
+<!-- ── SVG Filter Definitions (shared) ── -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="linear" slope="0.85"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="lowcon">
+      <feComponentTransfer><feFuncR type="linear" slope="0.8" intercept="0.1"/><feFuncG type="linear" slope="0.8" intercept="0.1"/><feFuncB type="linear" slope="0.8" intercept="0.1"/></feComponentTransfer>
+    </filter>
+    <filter id="surveil">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="gnoise"/>
+      <feBlend in="SourceGraphic" in2="gnoise" mode="multiply" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="linear" slope="0.82"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+</svg>
+
+<!-- NPC1: João Rosário -->
+<div class="card">
+<h2>NPC1 — João Rosário</h2>
+<div><span class="label">Occupation</span><span class="value">Antiquities Dealer — Macau</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Nervous, appears sleep-deprived</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Portuguese male, estimated mid-50s. Dark hair greying at temples, build medium. Typically observed wearing dark suit — quality appears older, showing wear at cuffs. Surveillance notes: subject appears fatigued, with visible shadows under eyes. Frequently touches an object in his jacket pocket — possibly a religious item. Grooming was previously meticulous but has declined noticeably in recent weeks.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">João Rosário, 54, Portuguese national. Licensed antiquities dealer operating from a shop at Rua de São Paulo, Macau. Business registration current. Former seminary student — attended but did not complete studies, withdrew 1959. No criminal record in Macau, Hong Kong, or Portuguese jurisdictions. Portuguese civil registry confirms birth in Lisbon, emigration to Macau approximately 30 years ago. Business license lists import/export of cultural antiquities. Financial activity flagged for review: multiple large-sum wire transfers received in past 30 days, origin under investigation. Travel history: no international travel in past 6 months.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest. Financial activity and behavioral indicators warrant further investigation. Possible connection to current situation under investigation — nature of connection unconfirmed. Source reliability: public records (high), surveillance (preliminary), financial data (incomplete).</span></div>
+</div>
+
+<!-- NPC2: Farouk Al-Masri -->
+<div class="card">
+<h2>NPC2 — Farouk Al-Masri</h2>
+<div><span class="label">Occupation</span><span class="value">Foreign National — Purpose of Visit Unknown</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Anxious, appears under significant stress</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Middle Eastern male, estimated mid-30s. Clean-shaven, neat appearance — dress is business casual with attention to presentation. Posture noted as hunched, shoulders tensed — consistent with stress response. Hand movements described as frequent and restless during observation. Facial expression: alert, watchful, scanning environment. Subject has been observed at multiple locations in Macau over the past week. Appears to be operating in coordination with at least one other individual (see NPC3).</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity confirmed via passport scan at port of entry: Farouk Al-Masri. Country of origin and nationality under review — initial assessment pending. Entered Macau approximately 10 days ago via Macau International Airport. Visa status: tourist, valid for standard 30-day stay. No criminal record found in Macau or Interpol databases under this identity. Travel history incomplete — prior movements under investigation. Hotel registration and local contact information filed with immigration — verification in progress. Subject's stated purpose of visit is tourism; surveillance activity is inconsistent with tourist behavior.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest. Travel patterns and observed behavior inconsistent with declared purpose of visit. Possible connection to current situation under investigation. Source reliability: immigration records (high), surveillance (preliminary), background check (incomplete).</span></div>
+</div>
+
+<!-- NPC3: Nasim -->
+<div class="card">
+<h2>NPC3 — "Nasim" (Surname Unconfirmed)</h2>
+<div><span class="label">Occupation</span><span class="value">Foreign National — Purpose of Visit Unknown</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Intense, hostile affect, appears to be operating on minimal sleep</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Middle Eastern male, estimated late 20s. Dark hair, lean build. Observed wearing casual attire — jeans, jacket, no distinguishing logos or insignia. Dark circles visible under eyes in surveillance imagery — consistent with sleep deprivation over multiple days. Gaze described as fixed and intense during observation periods. Carries a small item in shirt pocket — appears to be a photograph, content unknown. Movements described as jerky, tense. Subject has been observed shadowing NPC2 (Farouk Al-Masri) at multiple locations. Relationship: assessed as associate or subordinate.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity partially confirmed: given name "Nasim" from immigration documentation. Full name, surname, and nationality under active investigation. Entered Macau on same flight as NPC2. Visa status: tourist, standard 30-day. No criminal record found under partial identity match — full background check pending surname confirmation. Travel history unknown. No hotel registration or contact information on file separate from NPC2's filing. No employment, education, or residential records located in Macau, Hong Kong, or regional databases.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest — assessed as potentially higher risk than NPC2 based on behavioral indicators. Threat posture unknown. Approach with caution. Full identity confirmation is a priority. Source reliability: immigration records (partial), surveillance (preliminary).</span></div>
+</div>
+
+<!-- NPC4: Dr. Park Min-ho -->
+<div class="card">
+<h2>NPC4 — Dr. Park Min-ho</h2>
+<div><span class="label">Occupation</span><span class="value">CEO — Daewon Pharmaceutical (Seoul)</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Serene, confident, wellness-oriented presentation</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Korean male, early 50s. Well-groomed, immaculately dressed in business attire — quality of clothing assessed as high. Posture and movement described as unhurried, confident. Facial expression typically serene, smiling. Has been observed offering beverages to visitors within minutes of meeting. Carries a leather briefcase. Physical presentation consistent with corporate executive profile.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Dr. Park Min-ho is the CEO and founder of Daewon Pharmaceutical, a publicly traded corporation headquartered in Seoul, Republic of Korea (KOSPI listing). Company founded 2003. Public profile emphasizes wellness, holistic health, and alternative medicine. Dr. Park holds a PhD in Pharmacology from Seoul National University. No criminal record. Corporate filings indicate recent expansion of Asia-Pacific operations, including the Hong Kong regional office. Company financials: publicly available, medium-cap, recent revenue growth. Dr. Park arrived in Hong Kong approximately 5 days ago — purpose of visit listed as business development. Macau travel: confirmed 2 day trips in past week via ferry terminal records.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of potential interest. Corporate presence in region and recent travel to Macau coincide temporally with current situation. Nature of connection, if any, unconfirmed. Publicly accessible profile — engagement may yield information. Source reliability: public records (high), corporate filings (high), travel records (confirmed).</span></div>
+</div>
+
+<!-- NPC5: Dr. Yoon Seo-yeon -->
+<div class="card">
+<h2>NPC5 — Dr. Yoon Seo-yeon</h2>
+<div><span class="label">Occupation</span><span class="value">Head of R&D — Daewon Pharmaceutical</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Professional, appears tense, sleep quality appears poor</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Korean female, early 40s. Professional attire — typically observed in business dress or lab coat at corporate locations. Hair maintained neatly, posture precise. Surveillance notes tension in jaw and hesitation before speaking — consistent with sustained stress. Eyes show signs of sleep disruption. Subject grips personal bag tightly when in public settings — possible anxiety indicator. Accompanies Dr. Park on Macau visits.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Dr. Yoon Seo-yeon is Head of Research and Development at Daewon Pharmaceutical, Seoul. PhD in Cellular Biology, Seoul National University. Published researcher — 14 peer-reviewed papers in toxicology and cellular biology journals (2008–2025). No criminal record. Professional reputation: described by academic peers as rigorous, skeptical, methodical. Employment history: 12 years at Daewon. Travel records confirm arrival in Hong Kong with Dr. Park. Macau day trips confirmed. No prior travel to Macau on record. Professional background suggests analytical approach — may respond to evidence-based engagement.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of potential interest. Professional background suggests receptiveness to factual dialogue. Behavioral indicators of stress warrant monitoring. Source reliability: public records (high), academic publications (confirmed), travel records (confirmed).</span></div>
+</div>
+
+<!-- NPC6: Elderly Male, Camões Garden -->
+<div class="card">
+<h2>NPC6 — Unidentified Elderly Male (Camões Garden)</h2>
+<div><span class="label">Occupation</span><span class="value">Unknown — Consistent Presence in Public Garden</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Patient, watchful, calm</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Chinese male, estimated mid-70s. Bald head, weathered complexion, lean build. Typically observed wearing simple grey robes and carrying a wooden walking stick. Movements described as slow but deliberate — no waste of motion. Observed feeding birds from a paper bag at a specific bench in Camões Garden during morning hours. Facial expression: calm, attentive, watchful. Has been present at this location consistently for approximately three weeks. Does not appear to be homeless — clothing is clean and maintained. Interaction with others: minimal. Does not initiate conversation but responds if approached.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Identity unconfirmed. No Macau resident registration matching description located. No hotel or accommodation registration found. Possible transient visitor or unregistered resident. Immigration records search: incomplete — full name required for database query. Subject's appearance is consistent with a Buddhist monastic background — robes, shaved head, walking stick — but this is observational inference only. No religious institution in Macau has confirmed affiliation. Subject's presence in the garden predates the current situation by approximately one week. Purpose of extended stay in Macau: unknown.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Person of interest — identity unconfirmed. Consistent presence at a location of potential relevance is noted. Nature of connection to current situation, if any, is unknown. Subject is not assessed as hostile. Approach with standard protocols. Identification is a priority. Source reliability: surveillance (observed), public records (no match).</span></div>
+</div>
+
+<!-- NPC7: Inspector Matias Guterres -->
+<div class="card">
+<h2>NPC7 — Inspector Matias Guterres</h2>
+<div><span class="label">Occupation</span><span class="value">Inspector — Macau Judiciary Police</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Methodical, tired, professional</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Macanese/Portuguese male, early 50s. Stocky build, worn suit, mustache. Appearance consistent with career law enforcement — practical dress, tired eyes, carries himself with the physical weight of long tenure. Desk observed to be covered in case files. Movements are slow and deliberate. Demeanor described as difficult to surprise — affect is flat, professional, watchful.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Inspector Matias Guterres, 53, Macau Judiciary Police. 22 years of service. Senior investigator, general crimes division. No disciplinary record. Public service record indicates methodical, thorough investigator with average-to-high case resolution rate. No known corruption allegations. Married, two adult children. Macau-born, Portuguese ancestry. No direct involvement in current situation. As a senior Macau law enforcement officer, Inspector Guterres has access to local criminal databases, witness statements, and crime scene reports. He is not aware of any ongoing investigation related to current situation at this time.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Civilian law enforcement — not currently involved. May be a source of local information if engagement becomes necessary. Honest, competent, methodical per service record. Standard protocols apply for civilian law enforcement contact. Source reliability: public records (high), service record (confirmed).</span></div>
+</div>
+
+<!-- NPC8: Agent Chen Wei -->
+<div class="card">
+<h2>NPC8 — Agent Chen Wei</h2>
+<div><span class="label">Occupation</span><span class="value">Agent — Chinese Ministry of State Security (Public Record)</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Professional, silent, highly alert</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Chinese female, early 30s. Short dark hair, plain clothes — appearance designed to blend into crowds. Average height, average build — deliberately unremarkable presentation. Posture described as alert but not tense — stillness consistent with professional surveillance training. Has been photographed at distance in Macau — facial expression in imagery suggests possible awareness of being observed (unconfirmed). Carries herself with professional confidence.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Agent Chen Wei is a mid-level officer with the Chinese Ministry of State Security (MSS), confirmed via public service directory. Specific assignment and current operational status: unknown. MSS presence in Macau is routine — the agency maintains a permanent liaison office. Agent Chen's presence in Macau at this time has no confirmed connection to the current situation. However, MSS routinely monitors activity in Macau that may involve Chinese cultural property or foreign intelligence operations. If MSS becomes aware of the current situation, jurisdictional assertion is likely. Standard protocol: avoid confrontation with Chinese state security personnel.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential complicating factor — no confirmed connection to current situation. Presence in Macau may be routine or may indicate MSS awareness of regional activity. Monitor but do not engage unless necessary. Source reliability: public records (partial), observation (preliminary).</span></div>
+</div>
+
+</body>
+</html>

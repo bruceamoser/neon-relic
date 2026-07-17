@@ -1,0 +1,115 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPC Cards (Player) — The Boudica Pact</title>
+<style>
+  @font-face { font-family:'SpecialElite'; src:url('../../themes/SpecialElite-Regular.ttf') format('truetype'); }
+  @font-face { font-family:'CourierPrime'; src:url('../../themes/CourierPrime-Regular.ttf') format('truetype'); }
+  body { font-family:'SpecialElite',monospace; max-width:800px; margin:30px auto; padding:20px; background:#f0ead6; color:#1a1a18; }
+  .card { border:2px solid #1a1a18; padding:14px; margin:16px 0; background:rgba(255,255,255,0.25); page-break-inside:avoid; display:grid; grid-template-columns:180px 1fr; gap:6px 14px; }
+  h1 { font-size:14pt; letter-spacing:3px; border-bottom:2px solid #1a1a18; grid-column:1/-1; margin:0 0 6px; }
+  h2 { font-size:12pt; letter-spacing:2px; color:#2d5a27; grid-column:1/-1; margin:0; }
+  .stamp { text-align:center; border:2px solid #8b1a1a; color:#8b1a1a; padding:4px 12px; font-size:7pt; letter-spacing:3px; display:inline-block; margin:0 auto 16px; }
+  .label { font-size:6pt; text-transform:uppercase; color:#4a4a42; letter-spacing:1px; }
+  .value { font-size:8.5pt; border-bottom:1px dotted #999; padding-bottom:2px; }
+  .full { grid-column:1/-1; }
+  .photo { grid-row:2/8; display:flex; align-items:flex-start; justify-content:center; }
+  .photo img { border:4px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.3); max-width:200px; height:auto; }
+  @media print { .card { page-break-after:always; } }
+</style>
+</head>
+<body>
+
+<div style="text-align:center;"><div class="stamp">COVENANT EYES ONLY — FIELD COPY</div></div>
+<h1 style="text-align:center;">Background Check Summaries — Staffordshire</h1>
+<p style="color:#4a4a42;text-align:center;">Preliminary profiles compiled from public records, surveillance, and open-source intelligence. Verification in progress.</p>
+
+<!-- Shared SVG filters -->
+<svg width="0" height="0" style="position:absolute"><defs>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feBlend in="SourceGraphic" mode="multiply" result="g"/><feComponentTransfer in="g"><feFuncA type="linear" slope="0.8"/></feComponentTransfer></filter>
+<filter id="haze"><feGaussianBlur stdDeviation="2"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feColorMatrix type="saturate" values="0" in="n"/><feBlend in="SourceGraphic" mode="screen"/></filter>
+</defs></svg>
+
+<!-- NPC1: The Townsfolk -->
+<div class="card">
+<h2>NPC1 — Local Residents (Plough and Furrow Patrons)</h2>
+  <div><span class="label">Occupation</span><span class="value">Various — Farmers, Retirees, Village Tradespeople</span></div>
+  <div><span class="label">Observed Demeanor</span><span class="value">Friendly, gossipy, concerned about missing neighbor</span></div>
+  <div class="full"><span class="label">Physical Description</span><span class="value">A loose social group of rural Staffordshire residents — primarily male, ages 40–70+, who frequent the Plough and Furrow public house. Typical rural English appearance: waxed jackets, flat caps, practical clothing. Several have known each other for decades. The group's social dynamic is informal but established — they communicate in shorthand and share a collective concern for the missing farmer (Arthur Dunn). Multiple individuals in this group reportedly saw or handled an object the farmer showed them before his departure. Their accounts of this object are contradictory — descriptions vary significantly between witnesses.</span></div>
+  <div class="full"><span class="label">Background (Public Records)</span><span class="value">The individuals are long-term residents of the local area, primarily employed in agriculture or retired from same. No criminal records of note. The group includes the village postman, several tenant farmers, and retirees. None have any known connection to the current situation beyond their acquaintance with the missing farmer. The publican maintains a chalkboard betting pool regarding what the farmer found — current entries include "Roman hoard," "unexploded bomb," and "nothing — having us on." Pot: approximately £47. The group is assessed as cooperative — they are concerned about their missing neighbor and will speak with anyone who demonstrates genuine interest.</span></div>
+  <div class="full"><span class="label">Assessment</span><span class="value">Primary source of witness testimony — multiple individuals saw or handled an object the farmer discovered before his disappearance. Accounts are contradictory and require cross-referencing. The group is not assessed as hostile. Source reliability: local interviews (unconfirmed, contradictory).</span></div>
+</div>
+
+<!-- NPC2: Dr. Helen Price -->
+<div class="card">
+<h2>NPC2 — Dr. Helen Price</h2>
+<div><span class="label">Occupation</span><span class="value">Curator of Anglo-Saxon Collections — Birmingham Museum</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Professional, sharp, appears fatigued</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">English female, mid-40s. Typically dressed in academic-professional attire — tweed jacket, glasses on chain. Expression described as appraising and intelligent. Posture and movement convey professional authority in her domain. Surveillance notes: subject appears tired — possible indicators of sleep disruption. Has been observed in the Anglo-Saxon gallery outside normal working hours.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Dr. Helen Price, PhD in Anglo-Saxon Archaeology, University of Birmingham. Curator of Anglo-Saxon Collections at Birmingham Museum and Art Gallery — approximately 10 years in post. Published author — several academic papers on the Staffordshire Hoard and Mercian material culture. Professional reputation: rigorous, detail-oriented, protective of the collection. No criminal record. Not known to have any connection to the current situation. As curator, Dr. Price has authoritative knowledge of the Staffordshire Hoard, its excavation history, and its catalogue. She may be approached with academic or research inquiries regarding the hoard and its archaeological context.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential source of academic expertise regarding the Staffordshire Hoard. No known connection to current situation. Professional skepticism may require factual approach. Fatigue indicators noted but significance unknown. Source reliability: public records (high), academic publications (confirmed).</span></div>
+</div>
+
+<!-- NPC3: Mr. Samuel Okonkwo -->
+<div class="card">
+<h2>NPC3 — Mr. Samuel Okonkwo</h2>
+  <div><span class="label">Occupation</span><span class="value">Night Security Guard — Birmingham Museum</span></div>
+  <div><span class="label">Observed Demeanor</span><span class="value">Quiet, observant, appears relieved to be asked questions</span></div>
+  <div class="full"><span class="label">Physical Description</span><span class="value">Black British male, early 50s. Security uniform, neatly maintained. Build average to stocky. Posture described as watchful and alert — consistent with 15 years of night security work. Facial expression: kind but tired. Eyes show the characteristic fatigue of long-term night shift work. Has been observed in the Anglo-Saxon gallery during patrol rounds — pauses at certain display cases longer than routine would require.</span></div>
+  <div class="full"><span class="label">Background (Public Records)</span><span class="value">Mr. Samuel Okonkwo, 52, British national. Employed as a night security guard at Birmingham Museum and Art Gallery — 15 years of service. Clean employment record. No criminal history. Married, three children. Mr. Okonkwo has practical knowledge of the museum's physical layout, security systems, patrol schedules, camera coverage, and vault access procedures. He has reported unusual observations during his night shifts — lights at inconsistent hours, objects appearing slightly displaced — which his supervisor reportedly dismissed. The nature and veracity of these observations are unconfirmed. Mr. Okonkwo is not known to have any connection to the current situation.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential source of practical information regarding museum operations and security. Reported observations — if verifiable — may be relevant. The subject appears willing to discuss his concerns with those who take them seriously. Source reliability: public records (high), employment record (confirmed), personal observations (unverified).</span></div>
+</div>
+
+<!-- NPC4: Father Matteo -->
+<div class="card">
+<h2>NPC4 — Father Matteo</h2>
+<div><span class="label">Occupation</span><span class="value">Archivist — Vatican Apostolic Archive</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">Scholarly, careful, procedurally experienced</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">Italian male, early 60s. Black clerical cassock, wire-rimmed spectacles. Build slight. Hands described as careful in movement — consistent with decades of handling old documents. Expression: gentle, scholarly, attentive. Movements through the archive stacks are described as quiet and practiced. 22 years of service in the same corridors.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Father Matteo is a senior archivist at the Vatican Apostolic Archive, Rome — 22 years of service. Ordained priest. Academic specialization: Roman-era administrative documents. Father Matteo is not known to have any connection to the current situation. As a senior archivist, he has deep knowledge of the archive's catalogue and can expedite access to specific documents for qualified researchers. The archive's access procedures require scholarly credentials, a research proposal, and a recommendation letter. The standard processing time of six weeks may be reduced through direct engagement with archive staff. Father Matteo's professional reputation is that of a meticulous scholar who is helpful to legitimate researchers.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential facilitator of archival access. Professional reputation suggests willingness to assist qualified researchers. No known connection to current situation. Engagement requires appropriate credentials. Source reliability: Vatican directory (confirmed), professional reputation (consistent).</span></div>
+</div>
+
+<!-- NPC5: Dr. Margaret Rhys -->
+<div class="card">
+<h2>NPC5 — Dr. Margaret Rhys</h2>
+  <div><span class="label">Occupation</span><span class="value">Retired Archaeologist</span></div>
+  <div><span class="label">Observed Demeanor</span><span class="value">Warm, eager to engage, intellectually active</span></div>
+  <div class="full"><span class="label">Physical Description</span><span class="value">Welsh female, 71. White hair typically worn in a bun. Build small to medium. Typically dressed in casual, comfortable clothing — cardigan, practical shoes. Face is weathered — consistent with decades of outdoor excavation work. Eyes are described as bright and sharp — mental acuity appears undiminished by age. Movements are energetic for her age. The cottage is filled with books, excavation notes, and personal records from her career.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Dr. Margaret Rhys, PhD in Archaeology, University of Cardiff. Retired from active academic appointment. Dr. Rhys was a member of the archaeological team that excavated the Staffordshire Hoard in 1984 — her specific role (field director, section supervisor, or team member) requires confirmation. She has published several papers on Anglo-Saxon material culture. Now retired, she resides near Hay-on-Wye, Wales. Dr. Rhys is not known to have any connection to the current situation. Academic peers describe her as approachable, generous with her knowledge, and pleased when researchers express interest in her work. She may retain personal copies of excavation records, field notes, and photographs from the 1984 dig.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential source of detailed archaeological context and possibly excavation records not held by the museum. No known connection to current situation. Approach with academic courtesy. Source reliability: public records (high), academic publications (confirmed).</span></div>
+</div>
+
+<!-- NPC6: Arthur Dunn -->
+<div class="card">
+<h2>NPC6 — Arthur Dunn</h2>
+<div><span class="label">Occupation</span><span class="value">Farmer — Currently Unaccounted For</span></div>
+<div><span class="label">Observed Demeanor</span><span class="value">N/A — Subject not currently locatable. Last reported state: excited, tired.</span></div>
+<div class="full"><span class="label">Physical Description</span><span class="value">English male, mid-50s. Weather-beaten complexion consistent with outdoor agricultural work. Typically observed wearing flat cap, practical coat, work boots. Build stocky. Last confirmed sighting: approximately two weeks ago at the Plough and Furrow public house. At that time, described by witnesses as tired but animated — he had reportedly discovered something in his field and was showing it to pub regulars. He stated his intention to travel to Scotland for a fishing trip. No contact since.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Arthur Dunn, age estimated mid-50s, is the registered owner of the agricultural property in rural Staffordshire currently under investigation. Land registry records confirm sole proprietorship. No criminal record. Local reputation: described by neighbors as a private individual, not known for socializing beyond Thursday pub visits. Mr. Dunn is unaccounted for — his stated destination (Scotland, fishing trip) has not been confirmed. Post has been accumulating at his property for approximately two weeks. His disappearance coincides temporally with the first detection of anomalous environmental indicators at his farm. Mr. Dunn reportedly discovered an object — described variously by witnesses — in his north field prior to his departure. The nature of this object and its current location are unknown.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Key person of interest — unaccounted for. Locating Mr. Dunn is a priority. His reported discovery and subsequent disappearance are temporally linked to the onset of anomalous environmental indicators. He is not assessed as hostile. His current whereabouts, condition, and connection to the anomalies are unknown. Source reliability: public records (high), witness accounts (contradictory, unverified).</span></div>
+</div>
+
+<!-- NPC7: Mr. Philip Croft -->
+<div class="card">
+<h2>NPC7 — Mr. Philip Croft</h2>
+  <div><span class="label">Occupation</span><span class="value">Investigator — Ministry of Agriculture (UK)</span></div>
+  <div><span class="label">Observed Demeanor</span><span class="value">Bureaucratic, tired, puzzled by findings</span></div>
+  <div class="full"><span class="label">Physical Description</span><span class="value">English male, early 40s. Practical outdoor jacket with multiple pockets, clipboard typically carried. Build average. Facial expression: weary, mildly perplexed — the look of a civil servant whose reports keep saying "cause unknown." Appearance is neat but not fastidious — functional clothing for field work.</span></div>
+<div class="full"><span class="label">Background (Public Records)</span><span class="value">Mr. Philip Croft, 42, is an agricultural investigator with the British Ministry of Agriculture — 18 years of service. His specific portfolio includes crop failure investigation, soil analysis, and pest management. Mr. Croft is not currently known to be involved in the current situation. However, if the environmental anomalies at the agricultural property (crop distress, insect behavior, water quality) are reported to authorities, the Ministry would have statutory grounds to initiate an investigation. Mr. Croft — or an investigator with similar portfolio — would be the likely responding officer. The Ministry is a civilian regulatory agency; its investigators are not law enforcement and are not hostile. Mr. Croft's professional background is in agricultural science, not security or intelligence.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Potential complicating factor if Ministry involvement occurs. Not currently involved. A civilian professional — not hostile. Engagement should be discreet if Ministry investigation commences. Source reliability: public records (high), government directory (confirmed).</span></div>
+</div>
+
+<!-- NPC8: Atmospheric Anomaly (Field Observation) -->
+<div class="card">
+<h2>NPC8 — Unidentified Atmospheric Anomaly (North Field)</h2>
+<div><span class="label">Observation Type</span><span class="value">Thermal and Visual Anomaly — Nature Unknown</span></div>
+<div><span class="label">Observed Characteristics</span><span class="value">Intermittent. Localized. Not confirmed as entity — may be environmental phenomenon.</span></div>
+<div class="full"><span class="label">Description of Observation</span><span class="value">Long-exposure surveillance imagery of the north field anomaly site, captured at twilight, recorded an indistinct visual artifact — a reddish smudge or heat-haze effect, roughly humanoid in proportion, at the periphery of the anomalous soil area. The camera sensor registered a thermal differential inconsistent with ambient conditions. The artifact did not appear in simultaneous control images. The image quality is poor — low light, long exposure, maximum digital gain. The artifact may represent: a genuine thermal anomaly; a sensor artifact; lens flare from distant light sources; or an atmospheric distortion. The imagery is inconclusive. No similar artifact has been captured in subsequent surveillance passes. The phenomenon — if it exists — does not appear on standard optical cameras and may only be detectable in specific spectral ranges at specific times.</span></div>
+<div class="full"><span class="label">Assessment</span><span class="value">Unconfirmed. The surveillance imagery is of poor quality and has not been replicated. The artifact may be a sensor anomaly or environmental distortion. The localized thermal differential and acoustic anomalies at the site are confirmed by instrument; the visual artifact is not. Further instrumented observation required. Do not base operational decisions on unconfirmed imagery. Source reliability: single-surveillance capture (poor quality, unreplicated).</span></div>
+</div>
+
+</body>
+</html>

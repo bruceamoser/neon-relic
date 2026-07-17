@@ -11,7 +11,7 @@ Social conflict in Neon Relic uses the *Disposition model* — a lightweight sys
 
 Every NPC who is not immediately cooperative has a *Disposition* — a state describing their current openness to engagement. Disposition exists on a 5-point track:
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Score | State | Behaviour
 
@@ -136,7 +136,7 @@ Used to read, understand, or heal. In social conflict, Psychoanalyze has two mod
 ** The effective Difficulty of the follow-up roll is reduced by 1 (minimum Difficulty 1)
 * These benefits expire if not used in the same scene, or if the NPC's Disposition *drops* before the follow-up roll. A Disposition increase (from evidence shown, a service performed, etc.) does not invalidate Reading benefits — the agent's insight remains relevant as the NPC warms up.
 
-> *Stunt interaction:* Extra successes on a Reading roll become stunt points as normal (see <<stunts-in-social-conflict,Stunts in Social Conflict>> below). Spending the *Pressure Point* stunt on a Reading roll causes the DA to reveal an additional detail beyond the standard Reading reveal. Spending *Full Read* (2 SP) grants its scene-long benefits (+2 dice, Difficulty 1) in place of the standard single-use benefits — Full Read is strictly superior and replaces them.
+> *Stunt interaction:* Extra successes on a Reading roll become stunt points as normal (see <<stunts-in-social-conflict,Stunts in Social Conflict>> below). General stunts may be spent on social rolls — for example, spending *Precise* on a Reading roll causes the DA to reveal an additional detail beyond the standard Reading reveal. Spending *Extended Effect* (2 SP) extends the Reading's benefits into the following scene.
 
 > *Example:* An agent faces a Hostile NPC (Disposition 2, Difficulty 3 for social rolls). The agent first uses Psychoanalyze (Reading) to understand the NPC. On success, the follow-up Manipulate roll is made at Difficulty 2 (reduced from 3) with +1 bonus die. This means a roll generating 3+ successes now produces stunt points, compared to needing 4+ successes without the Psychoanalyze step.
 
@@ -165,7 +165,7 @@ These are at DA discretion, not every NPC has this capability. When building NPC
 
 When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the DA applies one or more consequences:
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Consequence Type | Example
 
@@ -217,11 +217,11 @@ Note: Petra passed the social focal point to Marcus — this is a tag-team appro
 
 Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 1 (Disposition 4, sensitive ask). Rolls: 6, 6, 5, 4, 2, 2, 1 — two successes. Two successes at Difficulty 1 = 1 extra success = 1 stunt point.
 
-Marcus spends the stunt point on *Bought Silence* (see xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills] for Manipulate stunts): Elias won't mention this conversation to anyone for at least 24 hours — enough time for the agents to move on Talvez before Elias has a chance to warn him.
+Marcus spends the stunt point on *Quieter* (see xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills] for the general stunt list): Elias won't mention this conversation to anyone for at least 24 hours — enough time for the agents to move on Talvez before Elias has a chance to warn him. The DA rules this is a valid application of Quieter — the social action leaves no detectable trace for others to follow.
 
 *Success:* Elias gives the name: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
 
-*Outcome:* The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target. Spend stunt points on skill-specific effects to shape what success means.
+*Outcome:* The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target. Spend stunt points on general stunt effects to shape what success means.
 
 ---
 
@@ -231,7 +231,7 @@ Marcus spends the stunt point on *Bought Silence* (see xref:chapters/04-attribut
 
 All social rolls may be pushed per the standard push rules (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). Pushing always costs +1 Corruption, in addition to any Disposition penalties listed here. Push *before* knowing the outcome is final — the push replaces your non-6 dice.
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Skill | Pushed Failure | Note
 
@@ -246,11 +246,7 @@ All social rolls may be pushed per the standard push rules (see xref:chapters/03
 [[stunts-in-social-conflict]]
 == Stunts in Social Conflict
 
-Extra successes on social rolls become stunt points, as normal (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). These may be spent on the relevant skill's stunt list in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]:
-
-* *Manipulate stunts* (Bought Silence, Read the Room, Turned Asset) apply *in addition to* the automatic Disposition +1 shift from success.
-* *Command stunts* (Rally, Coordinated Action, Hold the Line) apply *in addition to* the NPC's compliance.
-* *Psychoanalyze stunts* (Pressure Point, Decompress, Full Read) apply *in addition to* Reading or Stabilizing effects.
+Extra successes on social rolls become stunt points, as normal (see xref:chapters/03-core-resolution.adoc#chapter-core-resolution[Core Resolution]). These may be spent on the general stunt list in xref:chapters/04-attributes-skills.adoc#chapter-attributes-skills[Attributes & Skills]. Any stunt from the general list may be purchased on a social roll — the effect is narrated in social context (e.g., *Quieter* means the target doesn't realize they were manipulated; *Additional Target* applies the social effect to a second NPC in the scene).
 
 Stunt effects and Disposition effects are cumulative — they are separate outcomes of the same roll. Stunt points must be spent immediately (within the same action) or they are lost.
 

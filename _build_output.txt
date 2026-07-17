@@ -1,0 +1,10 @@
+﻿asciidoctor-pdf.bat : asciidoctor: WARNING: chapters/09-divisions.adoc: line 22: section title out of sequence: 
+expected level 2, got level 3
+At line:1 char:1
++ & asciidoctor-pdf docs/neon-relic.adoc -o starter-kit/neon-relic-core ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (asciidoctor: WA... 2, got level 3:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+asciidoctor: WARNING: chapters/09-divisions.adoc: line 58: section title out of sequence: expected level 2, got level 3
+asciidoctor: WARNING: chapters/09-divisions.adoc: line 89: section title out of sequence: expected level 2, got level 3

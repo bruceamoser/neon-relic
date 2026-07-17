@@ -23,12 +23,12 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 == Sources of Corruption
 
-[%header,cols="2,1,4"]
+[cols="2,1,4", options="header"]
 |===
 | Trigger | Corruption Gained | Description
 
 | *Pushing a Roll* | +1 | Exerting your absolute limits invites psychic static.
-| *Activating a Division Talent* | +1 (or free) | Most talents that tap the supernatural exact a cost. Talents marked *—* in their Corruption Cost column are free to activate — healing and passive-support talents carry no Corruption. See each talent's entry in xref:chapters/09-talents.adoc#chapter-talents[Talents].
+| *Activating a Division Talent* | +0 to +2 | Talent Corruption cost is determined by the talent's impact on the game. *At-will* and *per-session* talents typically cost +1 Corruption; the most powerful *per-case-file* talents cost +2. Passive talents (marked 0 in their Corruption Cost column) carry no Corruption cost. See each talent's entry in xref:chapters/09-divisions.adoc#chapter-divisions[Divisions] and xref:chapters/13-advancement.adoc#chapter-advancement[Advancement].
 | *Occult Exposure* | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. DA sets severity.
 | *Artifact Activation* | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier.
 | *Corruption Burst (any 1s rolled)* | +1 | The mind cracks trying to process the unprocessable. See Corruption Burst rules below.
@@ -39,7 +39,7 @@ When a character's Corruption *exceeds* their threshold, their mind permanently 
 
 == Corruption Effects
 
-[%header,cols="1,2,4"]
+[cols="1,2,4", options="header"]
 |===
 | Corruption | Stage | Mechanical & Narrative Consequence
 
@@ -58,7 +58,7 @@ Because Corruption naturally builds toward lethal levels, characters must active
 
 === Methods of Recovery
 
-[%header,cols="2,3,3"]
+[cols="2,3,3", options="header"]
 |===
 | Method | Effect | Requirements
 
@@ -97,7 +97,7 @@ Every character begins with an *Anchor* — a personal source of solace that gro
 
 === Anchor Sources (Roll d66 or choose)
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Roll | Category | Example Anchors
 
@@ -131,7 +131,7 @@ A Burst is not always fear. It might manifest as a wave of dread, static electri
 
 The DA calls for a Corruption Burst when a character directly confronts a source of genuine supernatural phenomena. Not everything unusual triggers one — strange sounds, unusual smells, or reading an old text do not. A Burst requires *direct sensory confrontation* with something that violates the natural order.
 
-[%header,cols="2,4"]
+[cols="2,4", options="header"]
 |===
 | Trigger | Examples
 
@@ -164,7 +164,7 @@ The supernatural overwhelms the rational mind — there is no "trying harder" ag
 
 ==== Four Outcomes
 
-[%header,cols="1,1,3"]
+[cols="1,1,3", options="header"]
 |===
 | Rolled 6s? | Rolled 1s? | Result
 
@@ -190,7 +190,7 @@ What can help is recovery: Psychoanalyze and Healing Talents address the afterma
 
 On a failed Corruption Burst (no 6s), roll *d6*:
 
-[%header,cols="^1,2,4"]
+[cols="^1,2,4", options="header"]
 |===
 | Roll | Response | What Happens
 
@@ -227,7 +227,7 @@ Burst Rating is how the DA classifies the supernatural intensity of a creature o
 
 > *DA Frequency Guidance:* Burst Rating 1–2 — call for one check on first direct confrontation per scene. Burst Rating 3–4 — call for a check each time the entity acts directly against a character (not just passive presence). Burst Rating 5 — call for a check every round the entity is within sight. These are guidelines, not hard rules; the DA adjusts for pacing.
 
-[%header,cols="1,1,4"]
+[cols="1,1,4", options="header"]
 |===
 | Rating | Threat Level | Examples
 
