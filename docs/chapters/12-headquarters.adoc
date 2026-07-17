@@ -263,7 +263,7 @@ messes*.
 Standing is tracked as a single score from **0 to 20**, shared by the entire cell.
 It never applies to individual agents — the Covenant evaluates teams, not heroes.
 
-> *Note on CL, Standing, and Requisition Authority:* These three systems overlap but serve distinct purposes. A character's personal *CL (Covenant Level)* represents their individual combat clearance and affects which weapons they can legally carry (see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]). *Standing* is a cell-level score that unlocks collective resource access, case priority, and information tiers. *Requisition Authority* is an in-fiction narrative mechanism — who you can call to get things. Standing rewards (below) grant cell-wide CL requisition caps that temporarily raise what the *whole team* can access during equipping — but do not change any agent's personal CL score.
+> *Note on CL, Standing, and Requisition Authority:* These three systems overlap but serve distinct purposes. A character's personal *CL (Clearance Level)* represents their individual equipment authorization tier and affects which weapons they can legally carry (see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]). *Standing* is a cell-level score that unlocks collective resource access, case priority, and information tiers. *Requisition Authority* is an in-fiction narrative mechanism — who you can call to get things. Standing rewards (below) grant cell-wide CL requisition caps that temporarily raise what the *whole team* can access during equipping — but do not change any agent's personal CL score.
 
 ---
 
@@ -444,6 +444,7 @@ If the rival cell's Standing surpasses the player cell's by 5+, have the Covenan
 === Using the Black-Market Armory
 
 The Armory's expanded CL Pool (+2) should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
+[[equipment-return]]
 
 === Equipment Return to Stack
 

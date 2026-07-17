@@ -9,7 +9,7 @@ Repairs and gear degradation connect to the core system described in xref:chapte
 
 Navigating the neon-lit streets and abandoned industrial sectors of the 1980s requires specialized equipment. Items provide a *Gear Bonus* (extra black d6 dice) to specific skill rolls. Pushing a roll can cause the item to break, temporarily reducing its bonus.
 
-To reflect the covert nature of the Covenant, characters do not use personal cash. Instead, they utilize their *Clearance Level (CL)* during the Equipping Phase to requisition supplies from Stack. Items are categorized by their required CL.
+To reflect the covert nature of the Covenant, characters do not use personal cash. Instead, they utilize their *CL Pool* (equal to their Clearance Level) during the Equipping Phase to requisition supplies from Stack. Items are categorized by their required CL and count against the agent's CL Pool budget.
 
 == Investigative & Paranormal Tech
 
@@ -99,7 +99,7 @@ Consumable supplies — ammunition, medical gear, batteries, and rations — are
 
 Supplies can be restocked:
 
-* During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size at no cost (subject to CL restrictions).
+* During the *Equipping Phase* at the start of each Case File: any supply can be restocked to its starting die size. The supply item must be requisitioned through your CL Pool during the Equipping Phase (see <<requisitioning-gear>>) — the restock itself has no additional cost beyond the normal CL-pool requisition.
 * During a *Case File*, at a credible source: a hospital supply room, a hardware store, an abandoned military cache. The DA determines availability; resupply takes time and may require a Tech or Deft Hands roll (Difficulty 1–2) to access without authorization.
 * Cell *Underground Field Medic* (Personnel): once per Case File, restocks any medical supply to d8 automatically.
 
@@ -194,6 +194,8 @@ Agents requisition gear during the *Equipping Phase* between Case Files through 
 
 Starting CL is set by Division and Age Group (see xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation]). CL advancement is handled through the *Requisition Authority* general talent (see xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]).
 
+The table above describes who qualifies for each CL tier. The section below explains how CL translates into an equipment budget for each mission.
+
 [[requisitioning-gear]]
 === Requisitioning Gear
 
@@ -220,7 +222,7 @@ An agent may request *one item* that exceeds their CL Pool — but only the item
 * *6:* Request approved. The item is issued.
 * *1–5:* Request denied. The item is not available for this Case File. The agent does not lose their CL Pool allocation — they may still requisition items within budget.
 
-Only one above-CL roll is permitted per Equipping Phase — choose your over-budget item carefully.
+Only one above-CL roll is permitted per cell per Equipping Phase — each cell gets one shot at an over-budget item. Choose your over-budget item carefully.
 
 Stack agents gain a departmental advantage: their requisition roll succeeds on a *5 or 6* instead of only a 6, reflecting their logistics connections and Quartermaster relationships.
 

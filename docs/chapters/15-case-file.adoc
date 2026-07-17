@@ -767,7 +767,7 @@ The Equipping Phase follows this sequence:
 
 . Determine each agent's *CL Pool* (personal Clearance Level, modified by Standing rewards and HQ upgrades).
 . Agents select items from the Equipment tables whose CL values sum to ≤ their CL Pool. No roll required for items within budget.
-. One agent may attempt an *above-CL requisition roll* (1d6, success on 6; Stack agents succeed on 5–6) for a single item that pushes their total over budget.
+. Only one agent per cell may attempt an *above-CL requisition roll* (1d6, success on 6; Stack agents succeed on 5–6) for a single item that pushes their total over budget.
 . Record all requisitioned items on character sheets — note the *checking-out agent* (the requisitioner) and the *holding agent* (who carries it, if different).
 . Division Items and starting kit items are permanently owned and do not count against CL Pool.
 
