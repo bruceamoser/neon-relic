@@ -349,7 +349,7 @@ cannot be purchased with Development Points alone.
 | *CL 4 Requisition Access*           | 10 | During Equipping Phase, the entire cell may requisition items up to CL 4 regardless of personal CL. High-tier equipment available via formal request. Does not change individual agents' personal CL scores.
 | *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore (WIT) and Investigate (WIT) rolls during pre-departure research.
 | *Covenant Asset Call-In*            | 15 | Once per campaign arc, the Covenant deploys a named asset — insider at a government agency, black-market arms contact, demolitions specialist — to assist directly.
-| *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their Keeper (xp replacement PC) begins play with 3 Standing already gained toward the cell total.
+| *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their replacement PC begins play with the retired agent's *Total XP* (lifetime earned) as their own Total and Current XP, plus 3 Standing already gained toward the cell total. Spent XP resets to 0 — the new agent allocates their own purchases.
 | *Unrestricted Upgrade*               | 20 | Once per arc, establish any single upgrade for 0 DP. The Covenant funds it directly.
 |===
 

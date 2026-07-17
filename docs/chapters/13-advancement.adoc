@@ -5,7 +5,21 @@ This chapter covers two connected systems: *Advancement* (the per-session XP deb
 
 == Advancement
 
-Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* — not at the end of a Case File. A session corresponds to one real-world play period (typically 2–4 hours). XP is awarded through a structured *Debriefing* that the DA runs immediately at session end. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
+Experience Points (XP) are the game's *only* advancement currency. They are awarded at the end of each *session* — not at the end of a Case File. A session corresponds to one real-world play period (typically 2–4 hours).
+
+XP is tracked as three values on your character sheet:
+
+* *Total XP* — all XP your agent has ever earned across their career. This number only ever increases.
+* *XP Spent* — the cumulative cost of all skill increases and talent purchases you have made.
+* *Current XP* — your available XP to spend. Calculated as *Total − Spent*. This is the number you check against costs.
+
+[NOTE]
+.XP Tracking Example
+====
+Agent Voss has earned 47 Total XP over twelve sessions. She has spent 35 XP on skills and talents across her career. Her Current XP is 12 (47 − 35). If she wants to buy a new talent (6 XP), she checks her Current XP: 12 ≥ 6, so she can afford it. After purchase: Total = 47, Spent = 41, Current = 6.
+====
+
+XP is awarded through a structured *Debriefing* that the DA runs immediately at session end. The DA asks the group a series of questions — for every "yes," each player receives *1 XP* (maximum *5 XP per session*):
 
 [%header,cols="^1,5"]
 |===
@@ -32,7 +46,7 @@ Experience Points (XP) are the game's *only* advancement currency. They are awar
 
 === Worked Example: Session Debrief and Talent Purchase
 
-The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Keep Warden currently at Clearance Level 2 with 8 XP carried over from the previous Case File.
+The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Keep Warden currently at Clearance Level 2 with 35 Total XP and 27 XP Spent (8 Current XP remaining).
 
 *The DA runs the debrief questions:*
 
@@ -61,12 +75,12 @@ The following shows a typical post-session debrief for *Agent Yusuf Demi*, a Kee
 | —
 |===
 
-*Result: 4 XP earned this session.* Added to 8 XP carried over: *12 XP total.*
+*Result: 4 XP earned this session.* Total XP: 35 → 39. Spent XP: 27 (unchanged). Current XP: 8 → 12.
 
 *Yusuf's player spends XP:*
 
-* *6 XP → Requisition Authority talent (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. The DA agrees this is a valid fiction trigger and approves the purchase.
-* *6 XP remain* for future sessions.
+* *6 XP → Requisition Authority talent (CL 2 → CL 3).* The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. The DA agrees this is a valid fiction trigger and approves the purchase. Total XP: 39 (unchanged when spending). Spent XP: 27 → 33. Current XP: 12 → 6.
+* *6 Current XP remain* for future sessions.
 
 > *DA note:* Requisition Authority purchases should be supported by a fiction trigger — a commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.
 

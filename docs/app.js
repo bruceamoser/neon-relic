@@ -15,7 +15,7 @@ const NR = (function() {
     extraTalents: [],
     divisionItem: '', gear: [], resourceDice: {},
     criticalInjuries: [],
-    cl: 1, standing: 0, xp: 0,
+    cl: 1, standing: 0, xp: { current: 0, total: 0, spent: 0 },
     creationComplete: false
   };
 
@@ -64,6 +64,10 @@ const NR = (function() {
         if (parsed.extraTalents) state.extraTalents = parsed.extraTalents.slice();
         if (parsed.criticalInjuries) state.criticalInjuries = parsed.criticalInjuries.slice();
         if (!state.gear) state.gear = [];
+        // Migrate old scalar xp to three-value object
+        if (typeof state.xp === 'number') {
+          state.xp = { current: state.xp, total: state.xp, spent: 0 };
+        }
         detectResourceDice();
       }
     } catch(e) { /* ignore */ }
@@ -369,7 +373,10 @@ const NR = (function() {
 
     if (!state.extraTalents) state.extraTalents = [];
     state.extraTalents.push(talent);
-    state.xp = Math.max(0, (state.xp || 0) - 6);
+    // Deduct from current XP, increment spent
+    if (typeof state.xp === 'number') { state.xp = { current: state.xp, total: state.xp, spent: 0 }; }
+    state.xp.current = Math.max(0, (state.xp.current || 0) - 6);
+    state.xp.spent = (state.xp.spent || 0) + 6;
     saveState();
     renderSheet();
     closeModal();
@@ -380,7 +387,10 @@ const NR = (function() {
     if (!state.extraTalents) return;
     const removed = state.extraTalents[index];
     state.extraTalents.splice(index, 1);
-    state.xp = (state.xp || 0) + 6;
+    // Refund to current XP, decrement spent
+    if (typeof state.xp === 'number') { state.xp = { current: state.xp, total: state.xp, spent: 0 }; }
+    state.xp.current = (state.xp.current || 0) + 6;
+    state.xp.spent = Math.max(0, (state.xp.spent || 0) - 6);
     saveState();
     renderSheet();
     showToast('Removed: ' + removed.name + ' (XP refunded)');
@@ -1165,7 +1175,7 @@ const NR = (function() {
     html += '<h3>Resource Dice</h3><table><tr><th>Die</th><th>Supply Level</th></tr>';
     NR_DATA.resourceDieScale.forEach(r => { html += `<tr><td><strong>${r.die}</strong></td><td>${r.desc}</td></tr>`; });
     html += '</table><p>Roll after each scene of meaningful use. 1–2 = step down.</p>';
-    html += '<h3>XP & Advancement</h3><p><strong>Session Debrief:</strong> 5 questions, +1 XP per "yes" (max 5/session).</p>';
+    html += '<h3>XP & Advancement</h3><p><strong>Session Debrief:</strong> 5 questions, +1 XP per "yes" (max 5/session). XP is tracked as <strong>Total</strong> (lifetime earned), <strong>Spent</strong> (cumulative purchases), and <strong>Current</strong> (Total − Spent).</p>';
     html += '<table><tr><th>Purchase</th><th>XP Cost</th><th>Limit</th></tr>';
     html += '<tr><td>Increase Skill by 1</td><td>5 XP</td><td>Max rating 5</td></tr>';
     html += '<tr><td>New Talent</td><td>6 XP</td><td>General, Division, or Sub-Unit</td></tr></table>';
