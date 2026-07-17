@@ -60,7 +60,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
-| *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each Case File through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
+| *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each session through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. XP is tracked as three values: *Total XP* (lifetime earned), *XP Spent* (cumulative purchases), and *Current XP* (Total − Spent, available to spend). See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 |===
 
 == F
