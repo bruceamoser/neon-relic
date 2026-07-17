@@ -444,8 +444,8 @@ If the rival cell's Standing surpasses the player cell's by 5+, have the Covenan
 === Using the Black-Market Armory
 
 The Armory's expanded CL Pool (+2) should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
-[[equipment-return]]
 
+[[equipment-return]]
 === Equipment Return to Stack
 
 All requisitioned items must be returned to Stack during the Aftermath Phase at the conclusion of each Case File. The return is automatic — no roll required — but the DA should note the following:
