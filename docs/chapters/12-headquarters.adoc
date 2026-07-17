@@ -119,7 +119,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 | 3
 | Safeguard Protocol
 | A reinforced storage unit or garage bay with analog combination locks, stocked through underground contacts the Covenant officially denies knowing. The manifest is updated by hand.
-| During the Equipping Phase, all agents may requisition items up to *CL 4* regardless of personal CL. This does not change the agent's CL for any other purpose. High-capacity weapons no longer consume an extra DP to requisition repeatedly.
+| During the Equipping Phase, all agents increase their effective CL Pool by +2 (e.g., a CL 2 agent has a CL Pool of 4 for requisition purposes). This does not change the agent's personal CL for any other purpose. Items up to CL 4 may be requisitioned within this expanded pool. High-capacity weapons no longer require an above-CL roll to requisition.
 
 | *The Faraday Cage*
 | 4
@@ -190,7 +190,7 @@ Personnel are not combatants. If a cell location is directly attacked, they flee
 | *Black-Market Fence*
 | 3
 | A procurement specialist with connections to military surplus, private security disposals, and the occasional Consortium dropout.
-| Once per Case File, requisition one *CL 4 item* without burning the team's CL. The request takes 48 hours in-game. Item arrives at a designated dead drop; no trail.
+| Once per Case File, requisition one *item of any CL* without spending from your CL Pool and without an above-CL roll. The request takes 48 hours in-game. Item arrives at a designated dead drop; no trail. This item is in addition to your normal CL-pool allocation.
 
 | *Covenant Scholar*
 | 3
@@ -263,7 +263,7 @@ messes*.
 Standing is tracked as a single score from **0 to 20**, shared by the entire cell.
 It never applies to individual agents — the Covenant evaluates teams, not heroes.
 
-> *Note on CL, Standing, and Requisition Authority:* These three systems overlap but serve distinct purposes. A character's personal *CL (Covenant Level)* represents their individual combat clearance and affects which weapons they can legally carry (see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]). *Standing* is a cell-level score that unlocks collective resource access, case priority, and information tiers. *Requisition Authority* is an in-fiction narrative mechanism — who you can call to get things. Standing rewards (below) grant cell-wide CL requisition caps that temporarily raise what the *whole team* can access during equipping — but do not change any agent's personal CL score.
+> *Note on CL, Standing, and Requisition Authority:* These three systems overlap but serve distinct purposes. A character's personal *CL (Clearance Level)* represents their individual equipment authorization tier and affects which weapons they can legally carry (see xref:chapters/10-equipment.adoc#chapter-equipment[Ch 10 — Equipment]). *Standing* is a cell-level score that unlocks collective resource access, case priority, and information tiers. *Requisition Authority* is an in-fiction narrative mechanism — who you can call to get things. Standing rewards (below) grant cell-wide CL requisition caps that temporarily raise what the *whole team* can access during equipping — but do not change any agent's personal CL score.
 
 ---
 
@@ -343,10 +343,10 @@ cannot be purchased with Development Points alone.
 | Reward | Min. Standing | Effect
 
 | *Tier 2 Upgrades Unlocked*           | 5  | Cell may begin establishing Tier 2 capabilities (see <<hq-upgrade-tree>>). DP cost unchanged.
-| *CL 3 Requisition Access*           | 5  | During Equipping Phase, the *entire cell* may requisition items up to CL 3 — even agents whose personal CL is still 2. This does not change individual agents' personal CL score; it raises the cell-wide equipping cap only.
+| *CL 3 Requisition Access*           | 5  | During Equipping Phase, the *entire cell* gains a minimum effective CL Pool of 3 — even agents whose personal CL is still 2. This does not change individual agents' personal CL score; it sets a cell-wide floor for requisition only.
 | *Keep Reinforcements*               | 10 | Once per arc (3–5 Case Files), request a second Covenant cell for 1 Case File of operational support. They arrive equipped; they do not share Standing.
 | *Tier 3 Upgrades Unlocked*           | 10 | Cell may begin establishing Tier 3 capabilities. DP cost unchanged.
-| *CL 4 Requisition Access*           | 10 | During Equipping Phase, the entire cell may requisition items up to CL 4 regardless of personal CL. High-tier equipment available via formal request. Does not change individual agents' personal CL scores.
+| *CL 4 Requisition Access*           | 10 | During Equipping Phase, the entire cell gains a minimum effective CL Pool of 4 regardless of personal CL. High-tier equipment available via formal request. Does not change individual agents' personal CL scores.
 | *Classified Archive Access*         | 15 | Wayfinder Division shares files on cold cases and artifact history normally restricted to senior analysts. +2 dice on Lore (WIT) and Investigate (WIT) rolls during pre-departure research.
 | *Covenant Asset Call-In*            | 15 | Once per campaign arc, the Covenant deploys a named asset — insider at a government agency, black-market arms contact, demolitions specialist — to assist directly.
 | *Legacy Standing Bonus*             | 20 | When a cell member retires or dies, their replacement PC begins play with the retired agent's *Total XP* (lifetime earned) as their own Total and Current XP, plus 3 Standing already gained toward the cell total. Spent XP resets to 0 — the new agent allocates their own purchases.
@@ -442,6 +442,16 @@ If the rival cell's Standing surpasses the player cell's by 5+, have the Covenan
 
 === Using the Black-Market Armory
 
-The Armory's CL 4 access should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
+The Armory's expanded CL Pool (+2) should not feel routine. The DA should occasionally impose fiction on it — the contact is busy, the shipment got held up, the fence wants something first. The mechanical benefit is persistent; the narrative texture should vary.
+
+[[equipment-return]]
+=== Equipment Return to Stack
+
+All requisitioned items must be returned to Stack during the Aftermath Phase at the conclusion of each Case File. The return is automatic — no roll required — but the DA should note the following:
+
+* *Consumables:* Unused consumable items return to Stack inventory. Used consumables are logged and restocked.
+* *Damaged gear:* Items with degraded Gear Dice are returned in their current state. Stack repairs them between cases at no cost, but repairs may not complete before the next Equipping Phase if the cell is on a tight turnaround (less than one full downtime phase between cases).
+* *Lost or destroyed items:* A single lost item carries no penalty. Multiple losses in one Case File — or a pattern of carelessness across cases — may trigger a Standing review. Stack tracks equipment by requisitioner, not by current holder.
+* *Signature and owned items:* Division Items and starting kit items are permanently assigned and are never returned.
 
 

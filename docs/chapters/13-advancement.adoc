@@ -43,7 +43,7 @@ XP is awarded through a structured *Debriefing* that the DA runs immediately at 
 | Purchase a new Talent (per-case-file) | 10 XP | High-impact talents restricted to once per Case File
 |===
 
-> *Note on CL and Standing:* Clearance Level is no longer purchased directly with XP. To increase a character's *personal* CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). This raises the individual agent's permanent CL independent of team Standing. Separately, team Standing (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]) grants the *entire cell* a temporary equipping-phase cap (CL 3 at Standing 5, CL 4 at Standing 10) — but this is a cell-wide access floor, not a personal CL increase. If an agent's personal CL is already higher than the cell's Standing-granted floor, use their personal CL. If lower, use whichever is higher during the Equipping Phase only.
+> *Note on CL and Standing:* Clearance Level is no longer purchased directly with XP. To increase a character's *personal* CL, purchase the *Requisition Authority* general talent (6 XP, repeatable). This raises the individual agent's permanent CL (and thus their CL Pool) independent of team Standing. Separately, team Standing (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Ch 12 — Headquarters]) grants the *entire cell* a minimum effective CL Pool during the Equipping Phase (CL 3 at Standing 5, CL 4 at Standing 10) — but this is a cell-wide floor, not a personal CL increase. If an agent's personal CL is already higher than the cell's Standing-granted floor, use their personal CL. If lower, use whichever is higher during the Equipping Phase only.
 
 === Worked Example: Session Debrief and Talent Purchase
 
@@ -95,7 +95,7 @@ This is the *canonical General Talents list* used at character creation and duri
 |===
 | Talent | Frequency | Corruption | Effect
 
-| *Street Medic* | At-Will | 0 | Restore 2 physical Attribute points instead of 1 when successfully using Heal (EMP).
+| *Street Medic* | At-Will | 0 | Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT).
 | *Cathartic Release* _(Healing)_ | Per-Session | +1 | Once per session, dedicate a moment to breaking down, screaming, or venting — this must occur in a scene where you are not actively in conflict. Heal 1 Corruption.
 | *Hair-Trigger* | At-Will | 0 | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes.
 | *Paranormal Intuition* | At-Will | +1 | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed.
@@ -110,7 +110,7 @@ This is the *canonical General Talents list* used at character creation and duri
 | *Iron Will* _(Healing)_ | Per-Session | +1 | When you *personally* deliver the killing blow to a Named Threat or banish a supernatural entity (using the Banishment ritual in full), heal 1 Corruption. A "killing blow" requires your attack to reduce the target to 0 Strength. Banishment must be a completed ritual, not just an attack on an entity.
 | *Brawler* | At-Will | 0 | Unarmed strikes inflict base damage of 2 instead of 1.
 | *Flee the Scene* | At-Will | 0 | Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets.
-| *Requisition Authority* _(Repeatable)_ | At-Will | 0 | Increase your *personal* Clearance Level by 1 (maximum CL 5). May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
+| *Requisition Authority* _(Repeatable)_ | At-Will | 0 | Increase your *personal* Clearance Level by 1 (maximum CL 5). This increases your CL Pool by 1 for all future Equipping Phases. May be purchased multiple times. No Standing prerequisite — this talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards.
 |===
 
 ---

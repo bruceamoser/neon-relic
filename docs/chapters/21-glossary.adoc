@@ -30,7 +30,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Case File* | A structured operation tracked on an Operations Board with a shift row (time tracker + relic milestones) and organization countdown rows. Case Files are built from Locations, NPC Cards, Information Cards, organizations, Containment Truths, and Covenant Request Packets. Playable in flexible order rather than through a linear script. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
-| *Clearance Level (CL)* | Seniority and authorization rank within the Covenant. Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Determines gear access and organizational authority. See xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation].
+| *Clearance Level (CL)* | Personal equipment authorization tier (1–5). Equals Division base CL plus Age Group modifier (Young −1, Experienced +0, Senior +1), minimum 1. Your CL Pool (equal to your CL) determines how much gear you can requisition during the Equipping Phase via point-buy. CL does not control information access — that is governed by Covenant Standing. See xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear].
 | *Contact* | _See NPC Card._ In the entity model, contacts are NPC Cards with access-granting roles, organization affiliations, and knowledge. They are not a separate case-board element. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Containment Truth* | Information necessary for safe resolution of a case, such as a relic's trigger, appetite, tether, shielding method, quiescence condition, or transfer sequence. See xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Corruption* | Cumulative psychological and occult damage track. Gained from pushing rolls, Division Talent activation, Fear, artifact use, and supernatural exposure. *Maximum Corruption Threshold* = 10 + Empathy score; exceeding it causes permanent catatonia and character retirement. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption, Fear & Healing].
@@ -60,6 +60,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
+| *Equipping Phase* | A formal between-case step where agents requisition gear from Stack using their CL Pool (point-buy: sum of item CLs ≤ personal CL). Above-CL items require a 1d6 roll (success on 6; Stack agents succeed on 5–6). All requisitioned items are returned at case end. See xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear] and xref:chapters/15-case-file.adoc#chapter-case-file[Case Files].
 | *Experience Points (XP)* | The game's only advancement currency. XP are awarded at the end of each session through debrief questions and spent to raise skills, buy new talents, or increase Clearance Level. XP is tracked as three values: *Total XP* (lifetime earned), *XP Spent* (cumulative purchases), and *Current XP* (Total − Spent, available to spend). See xref:chapters/13-advancement.adoc#chapter-advancement[Advancement, Talents, and Dark Secrets].
 |===
 
@@ -88,7 +89,7 @@ Quick reference for all game-specific terms used in the Neon Relic core rules. E
 [cols="1,3", frame=none, grid=rows, stripes=none]
 |===
 | *Development Points (DP)* | The shared resource the cell earns during Aftermath and spends on Headquarters facilities, personnel, and infrastructure upgrades. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
-| *Headquarters (HQ)* | The Covenant facility serving as the team's base of operations between Case Files. Provides medical care, equipment requisition, research facilities, and downtime activities. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
+| *Headquarters (HQ)* | The Covenant facility serving as the team's base of operations between Case Files. Provides medical care, equipment requisition via Stack during the Equipping Phase, research facilities, and downtime activities. See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters].
 |===
 
 == I

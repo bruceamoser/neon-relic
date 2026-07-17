@@ -197,9 +197,9 @@ Once attributes are set, note the following:
 
 == Step 7: Claim Your Division Item
 
-Every agent receives their Division's *signature item* at induction. This item requires no CL check and no requisition roll — record it automatically.
+Every agent receives their Division's *signature item* at induction. This item is *permanently owned* — record it automatically. It is never returned to Stack and never counts against requisition limits.
 
-> **Division Item vs. Starting Kit:** The Division Item (Step 7) is separate from and in addition to the Starting Kit (Step 8). You receive both. The Division Item is a piece of Covenant-issue hardware unique to your Division; the Starting Kit is the standard field loadout appropriate to your role. Stack agents also have a department-specific kit variant described in Step 8.
+> **Division Item vs. Starting Kit:** The Division Item (Step 7) is separate from and in addition to the Starting Kit (Step 8). You receive both. The Division Item is a piece of Covenant-issue hardware unique to your Division; the Starting Kit is the standard field loadout for your role. Both are permanently yours — they are not requisitioned and do not need to be returned between Case Files. Stack agents have a department-specific kit variant described in Step 8.
 
 [cols="1,2,4"]
 |===
@@ -212,9 +212,9 @@ Every agent receives their Division's *signature item* at induction. This item r
 
 ---
 
-== Step 8: Select Starting Gear
+== Step 8: Select Your Starting Gear
 
-Each agent begins with a Division-appropriate kit. Gear beyond this standard kit requires a *Clearance Level roll* during the mission's Equipping Phase.
+Each agent begins with a Division-appropriate starting kit. These items are *permanently owned* — they are yours from induction and are never returned to Stack. Additional gear beyond this kit is acquired during the *Equipping Phase* before each Case File (see xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear]), not during character creation.
 
 === Wayfinder Starting Kit
 * Verdant Codex _(Division Item — automatic)_
@@ -222,7 +222,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 * 35mm camera with two rolls of film
 * Forged credentials (press pass, academic ID, or government contractor badge — player's choice)
 * Civilian clothing (appropriate for the investigation environment)
-* 1× small concealable weapon (pocket knife, derringer) _(optional, CL 3 item — already authorized)_
+* 1× small concealable weapon (pocket knife, derringer) _(optional — already authorized)_
 
 === Recovery Starting Kit
 * Verdant Satchel _(Division Item — automatic)_
@@ -230,14 +230,14 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 * Flashlight (D-cell)
 * Basic field kit: 10m rope, zip ties × 6, chalk × 2, crowbar
 * Field jacket with concealed holster
-* One additional item from the Equipment tables _(CL 2 or lower)_
+* One additional item from the Equipment tables _(choose any item of CL 2 or lower — this is part of your starting kit, not a requisition)_
 
 === The Keep Starting Kit
 * Warden's Bracer _(Division Item — automatic)_
 * Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
 * Lore reference binder (photocopied Covenant texts on known artifact types)
 * Formal attire or tactical jacket _(player's choice based on role)_
-* 1× sidearm _(optional — Wardens only. Wardens are pre-authorized for a CL 3 sidearm because they perform physical vault security and field escort operations. Catalogers, Internal CI, and Stack agents must requisition a sidearm normally against their standard CL.)_
+* 1× sidearm _(optional — Wardens only. Wardens are pre-authorized for a sidearm as part of their starting kit. Catalogers, Internal CI, and Stack agents do not receive a starting sidearm — they may acquire one during the Equipping Phase.)_
 
 *Stack Department Variant:* Keep agents who choose the Stack department replace the Containment kit and Lore reference binder with the following:
 
@@ -247,7 +247,7 @@ Each agent begins with a Division-appropriate kit. Gear beyond this standard kit
 * Duct tape (1 roll), WD-40
 * Practical coveralls or utility vest
 
-> *Stack Requisition Bonus:* Stack agents gain +1 requisition die whenever acquiring _crafting materials_ during the Equipping Phase.
+> *Stack Requisition Bonus:* Stack agents' above-CL requisition rolls during the Equipping Phase succeed on a 5 or 6 instead of only a 6. See xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear] for full rules.
 
 ---
 
