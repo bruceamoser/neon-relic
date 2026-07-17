@@ -194,6 +194,66 @@ Agents requisition gear during the *Equipping Phase* between Case Files through 
 
 Starting CL is set by Division and Age Group (see xref:chapters/02-character-creation.adoc#chapter-character-creation[Character Creation]). CL advancement is handled through the *Requisition Authority* general talent (see xref:chapters/13-advancement.adoc#chapter-advancement[Advancement]).
 
+[[requisitioning-gear]]
+=== Requisitioning Gear
+
+The Equipping Phase is a formal procedure conducted between Case Files. Every agent has a *CL Pool* equal to their personal Clearance Level. This pool represents the total value of equipment the Covenant authorizes for a single mission — it is not a credit balance or currency, but a trust allocation from Stack.
+
+==== CL-Pool Point Buy (Rule 1: Automatic Requisition)
+
+An agent may requisition any combination of items whose CL values sum to *less than or equal to* their CL Pool. No roll is required for items within budget.
+
+*Example:* An agent with CL 4 could requisition:
+* Four CL 1 items (4 × 1 = 4)
+* Two CL 2 items (2 × 2 = 4)
+* One CL 3 item and one CL 1 item (3 + 1 = 4)
+* A single CL 4 item
+
+Consumable supplies (rations, bandages, painkillers, flares, chalk) follow the same CL-pool rules as permanent gear — each consumable item has a CL value listed in its stat block and counts against the agent's CL Pool like any other requisition. The Resource Die system (see <<resource-dice>>) tracks usage after requisition, not during the Equipping Phase.
+
+Unspent CL Pool does not carry over between Case Files. Use it or lose it.
+
+==== Above-CL Requisition Roll (Rule 2: Pushing Your Luck)
+
+An agent may request *one item* that exceeds their CL Pool — but only the item that pushes the total over budget. To do so, roll *1d6*:
+
+* *6:* Request approved. The item is issued.
+* *1–5:* Request denied. The item is not available for this Case File. The agent does not lose their CL Pool allocation — they may still requisition items within budget.
+
+Only one above-CL roll is permitted per Equipping Phase — choose your over-budget item carefully.
+
+Stack agents gain a departmental advantage: their requisition roll succeeds on a *5 or 6* instead of only a 6, reflecting their logistics connections and Quartermaster relationships.
+
+The *Requisition Expert* talent (Stack) and *Black-Market Armory* HQ upgrade (see xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters]) can modify or bypass this roll — see their respective entries for full rules.
+
+==== Equipment Sharing (Rule 3: Checked Out vs. Held)
+
+Agents may share equipment during a Case File. The agent who *checked out* the item from Stack remains the official custodian and is responsible for its return. The agent *holding* the item carries and uses it in the field.
+
+To transfer custody, both agents must be present at HQ or in a secure field location. The transfer is noted on both character sheets. If an item is lost, damaged, or destroyed, the *checking-out agent* is held accountable — Stack tracks equipment by requisitioner, not by current holder.
+
+If an agent leaves the cell (death, retirement, reassignment), all items they checked out must be returned or reassigned before the next Equipping Phase. Unreturned items count against the cell's next Standing review.
+
+==== Equipment Return (Rule 4: End of Case File)
+
+All requisitioned items must be returned to Stack during the *Aftermath Phase* at the conclusion of a Case File. Return is automatic — no roll required — but the following conditions apply:
+
+* *Consumables:* Any unused consumable items are returned to Stack inventory. Used consumables are logged as expended.
+* *Damaged gear:* Items that suffered gear degradation during the Case File (Gear Dice stepped down) are returned in their degraded state. Stack repairs them between cases at no cost to the agent, but the repair may not be complete before the next Equipping Phase if the cell is on a tight turnaround.
+* *Lost or destroyed items:* The checking-out agent must file a Loss Report. A single lost item has no mechanical penalty. Multiple losses in one Case File, or a pattern of carelessness across cases, may trigger a Standing review or restrict future requisition privileges at the DA's discretion.
+* *Signature items:* Division Items (Verdant Codex, Verdant Satchel, Warden's Bracer) are permanently assigned and are *not* returned between cases. Starting kit items purchased with character creation resources are similarly permanent.
+
+==== Owned vs. Requisitioned Items
+
+Some items are permanently *owned* by the agent and are never returned:
+
+* Division Items (Step 7 of character creation)
+* Starting kit items (Step 8 of character creation)
+* Items acquired through the *Personal Phase* or narrative rewards
+* Signature weapons or custom gear crafted during downtime (see <<improvised-items>>)
+
+All other items are *requisitioned* — issued by Stack for a single Case File and returned at its conclusion. An agent may requisition the same item for multiple consecutive Case Files if it remains within their CL Pool each time.
+
 ---
 
 == Vehicle Rules

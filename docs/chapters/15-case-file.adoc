@@ -757,9 +757,21 @@ When a Case File concludes, the team enters a downtime period before the next as
 
 === 1. Aftermath Phase
 
-Award Development Points. Update Covenant Standing. Process equipment returns to Stack. (See xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing] and xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for detailed procedures.)
+Award Development Points. Update Covenant Standing. Process equipment returns to Stack — all requisitioned items are returned (see xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear] for full return rules). Lost or destroyed items must be reported; a pattern of losses may trigger a Standing review. (See xref:chapters/12-headquarters.adoc#covenant-standing[Covenant Standing] and xref:chapters/13-advancement.adoc#chapter-advancement[Advancement] for detailed procedures.)
 
-=== 2. Recovery Phase
+=== 2. Equipping Phase
+
+Each agent requisitions gear for the upcoming Case File using their *CL Pool*. This is a formal step conducted through the agent's Division Stack contact. See xref:chapters/10-equipment.adoc#requisitioning-gear[Requisitioning Gear] for the full CL-pool point-buy rules, above-CL requisition rolls, equipment sharing, and return procedures.
+
+The Equipping Phase follows this sequence:
+
+. Determine each agent's *CL Pool* (personal Clearance Level, modified by Standing rewards and HQ upgrades).
+. Agents select items from the Equipment tables whose CL values sum to ≤ their CL Pool. No roll required for items within budget.
+. One agent may attempt an *above-CL requisition roll* (1d6, success on 6; Stack agents succeed on 5–6) for a single item that pushes their total over budget.
+. Record all requisitioned items on character sheets — note the *checking-out agent* (the requisitioner) and the *holding agent* (who carries it, if different).
+. Division Items and starting kit items are permanently owned and do not count against CL Pool.
+
+=== 3. Recovery Phase
 
 Resolve all pending healing — physical injuries requiring downtime phases, mental injuries requiring Psychoanalyze campaigns, and Corruption recovery via Full Rest.
 
@@ -769,11 +781,11 @@ A *Psychoanalyze campaign* is a sustained treatment track for mental injuries: C
 
 Corruption recovery via *Full Rest* requires a minimum of one downtime phase with no artifact exposure, no field work, and no significant stress. This reduces Corruption by 1. Multiple phases spent in genuine recovery can reduce Corruption further. See xref:chapters/08-corruption-fear-healing.adoc#chapter-corruption[Corruption and Healing] for all recovery methods.
 
-=== 3. HQ Investment Phase
+=== 4. HQ Investment Phase
 
 Spend accumulated Development Points on facility upgrades and personnel recruitment. New facilities become available at the start of the next Case File. (See xref:chapters/12-headquarters.adoc#chapter-headquarters[Headquarters] for the full facility list.)
 
-=== 4. Personal Phase
+=== 5. Personal Phase
 
 Each player answers one question about their agent's downtime:
 
@@ -783,7 +795,7 @@ Each player answers one question about their agent's downtime:
 
 The DA may use Personal Phase answers to seed hooks for the next Case File. Agents who skip the Personal Phase or describe isolation gain *+1 Corruption* — the Covenant's work consumes those who don't maintain human connections.
 
-=== 5. Briefing
+=== 6. Briefing
 
 The Covenant assigns the next Case File. Understanding the *assignment pipeline* clarifies why some cells get better cases than others — and why "better" doesn't mean "easier."
 

@@ -520,7 +520,7 @@ Stack agents design, modify, and distribute the tools used by Covenant agents â€
 |===
 | Talent | Cost | Effect
 
-| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item, bypassing the CL roll entirely.
+| *Requisition Expert* | +1 Corruption | During the Equipping Phase, automatically acquire any one non-artifact item without spending from your CL Pool. This item is in addition to your normal CL-pool allocation. You may still make an above-CL requisition roll for a different item if desired.
 | *Jury-Rig* | +1 Corruption | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene.
 | *Prototyper* | +1 Corruption | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after.
 | *Duct Tape & WD-40* _(Healing)_ | â€” | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption.
