@@ -23,6 +23,8 @@ This project is in the **core rules design phase**. There is no code yet — onl
 | `docs/design/*.md` | Design documents and issue trackers for the case file overhaul. Reference only. |
 | `docs/references/*.md` | YZE reference material from Vaesen, MYZ, Forbidden Lands, etc. Read-only — do not modify. |
 | `assets/*.html` | Printable HTML templates: Case File form, Case Brief, Operations Board, Organization Reference, Relic Sheet, Location Pages, NPC Cards, Information Cards. |
+| `scripts/*` | Build scripts, validation tools, PDF converters, font inliners. All build tooling lives here — never in root. |
+| `scratch-pad/*` | Temporary working output files, debug logs, test artifacts. Not source of truth. Gitignored. |
 
 ## Design Principles
 

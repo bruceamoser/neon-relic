@@ -8,14 +8,14 @@ This project has no package.json. Build uses **asciidoctor-pdf** (Ruby gem) and 
 
 | Command | Platform | Description |
 |---------|----------|-------------|
-| `.\build.ps1` | Windows (PowerShell) | Full build: rulebook PDF, HTML templates, starter-kit.zip |
-| `.\build.ps1 -SkipRulebook` | Windows | Build without rulebook PDF (faster iteration) |
-| `./build.sh` | Linux/macOS (bash) | Full build counterpart. Uses Chrome headless + Python3 |
-| `./build-pdfs.sh` | Linux/macOS | Standalone HTML→PDF conversion. Has hardcoded PROJECT_ROOT — edit before use |
+| `./scripts/build.ps1` | Windows (PowerShell) | Full build: rulebook PDF, HTML templates, starter-kit.zip |
+| `./scripts/build.ps1 -SkipRulebook` | Windows | Build without rulebook PDF (faster iteration) |
+| `./scripts/build.sh` | Linux/macOS (bash) | Full build counterpart. Uses Chrome headless + Python3 |
+| `./scripts/build-pdfs.sh` | Linux/macOS | Standalone HTML→PDF conversion. Has hardcoded PROJECT_ROOT — edit before use |
 
 **Prerequisites:** asciidoctor-pdf, asciidoctor-diagram (Ruby gems), Chrome/Chromium, Python3 (for font inlining). No npm/node.
 
-**Known gotcha:** `build.sh` includes a `sed` workaround for a Chrome headless phantom-second-page margin bug. `build-pdfs.sh` has a hardcoded PROJECT_ROOT path.
+**Known gotcha:** `scripts/build.sh` includes a `sed` workaround for a Chrome headless phantom-second-page margin bug. `scripts/build-pdfs.sh` has a hardcoded PROJECT_ROOT path.
 
 ## Source of Truth Hierarchy
 
@@ -28,6 +28,8 @@ This project has no package.json. Build uses **asciidoctor-pdf** (Ruby gem) and 
 | **Design docs** | `docs/design/*.md` | Reference only. Not source of truth |
 | **YZE references** | `docs/references/*.md` | Read-only. Do not modify |
 | **Foundry VTT modules** | sibling repos in workspace | Read-only reference. Do NOT modify |
+| **Scripts** | `scripts/*` | Build scripts, validation tools, converters. Keep out of root |
+| **Scratch pad** | `scratch-pad/*` | Temporary working output files, debug logs. Not source of truth. Gitignored |
 | **Bruce-Stuff/** | sandbox | Personal WIP. Not part of core project |
 
 ## Architecture (Non-Obvious)
