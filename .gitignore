@@ -3,5 +3,8 @@ tools/
 .github/copilot-instructions.md
 .playwright-mcp/
 
-starter-kit.zipstarter-kit/
+/starter-kit/
 starter-kit.zip
+
+/dist/
+__pycache__/

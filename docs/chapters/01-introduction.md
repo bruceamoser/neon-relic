@@ -1,0 +1,133 @@
+# Introduction {#chapter-introduction}
+
+**Project Neon Relic** is a tabletop roleplaying game of occult investigation, psychological horror, and artifact recovery set in an alternate 1980s. Players are agents of a secret society called **The Verdant Covenant**, tasked with discovering, retrieving, and containing supernatural artifacts before they destroy the world, or the people who find them. Along the way, agents may encounter **supernatural entities**, ghosts, animated objects, corrupted humans, and worse, spawned or sustained by these artifacts.
+
+The game uses the **Year Zero Engine (YZE)** dice-pool variant. What makes Neon Relic different is its **Corruption** system: a steadily rising psychological damage track with no safe reset, turning every pushed roll and every artifact activation into a calculated gamble against your own sanity.
+
+Neon Relic's default protagonists are **competent but vulnerable containment specialists**. They are trained, resourced, and trusted enough to enter dangerous situations on the Covenant's behalf, but they are never powerful enough to dominate those situations safely. The intended fantasy is **solve and survive under pressure**, not superheroic paranormal mastery.
+
+## What This Game Is {#01-what-this-game-is}
+
+- **Episodic investigation.** Each mission is a **case**: an investigation driven by artifact recovery, faction interference, and occult threats.
+- **Base management between missions.** The team maintains a **Headquarters**, a Covenant facility they upgrade, staff, and defend over the course of a campaign.
+- **Psychological attrition.** The real threat is not the monsters. It is the toll the work takes on the agents. Corruption accumulates from pushing rolls, using supernatural abilities, and confronting the unnatural. It does not go away easily. Characters who cross the threshold are permanently retired.
+- **Analog procedural thriller.** No internet. No GPS. No cell phones. Investigations require physical legwork, face-to-face conversations, and fragile 1980s technology that degrades under use.
+- **Professional tradecraft under cost.** Agents have real tools, protocols, and institutional support, but those tools create access, leverage, and temporary control, not effortless victories.
+
+## What This Game Is Not {#01-what-this-game-is-not}
+
+- Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
+- Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
+- Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions and surviving trauma.
+- Not a game where Division gear or Talents replace investigation. The Covenant equips you to enter the problem, not to bypass it.
+
+## The 1980s Setting {#01-the-1980s-setting}
+
+The world of Project Neon Relic is an amalgamation of neon-noir aesthetics and deep historical conspiracies. It is an alternative reality where the geopolitical tension of the Cold War is not merely fought with the threat of nuclear deterrence, but through the covert weaponization of ancient, mythological artifacts.
+
+### The Analog Aesthetic {#01-the-analog-aesthetic}
+
+The technological environment is characterized by analog limitations, forcing a distinct style of investigative gameplay. The absence of smartphones, GPS, and ubiquitous high-speed internet forces players into physical legwork and face-to-face interactions:
+
+- **Communication** relies on vulnerable payphones, easily intercepted HAM radios, and analog cassette answering machines.
+- **Information** is not Googled; it is painstakingly recovered from microfiche spools, physical library archives, and fragile floppy disks.
+- **Surveillance** uses bulky camcorders, grainy polaroid cameras, and temperamental infrared equipment.
+
+The juxtaposition of high-tech, neon-lit urban sprawl against the ancient, rotting, cosmic horror of the artifacts creates a stark, atmospheric dichotomy. Audio aesthetics play a major role, underground clubs pulse with aggressive synthwave beats, while secretive government laboratories hum with the low, oppressive frequencies of massive server mainframes.
+
+The tactile, error-prone nature of 1980s technology maps naturally to the engine's attrition mechanics. Batteries die at the worst moment. Magnetic tapes corrupt. CRT screens flicker and distort in the presence of the anomalous.
+
+## The Verdant Covenant {#01-the-verdant-covenant}
+
+For as long as civilizations have risen and fallen, the world has produced objects of unusual power and importance, relics of faith, symbols of kingdoms, forbidden texts, cursed idols, lost maps, sacred bones, and artifacts whose origins are long forgotten. Some inspire devotion. Some bring prosperity. Some bring ruin. Throughout history, wars have been fought over such objects. Empires have risen seeking them, and entire cultures have been erased because of them. To prevent the past from destroying the present, a quiet order was formed centuries ago.
+
+**The Verdant Covenant.**
+
+The Verdant Covenant is a secret society devoted to the discovery, recovery, and protection of artifacts of magical, religious, occult, and cultural significance. Its members hold a singular, unwavering belief: that the greatest dangers in history have never been armies or kings, but the objects left behind in their wake, relics imbued with power beyond understanding.
+
+The Covenant does not seek these artifacts for wealth, glory, or dominion. Its purpose is stewardship alone. To study them. To preserve them. And above all, to ensure they are never wielded by those who would bring ruin upon the world.
+
+No single account agrees on the true origin of the Verdant Covenant, but most surviving records speak of a time when a catastrophe erased an entire civilization. Its cities silenced and its history fractured. At the center of these accounts is reference to a great green dragon, said to have witnessed the destruction and come to a grim understanding: that certain relics were not treasures, but instruments of ruin. The dragon began gathering such objects, cataloging and hiding them away from those who would misuse them. To some, it was a tyrant hoarding power. To others, a silent guardian preserving what remained of the world.
+
+What followed is told only in fragments. The dragon was slain, whether by fearful kings, desperate scholars, or its own design is unknown. From its remains came the first tools of the Covenant: codices, satchels, and bracers fashioned from its hide, said to carry a trace of its purpose. Those who inherited its hoard became the first members of the Verdant Covenant, continuing its work of discovery, containment, and protection. And though the truth has long since blurred into legend, some within the order quietly wonder whether the dragon's will was ever truly extinguished, or merely divided and carried forward in the hands of those who came after.
+
+### The Square of Harmony (The Rule of 441) {#01-the-square-of-harmony-the-rule-of-441}
+
+The organization strictly maintains exactly **441 active members worldwide at all times**, not a single operative more or less. This figure is derived from the **"Square of Harmony,"** a principle rooted in the sacred geometry of Reversible Multiplicative Symmetry. Covenant occultists recognize that `441 = 21^2`, symbolizing the gross material plane; while its exact numerical reversal, `144`, represents the enlightened, inverse stewardship of the anomalous.
+
+The Covenant believes this numerical balance acts as a metaphysical anchor, keeping the organization from becoming corrupted by the volatile artifacts it hoards. Because of this rigid cap, the initiation of a new member invariably means a previous member has died or fallen to permanent Catatonia, ensuring the cycle of stewardship continues unbroken.
+
+### Organizational Structure {#01-organizational-structure}
+
+Within the Covenant there are **three Divisions**, each responsible for a different stage of the artifact lifecycle:
+
+| Division | Motto Segment | Purpose |
+| ------------------------ | ------------------------------------ | ------------------------------------------------------------ |
+| **The Wayfinder Division** | _"What is found must be known."_ | Scholars and researchers who uncover the existence and locations of lost artifacts. |
+| **The Recovery Division** | _"What is known must be contained."_ | Field agents who retrieve relics from ruins, vaults, corporations, and those who would misuse them. |
+| **The Keep** | _"What is contained must be guarded."_ | Wardens and archivists who guard the Covenant's vaults and ensure dangerous artifacts remain contained. |
+
+> **Note on Stack:** The Keep's Department of Logistics (informally known as **"Stack"**) has a strong field identity, but it is still part of **The Keep**, not a fourth playable Division. See [Stack (Logistics)](#stack-logistics) for details.
+
+### Document Classification {#01-document-classification}
+
+The Verdant Covenant classifies all documents, intelligence, and operational materials into one of four classification tiers. These appear throughout this rulebook on part dividers and are referenced in Case File documents:
+
+| Classification | Minimum Clearance | Who May Access |
+| ------------------------ | ------------ | ------------------------------------------------ |
+| **Unrestricted** | None | All Covenant personnel. This covers public-facing operational doctrine, basic organizational structure, and agent onboarding materials. |
+| **Restricted** | CL 1+ | Operational personnel assigned to active Case Files. Includes field reports, location files, NPC dossiers, and tactical assessments. |
+| **Secret** | CL 2+ | Agents with verified need-to-know. Includes Division-specific capabilities, artifact containment profiles, headquarters schematics, and detailed Covenant Standing records. |
+| **Top Secret** | CL 4+ | Director of Agents and senior Covenant leadership only. Includes faction intelligence assessments, artifact origin theories, and sensitive historical records. Distribution to players is expressly prohibited. |
+
+> **For Players:** Pages marked _Director eyes only_ reveal opposition and case details. Ask your Director before reading those files.
+
+### Quick Response Teams {#01-quick-response-teams}
+
+Under standard operations, the Covenant's three Divisions work sequentially: Wayfinders locate, Recovery retrieves, the Keep contains.
+This process is methodical, documented, and safe, when time permits.
+
+When an artifact surfaces under hostile conditions (rival factions converging, civilian exposure escalating, or containment failures cascading beyond a single Division's capability) the Covenant activates a **Quick Response Team**.
+QRTs are ad-hoc field units assembled from available agents across all three Divisions, deployed to handle situations that require the full locate-retrieve-contain cycle in compressed, dangerous timeframes.
+
+Your agents are a QRT.
+You were not hand-picked for compatibility.
+You were available, qualified, and willing, or at least, you didn't refuse fast enough.
+The Wayfinder on your team knows how to find the artifact and what it does.
+The Recovery operative knows how to get it out.
+The Keep agent knows how to make sure it stays contained.
+None of you can do the others' jobs, and all of you are expendable enough to be sent together rather than in sequence.
+
+QRT activation is uncommon.
+Most Covenant operations proceed through normal divisional channels.
+The cases your team receives are the ones that can't wait, situations too volatile for the standard process, too dangerous for a single Division, or too politically sensitive to risk sequential handoffs that might leak information.
+This is why rival factions are already moving when you arrive.
+You were sent because the situation has already escalated beyond routine.
+
+QRT members retain their Division authority, equipment, and clearance.
+There is no formal QRT command structure, teams establish their own field leadership, which may shift between members depending on the phase of the operation.
+A Wayfinder might lead during investigation, a Recovery agent during extraction, a Keep specialist during containment.
+Flexibility is the point.
+
+#### QRT Deployment and Standing {#01-qrt-deployment-and-standing}
+
+The quality of QRT assignments reflects the team's Covenant Standing:
+
+| Standing | Assignment Quality |
+| ------------ | ------------------------------------------------ |
+| **0–4** | You receive cases other teams passed on, cold leads, hostile territories, inadequate intel. The Covenant is testing whether your team can function. |
+| **5–9** | Standard QRT assignments with reasonable intelligence packages and logistics support. |
+| **10–14** | Priority cases with advance Wayfinder research, pre-positioned equipment, and Keep consultation on containment profiles. |
+| **15+** | The team may request specific assignments. The Covenant treats your team as a proven asset and provides accordingly. |
+
+## How to Use This Book {#01-how-to-use-this-book}
+
+Players can begin with Creating Your Agent and Core Resolution Mechanics. Keep the equipment list and your Division's talents close at hand. The Director of Agents (DA) also uses the restricted files, including rival factions, the bestiary, and the Buenos Aires assignment.
+
+## How Play Works {#01-how-play-works}
+
+The Director brings the team an incident. You decide whom to trust, where to look next, and when to risk handling the artifact. Tell the Director what you do. When the outcome is uncertain and the stakes matter, build a dice pool and roll.
+
+Time matters when someone is waiting for you, a witness is leaving town, or a relic is hurting people. A **shift** is about six hours: morning, day, evening, or night. Use shifts for travel, extended research, rest, or any rule that gives a duration in shifts. A conversation at a payphone might take two minutes.
+
+When you need the Covenant's help, send a specific question or request. The team can send one packet to HQ per shift. An answer takes at least two shifts, sometimes longer for overseas or classified records. You can follow another lead while you wait.

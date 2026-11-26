@@ -1,6 +1,6 @@
 # Neon Relic — Issue Workflow SOP
 
-This document defines the standard process for picking up, working on, and closing design issues in this repository. Follow it consistently so that work history, decisions, and references are preserved in the issue tracker for both Bruce and Stu.
+This document defines the standard process for picking up, working on, and closing design issues in this repository. Follow it consistently so that work history, decisions, and references are preserved in the issue tracker for both Bruce and Stewart Voit.
 
 ---
 
@@ -38,13 +38,13 @@ Each issue in this repo represents a discrete piece of design work, a design dec
 | 3 — Polish | `tier: 3-polish` | Third — required for publication quality |
 | 4 — Expansion | `tier: 4-expansion` | Last — stretch content and GM tools |
 
-Work issues in tier order. Within a tier, pick the issue that unblocks the most other work (e.g., Character Creation unblocks Dark Secrets and Relationships).
+Work issues in tier order. Within a tier, pick the issue that unblocks the most other work (e.g., Character Creation unblocks agent dossiers and advancement).
 
 > **⚠️ AGENT INSTRUCTION — NO STOPPING BETWEEN ISSUES**
 > Do **NOT** pause between issues to ask "ready to proceed?", "shall I continue?", or "want me to start the next issue?".
 > Do **NOT** wait for approval after merging a PR before starting the next issue.
 > The correct behavior is: merge → assign next issue → branch → work → merge → repeat, with no interruptions.
-> The only valid reason to stop is if you hit a genuine blocker that requires a design decision from Bruce or Stu that cannot be inferred. In that case, leave a comment on the issue and move to the next one — do not stop the loop.
+> The only valid reason to stop is if you hit a genuine blocker that requires a design decision from Bruce or Stewart Voit that cannot be inferred. In that case, leave a comment on the issue and move to the next one — do not stop the loop.
 
 ---
 
@@ -121,7 +121,7 @@ Pick the highest-tier open issue that is not already assigned. **Do not start re
 ### Step 2 — Assign and Mark In-Progress
 
 > **⚠️ Do this FIRST — before reading reference docs, before creating a branch, before any research.**
-> This makes the in-progress state visible to Bruce and Stu immediately.
+> This makes the in-progress state visible to Bruce and Stewart Voit immediately.
 
 Assign the issue to yourself and add a starting comment so the history is clear.
 
@@ -165,7 +165,7 @@ git checkout -b issue/1-character-creation
 
 ### Step 4 — Do the Work
 
-Open the target chapter file (specified in the issue body) and write the content. Each issue identifies its target file as `docs/chapters/XX-name.adoc`. Consult the YZE reference documents in `docs/references/` as directed in the issue body.
+Open the target chapter file (specified in the issue body) and write the content. Each issue identifies its target file as `docs/chapters/XX-name.md`. Consult the YZE reference documents in `docs/references/` as directed in the issue body.
 
 **Key reference files:**
 | File | Use For |
@@ -188,7 +188,7 @@ Leave comments on the issue during the work — not just at the start and end. T
 - When you make a significant design decision (and why)
 - When you deviate from what the issue originally specified
 - When you encounter a dependency on another issue
-- When you need input from Stu
+- When you need input from Stewart Voit
 - When you finish a major sub-task group
 
 **Comment format for design decisions:**
@@ -214,7 +214,7 @@ Commit regularly — at minimum after completing each logical chunk (e.g., finis
 
 ```sh
 # Stage the changed file(s)
-git add docs/chapters/<XX>-<chapter>.adoc
+git add docs/chapters/<XX>-<chapter>.md
 
 # Commit with conventional commit message referencing the issue
 git commit -m "feat(#<number>): <short description>"
@@ -383,7 +383,7 @@ gh issue view <number> --repo bruceamoser/neon-relic
 | Design decision made | Decision + rationale + alternatives considered (see format above) |
 | Deviating from issue scope | What changed and why |
 | Blocked by another issue | Which issue, what is needed, link it |
-| Asking Stu for input | Tag with `@stucodesomeday` (or Stu's GitHub handle) + clear question |
+| Asking Stewart Voit for input | Tag with `@stucodesomeday` (or Stewart Voit's GitHub handle) + clear question |
 | Sub-section complete | "Completed: [sub-task group]. Remaining: [what's left]" |
 | PR opened | "PR opened: #<pr-number>" |
 
@@ -397,7 +397,7 @@ Some issues (e.g., `#18 — Willpower / Activation Resource`) are **decision iss
 
 1. Assign and branch as normal
 2. In the issue comments, lay out the options clearly (the issue body already does this)
-3. Discuss with Stu asynchronously via issue comments
+3. Discuss with Stewart Voit asynchronously via issue comments
 4. When a decision is reached, post a final comment:
    ```
    **DECISION:** [Option chosen]
@@ -410,7 +410,7 @@ Some issues (e.g., `#18 — Willpower / Activation Resource`) are **decision iss
 
 ---
 
-*This SOP is for the Neon Relic design project. Both Bruce and Stu should follow it to maintain a clean, legible design history.*
+*This SOP is for the Neon Relic design project. Both Bruce and Stewart Voit should follow it to maintain a clean, legible design history.*
 
 ---
 
@@ -428,140 +428,10 @@ git status
 
 Ensure the working tree is clean before release packaging.
 
-### 1a. Validate AsciiDoc Cross-References
+### Build and review
 
-Before building, verify that no chapter file contains raw file-path references that render as broken links in the PDF. Run from the repo root — the command should return **no output**:
+Run `python3 scripts/build_book.py` from the project root. Review the publication record, two-column rules, reference tables, sample mission, and final license in `dist/neon-relic-core-rules.pdf`. Open the ZIP and check the dossiers and player handouts.
 
-```powershell
-Select-String -Path docs/chapters/*.adoc -Pattern '`docs/chapters/'
-```
+### Publish a release
 
-If any lines are returned, convert each match from:
-
-```adoc
-`docs/chapters/XX-name.adoc`
-```
-
-to the proper AsciiDoc cross-reference format:
-
-```adoc
-xref:XX-name.adoc[Chapter Title]
-```
-
-Fix all hits before proceeding with the build.
-
-### 1b. Set Release Version
-
-Set the `$version` variable in PowerShell — it flows through the build and release commands. Set it **once** here and copy-paste each subsequent step without modifications:
-
-```powershell
-$version = "X.Y.Z"  # ← Replace with the actual version (no "v" prefix, e.g. "1.2.0")
-```
-
-> **Note:** The `v` prefix is added automatically in the git tag and `gh release create` command.
-
-### 2. Build PDF Output
-
-Generate the PDF from the master AsciiDoc document. Run from the repo root:
-
-```powershell
-# Ensure output directory exists
-New-Item -ItemType Directory -Force -Path docs/output | Out-Null
-
-# Build PDF — versioned filename, version number injected into title page
-asciidoctor-pdf docs/neon-relic.adoc -D docs/output -o "neon-relic-$version.pdf" -a revnumber=$version
-```
-
-This produces `docs/output/neon-relic-$version.pdf`. The `docs/output/` directory is gitignored — the PDF is generated fresh each release and attached as a release artifact.
-
-Verify the build succeeded:
-
-```powershell
-Test-Path "docs/output/neon-relic-$version.pdf"
-```
-
-Expected output: `True`
-
-> **Note:** Cross-references between chapters (`xref:XX-name.adoc[Title]`) produce working internal hyperlinks in the PDF because all chapters are included via `include::` directives in `docs/neon-relic.adoc`. Compiling individual chapter files will NOT produce working links.
-
-### 3. Commit Release Metadata/Docs Changes
-
-```sh
-git add .
-git commit -m "docs: add release process and prepare vX.Y.Z artifacts"
-git push origin main
-```
-
-### 4. Update GitHub Repository Description (Optional but Recommended)
-
-```sh
-gh repo edit bruceamoser/neon-relic --description "Neon Relic: Year Zero Engine occult investigation RPG set in an alternate 1980s."
-```
-
-### 5. Create GitHub Release
-
-Attach the PDF directly — no zip needed. GitHub releases support raw file uploads.
-
-PowerShell example using a multiline notes variable:
-
-```powershell
-$version = "X.Y.Z"
-$notes = @"
-Neon Relic $version
-
-- Summary item one
-- Summary item two
-- Summary item three
-"@
-
-gh release create v$version "docs/output/neon-relic-$version.pdf#neon-relic.pdf" `
-  --repo bruceamoser/neon-relic `
-  --title $version `
-  --notes $notes `
-  --latest
-```
-
-Notes:
-- Use semantic version tags (`v1.0.0`, `v1.0.1`, etc.).
-- Keep release title numeric (`1.0.0`) and tag prefixed (`v1.0.0`).
-- The `#neon-relic.pdf` suffix renames the asset on GitHub. The local file is versioned (`neon-relic-X.Y.Z.pdf`), but GitHub stores it as `neon-relic.pdf` — this keeps the README download URL (`/releases/latest/download/neon-relic.pdf`) permanently valid without updating it each release.
-- The `--latest` flag explicitly marks this release as the latest on GitHub.
-- Attach only generated artifacts intended for consumers.
-- Do **not** pass literal `\n` escape sequences in release notes. Use an actual multiline body.
-
-> **⚠️ IMPORTANT — `#name` sets the GitHub display label, NOT the asset filename.** The asset's actual download URL is derived from the local filename, not the `#name` label. To ensure `/releases/latest/download/neon-relic.pdf` always works, the upload step **must copy the versioned file to `neon-relic.pdf`** before uploading. The correct full Step 5 sequence is:
->
-> ```powershell
-> # Step 5a — Copy versioned file to stable upload name
-> Copy-Item "docs/output/neon-relic-$version.pdf" "docs/output/neon-relic.pdf"
->
-> # Step 5b — Create the release, uploading as neon-relic.pdf
-> gh release create v$version "docs/output/neon-relic.pdf" `
->   --repo bruceamoser/neon-relic `
->   --title $version `
->   --notes $notes `
->   --latest
-> ```
->
-> The local `neon-relic-X.Y.Z.pdf` is kept as the build artifact. The copied `neon-relic.pdf` is the release upload — it is gitignored and can be discarded after upload.
-
-Suggested release note structure:
-
-```text
-Neon Relic X.Y.Z
-
-- Rules changes
-- Documentation/process changes
-- Release artifact notes
-```
-
-### 6. Validate Published Release
-
-```sh
-gh release view vX.Y.Z --repo bruceamoser/neon-relic
-```
-
-Confirm:
-- tag exists
-- release is published
-- PDF asset is attached and downloadable
+The tag workflow builds from the tagged sources and uploads the rulebook as `neon-relic.pdf` plus `starter-kit.zip`. Use semantic version tags (for example, `v2.4.0`) for approved releases.

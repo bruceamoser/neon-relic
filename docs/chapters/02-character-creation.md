@@ -1,0 +1,327 @@
+# Creating Your Agent {#chapter-character-creation}
+
+Every player in Neon Relic portrays a sworn agent of **The Verdant Covenant**, a specialist with a particular expertise, a history that brought them to this work, and a threshold for the horrors they are about to witness. You are building a trained containment operative, not an occult superhero. Character creation follows these ten steps in order.
+
+## Step 1: Choose Your Division {#02-step-1-choose-your-division}
+
+Your **Division** is your character class. It defines your role within the Covenant, your primary attribute, your starting skills, and your access to supernatural Division Talents. Your Division tells the group what kind of pressure you are trained to handle. Even in your specialty, you rely on your team. There are three Divisions:
+
+| Division | Role | CL | Primary Attribute |
+| ------------ | ------------------------ | ------------ | ------------------------ |
+| **Wayfinder** | Research and intelligence. You find what others don't know exists. | 3 | Wits |
+| **Recovery** | Field retrieval. You go in and bring the artifact out. | 2 | Agility |
+| **The Keep** | Vault security, custody, and logistics. You guard what has been won, and equip those who win it. | 3 | Empathy |
+
+**Clearance Level (CL) vs. Covenant Standing**
+These two numbers measure different kinds of trust, and new agents often confuse them.
+
+**Clearance Level** is an equipment authorization tier. It determines what gear your agent can requisition during the Equipping Phase. Higher CL means access to more expensive or more dangerous hardware. Your starting CL is set by your Division base plus an Age Group modifier (minimum 1, maximum 5), and it is defined here in Step 3.
+
+**Covenant Standing** is institutional reputation. It reflects how much the Covenant trusts your agent's judgment, and it gates information access, advanced HQ facilities, and some talent prerequisites. Standing is earned through mission success and lost through exposure or failure. It is defined in [Headquarters](#covenant-standing).
+
+High CL means the Covenant will hand you a suppressed rifle. High Standing means the Covenant will tell you _why_ you need one. Both matter, but they increase through different actions and govern different systems.
+
+Read the full Division descriptions in [Divisions](#chapter-divisions) before making your choice.
+
+::: keep
+## Step 2: Choose Your Department or Background {#02-step-2-choose-your-department-or-background}
+
+Within your Division, you have a specific background:
+
+- **Wayfinder:** Choose a Wing: **Research** or **Counterintelligence**. Within that, choose a specialty.
+- **Recovery:** Choose an Operational Paradigm: **Ex-Agency Operative**, **Heavy-Hitter**, or **Acquisition Specialist**. Within that, choose a specialty.
+- **The Keep:** Choose a Department: **Catalogers**, **Wardens**, **Internal Counterintelligence**, or **Stack (Logistics)**. Within that, choose a specialty.
+
+Your Wing, Paradigm, or Department determines which sub-unit Talent list you select from during Step 5.
+
+:::
+
+## Step 3: Choose Your Age Group and Distribute Attribute Points {#02-step-3-choose-your-age-group-and-distribute-attribute-points}
+
+Choose an **Age Group** that reflects your agent's seniority and experience. This determines your age range, attribute point pool, skill point pool (used in Step 4), and **Clearance Level modifier**. The longer you've served the Covenant, the higher your authorization.
+
+::: wide
+| Age Group | Age Range | Attribute Points | Skill Points | CL Modifier |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| **Young** | 22–28 | 14 | 10 | −1 |
+| **Experienced** | 29–38 | 13 | 12 | +0 |
+| **Senior** | 39–52 | 12 | 14 | +1 |
+:::
+
+Younger characters are physically sharper (more attribute points); older characters are more skilled and better connected (more skill points and higher clearance). The trade-off is real and interesting. There is no "best" choice.
+
+Distribute your **Attribute Points** across your four core attributes. Each attribute has a minimum score of **2** and a maximum score of **5**.
+
+| Attribute | Range | Description |
+| ------------ | ------------ | ------------------------------------------------ |
+| **Strength** | 2–5 | Physical power, endurance, and resistance to bodily harm. |
+| **Agility** | 2–5 | Reflexes, coordination, fine motor control, and speed. |
+| **Wits** | 2–5 | Perception, memory, deductive reasoning, and technical aptitude. |
+| **Empathy** | 2–5 | Charisma, social intuition, and resistance to psychological horror. |
+
+> **Division Favorite Attribute:** Each Division has one **Favorite Attribute**, the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. **Wayfinder:** Wits | **Recovery:** Agility | **The Keep:** Empathy. Investing there is strongly recommended but not mechanically enforced.
+
+> **Attributes as Health Pools**
+>
+> Your four attributes serve a dual purpose: they define your dice pools **and** they are your health. When your agent takes damage, the relevant attribute is reduced:
+>
+> * **Physical damage** (bullets, blunt trauma, falls) → reduces **Strength**
+> * **Hobbling damage** (sprint, forced march, exertion) → reduces **Agility**
+> * **Mental horror** (supernatural imagery, occult overload) → reduces **Wits**
+> * **Emotional trauma** (witnessing atrocity, corruption of bonds) → reduces **Empathy**
+>
+> When **any** attribute reaches **0**, your agent is **Broken**, incapacitated and unable to act independently. Broken does not mean dead. Full rules for damage, Broken state, and recovery in [Health, Damage & Armor](#chapter-health).
+
+## Step 4: Distribute Skill Points {#02-step-4-distribute-skill-points}
+
+Distribute your **Skill Points** (determined by your Age Group in Step 3) across the thirteen core skills. No single skill may exceed **3** at character creation.
+
+::: wide
+| Skill | Attr | Starting Max | Recommended Division Priority |
+| ------------------------ | ------------ | ------------------------ | ------------------------------------------------ |
+| Force | STR | 3 | Recovery |
+| Brawl | STR | 3 | Recovery |
+| Endure | STR | 3 | Keep |
+| Sneak | AGI | 3 | Recovery |
+| Deft Hands | AGI | 3 | Keep (Stack) |
+| Firearms | AGI | 3 | Recovery |
+| Investigate | WIT | 3 | Wayfinder, Keep (Stack) |
+| Tech | WIT | 3 | Wayfinder, Keep (Stack) |
+| Lore | WIT | 3 | Wayfinder, Keep |
+| Manipulate | EMP | 3 | Wayfinder |
+| Command | EMP | 3 | Keep |
+| Psychoanalyze | EMP | 3 | Wayfinder, Keep |
+| Heal | EMP | 3 | Keep |
+:::
+
+> **Unranked skills:** A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice. There are no "untrained" restrictions.
+
+> **Division Key Skill: Starting Cap Exception**
+>
+> Each Division has one designated **Key Skill** that may start at rating **4** instead of the normal cap of 3. This single exception represents professional mastery acquired before Covenant service:
+>
+> * **Wayfinder Key Skill:** Lore
+> * **Recovery Key Skill:** Firearms
+> * **The Keep Key Skill:** Command
+>
+> You may spend up to 4 of your starting skill points on your Division's Key Skill. No other skill may exceed 3 at character creation. During play, any skill may advance to a maximum of 5 via XP. The Key Skill restriction applies only at creation.
+
+| Division | Key Skill (Starting Cap: 4) |
+| ------------ | ------------ |
+| Wayfinder | Lore |
+| Recovery | Firearms |
+| The Keep | Command |
+
+## Step 5: Choose Your Starting Talents {#02-step-5-choose-your-starting-talents}
+
+At creation, every agent selects **three** talents, one from each of the following categories:
+
+| Slot | What to Choose | Where to Find the List |
+| ------------------------ | ------------------------------------ | ------------------------ |
+| **Division or General Talent** | One talent from your Division's talent list **OR** one General Talent (not both). | Division list: [Divisions](#chapter-divisions). General list: [Advancement](#chapter-advancement). |
+| **Wing / Paradigm / Department Talent** | One talent from your specific sub-unit's list. Must match your Wing, Paradigm, or Department from Step 2. | [Divisions](#chapter-divisions), find your sub-unit section. |
+| **Background Talent** | One talent from the Background Talents list. Available to every agent regardless of Division. Always passive. No activation cost. | [Advancement](#chapter-advancement). |
+
+Most Division Talents cost **+1 Corruption** to activate. One talent per list is a **Healing** talent, usable freely but once per session. General Talents are passive or per-session effects with no Corruption cost unless noted. Background Talents are always passive. No activation cost.
+
+Talents are further restricted by **usage frequency**, which determines how often they can be activated and when their uses reset:
+
+| Frequency | Rule |
+| ------------------------ | ------------------------------------------------------------ |
+| **At-Will** | Can be activated any number of times. Each activation costs the listed Corruption. Passive talents (no activation) are always at-will. |
+| **Per-Session** | Limited uses per play session. Uses reset at the start of each new session via Session Reset. Most Medium-impact talents fall here. |
+| **Per-Case-File** | Limited uses per Case File operation. Uses reset at the start of each new Case File via Case File Reset. Reserved for the most powerful, case-altering talents. |
+
+See the individual talent tables in [Divisions](#chapter-divisions) and [Advancement](#chapter-advancement) for each talent's frequency and Corruption cost.
+
+Talents and Division items are meant to create **leverage**: a clue path, a brief edge, a safer handling window, a cleaner extraction. They should not change the game's default expectation that agents must still investigate, improvise, and pay a price for certainty.
+
+> **Talent Advancement:** Additional General, Division, or Wing/Paradigm/Department talents can be purchased during play using XP. See [Advancement and Talents](#chapter-advancement).
+
+## Step 6: Record Your Starting Statistics {#02-step-6-record-your-starting-statistics}
+
+Once attributes are set, note the following:
+
+| Statistic | Starting Value |
+| ------------------------ | ------------------------------------ |
+| **Clearance Level (CL)** | Division base CL + Age Group modifier (minimum 1) |
+| **Corruption** | **0**: you begin psychologically intact |
+| **Max Corruption Threshold** | `10 + Empathy score` |
+| **Broken Thresholds** | Any attribute reaching 0 |
+
+> **The Corruption Threshold, and why Empathy matters**
+>
+> `10 + Empathy` is the absolute limit of what your agent's mind can endure. Exceeding it means **permanent catatonia**. The character is retired from play. It is not a target. It is a cliff edge.
+>
+> A character with Empathy 2 has a threshold of 12. Empathy 4 gives a threshold of 14. That two-point difference represents entire sessions of additional safety margin in a game where Corruption accumulates through pushing rolls, talent activation, artifact handling, and surviving supernatural encounters.
+>
+> As threshold approaches, your options narrow: lower Empathy reduces social dice pools, reduces your passive resistance to emotional trauma, and leaves no buffer for emergencies. The game's Corruption economy is deliberately asymmetric: Corruption is easier to gain than to lose.
+>
+> Manage your Empathy carefully at creation. See [Corruption and Healing](#chapter-corruption) for the full economy.
+
+> **Maximum Corruption Threshold** is the number at which your character's mind permanently fractures, resulting in catatonia and character retirement. This is the most important number on your sheet, protect it.
+
+## Step 7: Claim Your Division Item {#02-step-7-claim-your-division-item}
+
+Every agent receives their Division's **signature item** at induction. This item is **permanently owned**. Record it automatically. It is never returned to Stack and never counts against requisition limits.
+
+::: keep
+> **Division Item vs. Starting Kit:** The Division Item (Step 7) is separate from and in addition to the Starting Kit (Step 8). You receive both. The Division Item is a piece of Covenant-issue hardware unique to your Division; the Starting Kit is the standard field loadout for your role. Both are permanently yours. They are not requisitioned and do not need to be returned between Case Files. Stack agents have a department-specific kit variant described in Step 8.
+:::
+
+| Division | Item | Granted Abilities |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| Wayfinder | **Verdant Codex** | Secures memory, assists with language and symbol work, highlights likely historical correlations, preserves documents. |
+| Recovery | **Verdant Satchel** | Masks minor artifact signatures, stabilizes transport, warns of instability, keeps basic field tools ready. |
+| Keep | **Warden's Bracer** | Dampens nearby emissions during handling, warns of containment failure, makes cursed objects safer to manage, absorbs 1 Corruption/session, +1 Armor Rating. |
+
+::: {.equipment-print item="bracer" caption="Division property / The Warden’s Bracer"}
+:::
+
+## Step 8: Select Your Starting Gear {#02-step-8-select-your-starting-gear}
+
+Each agent begins with a Division-appropriate starting kit. These items are **permanently owned**. They are yours from induction and are never returned to Stack. Additional gear beyond this kit is acquired during the **Equipping Phase** before each Case File (see [Requisitioning Gear](#requisitioning-gear)), not during character creation.
+
+### Wayfinder Starting Kit {#02-wayfinder-starting-kit}
+- Verdant Codex _(Division Item, automatic)_
+- Briefcase with research materials (notepad, pens, carbon paper)
+- 35mm camera with two rolls of film
+- Forged credentials (press pass, academic ID, or government contractor badge, player's choice)
+- Civilian clothing (appropriate for the investigation environment)
+- 1× small concealable weapon (pocket knife, derringer) _(optional, already authorized)_
+
+### Recovery Starting Kit {#02-recovery-starting-kit}
+- Verdant Satchel _(Division Item, automatic)_
+- Sidearm (.38 Special revolver or 9mm semi-automatic, 12 rounds)
+- Flashlight (D-cell)
+- Basic field kit: 10m rope, zip ties × 6, chalk × 2, crowbar
+- Field jacket with concealed holster
+- One additional item from the Equipment tables _(choose any item of CL 2 or lower. This is part of your starting kit, not a requisition)_
+
+### The Keep Starting Kit {#02-the-keep-starting-kit}
+- Warden's Bracer _(Division Item, automatic)_
+- Containment kit: 1kg salt, copper wire (10m), chalk × 4, sealed glass canisters × 4
+- Lore reference binder (photocopied Covenant texts on known artifact types)
+- Formal attire or tactical jacket _(player's choice based on role)_
+- 1× sidearm _(optional: Wardens only. Wardens are pre-authorized for a sidearm as part of their starting kit. Catalogers, Internal CI, and Stack agents do not receive a starting sidearm. They may acquire one during the Equipping Phase.)_
+
+**Stack Department Variant:** Keep agents who choose the Stack department replace the Containment kit and Lore reference binder with the following:
+
+- Personal toolkit: flathead and Phillips screwdrivers × 3, soldering iron, wire cutters, electrical tape, multimeter
+- Signal jammer (prototype; 1 use before requiring repair; Gear Die d6)
+- Walkie-talkies × 2 (range: ~2km, 9V battery)
+- Duct tape (1 roll), WD-40
+- Practical coveralls or utility vest
+
+> **Stack Requisition Bonus:** Stack agents' above-CL requisition rolls during the Equipping Phase succeed on a 5 or 6 instead of only a 6. See [Requisitioning Gear](#requisitioning-gear) for full rules.
+
+::: {.equipment-print item="radio" caption="Stack stores / Portable field radio"}
+:::
+
+::: keep
+## Step 9: Choose Your Anchor {#02-step-9-choose-your-anchor}
+
+Every agent has an **Anchor**, a personal source of solace that grounds them against the psychological toll of Covenant work. An Anchor is not a physical object; it is the practice, habit, or connection where the character finds peace. It connects you to who you are outside the mission.
+
+Choose one of the following options:
+
+- **Roll d66** on the Anchor Sources table in the Healing chapter and accept the result as written.
+- **Invent your own:** name the source of solace and describe how the character engages with it. Run it by your DA.
+
+Record your Anchor on your character sheet.
+
+> **Mechanic:** Once per session, dedicate a scene to your Anchor, a quiet moment where you actively engage with your source of solace. Heal **1d4 Corruption**. Full rules in the Healing chapter.
+:::
+
+## Step 10: Name, Country of Origin, and Biography {#02-step-10-name-country-of-origin-and-biography}
+
+Choose a name appropriate for your campaign's 1980s setting. Record your **Country of Origin**. Then write 2–3 sentences of biography: who were you before the Covenant? What incident drew their attention? What can you not bring yourself to talk about?
+
+> **Country of Origin Guidance:** This is primarily narrative. Use it to inform your accent, contacts, cultural references, and how local authorities read you in the field. Do not apply mandatory mechanical modifiers.
+
+> **1980s Name Inspiration:** Choose names authentic to your character's country of origin and cultural background. British Isles: Margaret, Colin, Siobhan, Alistair. France: Isabelle, François, Nathalie, Michel. Germany: Ursula, Dieter, Heike, Jürgen. Japan: Kenji, Noriko, Takeshi, Yuki. Use surnames that fit your cultural heritage and the era. The 1980s had specific naming fashions in every country.
+
+## Character Sheet Summary {#02-character-sheet-summary}
+
+After completing all steps, your sheet should record:
+
+| Field | Notes |
+| ------------ | ------------------------ |
+| **Name / Country of Origin / Division / Department** | Identity and role |
+| **Clearance Level** | Division base CL + Age Group modifier (minimum 1) |
+| **Age Group / Age** | Chosen in Step 3 (Young / Experienced / Senior) |
+| **Attributes (STR / AGI / WIT / EMP)** | Attribute Points distributed per Age Group, 2–5 each |
+| **Skills (13)** | Skill Points distributed per Age Group, 0–3 each |
+| **Division Talent or General Talent** | One chosen from Divisions chapter or the General Talents list in Advancement |
+| **Wing, Paradigm, or Department Talent** | One chosen from the sub-group talent list in Divisions |
+| **Background Talent** | One chosen from the Background Talents list in Advancement |
+| **Division Item** | Automatic per Division |
+| **Starting Gear** | Division kit (department variant if applicable) ± optional items |
+| **Corruption** | Starts at 0 |
+| **Max Corruption Threshold** | 10 + Empathy |
+| **Anchor** | Source of solace (see Healing chapter) |
+
+## Worked Example: Creating Petra Vasquez {#02-worked-example-creating-petra-vasquez}
+
+The following example demonstrates a complete character build for a Recovery agent.
+
+### Step 1–2: Division and Background {#02-step-1-2-division-and-background}
+
+**Petra Vasquez** is a **Recovery** agent with the **Ex-Agency Operative** background. She is a former DEA field agent who recovered an artifact during what she thought was a routine drug raid, and has been in the Covenant's employ ever since.
+
+### Step 3: Age Group and Attributes {#02-step-3-age-group-and-attributes}
+
+Petra's six years in DEA field operations put her at age 34. She selects **Experienced** (29–38), giving her **13 Attribute Points** and **12 Skill Points**.
+
+| Attribute | Score | Reasoning |
+| ------------ | ------------ | ------------ |
+| Strength | 4 | Ex-agency physical conditioning |
+| Agility | 4 | Trained for fast entries; Recovery Primary Attribute |
+| Wits | 3 | Sharp but not an analyst |
+| Empathy | 2 | Gets by on presence, not charm; lower threshold is a real risk |
+
+_(13 points spent: 4 + 4 + 3 + 2 = 13)_
+
+> Max Corruption Threshold: `10 + 2 = 12`. Petra has a tighter margin than she'd like, but those attribute points went where they needed to go.
+
+### Step 4: Skills (12 points) {#02-step-4-skills-12-points}
+
+| Skill | Rating | Reasoning |
+| ------------ | ------------ | ------------ |
+| Sneak | 3 | Core recovery skill; DEA background |
+| Firearms | 3 | Agency-trained; Recovery Key Skill |
+| Force | 2 | Physical entries, breaking down doors |
+| Brawl | 2 | Hand-to-hand when it comes to that |
+| Investigate | 1 | Enough to read a crime scene |
+| Endure | 1 | Agency conditioning |
+
+_(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 7 skills at 0.)_
+
+### Step 5: Starting Talents {#02-step-5-starting-talents}
+
+- **Division Talent:** Petra chooses **Shadow Walker** (+1 Corruption): Become entirely imperceptible to mundane guards or cameras for a scene, provided she does not attack. This fits her infiltration background perfectly.
+- **Paradigm Talent:** As an Ex-Agency Operative, Petra selects **Spycraft Discipline** _(Healing)_, once per session, after successfully completing a covert objective without being detected, heal 1 Corruption. Years of deep-cover fieldwork taught Petra that clean work is its own reward.
+- **Background Talent:** Petra takes **Police Officer** (+1 Firearms). Her DEA field certification included extensive weapons qualifications, and that muscle memory doesn't go away.
+
+### Step 6: Starting Statistics {#02-step-6-starting-statistics}
+
+| Statistic | Value |
+| ------------ | ------------ |
+| Clearance Level | 2 |
+| Corruption | 0 |
+| Max Corruption Threshold | 12 |
+
+### Steps 7–8: Division Item and Gear {#02-steps-7-8-division-item-and-gear}
+
+Petra records the **Verdant Satchel** automatically. From the Recovery Kit she takes: .38 Special revolver (12 rounds), D-cell flashlight, field kit (rope, zip ties, chalk, crowbar), and field jacket. For her additional CL 2 item she selects a police scanner.
+
+### Step 9: Anchor {#02-step-9-anchor}
+
+> **Anchor:** Memory / Nostalgia. A cassette tape her brother Marco made for her birthday. She keeps it in the inside pocket of her field jacket. She doesn't listen to it (the Walkman's rewind button is broken) but holding it and remembering that birthday is enough.
+
+### Step 10: Name, Country of Origin, and Biography {#02-step-10-name-country-of-origin-and-biography-2}
+
+- **Name:** Petra Vasquez
+- **Country of Origin:** United States (California)
+
+> _"Former DEA Special Agent, six years in field operations before the Tucson Incident. The Covenant found her two days after the raid. She's never asked them how they knew."_
