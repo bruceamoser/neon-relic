@@ -4,34 +4,23 @@
 
 **Project Neon Relic** is a tabletop RPG (TTRPG) built on the **Year Zero Engine (YZE)** dice-pool variant. It is set in an alternate 1980s where occult artifacts threaten reality. Players are agents of **The Verdant Covenant**, a secret society that discovers, recovers, and contains supernatural artifacts.
 
-This project is in the **core rules design phase**. There is no code yet — only game design documents and reference material.
+This project is in the **core rules design phase**. The rulebook and starter kit build locally.
 
 ## Designers
 
-- **Bruce** — Lead designer and system architect
-- **Stu** — Co-designer, worldbuilding and lore
+- **Bruce Moser** — Lead designer and system architect
+- **Stewart Voit** — Co-designer, worldbuilding and lore
 
-## Key Files
+## Sources and publication
 
-| File | Role |
-|---|---|
-| `docs/neon-relic.adoc` | Master AsciiDoc document — includes all chapters to produce the full PDF. |
-| `docs/chapters/*.adoc` | Individual chapter files. **The source of truth** for all game mechanics, lore, classes, equipment, and setting. Design changes go here. |
-| `docs/chapters/15-case-file.adoc` | Case File system — shifts, Operations Board, Organizations, Locations, NPCs, Information Cards, packets, and HQ. |
-| `docs/chapters/20-sample-case-file.adoc` | Complete worked example: *The Spear That Went Dark*. |
-| `docs/case-file-instructions.adoc` | Step-by-step DA guide to building a case file from scratch. |
-| `docs/design/*.md` | Design documents and issue trackers for the case file overhaul. Reference only. |
-| `docs/references/*.md` | YZE reference material from Vaesen, MYZ, Forbidden Lands, etc. Read-only — do not modify. |
-| `assets/*.html` | Printable HTML templates: Case File form, Case Brief, Operations Board, Organization Reference, Relic Sheet, Location Pages, NPC Cards, Information Cards. |
-| `scripts/*` | Build scripts, validation tools, PDF converters, font inliners. All build tooling lives here — never in root. |
-| `scratch-pad/*` | Temporary working output files, debug logs, test artifacts. Not source of truth. Gitignored. |
+See the root AGENTS.md for canonical chapter paths, book layout, the kit builder, and the scope of reference materials. Directors keep freeform notes on each mission. OmniscientForge LLC publishes the book.
 
 ## Design Principles
 
 When working on this project, follow these rules:
 
 ### 1. Core Rules Are Authoritative
-- `docs/chapters/*.adoc` files are the canonical documents. If there's a conflict between stu-comments.md and the chapter files, the chapters win (unless Bruce explicitly says to use Stu's version).
+- `docs/chapters/*.md` files are the canonical documents. If there's a conflict between stu-comments.md and the chapter files, the chapters win (unless Bruce explicitly says to use Stu's version).
 - All mechanics, lore, classes, and setting details should be written into or read from the chapter files.
 
 ### 2. Year Zero Engine Consistency
@@ -91,7 +80,7 @@ When working through GitHub issues, follow this procedure **one issue at a time*
 
 ### 3. Fix
 - Read the issue description and all related issues referenced in it.
-- Read the affected chapter files (`docs/chapters/*.adoc`) before making changes.
+- Read the affected chapter files (`docs/chapters/*.md`) before making changes.
 - Make the fix in the chapter files. Follow the Design Principles above — especially YZE consistency, Corruption economy preservation, and document formatting.
 - For cross-chapter issues, update **every** chapter referenced in the issue. Do not leave dangling contradictions.
 - Commit with a message in the format: `fix(#<number>): <short summary>`.

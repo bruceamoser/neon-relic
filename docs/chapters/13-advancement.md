@@ -1,0 +1,168 @@
+# Advancement and Talents {#chapter-advancement}
+
+This chapter covers two connected systems: **Advancement** (the per-session XP debrief and how XP is spent on skills and talents) and **Talents** (General, Division, and Background abilities). Each agent has one Background Talent from creation; additional General and Division Talents are purchased with XP during play.
+
+## Advancement {#13-advancement}
+
+Experience Points (XP) are the game's **only** advancement currency. They are awarded at the end of each **session**, not at the end of a Case File. A session corresponds to one real-world play period (typically 2–4 hours).
+
+XP is tracked as three values on your character sheet:
+
+- **Total XP**: all XP your agent has ever earned across their career. This number only ever increases.
+- **XP Spent**: the cumulative cost of all skill increases and talent purchases you have made.
+- **Current XP**: your available XP to spend. Calculated as **Total − Spent**. This is the number you check against costs.
+
+**XP Tracking Example**
+Agent Voss has earned 47 Total XP over twelve sessions. She has spent 35 XP on skills and talents across her career. Her Current XP is 12 (47 − 35). If she wants to buy a new talent (6 XP), she checks her Current XP: 12 ≥ 6, so she can afford it. After purchase: Total = 47, Spent = 41, Current = 6.
+
+XP is awarded through a structured **Debriefing** that the DA runs immediately at session end. Each player answers for their own agent. For each “yes,” that player receives **1 XP** (maximum **5 XP per session**):
+
+| # | Debriefing Question |
+| ------------ | ------------------------------------------------------------ |
+| 1 | Did you participate in the session? _(Automatic +1 XP. This is always yes.)_ |
+| 2 | Did you risk your life for a fellow Covenant member or an innocent civilian? |
+| 3 | Did you push a roll? |
+| 4 | Did the team successfully secure or contain an Occult Artifact? |
+| 5 | Did you learn something new and significant about the supernatural threat or rival factions? |
+
+### Spending XP {#13-spending-xp}
+
+| Upgrade | XP Cost | Limit |
+| ------------------------------------ | ------------ | ------------------------ |
+| Increase a Skill by 1 | 5 XP | Maximum rating of 5 |
+| Purchase a new Talent (at-will or per-session) | 6 XP | General, Division, or Wing/Paradigm/Department Talent |
+| Purchase a new Talent (per-case-file) | 10 XP | High-impact talents restricted to once per Case File |
+
+> **Note on CL and Standing:** Clearance Level is no longer purchased directly with XP. To increase a character's **personal** CL, purchase the **Requisition Authority** general talent (6 XP, repeatable). This raises the individual agent's permanent CL (and thus their CL Pool) independent of team Standing. Separately, team Standing (see [Ch 12, Headquarters](#chapter-headquarters)) grants the **entire cell** a minimum effective CL Pool during the Equipping Phase (CL 3 at Standing 5, CL 4 at Standing 10), but this is a cell-wide floor, not a personal CL increase. If an agent's personal CL is already higher than the cell's Standing-granted floor, use their personal CL. If lower, use whichever is higher during the Equipping Phase only.
+
+### Worked Example: Session Debrief and Talent Purchase {#13-worked-example-session-debrief-and-talent-purchase}
+
+The following shows a typical post-session debrief for **Agent Yusuf Demir**, a Keep Warden currently at Clearance Level 2 with 35 Total XP and 27 XP Spent (8 Current XP remaining).
+
+**The DA runs the debrief questions:**
+
+| Debriefing Question | Answer | Result |
+| ------------------------------------ | ------------------------------------------------ | -------- |
+| Did you participate in the session? | Yes | +1 XP |
+| Did you risk your life for a fellow Covenant member or an innocent civilian? | Yes: Yusuf entered the artifact room to pull Agent Skovgaard to safety when triple-layer containment cracked. | +1 XP |
+| Did you push a roll? | Yes: Yusuf pushed his Force roll to free Skovgaard from the jammed door. | +1 XP |
+| Did the team successfully secure or contain an Occult Artifact? | Yes. The artifact reached the Keep vault intact. | +1 XP |
+| Did you learn something new and significant about the supernatural threat or rival factions? | No. The team already knew the artifact's provenance from prior Wayfinder reports. | N/A |
+
+**Result: 4 XP earned this session.** Total XP: 35 → 39. Spent XP: 27 (unchanged). Current XP: 8 → 12.
+
+**Yusuf's player spends XP:**
+
+- **6 XP → Requisition Authority talent (CL 2 → CL 3).** The Watch Commander issued a formal written commendation during the case closure review, explicitly noting the intact transport as mission-critical. The DA agrees this is a valid fiction trigger and approves the purchase. Total XP: 39 (unchanged when spending). Spent XP: 27 → 33. Current XP: 12 → 6.
+- **6 Current XP remain** for future sessions.
+
+> **DA note:** Requisition Authority purchases should be supported by a fiction trigger. A commendation, a formal reassignment, or a documented mission assessment that the Covenant acknowledges. If the trigger hasn't been established in play, ask the player to name one before approving. The increase marks institutional recognition, not just personal growth.
+
+::: {.lookup register="general-talents" kind="Talent" title="General talents"}
+## General Talents {#13-general-talents}
+
+This is the **canonical General Talents list** used at character creation and during XP advancement. General Talents use the same concise format as the rest of the manuscript's talent lists: talent name plus effect text, with tags only when mechanically relevant.
+
+> **Healing Tag and Stacking:** Talents with the _(Healing)_ tag can heal Corruption. Each tagged talent's trigger is independent, but a character may heal a maximum of **3 Corruption per session** from Healing-tagged General Talents combined, regardless of how many they possess or how many triggers fire. This cap does not apply to Corruption healed by city network capabilities, the Warden's Bracer, or Division talents.
+:::
+
+::: {.catalog register="general-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Street Medic** | At-Will | 0 | Restore 2 physical Attribute points instead of 1 when successfully using Heal (WIT). |
+| **Cathartic Release** _(Healing)_ | Per-Session | +1 | Once per session, dedicate a moment to breaking down, screaming, or venting. This must occur in a scene where you are not actively in conflict. Heal 1 Corruption. |
+| **Hair-Trigger** | At-Will | 0 | Draw a weapon as a free action instead of a fast action. Critical edge in ambushes. |
+| **Paranormal Intuition** | At-Will | +1 | When entering a new room or location, roll Investigate (WIT) Difficulty 1. On success, the DA must tell you if a supernatural entity has been here in the last 24 hours. This roll cannot be pushed. |
+| **Heavy Packer** | At-Will | 0 | Your carry capacity increases to **Strength × 3** Enc. (instead of the standard Strength × 2). You are not Overloaded until your Enc. exceeds Strength × 4 (instead of Strength × 3). |
+| **Skeptic's Shield** | Per-Session | +1 | Once per session, when exposed to a **minor supernatural effect** (defined as any effect that deals 1 or fewer Corruption, does not cause physical damage, and has no lasting duration) you may outright ignore it by rigidly refusing to acknowledge the impossible. Does not apply to Burst or Catastrophic artifact effects. |
+| **Night Owl** | At-Will | 0 | Ignore all penalties from sleep deprivation. When operating in darkness, you treat Darkness as Dim (−1 die, not −2 dice). |
+| **Chain Smoker** _(Healing)_ | Per-Session | +1 | Consume a period-appropriate scarce resource (cigarettes, specific 1980s junk food, etc.) during a non-conflict moment. Heal 1 Corruption. The resource must actually be spent and removed from your inventory. |
+| **Analog Junkie** | At-Will | 0 | Gain +2 bonus dice when using period-accurate 1980s technology (ham radios, acoustic couplers, microfiche, reel-to-reel). The equipment must be correctly identified as 1980s-era gear; the DA rules on edge cases. |
+| **Grit Your Teeth** | Per-Session | +1 | Once per session, ignore a −1 Attribute penalty for a single roll. Declare before rolling. |
+| **Desensitized** | At-Will | 0 | Gain +1 bonus die on Endure (STR) or Empathy (EMP) rolls when witnessing or investigating **horrific or gruesome** scenes (DA-designated, typically scenes involving mass casualties, mutilation, or sustained supernatural terror). Does not apply to standard combat or single-casualty crime scenes. |
+| **Lucky Coin** | At-Will | +1 | Once per session, ignore a 1 rolled on a single Gear die, preventing item degradation. Declare after seeing the roll. |
+| **Iron Will** _(Healing)_ | Per-Session | +1 | When you **personally** deliver the killing blow to a Named Threat or banish a supernatural entity (using the Banishment ritual in full), heal 1 Corruption. A "killing blow" requires your attack to reduce the target to 0 Strength. Banishment must be a completed ritual, not just an attack on an entity. |
+| **Brawler** | At-Will | 0 | Unarmed strikes inflict base damage of 2 instead of 1. |
+| **Flee the Scene** | At-Will | 0 | Gain +2 bonus dice to Agility (ATT) when rolling explicitly to escape a conflict or pursue fleeing targets. |
+| **Requisition Authority** _(Repeatable)_ | At-Will | 0 | Increase your **personal** Clearance Level by 1 (maximum CL 5). This increases your CL Pool by 1 for all future Equipping Phases. May be purchased multiple times. No Standing prerequisite. This talent represents individual institutional recognition, useful for agents who want personal CL access before the team's Standing catches up to that tier. Purchasing this talent does not count toward or substitute the team's Standing-based access rewards. |
+:::
+
+::: {.lookup register="background-talents" kind="Background" title="Background talents"}
+## Background Talents {#13-background-talents}
+
+Everyone was someone else before joining The Covenant. Your background offers a unique perspective on how you interact with the world around you. You may select a background from the list, or work with your Director to create something unprecedented.
+
+Each Background Talent grants **+1 bonus die on rolls using a specific skill**. This is a bonus die added to the dice pool. It is not a permanent increase to the skill's rating. The skill's rating (1–5) does not change; you simply roll one additional d6 on those rolls. Background Talents have no Corruption cost and no activation requirement. The bonus is always active.
+
+> **Design Note: Skill Distribution:** The current Background Talent list skews heavily toward Investigate, Lore, and Manipulate backgrounds. This reflects the game's investigation focus but may limit variety for combat-oriented characters. Players who want to reinforce Firearms, Brawl, or Force may find fewer natural-fit options. DAs are encouraged to approve custom backgrounds (one background, one skill, one narrative concept) when the list doesn't match the character concept.
+:::
+
+::: {.catalog register="background-talents"}
+| Background | Skill bonus and experience |
+| ---------------- | ----------------------------------------- |
+| **Accountant** | **+1 Investigate.** You spent years tracking numbers, discrepancies, and hidden financial patterns. Few irregularities escape your trained eye. |
+| **Actor** | **+1 Manipulate.** You are comfortable becoming someone else entirely, adopting personas and convincing others of your performance. |
+| **Amateur Astronomer** | **+1 Investigate.** Long nights studying the skies have sharpened your patience and your ability to notice subtle anomalies. |
+| **Amateur Radio Operator** | **+1 Tech.** You built and maintained your own radio equipment, speaking across the airwaves with strangers around the world. |
+| **Archaeologist** | **+1 Lore.** You studied the remnants of ancient civilizations and learned to interpret artifacts buried by time. |
+| **Artist** | **+1 Investigate.** Your eye for composition, pattern, and subtle detail allows you to notice things others overlook. |
+| **Athlete** | **+1 Endure.** Rigorous training and competition have hardened your body and stamina. |
+| **Bartender** | **+1 Psychoanalyze.** You've listened to countless confessions and learned to read people when they think no one is watching. |
+| **Birdwatcher** | **+1 Investigate.** You possess extraordinary patience and observational skill developed from quietly studying wildlife. |
+| **Board Game Enthusiast** | **+1 Command.** Strategic thinking and anticipating opponents' moves comes naturally to you. |
+| **Bodyguard** | **+1 Brawl.** Protecting others from physical harm is your profession, and you know how to handle yourself in close quarters. |
+| **Bookseller** | **+1 Lore.** Years surrounded by literature and obscure texts have broadened your knowledge. |
+| **Chess Grandmaster** | **+1 Command.** You think several moves ahead and naturally direct others toward strategic goals. |
+| **Collector** | **+1 Lore.** You have spent years hunting, cataloging, and preserving rare and unusual items. |
+| **Construction Worker** | **+1 Force.** Heavy labor has made you strong and capable of breaking through physical barriers. |
+| **Cook** | **+1 Endure.** Long hours in demanding kitchen environments have built your stamina and resilience. |
+| **Courier** | **+1 Sneak.** Moving unnoticed and navigating complex urban spaces is second nature to you. |
+| **Detective** | **+1 Investigate.** Solving mysteries and reconstructing events from fragments of evidence is your specialty. |
+| **Doctor** | **+1 Psychoanalyze.** Treating patients has given you a keen understanding of human behavior and distress. |
+| **Electrician** | **+1 Tech.** You know how to wire, repair, and safely manipulate electrical systems. |
+| **Engineer** | **+1 Tech.** Your technical education allows you to understand machines, structures, and mechanical systems. |
+| **Factory Worker** | **+1 Endure.** Years of repetitive, demanding labor have toughened your body. |
+| **Farmer** | **+1 Endure.** You are accustomed to harsh weather, long days, and physically demanding work. |
+| **Firefighter** | **+1 Force.** You are trained to break through barriers and force entry during emergencies. |
+| **Fisher** | **+1 Endure.** Working long hours on the water has given you patience and resilience. |
+| **Food Service Professional** | **+1 Manipulate.** You have mastered the art of dealing with difficult people while maintaining composure. |
+| **Gambler** | **+1 Deft Hands.** You know how to move cards, chips, and small objects without drawing attention. |
+| **Gardener** | **+1 Lore.** Your knowledge of plants, natural cycles, and organic growth runs deep. |
+| **Hiker** | **+1 Endure.** You are accustomed to long treks through rough terrain and difficult conditions. |
+| **Historian** | **+1 Lore.** You have studied the past and understand how ancient events shape the present. |
+| **Journalist** | **+1 Investigate.** Asking questions and digging for the truth is part of your nature. |
+| **Librarian** | **+1 Lore.** You have spent years cataloging and studying vast collections of knowledge. |
+| **Locksmith** | **+1 Deft Hands.** Locks, tumblers, and mechanical security devices are familiar tools of your trade. |
+| **Lockpicking Hobbyist** | **+1 Deft Hands.** What began as a pastime has made you remarkably skilled with delicate mechanisms. |
+| **Mechanic** | **+1 Tech.** Engines, machines, and broken equipment rarely intimidate you. |
+| **Metal Detectorist** | **+1 Investigate.** You've spent countless hours searching for hidden objects beneath the earth. |
+| **Military Veteran** | **+1 Firearms.** You received formal training in weapons and battlefield discipline. |
+| **Model Builder** | **+1 Tech.** Constructing detailed models has taught you patience and mechanical understanding. |
+| **Musician** | **+1 Manipulate.** You know how to influence the emotions of a room through performance and presence. |
+| **Nurse** | **+1 Psychoanalyze.** You are accustomed to comforting the injured and calming frightened people. |
+| **Office Clerk** | **+1 Investigate.** Handling paperwork and records has trained you to recognize patterns and inconsistencies. |
+| **Park Ranger** | **+1 Sneak.** You are skilled at moving quietly through wilderness environments. |
+| **Pharmacist** | **+1 Lore.** You understand medicines, chemicals, and their effects on the human body. |
+| **Photographer** | **+1 Investigate.** You instinctively notice visual details others miss. |
+| **Pilot** | **+1 Tech.** Operating complex vehicles and navigation equipment is part of your training. |
+| **Police Officer** | **+1 Firearms.** You are trained in the proper use of service weapons. |
+| **Priest** | **+1 Manipulate.** Your words carry moral authority and influence over others. |
+| **Private Investigator** | **+1 Investigate.** Tracking people and uncovering hidden truths is your livelihood. |
+| **Professor** | **+1 Lore.** Your academic background grants you extensive theoretical knowledge. |
+| **Sailor** | **+1 Endure.** Life at sea has taught you to withstand difficult conditions. |
+| **Salesperson** | **+1 Manipulate.** Convincing people to trust and believe you is part of your profession. |
+| **Scientist** | **+1 Investigate.** You rely on observation, experimentation, and analysis. |
+| **Security Guard** | **+1 Command.** You are trained to maintain order and direct people during incidents. |
+| **Shopkeeper** | **+1 Manipulate.** Negotiating with customers and suppliers has sharpened your social instincts. |
+| **Sports Fan** | **+1 Command.** Years of studying team strategy and leadership dynamics influence how you guide others. |
+| **Student** | **+1 Lore.** Your academic studies have given you a foundation of knowledge. |
+| **Survivalist** | **+1 Endure.** You train to endure extreme environments and catastrophic scenarios. |
+| **Taxi Driver** | **+1 Sneak.** You know how to navigate cities and move through them without drawing attention. |
+| **Teacher** | **+1 Command.** You are skilled at directing groups and keeping people focused. |
+| **Technician** | **+1 Tech.** You repair and maintain specialized equipment. |
+| **Translator** | **+1 Manipulate.** Understanding language nuances allows you to influence conversations and negotiations. |
+| **Urban Explorer** | **+1 Sneak.** You specialize in quietly entering and navigating abandoned structures. |
+| **Watchmaker** | **+1 Deft Hands.** You possess remarkable dexterity working with tiny mechanical components. |
+| **Woodworker** | **+1 Force.** Years of manual craftsmanship have strengthened your hands and arms. |
+| **Writer** | **+1 Investigate.** Research and storytelling have sharpened your ability to uncover hidden truths. |
+:::

@@ -1,0 +1,226 @@
+# Corruption and Healing {#chapter-corruption}
+
+**Corruption** is Neon Relic's signature mechanic, a single ascending number that tracks the cumulative psychic toll of occult exposure, supernatural exertion, and sheer human desperation. It functions as an "inverse hit points" system: every push, every artifact activation, every encounter with the unnatural ratchets the number higher, and there is no coming back from the top.
+
+## The Corruption Track {#08-the-corruption-track}
+
+Corruption starts at **0** and increases from there. It is gained directly from its sources and reduced (slowly) by its methods. There is no buffer, no cascade, and no shortcut.
+
+**Maximum Corruption Threshold** = `10 + Empathy score`
+
+When a character's Corruption **exceeds** their threshold, their mind permanently fractures. The character enters a catatonic state and is **immediately removed from the campaign**.
+
+**Threshold modifiers stack on top of the base formula:**
+
+- **Redundant Safeties** talent (Stack Division): +2 to threshold (effective threshold = `12 + Empathy`).
+- **Fracture Point** Critical Injury (Result 45): −2 to threshold permanently (effective threshold = `8 + Empathy`).
+- Both modifiers apply simultaneously if relevant.
+
+**Retroactive threshold drop:** If permanent Empathy loss (Critical Injury or other source) drops your Corruption Threshold below your current Corruption score, you must immediately attempt a Corruption Burst check. On failure, catatonia triggers at once. On success, you remain active but must reduce your Corruption below the new threshold by the end of the next session or face catatonia automatically.
+
+> When Corruption threshold is breached simultaneously with a physical Broken state, see the Simultaneous Injury Resolution rule in [Chapter 7: Health, Damage & Armor](#chapter-health).
+
+## Sources of Corruption {#08-sources-of-corruption}
+
+| Trigger | Corruption Gained | Description |
+| ------------------------ | ------------ | ------------------------------------------------ |
+| **Pushing a Roll** | +1 | Exerting your absolute limits invites psychic static. |
+| **Activating a Division Talent** | +0 to +2 | Talent Corruption cost is determined by the talent's impact on the game. **At-will** and **per-session** talents typically cost +1 Corruption; the most powerful **per-case-file** talents cost +2. Passive talents (marked 0 in their Corruption Cost column) carry no Corruption cost. See each talent's entry in [Divisions](#chapter-divisions) and [Advancement](#chapter-advancement). |
+| **Occult Exposure** | +1 to +3 | Witnessing entities, reading forbidden tomes, or being targeted by anomalous phenomena. DA sets severity. |
+| **Artifact Activation** | +1 to +3 | Utilizing an artifact's supernatural properties. Cost varies by artifact tier. |
+| **Corruption Burst (any 1s rolled)** | +1 | The mind cracks trying to process the unprocessable. See Corruption Burst rules below. |
+| **Failed Corruption Burst** | +Burst Rating | On top of any 1s penalty. See Corruption Burst rules below. |
+| **Successful Psychoanalyze on contaminated NPC** | +1 | Reading a corrupted mind transfers a fragment. Unique: the only roll where **success** costs Corruption. See [Social Conflict](#chapter-social-conflict). |
+| **Other sources** | Varies | Artifact emissions (passive auras, pulses, Corruption Cascade), creature passive Corruption, Mental Critical Injury results, ritual backlash, and specific supernatural interactions. See [Artifacts](#chapter-artifacts), [Health & Damage](#chapter-health), and [Bestiary](#chapter-bestiary) for details. |
+
+::: wide
+## Corruption Effects {#08-corruption-effects}
+
+| Corruption | Stage | Mechanical & Narrative Consequence |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| **1–3** | Nosebleeds / Migraines | Intense intracranial pressure. Occasional bleeding and severe headaches. The character maintains control. |
+| **4–6** | Auditory Hallucinations | Distinct whispers from the void, voices of the dead or entities from beyond. **Mechanical:** Once per session, the DA may describe a specific hallucination and require a Wits roll (Difficulty 1) to distinguish real from imagined. Failure = the character acts on the hallucination for one round. |
+| **7–9** | Eldritch Tremors | Anomalous energy violently courses through the nervous system. Noticeable physical twitches develop. **Mechanical:** −1 die on Deft Hands and Firearms rolls. Visible tremors: NPCs and allies may notice. The character cannot fully conceal them. |
+| **10–12** | Reality Distortion | The localized environment physically warps. Lights shatter, shadows stretch, electronics fry in the character's presence. **Mechanical:** Electronic Gear Dice in the character's possession degrade one step at the start of each scene. Allies in the same zone gain +1 Corruption at the start of each scene (contamination leaking outward). |
+| **13–14** | Fugue States | A nearby entity or latent force begins seizing control of the character's motor functions. Lost time and memory gaps. **Mechanical:** At the start of each scene, the DA rolls a d6. On a 1–2, the character enters a brief fugue (DA controls character for one round; player does not remember it). This is distinct from the Panic Table Fugue (result 6), which is an acute one-time response. The stage Fugue is chronic and recurring. |
+| **15–17** | Collapse of Self | The character's sense of personal identity begins to dissolve. They speak in third person, lose track of which memories are theirs, and may briefly mistake allies for entities. −1 die on all social skill rolls (they are visibly wrong). _This range is only reachable by characters with the Redundant Safeties talent or similar threshold-expanding effects._ |
+| **Exceeds Threshold** | **Catatonic Revelation** | The character's mind completely breaks upon perceiving the underlying, terrifying geometry of the universe. Permanent catatonic state. **Immediately removed from the campaign.** |
+:::
+
+## Healing Corruption {#08-healing-corruption}
+
+Because Corruption naturally builds toward lethal levels, characters must actively seek to heal their psychological wounds.
+
+::: wide
+### Methods of Recovery {#08-methods-of-recovery}
+
+| Method | Effect | Requirements |
+| ------------------------ | ------------------------------------ | ------------------------------------ |
+| **Anchor Scene** | Heal **1d4 Corruption** | Once per session. Engage with your Anchor, a personal source of solace, in a safe, unhurried moment. Player describes the interaction. See detailed rules below. |
+| **Safe Scene Recovery** | Heal **1 Corruption** | Once per session. Dedicate a quiet scene to personal decompression, sleep, a meal, a walk, listening to music, a phone call with family. The scene must be **safe** (no active threats, no time pressure). Must be a **different scene** than the one used for an Anchor activation. The two recovery methods cannot share the same moment. No specific Anchor required; just the absence of pressure. |
+| **Full Rest (24 hours)** | Heal Corruption equal to **Empathy score** | Full 24-hour cycle resting in a secure, non-anomalous location (defined as: no active artifact emissions, no supernatural entities, no uncontained occult material in the building). Covenant HQ with an active Faraday Cage qualifies. A hotel room or safe house qualifies. Full Rest is typically available only **between Case Files** or during extended downtime within a case (at DA discretion); it cannot be taken during an active shift. **Faraday Cage stacking:** Full Rest and the Faraday Cage ([Headquarters](#chapter-headquarters)) stack. A character who takes Full Rest at HQ with access to the Cage recovers Empathy score + up to 4 additional Corruption. |
+| **Healing Talents** | Varies by talent | See Division Talents and General Talents marked with _(Healing)_. |
+:::
+
+> **Anchor Scene vs. Safe Scene, what's the difference?**
+>
+> An **Anchor Scene** requires the character to actively engage with their personal source of solace. Their Anchor. This might mean praying, running laps around the parking lot, playing guitar in the motel room, or calling a loved one. It heals more (1d4, potentially 2–4 Corruption) because it's doing psychological work, confronting the thing that grounds the agent to who they are outside the Covenant.
+>
+> A **Safe Scene** requires only the **absence of threat and pressure**. No supernatural contact, no mission urgency. A character can share a meal, sit quietly, or simply sleep. It heals less (1 Corruption, flat) because it's passive recovery, not active processing.
+>
+> Both count against the **per-session active recovery cap of 5 Corruption**. You may use both in the same session, but they must be separate scenes.
+
+> **Design note:** Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest, but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
+>
+> **Session cap math:** From Ch 8 sources alone (Anchor + Safe Scene), the maximum in-session active recovery is up to 1d4 + 1 = 5 Corruption. Division Healing talents ([Divisions](#chapter-divisions): Confessor, Gallows Humor, etc.) may add 1–4 additional Corruption healing per session depending on team composition. Between Case Files, HQ Facilities ([Headquarters](#chapter-headquarters): Faraday Cage) provide further recovery. The Session Healing Cap (see below) ensures even optimal play cannot fully erase a bad session's Corruption.
+>
+> **Session Healing Cap:** Regardless of all sources combined: Anchor Scenes, Safe Scenes, Talents (Confessor, Duct Tape & WD-40, etc.), or HQ Facilities (Faraday Cage). An agent may heal **no more than 5 Corruption per session** from active in-session sources. Full Rest (24-hour downtime between sessions) is not subject to this cap. This cap enforces the asymmetric economy: even perfectly optimized play cannot fully reset Corruption within a single session. Multiple agents using Talents on the same target also count toward that target's session cap, not the user's.
+
+### Anchors {#08-anchors}
+
+Every character begins with an **Anchor**, a personal source of solace that grounds the agent against the psychological toll of Covenant work. An Anchor is not a physical object; it is the **practice, habit, or connection** where the character finds peace. In a moment of quiet downtime, a character can dedicate a scene to engaging with their Anchor. This grounded roleplay provides powerful mechanical healing.
+
+**Anchor Scene Requirements:**
+
+- The character must **actively engage with their Anchor**, not just mention it. Pray, meditate, run, call a loved one, play an instrument, write in a journal.
+- The scene must be **safe**. No active threats, no time pressure, no combat.
+- The player should **describe the interaction** (at least a sentence or two of roleplay).
+- Anchor scenes **can occur during a Case File** if the team has a genuine moment of safety (a secured safe house, a quiet vehicle, a defended position at the DA's discretion).
+- **If the Anchor becomes inaccessible:** If circumstances deny the character access to their source of solace (e.g., a loved one dies, a faith is shaken by supernatural revelation, the character is isolated from all human contact), they cannot use this recovery method until they **establish a new Anchor** during a downtime phase, a meaningful roleplay scene with the DA. The new Anchor must feel earned, not transactional.
+- **One Anchor at a time.** A character cannot maintain multiple Anchors.
+
+::: wide
+### Anchor Sources (Roll d66 or choose) {#08-anchor-sources-roll-d66-or-choose}
+
+| Roll | Category | Example Anchors |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| 11–16 | **Faith / Spirituality** | Prayer (any tradition). Lighting a candle for the dead. Reading scripture. Meditation with rosary beads. Visiting a church, mosque, or temple. A private ritual from a tradition nobody else at the table needs to understand. |
+| 21–22 | **Physical Exertion** | Running laps. Push-ups until the shaking stops. Boxing a heavy bag. Swimming. The point is exhaustion. The body takes over when the mind won't stop. |
+| 23–24 | **Music / Art** | Playing guitar in the motel room. Sketching in a field journal. Singing, badly, alone, in the car. Listening to a specific album that means something. |
+| 25–26 | **A Person** | Calling your mother. Writing a letter to your daughter that you'll never send. Sitting with a teammate who doesn't need to talk. The person doesn't have to be alive, visiting a grave counts. |
+| 31–32 | **Routine / Ritual** | Cleaning and maintaining your weapon. Cooking a specific meal. Ironing your shirt. The ritual matters because it's the same every time. The world is chaos, but this one thing is yours. |
+| 33–34 | **Logic / Rationalization** | Writing out what happened in clinical language. Diagramming cause-and-effect until it makes sense. Convincing yourself it's all explainable. It isn't, but the exercise helps. |
+| 35–36 | **Substance** | A drink. A cigarette. Something stronger. It works in the short term. The DA may eventually ask what happens when it stops working. |
+| 41–42 | **Nature / Solitude** | Sitting outside at 3 AM. Watching the sunrise. Finding a park, a river, a patch of sky with no buildings. Silence and distance from anything human-made. |
+| 43–44 | **Animals** | A stray cat that lives behind the motel. A dog you kept from a case that went wrong. Feeding pigeons in a plaza. Animals don't know what you've seen, and they don't care. |
+| 45–46 | **Writing / Journaling** | A private journal. Poetry nobody reads. Letters to someone who won't write back. The act of putting it into words, even bad words, externalizes what's rattling inside. |
+| 51–52 | **Games / Puzzles** | A Rubik's Cube. Crosswords. Chess by mail. Solitaire with a real deck. Something with rules and solutions, a closed system where effort produces results. |
+| 53–54 | **Memory / Nostalgia** | Looking at photographs. Holding a keepsake. Replaying a specific moment, a birthday, a last good day, a conversation you keep returning to. The memory is the Anchor, not the object. |
+| 55–56 | **Humor / Connection** | Telling jokes, bad ones, dark ones. Making someone laugh. Being around people who don't know what you do. Pretending, for an hour, that the world is normal. |
+| 61–62 | **Service / Helping** | Fixing something for a stranger. Volunteering. Doing something kind that has nothing to do with the Covenant. Proof that you're still capable of ordinary good. |
+| 63–64 | **Professional Craft** | Working with your hands, carpentry, electronics, mechanics. Building or repairing something that exists in the real world and stays fixed. |
+| 65–66 | **Denial / Compartmentalization** | Refusing to think about it. Going to a bar and watching the game. Acting as though nothing happened. Not healthy, but functional. For now. |
+:::
+
+## Corruption Burst {#08-corruption-burst}
+
+The Corruption track governs the long arc of psychological decay. A **Corruption Burst** governs the acute, in-the-moment shock of direct supernatural confrontation, what happens to your body and your mind in the next thirty seconds when reality breaks in front of you.
+
+A Burst is not always fear. It might manifest as a wave of dread, static electricity crawling across skin, a cold mist rolling in, a nosebleed, a migraine spike, or a momentary sensory distortion where the room feels wrong in a way you can't articulate. The flavor varies by artifact and entity, but the mechanic is unified under Corruption.
+
+### What Triggers a Corruption Burst {#08-what-triggers-a-corruption-burst}
+
+The DA calls for a Corruption Burst when a character directly confronts a source of genuine supernatural phenomena. Not everything unusual triggers one, strange sounds, unusual smells, or reading an old text do not. A Burst requires **direct sensory confrontation** with something that violates the natural order.
+
+| Trigger | Examples |
+| ------------------------ | ------------------------------------------------ |
+| **Encountering a supernatural entity** | Seeing a bound entity, a possessed human, or a manifestation for the first time this scene |
+| **Artifact activation failure** | An artifact the character is handling detonates, tears reality, or emits a vision that cannot be explained |
+| **Witnessing violent supernatural death** | An ally or bystander is killed or consumed by occult means in front of the character |
+| **Occult revelation** | Irrefutable proof of something the human mind cannot accommodate, a genuine miracle, an impossible geometry, a speaking dead |
+| **Sustained entity presence** | For each **additional round** a character remains within Engaged range of an active, hostile entity (after the initial check) |
+| **Contact with contaminated minds** | Attempting Psychoanalyze on an NPC with artifact exposure or long-term occult contamination. Burst Rating per DA (typically 1–2). See [Social Conflict](#chapter-social-conflict) for Psychoanalyze procedure. |
+
+> **One check per trigger:** If the same entity is already known to the character from a prior session and has been observed before, no new Burst is required merely for seeing it again. Only for new escalations (it doing something new, getting closer, attacking, or **changing in a way that increases its threat** such as revealing a new form or escalating its Burst Rating).
+
+> **Edge cases:** A character who is Broken, unconscious, or in a Fugue panic state does **not** roll for Corruption Bursts. A character who failed a Burst check and is currently suffering a Panic result does not make additional checks until the Panic result ends. Sustained presence checks (each additional round) apply even to characters who succeeded on their initial check.
+
+### The Corruption Burst Procedure {#corruption-burst-procedure}
+
+Corruption Bursts are a **special binary roll**. They do **not** use the standard Difficulty system from [Core Resolution](#chapter-core-resolution).
+
+1. The DA calls for a Corruption Burst when a character directly confronts supernatural phenomena.
+1. Roll dice equal to your current **Wits** attribute (no skill modifier. The mind's response to the impossible is instinctual, not trained).
+1. **One or more 6s = success.** You hold it together.
+1. **Any 1s rolled (one or more) = +1 Corruption.** Only one Corruption regardless of how many 1s. This applies whether the check succeeded or failed.
+1. **No 6s = failure.** Gain Corruption equal to the **Burst Rating** of the source AND roll d6 on the **Panic Table**.
+
+Corruption Bursts **cannot be pushed** and **cannot receive helping dice**.
+
+The supernatural overwhelms the rational mind. There is no "trying harder" against something that violates physical law. Pushing assumes deliberate effort; that option does not exist when the primal response has already engaged. Similarly, no ally can steady your mind against a direct encounter with the impossible. The Psychoanalyze skill and certain Talents address the **aftermath** of a failed Burst (see Panic Table and Healing Talents), but they cannot intervene in the moment between perception and reaction.
+
+#### Four Outcomes {#08-four-outcomes}
+
+| Rolled 6s? | Rolled 1s? | Result |
+| ------------ | ------------ | ------------------------------------ |
+| Yes | No | Clean pass. No consequence. |
+| Yes | Yes | Pass, but +1 Corruption. The exposure marks you. |
+| No | No | Fail. +Burst Rating Corruption + Panic Table. |
+| No | Yes | Worst case. +1 Corruption (from 1s) + Burst Rating Corruption (from failure) + Panic Table. |
+
+> **Why higher Wits means more Corruption on success:** Rolling more dice increases both the chance of a 6 (success) and the chance of a 1 (Corruption). A Wits-5 character who succeeds on a Burst check has a ~60% chance of still gaining +1 Corruption from the 1s rider. This is intentional, sharper minds process more of what they saw, and that awareness has a cost. Supernatural exposure is never free. The consolation is that Wits 5 characters almost never fail the check entirely.
+
+> **Why Wits?** The Burst strikes the rational, pattern-recognizing mind first. The brain tries to **explain** what the eyes are seeing, and fails. Empathy governs emotional processing (grief, bargaining, despair); that comes later, through the Corruption track's long-term effects.
+
+**Why can't I push or get help on a Corruption Burst?**
+
+Corruption Bursts deliberately break the standard resolution pattern. Every other roll lets you apply training and experience, that's what skills are for. The Burst is different. No training prepares the human mind for direct sensory confrontation with something that violates natural law. The Wits-only roll represents your rational mind, stripped of professional scaffolding, trying to hold itself together. Skills can't help. Other people can't help.
+
+What can help is recovery: Psychoanalyze and Healing Talents address the aftermath of panic, not the moment of confrontation. Presence, preparation, and swift containment reduce the number of Bursts you're forced to face. The best defense is never being in a position to need the roll.
+
+### The Panic Table {#08-the-panic-table}
+
+On a failed Corruption Burst (no 6s), roll **d6**:
+
+::: wide
+| Roll | Response | What Happens |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| **1** | **Fight** | Attack nearest creature (ally or foe) with bare hands. Cannot use weapons. Resolve as a single Brawl attack: **Agility + Brawl skill dice** (no Gear Dice, bare hands only, unarmed damage = 1). Ends automatically after the single strike. |
+| **2** | **Flight** | Run at maximum speed (2 zones per round) away from the source for **1d6 rounds**, or until reaching a dead end. Drop held items when the panic begins. An ally may physically restrain the fleeing character (opposed Brawl/Force roll, spending a Slow Action). |
+| **3** | **Freeze** | Paralyzed. Cannot move, speak, or act. Allies can move the character (Slow Action). **Exit:** An ally spends a Slow Action and makes a Psychoanalyze (EMP) roll (Difficulty 1) to snap them out, OR the source is no longer visible. |
+| **4** | **Denial** | Treat the supernatural as mundane for rest of scene. Cannot acknowledge entity as real. **Early exit:** An ally may attempt Psychoanalyze (Difficulty 2) to break denial. On success, character acknowledges the entity but is Shaken (−1 die on all rolls for the remainder of the scene). |
+| **5** | **Compulsion** | Locked in repetitive behavior. Cannot take meaningful action until ally Psychoanalyze (Difficulty 2) frees them. |
+| **6** | **Fugue** | DA takes character sheet. DA narrates character for rest of scene. Player regains control next scene. **Early exit:** An ally may attempt Psychoanalyze (Difficulty 3) to recover the character mid-scene. On success, the player regains control but is disoriented (−2 dice on all rolls for the remainder of the scene). |
+:::
+
+#### Panic Attacks Against Allies {#08-panic-attacks-against-allies}
+
+When a Fight panic result targets another agent, resolve it as a single Brawl attack: **Agility + Brawl skill dice** (no Gear Dice, bare hands only).
+The target may Dodge (spending their Fast Action as normal) but cannot Parry. The attack is a surprise strike with no warning (treat as a surprise attack per [Combat: Surprise](#chapter-combat); Parry requires anticipation that the attack is coming).
+The panicked agent cannot spend stunt points, cannot push the roll, and cannot continue attacking after the initial strike.
+After the single attack resolves (hit or miss), the panic breaks and the agent regains control on their next turn, disoriented but aware of what they did.
+
+If the attack Breaks the target, proceed with normal Broken/Critical Injury rules.
+The panicked agent gains +1 Corruption from the guilt of harming an ally.
+
+### Burst Ratings {#burst-ratings}
+
+Burst Rating is how the DA classifies the supernatural intensity of a creature or event on a 1–5 scale. It appears in Bestiary stat blocks and determines how much Corruption a failed Burst check inflicts.
+
+**What Burst Rating does mechanically:**
+
+- **Burst Rating 0** = this entity or event does **not** trigger a Corruption Burst. No check is called.
+- **Burst Rating 1–5** = this entity or event triggers a Corruption Burst when a character first directly confronts it. On failure, the agent gains Corruption **equal to the Burst Rating**.
+- Burst Rating does **not** modify the dice pool or success threshold. The roll is always Wits dice, binary success. The Rating determines the **consequences** of failure.
+
+**Escalation:** Some creatures have a Burst Rating that increases during an encounter (e.g., "Burst Rating 2 initially; 4 once its nature is understood"). An escalation is a **new trigger** per the rule above. It calls for a new check even if the character has already made one this scene. An escalation includes: the entity doing something new, getting closer, attacking, revealing a new form, or **increasing its Burst Rating**.
+
+> **DA Frequency Guidance:** Burst Rating 1–2. Call for one check on first direct confrontation per scene. Burst Rating 3–4. Call for a check each time the entity acts directly against a character (not just passive presence). Burst Rating 5. Call for a check every round the entity is within sight. These are guidelines, not hard rules; the DA adjusts for pacing.
+
+| Rating | Threat Level | Examples |
+| ------------ | ------------ | ------------------------------------------------ |
+| **1** | Unsettling | A shadow that moves wrong. A sound that shouldn't exist. A photograph with an extra figure. |
+| **2** | Disturbing | A possessed civilian. A minor entity (shadow-form, bound spirit). A fresh, inexplicably ritualistic death scene. |
+| **3** | Horrifying | A mid-tier entity fully manifested. An artifact consuming a living person. A Covenant vault breach in progress. |
+| **4** | Shattering | A major entity (ancient, named, deliberate). An artifact performing an impossible act of scale (restructuring a room, erasing a person). |
+| **5** | Annihilating | A Class-5 entity. A tear in physical space. Direct contact with whatever the artifacts are **for**. |
+
+Burst Ratings are a property of supernatural **entities** and **events**, not of individual characters. Add the Burst Rating stat to entity stat blocks in the Bestiary ([Bestiary](#chapter-bestiary)).
+
+## Attribute Healing {#08-attribute-healing}
+
+This chapter covers Corruption healing. Attribute damage (Strength, Agility, Wits, Empathy) is healed separately through rest and medical treatment:
+
+- **Field treatment and First Aid:** See [Health, Damage & Armor → Attribute Recovery](#chapter-health).
+- **Downtime recovery at HQ:** See [Headquarters → Infirmary](#chapter-headquarters).
+- **Psychoanalyze for mental attribute recovery (Wits/Empathy):** See the Psychoanalyze skill in [Attributes & Skills](#chapter-attributes-skills).

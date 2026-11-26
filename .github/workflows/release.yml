@@ -1,102 +1,33 @@
 name: Release Starter Kit
-
 on:
   push:
-    tags:
-      - 'v*'
-
+    tags: ['v*']
 permissions:
   contents: write
-
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v4
+      - uses: pandoc/actions/setup@v1
         with:
-          ruby-version: '3.3'
-
-      - name: Install asciidoctor-pdf
-        run: gem install asciidoctor-pdf
-
-      - name: Build rulebook PDF
-        run: |
-          mkdir -p starter-kit
-          asciidoctor-pdf docs/neon-relic.adoc -o starter-kit/neon-relic-core-rules.pdf
-
-      - name: Build case file instructions PDF
-        run: asciidoctor-pdf docs/case-file-instructions.adoc -o starter-kit/case-file-instructions.pdf
-
-      - name: Build self-contained HTML files
-        run: |
-          python3 - <<'PYEOF'
-          import base64, re, pathlib, shutil
-
-          def load_font_uri(path):
-              data = pathlib.Path(path).read_bytes()
-              b64 = base64.b64encode(data).decode('ascii')
-              return f"data:font/truetype;base64,{b64}"
-
-          se_uri = load_font_uri("docs/themes/SpecialElite-Regular.ttf")
-          cp_uri = load_font_uri("docs/themes/CourierPrime-Regular.ttf")
-
-          def inline_fonts(src, dest):
-              html = pathlib.Path(src).read_text(encoding='utf-8')
-              html = re.sub(r"url\(['\"]?[^'\"]*SpecialElite-Regular\.ttf['\"]?\)",
-                            f"url('{se_uri}')", html)
-              html = re.sub(r"url\(['\"]?[^'\"]*CourierPrime-Regular\.ttf['\"]?\)",
-                            f"url('{cp_uri}')", html)
-              pathlib.Path(dest).write_text(html, encoding='utf-8')
-
-          # Blank templates
-          blank = pathlib.Path("starter-kit/blank-templates")
-          blank.mkdir(parents=True, exist_ok=True)
-          templates = {
-              "assets/character-sheet.html":        "agent-dossier.html",
-              "assets/case-brief-da.html":          "case-brief-da.html",
-              "assets/case-brief-player.html":      "case-brief-player.html",
-              "assets/operations-board.html":       "operations-board.html",
-              "assets/organization-reference.html": "organization-reference.html",
-              "assets/information-card.html":       "information-card.html",
-              "assets/location-page.html":          "location-page.html",
-              "assets/npc-card.html":               "npc-card.html",
-              "assets/relic-sheet.html":            "relic-sheet.html",
-          }
-          for src, dest in templates.items():
-              inline_fonts(src, str(blank / dest))
-
-          # Prebuilt characters
-          chars = pathlib.Path("starter-kit/prebuilt-characters")
-          chars.mkdir(parents=True, exist_ok=True)
-          for p in sorted(pathlib.Path("assets/prebuilt").glob("*.html")):
-              inline_fonts(str(p), str(chars / p.name))
-
-          # Sample case file
-          case_src = pathlib.Path("docs/case-files/spear-that-went-dark")
-          case_dest = pathlib.Path("starter-kit/sample-case-file")
-          case_dest.mkdir(parents=True, exist_ok=True)
-          for p in sorted(case_src.glob("*.html")):
-              inline_fonts(str(p), str(case_dest / p.name))
-          handouts_src = case_src / "handouts"
-          if handouts_src.is_dir():
-              handouts_dest = case_dest / "handouts"
-              handouts_dest.mkdir(exist_ok=True)
-              for img in sorted(handouts_src.glob("*.png")):
-                  shutil.copy2(str(img), str(handouts_dest / img.name))
-
-          print("Font inlining complete.")
-          PYEOF
-
-      - name: Package starter-kit.zip
-        run: cd starter-kit && zip -r ../starter-kit.zip .
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+          version: '3.7.0.2'
+      - uses: typst-community/setup-typst@v4
         with:
-          files: starter-kit.zip
+          typst-version: '0.15.1'
+      - name: Build book and starter kit
+        run: ./scripts/build.sh
+      - name: Audit release
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          python3 scripts/audit_book.py
+      - name: Prepare stable download name
+        run: cp dist/neon-relic-core-rules.pdf dist/neon-relic.pdf
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/neon-relic.pdf
+            dist/starter-kit.zip
+          fail_on_unmatched_files: true
           generate_release_notes: true

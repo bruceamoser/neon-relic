@@ -1,0 +1,436 @@
+# Covenant Divisions {#chapter-divisions}
+
+In Project Neon Relic, players are sworn members of **The Verdant Covenant**. Because no single person possesses the brains, brawn, network, and magical guardianship required to hunt dangerous artifacts, players choose a **Division** (their core class) which dictates their starting attributes, skills, and Clearance Level (CL). A Division marks **expertise and responsibility**, not a higher power tier than the danger facing the cell.
+
+Within that Division, players select a **Department** background. At character creation, agents choose **three** starting talents:
+
+- **One Division Talent** from the list in this chapter **or one General Talent** from [Advancement and Talents](#chapter-advancement).
+- **One Wing, Paradigm, or Department Talent**: chosen from the talent list of the specific Wing, Paradigm, or Department the agent belongs to in this chapter.
+- **One Background Talent**: chosen from the Background Talents list in [Advancement and Talents](#chapter-advancement).
+
+Most Division and sub-unit Talents cost **+1 Corruption** to activate, feeding directly into the game's risk-reward loop. Each talent list includes one **Healing** talent usable freely once per session.
+
+> **Corruption cost summary:** Talents marked with **+1 Corruption** in the Cost column require gaining 1 Corruption to activate. Talents marked with **, ** are free to use. These are always passive effects, per-session healing talents, or reactions that carry no Corruption cost. This distinction is consistent across all Division and sub-unit lists. Healing talents are specifically noted with the _(Healing)_ tag and are always free.
+
+Unless a Talent explicitly says otherwise, read these abilities as **scene-shaping leverage**, not complete scene resolution. They should reveal a lead, buy time, create access, or improve odds under pressure rather than trivialize artifacts, rivals, or core investigation procedures.
+
+> **Design note, healing talent triggers:** Each Division and sub-unit has one _(Healing)_ talent. Trigger conditions vary intentionally: some require a completed field action (covert objective, combat win), others spend a Shift in deliberate recovery activity. The principle is that the trigger should match each sub-unit's operational philosophy. A Wayfinder heals through learning, a Recovery agent heals through action, a Keeper heals through duty. If a specific session's circumstances make a healing trigger unreachable, the DA may rule a comparable equivalent (e.g., a Warden who performed emergency vault security during active combat may count that as a completed "guard mission").
+
+### Covenant Organizational Structure {#09-covenant-organizational-structure}
+
+| Division | Responsibility | Specializations |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| Wayfinder | Research and intelligence | Research Wing and Counterintelligence Wing |
+| Recovery | Field retrieval | Ex-Agency Operative, Heavy-Hitter, and Acquisition Specialist paradigms |
+| The Keep | Vault security and logistics | Catalogers, Wardens, Internal Counterintelligence, and Stack |
+
+### Global Structure {#09-global-structure}
+
+The Verdant Covenant operates across **five continents** through a cellular structure designed to maintain operational secrecy. No single member, not even the most senior leadership, knows the full scope of the organization.
+
+| Tier | Description | Approximate Count |
+| ------------------------ | ------------------------------------ | ------------ |
+| **Central Council** | The governing body. Location unknown to field agents. Communicates only through intermediaries. Sets strategic priorities, arbitrates inter-division disputes, and authorizes Tier 3 artifact operations. | 7–12 members |
+| **Regional Hubs** | Continental coordination centers managing cells within a geographic zone. Each hub has a **Regional Director** (one per Division) who handles assignment routing, resource allocation, and inter-cell mediation. Hubs are not permanent buildings. They rotate locations every 18–24 months. | 6 hubs (Americas, Europe, Africa/Middle East, Central Asia, East Asia/Pacific, Oceania) |
+| **Field Cells** | The operational units. Each cell is assigned a home city and operates semi-autonomously within its region. Cells do not know each other's locations unless leadership authorizes contact. | ~80–120 active cells globally |
+| **Extended Network** | Civilian contacts, academic consultants, sympathetic law enforcement, and retired agents who provide intelligence and logistical support without being sworn members. They know pieces of the truth, never the whole picture. | ~400–600 individuals |
+
+> **Total active personnel:** Approximately 500–700 sworn members globally, plus the extended network. For an organization protecting the world from supernatural threats, this is a skeleton crew, and that's the point. The Covenant cannot afford to be large. Every new member is a potential leak, a potential compromise, a potential vessel for Corruption. Growth is slow, vetting is brutal, and attrition is constant.
+
+> **Secrecy at scale:** The Covenant survives because of three structural safeguards: (1) **cellular isolation**, cells cannot contact each other without hub authorization; (2) **cover diversity**. The organization has no unified public identity, no logo, no letterhead; and (3) **plausible deniability**. The extended network believes they're helping a private research foundation, a government intelligence subcontractor, or an eccentric philanthropist. The truth is compartmentalized so thoroughly that even a captured and interrogated agent can only compromise their own cell and their regional hub contact.
+
+### Inter-Division Dynamics {#09-inter-division-dynamics}
+
+The three Divisions are not a harmonious machine. They are three departments within a clandestine organization under constant pressure, and they behave accordingly.
+
+#### Why Divisions Sometimes Pursue the Same Artifact {#09-why-divisions-sometimes-pursue-the-same-artifact}
+
+It happens more often than leadership would like:
+
+- **Competing intelligence.** A Wayfinder Research Wing identifies an artifact through historical records. Simultaneously, a Counterintelligence Wing detects a rival faction moving on the same artifact through signals intelligence. Both routes generate a case, and both routes reach different regional hubs before anyone cross-references.
+- **Different threat assessments.** The Keep classifies an artifact as contained (stable, in a museum, not actively dangerous). A Wayfinder analysis disagrees. The artifact is dormant, not contained, and will wake up. Both assessments are valid. Both generate operational responses.
+- **Bureaucratic friction.** A Recovery cell recovers an artifact and begins transport. A Keep team arrives claiming they have transfer authority. Both have legitimate paperwork. The regional hub issued contradictory orders because two Directors signed off on different operational plans.
+
+This is not a bug in the Covenant's structure, it's an unavoidable consequence of compartmentalization. The same secrecy that protects the organization from external threats creates internal blind spots.
+
+#### When Competition Helps {#09-when-competition-helps}
+
+- **Redundancy.** If one cell fails, the other is already in position. The Covenant loses fewer artifacts to single points of failure.
+- **Accountability.** Cells that know another team is watching perform better. Sloppy containment gets reported.
+- **Fresh perspective.** A Wayfinder team and a Recovery team approach the same problem differently. Sometimes the answer requires both approaches.
+
+#### When Competition Hurts {#09-when-competition-hurts}
+
+- **Friendly fire.** Two cells operating on the same target without knowing each other's identities can and do interfere with each other's operations. In extreme cases, they've fought.
+- **Resource waste.** Two cells burning DP, contacts, and cover identities on the same artifact is expensive for an organization that can't afford waste.
+- **Standing games.** Cells competing for the same artifact are also competing for Standing. The temptation to sabotage a rival cell's operation (even subtly, even passively) is real.
+
+#### How Leadership Mediates {#09-how-leadership-mediates}
+
+When overlapping operations are discovered:
+
+1. The **Regional Director** for the affected zone contacts both cells and issues a priority ruling. One cell takes point, the other supports or withdraws.
+1. If the cells are in different regions, the **Central Council** arbitrates. This takes time. The artifact doesn't wait.
+1. In practice, the cell that's closest to containment usually wins priority. The other cell is reassigned with +1 DP as compensation for operational disruption.
+
+> **Design note for DAs:** Inter-division tension is a rich source of Case File complications. A rival Covenant cell showing up mid-operation, are they here to help or to take over?, creates drama that doesn't require supernatural threats. Use it sparingly (once per arc at most) but don't avoid it.
+
+## Division 1: The Wayfinder {#09-division-1-the-wayfinder}
+
+::: {.lookup register="wayfinder-talents" kind="Talent" title="Wayfinder talents"}
+:::
+
+_"What is found must be known."_
+
+The Wayfinder Division serves as the primary investigative arm of the Covenant. Wayfinders are scholars, hackers, and researchers whose directive is uncovering the existence and historical locations of lost artifacts before rival factions do. They work to assemble and preserve knowledge from historical records, archaeological reports, religious texts, folklore, academic publications, government archives, museum collections, and contemporary news reporting.
+
+### Wayfinder Key Stats {#09-wayfinder-key-stats}
+
+| **Primary Attribute** | Wits _(guidance, not a rule. See note below)_ |
+| ------------ | ------------------------ |
+| **Key Skill (Cap 4 at creation)** | Lore |
+| **Starting Clearance Level** | 3 |
+
+> **Primary Attribute:** "Primary Attribute" in the Key Stats tables is a design recommendation, not a mechanical rule. It describes the attribute most central to a Division's playstyle and is intended as guidance for players deciding where to invest Attribute points. It does not grant any inherent bonus.
+>
+> **Key Skill:** Each Division has one Key Skill that may be raised to 4 during character creation (the normal cap is 3). This represents the Division's signature competency.
+
+### The Verdant Codex (Division Item) {#09-the-verdant-codex-division-item}
+
+All Wayfinders bear the **Verdant Codex**, an enchanted field journal for recording discoveries. The Codex provides the following benefits:
+
+- Writing in the Codex secures knowledge in the memory of the author
+- Maintains historical records in an organized and cataloged fashion
+- Assists in decoding languages and symbols
+- Automatically preserves documents placed within its pages
+- Stores large scrolls without damage
+- Faintly glows near ancient magic
+- Contains a living map lining that slowly reveals **suspected** artifact correlations and previously researched sites
+
+**Codex mechanical functions:**
+
+- **Research bonus:** Once per scene, when making a Lore (WIT) or Investigate (WIT) roll supported by notes you've written in the Codex, gain +1 bonus die.
+- **Lore preservation:** Any Lore (WIT) roll that succeeds while using the Codex automatically records the result. The DA must confirm that the information cannot be "forgotten" by later Corruption or injury effects.
+
+### Wayfinder Wings {#09-wayfinder-wings}
+
+**Research Wing**
+
+The Research Wing is responsible for the discovery, documentation, and verification of artifacts. Research personnel identify artifacts before they are lost, misused, or fall into the possession of hostile actors.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Research Desk Analyst** | Focuses on research within Covenant archives and partner repositories. Studies historical documents, translates ancient texts, analyzes cultural and religious records, and monitors scholarly publications. Maintains artifact catalogues, cross-references historical reports, and identifies patterns indicating the presence of significant artifacts. |
+| **Research Field Analyst** | Conducts investigative work outside Covenant facilities. Visits archaeological sites, examines ruins, interviews scholars or local witnesses, and verifies Desk Analyst intelligence. Gathers firsthand observations, photographic documentation, and environmental readings. |
+| **Research Liaison** | Embeds with academic institutions, museums, and partner agencies to cultivate intelligence relationships through official channels. Maintains scholarly cover identities, attends conferences, and routes actionable field intelligence back to the Desk. |
+
+> _Research personnel do not retrieve artifacts._ Once an artifact's existence and location have been confirmed, the Wing prepares a formal assessment and forwards the case to the Recovery Division.
+
+**Research Wing Talents (Choose 1 at Creation)**
+
+::: {.catalog register="wayfinder-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Pattern Recognition** | At-Will | +1 | When examining a document, site, or artifact for the first time, identify one plausible connection to a previously catalogued case. The DA must reveal a useful lead, not the entire answer. |
+| **Deep Archive Access** | At-Will | 0 | Spend an action consulting restricted Covenant records. Gain +2 bonus dice on your next Lore or Investigate roll this scene. |
+| **Methodical Review** _(Healing)_ | Per-Session | +1 | Spend a Shift organizing and cross-referencing your field notes. Heal 1 Corruption and grant one ally +1 bonus die on their next Investigate roll. |
+:::
+
+**Counterintelligence Wing**
+
+The Counterintelligence Wing protects the Covenant from external threats and preserves the secrecy of the organization's existence, operations, and holdings. The Wing maintains continuous surveillance of known and emerging groups with an interest in relic acquisition, including rival secret societies, criminal networks, illicit antiquities traffickers, extremist religious movements, and private collectors.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Counterintelligence Desk Analyst** | Monitors global communications, public records, academic publications, and intelligence reports for indications that artifacts have been discovered, trafficked, or targeted. Maintains profiles of known rival organizations, tracks patterns of artifact-related activity, and compiles threat analyses. |
+| **Counterintelligence Field Analyst** | Operates outside Covenant facilities to investigate threats directly. Conducts surveillance of suspicious organizations, infiltrates groups seeking artifacts, observes illicit antiquities markets, and disrupts activities that could expose the Covenant. May be authorized to engage hostiles when necessary. |
+| **Counterintelligence Technical Analyst** | Specializes in signals intelligence, electronic surveillance, and cryptographic analysis of intercepted communications. Operates wire-taps, intercepts radio traffic, and deciphers coded correspondence from rival factions and hostile actors. |
+
+> Through the vigilance of the Counterintelligence Wing, the Covenant ensures that what is known remains contained, and that those who would misuse the past are stopped before they can act.
+
+**Counterintelligence Wing Talents (Choose 1 at Creation)**
+
+::: {.catalog register="wayfinder-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Burned Asset** | Per-Session | +1 | When caught in a lie or exposed during infiltration, immediately generate a plausible cover story. The target must make an **Empathy (Psychoanalyze) roll at Difficulty 2** to see through it. |
+| **Signal Intercept** | Per-Session | +1 | Tap into a nearby communication channel (radio, phone line, intercom). For the remainder of the scene, you overhear all traffic on that channel. |
+| **Compartmentalized Mind** _(Healing)_ | Per-Session | +1 | Once per session, after completing a successful counterintelligence action (surveillance, interrogation, or exposure prevention), heal 1 Corruption. |
+:::
+
+### Wayfinder Talents (Choose 1 at Creation) {#09-wayfinder-talents-choose-1-at-creation}
+
+::: {.catalog register="wayfinder-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **The Antiquarian's Eye** | Per-Session | +1 | On first inspection, identify either an artifact's activation trigger or its base effect without a Lore roll. |
+| **Ghost in the Machine** | Per-Session | +1 | Use Tech to read data from electronic devices jammed or possessed by anomalous entities, bypassing the entity's interference. |
+| **The Hunch** | Per-Case-File | +2 | Ask the DA one yes/no question about a crime scene or NPC's motive. The DA must answer truthfully. |
+| **Academic Grounding** _(Healing)_ | Per-Session | +1 | Spend an hour researching an entity and framing it in academic terms. Heal 1 Corruption for yourself or one ally. |
+| **Eldritch Empathy** | Per-Session | +1 | Sense the immediate emotional state, hunger, or primary intent of an invisible or disguised supernatural entity. |
+:::
+
+## Division 2: The Recovery {#09-division-2-the-recovery}
+
+::: {.lookup register="recovery-talents" kind="Talent" title="Recovery talents"}
+:::
+
+_"What is known must be contained."_
+
+The Recovery Division serves as the field arm of the Verdant Covenant. Where the Wayfinders uncover knowledge and the Keep guards what has already been secured, the Recovery Division is responsible for bringing artifacts safely into Covenant custody.
+
+Recovery agents operate in the world beyond the Covenant's halls, traveling wherever relics are rumored to exist. They investigate ruins, ancient vaults, forgotten temples, private collections, corporate archives, black markets, and the holdings of religious or political institutions. Their mandate is simple and absolute: **recover the object and return it to the Covenant.**
+
+Recovery agents are trained to operate in a wide variety of environments. Some recover artifacts from abandoned ruins and dangerous landscapes. Others negotiate with collectors, institutions, or governments. At times, they must retrieve relics from those who knowingly misuse them or seek to exploit their power. Characters here often come from military or law enforcement backgrounds.
+
+> Unlike other Divisions, the Recovery Division has **no internal departments**. Every member shares the same purpose and authority. Instead, agents are distinguished by their **operational paradigm** and the **specialty** within it.
+
+### Recovery Key Stats {#09-recovery-key-stats}
+
+| **Primary Attribute** | Agility _(guidance, not a rule. See note in Wayfinder Key Stats)_ |
+| ------------ | ------------------------ |
+| **Key Skill (Cap 4 at creation)** | Firearms |
+| **Starting Clearance Level** | 2 |
+
+### The Verdant Satchel (Division Item) {#09-the-verdant-satchel-division-item}
+
+All Recovery agents carry the **Verdant Satchel**, a specially enchanted field bag designed to safely transport relics. The Satchel provides the following benefits:
+
+- Suppresses the magical aura of items placed inside
+- Warns when nearby artifacts become unstable
+- Allows temporary sealing of cursed items
+- Contains a small dimensional containment compartment
+- Keeps a small selection of ordinary field tools immediately accessible (rope, chalk, spikes, vials, etc.)
+- Enchantment of Warding obscures any magical object placed inside from detection
+
+**Satchel mechanical functions:**
+
+- **Aura suppression:** Artifacts inside the Satchel do not emit passive Corruption to nearby characters. Remove passive aura triggers for as long as the artifact remains sealed inside.
+- **Instability warning:** When an artifact inside the Satchel approaches a Volatile or Catastrophic rating (per the Catalogers' classification system), the Satchel becomes warm and vibrates, a warning sign the agent can detect without a roll, giving time to stop and reassess.
+- **Artifact stabilization:** Once per scene, delay an artifact's activation or emission by one round without a roll, giving the team a brief window to react before the effect triggers.
+
+### Recovery Paradigms {#09-recovery-paradigms}
+
+Choose one paradigm that defines your agent's prior experience:
+
+**Ex-Agency Operative**
+
+Former intelligence or special forces. Trained in infiltration, extraction, and covert operations.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Handler** | Runs covert assets and informants. Expert in managing human intelligence networks, dead drops, and clandestine communications. Coordinates with Wayfinder Counterintelligence when operations overlap. |
+| **Breacher** | Specializes in hostile entry and extraction under fire. Trained in demolitions, close-quarters combat, and rapid building clearance. First through the door when negotiations fail. |
+| **Ghost** | Operates deep undercover for extended periods. Maintains false identities, embeds within hostile organizations, and reports intelligence without breaking cover. |
+
+**Ex-Agency Operative Talents (Choose 1 at Creation)**
+
+::: {.catalog register="recovery-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Dead Drop Protocol** | Per-Session | +1 | Establish an instant covert information exchange with any NPC contact. Gain one actionable piece of intelligence from the DA without a roll. |
+| **Exfiltration Specialist** | At-Will | 0 | When retreating or extracting under fire, you and all allies within Short range gain +1 bonus die to their next Agility roll this round. |
+| **Spycraft Discipline** _(Healing)_ | Per-Session | +1 | Once per session, after successfully completing a covert objective without being detected, heal 1 Corruption. |
+:::
+
+**Heavy-Hitter (Brawler)**
+
+Brute-force specialist. Comfortable in direct violent confrontation above all else.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Enforcer** | The Covenant's blunt instrument for hostile recovery operations. Specializes in intimidation, physical domination, and overwhelming force when artifacts are held by armed or dangerous opposition. |
+| **Close Protection** | Bodyguard and security specialist. Shields Recovery teams and high-value Covenant personnel during dangerous field operations. Trained to absorb punishment and keep others alive. |
+| **Wrecker** | Expert in destruction and demolition. Removes structural obstacles, breaches fortified positions, and disables vehicles or equipment. When the path forward is blocked, the Wrecker opens it. |
+
+**Heavy-Hitter Talents (Choose 1 at Creation)**
+
+::: {.catalog register="recovery-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Wrecking Ball** | Per-Session | +1 | When attacking an inanimate object or structure (door, wall, barricade, vehicle), gain +3 bonus dice to the Force roll and inflict +2 damage on a success. |
+| **Stand Your Ground** | Per-Session | +1 | Plant yourself and refuse to move. Until your next turn, you cannot be pushed, knocked down, or forcibly moved, and you gain +2 Armor Rating. |
+| **Blunt Trauma Recovery** _(Healing)_ | Per-Session | +1 | Once per session, after winning a physical confrontation through brute force, heal 1 Corruption. |
+:::
+
+**Acquisition Specialist (Thief)**
+
+Expert in bypassing security, stealing valuable objects, and getting in and out unseen.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Infiltrator** | Defeats physical and electronic security systems. Expert in lock-picking, alarm bypass, safe-cracking, and navigating laser grids, pressure plates, and motion detectors. |
+| **Grifter** | Operates through social engineering and deception. Assumes false identities, manipulates targets through conversation, and acquires access through charm, forgery, or confidence games. |
+| **Wheelman** | Specialist driver, pilot, and escape planner. Handles pursuit, evasion, and extraction logistics. Ensures the team reaches the target and leaves cleanly with the artifact. |
+
+**Acquisition Specialist Talents (Choose 1 at Creation)**
+
+::: {.catalog register="recovery-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Ghost Entry** | Per-Case-File | +2 | Bypass a single ordinary locked door, security system, or physical barrier without a roll. Against hardened or anomalous protection, you may spend additional Corruption (1 per required success) to bypass it instead of rolling. Leave no trace of entry. |
+| **The Long Con** | Per-Session | +1 | After at least one scene spent building rapport with an NPC, gain +3 bonus dice on a Manipulate roll to extract one specific piece of information or gain one specific favor. |
+| **Clean Getaway** _(Healing)_ | Per-Session | +1 | Once per session, after successfully completing a theft, infiltration, or escape without triggering an alarm, heal 1 Corruption. |
+:::
+
+### Recovery Talents (Choose 1 at Creation) {#09-recovery-talents-choose-1-at-creation}
+
+::: {.catalog register="recovery-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Conditioned Mind** | Per-Session | 0 | **Declare before you push the roll.** Once per session, you may push a roll and entirely ignore the +1 Corruption that pushing costs. The push happens normally; only the Corruption is negated. This is not retroactive, if you push without declaring Conditioned Mind first, the Corruption is already spent. |
+| **Unstoppable Force** | Per-Session | +1 | Your next successful melee or unarmed attack inflicts +2 damage. |
+| **Shadow Walker** | Per-Case-File | +2 | For the duration of a scene, you are entirely imperceptible to **mundane** guards and cameras. They do not see you, register you on film, or notice your presence. **Limitations:** (1) Attacking breaks the effect immediately and it cannot be reactivated this scene. (2) Speaking to, touching, or otherwise interacting with an NPC in a way that demands acknowledgment breaks the effect for that NPC only. (3) Supernatural perception (entities with non-human senses, artifact-enhanced security, possessed observers) is not fooled: Shadow Walker only bypasses mundane human and electronic detection. |
+| **Adrenaline Junkie** | At-Will | 0 | When your **Strength has taken at least 1 point of damage** (i.e., your current Strength is below your starting score), gain +2 bonus dice to all Agility rolls. This bonus applies for as long as your Strength remains below its normal value and disappears once Strength is fully healed. |
+| **Gallows Humor** _(Healing)_ | Per-Case-File | +2 | Once per session, **immediately after a combat encounter ends** (all hostiles are neutralized, fled, or surrendered), crack a dark joke about what just happened. You and all allies who can **hear you** (same zone or adjacent zone) heal 1d4 Corruption. "Surviving" means the encounter ended without the team being captured or forced to flee the scene. This talent cannot trigger during a chase or while combat is ongoing. |
+| **Combat Reflexes** | Per-Session | 0 | When initiative cards are drawn, draw two cards and keep one. Discard the other face-down. Alternatively, after all cards are drawn, you may swap your initiative card with a willing ally's card. |
+:::
+
+## Division 3: The Keep {#09-division-3-the-keep}
+
+::: {.lookup register="keep-talents" kind="Talent" title="Keep talents"}
+:::
+
+_"What is contained must be guarded."_
+
+The Keep serves as the custodial authority of the Verdant Covenant. Once artifacts have been recovered and delivered to Covenant custody, responsibility for their handling, documentation, containment, and protection is transferred to the Keep.
+
+Members of the Keep are entrusted with the stewardship of the Covenant's most sensitive holdings. Their work ensures that artifacts (whether magical, religious, occult, or culturally significant) are properly cataloged, secured, and prevented from causing harm.
+
+### Keep Key Stats {#09-keep-key-stats}
+
+| **Primary Attribute** | Empathy _(guidance, not a rule. See note in Wayfinder Key Stats)_ |
+| ------------ | ------------------------ |
+| **Key Skill (Cap 4 at creation)** | Command |
+| **Starting Clearance Level** | 3 |
+
+### The Warden's Bracer (Division Item) {#09-the-warden-s-bracer-division-item}
+
+All Keepers wear the **Warden's Bracer**, marking them as guardians of the Covenant's vaults. The Bracer symbolizes that the Keeper is bound to guard what others must never wield. It provides the following benefits:
+
+- Dampens artifact emissions in close proximity long enough for controlled handling
+- Warns the wearer if containment fails
+- Allows safe handling of cursed objects
+
+The Bracer has two distinct mechanical functions:
+
+- **Armor:** +1 Armor Rating (applies to physical damage only, following standard armor rules in [Health, Damage & Armor](#chapter-health))
+- **Corruption Absorption:** Once per session, passively absorbs 1 point of Corruption that would be gained from any source. This does not require activation. The Bracer intercepts the first Corruption point automatically. This ability refreshes each session.
+
+### Keep Departments {#09-keep-departments}
+
+**The Department of Catalogers**
+
+The Catalogers are responsible for the documentation, classification, and containment planning of all artifacts. Every item recovered by the Recovery Division is delivered first to the Catalogers for formal intake. They maintain the Covenant's master artifact registry, detailing origin, cultural context, physical properties, historical significance, and known risks for each artifact in custody.
+
+The Department also designs containment chambers tailored to each artifact's characteristics: sealed vaults, protective casings, environmental stabilization systems, isolation chambers, or other specialized safeguards. Catalogers conduct periodic inspections to verify that artifacts remain secure and containment measures remain effective.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Intake Officer** | First point of contact for newly recovered artifacts. Assesses risk level, initiates containment protocol, performs initial hazard classification, and opens the formal Registry entry. |
+| **Archivist** | Maintains the Covenant's master artifact registry. Expert in historical context, cultural origin, and known hazard documentation. Coordinates with Wayfinder records to verify provenance and cross-reference research findings. |
+| **Containment Architect** | Designs and maintains the specialized vaults, sealed chambers, and environmental stabilization systems that keep artifacts secure. Conducts periodic inspections and redesigns containment when artifact behavior changes or escalates. |
+
+**Cataloger Talents (Choose 1 at Creation)**
+
+::: {.catalog register="keep-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Hazard Classification** | Per-Session | +1 | Upon first contact with an unknown artifact, instantly determine its danger rating (Inert / Active / Volatile / Catastrophic) and one primary containment requirement. No roll needed. |
+| **Registry Cross-Reference** | Per-Session | +1 | Consult the master artifact registry to identify a connection between the current artifact and a previously catalogued item. The DA must reveal one actionable link. |
+| **Archival Calm** _(Healing)_ | Per-Session | +1 | Spend a Shift updating the artifact registry with new findings. Heal 1 Corruption and grant one ally who contributed field data +1 bonus die on their next Lore roll. |
+:::
+
+**The Wardens**
+
+The Wardens serve as the defensive arm of the Keep. They are responsible for the physical protection of Covenant facilities, personnel, and artifact vaults. Primary duties include:
+
+- Guarding headquarters, satellite facilities, and vault complexes
+- Enforcing access protocols and escorting authorized personnel through sensitive areas
+- Responding to security incidents
+- Coordinating with Counterintelligence on infiltration threats
+- Conducting field operations to disrupt hostile activities or recover stolen property when credible threats emerge
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Vault Guardian** | Stationed within Covenant facilities. Responsible for physical security of vaults and sensitive areas. First responders to containment failures, breaches, or unauthorized access events. |
+| **Escort Warden** | Accompanies artifact transports and personnel through restricted or external environments. Provides mobile security during inter-facility transfers and high-clearance field movements. |
+| **Field Warden** | Deploys externally when hostile threats escalate beyond passive monitoring. Conducts disruption operations against rival factions and recovers property stolen from Covenant custody. |
+
+> Through the actions of the Wardens, the Verdant Covenant ensures that what is contained remains guarded, and that those who would misuse the relics of the past are prevented from doing so.
+
+**Warden Talents (Choose 1 at Creation)**
+
+::: {.catalog register="keep-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Lockdown** | Per-Session | +1 | Seal a room, corridor, or building entrance. No entity (mundane or supernatural) may pass through it for one full round without making a **Strength (Force) roll at Difficulty 2**. |
+| **Threat Assessment** | Per-Session | +1 | When entering a new area, instantly identify the single greatest physical threat present (hostile actor, structural weakness, hidden trap). The DA must describe it. |
+| **Sentinel's Vigil** _(Healing)_ | Per-Session | +1 | Once per session, after completing a guard shift, patrol, or escort mission without a security breach, heal 1 Corruption. |
+:::
+
+**Internal Counterintelligence**
+
+Working in coordination with the Wayfinder Division's Counterintelligence Wing, Internal CI agents investigate individuals or groups seeking to infiltrate the Covenant, steal artifacts, or expose the organization. They safeguard the Covenant's secrecy by identifying information leaks, preventing public exposure of operations, and ensuring that knowledge of sensitive artifacts remains tightly controlled.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **Counter-Exposure Analyst** | Monitors internal communications and personnel behavior for signs of information leaks, unauthorized disclosure, or ideological compromise. Conducts silent internal audits and compiles findings for Warden action. |
+| **Infiltration Investigator** | Investigates active external threats against Covenant facilities, personnel, or networks. Tracks hostile actors, builds operational cases against suspected infiltrators, and coordinates takedowns with the Wardens. |
+| **Vetting Officer** | Conducts background assessments and ongoing clearance monitoring for Covenant recruits and active personnel. Identifies vulnerabilities and security risks before they can be exploited by rival factions. |
+
+**Internal CI Talents (Choose 1 at Creation)**
+
+::: {.catalog register="keep-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Silent Audit** | Per-Case-File | +2 | Gain access to one person's recent communications, personnel file, or activity log without their knowledge. The DA must reveal one compromising or actionable detail. This talent can target anyone, including fellow Covenant agents, though doing so may have consequences. |
+| **Loyalty Test** | Per-Session | +1 | During a conversation, make a concealed Empathy roll at +2 bonus dice to determine if the target is actively deceiving, withholding critical information, or operating under external influence. |
+| **Debriefing Protocol** _(Healing)_ | Per-Session | +1 | Once per session, after conducting a successful internal investigation or clearing a suspect, heal 1 Corruption. |
+:::
+
+### Stack (Logistics Department) {#stack-logistics}
+
+_"Queue up, agents."_
+
+The Department of Logistics (informally known as **"Stack"**) is a department of the Keep composed of technicians, quartermasters, archivists of equipment, engineers, and inventors who maintain the Covenant's stores of specialized gear.
+
+Stack is **not** a separate playable Division. Agents choose **The Keep** at character creation, then select Stack as their department if they want the Covenant's logistics, engineering, and requisition-focused play style.
+
+> **Origin of the name:** During the global espionage boom of the 1970s, younger Recovery agents began jokingly referring to Logistics as the "Q Department," a nod to the famous James Bond armorer. Given the notoriously long requisition lines outside the Logistics offices, the nickname evolved into "Queue." Over time, Covenant humor shortened it further, and the department became known as **Stack**, a name that has endured ever since.
+
+Stack agents design, modify, and distribute the tools used by Covenant agents, from standard field supplies to experimental devices developed specifically for artifact recovery and containment. Though rarely leaving Covenant facilities themselves, Stack agents ensure that when Recovery teams enter the field, they do so properly equipped for whatever dangers await.
+
+| Specialty | Description |
+| ------------------------ | ------------------------------------------------ |
+| **The Quartermaster** | Manages the Covenant's equipment stores. Expert in acquisition, logistics, and knowing exactly what's available. |
+| **The Retro-Engineer** | Specializes in modifying and repairing existing technology. Can coax impossible performance from aging hardware. |
+| **The Paratech Inventor** | Designs entirely new experimental devices that blend analog technology with paranatural principles. |
+
+**Stack Talents (Choose 1 at Creation)**
+
+> **Design note, talent count:** Stack has six talent options compared to three for every other sub-unit. This is intentional. Stack's role is the most operationally broad of any Keep department, covering logistics, repair, modification, invention, and field support. The wider talent list reflects Stack's unique position as the Covenant's primary technical backbone, with different agents specializing in very different aspects of the department's work.
+
+::: {.catalog register="keep-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Requisition Expert** | At-Will | 0 | During the Equipping Phase, automatically acquire any one non-artifact item without spending from your CL Pool. This item is in addition to your normal CL-pool allocation. You may still make an above-CL requisition roll for a different item if desired. |
+| **Jury-Rig** | Per-Session | +1 | Immediately restore a broken or degraded piece of gear to maximum bonus during combat or a high-tension scene. |
+| **Prototyper** | Per-Session | +1 | Grant a piece of mundane gear an Artifact Die (d8) for a single skill roll. The item is permanently destroyed immediately after. |
+| **Duct Tape & WD-40** _(Healing)_ | Per-Session | +1 | Spend a Shift at base tinkering. Automatically repair all degraded gear for the entire party without a roll, and heal 1 Corruption. |
+| **Experimental Shielding** | Per-Session | +1 | Once per session, completely ignore the degradation penalty of rolling a 1 on a Gear Die. |
+| **Redundant Safeties** | At-Will | 0 | Passive. Your Maximum Corruption Threshold increases by 2 (to 12 + Empathy). Years of handling unstable prototypes have hardened your psyche. |
+:::
+
+### Keep Talents (Choose 1 at Creation) {#09-keep-talents-choose-1-at-creation}
+
+::: {.catalog register="keep-talents"}
+| Talent | Frequency | Corruption | Effect |
+| ------------------------ | ------------ | ------------ | ------------------------------------ |
+| **Containment Protocol** | Per-Session | +1 | Spend a Fast Action improvising a ward using mundane materials (salt, copper wire, chalk markings). Make a **Lore (WIT) roll at Difficulty 1** to set it. On success, any supernatural entity must make a **Force (STR) roll at Difficulty 2** to cross the ward. On failure, the ward still goes up but lasts only one round. The ward persists until an entity breaks through it or the scene ends. |
+| **Shield of the Covenant** | Per-Session | +1 | When an ally within **Engaged range** is attacked, you may step in front of the blow as a Reactive Fast Action. You take the damage instead of your ally. Halve the damage you take (round down, minimum 1). Your armor applies normally against the redirected attack. |
+| **The Inquisitor's Gaze** | Per-Case-File | +2 | While conversing with someone, instantly know their current Corruption score and whether they are **possessed** (defined as: under active supernatural domination by an entity. Their will is overridden, not merely influenced). This does not detect high-Corruption individuals who are acting of their own will, only those actively controlled. The target does not know you used this talent. |
+| **Medical Training** | Per-Session | +1 | Spend a Slow Action and make a **Heal (EMP) roll at Difficulty 2** before an ally rolls their Death Check. On success, the ally rolls d6+1 instead of d6 (death only on a natural 1). On failure, no change. Does not apply to DOA (Result 66) intervention rolls. Those are separate emergency Heal actions. |
+| **Sanctuary Master** | At-Will | 0 | When inside Covenant HQ, automatically succeed on any Lore (WIT) roll regarding the history of a **registered** artifact in the Covenant's inventory. This only applies to artifacts formally catalogued by the Catalogers, unknown or newly recovered artifacts require a normal Lore roll. |
+| **The Confessor** _(Healing)_ | Per-Case-File | +2 | Spend a quiet moment outside combat listening to one ally share a fear, a failing, or a burden they have been carrying. Both you and the ally heal **1d4 Corruption**. **Limit:** once per target per scene. The same ally may not confess again to receive Corruption healing until at least one scene has passed, partial confessions or trivial admissions don't count. |
+:::

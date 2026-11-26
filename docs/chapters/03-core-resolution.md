@@ -1,0 +1,271 @@
+# Core Resolution Mechanics {#chapter-core-resolution}
+
+The foundation of Project Neon Relic relies on the classic **dice-pool variant** of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition, key themes in analog horror.
+
+## Defining "Session" {#03-defining-session}
+
+Throughout this book, "once per session" means once per continuous play session at your table, typically 3 to 4 hours. If your group plays significantly shorter sessions (under 2 hours), the DA may consider once-per-session abilities to span across two or more sessions. If your group plays extended sessions (6+ hours), the DA may reset once-per-session abilities at a natural midpoint (a significant scene break, shift change, or return to HQ). The intent is that agents recover at a rate of roughly once per 3–4 hours of play, regardless of how your group structures its calendar.
+
+## The Anatomy of the Dice Pool {#03-the-anatomy-of-the-dice-pool}
+
+The core philosophy of the Year Zero Engine is that **rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic**.
+
+> **When to roll, and when not to:** Both conditions must be true simultaneously. If the outcome is not genuinely uncertain, narrate success. If failure would produce no meaningful consequence (trying again is trivially available, the stakes are negligible), skip the roll. Rolling dice when it is not necessary is the most common error new DAs make, unnecessary rolls slow the table, dilute tension, and make success feel arbitrary.
+>
+> **No roll needed:** A trained medic (Heal 3) bandaging a minor cut in a safe room. An agent searching an already-unlocked filing cabinet at their own HQ. A character with Force 4 snapping a hollow interior door.
+>
+> **Roll required:** A medic treating a wound during a firefight while someone is actively shooting. An agent searching a chaotic crime scene before police arrive. A character forcing a reinforced exterior door while a guard approaches. When a player character (PC) attempts a risky action, they construct a dice pool consisting of three distinct elements, which should be color-coded, or otherwise separated, for immediate visual clarity at the gaming table:
+
+::: wide
+| Dice Type | Color | Source | Typical Range |
+| ------------------------ | ------------ | ------------------------------------ | ------------ |
+| **Attribute Dice** | White | Character's innate biological capability | 1–5 |
+| **Skill Dice** | Green | Character's trained proficiency | 0–5 |
+| **Gear Dice** | Black | Mechanical bonus from tools/weapons | 0–3 |
+:::
+
+## Success, Difficulty, and Extra Successes {#03-success-difficulty-and-extra-successes}
+
+Every standard skill roll has a **Difficulty**. If a rule does not list one, the default Difficulty is **1**.
+
+Each **6** rolled counts as **one success**.
+
+- **Standard roll:** You succeed if your total successes meet or exceed the Difficulty.
+- **Opposed roll:** Both sides roll, then compare total successes; the higher total wins. Ties are resolved in favor of the player character.
+- **Special binary roll:** A few subsystems, especially **Corruption Burst checks**, define their own pass/fail rule instead of using Difficulty.
+
+Successes beyond what was needed are **extra successes**. If the roll supports stunts, each extra success becomes **1 Stunt Point**.
+
+**Stunt Points Formula**
+_stuntPoints = max(0, successes − difficulty)_
+
+The formula is applied **after** determining whether the roll passes: subtract the Difficulty from the number of 6s rolled. If the result is positive, those are your Stunt Points. If the roll fails (successes < Difficulty), stunt points are zero regardless of how many 6s were rolled.
+
+> **Stunt Points must be spent immediately.** They are not saved between rolls or carried into subsequent actions. If you do not spend a Stunt Point at the moment it is generated, it is lost. Decide how to spend extra successes before the next roll at the table.
+
+| Difficulty | Use |
+| ------------ | ------------------------------------------------ |
+| **1** | Standard risky task. This is the default when no other Difficulty is listed. |
+| **2** | Hard task, active resistance, or strong time pressure. |
+| **3** | Severe pressure, expert resistance, or dangerous complexity. |
+| **4** | Extreme task requiring unusual competence, leverage, or luck. |
+| **5+** | Near-impossible task. Use only when failure pressure is central to the scene. |
+
+> **Total successes vs. extra successes:** Unless a rule says otherwise, only successes beyond the required threshold become stunt points. If a subsystem explicitly says "each success" does something, count the total successes rolled after determining whether the roll passed.
+
+> **Difficulty vs. modifiers. Two different things:** **Difficulty** (the number in the table above) is how many successes a roll requires. It does **not** change the size of the dice pool. When a rule says "Difficulty 2" the roller must score 2 sixes. A **modifier** (written as +X or −X) **adds or removes dice** from the pool before rolling. The two can stack: a roll may be both Difficulty 2 (needs 2 successes) **and** have a −1 modifier (one fewer die). Rules always specify which they mean; when in doubt, "Difficulty 2" is the shorthand for a hard but achievable task.
+
+Extra successes can be spent on **stunts**, extra narrative or mechanical benefits such as:
+
+- Completing an action significantly faster
+- Uncovering secondary hidden clues during an investigation
+- Assisting an ally with their next roll
+- Inflicting critical, debilitating injuries during combat
+
+The elegance of this system lies in its speed; it produces immediate, decisive results by entirely removing post-roll arithmetic or target-number calculations.
+
+## The Push Mechanic and Attrition {#03-the-push-mechanic-and-attrition}
+
+The primary driver of suspense and narrative tension is the **Push** mechanic. If an initial roll does not meet its Difficulty, or if the player desperately needs additional successes for stunts, they may choose to **push** the roll, picking up and re-rolling all dice that do not currently display a 6.
+
+However, pushing represents the character exerting maximum physical, mental, or material effort, and it comes with severe risks:
+
+- You immediately gain **+1 Corruption**.
+
+> **Design note:** Corruption is the only push cost. There is no separate "Stress" track, no optional complication table. The Corruption system handles all forms of mental and supernatural pressure through a single unified resource. See [Corruption and Healing](#chapter-corruption) for the full rules.
+
+**What happens when you push?**
+
+When your agent pushes a roll, they aren't simply gritting their teeth and trying harder. Something deeper activates, an involuntary reflex born from proximity to the unnatural. Maybe a phrase from a containment ritual surfaces unbidden. Maybe your hands remember how an artifact felt, and that phantom sensation steadies your grip. Maybe the whispers you've been ignoring since your last case suddenly become useful, guiding your attention to exactly the right detail.
+
+Whatever form it takes, pushing means your contaminated mind is offering you a shortcut. The help is real. The cost is real. Every push is a transaction with something you don't fully understand, and it always leaves a mark: +1 Corruption, regardless of the task. The library is not safer than the field. The thing inside you doesn't care where you are.
+
+The analog nature of 1980s technology naturally complements this mechanical attrition. Pushing a gear-assisted roll might degrade the item, short-circuiting alkaline batteries or jamming mechanisms, effectively reducing its inherent bonus until it can be repaired during downtime.
+
+### Gear Degradation {#03-gear-degradation}
+
+When you roll a dice pool that includes **Gear Dice**, you risk damaging the item. If any Gear Die in the **initial roll** shows a **1**, the item's **Gear Bonus is permanently reduced by 1** (until repaired by Stack during downtime).
+
+**Gear Dice are never rerolled when pushing.** When you push, you pick up only your Attribute and Skill Dice: Gear Dice keep their initial values. If a Gear Die already showed a 1 on the initial roll, that degradation has already occurred before the push.
+
+An item whose Gear Bonus has been reduced to **0** is **Broken**. It provides no dice to rolls and cannot be used until repaired.
+
+> This rule applies identically to all gear: weapons (Gear Bonus reduced by 1), armor (Armor Rating reduced by 1), and tools. Improvised items break outright when their sole Gear Die shows a 1. See [Improvised Item Failure](#10-improvised-item-failure).
+>
+> **Gear Degradation example:** Kowalski uses his lockpick kit (+2 Gear Dice) to crack a lock. The first Gear Die shows a 1. The kit is nicked. **Gear Bonus reduced from +2 to +1**. He still needs more successes, so he pushes. Gear Dice are locked at their initial values; he rerolls only his Attribute and Skill Dice. No further degradation can occur on this push. The kit already took its damage on the initial roll. If he had rolled no 1s on the Gear Dice initially, the kit would be undamaged regardless of what happens on the push.
+
+> For full repair rules, see [Crafting and Repair](#crafting-and-repair).
+
+## Opposed Rolls {#03-opposed-rolls}
+
+When two characters are directly working against each other. A guard watching for intruders while an agent tries to slip past, a witness resisting an interrogation, two agents in a grapple. A **standard roll is not sufficient**. Both sides have active stakes in the outcome. Use an **Opposed Roll**.
+
+### Procedure {#03-procedure}
+
+1. Both characters construct their dice pools normally (Attribute + Skill + Gear).
+1. Both roll simultaneously.
+1. Count the number of **6s** each side rolled. These are their **successes**.
+1. The side with more successes wins.
+
+If the winning roll supports stunts, each success beyond the opposing total is an extra success. Opposed rolls normally do **not** use a listed Difficulty. If a rule combines both, the acting character must first meet the listed Difficulty and then beat the opposing total.
+
+### Tie-Breaking {#03-tie-breaking}
+
+> **Design Decision:** In Neon Relic, ties are resolved **in favor of the player character**. If a PC is involved in an opposed roll, a tie is a player win, regardless of who initiated the action.
+>
+> **Rationale:** The active-party rule punishes players whenever a hostile NPC takes the initiative. Corruption costs and the asymmetric difficulty of the Corruption track already provide consistent pressure. Giving NPCs tie wins would compound that pressure without interesting dramatic benefit. This aligns with _Alien RPG_ and the general YZE design principle of player-favorable resolution.
+>
+> **Edge cases:**
+>
+> * _PC vs. NPC:_ The PC wins, regardless of who initiated.
+> * _NPC vs. NPC:_ Equal nonzero successes = no change; both zero = no change (see below).
+> * _PC vs. PC:_ The DA rules in context; no mechanical default applies.
+
+If both sides roll zero successes, the outcome is **no change**. The situation remains unresolved, and the DA should advance the fiction in a direction that applies pressure (the confrontation escalates, time runs out, a third party notices, etc.). The acting character does **not** gain Corruption from a zero-zero tie.
+
+### Common Opposed Pairings {#03-common-opposed-pairings}
+
+The following pairings arise most frequently in play. Either side may push their roll as normal, gaining +1 Corruption.
+
+::: wide
+| Active Roll | Opposing Roll | Situation |
+| ------------------------ | ------------------------ | ------------------------------------ |
+| Sneak (AGI) | Investigate (WIT) | Agent moves silently past a watchful guard or suspicious bystander |
+| Manipulate (EMP) | Psychoanalyze (EMP) | Convincing a witness. The target is actively trying to spot the lie |
+| Command (EMP) | Manipulate (EMP) | Asserting authority vs. someone talking their way out from under it |
+| Force (STR) | Endure (STR) | Trying to physically overpower or restrain another character |
+| Brawl (STR) | Brawl (STR) | Contested grapple, disarm, or shove |
+| Deft Hands (AGI) | Investigate (WIT) | Planting or pocketing an item without being noticed |
+| Sneak (AGI) | Investigate (WIT) | Tailing a target without being made |
+| Tech (WIT) | Tech (WIT) | Counter-hacking: both parties on the same BBS or mainframe simultaneously |
+:::
+
+> **Mismatched skills are allowed.** If a situation calls for it, the DA may permit any logical pairing. The table above is guidance, not a hard constraint.
+
+## Range Zones {#03-range-zones}
+
+Actions in Neon Relic use **five range zones** to describe spatial relationships between characters and threats. Range affects who can help, who can be targeted by attacks, and the Difficulty of many rolls.
+
+| Zone | Distance | Typical Context |
+| ------------ | ------------------------ | ------------------------------------ |
+| **Engaged** | Arm's reach | Physical melee contact; grappling, close-quarters brawls |
+| **Close** | Same room (~10 m) | Hallway conversations, helping a nearby ally, short-range gunfight |
+| **Near** | Short dash away (~30 m) | Across a courtyard, adjacent rooms, parking-lot cover |
+| **Far** | Line of sight (~100 m) | Street-level sniper positions, exterior building perimeters |
+| **Very Far** | Edge of engagement (~300 m) | Long-range rifles only; most skills have no effect at this range |
+
+Helping requires **Engaged or Close** range. Most social rolls require at least **Close**. Full rules for zone-based movement, attack reach, and Difficulty modifiers are in [Combat](#chapter-combat).
+
+### Pushed Opposed Rolls {#03-pushed-opposed-rolls}
+
+Either or both sides may push their roll (gaining +1 Corruption each). Pushes are declared **after** comparing results. The loser may push the roll and if this causes the loser to become the winner, then the new loser may push the roll. Each roll may be pushed only once. If both sides push and the result is still a tie, apply the standard tie-breaking rule outlined in Section 3.3.
+
+## Helping {#03-helping}
+
+Agents operating as a team can be more effective than any individual. When one agent attempts a roll and an ally is present and capable, that ally may **help**.
+
+### Who May Help {#03-who-may-help}
+
+An ally may help if **both** of the following are true:
+
+- They are present in the scene (Engaged or Close range, same room, same vehicle, actively coordinating).
+- They have a **rating of at least 1** in the relevant skill, **or** they can provide a plausible narrative justification for how their own skill set contributes (DA approval).
+
+> **Helping with a non-matching skill:** The DA determines whether a different skill plausibly contributes.
+> * **Lore aiding Investigate:** An archivist explains a library's organizational system before the searcher begins, reducing cognitive load. DA allows Lore to help Investigate.
+> * **Tech aiding Manipulate:** A hacker has pulled the target's financial records and whispers key facts to the negotiator. DA allows Tech to help Manipulate.
+> * **Force aiding Command:** A soldier stands visibly armed at the negotiator's shoulder. Non-verbal intimidation. DA allows Force to help Command.
+>
+> The test: does the narrative make sense? Could that skill plausibly improve the outcome? If yes, it helps. If it is a stretch, the DA declines.
+
+### The Helping Bonus {#03-the-helping-bonus}
+
+- Each helper adds **+1 die** to the active character's dice pool.
+- A maximum of **2 helpers** may assist on any single roll.
+- The helping dice are **Skill Dice** (green). They can produce successes but are not pushed separately.
+
+> **Maximum pool size:** With 2 helpers, a character's pool can be up to +2 dice above their normal maximum. This represents peak team coordination. Beyond this, too many cooks.
+
+### Helping and Corruption {#03-helping-and-corruption}
+
+- If the active character **pushes** the roll, helpers are **not** penalized. They lent their dice to the initial roll, not the push.
+- Helpers do **not** gain Corruption when the active character pushes.
+
+### Helping in Combat {#03-helping-in-combat}
+
+Helping during combat requires a **slow action** from the helper. A helper who assists a slow action during a combat round cannot take any other slow action that round.
+
+## Group Rolls {#03-group-rolls}
+
+Some situations call for the **entire team to attempt the same action simultaneously**, crossing a dark chasm, navigating a treacherous building undetected before the guards change, deciphering a large number of documents before the contact leaves.
+
+### Procedure {#03-procedure-2}
+
+1. Each character rolls their individual dice pool for the relevant skill.
+1. Count how many characters **succeed** (met the roll's Difficulty, usually 1).
+1. Compare against the **Group Success Threshold** set by the DA:
+
+| Threshold | When to Use |
+| ------------ | ------------------------------------ |
+| **All succeed** | The action requires total team performance. A single failure has consequences (e.g., stealth approach; one noise ruins it for everyone) |
+| **Majority succeed** | Most of the team needs to make it (e.g., climbing a fence before a gate locks) |
+| **At least one succeeds** | The team needs one person to pull it off; others can assist if needed |
+
+### Group Roll Failure {#03-group-roll-failure}
+
+If the group fails to meet the threshold:
+
+- The DA applies consequences to **all who failed**, not as individual failures but as a shared narrative setback.
+- Individual characters who succeeded are not penalized. They did their part.
+- Characters who failed **may push** as normal (gaining +1 Corruption each), independently.
+
+> **Group rolls and pushing:** Each character's push decision is independent. A character who already succeeded **cannot** push. There is nothing to improve. A character who failed may push (gaining +1 Corruption) and compare their new total against the same Difficulty. If the group wants to push sequentially to check whether the threshold is met before risking more Corruption, resolve pushes one character at a time in any order.
+>
+> Each character manages their own Corruption independently. A group roll gone wrong, four agents all pushing, all gaining +1 Corruption, creates the kind of compounding pressure that makes the Corruption system matter.
+
+## Worked Examples {#03-worked-examples}
+
+### Standard Roll: Searching the Burned Office {#03-standard-roll-searching-the-burned-office}
+
+**Situation:** Agent Reyes is searching a ransacked office before the local police return. The DA sets **Investigate Difficulty 2**.
+
+- **Reyes rolls:** Investigate (WIT 4 + Investigate 2) = 6 dice. Rolls: 6, 6, 5, 4, 2, 1 → **2 successes**.
+- **Result:** Reyes succeeds. He finds the hidden ledger, but has no extra successes to spend.
+- If Reyes had rolled **3 successes** instead, the third success would become **1 Stunt Point**, enough to find the ledger faster or uncover a second clue.
+
+### Opposed Roll: The Tail Job {#03-opposed-roll-the-tail-job}
+
+**Situation:** Agent Petra Vasquez (Recovery) is tailing a suspected Compact operative through a crowded airport. The operative gets a feeling he's being watched and starts scanning the crowd.
+
+- **Petra rolls:** Sneak (AGI 4 + Sneak 3) = 7 dice. Rolls: 6, 5, 3, 3, 2, 1, 1 → **1 success**.
+- **Operative rolls:** Investigate (WIT 3 + Investigate 2) = 5 dice. Rolls: 4, 4, 3, 2, 1 → **0 successes**.
+- **Result:** Petra wins. She stays undetected and follows him to his contact.
+
+If Petra had rolled 0 successes and the operative also rolled 0, the tail continues but something shifts, maybe Petra loses him in the crowd, or the operative ducks into a bathroom and the DA advances the clock.
+
+### Opposed Roll with Push: The Interrogation {#03-opposed-roll-with-push-the-interrogation}
+
+**Situation:** Wayfinder Agent Reyes is trying to lie to a frightened historian who knows where the artifact is. The historian is already Guarded, so the DA sets **Manipulate Difficulty 2** and also calls for an opposed Psychoanalyze roll because the historian is actively trying to spot the lie.
+
+- **Reyes rolls:** Manipulate (EMP 4 + Manipulate 2) = 6 dice. Rolls: 5, 4, 4, 3, 2, 1 → **0 successes**.
+- Reyes decides to **push** (gains +1 Corruption, now at 1). Re-rolls all 5 non-6 dice: 6, 6, 3, 2, 1 → **2 successes**.
+- **Historian rolls:** Psychoanalyze (EMP 3 + Psychoanalyze 1) = 4 dice. Rolls: 6, 4, 3, 2 → **1 success**.
+- **Result:** Reyes meets the Difficulty and wins the opposed roll (2 vs 1). The lie holds, and the historian cracks. There are no extra successes left for stunts because one success was needed to beat the historian and the other was needed to meet Difficulty 2.
+
+### Helping: Cracking a Locked File Cabinet {#03-helping-cracking-a-locked-file-cabinet}
+
+**Situation:** Stack agent Kowalski is picking a government-grade lock. Deft Hands 2 (AGI 3 + skill 2 = 5 dice). Keep agent Osei has Deft Hands 1 and offers to hold the flashlight steady and narrate the tumblers. DA approves.
+
+- Osei adds +1 die. Kowalski rolls **6 dice** total instead of 5.
+- Result: 6, 6, 5, 3, 2, 1 → 2 successes. The lock opens, and the extra success means it opens fast. No time lost.
+
+### Group Roll: The Silent Entry {#03-group-roll-the-silent-entry}
+
+**Situation:** Four agents must all enter a research facility quietly before a guard completes his patrol. DA sets threshold: **all succeed** (failure means the guard hears movement).
+
+- Petra (Sneak 3, AGI 4): 7 dice → 6, 4, 3, 2, 1, 1, 1 → **1 success** ✓
+- Reyes (Sneak 1, AGI 2): 3 dice → 5, 4, 2 → **0 successes** ✗
+- Osei (Sneak 0, AGI 3): 3 attribute dice → 6, 3, 1 → **1 success** ✓
+- Kowalski (Sneak 2, AGI 4): 6 dice → 6, 6, 3, 2, 1, 1 → **2 successes** ✓
+
+Reyes failed. Threshold not met. The DA rules the guard hears something from Reyes' direction and starts to turn. **Reyes pushes** (gains +1 Corruption): re-rolls 3 dice → 6, 4, 2 → **1 success**. The group just barely makes it, but Reyes is now at 1 Corruption and the tension meter has ticked up.

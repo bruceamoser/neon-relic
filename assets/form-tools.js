@@ -1,6 +1,6 @@
 /* Neon Relic — Form Tools
    Makes blank templates fillable and printable.
-   Include via: <script src="form-tools.js"></script> before </body>. */
+   Load after the dossier fields. */
 (function () {
   /* ── inject form-specific styles ── */
   var css = document.createElement('style');
@@ -16,12 +16,7 @@
   /* ── make text fields editable ── */
   var fields = document.querySelectorAll(
     '.field-value, .id-value, .skill-box, .attr-score, ' +
-    '.talent-name, .talent-desc, .npc-field, ' +
-    '.milestone-desc, .milestone-val, .milestone-day, ' +
-    '.org-name-field, .org-val-field, .org-value-field, ' +
-    '.truth-id, .truth-desc, .notes-line, ' +
-    '.card-id, .back-id, .loc-id, ' +
-    '.npc-name, .npc-org, .p2-agent-line, ' +
+    '.talent-name, .talent-desc, .notes-line, .p2-agent-line, ' +
     '.gear-table td'
   );
   for (var i = 0; i < fields.length; i++) fields[i].contentEditable = 'true';

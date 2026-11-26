@@ -1,0 +1,234 @@
+# Social Conflict {#chapter-social-conflict}
+
+Investigation games are social games. Most of what agents do in Neon Relic is talk to people: witnesses who saw something and won't say it, cult members who believe what they're doing is righteous, informants who want to help but are terrified, supervisors who need to believe the cover story. The skill of the agent is reading people and moving them.
+
+Social conflict in Neon Relic uses the **Disposition model**, a lightweight system that tracks where an NPC stands and shifts based on agent actions. It does not require rounds or "social HP." It uses the existing dice pool mechanics and resolves quickly.
+
+## NPC Disposition {#06-npc-disposition}
+
+Every NPC who is not immediately cooperative has a **Disposition**, a state describing their current openness to engagement. Disposition exists on a 5-point track:
+
+| Score | State | Behaviour |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| 5 | **Open** | The NPC wants to help. They volunteer information. No roll needed for basic cooperation. |
+| 4 | **Cautious** | The NPC is willing to talk but holds back. They answer simple questions but hedge on anything sensitive. |
+| 3 | **Guarded** | The NPC is resistant. They answer direct, low-risk questions, but social rolls on sensitive subjects are Difficulty 2. |
+| 2 | **Hostile** | The NPC is actively uncooperative. They may lie, deflect, or attempt to end the scene. Social rolls are Difficulty 3. |
+| 1 | **Closed** | The NPC will not engage. They may call for help, alert others, or physically leave. Raise them to 2 before social rolls are possible. |
+
+### Starting Disposition {#06-starting-disposition}
+
+The DA sets starting Disposition based on the NPC's relationship to the agents and the situation. Suggested defaults:
+
+- **Covenant superior with a legitimate inquiry:** 4 (Cautious)
+- **Cooperative civilian eye-witness:** 4 (Cautious), usually wants to help but scared
+- **Rogue cultist in custody:** 2 (Hostile)
+- **Paid informant:** 3 (Guarded) if money is involved, 4 if a relationship has been built
+- **Hostile faction member:** 1 or 2 (Closed / Hostile) by default
+- **Mid-level Vantablack Compact operative:** 2 (Hostile)
+
+## Shifting Disposition {#06-shifting-disposition}
+
+Disposition shifts up (toward Open) or down (toward Closed) based on agent actions, NPC reveals, and roll outcomes. All disposition shifts are done at the DA's discretion and may vary depending on the situation.
+
+### Actions that Shift Disposition Up (+1) {#06-actions-that-shift-disposition-up-1}
+
+- A successful Psychoanalyze roll used to calm, stabilize, or reassure the NPC
+- A successful Manipulate roll that makes the NPC feel their interests are served
+- The agent voluntarily reveals information that helps the NPC (demonstrates good faith)
+- The NPC is shown physical evidence that confirms what they suspected
+- An agent successfully makes a roll to perform a service for the NPC before asking anything
+
+### Actions that Shift Disposition Down (−1) {#06-actions-that-shift-disposition-down-1}
+
+- A failed Manipulate roll (the NPC sees through the attempt)
+- The NPC detects an agent's deception (DA's judgment, or the NPC wins an opposed Psychoanalyze or Empathy roll against the agent's Manipulate. See NPC Social Defense below)
+- An agent makes a physical threat or veiled threat while the NPC's Disposition is 3+
+- A successful Psychoanalyze roll by the DA on behalf of the NPC (they read the agents. See NPC Social Defense below)
+- An agent reveals information that endangers the NPC or confirms they are a target
+
+### Disposition Thresholds {#06-disposition-thresholds}
+
+- **Disposition 3 or higher:** The NPC will answer direct, low-risk questions truthfully (though not necessarily fully). No roll required for general cooperation. Sensitive asks, incriminating admissions, or requests against self-interest still call for a roll.
+- **Disposition 2:** The NPC requires a successful social roll to answer even basic questions. They will lie by default.
+- **Disposition 1:** The NPC is done with the scene. They must be brought back to 2 before any social rolls are possible. Physical containment is required for continued interrogation.
+
+### Recovering from Disposition 1 {#06-recovering-from-disposition-1}
+
+At Disposition 1, social rolls are impossible. The agents must take **non-roll actions** to restore openness before any roll can be attempted:
+
+- Voluntarily reveal information that demonstrates good faith (show them the agents are on the same side of something)
+- Show physical evidence that validates the NPC's position or confirms a shared threat
+- Remove a perceived threat (uncuff them, step back, send the intimidating agent away)
+- Make a concrete, verifiable concession, offer protection, return a possession, give them their phone back
+- Allow time to pass, at DA discretion, minutes to hours depending on how the scene ended
+
+These actions do not require rolls. The DA judges when the accumulated effort is sufficient to shift from 1 to 2. Do not rush it. A convincing recovery from Disposition 1 should feel earned.
+
+### Disposition Between Scenes {#06-disposition-between-scenes}
+
+When agents re-encounter an NPC in a later scene, the DA sets a new starting Disposition informed by the previous interaction:
+
+- If the last scene ended positively (Disposition 3+), the NPC starts at their previous Disposition or one step lower (they've had time to reconsider what they shared).
+- If the last scene ended badly (Disposition 1–2), the NPC starts at 1 or 2 at DA discretion. Significant time passed, a changed situation, or a concrete show of good faith can allow a higher starting point.
+- If a **Closed source** consequence was applied, the NPC will not engage again this mission regardless of Disposition. The window is gone.
+
+### What Counts as a Roll-Free Question? {#06-what-counts-as-a-roll-free-question}
+
+At **Disposition 3 or higher**, use the following rule of thumb:
+
+- **Direct, low-risk question:** No roll. The NPC answers truthfully, though briefly or with omissions. Example: "Where were you when it happened?"
+- **Sensitive disclosure:** Roll required. The answer would expose fear, shame, a relationship, or knowledge the NPC would rather keep contained. Example: "Who else was there with you?"
+- **Against self-interest:** Roll required. The answer would endanger the NPC, implicate them, expose an ally, or materially help the agents at the NPC's expense. Example: "Give me the supplier's name."
+
+The point of raising Disposition is to move the scene from **access** problems to **leverage** problems. Once an NPC is talking, stop rolling for every ordinary question.
+
+## Social Rolls in Practice {#06-social-rolls-in-practice}
+
+Social rolls use the normal dice pool (Attribute + Skill). When a roll is required to gain cooperation or extract something sensitive, the baseline Difficulty is set by current Disposition unless a skill entry says otherwise. You are always rolling against the NPC's **current state**, not their willpower or an abstract resistance.
+
+Use these defaults when a roll is actually required:
+
+- **Disposition 4 or 5:** Difficulty 1 for sensitive asks.
+- **Disposition 3:** Difficulty 2 for sensitive asks.
+- **Disposition 2:** Difficulty 3 for almost any ask.
+- **Disposition 1:** No social roll possible until the NPC is brought back into the scene.
+
+### Manipulate (Empathy) {#06-manipulate-empathy}
+
+Used to deceive, persuade, bribe, leverage, or appeal to self-interest. Manipulate specifically targets the NPC's **wants and fears**. It works through the gap between what they want the world to be and what it is.
+
+- **On success:** NPC complies with the specific request, AND Disposition shifts +1 (they feel the interaction was productive, even if later they're not sure why).
+- **On failure:** Request denied. Disposition shifts −1. The NPC has clocked the attempt.
+- **On a pushed failure:** As above, but Disposition shifts −2 (instead of −1). The NPC is now certain they are being worked, and they know by whom. As with all pushed rolls, the agent also gains +1 Corruption (see [Core Resolution](#chapter-core-resolution)).
+
+### Command (Empathy) {#06-command-empathy}
+
+Used to assert authority, direct behavior under pressure, or coordinate. Command does not persuade. It **compels through confidence and force of presence**. It works when the NPC is uncertain what to do, when the agents represent a legitimate authority, or when the situation is dangerous enough that someone taking charge feels like relief.
+
+- **Command normally does not create cooperation at Disposition 2.** At **Disposition 2**, it only works for immediate emergency direction when the agents clearly have situational authority: "Get down," "Move away from the door," "Stay behind me." It does not extract information or create trust.
+- **Command does not work at Disposition 1.** An NPC who is fully closed will not accept authority from the agents at all. If an agent attempts Command at Disposition 1, the DA should inform them before the dice are rolled. No action is spent, and no roll is made.
+- **At Disposition 2**, emergency commands (immediate physical directives only, "Get down," "Step back," "Don't call anyone") are resolved at Difficulty 2. Command at Disposition 2 cannot extract information or build cooperation.
+- **On success:** NPC complies fully for the immediate scene. No Disposition shift.
+- **On failure:** NPC fails to comply. No Disposition shift, but the failed authority assertion may have social consequences at the DA's discretion.
+
+**Opposed roll:** If the NPC is actively arguing or bargaining their way out of compliance (rather than just passively refusing), the DA may call for an opposed roll: Command (EMP) vs the NPC's Manipulate (EMP). On a tie, the agent wins. See [Core Resolution](#chapter-core-resolution) for opposed roll tie-breaking rules. On NPC win, the agent's authority is undermined: no Disposition shift, but the NPC gains visible confidence and may escalate.
+
+### Psychoanalyze (Empathy) {#06-psychoanalyze-empathy}
+
+Used to read, understand, or heal. In social conflict, Psychoanalyze has two modes:
+
+**Reading:** You are trying to understand the NPC's underlying state, what they need, what they fear, what they're not saying.
+
+- Difficulty: Set by the DA based on how defended or emotionally opaque the NPC is, usually 1–3. Current Disposition is a guide, not a hard rule.
+- On success: DA must reveal one true thing about this NPC's psychological state, motivation, or deception. This grants two benefits on the agent's next social roll (Manipulate or Command) against the same NPC in the same scene:
+    - +1 bonus die
+    - The effective Difficulty of the follow-up roll is reduced by 1 (minimum Difficulty 1)
+- These benefits expire if not used in the same scene, or if the NPC's Disposition **drops** before the follow-up roll. A Disposition increase (from evidence shown, a service performed, etc.) does not invalidate Reading benefits. The agent's insight remains relevant as the NPC warms up.
+
+> **Stunt interaction:** Extra successes on a Reading roll become stunt points as normal (see [Stunts in Social Conflict](#stunts-in-social-conflict) below). General stunts may be spent on social rolls, for example, spending **Precise** on a Reading roll causes the DA to reveal an additional detail beyond the standard Reading reveal. Spending **Extended Effect** (2 SP) extends the Reading's benefits into the following scene.
+
+> **Example:** An agent faces a Hostile NPC (Disposition 2, Difficulty 3 for social rolls). The agent first uses Psychoanalyze (Reading) to understand the NPC. On success, the follow-up Manipulate roll is made at Difficulty 2 (reduced from 3) with +1 bonus die. This means a roll generating 3+ successes now produces stunt points, compared to needing 4+ successes without the Psychoanalyze step.
+
+**Stabilizing:** You are treating an NPC's fear, trauma, or distress to make them more communicative.
+
+- On success: Disposition shifts +2 (the NPC feels seen and safe). Stabilizing cannot raise Disposition above 4 (Cautious), reaching Disposition 5 (Open) requires the NPC to genuinely want to help, which comes from sustained positive interaction, not a single calming roll.
+- Difficulty by distress source: supernatural trauma (entity exposure, artifact terror) = Difficulty 3; mundane fear (physical danger, intimidation) = Difficulty 1; complex emotional distress (grief, moral conflict, deeply held belief) = Difficulty 2.
+- On failure: Disposition shifts −1 (you probed and made it worse).
+
+## NPC Social Defense {#06-npc-social-defense}
+
+NPCs can also read agents. A canny NPC may actively attempt to read or manipulate the agents in return. The DA may call for:
+
+- **Opposed Psychoanalyze roll:** DA rolls on behalf of the NPC. Use this when the NPC is actively reading the agents rather than merely resisting. On NPC success, Disposition shifts are reversed for that action, OR the NPC identifies a specific agent as the social focal point (they will now direct deflection at that agent).
+- **Lie detection:** When an NPC is actively trying to catch an agent in a deception, the DA rolls opposed: NPC Empathy + Psychoanalyze (if the NPC is trained, intelligence operatives, therapists, con artists, experienced detectives) **or** NPC Empathy with no skill dice (untrained NPCs) vs the agent's Manipulate roll. On NPC win, the deception is detected and Disposition shifts −1 immediately. This aligns with the opposed roll pairing in [Core Resolution](#chapter-core-resolution) (Manipulate vs Psychoanalyze).
+
+If the DA calls for active social defense during a Manipulate attempt, treat it as a **combined test**: the agent must meet the Disposition-based Difficulty **and** beat the NPC's opposing roll. Count the agent's total successes against both thresholds simultaneously. The agent needs to meet the Difficulty number AND exceed the NPC's successes. Stunt points are successes in excess of whichever threshold is higher.
+
+These are at DA discretion, not every NPC has this capability. Give an NPC Social Defense when their training or experience warrants it. Suggested baseline: NPCs with social defense have Empathy 3+ and Psychoanalyze 2. Untrained NPCs use Empathy alone with no skill dice. They can feel the attempt but can't precisely identify it.
+
+## Consequences of Failed Social Scenes {#06-consequences-of-failed-social-scenes}
+
+When a social scene ends badly (Disposition reaches 1, or the agents leave having gained nothing), the DA applies one or more consequences:
+
+| Consequence Type | Example |
+| ------------------------ | ------------------------------------------------ |
+| **Closed source** | The NPC will not speak to the agents again this mission. The information they held may be inaccessible. |
+| **Alert raised** | The NPC warns someone. Their employer, their family, or **the Vantablack Compact**. Agents' activities are now known to a new party. |
+| **Physical escalation** | The scene tips into violence. The NPC or their contacts move against the agents. If combat begins, see [Combat](#chapter-combat) for initiative and action economy. The NPC or their contacts typically act first, treat as a Surprise round if the agents didn't anticipate violence. |
+| **Faction response** | A rival faction learns that the Covenant is investigating. Their own response begins accelerating. See [Rival Factions](#chapter-rival-factions) for faction escalation mechanics. |
+| **Trust erosion** | A Covenant contact or superior is told about the agents' approach. Standing within the Covenant takes a hit for the current case. See [Headquarters](#chapter-headquarters) for Standing mechanics. |
+
+## Social Pressure and Corruption Burst {#06-social-pressure-and-corruption-burst}
+
+Social encounters with entities, artifacts, or cult members may cross into supernatural territory. When the content of a conversation triggers a Corruption Burst:
+
+- **Direct supernatural revelation during a Manipulate scene** (the NPC says something that cannot be explained naturally): Corruption Burst, Burst Rating 1 or 2.
+- **Psychoanalyze roll on a contaminated NPC** (someone who has long-term artifact exposure): Roll Psychoanalyze as normal. On any failure, the agent picks up a psychic echo, immediate Corruption Burst, Burst Rating 2. On success, the agent gets the information but gains +1 Corruption.
+
+> **Exception:** This is the only roll in Neon Relic where a **success** costs Corruption. Reading a contaminated mind means absorbing a fragment of what contaminated it. The information is accurate, but the contact is inherently dangerous. This cannot be mitigated by skill or luck. See also the cross-reference in [Corruption and Healing](#chapter-corruption).
+
+See [Corruption and Healing](#chapter-corruption) for full Corruption Burst rules.
+
+## Worked Example: Interrogating a Cultist {#06-worked-example-interrogating-a-cultist}
+
+**Setup:** The agents have detained Brother Elias, a mid-level member of the Ember Accord. He sits in the back of a van. He believes the artifact they recovered is a holy relic and resents being treated as a criminal.
+
+**Starting Disposition:** 2 (Hostile). He's in zip ties. He's praying under his breath. He won't look at the agents directly.
+
+**Round 1:** Agent Petra Vasquez attempts Psychoanalyze (Read). She wants to understand what Elias actually believes before making any demands. The DA sets Difficulty 2: Elias is hostile, but reading him is easier than persuading him or getting him to volunteer anything.
+
+Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. Rolls: 6, 6, 4, 3, 1. Two successes. Meets Difficulty 2 exactly. No extra successes, no stunt points. This reinforces the rule: stunts require exceeding the Difficulty, not merely meeting it.
+
+**DA reveals:** Elias genuinely believes the artifact protected his sister during a cancer diagnosis two years ago. He is not performing faith. He is terrified that if it leaves his possession, she will relapse. He is not lying about any of this.
+
+**Round 2:** Using that information, Petra shifts from reading to **Psychoanalyze (Stabilizing)**. She stops pressing Elias about doctrine and instead speaks to the real fear: his sister is sick, he thinks the artifact kept her alive, and now he is trapped in a van with strangers who want to take it away.
+
+Petra rolls Empathy 3 + Psychoanalyze 2 = 5 dice. The DA sets Difficulty 2: Elias is distressed and hostile, but Petra is addressing the real wound. Rolls: 6, 6, 4, 2, 1. Two successes.
+
+**Success:** Elias calms enough to talk. Disposition shifts from 2 to 4. He stops reciting under his breath and finally meets Petra's eyes.
+
+**Round 3:** Elias is now at Disposition 4 (Cautious). Marcus asks a **direct, low-risk question**: "Where is your sister right now?" No roll is required. Elias answers truthfully: Providence. She's alive. She's with an aunt.
+
+**Round 4:** Marcus now pushes for something **against Elias's interests**: the name of the fence who moved the relic. That would expose Elias to retaliation, so the DA calls for a Manipulate roll.
+
+Note: Petra passed the social focal point to Marcus. This is a tag-team approach. Petra's Psychoanalyze Reading bonus (+1 die, −1 Difficulty) applied only to Petra's follow-up roll (she used it in Round 2 for Stabilizing). Marcus makes a fresh Manipulate roll at the current Disposition-based Difficulty. His Reading benefit comes from re-reading Elias himself (or trusting Petra's briefing. The DA should decide if a second Read is needed).
+
+Manipulate roll: Empathy 4 + Manipulate 3 = 7 dice. Difficulty 1 (Disposition 4, sensitive ask). Rolls: 6, 6, 5, 4, 2, 2, 1. Two successes. Two successes at Difficulty 1 = 1 extra success = 1 stunt point.
+
+Marcus spends the stunt point on **Quieter** (see [Attributes & Skills](#chapter-attributes-skills) for the general stunt list): Elias won't mention this conversation to anyone for at least 24 hours, enough time for the agents to move on Talvez before Elias has a chance to warn him. The DA rules this is a valid application of Quieter. The social action leaves no detectable trace for others to follow.
+
+**Success:** Elias gives the name: a fence named Talvez, operating out of a pawn shop on the East Side. He works for several clients. Elias doesn't know who.
+
+**Outcome:** The scene demonstrates the full loop. Read first to find the leverage. Stabilize to move the NPC into conversation. Ask direct questions for free once Disposition is high enough. Roll only when the agents want disclosure that still carries risk for the target. Spend stunt points on general stunt effects to shape what success means.
+
+## Pushing Social Rolls {#06-pushing-social-rolls}
+
+All social rolls may be pushed per the standard push rules (see [Core Resolution](#chapter-core-resolution)). Pushing always costs +1 Corruption, in addition to any Disposition penalties listed here. Push **before** knowing the outcome is final. The push replaces your non-6 dice.
+
+::: wide
+| Skill | Pushed Failure | Note |
+| ------------------------ | ------------------------------------ | ------------------------------------ |
+| **Manipulate** | Disposition −2 (instead of −1). NPC now certain they are being worked. +1 Corruption. | Most punishing push in the social system. |
+| **Command** | No Disposition shift. NPC recognizes desperation. They may become emboldened or dismissive (DA discretion). +1 Corruption. | No extra Disposition penalty because Command doesn't move Disposition on success either. |
+| **Psychoanalyze (Reading)** | DA provides misleading information (agent projects their own fears). No Disposition shift. +1 Corruption. | Pushed Reading failure is narratively dangerous. The wrong read leads to wrong leverage. |
+| **Psychoanalyze (Stabilizing)** | Disposition −2 (instead of −1). Agent pressed a raw nerve and made it significantly worse. +1 Corruption. | Match the severity of Manipulate pushed failure. |
+:::
+
+## Stunts in Social Conflict {#stunts-in-social-conflict}
+
+Extra successes on social rolls become stunt points, as normal (see [Core Resolution](#chapter-core-resolution)). These may be spent on the general stunt list in [Attributes & Skills](#chapter-attributes-skills). Any stunt from the general list may be purchased on a social roll. The effect is narrated in social context (e.g., **Quieter** means the target doesn't realize they were manipulated; **Additional Target** applies the social effect to a second NPC in the scene).
+
+Stunt effects and Disposition effects are cumulative. They are separate outcomes of the same roll. Stunt points must be spent immediately (within the same action) or they are lost.
+
+## Multiple Agents in Social Scenes {#06-multiple-agents-in-social-scenes}
+
+The Helping rules from [Core Resolution](#chapter-core-resolution) apply to social rolls. An ally present in the scene may add +1 die to another agent's social roll if they have the relevant skill or the DA accepts a narrative justification (silent moral support for Psychoanalyze, physical presence during Command, feeding intel for Manipulate).
+
+Only one agent should be the social focal point for a given NPC at a time. Other agents may:
+
+- Help (add +1 die to the focal agent's roll)
+- Wait and observe. A successful Psychoanalyze (Reading) roll by a watching agent can be shared verbally before the focal agent rolls, providing the Reading bonus
+- Attempt their own social rolls on subsequent actions
+
+Multiple simultaneous social attempts on the same NPC risk overwhelming them, at DA discretion, aggressive teamwork may impose a −1 Disposition penalty. Rotating the focal point mid-scene (handing off from one agent to another) is legitimate, but per-agent Reading bonuses do not transfer. Only the agent who made the Reading roll benefits from it on their own follow-up roll.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEON RELIC � Agent Dossier</title>
+<title>NEON RELIC / Agent Dossier</title>
 <style>
   /* -- RESET -- */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -197,7 +197,7 @@
   }
   .attr-skill-col { display: flex; flex-direction: column; }
 
-  /* Attribute box � no bottom border so it flows into skill area */
+  /* Attribute box / no bottom border so it flows into skill area */
   .attr-box {
     border: 1.5px solid var(--ink);
     border-bottom: none;
@@ -235,7 +235,7 @@
     border: 1px solid var(--ink); background: transparent;
   }
 
-  /* Skill area � connected directly under attr-box */
+  /* Skill area / connected directly under attr-box */
   .skill-area {
     border: 1.5px solid var(--ink);
     border-top: 1px solid var(--rule-light);
@@ -420,12 +420,13 @@
     border-bottom: 1px solid var(--rule);
     display: inline-block; min-width: 140px; height: 14px;
   }
+  @media print { .page { margin: 0; } }
 </style>
 </head>
 <body>
 
 <!-- --------------------------------------------------
-     PAGE 1 � OPERATIONS SHEET
+     PAGE 1 / OPERATIONS SHEET
      -------------------------------------------------- -->
 <div class="page page-break">
   <div class="watermark">COVENANT</div>
@@ -435,7 +436,7 @@
   <div class="header">
     <div class="header-left">
       <div class="header-title">Neon Relic</div>
-      <div class="header-subtitle">Agent Dossier &mdash; The Verdant Covenant</div>
+      <div class="header-subtitle">Agent Dossier / The Verdant Covenant</div>
     </div>
     <div class="header-right">
       <div class="classification">CLASSIFIED</div><br>
@@ -445,7 +446,7 @@
   </div>
 
   <!-- SECTION I: AGENT IDENTITY -->
-  <div class="section-title">Section I &mdash; Agent Identity</div>
+  <div class="section-title">Section I / Agent Identity</div>
 
   <!-- Row 1: Name | Division | Wing / Paradigm / Dept -->
   <div class="id-block-row1">
@@ -484,14 +485,14 @@
   </div>
 
   <!-- SECTION II: PSYCHOLOGICAL PROFILE -->
-  <div class="section-title red">Section II &mdash; Psychological Profile</div>
+  <div class="section-title red">Section II / Psychological Profile</div>
   <div class="anchor-box">
-    <div class="field-label">Anchor &mdash; Object &amp; Memory</div>
+    <div class="field-label">Anchor / Object &amp; Memory</div>
     <div class="field-value tall"></div>
   </div>
 
   <!-- SECTIONS III & IV: ATTRIBUTES & SKILLS (unified 4-column layout) -->
-  <div class="section-title">Section III &mdash; Attributes &amp; Skills</div>
+  <div class="section-title">Section III / Attributes &amp; Skills</div>
   <div class="attr-skill-grid">
 
     <!-- STRENGTH -->
@@ -575,12 +576,12 @@
   </div><!-- /attr-skill-grid -->
 
   <!-- SECTION IV: CORRUPTION -->
-  <div class="section-title red">Section IV &mdash; Corruption</div>
+  <div class="section-title red">Section IV / Corruption</div>
   <div style="display:flex; gap:14px; align-items:flex-start; margin:4px 0 2px;">
 
     <!-- Track -->
     <div style="flex:1;">
-      <div class="corr-label" style="margin-bottom:4px;">Current Corruption � mark left to right</div>
+      <div class="corr-label" style="margin-bottom:4px;">Current Corruption / mark left to right</div>
       <div class="corruption-track">
         <span class="cpip">1</span><span class="cpip">2</span><span class="cpip">3</span>
         <span class="cpip">4</span><span class="cpip">5</span><span class="cpip">6</span>
@@ -622,10 +623,10 @@
   </div>
 
   <!-- SECTION V: TALENTS -->
-  <div class="section-title green">Section V &mdash; Talents &amp; Abilities</div>
+  <div class="section-title green">Section V / Talents &amp; Abilities</div>
   <div class="three-col">
     <div class="talent-block">
-      <div class="talent-type">Division Talent &mdash; or &mdash; General Talent</div>
+      <div class="talent-type">Division Talent / or / General Talent</div>
       <div class="talent-name"></div>
       <div class="talent-desc"></div>
     </div>
@@ -650,7 +651,7 @@
 </div>
 
 <!-- --------------------------------------------------
-     PAGE 2 � BACKGROUND & EQUIPMENT
+     PAGE 2 / BACKGROUND & EQUIPMENT
      -------------------------------------------------- -->
 <div class="page">
   <div class="watermark">COVENANT</div>
@@ -660,11 +661,11 @@
   <div class="p2-header">
     <div>
       <div class="p2-title">Neon Relic</div>
-      <div class="p2-subtitle">Agent Dossier &mdash; The Verdant Covenant</div>
+      <div class="p2-subtitle">Agent Dossier / The Verdant Covenant</div>
     </div>
     <div class="p2-right">
       <div>Form VC-7 &bull; Rev. 1987 &bull; Continuation Sheet</div>
-      <div style="color:var(--red-stamp); letter-spacing:1px; font-size:5.5pt;">TOP SECRET &mdash; EYES ONLY</div>
+      <div style="color:var(--red-stamp); letter-spacing:1px; font-size:5.5pt;">TOP SECRET / EYES ONLY</div>
       <div class="p2-agent-ref">
         <span>Agent:</span>
         <span class="p2-agent-line"></span>
@@ -673,7 +674,7 @@
   </div>
 
   <!-- SECTION V: EQUIPMENT & REQUISITIONS -->
-  <div class="section-title green">Section V &mdash; Equipment &amp; Requisitions</div>
+  <div class="section-title green">Section V / Equipment &amp; Requisitions</div>
   <div class="field-row" style="margin-bottom:5px;">
     <div class="field">
       <div class="field-label">Division Signature Item</div>
@@ -702,7 +703,7 @@
   <!-- RESOURCE DICE & ARMOR -->
   <div style="display:flex; gap:14px; align-items:flex-start; margin:6px 0 7px;">
     <div style="flex:1;">
-      <div class="corr-label" style="margin-bottom:4px;">Resource Dice &mdash; record current die size (d4 / d6 / d8 / d10 / d12)</div>
+      <div class="corr-label" style="margin-bottom:4px;">Resource Dice / record current die size (d4 / d6 / d8 / d10 / d12)</div>
       <div style="display:flex; gap:10px;">
         <div style="text-align:center;">
           <div class="corr-label" style="margin-bottom:2px;">Ammo</div>
@@ -732,7 +733,7 @@
   </div>
 
   <!-- SECTION VI: CRITICAL INJURIES -->
-  <div class="section-title red">Section VI &mdash; Critical Injuries &amp; Conditions</div>
+  <div class="section-title red">Section VI / Critical Injuries &amp; Conditions</div>
   <div class="notes-lines">
     <div class="notes-line"></div>
     <div class="notes-line"></div>
@@ -741,16 +742,16 @@
   </div>
 
   <!-- SECTION VII: AGENT BIOGRAPHY -->
-  <div class="section-title">Section VII &mdash; Agent Biography</div>
+  <div class="section-title">Section VII / Agent Biography</div>
   <div class="field-row">
     <div class="field">
-      <div class="field-label">Before the Covenant &mdash; Who were you?</div>
+      <div class="field-label">Before the Covenant / Who were you?</div>
       <div class="field-value xl"></div>
     </div>
   </div>
 
   <!-- SECTION VIII: FIELD NOTES -->
-  <div class="section-title">Section VIII &mdash; Field Notes</div>
+  <div class="section-title">Section VIII / Field Notes</div>
   <div class="notes-lines">
     <div class="notes-line"></div>
     <div class="notes-line"></div>
