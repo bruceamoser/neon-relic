@@ -124,7 +124,7 @@
   grid(columns: (1fr, 1fr), column-gutter: 16pt,
     column(items.slice(0, split)), column(items.slice(split)))
 }
-#let specimen(title, class, scores, items, art: none, identification: none) = block(width: 100%, breakable: false,
+#let specimen(title, class, scores, items, art: none, art-height: auto, identification: none) = block(width: 100%, breakable: false,
     stroke: 0.9pt + pine, fill: rgb("#fcfaf2"), inset: 0pt, above: 5pt, below: 7pt)[
   #set text(size: if identification != none {12pt} else if art in ("vessel","echo") {11.4pt} else {10.5pt})
   #set par(leading: 0.35em, spacing: 0.4em)
@@ -138,13 +138,14 @@
       let fields = items
       if identification != none {
         grid(columns: (1fr, 1fr), gutter: 15pt, align: horizon,
-          align(center, image("/book/art/" + art + ".png", height: 268pt, width: 100%, fit: "contain", alt: "Field sketch: " + art)),
+          align(center, image("/book/art/" + art + ".png", height: 268pt, width: 100%, fit: "contain", alt: "Field sketch: " + art.replace("-", " "))),
           block(width: 100%)[#band[IDENTIFICATION] #v(5pt) #identification])
         v(8pt)
         band[OBSERVED ABILITIES AND BEHAVIOR]
         v(6pt)
       } else if art != none {
-        fields.insert(3, align(center, image("/book/art/" + art + ".png", width: 88%, height: if art in ("vessel","echo") {252pt} else {142pt}, fit: "contain", alt: "Field sketch: " + art)))
+        let height = if art-height != auto {art-height} else if art in ("vessel","echo") {252pt} else {142pt}
+        fields.insert(3, align(center, image("/book/art/" + art + ".png", width: 88%, height: height, fit: "contain", alt: "Field sketch: " + art.replace("-", " "))))
       }
       split-fields(fields, (size.width - 16pt) / 2, gap: if identification != none {10pt} else {5pt})
     })
@@ -198,11 +199,17 @@
 }
 
 
-#let location-print(name, caption, height: 110pt) = block(width: 100%, above: 3pt, below: 5pt)[
-  #image("/assets/png/spear-location-" + name + ".png", width: 100%, height: height, fit: "cover", alt: caption)
-  #v(-1pt)
-  #mono(size: 7.6pt, fill: mute)[#caption]
-]
+#let location-print(name, standalone, caption, standalone-caption, height: 110pt) = {
+  let separate = sys.inputs.at("edition") == "mission"
+  let file = if separate {standalone} else {name}
+  let label = if separate {standalone-caption} else {caption}
+  block(width: 100%, above: 7pt, below: 6pt)[
+    #image("/book/art/" + file, width: 100%, height: height,
+      fit: if file.ends-with(".png") {"contain"} else {"cover"}, alt: label)
+    #v(-1pt)
+    #mono(size: 7.6pt, fill: mute)[#label]
+  ]
+}
 
 #let reading(body) = columns(2, gutter: 22pt, body)
 

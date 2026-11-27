@@ -131,7 +131,7 @@ Human / Majestic-12 (MJ-12) / Threat: High
 **Motivation.** Retrieve the artifact for Project Paper Lantern. Neutralize Covenant operatives if exposed. No witnesses.
 ::::
 
-:::: {.specimen art="hellfire"}
+:::: {.specimen art="contractor-ward"}
 ### Hellfire Consortium Blood Contractor {#19-hellfire-consortium-blood-contractor}
 
 Human / The Hellfire Consortium / Threat: High
@@ -157,7 +157,7 @@ Human / The Hellfire Consortium / Threat: High
 **Motivation.** Acquire the artifact. The Consortium has a buyer. The agents are an inconvenience that should have been avoided.
 ::::
 
-:::: {.specimen art="compact"}
+:::: {.specimen art="compact-professional"}
 ### Vantablack Compact Field Professional {#19-vantablack-compact-field-professional}
 
 Human / The Vantablack Compact / Threat: High
@@ -488,7 +488,7 @@ Supernatural / Artifact-Generated / Threat: Medium
 **DA Guidance.** Resonance Echoes are investigation puzzles, not combat encounters. The threat isn't the Echo itself (which can be avoided by leaving the zone), it's that the Echo occupies a location the agents need to access. The clues embedded in the Immersion Field make the Echo simultaneously dangerous and useful: agents who endure the replay learn about the artifact's history, which may be essential for containment. Design Echoes around specific historical events tied to the Case File's artifact. The more vivid and specific the replay, the better, don't describe "a battle" when you can describe "a woman in a blue coat being dragged from a church while snow falls through the broken roof."
 ::::
 
-:::: {.specimen}
+:::: {.specimen art="collector-inlay" art-height="78"}
 ### The Collector (Artifact Hoarder) {#19-the-collector-artifact-hoarder}
 
 Human / Artifact-Corrupted / Threat: Medium

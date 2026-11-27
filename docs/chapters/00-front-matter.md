@@ -3,7 +3,7 @@
 ## Project Neon Relic
 
 **Core Operations Manual**  
-First edition • Version 2.5.1\
+First edition • Version 2.5.2\
 Manuscript dated November 27, 2026
 
 Written and designed by **Bruce Moser and Stewart Voit**.

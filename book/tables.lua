@@ -23,7 +23,7 @@ local function matrix(tbl, spanning)
       ["Zone Range"] = {"1fr","1fr","1fr","2fr"}, ["Maneuver"] = {"1fr","1fr","3fr"},
       ["Cost"] = {"0.55fr","1.4fr","3fr"}, ["State"] = {"0.8fr","2fr","2fr"},
       ["Recovery Type"] = {"1fr","1.3fr","2.5fr"}, ["Roll"] = {"0.65fr","1.2fr","3fr"},
-      ["Corruption"] = {"0.85fr","1fr","3.5fr"}, ["Method"] = {"1fr","1.4fr","2fr"},
+      ["Corruption"] = {"0.85fr","1fr","3.5fr"}, ["Method"] = {"1fr","1.1fr","3.9fr"},
       ["Vehicle"] = {"1.2fr","0.8fr","1fr","0.8fr","2.6fr"},
       ["Stage"] = {"0.6fr","0.9fr","4fr"}, ["Tier"] = {"0.55fr","1fr","3fr","1fr"},
       ["Condition"] = {"1.6fr","1.4fr","1fr","1fr"},
@@ -205,8 +205,9 @@ function Div(div)
       .. ", width: 80%, height: " .. (tonumber(div.attributes.height) or 125) .. "pt, fit: \"contain\", alt: " .. caption .. "))"
       .. "\n#mono(size: 8pt)[" .. div.attributes.caption .. "]]")
   elseif kind == "location" then
-    return pandoc.RawBlock("typst", string.format("#location-print(%q, %q, height: %dpt)",
-      div.attributes.photo, div.attributes.caption, tonumber(div.attributes.height)))
+    return pandoc.RawBlock("typst", string.format("#location-print(%q, %q, %q, %q, height: %dpt)",
+      div.attributes.photo, div.attributes.standalone, div.attributes.caption,
+      div.attributes["standalone-caption"] or div.attributes.caption, tonumber(div.attributes.height)))
   elseif kind == "new-leaf" then
     return pandoc.RawBlock("typst", "#pagebreak(weak: true)")
   elseif kind == "keep" then
@@ -230,8 +231,11 @@ function Div(div)
       identification = arg(typ(b:remove(1).content))
     end
     local art = div.attributes.art and string.format("%q", div.attributes.art) or "none"
+    local art_height = tonumber(div.attributes["art-height"])
     return pandoc.RawBlock("typst", "#specimen(" .. name .. ", " .. string.format("%q",class)
-      .. ", " .. strip .. ", " .. items(b) .. ", art: " .. art .. ", identification: " .. identification .. ")")
+      .. ", " .. strip .. ", " .. items(b) .. ", art: " .. art
+      .. (art_height and ", art-height: " .. art_height .. "pt" or "")
+      .. ", identification: " .. identification .. ")")
   elseif kind == "faction" then
     local title = arg(typ({b:remove(1)}))
     local brief = {}

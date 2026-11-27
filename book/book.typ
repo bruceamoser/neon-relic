@@ -4,7 +4,10 @@
 #set par(leading: 0.52em, spacing: 0.85em)
 #set page(paper: "us-letter", margin: (x: 51pt, top: 52pt, bottom: 50pt), fill: paper,
   background: context page-frame(),
-  header: context running-head(current.get()),
+  header: context {
+    let opening = query(heading.where(level: 1)).find(it => it.location().page() == here().page())
+    running-head(if opening == none {current.get()} else {current.at(opening.location())})
+  },
   footer: context running-foot(current.get()))
 #set text(costs: (widow: 100%, orphan: 100%))
 #show heading.where(level: 1): it => block(above: 0pt, below: 13pt, width: 100%)[

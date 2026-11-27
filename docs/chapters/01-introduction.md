@@ -6,7 +6,7 @@ The game uses the **Year Zero Engine (YZE)** dice-pool variant. What makes Neon 
 
 Neon Relic's default protagonists are **competent but vulnerable containment specialists**. They are trained, resourced, and trusted enough to enter dangerous situations on the Covenant's behalf, but they are never powerful enough to dominate those situations safely. The intended fantasy is **solve and survive under pressure**, not superheroic paranormal mastery.
 
-::: {.equipment-print item="microfiche" caption="Archives / Covenant microfiche sleeve"}
+::: {.equipment-print item="reader-pass" caption="Archives / Reading room pass"}
 :::
 
 ## What This Game Is {#01-what-this-game-is}
