@@ -61,6 +61,7 @@ Distribute your **Attribute Points** across your four core attributes. Each attr
 
 > **Division Favorite Attribute:** Each Division has one **Favorite Attribute**, the stat at the core of your agent's identity. Plan to assign 4 or 5 points there. **Wayfinder:** Wits | **Recovery:** Agility | **The Keep:** Empathy. Investing there is strongly recommended but not mechanically enforced.
 
+::: spread-note
 > **Attributes as Health Pools**
 >
 > Your four attributes serve a dual purpose: they define your dice pools **and** they are your health. When your agent takes damage, the relevant attribute is reduced:
@@ -71,6 +72,8 @@ Distribute your **Attribute Points** across your four core attributes. Each attr
 > * **Emotional trauma** (witnessing atrocity, corruption of bonds) → reduces **Empathy**
 >
 > When **any** attribute reaches **0**, your agent is **Broken**, incapacitated and unable to act independently. Broken does not mean dead. Full rules for damage, Broken state, and recovery in [Health, Damage & Armor](#chapter-health).
+
+:::
 
 ## Step 4: Distribute Skill Points {#02-step-4-distribute-skill-points}
 
@@ -96,6 +99,15 @@ Distribute your **Skill Points** (determined by your Age Group in Step 3) across
 
 > **Unranked skills:** A skill at rating 0 means you have no formal training. You may still attempt rolls using only your Attribute Dice. There are no "untrained" restrictions.
 
+::: {.equipment-print item="worksheet" caption="Personnel intake / Skill allocation worksheet"}
+:::
+
+| Division | Key Skill (Starting Cap: 4) |
+| ------------ | ------------ |
+| Wayfinder | Lore |
+| Recovery | Firearms |
+| The Keep | Command |
+
 > **Division Key Skill: Starting Cap Exception**
 >
 > Each Division has one designated **Key Skill** that may start at rating **4** instead of the normal cap of 3. This single exception represents professional mastery acquired before Covenant service:
@@ -105,12 +117,6 @@ Distribute your **Skill Points** (determined by your Age Group in Step 3) across
 > * **The Keep Key Skill:** Command
 >
 > You may spend up to 4 of your starting skill points on your Division's Key Skill. No other skill may exceed 3 at character creation. During play, any skill may advance to a maximum of 5 via XP. The Key Skill restriction applies only at creation.
-
-| Division | Key Skill (Starting Cap: 4) |
-| ------------ | ------------ |
-| Wayfinder | Lore |
-| Recovery | Firearms |
-| The Keep | Command |
 
 ## Step 5: Choose Your Starting Talents {#02-step-5-choose-your-starting-talents}
 
@@ -169,14 +175,14 @@ Every agent receives their Division's **signature item** at induction. This item
 > **Division Item vs. Starting Kit:** The Division Item (Step 7) is separate from and in addition to the Starting Kit (Step 8). You receive both. The Division Item is a piece of Covenant-issue hardware unique to your Division; the Starting Kit is the standard field loadout for your role. Both are permanently yours. They are not requisitioned and do not need to be returned between Case Files. Stack agents have a department-specific kit variant described in Step 8.
 :::
 
+::: {.equipment-print item="bracer" height="78" caption="Division property / The Warden’s Bracer"}
+:::
+
 | Division | Item | Granted Abilities |
 | ------------ | ------------------------ | ------------------------------------------------ |
 | Wayfinder | **Verdant Codex** | Secures memory, assists with language and symbol work, highlights likely historical correlations, preserves documents. |
 | Recovery | **Verdant Satchel** | Masks minor artifact signatures, stabilizes transport, warns of instability, keeps basic field tools ready. |
 | Keep | **Warden's Bracer** | Dampens nearby emissions during handling, warns of containment failure, makes cursed objects safer to manage, absorbs 1 Corruption/session, +1 Armor Rating. |
-
-::: {.equipment-print item="bracer" caption="Division property / The Warden’s Bracer"}
-:::
 
 ## Step 8: Select Your Starting Gear {#02-step-8-select-your-starting-gear}
 
@@ -215,8 +221,6 @@ Each agent begins with a Division-appropriate starting kit. These items are **pe
 
 > **Stack Requisition Bonus:** Stack agents' above-CL requisition rolls during the Equipping Phase succeed on a 5 or 6 instead of only a 6. See [Requisitioning Gear](#requisitioning-gear) for full rules.
 
-::: {.equipment-print item="radio" caption="Stack stores / Portable field radio"}
-:::
 
 ::: keep
 ## Step 9: Choose Your Anchor {#02-step-9-choose-your-anchor}
@@ -245,6 +249,7 @@ Choose a name appropriate for your campaign's 1980s setting. Record your **Count
 
 After completing all steps, your sheet should record:
 
+::: wide
 | Field | Notes |
 | ------------ | ------------------------ |
 | **Name / Country of Origin / Division / Department** | Identity and role |
@@ -261,9 +266,13 @@ After completing all steps, your sheet should record:
 | **Max Corruption Threshold** | 10 + Empathy |
 | **Anchor** | Source of solace (see Healing chapter) |
 
+:::
+
+::: {.case-profile item="mixtape" caption="Petra Vasquez / Birthday tape from Marco"}
 ## Worked Example: Creating Petra Vasquez {#02-worked-example-creating-petra-vasquez}
 
 The following example demonstrates a complete character build for a Recovery agent.
+:::
 
 ### Step 1–2: Division and Background {#02-step-1-2-division-and-background}
 
@@ -273,6 +282,7 @@ The following example demonstrates a complete character build for a Recovery age
 
 Petra's six years in DEA field operations put her at age 34. She selects **Experienced** (29–38), giving her **13 Attribute Points** and **12 Skill Points**.
 
+::: chart-note
 | Attribute | Score | Reasoning |
 | ------------ | ------------ | ------------ |
 | Strength | 4 | Ex-agency physical conditioning |
@@ -281,11 +291,13 @@ Petra's six years in DEA field operations put her at age 34. She selects **Exper
 | Empathy | 2 | Gets by on presence, not charm; lower threshold is a real risk |
 
 _(13 points spent: 4 + 4 + 3 + 2 = 13)_
+:::
 
 > Max Corruption Threshold: `10 + 2 = 12`. Petra has a tighter margin than she'd like, but those attribute points went where they needed to go.
 
 ### Step 4: Skills (12 points) {#02-step-4-skills-12-points}
 
+::: chart-note
 | Skill | Rating | Reasoning |
 | ------------ | ------------ | ------------ |
 | Sneak | 3 | Core recovery skill; DEA background |
@@ -296,6 +308,7 @@ _(13 points spent: 4 + 4 + 3 + 2 = 13)_
 | Endure | 1 | Agency conditioning |
 
 _(12 points spent: 3 + 3 + 2 + 2 + 1 + 1 = 12. Remaining 7 skills at 0.)_
+:::
 
 ### Step 5: Starting Talents {#02-step-5-starting-talents}
 

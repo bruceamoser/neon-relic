@@ -62,6 +62,7 @@ Upgrades are organized into three tiers. Higher-tier upgrades require specific l
 
 **Tier 1 upgrades have no prerequisites.** Any can be established from the start of the campaign.
 
+::: keep
 #### Secure Communications Room
 
 _2 DP_
@@ -69,7 +70,9 @@ _2 DP_
 A rented back office with encrypted landline bank, reel-to-reel tape vault, and scrambled HAM radio array. No one outside the Covenant can track calls to or from this location.
 
 +1 die on Command (EMP) rolls when coordinating with Covenant contacts between Case Files. One free contact call per downtime (no CL requirement).
+:::
 
+::: keep
 #### Basic Medical Bay
 
 _2 DP_
@@ -77,7 +80,9 @@ _2 DP_
 A discreet clinic arrangement. A struck-off doctor's back room, a veterinary practice after hours, or a university lab with a sympathetic researcher. Not elegant, but it keeps people alive.
 
 During downtime, each character recovers **2 additional Attribute points of their choice** (beyond normal rest). One character may also attempt to clear a non-lethal Critical Injury (Heal (EMP) Difficulty 2; success removes the injury without Attribute loss).
+:::
 
+::: keep
 #### Safeguard Protocol
 
 _1 DP_
@@ -85,11 +90,13 @@ _1 DP_
 A tripwire perimeter on the primary safe house, a dead-drop early-warning system, and pre-planned extraction routes from every regular meeting point. Not a fortress. A head start.
 
 If any cell location is attacked, the team gains **+1 die on the initiative roll** during the first round of any defense scene. One random NPC contact (if any recruited) survives even if the location falls.
+:::
 
 ### Tier 2: Operational Support {#12-tier-2-operational-support}
 
 **Tier 2 upgrades each require at least one Tier 1 capability to be established first.** Prerequisites listed per upgrade.
 
+::: keep
 #### The Microfiche Archive
 
 _3 DP • Requires Secure Communications Room_
@@ -99,7 +106,9 @@ A rented storage unit converted into a wall-to-wall collection of newspaper reco
 Permanent **+2 Gear bonus** to Lore (WIT) rolls when researching prior to departure. Also grants access to one free Historical Contact per Case File (a scholar, librarian, or researcher who owes the Covenant a favor).
 
 > **Division interaction:** A Wayfinder agent using the Verdant Codex in the Archive gains both the Codex's +1 bonus die and the Archive's +2 Gear bonus on the same Lore (WIT) roll.
+:::
 
+::: keep
 #### The Occult Laboratory
 
 _3 DP • Requires Basic Medical Bay_
@@ -109,7 +118,9 @@ A sterile environment in a university basement or condemned hospital wing, chemi
 Safely identify unknown artifact triggers without risking accidental activation. Lore (WIT) roll to identify artifact tier is Difficulty 1 here (instead of 2). Failed identification rolls do not trigger the artifact.
 
 > **Division interaction:** A Wayfinder agent using the Verdant Codex in the Lab gains +1 bonus die on the Lore (WIT) identification roll in addition to the Lab's reduced difficulty.
+:::
 
+::: keep
 #### The Black-Market Armory
 
 _3 DP • Requires Safeguard Protocol_
@@ -117,7 +128,9 @@ _3 DP • Requires Safeguard Protocol_
 A reinforced storage unit or garage bay with analog combination locks, stocked through underground contacts the Covenant officially denies knowing. The manifest is updated by hand.
 
 During the Equipping Phase, all agents increase their effective CL Pool by +2 (e.g., a CL 2 agent has a CL Pool of 4 for requisition purposes). This does not change the agent's personal CL for any other purpose. Items up to CL 4 may be requisitioned within this expanded pool. High-capacity weapons no longer require an above-CL roll to requisition.
+:::
 
+::: keep
 #### The Faraday Cage
 
 _4 DP • Requires Secure Communications Room_
@@ -125,11 +138,13 @@ _4 DP • Requires Secure Communications Room_
 A lead-lined room in a rented basement, sealed against electromagnetic and supernatural interference. No phones work inside. No spirits answer. Silence like the inside of a safe.
 
 One character per downtime can heal up to **4 Corruption**. Requires a full day (one Case File downtime period) inside. The character is unavailable for other downtime activities that day. See [Ch 8, Corruption and Healing](#chapter-corruption) for all Corruption healing rules; the Faraday Cage is an exception that applies only during downtime at a cell location. + **Division interaction:** A Keep agent whose Warden's Bracer provides passive Corruption absorption may still use both the Bracer's per-session absorption AND heal in the Faraday Cage. They do not conflict.
+:::
 
 ### Tier 3: Advanced Operations {#12-tier-3-advanced-operations}
 
 **Tier 3 upgrades require at least two Tier 2 capabilities to be established.** Prerequisites listed per upgrade.
 
+::: keep
 #### Field Intelligence Network
 
 _5 DP • Requires Microfiche Archive + Secure Communications Room_
@@ -137,7 +152,9 @@ _5 DP • Requires Microfiche Archive + Secure Communications Room_
 A distributed network of informants, dead drops, and off-the-books government contacts who feed intelligence to the Covenant. Managed by a rotation of cutout contacts to maintain deniability.
 
 Before the team departs on a Case File, it receives **one free additional clue** about the central threat. +1 die on Investigation rolls to identify rival faction involvement.
+:::
 
+::: keep
 #### Covenant Armorer {#facility-covenant-armorer}
 
 _5 DP • Requires Black-Market Armory_
@@ -145,7 +162,9 @@ _5 DP • Requires Black-Market Armory_
 A former Special Forces armorer gone ghost, works out of the armory back room, asks no questions, and charges only in favors and whiskey.
 
 Once per Case File, one item in the team's loadout can be permanently upgraded: **+1 Gear Bonus** to the item's listed value. The item also gains the **Reliable** trait (ignore the first 1 when pushing).
+:::
 
+::: keep
 #### Corruption Dampening Vault
 
 _6 DP • Requires Faraday Cage + Occult Laboratory_
@@ -153,7 +172,9 @@ _6 DP • Requires Faraday Cage + Occult Laboratory_
 A reinforced sub-chamber within the Faraday Cage, retrofitted with seven-layer lead shielding, hand-drawn containment circles, and rotating salt-line maintenance. Costly to maintain and terrifying to enter alone.
 
 Store up to **3 active artifacts** without passive corruption leaking to carriers. Artifacts in the vault do not add Enc. pressure (see [Ch 11, Artifacts](#chapter-artifacts)). Vault must be re-consecrated after 3 Case Files (Lore (WIT) Difficulty 2; failure = 1 random artifact "wakes up". Roll d6 to determine which stored artifact). + **Cage + Vault interaction:** The Corruption Dampening Vault is a sub-chamber inside the Faraday Cage. A character healing Corruption in the Cage while artifacts are stored in the Vault sub-chamber is safe. The shielding prevents any passive emission. A Keep agent using the Containment Protocol talent (see [Ch 9, Divisions](#chapter-divisions)) may apply the talent's bonus to re-consecration rolls here.
+:::
 
+::: keep
 #### Safe House Network
 
 _6 DP • Requires Secure Communications Room + Safeguard Protocol_
@@ -161,6 +182,7 @@ _6 DP • Requires Secure Communications Room + Safeguard Protocol_
 A constellation of bolt-holes, friendly business fronts, and sympathetic contacts spread across the city and its neighboring region, pre-loaded with emergency cash, clean IDs, and a contact pager (each safe house maintains a dedicated pager number registered to a cutout identity).
 
 The team always has a fallback safe house available in any investigation area, no setup required. Removes all "no safe place to rest" environmental penalties while in the field. On failure during a Compromise event, one safe house absorbs the breach instead of the compromised location (one-time use; must rebuild, 3 DP).
+:::
 
 ## Personnel Recruitment {#12-personnel-recruitment}
 

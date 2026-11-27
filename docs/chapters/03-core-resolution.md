@@ -6,6 +6,9 @@ The foundation of Project Neon Relic relies on the classic **dice-pool variant**
 
 Throughout this book, "once per session" means once per continuous play session at your table, typically 3 to 4 hours. If your group plays significantly shorter sessions (under 2 hours), the DA may consider once-per-session abilities to span across two or more sessions. If your group plays extended sessions (6+ hours), the DA may reset once-per-session abilities at a natural midpoint (a significant scene break, shift change, or return to HQ). The intent is that agents recover at a rate of roughly once per 3–4 hours of play, regardless of how your group structures its calendar.
 
+::: {.equipment-print item="dice" caption="Field kit / Attribute, Skill, and Gear Dice" height="112"}
+:::
+
 ## The Anatomy of the Dice Pool {#03-the-anatomy-of-the-dice-pool}
 
 The core philosophy of the Year Zero Engine is that **rolling dice should only occur when the narrative outcome is uncertain and the consequences of failure are dramatic**.

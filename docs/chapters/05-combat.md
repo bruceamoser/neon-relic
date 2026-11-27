@@ -23,6 +23,9 @@ Initiative uses card draw only. Do not add initiative modifiers for posture, ter
 
 > **Talent exception:** Certain Division Talents (such as the Recovery Division's **Combat Reflexes**) modify the card draw. These are the only source of initiative modification. They represent specialized tactical training, not equipment bonuses.
 
+::: {.equipment-print item="initiative" caption="Training room / Initiative draw" height="105"}
+:::
+
 ### Surprise and Ambush {#05-surprise-and-ambush}
 
 A **surprise** occurs when one side is unaware of the other at the moment combat begins.

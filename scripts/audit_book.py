@@ -1,8 +1,10 @@
 """Check the printed playtest changes and release inventory using Poppler."""
+from collections import Counter
 from pathlib import Path
 import re
 import subprocess
 from zipfile import ZipFile
+import xml.etree.ElementTree as ET
 
 from build_book import BOOK, CHAPTERS, DIST, MISSION
 
@@ -17,12 +19,53 @@ def pdf_text(data):
     return result.stdout.decode("utf-8")
 
 
+def check_printed_folios(path, sources):
+    """Check the printed destinations and that every lookup fits on its own folio."""
+    counts = Counter()
+    for register, table in re.findall(r'::: \{\.catalog register="([^"]+)"\}\n(.*?)\n:::', sources, re.S):
+        counts[register] += sum(line.startswith("|") for line in table.splitlines()) - 2
+    titles = {title.upper(): register for register, title in re.findall(
+        r'\.lookup register="([^"]+)" [^}]*?title="([^"]+)"', sources)}
+    xml = subprocess.check_output(["pdftohtml", "-xml", "-i", "-stdout", str(path)])
+    document = ET.fromstring(xml)
+    fonts = {font.get("id"): font.get("family", "") for font in document.iter("fontspec")}
+    printed = Counter()
+    file_register = 0
+    for page in document.findall("page"):
+        register = None
+        folio_x = None
+        for entry in page.findall("text"):
+            value = "".join(entry.itertext()).strip()
+            if page.get("number") == "3" and value == "FOLIO":
+                folio_x = int(entry.get("left"))
+            if value.startswith("QUICK REFERENCE / "):
+                register = titles[value.removeprefix("QUICK REFERENCE / ")]
+                require(register not in printed, f"Table {register} starts more than once")
+                printed[register] = 0
+            at_register_number = folio_x is not None and int(entry.get("left")) >= folio_x - 2
+            if not (at_register_number or register) or "CourierPrime" not in fonts[entry.get("font")]:
+                continue
+            for anchor in entry.iter("a"):
+                number = "".join(anchor.itertext()).strip()
+                if number.isdigit():
+                    destination = anchor.get("href").rpartition("#")[2]
+                    require(destination == number, f"Folio {number} on page {page.get('number')} links to {destination}")
+                    if at_register_number:
+                        file_register += 1
+                    else:
+                        printed[register] += 1
+    require(file_register == len(list(CHAPTERS.glob("*.md"))), "Missing printed chapter destination")
+    require(printed == counts, f"Missing or split lookup rows: expected {counts}, found {printed}")
+    return sum(printed.values())
+
+
 def audit():
     sources = "\n".join(p.read_text(encoding="utf-8") for p in CHAPTERS.glob("*.md"))
     targets = set(re.findall(r"\{#([^}]+)\}", sources))
     missing = set(re.findall(r"\]\(#([^)]+)\)", sources)) - targets
     require(not missing, f"Missing manuscript link targets: {missing}")
 
+    folios = check_printed_folios(DIST / BOOK, sources)
     manual = (DIST / BOOK).read_bytes()
     pages = pdf_text(manual).rstrip().split("\f")
     require("Published by OmniscientForge LLC" in pages[1], "Missing publisher on the credits page")
@@ -70,7 +113,7 @@ def audit():
                 html = kit.read(name).decode("utf-8")
                 require("data:font/ttf;base64," in html and 'src="form-tools.js"' not in html,
                         f"External dossier dependency in {name}")
-    print(f"Verified {len(pages)} pages, manuscript links, front matter, XP, sample mission, and starter kit.")
+    print(f"Verified {len(pages)} pages, {folios} linked lookup rows, manuscript links, front matter, XP, sample mission, and starter kit.")
 
 
 if __name__ == "__main__":

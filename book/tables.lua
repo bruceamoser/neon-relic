@@ -1,26 +1,5 @@
--- Long catalogs read down a column as named entries. Comparison matrices retain
--- their horizontal axes. The range chart spans the two text columns.
 local function content(cell)
   return pandoc.write(pandoc.Pandoc(cell.contents), "typst"):gsub("%s+$", "")
-end
-
-local function entry_rows(tbl, headers)
-  local first = pandoc.utils.stringify(headers[1])
-  local first_label = (first == "STR" or first == "D66") and (first .. " ") or ""
-  local parts = {}
-  for _, body in ipairs(tbl.bodies) do
-    for _, row in ipairs(body.body) do
-      local fields = {}
-      for i, cell in ipairs(row.cells) do
-        if i > 1 then
-          fields[#fields + 1] = "#strong[" .. content(headers[i]) .. "] " .. content(cell)
-        end
-      end
-      parts[#parts + 1] = "#entry([" .. (first_label .. content(row.cells[1])) .. "], ["
-        .. table.concat(fields, " #linebreak() ") .. "])"
-    end
-  end
-  return pandoc.RawBlock("typst", table.concat(parts, "\n"))
 end
 
 local function matrix(tbl, spanning)
@@ -31,10 +10,13 @@ local function matrix(tbl, spanning)
     widths[#widths + 1] = tostring(spec[2] or 1) .. "fr"
   end
   if first == "Division" and #headers == 4 then
-    widths = {"auto", "1fr", "auto", "49pt"}
+    widths = {"1fr", "3fr", "35pt", "1fr"}
   end
   if spanning then
     local layouts = {
+      ["Classification"] = {"1fr","1fr","4fr"}, ["Standing"] = {"0.75fr","4fr"},
+      ["Division"] = {"1.2fr","2fr","3fr"}, ["Slot"] = {"1fr","1.6fr","2.2fr"},
+      ["Trigger"] = {"1.5fr","1fr","3fr"},
       ["Age Group"] = {"1.3fr","1fr","1fr","1fr","1fr"},
       ["Skill"] = {"1fr","0.6fr","0.9fr","2.6fr"},
       ["Attribute"] = {"1fr","1fr","3fr"}, ["Dice Type"] = {"1fr","0.65fr","2.5fr","1fr"},
@@ -50,6 +32,9 @@ local function matrix(tbl, spanning)
     if layouts[first] and #layouts[first] == #headers then widths = layouts[first] end
     if first == "Roll" and #headers == 2 then widths = {"36pt", "1fr"} end
   end
+  if #headers == 3 and pandoc.utils.stringify(headers[3]) == "Reasoning" then
+    widths = {"0.95fr", "35pt", "1.85fr"}
+  end
   local parts = {"#table(columns: (" .. table.concat(widths, ", ") .. "),"}
   local function row(r, header)
     if header then parts[#parts + 1] = "table.header(" end
@@ -62,16 +47,29 @@ local function matrix(tbl, spanning)
   end
   parts[#parts + 1] = ")"
   local result = table.concat(parts, "\n")
+  if first == "Classification" or (first == "Division" and pandoc.utils.stringify(headers[2]) == "Motto Segment") then
+    result = "#set table(inset: (x: 6pt, y: 6pt))\n" .. result
+  end
+  if first == "Zone" and pandoc.utils.stringify(headers[2]) == "Distance" then
+    result = "#set table(inset: (x: 5pt, y: 3pt))\n" .. result
+  end
   return result
 end
 
+-- The marker is an inert Typst comment in nested panels such as a specimen.
+local function panel(kind, title, code)
+  return pandoc.RawBlock("typst", "// folio " .. kind .. " " .. title .. "\n" .. code)
+end
+
 function Table(tbl)
-  local headers = tbl.head.rows[1].cells
-  local first = pandoc.utils.stringify(headers[1])
-  local wide = #headers >= 4
-  local matrices = {["STR"]=true, ["Tier"]=true, ["Division"]=true}
-  if wide and not matrices[first] then return entry_rows(tbl, headers) end
-  return pandoc.RawBlock("typst", matrix(tbl))
+  local cells = tbl.head.rows[1].cells
+  local first = pandoc.utils.stringify(cells[1])
+  local second = pandoc.utils.stringify(cells[2])
+  local full = #cells >= 3 and first ~= "STR"
+  local long = {["Assignment Quality"]=true, ["Complication"]=true, ["Event"]=true,
+    ["Breakdown Type"]=true, ["Compromise Type"]=true, ["Debriefing Question"]=true}
+  return panel((full or long[second]) and "wide" or "table",
+    first .. " " .. second, matrix(tbl, full))
 end
 
 local function typ(blocks)
@@ -170,11 +168,11 @@ local function print_registers(div)
     local chart = string.format("#lookup(%q, (%s,), (%s,), paired: %s, injuries: %s)",
       div.attributes.title, table.concat(records[1].headers,","), table.concat(rows,","),
       spec.paired and "true" or "false", div.attributes.kind == "D66" and "true" or "false")
-    return pandoc.RawBlock("typst", "]\n" .. typ(div.content) .. "\n" .. chart .. "\n#reading["), false
+    return pandoc.RawBlock("typst", "// folio lookup " .. div.attributes.register .. "\n" .. typ(div.content) .. "\n" .. chart), false
   elseif kind == "wide" then
     local tbl = div.content:remove()
     assert(tbl.t == "Table", "A full-width comparison must end in a table")
-    return pandoc.RawBlock("typst", "]\n" .. typ(div.content) .. "\n" .. matrix(tbl, true) .. "\n#reading["), false
+    return pandoc.RawBlock("typst", "// folio wide " .. pandoc.utils.stringify(tbl.head.rows[1].cells[1]) .. " " .. pandoc.utils.stringify(tbl.head.rows[1].cells[2]) .. "\n" .. typ(div.content) .. "\n" .. matrix(tbl, true)), false
   end
 end
 
@@ -184,11 +182,27 @@ function Div(div)
   if kind == "pair" then
     return pandoc.RawBlock("typst", "#grid(columns: (1fr, 1fr), gutter: 18pt, "
       .. arg(typ(b[1].content)) .. ", " .. arg(typ(b[2].content)) .. ")")
+  elseif kind == "spread-note" then
+    local quote = b[1].content
+    local title = typ({quote:remove(1)})
+    local fields = pandoc.List()
+    for _, field in ipairs(quote) do
+      if field.t == "BulletList" then
+        for _, item in ipairs(field.content) do fields:insert(pandoc.BulletList({item})) end
+      else fields:insert(field) end
+    end
+    return panel("wide", pandoc.utils.stringify(b[1]):sub(1,48),
+      "#spread-note(" .. arg(title) .. ", " .. items(fields) .. ")")
+  elseif kind == "case-profile" then
+    return panel("wide", b[1].identifier, string.format("#case-profile(%q, %q, %s)",
+      div.attributes.item, div.attributes.caption, arg(typ(b))))
+  elseif kind == "chart-note" then
+    return panel("table", "Worked " .. pandoc.utils.stringify(b[1]):sub(1,45), typ(b))
   elseif kind == "equipment-print" then
     local caption = string.format("%q", div.attributes.caption)
     return pandoc.RawBlock("typst", "#block(width: 100%, breakable: false, above: 7pt, below: 7pt)["
       .. "#align(center, image(" .. string.format("%q", "/book/art/" .. div.attributes.item .. ".png")
-      .. ", width: 80%, height: 125pt, fit: \"contain\", alt: " .. caption .. "))"
+      .. ", width: 80%, height: " .. (tonumber(div.attributes.height) or 125) .. "pt, fit: \"contain\", alt: " .. caption .. "))"
       .. "\n#mono(size: 8pt)[" .. div.attributes.caption .. "]]")
   elseif kind == "location" then
     return pandoc.RawBlock("typst", string.format("#location-print(%q, %q, height: %dpt)",
@@ -196,13 +210,9 @@ function Div(div)
   elseif kind == "new-leaf" then
     return pandoc.RawBlock("typst", "#pagebreak(weak: true)")
   elseif kind == "keep" then
-    return pandoc.RawBlock("typst", "#block(width: 100%, breakable: false)[" .. typ(b) .. "]")
+    return panel("keep", pandoc.utils.stringify(b[1]), typ(b))
   elseif kind == "transcript" then
-    local paragraphs = {}
-    for _, para in ipairs(b) do
-      paragraphs[#paragraphs+1] = "#block(width: 100%, breakable: false, below: 4pt)[" .. typ({para}) .. "]"
-    end
-    return pandoc.RawBlock("typst", table.concat(paragraphs, "\n"))
+    return b
   elseif kind == "report-slip" then
     local cells = {}
     for _, p in ipairs(b) do
@@ -245,68 +255,95 @@ function Div(div)
   end
 end
 
--- Keep a short instruction and its choices together when a column turns over.
-local function keep_choices(blocks)
-  local out = pandoc.List()
-  for _, b in ipairs(blocks) do
-    if (b.t == "BulletList" or b.t == "OrderedList") and #b.content > 1 then
-      local words = 0
-      for _ in pandoc.utils.stringify(b):gmatch("%S+") do words = words + 1 end
-      if words < 72 then
-        local group = pandoc.List({b})
-        local prev = out[#out]
-        if prev and prev.t == "Para" and pandoc.utils.stringify(prev):match(":$") then
-          group:insert(1, out:remove())
-        end
-        if out[#out] and out[#out].t == "Header" and out[#out].level > 1 then
-          group:insert(1, out:remove())
-        end
-        b = pandoc.RawBlock("typst", "#block(width: 100%, breakable: false)[" .. typ(group) .. "]")
-      end
-    end
-    out:insert(b)
+-- A key identifies the first passage on an edited page. Headings already
+-- have manuscript IDs. Use a few opening words for passages without one.
+local function slug(text)
+  local words = {}
+  for word in text:lower():gmatch("[a-z0-9]+") do
+    words[#words+1] = word
+    if #words == 7 then break end
   end
-  return out
+  return table.concat(words, "-")
 end
 
--- Wide elements delimit the reading runs that need a balanced last column.
--- Keep the Pandoc nodes intact until this point so headings travel with text.
-local function balance_before_tables(doc)
-  local out, run = pandoc.List(), nil
-  for _, b in ipairs(doc.blocks) do
-    local raw = b.t == "RawBlock" and b.format == "typst" and b.text or ""
-    local chart = raw:match("^%]\n(.*)\n#reading%[$")
-    if raw == "#reading[" then
-      run = pandoc.List()
-    elseif run and chart then
-      if #run > 0 then
-        local groups, pending = {}, {}
-        for _, node in ipairs(run) do
-          pending[#pending+1] = node
-          if node.t ~= "Header" then
-            groups[#groups+1] = arg(typ(pending))
-            pending = {}
-          end
-        end
-        if #pending > 0 then groups[#groups+1] = arg(typ(pending)) end
-        out:insert(pandoc.RawBlock("typst", "#before-chart((" .. table.concat(groups,",") .. ",))"))
-      end
-      out:insert(pandoc.RawBlock("typst", chart .. "\n#reserve-reading()"))
-      run = pandoc.List()
-    elseif run and raw == "]" then
-      out:insert(pandoc.RawBlock("typst", "#reading["))
-      out:extend(run)
-      out:insert(b)
-      run = nil
-    elseif run then
-      run:insert(b)
-    else
-      out:insert(b)
-    end
+local function folios(div)
+  if div.classes[1] ~= "folios" then return end
+  local nodes = div.content
+  local units, named = {}, {}
+  local function add(kind, key, body)
+    local base = key
+    named[base] = (named[base] or 0) + 1
+    if named[base] > 1 then key = base .. "-" .. named[base] end
+    units[#units+1] = string.format("(key: %q, kind: %q, body: [%s])", key, kind, body)
   end
-  assert(not run, "Unclosed reading columns")
-  doc.blocks = out
-  return doc
+  local function raw(node)
+    return node and node.t == "RawBlock" and node.text or ""
+  end
+  local function marker(node)
+    return raw(node):match("^// folio (%w+) ([^\n]+)")
+  end
+  local function chart(node)
+    local kind = marker(node)
+    return kind == "wide" or kind == "table" or kind == "lookup"
+  end
+
+  local opener = {nodes:remove(1)}
+  while raw(nodes[1]):match("^#plate%(") or raw(nodes[1]):match("^#report%-slip%(") do
+    opener[#opener+1] = nodes:remove(1)
+  end
+  add("open", "opening", typ(opener))
+  local i, dossier = 1, false
+  while i <= #nodes do
+    local group, heading = {}, nil
+    while nodes[i] and nodes[i].t == "Header" do
+      if nodes[i].level <= 2 then dossier = false end
+      heading = heading or nodes[i].identifier
+      group[#group+1] = nodes[i]
+      i = i + 1
+    end
+    local node = assert(nodes[i], "Heading without text in file " .. div.attributes.file)
+    local following = nodes[i+1]
+    if node.t == "Para" and following then
+      local words = pandoc.utils.stringify(node)
+      local choices = following.t == "OrderedList" or following.t == "BulletList"
+      local first = node.content[1]
+      local label = #node.content == 1 and (first.t == "Strong" or first.t == "Emph") and #words < 72
+      local next_code = raw(following)
+      local explains_label = following.t == "Para" or next_code:match("^#catalog%-record")
+        or (following.t == "BlockQuote" and words:lower():find("talents"))
+      local ends_in_colon = words:match(":$")
+      local introduces_chart = chart(following) and not next_code:match("\n=+ ") and (heading or ends_in_colon)
+      if (label and explains_label) or introduces_chart or (choices and ends_in_colon)
+          or (heading and next_code:match("^#specimen")) then
+        group[#group+1] = node
+        i, node = i+1, following
+      end
+    end
+    group[#group+1] = node
+    local kind, caption = marker(node)
+    local code = raw(node)
+    local key = heading or (caption and slug(caption))
+    if code:match("^#catalog%-record") then
+      kind = "record"
+      key = key or code:match('^#catalog%-record%("([^"]+)"')
+    elseif code:match("^#specimen") then
+      kind = "specimen"
+      key = key or code:match("<([^<>]+)>")
+    elseif code:match("^#collection%-print") or code:find("/book/art/", 1, true) and code:match("^#block") then
+      kind = "art"
+      key = key or slug(code:match('/book/art/([^.]+)') or "exhibit")
+    end
+    key = key or slug(pandoc.utils.stringify(node))
+    assert(key ~= "", "Empty page key for " .. typ(group))
+    local body = typ(group)
+    if code:find("#case-profile(", 1, true) then dossier = true end
+    if dossier then body = "#set par(leading: 0.42em, spacing: 0.7em)\n" .. body end
+    add(kind or "text", key, body)
+    i = i + 1
+  end
+  return pandoc.RawBlock("typst", string.format("#folio-file(%q, %q, %q, (\n%s,\n))",
+    div.attributes.file, div.attributes.code, div.attributes.access, table.concat(units,",\n")))
 end
 
-return {{Div = catalog_rows}, {traverse = "topdown", Div = print_registers}, {Table = Table, Div = Div}, {Blocks = keep_choices}, {Pandoc = balance_before_tables}}
+return {{Div = catalog_rows}, {traverse = "topdown", Div = print_registers},
+        {Table = Table, Div = Div}, {Div = folios}}

@@ -70,24 +70,18 @@ Because Corruption naturally builds toward lethal levels, characters must active
 >
 > Both count against the **per-session active recovery cap of 5 Corruption**. You may use both in the same session, but they must be separate scenes.
 
+::: spread-note
 > **Design note:** Corruption healing is intentionally slow. An agent with Empathy 3 heals 3 Corruption per full day of rest, but gaining 3+ Corruption in a single scene is easy. The economy is deliberately asymmetric: you gain faster than you heal, and the only way to stay safe is to make fewer desperate choices.
 >
 > **Session cap math:** From Ch 8 sources alone (Anchor + Safe Scene), the maximum in-session active recovery is up to 1d4 + 1 = 5 Corruption. Division Healing talents ([Divisions](#chapter-divisions): Confessor, Gallows Humor, etc.) may add 1–4 additional Corruption healing per session depending on team composition. Between Case Files, HQ Facilities ([Headquarters](#chapter-headquarters): Faraday Cage) provide further recovery. The Session Healing Cap (see below) ensures even optimal play cannot fully erase a bad session's Corruption.
 >
 > **Session Healing Cap:** Regardless of all sources combined: Anchor Scenes, Safe Scenes, Talents (Confessor, Duct Tape & WD-40, etc.), or HQ Facilities (Faraday Cage). An agent may heal **no more than 5 Corruption per session** from active in-session sources. Full Rest (24-hour downtime between sessions) is not subject to this cap. This cap enforces the asymmetric economy: even perfectly optimized play cannot fully reset Corruption within a single session. Multiple agents using Talents on the same target also count toward that target's session cap, not the user's.
 
+:::
+
 ### Anchors {#08-anchors}
 
 Every character begins with an **Anchor**, a personal source of solace that grounds the agent against the psychological toll of Covenant work. An Anchor is not a physical object; it is the **practice, habit, or connection** where the character finds peace. In a moment of quiet downtime, a character can dedicate a scene to engaging with their Anchor. This grounded roleplay provides powerful mechanical healing.
-
-**Anchor Scene Requirements:**
-
-- The character must **actively engage with their Anchor**, not just mention it. Pray, meditate, run, call a loved one, play an instrument, write in a journal.
-- The scene must be **safe**. No active threats, no time pressure, no combat.
-- The player should **describe the interaction** (at least a sentence or two of roleplay).
-- Anchor scenes **can occur during a Case File** if the team has a genuine moment of safety (a secured safe house, a quiet vehicle, a defended position at the DA's discretion).
-- **If the Anchor becomes inaccessible:** If circumstances deny the character access to their source of solace (e.g., a loved one dies, a faith is shaken by supernatural revelation, the character is isolated from all human contact), they cannot use this recovery method until they **establish a new Anchor** during a downtime phase, a meaningful roleplay scene with the DA. The new Anchor must feel earned, not transactional.
-- **One Anchor at a time.** A character cannot maintain multiple Anchors.
 
 ::: wide
 ### Anchor Sources (Roll d66 or choose) {#08-anchor-sources-roll-d66-or-choose}
@@ -111,6 +105,15 @@ Every character begins with an **Anchor**, a personal source of solace that grou
 | 63–64 | **Professional Craft** | Working with your hands, carpentry, electronics, mechanics. Building or repairing something that exists in the real world and stays fixed. |
 | 65–66 | **Denial / Compartmentalization** | Refusing to think about it. Going to a bar and watching the game. Acting as though nothing happened. Not healthy, but functional. For now. |
 :::
+
+**Anchor Scene Requirements:**
+
+- The character must **actively engage with their Anchor**, not just mention it. Pray, meditate, run, call a loved one, play an instrument, write in a journal.
+- The scene must be **safe**. No active threats, no time pressure, no combat.
+- The player should **describe the interaction** (at least a sentence or two of roleplay).
+- Anchor scenes **can occur during a Case File** if the team has a genuine moment of safety (a secured safe house, a quiet vehicle, a defended position at the DA's discretion).
+- **If the Anchor becomes inaccessible:** If circumstances deny the character access to their source of solace (e.g., a loved one dies, a faith is shaken by supernatural revelation, the character is isolated from all human contact), they cannot use this recovery method until they **establish a new Anchor** during a downtime phase, a meaningful roleplay scene with the DA. The new Anchor must feel earned, not transactional.
+- **One Anchor at a time.** A character cannot maintain multiple Anchors.
 
 ## Corruption Burst {#08-corruption-burst}
 

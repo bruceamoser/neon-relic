@@ -9,7 +9,7 @@
 
 #let cover() = {
   set page(margin: 0pt, header: none, footer: none, background: image("/book/art/cover.jpg", width: 100%, height: 100%))
-  place(top + center, dx: -16pt, dy: 35pt,
+  place(top + center, dx: -16pt, dy: 38pt,
     mono(size: 7.5pt, fill: white)[T O P  S E C R E T   /   V E R D A N T  C O V E N A N T   /   E Y E S  O N L Y])
   place(top + left, dx: 80pt, dy: 93pt, block(stroke: 0.7pt + pine, inset: 8pt,
     mono(size: 8.7pt)[DOCUMENT CONTROL / VC–1 \
@@ -25,7 +25,7 @@
     #mono(size: 15pt)[CORE OPERATIONS MANUAL]
   ])
   place(top + left, dx: 275pt, dy: 471pt, rotate(-9deg, box(stroke: 2pt + red, radius: 3pt, inset: (x: 11pt, y: 5pt),
-    text(font: "Special Elite", size: 31pt, fill: red)[TOP SECRET])))
+    text(font: "Special Elite", size: 31pt, top-edge: "bounds", bottom-edge: "bounds", fill: red)[TOP SECRET])))
   place(top + left, dx: 78pt, dy: 611pt, block(width: 244pt, stroke: 0.6pt + pine, inset: 9pt,
     mono(size: 9pt)[PREPARED BY \
     #text(size: 12pt, weight: "bold")[Bruce Moser and Stewart Voit] \
@@ -93,36 +93,20 @@
     }
   }
 }
-// Place each accession in the free column, or below the chapter's final line.
-#let exhibit(name, description) = context {
-  let pos = here().position()
-  let opposite = pos.x < 70pt and name != "microfiche"
-  let start = query(<column-start>).filter(it => it.location().page() == here().page() and it.location().position().y <= pos.y + 1pt).last(default: none)
-  let ceiling = if start == none {52pt} else {calc.max(52pt, start.location().position().y)}
-  let room = if opposite {735pt - ceiling} else {735pt - pos.y}
-  if room > 90pt {
-    let height = calc.min(room - 53pt, if opposite {280pt} else {195pt})
-    let offset = if opposite {266pt} else {0pt}
-    let top = if opposite {ceiling - pos.y} else {0pt}
-    let mount = block(width: 232pt, inset: (x: 6pt, y: 3pt), stroke: (top: 0.55pt + rule))[
-      #mono(size: 7.4pt, fill: red)[COLLECTIONS / #current.get().code]
-      #v(2pt)
-      #align(center, image("/book/art/" + name + ".png", height: height, width: 98%, fit: "contain", alt: description))
-      #v(1pt)
-      #mono(size: 8pt)[#description]
-    ]
-    place(if name == "microfiche" {center} else {left}, dx: offset, dy: top + (room - height - 45pt) / 2, mount)
-  }
+// The credits sleeve is centered below the two columns of publication details.
+#let credits-sleeve() = context {
+  let description = "A Covenant archive sleeve and microfiche"
+  let room = 735pt - here().position().y
+  let height = calc.min(room - 53pt, 195pt)
+  let mount = block(width: 232pt, inset: (x: 6pt, y: 3pt), stroke: (top: 0.55pt + rule))[
+    #mono(size: 7.4pt, fill: red)[COLLECTIONS / #current.get().code]
+    #v(2pt)
+    #align(center, image("/book/art/microfiche.png", height: height, width: 98%, fit: "contain", alt: description))
+    #v(1pt)
+    #mono(size: 8pt)[#description]
+  ]
+  place(center, dy: (room - height - 45pt) / 2, mount)
 }
-
-#let entry(name, body) = block(width: 100%, above: 4pt, below: 4pt, breakable: false)[
-  #line(length: 100%, stroke: 0.5pt + rule)
-  #v(-2pt)
-  #text(size: 12pt, fill: pine, weight: "bold", name)
-  #v(1pt)
-  #set par(leading: 0.36em)
-  #text(size: 10.2pt, body)
-]
 
 #let report-slip(rows) = block(width: 100%, stroke: 0.7pt + pine, below: 10pt)[
   #band([RECOVERY DIVISION / TRANSCRIPT CONTROL])
@@ -220,7 +204,7 @@
   #mono(size: 7.6pt, fill: mute)[#caption]
 ]
 
-#let reading(body) = columns(2, gutter: 22pt)[#metadata(true) <column-start> #body]
+#let reading(body) = columns(2, gutter: 22pt, body)
 
 #let catalog-record(id, name, ratings, prose) = block(
   width: 100%, inset: (top: 6pt, bottom: 4pt), stroke: (top: 0.55pt + rule),
@@ -257,38 +241,27 @@
   table(columns: widths, inset: (x: 5pt, y: 3pt), table.header(..headers), ..cells)
 }
 
-// Balance the paragraphs above a spanning chart. Use native column flow for
-// long passages and oversized tables, which can need repeated table headers.
-#let reserve-reading() = {
-  // If a chart ends at the foot of the page, move the opening lines below
-  // it together. The negative skip returns the reserved space to the prose.
-  block(height: 160pt, above: 0pt, below: 0pt, breakable: false)[]
-  v(-160pt)
-}
+#let collection-print(name, caption, height: 111pt) = block(width: 100%, inset: (x: 5pt, y: 4pt),
+  stroke: (top: 0.55pt + rule))[
+  #mono(size: 7.4pt, fill: red)[COLLECTIONS / FIELD EXHIBIT]
+  #v(3pt)
+  #align(center, image("/book/art/" + name + ".png", width: 94%, height: height, fit: "contain", alt: caption))
+  #v(2pt)
+  #mono(size: 8pt)[#caption]
+]
 
-#let before-chart(items) = context {
-  let width = 244pt
-  let blocks = items.map(it => block(width: width, below: 5pt, it))
-  let heights = blocks.map(it => measure(it).height + 5pt)
-  let available = 560pt
-  let total = heights.sum(default: 0pt)
-  let split = none
-  let distance = 10000pt
-  let left = 0pt
-  for i in range(1, blocks.len()) {
-    left += heights.at(i - 1)
-    let right = total - left
-    let delta = calc.abs(left - right)
-    if calc.max(left, right) <= available and delta < distance {
-      split = i
-      distance = delta
-    }
-  }
-  if split != none {
-    grid(columns: (1fr, 1fr), gutter: 22pt,
-      [#for it in blocks.slice(0, split) {it}],
-      [#for it in blocks.slice(split) {it}])
-  } else {
-    reading([#for it in items {it; parbreak()}])
-  }
-}
+#let case-profile(item, caption, body) = block(width: 100%, stroke: (bottom: 0.65pt + rule))[
+  #band[PERSONNEL / COMPLETED AGENT DOSSIER]
+  #grid(columns: (1fr, 148pt), gutter: 14pt, align: horizon,
+    body, block(width: 100%, inset: (y: 3pt))[
+      #align(center, image("/book/art/" + item + ".png", width: 90%, height: 54pt, fit: "contain", alt: caption))
+      #align(center, mono(size: 7.6pt)[#caption])
+    ])
+]
+
+#let spread-note(title, items) = block(width: 100%, fill: rgb("#eeefe7"),
+    stroke: (left: 2pt + pine), inset: (x: 11pt, y: 8pt))[
+  #title
+  #v(4pt)
+  #layout(size => split-fields(items, (size.width - 16pt) / 2))
+]

@@ -3,18 +3,18 @@
 ## Project Neon Relic
 
 **Core Operations Manual**  
-First edition • Version 2.5.0  
-Manuscript dated November 26, 2026
+First edition • Version 2.5.1\
+Manuscript dated November 27, 2026
 
 Written and designed by **Bruce Moser and Stewart Voit**.
+
+**Illustrator:** TBD
 
 Published by [OmniscientForge LLC](https://omniscientforge.com/).
 
 Playtesters: Chris, Eric, and Paul.
 
 The core manual contains the rules for Covenant field agents and their Director, including the Buenos Aires mission *The Spear That Went Dark*.
-
-**Illustrator:** TBD
 
 ## Rights and license
 

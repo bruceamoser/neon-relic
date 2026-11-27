@@ -16,6 +16,9 @@ Characters are defined by **four core attributes**, representing their fundament
 >
 > This means high attributes give both better rolls **and** more capacity to absorb punishment. When you spend attribute dice on a push, you are not just trying harder. You are paying in physical or psychological capital.
 
+::: {.equipment-print item="worksheet" caption="Personnel / Aptitude assessment sheet" height="59"}
+:::
+
 ## The Thirteen Core Skills {#04-the-thirteen-core-skills}
 
 The thirteen core skills are mapped to these four attributes, tailored to support urban exploration, analog hacking, and occult research:
