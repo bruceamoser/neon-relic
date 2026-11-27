@@ -1,51 +1,154 @@
-# Transparent objects mounted below the prose on these particular pages.
-'01':
-  01-the-square-of-harmony-the-rule-of-441: [archive-stamp, Document control stamp from the Covenant archive.]
-'02':
-  step-9-choose-your-anchor: [motel-key, A room key kept long after checkout.]
-'03':
-  03-the-push-mechanic-and-attrition: [meter, Field meter returned with a cracked dial.]
-'05':
-  05-action-economy: [road-map, Folded street map used to mark nearby zones.]
-  05-advanced-combat-rules: [radio, Handheld radio used to call a withdrawal.]
-'06':
-  opening: [camera, An interview photograph can change how a witness receives the team.]
-  06-psychoanalyze-empathy: [cassette, Pocket recorder for a witness interview.]
-  06-worked-example-interrogating-a-cultist: [microfiche, Reference copy of the interrogation transcript.]
-'07':
-  07-first-aid-stabilizing-a-dying-character: [medical-pouch, Canvas field dressing pouch and gauze.]
-'08':
-  opening: [cassette, A recording kept for a quiet moment after exposure.]
-'09':
-  09-covenant-organizational-structure: [archive-stamp, Routing stamp from the regional office.]
-  09-inter-division-dynamics: [radio, A shared channel between field divisions.]
-  09-division-1-the-wayfinder: [microfiche, A research sleeve from the Wayfinder archive.]
-  09-division-2-the-recovery: [case, Transport case issued to a Recovery team.]
-'11':
-  11-activation-risk-tags: [reel, Sealed film canister awaiting identification.]
-  custody-manifest: [archive-stamp, Archive stamp used on the custody manifest.]
-'13':
-  13-worked-example-session-debrief-and-talent-purchase: [worksheet, The agent’s copy of a completed session debrief.]
-'14':
-  14-session-zero: [cassette, An unmarked tape from the interview room.]
-  14-improvisation-guidelines: [camera, An instant camera for recording a new lead.]
-'16':
-  16-resolving-a-travel-shift: [road-map, Road atlas marked with a field team’s intended route.]
-'19':
-  19-the-collector-artifact-hoarder: [keyring, Keys to an artifact collection.]
-  19-corrupted-npcs: [meter, Field meter taken along to investigate a disturbance.]
-  19-da-monster-creation-guidelines: [worksheet, An unfilled threat assessment.]
-'10':
-  10-consumables-and-resource-dice: [medical-pouch, Gauze and dressings are replenished from Stack stores.]
-  10-clearance-levels-cl-and-requisition: [worksheet, A requisition slip filed with the quartermaster.]
-  motor-pool: [road-map, Route marked on the motor pool’s paper atlas.]
-'12':
-  12-tier-2-operational-support: [microfiche, A reference sleeve from the microfiche archive.]
-  12-tier-3-advanced-operations: [motel-key, Room key from the safe house network.]
-  12-standing-ranks: [archive-stamp, Authorization mark on a change of standing.]
-'18':
-  notable-medieval-renaissance: [microfiche, Archive copy of the historical personnel register.]
-'21':
-  opening: [archive-stamp, File stamp from the reference desk.]
-appendix:
-  opening: [dice, Training dice used to track a changing resource.]
+# Each key is the first passage on the illustrated page. A shelf can put its image
+# to the right of its caption. Column exhibits fill the free ends of reading columns.
+shelves:
+  '01':
+    01-the-square-of-harmony-the-rule-of-441: ["archive-stamp", "Document control stamp from the Covenant archive."]
+  '02':
+    02-step-4-distribute-skill-points: ["practice-lock", "Practice lock from the induction classroom.", "right"]
+    step-9-choose-your-anchor: ["motel-key", "A room key kept long after checkout."]
+  '03':
+    opening: ["roll-cup", "Leather dice cup from the training room."]
+    03-success-difficulty-and-extra-successes: ["counting-rail", "Training room success counter."]
+    03-the-push-mechanic-and-attrition: ["meter", "Field meter returned with a cracked dial."]
+  '05':
+    opening: ["movement-tokens", "Wooden position markers."]
+    05-action-economy: ["road-map", "Folded street map used to mark nearby zones."]
+    05-advanced-combat-rules: ["safety-whistle", "Signal whistle carried by a team leader."]
+  '06':
+    opening: ["witness-lighter", "A witness’s pocket lighter.", "right"]
+    06-social-rolls-in-practice: ["steno-pad", "The interviewer’s notebook."]
+    06-psychoanalyze-empathy: ["headphones", "Headset from the transcription room."]
+    06-worked-example-interrogating-a-cultist: ["desk-microphone", "Microphone used to record the debrief."]
+    06-pushing-social-rolls: ["film-cartridge", "A film pack for the evidence camera."]
+  '07':
+    07-simultaneous-injury-resolution: ["enamel-dish", "Enamel tray from the infirmary."]
+    07-first-aid-stabilizing-a-dying-character: ["medical-pouch", "Canvas field dressing pouch and gauze."]
+    record-physical-injuries-13: ["splint", "Splint retained by the field infirmary."]
+    record-mental-injuries-7: ["sleep-mask", "Sleep mask issued for observation."]
+    record-mental-injuries-31: ["memory-slides", "Slides from a patient’s family collection."]
+  '08':
+    opening: ["locket", "A family locket recovered after exposure."]
+    08-sources-of-corruption: ["fogged-film", "The film fogged during exposure."]
+    08-healing-corruption: ["wool-shawl", "A familiar shawl kept at the safe house."]
+  '09':
+    09-covenant-organizational-structure: ["routing-wheel", "The duty clerk’s regional contact file."]
+    09-inter-division-dynamics: ["field-switchboard", "Switchboard shared by the field divisions."]
+    09-division-1-the-wayfinder: ["optical-loupe", "A Wayfinder’s inspection lens."]
+    the-counterintelligence-wing-protects-the-covenant-from: ["star-chart", "A Wayfinder’s rotating night-sky chart.", "right"]
+    09-division-2-the-recovery: ["recovery-sling", "Recovery transport sling."]
+    09-division-3-the-keep: ["vault-wheel", "Spare handwheel from a Keep vault."]
+    record-keep-talents-4: ["induction-coil", "Pickup from a monitored telephone line."]
+    09-keep-talents-choose-1-at-creation: ["briefing-bell", "Bell from the Keep’s receiving desk.", "right"]
+  '10':
+    10-consumables-and-resource-dice: ["supply-tin", "Emergency dressings from Stack stores."]
+    10-clearance-levels-cl-and-requisition: ["carbon-forms", "The quartermaster keeps the carbon copy.", "right"]
+    10-equipment-sharing-rule-3-checked-out-vs-held: ["claim-check", "Two halves of a field-gear claim check."]
+    motor-pool: ["dash-keys", "Ignition assembly from the motor pool."]
+    repair-parts: ["flat-fuse", "Spent fuse beside its replacement."]
+  '11':
+    11-activation-risk-tags: ["reel", "Sealed film canister awaiting identification."]
+    record-relics-1: ["judas-coin", "The Judas Coin, obverse face."]
+    11-ritual-types: ["clay-plugs", "Clay stoppers stamped during a containment rite."]
+    custody-manifest: ["chain-seal", "Seal from a custody manifest."]
+  '12':
+    12-field-custody: ["transfer-tray", "A sample awaiting transfer to the vault."]
+    12-tier-2-operational-support: ["wire-bobbins", "Insulated wire from the communications bench."]
+    12-tier-3-advanced-operations: ["dispatch-pager", "Pager assigned to a neighborhood safe house."]
+    12-compromise-event: ["door-seal", "Paper seal across a headquarters door hasp."]
+    12-standing-ranks: ["service-bars", "Service ribbons in the personnel archive."]
+    12-da-pacing-guidance: ["receipt-spike", "Returned equipment receipts at the armory desk."]
+  '13':
+    13-worked-example-session-debrief-and-talent-purchase: ["time-clock", "Time clock used by the night shift.", "right"]
+    general-talents: ["field-binoculars", "Field observer’s binoculars."]
+  '14':
+    14-session-zero: ["ceramic-mug", "Mug from a late briefing.", "right"]
+    14-improvisation-guidelines: ["grease-pencil", "Wax pencils used to mark a new lead."]
+  '16':
+    16-resolving-a-travel-shift: ["compass", "Folding compass from the route survey kit."]
+  '18':
+    notable-medieval-renaissance: ["notary-impression", "Wax seals from the historical archive."]
+  '19':
+    19-supernatural-entities: ["petri-slide", "Sample filed after a guardian encounter."]
+    19-additional-supernatural-entities: ["mire-vial", "Deposit taken from the edge of the Mire."]
+    19-the-listening: ["blue-flare-glass", "Glass recovered after a Listening sighting."]
+    19-medium-threat-adversaries: ["pulse-strip", "Pulse trace from a Vessel under observation."]
+    19-the-resonance-echo-non-corporeal-manifestation: ["resonance-plate", "Laboratory record of a resonance pattern."]
+    19-the-collector-artifact-hoarder: ["glass-eye", "Glass eye from the Collector’s cabinet."]
+    19-corrupted-npcs: ["exposure-badge", "A badge with darkened exposure film."]
+    19-da-monster-creation-guidelines: ["calipers", "Calipers used for a specimen record."]
+  '21':
+    opening: ["card-tray", "Working drawer of the reference index."]
+  'appendix':
+    opening: ["chess-clock", "Clock from the exercise room."]
+    vehicle-chase-rules: ["tachometer", "Tachometer from a retired fleet sedan."]
+columns:
+  '01':
+    01-the-1980s-setting: ["broadcast-aerial", "Regional listening post receiver."]
+    01-quick-response-teams: [["call-tree", "Handset from the duty officer’s desk."], ["beeper-cradle", "Alert buzzer from the duty desk."]]
+  '02':
+    02-step-5-choose-your-starting-talents: ["training-patch", "Patch from a trainee’s jacket."]
+    02-step-7-claim-your-division-item: ["verdant-satchel", "The Recovery Division’s Verdant Satchel."]
+    02-worked-example-creating-petra-vasquez: ["intake-photo", "Petra’s intake photograph."]
+  '03':
+    03-success-difficulty-and-extra-successes: ["score-pencil", "Scoring pencil from an agency exercise."]
+    03-opposed-rolls: ["brass-balance", "Folding balance from a field kit."]
+  '04':
+    opening: ["typing-ribbon", "Ribbon from the personnel typewriter."]
+    division-key-skill-during-character-creation-each: ["gym-timer", "Timer from the assessment room."]
+  '05':
+    05-zone-to-grid-conversion-optional: ["range-tape", "Survey tape used to mark zones."]
+    05-melee-combat: ["boxing-wrap", "Hand wrap from a sparring session."]
+    05-cover: ["sandbag-model", "Training model of low cover."]
+  '06':
+    06-shifting-disposition: ["calling-card", "Card stand from a contact’s office."]
+    06-social-rolls-in-practice: ["waiting-room-token", "A token from the interview waiting room."]
+    06-psychoanalyze-empathy: ["contact-sheet", "Frames selected for a witness interview."]
+    06-npc-social-defense: ["answerphone", "A contact’s answering machine."]
+  '07':
+    07-first-aid-stabilizing-a-dying-character: ["trauma-light", "Diagnostic light from the field kit."]
+    record-physical-injuries-25: ["dental-cast", "A teaching cast of a broken jaw."]
+    mental-injuries: ["hospital-tag", "A hospital admissions tag."]
+    record-mental-injuries-19: ["river-stone", "A keepsake worn smooth through handling."]
+    07-attribute-recovery: ["suture-reel", "Linen suture from the infirmary."]
+  '08':
+    08-corruption-burst: ["tuning-fork", "One tine rang after the burst had passed."]
+  '09':
+    opening: ["sorting-pigeonholes", "Regional dispatch rack."]
+    09-inter-division-dynamics: ["switchboard-plug", "A patch lead from the regional switchboard."]
+    09-division-1-the-wayfinder: ["botanical-press", "Botanical specimen from the Wayfinder archive."]
+    09-the-verdant-codex-division-item: ["verdant-codex", "An agent’s Verdant Codex."]
+    09-division-2-the-recovery: ["webbing-buckle", "A buckle from a Recovery harness."]
+    expert-in-bypassing-security-stealing-valuable-objects: ["baggage-scale", "A spring scale from the transport desk."]
+    09-keep-departments: ["shelf-markers", "Keep storage markers."]
+    record-keep-talents-4: ["security-file", "Sealed file from Internal Counterintelligence."]
+    stack-logistics: ["crate-opener", "The quartermaster’s crate tool."]
+  '10':
+    record-supplies-1: ["canteen", "Field canteen and canvas cover."]
+    repair-parts: ["parts-drawer", "Salvage drawer from a repair bench."]
+  '11':
+    containment-profiles: ["lined-capsule", "Transport capsule with its liner exposed."]
+    11-ritual-types: ["ritual-bowl", "Ritual bowl with ash and salt."]
+    11-failure-and-backlash: ["ceramic-fragment", "An insulator recovered after an artifact failure."]
+    artifact-worked-example: ["stethoscope", "The stethoscope of Dr. Morrow."]
+  '12':
+    12-tier-2-operational-support: ["diagram-tube", "Facilities drawings in a transport tube."]
+    12-tier-3-advanced-operations: ["milk-token", "Token held at the safe house."]
+  '13':
+    record-general-talents-5: ["frame-pack", "An external-frame pack with its load secured."]
+    record-background-talents-22: ["punch-card", "Timecards from a factory worker’s file."]
+  '14':
+    opening: ["director-binder", "The Director’s copy of the assignment."]
+  '15':
+    opening: ["fountain-pen", "Pen from the assignments desk."]
+    15-4-hq-investment-phase: ["service-ledger", "The quartermaster’s record of returns."]
+  '16':
+    16-resolving-a-travel-shift: ["transit-transfer", "Punched transfers from a rural bus line."]
+    16-rules-for-being-followed: ["rearview", "Rearview mirror recovered from a field car."]
+  '18':
+    notable-medieval-renaissance: ["theatre-ticket", "Playbill preserved in the opera singer’s file."]
+    record-historical-members-15: ["lodestone", "Lodestone from a historical field collection."]
+  '19':
+    19-da-monster-creation-guidelines: ["plaster-track", "Plaster impression from a field observation."]
+  'appendix':
+    chase-and-pursuit: ["track-shoe", "Shoe recovered after a platform pursuit."]
+    vehicle-damage: [["clockwork-counter", "A road-test tally counter."], ["fan-belt", "A worn drive belt from the motor pool."]]

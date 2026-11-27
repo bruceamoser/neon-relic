@@ -18,29 +18,29 @@ MISSION = "the-spear-that-went-dark.pdf"
 
 # Plates depict specific incidents. Some chapters close with an exhibit in the reading column.
 PLATES = {
-    "01": ("compact-handoff", "Field observation / A handoff at the ferry terminal."),
+    "01": ("archive-arrival", "Night duty / An envelope arrives at the municipal records annex."),
     "01b": ("holbrook", "Holbrook / Vasquez calls the dead drop from Seventh."),
     "02": ("intake", "Personnel / A new operative reports for induction."),
     "08": ("exposure", "After action / An agent takes a moment with his Anchor."),
     "09": ("dispatch", "Regional hub / A dispatch changes hands on the night shift."),
     "11": ("projection-booth", "Recovery / Inspection of an exposed film canister."),
     "14": ("vault", "The Keep / The bell is lowered into its transport case."),
-    "16": ("majestic-convoy", "Transit observation / A federal convoy holds the crossing."),
+    "16": ("night-coach", "Transit observation / The first coach at the county stop."),
     "19": ("apparition", "Field sighting / A figure persists after the last train."),
-    "20": ("/assets/png/spear-location-1-estate-aftermath.png", "Buenos Aires / The Ferreyra estate after the theft."),
+    "20": ("estate-groove", "Buenos Aires / The empty cradle in the Ferreyra vault."),
 }
 EXHIBITS = {
-    "appendix": ("initiative", "Training room / Initiative cards"),
+    "appendix": ("radiator-cap", "Motor pool / Radiator cap and gasket"),
     "01b": ("watch", "Holbrook parish watch / Returned to Keep custody"),
     "07": ("vest", "Quartermaster / Ballistic vest"),
-    "09": ("bracer", "The Keep / Warden’s Bracer"),
-    "21": ("bracer", "Division instruments / Warden’s Bracer"),
+    "09": ("vault-mitts", "The Keep / Archivist’s barrier gloves"),
+    "21": ("polarizer", "Division instruments / A pair of polarizing filters"),
     "12": ("keyring", "Keys to the Covenant safe house"),
     "06": ("camera", "Instant camera for recording evidence"),
     "08": ("cassette", "Portable cassette recorder"),
     "10": ("radio", "Covenant field radio"),
     "11": ("case", "The Keep / Sealed artifact transport case"),
-    "15": ("case", "A sealed transport case"),
+    "15": ("custody-envelope", "The Keep / Sealed return envelope"),
 }
 
 
@@ -70,13 +70,14 @@ def manuscript(sample=False):
         parts.append(title + "\n")
         if key in PLATES:
             asset, caption = PLATES[key]
-            if not asset.startswith("/"):
-                asset = "/book/art/" + asset + ".jpg"
+            if sample:
+                asset, caption = "mission-cover-print", "Buenos Aires / Morning outside the family estate."
+            asset = "/book/art/" + asset + ".jpg"
             height = {"01": 107, "01b": 187, "02": 182, "09": 160, "11": 160, "08": 168,
                       "14": 165, "16": 160, "19": 81, "20": 175}.get(key, 240)
             parts.append(raw(f'#plate({json.dumps(asset)}, {json.dumps(caption)}, height: {height}pt)'))
         if key == "00":
-            body = body.replace("## Rights and license", raw("#colbreak()") + "## Rights and license")
+            body = body.replace("## Rights and license", raw('#collection-print("exhibit-labels", "Accession labels from the publication file", height: 97pt)\n#colbreak()') + "## Rights and license")
             parts.extend([raw("#reading["), body, raw("]"),
                           raw("#credits-sleeve()"), raw("#contents()")])
         else:

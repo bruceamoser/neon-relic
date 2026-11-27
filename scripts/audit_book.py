@@ -1,8 +1,10 @@
 """Check the printed playtest changes and release inventory using Poppler."""
 from collections import Counter
+import hashlib
 from pathlib import Path
 import re
 import subprocess
+from tempfile import TemporaryDirectory
 from zipfile import ZipFile
 import xml.etree.ElementTree as ET
 
@@ -17,6 +19,32 @@ def require(condition, message):
 def pdf_text(data):
     result = subprocess.run(["pdftotext", "-", "-"], input=data, capture_output=True, check=True)
     return result.stdout.decode("utf-8")
+
+
+def check_illustrations(pdf, edition, seen):
+    """Compare the printed pictures, including transparency, across both editions."""
+    listing = subprocess.check_output(["pdfimages", "-list", "-"], input=pdf).decode()
+    rows = [line.split() for line in listing.splitlines()[2:]]
+    total = 0
+    with TemporaryDirectory() as directory:
+        prefix = Path(directory) / "art"
+        subprocess.run(["pdfimages", "-all", "-", str(prefix)], input=pdf, check=True)
+        files = {int(p.stem.rsplit("-", 1)[-1]): p for p in prefix.parent.glob("art-*")}
+        for i, row in enumerate(rows):
+            if row[2] != "image":
+                continue
+            n = int(row[1])
+            picture = hashlib.sha256(files[n].read_bytes()).digest()
+            mask = b""
+            if i + 1 < len(rows) and rows[i + 1][2] in ("smask", "mask"):
+                mask = hashlib.sha256(files[int(rows[i + 1][1])].read_bytes()).digest()
+            key = (picture, mask)
+            position = f"{edition} page {row[0]}"
+            require(key not in seen, f"Repeated artwork on {position} and {seen.get(key)}")
+            seen[key] = position
+            total += 1
+    require(total > 0, f"No illustrations found in {edition}")
+    return total
 
 
 def check_printed_folios(path, sources):
@@ -67,6 +95,8 @@ def audit():
 
     folios = check_printed_folios(DIST / BOOK, sources)
     manual = (DIST / BOOK).read_bytes()
+    illustrations = {}
+    manual_art = check_illustrations(manual, "manual", illustrations)
     pages = pdf_text(manual).rstrip().split("\f")
     require("Published by OmniscientForge LLC" in pages[1], "Missing publisher on the credits page")
     require("Bruce Moser and Stewart Voit" in pages[1], "Missing author credit")
@@ -102,7 +132,9 @@ def audit():
         names = kit.namelist()
         require(kit.testzip() is None, "Damaged ZIP member")
         require(kit.read(BOOK) == manual, "The starter kit contains a different rulebook")
-        sample = pdf_text(kit.read("sample-case-file/" + MISSION))
+        mission = kit.read("sample-case-file/" + MISSION)
+        mission_art = check_illustrations(mission, "standalone assignment", illustrations)
+        sample = pdf_text(mission)
         require("At the Shrine" in sample and "\u2014" not in sample and not retired.search(sample), "Check the standalone mission")
         require(sum(n.startswith("prebuilt-characters/") and n.endswith(".html") for n in names) == 5,
                 "Expected five ready-to-play agents")
@@ -113,7 +145,8 @@ def audit():
                 html = kit.read(name).decode("utf-8")
                 require("data:font/ttf;base64," in html and 'src="form-tools.js"' not in html,
                         f"External dossier dependency in {name}")
-    print(f"Verified {len(pages)} pages, {folios} linked lookup rows, manuscript links, front matter, XP, sample mission, and starter kit.")
+    print(f"Verified {len(pages)} pages, {folios} linked lookup rows, {manual_art} unique manual illustrations "
+          f"and {mission_art} separate assignment illustrations, manuscript links, front matter, XP, and starter kit.")
 
 
 if __name__ == "__main__":
