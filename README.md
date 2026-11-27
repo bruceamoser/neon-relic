@@ -29,7 +29,7 @@ The build writes **dist/neon-relic-core-rules.pdf** and **dist/starter-kit.zip**
 
 ## Edit
 
-Edit the numbered Markdown files in [docs/chapters](docs/chapters/) for rules and setting. [The builder](scripts/build_book.py) orders them and adds art. [The book design](book/) controls the cover, clearance markings, columns, and tables. Catalog tables marked `.catalog` supply both the linked quick-reference rows and the full descriptions. A matching `.lookup` places the reference by register name. Mark a comparison table with `.wide` to span both columns. Artwork and generation prompts live in [book/art](book/art/). The HTML dossier sources are in [assets](assets/).
+Edit the numbered Markdown files in [docs/chapters](docs/chapters/) for rules and setting. [The builder](scripts/build_book.py) orders them and adds art. [The book design](book/) controls the cover, clearance markings, columns, and tables. Catalog tables marked `.catalog` supply both the linked quick-reference rows and the full descriptions. A matching `.lookup` places the reference by register name. Mark a comparison table with `.wide` to span both columns. The [folio plan](book/folios.yml) names the first passage on each subsequent page of a file. To edit a page turn, run `python3 scripts/build_book.py --measure-folios` and look up the passage key in `dist/folio-measurements.json`. [Exhibit placements](book/folio-art.yml) use the same keys. A build reports the first passage of any page that overflows. Artwork and generation prompts live in [book/art](book/art/). The HTML dossier sources are in [assets](assets/).
 
 ## License
 

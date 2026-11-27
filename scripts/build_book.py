@@ -16,8 +16,9 @@ DIST = ROOT / "dist"
 BOOK = "neon-relic-core-rules.pdf"
 MISSION = "the-spear-that-went-dark.pdf"
 
-# Plates depict specific incidents. Cutout exhibits can occupy spare chapter-end space.
+# Plates depict specific incidents. Some chapters close with an exhibit in the reading column.
 PLATES = {
+    "01": ("compact-handoff", "Field observation / A handoff at the ferry terminal."),
     "01b": ("holbrook", "Holbrook / Vasquez calls the dead drop from Seventh."),
     "02": ("intake", "Personnel / A new operative reports for induction."),
     "08": ("exposure", "After action / An agent takes a moment with his Anchor."),
@@ -31,49 +32,20 @@ PLATES = {
 EXHIBITS = {
     "appendix": ("initiative", "Training room / Initiative cards"),
     "01b": ("watch", "Holbrook parish watch / Returned to Keep custody"),
-    "02": ("mixtape", "Petra Vasquez / Birthday tape from Marco"),
-    "04": ("worksheet", "Personnel / Aptitude assessment sheet"),
-    "05": ("initiative", "Training room / Initiative draw"),
     "07": ("vest", "Quartermaster / Ballistic vest"),
     "09": ("bracer", "The Keep / Warden’s Bracer"),
     "21": ("bracer", "Division instruments / Warden’s Bracer"),
-    "03": ("dice", "Attribute, Skill, and Gear Dice"),
     "12": ("keyring", "Keys to the Covenant safe house"),
     "06": ("camera", "Instant camera for recording evidence"),
-    "01": ("microfiche", "Archives / Covenant microfiche sleeve"),
     "08": ("cassette", "Portable cassette recorder"),
     "10": ("radio", "Covenant field radio"),
-    "11": ("reel", "A 16 mm film canister"),
+    "11": ("case", "The Keep / Sealed artifact transport case"),
     "15": ("case", "A sealed transport case"),
 }
 
 
 def raw(code):
     return '\n\n```{=typst}\n' + code + '\n```\n\n'
-
-
-def bestiary_pages(body):
-    """Enclose each subject, including any new catalog section, in one border group."""
-    parts = []
-    section = ""
-    section_heading = r"^## (?:Human Adversaries|Supernatural Entities|Additional Supernatural Entities|Medium-Threat Adversaries) \{"
-    for piece in re.split(r"(^:::: \{\.specimen[^\n]*\n.*?^::::$)", body, flags=re.M | re.S):
-        if piece.startswith(":::: "):
-            if section:
-                parts.extend([raw("#block(width: 100%, breakable: false)["), section, piece, raw("]")])
-                section = ""
-            else:
-                parts.append(piece)
-        else:
-            match = re.search(section_heading, piece, re.M)
-            if match:
-                section, piece = piece[match.start():], piece[:match.start()]
-            if piece.strip():
-                opening = "#reading["
-                if "## Corrupted NPCs" in piece:
-                    opening += "\n#set text(size: 10.6pt)\n#set par(leading: 0.37em)"
-                parts.extend([raw(opening), piece, raw("]")])
-    return parts
 
 
 def manuscript(sample=False):
@@ -83,57 +55,58 @@ def manuscript(sample=False):
     chapters.append(license_file)
     if sample:
         chapters = [CHAPTERS / "20-sample-case-file.md"]
-    parts = [raw('#import "/book/layout.typ": *')]
+    parts = [raw('#import "/book/layout.typ": *\n#import "/book/folios.typ": folio-file')]
     for path in chapters:
         key = path.stem.split("-")[0]
         director = key.isdigit() and 14 <= int(key) <= 20
         access = "DIRECTOR EYES ONLY" if director else "COVENANT PERSONNEL"
         code = "APPENDIX" if key == "appendix" else "FILE " + key.upper()
-        parts.append(raw(f'#file-open("{code}", "{access}")'))
+        designed = key in ("00", "17", "20")
+        if designed:
+            parts.append(raw(f'#file-open("{code}", "{access}")'))
+        else:
+            parts.append(f':::::::: {{.folios file="{key}" code="{code}" access="{access}"}}')
         title, body = path.read_text(encoding="utf-8").split("\n", 1)
         parts.append(title + "\n")
         if key in PLATES:
             asset, caption = PLATES[key]
             if not asset.startswith("/"):
                 asset = "/book/art/" + asset + ".jpg"
-            height = {"11": 177, "08": 195, "14": 165, "16": 160, "19": 105, "20": 175}.get(key, 240)
+            height = {"01": 107, "01b": 187, "02": 182, "09": 160, "11": 160, "08": 168,
+                      "14": 165, "16": 160, "19": 81, "20": 175}.get(key, 240)
             parts.append(raw(f'#plate({json.dumps(asset)}, {json.dumps(caption)}, height: {height}pt)'))
-        if key in ("17", "20"):
-            parts.append(body)
-            continue
-        if key == "01b":
-            slip, body = body.split("\n:::\n", 1)
-            parts.append(slip + "\n:::\n")
-        if key == "19":
-            parts.extend(bestiary_pages(body))
-            continue
-        opening = "#reading["
-        if key == "22":
-            opening += "\n#set par(leading: 0.44em, spacing: 0.65em)"
-        parts.append(raw(opening))
         if key == "00":
             body = body.replace("## Rights and license", raw("#colbreak()") + "## Rights and license")
-        parts.append(body)
-        if key in EXHIBITS:
-            name, description = EXHIBITS[key]
-            parts.append(raw(f'#exhibit("{name}", "{description}")'))
-        parts.append(raw("]"))
-        if key == "00":
-            parts.append(raw('#exhibit("microfiche", "A Covenant archive sleeve and microfiche")'))
-            parts.append(raw("#contents()"))
-    return "\n".join(parts)
+            parts.extend([raw("#reading["), body, raw("]"),
+                          raw("#credits-sleeve()"), raw("#contents()")])
+        else:
+            parts.append(body)
+            if key in EXHIBITS:
+                name, caption = EXHIBITS[key]
+                height = 185 if key == "09" else 111
+                parts.append(raw(f'#collection-print({json.dumps(name)}, {json.dumps(caption)}, height: {height}pt)'))
+            if not designed:
+                parts.append("::::::::")
+    return "\n\n".join(parts)
 
 
-def compile_book(work, destination, sample=False):
+def compile_book(work, destination, sample=False, measure_folios=False):
     body = work / "body.typ"
     subprocess.run([os.environ.get("PANDOC", "pandoc"), "-f", "markdown", "-t", "typst",
                     "--lua-filter", str(ROOT / "book/tables.lua"), "--columns=30", "--wrap=none", "-o", str(body)],
                    input=manuscript(sample), encoding="utf-8", check=True)
-    subprocess.run([os.environ.get("TYPST", "typst"), "compile", "--root", str(ROOT),
-                    "--font-path", str(ROOT / "book/fonts"), "--font-path", str(ROOT / "docs/themes/fonts"),
-                    "--input", "edition=" + ("mission" if sample else "manual"),
-                    "--input", "body=/" + body.relative_to(ROOT).as_posix(),
-                    str(ROOT / "book/book.typ"), str(destination)], check=True)
+    typst = os.environ.get("TYPST", "typst")
+    options = ["--root", str(ROOT), "--font-path", str(ROOT / "book/fonts"),
+               "--font-path", str(ROOT / "docs/themes/fonts"),
+               "--input", "edition=" + ("mission" if sample else "manual"),
+               "--input", "body=/" + body.relative_to(ROOT).as_posix()]
+    source = str(ROOT / "book/book.typ")
+    if measure_folios:
+        with destination.open("w", encoding="utf-8") as output:
+            subprocess.run([typst, "eval", "--in", source, *options, "--input", "folio-proof=measure",
+                            "--pretty", "query(<folio-measure>).map(it => it.value)"], stdout=output, check=True)
+    else:
+        subprocess.run([typst, "compile", *options, source, str(destination)], check=True)
 
 
 def portable_html(path):
@@ -189,13 +162,21 @@ def package(pdf, work, skip_pdfs):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--book-only", action="store_true")
-    parser.add_argument("--skip-rulebook", action="store_true", help="package the existing dist PDF")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--book-only", action="store_true")
+    mode.add_argument("--measure-folios", action="store_true", help="list possible page starts and their heights in points")
+    mode.add_argument("--skip-rulebook", action="store_true", help="package the existing dist PDF")
     parser.add_argument("--skip-pdfs", action="store_true", help="include only HTML versions of the dossiers")
     args = parser.parse_args()
     DIST.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(dir=DIST) as temp:
         work = Path(temp)
+        if args.measure_folios:
+            report = DIST / "folio-measurements.json"
+            compile_book(work, work / report.name, measure_folios=True)
+            (work / report.name).replace(report)
+            print(report)
+            return
         pdf = DIST / BOOK
         if not args.skip_rulebook:
             compile_book(work, work / BOOK)
