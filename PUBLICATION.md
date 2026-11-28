@@ -8,7 +8,7 @@ Publisher handoff for November 28, 2026. The files are in `dist/submission/`. Th
 | Amazon paperback | `amazon-paperback/interior.pdf` and `amazon-paperback/wrap.pdf` | Ready for KDP Print Previewer. Supply a paperback ISBN and approve layout, price and rights in the account |
 | Amazon Kindle | `digital/OmniscientForge-Neon-Relic.pdf` and `storefront/kindle-cover.jpg` | English PDF source prepared. Clear Kindle distribution with Fria Ligan AB before conversion or sale |
 | DriveThruRPG PDF | `drivethru-review/reader-review.pdf` and `storefront/drivethru-cover.jpg` | **Hold for human-written edition.** Exclude the field-kit ZIP and separate generated handout images from this submission |
-| DriveThruRPG softcover | `drivethru-review/interior-review.pdf`, front and back design panels | **Hold for human-written edition.** Rebuild from the cleared manuscript, fit its exact printer template, pass premedia, order and approve a physical proof |
+| DriveThruRPG softcover | `drivethru-review/interior-review.pdf` and `drivethru-review/cover-review.pdf` | **Hold for human-written edition.** Rebuild from the cleared manuscript, confirm its final page count, pass premedia, order and approve a physical proof |
 
 ## Product fields and listing copy
 
@@ -63,7 +63,7 @@ For the authors’ provenance review, start with the captions in [the art regist
 
 Use a **non-exclusive publishing partner** account for this cross-store title. On the cleared listing, select **Format → Creation Method → Contains AI-Generated Content** if generated art remains. Update the cover and listing disclosure to match the cleared edition. Use the 736 × 953 thumbnail and enable a preview of representative player-facing pages. Follow DriveThru’s restrictions on external links in product descriptions. Its digital checklist calls for RGB, about 150 ppi, optimized PDF, included cover, no encryption, no PDF/A and no JPEG 2000. The DriveThru review PDF mounts the original dossier cover in a green surround for its 150 ppi target. Text, hyperlinks and bookmarks remain live. [Partner agreements](https://help.drivethrupartners.com/hc/en-us/sections/12780705882903-Important-Reference-Information) · [Digital checklist](https://help.drivethrupartners.com/hc/en-us/articles/12780748345367-Check-List-for-Digital-PDF-s) · [Listing guidelines](https://help.drivethrupartners.com/hc/en-us/articles/12780748778135-Product-Standards-Guidelines)
 
-The review interior uses flattened 300 ppi CMYK plates, CGATS21_CRPC1 output intent and a 240% ink ceiling. It targets PDF/X-1a:2001. Bleed is 0.125 inches at the head, foot and outside edge. For the current letter-size softcover, upload 151 interior pages and request a **152-page, 8.5 × 11, premium color, softcover** template. The printer adds its tracking page. Recalculate these numbers after the human edit. DriveThru emails the specific cover template to its partner. Fit the panels and spine to that file, preserve printer marks and template information outside the cover area, and replace the sample barcode using DriveThru’s instructions. The supplied back panel leaves room for the template-specific production barcode. Upload both PDFs for premedia, order the proof and approve the physical book before activating print sales. [Template generator](https://www.drivethrurpg.com/pub_podbook_templates.php) · [Print preparation and ICC profile](https://help.drivethrupartners.com/hc/en-us/articles/12780817467159-Preparing-Your-Book-for-Print-with-InDesign) · [Print book proof workflow](https://help.drivethrupartners.com/hc/en-us/articles/12780745552535)
+The review interior uses flattened 300 ppi CMYK plates, CGATS21_CRPC1 output intent and a 240% ink ceiling. It targets PDF/X-1a:2001. Bleed is 0.125 inches at the head, foot and outside edge. The prepared 151-page interior plus the printer’s tracking page matches supplied template CSS5565031 for **152 pages, 8.5 × 11 inches, Ultra Premium Color, white paper, perfect bound**. The fitted cover uses the full 21 × 12-inch printer sheet and its 0.395-inch spine. The production QR and trim marks are preserved, with a white barcode reserve on the back. If the human edit changes pagination or the print specification changes, obtain a matching template and refit the cover. Upload both PDFs for premedia, order the proof and approve the physical book before activating print sales. [Template generator](https://www.drivethrurpg.com/pub_podbook_templates.php) · [Print preparation and ICC profile](https://help.drivethrupartners.com/hc/en-us/articles/12780817467159-Preparing-Your-Book-for-Print-with-InDesign) · [Print book proof workflow](https://help.drivethrupartners.com/hc/en-us/articles/12780745552535)
 
 ## Rebuild
 
@@ -73,6 +73,7 @@ Run the regular book build first. The staging tool needs Python with pikepdf, Pi
 python3 scripts/build_book.py
 python3 scripts/audit_book.py
 python3 scripts/prepare_submission.py --icc /path/to/CGATS21_CRPC1.icc
+python3 scripts/fit_drivethru_cover.py /path/to/template2-0000000000000-ColorPF.pdf --icc /path/to/CGATS21_CRPC1.icc
 python3 scripts/audit_submission.py
 ```
 
