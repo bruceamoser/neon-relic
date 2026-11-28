@@ -123,7 +123,7 @@ def audit():
     require("Operational Paradigm" in department and "Internal Counterintelligence" in department,
             "The division choices split across a page turn")
     require(text.count("Did you push a roll?") == 2, "Check both XP debrief tables")
-    require("10. MISCELLANEOUS." in pages[-1], "Incomplete Year Zero Engine license")
+    require("11. MISCELLANEOUS." in pages[-1], "Incomplete Year Zero Engine license")
     retired = re.compile(r"dark\s+secret|operations\s+board|NPC\s+cards?|information\s+cards?|Vaesen", re.I)
     require(not retired.search(text), "Retired material in the rendered rulebook")
     require(not re.search(r"\{#|xref:|\|===|\[NOTE\]|\ufffd", text), "Unrendered manuscript markup")

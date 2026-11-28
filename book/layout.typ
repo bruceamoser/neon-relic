@@ -16,7 +16,7 @@
     CLASSIFICATION: TOP SECRET \
     ORIGIN: THE VERDANT COVENANT]))
   place(top + left, dx: 78pt, dy: 279pt, block(width: 408pt)[
-    #mono(size: 10pt)[FIELD OPERATIONS DIVISION]
+    #mono(size: 12pt)[PROJECT]
     #v(7pt)
     #text(size: 63pt, weight: "semibold", fill: pine, tracking: 0.6pt)[NEON RELIC]
     #v(-4pt)
@@ -30,6 +30,9 @@
     mono(size: 9pt)[PREPARED BY \
     #text(size: 12pt, weight: "bold")[Bruce Moser and Stewart Voit] \
     DISTRIBUTION: COVENANT PERSONNEL]))
+  place(top + left, dx: 78pt, dy: 684pt,
+    block(fill: paper, inset: (x: 7pt, y: 4pt),
+      mono(size: 9pt)[Contains AI-generated artwork and text.]))
   pagebreak()
 }
 #let file-open(code, access) = {
