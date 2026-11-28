@@ -105,10 +105,14 @@ def dossier(c, x, y, w, h):
         c.line(x + 25, y + 77 + 7*i, x + 36, y + 77 + 7*i)
 
 
-def make_extras(work):
+def register_cover_fonts():
     for name, f in [("CourierPrime", ROOT / "docs/themes/fonts/CourierPrime-Regular.ttf"),
                     ("Garamond", ROOT / "book/fonts/EBGaramond[wght].ttf")]:
         pdfmetrics.registerFont(TTFont(name, str(f)))
+
+
+def make_extras(work):
+    register_cover_fonts()
     c = canvas(work / "extra.pdf", (612, 792))
     ink(c, PAPER)
     c.rect(0, 0, 612, 792, fill=1, stroke=0)
@@ -355,8 +359,7 @@ def limited_cmyk(rgb, transform):
     return data
 
 
-def drive_press(layout, icc, work):
-    transform = ImageCms.buildTransform(ImageCms.createProfile("sRGB"), str(icc), "RGB", "CMYK")
+def press_document(icc):
     out = pdf.Pdf.new()
     profile = out.make_stream(icc.read_bytes())
     profile.N = 4
@@ -368,6 +371,12 @@ def drive_press(layout, icc, work):
     out.docinfo.update(pdf.Dictionary(Title="Project Neon Relic: Core Operations Manual",
         GTS_PDFXVersion="PDF/X-1:2001", GTS_PDFXConformance="PDF/X-1a:2001",
         Trapped=pdf.Name("/False"), CreationDate=stamp, ModDate=stamp))
+    return out
+
+
+def drive_press(layout, icc, work):
+    transform = ImageCms.buildTransform(ImageCms.createProfile("sRGB"), str(icc), "RGB", "CMYK")
+    out = press_document(icc)
     with pdf.open(layout) as body:
         total = len(body.pages)
     # Render in small batches to bound temporary disk use.
