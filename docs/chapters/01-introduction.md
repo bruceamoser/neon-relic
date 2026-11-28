@@ -19,7 +19,7 @@ Neon Relic's default protagonists are **competent but vulnerable containment spe
 
 ## What This Game Is Not {#01-what-this-game-is-not}
 
-- Not a step-dice system. Neon Relic uses d6 dice pools, not the step-dice variant from _Twilight: 2000_ or _Blade Runner RPG_.
+- Not a step-dice system. Build each pool with six-sided dice.
 - Not high fantasy or superhero action. Powers are rare, dangerous, and always come at a cost.
 - Not a dungeon crawl. There are no experience points for killing monsters. Advancement comes from completing missions and surviving trauma.
 - Not a game where Division gear or Talents replace investigation. The Covenant equips you to enter the problem, not to bypass it.

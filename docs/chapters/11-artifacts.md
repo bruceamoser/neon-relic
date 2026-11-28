@@ -22,7 +22,7 @@ Every artifact also carries an **Artifact Die**, a usage die that degrades with 
 
 ### The Artifact Die {#11-the-artifact-die}
 
-Unlike **Forbidden Lands** and other YZE titles where artifact dice add bonus successes to a skill pool, the Neon Relic **Artifact Die** is a **usage die**. It works like other usage dice in the system (Resource Dice, Gear Dice): each time the artifact is activated, the player rolls the Artifact Die. On a result of **1**, the die **steps down** one level on the chain:
+The **Artifact Die** is a **usage die**. It works like other usage dice in the system (Resource Dice, Gear Dice): each time the artifact is activated, the player rolls the Artifact Die. On a result of **1**, the die **steps down** one level on the chain:
 
 **d20 → d12 → d10 → d8 → d6 → d4 → Fractured**
 

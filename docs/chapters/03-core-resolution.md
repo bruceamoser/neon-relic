@@ -1,6 +1,6 @@
 # Core Resolution Mechanics {#chapter-core-resolution}
 
-The foundation of Project Neon Relic relies on the classic **dice-pool variant** of the Year Zero Engine, originally pioneered in _Mutant: Year Zero_ and expanded in _Forbidden Lands_ and _Alien_. While the step-dice variant utilized in _Blade Runner_ and _Twilight: 2000_ offers nuance, the dice-pool system is fundamentally better suited for visually representing escalating tension and resource attrition, key themes in analog horror.
+Project Neon Relic uses the **dice-pool variant** of the Year Zero Engine. As agents exhaust their resources and suffer harm, their pools shrink.
 
 ## Defining "Session" {#03-defining-session}
 
@@ -116,7 +116,7 @@ If the winning roll supports stunts, each success beyond the opposing total is a
 
 > **Design Decision:** In Neon Relic, ties are resolved **in favor of the player character**. If a PC is involved in an opposed roll, a tie is a player win, regardless of who initiated the action.
 >
-> **Rationale:** The active-party rule punishes players whenever a hostile NPC takes the initiative. Corruption costs and the asymmetric difficulty of the Corruption track already provide consistent pressure. Giving NPCs tie wins would compound that pressure without interesting dramatic benefit. This aligns with _Alien RPG_ and the general YZE design principle of player-favorable resolution.
+> **Rationale:** The active-party rule punishes players whenever a hostile NPC takes the initiative. Corruption costs and the asymmetric difficulty of the Corruption track already provide consistent pressure. Giving NPCs tie wins would compound that pressure without interesting dramatic benefit.
 >
 > **Edge cases:**
 >

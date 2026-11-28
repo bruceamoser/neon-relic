@@ -71,7 +71,7 @@ def manuscript(sample=False):
         if key in PLATES:
             asset, caption = PLATES[key]
             if sample:
-                asset, caption = "mission-cover-print", "Buenos Aires / Morning outside the family estate."
+                asset, caption = "mission-cover-print", "Buenos Aires / Morning outside the family estate. Contains AI-generated artwork and text."
             asset = "/book/art/" + asset + ".jpg"
             height = {"01": 107, "01b": 187, "02": 182, "09": 160, "11": 160, "08": 168,
                       "14": 165, "16": 160, "19": 81, "20": 175}.get(key, 240)
@@ -82,6 +82,11 @@ def manuscript(sample=False):
                           raw("#credits-sleeve()"), raw("#contents()")])
         else:
             parts.append(body)
+            if sample:
+                parts.append("Published by OmniscientForge LLC. Fria Ligan AB neither sponsors nor endorses this game. "
+                             "The Year Zero Engine SRD is used under its "
+                             "[Free Tabletop License, version 1.1](https://freeleaguepublishing.com/wp-content/uploads/"
+                             "2026/03/Year-Zero-Engine-License-Agreement-version-1.1.pdf).")
             if key in EXHIBITS:
                 name, caption = EXHIBITS[key]
                 height = 185 if key == "09" else 111
